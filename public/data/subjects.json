@@ -1,0 +1,20 @@
+{
+  "subjects": [
+    {
+      "id": "history",
+      "name": "Lịch Sử 10",
+      "icon": "📜",
+      "description": "Lịch sử thế giới và Việt Nam",
+      "color": "#7c6aef",
+      "dataFile": "history.json"
+    },
+    {
+      "id": "biology",
+      "name": "Sinh Học 10",
+      "icon": "🧬",
+      "description": "Sinh học tế bào và công nghệ tế bào",
+      "color": "#2ecc71",
+      "dataFile": "biology.json"
+    }
+  ]
+}

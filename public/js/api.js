@@ -1,8 +1,8 @@
 /**
  * API Module - Data Loading & Caching
+ * Works with both Express server (local) and static hosting (Vercel)
  */
 const API = {
-  baseUrl: '/api',
   cache: new Map(),
 
   /**
@@ -13,7 +13,11 @@ const API = {
     if (cached) return cached;
 
     try {
-      const response = await fetch(`${this.baseUrl}/subjects`);
+      // Try API first (Express server), fallback to static JSON
+      let response = await fetch('/api/subjects');
+      if (!response.ok) {
+        response = await fetch('/data/subjects.json');
+      }
       if (!response.ok) throw new Error('Failed to fetch subjects');
       const data = await response.json();
       this.cache.set('subjects', data.subjects);
@@ -26,7 +30,7 @@ const API = {
 
   /**
    * Get questions for a specific subject
-   * @param {string} subjectId - Subject ID (e.g., 'history', 'math')
+   * @param {string} subjectId - Subject ID (e.g., 'history', 'biology')
    */
   async getQuestions(subjectId) {
     const cacheKey = `questions_${subjectId}`;
@@ -34,7 +38,11 @@ const API = {
     if (cached) return cached;
 
     try {
-      const response = await fetch(`${this.baseUrl}/data/${subjectId}`);
+      // Try API first (Express server), fallback to static JSON
+      let response = await fetch(`/api/data/${subjectId}`);
+      if (!response.ok) {
+        response = await fetch(`/data/${subjectId}.json`);
+      }
       if (!response.ok) throw new Error(`Failed to fetch ${subjectId} data`);
       const data = await response.json();
       this.cache.set(cacheKey, data);
