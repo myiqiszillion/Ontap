@@ -319,31 +319,15 @@ const Study = {
         <div class="practice-card">
           <div class="study-badge mcq">Trắc nghiệm</div>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
-          <div class="practice-options">
-            ${q.options.map((opt, i) => {
-              if (state && state.answered) {
-                const isCorrect = i === q.correctAnswer;
-                const isSelected = i === state.selected;
-                let cls = '';
-                if (isCorrect) cls = 'correct';
-                else if (isSelected && !isCorrect) cls = 'wrong';
-                return `
-                  <div class="practice-option ${cls} disabled">
-                    <span class="study-option-letter">${letters[i]}</span>
-                    <span class="study-option-text">${this.escapeHtml(opt)}</span>
-                    ${isCorrect ? '<span class="study-correct-icon">✓</span>' : ''}
-                    ${isSelected && !isCorrect ? '<span class="practice-wrong-icon">✗</span>' : ''}
-                  </div>
-                `;
-              }
-              return `
-                <div class="practice-option clickable" onclick="Study.practiceSelectMCQ(${i})">
+          <div class="practice-options" id="practice-options">
+            ${q.options.map((opt, i) => `
+                <div class="practice-option clickable" id="practice-opt-${i}" onclick="Study.practiceSelectMCQ(${i})">
                   <span class="study-option-letter">${letters[i]}</span>
                   <span class="study-option-text">${this.escapeHtml(opt)}</span>
                 </div>
-              `;
-            }).join('')}
+              `).join('')}
           </div>
+          <button id="practice-next-btn" class="nav-btn next hidden" style="margin-top: 20px" onclick="Study.practiceNext()">Tiếp tục →</button>
         </div>
       `;
     }
