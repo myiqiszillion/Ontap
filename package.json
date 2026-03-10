@@ -1,0 +1,16 @@
+{
+  "name": "lich-su-10-quiz",
+  "version": "1.0.0",
+  "description": "Nền tảng ôn tập trắc nghiệm Lịch sử 10",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["history", "quiz", "education"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
