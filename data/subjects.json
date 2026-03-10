@@ -1,7 +1,9 @@
 {
+  "grades": [10, 11, 12],
   "subjects": [
     {
       "id": "history",
+      "grade": 10,
       "name": "Lịch Sử 10",
       "icon": "📜",
       "description": "Lịch sử thế giới và Việt Nam",
@@ -10,11 +12,39 @@
     },
     {
       "id": "biology",
+      "grade": 10,
       "name": "Sinh Học 10",
       "icon": "🧬",
-      "description": "Sinh học tế bào và công nghệ tế bào",
+      "description": "Sinh học tế bào và chuyển hóa",
       "color": "#2ecc71",
       "dataFile": "biology.json"
+    },
+    {
+      "id": "gdcd-10",
+      "grade": 10,
+      "name": "GDCD 10",
+      "icon": "⚖️",
+      "description": "Pháp luật và kinh tế",
+      "color": "#3498db",
+      "dataFile": "gdcd-10.json"
+    },
+    {
+      "id": "history-11",
+      "grade": 11,
+      "name": "Lịch Sử 11",
+      "icon": "⏳",
+      "description": "Lịch sử cận hiện đại",
+      "color": "#e67e22",
+      "dataFile": "history-11.json"
+    },
+    {
+      "id": "biology-12",
+      "grade": 12,
+      "name": "Sinh Học 12",
+      "icon": "🔬",
+      "description": "Di truyền học và tiến hóa",
+      "color": "#e74c3c",
+      "dataFile": "biology-12.json"
     }
   ]
 }

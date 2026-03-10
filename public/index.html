@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/quiz.css">
 </head>
-<body>
+<body id="app-body">
 
 <div class="app">
 
@@ -24,12 +24,28 @@
           <div class="logo-icon">📚</div>
           <span class="logo-text">Ôn Tập</span>
         </div>
-        <p class="subtitle">Nền tảng học tập thông minh</p>
+        <button id="theme-toggle" class="theme-toggle" onclick="app.toggleTheme()" aria-label="Toggle Dark Mode">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
       </div>
     </header>
 
-    <h1 class="home-title">Chọn môn học</h1>
-    <p class="home-subtitle">Chọn môn bạn muốn ôn tập để bắt đầu</p>
+    <div class="dashboard-hero">
+      <h1 class="home-title">Học tập thông minh hơn</h1>
+      <p class="home-subtitle">Chọn lớp và môn học để bắt đầu hành trình của bạn</p>
+      
+      <div class="stats-banner">
+        <div class="stat-pill"><span id="total-subjects-stat">0</span> Môn học</div>
+        <div class="stat-pill"><span id="total-questions-stat">0</span>+ Câu hỏi</div>
+      </div>
+    </div>
+
+    <div class="grade-tabs-container">
+      <div class="grade-tabs" id="grade-tabs">
+        <!-- Dynamic: Render from subjects.json grades -->
+      </div>
+    </div>
 
     <div class="subjects-grid" id="subjects-grid">
       <!-- Dynamic: Render from subjects.json -->

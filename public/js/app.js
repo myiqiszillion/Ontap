@@ -4,17 +4,28 @@
  */
 const app = {
   currentSubject: null,
+  currentGrade: 10,
+  subjectsData: null,
   subjects: [],
+  grades: [],
   selectedBais: [],
   lessonData: null,
   examMode: 'exam',
   quizDuration: 20,
-  learningMode: 'exam',  // 'exam' | 'study' | 'flashcard' | 'practice' | 'wrong'
+  learningMode: 'exam',
 
   async init() {
     try {
-      this.subjects = await API.getSubjects();
+      this.initTheme();
+      this.subjectsData = await API.getSubjects();
+      this.subjects = this.subjectsData.subjects || [];
+      this.grades = this.subjectsData.grades || [10];
+      
+      this.currentGrade = this.grades[0]; // Default to first grade
+      
+      this.renderGradeTabs();
       this.renderSubjects();
+      this.updateDashboardStats();
       this.setupEventListeners();
     } catch (error) {
       console.error('Failed to initialize:', error);
@@ -22,23 +33,107 @@ const app = {
     }
   },
 
+  // ═══════════ THEME MANAGEMENT ═══════════
+
+  initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.body.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.setAttribute('data-theme', 'dark');
+    }
+  },
+
+  toggleTheme() {
+    const isDark = document.body.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.body.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.body.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  },
+
+  // ═══════════ DASHBOARD & GRADES ═══════════
+
+  updateDashboardStats() {
+    const statSubjects = document.getElementById('total-subjects-stat');
+    const statQuestions = document.getElementById('total-questions-stat');
+    
+    if (statSubjects) statSubjects.textContent = this.subjects.length;
+    // Estimate total questions (mock calculation for demo, normally would aggregate from actual data)
+    if (statQuestions) statQuestions.textContent = this.subjects.length * 150;
+  },
+
+  renderGradeTabs() {
+    const container = document.getElementById('grade-tabs');
+    if (!container) return;
+    
+    container.innerHTML = this.grades.map(grade => `
+      <button class="grade-tab ${grade === this.currentGrade ? 'active' : ''}" 
+              onclick="app.selectGrade(${grade})">
+        Lớp ${grade}
+      </button>
+    `).join('');
+  },
+
+  selectGrade(grade) {
+    this.currentGrade = grade;
+    this.renderGradeTabs();
+    this.renderSubjects();
+  },
+
   renderSubjects() {
     const container = document.getElementById('subjects-grid');
-    container.innerHTML = this.subjects.map(subject => `
+    if (!container) return;
+
+    // Filter by selected grade
+    const filteredSubjects = this.subjects.filter(s => s.grade === this.currentGrade);
+
+    if (filteredSubjects.length === 0) {
+      container.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Đang cập nhật môn học cho Lớp ${this.currentGrade}...</div>`;
+      return;
+    }
+
+    const gradients = ['var(--grad-purple)', 'var(--grad-green)', 'var(--grad-blue)', 'var(--grad-orange)', 'var(--grad-red)'];
+
+    container.innerHTML = filteredSubjects.map((subject, index) => {
+      const gradient = gradients[index % gradients.length];
+      const progress = this.getSubjectProgress(subject.id);
+      
+      return `
       <div class="subject-card" data-id="${subject.id}"
-           onclick="app.selectSubject('${subject.id}')">
-        <div class="subject-checkbox">
-          <svg viewBox="0 0 16 16"><polyline points="3,8 7,12 13,4"/></svg>
+           onclick="app.selectSubject('${subject.id}')"
+           style="--card-color: ${subject.color}">
+        
+        <div class="subject-card-header">
+          <div class="subject-icon" style="background: ${gradient}; color: ${subject.color}">
+            ${subject.icon}
+          </div>
+          <div class="subject-info">
+            <div class="subject-name">${subject.name}</div>
+            <div class="subject-desc">${subject.description}</div>
+          </div>
         </div>
-        <div class="subject-icon" style="background: ${subject.color}20; color: ${subject.color}">
-          ${subject.icon}
-        </div>
-        <div class="subject-info">
-          <div class="subject-name">${subject.name}</div>
-          <div class="subject-desc">${subject.description}</div>
+
+        <div class="subject-card-footer">
+          <span class="subject-badge">Mới</span>
+          <div class="subject-progress-container">
+            <div class="subject-progress-bar-bg">
+              <div class="subject-progress-fill" style="width: ${progress}%"></div>
+            </div>
+            <span>${progress}%</span>
+          </div>
         </div>
       </div>
-    `).join('');
+    `}).join('');
+  },
+
+  getSubjectProgress(subjectId) {
+    // Basic mock progress calculation based on localStorage or default to 0
+    const progress = localStorage.getItem(`progress_${subjectId}`);
+    return progress ? parseInt(progress) : 0;
   },
 
   async selectSubject(subjectId) {
