@@ -1,18 +1,16 @@
 /**
  * Main Application Controller
- * Handles flow: Home → Topics Selection → Quiz
+ * Handles flow: Home → Topics Selection → Study/Quiz/Flashcard/Practice
  */
 const app = {
   currentSubject: null,
   subjects: [],
-  selectedBais: [],    // Now selecting by bài number (merged)
+  selectedBais: [],
   lessonData: null,
-  examMode: 'exam',    // 'exam' (12TN+4ĐS), 'mcq', 'tf', 'all'
+  examMode: 'exam',
   quizDuration: 20,
+  learningMode: 'exam',  // 'exam' | 'study' | 'flashcard' | 'practice' | 'wrong'
 
-  /**
-   * Initialize application
-   */
   async init() {
     try {
       this.subjects = await API.getSubjects();
@@ -24,9 +22,6 @@ const app = {
     }
   },
 
-  /**
-   * Render subjects grid
-   */
   renderSubjects() {
     const container = document.getElementById('subjects-grid');
     container.innerHTML = this.subjects.map(subject => `
@@ -46,9 +41,6 @@ const app = {
     `).join('');
   },
 
-  /**
-   * Handle subject selection
-   */
   async selectSubject(subjectId) {
     this.currentSubject = subjectId;
     const subject = this.subjects.find(s => s.id === subjectId);
@@ -57,6 +49,7 @@ const app = {
     try {
       this.lessonData = await DataLoader.getLessons(subjectId);
       this.renderTopics();
+      this.updateWrongCount();
       this.showScreen('topics');
     } catch (error) {
       console.error('Failed to load lessons:', error);
@@ -64,9 +57,58 @@ const app = {
     }
   },
 
-  /**
-   * Render merged topics list (one entry per bài)
-   */
+  // ═══════════ MODE SELECTION ═══════════
+
+  selectMode(mode) {
+    this.learningMode = mode;
+    document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
+    document.querySelector(`.mode-card[data-mode="${mode}"]`).classList.add('selected');
+
+    // Show/hide exam config
+    const examConfig = document.getElementById('quiz-config-exam');
+    examConfig.style.display = mode === 'exam' ? 'block' : 'none';
+
+    // Show/hide topic list for wrong mode
+    const topicsList = document.getElementById('topics-list');
+    const topicsHeader = document.querySelector('.topics-header');
+    if (mode === 'wrong') {
+      topicsList.style.display = 'none';
+      topicsHeader.style.display = 'none';
+    } else {
+      topicsList.style.display = '';
+      topicsHeader.style.display = '';
+    }
+
+    // Update start button text
+    const startBtn = document.getElementById('start-btn');
+    const labels = {
+      exam: '📝 Bắt đầu thi',
+      study: '📖 Bắt đầu học',
+      flashcard: '🃏 Bắt đầu flashcard',
+      practice: '💪 Bắt đầu luyện',
+      wrong: '❌ Luyện câu sai'
+    };
+    startBtn.textContent = labels[mode] || '🚀 Bắt đầu';
+
+    // Wrong mode doesn't need topic selection
+    if (mode === 'wrong') {
+      const wrongCount = WrongTracker.getWrongCount(this.currentSubject);
+      startBtn.disabled = wrongCount === 0;
+    } else {
+      this.updateQuizSummary();
+    }
+  },
+
+  updateWrongCount() {
+    if (this.currentSubject) {
+      const count = WrongTracker.getWrongCount(this.currentSubject);
+      const badge = document.getElementById('wrong-count-badge');
+      if (badge) badge.textContent = count;
+    }
+  },
+
+  // ═══════════ TOPIC RENDERING ═══════════
+
   renderTopics() {
     const container = document.getElementById('topics-list');
 
@@ -94,21 +136,14 @@ const app = {
     this.updateQuizSummary();
   },
 
-  /**
-   * Toggle bài selection
-   */
   toggleBai(bai, fromInfo = false) {
     const checkbox = document.querySelector(`input.topic-checkbox[value="${bai}"]`);
     const topicCard = checkbox.closest('.topic-card');
 
-    if (fromInfo) {
-      checkbox.checked = !checkbox.checked;
-    }
+    if (fromInfo) checkbox.checked = !checkbox.checked;
 
     if (checkbox.checked) {
-      if (!this.selectedBais.includes(bai)) {
-        this.selectedBais.push(bai);
-      }
+      if (!this.selectedBais.includes(bai)) this.selectedBais.push(bai);
       topicCard.classList.add('selected');
     } else {
       this.selectedBais = this.selectedBais.filter(b => b !== bai);
@@ -118,14 +153,9 @@ const app = {
     this.updateQuizSummary();
   },
 
-  /**
-   * Select / deselect all bài
-   */
   selectAll() {
     const allChecked = this.selectedBais.length === this.lessonData.lessons.length;
-    document.querySelectorAll('.topic-checkbox').forEach(cb => {
-      cb.checked = !allChecked;
-    });
+    document.querySelectorAll('.topic-checkbox').forEach(cb => cb.checked = !allChecked);
     if (allChecked) {
       this.selectedBais = [];
       document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('selected'));
@@ -136,11 +166,10 @@ const app = {
     this.updateQuizSummary();
   },
 
-  /**
-   * Update quiz summary
-   */
   updateQuizSummary() {
     const startBtn = document.getElementById('start-btn');
+
+    if (this.learningMode === 'wrong') return;
 
     if (this.selectedBais.length === 0) {
       startBtn.disabled = true;
@@ -154,13 +183,10 @@ const app = {
     const totalTfGroups = selected.reduce((s, l) => s + l.tfGroupCount, 0);
     const totalTime = selected.reduce((s, l) => s + l.estimatedTime, 0);
 
-    // Show summary based on exam mode
     let summaryText;
     const mode = this.examMode;
     if (mode === 'exam') {
-      const mcqCount = Math.min(totalMcq, 12);
-      const tfCount = Math.min(totalTfGroups, 4);
-      summaryText = `${mcqCount} TN + ${tfCount} Đ/S`;
+      summaryText = `${Math.min(totalMcq, 12)} TN + ${Math.min(totalTfGroups, 4)} Đ/S`;
     } else if (mode === 'mcq') {
       summaryText = `${totalMcq} câu TN`;
     } else if (mode === 'tf') {
@@ -174,96 +200,108 @@ const app = {
     startBtn.disabled = false;
   },
 
-  /**
-   * Set up event listeners
-   */
+  // ═══════════ EVENT LISTENERS ═══════════
+
   setupEventListeners() {
-    // Exam mode
     document.getElementById('exam-mode').addEventListener('change', (e) => {
       this.examMode = e.target.value;
       this.updateQuizSummary();
     });
 
-    // Quiz duration
     document.getElementById('quiz-duration').addEventListener('change', (e) => {
       this.quizDuration = parseInt(e.target.value);
     });
 
-    // Start button
     document.getElementById('start-btn').addEventListener('click', () => {
-      this.startQuiz();
-    });
-
-    // Confirm exit
-    window.addEventListener('beforeunload', (e) => {
-      if (this.currentSubject) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
+      this.startLearning();
     });
   },
 
-  /**
-   * Start the quiz
-   */
-  async startQuiz() {
-    if (!this.currentSubject || this.selectedBais.length === 0) return;
+  // ═══════════ START LEARNING ═══════════
+
+  async startLearning() {
+    if (!this.currentSubject) return;
+
+    // Wrong mode — load from localStorage
+    if (this.learningMode === 'wrong') {
+      const wrongQs = WrongTracker.getWrong(this.currentSubject);
+      if (wrongQs.length === 0) {
+        alert('Chưa có câu sai nào!');
+        return;
+      }
+      const data = { subject: this.currentSubject, questions: wrongQs };
+      this.showScreen('practice');
+      Study.init(data, 'practice');
+      return;
+    }
+
+    if (this.selectedBais.length === 0) return;
 
     try {
-      // Set limits based on exam mode
       let mcqLimit = null, tfLimit = null;
-      if (this.examMode === 'exam') {
-        mcqLimit = 12;
-        tfLimit = 4;
+      let examMode = 'all';
+
+      if (this.learningMode === 'exam') {
+        examMode = this.examMode;
+        if (this.examMode === 'exam') { mcqLimit = 12; tfLimit = 4; }
       }
 
       const quizData = await DataLoader.loadQuizData(
         this.currentSubject,
         this.selectedBais,
-        this.examMode,
+        examMode,
         mcqLimit,
         tfLimit
       );
 
       if (quizData.questions.length === 0) {
-        alert('Không có câu hỏi nào phù hợp. Hãy chọn bài khác hoặc đổi dạng đề.');
+        alert('Không có câu hỏi nào phù hợp.');
         return;
       }
 
       const subject = this.subjects.find(s => s.id === this.currentSubject);
-      this.showScreen('quiz');
-      document.getElementById('quiz-subject').textContent = subject.name;
 
-      Quiz.init(quizData);
+      if (this.learningMode === 'exam') {
+        this.showScreen('quiz');
+        document.getElementById('quiz-subject').textContent = subject.name;
+        Quiz.init(quizData);
 
-      // Timer
-      if (this.quizDuration > 0) {
-        Timer.init(this.quizDuration, (display, remaining) => {
-          const timerEl = document.getElementById('active-timer');
-          const timerDisplay = document.getElementById('active-timer-display');
-          timerDisplay.textContent = display;
-          timerEl.classList.remove('warning', 'danger');
-          if (remaining <= 60) {
-            timerEl.classList.add('danger');
-          } else if (remaining <= 300) {
-            timerEl.classList.add('warning');
-          }
-        }, () => {
-          alert('Hết giờ! Bài thi sẽ được nộp tự động.');
-          Quiz.submit();
-        });
-      } else {
-        document.getElementById('active-timer-display').textContent = '∞';
+        if (this.quizDuration > 0) {
+          Timer.init(this.quizDuration, (display, remaining) => {
+            const timerEl = document.getElementById('active-timer');
+            const timerDisplay = document.getElementById('active-timer-display');
+            timerDisplay.textContent = display;
+            timerEl.classList.remove('warning', 'danger');
+            if (remaining <= 60) timerEl.classList.add('danger');
+            else if (remaining <= 300) timerEl.classList.add('warning');
+          }, () => {
+            alert('Hết giờ! Bài thi sẽ được nộp tự động.');
+            Quiz.submit();
+          });
+        } else {
+          document.getElementById('active-timer-display').textContent = '∞';
+        }
+      } else if (this.learningMode === 'study') {
+        this.showScreen('study');
+        Study.init(quizData, 'study');
+      } else if (this.learningMode === 'flashcard') {
+        this.showScreen('flashcard');
+        Study.init(quizData, 'flashcard');
+      } else if (this.learningMode === 'practice') {
+        this.showScreen('practice');
+        Study.init(quizData, 'practice');
       }
     } catch (error) {
-      console.error('Failed to start quiz:', error);
+      console.error('Failed to start:', error);
       alert('Không thể tải câu hỏi. Vui lòng thử lại.');
     }
   },
 
-  /**
-   * Show results screen
-   */
+  // Previous startQuiz for backward compatibility
+  startQuiz() { this.learningMode = 'exam'; this.startLearning(); },
+
+  // ═══════════ RESULTS ═══════════
+
   showResults(correct, total) {
     Timer.stop();
 
@@ -280,9 +318,7 @@ const app = {
     const ring = document.getElementById('score-ring');
     ring.style.strokeDashoffset = circumference;
     requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        ring.style.strokeDashoffset = offset;
-      });
+      requestAnimationFrame(() => { ring.style.strokeDashoffset = offset; });
     });
 
     let message = '';
@@ -295,15 +331,21 @@ const app = {
     this.showScreen('result');
   },
 
-  /**
-   * Go back to home screen
-   */
+  // ═══════════ NAVIGATION ═══════════
+
+  exitStudy() {
+    if (confirm('Thoát chế độ học?')) {
+      this.goHome();
+    }
+  },
+
   goHome() {
     Timer.clearState();
     Timer.stop();
     this.currentSubject = null;
     this.selectedBais = [];
     this.lessonData = null;
+    this.learningMode = 'exam';
 
     document.querySelectorAll('.topic-card').forEach(c => {
       c.classList.remove('selected');
@@ -312,13 +354,10 @@ const app = {
     });
     document.querySelectorAll('.subject-card').forEach(c => c.classList.remove('selected'));
 
-    this.updateQuizSummary();
     this.showScreen('home');
   },
 
-  goBackToHome() {
-    this.goHome();
-  },
+  goBackToHome() { this.goHome(); },
 
   quitQuiz() {
     if (confirm('Thoát khỏi bài thi? Tiến trình sẽ bị mất.')) {

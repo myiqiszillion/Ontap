@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Platform - Ôn Tập Trắc Nghiệm</title>
-  <meta name="description" content="Nền tảng ôn tập trắc nghiệm đa môn học">
+  <title>Ôn Tập - Nền tảng học tập thông minh</title>
+  <meta name="description" content="Nền tảng ôn tập đa dạng: thi thử, flashcard, luyện tập, học & đọc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@
           <div class="logo-icon">📚</div>
           <span class="logo-text">Ôn Tập</span>
         </div>
-        <p class="subtitle">Nền tảng ôn tập trắc nghiệm</p>
+        <p class="subtitle">Nền tảng học tập thông minh</p>
       </div>
     </header>
 
@@ -37,21 +37,54 @@
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════
-       SCREEN 2: TOPIC SELECTION (NEW)
+       SCREEN 2: TOPIC SELECTION + MODE SELECTOR
        ═══════════════════════════════════════════════════════════ -->
   <section id="screen-topics" class="screen">
     <header class="quiz-header">
       <button class="back-btn" onclick="app.goBackToHome()">← Quay lại</button>
       <div class="quiz-info">
-        <span class="subject-badge" id="selected-subject-name">Lịch Sử 10</span>
+        <span class="subject-badge" id="selected-subject-name">Môn học</span>
       </div>
-      <div class="timer" id="topics-timer" style="visibility: hidden;">
+      <div class="timer" style="visibility: hidden;">
         <span class="timer-icon">⏱️</span>
-        <span id="topics-timer-display">00:00</span>
+        <span>00:00</span>
       </div>
     </header>
 
     <div class="topics-container">
+      <!-- Mode Selector -->
+      <div class="mode-selector" id="mode-selector">
+        <h2>Chọn chế độ học</h2>
+        <div class="mode-cards">
+          <div class="mode-card selected" data-mode="exam" onclick="app.selectMode('exam')">
+            <div class="mode-icon">📝</div>
+            <div class="mode-name">Thi thử</div>
+            <div class="mode-desc">Đề thi có timer, chấm điểm</div>
+          </div>
+          <div class="mode-card" data-mode="study" onclick="app.selectMode('study')">
+            <div class="mode-icon">📖</div>
+            <div class="mode-name">Học & Đọc</div>
+            <div class="mode-desc">Xem câu hỏi + đáp án ngay</div>
+          </div>
+          <div class="mode-card" data-mode="flashcard" onclick="app.selectMode('flashcard')">
+            <div class="mode-icon">🃏</div>
+            <div class="mode-name">Flashcard</div>
+            <div class="mode-desc">Lật thẻ ghi nhớ</div>
+          </div>
+          <div class="mode-card" data-mode="practice" onclick="app.selectMode('practice')">
+            <div class="mode-icon">💪</div>
+            <div class="mode-name">Luyện tập</div>
+            <div class="mode-desc">Phản hồi ngay mỗi câu</div>
+          </div>
+          <div class="mode-card" data-mode="wrong" onclick="app.selectMode('wrong')">
+            <div class="mode-icon">❌</div>
+            <div class="mode-name">Câu sai</div>
+            <div class="mode-desc wrong-count-desc">Luyện lại câu đã sai (<span id="wrong-count-badge">0</span>)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Topic list -->
       <div class="topics-header">
         <h2>Chọn các bài học</h2>
         <p class="topics-subtitle">Chọn ít nhất 1 bài để tiếp tục</p>
@@ -62,7 +95,8 @@
         <!-- Dynamic: Render topics from JSON -->
       </div>
 
-      <div class="quiz-config">
+      <!-- Exam config (only visible in exam mode) -->
+      <div class="quiz-config" id="quiz-config-exam">
         <div class="config-row">
           <label for="exam-mode">Dạng đề:</label>
           <select id="exam-mode">
@@ -92,22 +126,22 @@
             <strong id="summary-time">0</strong> phút
           </span>
         </div>
-
-        <button class="start-btn" id="start-btn" disabled>
-          🎯 Bắt đầu thi
-        </button>
       </div>
+
+      <button class="start-btn" id="start-btn" disabled>
+        🚀 Bắt đầu
+      </button>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════
-       SCREEN 3: QUIZ INTERFACE
+       SCREEN 3: QUIZ INTERFACE (Thi thử)
        ═══════════════════════════════════════════════════════════ -->
   <section id="screen-quiz" class="screen">
     <header class="quiz-header">
       <button class="back-btn" onclick="app.quitQuiz()">← Thoát</button>
       <div class="quiz-info">
-        <span class="subject-badge" id="quiz-subject">Lịch Sử 10</span>
+        <span class="subject-badge" id="quiz-subject">Môn học</span>
         <span class="progress-badge" id="quiz-progress">1/20</span>
       </div>
       <div class="timer" id="active-timer">
@@ -117,15 +151,11 @@
     </header>
 
     <div class="quiz-layout">
-      <!-- Sidebar: Question Navigator -->
       <aside class="quiz-sidebar">
         <div class="sidebar-header">Câu hỏi</div>
-        <div class="question-dots" id="question-dots">
-          <!-- Dynamic: Render dots -->
-        </div>
+        <div class="question-dots" id="question-dots"></div>
       </aside>
 
-      <!-- Main: Question Card -->
       <main class="quiz-main">
         <div class="question-card">
           <div class="question-meta">
@@ -133,28 +163,97 @@
             <span class="question-number">Câu <span id="q-num">1</span></span>
           </div>
           <div class="question-text" id="q-text">Đang tải...</div>
-          <div class="options" id="options-container">
-            <!-- Dynamic: Render A, B, C, D or Đúng/Sai -->
-          </div>
+          <div class="options" id="options-container"></div>
         </div>
 
         <div class="quiz-nav">
-          <button class="nav-btn prev" id="btn-prev" onclick="Quiz.prev()">
-            ← Trước
-          </button>
-          <button class="nav-btn next" id="btn-next" onclick="Quiz.next()">
-            Tiếp →
-          </button>
-          <button class="nav-btn submit hidden" id="btn-submit" onclick="Quiz.submit()">
-            ✓ Nộp bài
-          </button>
+          <button class="nav-btn prev" id="btn-prev" onclick="Quiz.prev()">← Trước</button>
+          <button class="nav-btn next" id="btn-next" onclick="Quiz.next()">Tiếp →</button>
+          <button class="nav-btn submit hidden" id="btn-submit" onclick="Quiz.submit()">✓ Nộp bài</button>
         </div>
       </main>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════
-       SCREEN 4: RESULTS
+       SCREEN 4: STUDY MODE (Học & Đọc)
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="screen-study" class="screen">
+    <header class="quiz-header">
+      <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+      <div class="quiz-info">
+        <span class="subject-badge study-badge-header">📖 Học & Đọc</span>
+        <span class="progress-badge" id="study-progress">1/20</span>
+      </div>
+      <div class="study-progress-bar">
+        <div class="study-progress-fill" id="study-progress-fill"></div>
+      </div>
+    </header>
+
+    <div class="study-layout">
+      <div id="study-content" class="study-content"></div>
+      <div class="study-nav">
+        <button class="nav-btn prev" id="study-prev" onclick="Study.studyPrev()">← Trước</button>
+        <button class="nav-btn next" id="study-next" onclick="Study.studyNext()">Tiếp →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 5: FLASHCARD MODE
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="screen-flashcard" class="screen">
+    <header class="quiz-header">
+      <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+      <div class="quiz-info">
+        <span class="subject-badge fc-badge-header">🃏 Flashcard</span>
+        <span class="progress-badge" id="fc-counter">0/0</span>
+      </div>
+      <div class="fc-known-counter" id="fc-known">✓ 0</div>
+    </header>
+
+    <div class="fc-progress-bar">
+      <div class="fc-progress-fill" id="fc-progress-fill"></div>
+    </div>
+
+    <div class="fc-layout">
+      <div id="flashcard-content" class="fc-content"></div>
+      <div class="fc-actions" id="fc-actions">
+        <button class="fc-btn unknown" onclick="Study.markUnknown()">❌ Chưa thuộc</button>
+        <button class="fc-btn known" onclick="Study.markKnown()">✅ Đã thuộc</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 6: PRACTICE MODE (Luyện tập)
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="screen-practice" class="screen">
+    <header class="quiz-header">
+      <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+      <div class="quiz-info">
+        <span class="subject-badge practice-badge-header">💪 Luyện tập</span>
+        <span class="progress-badge" id="practice-progress">1/20</span>
+      </div>
+      <div class="practice-score-display" id="practice-score">✓ 0  ✗ 0</div>
+    </header>
+
+    <div class="practice-progress-bar">
+      <div class="practice-progress-fill" id="practice-progress-fill"></div>
+    </div>
+
+    <div class="practice-layout">
+      <div id="practice-content" class="practice-content"></div>
+      <div class="practice-nav">
+        <button class="nav-btn prev" id="practice-prev" onclick="Study.practicePrev()">← Trước</button>
+        <button class="nav-btn next" id="practice-next" onclick="Study.practiceNext()">Tiếp →</button>
+        <button class="nav-btn submit hidden" id="practice-finish" onclick="Study.practiceFinish()">✓ Hoàn thành</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 7: RESULTS
        ═══════════════════════════════════════════════════════════ -->
   <section id="screen-result" class="screen">
     <div class="result-card">
@@ -207,12 +306,9 @@
         </button>
       </div>
 
-      <!-- Review Section (Hidden by default) -->
       <div class="review-section hidden" id="review-section">
         <h3>Chi tiết đáp án</h3>
-        <div class="review-list" id="review-list">
-          <!-- Dynamic: Render review items -->
-        </div>
+        <div class="review-list" id="review-list"></div>
       </div>
     </div>
   </section>
@@ -223,6 +319,7 @@
 <script src="js/api.js"></script>
 <script src="js/data-loader.js"></script>
 <script src="js/timer.js"></script>
+<script src="js/study.js"></script>
 <script src="js/quiz.js"></script>
 <script src="js/app.js"></script>
 </body>
