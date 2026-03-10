@@ -22,9 +22,7 @@ const DataLoader = {
    * Each bài shows combined MCQ + TF info
    */
   async getLessons(subjectId) {
-    const response = await fetch(`data/${subjectId}.json`);
-    if (!response.ok) throw new Error(`Failed to load ${subjectId}.json`);
-    const data = await response.json();
+    const data = await API.getQuestions(subjectId);
 
     // Group lessons by bài number
     const baiMap = {};
@@ -77,9 +75,7 @@ const DataLoader = {
    * @param {number|null} tfLimit - Max TF groups
    */
   async loadQuizData(subjectId, selectedBais, examMode = 'exam', mcqLimit = null, tfLimit = null, saLimit = null) {
-    const response = await fetch(`data/${subjectId}.json`);
-    if (!response.ok) throw new Error(`Failed to load ${subjectId}.json`);
-    const data = await response.json();
+    const data = await API.getQuestions(subjectId);
 
     // Filter lessons by selected bài
     const selectedLessons = data.lessons.filter(l => selectedBais.includes(l.bai));
