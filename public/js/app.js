@@ -266,6 +266,24 @@ const app = {
 
     if (this.learningMode === 'wrong') return;
 
+    // Determine which pool to check for visibility. If lessons selected, check those. 
+    // If none selected, check the entire subject so we don't show irrelevant inputs globally.
+    const pool = this.selectedBais.length > 0 
+      ? this.lessonData.lessons.filter(l => this.selectedBais.includes(l.bai))
+      : this.lessonData.lessons;
+
+    const maxMcq = pool.reduce((s, l) => s + l.mcqCount, 0);
+    const maxTfGroups = pool.reduce((s, l) => s + l.tfGroupCount, 0);
+    const maxSa = pool.reduce((s, l) => s + (l.saCount || 0), 0);
+
+    const mcqContainer = document.getElementById('config-item-mcq');
+    const tfContainer = document.getElementById('config-item-tf');
+    const saContainer = document.getElementById('config-item-sa');
+
+    if (mcqContainer) mcqContainer.style.display = maxMcq > 0 ? 'flex' : 'none';
+    if (tfContainer) tfContainer.style.display = maxTfGroups > 0 ? 'flex' : 'none';
+    if (saContainer) saContainer.style.display = maxSa > 0 ? 'flex' : 'none';
+
     if (this.selectedBais.length === 0) {
       startBtn.disabled = true;
       document.getElementById('summary-questions').textContent = '0';
@@ -273,34 +291,57 @@ const app = {
       return;
     }
 
-    const selected = this.lessonData.lessons.filter(l => this.selectedBais.includes(l.bai));
-    const totalMcq = selected.reduce((s, l) => s + l.mcqCount, 0);
-    const totalTfGroups = selected.reduce((s, l) => s + l.tfGroupCount, 0);
-    const totalTime = selected.reduce((s, l) => s + l.estimatedTime, 0);
+    const totalTime = pool.reduce((s, l) => s + l.estimatedTime, 0);
 
-    let summaryText;
-    const mode = this.examMode;
-    if (mode === 'exam') {
-      summaryText = `${Math.min(totalMcq, 12)} TN + ${Math.min(totalTfGroups, 4)} Đ/S`;
-    } else if (mode === 'mcq') {
-      summaryText = `${totalMcq} câu TN`;
-    } else if (mode === 'tf') {
-      summaryText = `${totalTfGroups} bài Đ/S`;
-    } else {
-      summaryText = `${totalMcq} TN + ${totalTfGroups} Đ/S`;
+    // Update max values for inputs
+    const mcqInput = document.getElementById('exam-mcq-limit');
+    const tfInput = document.getElementById('exam-tf-limit');
+    const saInput = document.getElementById('exam-sa-limit');
+
+    if (mcqInput) {
+      mcqInput.setAttribute('max', maxMcq);
+      const currentVal = parseInt(mcqInput.value) || 0;
+      if (currentVal > maxMcq) mcqInput.value = maxMcq;
     }
+    if (tfInput) {
+      tfInput.setAttribute('max', maxTfGroups);
+      const currentVal = parseInt(tfInput.value) || 0;
+      if (currentVal > maxTfGroups) tfInput.value = maxTfGroups;
+    }
+    if (saInput) {
+      saInput.setAttribute('max', maxSa);
+      const currentVal = parseInt(saInput.value) || 0;
+      if (currentVal > maxSa) saInput.value = maxSa;
+    }
+
+    // Determine values to display
+    const showMcq = mcqInput && maxMcq > 0 ? (parseInt(mcqInput.value) || 0) : 0;
+    const showTf = tfInput && maxTfGroups > 0 ? (parseInt(tfInput.value) || 0) : 0;
+    const showSa = saInput && maxSa > 0 ? (parseInt(saInput.value) || 0) : 0;
+
+    let summaryParts = [];
+    if (showMcq > 0) summaryParts.push(`${showMcq} TN`);
+    if (showTf > 0) summaryParts.push(`${showTf} Đ/S`);
+    if (showSa > 0) summaryParts.push(`${showSa} TLN`);
+
+    const summaryText = summaryParts.length > 0 ? summaryParts.join(' + ') : '0 câu';
 
     document.getElementById('summary-questions').textContent = summaryText;
     document.getElementById('summary-time').textContent = totalTime;
-    startBtn.disabled = false;
+    
+    // Enable start button if at least 1 question is selected
+    startBtn.disabled = (showMcq === 0 && showTf === 0 && showSa === 0);
   },
 
   // ═══════════ EVENT LISTENERS ═══════════
 
   setupEventListeners() {
-    document.getElementById('exam-mode').addEventListener('change', (e) => {
-      this.examMode = e.target.value;
-      this.updateQuizSummary();
+    // Attach events to dynamic inputs to recompute summary on change
+    ['exam-mcq-limit', 'exam-tf-limit', 'exam-sa-limit'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', () => this.updateQuizSummary());
+      }
     });
 
     document.getElementById('quiz-duration').addEventListener('change', (e) => {
@@ -333,20 +374,25 @@ const app = {
     if (this.selectedBais.length === 0) return;
 
     try {
-      let mcqLimit = null, tfLimit = null;
-      let examMode = 'all';
+      let mcqLimit = null, tfLimit = null, saLimit = null;
 
       if (this.learningMode === 'exam') {
-        examMode = this.examMode;
-        if (this.examMode === 'exam') { mcqLimit = 12; tfLimit = 4; }
+        const mcqInput = document.getElementById('exam-mcq-limit');
+        const tfInput = document.getElementById('exam-tf-limit');
+        const saInput = document.getElementById('exam-sa-limit');
+
+        mcqLimit = mcqInput ? (parseInt(mcqInput.value) || 0) : null;
+        tfLimit = tfInput ? (parseInt(tfInput.value) || 0) : null;
+        saLimit = saInput ? (parseInt(saInput.value) || 0) : null;
       }
 
       const quizData = await DataLoader.loadQuizData(
         this.currentSubject,
         this.selectedBais,
-        examMode,
+        'exam', // always exam flow now
         mcqLimit,
-        tfLimit
+        tfLimit,
+        saLimit
       );
 
       if (quizData.questions.length === 0) {

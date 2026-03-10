@@ -113,14 +113,20 @@
 
       <!-- Exam config (only visible in exam mode) -->
       <div class="quiz-config" id="quiz-config-exam">
-        <div class="config-row">
-          <label for="exam-mode">Dạng đề:</label>
-          <select id="exam-mode">
-            <option value="exam" selected>📝 Đề thi (12 TN + 4 Đ/S)</option>
-            <option value="mcq">📋 Chỉ Trắc nghiệm</option>
-            <option value="tf">✅ Chỉ Đúng/Sai</option>
-            <option value="all">📚 Tất cả</option>
-          </select>
+        <label class="config-label">Tuỳ chỉnh cấu trúc đề thi:</label>
+        <div class="config-grid">
+          <div class="config-item" id="config-item-mcq">
+            <label for="exam-mcq-limit">Trắc nghiệm</label>
+            <input type="number" id="exam-mcq-limit" min="0" value="12" class="config-input">
+          </div>
+          <div class="config-item" id="config-item-tf">
+            <label for="exam-tf-limit">Đúng/Sai</label>
+            <input type="number" id="exam-tf-limit" min="0" value="4" class="config-input">
+          </div>
+          <div class="config-item" id="config-item-sa">
+            <label for="exam-sa-limit">Trả lời ngắn</label>
+            <input type="number" id="exam-sa-limit" min="0" value="2" class="config-input">
+          </div>
         </div>
         <div class="config-row">
           <label for="quiz-duration">Thời gian:</label>

@@ -948,6 +948,29 @@
           ]
         }
       ]
+    },
+    {
+      "id": 8,
+      "bai": 21,
+      "title": "Bài 21: Công nghệ tế bào (Trả lời ngắn)",
+      "type": "shortanswer",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Có bao nhiêu giai đoạn chính trong một chu kì tế bào chuẩn?",
+          "correct": "4"
+        },
+        {
+          "id": 2,
+          "question": "Hãy điền từ còn thiếu vào ô trống: Pha S là pha nhân đôi của ... và NST",
+          "correct": "DNA"
+        },
+        {
+          "id": 3,
+          "question": "Ở ruồi giấm 2n=8. Số nhiễm sắc thể trong 1 tế bào ở kì sau của quá trình nguyên phân là bao nhiêu?",
+          "correct": "16"
+        }
+      ]
     }
   ]
 }

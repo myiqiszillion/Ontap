@@ -20,8 +20,9 @@ const API = {
       }
       if (!response.ok) throw new Error('Failed to fetch subjects');
       const data = await response.json();
-      this.cache.set('subjects', data.subjects);
-      return data.subjects;
+      // Ensure we cache and return the entire data object (grades + subjects)
+      this.cache.set('subjects', data);
+      return data;
     } catch (error) {
       console.error('API Error:', error);
       throw error;

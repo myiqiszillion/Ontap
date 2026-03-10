@@ -27,12 +27,21 @@ const Quiz = {
     if (!q) return;
 
     const isGroup = q.type === 'tf-group';
+    const isShortAnswer = q.type === 'shortanswer';
 
     // Update type badge
     const typeBadge = document.getElementById('q-type-badge');
     if (typeBadge) {
-      typeBadge.textContent = isGroup ? 'Đúng/Sai' : 'Trắc nghiệm';
-      typeBadge.className = 'question-type-badge' + (isGroup ? ' tf' : '');
+      if (isGroup) {
+        typeBadge.textContent = 'Đúng/Sai';
+        typeBadge.className = 'question-type-badge tf';
+      } else if (isShortAnswer) {
+        typeBadge.textContent = 'Trả lời ngắn';
+        typeBadge.className = 'question-type-badge sa';
+      } else {
+        typeBadge.textContent = 'Trắc nghiệm';
+        typeBadge.className = 'question-type-badge';
+      }
     }
 
     // Update progress
@@ -65,6 +74,21 @@ const Quiz = {
         `;
       }).join('');
 
+    } else if (isShortAnswer) {
+      // === SHORT ANSWER ===
+      qTextEl.textContent = q.question;
+
+      const userText = this.answers[this.currentQuestionIndex] || '';
+      
+      container.innerHTML = `
+        <div class="sa-container">
+          <input type="text" 
+                 class="sa-input" 
+                 placeholder="Nhập câu trả lời của bạn..." 
+                 value="${this.escapeHtml(userText)}"
+                 oninput="Quiz.inputShortAnswer(this.value)">
+        </div>
+      `;
     } else {
       // === MCQ: single question with options ===
       qTextEl.textContent = q.question;
@@ -106,11 +130,15 @@ const Quiz = {
         // TF group is "answered" if all statements have answers
         const ga = this.answers[i];
         isAnswered = ga && Object.keys(ga).length === q.statements.length;
+      } else if (q.type === 'shortanswer') {
+        isAnswered = this.answers[i] !== undefined && this.answers[i].trim() !== '';
       } else {
         isAnswered = this.answers[i] !== undefined;
       }
 
-      const typeClass = q.type === 'tf-group' ? ' tf-dot' : '';
+      let typeClass = '';
+      if (q.type === 'tf-group') typeClass = ' tf-dot';
+      if (q.type === 'shortanswer') typeClass = ' sa-dot';
       return `
         <div class="q-dot ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''}${typeClass}"
              onclick="Quiz.goTo(${i})">
@@ -137,6 +165,14 @@ const Quiz = {
     }
     this.answers[this.currentQuestionIndex][statementIndex] = value;
     this.render();
+  },
+
+  /**
+   * Input short answer text
+   */
+  inputShortAnswer(value) {
+    this.answers[this.currentQuestionIndex] = value;
+    this.renderDots(); // Only update dots, don't re-render full screen to keep focus
   },
 
   prev() {
@@ -170,6 +206,8 @@ const Quiz = {
       if (q.type === 'tf-group') {
         const ga = this.answers[i] || {};
         if (Object.keys(ga).length < q.statements.length) unanswered++;
+      } else if (q.type === 'shortanswer') {
+        if (!this.answers[i] || this.answers[i].trim() === '') unanswered++;
       } else {
         if (this.answers[i] === undefined) unanswered++;
       }
@@ -191,6 +229,12 @@ const Quiz = {
           totalPoints++;
           if (ga[si] === stmt.correct) earnedPoints++;
         });
+      } else if (q.type === 'shortanswer') {
+        // Short answer = 1 point
+        totalPoints++;
+        const userText = (this.answers[i] || '').trim().toLowerCase();
+        const correctText = String(q.correctAnswer).trim().toLowerCase();
+        if (userText === correctText) earnedPoints++;
       } else {
         // MCQ = 1 point
         totalPoints++;
@@ -236,6 +280,27 @@ const Quiz = {
             </div>
             <div class="review-passage-short">${this.escapeHtml(q.passage).substring(0, 120)}...</div>
             ${statementsHtml}
+          </div>
+        `;
+      } else if (q.type === 'shortanswer') {
+        const userText = (this.answers[i] || '').trim();
+        const correctText = String(q.correctAnswer).trim();
+        const isCorrect = userText.toLowerCase() === correctText.toLowerCase();
+
+        return `
+          <div class="review-item ${isCorrect ? 'correct' : 'wrong'}">
+            <div class="review-question">
+              <span class="review-type">TLN</span>
+              Câu ${i + 1}: ${this.escapeHtml(q.question)}
+            </div>
+            <div class="review-answer ${isCorrect ? 'correct' : 'wrong'}">
+              ${isCorrect ? '✓' : '✗'} Bạn điền: ${userText ? this.escapeHtml(userText) : '<em>Chưa trả lời</em>'}
+            </div>
+            ${!isCorrect ? `
+              <div class="review-answer correct">
+                ✓ Đáp án đúng: ${this.escapeHtml(correctText)}
+              </div>
+            ` : ''}
           </div>
         `;
       } else {

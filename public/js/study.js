@@ -32,8 +32,10 @@ const Study = {
     }
 
     if (mode === 'practice') {
-      this.practiceAnswered = {};
+      this.totalOriginalQuestions = data.questions.length;
+      this.practiceQueue = [...Array(this.questions.length).keys()];
       this.practiceScore = { correct: 0, wrong: 0 };
+      this.practiceMastered = 0;
     }
 
     this.render();
@@ -75,6 +77,20 @@ const Study = {
                 <span class="study-tf-label ${s.correct ? 'correct' : 'wrong'}">${s.correct ? '✓ Đúng' : '✗ Sai'}</span>
               </div>
             `).join('')}
+          </div>
+          </div>
+        </div>
+      `;
+    } else if (q.type === 'shortanswer') {
+      container.innerHTML = `
+        <div class="study-card">
+          <div class="study-badge sa">Trả lời ngắn</div>
+          <div class="study-question">${this.escapeHtml(q.question)}</div>
+          <div class="study-answers">
+            <div class="study-option correct">
+               <span class="study-option-text">Đáp án: <strong>${this.escapeHtml(q.correctAnswer)}</strong></span>
+               <span class="study-correct-icon">✓</span>
+            </div>
           </div>
         </div>
       `;
@@ -165,6 +181,21 @@ const Study = {
               </div>
             `).join('')}
           </div>
+          </div>
+        </div>
+      `;
+    } else if (q.type === 'shortanswer') {
+      card.innerHTML = `
+        <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
+          <div class="fc-front">
+            <div class="fc-type sa">Trả lời ngắn</div>
+            <div class="fc-question">${this.escapeHtml(q.question)}</div>
+            <div class="fc-hint">👆 Nhấn để xem đáp án</div>
+          </div>
+          <div class="fc-back">
+            <div class="fc-type sa">Đáp án</div>
+            <div class="fc-correct-answer">${this.escapeHtml(q.correctAnswer)}</div>
+          </div>
         </div>
       `;
     } else {
@@ -221,52 +252,66 @@ const Study = {
   },
 
   // ═══════════════════════════════════════════════
-  //  PRACTICE MODE — Answer with instant feedback
+  //  PRACTICE MODE — Infinite Queue until Mastery
   // ═══════════════════════════════════════════════
   renderPractice() {
-    const q = this.questions[this.currentIndex];
+    if (this.practiceQueue.length === 0) {
+      this.renderPracticeFinish();
+      return;
+    }
+
+    const qIndex = this.practiceQueue[0];
+    const q = this.questions[qIndex];
     if (!q) return;
+
+    this.currentPracticeQuestion = q;
+    this.currentPracticeIndex = qIndex;
 
     const container = document.getElementById('practice-content');
     const progress = document.getElementById('practice-progress');
     const bar = document.getElementById('practice-progress-fill');
     const scoreEl = document.getElementById('practice-score');
 
-    const answered = Object.keys(this.practiceAnswered).length;
-    progress.textContent = `${this.currentIndex + 1} / ${this.questions.length}`;
-    bar.style.width = `${((answered) / this.questions.length) * 100}%`;
-    scoreEl.textContent = `✓ ${this.practiceScore.correct}  ✗ ${this.practiceScore.wrong}`;
-
-    const state = this.practiceAnswered[this.currentIndex];
+    progress.textContent = `Thuộc: ${this.practiceMastered} / ${this.totalOriginalQuestions}`;
+    bar.style.width = `${(this.practiceMastered / this.totalOriginalQuestions) * 100}%`;
+    scoreEl.textContent = `Lỗi sai: ${this.practiceScore.wrong}`;
 
     if (q.type === 'tf-group') {
-      const tfState = state || {};
       container.innerHTML = `
         <div class="practice-card">
           <div class="study-badge tf">Đúng/Sai</div>
           <div class="study-passage">${this.escapeHtml(q.passage)}</div>
           <div class="practice-statements">
-            ${q.statements.map((s, i) => {
+            ${q.statements.map((s, i) => `
               const answered = tfState[i] !== undefined;
               const userVal = tfState[i];
               const isCorrect = answered ? userVal === s.correct : null;
-              return `
-                <div class="practice-tf-stmt ${answered ? (isCorrect ? 'correct' : 'wrong') : ''}">
+                <div class="practice-tf-stmt" id="practice-tf-stmt-${i}">
                   <span class="study-tf-letter">${String.fromCharCode(97 + i)})</span>
                   <span class="study-tf-text">${this.escapeHtml(s.question)}</span>
-                  <div class="practice-tf-btns">
-                    ${answered ? `
-                      <span class="practice-result ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? '✓' : '✗'} ${userVal ? 'Đúng' : 'Sai'}</span>
-                      ${!isCorrect ? `<span class="practice-correct-label">→ ${s.correct ? 'Đúng' : 'Sai'}</span>` : ''}
-                    ` : `
+                  <div class="practice-tf-btns" id="practice-tf-btns-${i}">
                       <button class="tf-btn" onclick="Study.practiceSelectTF(${i}, true)">Đúng</button>
                       <button class="tf-btn" onclick="Study.practiceSelectTF(${i}, false)">Sai</button>
-                    `}
                   </div>
                 </div>
-              `;
-            }).join('')}
+              `).join('')}
           </div>
+          <button id="practice-next-btn" class="nav-btn next hidden" onclick="Study.practiceNext()">Tiếp tục →</button>
+        </div>
+      `;
+      this.currentTfState = { correct: 0, answered: 0, wrong: false };
+    } else if (q.type === 'shortanswer') {
+      container.innerHTML = `
+        <div class="practice-card">
+          <div class="study-badge sa">Trả lời ngắn</div>
+          <div class="study-question">${this.escapeHtml(q.question)}</div>
+          <div class="practice-sa-container" id="practice-sa-container">
+              <div class="sa-input-wrapper">
+                <input type="text" id="practice-sa-input" class="sa-input" placeholder="Nhập câu trả lời..." onkeypress="if(event.key==='Enter') Study.practiceSubmitSA()">
+                <button class="practice-sa-btn" onclick="Study.practiceSubmitSA()">Kiểm tra</button>
+              </div>
+          </div>
+          <button id="practice-next-btn" class="nav-btn next hidden" style="margin-top: 20px" onclick="Study.practiceNext()">Tiếp tục →</button>
         </div>
       `;
     } else {
@@ -304,60 +349,130 @@ const Study = {
       `;
     }
 
-    // Nav
-    document.getElementById('practice-prev').disabled = this.currentIndex === 0;
-    const isLast = this.currentIndex === this.questions.length - 1;
-    document.getElementById('practice-next').classList.toggle('hidden', isLast);
-    document.getElementById('practice-finish').classList.toggle('hidden', !isLast);
+    // Disable Prev nav, practice is forward sequence until empty queue
+    document.getElementById('practice-prev').classList.add('hidden');
+    document.getElementById('practice-next').classList.add('hidden'); // controlled within questions now
+    document.getElementById('practice-finish').classList.add('hidden');
+  },
+
+  handleAnswerFeedback(isCorrect) {
+    if (isCorrect) {
+      this.practiceScore.correct++;
+      this.practiceMastered++;
+      // Remove from queue
+      this.practiceQueue.shift();
+    } else {
+      this.practiceScore.wrong++;
+      // Move to end of queue to repeat later
+      const qIndex = this.practiceQueue.shift();
+      this.practiceQueue.push(qIndex);
+      WrongTracker.addWrong(this.subject, this.currentPracticeQuestion);
+    }
+    
+    // Show next button
+    document.getElementById('practice-next-btn').classList.remove('hidden');
   },
 
   practiceSelectMCQ(optIndex) {
-    const q = this.questions[this.currentIndex];
-    if (this.practiceAnswered[this.currentIndex]) return;
+    // Prevent double clicking
+    if (document.getElementById('practice-next-btn').classList.contains('hidden') === false) return;
 
+    const q = this.currentPracticeQuestion;
     const isCorrect = optIndex === q.correctAnswer;
-    this.practiceAnswered[this.currentIndex] = { answered: true, selected: optIndex, correct: isCorrect };
+    
+    // UI Update
+    const options = document.querySelectorAll('.practice-option');
+    options.forEach((opt, i) => {
+      opt.classList.remove('clickable');
+      opt.onclick = null;
+      if (i === q.correctAnswer) {
+        opt.classList.add('correct');
+        opt.innerHTML += '<span class="study-correct-icon">✓</span>';
+      } else if (i === optIndex && !isCorrect) {
+        opt.classList.add('wrong');
+        opt.innerHTML += '<span class="practice-wrong-icon">✗</span>';
+      } else {
+        opt.classList.add('disabled');
+      }
+    });
 
-    if (isCorrect) this.practiceScore.correct++;
-    else this.practiceScore.wrong++;
-
-    // Save wrong questions
-    if (!isCorrect) {
-      WrongTracker.addWrong(this.subject, q);
-    }
-
-    this.renderPractice();
+    this.handleAnswerFeedback(isCorrect);
   },
 
   practiceSelectTF(stmtIdx, value) {
-    const q = this.questions[this.currentIndex];
-    if (!this.practiceAnswered[this.currentIndex]) {
-      this.practiceAnswered[this.currentIndex] = {};
+    if (this.currentTfState.answered >= this.currentPracticeQuestion.statements.length) return;
+    
+    const stmtRow = document.getElementById(`practice-tf-stmt-${stmtIdx}`);
+    if (stmtRow.classList.contains('correct') || stmtRow.classList.contains('wrong')) return;
+
+    const s = this.currentPracticeQuestion.statements[stmtIdx];
+    const isCorrect = value === s.correct;
+    
+    this.currentTfState.answered++;
+    if (!isCorrect) this.currentTfState.wrong = true;
+
+    // UI Feedback for this row
+    stmtRow.classList.add(isCorrect ? 'correct' : 'wrong');
+    const btnsContainer = document.getElementById(`practice-tf-btns-${stmtIdx}`);
+    
+    btnsContainer.innerHTML = `
+      <span class="practice-result ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? '✓' : '✗'} ${value ? 'Đúng' : 'Sai'}</span>
+      ${!isCorrect ? `<span class="practice-correct-label">→ ${s.correct ? 'Đúng' : 'Sai'}</span>` : ''}
+    `;
+
+    // If all statements answered
+    if (this.currentTfState.answered === this.currentPracticeQuestion.statements.length) {
+      this.handleAnswerFeedback(!this.currentTfState.wrong);
     }
-    if (this.practiceAnswered[this.currentIndex][stmtIdx] !== undefined) return;
+  },
 
-    const isCorrect = value === q.statements[stmtIdx].correct;
-    this.practiceAnswered[this.currentIndex][stmtIdx] = value;
+  practiceSubmitSA() {
+    if (document.getElementById('practice-next-btn').classList.contains('hidden') === false) return;
 
-    if (isCorrect) this.practiceScore.correct++;
-    else {
-      this.practiceScore.wrong++;
-      WrongTracker.addWrong(this.subject, q);
-    }
+    const q = this.currentPracticeQuestion;
+    const inputEl = document.getElementById('practice-sa-input');
+    if (!inputEl) return;
+    
+    const userText = inputEl.value.trim();
+    if (!userText) return;
 
+    const correctText = String(q.correctAnswer).trim().toLowerCase();
+    const isCorrect = userText.toLowerCase() === correctText;
+
+    const container = document.getElementById('practice-sa-container');
+    container.innerHTML = `
+      <div class="practice-sa-result ${isCorrect ? 'correct' : 'wrong'}">
+        <div class="practice-sa-input-readonly">${this.escapeHtml(userText)}</div>
+        ${isCorrect ? '<span class="practice-result correct">✓ Đúng</span>' : `
+          <span class="practice-result wrong">✗ Sai</span>
+          <div class="practice-sa-correct-ans">Đáp án đúng: <strong>${this.escapeHtml(q.correctAnswer)}</strong></div>
+        `}
+      </div>
+    `;
+
+    this.handleAnswerFeedback(isCorrect);
+  },
+
+  practiceNext() {
     this.renderPractice();
   },
 
-  practicePrev() {
-    if (this.currentIndex > 0) { this.currentIndex--; this.renderPractice(); }
-  },
-  practiceNext() {
-    if (this.currentIndex < this.questions.length - 1) { this.currentIndex++; this.renderPractice(); }
-  },
+  renderPracticeFinish() {
+    const container = document.getElementById('practice-content');
+    container.innerHTML = `
+      <div class="practice-card completion-card" style="text-align: center; padding: 40px 20px;">
+        <h2 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 10px;">🎉 Chúc mừng bạn! 🎉</h2>
+        <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 30px;">
+          Bạn đã ôn tập vô hạn thành công và thông thạo toàn bộ ${this.totalOriginalQuestions} câu hỏi xuất sắc!
+        </p>
+        <div style="font-size: 4rem; margin-bottom: 20px;">🏆</div>
+        <p><strong>Lỗi sai trong quá trình:</strong> ${this.practiceScore.wrong}</p>
+        <button class="nav-btn submit" style="margin-top: 30px;" onclick="app.goHome()">Quay về Trang chủ</button>
+      </div>
+    `;
 
-  practiceFinish() {
-    const total = this.practiceScore.correct + this.practiceScore.wrong;
-    app.showResults(this.practiceScore.correct, total);
+    // Hide progress and nav
+    document.querySelector('.practice-header').style.display = 'none';
   },
 
   // Utility

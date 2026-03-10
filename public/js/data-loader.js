@@ -37,12 +37,18 @@ const DataLoader = {
 
       if (lesson.type === 'multiple' || lesson.type === 'mcq') {
         baiMap[bai].mcqCount = lesson.questions ? lesson.questions.length : 0;
+        baiMap[bai].mcqCount = lesson.questions ? lesson.questions.length : 0;
         // Extract clean title (remove " (Trắc nghiệm)" etc.)
-        baiMap[bai].title = lesson.title.replace(/\s*\(Trắc nghiệm\)\s*/i, '').replace(/\s*\(Đúng\/Sai\)\s*/i, '');
+        baiMap[bai].title = lesson.title.replace(/\s*\(Trắc nghiệm\)\s*/i, '').replace(/\s*\(Đúng\/Sai\)\s*/i, '').replace(/\s*\(Trả lời ngắn\)\s*/i, '');
       } else if (lesson.type === 'truefalse') {
         baiMap[bai].tfGroupCount = lesson.questionGroups ? lesson.questionGroups.length : 0;
         if (!baiMap[bai].title) {
-          baiMap[bai].title = lesson.title.replace(/\s*\(Trắc nghiệm\)\s*/i, '').replace(/\s*\(Đúng\/Sai\)\s*/i, '');
+          baiMap[bai].title = lesson.title.replace(/\s*\(Trắc nghiệm\)\s*/i, '').replace(/\s*\(Đúng\/Sai\)\s*/i, '').replace(/\s*\(Trả lời ngắn\)\s*/i, '');
+        }
+      } else if (lesson.type === 'shortanswer') {
+        baiMap[bai].saCount = lesson.questions ? lesson.questions.length : 0;
+        if (!baiMap[bai].title) {
+          baiMap[bai].title = lesson.title.replace(/\s*\(Trắc nghiệm\)\s*/i, '').replace(/\s*\(Đúng\/Sai\)\s*/i, '').replace(/\s*\(Trả lời ngắn\)\s*/i, '');
         }
       }
     });
@@ -52,10 +58,11 @@ const DataLoader = {
       bai: b.bai,
       lessonIds: b.lessonIds,
       title: b.title,
-      mcqCount: b.mcqCount,
-      tfGroupCount: b.tfGroupCount,
-      totalItems: b.mcqCount + b.tfGroupCount,
-      estimatedTime: Math.ceil((b.mcqCount + b.tfGroupCount * 4) * 1)
+      mcqCount: b.mcqCount || 0,
+      tfGroupCount: b.tfGroupCount || 0,
+      saCount: b.saCount || 0,
+      totalItems: (b.mcqCount || 0) + (b.tfGroupCount || 0) + (b.saCount || 0),
+      estimatedTime: Math.ceil(((b.mcqCount || 0) + (b.tfGroupCount || 0) * 4 + (b.saCount || 0) * 2) * 1)
     }));
 
     return { subject: subjectId, lessons: mergedLessons };
@@ -69,7 +76,7 @@ const DataLoader = {
    * @param {number|null} mcqLimit - Max MCQ questions
    * @param {number|null} tfLimit - Max TF groups
    */
-  async loadQuizData(subjectId, selectedBais, examMode = 'all', mcqLimit = null, tfLimit = null) {
+  async loadQuizData(subjectId, selectedBais, examMode = 'exam', mcqLimit = null, tfLimit = null, saLimit = null) {
     const response = await fetch(`data/${subjectId}.json`);
     if (!response.ok) throw new Error(`Failed to load ${subjectId}.json`);
     const data = await response.json();
@@ -77,9 +84,10 @@ const DataLoader = {
     // Filter lessons by selected bài
     const selectedLessons = data.lessons.filter(l => selectedBais.includes(l.bai));
 
-    // Separate MCQ questions and TF groups
+    // Separate MCQ questions, TF groups, and Short Answers
     let mcqQuestions = [];
     let tfGroups = [];
+    let shortAnswers = [];
 
     selectedLessons.forEach(lesson => {
       if (lesson.type === 'multiple' || lesson.type === 'mcq') {
@@ -89,7 +97,7 @@ const DataLoader = {
               type: 'mcq',
               question: q.question,
               options: q.options,
-              correctAnswer: q.correct,
+              correctAnswer: q.correctAnswer, // make sure it matches the quiz property name
               lessonBai: lesson.bai,
               lessonTitle: lesson.title
             });
@@ -110,38 +118,36 @@ const DataLoader = {
             });
           });
         }
+      } else if (lesson.type === 'shortanswer') {
+        if (lesson.questions) {
+          lesson.questions.forEach(q => {
+            shortAnswers.push({
+              type: 'shortanswer',
+              question: q.question,
+              correctAnswer: String(q.correct).trim(),
+              lessonBai: lesson.bai,
+              lessonTitle: lesson.title
+            });
+          });
+        }
       }
     });
 
-    // Apply exam mode filtering
+    // Apply exam mode limits
     let questions = [];
 
-    if (examMode === 'exam') {
-      // Exam format: 12 MCQ + 4 TF groups
-      mcqQuestions = this.shuffle(mcqQuestions).slice(0, mcqLimit || 12);
-      tfGroups = this.shuffle(tfGroups).slice(0, tfLimit || 4);
+    mcqQuestions = this.shuffle(mcqQuestions);
+    tfGroups = this.shuffle(tfGroups);
+    shortAnswers = this.shuffle(shortAnswers);
 
-      // Shuffle MCQ options
-      mcqQuestions = mcqQuestions.map(q => this._shuffleMcqOptions(q));
+    if (mcqLimit !== null) mcqQuestions = mcqQuestions.slice(0, mcqLimit);
+    if (tfLimit !== null) tfGroups = tfGroups.slice(0, tfLimit);
+    if (saLimit !== null) shortAnswers = shortAnswers.slice(0, saLimit);
 
-      questions = [...mcqQuestions, ...tfGroups];
-    } else if (examMode === 'mcq') {
-      mcqQuestions = this.shuffle(mcqQuestions);
-      if (mcqLimit) mcqQuestions = mcqQuestions.slice(0, mcqLimit);
-      questions = mcqQuestions.map(q => this._shuffleMcqOptions(q));
-    } else if (examMode === 'tf') {
-      tfGroups = this.shuffle(tfGroups);
-      if (tfLimit) tfGroups = tfGroups.slice(0, tfLimit);
-      questions = tfGroups;
-    } else {
-      // All: mix everything
-      mcqQuestions = this.shuffle(mcqQuestions);
-      tfGroups = this.shuffle(tfGroups);
-      if (mcqLimit) mcqQuestions = mcqQuestions.slice(0, mcqLimit);
-      if (tfLimit) tfGroups = tfGroups.slice(0, tfLimit);
-      mcqQuestions = mcqQuestions.map(q => this._shuffleMcqOptions(q));
-      questions = this.shuffle([...mcqQuestions, ...tfGroups]);
-    }
+    mcqQuestions = mcqQuestions.map(q => this._shuffleMcqOptions(q));
+    
+    // Mix everything
+    questions = this.shuffle([...mcqQuestions, ...tfGroups, ...shortAnswers]);
 
     return {
       subject: subjectId,
