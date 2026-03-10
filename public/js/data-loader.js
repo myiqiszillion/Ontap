@@ -157,12 +157,10 @@ const DataLoader = {
    * Shuffle MCQ options while tracking correct answer
    */
   _shuffleMcqOptions(q) {
-    const correctOption = q.options[q.correctAnswer];
-    const shuffledOptions = this.shuffle(q.options);
     return {
       ...q,
-      options: shuffledOptions,
-      correctAnswer: shuffledOptions.indexOf(correctOption)
+      options: q.options,
+      correctAnswer: q.correctAnswer
     };
   }
 };
