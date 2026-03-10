@@ -40,8 +40,8 @@
             "D. giúp cá nhân hội nhập nhanh chóng vào cuộc sống hiện đại."
           ],
           "id": 3,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 4. Tất cả những điều đã diễn ra trong quá khứ tồn tại một cách khách quan, độc lập là",
@@ -148,8 +148,8 @@
             "D. Phòng thí nghiệm."
           ],
           "id": 12,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 13. Đối tượng của sử học mang tính",
@@ -220,8 +220,8 @@
             "D. Phản ánh những nhận thức của con người về quá khứ."
           ],
           "id": 18,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 19. Ngành khoa học nghiên cứu lịch sử xã hội loài người là",
@@ -244,8 +244,8 @@
             "D. lịch sử bản thân."
           ],
           "id": 20,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 21. Nội dung nào sau đây không phản ánh đúng chức năng của Sử học?",
@@ -256,8 +256,8 @@
             "D. Dự báo chính xác về tương lai của xã hội loài người."
           ],
           "id": 21,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 22. Nhận thức lịch sử không phụ thuộc vào yếu tố nào sau đây?",
@@ -284,8 +284,8 @@
             "D. những hiểu biết của con người về hiện thực lịch sử."
           ],
           "id": 23,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 25. Hiện thực lịch sử có điểm gì khác biệt so với nhận thức lịch sử?",
@@ -296,8 +296,8 @@
             "D. Phụ thuộc vào ý muốn của con người."
           ],
           "id": 24,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 26. Một trong những lí do cần khám phá lịch sử suốt đời là giúp mỗi người",
@@ -308,8 +308,8 @@
             "D. hoàn thiện năng lực tính toán."
           ],
           "id": 25,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 27: Nội dung nào sau đây không phản ánh đúng lý do cần thiết phải học tập, khám phá lịch sử suốt đời?",
@@ -320,8 +320,8 @@
             "D. Học tập lịch sử là cách duy nhất để hội nhập quốc tế thành công."
           ],
           "id": 26,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 28: Học tập và tìm hiểu lịch sử giúp đưa lại những cơ hội nghề nghiệp mới trên lĩnh vực nào sau đây?",
@@ -332,8 +332,8 @@
             "D. Xuất khẩu dầu mỏ."
           ],
           "id": 27,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 29. Nội dung nào sau đây phản ánh đúng ý nghĩa của tri thức lịch sử đối với cuộc sống ?",
@@ -344,8 +344,8 @@
             "D. Giúp giải quyết được mọi mâu thuẫn trong xã hội."
           ],
           "id": 28,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 30: Lập danh mục sử liệu cần sưu tầm; tìm kiếm, thu thập thông tin liên quan đến đối tượng tìm hiểu là các bước cơ bản của quá trình",
@@ -356,8 +356,8 @@
             "D. xác minh, đánh giá sử liệu."
           ],
           "id": 29,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 31: Phân loại, đánh giá, thẩm định, so sánh nguồn sử liệu là các bước cơ bản của quá trình",
@@ -368,8 +368,8 @@
             "D. tìm hiểu các di chỉ khảo cổ."
           ],
           "id": 30,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 32: Nội dung nào sau đây không phải là hình thức để học tập, khám phá lịch sử?",
@@ -380,8 +380,8 @@
             "D. Tham quan khu lưu niệm."
           ],
           "id": 31,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 33. Những bài học kinh nghiệm trong lịch sử có giá trị như thế nào đối với cuộc sống hiện tại và tương lai của con người?",
@@ -392,8 +392,8 @@
             "D. Là yếu tố quyết định đến tương lai của con người."
           ],
           "id": 32,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         }
       ]
     },
@@ -558,8 +558,8 @@
             "D. quy hoạch, lưu giữ và bảo vệ các di sản."
           ],
           "id": 37,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 6. Lịch sử và văn hoá có vai trò như thế nào đến sự phát triển du lịch?",
@@ -618,8 +618,8 @@
             "D. Hạn chế tác động tiêu cực của điều kiện tự nhiên và con người đến di sản."
           ],
           "id": 42,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 11. Một trong những vai trò của công tác bảo tồn và phát huy giá trị di sản văn hóa phi vật thể là",
@@ -654,8 +654,8 @@
             "D. Góp phần quảng bá lịch sử, văn hóa đất nước ra bên ngoài."
           ],
           "id": 45,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 14. Một trong những vai trò của du lịch đối với việc bảo tồn di tích lịch sử và di sản văn hóa là",
@@ -738,8 +738,8 @@
             "D. đẩy mạnh hoạt động khám phá."
           ],
           "id": 52,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 21. Nét đặc trưng quan trọng của công tác bảo tồn di sản văn hóa là",
@@ -750,8 +750,8 @@
             "D. đẩy mạnh hoạt động khám phá."
           ],
           "id": 53,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 22. Hoạt động chính của công tác bảo tồn và phát huy giá trị các di sản văn hóa?",
@@ -762,8 +762,8 @@
             "D. quy hoạch, lưu giữ và bảo vệ các di sản."
           ],
           "id": 54,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 23. Nội dung nào sau đây là một trong những vai trò của công tác bảo tồn và phát huy giá trị di sản văn hóa, di sản thiên nhiên?",
@@ -774,8 +774,8 @@
             "D. Phục dựng bức tranh lịch sử về di sản văn hóa, thiên nhiên"
           ],
           "id": 55,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 24. Di sản văn hóa là sản phẩm của",
@@ -786,8 +786,8 @@
             "D. tự nhiên."
           ],
           "id": 56,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 25. Các di tích lịch sử - văn hóa có vai trò nào sau đây đối với sự phát triển du lịch?",
@@ -798,8 +798,8 @@
             "D. Là nguồn tài nguyên du lịch có sức hấp dẫn to lớn."
           ],
           "id": 57,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 26. Một trong những vai trò của du lịch đối với việc bảo tồn di tích lịch sử và di sản văn hóa là",
@@ -810,8 +810,8 @@
             "D. giúp con người hưởng thụ giá trị di sản thiên nhiên và văn hóa."
           ],
           "id": 58,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         }
       ]
     },
@@ -907,8 +907,8 @@
             "D. loài người."
           ],
           "id": 62,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 5. Khi nào thì nhân loại bước vào thời kì văn minh?",
@@ -931,8 +931,8 @@
             "D. Là toàn bộ giá trị vật chất của loài người từ khi xuất hiện đến nay."
           ],
           "id": 64,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 7. Thành tựu văn hóa nào sau đây không phải là biểu hiện của văn minh?",
@@ -955,8 +955,8 @@
             "D. Là toàn bộ giá trị mà con người sáng tạo ra."
           ],
           "id": 66,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 9. Mối quan hệ giữa văn minh và văn hoá là",
@@ -979,8 +979,8 @@
             "D. Xã hội loài người đã thoát khỏi thời kì nguyên thủy."
           ],
           "id": 68,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 11. Văn hóa là tổng thể những giá trị vật chất và tinh thần do con người sáng tạo ra:",
@@ -1027,8 +1027,8 @@
             "D. Hy Lạp, La Mã."
           ],
           "id": 72,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 15. Những nền văn minh nào ở phương Đông vào thời cổ đại vẫn tiếp tục phát triển thời kỳ trung đại?",
@@ -1039,8 +1039,8 @@
             "D. Văn minh A-dơ-tếch và văn minh In-ca."
           ],
           "id": 73,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 16. Đâu không phải là tiêu chuẩn cơ bản để nhận diện văn minh loài người?",
@@ -1111,8 +1111,8 @@
             "D. La Mã."
           ],
           "id": 79,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         }
       ]
     },
@@ -1164,8 +1164,8 @@
             "D. Hy Lạp."
           ],
           "id": 80,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 2. Chữ viết của người Ai Cập cổ đại là",
@@ -1332,8 +1332,8 @@
             "D. Ai Cập."
           ],
           "id": 94,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 16. Vua ở Ai Cập được gọi là gì?",
@@ -1368,8 +1368,8 @@
             "D. Châu Mĩ."
           ],
           "id": 97,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 19. Nội dung nào sau đây là nguồn gốc dẫn đến sự xuất hiện sớm của chữ viết ở Ai Cập thời kì cổ đại?",
@@ -1380,8 +1380,8 @@
             "D. Nhu cầu đo đạc lại ruộng đất theo định kì hàng năm."
           ],
           "id": 98,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 20. Sự ra đời của chữ viết Ai Cập thời kì cổ đại có ý nghĩa nào sau đây?",
@@ -1392,8 +1392,8 @@
             "D. Phản ánh sự phát triển cao độ của nhà nước chuyên chế."
           ],
           "id": 99,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 21. Loại hình kiến trúc tiêu biểu nhất của người Ai Cập cổ đại là",
@@ -1404,8 +1404,8 @@
             "D. Vạn lí trường thành."
           ],
           "id": 100,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 22. Nguyên liệu làm giấy viết của người Ai Cập cổ đại chủ yếu được làm từ",
@@ -1416,8 +1416,8 @@
             "D. vỏ cây tre."
           ],
           "id": 101,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 23. Thành tựu về lĩnh vực nào sau đây của cư dân Ai Cập cổ đại đã được ứng dụng hiệu quả trong việc xây dựng kim tự tháp?",
@@ -1428,8 +1428,8 @@
             "D. Chữ viết."
           ],
           "id": 102,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 24. Những thành tựu về toán học của cư dân Ai Cập cổ đại đã được ứng dụng rộng rãi trong việc",
@@ -1440,8 +1440,8 @@
             "D. phân chia đẳng cấp."
           ],
           "id": 103,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 25. Yếu tố nào sau đây thúc đẩy sự ra đời sớm của những tri thức toán học ở Ai Cập cổ đại?",
@@ -1452,8 +1452,8 @@
             "D. Nhu cầu phát triển thương nghiệp."
           ],
           "id": 104,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         }
       ]
     },
@@ -1530,8 +1530,8 @@
             "D. Kim văn."
           ],
           "id": 105,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 2. Chữ viết của người Trung Quốc được cải tiến và định hình như ngày nay vào thời nhà",
@@ -1542,8 +1542,8 @@
             "D. Tần."
           ],
           "id": 106,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 3. Chữ viết của người Trung Quốc được cải tiến và thống nhất gọi là chữ Tiểu Triện vào thời nào?",
@@ -1566,8 +1566,8 @@
             "D. nhờ có chữ viết, tư tưởng Nho giáo, Đạo giáo có điều kiện phát triển ra bên ngoài thế giới."
           ],
           "id": 108,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 5. Thời cổ đại của Trung Quốc, thơ ca phát triển, hàng trăm bài thơ đã được tập hợp trong",
@@ -1578,8 +1578,8 @@
             "D. Tập thơ Đường."
           ],
           "id": 109,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 6. Văn học Trung Quốc thời trung đại, thơ phát triển mạnh dưới thời",
@@ -1650,8 +1650,8 @@
             "D. Y học."
           ],
           "id": 115,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 12. Trung Quốc vào thời Nam - Bắc triều, nhà toán học Tổ Xung Chi đã tìm ra",
@@ -1686,8 +1686,8 @@
             "D. Đường."
           ],
           "id": 118,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 15. Nét độc đáo của nghệ thuật điêu khắc Trung Hoa cổ - trung đại là",
@@ -1698,8 +1698,8 @@
             "D. tượng gốm điêu khắc thủ công."
           ],
           "id": 119,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 16. Chọn đáp án đúng nhất điền vào chỗ trống: Trong hội họa của Trung Quốc cổ - trung đại, tranh được vẽ với phong cách ước lệ, chú trọng .......................hơn..........................",
@@ -1746,8 +1746,8 @@
             "D. 10 Thiên can và 12 Địa chi."
           ],
           "id": 123,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 20. Người sáng lập ra học phái Nho gia ở Trung Quốc là",
@@ -2511,8 +2511,8 @@
             "D. phục hưng giá trị văn hóa Hy Lạp-La Mã cổ và sáng tạo nền văn hóa mới của giai cấp tư sản."
           ],
           "id": 173,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 3: Nội dung nào không phản ánh đúng những nội dung cơ bản của phong trào văn hóa Phục hưng?",
@@ -2764,8 +2764,8 @@
             "D. ngành dệt."
           ],
           "id": 190,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 6: Việc phát minh ra máy hơi nước vào cuối thế kỉ XVIII đã",
@@ -2812,8 +2812,8 @@
             "D. Thúc đẩy quá trình thị trường hóa nền kinh tế thế giới."
           ],
           "id": 194,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 10: Sự ra đời của máy hơi nước vào cuối thế kỉ XVIII gắn liền với công lao to lớn của",
@@ -3247,8 +3247,8 @@
             "D. Nhật Bản."
           ],
           "id": 223,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 2: Cuộc cách mạng công nghiệp lần thứ ba diễn ra trong khoảng thời gian nào sau đây?",
@@ -3259,8 +3259,8 @@
             "D. Từ nửa sau thế kỉ XIX đến nửa sau thế kỉ XX."
           ],
           "id": 224,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 3: Thành tựu cơ bản của cách mạng công nghiệp lần thứ ba không bao gồm",
@@ -3283,8 +3283,8 @@
             "D. Cách mạng kĩ thuật số."
           ],
           "id": 226,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 5: Nội dung nào sau đây không phải là thành tựu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực công nghệ thông tin?",
@@ -3295,8 +3295,8 @@
             "D. mạng kết nối internet."
           ],
           "id": 227,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 6: Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực chinh phục vũ trụ là",
@@ -3307,8 +3307,8 @@
             "D. công nghệ nano."
           ],
           "id": 228,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 7: Thành tựu quan trọng đầu tiên của cuộc cách mạng công nghiệp lần thứ ba là",
@@ -3319,8 +3319,8 @@
             "D. máy tính."
           ],
           "id": 229,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 8: Hệ thống máy tự động là một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực nào sau đây?",
@@ -3331,8 +3331,8 @@
             "D. Chinh phục vũ trụ."
           ],
           "id": 230,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 9: Trong cuộc cách mạng công nghiệp lần thứ ba, bước tiến quan trọng của ngành công nghệ thông tin là",
@@ -3343,8 +3343,8 @@
             "D. vệ tinh nhân tạo."
           ],
           "id": 231,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 10: Sự ra đời của máy tính điện tử trong cuộc cách mạng công nghiệp lần thứ ba đã dẫn đến",
@@ -3355,8 +3355,8 @@
             "D. cơ khí hóa trong quá trình sản xuất."
           ],
           "id": 232,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 11: Sự xuất hiện và phát triển của mạng lưới kết nối Internet trong cuộc cách mạng công nghiệp lần thứ ba đã mang lại tác dụng nào sau đây?",
@@ -3367,8 +3367,8 @@
             "D. Khởi đầu quá trình điện khí hóa."
           ],
           "id": 233,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 12: Thành tựu máy tính điện tử trong cuộc cách mạng công nghiệp lần thứ ba ra đời đầu tiên ở",
@@ -3403,8 +3403,8 @@
             "D. sinh sản vô tính."
           ],
           "id": 236,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 15: Thành tựu quan trọng nào sau đây của các cuộc cách mạng công nghiệp thời kì hiện đại đã trực tiếp góp phần giải quyết vấn đề lương thực cho con người?",
@@ -3415,8 +3415,8 @@
             "D. Máy tính điện tử."
           ],
           "id": 237,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 16: Những quốc gia khởi đầu Cách mạng xanh trong nông nghiệp vào những năm 50 và 60 của thế kỉ XX là",
@@ -3427,8 +3427,8 @@
             "D. Ấn Độ và Mê-hi-cô."
           ],
           "id": 238,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 17: Từ những năm 70 của thế kỉ XX, cuộc cách mạng công nghiệp lần thứ ba diễn ra chủ yếu trên lĩnh vực",
@@ -3439,8 +3439,8 @@
             "D. công nghệ."
           ],
           "id": 239,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 18: Cuộc cách mạng công nghiệp lần thứ tư được bắt đầu trong khoảng thời gian nào sau đây?",
@@ -3463,8 +3463,8 @@
             "D. Điện toán đám mây."
           ],
           "id": 241,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 20: Thành tựu của cách mạng công nghiệp lần thứ tư không bao gồm",
@@ -3475,8 +3475,8 @@
             "D. điện toán đám mây."
           ],
           "id": 242,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 21: Đoạn trích sau đây phản ánh thành tựu của cách mạng công nghiệp lần thứ tư trên lĩnh vực nào sau đây: “Trước đây, phải mất hơn 10 năm và 2,7 tỉ USD để hoàn thành Dự án Bản đồ Gen người. Ngày nay, một gen có thể được giải mã trình tự trong vài tiếng với chi phí dưới một nghìn đô la Mỹ”\n(Cờ-lau Xva-bơ, Cách mạng công nghiệp lần thứ tư, NXB Chính trị quốc gia Sự thật, 2018, tr.44)",
@@ -3487,8 +3487,8 @@
             "D. Kĩ thuật số"
           ],
           "id": 243,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 22: Công nghệ thực tế ảo là một trong những thành tựu tiêu biểu của",
@@ -3499,8 +3499,8 @@
             "D. cách mạng công nghiệp lần thứ tư"
           ],
           "id": 244,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 23: Từ đoạn thông tin sau đây, suy luận nào sau đây không đúng: “Trong những năm đầu thế kỉ XX, đóng góp của khoa học công nghệ vào tăng trưởng kinh tế mới chỉ là 10 – 20%, đến những năm cuối thế kỉ XX, tỉ lệ này đã tăng lên 75 – 80%”\n(SGK Lịch sử 10, Bộ Cánh diều, NXB Đại học Sư phạm, 2023, tr. 43)",
@@ -3511,8 +3511,8 @@
             "D. Với cách mạng công nghiệp thời hiện đại, khoa học trở thành lực lượng sản xuất trực tiếp."
           ],
           "id": 245,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 24: Cỗ máy IBM Oát – xơn có biệt danh “Bác sĩ biết tuốt” là thành tựu tiêu biểu của cách mạng công nghiệp lần thứ tư trên lĩnh vực nào sau đây?",
@@ -3523,8 +3523,8 @@
             "D. Giao thông vận tải"
           ],
           "id": 246,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 25: Cuộc cách mạng công nghiệp lần thứ tư diễn ra từ đầu thế kỉ XXI trong bối cảnh",
@@ -3535,8 +3535,8 @@
             "D. nền sản xuất bắt đầu chuyển từ cơ khí hóa sang điện khí hóa"
           ],
           "id": 247,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 26: Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ tư trên lĩnh vực vật lý là",
@@ -3547,8 +3547,8 @@
             "D. công nghệ tế bào"
           ],
           "id": 248,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 27: Cuộc cách mạng công nghiệp lần thứ ba và lần thứ tư đã đưa nhân loại bước sang nền văn minh",
@@ -3571,8 +3571,8 @@
             "D. thúc đẩy sự giao lưu, kết nối văn hoá toàn cầu."
           ],
           "id": 250,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 29: Cách mạng công nghiệp lần thứ ba và lần thứ tư đã làm tăng sự lệ thuộc của con người vào công nghệ, phát sinh tình trạng văn hóa lai căng, nguy cơ đánh mất văn hóa truyền thống. Thông tin trên phản ánh",
@@ -3583,8 +3583,8 @@
             "D. tác động tiêu cực của các cuộc cách mạng công nghiệp thời hiện đại"
           ],
           "id": 251,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 30: Nguồn gốc chung dẫn đến các cuộc cách mạng công nghiệp thời cận đại và hiện đại là do",
@@ -3595,8 +3595,8 @@
             "D. nhu cầu cuộc sống và sản xuất."
           ],
           "id": 252,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 31: Nội dung nào sau đây không phản ánh đúng ý nghĩa của các cuộc cách mạng công nghiệp thời kì hiện đại?",
@@ -3607,8 +3607,8 @@
             "D. Thúc đẩy giao lưu văn hóa giữa các quốc gia và khu vực trên thế giới"
           ],
           "id": 253,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 32: Nội dung nào sau đây phản ánh đúng ý nghĩa của các cuộc cách mạng công nghiệp thời kì hiện đại về mặt xã hội?",
@@ -3631,8 +3631,8 @@
             "D. nguy cơ đánh mất văn hóa truyền thống"
           ],
           "id": 255,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 34: Các cuộc cách mạng công nghiệp lần thứ ba và lần thứ tư đã làm cho",
@@ -3643,8 +3643,8 @@
             "D. số lượng công nhân có tri thức, kĩ năng giảm dần"
           ],
           "id": 256,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 35: Tự động hóa và công nghệ rô – bốt ra đời trong các cuộc cách mạng công nghiệp thời kì hiện đại đã",
@@ -3655,8 +3655,8 @@
             "D. thúc đẩy sự giao lưu văn hóa toàn cầu"
           ],
           "id": 257,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         }
       ]
     },
@@ -3754,8 +3754,8 @@
             "D. tiếp tục phát triển."
           ],
           "id": 258,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 2: Văn minh phương Tây bắt đầu ảnh hưởng đến Đông Nam Á trong giai đoạn",
@@ -3766,8 +3766,8 @@
             "D. thế kỉ XIX đến nay."
           ],
           "id": 259,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 3: Trong khoảng thời gian từ đầu Công nguyên đến thế kỉ VII, thành tựu nổi bật nhất của văn minh Đông Nam Á là",
@@ -3778,8 +3778,8 @@
             "D. các quốc gia có nhiều chuyển biến mới về văn hoá."
           ],
           "id": 260,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 4: Một trong những yếu tố tác động đến sự khủng hoảng và suy vong của nhiều quốc gia phong kiến Đông Nam Á từ thế kỉ XVI đến thế kỉ XIX là",
@@ -3790,8 +3790,8 @@
             "D. sự bành trướng và xâm lược của Trung Hoa."
           ],
           "id": 261,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 5: Từ đầu Công nguyên đến thế kỉ VII, quốc gia cổ đại nào sau đây đã được hình thành trên lãnh thổ Việt Nam ngày nay?",
@@ -3802,8 +3802,8 @@
             "D. Ma-lay-u"
           ],
           "id": 262,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 6: Văn minh Đông Nam Á giai đoạn đầu Công nguyên đến đến thế kỉ VII có điểm tương đồng nào sau đây so với văn minh Đông Nam Á giai đoạn thế kỉ VII đến thế kỉ XV?",
@@ -3814,8 +3814,8 @@
             "D. Chịu ảnh hưởng sâu sắc của văn minh phương Tây."
           ],
           "id": 263,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 7: Văn minh Đông Nam Á từ thế kỉ XVI đến thế kỉ XIX có điểm khác biệt nào sau đây so với văn minh Đông Nam Á giai đoạn thế kỉ VII đến thế kỉ XV?",
@@ -3826,8 +3826,8 @@
             "D. Nền văn minh bước vào giai đoạn phát triển cực thịnh."
           ],
           "id": 264,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 8: Một trong những đặc điểm nổi bật của văn minh Đông Nam Á từ thế kỉ VII đến thế kỉ XV là",
@@ -3838,8 +3838,8 @@
             "D. sự suy yếu về chính trị và văn hóa của các quốc gia phong kiến."
           ],
           "id": 265,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 9: Sự ra đời của thánh lễ Thiên chúa giáo đầu tiên ở Phi-lip-pin năm 1521 là biểu hiện của sự du nhập yếu tố văn hóa nào sau đây đến từ phương Tây?",
@@ -3850,8 +3850,8 @@
             "D. Nghệ thuật."
           ],
           "id": 266,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 10: Nguyên nhân chủ yếu dẫn đến sự phát triển rực rỡ của văn hóa Đông Nam Á từ thế kỉ X đến thế kỉ XV là",
@@ -3862,8 +3862,8 @@
             "D. sự phát triển về kinh tế và ổn định chính trị."
           ],
           "id": 267,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 11: “Cư dân Đông Nam Á thờ thần Lúa để bảo trợ cho sản xuất nông nghiệp”. Thông tin trên phản ánh tín ngưỡng nào sau đây của cư dân Đông Nam Á?",
@@ -3874,8 +3874,8 @@
             "D. Tín ngưỡng thờ thần động vật."
           ],
           "id": 268,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 12: Ngày giổ tổ Hùng Vương của Việt Nam hàng năm là một biểu hiện của hình thức tín ngưỡng nào sau đây?",
@@ -3886,8 +3886,8 @@
             "D. Tín ngưỡng phồn thực."
           ],
           "id": 269,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 13: Nội dung nào sau đây phản ánh đúng đặc điểm của các hình thức tín ngưỡng bản địa của cư dân Đông Nam Á ?",
@@ -3898,8 +3898,8 @@
             "D. Xuất phát từ đặc thù kinh tế nông nghiệp và có sự thống nhất trong đa dạng."
           ],
           "id": 270,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 14: “Cư dân Đông Nam Á thờ các con vật gần gũi với cuộc sống của xã hội nông nghiệp như trâu, cóc, chim, rắn…”. Thông tin trên phản ánh tín ngưỡng nào sau đây của cư dân Đông Nam Á?",
@@ -3910,8 +3910,8 @@
             "D. Tín ngưỡng thờ thần động vật."
           ],
           "id": 271,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 15: Tôn giáo nào sau đây có nguồn gốc từ Ấn Độ và được truyền bá mạnh mẽ vào khu vực Đông Nam Á?",
@@ -3922,8 +3922,8 @@
             "D. Thiên chúa giáo."
           ],
           "id": 272,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 16: Từ thế kỉ XVI, thông qua hoạt động của các gião sĩ phương Tây, tôn giáo nào sau đây đã từng bước được du nhập vào Đông Nam Á ?",
@@ -3934,8 +3934,8 @@
             "D. Thiên chúa giáo."
           ],
           "id": 273,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 17: Từ khoảng thế kỉ XIII, tôn giáo nào theo chân các thương nhân A-rập và Ấn Độ du nhập vào Đông Nam Á?",
@@ -3946,8 +3946,8 @@
             "D. Hồi giáo."
           ],
           "id": 274,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 18. Những tôn giáo nào sau đây có nguồn gốc từ Ấn Độ và được truyền bá mạnh mẽ vào khu vực Đông Nam Á?",
@@ -3958,8 +3958,8 @@
             "D. Hin-đu giáo, Công giáo."
           ],
           "id": 275,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 19. Ở khu vực Đông Nam Á, quốc gia nào sau đây chịu ảnh hưởng sâu sắc nhất của văn minh Trung Hoa?",
@@ -3970,8 +3970,8 @@
             "D. Mi-an-ma."
           ],
           "id": 276,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 20: Nội dung nào sau đây phản ánh đúng đặc điểm của các tôn giáo ở khu vực Đông Nam Á thời kì cổ - trung đại?",
@@ -3982,8 +3982,8 @@
             "D. Quá trình du nhập của các tôn giáo không thông qua hoạt động thương mại."
           ],
           "id": 277,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 21: Trên cơ sở tiếp thu một phần chữ Hán của Trung Quốc, người Việt đã sáng tạo ra chữ viết riêng của mình, có tên gọi là",
@@ -3994,8 +3994,8 @@
             "D. chữ Mã Lai cổ."
           ],
           "id": 278,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 22: Người Chăm, người Khơ-me, người Thái,… ở khu vực Đông Nam Á đã sáng tạo ra chữ viết riêng của mình trên cơ sở tiếp thu chữ viết cổ của quốc gia nào sau đây ?",
@@ -4006,8 +4006,8 @@
             "D. Trung Quốc."
           ],
           "id": 279,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 23: Người Việt đã sáng tạo ra chữ Nôm trên cơ sở tiếp thu chữ Hán của quốc gia nào sau đây ?",
@@ -4018,8 +4018,8 @@
             "D. Trung Quốc."
           ],
           "id": 280,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 24: Nội dung nào sau đây phản ánh đúng đặc điểm về chữ viết ở khu vực Đông Nam Á thời kì cổ - trung đại?",
@@ -4030,8 +4030,8 @@
             "D. Ra đời cùng quá trình du nhập tôn giáo."
           ],
           "id": 281,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 25: Nội dung nào sau đây phản ánh đúng ý nghĩa của việc cư dân Đông Nam Á sáng tạo ra chữ viết riêng của mình từ thời kì cổ - trung đại?",
@@ -4042,8 +4042,8 @@
             "D. Tạo tiền đề trực tiếp cho sự phát triển kinh tế, khoa học kĩ thuật."
           ],
           "id": 282,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 26: Một trong những tác phẩm văn học dân gian nổi tiếng của Việt Nam thời kì cổ - trung đại là",
@@ -4054,8 +4054,8 @@
             "D. Thần thoại Pun-nha Nhun-nho."
           ],
           "id": 283,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 27: Một trong những thể loại văn học dân gian tiêu biểu ở khu vực Đông Nam Á thời kì cổ -  trung đại là",
@@ -4066,8 +4066,8 @@
             "D. thần thoại."
           ],
           "id": 284,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 28: Một trong những tác phẩm văn học viết tiêu biểu của Malayxia thời kì cổ - trung đại là",
@@ -4078,8 +4078,8 @@
             "D. Ức trai thi tập"
           ],
           "id": 285,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 29: Tác phẩm nào sau đây không phải là thành tựu văn học của Việt Nam thời kì cổ - trung đại?",
@@ -4090,8 +4090,8 @@
             "D. Bình ngô đại cáo."
           ],
           "id": 286,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 30: Tác phẩm nào sau đây là thành tựu văn học của Cam-pu-chia thời kì cổ - trung đại?",
@@ -4102,8 +4102,8 @@
             "D. Riêm Kê."
           ],
           "id": 287,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 31: Một trong những công trình kiến trúc điển hình ở khu vực Đông Nam Á thời kì cổ - trung đại là",
@@ -4114,8 +4114,8 @@
             "D. Kim tự tháp."
           ],
           "id": 288,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 32: Điền vào chỗ trống để hoàn thành câu dưới đây: “Khu đền Ăng-co Vát và Ăng-co Thom ở Cam-pu-chia, Thạt Luổng ở Lào, tháp Chàm ở Việt Nam vừa mang dáng dấp kiến trúc của ..............., vừa có nét độc đáo riêng của nền văn hoá dân tộc, là những di tích lịch sử - văn hoá nổi tiếng thế giới”.",
@@ -4126,8 +4126,8 @@
             "D. In-đô-nê-xi-a."
           ],
           "id": 289,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 33: Công trình kiến trúc nào ở khu vực Đông Nam Á là di sản văn hóa thế giới?",
@@ -4150,8 +4150,8 @@
             "D. La Mã."
           ],
           "id": 291,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 35: Một trong những công trình kiến trúc Phật giáo điển hình ở khu vực Đông Nam Á là",
@@ -4162,8 +4162,8 @@
             "D. lăng mộ Ta-giơ Ma-han."
           ],
           "id": 292,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 36: Một trong những công trình điêu khắc tiêu biểu ở khu vực Đông Nam Á thời kì cổ - trung đại là",
@@ -4174,8 +4174,8 @@
             "D. đấu trường La Mã."
           ],
           "id": 293,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 37: Nội dung nào sau đây là điểm tương đồng giữa văn minh Đông Nam Á thời kì cổ - trung đại với văn minh phương Tây thời kì cổ đại?",
@@ -4186,8 +4186,8 @@
             "D. Cùng sử dụng chung một ngôn ngữ."
           ],
           "id": 294,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 38: Nội dung nào sau đây là nguy cơ của nền văn minh Đông Nam Á trước xu thế toàn cầu hóa hiện nay?",
@@ -4210,8 +4210,8 @@
             "D. Đạt trình độ cao và mang tính độc đáo."
           ],
           "id": 296,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 40: Nội dung nào sau đây phản ánh đúng đặc điểm của nghệ thuật điêu khắc ở khu vực Đông Nam Á thời kì cổ - trung đại?",
@@ -4222,8 +4222,8 @@
             "D. Nghệ thuật điêu khắc ít chịu ảnh hưởng của tôn giáo."
           ],
           "id": 297,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         }
       ]
     },
@@ -4287,8 +4287,8 @@
             "D. Phù Nam."
           ],
           "id": 298,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 2: Nền văn minh Văn Lang - Âu Lạc chủ yếu được hình thành trên lưu vực các con sông nào sau đây?",
@@ -4299,8 +4299,8 @@
             "D. Sông Bạch Đằng, sông Hương."
           ],
           "id": 299,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 3: Nền văn minh Văn Lang - Âu Lạc được hình thành ở khu vực nào của Việt Nam ngày nay?",
@@ -4311,8 +4311,8 @@
             "D. Vùng ven biển Nam Trung Bộ và Nam Bộ Việt Nam."
           ],
           "id": 300,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 4: Điều kiện tự nhiên nào sau đây tạo thuận lợi cho cư dân Văn Lang - Âu Lạc phát triển ngành nông nghiệp lúa nước?",
@@ -4323,8 +4323,8 @@
             "D. Tiếp giáp với các nền văn minh lớn."
           ],
           "id": 301,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 5: Nội dung nào sau đây là cơ sở kinh tế dẫn đến sự hình thành nền văn minh Văn Lang - Âu Lạc?",
@@ -4335,8 +4335,8 @@
             "D. Nông nghiệp trồng lúa nước đạt trình độ phát triển cao."
           ],
           "id": 302,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 6: Cư dân Văn Lang - Âu Lạc sớm phát triển nghề luyện kim nhờ điều kiện tự nhiên thuận lợi nào sau đây?",
@@ -4347,8 +4347,8 @@
             "D. Hệ thống sông ngòi chằng chịt."
           ],
           "id": 303,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 7: Văn minh Văn Lang - Âu Lạc được hình thành trên cơ sở của nền văn hóa nào sau đây?",
@@ -4359,8 +4359,8 @@
             "D. Sơn Vi."
           ],
           "id": 304,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 8: Nội dung nào sau đây là cơ sở xã hội dẫn đến sự hình thành nền văn minh Văn Lang - Âu Lạc?",
@@ -4371,8 +4371,8 @@
             "D. Công cụ lao động bằng kim khí được sử dụng phổ biến."
           ],
           "id": 305,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 9: Nội dung nào sau đây không phản ánh đúng cơ sở dẫn đến sự ra đời của nhà nước Văn Lang - Âu Lạc?",
@@ -4383,8 +4383,8 @@
             "D. Những chuyển biến cơ bản trong đời sống kinh tế - xã hội."
           ],
           "id": 306,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 10: Khí hậu nhiệt đới ẩm gió mùa, lượng mưa nhiều là điều kiện thuận lợi để cư dân Văn Lang - Âu Lạc phát triển ngành kinh tế nào sau đây?",
@@ -4395,8 +4395,8 @@
             "D. Chế tạo vũ khí."
           ],
           "id": 307,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 11: Nhà nước nào sau đây ở Việt Nam ra đời vào khoảng thế kỉ VII TCN?",
@@ -4407,8 +4407,8 @@
             "D. Đại Việt."
           ],
           "id": 308,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 12: Kinh đô của nhà nước Văn Lang đặt tại",
@@ -4419,8 +4419,8 @@
             "D. Quy Nhơn (Bình Định)."
           ],
           "id": 309,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 13: Năm 208 TCN, nước Âu Lạc ra đời, đặt kinh đô tại",
@@ -4443,8 +4443,8 @@
             "D. đại hành khiển"
           ],
           "id": 311,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 15: Bộ máy hành chính nhà nước dưới thời kì Văn Lang không tồn tại chức vụ nào sau đây?",
@@ -4455,8 +4455,8 @@
             "D. Thượng thư."
           ],
           "id": 312,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 16: Nhà nước nào sau đây là sự kế thừa và phát triển của nhà nước Văn Lang?",
@@ -4467,8 +4467,8 @@
             "D. Phù Nam."
           ],
           "id": 313,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 17: Một trong những biểu hiện chứng tỏ bước phát triển của nước Âu Lạc so với quốc gia Văn Lang là",
@@ -4479,8 +4479,8 @@
             "D. Bảo vệ vững chắc độc lập dân tộc trước sự xâm lược của quân Nam Hán."
           ],
           "id": 314,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 18: Nội dung nào sau đây phản ánh đúng đặc điểm của bộ máy nhà nước Văn Lang - Âu Lạc?",
@@ -4491,8 +4491,8 @@
             "D. Phân quyền, pháp trị."
           ],
           "id": 315,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 19: Một trong những công trình kiến trúc tiêu biểu được xây dựng dưới thời kì nhà nước Âu Lạc là",
@@ -4503,8 +4503,8 @@
             "D. chùa Dâu."
           ],
           "id": 316,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 20: Nội dung nào sau đây phản ánh sự phát triển kinh tế của cư dân Văn Lang - Âu Lạc?",
@@ -4515,8 +4515,8 @@
             "D. Làm chủ nhiều vùng rộng lớn ở Đông Nam Á."
           ],
           "id": 317,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 21: Ngành kinh tế nào sau đây phát triển mạnh dưới thời kì Văn Lang - Âu Lạc?",
@@ -4551,8 +4551,8 @@
             "D. Nông nghiệp lúa nước."
           ],
           "id": 320,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 24: Hiện vật nào sau đây trở thành biểu tượng của nền văn minh Văn Lang - Âu Lạc?",
@@ -4575,8 +4575,8 @@
             "D. Cơ khí."
           ],
           "id": 322,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 26: Nhận xét nào sau đây là đúng về hoạt động kinh tế của cư dân Văn Lang - Âu Lạc?",
@@ -4587,8 +4587,8 @@
             "D. Hoạt động kinh tế đa dạng phục vụ chủ yếu cho xuất khẩu ra bên ngoài."
           ],
           "id": 323,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 27: Nội dung nào sau đây không phản ánh đúng đời sống tinh thần của cư dân Văn Lang - Âu Lạc?",
@@ -4599,8 +4599,8 @@
             "D. Nghệ thuật điêu khắc đạt trình độ thẩm mĩ cao."
           ],
           "id": 324,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 28: Tục thờ thần Mặt Trời là biểu hiện của tín ngưỡng nào sau đây của cư dân Văn Lang - Âu Lạc?",
@@ -4611,8 +4611,8 @@
             "D. Thờ thần động vật."
           ],
           "id": 325,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 29: Một trong những nét độc đáo trong đời sống tinh thần của cư dân Văn Lang - Âu Lạc là",
@@ -4623,8 +4623,8 @@
             "D. tục lệ chôn người chết trong các mộ chum."
           ],
           "id": 326,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 30: Cư dân Văn Lang - Âu Lạc không có phong tục, tập quán nào sau đây?",
@@ -4635,8 +4635,8 @@
             "D. thờ thần Dớt."
           ],
           "id": 327,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 31: Nhận xét nào dưới đây là không đúng về vai trò của nền văn minh Văn Lang - Âu Lạc đối với tiến trình phát triển của lịch sử Việt Nam?",
@@ -4659,8 +4659,8 @@
             "D. Xuất phát từ nhu cầu đoàn kết phát triển kinh tế, chống ngoại xâm."
           ],
           "id": 329,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 33: Nội dung nào dưới đây không phản ánh đúng đời sống tinh thần của người Việt cổ trong xã hội Văn Lang - Âu Lạc?",
@@ -4683,8 +4683,8 @@
             "D. Đặt nền tảng cho sự phát triển của các nền văn minh sau này."
           ],
           "id": 331,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         }
       ]
     },
@@ -4870,8 +4870,8 @@
             "D. Phù Nam."
           ],
           "id": 332,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 2: Nền văn minh Chăm-pa chủ yếu được hình thành trên lưu vực con sông nào sau đây?",
@@ -4894,8 +4894,8 @@
             "D. Vùng ven biển Nam Trung Bộ và các tỉnh Nam Bộ."
           ],
           "id": 334,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 4: Những cánh đồng màu mỡ ven sông Thu Bồn đã tạo điều kiện thuận lợi để cư dân cổ Chăm-pa phát triển ngành kinh tế nào sau đây?",
@@ -4906,8 +4906,8 @@
             "D. Thương mại đường biển."
           ],
           "id": 335,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 5: Nội dung nào sau đây là cơ sở kinh tế dẫn đến sự hình thành nền văn minh Chăm-pa?",
@@ -4918,8 +4918,8 @@
             "D. Kinh tế nông nghiệp, thủ công nghiệp tương đối phát triển."
           ],
           "id": 336,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 6: Nội dung nào sau đây là một trong những cơ sở dẫn đến sự hình thành và phát triển của văn minh Chăm-pa?",
@@ -4930,8 +4930,8 @@
             "D. Nền văn hóa Óc Eo đã phát triển đến cực thịnh."
           ],
           "id": 337,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 7: Văn minh Chăm-pa được hình thành trên cơ sở của nền văn hóa nào sau đây?",
@@ -4942,8 +4942,8 @@
             "D. Phùng Nguyên."
           ],
           "id": 338,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 8: Nội dung nào sau đây là cơ sở xã hội dẫn đến sự hình thành nền văn minh Chăm-pa?",
@@ -4954,8 +4954,8 @@
             "D. Công cụ lao động bằng kim khí được sử dụng phổ biến."
           ],
           "id": 339,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 9: Nội dung nào sau đây không phản ánh đúng cơ sở dẫn đến sự ra đời của nhà nước Chăm-pa?",
@@ -4966,8 +4966,8 @@
             "D. Những chuyển biến cơ bản trong đời sống kinh tế - xã hội."
           ],
           "id": 340,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 10: Văn hóa Ấn Độ ảnh hưởng sâu sắc đến văn minh Chăm-pa thông qua vai trò to lớn của tầng lớp",
@@ -4978,8 +4978,8 @@
             "D. các nhà truyền giáo."
           ],
           "id": 341,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 11: Nhà nước cổ đại nào sau đây ở Việt Nam ra đời vào khoảng thế kỉ II?",
@@ -4990,8 +4990,8 @@
             "D. Chăm-pa."
           ],
           "id": 342,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 12: Nội dung nào sau đây không phải là cơ sở hình thành của văn minh Chăm-pa?",
@@ -5002,8 +5002,8 @@
             "D. Chịu ảnh hưởng của nền văn hóa Trung Hoa."
           ],
           "id": 343,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 13: Nội dung nào sau đây là điểm khác biệt về cơ sở hình thành của nền văn minh Chăm-pa so với nền văn minh Văn Lang - Âu Lạc?",
@@ -5014,8 +5014,8 @@
             "D. Chịu ảnh hưởng sâu sắc của nền văn minh Ấn Độ."
           ],
           "id": 344,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 14: Văn minh Chăm-pa có đặc điểm nổi bật nào sau đây?",
@@ -5026,8 +5026,8 @@
             "D. Kết hợp giữa văn hoá Ấn Độ với văn hoá Phù Nam."
           ],
           "id": 345,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 15. Trên cơ sở của văn hoá Sa Huỳnh, quốc gia cổ đại nào sau đây đã được hình thành trên lãnh thổ Việt Nam?",
@@ -5038,8 +5038,8 @@
             "D. Phù Nam."
           ],
           "id": 346,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 16: Nhà nước Chăm-pa được tổ chức theo mô hình của thể chế",
@@ -5050,8 +5050,8 @@
             "D. quân chủ lập hiến"
           ],
           "id": 347,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 17: Dưới thời kì nhà nước Chăm-pa, ở cấp địa phương, cả nước được chia thành các",
@@ -5062,8 +5062,8 @@
             "D. phủ, huyện, tổng."
           ],
           "id": 348,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 18: Hoạt động kinh tế chủ yếu của cư dân Chăm-pa là",
@@ -5074,8 +5074,8 @@
             "D. buôn bán bằng đường biển."
           ],
           "id": 349,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 19: Nội dung nào sau đây phản ánh sự phát triển kinh tế của cư dân Chăm-pa?",
@@ -5086,8 +5086,8 @@
             "D. Công nghiệp đóng tàu biển đóng vai trò chủ đạo."
           ],
           "id": 350,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 20: Ngành kinh tế nào sau đây phát triển mạnh dưới thời kì nhà nước Chăm-pa?",
@@ -5098,8 +5098,8 @@
             "D. Chế tạo vũ khí."
           ],
           "id": 351,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 21: Nội dung nào sau đây không phản ánh đúng đời sống vật chất của cư dân Chăm-pa?",
@@ -5134,8 +5134,8 @@
             "D. Ấn Độ."
           ],
           "id": 354,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 24: Cư dân Chăm-pa đã sáng tạo ra chữ Chăm cổ trên cơ sở tiếp thu chữ viết nào sau đây?",
@@ -5146,8 +5146,8 @@
             "D. Chữ Nôm."
           ],
           "id": 355,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 25: Công trình kiến trúc nào sau đây của văn minh Chăm-pa được công nhận là di sản văn hóa thế giới?",
@@ -5170,8 +5170,8 @@
             "D. Lễ hội Lồng tồng."
           ],
           "id": 357,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 27: Nội dung nào sau đây là điểm tương đồng giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
@@ -5182,8 +5182,8 @@
             "D. Chịu ảnh hưởng văn minh Ấn Độ."
           ],
           "id": 358,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 28: Nhận xét nào sau đây là đúng về vai trò của nền văn minh Chăm-pa đối với tiến trình phát triển của lịch sử Việt Nam?",
@@ -5194,8 +5194,8 @@
             "D. Là cơ sở chủ yếu hình thành nền văn minh Đại Việt."
           ],
           "id": 359,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 0,
+          "correctAnswer": 0
         },
         {
           "question": "Câu 29: Nội dung nào sau đây là điểm tương đồng về kinh tế giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
@@ -5206,8 +5206,8 @@
             "D. Giao lưu buôn bán với phương Tây phát triển."
           ],
           "id": 360,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         },
         {
           "question": "Câu 30: Nội dung nào sau đây không phản ánh đúng đời sống tinh thần của cư dân Chăm-pa?",
@@ -5218,8 +5218,8 @@
             "D. Sử dụng trống đồng Đông Sơn trong lễ hội."
           ],
           "id": 361,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 31: Văn minh Chăm-pa và văn minh Văn Lang - Âu Lạc có sự khác biệt về",
@@ -5230,8 +5230,8 @@
             "D. tiếp thu tôn giáo."
           ],
           "id": 362,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 3,
+          "correctAnswer": 3
         },
         {
           "question": "Câu 32: Nội dung nào sau đây là điểm tương đồng về đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Chăm-pa?",
@@ -5242,8 +5242,8 @@
             "D. Sớm sáng tạo ra chữ viết riêng."
           ],
           "id": 363,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 2,
+          "correctAnswer": 2
         },
         {
           "question": "Câu 33: Trước khi tiếp nhận nền văn hóa từ bên ngoài, cư dân Chăm-pa có nền văn hóa bản địa nào sau đây?",
@@ -5254,8 +5254,8 @@
             "D. Phát triển kinh tế nông nghiệp lúa nước."
           ],
           "id": 364,
-          "correct": -1,
-          "correctAnswer": -1
+          "correct": 1,
+          "correctAnswer": 1
         }
       ]
     },
