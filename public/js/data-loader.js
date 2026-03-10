@@ -93,7 +93,7 @@ const DataLoader = {
               type: 'mcq',
               question: q.question,
               options: q.options,
-              correctAnswer: q.correctAnswer, // make sure it matches the quiz property name
+              correctAnswer: q.correctAnswer !== undefined ? q.correctAnswer : q.correct, // Handle both correct and correctAnswer
               lessonBai: lesson.bai,
               lessonTitle: lesson.title
             });
