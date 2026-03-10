@@ -282,10 +282,8 @@ const Study = {
           <div class="study-badge tf">Đúng/Sai</div>
           <div class="study-passage">${this.escapeHtml(q.passage)}</div>
           <div class="practice-statements">
-            ${q.statements.map((s, i) => `
-              const answered = tfState[i] !== undefined;
-              const userVal = tfState[i];
-              const isCorrect = answered ? userVal === s.correct : null;
+            ${q.statements.map((s, i) => {
+              return `
                 <div class="practice-tf-stmt" id="practice-tf-stmt-${i}">
                   <span class="study-tf-letter">${String.fromCharCode(97 + i)})</span>
                   <span class="study-tf-text">${this.escapeHtml(s.question)}</span>
@@ -294,7 +292,8 @@ const Study = {
                       <button class="tf-btn" onclick="Study.practiceSelectTF(${i}, false)">Sai</button>
                   </div>
                 </div>
-              `).join('')}
+              `;
+            }).join('')}
           </div>
           <button id="practice-next-btn" class="nav-btn next hidden" onclick="Study.practiceNext()">Tiếp tục →</button>
         </div>
