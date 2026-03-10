@@ -4518,7 +4518,7 @@
     {
       "id": 23,
       "bai": 12,
-      "title": "Bài 12: Truyền thống yêu nước và cách mạng (Trắc nghiệm)",
+      "title": "Bài 12: Văn minh Văn Lang - Âu Lạc (Trắc nghiệm)",
       "type": "multiple",
       "questions": [
         {
@@ -4900,7 +4900,7 @@
     {
       "id": 24,
       "bai": 12,
-      "title": "Bài 12: Truyền thống yêu nước và cách mạng (Đúng/Sai)",
+      "title": "Bài 12: Văn minh Văn Lang - Âu Lạc (Đúng/Sai)",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -5118,7 +5118,7 @@
     {
       "id": 25,
       "bai": 13,
-      "title": "Bài 13: Xây dựng đất nước theo con đường XHCN (Trắc nghiệm)",
+      "title": "Bài 13: Văn minh Chăm-pa (Trắc nghiệm)",
       "type": "multiple",
       "questions": [
         {
@@ -5489,7 +5489,7 @@
     {
       "id": 26,
       "bai": 13,
-      "title": "Bài 13: Xây dựng đất nước theo con đường XHCN (Đúng/Sai)",
+      "title": "Bài 13: Văn minh Chăm-pa (Đúng/Sai)",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -5602,7 +5602,7 @@
     {
       "id": 27,
       "bai": 14,
-      "title": "Bài 14: Việt Nam từ năm 1975 đến năm 1991 (Trắc nghiệm)",
+      "title": "Bài 14: Văn minh Phù Nam (Trắc nghiệm)",
       "type": "multiple",
       "questions": [
         {
@@ -6039,7 +6039,7 @@
     {
       "id": 28,
       "bai": 14,
-      "title": "Bài 14: Việt Nam từ năm 1975 đến năm 1991 (Đúng/Sai)",
+      "title": "Bài 14: Văn minh Phù Nam (Đúng/Sai)",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -6131,7 +6131,7 @@
     {
       "id": 29,
       "bai": 15,
-      "title": "Bài 15: Việt Nam từ năm 1991 đến năm 2000 (Trắc nghiệm)",
+      "title": "Bài 15: Văn minh Đại Việt (Trắc nghiệm)",
       "type": "multiple",
       "questions": [
         {
@@ -6403,7 +6403,7 @@
     {
       "id": 30,
       "bai": 15,
-      "title": "Bài 15: Việt Nam từ năm 1991 đến năm 2000 (Đúng/Sai)",
+      "title": "Bài 15: Văn minh Đại Việt (Đúng/Sai)",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -6537,7 +6537,7 @@
     {
       "id": 31,
       "bai": 16,
-      "title": "Bài 16: Việt Nam từ năm 2001 đến năm 2015 (Trắc nghiệm)",
+      "title": "Bài 16: Các dân tộc trên đất nước Việt Nam (Trắc nghiệm)",
       "type": "multiple",
       "questions": [
         {
@@ -6842,7 +6842,7 @@
     {
       "id": 32,
       "bai": 16,
-      "title": "Bài 16: Việt Nam từ năm 2001 đến năm 2015 (Đúng/Sai)",
+      "title": "Bài 16: Các dân tộc trên đất nước Việt Nam (Đúng/Sai)",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -6955,7 +6955,7 @@
     {
       "id": 33,
       "bai": 17,
-      "title": "Bài 17: Lịch sử Việt Nam từ năm 2015 đến nay (Trắc nghiệm)",
+      "title": "Bài 17: Khối đại đoàn kết dân tộc Việt Nam (Trắc nghiệm)",
       "type": "multiple",
       "questions": [
         {
@@ -7348,7 +7348,7 @@
     {
       "id": 34,
       "bai": 17,
-      "title": "Bài 17: Lịch sử Việt Nam từ năm 2015 đến nay (Đúng/Sai)",
+      "title": "Bài 17: Khối đại đoàn kết dân tộc Việt Nam (Đúng/Sai)",
       "type": "truefalse",
       "questionGroups": [
         {
