@@ -2,7 +2,7 @@
   "lessons": [
     {
       "bai": 1,
-      "title": "Bài 1",
+      "title": "Bài 1: HIỆN THỰC LỊCH SỬ VÀ LỊCH SỬ ĐƯỢC CON NGƯỜI NHẬN THỨC",
       "type": "multiple",
       "questions": [
         {
@@ -397,7 +397,7 @@
     },
     {
       "bai": 1,
-      "title": "Bài 1",
+      "title": "Bài 1: HIỆN THỰC LỊCH SỬ VÀ LỊCH SỬ ĐƯỢC CON NGƯỜI NHẬN THỨC",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -446,7 +446,7 @@
     },
     {
       "bai": 2,
-      "title": "Bài 2",
+      "title": "Bài 2: VAI TRÒ CỦA SỬ HỌC",
       "type": "multiple",
       "questions": [
         {
@@ -765,7 +765,7 @@
     },
     {
       "bai": 2,
-      "title": "Bài 2",
+      "title": "Bài 2: VAI TRÒ CỦA SỬ HỌC",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -793,7 +793,7 @@
     },
     {
       "bai": 3,
-      "title": "Bài 3",
+      "title": "Bài 3: KHÁI NIỆM VĂN MINH",
       "type": "multiple",
       "questions": [
         {
@@ -1052,7 +1052,7 @@
     },
     {
       "bai": 3,
-      "title": "Bài 3",
+      "title": "Bài 3: KHÁI NIỆM VĂN MINH",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -1080,7 +1080,7 @@
     },
     {
       "bai": 4,
-      "title": "Bài 4",
+      "title": "Bài 4: VĂN MINH AI CẬP THỜI CỔ ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -1387,7 +1387,7 @@
     },
     {
       "bai": 4,
-      "title": "Bài 4",
+      "title": "Bài 4: VĂN MINH AI CẬP THỜI CỔ ĐẠI",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -1436,7 +1436,7 @@
     },
     {
       "bai": 5,
-      "title": "Bài 5",
+      "title": "Bài 5: VĂN MINH TRUNG HOA THỜI CỔ - TRUNG ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -1779,7 +1779,7 @@
     },
     {
       "bai": 5,
-      "title": "Bài 5",
+      "title": "Bài 5: VĂN MINH TRUNG HOA THỜI CỔ - TRUNG ĐẠI",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -1807,7 +1807,7 @@
     },
     {
       "bai": 6,
-      "title": "Bài 6",
+      "title": "Bài 6: VĂN MINH ẤN ĐỘ THỜI CỔ - TRUNG ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -2054,7 +2054,7 @@
     },
     {
       "bai": 6,
-      "title": "Bài 6",
+      "title": "Bài 6: VĂN MINH ẤN ĐỘ THỜI CỔ - TRUNG ĐẠI",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -2145,7 +2145,7 @@
     },
     {
       "bai": 7,
-      "title": "Bài 7",
+      "title": "Bài 7: VĂN MINH HY LẠP – LA MÃ THỜI CỔ ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -2380,7 +2380,7 @@
     },
     {
       "bai": 8,
-      "title": "Bài 8",
+      "title": "Bài 8: VĂN MINH THỜI PHỤC HƯNG",
       "type": "multiple",
       "questions": [
         {
@@ -2559,7 +2559,7 @@
     },
     {
       "bai": 8,
-      "title": "Bài 8",
+      "title": "Bài 8: VĂN MINH THỜI PHỤC HƯNG",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -2587,7 +2587,7 @@
     },
     {
       "bai": 9,
-      "title": "Bài 9",
+      "title": "Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI CẬN ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -3038,7 +3038,7 @@
     },
     {
       "bai": 9,
-      "title": "Bài 9",
+      "title": "Bài 9: CÁCH MẠNG CÔNG NGHIỆP THỜI CẬN ĐẠI",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -3108,7 +3108,7 @@
     },
     {
       "bai": 10,
-      "title": "Bài 10",
+      "title": "Bài 10: CÁCH MẠNG CÔNG NGHIỆP THỜI HIỆN ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -3535,7 +3535,7 @@
     },
     {
       "bai": 10,
-      "title": "Bài 10",
+      "title": "Bài 10: CÁCH MẠNG CÔNG NGHIỆP THỜI HIỆN ĐẠI",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -3605,7 +3605,7 @@
     },
     {
       "bai": 11,
-      "title": "Bài 11",
+      "title": "Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU VĂN MINH ĐÔNG NAM Á THỜI CỔ - TRUNG ĐẠI",
       "type": "multiple",
       "questions": [
         {
@@ -4092,7 +4092,7 @@
     },
     {
       "bai": 11,
-      "title": "Bài 11",
+      "title": "Bài 11: HÀNH TRÌNH PHÁT TRIỂN VÀ THÀNH TỰU VĂN MINH ĐÔNG NAM Á THỜI CỔ - TRUNG ĐẠI",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -4120,7 +4120,7 @@
     },
     {
       "bai": 12,
-      "title": "Bài 12",
+      "title": "Bài 12: VĂN MINH VĂN LANG - ÂU LẠC",
       "type": "multiple",
       "questions": [
         {
@@ -4535,7 +4535,7 @@
     },
     {
       "bai": 12,
-      "title": "Bài 12",
+      "title": "Bài 12: VĂN MINH VĂN LANG - ÂU LẠC",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -4689,7 +4689,7 @@
     },
     {
       "bai": 13,
-      "title": "Bài 13",
+      "title": "Bài 13: VĂN MINH CHĂM-PA",
       "type": "multiple",
       "questions": [
         {
@@ -5092,7 +5092,7 @@
     },
     {
       "bai": 13,
-      "title": "Bài 13",
+      "title": "Bài 13: VĂN MINH CHĂM-PA",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -5183,7 +5183,7 @@
     },
     {
       "bai": 14,
-      "title": "Bài 14",
+      "title": "Bài 14: VĂN MINH PHÙ NAM",
       "type": "multiple",
       "questions": [
         {
@@ -5658,7 +5658,7 @@
     },
     {
       "bai": 14,
-      "title": "Bài 14",
+      "title": "Bài 14: VĂN MINH PHÙ NAM",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -5749,7 +5749,7 @@
     },
     {
       "bai": 15,
-      "title": "Bài 15",
+      "title": "Bài 15: VĂN MINH ĐẠI VIỆT",
       "type": "multiple",
       "questions": [
         {
@@ -6044,7 +6044,7 @@
     },
     {
       "bai": 15,
-      "title": "Bài 15",
+      "title": "Bài 15: VĂN MINH ĐẠI VIỆT",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -6110,7 +6110,7 @@
     },
     {
       "bai": 16,
-      "title": "Bài 16",
+      "title": "Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM",
       "type": "multiple",
       "questions": [
         {
@@ -6439,7 +6439,7 @@
     },
     {
       "bai": 16,
-      "title": "Bài 16",
+      "title": "Bài 16: CÁC DÂN TỘC TRÊN ĐẤT NƯỚC VIỆT NAM",
       "type": "truefalse",
       "questionGroups": [
         {
@@ -6509,7 +6509,7 @@
     },
     {
       "bai": 17,
-      "title": "Bài 17",
+      "title": "Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC VIỆT NAM",
       "type": "multiple",
       "questions": [
         {
@@ -6936,7 +6936,7 @@
     },
     {
       "bai": 17,
-      "title": "Bài 17",
+      "title": "Bài 17: KHỐI ĐẠI ĐOÀN KẾT DÂN TỘC VIỆT NAM",
       "type": "truefalse",
       "questionGroups": [
         {
