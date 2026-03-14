@@ -253,6 +253,61 @@ body {
   color: var(--primary);
 }
 
+/* Announcement Banner */
+.announcement-banner {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.02) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 0 auto 28px;
+  max-width: 600px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.05);
+  transition: var(--transition);
+}
+
+.announcement-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.announcement-icon {
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.announcement-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.announcement-text strong {
+  font-size: 1rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.announcement-text span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+[data-theme="dark"] .announcement-banner {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+[data-theme="dark"] .announcement-text span {
+  color: var(--text-muted);
+}
+
 /* ═════════════════════════════════════════════════════════════
    GRADE TABS
    ═════════════════════════════════════════════════════════════ */
