@@ -7,10 +7,15 @@
     "start": "node server.js",
     "dev": "node server.js"
   },
-  "keywords": ["history", "quiz", "education"],
+  "keywords": [
+    "history",
+    "quiz",
+    "education"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "express": "^4.18.2"
   }
 }
