@@ -162,9 +162,11 @@ const app = {
     // Show/hide exam/practice config
     const examConfig = document.getElementById('quiz-config-exam');
     const pracConfig = document.getElementById('quiz-config-practice');
+    const fcConfig = document.getElementById('quiz-config-flashcard');
     
     if (examConfig) examConfig.style.display = mode === 'exam' ? 'block' : 'none';
     if (pracConfig) pracConfig.style.display = ['study', 'flashcard', 'practice'].includes(mode) ? 'block' : 'none';
+    if (fcConfig) fcConfig.style.display = ['study', 'flashcard'].includes(mode) ? 'block' : 'none';
 
     // Show/hide topic list for wrong mode
     const topicsList = document.getElementById('topics-list');
@@ -473,11 +475,17 @@ const app = {
           document.getElementById('active-timer-display').textContent = '∞';
         }
       } else if (this.learningMode === 'study') {
+        const chunkSizeCheck = document.getElementById('fc-chunk-size');
+        const chunkSize = chunkSizeCheck && chunkSizeCheck.value > 0 ? parseInt(chunkSizeCheck.value) : 0;
+
         this.showScreen('study');
-        Study.init(quizData, 'study');
+        Study.init(quizData, 'study', { chunkSize });
       } else if (this.learningMode === 'flashcard') {
+        const chunkSizeCheck = document.getElementById('fc-chunk-size');
+        const chunkSize = chunkSizeCheck && chunkSizeCheck.value > 0 ? parseInt(chunkSizeCheck.value) : 0;
+
         this.showScreen('flashcard');
-        Study.init(quizData, 'flashcard');
+        Study.init(quizData, 'flashcard', { chunkSize });
       } else if (this.learningMode === 'practice') {
         this.showScreen('practice');
         Study.init(quizData, 'practice');

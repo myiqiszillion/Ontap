@@ -16,13 +16,50 @@ const Study = {
   practiceAnswered: {},  // { index: { answered: true, correct: bool } }
   practiceScore: { correct: 0, wrong: 0 },
 
+  // Memorization Enhancement Settings
+  options: {
+    chunkSize: 0,
+    useHighlight: false
+  },
+  currentChunk: 0,
+
   /**
    * Initialize a learning mode
    */
-  init(data, mode) {
+  init(data, mode, options = {}) {
     this.mode = mode;
     this.subject = data.subject;
-    this.questions = data.questions;
+    this.options = { ...this.options, ...options };
+    
+    // Chunking logic
+    if (['study', 'flashcard'].includes(mode) && this.options.chunkSize > 0) {
+      this.fullQuestionsList = data.questions;
+      this.currentChunk = 0;
+      this.loadChunk();
+    } else {
+      this.fullQuestionsList = null;
+      this.questions = data.questions;
+      this.setupMode(mode);
+    }
+  },
+
+  loadChunk() {
+    const start = this.currentChunk * this.options.chunkSize;
+    const end = start + this.options.chunkSize;
+    this.questions = this.fullQuestionsList.slice(start, end);
+    this.setupMode(this.mode);
+  },
+
+  nextChunk() {
+    if (this.fullQuestionsList && (this.currentChunk + 1) * this.options.chunkSize < this.fullQuestionsList.length) {
+      this.currentChunk++;
+      this.loadChunk();
+      return true;
+    }
+    return false;
+  },
+
+  setupMode(mode) {
     this.currentIndex = 0;
 
     if (mode === 'flashcard') {
@@ -32,13 +69,35 @@ const Study = {
     }
 
     if (mode === 'practice') {
-      this.totalOriginalQuestions = data.questions.length;
+      this.totalOriginalQuestions = this.questions.length;
       this.practiceQueue = [...Array(this.questions.length).keys()];
       this.practiceScore = { correct: 0, wrong: 0 };
       this.practiceMastered = 0;
     }
 
     this.render();
+  },
+
+  /**
+   * TTS Method
+   */
+  playTTS(text, btnId) {
+    if (!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel(); // Stop playing current audio
+    
+    const btn = document.getElementById(btnId);
+    if (btn) btn.classList.add('playing');
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'vi-VN'; // Vietnamese
+    utterance.onend = () => { if (btn) btn.classList.remove('playing'); };
+    utterance.onerror = () => { if (btn) btn.classList.remove('playing'); };
+    
+    window.speechSynthesis.speak(utterance);
+  },
+
+  stopTTS() {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
   },
 
   /**
@@ -64,10 +123,13 @@ const Study = {
     progress.textContent = `${this.currentIndex + 1} / ${this.questions.length}`;
     progressBar.style.width = `${((this.currentIndex + 1) / this.questions.length) * 100}%`;
 
+    const readText = `Câu hỏi: ${q.question}. ${q.type === 'shortanswer' ? `Đáp án: ${q.correctAnswer}` : q.type === 'mcq' ? `Đáp án: ${q.options[q.correctAnswer]}` : ''}`;
+
     if (q.type === 'tf-group') {
       container.innerHTML = `
         <div class="study-card">
           <div class="study-badge tf">Đúng/Sai</div>
+          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc văn bản">🔊</button>
           <div class="study-passage">${this.escapeHtml(q.passage)}</div>
           <div class="study-answers">
             ${q.statements.map((s, i) => `
@@ -85,6 +147,7 @@ const Study = {
       container.innerHTML = `
         <div class="study-card">
           <div class="study-badge sa">Trả lời ngắn</div>
+          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc">🔊</button>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
           <div class="study-answers">
             <div class="study-option correct">
@@ -99,6 +162,7 @@ const Study = {
       container.innerHTML = `
         <div class="study-card">
           <div class="study-badge mcq">Trắc nghiệm</div>
+          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc">🔊</button>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
           <div class="study-answers">
             ${q.options.map((opt, i) => `
@@ -119,10 +183,19 @@ const Study = {
   },
 
   studyPrev() {
+    this.stopTTS();
     if (this.currentIndex > 0) { this.currentIndex--; this.renderStudy(); }
   },
   studyNext() {
-    if (this.currentIndex < this.questions.length - 1) { this.currentIndex++; this.renderStudy(); }
+    this.stopTTS();
+    if (this.currentIndex < this.questions.length - 1) { 
+        this.currentIndex++; 
+        this.renderStudy(); 
+    } else if (this.nextChunk()) {
+        alert(`Chuyển sang ${this.options.chunkSize} câu tiếp theo!`);
+    } else if (this.fullQuestionsList) {
+        alert('Đã học xong toàn bộ bài học!');
+    }
   },
 
   // ═══════════════════════════════════════════════
@@ -138,14 +211,25 @@ const Study = {
     document.getElementById('fc-progress-fill').style.width = `${(known / total) * 100}%`;
 
     if (remaining === 0) {
-      document.getElementById('flashcard-content').innerHTML = `
-        <div class="fc-done">
-          <div class="fc-done-icon">🎉</div>
-          <h2>Đã thuộc hết!</h2>
-          <p>Bạn đã ghi nhớ tất cả ${total} câu.</p>
-          <button class="fc-btn reset" onclick="Study.resetFlashcards()">🔄 Học lại từ đầu</button>
-        </div>
-      `;
+      if (this.nextChunk()) {
+          document.getElementById('flashcard-content').innerHTML = `
+            <div class="fc-done">
+              <div class="fc-done-icon">🎉</div>
+              <h2>Hoàn thành phần ${this.currentChunk} !</h2>
+              <p>Bạn đã ghi nhớ ${total} câu. Sẵn sàng học phần tiếp theo chứ?</p>
+              <button class="fc-btn known" onclick="Study.renderFlashcard()">🚀 Học phần tiếp theo ngay</button>
+            </div>
+          `;
+      } else {
+          document.getElementById('flashcard-content').innerHTML = `
+            <div class="fc-done">
+              <div class="fc-done-icon">🎉</div>
+              <h2>Đã thuộc hết!</h2>
+              <p>Bạn đã ghi nhớ mượt mà toàn bộ câu hỏi.</p>
+              <button class="fc-btn reset" onclick="Study.resetFlashcards()">🔄 Học lại từ đầu</button>
+            </div>
+          `;
+      }
       document.getElementById('fc-actions').classList.add('hidden');
       return;
     }
@@ -160,11 +244,14 @@ const Study = {
     const card = document.getElementById('flashcard-content');
     this.isFlipped = false;
 
+    const readText = `Câu hỏi: ${q.question}. ${q.type === 'shortanswer' ? `Đáp án: ${q.correctAnswer}` : q.type === 'mcq' ? `Đáp án: ${q.options[q.correctAnswer]}` : ''}`;
+
     if (q.type === 'tf-group') {
       card.innerHTML = `
         <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
           <div class="fc-front">
             <div class="fc-type tf">Đúng/Sai</div>
+            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
             <div class="fc-question">${this.escapeHtml(q.passage)}</div>
             <div class="fc-statements">
               ${q.statements.map((s, i) => `
@@ -189,11 +276,13 @@ const Study = {
         <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
           <div class="fc-front">
             <div class="fc-type sa">Trả lời ngắn</div>
+            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
             <div class="fc-question">${this.escapeHtml(q.question)}</div>
             <div class="fc-hint">👆 Nhấn để xem đáp án</div>
           </div>
           <div class="fc-back">
             <div class="fc-type sa">Đáp án</div>
+            <button class="tts-btn" id="fc-tts-btn2" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.correctAnswer.replace(/'/g, "\\'"))}', 'fc-tts-btn2')" title="Đọc">🔊</button>
             <div class="fc-correct-answer">${this.escapeHtml(q.correctAnswer)}</div>
           </div>
         </div>
@@ -204,6 +293,7 @@ const Study = {
         <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
           <div class="fc-front">
             <div class="fc-type mcq">Trắc nghiệm</div>
+            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
             <div class="fc-question">${this.escapeHtml(q.question)}</div>
             <div class="fc-options-preview">
               ${q.options.map((opt, i) => `
@@ -214,6 +304,7 @@ const Study = {
           </div>
           <div class="fc-back">
             <div class="fc-type mcq">Đáp án</div>
+            <button class="tts-btn" id="fc-tts-btn2" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.options[q.correctAnswer].replace(/'/g, "\\'"))}', 'fc-tts-btn2')" title="Đọc">🔊</button>
             <div class="fc-correct-answer">${letters[q.correctAnswer]}. ${this.escapeHtml(q.options[q.correctAnswer])}</div>
           </div>
         </div>

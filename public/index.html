@@ -188,6 +188,18 @@
         </div>
       </div>
 
+      <!-- Flashcard Specific Config for Chunking -->
+      <div class="quiz-config" id="quiz-config-flashcard" style="display: none;">
+        <label class="config-label">Mẹo học thuộc (Flashcard/Học):</label>
+        <div class="config-grid">
+          <div class="config-item" style="display:flex; flex-direction:column;">
+            <label for="fc-chunk-size" style="margin-bottom:5px; font-weight:500;">Học từng phần nhỏ (0 = Tất cả)</label>
+            <input type="number" id="fc-chunk-size" min="0" value="0" class="config-input" placeholder="VD: 10 câu">
+          </div>
+        </div>
+      </div>
+
+
       <button class="start-btn" id="start-btn" disabled>
         🚀 Bắt đầu
       </button>
