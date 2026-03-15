@@ -279,6 +279,7 @@ const app = {
     const maxTfGroups = pool.reduce((s, l) => s + l.tfGroupCount, 0);
     const maxSa = pool.reduce((s, l) => s + (l.saCount || 0), 0);
 
+    // Update Exam limit containers visibility
     const mcqContainer = document.getElementById('config-item-mcq');
     const tfContainer = document.getElementById('config-item-tf');
     const saContainer = document.getElementById('config-item-sa');
@@ -287,20 +288,7 @@ const app = {
     if (tfContainer) tfContainer.style.display = maxTfGroups > 0 ? 'flex' : 'none';
     if (saContainer) saContainer.style.display = maxSa > 0 ? 'flex' : 'none';
 
-    if (this.selectedBais.length === 0) {
-      startBtn.disabled = true;
-      document.getElementById('summary-questions').textContent = '0';
-      document.getElementById('summary-time').textContent = '0';
-      return;
-    }
-
-    const totalTime = pool.reduce((s, l) => s + l.estimatedTime, 0);
-
-    // Update max values for inputs
-    const mcqInput = document.getElementById('exam-mcq-limit');
-    const tfInput = document.getElementById('exam-tf-limit');
-    const saInput = document.getElementById('exam-sa-limit');
-
+    // Update Practice toggle containers visibility
     const pracMcqToggle = document.getElementById('prac-mcq-toggle');
     const pracTfToggle = document.getElementById('prac-tf-toggle');
     const pracSaToggle = document.getElementById('prac-sa-toggle');
@@ -312,9 +300,31 @@ const app = {
     // Hide entire block if there is <= 1 active toggle
     const activeTogglesCount = (maxMcq > 0 ? 1 : 0) + (maxTfGroups > 0 ? 1 : 0) + (maxSa > 0 ? 1 : 0);
     const pracConfigParent = document.getElementById('quiz-config-practice');
-    if (pracConfigParent && ['study', 'flashcard', 'practice'].includes(this.learningMode)) {
-      pracConfigParent.style.display = activeTogglesCount > 1 ? 'block' : 'none';
+    if (pracConfigParent) {
+      if (['study', 'flashcard', 'practice'].includes(this.learningMode)) {
+        pracConfigParent.style.display = activeTogglesCount > 1 ? 'block' : 'none';
+      } else {
+        pracConfigParent.style.display = 'none';
+      }
     }
+
+    if (this.selectedBais.length === 0) {
+      startBtn.disabled = true;
+      document.getElementById('summary-questions').textContent = '0';
+      document.getElementById('summary-time').textContent = '0';
+      
+      const pracSummaryEl = document.getElementById('summary-questions-practice');
+      if (pracSummaryEl) pracSummaryEl.textContent = '0 câu';
+      
+      return;
+    }
+
+    const totalTime = pool.reduce((s, l) => s + l.estimatedTime, 0);
+
+    // Update max values for inputs
+    const mcqInput = document.getElementById('exam-mcq-limit');
+    const tfInput = document.getElementById('exam-tf-limit');
+    const saInput = document.getElementById('exam-sa-limit');
 
     if (mcqInput) {
       mcqInput.setAttribute('max', maxMcq);
