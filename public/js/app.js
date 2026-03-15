@@ -309,6 +309,13 @@ const app = {
     if (pracTfToggle) pracTfToggle.parentElement.style.display = maxTfGroups > 0 ? 'flex' : 'none';
     if (pracSaToggle) pracSaToggle.parentElement.style.display = maxSa > 0 ? 'flex' : 'none';
 
+    // Hide entire block if there is <= 1 active toggle
+    const activeTogglesCount = (maxMcq > 0 ? 1 : 0) + (maxTfGroups > 0 ? 1 : 0) + (maxSa > 0 ? 1 : 0);
+    const pracConfigParent = document.getElementById('quiz-config-practice');
+    if (pracConfigParent && ['study', 'flashcard', 'practice'].includes(this.learningMode)) {
+      pracConfigParent.style.display = activeTogglesCount > 1 ? 'block' : 'none';
+    }
+
     if (mcqInput) {
       mcqInput.setAttribute('max', maxMcq);
       const currentVal = parseInt(mcqInput.value) || 0;
