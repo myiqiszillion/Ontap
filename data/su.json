@@ -6813,8 +6813,12 @@
             "type": "truefalse",
             "questionGroups": [
                 {
-                    "passage": "Câu 1: Đọc đoạn tư liệu sau đây\n“Trong Chiếu dời đô, vua Lý Thái Tổ đã nói rõ dời chuyển kinh đô là một việc trọng đại “không thể theo ý riêng tự dời” mà để “mưu nghiệp lớn”, “làm kế cho con cháu muôn vạn đời, trên kính mệnh trời, dưới theo ý dân”. Vua Lý Thái Tổ lúc này đã có một con mắt đại ngàn, một tầm nhìn chiến lược vô cùng hệ trọng đối với vận mệnh lâu dài của dân tộc là chọn thành Đại La – nơi hội tụ đầy đủ mọi điều kiện về kinh tế, chính trị và xã hội làm kinh đô của một quốc gia thống nhất và thịnh vượng.”\n(Vũ Duy Mền (Chủ biên), Lịch sử Việt Nam, Tập 2 – Từ thế kỉ X đến thế kỉ XIV, NXB Khoa học xã hội, 2017, tr.154)\na.) Khi lên ngôi, vua Lý Thái Tổ đã quyết định cho dời đô từ vùng núi non hiểm trở về trung tâm đồng bằng. (Đ)",
+                    "passage": "Câu 1: Đọc đoạn tư liệu sau đây\n“Trong Chiếu dời đô, vua Lý Thái Tổ đã nói rõ dời chuyển kinh đô là một việc trọng đại “không thể theo ý riêng tự dời” mà để “mưu nghiệp lớn”, “làm kế cho con cháu muôn vạn đời, trên kính mệnh trời, dưới theo ý dân”. Vua Lý Thái Tổ lúc này đã có một con mắt đại ngàn, một tầm nhìn chiến lược vô cùng hệ trọng đối với vận mệnh lâu dài của dân tộc là chọn thành Đại La – nơi hội tụ đầy đủ mọi điều kiện về kinh tế, chính trị và xã hội làm kinh đô của một quốc gia thống nhất và thịnh vượng.”\n(Vũ Duy Mền (Chủ biên), Lịch sử Việt Nam, Tập 2 – Từ thế kỉ X đến thế kỉ XIV, NXB Khoa học xã hội, 2017, tr.154)",
                     "statements": [
+                        {
+                            "question": "a) Khi lên ngôi, vua Lý Thái Tổ đã quyết định cho dời đô từ vùng núi non hiểm trở về trung tâm đồng bằng.",
+                            "correct": true
+                        },
                         {
                             "question": "b) Thành Đại La – vốn là kinh đô của một số triều đại phong kiến độc lập của Việt Nam trước đó, là nơi hội tụ mọi điều kiện thuận lợi để phát triển trong điều kiện mới.",
                             "correct": false
