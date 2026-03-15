@@ -160,6 +160,34 @@
         </div>
       </div>
 
+      <!-- Practice/Study/Flashcard config -->
+      <div class="quiz-config" id="quiz-config-practice" style="display: none;">
+        <label class="config-label">Chọn thể loại câu hỏi:</label>
+        <div class="config-grid">
+          <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
+            <input type="checkbox" class="topic-checkbox" id="prac-mcq-toggle" checked>
+            <span class="topic-checkmark"></span>
+            <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Trắc nghiệm</span>
+          </label>
+          <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
+            <input type="checkbox" class="topic-checkbox" id="prac-tf-toggle" checked>
+            <span class="topic-checkmark"></span>
+            <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Đúng/Sai</span>
+          </label>
+          <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
+            <input type="checkbox" class="topic-checkbox" id="prac-sa-toggle" checked>
+            <span class="topic-checkmark"></span>
+            <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Trả lời ngắn</span>
+          </label>
+        </div>
+        
+        <div class="quiz-summary" style="margin-bottom: 0;">
+          <span class="summary-item">
+            <strong>Tổng: </strong><strong id="summary-questions-practice">0 câu</strong>
+          </span>
+        </div>
+      </div>
+
       <button class="start-btn" id="start-btn" disabled>
         🚀 Bắt đầu
       </button>

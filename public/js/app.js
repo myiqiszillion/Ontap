@@ -159,9 +159,12 @@ const app = {
     document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
     document.querySelector(`.mode-card[data-mode="${mode}"]`).classList.add('selected');
 
-    // Show/hide exam config
+    // Show/hide exam/practice config
     const examConfig = document.getElementById('quiz-config-exam');
-    examConfig.style.display = mode === 'exam' ? 'block' : 'none';
+    const pracConfig = document.getElementById('quiz-config-practice');
+    
+    if (examConfig) examConfig.style.display = mode === 'exam' ? 'block' : 'none';
+    if (pracConfig) pracConfig.style.display = ['study', 'flashcard', 'practice'].includes(mode) ? 'block' : 'none';
 
     // Show/hide topic list for wrong mode
     const topicsList = document.getElementById('topics-list');
@@ -298,6 +301,14 @@ const app = {
     const tfInput = document.getElementById('exam-tf-limit');
     const saInput = document.getElementById('exam-sa-limit');
 
+    const pracMcqToggle = document.getElementById('prac-mcq-toggle');
+    const pracTfToggle = document.getElementById('prac-tf-toggle');
+    const pracSaToggle = document.getElementById('prac-sa-toggle');
+
+    if (pracMcqToggle) pracMcqToggle.parentElement.style.display = maxMcq > 0 ? 'flex' : 'none';
+    if (pracTfToggle) pracTfToggle.parentElement.style.display = maxTfGroups > 0 ? 'flex' : 'none';
+    if (pracSaToggle) pracSaToggle.parentElement.style.display = maxSa > 0 ? 'flex' : 'none';
+
     if (mcqInput) {
       mcqInput.setAttribute('max', maxMcq);
       const currentVal = parseInt(mcqInput.value) || 0;
@@ -326,20 +337,34 @@ const app = {
 
     const summaryText = summaryParts.length > 0 ? summaryParts.join(' + ') : '0 câu';
 
+    const pracSummaryText = [
+      (pracMcqToggle && pracMcqToggle.checked && maxMcq > 0) ? `${maxMcq} TN` : null,
+      (pracTfToggle && pracTfToggle.checked && maxTfGroups > 0) ? `${maxTfGroups} Đ/S` : null,
+      (pracSaToggle && pracSaToggle.checked && maxSa > 0) ? `${maxSa} TLN` : null
+    ].filter(Boolean).join(' + ') || '0 câu';
+
     document.getElementById('summary-questions').textContent = summaryText;
     document.getElementById('summary-time').textContent = totalTime;
     
+    const pracSummaryEl = document.getElementById('summary-questions-practice');
+    if (pracSummaryEl) pracSummaryEl.textContent = pracSummaryText;
+    
     // Enable start button if at least 1 question is selected
-    startBtn.disabled = (showMcq === 0 && showTf === 0 && showSa === 0);
+    if (this.learningMode === 'exam') {
+        startBtn.disabled = (showMcq === 0 && showTf === 0 && showSa === 0);
+    } else {
+        startBtn.disabled = pracSummaryText === '0 câu';
+    }
   },
 
   // ═══════════ EVENT LISTENERS ═══════════
 
   setupEventListeners() {
     // Attach events to dynamic inputs to recompute summary on change
-    ['exam-mcq-limit', 'exam-tf-limit', 'exam-sa-limit'].forEach(id => {
+    ['exam-mcq-limit', 'exam-tf-limit', 'exam-sa-limit', 'prac-mcq-toggle', 'prac-tf-toggle', 'prac-sa-toggle'].forEach(id => {
       const el = document.getElementById(id);
       if (el) {
+        el.addEventListener('change', () => this.updateQuizSummary());
         el.addEventListener('input', () => this.updateQuizSummary());
       }
     });
@@ -384,6 +409,14 @@ const app = {
         mcqLimit = mcqInput ? (parseInt(mcqInput.value) || 0) : null;
         tfLimit = tfInput ? (parseInt(tfInput.value) || 0) : null;
         saLimit = saInput ? (parseInt(saInput.value) || 0) : null;
+      } else {
+        const mcqCheck = document.getElementById('prac-mcq-toggle');
+        const tfCheck = document.getElementById('prac-tf-toggle');
+        const saCheck = document.getElementById('prac-sa-toggle');
+        
+        mcqLimit = (mcqCheck && mcqCheck.checked) ? null : 0;
+        tfLimit = (tfCheck && tfCheck.checked) ? null : 0;
+        saLimit = (saCheck && saCheck.checked) ? null : 0;
       }
 
       const quizData = await DataLoader.loadQuizData(
