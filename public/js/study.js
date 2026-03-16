@@ -69,13 +69,62 @@ const Study = {
     }
 
     if (mode === 'practice') {
-      this.totalOriginalQuestions = this.questions.length;
-      this.practiceQueue = [...Array(this.questions.length).keys()];
-      this.practiceScore = { correct: 0, wrong: 0 };
-      this.practiceMastered = 0;
+      if (this.options.resume) {
+        const saved = localStorage.getItem(`ontap_practice_${this.subject}`);
+        if (saved) {
+          try {
+            const state = JSON.parse(saved);
+            this.questions = state.questions;
+            this.practiceQueue = state.practiceQueue;
+            this.practiceScore = state.practiceScore;
+            this.practiceMastered = state.practiceMastered;
+            this.totalOriginalQuestions = state.totalOriginalQuestions;
+          } catch (e) {
+            console.error("Failed to parse saved practice state");
+            this._initNewPractice();
+          }
+        } else {
+          this._initNewPractice();
+        }
+      } else {
+        this._initNewPractice();
+      }
     }
 
     this.render();
+  },
+
+  _initNewPractice() {
+    this.totalOriginalQuestions = this.questions.length;
+    this.practiceQueue = [...Array(this.questions.length).keys()];
+    this.practiceScore = { correct: 0, wrong: 0 };
+    this.practiceMastered = 0;
+    this.clearPracticeProgress();
+    this.savePracticeProgress();
+  },
+
+  savePracticeProgress() {
+    if (this.mode !== 'practice' || !this.subject) return;
+    
+    if (this.practiceQueue.length === 0) {
+        this.clearPracticeProgress();
+        return;
+    }
+
+    const state = {
+      questions: this.questions,
+      practiceQueue: this.practiceQueue,
+      practiceScore: this.practiceScore,
+      practiceMastered: this.practiceMastered,
+      totalOriginalQuestions: this.totalOriginalQuestions
+    };
+    localStorage.setItem(`ontap_practice_${this.subject}`, JSON.stringify(state));
+  },
+
+  clearPracticeProgress() {
+    if (this.subject) {
+      localStorage.removeItem(`ontap_practice_${this.subject}`);
+    }
   },
 
   /**
@@ -442,7 +491,7 @@ const Study = {
       this.practiceQueue.push(qIndex);
       WrongTracker.addWrong(this.subject, this.currentPracticeQuestion);
     }
-    
+    this.savePracticeProgress();
     // Show next button
     document.getElementById('practice-next-btn').classList.remove('hidden');
   },

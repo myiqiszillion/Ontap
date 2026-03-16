@@ -197,6 +197,21 @@ const app = {
     } else {
       this.updateQuizSummary();
     }
+
+    // Toggle Resume button visibility
+    const resumeBtn = document.getElementById('resume-btn');
+    if (resumeBtn) {
+      if (mode === 'practice' && this.currentSubject) {
+        const saved = localStorage.getItem(`ontap_practice_${this.currentSubject}`);
+        if (saved) {
+          resumeBtn.style.display = 'block';
+        } else {
+          resumeBtn.style.display = 'none';
+        }
+      } else {
+        resumeBtn.style.display = 'none';
+      }
+    }
   },
 
   updateWrongCount() {
@@ -395,9 +410,25 @@ const app = {
     document.getElementById('start-btn').addEventListener('click', () => {
       this.startLearning();
     });
+    
+    const resumeBtn = document.getElementById('resume-btn');
+    if (resumeBtn) {
+      resumeBtn.addEventListener('click', () => {
+        this.resumePractice();
+      });
+    }
   },
 
   // ═══════════ START LEARNING ═══════════
+
+  resumePractice() {
+    if (!this.currentSubject) return;
+    const saved = localStorage.getItem(`ontap_practice_${this.currentSubject}`);
+    if (!saved) return;
+    
+    this.showScreen('practice');
+    Study.init({ subject: this.currentSubject, questions: [] }, 'practice', { resume: true });
+  },
 
   async startLearning() {
     if (!this.currentSubject) return;
