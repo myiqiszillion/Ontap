@@ -1,10 +1,5 @@
 const { createClient } = require('@supabase/supabase-js');
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
-
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -13,6 +8,19 @@ module.exports = async (req, res) => {
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
+
+  // Initialize Supabase inside handler for environment variable consistency
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_KEY;
+
+  if (!supabaseUrl || !supabaseKey) {
+    return res.status(500).json({ 
+      error: 'Supabase configuration missing in environment.',
+      details: 'Check SUPABASE_URL and SUPABASE_KEY in Vercel settings.'
+    });
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseKey);
 
   if (req.method === 'GET') {
     try {
@@ -23,7 +31,12 @@ module.exports = async (req, res) => {
       if (error) throw error;
       return res.status(200).json(data || []);
     } catch (error) {
-      return res.status(500).json({ error: 'Failed to load announcements' });
+      console.error('SERVERLESS GET ERROR:', error);
+      return res.status(500).json({ 
+        error: 'Failed to load announcements',
+        details: error.message,
+        hint: 'Verify that the "announcements" table exists and is accessible.'
+      });
     }
   }
 
@@ -37,7 +50,11 @@ module.exports = async (req, res) => {
       if (error) throw error;
       return res.status(201).json(data[0]);
     } catch (error) {
-      return res.status(500).json({ error: error.message });
+      console.error('SERVERLESS POST ERROR:', error);
+      return res.status(500).json({ 
+        error: error.message,
+        details: 'Failed to create announcement.'
+      });
     }
   }
 
