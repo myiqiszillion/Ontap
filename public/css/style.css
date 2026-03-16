@@ -1716,16 +1716,20 @@ body {
 /* Announcement Images */
 .announcement-image-container {
   width: 100%;
-  max-height: 300px;
+  max-height: 450px;
   overflow: hidden;
   border-radius: 12px 12px 0 0;
   margin-bottom: 0;
+  background: var(--bg-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.announcement-image {
+.announcement-image.single {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-height: 450px;
+  object-fit: contain;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -1748,42 +1752,60 @@ body {
     gap: 3px;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
-    background: var(--border);
-    max-height: 400px;
+    background: var(--bg-gray);
+    width: 100%;
 }
 .post-images-grid img {
     width: 100%;
     height: 100%;
-    max-height: 400px;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
-    min-height: 0;
+    cursor: pointer;
+    transition: filter 0.2s;
 }
+.post-images-grid img:hover {
+    filter: brightness(0.9);
+}
+
+/* Grid configurations using child aspect ratios */
 .post-grid-2 {
     grid-template-columns: 1fr 1fr;
-    aspect-ratio: 2 / 1;
 }
+.post-grid-2 img {
+    aspect-ratio: 1 / 1; /* Perfect squares */
+}
+
 .post-grid-3 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    aspect-ratio: 3 / 2.5;
+}
+.post-grid-3 img {
+    aspect-ratio: 1 / 1; /* Small squares on right */
 }
 .post-grid-3 img:first-child {
     grid-row: span 2;
+    aspect-ratio: auto; /* Let it stretch to cover both rows */
+    height: 100%;
 }
+
 .post-grid-4 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    aspect-ratio: 4 / 3;
 }
+.post-grid-4 img, .post-grid-4 .img-wrapper-last {
+    aspect-ratio: 1 / 1;
+}
+
 .img-wrapper-last {
     position: relative;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .img-wrapper-last img {
     position: absolute;
     inset: 0;
+    aspect-ratio: auto !important;
 }
 .more-overlay {
     position: absolute;
@@ -1795,4 +1817,8 @@ body {
     justify-content: center;
     font-size: 2.5rem;
     font-weight: 700;
+    transition: 0.2s;
+}
+.img-wrapper-last:hover .more-overlay {
+    background: rgba(0, 0, 0, 0.6);
 }
