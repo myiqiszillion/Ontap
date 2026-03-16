@@ -16,7 +16,9 @@ module.exports = async (req, res) => {
   if (!supabaseUrl || !supabaseKey) {
     return res.status(500).json({ 
       error: 'Supabase configuration missing in environment.',
-      details: 'Check SUPABASE_URL/NEXT_PUBLIC_SUPABASE_URL and SUPABASE_KEY/NEXT_PUBLIC_SUPABASE_ANON_KEY in Vercel settings.'
+      url_missing: !supabaseUrl,
+      key_missing: !supabaseKey,
+      details: 'Check Vercel Dashboard -> Settings -> Environment Variables for SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY.'
     });
   }
 
