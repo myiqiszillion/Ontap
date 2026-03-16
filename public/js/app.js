@@ -142,16 +142,23 @@ const app = {
         }
 
         return `
-          <div class="announcement-card">
-            ${imageHtml}
-            <div class="announcement-card-inner">
-              <div class="announcement-header">
+          <div class="announcement-card social-style">
+            <div class="announcement-card-header">
+              <div class="announcement-avatar">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <div class="announcement-meta-info">
                 <h3 class="announcement-title">${ann.title}</h3>
                 <span class="announcement-time">${dateStr}</span>
               </div>
+            </div>
+            
+            <div class="announcement-card-body">
               <div class="announcement-content">${this.escapeHTML(ann.content)}</div>
               ${linkHtml}
             </div>
+
+            ${imageHtml}
           </div>
         `;
       }).join('');
