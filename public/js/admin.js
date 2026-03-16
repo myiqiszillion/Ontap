@@ -26,14 +26,64 @@ const Admin = {
     form.addEventListener('submit', (e) => this.handleSubmit(e));
 
     const imageInput = document.getElementById('image');
-    if (imageInput) {
-        imageInput.addEventListener('change', (e) => this.handleImagePreview(e));
+    const dropZone = document.getElementById('drop-zone');
+    const removeBtn = document.getElementById('remove-image-btn');
+
+    if (imageInput && dropZone) {
+        // Click to open file dialog
+        dropZone.addEventListener('click', () => imageInput.click());
+
+        // Handle File Selection
+        imageInput.addEventListener('change', (e) => {
+            if (e.target.files.length) this.handleImagePreview(e.target.files[0]);
+        });
+
+        // Drag and Drop
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            if (e.dataTransfer.files.length) {
+                imageInput.files = e.dataTransfer.files;
+                this.handleImagePreview(e.dataTransfer.files[0]);
+            }
+        });
+
+        // Paste Event (Ctrl+V) attached to window/document so it triggers anywhere
+        document.addEventListener('paste', (e) => {
+            const items = e.clipboardData.items;
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].type.indexOf('image') !== -1) {
+                    const blob = items[i].getAsFile();
+                    // Create a new FileList containing the pasted image
+                    const dataTransfer = new DataTransfer();
+                    dataTransfer.items.add(blob);
+                    imageInput.files = dataTransfer.files;
+                    this.handleImagePreview(blob);
+                    break;
+                }
+            }
+        });
+    }
+
+    if (removeBtn) {
+        removeBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent opening file dialog
+            imageInput.value = ''; // Clear input
+            document.getElementById('image-preview').style.display = 'none';
+            document.getElementById('preview-img').src = '';
+            dropZone.style.display = 'block';
+        });
     }
   },
 
-  handleImagePreview(e) {
-    const file = e.target.files[0];
+  handleImagePreview(file) {
     const preview = document.getElementById('image-preview');
+    const dropZone = document.getElementById('drop-zone');
     const previewImg = document.getElementById('preview-img');
     
     if (file) {
@@ -41,11 +91,13 @@ const Admin = {
         reader.onload = (event) => {
             previewImg.src = event.target.result;
             preview.style.display = 'block';
+            dropZone.style.display = 'none'; // Hide dropzone area when image is selected
         };
         reader.readAsDataURL(file);
     } else {
         preview.style.display = 'none';
         previewImg.src = '';
+        dropZone.style.display = 'block';
     }
   },
 
@@ -98,7 +150,12 @@ const Admin = {
       statusMsg.innerText = 'Đã đăng thông báo thành công! 🎉';
       statusMsg.className = 'message success';
       e.target.reset();
+      
+      // Reset Image UI
       document.getElementById('image-preview').style.display = 'none';
+      document.getElementById('preview-img').src = '';
+      document.getElementById('drop-zone').style.display = 'block';
+      
       this.loadAnnouncements(); // Refresh list
     } catch (err) {
       statusMsg.innerText = 'Lỗi: ' + err.message;

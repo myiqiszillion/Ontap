@@ -125,6 +125,62 @@
             background: var(--red);
             color: white;
         }
+
+        /* Drop Zone Styles */
+        .drop-zone {
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: rgba(0,0,0,0.01);
+            position: relative;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: var(--primary);
+            background: var(--primary-soft);
+        }
+        .drop-zone-text {
+            font-weight: 600;
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+        .drop-zone-input {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .image-preview-container {
+            margin-top: 16px;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .image-preview-container img {
+            max-width: 100%;
+            display: block;
+        }
+        .remove-image-btn {
+            position: absolute;
+            top: 10px; right: 10px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+        .remove-image-btn:hover {
+            background: rgba(255,50,50,0.8);
+        }
     </style>
 </head>
 <body id="app-body" class="dark-mode">
@@ -160,10 +216,14 @@
             </div>
 
             <div class="form-group">
-                <label for="image">Hình ảnh đính kèm (Tuỳ chọn)</label>
-                <input type="file" id="image" accept="image/*">
-                <div id="image-preview" style="margin-top: 10px; display: none;">
-                    <img id="preview-img" src="" alt="Preview" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                <label>Hình ảnh đính kèm (Tuỳ chọn)</label>
+                <div id="drop-zone" class="drop-zone">
+                    <span class="drop-zone-text">Kéo thả ảnh vào đây, hoặc <span style="color:var(--primary);cursor:pointer">chọn tệp</span><br><small style="color:var(--text-muted);font-weight:normal">Hỗ trợ <code>Ctrl + V</code> để dán ảnh trực tiếp</small></span>
+                    <input type="file" id="image" accept="image/*" class="drop-zone-input">
+                </div>
+                <div id="image-preview" class="image-preview-container" style="display: none;">
+                    <img id="preview-img" src="" alt="Preview">
+                    <button type="button" class="remove-image-btn" id="remove-image-btn">×</button>
                 </div>
             </div>
             
