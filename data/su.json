@@ -5197,11 +5197,11 @@
             "type": "truefalse",
             "questionGroups": [
                 {
-                    "passage": "Câu 1: Đọc đoạn tư liệu sau đây\n“Nền văn minh của người Việt cổ với biểu tượng trống đồng Đông Sơn thực chất là một nền văn minh nông nghiệp trồng lúa nước dựa trên nền tảng cộng đồng xóm làng và một cơ cấu chính trị nhà nước phôi thai; không những đã vươn tới một trình độ phát triển khá cao, mà còn xác lập lối sống Việt Nam, truyền thống Việt Nam, đặt cơ sở vững chắc cho toàn bộ sự tồn tại và phát triển của quốc gia - dân tộc sau đó”.\n(Theo Phan Huy Lê (Chủ biên), Lịch Sử Việt Nam, Tập I, NXB Giáo dục Việt Nam, 2012, tr. 173)\nĐoạn tư liệu cung cấp thông tin về quá trình xác lập các truyền thống tốt đẹp của dân tộc Việt Nam.",
+                    "passage": "Câu 1: Đọc đoạn tư liệu sau đây\n“Nền văn minh của người Việt cổ với biểu tượng trống đồng Đông Sơn thực chất là một nền văn minh nông nghiệp trồng lúa nước dựa trên nền tảng cộng đồng xóm làng và một cơ cấu chính trị nhà nước phôi thai; không những đã vươn tới một trình độ phát triển khá cao, mà còn xác lập lối sống Việt Nam, truyền thống Việt Nam, đặt cơ sở vững chắc cho toàn bộ sự tồn tại và phát triển của quốc gia - dân tộc sau đó”.\n(Theo Phan Huy Lê (Chủ biên), Lịch Sử Việt Nam, Tập I, NXB Giáo dục Việt Nam, 2012, tr. 173)",
                     "statements": [
                         {
-                            "question": "",
-                            "correct": false
+                            "question": "Đoạn tư liệu cung cấp thông tin về quá trình xác lập các truyền thống tốt đẹp của dân tộc Việt Nam.",
+                            "correct": true
                         },
                         {
                             "question": "“Nền văn minh của người Việt cổ với biểu tượng trống đồng Đông Sơn” được nhắc đến trong đoạn tư liệu chính là nền văn minh Văn Lang - Âu Lạc.",
