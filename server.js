@@ -1,9 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Initialize Supabase
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY
+);
 
 app.use(express.json());
 
@@ -60,48 +68,44 @@ app.get('/api/subjects', (req, res) => {
 });
 
 // API: Get announcements
-app.get('/api/announcements', (req, res) => {
+app.get('/api/announcements', async (req, res) => {
   try {
-    const dataPath = path.join(__dirname, 'data', 'announcements.json');
-    if (!fs.existsSync(dataPath)) {
-      return res.json([]);
-    }
-    const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    // Sort by timestamp descending (newest first)
-    data.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    res.json(data);
+    const { data, error } = await supabase
+      .from('announcements')
+      .select('*')
+      .order('timestamp', { ascending: false });
+
+    if (error) throw error;
+    res.json(data || []);
   } catch (error) {
     console.error('Error reading announcements:', error);
     res.status(500).json({ error: 'Failed to load announcements' });
   }
 });
 
-// API: Post new announcement (Admin only, local save)
-app.post('/api/announcements', (req, res) => {
+// API: Post new announcement (Admin only, Supabase save)
+app.post('/api/announcements', async (req, res) => {
   try {
     const { title, content, link } = req.body;
     if (!title || !content) {
       return res.status(400).json({ error: 'Title and content are required' });
     }
 
-    const dataPath = path.join(__dirname, 'data', 'announcements.json');
-    let announcements = [];
-    if (fs.existsSync(dataPath)) {
-      announcements = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    }
-
     const newAnnouncement = {
-      id: Date.now().toString(),
       title,
       content,
       link: link || null,
       timestamp: new Date().toISOString()
     };
 
-    announcements.push(newAnnouncement);
-    fs.writeFileSync(dataPath, JSON.stringify(announcements, null, 2), 'utf8');
+    const { data, error } = await supabase
+      .from('announcements')
+      .insert([newAnnouncement])
+      .select();
 
-    res.status(201).json({ success: true, announcement: newAnnouncement });
+    if (error) throw error;
+
+    res.status(201).json({ success: true, announcement: data[0] });
   } catch (error) {
     console.error('Error saving announcement:', error);
     res.status(500).json({ error: 'Failed to save announcement' });

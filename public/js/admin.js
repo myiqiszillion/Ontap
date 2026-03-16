@@ -30,14 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (response.ok) {
-                showMessage('Đăng thông báo thành công! Nhớ chạy git push để lưu vĩnh viễn trên Vercel nhé.', 'success');
+                showMessage('Đăng thông báo lên Supabase thành công! 🚀', 'success');
                 form.reset();
             } else {
                 showMessage(data.error || 'Có lỗi xảy ra khi lưu!', 'error');
             }
         } catch (err) {
             console.error(err);
-            showMessage('Mất kết nối tới server cục bộ!', 'error');
+            showMessage('Mất kết nối tới server!', 'error');
         } finally {
             submitBtn.disabled = false;
             submitBtn.textContent = 'Đăng Lên Website';
