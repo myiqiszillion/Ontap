@@ -12,24 +12,34 @@
 </head>
 <body id="app-body">
 
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo" onclick="app.goBackToHome()">
+          <div class="logo-icon">📚</div>
+          <span class="logo-text">Ôn Tập</span>
+        </div>
+
+        <nav class="header-nav">
+          <button class="nav-item active" id="tab-home" onclick="app.switchMainTab('home')">Trang Chủ</button>
+          <button class="nav-item" id="tab-announcements" onclick="app.switchMainTab('announcements')">Thông Báo</button>
+        </nav>
+
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" onclick="app.toggleTheme()" aria-label="Toggle Dark Mode">
+            <span class="theme-icon light-icon">☀️</span>
+            <span class="theme-icon dark-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
 <div class="app">
 
   <!-- ═══════════════════════════════════════════════════════════
        SCREEN 1: HOME/DASHBOARD
        ═══════════════════════════════════════════════════════════ -->
   <section id="screen-home" class="screen on">
-    <header class="header">
-      <div class="header-inner">
-        <div class="logo">
-          <div class="logo-icon">📚</div>
-          <span class="logo-text">Ôn Tập</span>
-        </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="app.toggleTheme()" aria-label="Toggle Dark Mode">
-          <span class="theme-icon light-icon">☀️</span>
-          <span class="theme-icon dark-icon">🌙</span>
-        </button>
-      </div>
-    </header>
+
 
     <div class="dashboard-hero">
       <h1 class="home-title">Học tập thông minh hơn</h1>
@@ -57,10 +67,7 @@
       </div>
     </div>
 
-    <div class="main-tabs-container">
-        <button class="main-tab-btn active" id="tab-home" onclick="app.switchMainTab('home')">Trang Chủ</button>
-        <button class="main-tab-btn" id="tab-announcements" onclick="app.switchMainTab('announcements')">Thông Báo</button>
-    </div>
+
 
     <div id="view-home">
         <div class="subjects-grid" id="subjects-grid">

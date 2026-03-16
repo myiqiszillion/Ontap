@@ -1,54 +1,104 @@
-document.addEventListener('DOMContentLoaded', () => {
+/**
+ * Admin Portal Controller
+ * Handles posting and deleting announcements
+ */
+const Admin = {
+  async init() {
+    this.setupEventListeners();
+    this.loadAnnouncements();
+  },
+
+  setupEventListeners() {
     const form = document.getElementById('announcement-form');
+    form.addEventListener('submit', (e) => this.handleSubmit(e));
+  },
+
+  async handleSubmit(e) {
+    e.preventDefault();
     const submitBtn = document.getElementById('submit-btn');
     const statusMsg = document.getElementById('status-message');
+    
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+    const link = document.getElementById('link').value;
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const title = document.getElementById('title').value.trim();
-        const content = document.getElementById('content').value.trim();
-        const link = document.getElementById('link').value.trim();
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Đang đăng...';
 
-        if (!title || !content) {
-            showMessage('Vui lòng điền đầy đủ Tiêu đề và Nội dung!', 'error');
-            return;
-        }
+    try {
+      const res = await fetch('/api/announcements', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title, content, link })
+      });
 
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Đang đẩy lên server...';
+      if (!res.ok) throw new Error('Đăng bài thất bại');
 
-        try {
-            const response = await fetch('/api/announcements', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ title, content, link })
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                showMessage('Đăng thông báo lên Supabase thành công! 🚀', 'success');
-                form.reset();
-            } else {
-                showMessage(data.error || 'Có lỗi xảy ra khi lưu!', 'error');
-            }
-        } catch (err) {
-            console.error(err);
-            showMessage('Mất kết nối tới server!', 'error');
-        } finally {
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Đăng Lên Website';
-        }
-    });
-
-    function showMessage(msg, type) {
-        statusMsg.textContent = msg;
-        statusMsg.className = `message ${type}`;
-        setTimeout(() => {
-            statusMsg.className = 'message';
-        }, 8000);
+      statusMsg.innerText = 'Đã đăng thông báo thành công! 🎉';
+      statusMsg.className = 'message success';
+      e.target.reset();
+      this.loadAnnouncements(); // Refresh list
+    } catch (err) {
+      statusMsg.innerText = 'Lỗi: ' + err.message;
+      statusMsg.className = 'message error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Đăng Lên Website';
+      setTimeout(() => {
+        statusMsg.style.display = 'none';
+      }, 5000);
     }
-});
+  },
+
+  async loadAnnouncements() {
+    const list = document.getElementById('announcements-list');
+    try {
+      const res = await fetch('/api/announcements');
+      if (!res.ok) throw new Error('Không thể tải danh sách');
+      const data = await res.json();
+
+      if (data.length === 0) {
+        list.innerHTML = '<p style="text-align: center; color: var(--text-muted);">Chưa có thông báo nào.</p>';
+        return;
+      }
+
+      list.innerHTML = data.map(ann => {
+        const date = new Date(ann.timestamp).toLocaleString('vi-VN');
+        return `
+          <div class="admin-ann-item" id="ann-${ann.id}">
+            <div class="admin-ann-info">
+              <div class="admin-ann-title">${ann.title}</div>
+              <div class="admin-ann-time">${date}</div>
+            </div>
+            <button class="delete-btn" onclick="Admin.deleteAnnouncement('${ann.id}')">Xóa</button>
+          </div>
+        `;
+      }).join('');
+    } catch (err) {
+      list.innerHTML = `<p style="color: var(--red); text-align: center;">Lỗi: ${err.message}</p>`;
+    }
+  },
+
+  async deleteAnnouncement(id) {
+    if (!confirm('Bạn có chắc chắn muốn xóa thông báo này?')) return;
+
+    try {
+      const res = await fetch(`/api/announcements/${id}`, {
+        method: 'DELETE'
+      });
+
+      if (!res.ok) throw new Error('Xóa thất bại');
+
+      document.getElementById(`ann-${id}`).remove();
+      // If list empty after remove
+      if (document.getElementById('announcements-list').children.length === 0) {
+        this.loadAnnouncements();
+      }
+    } catch (err) {
+      alert('Lỗi: ' + err.message);
+    }
+  }
+};
+
+window.Admin = Admin;
+document.addEventListener('DOMContentLoaded', () => Admin.init());

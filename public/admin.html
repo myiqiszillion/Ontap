@@ -71,6 +71,60 @@
             color: #ef4444;
             display: block;
         }
+
+        /* Management Styles */
+        .management-section {
+            max-width: 600px;
+            margin: 20px auto 40px;
+            padding: 0 30px;
+        }
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        .announcements-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .admin-ann-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            padding: 16px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .admin-ann-info {
+            flex: 1;
+        }
+        .admin-ann-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .admin-ann-time {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .delete-btn {
+            background: var(--red-bg);
+            color: var(--red);
+            border: 1px solid var(--red-border);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .delete-btn:hover {
+            background: var(--red);
+            color: white;
+        }
     </style>
 </head>
 <body id="app-body" class="dark-mode">
@@ -108,6 +162,13 @@
             <button type="submit" class="submit-btn" id="submit-btn">Đăng Lên Website</button>
             <div id="status-message" class="message"></div>
         </form>
+    </div>
+
+    <div class="management-section">
+        <h2 class="section-title">Quản lý Thông báo</h2>
+        <div id="announcements-list" class="announcements-list">
+            <p style="text-align: center; color: var(--text-muted);">Đang tải thông báo...</p>
+        </div>
     </div>
 </div>
 

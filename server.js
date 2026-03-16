@@ -15,15 +15,7 @@ const supabase = createClient(
 
 app.use(express.json());
 
-// Serve admin.html for /admin route
-app.get('/admin', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
-});
-
-// Serve static files from public folder
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Analytics tracking middleware
+// Legacy Analytics / Logging
 app.use((req, res, next) => {
   if (req.path === '/' || req.path === '/index.html') {
     try {
@@ -41,9 +33,7 @@ app.use((req, res, next) => {
       const timestamp = new Date().toISOString();
       
       visitors.push({ ip, userAgent, timestamp });
-      
-      if (visitors.length > 2000) visitors = visitors.slice(-2000); // Keep last 2000
-      
+      if (visitors.length > 2000) visitors = visitors.slice(-2000);
       fs.writeFileSync(visitorsPath, JSON.stringify(visitors, null, 2));
     } catch (e) {
       console.error('Error logging visitor:', e);
@@ -52,101 +42,108 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve data folder for JSON files
-app.use('/data', express.static(path.join(__dirname, 'data')));
+// ═════════════════════════════════════════════════════════════
+// API ROUTES
+// ═════════════════════════════════════════════════════════════
 
-// API: Get list of subjects
+// API: Get subjects
 app.get('/api/subjects', (req, res) => {
   try {
     const dataPath = path.join(__dirname, 'data', 'subjects.json');
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     res.json(data);
   } catch (error) {
-    console.error('Error reading subjects:', error);
     res.status(500).json({ error: 'Failed to load subjects' });
   }
 });
 
-// API: Get announcements
+// API: Announcements
 app.get('/api/announcements', async (req, res) => {
   try {
     const { data, error } = await supabase
       .from('announcements')
       .select('*')
       .order('timestamp', { ascending: false });
-
     if (error) throw error;
     res.json(data || []);
   } catch (error) {
-    console.error('Error reading announcements:', error);
     res.status(500).json({ error: 'Failed to load announcements' });
   }
 });
 
-// API: Post new announcement (Admin only, Supabase save)
 app.post('/api/announcements', async (req, res) => {
   try {
     const { title, content, link } = req.body;
-    if (!title || !content) {
-      return res.status(400).json({ error: 'Title and content are required' });
-    }
-
-    const newAnnouncement = {
-      title,
-      content,
-      link: link || null,
-      timestamp: new Date().toISOString()
-    };
-
     const { data, error } = await supabase
       .from('announcements')
-      .insert([newAnnouncement])
+      .insert([{ title, content, link, timestamp: new Date().toISOString() }])
       .select();
-
     if (error) throw error;
-
-    res.status(201).json({ success: true, announcement: data[0] });
+    res.status(201).json(data[0]);
   } catch (error) {
-    console.error('Error saving announcement:', error);
-    res.status(500).json({ error: 'Failed to save announcement' });
+    console.error('POST Error:', error);
+    res.status(500).json({ error: error.message });
   }
 });
 
-// API: Get questions for a specific subject
+app.delete('/api/announcements/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { error } = await supabase
+      .from('announcements')
+      .delete()
+      .eq('id', id);
+    if (error) throw error;
+    res.json({ success: true, message: 'Deleted successfully' });
+  } catch (error) {
+    console.error('DELETE Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// API: Subject data
 app.get('/api/data/:subject', (req, res) => {
   try {
     const { subject } = req.params;
     const dataPath = path.join(__dirname, 'data', `${subject}.json`);
-
-    if (!fs.existsSync(dataPath)) {
-      return res.status(404).json({ error: 'Subject not found' });
-    }
-
+    if (!fs.existsSync(dataPath)) return res.status(404).json({ error: 'Not found' });
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     res.json(data);
   } catch (error) {
-    console.error('Error reading data:', error);
     res.status(500).json({ error: 'Failed to load data' });
   }
 });
 
-// Legacy API: Get all lessons (for backward compatibility)
+// Legacy API
 app.get('/api/lessons', (req, res) => {
   try {
     const dataPath = path.join(__dirname, 'data.json');
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     res.json(data);
   } catch (error) {
-    console.error('Error reading data:', error);
-    res.status(500).json({ error: 'Failed to load data' });
+    res.status(500).json({ error: 'Failed' });
   }
 });
 
-// Serve index.html for root route
+// ═════════════════════════════════════════════════════════════
+// STATIC & PAGE ROUTES
+// ═════════════════════════════════════════════════════════════
+
+// Admin page
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
+
+// Static files (public and data)
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/data', express.static(path.join(__dirname, 'data')));
+
+// Root route
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Start server
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
