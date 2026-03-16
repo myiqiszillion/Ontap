@@ -10,13 +10,13 @@ module.exports = async (req, res) => {
   }
 
   // Initialize Supabase inside handler for environment variable consistency
-  const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_KEY;
+  const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseKey) {
     return res.status(500).json({ 
       error: 'Supabase configuration missing in environment.',
-      details: 'Check SUPABASE_URL and SUPABASE_KEY in Vercel settings.'
+      details: 'Check SUPABASE_URL/NEXT_PUBLIC_SUPABASE_URL and SUPABASE_KEY/NEXT_PUBLIC_SUPABASE_ANON_KEY in Vercel settings.'
     });
   }
 
