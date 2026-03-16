@@ -421,11 +421,40 @@ const app = {
 
   // ═══════════ START LEARNING ═══════════
 
-  resumePractice() {
+  async resumePractice() {
     if (!this.currentSubject) return;
     const saved = localStorage.getItem(`ontap_practice_${this.currentSubject}`);
     if (!saved) return;
     
+    try {
+      const state = JSON.parse(saved);
+      // Giúp đồng bộ hoá tiến trình lưu với kho dữ liệu mới nhất nếu có sửa lỗi đề
+      const latestData = await API.getQuestions(this.currentSubject);
+      let allLatestQs = [];
+      latestData.lessons.forEach(l => {
+          if (l.type === 'truefalse' && l.questionGroups) allLatestQs.push(...l.questionGroups);
+          else if (l.questions) allLatestQs.push(...l.questions);
+      });
+
+      state.questions = state.questions.map(q => {
+          if (q.type === 'tf-group' || q.passage) {
+              const updated = allLatestQs.find(newQ => newQ.passage === q.passage);
+              if (updated) q.statements = updated.statements;
+          } else {
+              const updated = allLatestQs.find(newQ => newQ.question === q.question);
+              if (updated) {
+                  if (updated.options) q.options = updated.options;
+                  q.correctAnswer = updated.correctAnswer !== undefined ? updated.correctAnswer : updated.correct;
+              }
+          }
+          return q;
+      });
+
+      localStorage.setItem(`ontap_practice_${this.currentSubject}`, JSON.stringify(state));
+    } catch (e) {
+      console.error("Resume update error:", e);
+    }
+
     this.showScreen('practice');
     Study.init({ subject: this.currentSubject, questions: [] }, 'practice', { resume: true });
   },
