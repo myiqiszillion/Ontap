@@ -83,7 +83,7 @@ const Admin = {
     if (!confirm('Bạn có chắc chắn muốn xóa thông báo này?')) return;
 
     try {
-      const res = await fetch(`/api/announcements/${id}`, {
+      const res = await fetch(`/api/delete-announcement?id=${id}`, {
         method: 'DELETE'
       });
 

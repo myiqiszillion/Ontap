@@ -86,9 +86,10 @@ app.post('/api/announcements', async (req, res) => {
   }
 });
 
-app.delete('/api/announcements/:id', async (req, res) => {
+app.delete('/api/delete-announcement', async (req, res) => {
   try {
-    const { id } = req.params;
+    const { id } = req.query;
+    if (!id) return res.status(400).json({ error: 'ID is required' });
     const { error } = await supabase
       .from('announcements')
       .delete()
