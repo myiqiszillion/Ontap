@@ -441,7 +441,7 @@ const app = {
       const quizData = await DataLoader.loadQuizData(
         this.currentSubject,
         this.selectedBais,
-        'exam', // always exam flow now
+        this.learningMode, // Use actual learningMode instead of hardcoded 'exam'
         mcqLimit,
         tfLimit,
         saLimit

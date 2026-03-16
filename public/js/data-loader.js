@@ -131,10 +131,13 @@ const DataLoader = {
 
     // Apply exam mode limits
     let questions = [];
+    const shouldShuffle = examMode === 'exam';
 
-    mcqQuestions = this.shuffle(mcqQuestions);
-    tfGroups = this.shuffle(tfGroups);
-    shortAnswers = this.shuffle(shortAnswers);
+    if (shouldShuffle) {
+      mcqQuestions = this.shuffle(mcqQuestions);
+      tfGroups = this.shuffle(tfGroups);
+      shortAnswers = this.shuffle(shortAnswers);
+    }
 
     if (mcqLimit !== null) mcqQuestions = mcqQuestions.slice(0, mcqLimit);
     if (tfLimit !== null) tfGroups = tfGroups.slice(0, tfLimit);
@@ -143,7 +146,16 @@ const DataLoader = {
     mcqQuestions = mcqQuestions.map(q => this._shuffleMcqOptions(q));
     
     // Mix everything
-    questions = this.shuffle([...mcqQuestions, ...tfGroups, ...shortAnswers]);
+    if (shouldShuffle) {
+      questions = this.shuffle([...mcqQuestions, ...tfGroups, ...shortAnswers]);
+    } else {
+      questions = [...mcqQuestions, ...tfGroups, ...shortAnswers];
+      questions.sort((a, b) => {
+        const baiA = parseInt(a.lessonBai) || 0;
+        const baiB = parseInt(b.lessonBai) || 0;
+        return baiA - baiB;
+      });
+    }
 
     return {
       subject: subjectId,
