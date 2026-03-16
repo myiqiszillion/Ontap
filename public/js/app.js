@@ -97,11 +97,48 @@ const app = {
 
         let imageHtml = '';
         if (ann.image_url) {
-          imageHtml = `
-            <div class="announcement-image-container">
-              <img src="${ann.image_url}" alt="${ann.title}" class="announcement-image" loading="lazy">
-            </div>
-          `;
+          let urls = [];
+          try {
+              urls = JSON.parse(ann.image_url);
+              if (!Array.isArray(urls)) urls = [ann.image_url];
+          } catch (e) {
+              urls = [ann.image_url];
+          }
+
+          if (urls.length === 1) {
+              imageHtml = `
+                <div class="announcement-image-container">
+                  <img src="${urls[0]}" alt="${ann.title}" class="announcement-image single" loading="lazy">
+                </div>
+              `;
+          } else if (urls.length === 2) {
+              imageHtml = `
+                <div class="post-images-grid post-grid-2">
+                  <img src="${urls[0]}" class="announcement-image" loading="lazy">
+                  <img src="${urls[1]}" class="announcement-image" loading="lazy">
+                </div>
+              `;
+          } else if (urls.length === 3) {
+              imageHtml = `
+                <div class="post-images-grid post-grid-3">
+                  <img src="${urls[0]}" class="announcement-image" loading="lazy">
+                  <img src="${urls[1]}" class="announcement-image" loading="lazy">
+                  <img src="${urls[2]}" class="announcement-image" loading="lazy">
+                </div>
+              `;
+          } else if (urls.length >= 4) {
+              imageHtml = `
+                <div class="post-images-grid post-grid-4 post-grid-more">
+                  <img src="${urls[0]}" class="announcement-image" loading="lazy">
+                  <img src="${urls[1]}" class="announcement-image" loading="lazy">
+                  <img src="${urls[2]}" class="announcement-image" loading="lazy">
+                  <div class="img-wrapper-last">
+                      <img src="${urls[3]}" class="announcement-image" loading="lazy">
+                      ${urls.length > 4 ? `<div class="more-overlay">+${urls.length - 4}</div>` : ''}
+                  </div>
+                </div>
+              `;
+          }
         }
 
         return `

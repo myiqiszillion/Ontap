@@ -1,18 +1,11 @@
-/**
- * Admin Portal Controller
- * Handles posting and deleting announcements
- */
 const Admin = {
   supabase: null,
+  selectedFiles: [], // Array to hold File objects
 
   async init() {
-    // Basic Supabase Init for Storage (Public bucket only needs URL and Anon Key)
-    // In a real app, we'd use environment variables, but for demo/frontend we can fetch them if available or hardcode
-    // Since we are serverless, we'll fetch the config if needed or assume defaults
     const SUPABASE_URL = "https://bjcgwophobdkjrscilni.supabase.co";
     const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJqY2d3b3Bob2Jka2pyc2NpbG5pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2NTM5MDAsImV4cCI6MjA4OTIyOTkwMH0.ZTprDdGsQIuIgGkjOI0UgBu7cpJWpm78-W3Uvr9Lur4";
     
-    // Check if supabase is available globally (from script tag)
     if (typeof supabase !== 'undefined') {
         this.supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
     }
@@ -27,18 +20,15 @@ const Admin = {
 
     const imageInput = document.getElementById('image');
     const dropZone = document.getElementById('drop-zone');
-    const removeBtn = document.getElementById('remove-image-btn');
 
     if (imageInput && dropZone) {
-        // Click to open file dialog
         dropZone.addEventListener('click', () => imageInput.click());
 
-        // Handle File Selection
         imageInput.addEventListener('change', (e) => {
-            if (e.target.files.length) this.handleImagePreview(e.target.files[0]);
+            this.addFiles(e.target.files);
+            imageInput.value = ''; // reset so same file can be selected again
         });
 
-        // Drag and Drop
         dropZone.addEventListener('dragover', (e) => {
             e.preventDefault();
             dropZone.classList.add('dragover');
@@ -47,58 +37,71 @@ const Admin = {
         dropZone.addEventListener('drop', (e) => {
             e.preventDefault();
             dropZone.classList.remove('dragover');
-            if (e.dataTransfer.files.length) {
-                imageInput.files = e.dataTransfer.files;
-                this.handleImagePreview(e.dataTransfer.files[0]);
-            }
+            this.addFiles(e.dataTransfer.files);
         });
 
-        // Paste Event (Ctrl+V) attached to window/document so it triggers anywhere
         document.addEventListener('paste', (e) => {
             const items = e.clipboardData.items;
+            const pastedFiles = [];
             for (let i = 0; i < items.length; i++) {
                 if (items[i].type.indexOf('image') !== -1) {
-                    const blob = items[i].getAsFile();
-                    // Create a new FileList containing the pasted image
-                    const dataTransfer = new DataTransfer();
-                    dataTransfer.items.add(blob);
-                    imageInput.files = dataTransfer.files;
-                    this.handleImagePreview(blob);
-                    break;
+                    pastedFiles.push(items[i].getAsFile());
                 }
             }
-        });
-    }
-
-    if (removeBtn) {
-        removeBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent opening file dialog
-            imageInput.value = ''; // Clear input
-            document.getElementById('image-preview').style.display = 'none';
-            document.getElementById('preview-img').src = '';
-            dropZone.style.display = 'block';
+            if (pastedFiles.length > 0) this.addFiles(pastedFiles);
         });
     }
   },
 
-  handleImagePreview(file) {
-    const preview = document.getElementById('image-preview');
-    const dropZone = document.getElementById('drop-zone');
-    const previewImg = document.getElementById('preview-img');
-    
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = (event) => {
-            previewImg.src = event.target.result;
-            preview.style.display = 'block';
-            dropZone.style.display = 'none'; // Hide dropzone area when image is selected
-        };
-        reader.readAsDataURL(file);
-    } else {
-        preview.style.display = 'none';
-        previewImg.src = '';
-        dropZone.style.display = 'block';
-    }
+  addFiles(files) {
+      for (let i = 0; i < files.length; i++) {
+          if (files[i].type.startsWith('image/')) {
+              this.selectedFiles.push(files[i]);
+          }
+      }
+      this.renderPreviews();
+  },
+
+  removeFile(index) {
+      this.selectedFiles.splice(index, 1);
+      this.renderPreviews();
+  },
+
+  renderPreviews() {
+      const previewContainer = document.getElementById('image-preview');
+      const dropZone = document.getElementById('drop-zone');
+      
+      previewContainer.innerHTML = '';
+
+      if (this.selectedFiles.length === 0) {
+          previewContainer.style.display = 'none';
+          dropZone.style.display = 'block';
+          return;
+      }
+
+      previewContainer.style.display = 'grid'; // .admin-image-grid is already display: grid but we toggle it
+      dropZone.style.display = 'none';
+
+      this.selectedFiles.forEach((file, index) => {
+          const item = document.createElement('div');
+          item.className = 'admin-preview-item';
+          
+          const img = document.createElement('img');
+          img.src = URL.createObjectURL(file);
+          
+          const removeBtn = document.createElement('button');
+          removeBtn.type = 'button';
+          removeBtn.className = 'remove-image-btn';
+          removeBtn.innerHTML = '×';
+          removeBtn.onclick = (e) => {
+              e.stopPropagation();
+              this.removeFile(index);
+          };
+
+          item.appendChild(img);
+          item.appendChild(removeBtn);
+          previewContainer.appendChild(item);
+      });
   },
 
   async handleSubmit(e) {
@@ -109,33 +112,37 @@ const Admin = {
     const title = document.getElementById('title').value;
     const content = document.getElementById('content').value;
     const link = document.getElementById('link').value;
-    const imageFile = document.getElementById('image').files[0];
 
     submitBtn.disabled = true;
     submitBtn.innerText = 'Đang xử lý...';
 
     try {
       let image_url = null;
+      let uploadedUrls = [];
 
-      // Handle Image Upload if file exists
-      if (imageFile && this.supabase) {
-        submitBtn.innerText = 'Đang tải ảnh...';
-        const fileExt = imageFile.name.split('.').pop();
-        const fileName = `${Math.random().toString(36).substring(2)}-${Date.now()}.${fileExt}`;
-        const filePath = `uploads/${fileName}`;
-
-        const { data: uploadData, error: uploadError } = await this.supabase.storage
-            .from('announcements')
-            .upload(filePath, imageFile);
-
-        if (uploadError) throw new Error('Lỗi tải ảnh: ' + uploadError.message);
-
-        // Get Public URL
-        const { data: { publicUrl } } = this.supabase.storage
-            .from('announcements')
-            .getPublicUrl(filePath);
+      if (this.selectedFiles.length > 0 && this.supabase) {
+        submitBtn.innerText = `Đang tải lên ${this.selectedFiles.length} ảnh...`;
         
-        image_url = publicUrl;
+        const uploadPromises = this.selectedFiles.map(async (file) => {
+            const fileExt = file.name.split('.').pop() || 'png';
+            const fileName = `${Math.random().toString(36).substring(2)}-${Date.now()}.${fileExt}`;
+            const filePath = `uploads/${fileName}`;
+
+            const { error: uploadError } = await this.supabase.storage
+                .from('announcements')
+                .upload(filePath, file);
+
+            if (uploadError) throw new Error('Lỗi tải ảnh: ' + uploadError.message);
+
+            const { data: { publicUrl } } = this.supabase.storage
+                .from('announcements')
+                .getPublicUrl(filePath);
+            
+            return publicUrl;
+        });
+
+        uploadedUrls = await Promise.all(uploadPromises);
+        image_url = JSON.stringify(uploadedUrls);
       }
 
       submitBtn.innerText = 'Đang đăng...';
@@ -151,12 +158,10 @@ const Admin = {
       statusMsg.className = 'message success';
       e.target.reset();
       
-      // Reset Image UI
-      document.getElementById('image-preview').style.display = 'none';
-      document.getElementById('preview-img').src = '';
-      document.getElementById('drop-zone').style.display = 'block';
+      this.selectedFiles = [];
+      this.renderPreviews();
       
-      this.loadAnnouncements(); // Refresh list
+      this.loadAnnouncements();
     } catch (err) {
       statusMsg.innerText = 'Lỗi: ' + err.message;
       statusMsg.className = 'message error';
