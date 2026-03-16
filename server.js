@@ -7,6 +7,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+// Serve admin.html for /admin route
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
+
 // Serve static files from public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -131,11 +136,6 @@ app.get('/api/lessons', (req, res) => {
     console.error('Error reading data:', error);
     res.status(500).json({ error: 'Failed to load data' });
   }
-});
-
-// Serve admin.html for /admin route
-app.get('/admin', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
 // Serve index.html for root route
