@@ -44,10 +44,16 @@ module.exports = async (req, res) => {
 
   if (req.method === 'POST') {
     try {
-      const { title, content, link } = req.body;
+      const { title, content, link, image_url } = req.body;
       const { data, error } = await supabase
         .from('announcements')
-        .insert([{ title, content, link, timestamp: new Date().toISOString() }])
+        .insert([{ 
+          title, 
+          content, 
+          link, 
+          image_url,
+          timestamp: new Date().toISOString() 
+        }])
         .select();
       if (error) throw error;
       return res.status(201).json(data[0]);

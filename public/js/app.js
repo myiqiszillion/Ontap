@@ -95,14 +95,26 @@ const app = {
           linkHtml = `<a href="${ann.link}" target="_blank" class="announcement-link">Xem chi tiết ↗</a>`;
         }
 
+        let imageHtml = '';
+        if (ann.image_url) {
+          imageHtml = `
+            <div class="announcement-image-container">
+              <img src="${ann.image_url}" alt="${ann.title}" class="announcement-image" loading="lazy">
+            </div>
+          `;
+        }
+
         return `
           <div class="announcement-card">
-            <div class="announcement-header">
-              <h3 class="announcement-title">${ann.title}</h3>
-              <span class="announcement-time">${dateStr}</span>
+            ${imageHtml}
+            <div class="announcement-card-inner">
+              <div class="announcement-header">
+                <h3 class="announcement-title">${ann.title}</h3>
+                <span class="announcement-time">${dateStr}</span>
+              </div>
+              <div class="announcement-content">${this.escapeHTML(ann.content)}</div>
+              ${linkHtml}
             </div>
-            <div class="announcement-content">${this.escapeHTML(ann.content)}</div>
-            ${linkHtml}
           </div>
         `;
       }).join('');

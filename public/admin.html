@@ -158,6 +158,14 @@
                 <label for="link">Đường dẫn / Link đính kèm (Tuỳ chọn)</label>
                 <input type="url" id="link" placeholder="https://...">
             </div>
+
+            <div class="form-group">
+                <label for="image">Hình ảnh đính kèm (Tuỳ chọn)</label>
+                <input type="file" id="image" accept="image/*">
+                <div id="image-preview" style="margin-top: 10px; display: none;">
+                    <img id="preview-img" src="" alt="Preview" style="max-width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                </div>
+            </div>
             
             <button type="submit" class="submit-btn" id="submit-btn">Đăng Lên Website</button>
             <div id="status-message" class="message"></div>
@@ -172,6 +180,7 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/admin.js"></script>
 </body>
 </html>
