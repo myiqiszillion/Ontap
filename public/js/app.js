@@ -55,6 +55,75 @@ const app = {
     }
   },
 
+  // ═══════════ NAVIGATION TABS ═══════════
+
+  switchMainTab(tab) {
+    document.getElementById('tab-home').classList.remove('active');
+    document.getElementById('tab-announcements').classList.remove('active');
+    
+    document.getElementById('view-home').style.display = 'none';
+    document.getElementById('view-announcements').style.display = 'none';
+
+    document.getElementById(`tab-${tab}`).classList.add('active');
+    document.getElementById(`view-${tab}`).style.display = 'block';
+
+    if (tab === 'announcements') {
+      this.loadAnnouncements();
+    }
+  },
+
+  async loadAnnouncements() {
+    const container = document.getElementById('announcements-container');
+    try {
+      const res = await fetch('/api/announcements');
+      if (!res.ok) throw new Error('API failed');
+      const data = await res.json();
+      
+      if (!data || data.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-secondary); padding: 40px;">Chưa có thông báo nào.</div>';
+        return;
+      }
+
+      container.innerHTML = data.map(ann => {
+        const dateStr = new Date(ann.timestamp).toLocaleString('vi-VN', {
+          hour: '2-digit', minute: '2-digit', 
+          day: '2-digit', month: '2-digit', year: 'numeric'
+        });
+        
+        let linkHtml = '';
+        if (ann.link) {
+          linkHtml = `<a href="${ann.link}" target="_blank" class="announcement-link">Xem chi tiết ↗</a>`;
+        }
+
+        return `
+          <div class="announcement-card">
+            <div class="announcement-header">
+              <h3 class="announcement-title">${ann.title}</h3>
+              <span class="announcement-time">${dateStr}</span>
+            </div>
+            <div class="announcement-content">${this.escapeHTML(ann.content)}</div>
+            ${linkHtml}
+          </div>
+        `;
+      }).join('');
+    } catch (e) {
+      console.error(e);
+      container.innerHTML = '<div style="text-align: center; color: var(--text-secondary); padding: 40px;">Lỗi tải thông báo.</div>';
+    }
+  },
+
+  escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag])
+    );
+  },
+
   // ═══════════ DASHBOARD & GRADES ═══════════
 
   updateDashboardStats() {

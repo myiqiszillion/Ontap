@@ -57,8 +57,24 @@
       </div>
     </div>
 
-    <div class="subjects-grid" id="subjects-grid">
-      <!-- Dynamic: Render from subjects.json -->
+    <div class="main-tabs-container">
+        <button class="main-tab-btn active" id="tab-home" onclick="app.switchMainTab('home')">Trang Chủ</button>
+        <button class="main-tab-btn" id="tab-announcements" onclick="app.switchMainTab('announcements')">Thông Báo</button>
+    </div>
+
+    <div id="view-home">
+        <div class="subjects-grid" id="subjects-grid">
+          <!-- Dynamic: Render from subjects.json -->
+        </div>
+    </div>
+
+    <div id="view-announcements" style="display: none;">
+        <div class="announcements-container" id="announcements-container">
+            <!-- Dynamic: Rendered by JS -->
+            <div style="text-align: center; color: var(--text-secondary); padding: 40px;">
+                Đang tải thông báo...
+            </div>
+        </div>
     </div>
   </section>
 

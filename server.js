@@ -54,6 +54,55 @@ app.get('/api/subjects', (req, res) => {
   }
 });
 
+// API: Get announcements
+app.get('/api/announcements', (req, res) => {
+  try {
+    const dataPath = path.join(__dirname, 'data', 'announcements.json');
+    if (!fs.existsSync(dataPath)) {
+      return res.json([]);
+    }
+    const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    // Sort by timestamp descending (newest first)
+    data.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    res.json(data);
+  } catch (error) {
+    console.error('Error reading announcements:', error);
+    res.status(500).json({ error: 'Failed to load announcements' });
+  }
+});
+
+// API: Post new announcement (Admin only, local save)
+app.post('/api/announcements', (req, res) => {
+  try {
+    const { title, content, link } = req.body;
+    if (!title || !content) {
+      return res.status(400).json({ error: 'Title and content are required' });
+    }
+
+    const dataPath = path.join(__dirname, 'data', 'announcements.json');
+    let announcements = [];
+    if (fs.existsSync(dataPath)) {
+      announcements = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    }
+
+    const newAnnouncement = {
+      id: Date.now().toString(),
+      title,
+      content,
+      link: link || null,
+      timestamp: new Date().toISOString()
+    };
+
+    announcements.push(newAnnouncement);
+    fs.writeFileSync(dataPath, JSON.stringify(announcements, null, 2), 'utf8');
+
+    res.status(201).json({ success: true, announcement: newAnnouncement });
+  } catch (error) {
+    console.error('Error saving announcement:', error);
+    res.status(500).json({ error: 'Failed to save announcement' });
+  }
+});
+
 // API: Get questions for a specific subject
 app.get('/api/data/:subject', (req, res) => {
   try {
@@ -82,6 +131,11 @@ app.get('/api/lessons', (req, res) => {
     console.error('Error reading data:', error);
     res.status(500).json({ error: 'Failed to load data' });
   }
+});
+
+// Serve admin.html for /admin route
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
 // Serve index.html for root route
