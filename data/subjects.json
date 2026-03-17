@@ -54,6 +54,15 @@
       "description": "Văn học dân gian và hiện đại",
       "color": "#ec4899",
       "dataFile": "van.json"
+    },
+    {
+      "id": "tin",
+      "grade": 10,
+      "name": "Tin Học 10",
+      "icon": "💻",
+      "description": "Lập trình Python và công cụ",
+      "color": "#10b981",
+      "dataFile": "tin.json"
     }
   ]
 }
