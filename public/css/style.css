@@ -1233,6 +1233,7 @@ body {
   margin-bottom: 18px;
   padding-left: 12px;
   border-left: 3px solid var(--primary);
+  white-space: pre-wrap;
 }
 
 .study-answers {
@@ -1429,6 +1430,7 @@ body {
   color: var(--text-primary);
   margin-bottom: 14px;
   flex: 1;
+  white-space: pre-wrap;
 }
 
 .fc-hint {
@@ -1891,3 +1893,15 @@ body {
     border-radius: 0;
     margin-top: 5px;
 }
+
+/* Question Formatting */
+.question-text, 
+.question-passage, 
+.review-question, 
+.review-passage-short,
+.study-question,
+.study-passage,
+.fc-question {
+  white-space: pre-wrap !important;
+}
+
