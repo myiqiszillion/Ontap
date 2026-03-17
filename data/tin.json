@@ -991,7 +991,7 @@
           "passage": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
           "statements": [
             {
-              "question": "Cú pháp câu lệnh while i <= 3: là đúng.",
+              "question": "Cú pháp câu lệnh while i <= 3: đúng.",
               "correct": true
             },
             {
@@ -1054,7 +1054,7 @@
           "passage": "i = 0\nwhile i < 3:\n    print(i)",
           "statements": [
             {
-              "question": "Cú pháp của vòng lặp là đúng.",
+              "question": "Cú pháp của vòng lặp đúng.",
               "correct": true
             },
             {
@@ -1075,7 +1075,7 @@
           "passage": "i = 1\ntong = 0\nwhile i <= 5:\n    tong = tong + i\n    i = i + 1\n    print(tong)",
           "statements": [
             {
-              "question": "Cú pháp vòng lặp while trong chương trình là đúng.",
+              "question": "Cú pháp vòng lặp while trong chương trình đúng.",
               "correct": true
             },
             {
@@ -1306,7 +1306,7 @@
           "passage": "Cho hàm sau:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\n    if x > 0:\n        s = s + x\n        return s",
           "statements": [
             {
-              "question": "Hàm trên có cú pháp khai báo đúng.",
+              "question": "Hàm trên đúng cú pháp khai báo.",
               "correct": true
             },
             {
@@ -1369,7 +1369,7 @@
           "passage": "Cho hàm sau:\ndef dem_am(ds):\ndem = 0\nfor x in ds:\n    if x < 0:\n        dem = dem + 1",
           "statements": [
             {
-              "question": "Hàm trên không có lỗi cú pháp.",
+              "question": "Hàm trên không lỗi cú pháp.",
               "correct": true
             },
             {
@@ -1474,7 +1474,7 @@
           "passage": "Cho hàm sau:\ndef xu_ly(s):\nds = s.split(\",\")\nreturn \"|\".join(ds)",
           "statements": [
             {
-              "question": "Hàm có cú pháp đúng.",
+              "question": "Hàm đúng cú pháp.",
               "correct": true
             },
             {
