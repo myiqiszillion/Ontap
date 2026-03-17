@@ -230,7 +230,7 @@
             "5 lần",
             "6 lần"
           ],
-          "explanation": "👉 Các giá trị của i: 2, 4, 6, 8 (4 lần)",
+          "explanation": "",
           "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 2\nwhile i < 10:\n    print(i)\n    i = i + 2",
           "correct": 1,
           "correctAnswer": 1
@@ -242,7 +242,7 @@
             "6 lần",
             "Vô hạn"
           ],
-          "explanation": "👉 Các giá trị: 5, 4, 3, 2, 1",
+          "explanation": "",
           "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 5\nwhile i > 0:\n    print(i)\n    i = i - 1",
           "correct": 1,
           "correctAnswer": 1
@@ -254,7 +254,7 @@
             "Không lặp",
             "Lặp vô hạn"
           ],
-          "explanation": "👉 Vì biến i không thay đổi nên điều kiện luôn đúng.",
+          "explanation": "",
           "question": "Đoạn chương trình sau xảy ra điều gì?\ni = 1\nwhile i <= 3:\n    print(i)",
           "correct": 3,
           "correctAnswer": 3
@@ -278,7 +278,7 @@
             "Không in gì",
             "Báo lỗi"
           ],
-          "explanation": "👉 Vì điều kiện được kiểm tra trước khi lặp, nên không thực hiện lần nào.",
+          "explanation": "",
           "question": "Đoạn chương trình sau in ra kết quả gì?\ni = 5\nwhile i < 3:\n    print(i)\n    i = i + 1",
           "correct": 2,
           "correctAnswer": 2
@@ -302,7 +302,7 @@
             "0 lần",
             "Vô hạn"
           ],
-          "explanation": "👉 Điều kiện sai ngay từ đầu nên không thực hiện lần nào.",
+          "explanation": "",
           "question": "Đoạn chương trình sau thực hiện bao nhiêu lần lặp?\ni = 0\nwhile i > 0:\n    print(\"Hello\")\n    i = i + 1",
           "correct": 2,
           "correctAnswer": 2
@@ -506,7 +506,7 @@
             "[1, 3]",
             "[1, 2, 3, 2]"
           ],
-          "explanation": "👉 remove() chỉ xóa phần tử đầu tiên có giá trị 2.",
+          "explanation": "",
           "question": "Cho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh là:",
           "correct": 0,
           "correctAnswer": 0
@@ -518,7 +518,7 @@
             "[10, 30]",
             "[10, 20, 30]"
           ],
-          "explanation": "👉 del xóa phần tử theo vị trí chỉ số.",
+          "explanation": "",
           "question": "Cho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh là:",
           "correct": 2,
           "correctAnswer": 2
@@ -530,7 +530,7 @@
             "None",
             "Báo lỗi"
           ],
-          "explanation": "👉 clear() xóa toàn bộ phần tử trong danh sách.",
+          "explanation": "",
           "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:",
           "correct": 1,
           "correctAnswer": 1
