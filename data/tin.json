@@ -999,11 +999,11 @@
               "correct": true
             },
             {
-              "question": "Sau khi kết thúc vòng lặp, Giá trị cuối cùng của biến i sau khi kết thúc vòng lặp bằng 4.",
+              "question": "Giá trị cuối cùng của biến i sau khi kết thúc vòng lặp bằng 4.",
               "correct": true
             },
             {
-              "question": "Đoạn chương trình Thực hiện chức năng in ra các số từ 1 đến 3.",
+              "question": "Thực hiện chức năng in ra các số từ 1 đến 3.",
               "correct": true
             }
           ]
@@ -1066,7 +1066,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình Thực hiện chức năng in số 0 vô hạn lần.",
+              "question": "Thực hiện chức năng in số 0 vô hạn lần.",
               "correct": true
             }
           ]
@@ -1171,7 +1171,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình Thực hiện chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.",
+              "question": "Thực hiện chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.",
               "correct": true
             }
           ]
@@ -1192,7 +1192,7 @@
               "correct": false
             },
             {
-              "question": "Đoạn chương trình Thực hiện chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.",
+              "question": "Thực hiện chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.",
               "correct": true
             }
           ]
