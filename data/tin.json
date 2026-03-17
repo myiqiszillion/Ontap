@@ -309,18 +309,6 @@
         },
         {
           "options": [
-            "a = (1, 2, 3)",
-            "a = [1, 2, 3]",
-            "a = {1, 2, 3}",
-            "a = 1, 2, 3"
-          ],
-          "explanation": "",
-          "question": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1\n    a) Cú pháp câu lệnh while i <= 3: là đúng.\n    b) Đoạn chương trình lặp 3 lần.\n    c) Sau khi kết thúc vòng lặp, giá trị của i là 4.\n    d) Đoạn chương trình có chức năng in ra các số từ 1 đến 3.",
-          "correct": 1,
-          "correctAnswer": 1
-        },
-        {
-          "options": [
             "a = {}",
             "a = ()",
             "a = []",
@@ -544,18 +532,6 @@
           ],
           "explanation": "👉 clear() xóa toàn bộ phần tử trong danh sách.",
           "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:",
-          "correct": 1,
-          "correctAnswer": 1
-        },
-        {
-          "options": [
-            "s = [Hello]",
-            "s = \"Hello\"",
-            "s = {Hello}",
-            "s = (Hello)"
-          ],
-          "explanation": "",
-          "question": "a = [1, 2, 3]\na) Danh sách trên được khai báo đúng cú pháp.\nb) Có thể khai báo danh sách rỗng bằng a = {}.\nc) Sau lệnh a.append(4), danh sách trở thành [1, 2, 3, 4].\nd) Đoạn chương trình trên có chức năng tạo một danh sách gồm 3 số nguyên.",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -786,18 +762,6 @@
           "question": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:",
           "correct": 0,
           "correctAnswer": 0
-        },
-        {
-          "options": [
-            "function tinhTong(a, b):",
-            "def tinhTong(a, b):",
-            "define tinhTong(a, b)",
-            "void tinhTong(a, b)"
-          ],
-          "explanation": "",
-          "question": "a) Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".\nb) Để đo độ dài của xâu s, ta dùng lệnh len(s).\nc) Đoạn lệnh:\ns = \"Tin hoc\"\na = s.split()\nSau khi thực hiện, a là một danh sách gồm 2 phần tử.\nd) Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\n    s = \"ABC\"\n    for i in range(len(s)):\n        print(s[i])",
-          "correct": 1,
-          "correctAnswer": 1
         },
         {
           "options": [
