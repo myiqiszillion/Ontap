@@ -1198,7 +1198,7 @@
           ]
         },
         {
-          "passage": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra .",
+          "passage": "",
           "statements": [
             {
               "question": "Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".",
