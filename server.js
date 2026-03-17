@@ -50,6 +50,25 @@ app.get('/api/subjects', (req, res) => {
   try {
     const dataPath = path.join(__dirname, 'data', 'subjects.json');
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    
+    // Filter out subjects with no actual questions
+    const filteredSubjects = data.subjects.filter(subject => {
+      try {
+        const subjectDataPath = path.join(__dirname, 'data', subject.dataFile);
+        if (!fs.existsSync(subjectDataPath)) return false;
+        
+        const subjectData = JSON.parse(fs.readFileSync(subjectDataPath, 'utf8'));
+        if (subjectData.lessons && Array.isArray(subjectData.lessons)) {
+          return subjectData.lessons.some(lesson => lesson.questions && lesson.questions.length > 0);
+        }
+        return false;
+      } catch (e) {
+        return false;
+      }
+    });
+
+    data.subjects = filteredSubjects;
+    
     res.json(data);
   } catch (error) {
     res.status(500).json({ error: 'Failed to load subjects' });

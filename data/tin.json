@@ -1,0 +1,1205 @@
+{
+  "subject": "Tin Học 10",
+  "lessons": [
+    {
+      "id": 1,
+      "bai": 1,
+      "title": "Ôn Tập Giữa Kì 2 (Trắc n. nhiều lựa chọn)",
+      "type": "multiple",
+      "questions": [
+        {
+          "content": "Câu 1\nLệnh range(5) tạo ra dãy giá trị nào sau đây?",
+          "options": [
+            "A. 1, 2, 3, 4, 5",
+            "B. 0, 1, 2, 3, 4",
+            "C. 0, 1, 2, 3, 4, 5",
+            "D. 1, 2, 3, 4"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nLệnh range(2, 6) tạo ra vùng giá trị nào?",
+          "options": [
+            "A. 2, 3, 4, 5",
+            "B. 2, 3, 4, 5, 6",
+            "C. 3, 4, 5, 6",
+            "D. 2, 4, 6"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nLệnh range(0, 5) có đặc điểm gì?",
+          "options": [
+            "A. Bao gồm cả 0 và 5",
+            "B. Bao gồm 0 nhưng không bao gồm 5",
+            "C. Không bao gồm 0 nhưng bao gồm 5",
+            "D. Không bao gồm cả 0 và 5"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4 (Trường hợp đặc biệt: start = stop)\nGiá trị trong lệnh range(4, 4) là gì?",
+          "options": [
+            "A. 4",
+            "B. 0",
+            "C. rỗng",
+            "D. Báo lỗi"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5 (Trường hợp đặc biệt: start > stop)\nGiá trị trong lệnh range(6, 2) là gì?",
+          "options": [
+            "A. 6, 5, 4, 3",
+            "B. 6, 5, 4, 3, 2",
+            "C. rỗng",
+            "D. Báo lỗi"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 6\nÝ nghĩa đúng của lệnh range(a, b) là:",
+          "options": [
+            "A. Tạo dãy số từ a đến b (bao gồm cả a và b)",
+            "B. Tạo dãy số từ a đến b (không bao gồm a)",
+            "C. Tạo dãy số từ a đến b (bao gồm a nhưng không bao gồm b)",
+            "D. Tạo dãy số từ 0 đến b"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\nĐoạn chương trình sau in ra kết quả gì?\nfor i in range(3):\nprint(\"Xin chào\")",
+          "options": [
+            "A. In 1 lần “Xin chào”",
+            "B. In 2 lần “Xin chào”",
+            "C. In 3 lần “Xin chào”",
+            "D. Không in gì"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nĐoạn chương trình sau in ra kết quả gì?\nfor i in range(1, 4):\nprint(i)",
+          "options": [
+            "A. 1 2 3",
+            "B. 1 2 3 4",
+            "C. 0 1 2 3",
+            "D. 2 3 4"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nSố lần lặp của vòng lặp sau là bao nhiêu?\nfor i in range(2, 6):\nprint(i)",
+          "options": [
+            "A. 2 lần",
+            "B. 3 lần",
+            "C. 4 lần",
+            "D. 5 lần"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nĐoạn chương trình sau in ra kết quả gì?\nfor i in range(5):\nprint(i * 2)",
+          "options": [
+            "A. 0 2 4 6 8",
+            "B. 2 4 6 8 10",
+            "C. 0 1 2 3 4",
+            "D. 1 2 3 4 5"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nĐể in các số từ 3 đến 6 bằng câu lệnh for, ta viết đúng là:",
+          "options": [
+            "A. for i in range(3, 6):",
+            "B. for i in range(3, 7):",
+            "C. for i in range(4, 7):",
+            "D. for i in range(2, 6):"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\nCú pháp nào sau đây đúng của câu lệnh lặp while trong Python?",
+          "options": [
+            "A. while i < 5",
+            "B. while (i < 5):",
+            "C. while i < 5:",
+            "D. while i < 5 do"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nĐoạn chương trình sau có lỗi ở đâu?\ni = 1\nwhile i <= 5\nprint(i)\ni = i + 1",
+          "options": [
+            "A. Sai vì thiếu dấu ngoặc đơn",
+            "B. Sai vì thiếu dấu hai chấm (:)",
+            "C. Sai vì thiếu từ khóa do",
+            "D. Không có lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nTrong câu lệnh while, điều kiện lặp được đặt ở vị trí nào?",
+          "options": [
+            "A. Sau từ khóa while và trước dấu hai chấm",
+            "B. Sau dấu hai chấm",
+            "C. Trong dấu ngoặc nhọn { }",
+            "D. Sau từ khóa print"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nĐoạn chương trình sau đúng hay sai về cú pháp?\ni = 0\nwhile i < 3:\nprint(i)\ni =i + 1",
+          "options": [
+            "A. Đúng hoàn toàn",
+            "B. Sai vì thiếu dấu hai chấm",
+            "C. Sai vì không thụt lề khối lệnh",
+            "D. Sai vì thiếu dấu ngoặc"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nChọn phát biểu đúng về câu lệnh while:",
+          "options": [
+            "A. while luôn lặp đúng 1 lần",
+            "B. while chỉ lặp khi điều kiện đúng",
+            "C. while không cần điều kiện",
+            "D. while chỉ lặp khi điều kiện sai"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\nĐoạn chương trình sau lặp bao nhiêu lần?\ni = 1\nwhile i <= 3:\nprint(i)\ni = i + 1",
+          "options": [
+            "A. 2 lần",
+            "B. 3 lần",
+            "C. 4 lần",
+            "D. Vô hạn"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nĐoạn chương trình sau lặp bao nhiêu lần?\ni = 0\nwhile i < 5:\nprint(\"Hello\")\ni = i + 1",
+          "options": [
+            "A. 4 lần",
+            "B. 5 lần",
+            "C. 6 lần",
+            "D. Vô hạn"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nĐoạn chương trình sau lặp bao nhiêu lần?\ni = 2\nwhile i < 10:\nprint(i)\ni = i + 2",
+          "options": [
+            "A. 3 lần",
+            "B. 4 lần",
+            "C. 5 lần",
+            "D. 6 lần"
+          ],
+          "answer": "B",
+          "explanation": "👉 Các giá trị của i: 2, 4, 6, 8 (4 lần)"
+        },
+        {
+          "content": "Câu 4\nĐoạn chương trình sau lặp bao nhiêu lần?\ni = 5\nwhile i > 0:\nprint(i)\ni = i - 1",
+          "options": [
+            "A. 4 lần",
+            "B. 5 lần",
+            "C. 6 lần",
+            "D. Vô hạn"
+          ],
+          "answer": "B",
+          "explanation": "👉 Các giá trị: 5, 4, 3, 2, 1"
+        },
+        {
+          "content": "Câu 5\nĐoạn chương trình sau xảy ra điều gì?\ni = 1\nwhile i <= 3:\nprint(i)",
+          "options": [
+            "A. Lặp 3 lần",
+            "B. Lặp 4 lần",
+            "C. Không lặp",
+            "D. Lặp vô hạn"
+          ],
+          "answer": "D",
+          "explanation": "👉 Vì biến i không thay đổi nên điều kiện luôn đúng."
+        },
+        {
+          "content": "Câu 1\nTrong Python, câu lệnh while kiểm tra điều kiện vào thời điểm nào?",
+          "options": [
+            "A. Sau khi thực hiện khối lệnh",
+            "B. Trước khi thực hiện khối lệnh",
+            "C. Sau khi thực hiện ít nhất một lần",
+            "D. Không cần kiểm tra điều kiện"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nĐoạn chương trình sau in ra kết quả gì?\ni = 5\nwhile i < 3:\nprint(i)\ni = i + 1",
+          "options": [
+            "A. In ra số 5",
+            "B. In ra 5 và 6",
+            "C. Không in gì",
+            "D. Báo lỗi"
+          ],
+          "answer": "C",
+          "explanation": "👉 Vì điều kiện được kiểm tra trước khi lặp, nên không thực hiện lần nào."
+        },
+        {
+          "content": "Câu 3\nPhát biểu nào sau đây đúng về vòng lặp while?",
+          "options": [
+            "A. Khối lệnh trong while luôn được thực hiện ít nhất một lần",
+            "B. Điều kiện được kiểm tra sau khi thực hiện khối lệnh",
+            "C. Điều kiện được kiểm tra trước mỗi lần lặp",
+            "D. while không cần điều kiện"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nĐoạn chương trình sau thực hiện bao nhiêu lần lặp?\ni = 0\nwhile i > 0:\nprint(\"Hello\")\ni = i + 1",
+          "options": [
+            "A. 1 lần",
+            "B. 2 lần",
+            "C. 0 lần",
+            "D. Vô hạn"
+          ],
+          "answer": "C",
+          "explanation": "👉 Điều kiện sai ngay từ đầu nên không thực hiện lần nào."
+        },
+        {
+          "content": "Câu 1\ni = 1\nwhile i <= 3:\nprint(i)\ni = i + 1\na) Cú pháp câu lệnh while i <= 3: là đúng.\nb) Đoạn chương trình lặp 3 lần.\nc) Sau khi kết thúc vòng lặp, giá trị của i là 4.\nd) Đoạn chương trình có chức năng in ra các số từ 1 đến 3.\nĐáp án:\na) Đúng\nb) Đúng\nc) Đúng\nd) Đúng\nCâu 2\ni = 5\nwhile i < 5:\nprint(i)\ni = i + 1\na) Điều kiện của vòng lặp được kiểm tra trước khi thực hiện khối lệnh.\nb) Đoạn chương trình lặp 1 lần.\nc) Chương trình không in ra giá trị nào vì điều kiện sai ngay từ đầu.\nd) Chức năng của đoạn chương trình là in các số nhỏ hơn 5 bắt đầu từ 5.\nĐáp án:\na) Đúng\nb) Sai\nc) Đúng\nd) Sai\nCâu 3\ni = 1\nwhile i <= 4\nprint(i)\ni = i + 1\na) Đoạn chương trình trên đúng cú pháp.\nb) Câu lệnh while bắt buộc phải có dấu hai chấm (:).\nc) Nếu thêm dấu hai chấm (:) đúng vị trí thì vòng lặp sẽ thực hiện 4 lần.\nd) Khi sửa đúng cú pháp, chương trình có chức năng in các số từ 1 đến 4.\nĐáp án:\na) Sai\nb) Đúng\nc) Đúng\nd) Đúng\nCâu 4\ni = 0\nwhile i < 3:\nprint(i)\na) Cú pháp của vòng lặp là đúng.\nb) Biến điều khiển vòng lặp chưa được thay đổi trong thân vòng lặp.\nc) Vì biến i không thay đổi nên vòng lặp sẽ lặp vô hạn.\nd) Đoạn chương trình có chức năng in số 0 vô hạn lần.\nĐáp án:\na) Đúng\nb) Đúng\nc) Đúng\nd) Đúng\nCâu 5\ni = 1\ntong = 0\nwhile i <= 5:\ntong = tong + i\ni = i + 1\nprint(tong)\na) Cú pháp vòng lặp while trong chương trình là đúng.\nb) Vòng lặp thực hiện 5 lần.\nc) Sau khi kết thúc vòng lặp, biến tong có giá trị bằng 15.\nd) Chương trình có chức năng tính tổng các số từ 1 đến 5.\nĐáp án:\na) Đúng\nb) Đúng\nc) Đúng\nd) Đúng\n3. Kiểu dữ liệu danh sách và Một số lệnh làm việc với dữ liệu danh sách\nNhận biết\nCâu 1\nCách khai báo một danh sách gồm các số 1, 2, 3 là:",
+          "options": [
+            "A. a = (1, 2, 3)",
+            "B. a = [1, 2, 3]",
+            "C. a = {1, 2, 3}",
+            "D. a = 1, 2, 3"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nCách khai báo một danh sách rỗng là:",
+          "options": [
+            "A. a = {}",
+            "B. a = ()",
+            "C. a = []",
+            "D. a = null"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nCho danh sách:\na = [10, 20, 30]\nGiá trị của a[0] là:",
+          "options": [
+            "A. 10",
+            "B. 20",
+            "C. 30",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nCho danh sách:\na = [5, 6, 7]\nGiá trị của a[2] là:",
+          "options": [
+            "A. 5",
+            "B. 6",
+            "C. 7",
+            "D. Báo lỗi"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nCho danh sách:\na = [1, 2, 3, 4]\nĐộ dài của danh sách là:",
+          "options": [
+            "A. 3",
+            "B. 4",
+            "C. 5",
+            "D. 1"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 6\nHàm dùng để tính độ dài danh sách là:",
+          "options": [
+            "A. size()",
+            "B. count()",
+            "C. length()",
+            "D. len()"
+          ],
+          "answer": "D",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 7\nCho danh sách:\na = [1, 2, 3]\nSau khi thực hiện lệnh a[1] = 10, danh sách trở thành:",
+          "options": [
+            "A. [10, 2, 3]",
+            "B. [1, 10, 3]",
+            "C. [1, 2, 10]",
+            "D. [10, 10, 10]"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 8\nCho danh sách:\na = [4, 5, 6]\nLệnh nào sau đây thay đổi giá trị 6 thành 9?",
+          "options": [
+            "A. a[3] = 9",
+            "B. a[2] = 9",
+            "C. a[1] = 9",
+            "D. a[0] = 9"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 9\nCho danh sách:\na = [1, 2, 3]\nKết quả của biểu thức 2 in a là:",
+          "options": [
+            "A. True",
+            "B. False",
+            "C. 2",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 10\nCho danh sách:\na = [7, 8, 9]\nKết quả của biểu thức 5 in a là:",
+          "options": [
+            "A. True",
+            "B. False",
+            "C. 5",
+            "D. Báo lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 11\nCho hai danh sách:\na = [1, 2]\nb = [3, 4]\nKết quả của a + b là:",
+          "options": [
+            "A. [1, 2, 3, 4]",
+            "B. [4, 6]",
+            "C. [[1, 2], [3, 4]]",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 12\nCho hai danh sách:\nx = [\"A\"]\ny = [\"B\"]\nKết quả của x + y là:",
+          "options": [
+            "A. [\"A\", \"B\"]",
+            "B. [\"AB\"]",
+            "C. [\"A\"][\"B\"]",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 13\nĐoạn chương trình sau in ra kết quả gì?\na = [1, 2, 3]\nfor x in a:\nprint(x)",
+          "options": [
+            "A. 1 2 3",
+            "B. [1, 2, 3]",
+            "C. 0 1 2",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 14\nĐoạn chương trình sau in ra kết quả gì?\na = [10, 20, 30]\nfor i in range(len(a)):\nprint(a[i])",
+          "options": [
+            "A. 10 20 30",
+            "B. 0 1 2",
+            "C. [10, 20, 30]",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 15\nCho danh sách:\na = [2, 4, 6]\nCách kiểm tra số 4 có trong danh sách hay không là:",
+          "options": [
+            "A. 4 = a",
+            "B. 4 in a",
+            "C. a in 4",
+            "D. a = 4"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\nCho danh sách:\na = [1, 2, 3]\na.append(4)\nGiá trị của danh sách a sau khi thực hiện lệnh là:",
+          "options": [
+            "A. [4, 1, 2, 3]",
+            "B. [1, 2, 3, 4]",
+            "C. [1, 2, 4]",
+            "D. [1, 2, 3]"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nCho danh sách:\na = [5, 6, 7]\na.insert(1, 10)\nDanh sách a sau khi thực hiện lệnh là:",
+          "options": [
+            "A. [10, 5, 6, 7]",
+            "B. [5, 10, 6, 7]",
+            "C. [5, 6, 10, 7]",
+            "D. [5, 6, 7, 10]"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nCho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh là:",
+          "options": [
+            "A. [1, 3, 2]",
+            "B. [1, 2, 3]",
+            "C. [1, 3]",
+            "D. [1, 2, 3, 2]"
+          ],
+          "answer": "A",
+          "explanation": "👉 remove() chỉ xóa phần tử đầu tiên có giá trị 2."
+        },
+        {
+          "content": "Câu 4\nCho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh là:",
+          "options": [
+            "A. [10, 20]",
+            "B. [20, 30]",
+            "C. [10, 30]",
+            "D. [10, 20, 30]"
+          ],
+          "answer": "C",
+          "explanation": "👉 del xóa phần tử theo vị trí chỉ số."
+        },
+        {
+          "content": "Câu 5\nCho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:",
+          "options": [
+            "A. [1, 2, 3]",
+            "B. []",
+            "C. None",
+            "D. Báo lỗi"
+          ],
+          "answer": "B",
+          "explanation": "👉 clear() xóa toàn bộ phần tử trong danh sách."
+        },
+        {
+          "content": "Câu 1\na = [1, 2, 3]\na) Danh sách trên được khai báo đúng cú pháp.\nb) Có thể khai báo danh sách rỗng bằng a = {}.\nc) Sau lệnh a.append(4), danh sách trở thành [1, 2, 3, 4].\nd) Đoạn chương trình trên có chức năng tạo một danh sách gồm 3 số nguyên.\nĐáp án:\na) Đúng\nb) Sai\nc) Đúng\nd) Đúng\nCâu 2\na = [10, 20, 30]\na) Giá trị của a[1] là 20.\nb) Độ dài danh sách được tính bằng length(a).\nc) Sau lệnh a.insert(1, 15), danh sách trở thành [10, 15, 20, 30].\nd) Nếu dùng vòng lặp\nfor x in a:\nprint(x)\nthì chương trình sẽ in lần lượt từng phần tử của danh sách.\nĐáp án:\na) Đúng\nb) Sai\nc) Đúng\nd) Đúng\nCâu 3\na = [1, 2, 3, 2]\na) Biểu thức 2 in a cho kết quả True.\nb) Có thể thay đổi phần tử thứ hai bằng lệnh a[2] = 5.\nc) Sau lệnh a.remove(2), danh sách trở thành [1, 3, 2].\nd) Lệnh remove() có chức năng xóa tất cả các phần tử có giá trị 2 trong danh sách.\nĐáp án:\na) Đúng\nb) Sai (vì a[1] mới là phần tử thứ hai)\nc) Đúng\nd) Sai (chỉ xóa phần tử đầu tiên tìm thấy)\nCâu 4\na = [4, 5, 6]\nb = [7, 8]\nc = a + b\na) Toán tử + dùng để ghép nối hai danh sách.\nb) Sau phép ghép, danh sách c có 4 phần tử.\nc) Nếu thực hiện del c[0] thì c trở thành [5, 6, 7, 8].\nd) Đoạn chương trình có chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.\nĐáp án:\na) Đúng\nb) Sai (có 5 phần tử)\nc) Đúng\nd) Đúng\nCâu 5\na = [1, 2, 3]\na.append(4)\na.clear()\na) Lệnh append() dùng để thêm phần tử vào cuối danh sách.\nb) Lệnh clear() dùng để xóa toàn bộ danh sách.\nc) Sau khi thực hiện hai lệnh trên, danh sách a là [1, 2, 3, 4].\nd) Đoạn chương trình có chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.\nĐáp án:\na) Đúng\nb) Đúng\nc) Sai\nd) Đúng\n4. Xâu kí tự và Một số lệnh làm việc với xâu kí tự\nNhận biết\nCâu 1\nCách khai báo đúng một xâu kí tự là:",
+          "options": [
+            "A. s = [Hello]",
+            "B. s = \"Hello\"",
+            "C. s = {Hello}",
+            "D. s = (Hello)"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nTrong Python, xâu kí tự được đặt trong:",
+          "options": [
+            "A. Dấu ngoặc vuông []",
+            "B. Dấu ngoặc nhọn {}",
+            "C. Dấu ngoặc kép \"\" hoặc dấu nháy đơn ''",
+            "D. Dấu ngoặc tròn ()"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nCho xâu:\ns = \"Python\"\nGiá trị của s[0] là:",
+          "options": [
+            "A. P",
+            "B. y",
+            "C. n",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nCho xâu:\ns = \"TinHoc\"\nGiá trị của s[3] là:",
+          "options": [
+            "A. H",
+            "B. o",
+            "C. c",
+            "D. n"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nHàm dùng để tính độ dài xâu kí tự là:",
+          "options": [
+            "A. length()",
+            "B. size()",
+            "C. count()",
+            "D. len()"
+          ],
+          "answer": "D",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 6\nCho xâu:\ns = \"Hello\"\nKết quả của len(s) là:",
+          "options": [
+            "A. 4",
+            "B. 5",
+            "C. 6",
+            "D. Báo lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 7\nĐoạn chương trình sau in ra kết quả gì?\ns = \"ABC\"\nfor ch in s:\nprint(ch)",
+          "options": [
+            "A. ABC",
+            "B. A B C (mỗi kí tự một dòng)",
+            "C. 0 1 2",
+            "D. Báo lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 8\nĐoạn chương trình sau in ra kết quả gì?\ns = \"XYZ\"\nfor i in range(len(s)):\nprint(s[i])",
+          "options": [
+            "A. X Y Z (mỗi kí tự một dòng)",
+            "B. 0 1 2",
+            "C. XYZ",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 9\nBiểu thức \"on\" in \"Python\" cho kết quả:",
+          "options": [
+            "A. True",
+            "B. False",
+            "C. on",
+            "D. Báo lỗi"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 10\nBiểu thức \"py\" in \"Python\" cho kết quả:",
+          "options": [
+            "A. True",
+            "B. False",
+            "C. 0",
+            "D. Báo lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 11\nCho xâu:\ns = \"banana\"\nKết quả của s.find(\"na\") là:",
+          "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. -1"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 12\nCho xâu:\ns = \"Python\"\nKết quả của s.find(\"th\") là:",
+          "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. -1"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 13\nCho xâu:\ns = \"Python\"\nKết quả của s.find(\"abc\") là:",
+          "options": [
+            "A. 0",
+            "B. 1",
+            "C. -1",
+            "D. Báo lỗi"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 14\nĐoạn chương trình sau có chức năng gì?\ns = \"abcde\"\nfor i in range(len(s)):\nprint(i, s[i])",
+          "options": [
+            "A. In các chỉ số của xâu",
+            "B. In các kí tự của xâu",
+            "C. In chỉ số và kí tự tương ứng",
+            "D. Báo lỗi"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 15\nĐể kiểm tra xâu con \"tin\" có trong xâu \"lap trinh tin hoc\" hay không, ta dùng:",
+          "options": [
+            "A. \"tin\" find \"lap trinh tin hoc\"",
+            "B. \"tin\" in \"lap trinh tin hoc\"",
+            "C. \"lap trinh tin hoc\" in \"tin\"",
+            "D. find(\"tin\")"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\nCho đoạn lệnh:\ns = \"Tin hoc lop 10\"\na = s.split()\nprint(a)\nKết quả in ra là:",
+          "options": [
+            "A. [\"Tin hoc lop 10\"]",
+            "B. ['Tin', 'hoc', 'lop', '10']",
+            "C. ['Tin hoc lop', '10']",
+            "D. Lỗi chương trình"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nCho đoạn lệnh:\ns = \"a-b-c-d\"\na = s.split(\"-\")\nprint(a)\nKết quả in ra là:",
+          "options": [
+            "A. ['a-b-c-d']",
+            "B. ['a', 'b', 'c', 'd']",
+            "C. ['a b c d']",
+            "D. Lỗi vì dấu \"-\" không hợp lệ"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nCho đoạn lệnh:\na = ['2024', '2025', '2026']\ns = \"-\".join(a)\nprint(s)\nKết quả in ra là:",
+          "options": [
+            "A. ['2024-2025-2026']",
+            "B. 2024 2025 2026",
+            "C. 2024-2025-2026",
+            "D. Lỗi chương trình"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nCho đoạn lệnh:\ns = \"lap trinh python python\"\nk = s.find(\"python\", 10)\nprint(k)\nKết quả in ra là:",
+          "options": [
+            "A. 4",
+            "B. 10",
+            "C. 11",
+            "D. -1"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nCho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:",
+          "options": [
+            "A. mot_hai_ba_bon",
+            "B. ['mot_hai_ba_bon']",
+            "C. mot hai ba bon",
+            "D. Lỗi chương trình"
+          ],
+          "answer": "A",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\na) Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".\nb) Để đo độ dài của xâu s, ta dùng lệnh len(s).\nc) Đoạn lệnh:\ns = \"Tin hoc\"\na = s.split()\nSau khi thực hiện, a là một danh sách gồm 2 phần tử.\nd) Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\ns = \"ABC\"\nfor i in range(len(s)):\nprint(s[i])\nĐáp án:\na) Đúng\nb) Đúng\nc) Đúng\nd) Đúng\nCâu 2\na) Có thể duyệt từng kí tự của xâu bằng câu lệnh:\nfor ch in s:\nb) Toán tử in không dùng được để kiểm tra xâu con trong xâu mẹ.\nc) Đoạn lệnh:\ns = \"python lap trinh\"\nprint(\"-\".join(s.split()))\nKết quả là: python-lap-trinh.\nd) Đoạn chương trình sau có chức năng đếm số kí tự \"a\" trong xâu:\ns = \"banana\"\ndem = 0\nfor ch in s:\nif ch == \"a\":\ndem = dem + 1\nprint(dem)\nĐáp án:\na) Đúng\nb) Sai\nc) Đúng\nd) Đúng\nCâu 3\na) Lệnh s.find(\"a\") trả về vị trí đầu tiên của kí tự \"a\" trong xâu s.\nb) Nếu không tìm thấy xâu con, lệnh find() trả về giá trị 0.\nc) Đoạn lệnh:\ns = \"lap trinh python\"\nprint(s.find(\"python\", 5))\nSẽ trả về vị trí bắt đầu của từ \"python\" nếu tìm thấy sau vị trí 5.\nd) Đoạn chương trình sau in ra các vị trí chứa kí tự \"o\":\ns = \"hello world\"\nfor i in range(len(s)):\nif s[i] == \"o\":\nprint(i)\nĐáp án:\na) Đúng\nb) Sai (trả về -1)\nc) Đúng\nd) Đúng\nCâu 4\na) Xâu kí tự trong Python là một dãy các kí tự.\nb) Có thể truy cập kí tự thứ i của xâu bằng cú pháp s[i].\nc) Đoạn lệnh:\ns = \"mot hai ba\"\na = s.split()\nprint(len(a))\nSẽ in ra 3.\nd) Đoạn chương trình sau có chức năng kiểm tra xem xâu t có xuất hiện trong xâu s hay không:\ns = \"lap trinh\"\nt = \"tr\"\nif t in s:\nprint(\"Co\")\nelse:\nprint(\"Khong\")\nĐáp án:\na) Đúng\nb) Đúng\nc) Đúng\nd) Đúng\nCâu 5\na) Lệnh len(\"abc\") cho kết quả bằng 2.\nb) Có thể dùng for i in range(len(s)) để duyệt xâu theo chỉ số.\nc) Đoạn lệnh:\ns = \"a,b,c\"\na = s.split(\",\")\nprint(\"_\".join(a))\nKết quả in ra là: a_b_c.\nd) Đoạn chương trình sau có chức năng đếm số từ trong xâu:\ns = \"hoc lap trinh python\"\ndem = 0\nfor ch in s:\nif ch == \" \":\ndem = dem + 1\nprint(dem + 1)\nĐáp án:\na) Sai (kết quả là 3)\nb) Đúng\nc) Đúng\nd) Đúng\n5. Hàm và Tham số của hàm trong Python\nNhận biết\nCâu 1\nCú pháp nào sau đây dùng để khai báo một hàm trong Python?",
+          "options": [
+            "A. function tinhTong(a, b):",
+            "B. def tinhTong(a, b):",
+            "C. define tinhTong(a, b)",
+            "D. void tinhTong(a, b)"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nTrong khai báo sau:\ndef tinhTong(a, b):\nreturn a + b\na và b được gọi là gì?",
+          "options": [
+            "A. Đối số",
+            "B. Tham số",
+            "C. Biến toàn cục",
+            "D. Hằng số"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nKhi gọi hàm tinhTong(3, 5), số 3 và 5 được gọi là:",
+          "options": [
+            "A. Tham số",
+            "B. Hàm con",
+            "C. Đối số",
+            "D. Biến cục bộ"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nCho hàm:\ndef xinChao():\nprint(\"Xin chao\")\nHàm này:",
+          "options": [
+            "A. Có trả về giá trị",
+            "B. Không trả về giá trị cụ thể",
+            "C. Trả về giá trị 0",
+            "D. Trả về chuỗi \"Xin chao\""
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 6\nCho hàm:\ndef nhan(a, b):\nreturn a * b\nHàm này:",
+          "options": [
+            "A. Không có tham số",
+            "B. Có 1 tham số",
+            "C. Có 2 tham số",
+            "D. Có 3 tham số"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 7\nĐiều gì xảy ra nếu số đối số không bằng số tham số?",
+          "options": [
+            "A. Chương trình vẫn chạy bình thường",
+            "B. Chương trình tự thêm giá trị 0",
+            "C. Báo lỗi",
+            "D. Bỏ qua tham số thừa"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 8\nLời gọi nào sau đây đúng với hàm:\ndef cong(a, b, c):\nreturn a + b + c",
+          "options": [
+            "A. cong(1, 2)",
+            "B. cong(1, 2, 3)",
+            "C. cong(1)",
+            "D. cong()"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 9\nĐoạn chương trình sau in ra kết quả gì?\ndef tinh(a):\nreturn a + 2\n\nprint(tinh(3))",
+          "options": [
+            "A. 3",
+            "B. 2",
+            "C. 5",
+            "D. Lỗi"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 10\nNếu một hàm không có lệnh return, thì khi gọi hàm đó:",
+          "options": [
+            "A. Luôn báo lỗi",
+            "B. Trả về giá trị None",
+            "C. Trả về 0",
+            "D. Không thực hiện"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 11\nKhai báo nào sau đây sai cú pháp?",
+          "options": [
+            "A. def tinh():",
+            "B. def tinh(a,b):",
+            "C. def tinh a,b:",
+            "D. def tinh(a):"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 12\nCho hàm:\ndef chao(ten):\nprint(\"Xin chao\", ten)\nLời gọi nào đúng?",
+          "options": [
+            "A. chao()",
+            "B. chao(\"An\")",
+            "C. chao(\"An\", \"Binh\")",
+            "D. print(chao)"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 13\nCho đoạn chương trình:\ndef tru(a, b):\nprint(a - b)\n\nkq = tru(7, 2)\nprint(kq)\nKết quả in ra là:",
+          "options": [
+            "A. 5",
+            "B. None",
+            "C. 7 2",
+            "D. Lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 14\nHàm sau có bao nhiêu tham số?\ndef tinh(a, b, c, d):\nreturn a + b",
+          "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 1"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 15\nĐoạn chương trình sau có đúng không?\ndef tong(a, b):\nreturn a + b\nprint(tong(5))",
+          "options": [
+            "A. Đúng và in ra 5",
+            "B. Đúng và in ra None",
+            "C. Sai vì thiếu đối số",
+            "D. Đúng và in ra 0"
+          ],
+          "answer": "C",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 1\nCho đoạn chương trình:\ndef cong(a, b):\nreturn a + b\nprint(cong(2, 3))\nKết quả in ra là:",
+          "options": [
+            "A. 23",
+            "B. 5",
+            "C. None",
+            "D. Lỗi chương trình"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 2\nCho đoạn chương trình:\ndef nhan(a, b):\nprint(a * b)\nkq = nhan(3, 4)\nprint(kq)\nKết quả in ra là:",
+          "options": [
+            "A. 12",
+            "B. 12 và None",
+            "C. None",
+            "D. Lỗi chương trình"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 3\nCho hàm:\ndef tinh(a, b):\nreturn a - b\nLời gọi nào sau đây gây lỗi?",
+          "options": [
+            "A. tinh(5, 2)",
+            "B. tinh(5)",
+            "C. tinh(7, 3)",
+            "D. print(tinh(4, 1))"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 4\nCho đoạn chương trình:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))\nKết quả in ra là:",
+          "options": [
+            "A. Xin chao",
+            "B. Xin chao An",
+            "C. An Xin chao",
+            "D. Lỗi"
+          ],
+          "answer": "B",
+          "explanation": ""
+        },
+        {
+          "content": "Câu 5\nCho hàm:\ndef tong(a, b):\nreturn a + b\nLời gọi nào sau đây gây lỗi?",
+          "options": [
+            "A. tong(2, 3)",
+            "B. tong(\"2\", \"3\")",
+            "C. tong(2)",
+            "D. tong(5, 7)"
+          ],
+          "answer": "C",
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "bai": 2,
+      "title": "Ôn Tập Giữa Kì 2 (Đúng / Sai)",
+      "type": "tf",
+      "questions": [
+        {
+          "content": "Câu 1\ni = 1\nwhile i <= 3:\nprint(i)\ni = i + 1",
+          "options": [
+            "a) Cú pháp câu lệnh while i <= 3: là đúng.",
+            "b) Đoạn chương trình lặp 3 lần.",
+            "c) Sau khi kết thúc vòng lặp, giá trị của i là 4.",
+            "d) Đoạn chương trình có chức năng in ra các số từ 1 đến 3."
+          ],
+          "answer": "Đ,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 2\ni = 5\nwhile i < 5:\nprint(i)\ni = i + 1",
+          "options": [
+            "a) Điều kiện của vòng lặp được kiểm tra trước khi thực hiện khối lệnh.",
+            "b) Đoạn chương trình lặp 1 lần.",
+            "c) Chương trình không in ra giá trị nào vì điều kiện sai ngay từ đầu.",
+            "d) Chức năng của đoạn chương trình là in các số nhỏ hơn 5 bắt đầu từ 5."
+          ],
+          "answer": "Đ,S,Đ,S"
+        },
+        {
+          "content": "Câu 3\ni = 1\nwhile i <= 4\nprint(i)\ni = i + 1",
+          "options": [
+            "a) Đoạn chương trình trên đúng cú pháp.",
+            "b) Câu lệnh while bắt buộc phải có dấu hai chấm (:).",
+            "c) Nếu thêm dấu hai chấm (:) đúng vị trí thì vòng lặp sẽ thực hiện 4 lần.",
+            "d) Khi sửa đúng cú pháp, chương trình có chức năng in các số từ 1 đến 4."
+          ],
+          "answer": "S,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 4\ni = 0\nwhile i < 3:\nprint(i)",
+          "options": [
+            "a) Cú pháp của vòng lặp là đúng.",
+            "b) Biến điều khiển vòng lặp chưa được thay đổi trong thân vòng lặp.",
+            "c) Vì biến i không thay đổi nên vòng lặp sẽ lặp vô hạn.",
+            "d) Đoạn chương trình có chức năng in số 0 vô hạn lần."
+          ],
+          "answer": "Đ,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 5\ni = 1\ntong = 0\nwhile i <= 5:\ntong = tong + i\ni = i + 1\nprint(tong)",
+          "options": [
+            "a) Cú pháp vòng lặp while trong chương trình là đúng.",
+            "b) Vòng lặp thực hiện 5 lần.",
+            "c) Sau khi kết thúc vòng lặp, biến tong có giá trị bằng 15.",
+            "d) Chương trình có chức năng tính tổng các số từ 1 đến 5."
+          ],
+          "answer": "Đ,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 5\nCho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:\nA. [1, 2, 3]\nB. []\nC. None\nD. Báo lỗi\nĐáp án: B\n👉 clear() xóa toàn bộ phần tử trong danh sách.\nTrắc nghiệm đúng sai\nCâu 1\na = [1, 2, 3]",
+          "options": [
+            "a) Danh sách trên được khai báo đúng cú pháp.",
+            "b) Có thể khai báo danh sách rỗng bằng a = {}.",
+            "c) Sau lệnh a.append(4), danh sách trở thành [1, 2, 3, 4].",
+            "d) Đoạn chương trình trên có chức năng tạo một danh sách gồm 3 số nguyên."
+          ],
+          "answer": "Đ,S,Đ,Đ"
+        },
+        {
+          "content": "Câu 2\na = [10, 20, 30]",
+          "options": [
+            "a) Giá trị của a[1] là 20.",
+            "b) Độ dài danh sách được tính bằng length(a).",
+            "c) Sau lệnh a.insert(1, 15), danh sách trở thành [10, 15, 20, 30].",
+            "d) Nếu dùng vòng lặp\nfor x in a:\nprint(x)\nthì chương trình sẽ in lần lượt từng phần tử của danh sách."
+          ],
+          "answer": "Đ,S,Đ,Đ"
+        },
+        {
+          "content": "Câu 3\na = [1, 2, 3, 2]",
+          "options": [
+            "a) Biểu thức 2 in a cho kết quả True.",
+            "b) Có thể thay đổi phần tử thứ hai bằng lệnh a[2] = 5.",
+            "c) Sau lệnh a.remove(2), danh sách trở thành [1, 3, 2].",
+            "d) Lệnh remove() có chức năng xóa tất cả các phần tử có giá trị 2 trong danh sách."
+          ],
+          "answer": "Đ,S,Đ,S"
+        },
+        {
+          "content": "Câu 4\na = [4, 5, 6]\nb = [7, 8]\nc = a + b",
+          "options": [
+            "a) Toán tử + dùng để ghép nối hai danh sách.",
+            "b) Sau phép ghép, danh sách c có 4 phần tử.",
+            "c) Nếu thực hiện del c[0] thì c trở thành [5, 6, 7, 8].",
+            "d) Đoạn chương trình có chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu."
+          ],
+          "answer": "Đ,S,Đ,Đ"
+        },
+        {
+          "content": "Câu 5\na = [1, 2, 3]\na.append(4)\na.clear()",
+          "options": [
+            "a) Lệnh append() dùng để thêm phần tử vào cuối danh sách.",
+            "b) Lệnh clear() dùng để xóa toàn bộ danh sách.",
+            "c) Sau khi thực hiện hai lệnh trên, danh sách a là [1, 2, 3, 4].",
+            "d) Đoạn chương trình có chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử."
+          ],
+          "answer": "Đ,Đ,S,Đ"
+        },
+        {
+          "content": "Câu 5\nCho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:\nA. mot_hai_ba_bon\nB. ['mot_hai_ba_bon']\nC. mot hai ba bon\nD. Lỗi chương trình\n✅ Đáp án: A\nĐúng sai\nCâu 1",
+          "options": [
+            "a) Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".",
+            "b) Để đo độ dài của xâu s, ta dùng lệnh len(s).",
+            "c) Đoạn lệnh:\ns = \"Tin hoc\"\na = s.split()\nSau khi thực hiện, a là một danh sách gồm 2 phần tử.",
+            "d) Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\ns = \"ABC\"\nfor i in range(len(s)):\nprint(s[i])"
+          ],
+          "answer": "Đ,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 2",
+          "options": [
+            "a) Có thể duyệt từng kí tự của xâu bằng câu lệnh:\nfor ch in s:",
+            "b) Toán tử in không dùng được để kiểm tra xâu con trong xâu mẹ.",
+            "c) Đoạn lệnh:\ns = \"python lap trinh\"\nprint(\"-\".join(s.split()))\nKết quả là: python-lap-trinh.",
+            "d) Đoạn chương trình sau có chức năng đếm số kí tự \"a\" trong xâu:\ns = \"banana\"\ndem = 0\nfor ch in s:\nif ch == \"a\":\ndem = dem + 1\nprint(dem)"
+          ],
+          "answer": "Đ,S,Đ,Đ"
+        },
+        {
+          "content": "Câu 3",
+          "options": [
+            "a) Lệnh s.find(\"a\") trả về vị trí đầu tiên của kí tự \"a\" trong xâu s.",
+            "b) Nếu không tìm thấy xâu con, lệnh find() trả về giá trị 0.",
+            "c) Đoạn lệnh:\ns = \"lap trinh python\"\nprint(s.find(\"python\", 5))\nSẽ trả về vị trí bắt đầu của từ \"python\" nếu tìm thấy sau vị trí 5.",
+            "d) Đoạn chương trình sau in ra các vị trí chứa kí tự \"o\":\ns = \"hello world\"\nfor i in range(len(s)):\nif s[i] == \"o\":\nprint(i)"
+          ],
+          "answer": "Đ,S,Đ,Đ"
+        },
+        {
+          "content": "Câu 4",
+          "options": [
+            "a) Xâu kí tự trong Python là một dãy các kí tự.",
+            "b) Có thể truy cập kí tự thứ i của xâu bằng cú pháp s[i].",
+            "c) Đoạn lệnh:\ns = \"mot hai ba\"\na = s.split()\nprint(len(a))\nSẽ in ra 3.",
+            "d) Đoạn chương trình sau có chức năng kiểm tra xem xâu t có xuất hiện trong xâu s hay không:\ns = \"lap trinh\"\nt = \"tr\"\nif t in s:\nprint(\"Co\")\nelse:\nprint(\"Khong\")"
+          ],
+          "answer": "Đ,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 5",
+          "options": [
+            "a) Lệnh len(\"abc\") cho kết quả bằng 2.",
+            "b) Có thể dùng for i in range(len(s)) để duyệt xâu theo chỉ số.",
+            "c) Đoạn lệnh:\ns = \"a,b,c\"\na = s.split(\",\")\nprint(\"_\".join(a))\nKết quả in ra là: a_b_c.",
+            "d) Đoạn chương trình sau có chức năng đếm số từ trong xâu:\ns = \"hoc lap trinh python\"\ndem = 0\nfor ch in s:\nif ch == \" \":\ndem = dem + 1\nprint(dem + 1)"
+          ],
+          "answer": "S,Đ,Đ,Đ"
+        },
+        {
+          "content": "Câu 1\nCho hàm sau:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\nif x > 0:\ns = s + x\nreturn s",
+          "options": [
+            "a) Hàm trên có cú pháp khai báo đúng.",
+            "b) Hàm có 1 tham số tên là ds.",
+            "c) Kết quả của lời gọi tong_duong([1, -2, 3, -4]) là 2.",
+            "d) Hàm trên có chức năng tính tổng các số dương trong danh sách được truyền vào."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 2\nCho hàm sau:\ndef dem_am(ds):\ndem = 0\nfor x in ds:\nif x < 0:\ndem = dem + 1\nreturn dem",
+          "options": [
+            "a) Hàm có 1 tham số.",
+            "b) Hàm không trả về giá trị vì không có lệnh print.",
+            "c) Lời gọi dem_am([2, -1, -5, 4]) trả về 2.",
+            "d) Lời gọi dem_am(5) sẽ gây lỗi khi thực hiện chương trình."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 3\nCho hàm sau:\ndef tong_duong(ds, n):\ns = 0\nfor i in range(n):\nif ds[i] > 0:\ns = s + ds[i]\nreturn s",
+          "options": [
+            "a) Hàm có 2 tham số.",
+            "b) Khi gọi hàm, số đối số phải bằng số tham số.",
+            "c) Kết quả của tong_duong([1, -2, 3, 4], 3) là 6.",
+            "d) Nếu gọi tong_duong([1, 2, 3], 5) có thể gây lỗi do truy cập vượt quá phạm vi danh sách."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 4\nCho hàm sau:\ndef dem_am(ds):\ndem = 0\nfor x in ds:\nif x < 0:\ndem = dem + 1",
+          "options": [
+            "a) Hàm trên không có lỗi cú pháp.",
+            "b) Hàm không có lệnh return.",
+            "c) Khi gọi print(dem_am([-1, -2, 3])), kết quả in ra là 2.",
+            "d) Để hàm trả về số lượng số âm, cần thêm lệnh return dem."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 5\nCho chương trình:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\nif x > 0:\ns = s + x\nreturn s\n\na = [3, -1, 5, -2, 4]\nkq = tong_duong(a)\nprint(kq)",
+          "options": [
+            "a) Hàm có 1 tham số.",
+            "b) Hàm có trả về giá trị cụ thể.",
+            "c) Kết quả in ra màn hình là 10.",
+            "d) Chương trình trên tính tổng các số dương trong danh sách rồi in kết quả ra màn hình."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 6\nCho hàm sau:\ndef dem_chu_a(s):\ndem = 0\nfor ch in s:\nif ch == 'a':\ndem = dem + 1\nreturn dem",
+          "options": [
+            "a) Hàm có 1 tham số kiểu xâu kí tự.",
+            "b) Hàm trả về số lần xuất hiện của kí tự 'a' trong chuỗi.",
+            "c) Kết quả của dem_chu_a(\"banana\") là 2.",
+            "d) Hàm phân biệt chữ hoa và chữ thường."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 7\nCho hàm sau:\ndef tach_tu(s):\nreturn s.split()",
+          "options": [
+            "a) Hàm có 1 tham số.",
+            "b) Hàm trả về một danh sách các từ trong chuỗi.",
+            "c) Kết quả của tach_tu(\"Hoc Python rat vui\") là [\"Hoc\", \"Python\", \"rat\", \"vui\"].",
+            "d) Lời gọi tach_tu(123) sẽ gây lỗi khi thực hiện chương trình."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 8\nCho hàm sau:\ndef ghep_tu(ds):\nreturn \"-\".join(ds)",
+          "options": [
+            "a) Hàm có 1 tham số là một danh sách.",
+            "b) Hàm sử dụng dấu \"-\" để nối các phần tử trong danh sách.",
+            "c) Kết quả của ghep_tu([\"a\", \"b\", \"c\"]) là \"abc\".",
+            "d) Nếu danh sách chứa số nguyên, ví dụ [1, 2, 3], hàm sẽ gây lỗi."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 9\nCho hàm sau:\ndef xu_ly(s):\nds = s.split(\",\")\nreturn \"|\".join(ds)",
+          "options": [
+            "a) Hàm có cú pháp đúng.",
+            "b) Hàm tách chuỗi theo dấu phẩy.",
+            "c) Kết quả của xu_ly(\"a,b,c\") là \"a,b,c\".",
+            "d) Hàm thay dấu phẩy bằng dấu \"|\"."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 10\nCho hàm sau:\ndef dem_tu(s):\nds = s.split()\nreturn len(ds)",
+          "options": [
+            "a) Hàm sử dụng split() để tách chuỗi thành danh sách các từ.",
+            "b) Hàm trả về số phần tử trong danh sách sau khi tách.",
+            "c) Kết quả của dem_tu(\"Python la ngon ngu lap trinh\") là 6.",
+            "d) Nếu chuỗi rỗng \"\", hàm trả về 1."
+          ],
+          "answer": "S,S,S,S"
+        },
+        {
+          "content": "Câu 11\nCho chương trình sau:\ndef dao_nguoc_tu(s):\nds = s.split()\nkq = []\nfor tu in ds:\nkq.insert(0, tu)\nreturn \" \".join(kq)\n\nprint(dao_nguoc_tu(\"Hoc Python that thu vi\"))",
+          "options": [
+            "a) Hàm có 1 tham số.",
+            "b) Lệnh kq.insert(0, tu) thêm phần tử vào đầu danh sách kq.",
+            "c) Kết quả in ra màn hình là \"Hoc Python that thu vi\".",
+            "d) Hàm có chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.\nĐáp án\na. Đúng\nb. Đúng\nc. Sai (kết quả là \"vi thu that Python Hoc\")\nd. Đúng"
+          ],
+          "answer": "S,S,S,S"
+        }
+      ]
+    }
+  ]
+}
