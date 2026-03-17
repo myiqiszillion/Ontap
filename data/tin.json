@@ -991,19 +991,19 @@
           "passage": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
           "statements": [
             {
-              "question": "Cú pháp câu lệnh while i <= 3: đúng.",
+              "question": "Cấu trúc cú pháp câu lệnh while i <= 3: là hợp lệ.",
               "correct": true
             },
             {
-              "question": "Đoạn chương trình lặp 3 lần.",
+              "question": "Số lần lặp của đoạn chương trình trên bằng 3.",
               "correct": true
             },
             {
-              "question": "Sau khi kết thúc vòng lặp, giá trị của i là 4.",
+              "question": "Sau khi kết thúc vòng lặp, Giá trị cuối cùng của biến i sau khi kết thúc vòng lặp bằng 4.",
               "correct": true
             },
             {
-              "question": "Đoạn chương trình có chức năng in ra các số từ 1 đến 3.",
+              "question": "Đoạn chương trình Thực hiện chức năng in ra các số từ 1 đến 3.",
               "correct": true
             }
           ]
@@ -1016,7 +1016,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình lặp 1 lần.",
+              "question": "Số lần lặp của đoạn chương trình trên bằng 1.",
               "correct": false
             },
             {
@@ -1033,7 +1033,7 @@
           "passage": "i = 1\nwhile i <= 4\nprint(i)\ni = i + 1",
           "statements": [
             {
-              "question": "Đoạn chương trình trên đúng cú pháp.",
+              "question": "Đoạn chương trình trên có cấu trúc cú pháp hợp lệ.",
               "correct": false
             },
             {
@@ -1045,7 +1045,7 @@
               "correct": true
             },
             {
-              "question": "Khi sửa đúng cú pháp, chương trình có chức năng in các số từ 1 đến 4.",
+              "question": "Khi sửa đúng cú pháp, chương trình Thực hiện chức năng in các số từ 1 đến 4.",
               "correct": true
             }
           ]
@@ -1054,7 +1054,7 @@
           "passage": "i = 0\nwhile i < 3:\n    print(i)",
           "statements": [
             {
-              "question": "Cú pháp của vòng lặp đúng.",
+              "question": "Cấu trúc cú pháp của vòng lặp là hợp lệ.",
               "correct": true
             },
             {
@@ -1066,7 +1066,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình có chức năng in số 0 vô hạn lần.",
+              "question": "Đoạn chương trình Thực hiện chức năng in số 0 vô hạn lần.",
               "correct": true
             }
           ]
@@ -1075,7 +1075,7 @@
           "passage": "i = 1\ntong = 0\nwhile i <= 5:\n    tong = tong + i\n    i = i + 1\n    print(tong)",
           "statements": [
             {
-              "question": "Cú pháp vòng lặp while trong chương trình đúng.",
+              "question": "Cấu trúc cú pháp vòng lặp while trong chương trình là hợp lệ.",
               "correct": true
             },
             {
@@ -1087,7 +1087,7 @@
               "correct": true
             },
             {
-              "question": "Chương trình có chức năng tính tổng các số từ 1 đến 5.",
+              "question": "Chương trình Thực hiện chức năng tính tổng các số từ 1 đến 5.",
               "correct": true
             }
           ]
@@ -1108,7 +1108,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình trên có chức năng tạo một danh sách gồm 3 số nguyên.",
+              "question": "Đoạn chương trình trên Thực hiện chức năng tạo một danh sách gồm 3 số nguyên.",
               "correct": true
             }
           ]
@@ -1150,7 +1150,7 @@
               "correct": true
             },
             {
-              "question": "Lệnh remove() có chức năng xóa tất cả các phần tử có giá trị 2 trong danh sách.",
+              "question": "Lệnh remove() Thực hiện chức năng xóa tất cả các phần tử có giá trị 2 trong danh sách.",
               "correct": false
             }
           ]
@@ -1171,7 +1171,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình có chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.",
+              "question": "Đoạn chương trình Thực hiện chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.",
               "correct": true
             }
           ]
@@ -1192,7 +1192,7 @@
               "correct": false
             },
             {
-              "question": "Đoạn chương trình có chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.",
+              "question": "Đoạn chương trình Thực hiện chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.",
               "correct": true
             }
           ]
@@ -1213,7 +1213,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\ns = \"ABC\"\nfor i in range(len(s)):\n    print(s[i])",
+              "question": "Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\ns = \"ABC\"\nfor i in range(len(s)):\n    print(s[i]).",
               "correct": true
             }
           ]
@@ -1222,7 +1222,7 @@
           "passage": "",
           "statements": [
             {
-              "question": "Có thể duyệt từng kí tự của xâu bằng câu lệnh:\nfor ch in s:",
+              "question": "Có thể duyệt từng kí tự của xâu bằng câu lệnh:\nfor ch in s:.",
               "correct": true
             },
             {
@@ -1234,7 +1234,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình sau có chức năng đếm số kí tự \"a\" trong xâu:\ns = \"banana\"\ndem = 0\nfor ch in s:\n    if ch == \"a\":\n        dem = dem + 1\n        print(dem)",
+              "question": "Đoạn chương trình sau có chức năng đếm số kí tự \"a\" trong xâu:\ns = \"banana\"\ndem = 0\nfor ch in s:\n    if ch == \"a\":\n        dem = dem + 1\n        print(dem).",
               "correct": true
             }
           ]
@@ -1255,7 +1255,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình sau in ra các vị trí chứa kí tự \"o\":\ns = \"hello world\"\nfor i in range(len(s)):\n    if s[i] == \"o\":\n        print(i)",
+              "question": "Đoạn chương trình sau in ra các vị trí chứa kí tự \"o\":\ns = \"hello world\"\nfor i in range(len(s)):\n    if s[i] == \"o\":\n        print(i).",
               "correct": true
             }
           ]
@@ -1276,7 +1276,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình sau có chức năng kiểm tra xem xâu t có xuất hiện trong xâu s hay không:\ns = \"lap trinh\"\nt = \"tr\"\nif t in s:\n    print(\"Co\")\nelse:\n        print(\"Khong\")",
+              "question": "Đoạn chương trình sau có chức năng kiểm tra xem xâu t có xuất hiện trong xâu s hay không:\ns = \"lap trinh\"\nt = \"tr\"\nif t in s:\n    print(\"Co\")\nelse:\n        print(\"Khong\").",
               "correct": true
             }
           ]
@@ -1297,7 +1297,7 @@
               "correct": true
             },
             {
-              "question": "Đoạn chương trình sau có chức năng đếm số từ trong xâu:\ns = \"hoc lap trinh python\"\ndem = 0\nfor ch in s:\n    if ch == \" \":\n        dem = dem + 1\n        print(dem + 1)",
+              "question": "Đoạn chương trình sau có chức năng đếm số từ trong xâu:\ns = \"hoc lap trinh python\"\ndem = 0\nfor ch in s:\n    if ch == \" \":\n        dem = dem + 1\n        print(dem + 1).",
               "correct": true
             }
           ]
@@ -1306,7 +1306,7 @@
           "passage": "Cho hàm sau:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\n    if x > 0:\n        s = s + x\n        return s",
           "statements": [
             {
-              "question": "Hàm trên đúng cú pháp khai báo.",
+              "question": "Hàm trên được khai báo với cú pháp hợp lệ.",
               "correct": true
             },
             {
@@ -1314,11 +1314,11 @@
               "correct": true
             },
             {
-              "question": "Kết quả của lời gọi tong_duong([1, -2, 3, -4]) là 2.",
+              "question": "Giá trị trả về của lời gọi tong_duong([1, -2, 3, -4]) được xác định là 2.",
               "correct": false
             },
             {
-              "question": "Hàm trên có chức năng tính tổng các số dương trong danh sách được truyền vào.",
+              "question": "Hàm trên Thực hiện chức năng tính tổng các số dương trong danh sách được truyền vào.",
               "correct": true
             }
           ]
@@ -1356,7 +1356,7 @@
               "correct": true
             },
             {
-              "question": "Kết quả của tong_duong([1, -2, 3, 4], 3) là 6.",
+              "question": "Giá trị trả về của tong_duong([1, -2, 3, 4], 3) được xác định là 6.",
               "correct": false
             },
             {
@@ -1419,7 +1419,7 @@
               "correct": true
             },
             {
-              "question": "Kết quả của dem_chu_a(\"banana\") là 2.",
+              "question": "Giá trị trả về của dem_chu_a(\"banana\") được xác định là 2.",
               "correct": false
             },
             {
@@ -1440,7 +1440,7 @@
               "correct": true
             },
             {
-              "question": "Kết quả của tach_tu(\"Hoc Python rat vui\") là [\"Hoc\", \"Python\", \"rat\", \"vui\"].",
+              "question": "Giá trị trả về của tach_tu(\"Hoc Python rat vui\") được xác định là [\"Hoc\", \"Python\", \"rat\", \"vui\"].",
               "correct": true
             },
             {
@@ -1461,7 +1461,7 @@
               "correct": true
             },
             {
-              "question": "Kết quả của ghep_tu([\"a\", \"b\", \"c\"]) là \"abc\".",
+              "question": "Giá trị trả về của ghep_tu([\"a\", \"b\", \"c\"]) được xác định là \"abc\".",
               "correct": false
             },
             {
@@ -1474,7 +1474,7 @@
           "passage": "Cho hàm sau:\ndef xu_ly(s):\nds = s.split(\",\")\nreturn \"|\".join(ds)",
           "statements": [
             {
-              "question": "Hàm đúng cú pháp.",
+              "question": "Hàm được khai báo đúng quy tắc cú pháp.",
               "correct": true
             },
             {
@@ -1482,7 +1482,7 @@
               "correct": true
             },
             {
-              "question": "Kết quả của xu_ly(\"a,b,c\") là \"a,b,c\".",
+              "question": "Giá trị trả về của xu_ly(\"a,b,c\") được xác định là \"a,b,c\".",
               "correct": false
             },
             {
@@ -1503,7 +1503,7 @@
               "correct": true
             },
             {
-              "question": "Kết quả của dem_tu(\"Python la ngon ngu lap trinh\") là 6.",
+              "question": "Giá trị trả về của dem_tu(\"Python la ngon ngu lap trinh\") được xác định là 6.",
               "correct": true
             },
             {
@@ -1528,7 +1528,7 @@
               "correct": false
             },
             {
-              "question": "Hàm có chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.",
+              "question": "Hàm Thực hiện chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.",
               "correct": true
             }
           ]
