@@ -75,7 +75,7 @@
             "Tạo dãy số từ 0 đến b"
           ],
           "explanation": "",
-          "question": "Ý nghĩa đúng của lệnh range(a, b) là:",
+          "question": "Ý nghĩa đúng của lệnh range(a, b) .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -135,7 +135,7 @@
             "for i in range(2, 6):"
           ],
           "explanation": "",
-          "question": "Để in các số từ 3 đến 6 bằng câu lệnh for, ta viết đúng là:",
+          "question": "Để in các số từ 3 đến 6 bằng câu lệnh for, ta viết đúng .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -315,7 +315,7 @@
             "a = null"
           ],
           "explanation": "",
-          "question": "Cách khai báo một danh sách rỗng là:",
+          "question": "Cách khai báo một danh sách rỗng .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -327,7 +327,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [10, 20, 30]\nGiá trị của a[0] là:",
+          "question": "Cho danh sách:\na = [10, 20, 30]\nGiá trị của a[0] .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -339,7 +339,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [5, 6, 7]\nGiá trị của a[2] là:",
+          "question": "Cho danh sách:\na = [5, 6, 7]\nGiá trị của a[2] .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -351,7 +351,7 @@
             "1"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3, 4]\nĐộ dài của danh sách là:",
+          "question": "Cho danh sách:\na = [1, 2, 3, 4]\nĐộ dài của danh sách .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -363,7 +363,7 @@
             "len()"
           ],
           "explanation": "",
-          "question": "Hàm dùng để tính độ dài danh sách là:",
+          "question": "Hàm dùng để tính độ dài danh sách .",
           "correct": 3,
           "correctAnswer": 3
         },
@@ -399,7 +399,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\nKết quả của biểu thức 2 in a là:",
+          "question": "Cho danh sách:\na = [1, 2, 3]\nKết quả của biểu thức 2 in a .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -411,7 +411,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [7, 8, 9]\nKết quả của biểu thức 5 in a là:",
+          "question": "Cho danh sách:\na = [7, 8, 9]\nKết quả của biểu thức 5 in a .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -423,7 +423,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho hai danh sách:\na = [1, 2]\nb = [3, 4]\nKết quả của a + b là:",
+          "question": "Cho hai danh sách:\na = [1, 2]\nb = [3, 4]\nKết quả của a + b .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -435,7 +435,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho hai danh sách:\nx = [\"A\"]\ny = [\"B\"]\nKết quả của x + y là:",
+          "question": "Cho hai danh sách:\nx = [\"A\"]\ny = [\"B\"]\nKết quả của x + y .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -471,7 +471,7 @@
             "a = 4"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [2, 4, 6]\nCách kiểm tra số 4 có trong danh sách hay không là:",
+          "question": "Cho danh sách:\na = [2, 4, 6]\nCách kiểm tra số 4 có trong danh sách hay không .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -483,7 +483,7 @@
             "[1, 2, 3]"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\na.append(4)\nGiá trị của danh sách a sau khi thực hiện lệnh là:",
+          "question": "Cho danh sách:\na = [1, 2, 3]\na.append(4)\nGiá trị của danh sách a sau khi thực hiện lệnh .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -495,7 +495,7 @@
             "[5, 6, 7, 10]"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [5, 6, 7]\na.insert(1, 10)\nDanh sách a sau khi thực hiện lệnh là:",
+          "question": "Cho danh sách:\na = [5, 6, 7]\na.insert(1, 10)\nDanh sách a sau khi thực hiện lệnh .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -507,7 +507,7 @@
             "[1, 2, 3, 2]"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh là:",
+          "question": "Cho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -519,7 +519,7 @@
             "[10, 20, 30]"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh là:",
+          "question": "Cho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -531,7 +531,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:",
+          "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -555,7 +555,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho xâu:\ns = \"Python\"\nGiá trị của s[0] là:",
+          "question": "Cho xâu:\ns = \"Python\"\nGiá trị của s[0] .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -567,7 +567,7 @@
             "n"
           ],
           "explanation": "",
-          "question": "Cho xâu:\ns = \"TinHoc\"\nGiá trị của s[3] là:",
+          "question": "Cho xâu:\ns = \"TinHoc\"\nGiá trị của s[3] .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -579,7 +579,7 @@
             "len()"
           ],
           "explanation": "",
-          "question": "Hàm dùng để tính độ dài xâu kí tự là:",
+          "question": "Hàm dùng để tính độ dài xâu kí tự .",
           "correct": 3,
           "correctAnswer": 3
         },
@@ -591,7 +591,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho xâu:\ns = \"Hello\"\nKết quả của len(s) là:",
+          "question": "Cho xâu:\ns = \"Hello\"\nKết quả của len(s) .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -651,7 +651,7 @@
             "-1"
           ],
           "explanation": "",
-          "question": "Cho xâu:\ns = \"banana\"\nKết quả của s.find(\"na\") là:",
+          "question": "Cho xâu:\ns = \"banana\"\nKết quả của s.find(\"na\") .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -663,7 +663,7 @@
             "-1"
           ],
           "explanation": "",
-          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"th\") là:",
+          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"th\") .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -675,7 +675,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"abc\") là:",
+          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"abc\") .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -711,7 +711,7 @@
             "Lỗi chương trình"
           ],
           "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"Tin hoc lop 10\"\na = s.split()\nprint(a)\nKết quả in ra là:",
+          "question": "Cho đoạn lệnh:\ns = \"Tin hoc lop 10\"\na = s.split()\nprint(a)\nKết quả in ra .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -723,7 +723,7 @@
             "Lỗi vì dấu \"-\" không hợp lệ"
           ],
           "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"a-b-c-d\"\na = s.split(\"-\")\nprint(a)\nKết quả in ra là:",
+          "question": "Cho đoạn lệnh:\ns = \"a-b-c-d\"\na = s.split(\"-\")\nprint(a)\nKết quả in ra .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -735,7 +735,7 @@
             "Lỗi chương trình"
           ],
           "explanation": "",
-          "question": "Cho đoạn lệnh:\na = ['2024', '2025', '2026']\ns = \"-\".join(a)\nprint(s)\nKết quả in ra là:",
+          "question": "Cho đoạn lệnh:\na = ['2024', '2025', '2026']\ns = \"-\".join(a)\nprint(s)\nKết quả in ra .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -747,7 +747,7 @@
             "-1"
           ],
           "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"lap trinh python python\"\nk = s.find(\"python\", 10)\nprint(k)\nKết quả in ra là:",
+          "question": "Cho đoạn lệnh:\ns = \"lap trinh python python\"\nk = s.find(\"python\", 10)\nprint(k)\nKết quả in ra .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -759,7 +759,7 @@
             "Lỗi chương trình"
           ],
           "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:",
+          "question": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra .",
           "correct": 0,
           "correctAnswer": 0
         },
@@ -783,7 +783,7 @@
             "Biến cục bộ"
           ],
           "explanation": "",
-          "question": "Khi gọi hàm tinhTong(3, 5), số 3 và 5 được gọi là:",
+          "question": "Khi gọi hàm tinhTong(3, 5), số 3 và 5 được gọi .",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -843,7 +843,7 @@
             "Lỗi"
           ],
           "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ndef tinh(a):\nreturn a + 2\n\nprint(tinh(3))",
+          "question": "Đoạn chương trình sau in ra kết quả gì?\ndef tinh(a):\nreturn a + 2\nprint(tinh(3))",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -891,7 +891,7 @@
             "Lỗi"
           ],
           "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef tru(a, b):\nprint(a - b)\n\nkq = tru(7, 2)\nprint(kq)\nKết quả in ra là:",
+          "question": "Cho đoạn chương trình:\ndef tru(a, b):\nprint(a - b)\nkq = tru(7, 2)\nprint(kq)\nKết quả in ra .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -927,7 +927,7 @@
             "Lỗi chương trình"
           ],
           "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef cong(a, b):\nreturn a + b\nprint(cong(2, 3))\nKết quả in ra là:",
+          "question": "Cho đoạn chương trình:\ndef cong(a, b):\nreturn a + b\nprint(cong(2, 3))\nKết quả in ra .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -939,7 +939,7 @@
             "Lỗi chương trình"
           ],
           "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef nhan(a, b):\nprint(a * b)\nkq = nhan(3, 4)\nprint(kq)\nKết quả in ra là:",
+          "question": "Cho đoạn chương trình:\ndef nhan(a, b):\nprint(a * b)\nkq = nhan(3, 4)\nprint(kq)\nKết quả in ra .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -963,7 +963,7 @@
             "Lỗi"
           ],
           "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))\nKết quả in ra là:",
+          "question": "Cho đoạn chương trình:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))\nKết quả in ra .",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -1093,7 +1093,7 @@
           ]
         },
         {
-          "passage": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:\n    A. [1, 2, 3]\n    B. []\n    C. None\n    D. Báo lỗi",
+          "passage": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh .",
           "statements": [
             {
               "question": "Danh sách trên được khai báo đúng cú pháp.",
@@ -1198,7 +1198,7 @@
           ]
         },
         {
-          "passage": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:\n    A. mot_hai_ba_bon\n    B. ['mot_hai_ba_bon']\n    C. mot hai ba bon\n    D. Lỗi chương trình",
+          "passage": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra .",
           "statements": [
             {
               "question": "Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".",
@@ -1387,7 +1387,7 @@
           ]
         },
         {
-          "passage": "Cho chương trình:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\n    if x > 0:\n        s = s + x\n        return s\n\n        a = [3, -1, 5, -2, 4]\n        kq = tong_duong(a)\n        print(kq)",
+          "passage": "Cho chương trình:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\n    if x > 0:\n        s = s + x\n        return s\n        a = [3, -1, 5, -2, 4]\n        kq = tong_duong(a)\n        print(kq)",
           "statements": [
             {
               "question": "Hàm có 1 tham số.",
@@ -1513,7 +1513,7 @@
           ]
         },
         {
-          "passage": "Cho chương trình sau:\ndef dao_nguoc_tu(s):\nds = s.split()\nkq = []\nfor tu in ds:\n    kq.insert(0, tu)\n    return \" \".join(kq)\n\n    print(dao_nguoc_tu(\"Hoc Python that thu vi\"))",
+          "passage": "Cho chương trình sau:\ndef dao_nguoc_tu(s):\nds = s.split()\nkq = []\nfor tu in ds:\n    kq.insert(0, tu)\n    return \" \".join(kq)\n    print(dao_nguoc_tu(\"Hoc Python that thu vi\"))",
           "statements": [
             {
               "question": "Hàm có 1 tham số.",
