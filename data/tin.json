@@ -51,7 +51,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Câu 4 (Trường hợp đặc biệt: start = stop)\nGiá trị trong lệnh range(4, 4) là gì?",
+          "question": "(Trường hợp đặc biệt: start = stop)\nGiá trị trong lệnh range(4, 4) là gì?",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -63,7 +63,7 @@
             "Báo lỗi"
           ],
           "explanation": "",
-          "question": "Câu 5 (Trường hợp đặc biệt: start > stop)\nGiá trị trong lệnh range(6, 2) là gì?",
+          "question": "(Trường hợp đặc biệt: start > stop)\nGiá trị trong lệnh range(6, 2) là gì?",
           "correct": 2,
           "correctAnswer": 2
         },
@@ -315,7 +315,7 @@
             "a = 1, 2, 3"
           ],
           "explanation": "",
-          "question": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1\n    a) Cú pháp câu lệnh while i <= 3: là đúng.\n    b) Đoạn chương trình lặp 3 lần.\n    c) Sau khi kết thúc vòng lặp, giá trị của i là 4.\n    d) Đoạn chương trình có chức năng in ra các số từ 1 đến 3.\n    Đáp án:\n        a) Đúng\n        b) Đúng\n        c) Đúng\n        d) Đúng\n        Câu 2\n        i = 5\n        while i < 5:\n            print(i)\n            i = i + 1\n            a) Điều kiện của vòng lặp được kiểm tra trước khi thực hiện khối lệnh.\n            b) Đoạn chương trình lặp 1 lần.\n            c) Chương trình không in ra giá trị nào vì điều kiện sai ngay từ đầu.\n            d) Chức năng của đoạn chương trình là in các số nhỏ hơn 5 bắt đầu từ 5.\n            Đáp án:\n                a) Đúng\n                b) Sai\n                c) Đúng\n                d) Sai\n                Câu 3\n                i = 1\n                while i <= 4\n                print(i)\n                i = i + 1\n                a) Đoạn chương trình trên đúng cú pháp.\n                b) Câu lệnh while bắt buộc phải có dấu hai chấm (:).\n                c) Nếu thêm dấu hai chấm (:) đúng vị trí thì vòng lặp sẽ thực hiện 4 lần.\n                d) Khi sửa đúng cú pháp, chương trình có chức năng in các số từ 1 đến 4.\n                Đáp án:\n                    a) Sai\n                    b) Đúng\n                    c) Đúng\n                    d) Đúng\n                    Câu 4\n                    i = 0\n                    while i < 3:\n                        print(i)\n                        a) Cú pháp của vòng lặp là đúng.\n                        b) Biến điều khiển vòng lặp chưa được thay đổi trong thân vòng lặp.\n                        c) Vì biến i không thay đổi nên vòng lặp sẽ lặp vô hạn.\n                        d) Đoạn chương trình có chức năng in số 0 vô hạn lần.\n                        Đáp án:\n                            a) Đúng\n                            b) Đúng\n                            c) Đúng\n                            d) Đúng\n                            Câu 5\n                            i = 1\n                            tong = 0\n                            while i <= 5:\n                                tong = tong + i\n                                i = i + 1\n                                print(tong)\n                                a) Cú pháp vòng lặp while trong chương trình là đúng.\n                                b) Vòng lặp thực hiện 5 lần.\n                                c) Sau khi kết thúc vòng lặp, biến tong có giá trị bằng 15.\n                                d) Chương trình có chức năng tính tổng các số từ 1 đến 5.\n                                Đáp án:\n                                    a) Đúng\n                                    b) Đúng\n                                    c) Đúng\n                                    d) Đúng\n                                    3. Kiểu dữ liệu danh sách và Một số lệnh làm việc với dữ liệu danh sách\n                                    Nhận biết\n                                    Câu 1\n                                    Cách khai báo một danh sách gồm các số 1, 2, 3 là:",
+          "question": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1\n    a) Cú pháp câu lệnh while i <= 3: là đúng.\n    b) Đoạn chương trình lặp 3 lần.\n    c) Sau khi kết thúc vòng lặp, giá trị của i là 4.\n    d) Đoạn chương trình có chức năng in ra các số từ 1 đến 3.",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -555,7 +555,7 @@
             "s = (Hello)"
           ],
           "explanation": "",
-          "question": "a = [1, 2, 3]\na) Danh sách trên được khai báo đúng cú pháp.\nb) Có thể khai báo danh sách rỗng bằng a = {}.\nc) Sau lệnh a.append(4), danh sách trở thành [1, 2, 3, 4].\nd) Đoạn chương trình trên có chức năng tạo một danh sách gồm 3 số nguyên.\nĐáp án:\n    a) Đúng\n    b) Sai\n    c) Đúng\n    d) Đúng\n    Câu 2\n    a = [10, 20, 30]\n    a) Giá trị của a[1] là 20.\n    b) Độ dài danh sách được tính bằng length(a).\n    c) Sau lệnh a.insert(1, 15), danh sách trở thành [10, 15, 20, 30].\n    d) Nếu dùng vòng lặp\n    for x in a:\n        print(x)\n        thì chương trình sẽ in lần lượt từng phần tử của danh sách.\n        Đáp án:\n            a) Đúng\n            b) Sai\n            c) Đúng\n            d) Đúng\n            Câu 3\n            a = [1, 2, 3, 2]\n            a) Biểu thức 2 in a cho kết quả True.\n            b) Có thể thay đổi phần tử thứ hai bằng lệnh a[2] = 5.\n            c) Sau lệnh a.remove(2), danh sách trở thành [1, 3, 2].\n            d) Lệnh remove() có chức năng xóa tất cả các phần tử có giá trị 2 trong danh sách.\n            Đáp án:\n                a) Đúng\n                b) Sai (vì a[1] mới là phần tử thứ hai)\n                c) Đúng\n                d) Sai (chỉ xóa phần tử đầu tiên tìm thấy)\n                Câu 4\n                a = [4, 5, 6]\n                b = [7, 8]\n                c = a + b\n                a) Toán tử + dùng để ghép nối hai danh sách.\n                b) Sau phép ghép, danh sách c có 4 phần tử.\n                c) Nếu thực hiện del c[0] thì c trở thành [5, 6, 7, 8].\n                d) Đoạn chương trình có chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.\n                Đáp án:\n                    a) Đúng\n                    b) Sai (có 5 phần tử)\n                    c) Đúng\n                    d) Đúng\n                    Câu 5\n                    a = [1, 2, 3]\n                    a.append(4)\n                    a.clear()\n                    a) Lệnh append() dùng để thêm phần tử vào cuối danh sách.\n                    b) Lệnh clear() dùng để xóa toàn bộ danh sách.\n                    c) Sau khi thực hiện hai lệnh trên, danh sách a là [1, 2, 3, 4].\n                    d) Đoạn chương trình có chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.\n                    Đáp án:\n                        a) Đúng\n                        b) Đúng\n                        c) Sai\n                        d) Đúng\n                        4. Xâu kí tự và Một số lệnh làm việc với xâu kí tự\n                        Nhận biết\n                        Câu 1\n                        Cách khai báo đúng một xâu kí tự là:",
+          "question": "a = [1, 2, 3]\na) Danh sách trên được khai báo đúng cú pháp.\nb) Có thể khai báo danh sách rỗng bằng a = {}.\nc) Sau lệnh a.append(4), danh sách trở thành [1, 2, 3, 4].\nd) Đoạn chương trình trên có chức năng tạo một danh sách gồm 3 số nguyên.",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -795,7 +795,7 @@
             "void tinhTong(a, b)"
           ],
           "explanation": "",
-          "question": "a) Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".\nb) Để đo độ dài của xâu s, ta dùng lệnh len(s).\nc) Đoạn lệnh:\ns = \"Tin hoc\"\na = s.split()\nSau khi thực hiện, a là một danh sách gồm 2 phần tử.\nd) Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\n    s = \"ABC\"\n    for i in range(len(s)):\n        print(s[i])\n        Đáp án:\n            a) Đúng\n            b) Đúng\n            c) Đúng\n            d) Đúng\n            Câu 2\n            a) Có thể duyệt từng kí tự của xâu bằng câu lệnh:\n                for ch in s:\n                    b) Toán tử in không dùng được để kiểm tra xâu con trong xâu mẹ.\n                    c) Đoạn lệnh:\n                        s = \"python lap trinh\"\n                        print(\"-\".join(s.split()))\n                        Kết quả là: python-lap-trinh.\n                        d) Đoạn chương trình sau có chức năng đếm số kí tự \"a\" trong xâu:\n                            s = \"banana\"\n                            dem = 0\n                            for ch in s:\n                                if ch == \"a\":\n                                    dem = dem + 1\n                                    print(dem)\n                                    Đáp án:\n                                        a) Đúng\n                                        b) Sai\n                                        c) Đúng\n                                        d) Đúng\n                                        Câu 3\n                                        a) Lệnh s.find(\"a\") trả về vị trí đầu tiên của kí tự \"a\" trong xâu s.\n                                        b) Nếu không tìm thấy xâu con, lệnh find() trả về giá trị 0.\n                                        c) Đoạn lệnh:\n                                            s = \"lap trinh python\"\n                                            print(s.find(\"python\", 5))\n                                            Sẽ trả về vị trí bắt đầu của từ \"python\" nếu tìm thấy sau vị trí 5.\n                                            d) Đoạn chương trình sau in ra các vị trí chứa kí tự \"o\":\n                                                s = \"hello world\"\n                                                for i in range(len(s)):\n                                                    if s[i] == \"o\":\n                                                        print(i)\n                                                        Đáp án:\n                                                            a) Đúng\n                                                            b) Sai (trả về -1)\n                                                            c) Đúng\n                                                            d) Đúng\n                                                            Câu 4\n                                                            a) Xâu kí tự trong Python là một dãy các kí tự.\n                                                            b) Có thể truy cập kí tự thứ i của xâu bằng cú pháp s[i].\n                                                            c) Đoạn lệnh:\n                                                                s = \"mot hai ba\"\n                                                                a = s.split()\n                                                                print(len(a))\n                                                                Sẽ in ra 3.\n                                                                d) Đoạn chương trình sau có chức năng kiểm tra xem xâu t có xuất hiện trong xâu s hay không:\n                                                                    s = \"lap trinh\"\n                                                                    t = \"tr\"\n                                                                    if t in s:\n                                                                        print(\"Co\")\n                                                                    else:\n                                                                            print(\"Khong\")\n                                                                            Đáp án:\n                                                                                a) Đúng\n                                                                                b) Đúng\n                                                                                c) Đúng\n                                                                                d) Đúng\n                                                                                Câu 5\n                                                                                a) Lệnh len(\"abc\") cho kết quả bằng 2.\n                                                                                b) Có thể dùng for i in range(len(s)) để duyệt xâu theo chỉ số.\n                                                                                c) Đoạn lệnh:\n                                                                                    s = \"a,b,c\"\n                                                                                    a = s.split(\",\")\n                                                                                    print(\"_\".join(a))\n                                                                                    Kết quả in ra là: a_b_c.\n                                                                                    d) Đoạn chương trình sau có chức năng đếm số từ trong xâu:\n                                                                                        s = \"hoc lap trinh python\"\n                                                                                        dem = 0\n                                                                                        for ch in s:\n                                                                                            if ch == \" \":\n                                                                                                dem = dem + 1\n                                                                                                print(dem + 1)\n                                                                                                Đáp án:\n                                                                                                    a) Sai (kết quả là 3)\n                                                                                                    b) Đúng\n                                                                                                    c) Đúng\n                                                                                                    d) Đúng\n                                                                                                    5. Hàm và Tham số của hàm trong Python\n                                                                                                    Nhận biết\n                                                                                                    Câu 1\n                                                                                                    Cú pháp nào sau đây dùng để khai báo một hàm trong Python?",
+          "question": "a) Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".\nb) Để đo độ dài của xâu s, ta dùng lệnh len(s).\nc) Đoạn lệnh:\ns = \"Tin hoc\"\na = s.split()\nSau khi thực hiện, a là một danh sách gồm 2 phần tử.\nd) Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\n    s = \"ABC\"\n    for i in range(len(s)):\n        print(s[i])",
           "correct": 1,
           "correctAnswer": 1
         },
@@ -1129,7 +1129,7 @@
           ]
         },
         {
-          "passage": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:\n    A. [1, 2, 3]\n    B. []\n    C. None\n    D. Báo lỗi\n    Đáp án: B\n    👉 clear() xóa toàn bộ phần tử trong danh sách.\n    Trắc nghiệm đúng sai\n    Câu 1\n    a = [1, 2, 3]",
+          "passage": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh là:\n    A. [1, 2, 3]\n    B. []\n    C. None\n    D. Báo lỗi",
           "statements": [
             {
               "question": "Danh sách trên được khai báo đúng cú pháp.",
@@ -1234,7 +1234,7 @@
           ]
         },
         {
-          "passage": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:\n    A. mot_hai_ba_bon\n    B. ['mot_hai_ba_bon']\n    C. mot hai ba bon\n    D. Lỗi chương trình\n    ✅ Đáp án: A\n    Đúng sai\n    Câu 1",
+          "passage": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra là:\n    A. mot_hai_ba_bon\n    B. ['mot_hai_ba_bon']\n    C. mot hai ba bon\n    D. Lỗi chương trình",
           "statements": [
             {
               "question": "Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".",
@@ -1255,7 +1255,7 @@
           ]
         },
         {
-          "passage": "Câu 2",
+          "passage": "",
           "statements": [
             {
               "question": "Có thể duyệt từng kí tự của xâu bằng câu lệnh:\nfor ch in s:",
@@ -1276,7 +1276,7 @@
           ]
         },
         {
-          "passage": "Câu 3",
+          "passage": "",
           "statements": [
             {
               "question": "Lệnh s.find(\"a\") trả về vị trí đầu tiên của kí tự \"a\" trong xâu s.",
@@ -1297,7 +1297,7 @@
           ]
         },
         {
-          "passage": "Câu 4",
+          "passage": "",
           "statements": [
             {
               "question": "Xâu kí tự trong Python là một dãy các kí tự.",
@@ -1318,7 +1318,7 @@
           ]
         },
         {
-          "passage": "Câu 5",
+          "passage": "",
           "statements": [
             {
               "question": "Lệnh len(\"abc\") cho kết quả bằng 2.",
@@ -1564,7 +1564,7 @@
               "correct": false
             },
             {
-              "question": "Hàm có chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.\nĐáp án\na. Đúng\nb. Đúng\nc. Sai (kết quả là \"vi thu that Python Hoc\")\nd. Đúng",
+              "question": "Hàm có chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.",
               "correct": true
             }
           ]
