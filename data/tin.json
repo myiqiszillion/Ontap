@@ -1343,11 +1343,11 @@
           "statements": [
             {
               "question": "Hàm trên có cú pháp khai báo đúng.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm có 1 tham số tên là ds.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của lời gọi tong_duong([1, -2, 3, -4]) là 2.",
@@ -1355,7 +1355,7 @@
             },
             {
               "question": "Hàm trên có chức năng tính tổng các số dương trong danh sách được truyền vào.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1364,7 +1364,7 @@
           "statements": [
             {
               "question": "Hàm có 1 tham số.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm không trả về giá trị vì không có lệnh print.",
@@ -1372,11 +1372,11 @@
             },
             {
               "question": "Lời gọi dem_am([2, -1, -5, 4]) trả về 2.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Lời gọi dem_am(5) sẽ gây lỗi khi thực hiện chương trình.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1385,11 +1385,11 @@
           "statements": [
             {
               "question": "Hàm có 2 tham số.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Khi gọi hàm, số đối số phải bằng số tham số.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của tong_duong([1, -2, 3, 4], 3) là 6.",
@@ -1397,7 +1397,7 @@
             },
             {
               "question": "Nếu gọi tong_duong([1, 2, 3], 5) có thể gây lỗi do truy cập vượt quá phạm vi danh sách.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1406,11 +1406,11 @@
           "statements": [
             {
               "question": "Hàm trên không có lỗi cú pháp.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm không có lệnh return.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Khi gọi print(dem_am([-1, -2, 3])), kết quả in ra là 2.",
@@ -1418,7 +1418,7 @@
             },
             {
               "question": "Để hàm trả về số lượng số âm, cần thêm lệnh return dem.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1427,11 +1427,11 @@
           "statements": [
             {
               "question": "Hàm có 1 tham số.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm có trả về giá trị cụ thể.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả in ra màn hình là 10.",
@@ -1439,7 +1439,7 @@
             },
             {
               "question": "Chương trình trên tính tổng các số dương trong danh sách rồi in kết quả ra màn hình.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1448,11 +1448,11 @@
           "statements": [
             {
               "question": "Hàm có 1 tham số kiểu xâu kí tự.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm trả về số lần xuất hiện của kí tự 'a' trong chuỗi.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của dem_chu_a(\"banana\") là 2.",
@@ -1460,7 +1460,7 @@
             },
             {
               "question": "Hàm phân biệt chữ hoa và chữ thường.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1469,19 +1469,19 @@
           "statements": [
             {
               "question": "Hàm có 1 tham số.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm trả về một danh sách các từ trong chuỗi.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của tach_tu(\"Hoc Python rat vui\") là [\"Hoc\", \"Python\", \"rat\", \"vui\"].",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Lời gọi tach_tu(123) sẽ gây lỗi khi thực hiện chương trình.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1490,11 +1490,11 @@
           "statements": [
             {
               "question": "Hàm có 1 tham số là một danh sách.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm sử dụng dấu \"-\" để nối các phần tử trong danh sách.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của ghep_tu([\"a\", \"b\", \"c\"]) là \"abc\".",
@@ -1502,7 +1502,7 @@
             },
             {
               "question": "Nếu danh sách chứa số nguyên, ví dụ [1, 2, 3], hàm sẽ gây lỗi.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1511,11 +1511,11 @@
           "statements": [
             {
               "question": "Hàm có cú pháp đúng.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm tách chuỗi theo dấu phẩy.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của xu_ly(\"a,b,c\") là \"a,b,c\".",
@@ -1523,7 +1523,7 @@
             },
             {
               "question": "Hàm thay dấu phẩy bằng dấu \"|\".",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1532,15 +1532,15 @@
           "statements": [
             {
               "question": "Hàm sử dụng split() để tách chuỗi thành danh sách các từ.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Hàm trả về số phần tử trong danh sách sau khi tách.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả của dem_tu(\"Python la ngon ngu lap trinh\") là 6.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Nếu chuỗi rỗng \"\", hàm trả về 1.",
@@ -1553,11 +1553,11 @@
           "statements": [
             {
               "question": "Hàm có 1 tham số.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Lệnh kq.insert(0, tu) thêm phần tử vào đầu danh sách kq.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết quả in ra màn hình là \"Hoc Python that thu vi\".",
@@ -1565,7 +1565,7 @@
             },
             {
               "question": "Hàm có chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.\nĐáp án\na. Đúng\nb. Đúng\nc. Sai (kết quả là \"vi thu that Python Hoc\")\nd. Đúng",
-              "correct": false
+              "correct": true
             }
           ]
         }
