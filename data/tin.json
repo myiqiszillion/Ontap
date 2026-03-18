@@ -1093,7 +1093,7 @@
           ]
         },
         {
-          "passage": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh .",
+          "passage": "Cho danh sách:\na = [1, 2, 3]\nDanh sách a sau khi thực hiện lệnh .",
           "statements": [
             {
               "question": "Danh sách trên được khai báo đúng cú pháp.",
