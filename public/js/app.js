@@ -144,12 +144,16 @@ const app = {
         return `
           <div class="announcement-card social-style">
             <div class="announcement-card-header">
-              <div class="announcement-avatar">
-                <i class="fas fa-bullhorn"></i>
+              <div class="announcement-avatar" style="background: transparent; padding: 0;">
+                <img src="https://ui-avatars.com/api/?name=Lê+Văn+Nghĩa&background=0D8ABC&color=fff&rounded=true&bold=true" alt="Admin Avatar" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);">
               </div>
               <div class="announcement-meta-info">
-                <h3 class="announcement-title">${ann.title}</h3>
-                <span class="announcement-time">${dateStr}</span>
+                <div class="announcement-author" style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 3px; display: flex; align-items: center; gap: 5px;">
+                  Lê Văn Nghĩa 
+                  <i class="fas fa-check-circle" style="color: #1da1f2; font-size: 0.85rem;" title="Admin"></i>
+                </div>
+                <h3 class="announcement-title" style="margin-top: 0; font-size: 0.9rem; font-weight: 500;">${ann.title}</h3>
+                <span class="announcement-time" style="font-size: 0.8rem;">${dateStr}</span>
               </div>
             </div>
             
