@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Main Application Controller
  * Handles flow: Home → Topics Selection → Study/Quiz/Flashcard/Practice
  */
@@ -143,22 +143,22 @@ const app = {
 
         return `
           <div class="announcement-card social-style">
-            <div class="announcement-card-header">
-              <div class="announcement-avatar" style="background: transparent; padding: 0;">
+            <div class="announcement-card-header" style="align-items: flex-start; gap: 12px; margin-bottom: 12px; display: flex;">
+              <div class="announcement-avatar" style="background: transparent; padding: 0; margin-right: 0; flex-shrink: 0; width: 44px; height: 44px;">
                 <img src="https://ui-avatars.com/api/?name=Lê+Văn+Nghĩa&background=0D8ABC&color=fff&rounded=true&bold=true" alt="Admin Avatar" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);">
               </div>
-              <div class="announcement-meta-info">
-                <div class="announcement-author" style="font-weight: 600; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 3px; display: flex; align-items: center; gap: 5px;">
+              <div class="announcement-meta-info" style="display: flex; flex-direction: column; justify-content: center; height: 44px;">
+                <div class="announcement-author" style="font-weight: 700; font-size: 1rem; color: var(--text-primary); display: flex; align-items: center; gap: 4px; line-height: 1.2;">
                   Lê Văn Nghĩa 
-                  <i class="fas fa-check-circle" style="color: #1da1f2; font-size: 0.85rem;" title="Admin"></i>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="#1d9bf0"><g><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.918-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.337 2.25c-.416-.165-.866-.25-1.336-.25-2.21 0-3.918 1.79-3.918 4 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.46.74 2.748 1.873 3.45-.098.39-.153.8-.153 1.2 0 2.21 1.71 4 3.918 4 .58 0 1.134-.14 1.62-.387.595 1.09 1.69 1.838 2.946 1.838 1.258 0 2.355-.748 2.946-1.838.485.247 1.04.387 1.62.387 2.21 0 3.918-1.79 3.918-4 0-.4-.055-.81-.153-1.2 1.133-.7 1.873-1.99 1.873-3.45zm-11.233 5.48L5.75 12.55l2.42-2.31 3.097 3.24L17.763 6.94l2.43 2.22-8.926 8.82z"></path></g></svg>
                 </div>
-                <h3 class="announcement-title" style="margin-top: 0; font-size: 0.9rem; font-weight: 500;">${ann.title}</h3>
-                <span class="announcement-time" style="font-size: 0.8rem;">${dateStr}</span>
+                <span class="announcement-time" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">${dateStr}</span>
               </div>
             </div>
             
             <div class="announcement-card-body">
-              <div class="announcement-content">${this.escapeHTML(ann.content)}</div>
+              <h3 class="announcement-title" style="margin-top: 0; margin-bottom: 10px; font-size: 1.1rem; color: var(--text-primary); line-height: 1.4;">${ann.title}</h3>
+              <div class="announcement-content" style="line-height: 1.6;">${this.escapeHTML(ann.content)}</div>
               ${linkHtml}
             </div>
 
