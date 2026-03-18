@@ -1905,3 +1905,60 @@ body {
   white-space: pre-wrap !important;
 }
 
+
+/* ═════════════════════════════════════════════════════════════
+   MOBILE RESPONSIVENESS (Optimized UI & Touch Targets)
+   ═════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .app {
+    padding: 0 10px 30px;
+  }
+  .header-inner {
+    padding: 0 12px;
+  }
+  .logo-text {
+    font-size: 1.15rem;
+  }
+  .nav-item {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .header-nav {
+    gap: 4px;
+    padding: 4px;
+  }
+  .action-btn, .theme-toggle, .back-btn, .submit-btn {
+    min-height: 44px;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+  .container, .admin-container {
+    padding: 20px 12px;
+    border-radius: var(--radius-sm);
+    margin: 15px auto;
+  }
+  body {
+    font-size: 16px;
+  }
+  .subject-card {
+    padding: 20px 15px;
+  }
+  .subject-title {
+    font-size: 1.15rem;
+  }
+  .announcement-card-body {
+    padding: 0 12px 12px 12px;
+  }
+  .announcement-card-header {
+    padding: 12px;
+  }
+  .form-group input, .form-group textarea {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) { .app { padding: 0 10px 30px; } .header-inner { padding: 0 12px; } .logo-text { font-size: 1.15rem; } .nav-item { padding: 8px 14px; font-size: 0.95rem; min-height: 44px; display: flex; align-items: center; } .header-nav { gap: 4px; padding: 4px; } .action-btn, .theme-toggle, .back-btn, .submit-btn { min-height: 44px; font-size: 0.95rem; padding: 10px 16px; } .container, .admin-container { padding: 20px 12px; border-radius: 10px; margin: 15px auto; } body { font-size: 16px; } .subject-card { padding: 20px 15px; } .subject-title { font-size: 1.15rem; } .announcement-card-body { padding: 0 12px 12px 12px; } .announcement-card-header { padding: 12px; } .form-group input, .form-group textarea { padding: 14px; font-size: 16px; } }
