@@ -26,10 +26,24 @@ const app = {
       this.renderGradeTabs();
       this.renderSubjects();
       this.updateDashboardStats();
+      this.fetchDiscordStats();
       this.setupEventListeners();
     } catch (error) {
       console.error('Failed to initialize:', error);
       alert('Không thể tải dữ liệu. Vui lòng refresh trang.');
+    }
+  },
+
+  async fetchDiscordStats() {
+    try {
+      const res = await fetch('https://discord.com/api/v9/invites/B2ne7GKhf8?with_counts=true');
+      const data = await res.json();
+      if (data && data.approximate_presence_count !== undefined) {
+        document.getElementById('discord-online-count').innerHTML = `● ${data.approximate_presence_count} Trực tuyến`;
+        document.getElementById('discord-member-count').innerHTML = `● ${data.approximate_member_count} Thành viên`;
+      }
+    } catch (e) {
+      console.warn('Could not fetch Discord stats', e);
     }
   },
 
