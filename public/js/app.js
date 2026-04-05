@@ -61,11 +61,26 @@ const app = {
     document.getElementById('tab-home').classList.remove('active');
     document.getElementById('tab-announcements').classList.remove('active');
     
-    document.getElementById('view-home').style.display = 'none';
-    document.getElementById('view-announcements').style.display = 'none';
+    // Smooth fade transition for tab content
+    const viewHome = document.getElementById('view-home');
+    const viewAnn = document.getElementById('view-announcements');
+    const activeView = tab === 'home' ? viewHome : viewAnn;
+    const inactiveView = tab === 'home' ? viewAnn : viewHome;
+
+    // Fade out current, then switch
+    inactiveView.style.opacity = '0';
+    inactiveView.style.transition = 'opacity 0.2s ease';
+    setTimeout(() => {
+      inactiveView.style.display = 'none';
+      activeView.style.display = 'block';
+      activeView.style.opacity = '0';
+      activeView.style.transition = 'opacity 0.3s ease';
+      requestAnimationFrame(() => {
+        activeView.style.opacity = '1';
+      });
+    }, 180);
 
     document.getElementById(`tab-${tab}`).classList.add('active');
-    document.getElementById(`view-${tab}`).style.display = 'block';
 
     if (tab === 'announcements') {
       this.loadAnnouncements();
