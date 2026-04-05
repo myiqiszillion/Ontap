@@ -196,8 +196,8 @@ body {
 .logo-text {
   font-size: 1.3rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 25%, #8b5cf6 50%, #6366f1 75%, #10b981 100%);
-  background-size: 200% auto;
+  background: linear-gradient(90deg, #f59e0b, #ef4444, #8b5cf6, #6366f1, #10b981, #f59e0b);
+  background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -206,7 +206,8 @@ body {
 }
 
 @keyframes logoShimmer {
-  to { background-position: 200% center; }
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
 }
 
 .header-nav {
@@ -291,25 +292,30 @@ body {
   overflow: hidden;
   margin-bottom: 0;
   text-decoration: none;
-  background: linear-gradient(135deg, #312e81, #4338ca, #5865F2, #7c3aed);
-  background-size: 300% 300%;
-  animation: discordHeroGradient 8s ease-in-out infinite;
-  box-shadow: 0 8px 32px rgba(88, 101, 242, 0.2), 0 0 0 1px rgba(88, 101, 242, 0.1);
+  box-shadow: 0 8px 32px rgba(88, 101, 242, 0.15), 0 0 0 1px rgba(88, 101, 242, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
-
-.discord-hero-widget::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 60%);
-  pointer-events: none;
 }
 
 .discord-hero-widget:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 48px rgba(88, 101, 242, 0.35), 0 0 0 1px rgba(88, 101, 242, 0.2);
+  box-shadow: 0 12px 48px rgba(88, 101, 242, 0.3), 0 0 0 1px rgba(88, 101, 242, 0.2);
+}
+
+/* Banner area */
+.discord-hero-banner {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, #312e81, #4338ca, #5865F2, #7c3aed);
+  background-size: 300% 300%;
+  animation: discordHeroGradient 8s ease-in-out infinite;
+  position: relative;
+}
+
+.discord-hero-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.1) 0%, transparent 60%);
 }
 
 @keyframes discordHeroGradient {
@@ -317,21 +323,21 @@ body {
   50% { background-position: 100% 50%; }
 }
 
-.discord-hero-inner {
+/* Body area */
+.discord-hero-body {
+  background: #2b2d31;
+  padding: 0 20px 20px;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 24px 28px;
-  gap: 20px;
-  position: relative;
-  z-index: 1;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
-.discord-hero-left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  min-width: 0;
+[data-theme="light"] .discord-hero-body,
+:root:not([data-theme="dark"]) .discord-hero-body {
+  background: var(--bg-white);
+  border-top: 1px solid var(--border);
 }
 
 .discord-hero-avatar {
@@ -340,9 +346,17 @@ body {
   border-radius: 16px;
   object-fit: cover;
   flex-shrink: 0;
-  border: 3px solid rgba(255,255,255,0.2);
+  border: 4px solid #2b2d31;
+  margin-top: -28px;
+  position: relative;
+  z-index: 2;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-theme="light"] .discord-hero-avatar,
+:root:not([data-theme="dark"]) .discord-hero-avatar {
+  border-color: var(--bg-white);
 }
 
 .discord-hero-widget:hover .discord-hero-avatar {
@@ -350,13 +364,15 @@ body {
 }
 
 .discord-hero-info {
+  flex: 1;
   min-width: 0;
+  padding-top: 12px;
 }
 
 .discord-hero-name {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 800;
-  color: #fff;
+  color: #f2f3f5;
   margin: 0 0 4px;
   display: flex;
   align-items: center;
@@ -364,15 +380,25 @@ body {
   letter-spacing: -0.3px;
 }
 
+[data-theme="light"] .discord-hero-name,
+:root:not([data-theme="dark"]) .discord-hero-name {
+  color: var(--text-primary);
+}
+
 .discord-hero-badge {
   flex-shrink: 0;
 }
 
 .discord-hero-desc {
-  font-size: 0.88rem;
-  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  color: #b5bac1;
   margin: 0 0 6px;
   font-weight: 400;
+}
+
+[data-theme="light"] .discord-hero-desc,
+:root:not([data-theme="dark"]) .discord-hero-desc {
+  color: var(--text-secondary);
 }
 
 .discord-hero-stats {
@@ -382,11 +408,11 @@ body {
 }
 
 .discord-hero-online {
-  color: #57F287;
+  color: #23a559;
 }
 
 .discord-hero-members {
-  color: rgba(255,255,255,0.5);
+  color: #80848e;
 }
 
 .discord-hero-join-btn {
@@ -394,23 +420,22 @@ body {
   align-items: center;
   gap: 8px;
   padding: 10px 22px;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: #5865F2;
   color: #fff;
   font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.88rem;
+  border-radius: 8px;
+  border: none;
   transition: all 0.3s ease;
   white-space: nowrap;
   flex-shrink: 0;
+  margin-top: 12px;
 }
 
 .discord-hero-widget:hover .discord-hero-join-btn {
-  background: rgba(255,255,255,0.25);
-  border-color: rgba(255,255,255,0.35);
-  transform: translateX(2px);
+  background: #4752C4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
 }
 
 /* ═════════════════════════════════════════════════════════════
@@ -2150,10 +2175,7 @@ body {
   .announcement-card-body { padding: 0 12px 12px 12px; }
   .announcement-card-header { padding: 12px; }
   .form-group input, .form-group textarea { padding: 14px; font-size: 16px; }
-  .hero-banner-wrapper { border-radius: var(--radius-sm); }
-  .hero-banner-overlay { padding: 24px 16px 16px; }
-  .hero-banner-overlay .home-title { font-size: 1.3rem; }
-  .hero-banner-overlay .home-subtitle { font-size: 0.85rem; }
+  .discord-hero-banner { height: 100px; }
   .logo-img { width: 34px; height: 34px; }
   .subjects-grid { grid-template-columns: 1fr; }
 }
@@ -2161,15 +2183,13 @@ body {
 
 /* Mobile Discord Widget */
 @media (max-width: 600px) {
-  .discord-hero-inner {
+  .discord-hero-body {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
-    gap: 16px;
+    padding: 0 16px 16px;
   }
-  .discord-hero-left {
-    flex-direction: column;
-    align-items: center;
+  .discord-hero-avatar {
+    margin-top: -28px;
   }
   .discord-hero-stats {
     justify-content: center;
@@ -2179,8 +2199,3 @@ body {
     justify-content: center;
   }
 }
-
-
-
-
-
