@@ -12,15 +12,17 @@
         .admin-container {
             max-width: 600px;
             margin: 40px auto;
-            background: var(--surface);
             padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius);
         }
         .admin-title {
             text-align: center;
             margin-bottom: 24px;
-            color: var(--text-primary);
+            background: linear-gradient(90deg, #f59e0b, #ef4444, #8b5cf6, #6366f1, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
         }
         .form-group {
             margin-bottom: 20px;
@@ -33,28 +35,21 @@
             color: var(--text-secondary);
         }
         .form-group input, .form-group textarea {
-            padding: 12px;
-            border-radius: 8px;
+            padding: 14px 16px;
+            border-radius: 12px;
             border: 1px solid var(--border);
-            background: var(--bg-primary);
+            background: rgba(255, 255, 255, 0.03);
             color: var(--text-primary);
             font-family: inherit;
+            transition: all 0.3s ease;
         }
-        .submit-btn {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 14px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            width: 100%;
-            transition: all 0.2s ease;
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.05);
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
         }
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px var(--primary-ghost);
-        }
+
         .message {
             margin-top: 16px;
             padding: 12px;
@@ -91,14 +86,17 @@
             gap: 12px;
         }
         .admin-ann-item {
-            background: var(--bg-white);
-            border: 1px solid var(--border);
             padding: 16px;
-            border-radius: 12px;
+            border-radius: var(--radius-sm);
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 16px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .admin-ann-item:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.2);
         }
         .admin-ann-info {
             flex: 1;
@@ -112,35 +110,35 @@
             color: var(--text-muted);
         }
         .delete-btn {
-            background: var(--red-bg);
+            background: rgba(239, 68, 68, 0.1);
             color: var(--red);
-            border: 1px solid var(--red-border);
-            padding: 6px 12px;
-            border-radius: 6px;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            padding: 8px 16px;
+            border-radius: 8px;
             font-size: 0.85rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.2s ease;
         }
         .delete-btn:hover {
-            background: var(--red);
-            color: white;
+            background: rgba(239, 68, 68, 0.2);
+            transform: translateY(-2px);
         }
 
         /* Drop Zone Styles */
         .drop-zone {
-            border: 2px dashed var(--border);
+            border: 2px dashed rgba(255,255,255,0.15);
             border-radius: 12px;
-            padding: 30px 20px;
+            padding: 40px 20px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.2s ease;
-            background: rgba(0,0,0,0.01);
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.02);
             position: relative;
         }
         .drop-zone:hover, .drop-zone.dragover {
             border-color: var(--primary);
-            background: var(--primary-soft);
+            background: rgba(99, 102, 241, 0.1);
         }
         .drop-zone-text {
             font-weight: 600;
@@ -217,7 +215,7 @@
         </div>
     </header>
 
-    <div class="admin-container">
+    <div class="admin-container glass-card">
         <h2 class="admin-title">Đăng Thông Báo Mới (Database Supabase)</h2>
         
         <form id="announcement-form">

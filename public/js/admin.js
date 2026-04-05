@@ -190,7 +190,7 @@ const Admin = {
       list.innerHTML = data.map(ann => {
         const date = new Date(ann.timestamp).toLocaleString('vi-VN');
         return `
-          <div class="admin-ann-item" id="ann-${ann.id}">
+          <div class="admin-ann-item glass-card" id="ann-${ann.id}">
             <div class="admin-ann-info">
               <div class="admin-ann-title">${ann.title}</div>
               <div class="admin-ann-time">${date}</div>
