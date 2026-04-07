@@ -2186,24 +2186,15 @@ body {
 /* Mobile Discord Widget */
 @media (max-width: 600px) {
   .discord-hero-body {
-    flex-direction: column;
-    text-align: center;
     padding: 0 16px 16px;
-    gap: 8px; /* Giảm gap trên mobile */
+    align-items: flex-start;
   }
-  .discord-hero-avatar {
-    margin-top: -28px;
-  }
-  .discord-hero-name {
-    justify-content: center;
-  }
-  .discord-hero-stats {
-    justify-content: center;
+  .discord-hero-info {
+    padding-top: 8px;
   }
   .discord-hero-join-btn {
     width: 100%;
-    justify-content: center;
-    margin-top: 4px;
+    margin-top: 12px;
   }
 }
 
