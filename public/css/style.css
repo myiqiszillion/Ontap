@@ -2162,7 +2162,7 @@ body {
    ═════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .app { padding: 0 10px 30px; }
-  .header-inner { padding: 10px 16px; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
+  .header-inner { padding: 10px 22px; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
   .logo { flex: 0 1 auto; max-width: calc(100% - 60px); }
   .header-actions { flex: 0 0 auto; }
   .header-nav { gap: 4px; padding: 4px; order: 3; flex: 1 1 100%; justify-content: center; width: auto; margin-top: 4px; }
