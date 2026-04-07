@@ -2162,11 +2162,13 @@ body {
    ═════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .app { padding: 0 10px 30px; }
-  .header-inner { padding: 0 12px; }
+  .header-inner { padding: 10px 12px; flex-wrap: wrap; gap: 10px; }
+  .logo { flex: 1; }
+  .header-actions { flex: 0; }
+  .header-nav { gap: 4px; padding: 4px; order: 3; width: 100%; justify-content: center; }
   .logo-text { font-size: 1.15rem; }
-  .nav-item { padding: 8px 14px; font-size: 0.95rem; min-height: 44px; display: flex; align-items: center; }
-  .header-nav { gap: 4px; padding: 4px; }
-  .action-btn, .theme-toggle, .back-btn, .submit-btn { min-height: 44px; font-size: 0.95rem; padding: 10px 16px; }
+  .nav-item { padding: 8px 14px; font-size: 0.95rem; min-height: 44px; display: flex; align-items: center; flex: 1; justify-content: center; }
+  .action-btn, .theme-toggle, .back-btn, .submit-btn { min-height: 44px; font-size: 0.95rem; padding: 10px 16px; flex-shrink: 0; }
   .container, .admin-container { padding: 20px 12px; border-radius: var(--radius-sm); margin: 15px auto; }
   body { font-size: 16px; }
   .subject-card { padding: 20px 15px; }
