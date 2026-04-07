@@ -333,12 +333,6 @@ body {
   flex-wrap: wrap;
 }
 
-[data-theme="light"] .discord-hero-body,
-:root:not([data-theme="dark"]) .discord-hero-body {
-  background: var(--bg-white);
-  border-top: 1px solid var(--border);
-}
-
 .discord-hero-avatar {
   width: 56px;
   height: 56px;
@@ -351,11 +345,6 @@ body {
   z-index: 2;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-[data-theme="light"] .discord-hero-avatar,
-:root:not([data-theme="dark"]) .discord-hero-avatar {
-  border-color: var(--bg-white);
 }
 
 .discord-hero-widget:hover .discord-hero-avatar {
