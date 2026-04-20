@@ -6956,12 +6956,14 @@
         },
         {
           "id": 4,
-          "question": "Câu 4. Hoạt động sản xuất chính trong nông nghiệp của dân tộc Kinh ở Việt Nam là \nA. trồng lúa nước.\t\t\t\tB. trồng cây lúa mì.",
+          "question": "Câu 4. Hoạt động sản xuất chính trong nông nghiệp của dân tộc Kinh ở Việt Nam là",
           "options": [
+            "trồng lúa nước.",
+            "trồng cây lúa mì.",
             "trồng cây lúa mạch.",
             "trồng cây lúa nương."
           ],
-          "correct": 1,
+          "correct": 0,
           "correctAnswer": 1
         },
         {
