@@ -1,42 +1,6 @@
 {
-  "grades": [10, 11, 12],
+  "grades": [10, 12],
   "subjects": [
-    {
-      "id": "toan",
-      "grade": 10,
-      "name": "Toán 10",
-      "icon": "📐",
-      "description": "Đại số và Hình học",
-      "color": "#3B82F6",
-      "dataFile": "toan.json"
-    },
-    {
-      "id": "sinh",
-      "grade": 10,
-      "name": "Sinh Học 10",
-      "icon": "🧬",
-      "description": "Sinh học tế bào và chuyển hóa",
-      "color": "#2ecc71",
-      "dataFile": "sinh.json"
-    },
-    {
-      "id": "ly",
-      "grade": 10,
-      "name": "Vật Lý 10",
-      "icon": "⚡",
-      "description": "Động lực học và Năng lượng",
-      "color": "#e67e22",
-      "dataFile": "ly.json"
-    },
-    {
-      "id": "hoa",
-      "grade": 10,
-      "name": "Hóa Học 10",
-      "icon": "🧪",
-      "description": "Cấu tạo chất và Phản ứng",
-      "color": "#06b6d4",
-      "dataFile": "hoa.json"
-    },
     {
       "id": "su",
       "grade": 10,
@@ -47,13 +11,13 @@
       "dataFile": "su.json"
     },
     {
-      "id": "van",
+      "id": "sinh",
       "grade": 10,
-      "name": "Ngữ Văn 10",
-      "icon": "✍️",
-      "description": "Văn học dân gian và hiện đại",
-      "color": "#ec4899",
-      "dataFile": "van.json"
+      "name": "Sinh Học 10",
+      "icon": "🧬",
+      "description": "Sinh học tế bào và chuyển hóa",
+      "color": "#2ecc71",
+      "dataFile": "sinh.json"
     },
     {
       "id": "tin",
@@ -69,8 +33,8 @@
       "grade": 12,
       "name": "Lịch Sử 12",
       "icon": "📜",
-      "description": "Hồ Chí Minh - Cuộc đời và sự nghiệp",
-      "color": "#7c6aef",
+      "description": "Hồ Chí Minh — Cuộc đời và sự nghiệp",
+      "color": "#8b5cf6",
       "dataFile": "su12.json"
     },
     {

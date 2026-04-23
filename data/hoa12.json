@@ -54,26 +54,6 @@
           "correct": 3
         },
         {
-          "question": "Trong các kim loại Li, Na, K, Cs, kim loại có tính khử mạnh nhất là",
-          "options": [
-            "Li.",
-            "Na.",
-            "K.",
-            "Cs."
-          ],
-          "correct": 3
-        },
-        {
-          "question": "Cho dãy các nguyên tố: Mg, K, Ba, Na, Al, Sr. Số nguyên tố thuộc nhóm IIA là",
-          "options": [
-            "1.",
-            "2.",
-            "3.",
-            "4."
-          ],
-          "correct": 2
-        },
-        {
           "question": "Kim loại chuyển tiếp dãy thứ nhất thuộc khối nguyên tổ nào sau đây?",
           "options": [
             "Nguyên tố s.",
@@ -134,16 +114,6 @@
           "correct": 2
         },
         {
-          "question": "Số phát biểu đúng ?",
-          "options": [
-            "2.",
-            "3.",
-            "4.",
-            "5."
-          ],
-          "correct": 1
-        },
-        {
           "question": "Dựa vào đồ thị, nhận định nào đúng trong các nhận định sau:",
           "options": [
             "Kim loại kiềm có nhiệt độ nóng chảy cao hơn kim loại chuyển tiếp.",
@@ -152,16 +122,6 @@
             "Kim loại chuyển tiếp thường có nhiệt độ nóng chảy cao hơn các nguyên tố họ s."
           ],
           "correct": 3
-        },
-        {
-          "question": "Có bao nhiêu loại phối tử có trong phân tử phức chất đó?",
-          "options": [
-            "1.",
-            "2.",
-            "3.",
-            "4."
-          ],
-          "correct": 1
         }
       ],
       "questionGroups": [
@@ -393,16 +353,6 @@
             "Khối lượng riêng tăng dần theo chiều tăng của bán kính nguyên tử."
           ],
           "correct": 2
-        },
-        {
-          "question": "Số liên kết cho – nhận mà nguyên tử trung tâm iron tạo được với các phối tử là",
-          "options": [
-            "5.",
-            "6.",
-            "4.",
-            "3."
-          ],
-          "correct": 0
         }
       ],
       "questionGroups": [
@@ -644,16 +594,6 @@
             "Có thể sử dụng mạ kẽm nhúng nóng với nhiều kim loại chuyển tiếp chu kì 4."
           ],
           "correct": 0
-        },
-        {
-          "question": "Số liên kết cho – nhận mà nguyên tử trung tâm iron tạo được với các phối tử OH₂ là",
-          "options": [
-            "5.",
-            "3.",
-            "4.",
-            "6."
-          ],
-          "correct": 3
         }
       ],
       "questionGroups": [
@@ -827,16 +767,6 @@
           "correct": 2
         },
         {
-          "question": "Nguyên tử chromium (Cr) có cấu hình electron là 1s22s22p63s²3p 3d 4s¹. Số electron độc thân trong nguyên tử Cr là",
-          "options": [
-            "7.",
-            "5.",
-            "6.",
-            "4."
-          ],
-          "correct": 2
-        },
-        {
           "question": "Trong phép chuẩn độ dung dịch Fe2+ bằng , bình tam giác đựng dung dịch Fe2+ thường được để trên 1 tờ giấy trắng. Mục đích của việc này là gì?",
           "options": [
             "Để phản ứng trong bình tam giác xảy ra nhanh hơn.",
@@ -875,16 +805,6 @@
             "Kim loại nhóm IIA khi cháy đều cho ngọn lửa có màu đặc trưng."
           ],
           "correct": 1
-        },
-        {
-          "question": "Cho các phương pháp sau: (1) dùng nhiệt, (2) dùng dung dịch K2CO3, (3) dùng nhựa trao đổi ion, (4) dùng dung dịch Ca(OH)2. Số phương pháp có khả năng làm mềm nước có tính cứng tạm thời là",
-          "options": [
-            "1.",
-            "2.",
-            "3.",
-            "4."
-          ],
-          "correct": 3
         },
         {
           "question": "Trong phòng thí nghiệm, nồng độ iron (II) sulfate có thể được xác định bằng phương pháp chuẩn độ với dung dịch thuốc tím trong môi trường acid. Dung dịch acid được sử dụng trong chuẩn độ này là",
@@ -1008,16 +928,6 @@
           "correct": 2
         },
         {
-          "question": "Cho các kim loại: Na, Ca, Cu, Ag, K. Số kim loại có khả năng khử được nước ở điều kiện thường giải phóng H2 là",
-          "options": [
-            "2.",
-            "1.",
-            "4.",
-            "3."
-          ],
-          "correct": 3
-        },
-        {
           "question": "Nguyên tắc chung để điều chế kim loại từ hợp chất của chúng là",
           "options": [
             "khử cation kim loại thành kim loại.",
@@ -1088,16 +998,6 @@
           "correct": 0
         },
         {
-          "question": "Khi cho kim loại sodium tác dụng với phức chất [Mn2(CO)10] thu được hợp chất phức Na[Mn(CO)5] với phối từ carbonyl (CO). Số oxi hoá của Mn trong phức chất Na[Mn(CO)5] là",
-          "options": [
-            "+2.",
-            "+1.",
-            "-1.",
-            "0."
-          ],
-          "correct": 2
-        },
-        {
           "question": "Phát biểu nào sau đây đúng?",
           "options": [
             "Kim loại kiềm có tính khử giảm dần từ Li đến Cs.",
@@ -1126,16 +1026,6 @@
             "HCl."
           ],
           "correct": 2
-        },
-        {
-          "question": "(6) Tất cả các nguyên tố thuộc nhóm B đều là nguyên tố chuyển tiếp.",
-          "options": [
-            "1.",
-            "2.",
-            "3.",
-            "4."
-          ],
-          "correct": 1
         },
         {
           "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất K3[Fe(CN)6]?",
@@ -1327,16 +1217,6 @@
             "Fe3+ sẽ bị oxi hoá tiếp bởi KMnO4."
           ],
           "correct": 1
-        },
-        {
-          "question": "Trong phức chất [Fe(OH2)6]2+, mỗi phân tử H2O sử dụng bao nhiêu electron để tạo liên kết phối trí với AO trống của ion Fe2+?",
-          "options": [
-            "2.",
-            "1.",
-            "4.",
-            "6."
-          ],
-          "correct": 0
         },
         {
           "question": "Phát biểu nào sau đây đúng?",
@@ -1570,16 +1450,6 @@
           "correct": 2
         },
         {
-          "question": "Cho carbon monoxide liên tục đi qua nickel (Ni) nung nóng ở 80°C, thu được phức chất [Ni(CO)] ở thể khí. Tiếp tục dẫn [Ni(CO)4] qua khu vực có nhiệt độ khoảng 200°C, phức chất [Ni(CO)4] phân huỷ thu được nickel tỉnh khiết. Quá trình này được ứng dụng để tinh chế nickel. Số oxi hoá của nickel trong phức chất [Ni(CO)4] là",
-          "options": [
-            "+2.",
-            "+1.",
-            "-1.",
-            "0."
-          ],
-          "correct": 3
-        },
-        {
           "question": "Y là chất nào sau đây?",
           "options": [
             "NaOH.",
@@ -1596,16 +1466,6 @@
             "Cả ba nguyên tố Cd, Hg, Pb là kim loại chuyển tiếp.",
             "Chỉ có Hg là kim loại chuyển tiếp.",
             "Ion Cd2+, Hg2+ có cấu hình phân lớp d bão hòa."
-          ],
-          "correct": 3
-        },
-        {
-          "question": "Trong phức chất [Cu(NH3)4(OH2)k]SO4, nguyên tử trung tâm Cu tạo được 6 liên kết sigma với các phân tử NH3 và H2O. Giá trị của k là",
-          "options": [
-            "3.",
-            "1.",
-            "6.",
-            "2."
           ],
           "correct": 3
         }
@@ -1761,26 +1621,6 @@
           "correct": 1
         },
         {
-          "question": "Nước cứng tạm thời có chứa nhiều ion Ca2+, Mg2+ và",
-          "options": [
-            ".",
-            ".",
-            ".",
-            "."
-          ],
-          "correct": 3
-        },
-        {
-          "question": "Cho các hợp chất của manganese: MnO, MnO(OH), Mn2O3 (MnO.MnO2), Mn3O4 (2MnO.MnO2), MnO(OH)2 và MnF3. Số hợp chất chứa nguyên tử Mn có số oxi hoá +3 là",
-          "options": [
-            "2.",
-            "3.",
-            "4.",
-            "1."
-          ],
-          "correct": 0
-        },
-        {
           "question": "Cho khoảng 2 mL dung dịch NaOH dịch CuSO4. Hiện tượng quan sát được là vào ống nghiệm chứa khoảng 1 mL dung",
           "options": [
             "dung dịch chuyển sang màu vàng.",
@@ -1819,16 +1659,6 @@
             "CO2, BaSO4."
           ],
           "correct": 1
-        },
-        {
-          "question": "Số loại nước không phải là nước cứng?",
-          "options": [
-            "2.",
-            "3.",
-            "4.",
-            "5."
-          ],
-          "correct": 0
         },
         {
           "question": "Phức chất đơn nhân với nguyên tử trung tâm platinum (Pt) tạo được 4 liên kết cho nhận với phối từ ethylenediamine (H2N-CH2-CH2-NH2) và chloro; trong đó ethylenediamine liên kết với nguyên tử trung tâm qua hai nguyên tử nitrogen. Công thức phân tử của phức chất là",
@@ -2002,16 +1832,6 @@
           "correct": 3
         },
         {
-          "question": "Trong dung dịch, potassium manganate (K2MnO4) màu lục bị phân huỷ tạo thành MnO2 (chất rắn, màu nâu) và dung dịch có màu tím. Chất có màu tím là",
-          "options": [
-            "KMnO4.",
-            "KMnO4.",
-            "Mn2O7.",
-            "HMnO4."
-          ],
-          "correct": 0
-        },
-        {
           "question": "Dung dịch chứa muối iron(II) trong môi trường acid khi để ngoài không khí bị chuyển từ màu xanh nhạt sang màu vàng nâu. Điều này được giải thích là do",
           "options": [
             "phân huỷ một phần tạo thành Fe và iron(III).",
@@ -2052,16 +1872,6 @@
           "correct": 2
         },
         {
-          "question": "Số phát biểu đúng ?",
-          "options": [
-            "2.",
-            "3.",
-            "4.",
-            "5."
-          ],
-          "correct": 0
-        },
-        {
           "question": "Phát biểu nào sau đây không đúng?",
           "options": [
             "Tất cả các nguyên tố thuộc nhóm B đều là nguyên tố chuyển tiếp dãy thứ nhất.",
@@ -2070,16 +1880,6 @@
             "Trạng thái oxi hóa thường gặp của Mn là +2, +4,+ 7."
           ],
           "correct": 0
-        },
-        {
-          "question": "Khi cho dung dịch KCN đến dư vào dung dịch iron(II) sulfate thu được phức chất bát diện; trong đó nguyên tử trung tâm iron tạo 6 liên kết sigma với 6 nguyên tử carbon trong phối tử cyano (CN). Công thức của phức chất là",
-          "options": [
-            "[Fe(CN)6].",
-            "[Fe(CN)6].",
-            "[Fe(CN)4]2+.",
-            "[Fe(CN)6]2+."
-          ],
-          "correct": 1
         }
       ],
       "questionGroups": [
@@ -2253,16 +2053,6 @@
           "correct": 0
         },
         {
-          "question": "Số nguyên tử trung tâm trong phức chất là",
-          "options": [
-            "2.",
-            "3.",
-            "1.",
-            "4."
-          ],
-          "correct": 0
-        },
-        {
           "question": "Trong đời sống, người ta dùng baking soda (là một hợp chất của sodium) để giặt, khử mùi hôi và tẩy trắng vết ố trên quần áo, vệ sinh đồ gia dụng,. Baking soda có công thức là",
           "options": [
             "NaHCO3.",
@@ -2291,16 +2081,6 @@
             "(1) và (2)."
           ],
           "correct": 3
-        },
-        {
-          "question": "Số phát biểu đúng ?",
-          "options": [
-            "2.",
-            "3.",
-            "4.",
-            "5."
-          ],
-          "correct": 2
         },
         {
           "question": "Nhỏ dung dịch KCN đặc đến dư vào dung dịch AgNO3 thu được phức chất X. Trong phức chất X, nguyên tử trung tâm bạc tạo 2 liên kết sigma với nguyên tử carbon trong phối tử cyano (CN). Công thức của phức chất là",
