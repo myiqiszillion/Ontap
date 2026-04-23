@@ -1,14 +1,9 @@
 {
-  "subject": "Sinh học 10",
   "lessons": [
     {
-      "id": 1,
-      "bai": 17,
-      "title": "Bài 17: Thông tin giữa các tế bào (Trắc nghiệm)",
-      "type": "multiple",
+      "name": "Bài 17: Thông tin giữa các tế bào",
       "questions": [
         {
-          "id": 1,
           "question": "Thông tin giữa các tế bào là",
           "options": [
             "sự truyền tín hiệu từ tế bào này sang tế bào khác thông qua phân tử tín hiệu để tạo ra các đáp ứng nhất định.",
@@ -19,7 +14,6 @@
           "correct": 0
         },
         {
-          "id": 2,
           "question": "Hình bên dưới minh họa kiểu truyền tin nào? (Hình minh họa kháng nguyên và thụ thể tiếp xúc trực tiếp)",
           "options": [
             "Truyền tin tiếp xúc trực tiếp.",
@@ -30,7 +24,6 @@
           "correct": 0
         },
         {
-          "id": 3,
           "question": "Thứ tự các giai đoạn trong quá trình truyền thông tin giữa các tế bào là",
           "options": [
             "tiếp nhận - truyền tin - đáp ứng.",
@@ -41,7 +34,6 @@
           "correct": 0
         },
         {
-          "id": 4,
           "question": "Sự truyền thông tin giữa các tế bào được thực hiện nhờ các",
           "options": [
             "kênh nối giữa các tế bào.",
@@ -52,7 +44,6 @@
           "correct": 1
         },
         {
-          "id": 5,
           "question": "Thành phần nào của tế bào có vai trò tiếp nhận phân tử tín hiệu?",
           "options": [
             "Thu thể",
@@ -63,7 +54,6 @@
           "correct": 0
         },
         {
-          "id": 6,
           "question": "\"Trong giai đoạn này, một chuỗi các phản ứng sinh hoá diễn ra trong tế bào tạo thành con đường truyền tín hiệu thông qua các phân tử truyền tin\". Đây là giai đoạn nào?",
           "options": [
             "Giai đoạn đáp ứng.",
@@ -74,7 +64,6 @@
           "correct": 3
         },
         {
-          "id": 7,
           "question": "\"Giai đoạn nào tín hiệu đã được truyền tin sẽ hoạt hoá một đáp ứng đặc hiệu của tế bào\"?",
           "options": [
             "Giai đoạn đáp ứng.",
@@ -85,7 +74,6 @@
           "correct": 0
         },
         {
-          "id": 8,
           "question": "Hoạt động nào sau đây của tế bào khởi động cho quá trình truyền tin?",
           "options": [
             "Phân tử tín hiệu này liên kết với protein thụ thể.",
@@ -96,7 +84,6 @@
           "correct": 3
         },
         {
-          "id": 9,
           "question": "Thụ thể đặc hiệu không thể có mặt ở đâu?",
           "options": [
             "Tự do trong máu.",
@@ -107,7 +94,6 @@
           "correct": 0
         },
         {
-          "id": 10,
           "question": "Quan sát hình dưới đây và cho biết kiểu truyền thông giữa các tế bào được minh hoạ là gì? (Hình minh họa tế bào tiết và tế bào đích với các phân tử tín hiệu)",
           "options": [
             "Truyền tin tiếp xúc trực tiếp.",
@@ -117,13 +103,7 @@
           ],
           "correct": 2
         }
-      ]
-    },
-    {
-      "id": 2,
-      "bai": 17,
-      "title": "Bài 17: Thông tin giữa các tế bào (Đúng/Sai)",
-      "type": "truefalse",
+      ],
       "questionGroups": [
         {
           "passage": "Mỗi phát biểu dưới đây là Đúng hay Sai khi nói về quá trình truyền tin giữa các tế bào?",
@@ -212,114 +192,169 @@
       ]
     },
     {
-      "id": 3,
-      "bai": 18,
-      "title": "Bài 18: Chu kì tế bào (Trắc nghiệm)",
-      "type": "multiple",
+      "name": "Bài 18: Chu kì tế bào",
       "questions": [
         {
-          "id": 1,
           "question": "Tên gọi khoảng thời gian giữa hai lần phân bào liên tiếp của tế bào nhân thực là gì?",
-          "options": ["Quá trình phân bào.", "Chu kì tế bào.", "Phát triển tế bào.", "Phân chia tế bào."],
+          "options": [
+            "Quá trình phân bào.",
+            "Chu kì tế bào.",
+            "Phát triển tế bào.",
+            "Phân chia tế bào."
+          ],
           "correct": 1
         },
         {
-          "id": 2,
           "question": "Trong một chu kì tế bào, thời gian dài nhất là của giai đoạn nào?",
-          "options": ["Kì cuối.", "Kì giữa.", "Kì đầu.", "Kì trung gian."],
+          "options": [
+            "Kì cuối.",
+            "Kì giữa.",
+            "Kì đầu.",
+            "Kì trung gian."
+          ],
           "correct": 3
         },
         {
-          "id": 3,
           "question": "Trong một chu kì tế bào, kì trung gian được chia thành mấy pha?",
-          "options": ["1 pha.", "2 pha.", "3 pha.", "4 pha."],
+          "options": [
+            "1 pha.",
+            "2 pha.",
+            "3 pha.",
+            "4 pha."
+          ],
           "correct": 2
         },
         {
-          "id": 4,
           "question": "Trình tự lần lượt 3 pha của kì trung gian trong chu kì tế bào là trình tự nào?",
-          "options": ["G₁ → S → G₂.", "G₁ → G₂ → S.", "G₂ → S → G₁.", "S → G₁ → G₂."],
+          "options": [
+            "G₁ → S → G₂.",
+            "G₁ → G₂ → S.",
+            "G₂ → S → G₁.",
+            "S → G₁ → G₂."
+          ],
           "correct": 0
         },
         {
-          "id": 5,
           "question": "Các pha trong một chu kì tế bào diễn ra theo trình tự nào sau đây?",
-          "options": ["G₁ → S → G₂ → M.", "G₂ → S → G₁ → M.", "M → S → G₁ → G₂.", "S → G₁ → G₂ → M."],
+          "options": [
+            "G₁ → S → G₂ → M.",
+            "G₂ → S → G₁ → M.",
+            "M → S → G₁ → G₂.",
+            "S → G₁ → G₂ → M."
+          ],
           "correct": 0
         },
         {
-          "id": 6,
           "question": "Trong chu kỳ tế bào, DNA và NST nhân đôi ở pha",
-          "options": ["G₁.", "G₂.", "S.", "Nguyên phân"],
+          "options": [
+            "G₁.",
+            "G₂.",
+            "S.",
+            "Nguyên phân"
+          ],
           "correct": 2
         },
         {
-          "id": 7,
           "question": "Trong chu kỳ tế bào, pha M bao gồm hai quá trình liên quan chặt chẽ với nhau là",
-          "options": ["phân chia NST và phân chia tế bào chất.", "Nhân đôi và phân chia NST.", "Nguyên phân và giảm phân.", "Nhân đôi NST và tổng hợp các chất."],
+          "options": [
+            "phân chia NST và phân chia tế bào chất.",
+            "Nhân đôi và phân chia NST.",
+            "Nguyên phân và giảm phân.",
+            "Nhân đôi NST và tổng hợp các chất."
+          ],
           "correct": 0
         },
         {
-          "id": 8,
           "question": "Trong pha M, sự phân chia nhân tế bào trải qua mấy giai đoạn (kì)?",
-          "options": ["2.", "3.", "4.", "5."],
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
           "correct": 2
         },
         {
-          "id": 9,
           "question": "Số điểm kiểm soát chính trong chu kì tế bào của sinh vật nhân thực là",
-          "options": ["1.", "3.", "2.", "4."],
+          "options": [
+            "1.",
+            "3.",
+            "2.",
+            "4."
+          ],
           "correct": 1
         },
         {
-          "id": 10,
           "question": "Nguyên nhân gây ra ung thư là do",
-          "options": ["tế bào chết theo chương trình.", "tế bào phân chia mất kiểm soát.", "tế bào không phân chia.", "tế bào dừng phân chia."],
+          "options": [
+            "tế bào chết theo chương trình.",
+            "tế bào phân chia mất kiểm soát.",
+            "tế bào không phân chia.",
+            "tế bào dừng phân chia."
+          ],
           "correct": 1
         },
         {
-          "id": 11,
           "question": "Trong chu kỳ tế bào, pha M còn được gọi là pha",
-          "options": ["tổng hợp các chất.", "nhân đôi.", "phân chia NST.", "phân bào."],
+          "options": [
+            "tổng hợp các chất.",
+            "nhân đôi.",
+            "phân chia NST.",
+            "phân bào."
+          ],
           "correct": 3
         },
         {
-          "id": 12,
           "question": "Trong chu kỳ tế bào, thời điểm dễ gây đột biến gen nhất là",
-          "options": ["Pha S.", "Pha G₁.", "Pha M.", "Pha G₂."],
+          "options": [
+            "Pha S.",
+            "Pha G₁.",
+            "Pha M.",
+            "Pha G₂."
+          ],
           "correct": 0
         },
         {
-          "id": 13,
           "question": "Các tế bào trong cơ thể đa bào chỉ phân chia khi",
-          "options": ["sinh tổng hợp đầy đủ các chất.", "NST hoàn thành nhân đôi.", "có tín hiệu phân bào.", "kích thước tế bào đủ lớn."],
+          "options": [
+            "sinh tổng hợp đầy đủ các chất.",
+            "NST hoàn thành nhân đôi.",
+            "có tín hiệu phân bào.",
+            "kích thước tế bào đủ lớn."
+          ],
           "correct": 2
         },
         {
-          "id": 14,
           "question": "Sự tăng cường phân chia mất kiểm soát của một nhóm tế bào trong cơ thể dẫn tới",
-          "options": ["Bệnh đãng trí.", "Các bệnh, tật di truyền.", "Bệnh ung thư.", "Bệnh động kinh."],
+          "options": [
+            "Bệnh đãng trí.",
+            "Các bệnh, tật di truyền.",
+            "Bệnh ung thư.",
+            "Bệnh động kinh."
+          ],
           "correct": 2
         },
         {
-          "id": 15,
           "question": "Khi nói về kì trung gian, có bao nhiêu phát biểu sau đây đúng? I. Có 3 pha: G₁, S và G₂. II. Chiếm phần lớn thời gian trong chu kỳ tế bào. III. Tổng hợp các chất cần thiết cho tế bào. IV. NST nhân đôi và phân chia về hai cực của tế bào.",
-          "options": ["1.", "2.", "3.", "4."],
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
           "correct": 2
         },
         {
-          "id": 16,
           "question": "Khi nói về ung thư, có bao nhiêu phát biểu nào sau đây đúng? I. Ung thư là sự tăng sinh không kiểm soát được của một số loại tế bào trong cơ thể. II. U ác tính khác với u lành tính là các tế bào có khả năng tách khỏi mô ban đầu di chuyển đến nơi khác. III. Nguyên nhân gây ra ung thư có thể là do đột biến gen, đột biến NST. IV. Ung thư là một trong những bệnh nan y đã có thuốc chữa trị đặc hiệu.",
-          "options": ["1.", "3.", "2.", "4."],
+          "options": [
+            "1.",
+            "3.",
+            "2.",
+            "4."
+          ],
           "correct": 1
         }
-      ]
-    },
-    {
-      "id": 4,
-      "bai": 18,
-      "title": "Bài 18: Chu kì tế bào (Đúng/Sai)",
-      "type": "truefalse",
+      ],
       "questionGroups": [
         {
           "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát G₂/M trong chu kì tế bào?",
@@ -450,174 +485,269 @@
       ]
     },
     {
-      "id": 5,
-      "bai": 19,
-      "title": "Bài 19: Nguyên phân và Giảm phân (Trắc nghiệm)",
-      "type": "multiple",
+      "name": "Bài 19: Nguyên phân và Giảm phân",
       "questions": [
         {
-          "id": 1,
           "question": "Trong nguyên phân, sự phân chia nhân trải qua mấy kì?",
-          "options": ["1 kì", "2 kì", "3 kì", "4 kì."],
+          "options": [
+            "1 kì",
+            "2 kì",
+            "3 kì",
+            "4 kì."
+          ],
           "correct": 3
         },
         {
-          "id": 2,
           "question": "Quá trình nguyên phân không bao gồm kì nào sau đây?",
-          "options": ["Kì trung gian", "Kì giữa", "Kì đầu", "Kì cuối."],
+          "options": [
+            "Kì trung gian",
+            "Kì giữa",
+            "Kì đầu",
+            "Kì cuối."
+          ],
           "correct": 0
         },
         {
-          "id": 3,
           "question": "Trong kì đầu của nguyên phân, nhiễm sắc thể có hoạt động nào?",
-          "options": ["Tự nhân đôi tạo nhiễm sắc thể kép", "Bắt đầu co xoắn lại.", "Co xoắn tối đa.", "Bắt đầu dãn xoắn."],
+          "options": [
+            "Tự nhân đôi tạo nhiễm sắc thể kép",
+            "Bắt đầu co xoắn lại.",
+            "Co xoắn tối đa.",
+            "Bắt đầu dãn xoắn."
+          ],
           "correct": 1
         },
         {
-          "id": 4,
           "question": "Trong quá trình nguyên phân, các nhiễm sắc thể co xoắn cực đại, có hình thái đặc trưng cho loài ở kì nào sau đây?",
-          "options": ["Kì đầu", "Kì giữa", "Kì sau", "Kì cuối."],
+          "options": [
+            "Kì đầu",
+            "Kì giữa",
+            "Kì sau",
+            "Kì cuối."
+          ],
           "correct": 1
         },
         {
-          "id": 5,
           "question": "Ở kì giữa nguyên phân, các nhiễm sắc thể kép sắp xếp thành mấy hàng trên mặt phẳng xích đạo của thoi phân bào?",
-          "options": ["4 hàng", "3 hàng", "2 hàng", "1 hàng."],
+          "options": [
+            "4 hàng",
+            "3 hàng",
+            "2 hàng",
+            "1 hàng."
+          ],
           "correct": 3
         },
         {
-          "id": 6,
           "question": "Trong quá trình nguyên phân, thoi phân bào dần xuất hiện ở kì nào?",
-          "options": ["Kì đầu", "Kì giữa", "Kì sau", "Kì cuối."],
+          "options": [
+            "Kì đầu",
+            "Kì giữa",
+            "Kì sau",
+            "Kì cuối."
+          ],
           "correct": 0
         },
         {
-          "id": 7,
           "question": "Hiện tượng nào sau đây xảy ra ở kỳ cuối của nguyên phân?",
-          "options": ["Nhiễm sắc thể phân li về 2 cực tế bào.", "Màng nhân và nhân con xuất hiện.", "Các nhiễm sắc thể bắt đầu co xoắn.", "Các nhiễm sắc thể ở trạng thái kép."],
+          "options": [
+            "Nhiễm sắc thể phân li về 2 cực tế bào.",
+            "Màng nhân và nhân con xuất hiện.",
+            "Các nhiễm sắc thể bắt đầu co xoắn.",
+            "Các nhiễm sắc thể ở trạng thái kép."
+          ],
           "correct": 1
         },
         {
-          "id": 8,
           "question": "Phát biểu nào sau đây không đúng khi nói về vai trò của quá trình nguyên phân?",
-          "options": ["Tạo ra nhiều biến dị tổ hợp, cung cấp nguyên liệu cho quá trình tiến hoá.", "Đảm bảo ổn định bộ NST của loài qua các thế hệ.", "Giúp thay thế các tế bào già, bị tổn thương ở cơ thể sinh vật đa bào.", "Làm tăng số lượng cá thể của quần thể đơn bào."],
+          "options": [
+            "Tạo ra nhiều biến dị tổ hợp, cung cấp nguyên liệu cho quá trình tiến hoá.",
+            "Đảm bảo ổn định bộ NST của loài qua các thế hệ.",
+            "Giúp thay thế các tế bào già, bị tổn thương ở cơ thể sinh vật đa bào.",
+            "Làm tăng số lượng cá thể của quần thể đơn bào."
+          ],
           "correct": 0
         },
         {
-          "id": 9,
           "question": "Từ một tế bào mẹ (2n) ban đầu sau một lần nguyên phân sẽ tạo ra được bao nhiêu tế bào con?",
-          "options": ["1", "2", "3.", "4."],
+          "options": [
+            "1",
+            "2",
+            "3.",
+            "4."
+          ],
           "correct": 1
         },
         {
-          "id": 10,
           "question": "Giảm phân là quá trình phân bào ...(1)... xảy ra trong quá trình hình thành ...(2)... Từ còn thiếu ở (1) và (2) lần lượt là",
-          "options": ["nguyên nhiễm, tế bào.", "nguyên nhiễm, giao tử.", "giảm nhiễm, tế bào.", "giảm nhiễm, giao tử."],
+          "options": [
+            "nguyên nhiễm, tế bào.",
+            "nguyên nhiễm, giao tử.",
+            "giảm nhiễm, tế bào.",
+            "giảm nhiễm, giao tử."
+          ],
           "correct": 3
         },
         {
-          "id": 11,
           "question": "Quá trình giảm phân xảy ra ở loại tế bào nào sau đây?",
-          "options": ["Tế bào sinh dưỡng", "Tế bào giao tử", "Tế bào sinh dục chín", "Hợp tử."],
+          "options": [
+            "Tế bào sinh dưỡng",
+            "Tế bào giao tử",
+            "Tế bào sinh dục chín",
+            "Hợp tử."
+          ],
           "correct": 2
         },
         {
-          "id": 12,
           "question": "Trong giảm phân, các NST xếp trên mặt phẳng xích đạo của thoi phân bào ở các kì nào sau đây?",
-          "options": ["Kì giữa I và kì sau I", "Kì giữa II và kì sau II.", "Kì giữa I và kì giữa II", "Kì sau I và kì sau II."],
+          "options": [
+            "Kì giữa I và kì sau I",
+            "Kì giữa II và kì sau II.",
+            "Kì giữa I và kì giữa II",
+            "Kì sau I và kì sau II."
+          ],
           "correct": 2
         },
         {
-          "id": 13,
           "question": "Sự tiếp hợp và trao đổi chéo NST diễn ra ở kì nào trong giảm phân?",
-          "options": ["Kì đầu I", "Kì giữa I", "Kì đầu II", "Kì giữa II."],
+          "options": [
+            "Kì đầu I",
+            "Kì giữa I",
+            "Kì đầu II",
+            "Kì giữa II."
+          ],
           "correct": 0
         },
         {
-          "id": 14,
           "question": "Trong phân bào, tế bào động vật phân chia tế bào chất bằng cách nào?",
-          "options": ["Tạo vách ngăn ở mặt phẳng xích đạo.", "Kéo dài màng tế bào.", "Màng tế bào thắt eo ở chính giữa tế bào chất.", "Tạo màng mới giữa tế bào."],
+          "options": [
+            "Tạo vách ngăn ở mặt phẳng xích đạo.",
+            "Kéo dài màng tế bào.",
+            "Màng tế bào thắt eo ở chính giữa tế bào chất.",
+            "Tạo màng mới giữa tế bào."
+          ],
           "correct": 2
         },
         {
-          "id": 15,
           "question": "Trong nguyên phân, nhiễm sắc thể được quan sát rõ nhất ở kì nào sau đây?",
-          "options": ["Kì đầu.", "Kì giữa.", "Kì sau.", "Kì cuối."],
+          "options": [
+            "Kì đầu.",
+            "Kì giữa.",
+            "Kì sau.",
+            "Kì cuối."
+          ],
           "correct": 1
         },
         {
-          "id": 16,
           "question": "Trong nguyên phân, sự phân chia vật chất di truyền được thực hiện nhờ",
-          "options": ["màng nhân.", "nhân con.", "trung thể.", "thoi phân bào."],
+          "options": [
+            "màng nhân.",
+            "nhân con.",
+            "trung thể.",
+            "thoi phân bào."
+          ],
           "correct": 3
         },
         {
-          "id": 17,
           "question": "Trong quá trình nguyên phân, các nhiễm sắc thể phân li về hai cực của tế bào nhờ hoạt động của thành phần nào?",
-          "options": ["Thoi phân bào.", "Các bào quan.", "Nhân.", "Vách tế bào."],
+          "options": [
+            "Thoi phân bào.",
+            "Các bào quan.",
+            "Nhân.",
+            "Vách tế bào."
+          ],
           "correct": 0
         },
         {
-          "id": 18,
           "question": "Trong quá trình nguyên phân, thoi phân bào đóng vai trò gì?",
-          "options": ["Nơi gắn nhiễm sắc thể.", "Nơi xảy ra quá trình tự nhân đôi của nhiễm sắc thể.", "Nơi gắn vào tâm động của nhiễm sắc thể vào kéo nhiễm sắc thể về hai cực của tế bào.", "Hình thành màng nhân và nhân con cho các tế bào con."],
+          "options": [
+            "Nơi gắn nhiễm sắc thể.",
+            "Nơi xảy ra quá trình tự nhân đôi của nhiễm sắc thể.",
+            "Nơi gắn vào tâm động của nhiễm sắc thể vào kéo nhiễm sắc thể về hai cực của tế bào.",
+            "Hình thành màng nhân và nhân con cho các tế bào con."
+          ],
           "correct": 2
         },
         {
-          "id": 19,
           "question": "Hiện tượng các nhiễm sắc thể kép co xoắn trong nguyên phân có ý nghĩa nào sau đây?",
-          "options": ["Tạo thuận lợi cho sự phân li của nhiễm sắc thể.", "Tạo thuận lợi cho sự nhân đôi của nhiễm sắc thể.", "Tạo thuận lợi cho sự tiếp hợp của nhiễm sắc thể.", "Tạo thuận lợi cho trao đổi chéo của nhiễm sắc thể."],
+          "options": [
+            "Tạo thuận lợi cho sự phân li của nhiễm sắc thể.",
+            "Tạo thuận lợi cho sự nhân đôi của nhiễm sắc thể.",
+            "Tạo thuận lợi cho sự tiếp hợp của nhiễm sắc thể.",
+            "Tạo thuận lợi cho trao đổi chéo của nhiễm sắc thể."
+          ],
           "correct": 0
         },
         {
-          "id": 20,
           "question": "Hiện tượng dãn xoắn của NST trong nguyên phân có ý nghĩa gì?",
-          "options": ["Thuận lợi cho sự phân li, tổ hợp NST.", "Thuận lợi cho sự nhân đôi DNA, NST.", "Thuận lợi cho sự tiếp hợp NST.", "Trao đổi chéo NST dễ xảy ra hơn."],
+          "options": [
+            "Thuận lợi cho sự phân li, tổ hợp NST.",
+            "Thuận lợi cho sự nhân đôi DNA, NST.",
+            "Thuận lợi cho sự tiếp hợp NST.",
+            "Trao đổi chéo NST dễ xảy ra hơn."
+          ],
           "correct": 1
         },
         {
-          "id": 21,
           "question": "Có 8 tế bào của loài ruồi giấm đều tham gia nguyên phân 3 lần liên tiếp. Số lượng tế bào được tạo ra sau nguyên phân là",
-          "options": ["8.", "16.", "32.", "64."],
+          "options": [
+            "8.",
+            "16.",
+            "32.",
+            "64."
+          ],
           "correct": 3
         },
         {
-          "id": 22,
           "question": "Đặc điểm nào sau đây chỉ có ở quá trình giảm phân mà không có ở quá trình nguyên phân?",
-          "options": ["Có sự tiếp hợp giữa các nhiễm sắc thể kép trong cặp tương đồng.", "Có sự co xoắn và dãn xoắn của các nhiễm sắc thể.", "Có sự phân li của các nhiễm sắc thể.", "Có sự sắp xếp của các nhiễm sắc thể trên mặt phẳng xích đạo của thoi phân bào."],
+          "options": [
+            "Có sự tiếp hợp giữa các nhiễm sắc thể kép trong cặp tương đồng.",
+            "Có sự co xoắn và dãn xoắn của các nhiễm sắc thể.",
+            "Có sự phân li của các nhiễm sắc thể.",
+            "Có sự sắp xếp của các nhiễm sắc thể trên mặt phẳng xích đạo của thoi phân bào."
+          ],
           "correct": 0
         },
         {
-          "id": 23,
           "question": "Ở động vật, bộ nhiễm sắc thể của tinh trùng là",
-          "options": ["2n kép.", "2n đơn.", "n đơn.", "n kép."],
+          "options": [
+            "2n kép.",
+            "2n đơn.",
+            "n đơn.",
+            "n kép."
+          ],
           "correct": 2
         },
         {
-          "id": 24,
           "question": "Khi nói về quá trình giảm phân, phát biểu nào sau đây là đúng?",
-          "options": ["Mỗi tế bào có thể tiến hành giảm phân 1 lần hoặc nhiều lần.", "Giảm phân trải qua hai lần phân bào nhưng NST chỉ nhân đôi 1 lần.", "Phân bào giảm phân diễn ra ở mọi tế bào của cơ quan sinh dục.", "Phân bào giảm phân không quá trình phân chia tế bào chất."],
+          "options": [
+            "Mỗi tế bào có thể tiến hành giảm phân 1 lần hoặc nhiều lần.",
+            "Giảm phân trải qua hai lần phân bào nhưng NST chỉ nhân đôi 1 lần.",
+            "Phân bào giảm phân diễn ra ở mọi tế bào của cơ quan sinh dục.",
+            "Phân bào giảm phân không quá trình phân chia tế bào chất."
+          ],
           "correct": 1
         },
         {
-          "id": 25,
           "question": "Điểm giống nhau ở kì sau I và kì sau II trong giảm phân là",
-          "options": ["Các NST đều ở trạng thái 2n đơn.", "Các NST đều ở trạng thái 2n kép.", "Có sự dãn xoắn của các NST.", "Có sự phân li các NST về 2 cực tế bào."],
+          "options": [
+            "Các NST đều ở trạng thái 2n đơn.",
+            "Các NST đều ở trạng thái 2n kép.",
+            "Có sự dãn xoắn của các NST.",
+            "Có sự phân li các NST về 2 cực tế bào."
+          ],
           "correct": 3
         },
         {
-          "id": 26,
           "question": "Bộ nhiễm sắc thể và hình thái nhiễm sắc thể của các tế bào con sau khi kết thúc giảm phân I là",
-          "options": ["n đơn, dãn xoắn.", "n kép, dãn xoắn.", "2n đơn, co xoắn.", "n đơn, co xoắn."],
+          "options": [
+            "n đơn, dãn xoắn.",
+            "n kép, dãn xoắn.",
+            "2n đơn, co xoắn.",
+            "n đơn, co xoắn."
+          ],
           "correct": 1
         }
-      ]
-    },
-    {
-      "id": 6,
-      "bai": 19,
-      "title": "Bài 19: Nguyên phân và Giảm phân (Đúng/Sai)",
-      "type": "truefalse",
+      ],
       "questionGroups": [
         {
           "passage": "Cho các nhận định sau khi nói về chu kì tế bào:",
@@ -748,120 +878,194 @@
       ]
     },
     {
-      "id": 7,
-      "bai": 21,
-      "title": "Bài 21: Công nghệ tế bào (Trắc nghiệm)",
-      "type": "multiple",
+      "name": "Bài 21: Công nghệ tế bào",
       "questions": [
         {
-          "id": 1,
           "question": "Phương pháp nào sau đây có thể tạo ra giống cây trồng mới mang đặc điểm của hai loài?",
-          "options": ["Gây đột biến nhân tạo kết hợp với chọn lọc.", "Dung hợp tế bào trần khác loài.", "Nuôi cấy hạt phấn.", "Nuôi cấy mô, tế bào."],
+          "options": [
+            "Gây đột biến nhân tạo kết hợp với chọn lọc.",
+            "Dung hợp tế bào trần khác loài.",
+            "Nuôi cấy hạt phấn.",
+            "Nuôi cấy mô, tế bào."
+          ],
           "correct": 1
         },
         {
-          "id": 2,
           "question": "Để tạo ra một quần thể cây trồng đồng hợp về tất cả các gene, các nhà khoa học đã sử dụng phương pháp nào sau đây?",
-          "options": ["Nuôi cấy hạt phấn, noãn kết hợp lưỡng bội hóa.", "Nuôi cấy mô tế bào.", "Lai tế bào sinh dưỡng.", "Gây đột biến rồi đem lai tạo."],
+          "options": [
+            "Nuôi cấy hạt phấn, noãn kết hợp lưỡng bội hóa.",
+            "Nuôi cấy mô tế bào.",
+            "Lai tế bào sinh dưỡng.",
+            "Gây đột biến rồi đem lai tạo."
+          ],
           "correct": 0
         },
         {
-          "id": 3,
           "question": "Cừu Dolly là thành tựu của phương pháp:",
-          "options": ["lai giữa hai giống cừu khác nhau", "lai giữa một con cừu bình thường với một con bị đột biến", "nhân bản vô tính", "công nghệ gene"],
+          "options": [
+            "lai giữa hai giống cừu khác nhau",
+            "lai giữa một con cừu bình thường với một con bị đột biến",
+            "nhân bản vô tính",
+            "công nghệ gene"
+          ],
           "correct": 2
         },
         {
-          "id": 4,
           "question": "Tế bào có khả năng phân chia và biệt hóa tạo thành nhiều loại tế bào khác nhau gọi là:",
-          "options": ["tế bào trứng", "tế bào gốc", "tế bào toàn năng", "tế bào biệt hóa"],
+          "options": [
+            "tế bào trứng",
+            "tế bào gốc",
+            "tế bào toàn năng",
+            "tế bào biệt hóa"
+          ],
           "correct": 1
         },
         {
-          "id": 5,
           "question": "Động vật nào sau đây là thành tựu đầu tiên của các nhà khoa học Việt Nam khi tiến hành nhân bản vô tính?",
-          "options": ["Cá chép", "Chó nhà", "Lợn Ỉ", "Cừu"],
+          "options": [
+            "Cá chép",
+            "Chó nhà",
+            "Lợn Ỉ",
+            "Cừu"
+          ],
           "correct": 2
         },
         {
-          "id": 6,
           "question": "Nhận xét nào sau đây là đúng với Tế bào gốc trưởng thành (Tế bào gốc đa tiềm năng)?",
-          "options": ["có nguồn gốc từ các mô của cơ thể trưởng thành", "có nguồn gốc từ phôi sớm của động vật", "có thể phân chia và biệt hóa thành mọi loại tế bào của cơ thể trưởng thành", "có nguồn gốc từ các mô của cơ thể trưởng thành và chỉ có thể biệt hóa thành một số loại tế bào nhất định"],
+          "options": [
+            "có nguồn gốc từ các mô của cơ thể trưởng thành",
+            "có nguồn gốc từ phôi sớm của động vật",
+            "có thể phân chia và biệt hóa thành mọi loại tế bào của cơ thể trưởng thành",
+            "có nguồn gốc từ các mô của cơ thể trưởng thành và chỉ có thể biệt hóa thành một số loại tế bào nhất định"
+          ],
           "correct": 3
         },
         {
-          "id": 7,
           "question": "Kĩ thuật chữa trị các bệnh di truyền bằng việc thay thế gene bệnh bằng gene lành được gọi là:",
-          "options": ["liệu pháp tế bào gốc", "liệu pháp gene", "kĩ thuật y học", "kĩ thuật di truyền"],
+          "options": [
+            "liệu pháp tế bào gốc",
+            "liệu pháp gene",
+            "kĩ thuật y học",
+            "kĩ thuật di truyền"
+          ],
           "correct": 1
         },
         {
-          "id": 8,
           "question": "Hình ảnh bên giúp bạn liên tưởng đến quy trình công nghệ nào? (Hình minh họa nuôi cấy mô)",
-          "options": ["Nhân bản vô tính", "Nuôi cấy mô tế bào", "Lai tế bào sinh dưỡng", "Nuôi cấy hạt phấn hoặc noãn chưa thụ tinh"],
+          "options": [
+            "Nhân bản vô tính",
+            "Nuôi cấy mô tế bào",
+            "Lai tế bào sinh dưỡng",
+            "Nuôi cấy hạt phấn hoặc noãn chưa thụ tinh"
+          ],
           "correct": 1
         },
         {
-          "id": 9,
           "question": "Công nghệ tế bào là",
-          "options": ["nuôi cấy tế bào hoặc mô trong môi trường nhân tạo để tạo ra cơ quan hoặc cơ thể hoàn chỉnh.", "dùng hormone để điều khiển sự sinh trưởng của cơ thể trong môi trường nhân tạo để nghiên cứu.", "nuôi cấy tế bào hoặc mô trong môi trường tự nhiên để tạo ra cơ quan hoặc cơ thể hoàn chỉnh.", "dùng hormone để điều khiển sự phát triển của cơ thể trong môi trường nhân tạo để nghiên cứu."],
+          "options": [
+            "nuôi cấy tế bào hoặc mô trong môi trường nhân tạo để tạo ra cơ quan hoặc cơ thể hoàn chỉnh.",
+            "dùng hormone để điều khiển sự sinh trưởng của cơ thể trong môi trường nhân tạo để nghiên cứu.",
+            "nuôi cấy tế bào hoặc mô trong môi trường tự nhiên để tạo ra cơ quan hoặc cơ thể hoàn chỉnh.",
+            "dùng hormone để điều khiển sự phát triển của cơ thể trong môi trường nhân tạo để nghiên cứu."
+          ],
           "correct": 0
         },
         {
-          "id": 10,
           "question": "Cơ sở khoa học của nuôi cấy mô tế bào dựa trên tính chất nào của tế bào?",
-          "options": ["Tính toàn năng.", "Tính ưu việt.", "Tính năng động.", "Tính đa dạng."],
+          "options": [
+            "Tính toàn năng.",
+            "Tính ưu việt.",
+            "Tính năng động.",
+            "Tính đa dạng."
+          ],
           "correct": 0
         },
         {
-          "id": 11,
           "question": "Thành phần đóng vai trò đặc biệt biệt giúp điều chỉnh sự phát triển của tế bào hoặc mô trong môi trường nuôi cấy nhân tạo là",
-          "options": ["vitamin.", "Enzyme.", "hormone.", "Kháng thể."],
+          "options": [
+            "vitamin.",
+            "Enzyme.",
+            "hormone.",
+            "Kháng thể."
+          ],
           "correct": 2
         },
         {
-          "id": 12,
           "question": "Công nghệ tế bào có thể tạo ra những cá thể mới",
-          "options": ["Đa dạng về kiểu gene, kiểu hình.", "Đồng nhất về kiểu gene, kiểu hình.", "Đa dạng về di truyền, tính trạng.", "Có ưu thế lai cao."],
+          "options": [
+            "Đa dạng về kiểu gene, kiểu hình.",
+            "Đồng nhất về kiểu gene, kiểu hình.",
+            "Đa dạng về di truyền, tính trạng.",
+            "Có ưu thế lai cao."
+          ],
           "correct": 1
         },
         {
-          "id": 13,
           "question": "Công nghệ tế bào dựa trên nguyên lý chính là khả năng của các tế bào?",
-          "options": ["Khả năng biệt hóa và phân biệt hóa", "Khả năng sinh sản của TB", "Khả năng trao đổi chất của tế bào", "Khả năng chết theo chương trình của tế bào"],
+          "options": [
+            "Khả năng biệt hóa và phân biệt hóa",
+            "Khả năng sinh sản của TB",
+            "Khả năng trao đổi chất của tế bào",
+            "Khả năng chết theo chương trình của tế bào"
+          ],
           "correct": 0
         },
         {
-          "id": 14,
           "question": "Trong công nghệ tế bào thực vật, người ta thường tách loại mô nào từ cơ thể thực vật để nuôi cấy đầu tiên?",
-          "options": ["Mô sẹo", "Mô phân sinh", "Mô phần võ", "Mô gỗ"],
+          "options": [
+            "Mô sẹo",
+            "Mô phân sinh",
+            "Mô phần võ",
+            "Mô gỗ"
+          ],
           "correct": 0
         },
         {
-          "id": 15,
           "question": "Phương pháp nuôi cấy mô, tế bào dựa trên cơ sở tế bào học là",
-          "options": ["sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong giảm phân.", "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong nguyên phân.", "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong nguyên phân và giảm phân.", "Sự kết hợp của 3 quá trình: nguyên phân, giảm phân, thụ tinh."],
+          "options": [
+            "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong giảm phân.",
+            "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong nguyên phân.",
+            "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong nguyên phân và giảm phân.",
+            "Sự kết hợp của 3 quá trình: nguyên phân, giảm phân, thụ tinh."
+          ],
           "correct": 1
         },
         {
-          "id": 16,
           "question": "Vật chất di truyền của con cừu Dolly được tạo ra trong giai đoạn nào say đây?",
-          "options": ["Chuyển nhân của tế bào trứng vào tế bào soma đã loại bỏ nhân", "Chuyển nhân của tế bào soma 2n vào tế bào trứng", "Chuyển nhân của tế bào soma n vào tế bào trứng đã loại bỏ nhân", "Chuyển nhân của tế bào soma 2n vào tế bào trứng đã loại bỏ nhân"],
+          "options": [
+            "Chuyển nhân của tế bào trứng vào tế bào soma đã loại bỏ nhân",
+            "Chuyển nhân của tế bào soma 2n vào tế bào trứng",
+            "Chuyển nhân của tế bào soma n vào tế bào trứng đã loại bỏ nhân",
+            "Chuyển nhân của tế bào soma 2n vào tế bào trứng đã loại bỏ nhân"
+          ],
           "correct": 3
         },
         {
-          "id": 17,
           "question": "Cừu Dolly mang phần lớn đặc điểm của con nào sau đây?",
-          "options": ["Cừu cho tế bào tuyến vú", "Cừu cho tế bào trứng", "Cừu mang thai hộ", "Cừu đực cho tinh trùng"],
+          "options": [
+            "Cừu cho tế bào tuyến vú",
+            "Cừu cho tế bào trứng",
+            "Cừu mang thai hộ",
+            "Cừu đực cho tinh trùng"
+          ],
           "correct": 0
+        },
+        {
+          "question": "Có bao nhiêu giai đoạn chính trong một chu kì tế bào chuẩn?",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Hãy điền từ còn thiếu vào ô trống: Pha S là pha nhân đôi của ... và NST",
+          "options": [],
+          "correct": "DNA"
+        },
+        {
+          "question": "Ở ruồi giấm 2n=8. Số nhiễm sắc thể trong 1 tế bào ở kì sau của quá trình nguyên phân là bao nhiêu?",
+          "options": [],
+          "correct": "16"
         }
-      ]
-    },
-    {
-      "id": 8,
-      "bai": 21,
-      "title": "Bài 21: Công nghệ tế bào (Đúng/Sai)",
-      "type": "truefalse",
+      ],
       "questionGroups": [
         {
           "passage": "Sơ đồ dưới đây mô tả một kỹ thuật trong công nghệ tế bào thực vật được sử dụng để sản xuất cà rốt. Mỗi nhận định sau là đúng hay sai?",
@@ -946,29 +1150,6 @@
               "correct": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "bai": 21,
-      "title": "Bài 21: Công nghệ tế bào (Trả lời ngắn)",
-      "type": "shortanswer",
-      "questions": [
-        {
-          "id": 1,
-          "question": "Có bao nhiêu giai đoạn chính trong một chu kì tế bào chuẩn?",
-          "correct": "4"
-        },
-        {
-          "id": 2,
-          "question": "Hãy điền từ còn thiếu vào ô trống: Pha S là pha nhân đôi của ... và NST",
-          "correct": "DNA"
-        },
-        {
-          "id": 3,
-          "question": "Ở ruồi giấm 2n=8. Số nhiễm sắc thể trong 1 tế bào ở kì sau của quá trình nguyên phân là bao nhiêu?",
-          "correct": "16"
         }
       ]
     }

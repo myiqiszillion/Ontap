@@ -1,991 +1,819 @@
 {
-  "subject": "Tin Học 10",
   "lessons": [
     {
-      "id": 1,
-      "bai": 1,
-      "title": "Đề Cương Ôn Tập Giữa Kì 2",
-      "type": "multiple",
+      "name": "Đề Cương Ôn Tập Giữa Kì 2",
       "questions": [
         {
+          "question": "Lệnh range(5) tạo ra dãy giá trị nào sau đây?",
           "options": [
             "1, 2, 3, 4, 5",
             "0, 1, 2, 3, 4",
             "0, 1, 2, 3, 4, 5",
             "1, 2, 3, 4"
           ],
-          "explanation": "",
-          "question": "Lệnh range(5) tạo ra dãy giá trị nào sau đây?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Lệnh range(2, 6) tạo ra vùng giá trị nào?",
           "options": [
             "2, 3, 4, 5",
             "2, 3, 4, 5, 6",
             "3, 4, 5, 6",
             "2, 4, 6"
           ],
-          "explanation": "",
-          "question": "Lệnh range(2, 6) tạo ra vùng giá trị nào?",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Lệnh range(0, 5) có đặc điểm gì?",
           "options": [
             "Bao gồm cả 0 và 5",
             "Bao gồm 0 nhưng không bao gồm 5",
             "Không bao gồm 0 nhưng bao gồm 5",
             "Không bao gồm cả 0 và 5"
           ],
-          "explanation": "",
-          "question": "Lệnh range(0, 5) có đặc điểm gì?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "(Trường hợp đặc biệt: start = stop)\nGiá trị trong lệnh range(4, 4) là gì?",
           "options": [
             "4",
             "0",
             "rỗng",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "(Trường hợp đặc biệt: start = stop)\nGiá trị trong lệnh range(4, 4) là gì?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "(Trường hợp đặc biệt: start > stop)\nGiá trị trong lệnh range(6, 2) là gì?",
           "options": [
             "6, 5, 4, 3",
             "6, 5, 4, 3, 2",
             "rỗng",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "(Trường hợp đặc biệt: start > stop)\nGiá trị trong lệnh range(6, 2) là gì?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Ý nghĩa đúng của lệnh range(a, b) .",
           "options": [
             "Tạo dãy số từ a đến b (bao gồm cả a và b)",
             "Tạo dãy số từ a đến b (không bao gồm a)",
             "Tạo dãy số từ a đến b (bao gồm a nhưng không bao gồm b)",
             "Tạo dãy số từ 0 đến b"
           ],
-          "explanation": "",
-          "question": "Ý nghĩa đúng của lệnh range(a, b) .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(3):\n    print(\"Xin chào\")",
           "options": [
             "In 1 lần “Xin chào”",
             "In 2 lần “Xin chào”",
             "In 3 lần “Xin chào”",
             "Không in gì"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(3):\n    print(\"Xin chào\")",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(1, 4):\n    print(i)",
           "options": [
             "1 2 3",
             "1 2 3 4",
             "0 1 2 3",
             "2 3 4"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(1, 4):\n    print(i)",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Số lần lặp của vòng lặp sau là bao nhiêu?\nfor i in range(2, 6):\n    print(i)",
           "options": [
             "2 lần",
             "3 lần",
             "4 lần",
             "5 lần"
           ],
-          "explanation": "",
-          "question": "Số lần lặp của vòng lặp sau là bao nhiêu?\nfor i in range(2, 6):\n    print(i)",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(5):\n    print(i * 2)",
           "options": [
             "0 2 4 6 8",
             "2 4 6 8 10",
             "0 1 2 3 4",
             "1 2 3 4 5"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(5):\n    print(i * 2)",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Để in các số từ 3 đến 6 bằng câu lệnh for, ta viết đúng .",
           "options": [
             "for i in range(3, 6):",
             "for i in range(3, 7):",
             "for i in range(4, 7):",
             "for i in range(2, 6):"
           ],
-          "explanation": "",
-          "question": "Để in các số từ 3 đến 6 bằng câu lệnh for, ta viết đúng .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cú pháp nào sau đây đúng của câu lệnh lặp while trong Python?",
           "options": [
             "while i < 5",
             "while (i < 5):",
             "while i < 5:",
             "while i < 5 do"
           ],
-          "explanation": "",
-          "question": "Cú pháp nào sau đây đúng của câu lệnh lặp while trong Python?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau có lỗi ở đâu?\ni = 1\nwhile i <= 5\nprint(i)\ni = i + 1",
           "options": [
             "Sai vì thiếu dấu ngoặc đơn",
             "Sai vì thiếu dấu hai chấm (:)",
             "Sai vì thiếu từ khóa do",
             "Không có lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau có lỗi ở đâu?\ni = 1\nwhile i <= 5\nprint(i)\ni = i + 1",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Trong câu lệnh while, điều kiện lặp được đặt ở vị trí nào?",
           "options": [
             "Sau từ khóa while và trước dấu hai chấm",
             "Sau dấu hai chấm",
             "Trong dấu ngoặc nhọn { }",
             "Sau từ khóa print"
           ],
-          "explanation": "",
-          "question": "Trong câu lệnh while, điều kiện lặp được đặt ở vị trí nào?",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Đoạn chương trình sau đúng hay sai về cú pháp?\ni = 0\nwhile i < 3:\n    print(i)\n    i =i + 1",
           "options": [
             "Đúng hoàn toàn",
             "Sai vì thiếu dấu hai chấm",
             "Sai vì không thụt lề khối lệnh",
             "Sai vì thiếu dấu ngoặc"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau đúng hay sai về cú pháp?\ni = 0\nwhile i < 3:\n    print(i)\n    i =i + 1",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Chọn phát biểu đúng về câu lệnh while:",
           "options": [
             "while luôn lặp đúng 1 lần",
             "while chỉ lặp khi điều kiện đúng",
             "while không cần điều kiện",
             "while chỉ lặp khi điều kiện sai"
           ],
-          "explanation": "",
-          "question": "Chọn phát biểu đúng về câu lệnh while:",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
           "options": [
             "2 lần",
             "3 lần",
             "4 lần",
             "Vô hạn"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 0\nwhile i < 5:\n    print(\"Hello\")\n    i = i + 1",
           "options": [
             "4 lần",
             "5 lần",
             "6 lần",
             "Vô hạn"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 0\nwhile i < 5:\n    print(\"Hello\")\n    i = i + 1",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 2\nwhile i < 10:\n    print(i)\n    i = i + 2",
           "options": [
             "3 lần",
             "4 lần",
             "5 lần",
             "6 lần"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 2\nwhile i < 10:\n    print(i)\n    i = i + 2",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 5\nwhile i > 0:\n    print(i)\n    i = i - 1",
           "options": [
             "4 lần",
             "5 lần",
             "6 lần",
             "Vô hạn"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 5\nwhile i > 0:\n    print(i)\n    i = i - 1",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau xảy ra điều gì?\ni = 1\nwhile i <= 3:\n    print(i)",
           "options": [
             "Lặp 3 lần",
             "Lặp 4 lần",
             "Không lặp",
             "Lặp vô hạn"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau xảy ra điều gì?\ni = 1\nwhile i <= 3:\n    print(i)",
-          "correct": 3,
-          "correctAnswer": 3
+          "correct": 3
         },
         {
+          "question": "Trong Python, câu lệnh while kiểm tra điều kiện vào thời điểm nào?",
           "options": [
             "Sau khi thực hiện khối lệnh",
             "Trước khi thực hiện khối lệnh",
             "Sau khi thực hiện ít nhất một lần",
             "Không cần kiểm tra điều kiện"
           ],
-          "explanation": "",
-          "question": "Trong Python, câu lệnh while kiểm tra điều kiện vào thời điểm nào?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\ni = 5\nwhile i < 3:\n    print(i)\n    i = i + 1",
           "options": [
             "In ra số 5",
             "In ra 5 và 6",
             "Không in gì",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ni = 5\nwhile i < 3:\n    print(i)\n    i = i + 1",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Phát biểu nào sau đây đúng về vòng lặp while?",
           "options": [
             "Khối lệnh trong while luôn được thực hiện ít nhất một lần",
             "Điều kiện được kiểm tra sau khi thực hiện khối lệnh",
             "Điều kiện được kiểm tra trước mỗi lần lặp",
             "while không cần điều kiện"
           ],
-          "explanation": "",
-          "question": "Phát biểu nào sau đây đúng về vòng lặp while?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau thực hiện bao nhiêu lần lặp?\ni = 0\nwhile i > 0:\n    print(\"Hello\")\n    i = i + 1",
           "options": [
             "1 lần",
             "2 lần",
             "0 lần",
             "Vô hạn"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau thực hiện bao nhiêu lần lặp?\ni = 0\nwhile i > 0:\n    print(\"Hello\")\n    i = i + 1",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cách khai báo một danh sách rỗng .",
           "options": [
             "a = {}",
             "a = ()",
             "a = []",
             "a = null"
           ],
-          "explanation": "",
-          "question": "Cách khai báo một danh sách rỗng .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho danh sách:\na = [10, 20, 30]\nGiá trị của a[0] .",
           "options": [
             "10",
             "20",
             "30",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [10, 20, 30]\nGiá trị của a[0] .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho danh sách:\na = [5, 6, 7]\nGiá trị của a[2] .",
           "options": [
             "5",
             "6",
             "7",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [5, 6, 7]\nGiá trị của a[2] .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho danh sách:\na = [1, 2, 3, 4]\nĐộ dài của danh sách .",
           "options": [
             "3",
             "4",
             "5",
             "1"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3, 4]\nĐộ dài của danh sách .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Hàm dùng để tính độ dài danh sách .",
           "options": [
             "size()",
             "count()",
             "length()",
             "len()"
           ],
-          "explanation": "",
-          "question": "Hàm dùng để tính độ dài danh sách .",
-          "correct": 3,
-          "correctAnswer": 3
+          "correct": 3
         },
         {
+          "question": "Cho danh sách:\na = [1, 2, 3]\nSau khi thực hiện lệnh a[1] = 10, danh sách trở thành:",
           "options": [
             "[10, 2, 3]",
             "[1, 10, 3]",
             "[1, 2, 10]",
             "[10, 10, 10]"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\nSau khi thực hiện lệnh a[1] = 10, danh sách trở thành:",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho danh sách:\na = [4, 5, 6]\nLệnh nào sau đây thay đổi giá trị 6 thành 9?",
           "options": [
             "a[3] = 9",
             "a[2] = 9",
             "a[1] = 9",
             "a[0] = 9"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [4, 5, 6]\nLệnh nào sau đây thay đổi giá trị 6 thành 9?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho danh sách:\na = [1, 2, 3]\nKết quả của biểu thức 2 in a .",
           "options": [
             "True",
             "False",
             "2",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\nKết quả của biểu thức 2 in a .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho danh sách:\na = [7, 8, 9]\nKết quả của biểu thức 5 in a .",
           "options": [
             "True",
             "False",
             "5",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [7, 8, 9]\nKết quả của biểu thức 5 in a .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho hai danh sách:\na = [1, 2]\nb = [3, 4]\nKết quả của a + b .",
           "options": [
             "[1, 2, 3, 4]",
             "[4, 6]",
             "[[1, 2], [3, 4]]",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho hai danh sách:\na = [1, 2]\nb = [3, 4]\nKết quả của a + b .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho hai danh sách:\nx = [\"A\"]\ny = [\"B\"]\nKết quả của x + y .",
           "options": [
             "[\"A\", \"B\"]",
             "[\"AB\"]",
             "[\"A\"][\"B\"]",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho hai danh sách:\nx = [\"A\"]\ny = [\"B\"]\nKết quả của x + y .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\na = [1, 2, 3]\nfor x in a:\n    print(x)",
           "options": [
             "1 2 3",
             "[1, 2, 3]",
             "0 1 2",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\na = [1, 2, 3]\nfor x in a:\n    print(x)",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\na = [10, 20, 30]\nfor i in range(len(a)):\n    print(a[i])",
           "options": [
             "10 20 30",
             "0 1 2",
             "[10, 20, 30]",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\na = [10, 20, 30]\nfor i in range(len(a)):\n    print(a[i])",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho danh sách:\na = [2, 4, 6]\nCách kiểm tra số 4 có trong danh sách hay không .",
           "options": [
             "4 = a",
             "4 in a",
             "a in 4",
             "a = 4"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [2, 4, 6]\nCách kiểm tra số 4 có trong danh sách hay không .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho danh sách:\na = [1, 2, 3]\na.append(4)\nGiá trị của danh sách a sau khi thực hiện lệnh .",
           "options": [
             "[4, 1, 2, 3]",
             "[1, 2, 3, 4]",
             "[1, 2, 4]",
             "[1, 2, 3]"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\na.append(4)\nGiá trị của danh sách a sau khi thực hiện lệnh .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho danh sách:\na = [5, 6, 7]\na.insert(1, 10)\nDanh sách a sau khi thực hiện lệnh .",
           "options": [
             "[10, 5, 6, 7]",
             "[5, 10, 6, 7]",
             "[5, 6, 10, 7]",
             "[5, 6, 7, 10]"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [5, 6, 7]\na.insert(1, 10)\nDanh sách a sau khi thực hiện lệnh .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh .",
           "options": [
             "[1, 3, 2]",
             "[1, 2, 3]",
             "[1, 3]",
             "[1, 2, 3, 2]"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh .",
           "options": [
             "[10, 20]",
             "[20, 30]",
             "[10, 30]",
             "[10, 20, 30]"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh .",
           "options": [
             "[1, 2, 3]",
             "[]",
             "None",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Trong Python, xâu kí tự được đặt trong:",
           "options": [
             "Dấu ngoặc vuông []",
             "Dấu ngoặc nhọn {}",
             "Dấu ngoặc kép \"\" hoặc dấu nháy đơn ''",
             "Dấu ngoặc tròn ()"
           ],
-          "explanation": "",
-          "question": "Trong Python, xâu kí tự được đặt trong:",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho xâu:\ns = \"Python\"\nGiá trị của s[0] .",
           "options": [
             "P",
             "y",
             "n",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho xâu:\ns = \"Python\"\nGiá trị của s[0] .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho xâu:\ns = \"TinHoc\"\nGiá trị của s[3] .",
           "options": [
             "H",
             "o",
             "c",
             "n"
           ],
-          "explanation": "",
-          "question": "Cho xâu:\ns = \"TinHoc\"\nGiá trị của s[3] .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Hàm dùng để tính độ dài xâu kí tự .",
           "options": [
             "length()",
             "size()",
             "count()",
             "len()"
           ],
-          "explanation": "",
-          "question": "Hàm dùng để tính độ dài xâu kí tự .",
-          "correct": 3,
-          "correctAnswer": 3
+          "correct": 3
         },
         {
+          "question": "Cho xâu:\ns = \"Hello\"\nKết quả của len(s) .",
           "options": [
             "4",
             "5",
             "6",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho xâu:\ns = \"Hello\"\nKết quả của len(s) .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\ns = \"ABC\"\nfor ch in s:\n    print(ch)",
           "options": [
             "ABC",
             "A B C (mỗi kí tự một dòng)",
             "0 1 2",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ns = \"ABC\"\nfor ch in s:\n    print(ch)",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\ns = \"XYZ\"\nfor i in range(len(s)):\n    print(s[i])",
           "options": [
             "X Y Z (mỗi kí tự một dòng)",
             "0 1 2",
             "XYZ",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ns = \"XYZ\"\nfor i in range(len(s)):\n    print(s[i])",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Biểu thức \"on\" in \"Python\" cho kết quả:",
           "options": [
             "True",
             "False",
             "on",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Biểu thức \"on\" in \"Python\" cho kết quả:",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Biểu thức \"py\" in \"Python\" cho kết quả:",
           "options": [
             "True",
             "False",
             "0",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Biểu thức \"py\" in \"Python\" cho kết quả:",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho xâu:\ns = \"banana\"\nKết quả của s.find(\"na\") .",
           "options": [
             "2",
             "3",
             "4",
             "-1"
           ],
-          "explanation": "",
-          "question": "Cho xâu:\ns = \"banana\"\nKết quả của s.find(\"na\") .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"th\") .",
           "options": [
             "1",
             "2",
             "3",
             "-1"
           ],
-          "explanation": "",
-          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"th\") .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"abc\") .",
           "options": [
             "0",
             "1",
             "-1",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"abc\") .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau có chức năng gì?\ns = \"abcde\"\nfor i in range(len(s)):\n    print(i, s[i])",
           "options": [
             "In các chỉ số của xâu",
             "In các kí tự của xâu",
             "In chỉ số và kí tự tương ứng",
             "Báo lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau có chức năng gì?\ns = \"abcde\"\nfor i in range(len(s)):\n    print(i, s[i])",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Để kiểm tra xâu con \"tin\" có trong xâu \"lap trinh tin hoc\" hay không, ta dùng:",
           "options": [
             "\"tin\" find \"lap trinh tin hoc\"",
             "\"tin\" in \"lap trinh tin hoc\"",
             "\"lap trinh tin hoc\" in \"tin\"",
             "find(\"tin\")"
           ],
-          "explanation": "",
-          "question": "Để kiểm tra xâu con \"tin\" có trong xâu \"lap trinh tin hoc\" hay không, ta dùng:",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho đoạn lệnh:\ns = \"Tin hoc lop 10\"\na = s.split()\nprint(a)\nKết quả in ra .",
           "options": [
             "[\"Tin hoc lop 10\"]",
             "['Tin', 'hoc', 'lop', '10']",
             "['Tin hoc lop', '10']",
             "Lỗi chương trình"
           ],
-          "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"Tin hoc lop 10\"\na = s.split()\nprint(a)\nKết quả in ra .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho đoạn lệnh:\ns = \"a-b-c-d\"\na = s.split(\"-\")\nprint(a)\nKết quả in ra .",
           "options": [
             "['a-b-c-d']",
             "['a', 'b', 'c', 'd']",
             "['a b c d']",
             "Lỗi vì dấu \"-\" không hợp lệ"
           ],
-          "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"a-b-c-d\"\na = s.split(\"-\")\nprint(a)\nKết quả in ra .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho đoạn lệnh:\na = ['2024', '2025', '2026']\ns = \"-\".join(a)\nprint(s)\nKết quả in ra .",
           "options": [
             "['2024-2025-2026']",
             "2024 2025 2026",
             "2024-2025-2026",
             "Lỗi chương trình"
           ],
-          "explanation": "",
-          "question": "Cho đoạn lệnh:\na = ['2024', '2025', '2026']\ns = \"-\".join(a)\nprint(s)\nKết quả in ra .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho đoạn lệnh:\ns = \"lap trinh python python\"\nk = s.find(\"python\", 10)\nprint(k)\nKết quả in ra .",
           "options": [
             "4",
             "10",
             "11",
             "-1"
           ],
-          "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"lap trinh python python\"\nk = s.find(\"python\", 10)\nprint(k)\nKết quả in ra .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra .",
           "options": [
             "mot_hai_ba_bon",
             "['mot_hai_ba_bon']",
             "mot hai ba bon",
             "Lỗi chương trình"
           ],
-          "explanation": "",
-          "question": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra .",
-          "correct": 0,
-          "correctAnswer": 0
+          "correct": 0
         },
         {
+          "question": "Trong khai báo sau:\ndef tinhTong(a, b):\nreturn a + b\na và b được gọi là gì?",
           "options": [
             "Đối số",
             "Tham số",
             "Biến toàn cục",
             "Hằng số"
           ],
-          "explanation": "",
-          "question": "Trong khai báo sau:\ndef tinhTong(a, b):\nreturn a + b\na và b được gọi là gì?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Khi gọi hàm tinhTong(3, 5), số 3 và 5 được gọi .",
           "options": [
             "Tham số",
             "Hàm con",
             "Đối số",
             "Biến cục bộ"
           ],
-          "explanation": "",
-          "question": "Khi gọi hàm tinhTong(3, 5), số 3 và 5 được gọi .",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho hàm:\ndef xinChao():\nprint(\"Xin chao\")\nHàm này:",
           "options": [
             "Có trả về giá trị",
             "Không trả về giá trị cụ thể",
             "Trả về giá trị 0",
             "Trả về chuỗi \"Xin chao\""
           ],
-          "explanation": "",
-          "question": "Cho hàm:\ndef xinChao():\nprint(\"Xin chao\")\nHàm này:",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho hàm:\ndef nhan(a, b):\nreturn a * b\nHàm này:",
           "options": [
             "Không có tham số",
             "Có 1 tham số",
             "Có 2 tham số",
             "Có 3 tham số"
           ],
-          "explanation": "",
-          "question": "Cho hàm:\ndef nhan(a, b):\nreturn a * b\nHàm này:",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Điều gì xảy ra nếu số đối số không bằng số tham số?",
           "options": [
             "Chương trình vẫn chạy bình thường",
             "Chương trình tự thêm giá trị 0",
             "Báo lỗi",
             "Bỏ qua tham số thừa"
           ],
-          "explanation": "",
-          "question": "Điều gì xảy ra nếu số đối số không bằng số tham số?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Lời gọi nào sau đây đúng với hàm:\ndef cong(a, b, c):\nreturn a + b + c",
           "options": [
             "cong(1, 2)",
             "cong(1, 2, 3)",
             "cong(1)",
             "cong()"
           ],
-          "explanation": "",
-          "question": "Lời gọi nào sau đây đúng với hàm:\ndef cong(a, b, c):\nreturn a + b + c",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Đoạn chương trình sau in ra kết quả gì?\ndef tinh(a):\nreturn a + 2\nprint(tinh(3))",
           "options": [
             "3",
             "2",
             "5",
             "Lỗi"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ndef tinh(a):\nreturn a + 2\nprint(tinh(3))",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Nếu một hàm không có lệnh return, thì khi gọi hàm đó:",
           "options": [
             "Luôn báo lỗi",
             "Trả về giá trị None",
             "Trả về 0",
             "Không thực hiện"
           ],
-          "explanation": "",
-          "question": "Nếu một hàm không có lệnh return, thì khi gọi hàm đó:",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Khai báo nào sau đây sai cú pháp?",
           "options": [
             "def tinh():",
             "def tinh(a,b):",
             "def tinh a,b:",
             "def tinh(a):"
           ],
-          "explanation": "",
-          "question": "Khai báo nào sau đây sai cú pháp?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho hàm:\ndef chao(ten):\nprint(\"Xin chao\", ten)\nLời gọi nào đúng?",
           "options": [
             "chao()",
             "chao(\"An\")",
             "chao(\"An\", \"Binh\")",
             "print(chao)"
           ],
-          "explanation": "",
-          "question": "Cho hàm:\ndef chao(ten):\nprint(\"Xin chao\", ten)\nLời gọi nào đúng?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho đoạn chương trình:\ndef tru(a, b):\nprint(a - b)\nkq = tru(7, 2)\nprint(kq)\nKết quả in ra .",
           "options": [
             "5",
             "None",
             "7 2",
             "Lỗi"
           ],
-          "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef tru(a, b):\nprint(a - b)\nkq = tru(7, 2)\nprint(kq)\nKết quả in ra .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Hàm sau có bao nhiêu tham số?\ndef tinh(a, b, c, d):\nreturn a + b",
           "options": [
             "2",
             "3",
             "4",
             "1"
           ],
-          "explanation": "",
-          "question": "Hàm sau có bao nhiêu tham số?\ndef tinh(a, b, c, d):\nreturn a + b",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Đoạn chương trình sau có đúng không?\ndef tong(a, b):\nreturn a + b\nprint(tong(5))",
           "options": [
             "Đúng và in ra 5",
             "Đúng và in ra None",
             "Sai vì thiếu đối số",
             "Đúng và in ra 0"
           ],
-          "explanation": "",
-          "question": "Đoạn chương trình sau có đúng không?\ndef tong(a, b):\nreturn a + b\nprint(tong(5))",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         },
         {
+          "question": "Cho đoạn chương trình:\ndef cong(a, b):\nreturn a + b\nprint(cong(2, 3))\nKết quả in ra .",
           "options": [
             "23",
             "5",
             "None",
             "Lỗi chương trình"
           ],
-          "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef cong(a, b):\nreturn a + b\nprint(cong(2, 3))\nKết quả in ra .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho đoạn chương trình:\ndef nhan(a, b):\nprint(a * b)\nkq = nhan(3, 4)\nprint(kq)\nKết quả in ra .",
           "options": [
             "12",
             "12 và None",
             "None",
             "Lỗi chương trình"
           ],
-          "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef nhan(a, b):\nprint(a * b)\nkq = nhan(3, 4)\nprint(kq)\nKết quả in ra .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho hàm:\ndef tinh(a, b):\nreturn a - b\nLời gọi nào sau đây gây lỗi?",
           "options": [
             "tinh(5, 2)",
             "tinh(5)",
             "tinh(7, 3)",
             "print(tinh(4, 1))"
           ],
-          "explanation": "",
-          "question": "Cho hàm:\ndef tinh(a, b):\nreturn a - b\nLời gọi nào sau đây gây lỗi?",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho đoạn chương trình:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))\nKết quả in ra .",
           "options": [
             "Xin chao",
             "Xin chao An",
             "An Xin chao",
             "Lỗi"
           ],
-          "explanation": "",
-          "question": "Cho đoạn chương trình:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))\nKết quả in ra .",
-          "correct": 1,
-          "correctAnswer": 1
+          "correct": 1
         },
         {
+          "question": "Cho hàm:\ndef tong(a, b):\nreturn a + b\nLời gọi nào sau đây gây lỗi?",
           "options": [
             "tong(2, 3)",
             "tong(\"2\", \"3\")",
             "tong(2)",
             "tong(5, 7)"
           ],
-          "explanation": "",
-          "question": "Cho hàm:\ndef tong(a, b):\nreturn a + b\nLời gọi nào sau đây gây lỗi?",
-          "correct": 2,
-          "correctAnswer": 2
+          "correct": 2
         }
-      ]
-    },
-    {
-      "id": 2,
-      "bai": 1,
-      "title": "Đề Cương Ôn Tập Giữa Kì 2",
-      "type": "truefalse",
+      ],
       "questionGroups": [
         {
           "passage": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
