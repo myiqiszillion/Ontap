@@ -721,8 +721,6 @@ const app = {
     }
   },
 
-  // Previous startQuiz for backward compatibility
-  startQuiz() { this.learningMode = 'exam'; this.startLearning(); },
 
   // ═══════════ RESULTS ═══════════
 

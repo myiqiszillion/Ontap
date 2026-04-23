@@ -14,6 +14,28 @@ const Admin = {
     this.loadAnnouncements();
   },
 
+  showToast(message, type = 'success') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    
+    // Add icon based on type
+    const icon = type === 'success' 
+      ? `<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`
+      : `<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`;
+
+    toast.innerHTML = `${icon}<span>${message}</span>`;
+    container.appendChild(toast);
+
+    // Auto remove
+    setTimeout(() => {
+        toast.classList.add('hiding');
+        setTimeout(() => toast.remove(), 300);
+    }, 4000);
+  },
+
   setupEventListeners() {
     const form = document.getElementById('announcement-form');
     form.addEventListener('submit', (e) => this.handleSubmit(e));
@@ -107,7 +129,6 @@ const Admin = {
   async handleSubmit(e) {
     e.preventDefault();
     const submitBtn = document.getElementById('submit-btn');
-    const statusMsg = document.getElementById('status-message');
     
     const title = document.getElementById('title').value;
     const content = document.getElementById('content').value;
@@ -154,8 +175,7 @@ const Admin = {
 
       if (!res.ok) throw new Error('Đăng bài thất bại');
 
-      statusMsg.innerText = 'Đã đăng thông báo thành công! 🎉';
-      statusMsg.className = 'message success';
+      this.showToast('Đã đăng thông báo thành công! 🎉', 'success');
       e.target.reset();
       
       this.selectedFiles = [];
@@ -163,15 +183,10 @@ const Admin = {
       
       this.loadAnnouncements();
     } catch (err) {
-      statusMsg.innerText = 'Lỗi: ' + err.message;
-      statusMsg.className = 'message error';
+      this.showToast('Lỗi: ' + err.message, 'error');
     } finally {
-      statusMsg.style.display = 'block';
       submitBtn.disabled = false;
       submitBtn.innerText = 'Đăng Lên Website';
-      setTimeout(() => {
-        statusMsg.style.display = 'none';
-      }, 5000);
     }
   },
 
@@ -190,12 +205,18 @@ const Admin = {
       list.innerHTML = data.map(ann => {
         const date = new Date(ann.timestamp).toLocaleString('vi-VN');
         return `
-          <div class="admin-ann-item glass-card" id="ann-${ann.id}">
+          <div class="admin-ann-item" id="ann-${ann.id}">
             <div class="admin-ann-info">
-              <div class="admin-ann-title">${ann.title}</div>
+              <div class="admin-ann-header">
+                <img src="assets/avatar.jpg" alt="Admin Avatar" class="admin-ann-avatar">
+                <div class="admin-ann-title">${ann.title}</div>
+              </div>
               <div class="admin-ann-time">${date}</div>
             </div>
-            <button class="delete-btn" onclick="Admin.deleteAnnouncement('${ann.id}')">Xóa</button>
+            <button class="delete-btn" onclick="Admin.deleteAnnouncement('${ann.id}')">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+              Xóa
+            </button>
           </div>
         `;
       }).join('');
@@ -212,15 +233,14 @@ const Admin = {
         method: 'DELETE'
       });
 
-      if (!res.ok) throw new Error('Xóa thất bại');
-
+      this.showToast('Đã xóa thông báo!', 'success');
+      
       document.getElementById(`ann-${id}`).remove();
-      // If list empty after remove
       if (document.getElementById('announcements-list').children.length === 0) {
         this.loadAnnouncements();
       }
     } catch (err) {
-      alert('Lỗi: ' + err.message);
+      this.showToast('Lỗi: ' + err.message, 'error');
     }
   }
 };

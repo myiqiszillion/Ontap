@@ -108,16 +108,7 @@ app.get('/api/data/:subject', (req, res) => {
   }
 });
 
-// Legacy API
-app.get('/api/lessons', (req, res) => {
-  try {
-    const dataPath = path.join(__dirname, 'data.json');
-    const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    res.json(data);
-  } catch (error) {
-    res.status(500).json({ error: 'Failed' });
-  }
-});
+
 
 // ═════════════════════════════════════════════════════════════
 // STATIC & PAGE ROUTES

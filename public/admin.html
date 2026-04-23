@@ -8,199 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .admin-container {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: var(--radius);
-        }
-        .admin-title {
-            text-align: center;
-            margin-bottom: 24px;
-            background: linear-gradient(90deg, #f59e0b, #ef4444, #8b5cf6, #6366f1, #10b981);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 800;
-        }
-        .form-group {
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .form-group label {
-            font-weight: 600;
-            color: var(--text-secondary);
-        }
-        .form-group input, .form-group textarea {
-            padding: 14px 16px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            background: rgba(255, 255, 255, 0.03);
-            color: var(--text-primary);
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-        .form-group input:focus, .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(99, 102, 241, 0.05);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
-        }
-
-        .message {
-            margin-top: 16px;
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-            display: none;
-        }
-        .message.success {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22c55e;
-            display: block;
-        }
-        .message.error {
-            background: rgba(239, 68, 68, 0.1);
-            color: #ef4444;
-            display: block;
-        }
-
-        /* Management Styles */
-        .management-section {
-            max-width: 600px;
-            margin: 20px auto 40px;
-            padding: 0 30px;
-        }
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 16px;
-        }
-        .announcements-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .admin-ann-item {
-            padding: 16px;
-            border-radius: var(--radius-sm);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-        .admin-ann-item:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-        .admin-ann-info {
-            flex: 1;
-        }
-        .admin-ann-title {
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-        .admin-ann-time {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-        .delete-btn {
-            background: rgba(239, 68, 68, 0.1);
-            color: var(--red);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .delete-btn:hover {
-            background: rgba(239, 68, 68, 0.2);
-            transform: translateY(-2px);
-        }
-
-        /* Drop Zone Styles */
-        .drop-zone {
-            border: 2px dashed rgba(255,255,255,0.15);
-            border-radius: 12px;
-            padding: 40px 20px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            background: rgba(255,255,255,0.02);
-            position: relative;
-        }
-        .drop-zone:hover, .drop-zone.dragover {
-            border-color: var(--primary);
-            background: rgba(99, 102, 241, 0.1);
-        }
-        .drop-zone-text {
-            font-weight: 600;
-            color: var(--text-secondary);
-            pointer-events: none;
-        }
-        .drop-zone-input {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            opacity: 0;
-            cursor: pointer;
-        }
-        .image-preview-container {
-            margin-top: 16px;
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-        }
-        .image-preview-container img {
-            max-width: 100%;
-            display: block;
-        }
-        .admin-image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 10px;
-            margin-top: 16px;
-        }
-        .admin-preview-item {
-            position: relative;
-            padding-bottom: 100%; /* square aspect ratio */
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            background: var(--bg-gray);
-        }
-        .admin-preview-item img {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            object-fit: cover;
-        }
-        .remove-image-btn {
-            position: absolute;
-            top: 4px; right: 4px;
-            background: rgba(0,0,0,0.6);
-            color: white;
-            border: none;
-            width: 24px; height: 24px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.2s;
-            z-index: 10;
-        }
-        .remove-image-btn:hover {
-            background: rgba(255,50,50,0.8);
-        }
-    </style>
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body id="app-body" class="dark-mode">
 
@@ -237,6 +45,7 @@
             <div class="form-group">
                 <label>Hình ảnh đính kèm (Có thể chọn hoặc dán nhiều ảnh)</label>
                 <div id="drop-zone" class="drop-zone">
+                    <svg class="drop-zone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
                     <span class="drop-zone-text">Kéo thả ảnh vào đây, hoặc <span style="color:var(--primary);cursor:pointer">chọn tệp</span><br><small style="color:var(--text-muted);font-weight:normal">Hỗ trợ <code>Ctrl + V</code> để dán nhiều ảnh trực tiếp</small></span>
                     <input type="file" id="image" accept="image/*" multiple class="drop-zone-input">
                 </div>
@@ -246,7 +55,6 @@
             </div>
             
             <button type="submit" class="submit-btn" id="submit-btn">Đăng Lên Website</button>
-            <div id="status-message" class="message"></div>
         </form>
     </div>
 
@@ -257,6 +65,8 @@
         </div>
     </div>
 </div>
+
+<div id="toast-container" class="toast-container"></div>
 
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script defer src="js/admin.js"></script>
