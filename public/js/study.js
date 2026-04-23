@@ -132,17 +132,30 @@ const Study = {
    */
   playTTS(text, btnId) {
     if (!('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel(); // Stop playing current audio
+    window.speechSynthesis.cancel();
     
     const btn = document.getElementById(btnId);
     if (btn) btn.classList.add('playing');
     
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'vi-VN'; // Vietnamese
-    utterance.onend = () => { if (btn) btn.classList.remove('playing'); };
-    utterance.onerror = () => { if (btn) btn.classList.remove('playing'); };
-    
-    window.speechSynthesis.speak(utterance);
+    const speak = () => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'vi-VN';
+      // Tìm voice tiếng Việt
+      const voices = window.speechSynthesis.getVoices();
+      const viVoice = voices.find(v => v.lang === 'vi-VN' || v.lang.startsWith('vi'));
+      if (viVoice) utterance.voice = viVoice;
+      utterance.rate = 0.95;
+      utterance.onend = () => { if (btn) btn.classList.remove('playing'); };
+      utterance.onerror = () => { if (btn) btn.classList.remove('playing'); };
+      window.speechSynthesis.speak(utterance);
+    };
+
+    // Voices có thể chưa load xong, chờ nếu cần
+    if (window.speechSynthesis.getVoices().length > 0) {
+      speak();
+    } else {
+      window.speechSynthesis.onvoiceschanged = () => { speak(); };
+    }
   },
 
   stopTTS() {
@@ -180,6 +193,7 @@ const Study = {
           <div class="study-badge tf">Đúng/Sai</div>
           <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc văn bản">🔊</button>
           <div class="study-passage">${this.escapeHtml(q.passage)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
             ${q.statements.map((s, i) => `
               <div class="study-tf-item ${s.correct ? 'correct' : 'wrong'}">
@@ -198,6 +212,7 @@ const Study = {
           <div class="study-badge sa">Trả lời ngắn</div>
           <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc">🔊</button>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
             <div class="study-option correct">
                <span class="study-option-text">Đáp án: <strong>${this.escapeHtml(q.correctAnswer)}</strong></span>
@@ -213,6 +228,7 @@ const Study = {
           <div class="study-badge mcq">Trắc nghiệm</div>
           <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc">🔊</button>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
             ${q.options.map((opt, i) => `
               <div class="study-option ${i === q.correctAnswer ? 'correct' : ''}">
@@ -302,6 +318,7 @@ const Study = {
             <div class="fc-type tf">Đúng/Sai</div>
             <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
             <div class="fc-question">${this.escapeHtml(q.passage)}</div>
+            ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
             <div class="fc-statements">
               ${q.statements.map((s, i) => `
                 <div class="fc-stmt">${String.fromCharCode(97 + i)}) ${this.escapeHtml(s.question)}</div>
@@ -344,6 +361,7 @@ const Study = {
             <div class="fc-type mcq">Trắc nghiệm</div>
             <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
             <div class="fc-question">${this.escapeHtml(q.question)}</div>
+            ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
             <div class="fc-options-preview">
               ${q.options.map((opt, i) => `
                 <div class="fc-opt-preview">${letters[i]}. ${this.escapeHtml(opt)}</div>
@@ -421,6 +439,7 @@ const Study = {
         <div class="practice-card">
           <div class="study-badge tf">Đúng/Sai</div>
           <div class="study-passage">${this.escapeHtml(q.passage)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="practice-statements">
             ${q.statements.map((s, i) => {
               return `
@@ -459,6 +478,7 @@ const Study = {
         <div class="practice-card">
           <div class="study-badge mcq">Trắc nghiệm</div>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="practice-options" id="practice-options">
             ${q.options.map((opt, i) => `
                 <div class="practice-option clickable" id="practice-opt-${i}" onclick="Study.practiceSelectMCQ(${i})">

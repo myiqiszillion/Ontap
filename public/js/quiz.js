@@ -54,7 +54,8 @@ const Quiz = {
 
     if (isGroup) {
       // === TF GROUP: passage + multiple statements ===
-      qTextEl.innerHTML = `<div class="question-passage">${this.escapeHtml(q.passage)}</div>`;
+      const imgHtml = q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : '';
+      qTextEl.innerHTML = `<div class="question-passage">${this.escapeHtml(q.passage)}</div>${imgHtml}`;
 
       const groupAnswers = this.answers[this.currentQuestionIndex] || {};
 
@@ -91,7 +92,8 @@ const Quiz = {
       `;
     } else {
       // === MCQ: single question with options ===
-      qTextEl.textContent = q.question;
+      const mcqImgHtml = q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : '';
+      qTextEl.innerHTML = `${this.escapeHtml(q.question)}${mcqImgHtml}`;
 
       const letters = 'ABCD';
       const selected = this.answers[this.currentQuestionIndex];

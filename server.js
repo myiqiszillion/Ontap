@@ -14,32 +14,6 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.use(express.json());
 
-// Legacy Analytics / Logging
-app.use((req, res, next) => {
-  if (req.path === '/' || req.path === '/index.html') {
-    try {
-      const visitorsPath = path.join(__dirname, 'data', 'visitors.json');
-      let visitors = [];
-      if (fs.existsSync(visitorsPath)) {
-        const fileContent = fs.readFileSync(visitorsPath, 'utf8');
-        if (fileContent.trim()) {
-          visitors = JSON.parse(fileContent);
-        }
-      }
-      
-      const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'Unknown IP';
-      const userAgent = req.headers['user-agent'] || 'Unknown Device';
-      const timestamp = new Date().toISOString();
-      
-      visitors.push({ ip, userAgent, timestamp });
-      if (visitors.length > 2000) visitors = visitors.slice(-2000);
-      fs.writeFileSync(visitorsPath, JSON.stringify(visitors, null, 2));
-    } catch (e) {
-      console.error('Error logging visitor:', e);
-    }
-  }
-  next();
-});
 
 // ═════════════════════════════════════════════════════════════
 // API ROUTES

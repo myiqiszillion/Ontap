@@ -597,8 +597,8 @@ const app = {
       const latestData = await API.getQuestions(this.currentSubject);
       let allLatestQs = [];
       latestData.lessons.forEach(l => {
-          if (l.type === 'truefalse' && l.questionGroups) allLatestQs.push(...l.questionGroups);
-          else if (l.questions) allLatestQs.push(...l.questions);
+          if (l.questionGroups) allLatestQs.push(...l.questionGroups);
+          if (l.questions) allLatestQs.push(...l.questions);
       });
 
       state.questions = state.questions.map(q => {
