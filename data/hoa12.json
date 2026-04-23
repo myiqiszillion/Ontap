@@ -16,9 +16,9 @@
         {
           "question": "Phát biểu nào sau đây đúng?",
           "options": [
-            "Các kim loại Al, Fe, Cr đều tan tốt trong dung dịch HNO3 đặc, nguội.",
+            "Các kim loại Al, Fe, Cr đều tan tốt trong dung dịch HNO₃ đặc, nguội.",
             "W là kim loại cứng nhất, Cr là kim loại có nhiệt độ nóng chảy cao nhất.",
-            "Các kim loại Al, Fe đều không tan trong dung dịch H2SO4 loãng, nguội.",
+            "Các kim loại Al, Fe đều không tan trong dung dịch H₂SO₄ loãng, nguội.",
             "nên Ag không tan trong dung dịch HCl 1 M dư."
           ],
           "correct": 2
@@ -76,15 +76,15 @@
         {
           "question": "Nước cứng là nước chứa nhiều ion",
           "options": [
-            "Ca2+, Mg2+.",
-            "Mg2+, Na+.",
-            "Ca2+, Ba2+.",
-            "Ca2+, K+."
+            "Ca²⁺, Mg²⁺.",
+            "Mg²⁺, Na⁺.",
+            "Ca²⁺, Ba²⁺.",
+            "Ca²⁺, K⁺."
           ],
           "correct": 0
         },
         {
-          "question": "Trong phân tử phức chất [Ag(NH3)2] OH, nhóm NH3 được gọi là",
+          "question": "Trong phân tử phức chất [Ag(NH₃)₂] OH, nhóm NH₃ được gọi là",
           "options": [
             "phối tử.",
             "acid.",
@@ -94,7 +94,7 @@
           "correct": 0
         },
         {
-          "question": "Để tẩy dầu mỡ đóng cặn trong dụng cụ, thiết bị và đường ống nhà bếp,., người ta thường dùng Na2CO3. Tên thường gọi của Na2CO3 là tên nào sau đây?",
+          "question": "Để tẩy dầu mỡ đóng cặn trong dụng cụ, thiết bị và đường ống nhà bếp,., người ta thường dùng Na₂CO₃. Tên thường gọi của Na₂CO₃ là tên nào sau đây?",
           "options": [
             "Soda.",
             "Baking soda.",
@@ -134,11 +134,11 @@
               "correct": true
             },
             {
-              "question": "Phản ứng xảy ra trong pin là: Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s).",
+              "question": "Phản ứng xảy ra trong pin là: Zn(s) + Cu₂+(aq) → Zn₂+(aq) + Cu(s).",
               "correct": true
             },
             {
-              "question": "Khi Zn(s) hoặc Cu2+(aq) hết thì phản ứng trong pin sẽ ngừng lại.",
+              "question": "Khi Zn(s) hoặc Cu₂+(aq) hết thì phản ứng trong pin sẽ ngừng lại.",
               "correct": true
             },
             {
@@ -170,7 +170,7 @@
           ]
         },
         {
-          "passage": "Để nhận biết bốn hợp chất không màu: NaCl, CaCl2, SrCl2 và BaCl2, người ta đốt từng mẫu hợp chất trên ngọn lửa đèn khí (không màu), dựa vào màu ngọn lửa để nhận biết mỗi hợp chất.",
+          "passage": "Để nhận biết bốn hợp chất không màu: NaCl, CaCl₂, SrCl₂ và BaCl₂, người ta đốt từng mẫu hợp chất trên ngọn lửa đèn khí (không màu), dựa vào màu ngọn lửa để nhận biết mỗi hợp chất.",
           "statements": [
             {
               "question": "NaCl cháy cho ngọn lửa màu vàng.",
@@ -181,11 +181,11 @@
               "correct": true
             },
             {
-              "question": "SrCl2 cháy cho ngọn lửa màu tím.",
+              "question": "SrCl₂ cháy cho ngọn lửa màu tím.",
               "correct": false
             },
             {
-              "question": "BaCl2 cháy cho ngọn lửa màu lục.",
+              "question": "BaCl₂ cháy cho ngọn lửa màu lục.",
               "correct": true
             }
           ]
@@ -227,7 +227,7 @@
           "correct": 0
         },
         {
-          "question": "Lấy một đinh sắt đã được làm sạch bề mặt rồi ngâm vào dung dịch CuSO4 một thời gian. Hiện tượng nào sau đây không xuất hiện trong thí nghiệm trên?",
+          "question": "Lấy một đinh sắt đã được làm sạch bề mặt rồi ngâm vào dung dịch CuSO₄ một thời gian. Hiện tượng nào sau đây không xuất hiện trong thí nghiệm trên?",
           "options": [
             "Có chất rắn màu đỏ bám lên đinh sắt.",
             "Màu xanh của dung dịch nhạt dần.",
@@ -239,10 +239,10 @@
         {
           "question": "Ion kim loại nào sau đây có nhiều nhất trong nước biển?",
           "options": [
-            "Mg2+.",
-            "K+.",
-            "Na+.",
-            "Ca2+."
+            "Mg²⁺.",
+            "K⁺.",
+            "Na⁺.",
+            "Ca²⁺."
           ],
           "correct": 2
         },
@@ -271,8 +271,8 @@
           "options": [
             "NaCl.",
             "NaClO.",
-            "Na2SO4.",
-            "NaNO3."
+            "Na₂SO₄.",
+            "NaNO₃."
           ],
           "correct": 0
         },
@@ -317,7 +317,7 @@
           "correct": 3
         },
         {
-          "question": "Trong phân tử phức chất K3[Fe(CN)6], sắt (iron) được gọi là",
+          "question": "Trong phân tử phức chất K₃[Fe(CN)₆], sắt (iron) được gọi là",
           "options": [
             "phối tử.",
             "base.",
@@ -330,19 +330,19 @@
           "question": "Một loại muối (X) của kim loại kiềm được dùng làm phân bón, cung cấp cả hai nguyên tố dinh dưỡng đa lượng cho cây trồng. Công thức hoá học của muôi X là",
           "options": [
             "ΚΝΟ3.",
-            "K2CO3.",
-            "NaNO3.",
-            "Na3PO4."
+            "K₂CO₃.",
+            "NaNO₃.",
+            "Na₃PO₄."
           ],
           "correct": 0
         },
         {
           "question": "Hang Sơn Đoòng tại tỉnh Quảng Bình, Việt Nam là hang động tự nhiên lớn nhất và có thạch nhũ đẹp nhất thế giới,. Thạch nhũ tăng kích thước với tốc độ 0,13 – 3 mm mỗi năm. Thạch nhũ trong hang động được tạo thành bởi phản ứng nào sau đây?",
           "options": [
-            "Ca(HCO3)2  CaCO3 + CO2 + H2O.",
-            "Ca(OH)2 + CO2  CaCO3 + H2O.",
-            "CaCO3 + CO2 + H2O  Ca(HCO3)2.",
-            "CaCl2 + Na2CO3  CaCO3 + 2NaCl."
+            "Ca(HCO₃)₂  CaCO₃ + CO₂ + H₂O.",
+            "Ca(OH)₂ + CO₂  CaCO₃ + H₂O.",
+            "CaCO₃ + CO₂ + H₂O  Ca(HCO₃)₂.",
+            "CaCl₂ + Na₂CO₃  CaCO₃ + 2NaCl."
           ],
           "correct": 0
         },
@@ -360,7 +360,7 @@
       ],
       "questionGroups": [
         {
-          "passage": "Cho biết:. Một pin điện có cấu tạo như hình sau. Biết rằng cầu muối chứa KCl. Các dung dịch muối là CuSO4 và NiSO4.",
+          "passage": "Cho biết:. Một pin điện có cấu tạo như hình sau. Biết rằng cầu muối chứa KCl. Các dung dịch muối là CuSO₄ và NiSO₄.",
           "statements": [
             {
               "question": "Thanh Cu là cực dương và thanh Ni là cực âm của pin điện.",
@@ -424,7 +424,7 @@
           ]
         },
         {
-          "passage": "Hemoglobin (Hb) là một loại protein chiếm khoảng 35% trọng lượng của hồng cầu. Hb có nhiệm vụ nhận oxygen từ phổi và vận chuyển đi khắp cơ thể. Thành phần cấu tạo nên hemoglobin bao gồm nhân heme và globin: Nhân heme: Một heme sẽ bao gồm một ion Fe2+ ở chính giữa và một vòng porphyrin bao xung quanh. Một phân tử Hb sẽ có chứa bốn nhân heme chiếm 5% trọng lượng hemoglobin. Globin: Được tạo từ các loại amino acid liên kết với nhau bằng các liên kết peptide để tạo thành chuỗi polypeptide. Mỗi nguyên tử trung tâm trong nhân heme chỉ liên kết tối đa với 1 phân tử O2. Đánh giá mỗi phát biểu sau là đúng hay sai?",
+          "passage": "Hemoglobin (Hb) là một loại protein chiếm khoảng 35% trọng lượng của hồng cầu. Hb có nhiệm vụ nhận oxygen từ phổi và vận chuyển đi khắp cơ thể. Thành phần cấu tạo nên hemoglobin bao gồm nhân heme và globin: Nhân heme: Một heme sẽ bao gồm một ion Fe²⁺ ở chính giữa và một vòng porphyrin bao xung quanh. Một phân tử Hb sẽ có chứa bốn nhân heme chiếm 5% trọng lượng hemoglobin. Globin: Được tạo từ các loại amino acid liên kết với nhau bằng các liên kết peptide để tạo thành chuỗi polypeptide. Mỗi nguyên tử trung tâm trong nhân heme chỉ liên kết tối đa với 1 phân tử O₂. Đánh giá mỗi phát biểu sau là đúng hay sai?",
           "statements": [
             {
               "question": "Dạng hình học của phức chất Fe(II) trong nhân heme là bát diện.",
@@ -542,15 +542,15 @@
         {
           "question": "Chất oxi hoá trong phản ứng trên là",
           "options": [
-            "Fe2+(aq).",
-            "Mn2+(aq).",
+            "Fe₂+(aq).",
+            "Mn₂+(aq).",
             "(aq).",
-            "H+(aq)."
+            "H⁺(aq)."
           ],
           "correct": 2
         },
         {
-          "question": "Số oxi hoá của nguyên từ trung tâm trong phức chất [Co(NH3)4(OH2)2]SO4 là",
+          "question": "Số oxi hoá của nguyên từ trung tâm trong phức chất [Co(NH₃)₄(OH₂)₂]SO₄ là",
           "options": [
             "+3.",
             "+6.",
@@ -563,9 +563,9 @@
           "question": "Soda là hoá chất quan trọng trong sản xuất thuỷ tinh, bột giặt, phẩm nhuộm, giấy, sợi. Công thức hoá học của soda là",
           "options": [
             "NaCl.",
-            "Na2SO4.",
-            "NaNO3.",
-            "Na2CO3."
+            "Na₂SO₄.",
+            "NaNO₃.",
+            "Na₂CO₃."
           ],
           "correct": 3
         },
@@ -583,9 +583,9 @@
           "question": "Phát biểu nào sau đây không đúng?",
           "options": [
             "Đun sôi nước cứng chỉ làm mềm nước cứng tạm thời.",
-            "Dung dịch Na2CO3 làm mềm nước cứng tạm thời, nước cứng vĩnh cửu.",
-            "Dung dịch NH4Cl làm mềm nước cứng.",
-            "Cho dung dịch Ca(OH)2 vừa đủ làm mềm nước cứng tạm thời."
+            "Dung dịch Na₂CO₃ làm mềm nước cứng tạm thời, nước cứng vĩnh cửu.",
+            "Dung dịch NH₄Cl làm mềm nước cứng.",
+            "Cho dung dịch Ca(OH)₂ vừa đủ làm mềm nước cứng tạm thời."
           ],
           "correct": 2
         },
@@ -609,15 +609,15 @@
               "correct": true
             },
             {
-              "question": "Tại điện cực âm xảy ra quá trình oxi hoá Zn(s) thành ion Zn2+(aq).",
+              "question": "Tại điện cực âm xảy ra quá trình oxi hoá Zn(s) thành ion Zn₂+(aq).",
               "correct": true
             },
             {
-              "question": "Tại điện cực dương xảy ra quá trình khử ion H+(aq) thành khí H2(g).",
+              "question": "Tại điện cực dương xảy ra quá trình khử ion H⁺(aq) thành khí H₂(g).",
               "correct": true
             },
             {
-              "question": "Phản ứng xảy ra trong pin là: H2(g) + Zn2+(aq) → Zn(s) + 2H+(aq).",
+              "question": "Phản ứng xảy ra trong pin là: H₂(g) + Zn₂+(aq) → Zn(s) + 2H⁺(aq).",
               "correct": false
             }
           ]
@@ -630,11 +630,11 @@
               "correct": true
             },
             {
-              "question": "Khí H2 chỉ thoát ra trên bề mặt thanh Cu, trên thanh Zn không có khí thoát ra.",
+              "question": "Khí H₂ chỉ thoát ra trên bề mặt thanh Cu, trên thanh Zn không có khí thoát ra.",
               "correct": false
             },
             {
-              "question": "Nồng độ cation Zn2+ trong dung dịch tăng dần.",
+              "question": "Nồng độ cation Zn²⁺ trong dung dịch tăng dần.",
               "correct": true
             },
             {
@@ -645,10 +645,10 @@
           "image": "assets/questions/hoa12_an_mon_dien_hoa.png"
         },
         {
-          "passage": "Cho 2 mL dung dịch CaCl2 0,1M vào ống nghiệm (1) và 2 mL dung dịch BaCl2 0,1 M vào ống nghiệm (2). Thêm từng giọt dung dịch CuSO4 5% vào mỗi ống, lắc đều và quan sát hiện tượng xảy ra.",
+          "passage": "Cho 2 mL dung dịch CaCl₂ 0,1M vào ống nghiệm (1) và 2 mL dung dịch BaCl₂ 0,1 M vào ống nghiệm (2). Thêm từng giọt dung dịch CuSO₄ 5% vào mỗi ống, lắc đều và quan sát hiện tượng xảy ra.",
           "statements": [
             {
-              "question": "Có thể dùng thí nghiệm để so sánh khả năng tạo kết tủa của CaSO4 và BaSO4.",
+              "question": "Có thể dùng thí nghiệm để so sánh khả năng tạo kết tủa của CaSO₄ và BaSO₄.",
               "correct": true
             },
             {
@@ -656,17 +656,17 @@
               "correct": true
             },
             {
-              "question": "Độ tan của CaSO4 kém hơn BaSO4.",
+              "question": "Độ tan của CaSO₄ kém hơn BaSO₄.",
               "correct": false
             },
             {
-              "question": "Cả CaSO4 và BaSO4 đều là chất không tan.",
+              "question": "Cả CaSO₄ và BaSO₄ đều là chất không tan.",
               "correct": false
             }
           ]
         },
         {
-          "passage": "Có hai thí nghiệm dưới đây. Thí nghiệm 1 ở 0 °C: Có một ống nghiệm chứa 1 mL dung dịch copper(II) sulfate 0,5% màu xanh nhạt. Thêm từ từ cho đến hết 2 mL dung dịch hydrochloric acid đặc không màu vào ổng nghiệm đó thì thu được dung dịch có màu vàng chanh do có quá trình: [Cu(OH2)6]2-(aq) + 4Cl- (aq)  [CuCl4]2- (aq) + 6H2O(/) KC = 4,18.105 Thí nghiệm 2 ở 20 °C: Có một ống nghiệm chứa 1 mL dung dịch copper(II) sulfate 0,5% màu xanh nhạt. Thêm từ từ cho đến hết 2 mL dung dịch sodium chloride bão hoà không màu vào ống nghiệm đó thì thu được dung dịch có màu xanh nhạt hơn so với ban đầu. Cho các phát biểu sau đây:",
+          "passage": "Có hai thí nghiệm dưới đây. Thí nghiệm 1 ở 0 °C: Có một ống nghiệm chứa 1 mL dung dịch copper(II) sulfate 0,5% màu xanh nhạt. Thêm từ từ cho đến hết 2 mL dung dịch hydrochloric acid đặc không màu vào ổng nghiệm đó thì thu được dung dịch có màu vàng chanh do có quá trình: [Cu(OH₂)₆]²⁻(aq) + 4Cl⁻ (aq)  [CuCl₄]²⁻ (aq) + 6H₂O(/) KC = 4,18.105 Thí nghiệm 2 ở 20 °C: Có một ống nghiệm chứa 1 mL dung dịch copper(II) sulfate 0,5% màu xanh nhạt. Thêm từ từ cho đến hết 2 mL dung dịch sodium chloride bão hoà không màu vào ống nghiệm đó thì thu được dung dịch có màu xanh nhạt hơn so với ban đầu. Cho các phát biểu sau đây:",
           "statements": [
             {
               "question": "Biểu thức tính hằng số cân bằng của phản ứng ở thí nghiệm 1 là:",
@@ -677,7 +677,7 @@
               "correct": false
             },
             {
-              "question": "Trong thí nghiệm 1, nồng độ anion Cl- càng cao thì phản ứng thuận càng dễ diễn ra.",
+              "question": "Trong thí nghiệm 1, nồng độ anion Cl⁻ càng cao thì phản ứng thuận càng dễ diễn ra.",
               "correct": true
             },
             {
@@ -702,7 +702,7 @@
           "correct": 1
         },
         {
-          "question": "Dây kim loại nào sau đây đều không tan trong dung dịch HNO3 đặc, nguội hoặc dung dịch H2SO4 đặc, nguội?",
+          "question": "Dây kim loại nào sau đây đều không tan trong dung dịch HNO₃ đặc, nguội hoặc dung dịch H₂SO₄ đặc, nguội?",
           "options": [
             "Cu, Mg, Fe.",
             "Au, Cu, Ag.",
@@ -714,10 +714,10 @@
         {
           "question": "Nhôm (Al) là nguyên tố phổ biến thứ ba (sau oxyen và silicon) và là kim loại phổ biến nhất trong vỏ Trái Đất. Nhôm chiếm khoảng 17% khối lớp rắn của Trái Đất. Trong tự nhiên, quặng chính chứa nhôm là bauxite và quặng này là nguyên liệu chính để sản xuất nhôm trong công nghiệp. Thành phần chính của quặng bauxite là",
           "options": [
-            "Na3AlF6.",
-            "Al2O3.2H2O.",
-            "KAl(SO4)2.12H2O.",
-            "K2O.Al2O3.6SiO2."
+            "Na₃AlF₆.",
+            "Al₂O₃.2H₂O.",
+            "KAl(SO₄)₂.12H₂O.",
+            "K₂O.Al₂O₃.6SiO₂."
           ],
           "correct": 1
         },
@@ -744,10 +744,10 @@
         {
           "question": "Trong đời sống, người ta dùng baking soda (là một hợp chất của sodium) để giặt, khử mùi hôi và tẩy trắng vết ố trên quần áo, vệ sinh đồ gia dụng,. Baking soda có công thức là",
           "options": [
-            "NaHCO3.",
-            "Na2CO3.",
-            "Na2SO4.",
-            "NaHSO4."
+            "NaHCO₃.",
+            "Na₂CO₃.",
+            "Na₂SO₄.",
+            "NaHSO₄."
           ],
           "correct": 0
         },
@@ -764,25 +764,25 @@
         {
           "question": "Nhận định nào sau đây không đúng?",
           "options": [
-            "Nước chứa ít hoặc không có các ion Ca2+, Mg2+ gọi là nước mềm.",
+            "Nước chứa ít hoặc không có các ion Ca²⁺, Mg²⁺ gọi là nước mềm.",
             "Nước cứng có chứa anion , là nước cứng tạm thời, còn chứa anion  hoặc  hoặc cả hai là nước cứng vĩnh cửu.",
-            "Nước có nhiều Ca2+ và Mg2+ gọi là nước cứng vĩnh cửu.",
+            "Nước có nhiều Ca²⁺ và Mg²⁺ gọi là nước cứng vĩnh cửu.",
             "Nước tự nhiên (nước mưa, tuyết, băng tan,.) thuộc loại nước mềm."
           ],
           "correct": 2
         },
         {
-          "question": "Trong phép chuẩn độ dung dịch Fe2+ bằng , bình tam giác đựng dung dịch Fe2+ thường được để trên 1 tờ giấy trắng. Mục đích của việc này là gì?",
+          "question": "Trong phép chuẩn độ dung dịch Fe²⁺ bằng , bình tam giác đựng dung dịch Fe²⁺ thường được để trên 1 tờ giấy trắng. Mục đích của việc này là gì?",
           "options": [
             "Để phản ứng trong bình tam giác xảy ra nhanh hơn.",
             "Để quan sát sự thay đổi màu dung dịch trong bình tam giác được rõ hơn.",
             "Để nhận biết được sự thay đổi thể tích dung dịch burette được rõ hơn.",
-            "Để nhận biết được sự xuất hiện màu của ion Fe3+ trong bình tam giác rõ hơn."
+            "Để nhận biết được sự xuất hiện màu của ion Fe³⁺ trong bình tam giác rõ hơn."
           ],
           "correct": 1
         },
         {
-          "question": "Số oxi hoá của nguyên tử trung tâm platinum trong phức chất [PtCl6]2- là",
+          "question": "Số oxi hoá của nguyên tử trung tâm platinum trong phức chất [PtCl₆]²⁻ là",
           "options": [
             "+2.",
             "+3.",
@@ -796,8 +796,8 @@
           "options": [
             "Dung dịch NaOH tác dụng với dung dịch HCl.",
             "Điện phân NaCl nóng chảy.",
-            "Dung dịch Na2CO3 tác dụng với dung dịch HCl.",
-            "Dung dịch NaCl tác dụng với dung dịch AgNO3."
+            "Dung dịch Na₂CO₃ tác dụng với dung dịch HCl.",
+            "Dung dịch NaCl tác dụng với dung dịch AgNO₃."
           ],
           "correct": 1
         },
@@ -814,15 +814,15 @@
         {
           "question": "Trong phòng thí nghiệm, nồng độ iron (II) sulfate có thể được xác định bằng phương pháp chuẩn độ với dung dịch thuốc tím trong môi trường acid. Dung dịch acid được sử dụng trong chuẩn độ này là",
           "options": [
-            "H2SO4 loãng.",
-            "H2SO4 đặc.",
+            "H₂SO₄ loãng.",
+            "H₂SO₄ đặc.",
             "HCl loãng.",
-            "HNO3 loãng."
+            "HNO₃ loãng."
           ],
           "correct": 0
         },
         {
-          "question": "Các phức chất tạo bởi các cation kim loại với phối từ là anion trong muối tetrasodium EDTA đều có số phối trí 6; trong đó phối tử liên kết với nguyên tử trung tâm qua hai nguyên từ nitrogen và 4 nguyên tử oxygen (mỗi nhóm -COO- liên kết với nguyên tử trung tâm qua 1 nguyên từ oxygen). Tỉ lệ mol giữa phối tử EDTA và nguyên tử trung tâm là",
+          "question": "Các phức chất tạo bởi các cation kim loại với phối từ là anion trong muối tetrasodium EDTA đều có số phối trí 6; trong đó phối tử liên kết với nguyên tử trung tâm qua hai nguyên từ nitrogen và 4 nguyên tử oxygen (mỗi nhóm -COO⁻ liên kết với nguyên tử trung tâm qua 1 nguyên từ oxygen). Tỉ lệ mol giữa phối tử EDTA và nguyên tử trung tâm là",
           "options": [
             "1:1.",
             "2: 1.",
@@ -841,7 +841,7 @@
               "correct": true
             },
             {
-              "question": "Dạng oxi hoá và dạng khử của cùng một nguyên tố kim loại M: Mn+ + ne → M tạo nên cặp oxi hoá - khử và kí hiệu là Mn+/M.",
+              "question": "Dạng oxi hoá và dạng khử của cùng một nguyên tố kim loại M: Mn⁺ + ne → M tạo nên cặp oxi hoá - khử và kí hiệu là Mn⁺/M.",
               "correct": true
             },
             {
@@ -855,7 +855,7 @@
           ]
         },
         {
-          "passage": "Tiến hành thí nghiệm theo các bước sau: Bước 1. Cho 1 viên kẽm (zinc, Zn) vào ống nghiệm chứa 5 mL dung dịch H2SO4 1 M. Để yên khoảng 2 phút. Bước 2. Sau bước 1, nhỏ tiếp 5 giọt dung dịch CuSO4 1M vào ống nghiệm trên.",
+          "passage": "Tiến hành thí nghiệm theo các bước sau: Bước 1. Cho 1 viên kẽm (zinc, Zn) vào ống nghiệm chứa 5 mL dung dịch H₂SO₄ 1 M. Để yên khoảng 2 phút. Bước 2. Sau bước 1, nhỏ tiếp 5 giọt dung dịch CuSO₄ 1M vào ống nghiệm trên.",
           "statements": [
             {
               "question": "Ở bước 1, viên kẽm tan và có khí không màu thoát ra.",
@@ -870,16 +870,16 @@
               "correct": true
             },
             {
-              "question": "Ở bước 1, nếu thay dung dịch H2SO4 1M bằng dung dịch HCl 1M thì tốc độ hoà tan Zn vẫn không đổi.",
+              "question": "Ở bước 1, nếu thay dung dịch H₂SO₄ 1M bằng dung dịch HCl 1M thì tốc độ hoà tan Zn vẫn không đổi.",
               "correct": false
             }
           ]
         },
         {
-          "passage": "Tiến hành thí nghiệm sau: Bước 1. Cho lần lượt 2 mL mỗi dung dịch CaCl2 1 M; BaCl2 1 M và Na2SO4 1M vào các ống nghiệm tương ứng (1), (2) và (3). Bước 2. Thêm từ từ từng giọt 2 mL dung dịch Na2SO4 1M vào ống (1) và (2). Bước 3. Thêm từ từ từng giọt 2 mL dung dịch BaCl2 1 M vào ống (3).",
+          "passage": "Tiến hành thí nghiệm sau: Bước 1. Cho lần lượt 2 mL mỗi dung dịch CaCl₂ 1 M; BaCl₂ 1 M và Na₂SO₄ 1M vào các ống nghiệm tương ứng (1), (2) và (3). Bước 2. Thêm từ từ từng giọt 2 mL dung dịch Na₂SO₄ 1M vào ống (1) và (2). Bước 3. Thêm từ từ từng giọt 2 mL dung dịch BaCl₂ 1 M vào ống (3).",
           "statements": [
             {
-              "question": "Thí nghiệm ở bước (3) nhằm kiểm tra sự có mặt của ion SO2 trong dung dịch.",
+              "question": "Thí nghiệm ở bước (3) nhằm kiểm tra sự có mặt của ion SO₂ trong dung dịch.",
               "correct": true
             },
             {
@@ -897,14 +897,14 @@
           ]
         },
         {
-          "passage": "Phức chất [Ni(CO)4] và phức chất [Ni(NH3)6]2+ có cấu trúc như sau: Mỗi phát biểu sau là đúng hay sai?",
+          "passage": "Phức chất [Ni(CO)₄] và phức chất [Ni(NH₃)₆]²⁺ có cấu trúc như sau: Mỗi phát biểu sau là đúng hay sai?",
           "statements": [
             {
-              "question": "Phức chất [Ni(CO)4] có cấu trúc tứ diện.",
+              "question": "Phức chất [Ni(CO)₄] có cấu trúc tứ diện.",
               "correct": true
             },
             {
-              "question": "Phức chất [Ni(NH3)6]2+ có cấu trúc bát diện.",
+              "question": "Phức chất [Ni(NH₃)₆]²⁺ có cấu trúc bát diện.",
               "correct": true
             },
             {
@@ -912,7 +912,7 @@
               "correct": false
             },
             {
-              "question": "Phức chất [Ni(CO)4] tan tốt trong dung môi benzene do tạo liên kết hydrogen với benzene.",
+              "question": "Phức chất [Ni(CO)₄] tan tốt trong dung môi benzene do tạo liên kết hydrogen với benzene.",
               "correct": false
             }
           ]
@@ -953,7 +953,7 @@
           "correct": 1
         },
         {
-          "question": "Để tẩy dầu mỡ đóng cặn trong dụng cụ, thiết bị và đường ống nhà bếp,., người ta thường dùng Na2CO3. Tên thường gọi của Na2CO3 là tên nào sau đây?",
+          "question": "Để tẩy dầu mỡ đóng cặn trong dụng cụ, thiết bị và đường ống nhà bếp,., người ta thường dùng Na₂CO₃. Tên thường gọi của Na₂CO₃ là tên nào sau đây?",
           "options": [
             "Soda.",
             "Baking soda.",
@@ -973,7 +973,7 @@
           "correct": 3
         },
         {
-          "question": "Một mẫu nước tự nhiên có chứa lượng lớn các ion: Ca2+, Mg2+, , . Mẫu nước trên thuộc loại",
+          "question": "Một mẫu nước tự nhiên có chứa lượng lớn các ion: Ca²⁺, Mg²⁺, , . Mẫu nước trên thuộc loại",
           "options": [
             "nước có tính cứng toàn phần.",
             "nước có tính cứng vĩnh cửu.",
@@ -993,7 +993,7 @@
           "correct": 0
         },
         {
-          "question": "Cách 2. Nhỏ từ từ dung dịch chứa Fe2+ trong môi trường acid vào dung dịch KMnO4 cho đến khi màu hồng của dung dịch KMnO4 biến mất. Hãy cho biết cách tiến hành chuẩn độ nào là phù hợp.",
+          "question": "Cách 2. Nhỏ từ từ dung dịch chứa Fe²⁺ trong môi trường acid vào dung dịch KMnO₄ cho đến khi màu hồng của dung dịch KMnO₄ biến mất. Hãy cho biết cách tiến hành chuẩn độ nào là phù hợp.",
           "options": [
             "Cách 1.",
             "Cách 2.",
@@ -1018,27 +1018,27 @@
             "Khí thoát ra trên bề mặt kim loại là khí hydrogen.",
             "Barium có khối lượng riêng nhỏ nhất nên nổi trên mặt nước và tan nhanh.",
             "Khả năng phản ứng với nước xếp theo thứ tự Mg < Ca < Sr < Ba.",
-            "Magnesium phản ứng chậm nhất do Mg(OH)2 có độ tan nhỏ nhất."
+            "Magnesium phản ứng chậm nhất do Mg(OH)₂ có độ tan nhỏ nhất."
           ],
           "correct": 1
         },
         {
           "question": "Chất nào sau đây có thể làm mềm nước cứng vĩnh cửu là",
           "options": [
-            "Ca(OH)2.",
+            "Ca(OH)₂.",
             "NaCl.",
-            "Na3PO4.",
+            "Na₃PO₄.",
             "HCl."
           ],
           "correct": 2
         },
         {
-          "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất K3[Fe(CN)6]?",
+          "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất K₃[Fe(CN)₆]?",
           "options": [
-            "K3[Fe(CN)6](aq) → 3K+(aq) + [Fe(CN)6]3-(aq).",
-            "K3[Fe(CN)6](aq) → 2K+(aq) + K[Fe(CN)6]2-(aq).",
-            "K3[Fe(CN)6](aq) → 3K(aq) + Fe³+(aq) + 6CN-(aq).",
-            "K3[Fe(CN)6] (aq) → 3K+(aq) + Fe(CN)3(s) + 3CN (aq)."
+            "K₃[Fe(CN)₆](aq) → 3K⁺(aq) + [Fe(CN)₆]³⁻(aq).",
+            "K₃[Fe(CN)₆](aq) → 2K⁺(aq) + K[Fe(CN)₆]²⁻(aq).",
+            "K₃[Fe(CN)₆](aq) → 3K(aq) + Fe³+(aq) + 6CN⁻(aq).",
+            "K₃[Fe(CN)₆] (aq) → 3K⁺(aq) + Fe(CN)₃(s) + 3CN (aq)."
           ],
           "correct": 0
         }
@@ -1078,7 +1078,7 @@
               "correct": true
             },
             {
-              "question": "Sản phẩm quá trình ăn mòn của thép chủ yếu là Fe(OH)2.",
+              "question": "Sản phẩm quá trình ăn mòn của thép chủ yếu là Fe(OH)₂.",
               "correct": false
             },
             {
@@ -1088,10 +1088,10 @@
           ]
         },
         {
-          "passage": "Giá trị biến thiên enthalpy chuẩn của phản ứng nhiệt phân muối carbonate của kim loại nhóm IIA (R) (RCO3(s) RO(s) + CO2(g)) theo bảng sau:",
+          "passage": "Giá trị biến thiên enthalpy chuẩn của phản ứng nhiệt phân muối carbonate của kim loại nhóm IIA (R) (RCO₃(s) RO(s) + CO₂(g)) theo bảng sau:",
           "statements": [
             {
-              "question": "Trong các muối carbonate của kim loại nhóm IIA, BaCO3 có độ bền nhiệt nhất.",
+              "question": "Trong các muối carbonate của kim loại nhóm IIA, BaCO₃ có độ bền nhiệt nhất.",
               "correct": true
             },
             {
@@ -1103,16 +1103,16 @@
               "correct": false
             },
             {
-              "question": "Giá trị ∆rHo298 tăng dần từ MgCO3 tới BaCO3 nên nhiệt độ phân huỷ giảm dần từ MgCO3 tới BaCO3.",
+              "question": "Giá trị ∆rHo298 tăng dần từ MgCO₃ tới BaCO₃ nên nhiệt độ phân huỷ giảm dần từ MgCO₃ tới BaCO₃.",
               "correct": false
             }
           ]
         },
         {
-          "passage": "Các phức chất [Co(NH3)6]3+ và [Co(CN)6]3- có cấu trúc như sau:",
+          "passage": "Các phức chất [Co(NH₃)₆]³⁺ và [Co(CN)₆]³⁻ có cấu trúc như sau:",
           "statements": [
             {
-              "question": "Các phức chất [Co(NH3)6]3+ và [Co(CN)6]3- đều có cấu trúc bát diện.",
+              "question": "Các phức chất [Co(NH₃)₆]³⁺ và [Co(CN)₆]³⁻ đều có cấu trúc bát diện.",
               "correct": true
             },
             {
@@ -1120,7 +1120,7 @@
               "correct": true
             },
             {
-              "question": "Hợp chất phức [Co(NH3)6]a[Co(CN)6]b có giá trị của a và b là bằng nhau.",
+              "question": "Hợp chất phức [Co(NH₃)₆]a[Co(CN)₆]b có giá trị của a và b là bằng nhau.",
               "correct": true
             },
             {
@@ -1156,7 +1156,7 @@
           "correct": 0
         },
         {
-          "question": "Gang và thép là hai hợp kim quan trọng nhất của sắt. Chúng có rất nhiều ứng dụng trong đời sống và sản xuất. Để sản xuất gang, người ta khử oxide của sắt (Fe2O3 hoặc Fe3O4) trong quặng sắt bằng khí CO (được tạo ra do đốt cháy than cốc). Sắt được tạo ra trong quá trình sản xuất gang bằng phương pháp nào?",
+          "question": "Gang và thép là hai hợp kim quan trọng nhất của sắt. Chúng có rất nhiều ứng dụng trong đời sống và sản xuất. Để sản xuất gang, người ta khử oxide của sắt (Fe₂O₃ hoặc Fe₃O₄) trong quặng sắt bằng khí CO (được tạo ra do đốt cháy than cốc). Sắt được tạo ra trong quá trình sản xuất gang bằng phương pháp nào?",
           "options": [
             "Kết tinh.",
             "Nhiệt luyện.",
@@ -1179,9 +1179,9 @@
           "question": "Một loại muối (X) của kim loại kiềm được dùng làm phân bón, cung cấp cả hai nguyên tố dinh dưỡng đa lượng cho cây trồng. Công thức hoá học của muôi X là",
           "options": [
             "ΚΝΟ3.",
-            "K2CO3.",
-            "NaNO3.",
-            "Na3PO4."
+            "K₂CO₃.",
+            "NaNO₃.",
+            "Na₃PO₄."
           ],
           "correct": 0
         },
@@ -1196,7 +1196,7 @@
           "correct": 0
         },
         {
-          "question": "Một mẫu nước sinh hoạt chứa một lượng nhiều các ion: Ca2+, Mg2+, , . Nước trong cốc trên thuộc loại gì?",
+          "question": "Một mẫu nước sinh hoạt chứa một lượng nhiều các ion: Ca²⁺, Mg²⁺, , . Nước trong cốc trên thuộc loại gì?",
           "options": [
             "Nước mềm.",
             "Nước có tính cứng vĩnh cửu.",
@@ -1216,12 +1216,12 @@
           "correct": 3
         },
         {
-          "question": "Chuẩn độ dung dịch Fe2+ trong môi trường acid bằng dung dịch KMnO4. Kết quả sẽ không phù hợp nếu nồng độ dung dịch Fe2+ khá lớn (> 0,500 M). Điều này là do",
+          "question": "Chuẩn độ dung dịch Fe²⁺ trong môi trường acid bằng dung dịch KMnO₄. Kết quả sẽ không phù hợp nếu nồng độ dung dịch Fe²⁺ khá lớn (> 0,500 M). Điều này là do",
           "options": [
-            "tiêu tốn một lượng dung dịch KMnO4 quá lớn.",
+            "tiêu tốn một lượng dung dịch KMnO₄ quá lớn.",
             "tại điểm tương đương, dung dịch có màu vàng đậm.",
-            "Fe2+ dễ bị oxi hoá bởi oxygen của không khí.",
-            "Fe3+ sẽ bị oxi hoá tiếp bởi KMnO4."
+            "Fe²⁺ dễ bị oxi hoá bởi oxygen của không khí.",
+            "Fe³⁺ sẽ bị oxi hoá tiếp bởi KMnO₄."
           ],
           "correct": 1
         },
@@ -1230,8 +1230,8 @@
           "options": [
             "NaCl là chất rắn, dễ tan trong nước, là thành phần chính của muối ăn.",
             "Điện phân dung dịch NaCl không màng ngăn thu được dung dịch NaOH.",
-            "Dung dịch NaHCO3 0,1 M có pH < 7.",
-            "Không thể phân biệt được ion Na+ và K+ dựa vào màu ngọn lửa khi đốt các hợp chất của chúng."
+            "Dung dịch NaHCO₃ 0,1 M có pH < 7.",
+            "Không thể phân biệt được ion Na⁺ và K⁺ dựa vào màu ngọn lửa khi đốt các hợp chất của chúng."
           ],
           "correct": 0
         },
@@ -1248,20 +1248,20 @@
         {
           "question": "Cách nào sau đây không sử dụng để làm mềm nước có tính cứng vĩnh cửu?",
           "options": [
-            "Dùng dung dịch Na2CO3.",
+            "Dùng dung dịch Na₂CO₃.",
             "Đun sôi nước.",
-            "Dùng dung dịch Na3PO4.",
+            "Dùng dung dịch Na₃PO₄.",
             "Dùng phương pháp trao đổi ion."
           ],
           "correct": 1
         },
         {
-          "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất [Co(NH3)5CI]Cl₂?",
+          "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất [Co(NH₃)₅CI]Cl₂?",
           "options": [
-            "2[Co(NH3)SCI]Cl2(aq) → [CoC16]³ (aq) + 10NH3(aq).",
-            "[Co(NH3)3CI]Cl2(aq) → [Co(NH3)3CI]²+(aq) + 2Cl-(aq).",
-            "[Co(NH3)5Cl]Cl2(aq) → [Co(NH3)4Cl]²+(aq) + NH3(aq) + 2Cl-(aq).",
-            "[Co(NH3)3CI]Cl2(aq) + H2O [Co(NH3)3(OH)2]³+(aq) + 3Cl-(aq)."
+            "2[Co(NH₃)SCI]Cl₂(aq) → [CoC₁₆]³ (aq) + 10NH₃(aq).",
+            "[Co(NH₃)₃CI]Cl₂(aq) → [Co(NH₃)₃CI]²+(aq) + 2Cl⁻(aq).",
+            "[Co(NH₃)₅Cl]Cl₂(aq) → [Co(NH₃)₄Cl]²+(aq) + NH₃(aq) + 2Cl⁻(aq).",
+            "[Co(NH₃)₃CI]Cl₂(aq) + H₂O [Co(NH₃)₃(OH)₂]³+(aq) + 3Cl⁻(aq)."
           ],
           "correct": 3
         }
@@ -1275,7 +1275,7 @@
               "correct": false
             },
             {
-              "question": "Nồng độ ion (aq) trong dung dịch ZnSO4 tăng và trong dung dịch CuSO4 giảm dần.",
+              "question": "Nồng độ ion (aq) trong dung dịch ZnSO₄ tăng và trong dung dịch CuSO₄ giảm dần.",
               "correct": true
             },
             {
@@ -1283,7 +1283,7 @@
               "correct": true
             },
             {
-              "question": "Phản ứng chung xảy ra trong pin điện là Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s).",
+              "question": "Phản ứng chung xảy ra trong pin điện là Zn(s) + Cu₂+(aq) → Zn₂+(aq) + Cu(s).",
               "correct": true
             }
           ]
@@ -1304,38 +1304,38 @@
               "correct": true
             },
             {
-              "question": "Ở cốc 1, đinh sắt bị gỉ và dung dịch có màu vàng của FeCl2.",
+              "question": "Ở cốc 1, đinh sắt bị gỉ và dung dịch có màu vàng của FeCl₂.",
               "correct": false
             }
           ],
           "image": "assets/questions/hoa12_thi_nghiem_4_coc.png"
         },
         {
-          "passage": "Giá trị biến thiên enthalpy chuẩn của phản ứng nhiệt phân muối nitrate của kim loại nhóm IIA (R) (R(NO3)2 (s) RO(s) + 2NO2(g) +2O₂(g)) theo bảng sau:",
+          "passage": "Giá trị biến thiên enthalpy chuẩn của phản ứng nhiệt phân muối nitrate của kim loại nhóm IIA (R) (R(NO₃)₂ (s) RO(s) + 2NO₂(g) +2O₂(g)) theo bảng sau:",
           "statements": [
             {
-              "question": "Độ bền nhiệt của các muối nitrate của kim loại nhóm IIA có xu hướng tăng dần từ Mg(NO3)2 tới Ba(NO3)2.",
+              "question": "Độ bền nhiệt của các muối nitrate của kim loại nhóm IIA có xu hướng tăng dần từ Mg(NO₃)₂ tới Ba(NO₃)₂.",
               "correct": true
             },
             {
-              "question": "Dựa vào bảng giá trị biến thiên enthalpy chuẩn ở trên có thể dự đoán xu hướng biến đổi độ bền nhiệt của R(NO3)2.",
+              "question": "Dựa vào bảng giá trị biến thiên enthalpy chuẩn ở trên có thể dự đoán xu hướng biến đổi độ bền nhiệt của R(NO₃)₂.",
               "correct": true
             },
             {
-              "question": "Phản ứng nhiệt phân muối nitrate của kim loại nhóm IIA (R(NO3)2) là phản ứng oxi hoá - khử, trong đó vai trò oxi hoá là R2+.",
+              "question": "Phản ứng nhiệt phân muối nitrate của kim loại nhóm IIA (R(NO₃)₂) là phản ứng oxi hoá - khử, trong đó vai trò oxi hoá là R²⁺.",
               "correct": false
             },
             {
-              "question": "Nhiệt độ phân huỷ theo thứ tự sau: Mg(NO3)2 < Ca(NO3)2 < Sr(NO3)2 < Ba(NO3)2.",
+              "question": "Nhiệt độ phân huỷ theo thứ tự sau: Mg(NO₃)₂ < Ca(NO₃)₂ < Sr(NO₃)₂ < Ba(NO₃)₂.",
               "correct": true
             }
           ]
         },
         {
-          "passage": "Các phức chất [PtCl4]2- và [PtCl6]2- có cấu trúc như sau:",
+          "passage": "Các phức chất [PtCl₄]²⁻ và [PtCl₆]²⁻ có cấu trúc như sau:",
           "statements": [
             {
-              "question": "Phức chất [PtCl4]2- có cấu trúc vuông phẳng và phức chất [PtCl6]2- có cấu trúc bát diện.",
+              "question": "Phức chất [PtCl₄]²⁻ có cấu trúc vuông phẳng và phức chất [PtCl₆]²⁻ có cấu trúc bát diện.",
               "correct": true
             },
             {
@@ -1370,10 +1370,10 @@
         {
           "question": "Từ hai phản ứng trên, hãy cho biết khẳng định nào sau đây đúng.",
           "options": [
-            "Tính oxi hoá của Fe2+ > Cu2+ > Ag.",
+            "Tính oxi hoá của Fe²⁺ > Cu²⁺ > Ag.",
             "Tính khử của kim loại Fe > Cu > Ag.",
             "Kim loại Fe oxi hoá được Cu²+ thành kim loại Cu.",
-            "Ion Ag+ khử được kim loại Cu thành ion Cu²+."
+            "Ion Ag⁺ khử được kim loại Cu thành ion Cu²+."
           ],
           "correct": 1
         },
@@ -1411,19 +1411,19 @@
           "question": "Soda là hoá chất quan trọng trong sản xuất thuỷ tinh, bột giặt, phẩm nhuộm, giấy, sợi. Công thức hoá học của soda là",
           "options": [
             "NaCl.",
-            "Na2SO4.",
-            "NaNO3.",
-            "Na2CO3."
+            "Na₂SO₄.",
+            "NaNO₃.",
+            "Na₂CO₃."
           ],
           "correct": 3
         },
         {
           "question": "Vôi sống có tính hút ẩm mạnh nên được sử dụng để làm khô khí trong phòng thí nghiệm. Không sử dụng vôi sống để làm khô khí nào sau đây?",
           "options": [
-            "O2.",
-            "H2.",
-            "CO2.",
-            "N2."
+            "O₂.",
+            "H₂.",
+            "CO₂.",
+            "N₂."
           ],
           "correct": 2
         },
@@ -1448,7 +1448,7 @@
           "correct": 1
         },
         {
-          "question": "Cho khoảng 2 mL dung dịch NaOH vào ống nghiệm chứa khoảng 1 mL dung dịch Fe2(SO4)3. Hiện tượng quan sát được là",
+          "question": "Cho khoảng 2 mL dung dịch NaOH vào ống nghiệm chứa khoảng 1 mL dung dịch Fe₂(SO₄)₃. Hiện tượng quan sát được là",
           "options": [
             "dung dịch chuyển sang màu xanh.",
             "xuất hiện kết tủa màu vàng.",
@@ -1461,9 +1461,9 @@
           "question": "Y là chất nào sau đây?",
           "options": [
             "NaOH.",
-            "K2CO3.",
-            "Na2CO3.",
-            "NaHCO3."
+            "K₂CO₃.",
+            "Na₂CO₃.",
+            "NaHCO₃."
           ],
           "correct": 2
         },
@@ -1473,7 +1473,7 @@
             "Chỉ có Pb là kim loại chuyển tiếp.",
             "Cả ba nguyên tố Cd, Hg, Pb là kim loại chuyển tiếp.",
             "Chỉ có Hg là kim loại chuyển tiếp.",
-            "Ion Cd2+, Hg2+ có cấu hình phân lớp d bão hòa."
+            "Ion Cd²⁺, Hg²⁺ có cấu hình phân lớp d bão hòa."
           ],
           "correct": 3
         }
@@ -1483,11 +1483,11 @@
           "passage": "Mô hình bể điện phân NaCl nóng chảy được biểu diễn như sau: Mỗi phát biểu sau là đúng hay sai?",
           "statements": [
             {
-              "question": "Tại anode xảy ra quá trình oxi hoá ion  thành khí Cl2.",
+              "question": "Tại anode xảy ra quá trình oxi hoá ion  thành khí Cl₂.",
               "correct": true
             },
             {
-              "question": "Tại cathode xảy ra quá trình khử ion Na+ thành kim loại Na.",
+              "question": "Tại cathode xảy ra quá trình khử ion Na⁺ thành kim loại Na.",
               "correct": true
             },
             {
@@ -1522,22 +1522,22 @@
           ]
         },
         {
-          "passage": "Thực hiện thí nghiệm của kim loại nhóm IIA (M) với nước, độ tan (g/100 g H2O ở 20°C) của các hydroxide M(OH)2 tương ứng được ghi dưới bảng sau:",
+          "passage": "Thực hiện thí nghiệm của kim loại nhóm IIA (M) với nước, độ tan (g/100 g H₂O ở 20°C) của các hydroxide M(OH)₂ tương ứng được ghi dưới bảng sau:",
           "statements": [
             {
-              "question": "Qua độ tan của các hydroxide M(OH)2 có thể dự đoán mức độ phản ứng với nước của kim loại nhóm IIA có xu hướng tăng dần từ Be tới BA.",
+              "question": "Qua độ tan của các hydroxide M(OH)₂ có thể dự đoán mức độ phản ứng với nước của kim loại nhóm IIA có xu hướng tăng dần từ Be tới BA.",
               "correct": true
             },
             {
-              "question": "Giá trị pH của các dung dịch Ca(OH)2 0,01 M, Sr(OH)2 0,01 M và Ba(OH)2 0,01 M xếp theo thứ tự tương ứng tăng dần.",
+              "question": "Giá trị pH của các dung dịch Ca(OH)₂ 0,01 M, Sr(OH)₂ 0,01 M và Ba(OH)₂ 0,01 M xếp theo thứ tự tương ứng tăng dần.",
               "correct": true
             },
             {
-              "question": "Phản ứng tổng quát như sau: M + 2H2O → M(OH)2 + H2.",
+              "question": "Phản ứng tổng quát như sau: M + 2H₂O → M(OH)₂ + H₂.",
               "correct": true
             },
             {
-              "question": "Be(OH)2 có độ tan nhỏ nhất nên dễ tách khỏi bề mặt kim loại, do đó Be sẽ phản ứng với nước ngay điều kiện thường.",
+              "question": "Be(OH)₂ có độ tan nhỏ nhất nên dễ tách khỏi bề mặt kim loại, do đó Be sẽ phản ứng với nước ngay điều kiện thường.",
               "correct": false
             }
           ]
@@ -1550,11 +1550,11 @@
               "correct": true
             },
             {
-              "question": "Nguyên tử trung tâm của cisplatin là Pt2+.",
+              "question": "Nguyên tử trung tâm của cisplatin là Pt²⁺.",
               "correct": false
             },
             {
-              "question": "Trong phân tử cisplatin, phối tử là NH3 và Cl-.",
+              "question": "Trong phân tử cisplatin, phối tử là NH₃ và Cl⁻.",
               "correct": true
             },
             {
@@ -1581,10 +1581,10 @@
         {
           "question": "Đồ vật làm bằng bạc (silver) khi sử dụng lâu ngày trong không khí thường bị hoá đen ở bề mặt là do xảy ra phản ứng nào sau đây?",
           "options": [
-            "4Ag+O2→2Ag2O.",
-            "2Ag + H2S → Ag2S + H2.",
-            "4Ag + 2H2S + O2→2Ag2S+ 2H2O.",
-            "2Ag + 2H2O→ 2AgOH + H2."
+            "4Ag+O₂→2Ag₂O.",
+            "2Ag + H₂S → Ag₂S + H₂.",
+            "4Ag + 2H₂S + O₂→2Ag₂S⁺ 2H₂O.",
+            "2Ag + 2H₂O→ 2AgOH + H₂."
           ],
           "correct": 2
         },
@@ -1613,23 +1613,23 @@
           "options": [
             "Dung dịch NaOH tác dụng với dung dịch HCl.",
             "Điện phân NaCl nóng chảy.",
-            "Dung dịch Na2CO3 tác dụng với dung dịch HCl.",
-            "Dung dịch NaCl tác dụng với dung dịch AgNO3."
+            "Dung dịch Na₂CO₃ tác dụng với dung dịch HCl.",
+            "Dung dịch NaCl tác dụng với dung dịch AgNO₃."
           ],
           "correct": 1
         },
         {
           "question": "Để vôi sống CaO lâu ngày trong không khí, vôi sống sẽ cứng lại và giảm chất lượng. Hiện tượng này được giải thích bằng phản ứng nào dưới đây?",
           "options": [
-            "2CaO  2Ca + O2.",
-            "CaO + CO2  CaCO3.",
-            "CaCO3 + CO2 + H2O  Ca(HCO3)2.",
-            "CaO + H2O  Ca(OH)2."
+            "2CaO  2Ca + O₂.",
+            "CaO + CO₂  CaCO₃.",
+            "CaCO₃ + CO₂ + H₂O  Ca(HCO₃)₂.",
+            "CaO + H₂O  Ca(OH)₂."
           ],
           "correct": 1
         },
         {
-          "question": "Cho khoảng 2 mL dung dịch NaOH dịch CuSO4. Hiện tượng quan sát được là vào ống nghiệm chứa khoảng 1 mL dung",
+          "question": "Cho khoảng 2 mL dung dịch NaOH dịch CuSO₄. Hiện tượng quan sát được là vào ống nghiệm chứa khoảng 1 mL dung",
           "options": [
             "dung dịch chuyển sang màu vàng.",
             "xuất hiện kết tủa màu xanh nhạt.",
@@ -1639,12 +1639,12 @@
           "correct": 1
         },
         {
-          "question": "Trong phân tử phức chất [Cu(OH2)2(NH3)4]SO4, nguyên tử trung tâm copper tạo liên kết cho – nhận với những phối tử nào?",
+          "question": "Trong phân tử phức chất [Cu(OH₂)₂(NH₃)₄]SO₄, nguyên tử trung tâm copper tạo liên kết cho – nhận với những phối tử nào?",
           "options": [
-            "Chỉ có H2O.",
-            "Chỉ có NH3.",
+            "Chỉ có H₂O.",
+            "Chỉ có NH₃.",
             "Chỉ có .",
-            "Cả NH3 và H2O."
+            "Cả NH₃ và H₂O."
           ],
           "correct": 3
         },
@@ -1661,42 +1661,42 @@
         {
           "question": "Biết: X, Y, Z, T, E là các hợp chất khác nhau; mỗi mũi tên ứng với một phương trình hoá học. Các chất Z, E thoả mãn sơ đồ trên lần lượt là",
           "options": [
-            "Na2CO3, H2SO4.",
-            "CO2, KHSO4.",
-            "NaHCO3, Na2SO4.",
-            "CO2, BaSO4."
+            "Na₂CO₃, H₂SO₄.",
+            "CO₂, KHSO₄.",
+            "NaHCO₃, Na₂SO₄.",
+            "CO₂, BaSO₄."
           ],
           "correct": 1
         },
         {
-          "question": "Phức chất đơn nhân với nguyên tử trung tâm platinum (Pt) tạo được 4 liên kết cho nhận với phối từ ethylenediamine (H2N-CH2-CH2-NH2) và chloro; trong đó ethylenediamine liên kết với nguyên tử trung tâm qua hai nguyên tử nitrogen. Công thức phân tử của phức chất là",
+          "question": "Phức chất đơn nhân với nguyên tử trung tâm platinum (Pt) tạo được 4 liên kết cho nhận với phối từ ethylenediamine (H₂N-CH₂-CH₂-NH₂) và chloro; trong đó ethylenediamine liên kết với nguyên tử trung tâm qua hai nguyên tử nitrogen. Công thức phân tử của phức chất là",
           "options": [
-            "PtCl2(C2H3N2).",
-            "PtCl2(C₂H8N2)2.",
-            "PtCl(C2H8N2)3.",
-            "PtCl(C2H3N2)2."
+            "PtCl₂(C₂H₃N₂).",
+            "PtCl₂(C₂H₈N₂)₂.",
+            "PtCl(C₂H₈N₂)₃.",
+            "PtCl(C₂H₃N₂)₂."
           ],
           "correct": 0
         }
       ],
       "questionGroups": [
         {
-          "passage": "Điện phân dung dịch NaCl có màng bán thẩm ngăn giữa anode với cathode (các điện cực đều là các điện cực trơ). Màng bán thẩm chỉ cho ion Na+ đi qua. Sơ đồ bình điện phân như hình sau:",
+          "passage": "Điện phân dung dịch NaCl có màng bán thẩm ngăn giữa anode với cathode (các điện cực đều là các điện cực trơ). Màng bán thẩm chỉ cho ion Na⁺ đi qua. Sơ đồ bình điện phân như hình sau:",
           "statements": [
             {
-              "question": "Tại cực dương xảy ra bán phản ứng khử ion (aq) thành khí Cl2.",
+              "question": "Tại cực dương xảy ra bán phản ứng khử ion (aq) thành khí Cl₂.",
               "correct": false
             },
             {
-              "question": "Tại cực âm xảy ra bán phản ứng oxi hoá H2O thành khí H2 và .",
+              "question": "Tại cực âm xảy ra bán phản ứng oxi hoá H₂O thành khí H₂ và .",
               "correct": false
             },
             {
-              "question": "Phản ứng chung trong bình điện phân là 2NaCl + 2H2O→ 2NaOH + H2 + Cl2.",
+              "question": "Phản ứng chung trong bình điện phân là 2NaCl + 2H₂O→ 2NaOH + H₂ + Cl₂.",
               "correct": true
             },
             {
-              "question": "Lượng (số mol) Na+ trong dung dịch không đổi trong quá trình điện phân.",
+              "question": "Lượng (số mol) Na⁺ trong dung dịch không đổi trong quá trình điện phân.",
               "correct": true
             }
           ],
@@ -1735,7 +1735,7 @@
               "correct": false
             },
             {
-              "question": "Các phản ứng trên xảy ra theo phương trình hoá học: 2M + O2 → 2MO.",
+              "question": "Các phản ứng trên xảy ra theo phương trình hoá học: 2M + O₂ → 2MO.",
               "correct": true
             },
             {
@@ -1783,15 +1783,15 @@
         {
           "question": "Trong dung dịch, ở điều kiện chuẩn, ion kim loại nào sau đây có tính oxi hoá mạnh nhất?",
           "options": [
-            "Cu2+.",
-            "Fe3+.",
-            "Zn2+.",
-            "Na+."
+            "Cu²⁺.",
+            "Fe³⁺.",
+            "Zn²⁺.",
+            "Na⁺."
           ],
           "correct": 1
         },
         {
-          "question": "Phương pháp nào đã được sử dụng trong quá trình khử Al2O3 thành Al?",
+          "question": "Phương pháp nào đã được sử dụng trong quá trình khử Al₂O₃ thành Al?",
           "options": [
             "Thuỷ luyện.",
             "Nhiệt luyện.",
@@ -1823,20 +1823,20 @@
         {
           "question": "Trong đời sống, người ta dùng sữa vôi để quét lên tường, tạo lớp rắn, mịn, màu trắng trên bức tường. Hiện tượng này được giải thích bằng phản ứng nào dưới đây?",
           "options": [
-            "Ca(OH)2 + CO2  CaCO3 + H2O.",
-            "CaO + CO2  CaCO3.",
-            "Ca(OH)2 + 2CO2  Ca(HCO3)2.",
-            "CaO + H2O  Ca(OH)2."
+            "Ca(OH)₂ + CO₂  CaCO₃ + H₂O.",
+            "CaO + CO₂  CaCO₃.",
+            "Ca(OH)₂ + 2CO₂  Ca(HCO₃)₂.",
+            "CaO + H₂O  Ca(OH)₂."
           ],
           "correct": 0
         },
         {
           "question": "Một loại nước cứng khi đun sôi thì chỉ giảm bớt một phần tính cứng. Trong loại nước này có hoà tan những hợp chất nào sau đây?",
           "options": [
-            "MgCl2 và CaCl2.",
-            "CaSO4 và MgCl2.",
-            "Ca(HCO3)2 và Mg(HCO3)2.",
-            "Ca(HCO3)2 và MgSO4."
+            "MgCl₂ và CaCl₂.",
+            "CaSO₄ và MgCl₂.",
+            "Ca(HCO₃)₂ và Mg(HCO₃)₂.",
+            "Ca(HCO₃)₂ và MgSO₄."
           ],
           "correct": 3
         },
@@ -1851,7 +1851,7 @@
           "correct": 1
         },
         {
-          "question": "Thực nghiệm cho biết phức chất [Co(en)3]2+ (trong đó en là kí hiệu của ethylenediamine, H2N-CH2-CH2-NH2) có 6 liên kết cho – nhận giữa nguyên tử trung tâm với các phối tử. Mỗi phối từ en đã liên kết với nguyên tử trung tâm qua",
+          "question": "Thực nghiệm cho biết phức chất [Co(en)₃]²⁺ (trong đó en là kí hiệu của ethylenediamine, H₂N-CH₂-CH₂-NH₂) có 6 liên kết cho – nhận giữa nguyên tử trung tâm với các phối tử. Mỗi phối từ en đã liên kết với nguyên tử trung tâm qua",
           "options": [
             "hai nguyên tử carbon.",
             "hai nguyên tử nitrogen.",
@@ -1863,10 +1863,10 @@
         {
           "question": "Bột nở baking powder có thành phần gồm baking soda kết hợp với tinh bột ngô và một số muối vô cơ khác, có tác dụng làm cho bánh nở xốp, bông mềm. Phản ứng hoá học nào sau đây của bột nở xảy ra làm cho bánh nở xốp?",
           "options": [
-            "2NaHCO3 + Ca(OH)2  Na2CO3 + CaCO3 + H2O.",
-            "Na2CO3 + Ca(OH)2  2NaHCO3 + CaCO3.",
-            "NaHCO3 + HCl NaCl + CO2 + H2O.",
-            "2NaHCO3  Na2CO3 + H2O + CO2."
+            "2NaHCO₃ + Ca(OH)₂  Na₂CO₃ + CaCO₃ + H₂O.",
+            "Na₂CO₃ + Ca(OH)₂  2NaHCO₃ + CaCO₃.",
+            "NaHCO₃ + HCl NaCl + CO₂ + H₂O.",
+            "2NaHCO₃  Na₂CO₃ + H₂O + CO₂."
           ],
           "correct": 3
         },
@@ -1885,7 +1885,7 @@
           "options": [
             "Tất cả các nguyên tố thuộc nhóm B đều là nguyên tố chuyển tiếp dãy thứ nhất.",
             "Các nguyên tố chuyển tiếp dãy thứ nhất thường có nhiệt độ nóng chảy cao hơn các kim loại nhóm IA và IIA.",
-            "Số oxi hóa của nguyên tử nguyên tố chromium trong hợp chất K2CrO4 và K2Cr2O7 bằng nhau.",
+            "Số oxi hóa của nguyên tử nguyên tố chromium trong hợp chất K₂CrO₄ và K₂Cr₂O₇ bằng nhau.",
             "Trạng thái oxi hóa thường gặp của Mn là +2, +4,+ 7."
           ],
           "correct": 0
@@ -1893,18 +1893,18 @@
       ],
       "questionGroups": [
         {
-          "passage": "Điện phân dung dịch CuSO4 với hai cực đều làm bằng than chì (hình bên).",
+          "passage": "Điện phân dung dịch CuSO₄ với hai cực đều làm bằng than chì (hình bên).",
           "statements": [
             {
-              "question": "Tại anode xảy ra phản ứng oxi hoá ion  (aq) và tạo thành khí O2",
+              "question": "Tại anode xảy ra phản ứng oxi hoá ion  (aq) và tạo thành khí O₂",
               "correct": false
             },
             {
-              "question": "Tại cathode xảy ra bán phản ứng khử ion Cu2+(aq) thành Cu.",
+              "question": "Tại cathode xảy ra bán phản ứng khử ion Cu₂+(aq) thành Cu.",
               "correct": true
             },
             {
-              "question": "Phản ứng chung trong bình điện phân là: 2Cu2+(aq) + 2H2O(l) → 2Cu(s) + O2(g) + 4H+(aq).",
+              "question": "Phản ứng chung trong bình điện phân là: 2Cu₂+(aq) + 2H₂O(l) → 2Cu(s) + O₂(g) + 4H⁺(aq).",
               "correct": true
             },
             {
@@ -1915,7 +1915,7 @@
           "image": "assets/questions/hoa12_dien_phan_cuso4_than_chi.png"
         },
         {
-          "passage": "Tiến hành thí nghiệm theo các bước sau: Bước 1. Cho vào cốc thuỷ tinh 30 mL. dung dịch H2SO4 0,5 М. Bước 2. Cho một lá nhôm và một lá đồng vào cốc sao cho chúng không tiếp xúc với nhau. Để yên khoảng 1 phút. Bước 3. Dùng dây dẫn điện nối lá nhôm và lá đồng với một vôn kế (như hình trên). Biết: 1,676 V;  0V; +0,340 V.",
+          "passage": "Tiến hành thí nghiệm theo các bước sau: Bước 1. Cho vào cốc thuỷ tinh 30 mL. dung dịch H₂SO₄ 0,5 М. Bước 2. Cho một lá nhôm và một lá đồng vào cốc sao cho chúng không tiếp xúc với nhau. Để yên khoảng 1 phút. Bước 3. Dùng dây dẫn điện nối lá nhôm và lá đồng với một vôn kế (như hình trên). Biết: 1,676 V;  0V; +0,340 V.",
           "statements": [
             {
               "question": "Ở bước 2, lá nhôm bị ăn mòn hoá học còn lá đồng không bị ăn mòn.",
@@ -1939,7 +1939,7 @@
           "passage": "Độ tan trong nước của các hydroxide nhóm IIA ở 20°C được cho ở bảng sau:",
           "statements": [
             {
-              "question": "Độ tan của các hydroxide nhóm IIA tăng dần từ Mg(OH)2 tới Ba(OH)2.",
+              "question": "Độ tan của các hydroxide nhóm IIA tăng dần từ Mg(OH)₂ tới Ba(OH)₂.",
               "correct": true
             },
             {
@@ -2017,8 +2017,8 @@
           "options": [
             "NaCl là chất rắn, dễ tan trong nước, là thành phần chính của muối ăn.",
             "Điện phân dung dịch NaCl không màng ngăn thu được dung dịch NaOH.",
-            "Dung dịch NaHCO3 0,1 M có pH < 7.",
-            "Không thể phân biệt được ion Na+ và K+ dựa vào màu ngọn lửa khi đốt các hợp chất của chúng."
+            "Dung dịch NaHCO₃ 0,1 M có pH < 7.",
+            "Không thể phân biệt được ion Na⁺ và K⁺ dựa vào màu ngọn lửa khi đốt các hợp chất của chúng."
           ],
           "correct": 0
         },
@@ -2043,32 +2043,32 @@
           "correct": 2
         },
         {
-          "question": "Mn2O7 là oxide acid. Khi cho Mn2O7 vào dung dịch NaOH dư, thu được H₂O và sản phẩm nào sau đây? Biết rằng phản ứng không có sự thay đổi số oxi hoá.",
+          "question": "Mn₂O₇ là oxide acid. Khi cho Mn₂O₇ vào dung dịch NaOH dư, thu được H₂O và sản phẩm nào sau đây? Biết rằng phản ứng không có sự thay đổi số oxi hoá.",
           "options": [
-            "HMnO4.",
-            "H2MnO4.",
-            "NaMnO4.",
-            "Na2MnO4."
+            "HMnO₄.",
+            "H₂MnO₄.",
+            "NaMnO₄.",
+            "Na₂MnO₄."
           ],
           "correct": 2
         },
         {
-          "question": "Có thể loại bỏ sắt trong nước ngầm bằng cách đưa nước ngầm lên các bể lắng, lọc và sục không khí vào. Khi đó Fe2+ trong nước ngầm bị chuyển thành Fe(OH)3 và lắng xuống. Chất oxi hoá Fe2+ thành Fe(OH)3 là",
+          "question": "Có thể loại bỏ sắt trong nước ngầm bằng cách đưa nước ngầm lên các bể lắng, lọc và sục không khí vào. Khi đó Fe²⁺ trong nước ngầm bị chuyển thành Fe(OH)₃ và lắng xuống. Chất oxi hoá Fe²⁺ thành Fe(OH)₃ là",
           "options": [
-            "khí O2.",
-            "khí N2.",
-            "nước và khí O2.",
-            "khí O2 và ."
+            "khí O₂.",
+            "khí N₂.",
+            "nước và khí O₂.",
+            "khí O₂ và ."
           ],
           "correct": 0
         },
         {
           "question": "Trong đời sống, người ta dùng baking soda (là một hợp chất của sodium) để giặt, khử mùi hôi và tẩy trắng vết ố trên quần áo, vệ sinh đồ gia dụng,. Baking soda có công thức là",
           "options": [
-            "NaHCO3.",
-            "Na2CO3.",
-            "Na2SO4.",
-            "NaHSO4."
+            "NaHCO₃.",
+            "Na₂CO₃.",
+            "Na₂SO₄.",
+            "NaHSO₄."
           ],
           "correct": 0
         },
@@ -2093,44 +2093,44 @@
           "correct": 3
         },
         {
-          "question": "Nhỏ dung dịch KCN đặc đến dư vào dung dịch AgNO3 thu được phức chất X. Trong phức chất X, nguyên tử trung tâm bạc tạo 2 liên kết sigma với nguyên tử carbon trong phối tử cyano (CN). Công thức của phức chất là",
+          "question": "Nhỏ dung dịch KCN đặc đến dư vào dung dịch AgNO₃ thu được phức chất X. Trong phức chất X, nguyên tử trung tâm bạc tạo 2 liên kết sigma với nguyên tử carbon trong phối tử cyano (CN). Công thức của phức chất là",
           "options": [
-            "[Ag(CN)2]+.",
-            "[Ag(CN)4]3-.",
-            "[Ag(CN)2]-.",
-            "[Ag(CN)2]."
+            "[Ag(CN)₂]+.",
+            "[Ag(CN)₄]³⁻.",
+            "[Ag(CN)₂]-.",
+            "[Ag(CN)₂]."
           ],
           "correct": 2
         }
       ],
       "questionGroups": [
         {
-          "passage": "Điện phân dung dịch CuSO4 với các điện cực đều làm bằng Cu (hình bên).",
+          "passage": "Điện phân dung dịch CuSO₄ với các điện cực đều làm bằng Cu (hình bên).",
           "statements": [
             {
-              "question": "Tại anode xảy ra quá trình oxi hoá Cu thành ion Cu2+ khuếch tán vào dung dịch.",
+              "question": "Tại anode xảy ra quá trình oxi hoá Cu thành ion Cu²⁺ khuếch tán vào dung dịch.",
               "correct": true
             },
             {
-              "question": "Tại cathode xảy ra quá trình khử ion Cu2+ thành Cu và bám vào điện cực.",
+              "question": "Tại cathode xảy ra quá trình khử ion Cu²⁺ thành Cu và bám vào điện cực.",
               "correct": true
             },
             {
-              "question": "Phản ứng chung trong bình điện phân là: 2Cu2+(aq) + 2H2O→ 2Cu(s) + O2 + 4H+",
+              "question": "Phản ứng chung trong bình điện phân là: 2Cu₂+(aq) + 2H₂O→ 2Cu(s) + O₂ + 4H⁺",
               "correct": false
             },
             {
-              "question": "Nồng độ ion Cu2+ trong dung dịch giảm dần trong quá trình điện phân.",
+              "question": "Nồng độ ion Cu²⁺ trong dung dịch giảm dần trong quá trình điện phân.",
               "correct": false
             }
           ],
           "image": "assets/questions/hoa12_dien_phan_cuso4_cu.png"
         },
         {
-          "passage": "Tiến hành thí nghiệm theo các bước sau đây: - Bước 1: Nhỏ vào ba ống nghiệm, mỗi ống nghiệm 3 ml dung dịch HCl loãng cùng nồng độ. - Bước 2: Cho lần lượt mẫu Al, mẫu Fe, mẫu Cu có số mol bằng nhau vào 3 ống nghiệm. - Bước 3: Nhỏ tiếp vài giọt dung dịch CuSO4 vào các ống nghiệm. Phát biểu nào sau đây đúng, phát biểu nào sau đây sai?",
+          "passage": "Tiến hành thí nghiệm theo các bước sau đây: - Bước 1: Nhỏ vào ba ống nghiệm, mỗi ống nghiệm 3 ml dung dịch HCl loãng cùng nồng độ. - Bước 2: Cho lần lượt mẫu Al, mẫu Fe, mẫu Cu có số mol bằng nhau vào 3 ống nghiệm. - Bước 3: Nhỏ tiếp vài giọt dung dịch CuSO₄ vào các ống nghiệm. Phát biểu nào sau đây đúng, phát biểu nào sau đây sai?",
           "statements": [
             {
-              "question": "Khí H2 thoát ở 2 ống nghiệm chứa Al và Fe;  Al và Fe bị ăn mòn hoá học.",
+              "question": "Khí H₂ thoát ở 2 ống nghiệm chứa Al và Fe;  Al và Fe bị ăn mòn hoá học.",
               "correct": true
             },
             {
@@ -2155,15 +2155,15 @@
               "correct": true
             },
             {
-              "question": "Nhỏ dung dịch Ba(NO3)2 bão hoà vào dung dịch MgSO4 bão hoà, xuất hiện kết tủa BaSO4.",
+              "question": "Nhỏ dung dịch Ba(NO₃)₂ bão hoà vào dung dịch MgSO₄ bão hoà, xuất hiện kết tủa BaSO₄.",
               "correct": true
             },
             {
-              "question": "Nhỏ dung dịch CaCO3 bão hoà vào dung dịch BaSO4 bão hoà, xuất hiện kết tủa CaSO4.",
+              "question": "Nhỏ dung dịch CaCO₃ bão hoà vào dung dịch BaSO₄ bão hoà, xuất hiện kết tủa CaSO₄.",
               "correct": false
             },
             {
-              "question": "Nhỏ từ từ dung dịch H2SO4 loãng vào dung dịch chứa Ba2+ và Ca2+ cùng nồng độ mol, kết tủa BaSO4 xuất hiện trước.",
+              "question": "Nhỏ từ từ dung dịch H₂SO₄ loãng vào dung dịch chứa Ba²⁺ và Ca²⁺ cùng nồng độ mol, kết tủa BaSO₄ xuất hiện trước.",
               "correct": true
             }
           ]
@@ -2176,7 +2176,7 @@
               "correct": true
             },
             {
-              "question": "Công thức của phức chất X là [Cr(O4C2)3]3-.",
+              "question": "Công thức của phức chất X là [Cr(O₄C₂)₃]³⁻.",
               "correct": true
             },
             {
