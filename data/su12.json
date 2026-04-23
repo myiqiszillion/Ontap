@@ -1,0 +1,2120 @@
+{
+  "lessons": [
+    {
+      "name": "Bài 14. KHÁI QUÁT VỀ CUỘC ĐỜI VÀ SỰ NGHIỆP CỦA HỒ CHÍ MINH",
+      "questions": [
+        {
+          "question": "Câu 1. Chủ tịch Hồ Chí Minh sinh ra trong một gia đình",
+          "options": [
+            "nông dân rất nghèo khổ.",
+            "có kinh nghiệm đi biển.",
+            "có truyền thống yêu nước.",
+            "công nhân kỹ thuật cao."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 2. Chủ tịch Hồ Chí Minh sinh ra trong một gia đình",
+          "options": [
+            "nông dân nghèo khổ.",
+            "ngư dân yêu nước.",
+            "nhà nho yêu nước.",
+            "công nhân kỹ thuật."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 3. Một trong những ngôi trường mà Chủ tịch Hồ Chí Minh từng theo học là",
+          "options": [
+            "Hoàng Phố.",
+            "Đồng Khánh.",
+            "Quốc Tử giám.",
+            "Quốc học Huế."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 4. Một trong những ngôi trường mà Chủ tịch Hồ Chí Minh từng theo học là",
+          "options": [
+            "Hoàng Phố.",
+            "Đồng Khánh.",
+            "Pháp – Việt Đông kinh.",
+            "Pháp – Việt Đông Ba."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 5. Một trong những ngôi trường Nguyễn Tất Thành đã từng dạy học là",
+          "options": [
+            "Nam Đàn.",
+            "Dục Thanh.",
+            "Đồng Khánh.",
+            "Quốc học Huế."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 6. Ngày 5/6/1911, Nguyễn Tất Thành ra đi tìm đường cứu nước từ nơi nào sau đây?",
+          "options": [
+            "Cảng Cam Ranh.",
+            "Cảng Đà Nẵng.",
+            "Cảng Nhà Rồng.",
+            "Cảng Hải Phòng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 7. Ngày 5/6/1911, Nguyễn Tất Thành rời bến cảng Nhà Rồng ra đi tìm đường cứu nước với tên gọi mới là",
+          "options": [
+            "Văn Ba.",
+            "Tống Sơ.",
+            "Thầu Chín.",
+            "Lý Thụy."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 8. Trong những năm 1917 - 1923, Nguyễn Ái Quốc đã hoạt động ở quốc gia nào sau đây?",
+          "options": [
+            "Thái Lan.",
+            "Trung Quốc.",
+            "Pháp.",
+            "Đức."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 9. Năm 1917, Nguyễn Tất Thành tham gia vào tổ chức nào sau đây?",
+          "options": [
+            "Đảng Cộng sản Pháp.",
+            "Đảng Xã hội Pháp.",
+            "Đảng Bảo thủ Anh.\t\tD Đảng Cộng hòa Mỹ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 10. Trong quá trình ra đi tìm đường cứu nước, từ năm 1912 đến năm 1930, Nguyễn Tất Thành không đặt chân đến quốc gia nào sau đây?",
+          "options": [
+            "Trung Quốc.",
+            "Liên Xô.",
+            "Nhật Bản.",
+            "Thái Lan."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 11. Con đường cứu nước giải phóng dân tộc Việt Nam được Nguyễn Ái Quốc tìm thấy vào tháng 7-1920 là",
+          "options": [
+            "cách mạng vô sản.",
+            "cách mạng bạo lực.",
+            "xã hội chủ nghĩa.",
+            "dân chủ tư sản."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 12. Năm 1923, Nguyễn Ái Quốc rời Pháp đi",
+          "options": [
+            "Thái Lan.",
+            "Liên Xô.",
+            "Trung Quốc.",
+            "Đông Đức."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 13. Cuối năm 1924, Nguyễn Ái Quốc rời Liên Xô đi",
+          "options": [
+            "Thái Lan.",
+            "Việt Nam.",
+            "Trung Quốc.",
+            "Đông Đức."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 14. Một trong những phẩm chất tốt đẹp của xứ Nghệ đã được Chủ tịch Hồ Chí Minh tiếp thu và thể hiện rõ nét trong cuộc đời hoạt động các mạng là",
+          "options": [
+            "trọng nghĩa khinh tài.",
+            "ý chí trong học tập.",
+            "giỏi nghề thủ công.",
+            "kinh nghiệm đi biển."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 115. Trước khi bị biến thành quốc gia thuộc địa nửa phong kiến, Việt Nam là quốc gia",
+          "options": [
+            "tự do.",
+            "độc lập.",
+            "dân chủ.",
+            "giàu có."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 16. Đầu năm 1930, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Việt Minh.",
+            "Soạn thảo Luận cương chính trị.",
+            "Trở về nước lãnh đạo cách mạng.",
+            "Hợp nhất các tổ chức cộng sản."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 17. Tháng 12-1920, Nguyễn Ái Quốc đã trở thành",
+          "options": [
+            "người cộng sản đầu tiên của Việt Nam.",
+            "lãnh tụ tối cao của cách mạng Việt Nam.",
+            "ủy viên Ban chấp hành Quốc tế cộng sản.",
+            "phái viên của Quốc tế cộng sản ở châu Phi."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 18. Tổ chức nào sau đây do Nguyễn Ái Quốc thành lập, được xem là tiền thân của Đảng Cộng sản Việt Nam",
+          "options": [
+            "Đông Dương Cộng sản liên đoàn.",
+            "Đông Dương Cộng sản đảng.",
+            "Hội Việt Nam Cách mạng thanh niên.",
+            "Hội Liên hiệp các dân tộc thuộc địa."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 19. Vì sao đầu năm 1930, Nguyễn Ái Quốc phải tiến hành triệu tập hội nghị để hợp nhất các tổ chức cộng sản?",
+          "options": [
+            "Cách mạng Việt Nam đứng trước nguy cơ chia rẽ.",
+            "Sự chỉ đạo trực tiếp của lãnh đạo Quốc tế cộng sản.",
+            "Yêu cầu thiết tha của nhân dân ba nước Đông Dương.",
+            "Các tổ chức cộng sản đã yêu cầu tiến hành hợp nhất."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 20. Một trong những nguyên nhân lý giải Nguyễn Tất Thành quyết định sang phương Tây để tìm đường cứu nước là",
+          "options": [
+            "tìm hiểu các nước phương Tây làm như thế nào.",
+            "con đường để đi sang phương Tây dễ dàng hơn.",
+            "phương Tây có nhiều trường Đại học danh tiếng.",
+            "mục đích chính là ra đi để lao động, kiếm sống."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 21. Trong thời cận đại, vì sao Nghệ An sớm có điều kiện tiếp thu những tư tưởng mới?",
+          "options": [
+            "Do truyền thống đấu tranh kiên cường.",
+            "Có khu công nghiệp Vinh - Bến Thủy.",
+            "Ảnh hưởng của Cách mạng tháng Mười.",
+            "Pháp đã cho mở nhiều trường học ở đây."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 22. Trong thời cận đại, vì sao Nghệ An sớm có điều kiện tiếp thu những tư tưởng mới?",
+          "options": [
+            "Do truyền thống đấu tranh kiên cường.",
+            "Sớm có trung tâm công nghiệp.",
+            "Ảnh hưởng của Cách mạng tháng Mười.",
+            "Pháp cho mở nhiều trường học ở đây."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 23. Đầu năm 1930, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Việt Minh.",
+            "Soạn thảo Luận cương chính trị.",
+            "Triệu tập hội nghị hợp nhất các tổ chức cộng sản.",
+            "Trở về nước lãnh đạo cách mạng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 24. Đầu năm 1930, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Việt Minh.",
+            "Soạn thảo Luận cương chính trị.",
+            "Soạn thảo Chính cương vắn tắt.",
+            "Trở về nước lãnh đạo cách mạng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 25. Đầu năm 1930, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Việt Minh.",
+            "Soạn thảo Luận cương chính trị.",
+            "Soạn thảo Sách lược vắn tắt.",
+            "Trở về nước lãnh đạo cách mạng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 26. Đầu năm 1930, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Việt Minh.",
+            "Soạn thảo Luận cương chính trị.",
+            "Soạn thảo Cương lĩnh chính trị.",
+            "Trở về nước lãnh đạo cách mạng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 27. Một trong những nguyên nhân dẫn đến thành công của hội nghị hợp nhất các tổ chức cộng sản (đầu năm 1930) là",
+          "options": [
+            "các tổ chức không mâu thuẫn về ý thức hệ.",
+            "chỉ đạo kịp thời của Quốc tế thứ hai.",
+            "nguyện vọng rất thiết tha của quần chúng.",
+            "những bài học kinh nghiệm thế giới."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 28. Năm 1941, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Liên Việt.",
+            "Soạn thảo Luận cương chính trị.",
+            "Hợp nhất các tổ chức cộng sản.",
+            "Trở về nước lãnh đạo cách mạng."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 29. Năm 1941, Nguyễn Ái Quốc đã có hoạt động nào sau đây?",
+          "options": [
+            "Thành lập Mặt trận Việt Minh.",
+            "Soạn thảo Luận cương chính trị.",
+            "Hợp nhất các tổ chức cộng sản.",
+            "Soạn thảo Cương lĩnh chính trị."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 30. Trong giai đoạn từ năm 1960-1969, Hồ Chí Minh đảm nhận cương vị nào sau đây?",
+          "options": [
+            "Tổng Bí thư.",
+            "Chủ tịch Đảng.",
+            "Thủ tướng.",
+            "Chủ tịch Quốc hội."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 31. Ngày 2-9-1969, Hồ Chủ tịch qua đời tại Hà Nội, đó là sự kiện",
+          "options": [
+            "tạo ra rất nhiều khó khăn cho cách mạng.",
+            "tổn thất to lớn của cách mạng Việt Nam.",
+            "đã gây chia rẽ, mất đoàn kết trong Đảng.",
+            "cơ hội để Mỹ đem quân đánh ra miền Bắc."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 34. Vì sao tại Đại hội lần thứ XVIII của Đảng Xã hội Pháp, Nguyễn Ái Quốc bỏ phiếu tán thành việc gia nhập Quốc tế thứ Ba?",
+          "options": [
+            "bênh vực cho quyền lợi các nước thuộc địa.",
+            "Quốc tế thứ Ba giúp nhân dân ta chống Pháp.",
+            "Đã đề ra đường lối cho Cách mạng Việt Nam.",
+            "Giúp đỡ vật chất cho Việt Nam giành độc lập."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 35. \"Lập ra đội chủ lực\" là mục đích của Chủ tịch Hồ Chí Minh khi chỉ thị thành lập tổ chức nào sau đây?",
+          "options": [
+            "Hội Liên hiệp các dân tộc bị áp bức ở Á Đông (1925).",
+            "Hội Việt Nam cách mạng thanh niên (1925).",
+            "Đội Việt Nam Tuyên truyền giải phóng quân (1944).",
+            "Mặt trận Dân tộc giải phóng miền Nam Việt Nam (1960)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 36. Biểu hiện nào sau đây cho thấy, Nguyễn Tất Thành sớm có tư tưởng yêu nước chống Pháp?",
+          "options": [
+            "Tham gia vào phong trào chống thuế ở Huế.",
+            "Tham gia phong trào Đông Du đi sang Nhật.",
+            "Tham gia phong trào Cần Vương ở Nghệ An.",
+            "Tập hợp các sỹ phu ở Nghệ An đánh Pháp."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 37. Một trong những nguyên nhân dẫn đến thành công của hội nghị hợp nhất các tổ chức cộng sản (đầu năm 1930) là",
+          "options": [
+            "tài năng, uy tín của Nguyễn Ái Quốc.",
+            "chỉ đạo kịp thời của Quốc tế thứ hai.",
+            "nguyện vọng thiết tha của quần chúng.",
+            "những bài học kinh nghiệm trên thế giới."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 38. Một trong những điểm khác biệt trong con đường cứu nước của Nguyễn Ái Quốc và Phan Bội Châu là gì?",
+          "options": [
+            "Hết lòng cho sự nghiệp cách mạng.",
+            "Coi trọng tầng lớp thanh niên, trí thức.",
+            "Nguyễn Ái Quốc đi sang phương Tây.",
+            "Hướng tới mục tiêu giải phóng dân tộc."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 39. Một trong những điểm khác biệt trong con đường cứu nước của Nguyễn Ái Quốc và Phan Châu Trinh là",
+          "options": [
+            "Mục tiêu giải phóng dân tộc Việt Nam.",
+            "Cống hiến hết mình cho cách mạng.",
+            "Khuynh hướng cách mạng cứu nước.",
+            "Ý chí mãnh liệt, muốn đất nước độc lập."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 40. Nội dung nào sau đây không đúng khi nói những đánh giá của nhân dân thế giới về Chủ tịch Hồ Chí Minh?",
+          "options": [
+            "Anh hùng giải phóng dân tộc.",
+            "Chiến sỹ cộng sản kiên cường.",
+            "Danh nhân văn hóa thế giới.",
+            "Nhà dân tộc chủ nghĩa hẹp hòi."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 41. Điểm chung của Chủ tịch Hồ Chí Minh khi so sánh với Jeanne d’Arc, Gandhi là",
+          "options": [
+            "cống hiến trọn đời mình cho dân tộc.",
+            "chủ tịch nước đầu tiên sau cách mạng.",
+            "đấu tranh ôn hòa để giải phóng dân tộc.",
+            "danh nhân văn hóa lớn của nhân loại."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 42. Nội dung nào sau đây là vai trò của Hồ Chí Minh từ năm 1945 đến năm 1969?",
+          "options": [
+            "Lãnh đạo nhân dân cả nước tiến lên xây dựng chủ nghĩa xã hội.",
+            "Lãnh đạo nhân dân tiến hành kháng chiến chống Pháp và chống Mỹ.",
+            "Lãnh đạo nhân dân miền Bắc chống chiến tranh phá hoại lần thứ hai của Mỹ.",
+            "Lãnh đạo nhân dân miền Nam chống chiến tranh phá hoại lần thứ hai của Mỹ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 43. Nội dung nào sau đây là ý nghĩa của sự kiện Nguyễn Ái Quốc tìm ra con đường cứu nước năm 1920?",
+          "options": [
+            "Đưa cách mạng Việt Nam đi theo khuynh hướng tư sản.",
+            "Mở ra con đường cứu nước theo khuynh hướng dân chủ vô sản.",
+            "Bước đầu giải quyết được cuộc khủng hoảng về đường lối giải phóng dân tộc.",
+            "Chuẩn bị đủ các điều kiện cho việc thành lập Đảng Cộng sản Đông Dương."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 44. Điểm giống nhau về vai trò của Chủ tịch Hồ Chí Minh đối với cách mạng Việt Nam giai đoạn 1945-1954 và 1960-1969 là gì?",
+          "options": [
+            "Là lãnh tụ tối cao của cách mạng Việt Nam.",
+            "Người đứng đầu Chính phủ nước Việt Nam.",
+            "Trực tiếp ra mặt trận chỉ huy bộ đội chiến đấu.",
+            "Lãnh đạo, điều hành Quốc hội nước Việt Nam."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 45. Vai trò to lớn của Hồ Chí Minh trong Cách mạng tháng Tám năm 1945 là",
+          "options": [
+            "thực hiện hoạt động đối ngoại, tranh thủ sự ủng hộ của quốc tế.",
+            "kêu gọi nhân dân thực hiện khởi nghĩa từng phần ở địa phương.",
+            "lãnh đạo toàn dân đứng lên giành chính quyền.",
+            "lãnh đạo các đô thị khởi nghĩa từng phần."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 46. Một trong những nội dung Nguyễn Ái Quốc đã rút ra được trong quá trình hoạt động cách mạng ở nước ngoài (1911-1941) là",
+          "options": [
+            "phải xây dựng được nền kinh tế thị trường.",
+            "chèn ép của các nước tư bản đối với Nga.",
+            "phải giải phóng dân tộc ở chính quốc trước.",
+            "bản chất tàn bạo của chủ nghĩa thực dân."
+          ],
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Văn Miếu Vinh được xây dựng năm 1803 tại Yên Dũng, tổng Yên Trường (nay là phường Hồng Sơn, thành phố Vinh, tỉnh Nghệ An). Đây là nơi thờ Khổng Tử, đồng thời là nơi vinh danh các nhà khoa bảng của tỉnh. Từ khi có Văn Miếu Vinh, phong trào hiếu học ở Nghệ An ngày càng phát triển, trường thi Nghệ An trở thành một trong 7 trường thi Hương trên cả nước.",
+          "statements": [
+            {
+              "question": "Văn Miếu Vinh là nơi Nguyễn Tất Thành học bậc tiểu học và đỗ thi Hương.",
+              "correct": false
+            },
+            {
+              "question": "Quê hương đã hun đúc nên ý chí và quyết tâm hiếu học của Nguyễn Tất Thành.",
+              "correct": true
+            },
+            {
+              "question": "Trong cuộc đời và sự nghiệp, Nguyễn Tất Thành chủ yếu tự học, tự rèn luyện.",
+              "correct": true
+            },
+            {
+              "question": "Từ nhỏ, Nguyễn Tất Thành đã quyết tâm học tập nhằm đỗ đạt và ra làm quan.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Bản yêu sách” đã trở thành tuyên ngôn chính trị báo hiệu sự mở đầu của giai đoạn mới trong việc phát triển phong trào giải phóng dân tộc của Việt Nam,... Người Pháp coi cuộc đấu tranh đó là một “quả bom” làm chấn động dư luận nước Pháp. Còn người Việt Nam cho đó là tiếng sấm mùa xuân”. (E.Cô-bê-lép, Đồng chí Hồ Chí Minh, NXB Tiến bộ, Mát-x cơ-va, 1985, Tr.53)",
+          "statements": [
+            {
+              "question": "Tư liệu đề cập đến sự kiện Nguyễn Ái Quốc gửi Bản yêu sách 8 điểm đến Véc-xai.",
+              "correct": true
+            },
+            {
+              "question": "Sự kiện trên đã đưa Nguyễn Ái Quốc từ người yêu nước trở thành người cộng sản.",
+              "correct": false
+            },
+            {
+              "question": "Sau sự kiện, Nguyễn Ái Quốc khẳng định phải dựa vào sức mình để tự giải phóng.",
+              "correct": true
+            },
+            {
+              "question": "Sau năm 1920, Nguyễn Ái Quốc trở thành lãnh đạo chủ chốt của Quốc tế Cộng sản.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Tôi [Hồ Chí Minh] tuyệt nhiên không ham muốn công danh phú quý chút nào. Bây giờ phải gánh chức Chủ tịch là vì đồng bào ủy thác thì tôi phải gắng sức làm, cũng như một người lính vâng mệnh lệnh của quốc dân ra trước mặt trận. Bao giờ đồng bào cho tôi lui, thì tôi rất vui lòng lui. Tôi chỉ có một sự ham muốn, ham muốn tột bậc, là làm sao cho nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ai cũng có cơm ăn áo mặc, ai cũng được học hành”. (Chủ tịch Hồ Chí Minh trả lời báo chí, bài đăng trên báo Cứu quốc, số 147, ngày 21-1-1946, trích trong: Hồ Chí Minh, Toàn tập, Tập 4, NXB Chính trị quốc gia – Sự thật, Hà Nội, 2011, tr.187)",
+          "statements": [
+            {
+              "question": "Tư liệu trên đề cập đến giai đoạn lịch sử trước Cách mạng tháng Tám năm 1945.",
+              "correct": false
+            },
+            {
+              "question": "Sau cách mạng tháng Tám, Hồ Chí Minh được bầu làm Chủ tịch nước đầu tiên.",
+              "correct": true
+            },
+            {
+              "question": "Tư liệu trên trích từ văn kiện Tuyên ngôn Độc lập của Việt Nam ngày 02/9/1945.",
+              "correct": false
+            },
+            {
+              "question": "Tư liệu trên khẳng định mục tiêu cống hiến suốt đời của Chủ tịch Hồ Chí Minh.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “.. Luận cương của Lê-nin làm cho tôi rất cảm động, phấn khởi, sáng tỏ, tin tưởng biết bao! Tôi vui mừng đến phát khóc lên. Ngồi một mình trong buồng mà tôi nói to lên như đang nói trước quần chúng đông đảo: “Hỡi đồng bào bị đọa đày đau khổ! Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng chúng ta!\". Từ đó tôi hoàn toàn tin theo Lê-nin, tin theo Quốc tế thứ ba\". (Hồ Chí Minh, Con đường dẫn tôi đến chủ nghĩa Mác – Lê-nin, trích trong: Hồ Chí Minh, Toàn tập, Tập 12, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.562)",
+          "statements": [
+            {
+              "question": "Đoạn tư liệu thể hiện cảm xúc của Nguyễn Ái Quốc khi đọc bản Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa của Lê-nin.",
+              "correct": true
+            },
+            {
+              "question": "Trong đoạn tư liệu, Nguyễn Ái Quốc khẳng định: muốn cứu nước và giải phóng dân tộc, không có con đường nào khác ngoài con đường cách mạng vô sản.",
+              "correct": false
+            },
+            {
+              "question": "Đoạn tư liệu cho thấy Nguyễn Ái Quốc bỏ phiếu tán thành việc gia nhập Quốc tế Cộng sản.",
+              "correct": false
+            },
+            {
+              "question": "Đoạn tư liệu thể hiện niềm tin của Nguyễn Ái Quốc đã tìm thấy con đường cứu nước.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Năm 1901, được tin Nguyễn Sinh Sắc đỗ Phó bảng, người dân làng Sen (xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An) đã dựng một ngôi nhà 5 gian để đón ông cùng gia đình. Dưới mái nhà tranh này, cậu học trò Nguyễn Sinh Cung (tức Nguyễn Tất Thành) được lắng nghe nhiều buổi đàm đạo văn chương, luận bàn thế sự của cha mình với các nhà nho và sĩ phu yêu nước trong vùng. Những năm tháng thiếu thời ở làng Sen và quê hương xứ Nghệ đã có ảnh hưởng không nhỏ đến cuộc đời, sự nghiệp của Chủ tịch Hồ Chí Minh sau này.",
+          "statements": [
+            {
+              "question": "Tư liệu đề cập đến thời niên thiếu của Chủ tịch Hồ Chí Minh tại quê nhà Nghệ An.",
+              "correct": true
+            },
+            {
+              "question": "Ngay từ nhỏ, Nguyễn Tất Thành đã được bàn luận thế sự cùng các sĩ phu yêu nước.",
+              "correct": false
+            },
+            {
+              "question": "Năm tháng thiếu thời đã có ảnh hưởng quyết định đến sự nghiệp của Hồ Chí Minh.",
+              "correct": false
+            },
+            {
+              "question": "Nguyễn Tất Thành ngay từ niên thiếu đã sớm được hun đúc ý chí giải phóng dân tộc.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Chủ tịch Hồ Chí Minh (thuở nhỏ tên là Nguyễn Sinh Cung) sinh ngày 19- 5 - 1890, quê cha ở làng Sen, quê mẹ ở làng Hoàng Trù, xã Kim Liên (Nam Đàn, Nghệ An). Trước lúc 5 tuổi, Nguyễn Sinh Cung sinh sống tại quê nhà. Năm 1895, Nguyễn Sinh Cung theo cha mẹ vào sinh sống ở Huế. Sau khi mẹ qua đời (1901), Nguyễn Sinh Cung theo cha về quê, lấy tên mới là Nguyễn Tất Thành, được theo học những thầy giáo giỏi ở địa phương. Năm 1906, ông Nguyễn Sinh Sắc vào Huế làm quan, Nguyễn Tất Thành theo cha vào học tại Trường Tiểu học Pháp - Việt Đông Ba và Trường Quốc học Huế. Năm 1909, Nguyễn Tất Thành theo cha đến Bình Định và tiếp tục hoàn thành bậc Tiểu học tại Trường Pháp - Việt Quy Nhơn. Sớm có tinh thần yêu nước, năm 1908, Nguyễn Tất Thành tham gia phong trào chống thuế ở Huế.",
+          "statements": [
+            {
+              "question": "Tư liệu đề cập đến thời niên thiếu của người thanh niên yêu nước Nguyễn Tất Thành.",
+              "correct": true
+            },
+            {
+              "question": "Từ nhỏ, Nguyễn Tất Thành đã được đào tạo chu đáo, bài bản bởi giáo dục phương Tây.",
+              "correct": false
+            },
+            {
+              "question": "Năm 1908, Nguyễn Tất Thành tham gia, trở thành lãnh đạo của phong trào chống thuế.",
+              "correct": false
+            },
+            {
+              "question": "Thời niên thiếu có ảnh hưởng to lớn đến cuộc đời và sự nghiệp của Nguyễn Tất Thành.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: - Từ năm 1911 đến năm 1917, Nguyễn Tất Thành đến nhiều nước châu Á, châu Âu, châu Phi, tích cực tìm hiểu cuộc sống của nhân dân lao động. - Năm 1917, Nguyễn Tất Thành trở lại hoạt động ở Pháp. Năm 1919, Nguyễn Tất Thành thay mặt những người Việt Nam yêu nước tại Pháp gửi tới Hội nghị Véc-xai bản Yêu sách của nhân dân An Nam, trong đó ký tên là Nguyễn Ái Quốc. - Tháng 7/1920, Nguyễn Ái Quốc đọc Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa của V. Lênin. - Tháng 12/1920, Nguyễn Ái Quốc bỏ phiếu tán thành Quốc tế Cộng sản và tham gia thành lập Đảng Cộng sản Pháp, trở thành người cộng sản đầu tiên của Việt Nam.",
+          "statements": [
+            {
+              "question": "Năm 1911, Nguyễn Tất Thành rời đất nước để tìm con đường giải phóng cho dân tộc.",
+              "correct": true
+            },
+            {
+              "question": "Gửi yêu sách tới Hội nghị Véc-xai đã đánh dấu Nguyễn Ái Quốc thành người cộng sản.",
+              "correct": false
+            },
+            {
+              "question": "Nguyễn Ái Quốc đã sáng lập Quốc tế cộng sản và là người cộng sản Việt Nam đầu tiên.",
+              "correct": false
+            },
+            {
+              "question": "Việc đọc Luận cương của Lê nin đánh dấu Nguyễn Ái Quốc tìm ra con đường cứu nước.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: - Từ năm 1921 đến tháng 6 - 1923, Nguyễn Ái Quốc hoạt động ở Pháp: tham gia thành lập Hội Liên hiệp các dân tộc thuộc địa, làm chủ nhiệm kiêm chủ bút báo Người cùng khổ. - Tháng 6 - 1923, Nguyễn Ái Quốc rời Pháp đến Liên Xô, tích cực hoạt động trong phong trào cộng sản quốc tế,... - Từ tháng 11 - 1924 đến giữa năm 1927, Nguyễn Ái Quốc hoạt động ở Quảng Châu (Trung Quốc), thành lập Hội Việt Nam Cách mạng Thanh niên, ra báo Thanh niên (1925),... Bỉ, Đức, Xiêm,.. - Từ giữa năm 1927 đến cuối năm 1929, Nguyễn Ái Quốc hoạt động cách mạng Pháp, - Đầu năm 1930, Nguyễn Ái Quốc triệu lập và chủ trì Hội nghị hợp nhất các tổ chức cộng sản, thành lập Đảng Cộng sản Việt Nam ở Hương Cảng (Trung Quốc), soạn thảo Cương lĩnh chính trị đầu tiên của Đảng.",
+          "statements": [
+            {
+              "question": "Tư liệu đề cập đến giai đoạn hoạt động tích cực của Nguyễn Ái Quốc ở nước ngoài.",
+              "correct": true
+            },
+            {
+              "question": "Đây là giai đoạn Nguyễn Ái Quốc hoàn thiện lý luận cách mạng giải phóng dân tộc.",
+              "correct": true
+            },
+            {
+              "question": "Đầu năm 1930, Nguyễn Ái Quốc trở về nước và thành lập Đảng Cộng sản Việt Nam.",
+              "correct": false
+            },
+            {
+              "question": "Giai đoạn này, Nguyễn Ái Quốc đã gắn cách mạng Việt Nam với cách mạng thế giới.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: - Nguyễn Ái Quốc triệu tập và chủ trì Hội nghị lần thứ 8 Ban Chấp hành Trung ương Đảng Cộng sản Đông Dương (5 - 1941). Nguyễn Ái Quốc tham gia thành lập Việt Nam Độc lập đồng minh (Việt Minh), tổ chức chỉ đạo xây dựng lực lượng vũ trang, căn cứ địa cách mạng. - Tháng 8/1942, Nguyễn Ái Quốc lấy tên là Hồ Chí Minh, sang Trung Quốc tìm sự liên minh quốc tế. Tháng 9/1944, Hồ Chí Minh trở về nước tiếp tục lãnh đạo cách mạng. - Tháng 8/1945, Hồ Chí Minh cùng Trung ương Đảng, Mặt trận Việt Minh lãnh đạo nhân dân Tổng khởi nghĩa giành chính quyền thắng lợi, và được cử làm Chủ tịch của Chính phủ lâm thời nước Việt Nam Dân chủ Cộng hòa. - Ngày 2- 9- 1945, tại Quảng trường Ba Đình (Hà Nội), Hồ Chí Minh đọc Tuyên ngôn Độc lập, tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa.",
+          "statements": [
+            {
+              "question": "Tư liệu nói về hoạt động của Nguyễn Ái Quốc ở Việt Nam trước Cách mạng tháng Tám.",
+              "correct": true
+            },
+            {
+              "question": "Trước cách mạng tháng Tám, Nguyễn Ái Quốc là lãnh đạo chủ chốt của phe Đồng minh.",
+              "correct": false
+            },
+            {
+              "question": "Hồ Chí Minh là Chủ tịch đầu tiên của Chính phủ lâm thời Việt Nam Dân chủ Cộng hòa.",
+              "correct": true
+            },
+            {
+              "question": "Sự kiện ngày 2-9-1945 đã kết thúc hành trình tìm đường cứu nước của Nguyễn Ái Quốc.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Tháng 1 - 1946, Hồ Chí Minh được Quốc hội khóa I bầu làm Chủ tịch nước Việt Nam Dân chủ Cộng hòa. Tại Đại hội lần thứ II của Đảng Cộng sản Đông Dương (2/1951), Hồ Chí Minh được bầu làm Chủ tịch Ban Chấp hành Trung ương Đảng. - Chủ tịch Hồ Chí Minh cùng với Trung ương Đảng lãnh đạo cuộc kháng chiến chống Mỹ, cứu nước. - Tháng 10/1956, Chủ tịch Hồ Chí Minh là Chủ tịch Đảng, kiêm Tổng Bí thư Đảng Lao động Việt Nam. Tại Đại hội lần thứ III của Đảng (9/1960), Chủ tịch Hồ Chí Minh tiếp tục được bầu làm Chủ tịch Đảng Lao động Việt Nam. - Ngày 2/9/1969, Chủ tịch Hồ Chí Minh qua đời tại Hà Nội.",
+          "statements": [
+            {
+              "question": "Tư liệu nói về sự nghiệp của Chủ tịch Hồ Chí Minh trong kháng chiến chống Pháp - Mỹ.",
+              "correct": true
+            },
+            {
+              "question": "Hồ Chí Minh giữ chức Chủ tịch nước và Chủ tịch Đảng cho đến khi qua đời năm 1969.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh giữ chức Tổng Bí thư của Đảng kể từ Đại hội đại biểu lần thứ II.",
+              "correct": false
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã lãnh đạo kháng chiến chống Mỹ đến ngày thắng lợi cuối cùng.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Từ những năm 20 của thế kỷ này, một con người đã trở thành hiện thân của quá trình gặp gỡ lịch sử giữa một dân tộc, một thời đại, làm nên một sự nghiệp cách mạng lớn lao. Con người ấy là Hồ Chí Minh. Dân tộc ấy là dân tộc Việt Nam. Thời đại ấy là thời đại quá độ trên toàn thế giới từ chủ nghĩa tư bản lên chủ nghĩa xã hội. Sự nghiệp ấy là sự nghiệp cách mạng dân tộc dân chủ nhân dân tiến lên cách mạng xã hội chủ nghĩa ở Việt Nam”. (Phạm Văn Đồng, Hồ Chí Minh – Một con người, một dân tộc, một thời đại, một sự nghiệp, NXB Chính trị quốc gia Sự thật, Hà Nội, 2023)",
+          "statements": [
+            {
+              "question": "Từ những năm 20 của thế kỷ XX, Hồ Chí Minh đã làm nên sự nghiệp lớn.",
+              "correct": false
+            },
+            {
+              "question": "Tư liệu đề cập đến sự nghiệp hoạt động cách mạng của Nguyễn Ái Quốc.",
+              "correct": true
+            },
+            {
+              "question": "Nguyễn Ái Quốc đã mở đầu thời kỳ quá độ từ tư bản lên chủ nghĩa xã hội.",
+              "correct": false
+            },
+            {
+              "question": "Sự nghiệp cách mạng của Hồ Chí Minh là giải phóng dân tộc Việt Nam.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 15. HỒ CHÍ MINH - ANH HÙNG GIẢI PHÓNG DÂN TỘC",
+      "questions": [
+        {
+          "question": "Câu 1. Năm 1911, Nguyễn Tất Thành ra đi tìm đường cứu nước từ",
+          "options": [
+            "bến cảng Nhà Rồng.",
+            "biên giới phía Bắc.",
+            "địa đầu Móng Cái.",
+            "bến tàu Thuận An."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 2. Năm 1920, Luận cương về các vấn đề dân tộc và vấn đề thuộc địa của V.Lê-nin được đăng trên tờ báo nào sau đây?",
+          "options": [
+            "Chuông Rè.",
+            "Nhân Đạo.",
+            "Nhành Lúa.",
+            "Tiếng Dân."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 3. Trong những năm 1919 – 1923, khi hoạt động ở Pháp tờ báo nào sau đây do Nguyễn Ái Quốc là chủ nhiệm kiêm chủ bút?",
+          "options": [
+            "An Nam trẻ.",
+            "Đại đoàn kết.",
+            "Người Nhà quê.",
+            "Người cùng khổ."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 4. Năm 1941, địa điểm nào sau đây được Nguyễn Ái Quốc lựa chọn làm căn cứ địa đầu tiên của cách mạng Việt Nam?",
+          "options": [
+            "Cao Bằng.",
+            "Lạng Sơn.",
+            "Phú Thọ.",
+            "Yên Bái."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 5. Hiệp định đầu tiên mà Chủ tịch Hồ Chí Minh thay mặt chính phủ Việt Nam ký với đại diện của chính phủ Pháp năm 1946 là",
+          "options": [
+            "Tạm ước.",
+            "Sơ-bộ.",
+            "Ра-гі.",
+            "Giơ-ne-vơ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 6. Tháng 12-1946, đứng trước âm mưu xâm lược Việt Nam của Pháp, Chủ tịch Hồ Chí Minh đã có hành động nào sau đây để đối phó?",
+          "options": [
+            "Ra Lời kêu gọi Toàn quốc kháng chiến.",
+            "Công bố chỉ thị Toàn dân kháng chiến.",
+            "Đề ra đường lối kháng chiến đơn độc.",
+            "Đến thăm Pháp để tranh thủ hòa hoãn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 7. Nguyễn Ái Quốc trở về Việt Nam trực tiếp lãnh đạo cách mạng trong thời gian nào sau đây?",
+          "options": [
+            "Đầu năm 1941.",
+            "Cuối năm 1941.",
+            "Đầu năm 1942.",
+            "Cuối năm 1942."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 8. Hình thái giành chính quyền được xác định trong Hội nghị lần thứ 8 Ban Chấp hành Trung ương Đảng Cộng sản Đông Dương (5-1941) là",
+          "options": [
+            "bãi công, biểu tình đòi tăng lương giảm giờ làm.",
+            "khởi nghĩa vũ trang kết hợp mít tinh biểu tình.",
+            "tiến hành Tổng khởi nghĩa ở các địa phương.",
+            "đi từ khởi nghĩa từng phần tiến lên Tổng khởi nghĩa."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 9. Tại Hội nghị lần thứ 8 Ban Chấp hành Trung ương Đảng Cộng sản Đông Dương (5-1941), Nguyễn Ái Quốc đưa ra sáng kiến thành lập",
+          "options": [
+            "Hội Liên Việt.",
+            "Mặt trận Việt Minh.",
+            "Mặt trận Liên Việt.",
+            "Liên minh Việt – Miên – Lào."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 10. Tháng 6-1945, Hồ Chí Minh đã ra chỉ thị thành lập",
+          "options": [
+            "Khu giải phóng Việt Bắc.",
+            "Khu giải phóng Việt Nam.",
+            "Khu giải phóng Tân Trào.",
+            "Khu giải phóng Tuyên Quang."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 11. Ngày 22-12-1944, lực lượng vũ trang nào sau đây được Hồ Chí Minh ra chỉ thị thành lập?",
+          "options": [
+            "Mặt trận Dân tộc Giải phóng miền Nam Việt Nam.",
+            "Đội Việt Nam Tuyên truyền Giải phóng quân.",
+            "Quân đội nhân dân Việt Nam.",
+            "Đội Việt Nam Giải phóng quân."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 12. Ngày 19-12-1946, Chủ tịch Hồ Chí Minh đã đưa ra",
+          "options": [
+            "Lời kêu gọi toàn quốc chống Mỹ.",
+            "Lời kêu gọi toàn quốc kháng chiến.",
+            "Quân lệnh số 1.",
+            "Tuyên ngôn Độc lập."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 13. Phương hướng cơ bản của cách mạng miền Nam được xác định trong Hội nghị lần thứ 15 Ban Chấp hành Trung ương Đảng Lao động Việt Nam (1-1959) do Hồ Chí Minh chủ trì là",
+          "options": [
+            "xây dựng chủ nghĩa xã hội và đấu tranh thống nhất nước nhà.",
+            "khởi nghĩa giành chính quyền về tay nhân dân.",
+            "đưa ra dự báo và thể hiện quyết tâm thắng Pháp.",
+            "toàn dân, toàn diện, trường kì, tự lực cánh sinh."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 15. Tại kì họp Quốc hội khóa I năm 1946, Hồ Chí Minh được bầu",
+          "options": [
+            "làm Chủ tịch Ban Chấp Hành Trung ương Đảng.",
+            "Chủ tịch Quốc hội nước Việt Nam Dân chủ Cộng hòa.",
+            "Chủ tịch nước Việt Nam Dân chủ Cộng hòa.",
+            "Tổng bí thư Đảng Cộng sản Đông Dương."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 16: Tháng 6 năm 1925, Nguyễn Ái Quốc đã thành lập",
+          "options": [
+            "Hội Việt Nam Cách mạng Thanh niên.",
+            "Chi bộ Cộng sản đầu tiên.",
+            "Việt Nam Quốc dân Đảng.",
+            "Tân Việt Cách mạng đảng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 18: Tài liệu đầu tiên được Nguyễn Ái Quốc xuất bản bằng tiếng Việt để truyền bá lý luận cách mạng giải phóng dân tộc là",
+          "options": [
+            "Kịch “Con rồng tre”.",
+            "Báo “Người cùng khổ”.",
+            "Tác phẩm “Đường Kách mệnh”.",
+            "“Bản án chế độ thực dân Pháp”."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 20: Năm 1921, Nguyễn Ái Quốc đã",
+          "options": [
+            "thành lập Hội Liên hiệp thuộc địa ở Pari.",
+            "thành lập Hội Việt Nam Cách mạng Thanh niên.",
+            "gửi Bản yêu sách của nhân dân An Nam đến Hội nghị Vécxai.",
+            "tham dự Đại hội đại biểu lần thứ XVIII của Đảng Xã hội Pháp."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 25: Năm 1908 Nguyễn Ái Quốc tham gia phong trào nào sau đây?",
+          "options": [
+            "phong trào đấu tranh đòi thả Phan Bội Châu.",
+            "phong trào chống thuế ở Huế.",
+            "phong trào Đông Du.",
+            "Phong trào Duy Tân."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 26. Dưới sự chủ trì của Nguyễn Ái Quốc, Hội nghị hợp nhất ba tổ chức cộng sản thành lập một chính Đảng duy nhất lấy tên là gì?",
+          "options": [
+            "Đảng Cộng sản Đông Dương.",
+            "Đảng Cộng sản Việt Nam.",
+            "Đảng Lao động Việt Nam.",
+            "Đông Dương cộng sản Đảng."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 27. Cương lĩnh chính trị đầu tiên của Đảng gồm những văn kiện cơ bản nào do Nguyễn Ái Quốc soạn thảo?",
+          "options": [
+            "Chính cương vắn tắt, Sách lược vắn tắt.",
+            "Chính cương vắn tắt, Chương trình vắn tắt.",
+            "Sách lược vắn tắt, lời kêu gọi vắn tắt.",
+            "Điều lệ vắn tắt, lời kêu gọi vắn tắt."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 28. Một trong những nội dung được Nguyễn Ái Quốc xác định là con đường cứu nước, giải phóng cho dân tộc Việt Nam là",
+          "options": [
+            "giải phóng dân tộc gắn liền với giải phóng giai cấp.",
+            "thực hiện cả hai nhiệm vụ kháng chiến và kiến quốc.",
+            "muốn giành độc lập phải xây dựng quân đội mạnh.",
+            "tiến hành làm cách mạng vô sản ở chính quốc trước."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 29. Một trong những nội dung được Nguyễn Ái Quốc xác định là con đường cứu nước, giải phóng cho dân tộc Việt Nam là",
+          "options": [
+            "độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
+            "thực hiện cả hai nhiệm vụ kháng chiến và kiến quốc.",
+            "muốn giành lại độc lập phải có quân đội mạnh.",
+            "tiến hành làm cách mạng vô sản ở chính quốc trước."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 30. Một trong những nội dung được Nguyễn Ái Quốc xác định là con đường cứu nước, giải phóng cho dân tộc Việt Nam là",
+          "options": [
+            "độc lập dân tộc là mục tiêu trực tiếp.",
+            "thực hiện cả hai nhiệm vụ kháng chiến và kiến quốc.",
+            "muốn giành độc lập phải có quân đội.",
+            "tiến hành làm cách mạng vô sản ở chính quốc trước."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 31. Một trong những nội dung được Nguyễn Ái Quốc xác định là con đường cứu nước, giải phóng cho dân tộc Việt Nam là",
+          "options": [
+            "chủ nghĩa xã hội là phương hướng tiến lên.",
+            "thực hiện cả hai nhiệm vụ kháng chiến và kiến quốc.",
+            "muốn giành độc lập phải có quân đội mạnh.",
+            "tiến hành làm cách mạng vô sản ở chính quốc trước."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 32. Vì sao tại Đại hội lần XVIII của Đảng Xã hội Pháp, Nguyễn Ái Quốc bỏ phiếu tán thành việc gia nhập Quốc tế thứ Ba?",
+          "options": [
+            "Bênh vực cho quyền lợi các nước thuộc địa.",
+            "Quốc tế thứ Ba giúp nhân dân ta chống Pháp.",
+            "Đã đề ra đường lối cho Cách mạng Việt Nam.",
+            "Giúp đỡ vật chất cho Việt Nam giành độc lập."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 33. Trong những năm 20 của thế kỷ XX, lý luận mà Nguyễn Ái Quốc truyền bá về Việt Nam là lý luận",
+          "options": [
+            "giải phóng dân tộc.",
+            "chủ nghĩa Mác – Lê nin.",
+            "chủ nghĩa tam dân.",
+            "chủ nghĩa nhân văn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 34. Một trong những tổ chức cách mạng được Nguyễn Ái Quốc thành lập trong thời gian hoạt động ở nước ngoài là",
+          "options": [
+            "Hội Việt Nam cách mạng thanh niên (1925).",
+            "Mặt trận Việt Nam Độc lập đồng minh (1941).",
+            "Đông Dương Cộng sản liên đoàn (1929).",
+            "Việt Nam Tuyên truyền giải phóng quân (1944)."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 35. Một trong những nguyên nhân thúc đẩy phong trào yêu nước, phong trào công nhân ở Việt Nam phát triển trong những năm từ 1925 trở về sau là",
+          "options": [
+            "quá trình đàn áp dã man của Pháp.",
+            "cuộc khai thác thuộc địa lần hai.",
+            "hoạt động của Nguyễn Ái Quốc.",
+            "cuộc khủng hoảng kinh tế thế giới."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 36. Một trong những nguyên nhân thúc đẩy phong trào yêu nước, phong trào công nhân ở Việt Nam phát triển trong những năm từ 1925 trở về sau là mà Hội Việt Nam Cách mạng Thanh niên thực hiện là",
+          "options": [
+            "thành lập Đảng Cộng sản.",
+            "giác ngộ thanh thiếu niên.",
+            "chủ trương “vô sản hoá”.",
+            "chủ trương “Quốc tế hoá”."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 37. Đầu năm 1930, Nguyễn Ái Quốc đã triệu tập hội nghị hợp nhất các tổ chức Cộng sản với cương vị gì?",
+          "options": [
+            "Thành viên đoàn cố vấn quân sự.",
+            "Lãnh đạo của Quốc tế Cộng sản.",
+            "Lãnh đạo tối cao của cách mạng.",
+            "Phái viên của Quốc tế Cộng sản."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 38 Lý luận cách mạng giải phóng dân tộc của Nguyễn Ái Quốc được trình bày đầu tiên trong tài liệu nào dưới đây?",
+          "options": [
+            "Chỉ thị Toàn dân kháng chiến.",
+            "Tác phẩm Đường Kách mệnh.",
+            "Bản án chế độ thực dân Pháp.",
+            "Cương lĩnh chính trị đầu tiên."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 39. Tư tưởng cốt lõi của Cương lĩnh chính trị đầu năm 1930 là",
+          "options": [
+            "độc lập, tự do.",
+            "độc lập dân tộc.",
+            "dân sinh, dân chủ.",
+            "cơm áo, hòa bình."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 40. Nội dung nào dưới đây không phải là đóng góp của Nguyễn Ái Quốc trong Hội nghị hợp nhất các tổ chức cộng sản Việt Nam đầu năm 1930?",
+          "options": [
+            "Người triệu tập và chủ trì Hội nghị.",
+            "Là Tổng Bí thư đầu tiên của Đảng.",
+            "Thống nhất các tổ chức cộng sản.",
+            "Soạn thảo ra Cương lĩnh chính trị."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 41. Nội dung nào sau đây không phải là cống hiến to lớn của Nguyễn Ái Quốc đối với cách mạng Việt Nam từ năm 1911 - 1930?",
+          "options": [
+            "Truyền bá chủ nghĩa Mác.",
+            "Tìm ra con đường cứu nước.",
+            "Thành lập Đảng Cộng sản.",
+            "Đề ra đường lối kháng chiến."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 42. Vai trò của Nguyễn Ái Quốc trong hội nghị Ban Chấp hành Trung ương Đảng lần thứ 8 (5-1941) là",
+          "options": [
+            "thành viên tham dự.",
+            "triệu tập và chủ trì.",
+            "quan sát viên dự bị.",
+            "chi phối hội nghị."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 43. Một trong những nội dung được Nguyễn Ái Quốc đưa ra tại Hội nghị Ban Chấp hành Trung ương Đảng lần thứ 8 (5-1941) là",
+          "options": [
+            "thành lập chính phủ lâm thời.",
+            "thành lập Mặt trận Việt Minh.",
+            "thành lập đội du kích Ba Tơ.",
+            "lập khu giải phóng Việt Bắc."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 44. Một trong những văn kiện lịch sử được Hồ Chủ tịch viết và trực tiếp trình bày là văn kiện nào dưới đây?",
+          "options": [
+            "Luận cương chính trị (10/1930).",
+            "Bản Quân lệnh số 1 (8/1945).",
+            "Tuyên ngôn độc lập (9/1945).",
+            "Hiệp định Giơ-ne-vơ (7/1954)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 45.                                                                 “Năm xưa Bác cùng đoàn con đi chiến dịch.",
+          "options": [
+            "hiến dịch nào sau đây được nhắc tới trong lời bài hát “Bác đang cùng chúng cháu hành quân” của nhạc sỹ Huy Thục?.",
+            "Việt Bắc (1947).",
+            "Biên giới (1950).",
+            "Hòa Bình (1952).",
+            "Thượng Lào (1953)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 46. Vạch trần chính sách đàn áp bóc lột dã man của chủ nghĩa đế quốc nói chung và đế quốc Pháp nói riêng, thức tỉnh các dân tộc bị áp bức nổi dậy. Đó là nội dung của tờ báo nào của Nguyễn Ái Quốc?",
+          "options": [
+            "Đời sống công nhân.",
+            "Nhân đạo.",
+            "Người cùng khổ.",
+            "Tạp chí Thư tín quốc tế."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 47. Câu thơ sau đây của nhà thơ Chế Lan Viên phù hợp với sự kiện nào trong cuộc đời hoạt động của Nguyễn Ái Quốc: “Phút khóc đầu tiên là phút Bác Hồ cười\"",
+          "options": [
+            "Khi sáng lập ra Hội liên hiệp thuộc địa ở Pa-ri.",
+            "Khi đọc luận cương của Lê-nin về vấn đề dân tộc và thuộc địa.",
+            "Khi viết bài và làm chủ nhiệm tờ báo “Người cùng khổ”.",
+            "Khi dự Đại hội Quốc tế Cộng sản lần thứ V (1924)."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 48. Nội dung nào sau đây thể hiện việc Nguyễn Ái Quốc chuẩn bị về tư tưởng, chính trị cho sự ra đời của Đảng Cộng sản Việt Nam?",
+          "options": [
+            "Mở các lớp huấn luyện, đào tạo cán bộ cách mạng tại Trung Quốc.",
+            "Chủ nhiệm kiêm chủ bút báo Nhân đạo, Đời sống công nhân.",
+            "Xây dựng lí luận về đi lên chủ nghĩa xã hội ở miền Bắc.",
+            "Đào tạo cán bộ thực hiện các cuộc khởi nghĩa vũ trang."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 49. Nội dung nào sau đây đúng về vai trò của Nguyễn Ái Quốc trong việc thành lập Đảng Cộng sản Việt Nam (1930)?",
+          "options": [
+            "Triệu tập hội nghị thống nhất các tổ chức cộng sản tại Cao Bằng.",
+            "Triệu tập và chủ trì Hội nghị thành lập Đảng Cộng sản Việt Nam.",
+            "Soạn thảo Đường Kách mệnh - cương lĩnh của Đảng Cộng sản Việt Nam.",
+            "Triệu tập và chủ trì Đại hội thành lập Đảng tại Ma Cao (Trung Quốc)."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 50. Nội dung nào sau đây không phải là ý nghĩa của việc thành lập Đảng Cộng sản Việt Nam?",
+          "options": [
+            "Chấm dứt tình trạng khủng hoảng về đường lối cứu nước ở Việt Nam sau nhiều thập kỉ.",
+            "Cách mạng Việt Nam trở thành một bộ phận của phong trào cách mạng thế giới.",
+            "Đánh dấu bước ngoặt trong lịch sử cách mạng Việt Nam.",
+            "Việt Nam được sự giúp đỡ của các nước xã hội chủ nghĩa."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 51. Đặc điểm của quá trình hoạt động của Nguyễn Ái Quốc từ năm 1919 đến năm 1925 là gì?",
+          "options": [
+            "Quá trình chuẩn bị về tư tưởng, chính trị và tổ chức cho sự thành lập Đảng Cộng sản Việt Nam (3-2- 1930).",
+            "Quá trình truyền bá chủ nghĩa Mác - Lênin vào Việt Nam.",
+            "Quá trình thành lập ba tổ chức Cộng sản ở Việt Nam.",
+            "Quá trình chuẩn bị thực hiện chủ trương “ vô sản hóa” để truyền bá chủ nghĩa Mác - Lê-nin vào Việt Nam."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 52: Đảng Cộng sản Việt Nam ra đời là bước ngoặt vĩ đại của lịch sử cách mạng Việt Nam",
+          "options": [
+            "đã chấm dứt thời kỳ khủng hoảng về vai trò lãnh đạo và đường lối trong phong trào cách mạng Việt Nam.",
+            "đã tập hợp được tất cả  lực lượng cách mạng của cả nước dưới sự lãnh đạo của Đảng tạo ra sức mạnh tổng hợp.",
+            "chứng tỏ sức mạnh của liên minh công- nông là 2 lực lượng nòng cốt của cách mạng để giành thắng lợi.",
+            "là kết quả tất yếu của quá trình đấu tranh của giai cấp công nhân trong thời đại mới."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 53. Con đường tìm chân lý cứu nước của Nguyễn Ái Quốc có gì mới và khác so với con đường truyền thống của lớp người đi trước?",
+          "options": [
+            "Gửi yêu sách đòi Pháp thừa nhận các quyền dân tộc của Việt Nam.",
+            "Tiếp thu nền văn minh phương Tây để giúp đất nước đến phú cường.",
+            "Hướng về phương Tây, khảo sát thực tiễn, tìm hiểu cách mạng thế giới.",
+            "Nhờ các nước phương Tây đào tạo lực lượng để chuẩn bị chống Pháp."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 54. Yếu tố nào quyết định đến sự lựa chọn con đường cứu nước theo xu hướng vô sản của Nguyễn Ái Quốc cho dân tộc Việt Nam?",
+          "options": [
+            "Thắng lợi của cách mạng tháng Mười Nga năm 1917.",
+            "Con đường cứu nước theo khuynh hướng tư sản thất bại.",
+            "Những tác động của thời đại và cuộc cách mạng vô sản.",
+            "Do trí tuệ và nhãn quan chính trị của Nguyễn Ái Quốc."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 55. Nhận định nào sau đây là đúng về sự kiện Nguyễn Ái Quốc bỏ phiếu tán thành gia nhập Quốc tế Cộng sản và tham gia sáng lập Đảng Cộng sản Pháp (1920)?",
+          "options": [
+            "Đánh dấu Nguyễn Ái Quốc tìm được con đường cứu nước.",
+            "Tạo ra bước ngoặt vĩ đại trong lịch sử cách mạng Việt Nam.",
+            "Thiết lập được quan hệ giữa cách mạng Việt Nam với thế giới.",
+            "Quyết định mang tính bước ngoặt về sự chuyển biến tư tưởng."
+          ],
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Luận cương của Lê-nin làm cho tôi rất cảm động, phấn khởi, sáng tỏ, tin tưởng biết bao! Tôi vui mừng đến phát khóc lên. Ngồi một mình trong buồng tôi nói to lên như đang nói trước quần chúng đông đảo: “Hỡi đồng bào bị đọa đày đau khổ! Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng chúng ta!”. Từ đó tôi hoàn toàn tin theo Lênin, tin theo Quốc tế thứ ba” (Hồ Chí Minh, “Con đường dẫn tôi đến chủ nghĩa Mác – Lê-nin”, trích trong: Hồ Chí Minh, Toàn tập, Tập 12, NXB Chính trị quốc gia – Sự thật, Hà Nội, 2011, tr.562)",
+          "statements": [
+            {
+              "question": "Tư liệu trên đề cập đến sự kiện Nguyễn Ái Quốc đọc Luận cương của Lênin.",
+              "correct": true
+            },
+            {
+              "question": "Sự kiện trên, Nguyễn Ái Quốc đã trở thành người cộng sản Việt Nam đầu tiên.",
+              "correct": false
+            },
+            {
+              "question": "Nguyễn Ái Quốc đã hoàn chỉnh lý luận cách mạng giải phóng dân tộc tại Pháp.",
+              "correct": false
+            },
+            {
+              "question": "Sự kiện trên diễn ra khi Nguyễn Ái Quốc đang học tập và hoạt động tại Pháp.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Khi Nguyễn Ái Quốc tham dự Đại hội toàn quốc lần thứ XVIII của Đảng Xã hội Pháp họp ở thành phố Tua, bỏ phiếu tán thành gia nhập Quốc tế Cộng sản do Lê-nin sáng lập, Rô-dơ - thư ký của Đại hội - hỏi lý do vì sao ủng hộ Quốc tế Cộng sản, Nguyễn Ái Quốc trả lời dứt khoát: “Tự do cho đồng bào tôi, độc lập cho Tổ quốc tôi, đấy là tất cả những điều tôi muốn.",
+          "statements": [
+            {
+              "question": "Tư liệu nói về sự kiện Nguyễn Ái Quốc tham gia Đại hội của Đảng Cộng sản Pháp.",
+              "correct": false
+            },
+            {
+              "question": "Với sự kiện trên, Nguyễn Ái Quốc từ người yêu nước đã trở thành người cộng sản.",
+              "correct": true
+            },
+            {
+              "question": "Mục tiêu cao nhất của Nguyễn Ái Quốc khi tham gia Quốc tế Ba là giải phóng dân tộc.",
+              "correct": false
+            },
+            {
+              "question": "Sự kiện trên đã chấm dứt hành trình tìm đường cứu nước của lãnh tụ Nguyễn Ái Quốc.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Tên ĐỘI VIỆT NAM TUYÊN TRUYỀN GIẢI PHÓNG QUÂN nghĩa là chính trị trọng hơn quân sự. Nó là đội tuyên truyền. …Vì cuộc kháng chiến của ta là cuộc kháng chiến của toàn dân, cần phải động viên toàn dân, vũ trang toàn dân, cho nên trong khi tập trung lực lượng để lập một đội quân đầu tiên, cần phải duy trì lực lượng vũ trang trong các địa phương…”. (Chỉ thị thành lập Đội Việt Nam Tuyên truyền Giải phóng quân, trích trong: Hồ Chí Minh, Toàn tập, Tập 3, NXB Chính trị quốc gia – Sự thật, Hà Nội, 2011, Tr.539)",
+          "statements": [
+            {
+              "question": "Tư liệu nói về sự thành lập đội vũ trang đầu tiên của cách mạng Việt Nam.",
+              "correct": false
+            },
+            {
+              "question": "Đây được coi là tổ chức tiền thân của Quân đội Nhân dân Việt Nam sau này.",
+              "correct": true
+            },
+            {
+              "question": "Tổ chức này đóng vai trò quyết định đến thắng lợi của Cách mạng tháng Tám.",
+              "correct": false
+            },
+            {
+              "question": "Chỉ huy của đội Việt Nam Tuyên truyền giải phóng quân là Võ Nguyên Giáp.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Tôn chỉ mục đích thành lập của Mặt trận Việt Minh là: “liên hiệp hết thảy các giới đồng bào yêu nước, không phân biệt giàu nghèo, già trẻ, trai gái, không phân biệt tôn giáo, xu hướng chính trị, đặng cùng nhau mưu cuộc dân tộc giải phóng và sinh tồn”. Từ khi Mặt trận Việt Minh ra đời, “toàn bộ phong trào chống phát xít Pháp - Nhật của nhân dân ta mang tên là phong trào Việt Minh, cái tên tiêu biểu cho lòng yêu nước, ý chí quật cường của dân tộc ta.” (Theo Ban nghiên cứu Lịch sử Đảng Trung ương, Cách mạng tháng Tám (1945), NXB Sự thật, 1971, tr. 27)",
+          "statements": [
+            {
+              "question": "Mặt trận Việt Minh có mục tiêu cao nhất là giải phóng các dân tộc ở Đông Dương.",
+              "correct": false
+            },
+            {
+              "question": "Mặt trận Việt Minh xây dựng lực lượng chính trị to lớn cho Cách mạng tháng Tám.",
+              "correct": true
+            },
+            {
+              "question": "Mặt trận Việt Minh ra đời còn nhằm phối hợp với các lực lượng Đồng minh thế giới.",
+              "correct": false
+            },
+            {
+              "question": "Mặt trận Việt Minh chính là tổ chức lãnh đạo mọi thắng lợi của cách mạng Việt Nam.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Cương lĩnh chính trị đầu tiên của Đảng Cộng sản Việt Nam do Nguyễn Ái Quốc soạn thảo đã xác định những vấn đề cơ bản về chiến lược và sách lược của cách mạng Việt Nam: làm cuộc “tư sản dân quyền cách mạng - giải phóng dân tộc và thổ địa cách mạng - cách mạng ruộng đất để đi tới xã hội cộng sản, lãnh đạo cách mạng là giai cấp công nhân; lực lượng cách mạng là toàn dân tộc (nòng cốt công - nông). Tư tưởng cốt lõi của Cương lĩnh là “Độc lập, tự do”.",
+          "statements": [
+            {
+              "question": "Cương lĩnh chính trị được thông qua tại Hội nghị hợp nhất các tổ chức cộng sản.",
+              "correct": true
+            },
+            {
+              "question": "Cương lĩnh đã xác định cách mạng Việt Nam sẽ trải qua ba giai đoạn chiến lược.",
+              "correct": false
+            },
+            {
+              "question": "Theo Cương lĩnh, lãnh đạo cách mạng sẽ là đội tiên phong của giai cấp công nhân.",
+              "correct": true
+            },
+            {
+              "question": "Độc lập, tự do, đi lên chủ nghĩa xã hội là tư tưởng cốt lõi của Cương lĩnh chính trị.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Trong công tác chuẩn bị cho Cách mạng tháng Tám năm 1945, Mặt trận Việt Minh ra đời và hoạt động có ý nghĩa to lớn: hiệu triệu nhân dân, thức tỉnh tinh thần dân tộc; tập hợp và đoàn kết các lượng trong xã hội vào thực hiện nhiệm vụ cứu nước, giải phóng dân tộc; đẩy mạnh công tác chuẩn bị trực tiếp về lực lượng chính trị, lực lượng vũ trang và căn cứ địa cách mạng. Mặt trận Việt Minh là tổ chức tập hợp lực lượng chính trị hùng hậu, đóng vai trò nòng cốt, có ý nghĩa quyết định đối với thắng lợi của Cách mạng tháng Tám năm 1945.",
+          "statements": [
+            {
+              "question": "Mặt trận Việt Minh được thành lập tại Hội nghị BCH Trung ương Đảng lần 8.",
+              "correct": true
+            },
+            {
+              "question": "Mặt trận Việt Minh là tổ chức lãnh đạo cao nhất của cách mạng Việt Nam.",
+              "correct": false
+            },
+            {
+              "question": "Mặt trận Việt Minh đã xây dựng lực lượng quyết định thắng lợi cách mạng tháng Tám.",
+              "correct": true
+            },
+            {
+              "question": "Sự thành lập Việt Minh còn nhằm phối hợp với các lực lượng Đồng minh.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Trải qua gần 10 năm nghiên cứu, học tập, tháng 7/1920, Nguyễn Ái Quốc đọc Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa của Lê-nin đăng trên báo Nhân đạo. Luận cương đã giúp Nguyễn Ái Quốc khẳng định con đường giành độc lập và tự do cho dân tộc Việt Nam là đi theo con đường cách mạng vô sản, gắn giải phóng dân tộc với giải phóng giai cấp, độc lập dân tộc với chủ nghĩa xã hội. Tại Đại hội lần thứ XVIII của Đảng Xã hội Pháp (12/1920), Nguyễn Ái Quốc đã bỏ phiếu tán thành việc gia nhập Quốc tế Cộng sản, trở thành người cộng sản Việt Nam đầu tiên và một trong những người sáng lập Đảng Cộng sản Pháp.",
+          "statements": [
+            {
+              "question": "Con đường đi tìm chân lý cứu nước của Nguyễn Ái Quốc là khảo sát, lựa chọn.",
+              "correct": true
+            },
+            {
+              "question": "Việc gia nhập Quốc tế Cộng sản của Nguyễn Ái Quốc là một lựa chọn ngẫu nhiên.",
+              "correct": false
+            },
+            {
+              "question": "Nguyễn Ái Quốc đã lựa chọn con đường giải phóng dân tộc là cách mạng vô sản.",
+              "correct": true
+            },
+            {
+              "question": "Với sự kiện 12-1920, Nguyễn Ái Quốc đã hoàn chỉnh lý luận giải phóng dân tộc.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Trung ương đã quyết định cần tích cực chuẩn bị cho cuộc họp Hội nghị toàn quốc của Đảng và Quốc dân đại hội đại biểu. Bác giục chuẩn bị cho kịp họp hai hội nghị quan trọng này từ tháng 7... Giữa lúc công việc bộn bề như thế, Bác bỗng bị mệt... Lúc nào tỉnh, Bác chỉ nói chuyện tình hình: “Lúc này thời cơ thuận lợi đã tới, dù hy sinh tới đâu, dù phải đốt cháy cả dãy Trường Sơn cũng phải kiên quyết giành cho được độc lập”.",
+          "statements": [
+            {
+              "question": "Tư liệu đề cập đến giai đoạn chuẩn bị khẩn trương cho Tổng khởi nghĩa tháng Tám.",
+              "correct": true
+            },
+            {
+              "question": "Hội nghị toàn quốc của Đảng đã thông qua quyết định phát động cao trào kháng Nhật.",
+              "correct": false
+            },
+            {
+              "question": "Tổng khởi nghĩa diễn ra trong thời cơ hết sức thuận lợi cả khách quan và chủ quan.",
+              "correct": true
+            },
+            {
+              "question": "“Thời cơ thuận lợi” ở đây chỉ sự kiện kẻ thù chính của nhân dân Việt Nam ngã gục.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Chủ tịch Hồ Chí Minh đại diện cho tiếng nói của nhân dân Việt Nam vạch trần tội ác chiến tranh của đế quốc Mỹ. Trong bối cảnh mâu thuẫn giữa Liên Xô và Trung Quốc, Chủ tịch Hồ Chí Minh luôn nỗ lực dùng giải pháp ngoại giao, tranh thủ sự giúp đỡ của nước bạn, đóng góp vào việc khôi phục và tăng cường sự đoàn kết giữa các nước xã hội chủ nghĩa, đồng thời giữ vững đường lối độc lập, tự chủ của cách mạng Việt Nam.",
+          "statements": [
+            {
+              "question": "Tư liệu đề cập vai trò của Hồ Chủ tịch trên mặt trận đấu tranh ngoại giao chống Mỹ.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã xóa bỏ hoàn toàn mâu thuẫn giữa Liên Xô và Trung Quốc.",
+              "correct": false
+            },
+            {
+              "question": "Nét nổi bật về quan điểm ngoại giao của Hồ Chí Minh là đường lối độc lập, tự chủ.",
+              "correct": true
+            },
+            {
+              "question": "Chính sách ngoại giao có đóng góp quyết định đến thắng lợi kháng chiến chống Mỹ.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Khi tôn vinh Hồ Chí Minh là Anh hùng giải phóng dân tộc, Tổ chức Giáo dục, Khoa học và Văn hóa Liên hợp quốc (UNESCO) ghi nhận Người là “biểu tượng xuất sắc về sự tự khẳng định dân tộc, đã cống hiến trọn đời mình cho sự nghiệp giải phóng dân tộc của nhân dân Việt Nam, góp phần vào cuộc đấu tranh chung của các dân tộc vì hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội”.",
+          "statements": [
+            {
+              "question": "Nhân kỷ niệm 100 năm ngày sinh của Hồ Chí Minh, UNESCO đã tôn vinh Người.",
+              "correct": true
+            },
+            {
+              "question": "Người được tôn vinh là Anh hùng giải phóng dân tộc, danh nhân văn hóa thế giới.",
+              "correct": true
+            },
+            {
+              "question": "Hồ Chí Minh có đóng góp cho tổ chức Giáo dục, Khoa học, Văn hóa Liên hợp quốc.",
+              "correct": false
+            },
+            {
+              "question": "Hồ Chí Minh là danh nhân văn hóa duy nhất của Việt Nam được UNESCO vinh danh.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Ngày 28 - 01 - 1941, Nguyễn Ái Quốc cùng đồng chí Hoàng Văn Thụ và các đồng chí đi đón Người đã vượt qua mốc 108 (nay là cột mốc 675) biên giới Việt Nam - Trung Quốc, về đến Pác Bó, xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng. Những ngày đầu về nước, Người ở tại nhà ông Lý Quốc Súng (Máy Lỳ), dân tộc Nùng, ở thôn Pác Bó - một cơ sở cách mạng. Ngày 08/02/1941, Người chuyển đến hang Cốc Bó ở thôn Pác Bó, xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng để sống và làm việc.",
+          "statements": [
+            {
+              "question": "Tư liệu trên đề cập đến sự kiện Nguyễn Ái Quốc ra đi tìm con đường cứu nước.",
+              "correct": false
+            },
+            {
+              "question": "Sự kiện trên đã đánh dấu hành trình trở về nước sau 30 năm của Nguyễn Ái Quốc.",
+              "correct": true
+            },
+            {
+              "question": "Sau sự kiện trên, Nguyễn Ái Quốc đã triệu tập Hội nghị Ban Chấp hành Trung ương lần VIII.",
+              "correct": true
+            },
+            {
+              "question": "Sau sự kiện trên, cách mạng Việt Nam được đặt dưới sự lãnh đạo trực tiếp của Đảng.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 16. DẤU ẤN HỒ CHÍ MINH TRONG LÒNG NHÂN DÂN THẾ GIỚI VÀ VIỆT NAM",
+      "questions": [
+        {
+          "question": "Câu 1. Một trong những quốc gia ở châu Á đã dựng tượng đài Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Ấn Độ.",
+            "An-giê-ri.",
+            "Mô-dăm-bích.",
+            "Ăng-gô-la."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 2. Một trong những quốc gia ở châu Âu đã dựng tượng đài Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Ấn Độ.",
+            "Trung Quốc.",
+            "Nga.",
+            "Nhật Bản."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 3. Một trong những quốc gia ở châu Mỹ đã dựng tượng đài Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Nhật Bản.",
+            "Cu-ba.",
+            "Trung Quốc.",
+            "Ấn Độ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 4. Một trong những quốc gia ở châu Mỹ đã dựng tượng đài Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Nhật Bản.",
+            "Mê-hi-cô.",
+            "Trung Quốc.",
+            "Ấn Độ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 5. Một trong những quốc gia ở châu Phi đã dựng tượng đài Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Nhật Bản.",
+            "Mô-dăm-bích.",
+            "Trung Quốc.",
+            "Ấn Độ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 6. Một trong những quốc gia ở châu Phi đã dựng tượng đài Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Nhật Bản.",
+            "Ăng-gô-la.",
+            "Trung Quốc.",
+            "Ấn Độ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 7. Một trong những quốc gia có nhiều di tích gắn với các hoạt động của Chủ tịch Hồ Chí Minh trong quá trình tìm đường cứu nước (1911-1941) là",
+          "options": [
+            "Mỹ.",
+            "Đức.",
+            "Anh.",
+            "Pháp."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 8. Năm 1987, tổ chức nào sau đây đã công nhận Chủ tịch Hồ Chí Minh là “Anh hùng giải phóng dân tộc, nhà văn hóa kiệt xuất”?",
+          "options": [
+            "UNESCO.",
+            "UNICEF.",
+            "ASEAN.",
+            "NAFTA."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 9. Để tưởng niệm công lao to lớn của Chủ tịch Hồ Chí Minh các nước trên thế giới đã xây dựng",
+          "options": [
+            "công trình tượng đài tưởng niệm.",
+            "dựng lăng ở các thành phố lớn.",
+            "hình tượng, nhân cách trong văn học.",
+            "treo tranh chân dung trong nhà dân."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 10. Nước nào có tượng đài Chủ tịch Hồ Chí Minh mang dòng chữ “ Tự do cho các dân tộc”?",
+          "options": [
+            "Mĩ.",
+            "Pháp.",
+            "Mê hi cô.",
+            "Ăng gô la."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 11. Để tưởng nhớ công lao to lớn của  lãnh tụ Chủ tịch Hồ Chí Minh, nhân dân Việt Nam đã",
+          "options": [
+            "Xây lăng tưởng niệm Chủ tịch Hồ Chí Minh.",
+            "Dựng bia trong Văn Miếu- Quốc tử giám.",
+            "Phát động phong trào dạy tốt học tốt.",
+            "Thực hành tiết kiệm, liêm chính, chí công, vô tư toàn dân."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 12. Năm 2016, Bộ Chính trị Ban chấp hành Trung ương Đảng Cộng sản Việt Nam ban hành chỉ thị 05 về",
+          "options": [
+            "Học tập và làm theo tấm gương đạo đức Hồ Chí Minh.",
+            "Học sinh cần hội đủ bốn đức tính, phẩm chất, cần cù, sáng tạo, tiết kiệm.",
+            "Các cán bộ nhà nước làm việc tận tụy vì dân vì nước phục vụ.",
+            "Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 13 Kỳ họp thứ nhất, Quốc hội khóa VI đã đổi tên thành phố Sài Gòn thành Thành phố nào sau đây?",
+          "options": [
+            "Hồ Chí Minh.",
+            "Gia Định.",
+            "Bến Thành.",
+            "Đồng Nai."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 14. Thành phố Sài Gòn – Gia Định được đổi tên thành Thành phố Hồ Chí Minh theo quyết định",
+          "options": [
+            "Kỳ họp thứ hai, Quốc hội khóa IV.",
+            "Ban Chấp hành trung ương Đảng.",
+            "Kỳ họp thứ nhất, Quốc hội khóa VI.",
+            "Di chúc của Chủ tịch Hồ Chí Minh."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 15. Một trong những bài hát của nhạc sĩ Trần Hoàn ca ngợi công lao vĩ đại của Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "lời Bác dặn trước lúc đi xa.",
+            "Đêm qua em mơ gặp Bác Hồ.",
+            "Viếng lăng Bác.",
+            "Như có Bác Hồ trong ngày vui đại thắng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 16. Năm 1976, thành phố nào sau đây được đổi tên là Thành phố Hồ Chí Minh",
+          "options": [
+            "Sài Gòn - Gia Định.",
+            "Hà - Nam - Ninh.",
+            "Quảng Đà.",
+            "Hậu Giang."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 17. Trong những năm 1954 - 1969, một trong những nguyện vọng tha thiết của nhân dân miền Nam sau khi “đánh cho Mỹ cút”, giang sơn thu về một mối là",
+          "options": [
+            "được miễn thuế nông nghiệp.",
+            "được đón Bác vào thăm.",
+            "được ra thăm lăng Bác.",
+            "có một cuộc sống giàu có."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 18. Một trong những hình thức vinh danh và tri ân của nhân dân Việt Nam đối với Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Mở rộng ảnh hưởng Việt Nam trên diễn đàn Liên Hợp Quốc.",
+            "Giao lưu, hợp tác phát triển văn hóa nhiều quốc gia.",
+            "Đa phương hóa, đa dạng hóa trong quan hệ ngoại giao.",
+            "Xây dựng hình tượng, nhân cách trong văn học, nghệ thuật."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 19. Một trong những di sản thiêng liêng mà Chủ tịch Hồ Chí Minh đã để lại cho nhân dân Việt Nam là gì?",
+          "options": [
+            "Bản Di chúc của Người.",
+            "Lời Kêu gọi kháng chiến.",
+            "Lăng Hồ Chí Minh.",
+            "Quảng trường Hồ Chí Minh."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 20. Vì sao trong quá trình hoạt động ở nước ngoài (1911-1941) Nguyễn Ái Quốc luôn nhận được sự trân trọng giúp đỡ của nhiều nhân vật uy tín, nổi tiếng trên thế giới?",
+          "options": [
+            "Nhân cách cao đẹp của Người.",
+            "Quốc tế cộng sản đã can thiệp.",
+            "Do đề nghị hỗ trợ của Liên Xô.",
+            "Do nguyện vọng của nhân dân."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 21. Vì sao chúng ta cần học tập đạo đức, phong cách Hồ Chí Minh?",
+          "options": [
+            "Được thăng quan tiến chức.",
+            "Tăng thu nhập và có địa vị.",
+            "Hoàn thiện bản thân mình.",
+            "Để được kết nạp vào Đảng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 22. Vì sao sau khi Chủ tịch Hồ Chí Minh qua đời (1969) Đảng và Nhà nước Việt Nam quyết định xây dựng lăng?",
+          "options": [
+            "Nguyện vọng của nhân dân cả nước.",
+            "Yêu cầu của giới trí thức trên thế giới.",
+            "Sự chỉ đạo của Trung Quốc, Liên Xô.",
+            "Thực hiện quyết định của UNESCO."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 23. Vì sao rất nhiều trí thức, nhà khoa học sau khi được gặp Hồ Chủ tịch đã sẵn sàng từ bỏ vinh hoa phú quý cả đời để dấn thân vào con đường cách mạng đầy gian khổ?",
+          "options": [
+            "Dùng chức vụ, địa vị khi cách mạng thắng lợi để lôi kéo.",
+            "Bác cho họ thấy được dân tộc, Tổ quốc là quan trọng nhất.",
+            "Cuộc sống ở nước ngoài luôn bị mật thám theo dõi, quản lý.",
+            "Điều kiện làm việc quá khó khăn sau Chiến tranh thế giới hai."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 24. Mục đích của Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khi phát động “Học tập và làm theo tấm gương đạo đức Hồ Chí Minh” là",
+          "options": [
+            "tăng khối đại đoàn kết với các lực lượng tiến bộ, dân chủ.",
+            "thể hiện được sự đoàn kết với các nước xã hội chủ nghĩa.",
+            "tăng cường, củng cố quyền lãnh đạo tuyệt đối của Đảng.",
+            "phát huy giá trị to lớn của tư tưởng, đạo đức Hồ Chí Minh."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 25. Tại sao trong quá trình hoạt động cách mạng Nguyễn Ái Quốc - Hồ Chí Minh liên tục thay đổi họ tên, bí danh?",
+          "options": [
+            "Tránh mật thám truy lùng.",
+            "Cần viết nhiều loại hồ sơ.",
+            "Quốc tế cộng sản yêu cầu.",
+            "Tăng sự thu hút nhân dân."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 26. Trong cuộc đời mình, Chủ tịch Hồ Chí Minh có “ham muốn tột bậc”, đó là",
+          "options": [
+            "Việt Nam sẽ trở thành cường quốc số 1.",
+            "vô sản các nước đoàn kết, đồng tâm lại.",
+            "độc lập, tự do cho nhân dân Việt Nam.",
+            "không còn cuộc chiến tranh nào diễn ra."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Câu 27. Dân tộc thiểu số nào ở nước ta đã lấy họ của Chủ tịch Hồ Chí Minh làm họ chung cho tất cả mọi người?",
+          "options": [
+            "Xơ Đăng.",
+            "Ba Na.",
+            "Khơ-me.",
+            "Vân Kiều."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 28. Sau khi Chủ tịch Hồ Chí Minh qua đời (9-1969), nhân dân miền Nam đã làm gì để tưởng nhớ Người?",
+          "options": [
+            "Xây dựng nhiều khu tưởng niệm.",
+            "Cử các đại biểu ra Bắc dâng hương.",
+            "Tấn công chống chính quyền Diệm.",
+            "Nhân dân đã đồng loạt đi đưa tang."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 29. Bác Hồ thường nói địa phương nào “...trong trái tim tôi”?",
+          "options": [
+            "nước Nga.",
+            "Trung Quốc.",
+            "miền Trung.",
+            "miền Nam."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 30. Một trong những tác phẩm văn học đặc sắc viết về Chủ tịch Hồ Chí Minh là tác phẩm nào dưới đây?",
+          "options": [
+            "Búp sen xanh.",
+            "Rừng xà nu.",
+            "Thuyền và Biển.",
+            "Nhật ký trong tù."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 31. Trong quá trình hoạt động cách mạng, Chủ tịch Hồ Chí Minh viết văn, làm thơ với mục đích là",
+          "options": [
+            "thành nhà văn, nhà thơ nổi tiếng.",
+            "phục vụ nhân dân và cách mạng.",
+            "để thu hút sự ủng hộ của quốc tế.",
+            "đánh vào tâm lý giặc ngoại xâm."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 33. Con đường nào sau đây được xem là biểu tượng cho khát vọng độc lập tự do và thống nhất Tổ quốc Việt Nam?",
+          "options": [
+            "Đường Hồ Chí Minh trên biển.",
+            "Đường sắt Cao tốc Bắc Nam.",
+            "Đường sắt trên cao ở Hà Nội.",
+            "Đường quốc phòng ven biển."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 34. Chủ tịch Hồ Chí Minh được UNESCO vinh danh là",
+          "options": [
+            "Nhà quân sự  kiệt xuất của thế giới và Việt Nam trong mọi thời đại.",
+            "Anh hùng giải phóng dân tộc và nhà văn hóa kiệt xuất của Việt Nam.",
+            "Một trong mười nhà quân sự trên thế giới được đúc tượng đồng.",
+            "Lãnh đạo cuộc kháng chiến chống giặc ngoại xâm."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 35. Bảo Tàng Hồ Chí Minh được xây dựng nhằm tôn vinh giá trị nào sau đây?",
+          "options": [
+            "Đáp ứng nguyện vọng ghi nhớ của toàn thể nhân dân Việt Nam.",
+            "Tỏ lòng biết ơn và đời đời ghi nhớ công lao to lớn đối với Bác.",
+            "Sự mong mỏi của nhân dân thế giới về sự đóng góp của Bác.",
+            "Tư tưởng chủ nghĩa Mác – Lê nin được Bác truyền về Việt Nam."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 36. Một trong những nguyên nhân thế giới đánh giá cao những cống hiến và giá trị tư tưởng, văn hóa của Chủ tịch Hồ Chí Minh là",
+          "options": [
+            "Đóng góp cho mục tiêu thời đại đó là hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội.",
+            "Hiệp định Giơ ne vơ công nhận quyền dân tộc cơ bản và tự quyết của ba nước Đông Dương.",
+            "Phát huy tinh thần đoàn kết của ba nước Đông Dương trong kháng chiến chống Pháp.",
+            "Sáng lập ra Hội liên hiệp thuộc địa các dân tộc bị áp bức ở Châu Âu, Châu Á, Châu Phi."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 37. Yếu tố nào khẳng định chủ tịch Hồ Chí Minh sống mãi trong lòng nhân dân Việt Nam?",
+          "options": [
+            "Tìm thấy con đường cứu nước đúng đắn cho dân tộc ta.",
+            "Xác định Việt Nam là một bộ phận của cách mạng thế giới.",
+            "Sáng lập ra Đảng cộng sản Việt Nam và trực tiếp lãnh đạo.",
+            "Cống hiến trọn đời cho độc lập, tự do, hạnh phúc cho nhân dân."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 38. Hình thức nào sau đây không phải là sự vinh danh và tri ân của nhân dân Việt Nam đối với Chủ tịch Hồ Chí Minh?",
+          "options": [
+            "Xây dựng nhiều công trình mang tên Hồ Chí Minh: bảo tàng, nhà lưu niệm,.",
+            "Nhiều trường học, đường phố,... mang tên Nguyễn Ái Quốc, Hồ Chí Minh.",
+            "Hồ Chí Minh trở thành nguồn cảm hứng sáng tác trong văn học.",
+            "Hồ Chí Minh tiếp tục được nghiên cứu bởi giới sử học quốc tế."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 39. Cuộc vận động “Học tập và làm theo tấm gương đạo đức Hồ Chí Minh” có tác dụng như thế nào đến đời sống chính trị - xã hội Việt Nam?",
+          "options": [
+            "Lan tỏa và mang lại những giá trị tích cực.",
+            "Giảm bớt tỷ lệ thất nghiệp trong nhân dân.",
+            "Thay đổi cơ cấu dân cư theo vùng kinh tế.",
+            "Ốn định cuộc sống cho nhân dân vùng cao."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 40. Đâu là nhận xét không đúng về sự cống hiến của Chủ tịch Hồ Chí Minh đối với nhân dân Viêt Nam và thế giới?",
+          "options": [
+            "Cống hiến trọn đời mình cho sự nghiệp giải phóng dân tộc Việt Nam.",
+            "Đã có nhiều đóng góp chung vào phong trào giải phóng dân tộc trên thế giới.",
+            "Đóng góp  trong các lĩnh vực  văn hóa, nghệ thuật, giáo dục, nhân cách.",
+            "Góp phần xóa bỏ triệt để nạn phân biệt chủng tộc ở Nam Phi."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Câu 41. Một trong những nhận xét đúng về đóng góp của Chủ tịch Hồ Chí Minh vào cuộc đấu tranh chung của bốn mục tiêu thời đại là",
+          "options": [
+            "cống hiến trọn đời mình cho sự nghiệp giải phóng dân tộc của nhân dân Việt Nam.",
+            "kết tinh của truyền thống văn hóa hàng nghìn năm của dân tộc Việt Nam với văn hóa thế giới.",
+            "chiến sĩ quốc tế với tình hữu ái toàn thế giới, tham gia trực tiếp giải phóng dân tộc các nước.",
+            "tấm gương đạo đức lớn về nhân cách, phẩm chất, phong cách cho dân tộc Việt Nam."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 42. Hồ Chí Minh sống mãi trong lòng nhân dân Việt Nam vì đã",
+          "options": [
+            "cống hiến và hi sinh cả cuộc đời cho dân tộc Việt Nam.",
+            "để lại di sản to lớn trên lĩnh vực khoa học – kĩ thuật.",
+            "để lại di sản to lớn trên lĩnh vực văn học và khoa học.",
+            "huy động mọi nguồn lực để giúp đỡ người dân Việt Nam."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 43. Nhận định “Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, là kim chỉ nam cho mọi hành động của Đảng” đúng hay sai? Vì Sao?",
+          "options": [
+            "Sai, vì tư tưởng Hồ Chí Minh đã không còn phù hợp với thực tiễn cách mạng.",
+            "Đúng, vì tư tưởng Hồ Chí Minh là nền tảng của lý luận cách mạng Việt Nam.",
+            "Đúng, vì tư tưởng Hồ Chí Minh là tài sản vô giá đối với nhân dân Việt Nam.",
+            "Sai, vì Đảng xem chủ nghĩa Mác - Lênin là kim chỉ nam cho mọi hành động."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Câu 44. Nhận định nào sau đây là đúng về vị trí của Chủ tịch Hồ Chí Minh với phong trào cộng sản và công nhân quốc tế?",
+          "options": [
+            "Chủ tịch Hồ Chí Minh là một chiến sĩ lỗi lạc.",
+            "Người lãnh đạo cao nhất của Quốc tế cộng sản.",
+            "Hoạch định đường lối cho các dân tộc thuộc địa.",
+            "Biểu tượng cho nền hòa bình an ninh của thế giới."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Câu 45. I. Gandi nhận xét Chủ tịch Hồ Chí Minh là “nhà lãnh đạo vĩ đại và kiên định”. Nhận định trên đúng hay sai? Vì sao?",
+          "options": [
+            "Đúng, vì khi thành lập Đảng, Bác không thực hiện chỉ thị của Quốc tế cộng sản.",
+            "Đúng, vì cả cuộc đời của Người chỉ mong muốn đem lại hạnh phúc cho dân tộc.",
+            "Sai, vì Bác đã có sự thay đổi từ lập trường yêu nước đến với chủ nghĩa cộng sản.",
+            "Sai, vì Bác chỉ kiên định đối với nhân dân Việt Nam không quan tâm đến quốc tế."
+          ],
+          "correct": 1
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Tư liệu 1: “Trong nửa sau thế kỷ XX, có một từ đã xuất hiện trong tiếng nói của những người bảo vệ và kiến tạo hòa bình trên thế giới, một từ mà cùng một lúc mang rất nhiều ý nghĩa: đấu tranh, dũng cảm, anh hùng; và nó còn có ý nghĩa là chiến thắng, độc lập, tự do. Từ đó là Việt Nam. Và có một cái tên đã luôn gắn liền với từ này - từ chỉ tên của một đất nước. Đó là Hồ Chí Minh.” (Ro-mét Chan-đờ-ra, Việt Nam và cuộc đấu tranh vì hòa bình, tự do và độc lập, trích trong: Việt Nam thế kỉ XX, NXB Chính trị quốc gia, Hà Nội, 2001, tr.48) Tư liệu 2: Nhà thơ Xô viết O-xíp Man-đen-xtam lần đầu tiếp xúc với Hồ Chí Minh (1923) đã thuật lại. “Từ Nguyễn Ái Quốc đã tỏa ra một nền văn hóa, không phải là văn hóa châu Âu, mà có lẽ là nền văn hóa của tương lai... Qua phong thái thanh cao, tiếng nói trầm ấm của Nguyễn Ái Quốc, chúng ta như thấy được ngày mai, thấy được viễn cảnh trời yên bề lặng của tình hữu ái toàn thế giới bao la như đại dương”.",
+          "statements": [
+            {
+              "question": "Tư liệu 1 nói về sự ngưỡng mộ, tôn vinh của nhân dân thế giới với Việt Nam, Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Tư liệu 2 khẳng định Nguyễn Ái Quốc là hiện thân của tình hữu ái đoàn kết quốc tế tốt đẹp.",
+              "correct": true
+            },
+            {
+              "question": "Cuộc đấu tranh của Việt Nam ở thế kỷ XX đã trở thành biểu tượng và khát vọng độc lập.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã trở thành biểu tượng của dân tộc và là nhà văn hóa của tương lai.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Sinh ra và hoạt động trong thế kỷ XX, nhưng tên tuổi và sự nghiệp của Chủ tịch Hồ Chí Minh sống mãi trong lòng nhân dân Việt Nam. Chủ tịch Hồ Chí Minh đã cống hiến và hy sinh cả cuộc đời cho dân tộc Việt Nam, đặc biệt là trong sự nghiệp giải phóng dân tộc, xây dựng chủ nghĩa xã hội và thống nhất đất nước. Chủ tịch Hồ Chí Minh còn là tấm gương sáng về đạo đức, phẩm chất, lối sống cho các thế hệ người dân Việt Nam học tập và noi theo; đồng thời để lại di sản lớn trên nhiều lĩnh vực, đặc biệt là những giá trị về tư tưởng, văn hóa.",
+          "statements": [
+            {
+              "question": "Tư liệu khẳng định tên tuổi và sự nghiệp của Chủ tịch Hồ Chí Minh với nhân dân Việt Nam.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã giải phóng dân tộc và xây dựng thành công chủ nghĩa xã hội ở Việt Nam.",
+              "correct": false
+            },
+            {
+              "question": "Những giá trị về tư tưởng, văn hóa của Chủ tịch Hồ Chí Minh là di sản chung của nhân dân Việt Nam.",
+              "correct": true
+            },
+            {
+              "question": "Về sự nghiệp, Chủ tịch Hồ Chí Minh mong muốn người dân học tập tư tưởng và văn hóa của mình.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Nghị quyết số 24C/18.6.5 ngày 20/11/1987 của UNESCO ghi nhận Hồ Chí Minh: “cống hiến trọn đời mình cho sự nghiệp giải phóng dân tộc của nhân dân Việt Nam, góp phần vào cuộc đấu tranh chung của các dân tộc vì hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội”; “kết tinh của truyền thống văn hóa hàng nghìn năm của dân tộc Việt Nam và những tư tưởng của Người là hiện thân của những khát vọng của các dân tộc trong việc khẳng định bản sắc văn hóa của mình và mong muốn tăng cường sự hiểu biết lẫn nhau giữa các dân tộc.” (Theo UNESCO với sự tôn vinh Chủ tịch Hồ Chí Minh – Anh hùng giải phóng dân tộc – Nhà văn hóa kiệt xuất, NXB Chính trị quốc gia, Hà Nội 2013)",
+          "statements": [
+            {
+              "question": "Tư liệu đã khẳng định những đánh giá của UNESCO đối với Chủ tịch Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "UNESCO khẳng định Hồ Chí Minh là kết tinh của văn hóa truyền thống Việt Nam.",
+              "correct": true
+            },
+            {
+              "question": "Hồ Chí Minh luôn muốn khẳng định bản sắc văn hóa của mình với các dân tộc khác.",
+              "correct": false
+            },
+            {
+              "question": "Hồ Chí Minh là lãnh tụ của phong trào giải phóng dân tộc Việt Nam và các thuộc địa.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": ": Đọc đoạn tư liệu sau đây: “Tôi tuyệt nhiên không ham muốn công danh phú quý chút nào. Bây giờ phải gánh chức Chủ tịch là vì đồng bào ủy thác thì tôi phải gắng sức làm, cũng như một người lính vâng mệnh lệnh của quốc dân ra trước mặt trận. Bao giờ đồng bào cho tôi lui, thì tôi rất vui lòng lui. Tôi chỉ có một sự ham muốn, ham muốn tột bậc, là làm sao cho nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ai cũng có cơm ăn áo mặc, ai cũng được học hành. Riêng phần tôi thì làm một cái nhà nho nhỏ, nơi có non xanh, nước biếc để câu cá, trồng hoa, sớm chiều làm bạn với các cụ già hái củi, em trẻ chăn trâu, không dính líu với vòng danh lợi”. (Nguồn: Hồ Chí Minh toàn tập (2011), NXB Chính trị Quốc gia – Sự thật, Hà Nội, Tập 4, trang 187).",
+          "statements": [
+            {
+              "question": "Theo Chủ tịch Hồ Chí Minh, tất cả mọi quyền lực và quyền lực tối cao đều thuộc về nhân dân.",
+              "correct": true
+            },
+            {
+              "question": "“Ham muốn tột bậc” là ham muốn thiết tha nhất, duy nhất của Chủ tịch Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh nêu lên ham muốn của mình trong bối cảnh đất nước được thống nhất.",
+              "correct": false
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh có lối sống mộc mạc, giản dị, gần gũi với nhân dân và không màng danh lợi.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Cho đoạn tư liệu sau: “ Chủ tịch Hồ Chí Minh là Anh hùng giải phóng dân tộc của đất nước và nhân dân Việt Nam. Người là một nhà lãnh đạo vĩ đại với tầm nhìn xa, ý chí và sức mạnh kiên cường, tấm lòng nhân ái bao la. Những phẩm chất sáng ngời của Chủ tịch Hồ Chí Minh sẽ mãi soi sáng cho đất nước và nhân dân Việt Nam”. (Ly That, Chủ tịch Đoàn Thanh niên Cam pu chia, trích cảm tưởng khách quốc tế, khu di tích Chủ tịch Hồ Chí Minh tại phủ Chủ tịch).",
+          "statements": [
+            {
+              "question": "Anh hùng giải phóng dân tộc của đất nước và nhân dân Việt Nam được nhắc đến trong đoạn trích trên là Chủ tịch Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Một trong những công lao to lớn của Người trong sự nghiệp giải phóng dân tộc là sáng lập ra Đảng cộng sản Đông Dương.",
+              "correct": false
+            },
+            {
+              "question": "Việc tìm ra con đường cách mạng vô sản không phải là công lao đầu tiên và quan trọng nhất trong sự nghiệp giải phóng dân tộc của Hồ Chí Minh.",
+              "correct": false
+            },
+            {
+              "question": "Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh là việc làm được lan tỏa và mang lại hiệu quả tích cực trên nhiều lĩnh vực hiện nay.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: “Côn-ca-ta - thủ phủ bang Tây Ben-gan (Ấn Độ) là nơi Hồ Chí Minh đã hai lần dừng chân trong quá trình hoạt động cách mạng. Năm 1968, thành phố này là địa danh đầu tiên trên thế giới có đường phố mang tên Hồ Chí Minh, cũng là thành phố đầu tiên trên thế giới dựng tượng đồng Hồ Chí Minh, đặt tại Quảng trường ICT (1990), nằm ở giao lộ giữa đại lộ Hồ Chí Minh Sa-na-ri với đại lộ Ja-goa-ha-lan Nê-ru - tên vị thủ tướng đầu tiên của nước này. Sau Ấn Độ, nhiều quốc gia trên thế giới cũng có những hoạt động nhằm lưu niệm và vinh danh Hồ Chí Minh.",
+          "statements": [
+            {
+              "question": "Tư liệu nói về dấu ấn và sự tôn vinh của nhân dân thế giới với Chủ tịch Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Ấn Độ là nơi Chủ tịch Hồ Chí Minh đã có nhiều năm sinh sống, hoạt động cách mạng.",
+              "correct": false
+            },
+            {
+              "question": "Ấn Độ là quốc gia đầu tiên trên thế giới có một tuyến đường mang tên Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Các quốc gia trên thế giới đều có tuyến đường, quảng trường mang tên Hồ Chí Minh.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Thế giới vinh danh Chủ tịch Hồ Chí Minh xuất phát từ hai nguyên nhân chủ yếu: Thứ nhất, Chủ tịch Hồ Chí Minh đã cống hiến trọn đời mình cho sự nghiệp giải phóng dân tộc của nhân dân Việt Nam, đồng thời góp phần vào cuộc đấu tranh chung của các dân tộc trên thế giới, vì hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội. Thứ hai, Chủ tịch Hồ Chí Minh còn có đóng góp quan trọng về nhiều mặt trên các lĩnh vực tư tưởng, văn hóa, giáo dục, nghệ thuật, nhân cách, lối sống,... Những đóng góp của Chủ tịch Hồ Chí Minh là sự kết tinh của truyền thống văn hóa Việt Nam và tinh hoa văn hóa của nhân loại.",
+          "statements": [
+            {
+              "question": "Tư liệu khẳng định thế giới vinh danh Chủ tịch Hồ Chí Minh là có lý do xứng đáng.",
+              "correct": true
+            },
+            {
+              "question": "Hồ Chí Minh được vinh danh là anh hùng giải phóng dân tộc, nhà văn hóa, giáo dục.",
+              "correct": false
+            },
+            {
+              "question": "Tư tưởng, lối sống, phong cách, đạo đức Hồ Chí Minh là một di sản lớn của Việt Nam.",
+              "correct": true
+            },
+            {
+              "question": "Việc thế giới vinh danh Hồ Chí Minh đến từ việc Việt Nam đã đánh thắng Pháp, Mỹ.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Nhiều nước trên thế giới đã xây dựng công trình tưởng niệm Chủ tịch Hồ Chí Minh với những hình thức khác nhau: thủ đô Mát-xcơ-va, các thành phố U-li-a-nốp-xcơ, Xanh- Pê-téc-bua và nhiều nơi khác ở Liên bang Nga có quảng trường, tượng đài, nhà lưu niệm... mang tên Hồ Chí Minh; thành phố Quảng Châu (Trung Quốc) có Di tích lưu niệm Nguyễn Ái Quốc - Hồ Chí Minh; thủ đô Mê-hi-cô (Mê-hi-cô) có tượng đài Hồ Chí Minh cùng dòng chữ “Tự do cho các dân tộc”; thủ đô của các nước (Cu ba, Mô-dăm-bích, Ang-gô-la) và nhiều nơi khác có tượng đài hoặc đường phố mang tên Hồ Chí Minh,...",
+          "statements": [
+            {
+              "question": "Tư liệu nói về sự ghi nhận của nhân dân thế giới với sự nghiệp của Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Tất cả các nước trên thế giới đều có công trình tưởng niệm Chủ tịch Hồ Chí Minh.",
+              "correct": false
+            },
+            {
+              "question": "Tại một số nước, Chủ tịch Hồ Chí Minh là biểu tưởng cho sự tự do của các dân tộc.",
+              "correct": true
+            },
+            {
+              "question": "Công trình tưởng niệm Chủ tịch Hồ Chí Minh chỉ xây dựng ở nơi Người hoạt động.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Lăng Chủ tịch Hồ Chí Minh được khởi công ngày 02/9/1973 và khánh thành ngày 29/8/1975 tại vị trí của lễ đài cũ giữa Quảng trường Ba Đình - nơi Chủ tịch Hồ Chí Minh từng đọc Tuyên ngôn Độc lập khai sinh ra nước Việt Nam Dân chủ Cộng hòa ngày 02/9/1945. Lăng có chiều cao 21,6 m, chiều rộng 41,2m. Ở mặt chính phía trên có dòng chữ: “CHỦ TỊCH HỒ CHÍ MINH”. Nhiều vật liệu xây dựng Lăng và khu vườn xung quanh với hơn 250 loài thực vật là do các địa phương đóng góp, thể hiện tấm lòng của nhân dân cả nước đối với Chủ tịch Hồ Chí Minh.",
+          "statements": [
+            {
+              "question": "Lăng Chủ tịch Hồ Chí Minh được xây dựng khi Người còn sống, hoàn thành năm 1975.",
+              "correct": false
+            },
+            {
+              "question": "Lăng Chủ tịch Hồ Chí Minh là địa điểm lưu giữ và bảo quản lâu dài thi hài của Người.",
+              "correct": true
+            },
+            {
+              "question": "Để xây dựng Lăng, nhân dân cả nước phải đóng góp vật liệu, huy động nhiều nhân công.",
+              "correct": false
+            },
+            {
+              "question": "Lăng đã thể hiện tấm lòng, sự ngưỡng mộ của nhân dân Việt Nam và quốc tế với Người.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Sau khi đất nước thống nhất, năm 1976, Quốc hội khóa VI đã quyết định đổi tên thành phố Sài Gòn là Thành phố Hồ Chí Minh. Trong nghị quyết về việc đặt tên, Quốc hội đã nêu rõ: “Xét rằng, nhân dân thành phố Sài Gòn - Gia Định luôn luôn tỏ lòng kính yêu vô hạn đối với Chủ tịch Hồ Chí Minh và tha thiết với việc thành phố mang tên Người. Chủ tịch Hồ Chí Minh là hiện thân của sự kế thừa, kết tinh, phát triển và nâng cao các giá trị văn hóa dân tộc và nhân loại. Vì vậy, Chủ tịch Hồ Chí Minh đã trở thành nguồn cảm hứng sáng tác, đưa đến sự ra đời của nhiều tác phẩm âm nhạc, thơ ca, kịch, nhiếp ảnh, hội hoạ,... ở trong nước và trên thế giới.",
+          "statements": [
+            {
+              "question": "Thành phố Sài Gòn đổi tên là thành phố Hồ Chí Minh theo ý nguyện của Hồ Chủ tịch.",
+              "correct": false
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã góp phần nâng cao các giá trị văn hóa dân tộc và nhân loại.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã có nhiều sáng tác nghệ thuật ở trong nước và trên thế giới.",
+              "correct": false
+            },
+            {
+              "question": "Những sáng tác nghệ thuật về cuộc đời, sự nghiệp Hồ Chí Minh đa dạng và phong phú.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Nhằm phát huy giá trị to lớn của tư tưởng, đạo đức Hồ Chí Minh, tháng 11-2006, Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam đã ban hành Chỉ thị số 06/CT/TW, phát động cuộc vận động “Học tập và làm theo tấm gương đạo đức Hồ Chí Minh”. Cuộc vận động đã lan tỏa và mang lại hiệu quả tích cực trên nhiều lĩnh vực của đời sống chính trị - xã hội. Năm 2016, Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam ban hành Chỉ thị 05-CT/TW “về đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh”. Việc học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh được xác định gắn với quá trình xây dựng và phát triển văn hóa, con người Việt Nam trong thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa và hội nhập quốc tế.",
+          "statements": [
+            {
+              "question": "Học tập và làm theo tấm gương đạo đức Hồ Chí Minh là cuộc vận động lớn, tích cực.",
+              "correct": true
+            },
+            {
+              "question": "Cuộc vận động trên nhằm thực hiện theo những ý nguyện của Chủ tịch Hồ Chí Minh.",
+              "correct": false
+            },
+            {
+              "question": "Cuộc vận động trên đã đẩy mạnh công nghiệp hóa, hiện đại hóa và hội nhập quốc tế.",
+              "correct": false
+            },
+            {
+              "question": "Tư tưởng, đạo đức Hồ Chí Minh là di sản văn hóa chung của nhân dân Việt Nam.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Sự nghiệp văn hóa quan trọng nhất của Người là đã lãnh đạo toàn dân đánh đuổi giặc ngoại xâm trong thời đại mới, giành lại cho nhân dân những quyền sống của con người, một cuộc sống có văn hóa,.... Hồ Chí Minh đã cùng với loài người loại trừ một trở lực to lớn trên con đường tiến lên thế giới văn minh, xóa đi một vết nhơ trong lịch sử là chế độ thuộc địa. (Đại tướng Võ Nguyên Giáp).",
+          "statements": [
+            {
+              "question": "Hồ Chí Minh là một nhà văn hóa lớn của nhân loại đã được UNESCO ghi danh.",
+              "correct": true
+            },
+            {
+              "question": "Sự nghiệp văn hóa quan trọng nhất của Hồ Chí Minh là những sáng tác văn, thơ.",
+              "correct": false
+            },
+            {
+              "question": "Góp phần xóa bỏ chế độ thuộc địa là một sự nghiệp văn hóa của Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Chủ tịch Hồ Chí Minh đã đưa người dân Việt Nam đến với văn hóa, văn minh.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây: Tư liệu 1: Ở 22 quốc gia trên thế giới đã có 36 tượng, tượng đài Hồ Chí Minh; 6 bia tưởng niệm, 14 khu tưởng niệm, 5 trường học, 6 đại lộ, 7 con đường trên thế giới mang tên Hồ Chí Minh (15 nước thuộc các chế độ khác nhau ở nhiều châu lục như: Liên bang Nga, Pháp, Anh, Cu-ba, Thái Lan, Phi-líp-pin, Mông Cổ, Mê-hi-cô, Xri Lan-ca, Ma-da-ga-xea... đã dựng tượng đài Hồ Chí Minh). Tư liệu 2: Việt Nam ngày nay có hệ thống bảo tàng, khu di tích về Chủ tịch Hồ Chí Minh tại Thủ đô Hà Nội và trên nhiều địa phương. Cả nước có gần 700 di tích, nhà lưu niệm ở các tỉnh, thành, ghi dấu cuộc đời và sự nghiệp của Người.",
+          "statements": [
+            {
+              "question": "Tư liệu 1 khẳng định các nước trên thế giới đều có tượng, tượng đài Hồ Chí Minh.",
+              "correct": false
+            },
+            {
+              "question": "Tư liệu 2 khẳng định tại các địa phương đều có bảo tàng, khu di tích Hồ Chí Minh.",
+              "correct": false
+            },
+            {
+              "question": "Không phân biệt chế độ chính trị, nhiều nước đã vinh danh, ghi nhận Hồ Chí Minh.",
+              "correct": true
+            },
+            {
+              "question": "Cuộc đời và sự nghiệp của Hồ Chí Minh được ghi dấu ở nhiều địa phương cả nước.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

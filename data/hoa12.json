@@ -1,0 +1,2404 @@
+{
+  "lessons": [
+    {
+      "name": "Đề 1",
+      "questions": [
+        {
+          "question": "Phát biểu nào sau đây sai?",
+          "options": [
+            "Các nguyên tử có 1 hoặc 2 hoặc 3 electron ở lớp ngoài cùng đều là kim loại.",
+            "Trong cùng chu kì, bán kính nguyên tử kim loại lớn hơn bán kính nguyên tử phi kim.",
+            "Ở điều kiện thường, tính dẫn điện của Ag > Cu > Au > Al > Fe.",
+            "Khi nhiệt độ tăng thì khả năng dẫn điện của kim loại giảm."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Phát biểu nào sau đây đúng?",
+          "options": [
+            "Các kim loại Al, Fe, Cr đều tan tốt trong dung dịch HNO3 đặc, nguội.",
+            "W là kim loại cứng nhất, Cr là kim loại có nhiệt độ nóng chảy cao nhất.",
+            "Các kim loại Al, Fe đều không tan trong dung dịch H2SO4 loãng, nguội.",
+            "nên Ag không tan trong dung dịch HCl 1 M dư."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trong vỏ Trái Đất, kim loại nào sau đây có thể tồn tại ở dạng đơn chất?",
+          "options": [
+            "Na, Mg.",
+            "Al, Fe.",
+            "Cu, Zn.",
+            "Ag, Au."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Hợp kim là vật liệu kim loại chứa một kim loại cơ bản với",
+          "options": [
+            "một số kim loại khác hoặc phi kim.",
+            "một số oxide của kim loại đó.",
+            "một số oxide kim loại khác hoặc phi kim.",
+            "một số phi kim và oxide của phi kim đó."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Sự ăn mòn kim loại",
+          "options": [
+            "là sự phá hủy kim loại hoặc hợp kim do các chất điện li trong môi trường.",
+            "chính là sự ăn mòn điện hoá.",
+            "diễn ra trong dung dịch chất điện li.",
+            "là sự phá huỷ kim loại hoặc hợp kim do tác dụng của các chất trong môi trường, trong đó kim loại bị oxi hoá."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong các kim loại Li, Na, K, Cs, kim loại có tính khử mạnh nhất là",
+          "options": [
+            "Li.",
+            "Na.",
+            "K.",
+            "Cs."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Cho dãy các nguyên tố: Mg, K, Ba, Na, Al, Sr. Số nguyên tố thuộc nhóm IIA là",
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Kim loại chuyển tiếp dãy thứ nhất thuộc khối nguyên tổ nào sau đây?",
+          "options": [
+            "Nguyên tố s.",
+            "Nguyên tố p.",
+            "Nguyên tố d.",
+            "Nguyên tố f."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Những tính chất vật lí thường gặp với các kim loại chuyển tiếp là",
+          "options": [
+            "(a), (b), (c).",
+            "(a), (c), (d).",
+            "(a), (b), (d).",
+            "(b), (c), (d)."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Nước cứng là nước chứa nhiều ion",
+          "options": [
+            "Ca2+, Mg2+.",
+            "Mg2+, Na+.",
+            "Ca2+, Ba2+.",
+            "Ca2+, K+."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong phân tử phức chất [Ag(NH3)2] OH, nhóm NH3 được gọi là",
+          "options": [
+            "phối tử.",
+            "acid.",
+            "chất oxi hoá.",
+            "nguyên tử trung tâm."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Để tẩy dầu mỡ đóng cặn trong dụng cụ, thiết bị và đường ống nhà bếp,., người ta thường dùng Na2CO3. Tên thường gọi của Na2CO3 là tên nào sau đây?",
+          "options": [
+            "Soda.",
+            "Baking soda.",
+            "Xút ăn da.",
+            "Muối ăn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Để tẩy lớp cặn bám dưới đáy dụng cụ đun, đựng nước nóng trong gia đình, người ta có thể sử dụng dung dịch nào sau đây?",
+          "options": [
+            "Ethyl alcohol.",
+            "Muối ăn.",
+            "Giấm ăn.",
+            "Đường kính."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Số phát biểu đúng ?",
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Dựa vào đồ thị, nhận định nào đúng trong các nhận định sau:",
+          "options": [
+            "Kim loại kiềm có nhiệt độ nóng chảy cao hơn kim loại chuyển tiếp.",
+            "Kim loại kiềm thổ có nhiệt độ nóng chảy cao hơn kim loại chuyển tiếp.",
+            "Kim loại họ s có nhiệt độ nóng chảy gần bằng kim loại chuyển tiếp.",
+            "Kim loại chuyển tiếp thường có nhiệt độ nóng chảy cao hơn các nguyên tố họ s."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Có bao nhiêu loại phối tử có trong phân tử phức chất đó?",
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "correct": 1
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho cấu tạo của pin Galvani Zn-Cu như hình dưới.",
+          "statements": [
+            {
+              "question": "Thanh Zn là cực âm (anode) và thanh Cu là cực dương (cathode).",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng xảy ra trong pin là: Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s).",
+              "correct": true
+            },
+            {
+              "question": "Khi Zn(s) hoặc Cu2+(aq) hết thì phản ứng trong pin sẽ ngừng lại.",
+              "correct": true
+            },
+            {
+              "question": "Sức điện động của pin không thay đổi cho đến khi phản ứng trong pin xảy ra hoàn toàn.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Gang và thép là hai hợp kim quan trọng của sắt. Chúng được sử dụng trong nhiều lĩnh vực quan trọng của đời sống, sản xuất, xây dựng và công nghiệp.",
+          "statements": [
+            {
+              "question": "Thép và gang đều là hợp kim chứa kim loại cơ bản là sắt.",
+              "correct": true
+            },
+            {
+              "question": "Hàm lượng carbon trong gang cao hơn trong thép.",
+              "correct": true
+            },
+            {
+              "question": "Trong thép và gang chỉ có hai đơn chất là sắt và carbon.",
+              "correct": false
+            },
+            {
+              "question": "Tính chất cơ học của thép có thể thay đổi khi có sự điều chỉnh thành phần.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Để nhận biết bốn hợp chất không màu: NaCl, CaCl2, SrCl2 và BaCl2, người ta đốt từng mẫu hợp chất trên ngọn lửa đèn khí (không màu), dựa vào màu ngọn lửa để nhận biết mỗi hợp chất.",
+          "statements": [
+            {
+              "question": "NaCl cháy cho ngọn lửa màu vàng.",
+              "correct": true
+            },
+            {
+              "question": "CaCl₂ cháy cho ngọn lửa màu đỏ cam.",
+              "correct": true
+            },
+            {
+              "question": "SrCl2 cháy cho ngọn lửa màu tím.",
+              "correct": false
+            },
+            {
+              "question": "BaCl2 cháy cho ngọn lửa màu lục.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Cho hai phức chất  và  có công thức lần lượt sau: Mỗi phát biểu sau đây đúng hay sai?",
+          "statements": [
+            {
+              "question": "Nguyên từ trung tâm của hai phức chất đều là nguyên tố kim loại chuyển tiếp.",
+              "correct": false
+            },
+            {
+              "question": "Trong phức chất  có 4 phối tử.",
+              "correct": true
+            },
+            {
+              "question": "Hai phức chất  và  có dạng hình học khác nhau.",
+              "correct": true
+            },
+            {
+              "question": "Trong  và trong  đều có hai loại phối tử.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 2",
+      "questions": [
+        {
+          "question": "Trong nhiều thiết bị có bộ phận tản nhiệt làm bằng nhôm. Vai trò tản nhiệt của nhôm được gây ra bởi tính chất vật lí nào sau đây?",
+          "options": [
+            "Tính dẫn nhiệt.",
+            "Tính dẻo.",
+            "Tính dẫn điện.",
+            "Ánh kim."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Lấy một đinh sắt đã được làm sạch bề mặt rồi ngâm vào dung dịch CuSO4 một thời gian. Hiện tượng nào sau đây không xuất hiện trong thí nghiệm trên?",
+          "options": [
+            "Có chất rắn màu đỏ bám lên đinh sắt.",
+            "Màu xanh của dung dịch nhạt dần.",
+            "Có bọt khí thoát ra mạnh trên bề mặt đinh sắt.",
+            "Đinh sắt bị ăn mòn một phần."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Ion kim loại nào sau đây có nhiều nhất trong nước biển?",
+          "options": [
+            "Mg2+.",
+            "K+.",
+            "Na+.",
+            "Ca2+."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Phát biểu nào sau đây sai?",
+          "options": [
+            "Tính chất vật lí của hợp kim khác nhiều so với của đơn chất thành phần.",
+            "Tính chất hoá học của hợp kim tương tự tính chất của đơn chất thành phần.",
+            "Tính chất cơ học của hợp kim phụ thuộc vào thành phần đơn chất của hợp kim.",
+            "Tính chất cơ học của hợp kim không phụ thuộc vào hàm lượng các đơn chất."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Phát biểu nào dưới đây là không đúng về chống ăn mòn kim loại?",
+          "options": [
+            "Phủ lên bề mặt của kim loại một lớp sơn, dầu, mỡ, chất dẻo hoặc tráng, mạ băng một kim loại khác là những các cách chống ăn mòn kim loại theo phương pháp phủ bề mặt.",
+            "Nối kim loại cần bảo vệ với một kim loại hoạt động hoá học mạnh hơn là cách chống ăn mòn kim loại theo phương pháp điện hoá.",
+            "Quấn một dây kẽm quanh đinh sắt là cách để chống ăn mòn kẽm trong môi trường có chất điện li.",
+            "Để tránh ăn mòn đồ trang sức bằng Ag thì người ta thường phải đánh sách hoặc rửa sạch trong xà phòng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Nước muối sinh lí là dung dịch của chất X với nồng độ 0,9%, được dùng trong việc ngăn ngừa nguy cơ mất muối do đổ quá nhiều mồ hôi, sau phẫu thuật, mất muối do tiêu chảy hay các nguyên nhân khác. X là muối nào sau đây?",
+          "options": [
+            "NaCl.",
+            "NaClO.",
+            "Na2SO4.",
+            "NaNO3."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong nhóm IIA, nguyên tố phổ biến trong vỏ Trái Đất là",
+          "options": [
+            "Rb và Sr.",
+            "Mg và Ba.",
+            "Mg và Ca.",
+            "Be và Ca."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Đặc điểm nào dưới đây không phải của nước cứng?",
+          "options": [
+            "Làm tăng tính acid của nước, gây ngộ độc nước uống.",
+            "Làm giảm tác dụng của xà phòng.",
+            "Làm tắc các đường ống dẫn nước nóng trong sản xuất và trong đời sống.",
+            "Nấu đồ ăn bằng nước cứng sẽ giảm mùi vị thực phẩm."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Kim loại chuyển tiếp dãy thứ nhất có chứa phân lớp nào sau đây?",
+          "options": [
+            "4d.",
+            "4f.",
+            "4p.",
+            "3d."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong các số oxi hoá của các kim loại chuyển tiếp dãy thứ nhất, trạng thái thường gặp nhất là +2. Điều này được giải thích là do đa số các kim loại chuyển tiếp dãy thứ nhất có độ âm điện không cao và",
+          "options": [
+            "dễ nhường đi 2 electron ở phân lớp 3d.",
+            "dễ nhường đi 1 electron ở phân lớp 3d và 1 electron ở phân lớp 4s.",
+            "có khả năng nhận thêm 2 electron vào phân lớp 3d.",
+            "có 2 electron lớp ngoài cùng."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong phân tử phức chất K3[Fe(CN)6], sắt (iron) được gọi là",
+          "options": [
+            "phối tử.",
+            "base.",
+            "chất khử.",
+            "nguyên tử trung tâm."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Một loại muối (X) của kim loại kiềm được dùng làm phân bón, cung cấp cả hai nguyên tố dinh dưỡng đa lượng cho cây trồng. Công thức hoá học của muôi X là",
+          "options": [
+            "ΚΝΟ3.",
+            "K2CO3.",
+            "NaNO3.",
+            "Na3PO4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Hang Sơn Đoòng tại tỉnh Quảng Bình, Việt Nam là hang động tự nhiên lớn nhất và có thạch nhũ đẹp nhất thế giới,. Thạch nhũ tăng kích thước với tốc độ 0,13 – 3 mm mỗi năm. Thạch nhũ trong hang động được tạo thành bởi phản ứng nào sau đây?",
+          "options": [
+            "Ca(HCO3)2  CaCO3 + CO2 + H2O.",
+            "Ca(OH)2 + CO2  CaCO3 + H2O.",
+            "CaCO3 + CO2 + H2O  Ca(HCO3)2.",
+            "CaCl2 + Na2CO3  CaCO3 + 2NaCl."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Dựa vào đồ thị, nhận định nào đúng trong các nhận định sau:",
+          "options": [
+            "Kim loại họ s có khối lượng riêng gần bằng kim loại chuyển tiếp.",
+            "Kim loại họ s có khối lượng riêng lớn hơn kim loại chuyển tiếp.",
+            "Kim loại họ s có khối lượng riêng bé hơn kim loại chuyển tiếp.",
+            "Khối lượng riêng tăng dần theo chiều tăng của bán kính nguyên tử."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Số liên kết cho – nhận mà nguyên tử trung tâm iron tạo được với các phối tử là",
+          "options": [
+            "5.",
+            "6.",
+            "4.",
+            "3."
+          ],
+          "correct": 0
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho biết:. Một pin điện có cấu tạo như hình sau. Biết rằng cầu muối chứa KCl. Các dung dịch muối là CuSO4 và NiSO4.",
+          "statements": [
+            {
+              "question": "Thanh Cu là cực dương và thanh Ni là cực âm của pin điện.",
+              "correct": true
+            },
+            {
+              "question": "Sức điện động của pin ở 298 K là 0,597 V và không đổi cho đến khi pin ngừng hoạt động.",
+              "correct": false
+            },
+            {
+              "question": "Cầu muối KCl có tác dụng trung hoà điện tích của hai dung dịch muối.",
+              "correct": true
+            },
+            {
+              "question": "Khối lượng điện cực Ni và Cu không thay đổi trong quá trình pin hoạt động.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Trong không khí ẩm, các vật dụng, thiết bị làm bằng gang, thép rất dễ bị ăn mòn và bị phá huỷ ở điều kiện thường. Phát biểu sau đây đúng hay sai khi nói về sự ăn mòn của gang, thép carbon trong không khí ẩm?",
+          "statements": [
+            {
+              "question": "Gang, thép carbon bị phá huỷ chủ yếu do ăn mòn điện hoá học.",
+              "correct": true
+            },
+            {
+              "question": "Chất oxi hoá trong quá trình ăn mòn là oxygen trong không khí.",
+              "correct": true
+            },
+            {
+              "question": "Khi để trong không khí ẩm, trên bề mặt gang và thép xuất hiện vô số pin điện hoá.",
+              "correct": true
+            },
+            {
+              "question": "Các electron của sắt (iron) được chuyển trực tiếp cho oxygen trong không khí.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Kim loại ở nhóm IA và IIA đều thuộc nguyên tố s, ở vị trí đứng đầu mỗi chu kì trong bảng tuần hoàn các nguyên tố hoá học và đều có màu trắng ánh kim. Về tính chất, chúng cũng có một số điểm tương đối giống nhau.",
+          "statements": [
+            {
+              "question": "Các kim loại nhóm IA và IIA đều có khối lượng riêng thấp và thuộc loại kim loại nhẹ.",
+              "correct": true
+            },
+            {
+              "question": "Tính khử của kim loại nhóm IA mạnh hơn nhóm IIA ở cùng chu kì.",
+              "correct": true
+            },
+            {
+              "question": "Một số kim loại nhóm IIA có tính chất vật lí biến đổi không theo xu hướng là do chúng không có cùng kiểu mạng tinh thể.",
+              "correct": true
+            },
+            {
+              "question": "Trong tự nhiên, các nguyên tố nhóm IA và IIA chỉ tồn tại dưới dạng đơn chất.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Hemoglobin (Hb) là một loại protein chiếm khoảng 35% trọng lượng của hồng cầu. Hb có nhiệm vụ nhận oxygen từ phổi và vận chuyển đi khắp cơ thể. Thành phần cấu tạo nên hemoglobin bao gồm nhân heme và globin: Nhân heme: Một heme sẽ bao gồm một ion Fe2+ ở chính giữa và một vòng porphyrin bao xung quanh. Một phân tử Hb sẽ có chứa bốn nhân heme chiếm 5% trọng lượng hemoglobin. Globin: Được tạo từ các loại amino acid liên kết với nhau bằng các liên kết peptide để tạo thành chuỗi polypeptide. Mỗi nguyên tử trung tâm trong nhân heme chỉ liên kết tối đa với 1 phân tử O2. Đánh giá mỗi phát biểu sau là đúng hay sai?",
+          "statements": [
+            {
+              "question": "Dạng hình học của phức chất Fe(II) trong nhân heme là bát diện.",
+              "correct": false
+            },
+            {
+              "question": "Mỗi phân tử hemoglobin có thể hấp thụ tối đa bốn phân tử oxygen.",
+              "correct": true
+            },
+            {
+              "question": "Trong các nhân heme, nguyên tử trung tâm liên kết với phối tử qua các nguyên tử nitrogen.",
+              "correct": true
+            },
+            {
+              "question": "Trong hemoglobin, iron chiếm 5% theo khối lượng.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 3",
+      "questions": [
+        {
+          "question": "Có thể dát mỏng, kéo sợi kim loại Au là do kim loại Au có",
+          "options": [
+            "tính dẻo cao.",
+            "tính dẫn điện tốt.",
+            "độ cứng cao.",
+            "nhiệt độ nóng chảy cao."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Ở nhiệt độ thường, dãy gồm các kim loại nào sau đây đều tan hoàn toàn trong nước dư?",
+          "options": [
+            "Na, K, Ba.",
+            "Mg, Al, Fe.",
+            "Cu, Na, Ag.",
+            "Au, K, Al."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Hai nguyên tố kim loại phổ biến nhất trong vỏ Trái Đất là",
+          "options": [
+            "Mg, Ca.",
+            "Na, Ca.",
+            "Au, Ag.",
+            "Al, Fe."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Đồng đỏ hay đồng thiếc là một hợp kim của",
+          "options": [
+            "đồng và nickel.",
+            "đồng và sắt.",
+            "đồng và thiếc.",
+            "đồng và aluminium."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Phát biểu nào sau đây là không đúng về điều kiện xảy ra ăn mòn điện hoá?",
+          "options": [
+            "Hai điện cực phải tiếp xúc trực tiếp hoặc thông qua dây dẫn.",
+            "Hai điện cực cùng tiếp xúc với dung dịch chất điện li.",
+            "Hai điện cực phải là hai kim loại khác loại.",
+            "Thiếu một trong các điều kiện về điện cực, tiếp xúc, chất điện li sẽ không xảy ra ăn mòn."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Điện phân dung dịch NaCl bão hoà, không có màng ngăn để sản xuất hoá chất nào sau đây?",
+          "options": [
+            "Soda.",
+            "Baking soda.",
+            "Xút công nghiệp.",
+            "Nước Javel."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Nguyên tố kim loại nào sau đây tạo nên thành phần chính của đá vôi?",
+          "options": [
+            "Magnesium.",
+            "Calcium.",
+            "Strontium.",
+            "Barium."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Loại nước gặp nhiều trong tự nhiên (nước ngầm, nước mặt) là",
+          "options": [
+            "nước mềm.",
+            "nước cứng vĩnh cửu.",
+            "nước cứng tạm thời.",
+            "nước cứng toàn phần."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Cấu hình electron nào sau đây là của kim loại chuyển tiếp dãy thứ nhất?",
+          "options": [
+            "[Ar] 3d 4s24p¹.",
+            "[Ar] 3d 4s².",
+            "[Ar] 4s².",
+            "[Ar] 3d104s24p6."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Chất oxi hoá trong phản ứng trên là",
+          "options": [
+            "Fe2+(aq).",
+            "Mn2+(aq).",
+            "(aq).",
+            "H+(aq)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Số oxi hoá của nguyên từ trung tâm trong phức chất [Co(NH3)4(OH2)2]SO4 là",
+          "options": [
+            "+3.",
+            "+6.",
+            "+2.",
+            "+4."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Soda là hoá chất quan trọng trong sản xuất thuỷ tinh, bột giặt, phẩm nhuộm, giấy, sợi. Công thức hoá học của soda là",
+          "options": [
+            "NaCl.",
+            "Na2SO4.",
+            "NaNO3.",
+            "Na2CO3."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Những mô tả về ứng dụng hợp chất của calcium nào sau đây không chính xác?",
+          "options": [
+            "Đá vôi dùng để sản xuất xi măng, vôi sống, vôi tôi,.",
+            "Apatite dùng để sản xuất phân bón.",
+            "Vôi sống làm vật liệu xây dựng, khử chua đất, làm chất hút ẩm,.",
+            "Thạch cao dùng để làm vật liệu xây dựng, làm mềm nước cứng."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Phát biểu nào sau đây không đúng?",
+          "options": [
+            "Đun sôi nước cứng chỉ làm mềm nước cứng tạm thời.",
+            "Dung dịch Na2CO3 làm mềm nước cứng tạm thời, nước cứng vĩnh cửu.",
+            "Dung dịch NH4Cl làm mềm nước cứng.",
+            "Cho dung dịch Ca(OH)2 vừa đủ làm mềm nước cứng tạm thời."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Mạ kẽm (zinc) nhúng nóng, kẽm nóng chảy sẽ bao phủ toàn bộ bề mặt kim loại. Nhận định nào sai trong các nhận định sau:",
+          "options": [
+            "Kẽm có nhiệt độ nóng chảy cao hơn sắt nên sắt nóng chảy nhúng vào kẽm.",
+            "Kẽm có nhiệt độ nóng chảy thấp hơn sắt nên có thể mạ kẽm nhúng nóng.",
+            "Kẽm có nhiệt độ nóng chảy thấp nhất trong các kim loại chuyển tiếp chu kì 4.",
+            "Có thể sử dụng mạ kẽm nhúng nóng với nhiều kim loại chuyển tiếp chu kì 4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Số liên kết cho – nhận mà nguyên tử trung tâm iron tạo được với các phối tử OH₂ là",
+          "options": [
+            "5.",
+            "3.",
+            "4.",
+            "6."
+          ],
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho pin điện hoá có cấu tạo như sau:",
+          "statements": [
+            {
+              "question": "Sức điện động chuẩn của pin là 0,76 V.",
+              "correct": true
+            },
+            {
+              "question": "Tại điện cực âm xảy ra quá trình oxi hoá Zn(s) thành ion Zn2+(aq).",
+              "correct": true
+            },
+            {
+              "question": "Tại điện cực dương xảy ra quá trình khử ion H+(aq) thành khí H2(g).",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng xảy ra trong pin là: H2(g) + Zn2+(aq) → Zn(s) + 2H+(aq).",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Tiến hành thí nghiệm về ăn mòn điện hoá như hình sau.",
+          "statements": [
+            {
+              "question": "Điện cực Zn là anode, điện cực Cu là cathode.",
+              "correct": true
+            },
+            {
+              "question": "Khí H2 chỉ thoát ra trên bề mặt thanh Cu, trên thanh Zn không có khí thoát ra.",
+              "correct": false
+            },
+            {
+              "question": "Nồng độ cation Zn2+ trong dung dịch tăng dần.",
+              "correct": true
+            },
+            {
+              "question": "Sau một thời gian tốc độ thoát khí sẽ giảm dần và màu xanh của dung dịch đậm dần.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Cho 2 mL dung dịch CaCl2 0,1M vào ống nghiệm (1) và 2 mL dung dịch BaCl2 0,1 M vào ống nghiệm (2). Thêm từng giọt dung dịch CuSO4 5% vào mỗi ống, lắc đều và quan sát hiện tượng xảy ra.",
+          "statements": [
+            {
+              "question": "Có thể dùng thí nghiệm để so sánh khả năng tạo kết tủa của CaSO4 và BaSO4.",
+              "correct": true
+            },
+            {
+              "question": "Kết tủa ở ống (2) xuất hiện sớm hơn ống (1).",
+              "correct": true
+            },
+            {
+              "question": "Độ tan của CaSO4 kém hơn BaSO4.",
+              "correct": false
+            },
+            {
+              "question": "Cả CaSO4 và BaSO4 đều là chất không tan.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Có hai thí nghiệm dưới đây. Thí nghiệm 1 ở 0 °C: Có một ống nghiệm chứa 1 mL dung dịch copper(II) sulfate 0,5% màu xanh nhạt. Thêm từ từ cho đến hết 2 mL dung dịch hydrochloric acid đặc không màu vào ổng nghiệm đó thì thu được dung dịch có màu vàng chanh do có quá trình: [Cu(OH2)6]2-(aq) + 4Cl- (aq)  [CuCl4]2- (aq) + 6H2O(/) KC = 4,18.105 Thí nghiệm 2 ở 20 °C: Có một ống nghiệm chứa 1 mL dung dịch copper(II) sulfate 0,5% màu xanh nhạt. Thêm từ từ cho đến hết 2 mL dung dịch sodium chloride bão hoà không màu vào ống nghiệm đó thì thu được dung dịch có màu xanh nhạt hơn so với ban đầu. Cho các phát biểu sau đây:",
+          "statements": [
+            {
+              "question": "Biểu thức tính hằng số cân bằng của phản ứng ở thí nghiệm 1 là:",
+              "correct": false
+            },
+            {
+              "question": "Trong thí nghiệm 1, phản ứng nghịch diễn ra thuận lợi hơn so với phản ứng thuận.",
+              "correct": false
+            },
+            {
+              "question": "Trong thí nghiệm 1, nồng độ anion Cl- càng cao thì phản ứng thuận càng dễ diễn ra.",
+              "correct": true
+            },
+            {
+              "question": "Trong thí nghiệm 2 không có dấu hiệu của phản ứng hình thành phức chất.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 4",
+      "questions": [
+        {
+          "question": "Kim loại nào sau đây có nhiệt độ nóng chảy thấp nhất?",
+          "options": [
+            "Na.",
+            "Hg.",
+            "Al.",
+            "Fe."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Dây kim loại nào sau đây đều không tan trong dung dịch HNO3 đặc, nguội hoặc dung dịch H2SO4 đặc, nguội?",
+          "options": [
+            "Cu, Mg, Fe.",
+            "Au, Cu, Ag.",
+            "Al, Mg, Fe.",
+            "Fe, Cr, Al."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Nhôm (Al) là nguyên tố phổ biến thứ ba (sau oxyen và silicon) và là kim loại phổ biến nhất trong vỏ Trái Đất. Nhôm chiếm khoảng 17% khối lớp rắn của Trái Đất. Trong tự nhiên, quặng chính chứa nhôm là bauxite và quặng này là nguyên liệu chính để sản xuất nhôm trong công nghiệp. Thành phần chính của quặng bauxite là",
+          "options": [
+            "Na3AlF6.",
+            "Al2O3.2H2O.",
+            "KAl(SO4)2.12H2O.",
+            "K2O.Al2O3.6SiO2."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Đồng thau là một hợp kim của",
+          "options": [
+            "Đồng và thiếc.",
+            "Đồng và nickel.",
+            "Đồng và aluminium.",
+            "Đồng và kẽm."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Các tấm tôn (thép mạ kẽm) lợp nhà thường bị gỉ sét nhanh hơn tại các vị trí cố định bằng đinh thép. Nguyên nhân của hiện tượng này là do",
+          "options": [
+            "việc đóng đinh tạo điều kiện cho nước mưa tiếp xúc với các kim loại trong tấm tôn.",
+            "đinh thép đóng vai trò như anode làm cho việc ăn mòn diễn ra nhanh hơn.",
+            "do trong đinh thép có carbon, đóng vai trò như cathode thúc đẩy quá trình ăn mòn.",
+            "do chất lượng thép của đinh và trong tấm tôn là không đồng nhất."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong đời sống, người ta dùng baking soda (là một hợp chất của sodium) để giặt, khử mùi hôi và tẩy trắng vết ố trên quần áo, vệ sinh đồ gia dụng,. Baking soda có công thức là",
+          "options": [
+            "NaHCO3.",
+            "Na2CO3.",
+            "Na2SO4.",
+            "NaHSO4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Mô tả nào dưới đây không phù hợp các nguyên tố nhóm IIA từ Be tới Ba?",
+          "options": [
+            "Bán kính nguyên tử tăng dần.",
+            "Tồn tại chủ yếu dạng đơn chất trong vỏ Trái Đất.",
+            "Có hai electron hoá trị.",
+            "Thuộc nhóm kim loại nhẹ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Nhận định nào sau đây không đúng?",
+          "options": [
+            "Nước chứa ít hoặc không có các ion Ca2+, Mg2+ gọi là nước mềm.",
+            "Nước cứng có chứa anion , là nước cứng tạm thời, còn chứa anion  hoặc  hoặc cả hai là nước cứng vĩnh cửu.",
+            "Nước có nhiều Ca2+ và Mg2+ gọi là nước cứng vĩnh cửu.",
+            "Nước tự nhiên (nước mưa, tuyết, băng tan,.) thuộc loại nước mềm."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Nguyên tử chromium (Cr) có cấu hình electron là 1s22s22p63s²3p 3d 4s¹. Số electron độc thân trong nguyên tử Cr là",
+          "options": [
+            "7.",
+            "5.",
+            "6.",
+            "4."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trong phép chuẩn độ dung dịch Fe2+ bằng , bình tam giác đựng dung dịch Fe2+ thường được để trên 1 tờ giấy trắng. Mục đích của việc này là gì?",
+          "options": [
+            "Để phản ứng trong bình tam giác xảy ra nhanh hơn.",
+            "Để quan sát sự thay đổi màu dung dịch trong bình tam giác được rõ hơn.",
+            "Để nhận biết được sự thay đổi thể tích dung dịch burette được rõ hơn.",
+            "Để nhận biết được sự xuất hiện màu của ion Fe3+ trong bình tam giác rõ hơn."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Số oxi hoá của nguyên tử trung tâm platinum trong phức chất [PtCl6]2- là",
+          "options": [
+            "+2.",
+            "+3.",
+            "+4.",
+            "+6."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Quá trình nào sau đây dùng để tách kim loại Na từ hợp chất?",
+          "options": [
+            "Dung dịch NaOH tác dụng với dung dịch HCl.",
+            "Điện phân NaCl nóng chảy.",
+            "Dung dịch Na2CO3 tác dụng với dung dịch HCl.",
+            "Dung dịch NaCl tác dụng với dung dịch AgNO3."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Khi thực hiện thí nghiệm phản ứng của oxygen với kim loại nhóm IIA, hiện tượng nào sau đây không đúng?",
+          "options": [
+            "Ở điều kiện thường, beryllium bền trong không khí.",
+            "Magnesium không phản ứng với oxygen ở điều kiện thường.",
+            "Khi đốt nóng, các kim loại nhóm IIA đều cháy trong không khí.",
+            "Kim loại nhóm IIA khi cháy đều cho ngọn lửa có màu đặc trưng."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho các phương pháp sau: (1) dùng nhiệt, (2) dùng dung dịch K2CO3, (3) dùng nhựa trao đổi ion, (4) dùng dung dịch Ca(OH)2. Số phương pháp có khả năng làm mềm nước có tính cứng tạm thời là",
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong phòng thí nghiệm, nồng độ iron (II) sulfate có thể được xác định bằng phương pháp chuẩn độ với dung dịch thuốc tím trong môi trường acid. Dung dịch acid được sử dụng trong chuẩn độ này là",
+          "options": [
+            "H2SO4 loãng.",
+            "H2SO4 đặc.",
+            "HCl loãng.",
+            "HNO3 loãng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Các phức chất tạo bởi các cation kim loại với phối từ là anion trong muối tetrasodium EDTA đều có số phối trí 6; trong đó phối tử liên kết với nguyên tử trung tâm qua hai nguyên từ nitrogen và 4 nguyên tử oxygen (mỗi nhóm -COO- liên kết với nguyên tử trung tâm qua 1 nguyên từ oxygen). Tỉ lệ mol giữa phối tử EDTA và nguyên tử trung tâm là",
+          "options": [
+            "1:1.",
+            "2: 1.",
+            "3:1.",
+            "6: 1."
+          ],
+          "correct": 0
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Mỗi phát biểu sau là đúng hay sai?",
+          "statements": [
+            {
+              "question": "Quá trình chuyển từ dạng oxi hoá sang dạng khử của cặp oxi hoá - khử được gọi là quá trình khử.",
+              "correct": true
+            },
+            {
+              "question": "Dạng oxi hoá và dạng khử của cùng một nguyên tố kim loại M: Mn+ + ne → M tạo nên cặp oxi hoá - khử và kí hiệu là Mn+/M.",
+              "correct": true
+            },
+            {
+              "question": "Trong một cặp oxi hoá - khử, dạng oxi hoá và dạng khử không phản ứng với nhau.",
+              "correct": false
+            },
+            {
+              "question": "Trong cặp oxi hoá - khử, tính oxi hoá của dạng oxi hoá luôn mạnh hơn tính oxi hoá của dạng khử.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Tiến hành thí nghiệm theo các bước sau: Bước 1. Cho 1 viên kẽm (zinc, Zn) vào ống nghiệm chứa 5 mL dung dịch H2SO4 1 M. Để yên khoảng 2 phút. Bước 2. Sau bước 1, nhỏ tiếp 5 giọt dung dịch CuSO4 1M vào ống nghiệm trên.",
+          "statements": [
+            {
+              "question": "Ở bước 1, viên kẽm tan và có khí không màu thoát ra.",
+              "correct": true
+            },
+            {
+              "question": "Ở bước 2, xuất hiện chất rắn màu đỏ bám lên viên Zn.",
+              "correct": true
+            },
+            {
+              "question": "Ở bước 2, tốc độ thoát khí tăng lên so với thời điểm cuối bước 1.",
+              "correct": true
+            },
+            {
+              "question": "Ở bước 1, nếu thay dung dịch H2SO4 1M bằng dung dịch HCl 1M thì tốc độ hoà tan Zn vẫn không đổi.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Tiến hành thí nghiệm sau: Bước 1. Cho lần lượt 2 mL mỗi dung dịch CaCl2 1 M; BaCl2 1 M và Na2SO4 1M vào các ống nghiệm tương ứng (1), (2) và (3). Bước 2. Thêm từ từ từng giọt 2 mL dung dịch Na2SO4 1M vào ống (1) và (2). Bước 3. Thêm từ từ từng giọt 2 mL dung dịch BaCl2 1 M vào ống (3).",
+          "statements": [
+            {
+              "question": "Thí nghiệm ở bước (3) nhằm kiểm tra sự có mặt của ion SO2 trong dung dịch.",
+              "correct": true
+            },
+            {
+              "question": "Kết tủa ở ống (2) xuất hiện sớm hơn và nhiều hơn ống (1).",
+              "correct": true
+            },
+            {
+              "question": "Cả ba ống nghiệm đều có kết tủa màu trắng.",
+              "correct": true
+            },
+            {
+              "question": "Kết tủa ở ống (3) nhiều hơn ống (2).",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Phức chất [Ni(CO)4] và phức chất [Ni(NH3)6]2+ có cấu trúc như sau: Mỗi phát biểu sau là đúng hay sai?",
+          "statements": [
+            {
+              "question": "Phức chất [Ni(CO)4] có cấu trúc tứ diện.",
+              "correct": true
+            },
+            {
+              "question": "Phức chất [Ni(NH3)6]2+ có cấu trúc bát diện.",
+              "correct": true
+            },
+            {
+              "question": "Nguyên tử trung tâm nickel trong các phức chất trên có cùng số oxi hoá.",
+              "correct": false
+            },
+            {
+              "question": "Phức chất [Ni(CO)4] tan tốt trong dung môi benzene do tạo liên kết hydrogen với benzene.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 5",
+      "questions": [
+        {
+          "question": "Các kim loại Cu, Al thường được sử dụng sản xuất dây dẫn điện. Ứng dụng này dựa trên tính chất nào sau đây của chúng?",
+          "options": [
+            "Có nhiệt độ nóng chảy cao.",
+            "Tính dẫn nhiệt.",
+            "Tính dẫn điện.",
+            "Có ánh kim."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho các kim loại: Na, Ca, Cu, Ag, K. Số kim loại có khả năng khử được nước ở điều kiện thường giải phóng H2 là",
+          "options": [
+            "2.",
+            "1.",
+            "4.",
+            "3."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Nguyên tắc chung để điều chế kim loại từ hợp chất của chúng là",
+          "options": [
+            "khử cation kim loại thành kim loại.",
+            "oxi hoá ion kim loại thành kim loại.",
+            "oxi hoá kim loại thành ion kim loại.",
+            "khử kim loại thành ion kim loại."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Chất hay hỗn hợp chất nào sau đây không phải là hợp kim?",
+          "options": [
+            "Thép.",
+            "Đồng.",
+            "Đồng thau.",
+            "Đồng thiếc."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Để tẩy dầu mỡ đóng cặn trong dụng cụ, thiết bị và đường ống nhà bếp,., người ta thường dùng Na2CO3. Tên thường gọi của Na2CO3 là tên nào sau đây?",
+          "options": [
+            "Soda.",
+            "Baking soda.",
+            "Xút ăn da.",
+            "Muối ăn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong chế độ dinh dưỡng hàng ngày, khi cơ thể không hấp thu được hoặc thiếu nguyên tố nào dưới đây sẽ dẫn đến nguy cơ loãng xương?",
+          "options": [
+            "Ba.",
+            "Mg.",
+            "Be.",
+            "Ca."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Một mẫu nước tự nhiên có chứa lượng lớn các ion: Ca2+, Mg2+, , . Mẫu nước trên thuộc loại",
+          "options": [
+            "nước có tính cứng toàn phần.",
+            "nước có tính cứng vĩnh cửu.",
+            "nước có tính cứng tạm thời.",
+            "nước mềm."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Kim loại chuyển tiếp dãy thứ nhất gồm",
+          "options": [
+            "9 nguyên tố.",
+            "18 nguyên tố.",
+            "6 nguyên tố.",
+            "10 nguyên tố."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Cách 2. Nhỏ từ từ dung dịch chứa Fe2+ trong môi trường acid vào dung dịch KMnO4 cho đến khi màu hồng của dung dịch KMnO4 biến mất. Hãy cho biết cách tiến hành chuẩn độ nào là phù hợp.",
+          "options": [
+            "Cách 1.",
+            "Cách 2.",
+            "Cả hai cách.",
+            "Không có cách nào."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Khi cho kim loại sodium tác dụng với phức chất [Mn2(CO)10] thu được hợp chất phức Na[Mn(CO)5] với phối từ carbonyl (CO). Số oxi hoá của Mn trong phức chất Na[Mn(CO)5] là",
+          "options": [
+            "+2.",
+            "+1.",
+            "-1.",
+            "0."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Phát biểu nào sau đây đúng?",
+          "options": [
+            "Kim loại kiềm có tính khử giảm dần từ Li đến Cs.",
+            "Dung dịch soda có môi trường acid nên được dùng để tẩy rửa dầu, mỡ trên thiết bị nhà bếp.",
+            "Phương pháp Solvay dùng để sản xuất soda.",
+            "Trong công nghiệp, người ta điều chế NaOH bằng cách cho Na tác dụng với nước."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho mỗi mảnh nhỏ kim loại Mg, Ca, Sr và Bạ vào mỗi ống nghiệm chứa 5 mL nước. Quan sát hiện tượng thí nghiệm để dự đoán phản ứng với nước của kim loại nhóm IIA, nhận xét nào sau đây không đúng?",
+          "options": [
+            "Khí thoát ra trên bề mặt kim loại là khí hydrogen.",
+            "Barium có khối lượng riêng nhỏ nhất nên nổi trên mặt nước và tan nhanh.",
+            "Khả năng phản ứng với nước xếp theo thứ tự Mg < Ca < Sr < Ba.",
+            "Magnesium phản ứng chậm nhất do Mg(OH)2 có độ tan nhỏ nhất."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Chất nào sau đây có thể làm mềm nước cứng vĩnh cửu là",
+          "options": [
+            "Ca(OH)2.",
+            "NaCl.",
+            "Na3PO4.",
+            "HCl."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "(6) Tất cả các nguyên tố thuộc nhóm B đều là nguyên tố chuyển tiếp.",
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất K3[Fe(CN)6]?",
+          "options": [
+            "K3[Fe(CN)6](aq) → 3K+(aq) + [Fe(CN)6]3-(aq).",
+            "K3[Fe(CN)6](aq) → 2K+(aq) + K[Fe(CN)6]2-(aq).",
+            "K3[Fe(CN)6](aq) → 3K(aq) + Fe³+(aq) + 6CN-(aq).",
+            "K3[Fe(CN)6] (aq) → 3K+(aq) + Fe(CN)3(s) + 3CN (aq)."
+          ],
+          "correct": 0
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Nhúng thanh kim loại X và thanh kim loại Y (cùng hoá trị II) vào các dung dịch muối sulfate nồng độ 1 M của chúng ở 25°C. Quá trình thí nghiệm được mô tả bởi hình vẽ sau: Mỗi phát biểu sau là đúng hay sai?",
+          "statements": [
+            {
+              "question": "Bề mặt thanh kim loại X mang điện tích âm và bề mặt thanh kim loại Y mang điện tích dương.",
+              "correct": true
+            },
+            {
+              "question": "Giữa bề mặt thanh kim loại và dung dịch muối tồn tại cân bằng giữa dạng oxi hoá và dạng khử.",
+              "correct": true
+            },
+            {
+              "question": "Tính khử của kim loại Y mạnh hơn tính khử của kim loại X.",
+              "correct": false
+            },
+            {
+              "question": "Khi nối hai thanh kim loại với nhau bằng dây dẫn và nối hai dung dịch muối với nhau bằng cầu muối, sẽ xuất hiện một dòng điện trên dây dẫn.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Khi để trong không khí ẩm lâu ngày, các vật dụng làm bằng thép carbon sẽ bị gỉ (bị ăn mòn). Cho các phát biểu sau về sự ăn mòn của thép:",
+          "statements": [
+            {
+              "question": "Thép bị ăn mòn trong không khí ẩm chủ yếu là do ăn mòn điện hoá học.",
+              "correct": true
+            },
+            {
+              "question": "Khi xảy ra ăn mòn, có sự di chuyển electron từ nguyên tử iron sang nguyên tử carbon.",
+              "correct": true
+            },
+            {
+              "question": "Sản phẩm quá trình ăn mòn của thép chủ yếu là Fe(OH)2.",
+              "correct": false
+            },
+            {
+              "question": "Nếu thép được ngâm trong dầu hoả hoặc dầu nhờn sẽ chống được ăn mòn.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Giá trị biến thiên enthalpy chuẩn của phản ứng nhiệt phân muối carbonate của kim loại nhóm IIA (R) (RCO3(s) RO(s) + CO2(g)) theo bảng sau:",
+          "statements": [
+            {
+              "question": "Trong các muối carbonate của kim loại nhóm IIA, BaCO3 có độ bền nhiệt nhất.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng nhiệt phân muối carbonate của kim loại nhóm IIA theo phương trình tổng quát:",
+              "correct": true
+            },
+            {
+              "question": "Sản phẩm ở dạng rắn thu được sau phản ứng nhiệt phân đều tan tốt trong nước tạo dung dịch hydroxide.",
+              "correct": false
+            },
+            {
+              "question": "Giá trị ∆rHo298 tăng dần từ MgCO3 tới BaCO3 nên nhiệt độ phân huỷ giảm dần từ MgCO3 tới BaCO3.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Các phức chất [Co(NH3)6]3+ và [Co(CN)6]3- có cấu trúc như sau:",
+          "statements": [
+            {
+              "question": "Các phức chất [Co(NH3)6]3+ và [Co(CN)6]3- đều có cấu trúc bát diện.",
+              "correct": true
+            },
+            {
+              "question": "Nguyên tử trung tâm cobalt trong các phức chất trên có cùng số oxi hoá.",
+              "correct": true
+            },
+            {
+              "question": "Hợp chất phức [Co(NH3)6]a[Co(CN)6]b có giá trị của a và b là bằng nhau.",
+              "correct": true
+            },
+            {
+              "question": "Các phức chất tạo từ cùng một nguyên tử trung tâm luôn có màu sắc giống nhau.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 6",
+      "questions": [
+        {
+          "question": "Hình dưới đây mô tả tính chất vật lí nào của kim loại? (hình tròn to mô tả ion kim loại, hình tròn nhỏ mô tả electron tự do)",
+          "options": [
+            "Tính dẻo.",
+            "Tính dẫn điện.",
+            "Tính dẫn nhiệt.",
+            "Tính cứng."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Hãy cho biết kim loại nào sau đây không phản ứng được với nước ở điều kiện chuẩn.",
+          "options": [
+            "Cu.",
+            "Na.",
+            "Mg.",
+            "Al."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Gang và thép là hai hợp kim quan trọng nhất của sắt. Chúng có rất nhiều ứng dụng trong đời sống và sản xuất. Để sản xuất gang, người ta khử oxide của sắt (Fe2O3 hoặc Fe3O4) trong quặng sắt bằng khí CO (được tạo ra do đốt cháy than cốc). Sắt được tạo ra trong quá trình sản xuất gang bằng phương pháp nào?",
+          "options": [
+            "Kết tinh.",
+            "Nhiệt luyện.",
+            "Thuỷ luyện.",
+            "Chiết."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Thêm chromium vào thép thì tính chất nào sau đây được tăng cường?",
+          "options": [
+            "Chống ăn mòn.",
+            "Tính dẫn điện.",
+            "Tính chất từ.",
+            "Tính dễ kéo sợi."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một loại muối (X) của kim loại kiềm được dùng làm phân bón, cung cấp cả hai nguyên tố dinh dưỡng đa lượng cho cây trồng. Công thức hoá học của muôi X là",
+          "options": [
+            "ΚΝΟ3.",
+            "K2CO3.",
+            "NaNO3.",
+            "Na3PO4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Calcium là nguyên tố kim loại đóng vai trò thiết yếu cho việc phát triển cơ thể động vật, đồng thời góp phần duy trì hoạt động của cơ bắp, truyền dẫn thần kinh, tăng dịch,. Trong cơ thể người, phần lớn lượng calcium tập trung ở",
+          "options": [
+            "xương, răng.",
+            "máu.",
+            "cơ bắp.",
+            "tóc, móng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một mẫu nước sinh hoạt chứa một lượng nhiều các ion: Ca2+, Mg2+, , . Nước trong cốc trên thuộc loại gì?",
+          "options": [
+            "Nước mềm.",
+            "Nước có tính cứng vĩnh cửu.",
+            "Nước có tính cứng tạm thời.",
+            "Nước có tính cứng toàn phần."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Các kim loại chuyển tiếp dãy thứ nhất đều thuộc chu kì nào sau đây?",
+          "options": [
+            "Chu kì 3.",
+            "Chu kì 5.",
+            "Chu kì 2.",
+            "Chu kì 4."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Chuẩn độ dung dịch Fe2+ trong môi trường acid bằng dung dịch KMnO4. Kết quả sẽ không phù hợp nếu nồng độ dung dịch Fe2+ khá lớn (> 0,500 M). Điều này là do",
+          "options": [
+            "tiêu tốn một lượng dung dịch KMnO4 quá lớn.",
+            "tại điểm tương đương, dung dịch có màu vàng đậm.",
+            "Fe2+ dễ bị oxi hoá bởi oxygen của không khí.",
+            "Fe3+ sẽ bị oxi hoá tiếp bởi KMnO4."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong phức chất [Fe(OH2)6]2+, mỗi phân tử H2O sử dụng bao nhiêu electron để tạo liên kết phối trí với AO trống của ion Fe2+?",
+          "options": [
+            "2.",
+            "1.",
+            "4.",
+            "6."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Phát biểu nào sau đây đúng?",
+          "options": [
+            "NaCl là chất rắn, dễ tan trong nước, là thành phần chính của muối ăn.",
+            "Điện phân dung dịch NaCl không màng ngăn thu được dung dịch NaOH.",
+            "Dung dịch NaHCO3 0,1 M có pH < 7.",
+            "Không thể phân biệt được ion Na+ và K+ dựa vào màu ngọn lửa khi đốt các hợp chất của chúng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Kim loại nhóm IIA có tính khử mạnh, nguyên nhân nào sau đây là không phù hợp?",
+          "options": [
+            "Kim loại nhóm IIA có thế điện cực chuẩn rất nhỏ.",
+            "Kim loại nhóm IIA có bán kính nguyên tử lớn.",
+            "Tương tác giữa electron hoá trị của với hạt nhân nguyên tử là yếu.",
+            "Mạng tinh thể nguyên tử có liên kết kim loại bền vững."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Cách nào sau đây không sử dụng để làm mềm nước có tính cứng vĩnh cửu?",
+          "options": [
+            "Dùng dung dịch Na2CO3.",
+            "Đun sôi nước.",
+            "Dùng dung dịch Na3PO4.",
+            "Dùng phương pháp trao đổi ion."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phương trình điện li nào sau đây biểu diễn đúng sự điện li của phức chất [Co(NH3)5CI]Cl₂?",
+          "options": [
+            "2[Co(NH3)SCI]Cl2(aq) → [CoC16]³ (aq) + 10NH3(aq).",
+            "[Co(NH3)3CI]Cl2(aq) → [Co(NH3)3CI]²+(aq) + 2Cl-(aq).",
+            "[Co(NH3)5Cl]Cl2(aq) → [Co(NH3)4Cl]²+(aq) + NH3(aq) + 2Cl-(aq).",
+            "[Co(NH3)3CI]Cl2(aq) + H2O [Co(NH3)3(OH)2]³+(aq) + 3Cl-(aq)."
+          ],
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Một pin Galvani có cấu tạo như sau: Trong đó, màng bán thẩm chỉ cho nước và các anion đi qua. Biết rằng thể tích của các dung dịch đều là 0,50 L và nồng độ chất tan trong dung dịch là 1,00 M. Cho biết:.",
+          "statements": [
+            {
+              "question": "Khối lượng điện cực zinc giảm đúng bằng khối lượng điện cực copper tăng.",
+              "correct": false
+            },
+            {
+              "question": "Nồng độ ion (aq) trong dung dịch ZnSO4 tăng và trong dung dịch CuSO4 giảm dần.",
+              "correct": true
+            },
+            {
+              "question": "Sức điện động chuẩn của pin là 1,103 V.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng chung xảy ra trong pin điện là Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s).",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Tiến hành thí nghiệm (như hình vẽ): Rót dung dịch NaCl bão hoà vào cốc 1, cốc 2, cốc 3; cho dầu nhờn vào cốc 4. Cho vào cốc 1 và cốc 4 một đinh sắt sạch, cho vào cốc 2 đinh sắt sạch được quấn bởi dây kẽm, cho vào cốc 3 đinh sắt sạch được quấn bởi dây đồng. Để 4 cốc trong không khí khoảng 5 ngày.",
+          "statements": [
+            {
+              "question": "Ở cốc 4, đinh sắt không bị gỉ (không bị ăn mòn).",
+              "correct": true
+            },
+            {
+              "question": "Ở cốc 2, đinh sắt không bị gỉ, dây Zn bị ăn mòn và có khí thoát ra.",
+              "correct": false
+            },
+            {
+              "question": "Ở cốc 3, đinh sắt bị gi nhiều nhất và dây đồng không bị ăn mòn.",
+              "correct": true
+            },
+            {
+              "question": "Ở cốc 1, đinh sắt bị gỉ và dung dịch có màu vàng của FeCl2.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Giá trị biến thiên enthalpy chuẩn của phản ứng nhiệt phân muối nitrate của kim loại nhóm IIA (R) (R(NO3)2 (s) RO(s) + 2NO2(g) +2O₂(g)) theo bảng sau:",
+          "statements": [
+            {
+              "question": "Độ bền nhiệt của các muối nitrate của kim loại nhóm IIA có xu hướng tăng dần từ Mg(NO3)2 tới Ba(NO3)2.",
+              "correct": true
+            },
+            {
+              "question": "Dựa vào bảng giá trị biến thiên enthalpy chuẩn ở trên có thể dự đoán xu hướng biến đổi độ bền nhiệt của R(NO3)2.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng nhiệt phân muối nitrate của kim loại nhóm IIA (R(NO3)2) là phản ứng oxi hoá - khử, trong đó vai trò oxi hoá là R2+.",
+              "correct": false
+            },
+            {
+              "question": "Nhiệt độ phân huỷ theo thứ tự sau: Mg(NO3)2 < Ca(NO3)2 < Sr(NO3)2 < Ba(NO3)2.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Các phức chất [PtCl4]2- và [PtCl6]2- có cấu trúc như sau:",
+          "statements": [
+            {
+              "question": "Phức chất [PtCl4]2- có cấu trúc vuông phẳng và phức chất [PtCl6]2- có cấu trúc bát diện.",
+              "correct": true
+            },
+            {
+              "question": "Nguyên tử trung tâm trong hai phức chất có cùng số oxi hoá.",
+              "correct": false
+            },
+            {
+              "question": "Độ dài liên kết Pt-Cl trong các phức chất trên như nhau.",
+              "correct": false
+            },
+            {
+              "question": "Khi thay hai phối tử chloro bằng hai phối tử ammonia, phức vuông phẳng sẽ có hai đồng phân khác nhau.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 7",
+      "questions": [
+        {
+          "question": "Các electron tự do trong mạng tỉnh thể kim loại đã phản xạ hầu hết các tia sáng nhìn thấy được. Điều này tạo nên tính chất vật lí nào sau đây của kim loại?",
+          "options": [
+            "Tính dẫn điện.",
+            "Ánh kim.",
+            "Tính dẻo.",
+            "Tính dẫn nhiệt."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Từ hai phản ứng trên, hãy cho biết khẳng định nào sau đây đúng.",
+          "options": [
+            "Tính oxi hoá của Fe2+ > Cu2+ > Ag.",
+            "Tính khử của kim loại Fe > Cu > Ag.",
+            "Kim loại Fe oxi hoá được Cu²+ thành kim loại Cu.",
+            "Ion Ag+ khử được kim loại Cu thành ion Cu²+."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Kim loại kẽm (zinc, Zn) được sản xuất trong công nghiệp từ quặng sphalerite (có thành phần chính là ZnS) theo sơ đồ: ZnS  ZnO  Zn. Phương pháp điều chế kim loại nào đã được sử dụng trong quá trình sản xuất zinc theo sơ đồ trên?",
+          "options": [
+            "Thuỷ luyện.",
+            "Nhiệt luyện.",
+            "Điện phân.",
+            "Kết tinh."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Duralumin là hợp kim của nhôm có thành phần chính là",
+          "options": [
+            "nhôm và đồng.",
+            "nhôm và sắt.",
+            "nhôm và carbon.",
+            "nhôm và thuỷ ngân."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Đinh sắt bị ăn mòn khi gắn với kim loại nào sau đây?",
+          "options": [
+            "Magnesium.",
+            "Nhôm.",
+            "Kẽm.",
+            "Đồng."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Soda là hoá chất quan trọng trong sản xuất thuỷ tinh, bột giặt, phẩm nhuộm, giấy, sợi. Công thức hoá học của soda là",
+          "options": [
+            "NaCl.",
+            "Na2SO4.",
+            "NaNO3.",
+            "Na2CO3."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Vôi sống có tính hút ẩm mạnh nên được sử dụng để làm khô khí trong phòng thí nghiệm. Không sử dụng vôi sống để làm khô khí nào sau đây?",
+          "options": [
+            "O2.",
+            "H2.",
+            "CO2.",
+            "N2."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Một mẫu nước cứng khi đun nóng thấy xuất hiện kết tủa. Mẫu nước đó thuộc loại nước cứng",
+          "options": [
+            "tạm thời.",
+            "vĩnh cửu.",
+            "toàn phần.",
+            "tạm thời hoặc toàn phần."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Ở trạng thái cơ bản, cấu hình electron của Mn (Z = 25) cao nhất của Mn trong các hợp chất là là [Ar]3d 4s². Số oxi hoá",
+          "options": [
+            "+5.",
+            "+7.",
+            "+2.",
+            "+6."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho khoảng 2 mL dung dịch NaOH vào ống nghiệm chứa khoảng 1 mL dung dịch Fe2(SO4)3. Hiện tượng quan sát được là",
+          "options": [
+            "dung dịch chuyển sang màu xanh.",
+            "xuất hiện kết tủa màu vàng.",
+            "xuất hiện kết tủa màu nâu đỏ.",
+            "dung dịch chuyển sang màu nâu đỏ."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho carbon monoxide liên tục đi qua nickel (Ni) nung nóng ở 80°C, thu được phức chất [Ni(CO)] ở thể khí. Tiếp tục dẫn [Ni(CO)4] qua khu vực có nhiệt độ khoảng 200°C, phức chất [Ni(CO)4] phân huỷ thu được nickel tỉnh khiết. Quá trình này được ứng dụng để tinh chế nickel. Số oxi hoá của nickel trong phức chất [Ni(CO)4] là",
+          "options": [
+            "+2.",
+            "+1.",
+            "-1.",
+            "0."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Y là chất nào sau đây?",
+          "options": [
+            "NaOH.",
+            "K2CO3.",
+            "Na2CO3.",
+            "NaHCO3."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Nhận xét đúng là",
+          "options": [
+            "Chỉ có Pb là kim loại chuyển tiếp.",
+            "Cả ba nguyên tố Cd, Hg, Pb là kim loại chuyển tiếp.",
+            "Chỉ có Hg là kim loại chuyển tiếp.",
+            "Ion Cd2+, Hg2+ có cấu hình phân lớp d bão hòa."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong phức chất [Cu(NH3)4(OH2)k]SO4, nguyên tử trung tâm Cu tạo được 6 liên kết sigma với các phân tử NH3 và H2O. Giá trị của k là",
+          "options": [
+            "3.",
+            "1.",
+            "6.",
+            "2."
+          ],
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Mô hình bể điện phân NaCl nóng chảy được biểu diễn như sau: Mỗi phát biểu sau là đúng hay sai?",
+          "statements": [
+            {
+              "question": "Tại anode xảy ra quá trình oxi hoá ion  thành khí Cl2.",
+              "correct": true
+            },
+            {
+              "question": "Tại cathode xảy ra quá trình khử ion Na+ thành kim loại Na.",
+              "correct": true
+            },
+            {
+              "question": "Sodium có khối lượng riêng nhỏ hơn khối lượng riêng của sodium chloride.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng điện phân sodium chloride để điều chế kim loại Na xảy ra ở nhiệt độ thường.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Hằng năm, sự ăn mòn kim loại làm tổn thất nhiều về kinh tế, thậm chí gây nguy hiểm cho người lao động khi vận hành các thiết bị máy móc tại các công trình dân dụng, công nghiệp, nông nghiệp,… Hình ảnh một số công trình thép bị gỉ Trong các phát biểu sau, phát biểu nào đúng, phát biểu nào sai?",
+          "statements": [
+            {
+              "question": "Ăn mòn kim loại là sự phá hủy kim loại hoặc hợp kim do tác dụng của các chất trong môi trường.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng xảy ra trong quá trình ăn mòn kim loại thuộc loại phản ứng oxi hóa – khử.",
+              "correct": true
+            },
+            {
+              "question": "Trong hình ảnh trên, thép bị ăn mòn điện hoá, Fe là anode và bị khử.",
+              "correct": false
+            },
+            {
+              "question": "Để lâu miếng gang trong không khí khô thì xảy ra ăn mòn điện hoá.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Thực hiện thí nghiệm của kim loại nhóm IIA (M) với nước, độ tan (g/100 g H2O ở 20°C) của các hydroxide M(OH)2 tương ứng được ghi dưới bảng sau:",
+          "statements": [
+            {
+              "question": "Qua độ tan của các hydroxide M(OH)2 có thể dự đoán mức độ phản ứng với nước của kim loại nhóm IIA có xu hướng tăng dần từ Be tới BA.",
+              "correct": true
+            },
+            {
+              "question": "Giá trị pH của các dung dịch Ca(OH)2 0,01 M, Sr(OH)2 0,01 M và Ba(OH)2 0,01 M xếp theo thứ tự tương ứng tăng dần.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng tổng quát như sau: M + 2H2O → M(OH)2 + H2.",
+              "correct": true
+            },
+            {
+              "question": "Be(OH)2 có độ tan nhỏ nhất nên dễ tách khỏi bề mặt kim loại, do đó Be sẽ phản ứng với nước ngay điều kiện thường.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Phức chất cisplatin có công thức cấu tạo như sau: Cisplatin được sử dụng làm thuốc chữa bệnh ung thư. Cho các phát biểu sau:",
+          "statements": [
+            {
+              "question": "Dạng hình học của cisplatin là dạng vuông phẳng.",
+              "correct": true
+            },
+            {
+              "question": "Nguyên tử trung tâm của cisplatin là Pt2+.",
+              "correct": false
+            },
+            {
+              "question": "Trong phân tử cisplatin, phối tử là NH3 và Cl-.",
+              "correct": true
+            },
+            {
+              "question": "Phân tử cisplatin có 4 phối tử.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 8",
+      "questions": [
+        {
+          "question": "Ứng dụng này dựa trên tính chất nào của các kim loại trên?",
+          "options": [
+            "Có tính dẻo cao.",
+            "Có nhiệt độ nóng chảy tương đối thấp.",
+            "Có độ dẫn điện cao.",
+            "Có độ cứng tương đối thấp."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Đồ vật làm bằng bạc (silver) khi sử dụng lâu ngày trong không khí thường bị hoá đen ở bề mặt là do xảy ra phản ứng nào sau đây?",
+          "options": [
+            "4Ag+O2→2Ag2O.",
+            "2Ag + H2S → Ag2S + H2.",
+            "4Ag + 2H2S + O2→2Ag2S+ 2H2O.",
+            "2Ag + 2H2O→ 2AgOH + H2."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Phương pháp điều chế kim loại nào đã được sử dụng trong quá trình sản xuất vàng theo sơ đồ trên?",
+          "options": [
+            "Thuỷ luyện.",
+            "Nhiệt luyện.",
+            "Điện phân.",
+            "Chiết."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "\"Thép 304 \" là một loại thép không gỉ được dùng phổ biến trong đời sống. Các kim loại chủ yếu tạo nên loại thép này bao gồm:",
+          "options": [
+            "Fe, C,Cr.",
+            "Fe,Cu, Cr.",
+            "Fe,Cr, Ni.",
+            "Fe, C, Cr, Ni."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Quá trình nào sau đây dùng để tách kim loại Na từ hợp chất?",
+          "options": [
+            "Dung dịch NaOH tác dụng với dung dịch HCl.",
+            "Điện phân NaCl nóng chảy.",
+            "Dung dịch Na2CO3 tác dụng với dung dịch HCl.",
+            "Dung dịch NaCl tác dụng với dung dịch AgNO3."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Để vôi sống CaO lâu ngày trong không khí, vôi sống sẽ cứng lại và giảm chất lượng. Hiện tượng này được giải thích bằng phản ứng nào dưới đây?",
+          "options": [
+            "2CaO  2Ca + O2.",
+            "CaO + CO2  CaCO3.",
+            "CaCO3 + CO2 + H2O  Ca(HCO3)2.",
+            "CaO + H2O  Ca(OH)2."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Nước cứng tạm thời có chứa nhiều ion Ca2+, Mg2+ và",
+          "options": [
+            ".",
+            ".",
+            ".",
+            "."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Cho các hợp chất của manganese: MnO, MnO(OH), Mn2O3 (MnO.MnO2), Mn3O4 (2MnO.MnO2), MnO(OH)2 và MnF3. Số hợp chất chứa nguyên tử Mn có số oxi hoá +3 là",
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "1."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Cho khoảng 2 mL dung dịch NaOH dịch CuSO4. Hiện tượng quan sát được là vào ống nghiệm chứa khoảng 1 mL dung",
+          "options": [
+            "dung dịch chuyển sang màu vàng.",
+            "xuất hiện kết tủa màu xanh nhạt.",
+            "xuất hiện kết tủa màu nâu đỏ.",
+            "dung dịch chuyển sang màu nâu đỏ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong phân tử phức chất [Cu(OH2)2(NH3)4]SO4, nguyên tử trung tâm copper tạo liên kết cho – nhận với những phối tử nào?",
+          "options": [
+            "Chỉ có H2O.",
+            "Chỉ có NH3.",
+            "Chỉ có .",
+            "Cả NH3 và H2O."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Quặng sylvinite  Dung dịch KCl bão hoà Tinh thể KCl.",
+          "options": [
+            "Sắc kí.",
+            "Chưng cất.",
+            "Chiết.",
+            "Kết tinh."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Biết: X, Y, Z, T, E là các hợp chất khác nhau; mỗi mũi tên ứng với một phương trình hoá học. Các chất Z, E thoả mãn sơ đồ trên lần lượt là",
+          "options": [
+            "Na2CO3, H2SO4.",
+            "CO2, KHSO4.",
+            "NaHCO3, Na2SO4.",
+            "CO2, BaSO4."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Số loại nước không phải là nước cứng?",
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Phức chất đơn nhân với nguyên tử trung tâm platinum (Pt) tạo được 4 liên kết cho nhận với phối từ ethylenediamine (H2N-CH2-CH2-NH2) và chloro; trong đó ethylenediamine liên kết với nguyên tử trung tâm qua hai nguyên tử nitrogen. Công thức phân tử của phức chất là",
+          "options": [
+            "PtCl2(C2H3N2).",
+            "PtCl2(C₂H8N2)2.",
+            "PtCl(C2H8N2)3.",
+            "PtCl(C2H3N2)2."
+          ],
+          "correct": 0
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Điện phân dung dịch NaCl có màng bán thẩm ngăn giữa anode với cathode (các điện cực đều là các điện cực trơ). Màng bán thẩm chỉ cho ion Na+ đi qua. Sơ đồ bình điện phân như hình sau:",
+          "statements": [
+            {
+              "question": "Tại cực dương xảy ra bán phản ứng khử ion (aq) thành khí Cl2.",
+              "correct": false
+            },
+            {
+              "question": "Tại cực âm xảy ra bán phản ứng oxi hoá H2O thành khí H2 và .",
+              "correct": false
+            },
+            {
+              "question": "Phản ứng chung trong bình điện phân là 2NaCl + 2H2O→ 2NaOH + H2 + Cl2.",
+              "correct": true
+            },
+            {
+              "question": "Lượng (số mol) Na+ trong dung dịch không đổi trong quá trình điện phân.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Chuẩn bị hai dây thép sạch cùng loại có kích thước như nhau, hai cốc chứa cùng thể tích nước muối có nồng độ NaCl như nhau. Quấn một dây kẽm vào một dây thép rồi cho vào cốc (1), quấn dây đồng vào dây thép còn lại rồi cho vào cốc (2). Để yên vài ngày trong không khí.",
+          "statements": [
+            {
+              "question": "Ở cốc (1) xảy ra hiện ăn mòn điện hoá, ở cốc (2) không xảy ra ăn mòn kim loại.",
+              "correct": false
+            },
+            {
+              "question": "Dây thép ở cốc (1) bị gỉ chậm hơn dây thép ở cốc (2).",
+              "correct": true
+            },
+            {
+              "question": "Nếu thay cốc nước muối bằng cốc nước cất thì dây thép sẽ bị gỉ chậm hơn.",
+              "correct": true
+            },
+            {
+              "question": "Dung dịch trong cốc (2) có màu xanh xuất hiện.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Thực hiện thí nghiệm đốt cháy kim loại nhóm IIA (R) trong khí oxygen: Cho mỗi mẩu kim loại Mg, Ca và Ba vào các muôi sắt, hơ nóng trên ngọn lửa đèn cồn, sau đó đưa nhanh vào các bình tam giác chịu nhiệt chứa khí oxygen.",
+          "statements": [
+            {
+              "question": "Các kim loại bốc cháy với mức độ tăng dần: Mg, Ca và Ba.",
+              "correct": true
+            },
+            {
+              "question": "Các kim loại đều cháy mạnh tạo ngọn lửa màu vàng.",
+              "correct": false
+            },
+            {
+              "question": "Các phản ứng trên xảy ra theo phương trình hoá học: 2M + O2 → 2MO.",
+              "correct": true
+            },
+            {
+              "question": "Lấy các chất rắn thu được sau khi đốt, cho vào mỗi cốc nước và khuấy lên, thấy các chất rắn đều tan hoàn toàn trong nước.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Cho hai phức chất đơn nhân X và Y có cấu trúc sau:",
+          "statements": [
+            {
+              "question": "X và Y là đồng phân của nhau.",
+              "correct": true
+            },
+            {
+              "question": "X và Y là các phức bát diện.",
+              "correct": true
+            },
+            {
+              "question": "Trong các phức chất X và Y, nguyên tử trung tâm cobalt có số oxi hoá là +3.",
+              "correct": false
+            },
+            {
+              "question": "Các phức chất X và Y có màu sắc giống nhau.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 9",
+      "questions": [
+        {
+          "question": "Các tính chất vật lí chung của kim loại như tính dẫn điện, tính dẫn nhiệt, tính dẻo và ánh kim đều có sự tham gia của thành phần nào sau đây?",
+          "options": [
+            "Các ion dương.",
+            "Các ion âm.",
+            "Hạt nhân nguyên tử.",
+            "Các electron tự do."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong dung dịch, ở điều kiện chuẩn, ion kim loại nào sau đây có tính oxi hoá mạnh nhất?",
+          "options": [
+            "Cu2+.",
+            "Fe3+.",
+            "Zn2+.",
+            "Na+."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phương pháp nào đã được sử dụng trong quá trình khử Al2O3 thành Al?",
+          "options": [
+            "Thuỷ luyện.",
+            "Nhiệt luyện.",
+            "Điện phân nóng chảy.",
+            "Điện phân dung dịch."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Hợp kim nào sau đây được sử dụng để làm cấu trúc thân vỏ máy bay?",
+          "options": [
+            "Duralumin.",
+            "Đồng thau (Brass).",
+            "Đồng thiếc (Bronze).",
+            "Manganin."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Phát biểu nào sau đây đúng?",
+          "options": [
+            "Kim loại kiềm có tính khử giảm dần từ Li đến Cs.",
+            "Dung dịch soda có môi trường acid nên được dùng để tẩy rửa dầu, mỡ trên thiết bị nhà bếp.",
+            "Phương pháp Solvay dùng để sản xuất soda.",
+            "Trong công nghiệp, người ta điều chế NaOH bằng cách cho Na tác dụng với nước."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trong đời sống, người ta dùng sữa vôi để quét lên tường, tạo lớp rắn, mịn, màu trắng trên bức tường. Hiện tượng này được giải thích bằng phản ứng nào dưới đây?",
+          "options": [
+            "Ca(OH)2 + CO2  CaCO3 + H2O.",
+            "CaO + CO2  CaCO3.",
+            "Ca(OH)2 + 2CO2  Ca(HCO3)2.",
+            "CaO + H2O  Ca(OH)2."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một loại nước cứng khi đun sôi thì chỉ giảm bớt một phần tính cứng. Trong loại nước này có hoà tan những hợp chất nào sau đây?",
+          "options": [
+            "MgCl2 và CaCl2.",
+            "CaSO4 và MgCl2.",
+            "Ca(HCO3)2 và Mg(HCO3)2.",
+            "Ca(HCO3)2 và MgSO4."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trong dung dịch, potassium manganate (K2MnO4) màu lục bị phân huỷ tạo thành MnO2 (chất rắn, màu nâu) và dung dịch có màu tím. Chất có màu tím là",
+          "options": [
+            "KMnO4.",
+            "KMnO4.",
+            "Mn2O7.",
+            "HMnO4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Dung dịch chứa muối iron(II) trong môi trường acid khi để ngoài không khí bị chuyển từ màu xanh nhạt sang màu vàng nâu. Điều này được giải thích là do",
+          "options": [
+            "phân huỷ một phần tạo thành Fe và iron(III).",
+            "oxygen trong không khí oxi hoá thành hợp chất có màu vàng nâu.",
+            "oxygen trong không khí oxi hoá thành iron(III) oxide.",
+            "oxygen trong không khí oxi hoá thành iron(III) hydroxide."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Thực nghiệm cho biết phức chất [Co(en)3]2+ (trong đó en là kí hiệu của ethylenediamine, H2N-CH2-CH2-NH2) có 6 liên kết cho – nhận giữa nguyên tử trung tâm với các phối tử. Mỗi phối từ en đã liên kết với nguyên tử trung tâm qua",
+          "options": [
+            "hai nguyên tử carbon.",
+            "hai nguyên tử nitrogen.",
+            "một nguyên tử carbon và một nguyên tử nitrogen.",
+            "một nguyên tử nitrogen và một nguyên tử hydrogen."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Bột nở baking powder có thành phần gồm baking soda kết hợp với tinh bột ngô và một số muối vô cơ khác, có tác dụng làm cho bánh nở xốp, bông mềm. Phản ứng hoá học nào sau đây của bột nở xảy ra làm cho bánh nở xốp?",
+          "options": [
+            "2NaHCO3 + Ca(OH)2  Na2CO3 + CaCO3 + H2O.",
+            "Na2CO3 + Ca(OH)2  2NaHCO3 + CaCO3.",
+            "NaHCO3 + HCl NaCl + CO2 + H2O.",
+            "2NaHCO3  Na2CO3 + H2O + CO2."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "(3)\tCác hợp chất ít tan trong răng, xương động vật.",
+          "options": [
+            "(1) và (2).",
+            "(1) và (3).",
+            "(1), (2) và (3).",
+            "(2) và (3)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Số phát biểu đúng ?",
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Phát biểu nào sau đây không đúng?",
+          "options": [
+            "Tất cả các nguyên tố thuộc nhóm B đều là nguyên tố chuyển tiếp dãy thứ nhất.",
+            "Các nguyên tố chuyển tiếp dãy thứ nhất thường có nhiệt độ nóng chảy cao hơn các kim loại nhóm IA và IIA.",
+            "Số oxi hóa của nguyên tử nguyên tố chromium trong hợp chất K2CrO4 và K2Cr2O7 bằng nhau.",
+            "Trạng thái oxi hóa thường gặp của Mn là +2, +4,+ 7."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Khi cho dung dịch KCN đến dư vào dung dịch iron(II) sulfate thu được phức chất bát diện; trong đó nguyên tử trung tâm iron tạo 6 liên kết sigma với 6 nguyên tử carbon trong phối tử cyano (CN). Công thức của phức chất là",
+          "options": [
+            "[Fe(CN)6].",
+            "[Fe(CN)6].",
+            "[Fe(CN)4]2+.",
+            "[Fe(CN)6]2+."
+          ],
+          "correct": 1
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Điện phân dung dịch CuSO4 với hai cực đều làm bằng than chì (hình bên).",
+          "statements": [
+            {
+              "question": "Tại anode xảy ra phản ứng oxi hoá ion  (aq) và tạo thành khí O2",
+              "correct": false
+            },
+            {
+              "question": "Tại cathode xảy ra bán phản ứng khử ion Cu2+(aq) thành Cu.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng chung trong bình điện phân là: 2Cu2+(aq) + 2H2O(l) → 2Cu(s) + O2(g) + 4H+(aq).",
+              "correct": true
+            },
+            {
+              "question": "Màu xanh của dung dịch nhạt dần trong quá trình điện phân.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Tiến hành thí nghiệm theo các bước sau: Bước 1. Cho vào cốc thuỷ tinh 30 mL. dung dịch H2SO4 0,5 М. Bước 2. Cho một lá nhôm và một lá đồng vào cốc sao cho chúng không tiếp xúc với nhau. Để yên khoảng 1 phút. Bước 3. Dùng dây dẫn điện nối lá nhôm và lá đồng với một vôn kế (như hình trên). Biết: 1,676 V;  0V; +0,340 V.",
+          "statements": [
+            {
+              "question": "Ở bước 2, lá nhôm bị ăn mòn hoá học còn lá đồng không bị ăn mòn.",
+              "correct": true
+            },
+            {
+              "question": "Ở bước 3, có sự tạo thành cặp pin điện hoá, trong đó lá nhôm là cathode và lá đồng là anode.",
+              "correct": false
+            },
+            {
+              "question": "Ở bước 3, khí chỉ thoát ra ở bề bặt lá đồng, còn ở lá nhôm không có khí thoát ra.",
+              "correct": false
+            },
+            {
+              "question": "Ở bước 3, kim vôn kế chỉ 1,336 V.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Độ tan trong nước của các hydroxide nhóm IIA ở 20°C được cho ở bảng sau:",
+          "statements": [
+            {
+              "question": "Độ tan của các hydroxide nhóm IIA tăng dần từ Mg(OH)2 tới Ba(OH)2.",
+              "correct": true
+            },
+            {
+              "question": "Độ tan của các hydroxide càng lớn thì mức độ phản ứng của các kim loại nhóm IIA với nước càng thuận lợi.",
+              "correct": true
+            },
+            {
+              "question": "Các kim loại nhóm IIA đều phản ứng mãnh liệt với nước ở 20°C và tạo thành dung dịch base.",
+              "correct": false
+            },
+            {
+              "question": "Các kim loại nhóm IIA đều dễ dàng phản ứng với nước để tạo hydroxide kim loại.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Metalloporphyrin có cấu trúc tương tự heme và được sử dụng việc kiểm soát chứng tăng bilirubin máu ở trẻ sơ sinh ( chứng này gây ra bệnh vàng da ở trẻ sơ sinh). Metalloporphyrin có công thức như sau Mỗi phát biểu sau là đúng hay sai?",
+          "statements": [
+            {
+              "question": "Ion trung tâm của phức Metalloporphyrin là Fe",
+              "correct": false
+            },
+            {
+              "question": "Số phối trí của phức là 4.",
+              "correct": false
+            },
+            {
+              "question": "Metalloporphyrin là muối kép không phải là phức chất.",
+              "correct": false
+            },
+            {
+              "question": "Liên kết trong phức Metalloporphyrin được tạo thành do nguyên tử N cho cặp electron chưa liên kết vào orbital trống của nguyên tử Fe",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 10",
+      "questions": [
+        {
+          "question": "Kim loại tungsten (W) được dùng dựa trên tính chất nào của kim loại W? làm dây tóc bóng đèn sợi đốt. Ứng dụng này",
+          "options": [
+            "Nhiệt độ nóng chảy cao.",
+            "Khả năng dẫn điện tốt.",
+            "Tính dẻo cao.",
+            "Độ cứng cao."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Thuỷ ngân (Hg) là chất lỏng ở điều kiện thường, dễ bay hơi và hơi thuỷ ngân rất độc. Khi nhiệt kế thuỷ ngân bị vỡ, để tránh thuỷ ngân phân tán ra môi trường xung quanh, người ta gom thuỷ ngân lại rồi trộn với chất nào sau đây (ở dạng bột)?",
+          "options": [
+            "Carbon (C).",
+            "Magnesium (Mg).",
+            "Iron (Fe).",
+            "Sulfur (S)."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Dãy nào sau đây gồm những kim loại điều chế được bằng phương pháp thuỷ luyện?",
+          "options": [
+            "Ca, Fe, Cu.",
+            "Ag, Au, Cu.",
+            "Al, K, Mg.",
+            "Na, Au, Pd."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phát biểu nào sau đây đúng?",
+          "options": [
+            "NaCl là chất rắn, dễ tan trong nước, là thành phần chính của muối ăn.",
+            "Điện phân dung dịch NaCl không màng ngăn thu được dung dịch NaOH.",
+            "Dung dịch NaHCO3 0,1 M có pH < 7.",
+            "Không thể phân biệt được ion Na+ và K+ dựa vào màu ngọn lửa khi đốt các hợp chất của chúng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong tự nhiên, magnesium có nhiều ở khoáng vật nào sau đây?",
+          "options": [
+            "Dolomite.",
+            "Calcite.",
+            "Phosphorite.",
+            "Halite."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Bình thuỷ dùng để đun nước lâu ngày bị đóng cặn, có thể dùng dung dịch nào sau đây để hoà tan lớp cặn?",
+          "options": [
+            "Nước vôi.",
+            "Rượu uống.",
+            "Giấm ăn.",
+            "Muối ăn."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Mn2O7 là oxide acid. Khi cho Mn2O7 vào dung dịch NaOH dư, thu được H₂O và sản phẩm nào sau đây? Biết rằng phản ứng không có sự thay đổi số oxi hoá.",
+          "options": [
+            "HMnO4.",
+            "H2MnO4.",
+            "NaMnO4.",
+            "Na2MnO4."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Có thể loại bỏ sắt trong nước ngầm bằng cách đưa nước ngầm lên các bể lắng, lọc và sục không khí vào. Khi đó Fe2+ trong nước ngầm bị chuyển thành Fe(OH)3 và lắng xuống. Chất oxi hoá Fe2+ thành Fe(OH)3 là",
+          "options": [
+            "khí O2.",
+            "khí N2.",
+            "nước và khí O2.",
+            "khí O2 và ."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Số nguyên tử trung tâm trong phức chất là",
+          "options": [
+            "2.",
+            "3.",
+            "1.",
+            "4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong đời sống, người ta dùng baking soda (là một hợp chất của sodium) để giặt, khử mùi hôi và tẩy trắng vết ố trên quần áo, vệ sinh đồ gia dụng,. Baking soda có công thức là",
+          "options": [
+            "NaHCO3.",
+            "Na2CO3.",
+            "Na2SO4.",
+            "NaHSO4."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Điện phân dung dịch NaCl bão hoà, không có màng ngăn để sản xuất hoá chất nào sau đây?",
+          "options": [
+            "Soda.",
+            "Baking soda.",
+            "Xút công nghiệp.",
+            "Nước Javel."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "(3)\tBọt khí hydrogen sinh ra bám trên bề mặt magnesium nhiều hơn, cản trở phản ứng tiếp diễn.",
+          "options": [
+            "(1).",
+            "(1), (2) và (3).",
+            "(1) và (3).",
+            "(1) và (2)."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Số phát biểu đúng ?",
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Nhỏ dung dịch KCN đặc đến dư vào dung dịch AgNO3 thu được phức chất X. Trong phức chất X, nguyên tử trung tâm bạc tạo 2 liên kết sigma với nguyên tử carbon trong phối tử cyano (CN). Công thức của phức chất là",
+          "options": [
+            "[Ag(CN)2]+.",
+            "[Ag(CN)4]3-.",
+            "[Ag(CN)2]-.",
+            "[Ag(CN)2]."
+          ],
+          "correct": 2
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Điện phân dung dịch CuSO4 với các điện cực đều làm bằng Cu (hình bên).",
+          "statements": [
+            {
+              "question": "Tại anode xảy ra quá trình oxi hoá Cu thành ion Cu2+ khuếch tán vào dung dịch.",
+              "correct": true
+            },
+            {
+              "question": "Tại cathode xảy ra quá trình khử ion Cu2+ thành Cu và bám vào điện cực.",
+              "correct": true
+            },
+            {
+              "question": "Phản ứng chung trong bình điện phân là: 2Cu2+(aq) + 2H2O→ 2Cu(s) + O2 + 4H+",
+              "correct": false
+            },
+            {
+              "question": "Nồng độ ion Cu2+ trong dung dịch giảm dần trong quá trình điện phân.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Tiến hành thí nghiệm theo các bước sau đây: - Bước 1: Nhỏ vào ba ống nghiệm, mỗi ống nghiệm 3 ml dung dịch HCl loãng cùng nồng độ. - Bước 2: Cho lần lượt mẫu Al, mẫu Fe, mẫu Cu có số mol bằng nhau vào 3 ống nghiệm. - Bước 3: Nhỏ tiếp vài giọt dung dịch CuSO4 vào các ống nghiệm. Phát biểu nào sau đây đúng, phát biểu nào sau đây sai?",
+          "statements": [
+            {
+              "question": "Khí H2 thoát ở 2 ống nghiệm chứa Al và Fe;  Al và Fe bị ăn mòn hoá học.",
+              "correct": true
+            },
+            {
+              "question": "Mẫu Fe bị hòa tan nhanh hơn so với mẫu Al.",
+              "correct": false
+            },
+            {
+              "question": "Ở bước 3, Al, Fe bị ăn mòn điện hoá, Cu bị ăn mòn hoá học.",
+              "correct": false
+            },
+            {
+              "question": "Ở bước 3, khí thoát ra nhanh hơn so với ở bước 2.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Độ tan (g/100 g nước) của một số muối trong nước ở 20°C:",
+          "statements": [
+            {
+              "question": "Muối nitrate của kim loại nhóm IIA có độ tan lớn hơn muối sulfate của kim loại nhóm IIA.",
+              "correct": true
+            },
+            {
+              "question": "Nhỏ dung dịch Ba(NO3)2 bão hoà vào dung dịch MgSO4 bão hoà, xuất hiện kết tủa BaSO4.",
+              "correct": true
+            },
+            {
+              "question": "Nhỏ dung dịch CaCO3 bão hoà vào dung dịch BaSO4 bão hoà, xuất hiện kết tủa CaSO4.",
+              "correct": false
+            },
+            {
+              "question": "Nhỏ từ từ dung dịch H2SO4 loãng vào dung dịch chứa Ba2+ và Ca2+ cùng nồng độ mol, kết tủa BaSO4 xuất hiện trước.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Phức chất X có công thức cấu tạo như hình sau:",
+          "statements": [
+            {
+              "question": "Phức chất X thuộc loại phức bát diện.",
+              "correct": true
+            },
+            {
+              "question": "Công thức của phức chất X là [Cr(O4C2)3]3-.",
+              "correct": true
+            },
+            {
+              "question": "Số oxi hoá của nguyên tử trung tâm trong phức chất X là +3.",
+              "correct": true
+            },
+            {
+              "question": "Trong phức chất X, nguyên tử trung tâm chromium liên kết với 3 phối tử oxalato ().",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -63,6 +63,24 @@
       "description": "Lập trình Python và công cụ",
       "color": "#10b981",
       "dataFile": "tin.json"
+    },
+    {
+      "id": "su12",
+      "grade": 12,
+      "name": "Lịch Sử 12",
+      "icon": "📜",
+      "description": "Hồ Chí Minh - Cuộc đời và sự nghiệp",
+      "color": "#7c6aef",
+      "dataFile": "su12.json"
+    },
+    {
+      "id": "hoa12",
+      "grade": 12,
+      "name": "Hóa Học 12",
+      "icon": "🧪",
+      "description": "Kim loại, Điện hóa và Ăn mòn",
+      "color": "#06b6d4",
+      "dataFile": "hoa12.json"
     }
   ]
 }
