@@ -181,7 +181,7 @@ const app = {
           <div class="announcement-card social-style">
             <div class="announcement-card-header" style="align-items: flex-start; gap: 12px; margin-bottom: 12px; display: flex;">
               <div class="announcement-avatar" style="background: transparent; padding: 0; margin-right: 0; flex-shrink: 0; width: 44px; height: 44px;">
-                <img src="avatar.jpg" alt="Admin Avatar" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);">
+                <img src="assets/avatar.jpg" alt="Admin Avatar" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);">
               </div>
               <div class="announcement-meta-info" style="display: flex; flex-direction: column; justify-content: center; height: 44px;">
                 <div class="announcement-author" style="font-weight: 700; font-size: 1rem; color: var(--text-primary); display: flex; align-items: center; gap: 4px; line-height: 1.2;">
