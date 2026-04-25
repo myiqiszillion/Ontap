@@ -150,29 +150,7 @@ const app = {
         return;
       }
 
-      // Pinned contribution CTA
-      const ctaBanner = `
-        <div class="announcement-card social-style" style="border-left: 4px solid #10b981; background: rgba(16, 185, 129, 0.05);">
-          <div class="announcement-card-header" style="align-items: flex-start; gap: 12px; margin-bottom: 12px; display: flex;">
-            <div style="background: linear-gradient(135deg, #10b981, #6366f1); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="24" height="24" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-            </div>
-            <div style="display: flex; flex-direction: column; justify-content: center; height: 44px;">
-              <div style="font-weight: 700; font-size: 1rem; color: var(--text-primary); line-height: 1.2;">📢 Kêu Gọi Góp Đề</div>
-              <span style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">Ghim bởi Admin</span>
-            </div>
-          </div>
-          <div class="announcement-card-body">
-            <div class="announcement-content" style="line-height: 1.7;">
-              Mọi người hãy <strong>chung tay góp đề trắc nghiệm đúng/sai</strong> cho Admin để có thể cải thiện ngân hàng câu hỏi và nâng cao khả năng ôn tập nhé! 🙏<br><br>
-              📩 Gửi file đề qua <a href="https://www.facebook.com/nghiale1452010" target="_blank" style="color: #6366f1; font-weight: 700; text-decoration: underline;">Facebook Admin</a> — <strong>chỉ nhận file đề</strong> (Word, PDF), không nhận ảnh chụp.<br><br>
-              <em style="color: var(--text-muted);">Càng nhiều đề, chúng ta càng ôn thi tốt hơn! 💪</em>
-            </div>
-          </div>
-        </div>
-      `;
-
-      container.innerHTML = ctaBanner + data.map(ann => {
+      container.innerHTML = data.map(ann => {
         const dateStr = new Date(ann.timestamp).toLocaleString('vi-VN', {
           hour: '2-digit', minute: '2-digit', 
           day: '2-digit', month: '2-digit', year: 'numeric'
