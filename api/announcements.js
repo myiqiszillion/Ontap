@@ -26,13 +26,23 @@ module.exports = async (req, res) => {
 
   if (req.method === 'GET') {
     try {
-      const { data, error } = await supabase
+      // Try with pinned ordering first
+      let result = await supabase
         .from('announcements')
         .select('*')
         .order('pinned', { ascending: false, nullsFirst: false })
         .order('timestamp', { ascending: false });
-      if (error) throw error;
-      return res.status(200).json(data || []);
+
+      // Fallback if pinned column doesn't exist yet
+      if (result.error) {
+        result = await supabase
+          .from('announcements')
+          .select('*')
+          .order('timestamp', { ascending: false });
+      }
+
+      if (result.error) throw result.error;
+      return res.status(200).json(result.data || []);
     } catch (error) {
       console.error('SERVERLESS GET ERROR:', error);
       return res.status(500).json({ 
