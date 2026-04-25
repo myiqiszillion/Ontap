@@ -165,8 +165,7 @@ const app = {
           <div class="announcement-card-body">
             <div class="announcement-content" style="line-height: 1.7;">
               Mọi người hãy <strong>chung tay góp đề trắc nghiệm đúng/sai</strong> cho Admin để có thể cải thiện ngân hàng câu hỏi và nâng cao khả năng ôn tập nhé! 🙏<br><br>
-              📩 Gửi đề qua <strong>Zalo / Messenger</strong> cho Admin hoặc đăng trực tiếp vào nhóm lớp.<br>
-              📝 Định dạng: Ảnh chụp đề, file Word, hoặc gõ trực tiếp đều được!<br><br>
+              📩 Gửi file đề qua <a href="https://www.facebook.com/nghiale1452010" target="_blank" style="color: #6366f1; font-weight: 700; text-decoration: underline;">Facebook Admin</a> — <strong>chỉ nhận file đề</strong> (Word, PDF), không nhận ảnh chụp.<br><br>
               <em style="color: var(--text-muted);">Càng nhiều đề, chúng ta càng ôn thi tốt hơn! 💪</em>
             </div>
           </div>
