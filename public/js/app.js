@@ -38,7 +38,7 @@ const app = {
   async fetchDiscordStats() {
     const updateStats = async () => {
       try {
-        const res = await fetch('https://discord.com/api/v9/invites/B2ne7GKhf8?with_counts=true');
+        const res = await fetch('https://discord.com/api/v9/invites/X9H3FkUryB?with_counts=true');
         const data = await res.json();
         if (data && data.approximate_presence_count !== undefined) {
           document.getElementById('discord-online-count').innerHTML = `● ${data.approximate_presence_count} Trực tuyến`;
