@@ -27,6 +27,7 @@ const app = {
       this.renderSubjects();
       this.updateDashboardStats();
       this.fetchDiscordStats();
+      this.loadPinnedAnnouncements();
       this.setupEventListeners();
     } catch (error) {
       console.error('Failed to initialize:', error);
@@ -73,6 +74,35 @@ const app = {
     } else {
       document.body.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
+    }
+  },
+
+  // ═══════════ PINNED ANNOUNCEMENTS ON HOMEPAGE ═══════════
+
+  async loadPinnedAnnouncements() {
+    const container = document.getElementById('pinned-announcements-container');
+    if (!container) return;
+
+    try {
+      const res = await fetch('/api/announcements');
+      if (!res.ok) return; // Keep fallback
+      const data = await res.json();
+      const pinned = (data || []).filter(a => a.pinned === true);
+
+      if (pinned.length === 0) return; // Keep fallback static banner
+
+      container.innerHTML = pinned.map(ann => `
+        <div class="announcement-banner">
+          <div class="announcement-icon">📌</div>
+          <div class="announcement-text">
+            <strong>${this.escapeHTML(ann.title)}</strong>
+            <span>${this.escapeHTML(ann.content)}</span>
+          </div>
+        </div>
+      `).join('');
+    } catch (e) {
+      // Silently fail, keep fallback banner
+      console.warn('Failed to load pinned announcements', e);
     }
   },
 

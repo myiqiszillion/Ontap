@@ -29,6 +29,7 @@ module.exports = async (req, res) => {
       const { data, error } = await supabase
         .from('announcements')
         .select('*')
+        .order('pinned', { ascending: false, nullsFirst: false })
         .order('timestamp', { ascending: false });
       if (error) throw error;
       return res.status(200).json(data || []);

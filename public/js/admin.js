@@ -204,19 +204,31 @@ const Admin = {
 
       list.innerHTML = data.map(ann => {
         const date = new Date(ann.timestamp).toLocaleString('vi-VN');
+        const isPinned = ann.pinned === true;
+        const pinClass = isPinned ? ' pinned' : '';
+        const pinIcon = isPinned
+          ? `<svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2z"/></svg>`
+          : `<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2z"/></svg>`;
+        const pinLabel = isPinned ? 'Bỏ ghim' : 'Ghim';
         return `
-          <div class="admin-ann-item" id="ann-${ann.id}">
+          <div class="admin-ann-item${pinClass}" id="ann-${ann.id}">
             <div class="admin-ann-info">
               <div class="admin-ann-header">
                 <img src="assets/avatar.jpg" alt="Admin Avatar" class="admin-ann-avatar">
-                <div class="admin-ann-title">${ann.title}</div>
+                <div class="admin-ann-title">${isPinned ? '📌 ' : ''}${ann.title}</div>
               </div>
               <div class="admin-ann-time">${date}</div>
             </div>
-            <button class="delete-btn" onclick="Admin.deleteAnnouncement('${ann.id}')">
-              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
-              Xóa
-            </button>
+            <div class="admin-ann-actions">
+              <button class="pin-btn${pinClass}" onclick="Admin.togglePin('${ann.id}', ${!isPinned})">
+                ${pinIcon}
+                ${pinLabel}
+              </button>
+              <button class="delete-btn" onclick="Admin.deleteAnnouncement('${ann.id}')">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                Xóa
+              </button>
+            </div>
           </div>
         `;
       }).join('');
@@ -239,6 +251,23 @@ const Admin = {
       if (document.getElementById('announcements-list').children.length === 0) {
         this.loadAnnouncements();
       }
+    } catch (err) {
+      this.showToast('Lỗi: ' + err.message, 'error');
+    }
+  },
+
+  async togglePin(id, pinned) {
+    try {
+      const res = await fetch(`/api/pin-announcement?id=${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pinned })
+      });
+
+      if (!res.ok) throw new Error('Thao tác thất bại');
+
+      this.showToast(pinned ? 'Đã ghim thông báo! 📌' : 'Đã bỏ ghim thông báo.', 'success');
+      this.loadAnnouncements();
     } catch (err) {
       this.showToast('Lỗi: ' + err.message, 'error');
     }
