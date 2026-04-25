@@ -91,7 +91,10 @@ const app = {
 
       if (pinned.length === 0) return; // Keep fallback static banner
 
-      container.innerHTML = pinned.map(ann => `
+      // Only show the most recent pinned announcement on the home page to keep it clean
+      const singlePinned = pinned.slice(0, 1);
+
+      container.innerHTML = singlePinned.map(ann => `
         <div class="announcement-banner">
           <div class="announcement-icon">📌</div>
           <div class="announcement-text">
