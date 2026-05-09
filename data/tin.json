@@ -1,1362 +1,1265 @@
 {
   "lessons": [
     {
-      "name": "Đề Cương Ôn Tập Giữa Kì 2",
+      "name": "Đề 1 - Kiểm Tra Cuối Kì 2",
       "questions": [
         {
-          "question": "Lệnh range(5) tạo ra dãy giá trị nào sau đây?",
+          "question": "Cho đoạn chương trình sau, kết quả in ra màn hình là gì?\ns = 0\ni = 1\nwhile i < 10:\ns = s + i\ni = i + 4\nprint(s)",
           "options": [
-            "1, 2, 3, 4, 5",
-            "0, 1, 2, 3, 4",
-            "0, 1, 2, 3, 4, 5",
-            "1, 2, 3, 4"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Lệnh range(2, 6) tạo ra vùng giá trị nào?",
-          "options": [
-            "2, 3, 4, 5",
-            "2, 3, 4, 5, 6",
-            "3, 4, 5, 6",
-            "2, 4, 6"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Lệnh range(0, 5) có đặc điểm gì?",
-          "options": [
-            "Bao gồm cả 0 và 5",
-            "Bao gồm 0 nhưng không bao gồm 5",
-            "Không bao gồm 0 nhưng bao gồm 5",
-            "Không bao gồm cả 0 và 5"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "(Trường hợp đặc biệt: start = stop)\nGiá trị trong lệnh range(4, 4) là gì?",
-          "options": [
-            "4",
-            "0",
-            "rỗng",
-            "Báo lỗi"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "(Trường hợp đặc biệt: start > stop)\nGiá trị trong lệnh range(6, 2) là gì?",
-          "options": [
-            "6, 5, 4, 3",
-            "6, 5, 4, 3, 2",
-            "rỗng",
-            "Báo lỗi"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Ý nghĩa đúng của lệnh range(a, b) .",
-          "options": [
-            "Tạo dãy số từ a đến b (bao gồm cả a và b)",
-            "Tạo dãy số từ a đến b (không bao gồm a)",
-            "Tạo dãy số từ a đến b (bao gồm a nhưng không bao gồm b)",
-            "Tạo dãy số từ 0 đến b"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(3):\n    print(\"Xin chào\")",
-          "options": [
-            "In 1 lần “Xin chào”",
-            "In 2 lần “Xin chào”",
-            "In 3 lần “Xin chào”",
-            "Không in gì"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(1, 4):\n    print(i)",
-          "options": [
-            "1 2 3",
-            "1 2 3 4",
-            "0 1 2 3",
-            "2 3 4"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Số lần lặp của vòng lặp sau là bao nhiêu?\nfor i in range(2, 6):\n    print(i)",
-          "options": [
-            "2 lần",
-            "3 lần",
-            "4 lần",
-            "5 lần"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\nfor i in range(5):\n    print(i * 2)",
-          "options": [
-            "0 2 4 6 8",
-            "2 4 6 8 10",
-            "0 1 2 3 4",
-            "1 2 3 4 5"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Để in các số từ 3 đến 6 bằng câu lệnh for, ta viết đúng .",
-          "options": [
-            "for i in range(3, 6):",
-            "for i in range(3, 7):",
-            "for i in range(4, 7):",
-            "for i in range(2, 6):"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cú pháp nào sau đây đúng của câu lệnh lặp while trong Python?",
-          "options": [
-            "while i < 5",
-            "while (i < 5):",
-            "while i < 5:",
-            "while i < 5 do"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Đoạn chương trình sau có lỗi ở đâu?\ni = 1\nwhile i <= 5\nprint(i)\ni = i + 1",
-          "options": [
-            "Sai vì thiếu dấu ngoặc đơn",
-            "Sai vì thiếu dấu hai chấm (:)",
-            "Sai vì thiếu từ khóa do",
-            "Không có lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Trong câu lệnh while, điều kiện lặp được đặt ở vị trí nào?",
-          "options": [
-            "Sau từ khóa while và trước dấu hai chấm",
-            "Sau dấu hai chấm",
-            "Trong dấu ngoặc nhọn { }",
-            "Sau từ khóa print"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Đoạn chương trình sau đúng hay sai về cú pháp?\ni = 0\nwhile i < 3:\n    print(i)\n    i =i + 1",
-          "options": [
-            "Đúng hoàn toàn",
-            "Sai vì thiếu dấu hai chấm",
-            "Sai vì không thụt lề khối lệnh",
-            "Sai vì thiếu dấu ngoặc"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Chọn phát biểu đúng về câu lệnh while:",
-          "options": [
-            "while luôn lặp đúng 1 lần",
-            "while chỉ lặp khi điều kiện đúng",
-            "while không cần điều kiện",
-            "while chỉ lặp khi điều kiện sai"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
-          "options": [
-            "2 lần",
-            "3 lần",
-            "4 lần",
-            "Vô hạn"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 0\nwhile i < 5:\n    print(\"Hello\")\n    i = i + 1",
-          "options": [
-            "4 lần",
-            "5 lần",
-            "6 lần",
-            "Vô hạn"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 2\nwhile i < 10:\n    print(i)\n    i = i + 2",
-          "options": [
-            "3 lần",
-            "4 lần",
-            "5 lần",
-            "6 lần"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau lặp bao nhiêu lần?\ni = 5\nwhile i > 0:\n    print(i)\n    i = i - 1",
-          "options": [
-            "4 lần",
-            "5 lần",
-            "6 lần",
-            "Vô hạn"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau xảy ra điều gì?\ni = 1\nwhile i <= 3:\n    print(i)",
-          "options": [
-            "Lặp 3 lần",
-            "Lặp 4 lần",
-            "Không lặp",
-            "Lặp vô hạn"
-          ],
-          "correct": 3
-        },
-        {
-          "question": "Trong Python, câu lệnh while kiểm tra điều kiện vào thời điểm nào?",
-          "options": [
-            "Sau khi thực hiện khối lệnh",
-            "Trước khi thực hiện khối lệnh",
-            "Sau khi thực hiện ít nhất một lần",
-            "Không cần kiểm tra điều kiện"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ni = 5\nwhile i < 3:\n    print(i)\n    i = i + 1",
-          "options": [
-            "In ra số 5",
-            "In ra 5 và 6",
-            "Không in gì",
-            "Báo lỗi"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Phát biểu nào sau đây đúng về vòng lặp while?",
-          "options": [
-            "Khối lệnh trong while luôn được thực hiện ít nhất một lần",
-            "Điều kiện được kiểm tra sau khi thực hiện khối lệnh",
-            "Điều kiện được kiểm tra trước mỗi lần lặp",
-            "while không cần điều kiện"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Đoạn chương trình sau thực hiện bao nhiêu lần lặp?\ni = 0\nwhile i > 0:\n    print(\"Hello\")\n    i = i + 1",
-          "options": [
-            "1 lần",
-            "2 lần",
-            "0 lần",
-            "Vô hạn"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cách khai báo một danh sách rỗng .",
-          "options": [
-            "a = {}",
-            "a = ()",
-            "a = []",
-            "a = null"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho danh sách:\na = [10, 20, 30]\nGiá trị của a[0] .",
-          "options": [
+            "1 5 9",
+            "15",
             "10",
-            "20",
-            "30",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Cho danh sách:\na = [5, 6, 7]\nGiá trị của a[2] .",
-          "options": [
-            "5",
-            "6",
-            "7",
-            "Báo lỗi"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho danh sách:\na = [1, 2, 3, 4]\nĐộ dài của danh sách .",
-          "options": [
-            "3",
-            "4",
-            "5",
-            "1"
+            "14"
           ],
           "correct": 1
         },
         {
-          "question": "Hàm dùng để tính độ dài danh sách .",
+          "question": "Cho xâu s = \"Hoc nua, hoc mai\". Kết quả của lệnh s.split(\",\") là:",
           "options": [
-            "size()",
-            "count()",
-            "length()",
-            "len()"
-          ],
-          "correct": 3
-        },
-        {
-          "question": "Cho danh sách:\na = [1, 2, 3]\nSau khi thực hiện lệnh a[1] = 10, danh sách trở thành:",
-          "options": [
-            "[10, 2, 3]",
-            "[1, 10, 3]",
-            "[1, 2, 10]",
-            "[10, 10, 10]"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho danh sách:\na = [4, 5, 6]\nLệnh nào sau đây thay đổi giá trị 6 thành 9?",
-          "options": [
-            "a[3] = 9",
-            "a[2] = 9",
-            "a[1] = 9",
-            "a[0] = 9"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho danh sách:\na = [1, 2, 3]\nKết quả của biểu thức 2 in a .",
-          "options": [
+            "[\"Hoc nua\", \" hoc mai\"]",
+            "[\"Hoc nua\", \"hoc mai\"]",
             "True",
-            "False",
-            "2",
-            "Báo lỗi"
+            "Hoc nua hoc mai"
           ],
           "correct": 0
         },
         {
-          "question": "Cho danh sách:\na = [7, 8, 9]\nKết quả của biểu thức 5 in a .",
+          "question": "Trong Python, chỉ số của xâu kí tự bắt đầu từ mấy?",
           "options": [
-            "True",
-            "False",
-            "5",
-            "Báo lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho hai danh sách:\na = [1, 2]\nb = [3, 4]\nKết quả của a + b .",
-          "options": [
-            "[1, 2, 3, 4]",
-            "[4, 6]",
-            "[[1, 2], [3, 4]]",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Cho hai danh sách:\nx = [\"A\"]\ny = [\"B\"]\nKết quả của x + y .",
-          "options": [
-            "[\"A\", \"B\"]",
-            "[\"AB\"]",
-            "[\"A\"][\"B\"]",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\na = [1, 2, 3]\nfor x in a:\n    print(x)",
-          "options": [
-            "1 2 3",
-            "[1, 2, 3]",
-            "0 1 2",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\na = [10, 20, 30]\nfor i in range(len(a)):\n    print(a[i])",
-          "options": [
-            "10 20 30",
-            "0 1 2",
-            "[10, 20, 30]",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Cho danh sách:\na = [2, 4, 6]\nCách kiểm tra số 4 có trong danh sách hay không .",
-          "options": [
-            "4 = a",
-            "4 in a",
-            "a in 4",
-            "a = 4"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho danh sách:\na = [1, 2, 3]\na.append(4)\nGiá trị của danh sách a sau khi thực hiện lệnh .",
-          "options": [
-            "[4, 1, 2, 3]",
-            "[1, 2, 3, 4]",
-            "[1, 2, 4]",
-            "[1, 2, 3]"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho danh sách:\na = [5, 6, 7]\na.insert(1, 10)\nDanh sách a sau khi thực hiện lệnh .",
-          "options": [
-            "[10, 5, 6, 7]",
-            "[5, 10, 6, 7]",
-            "[5, 6, 10, 7]",
-            "[5, 6, 7, 10]"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho danh sách:\na = [1, 2, 3, 2]\na.remove(2)\nDanh sách a sau khi thực hiện lệnh .",
-          "options": [
-            "[1, 3, 2]",
-            "[1, 2, 3]",
-            "[1, 3]",
-            "[1, 2, 3, 2]"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Cho danh sách:\na = [10, 20, 30]\ndel a[1]\nDanh sách a sau khi thực hiện lệnh .",
-          "options": [
-            "[10, 20]",
-            "[20, 30]",
-            "[10, 30]",
-            "[10, 20, 30]"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho danh sách:\na = [1, 2, 3]\na.clear()\nDanh sách a sau khi thực hiện lệnh .",
-          "options": [
-            "[1, 2, 3]",
-            "[]",
-            "None",
-            "Báo lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Trong Python, xâu kí tự được đặt trong:",
-          "options": [
-            "Dấu ngoặc vuông []",
-            "Dấu ngoặc nhọn {}",
-            "Dấu ngoặc kép \"\" hoặc dấu nháy đơn ''",
-            "Dấu ngoặc tròn ()"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho xâu:\ns = \"Python\"\nGiá trị của s[0] .",
-          "options": [
-            "P",
-            "y",
-            "n",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Cho xâu:\ns = \"TinHoc\"\nGiá trị của s[3] .",
-          "options": [
-            "H",
-            "o",
-            "c",
-            "n"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Hàm dùng để tính độ dài xâu kí tự .",
-          "options": [
-            "length()",
-            "size()",
-            "count()",
-            "len()"
-          ],
-          "correct": 3
-        },
-        {
-          "question": "Cho xâu:\ns = \"Hello\"\nKết quả của len(s) .",
-          "options": [
-            "4",
-            "5",
-            "6",
-            "Báo lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ns = \"ABC\"\nfor ch in s:\n    print(ch)",
-          "options": [
-            "ABC",
-            "A B C (mỗi kí tự một dòng)",
-            "0 1 2",
-            "Báo lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ns = \"XYZ\"\nfor i in range(len(s)):\n    print(s[i])",
-          "options": [
-            "X Y Z (mỗi kí tự một dòng)",
-            "0 1 2",
-            "XYZ",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Biểu thức \"on\" in \"Python\" cho kết quả:",
-          "options": [
-            "True",
-            "False",
-            "on",
-            "Báo lỗi"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Biểu thức \"py\" in \"Python\" cho kết quả:",
-          "options": [
-            "True",
-            "False",
-            "0",
-            "Báo lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho xâu:\ns = \"banana\"\nKết quả của s.find(\"na\") .",
-          "options": [
-            "2",
-            "3",
-            "4",
-            "-1"
-          ],
-          "correct": 0
-        },
-        {
-          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"th\") .",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "-1"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho xâu:\ns = \"Python\"\nKết quả của s.find(\"abc\") .",
-          "options": [
-            "0",
             "1",
             "-1",
-            "Báo lỗi"
+            "0",
+            "Tùy thuộc vào độ dài xâu"
           ],
           "correct": 2
         },
         {
-          "question": "Đoạn chương trình sau có chức năng gì?\ns = \"abcde\"\nfor i in range(len(s)):\n    print(i, s[i])",
+          "question": "Lỗi ZeroDivisionError xảy ra khi nào?",
           "options": [
-            "In các chỉ số của xâu",
-            "In các kí tự của xâu",
-            "In chỉ số và kí tự tương ứng",
-            "Báo lỗi"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Để kiểm tra xâu con \"tin\" có trong xâu \"lap trinh tin hoc\" hay không, ta dùng:",
-          "options": [
-            "\"tin\" find \"lap trinh tin hoc\"",
-            "\"tin\" in \"lap trinh tin hoc\"",
-            "\"lap trinh tin hoc\" in \"tin\"",
-            "find(\"tin\")"
+            "Khi biến chưa được định nghĩa",
+            "Khi thực hiện phép chia cho số 0",
+            "Khi sai cú pháp lệnh if",
+            "Khi nhập dữ liệu sai kiểu"
           ],
           "correct": 1
         },
         {
-          "question": "Cho đoạn lệnh:\ns = \"Tin hoc lop 10\"\na = s.split()\nprint(a)\nKết quả in ra .",
+          "question": "Phần mềm nào sau đây là phần mềm thiết kế đồ họa vector miễn phí phổ biến?",
           "options": [
-            "[\"Tin hoc lop 10\"]",
-            "['Tin', 'hoc', 'lop', '10']",
-            "['Tin hoc lop', '10']",
-            "Lỗi chương trình"
+            "Adobe Illustrator",
+            "Inkscape",
+            "Microsoft Excel",
+            "Notepad"
           ],
           "correct": 1
         },
         {
-          "question": "Cho đoạn lệnh:\ns = \"a-b-c-d\"\na = s.split(\"-\")\nprint(a)\nKết quả in ra .",
+          "question": "Để trả về giá trị từ một hàm, ta sử dụng từ khóa nào?",
           "options": [
-            "['a-b-c-d']",
-            "['a', 'b', 'c', 'd']",
-            "['a b c d']",
-            "Lỗi vì dấu \"-\" không hợp lệ"
+            "get",
+            "out",
+            "return",
+            "def"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Đoạn lệnh sau sẽ lặp lại bao nhiêu lần?\nk = 10\nwhile k > 0:\nk = k - 3",
+          "options": [
+            "3 lần",
+            "4 lần",
+            "10 lần",
+            "Vô hạn lần"
           ],
           "correct": 1
         },
         {
-          "question": "Cho đoạn lệnh:\na = ['2024', '2025', '2026']\ns = \"-\".join(a)\nprint(s)\nKết quả in ra .",
+          "question": "Vùng giá trị của range(5, 1, -1) là:",
           "options": [
-            "['2024-2025-2026']",
-            "2024 2025 2026",
-            "2024-2025-2026",
-            "Lỗi chương trình"
+            "5 4 3 2 1",
+            "5 4 3 2",
+            "1 2 3 4 5",
+            "4 3 2 1"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
-          "question": "Cho đoạn lệnh:\ns = \"lap trinh python python\"\nk = s.find(\"python\", 10)\nprint(k)\nKết quả in ra .",
+          "question": "Trong quy trình phát triển phần mềm, bước \"Xác định yêu cầu\" nhằm mục đích gì?",
           "options": [
-            "4",
-            "10",
-            "11",
-            "-1"
+            "Viết mã nguồn cho phần mềm",
+            "Tìm hiểu khách hàng cần gì ở phần mềm",
+            "Sửa lỗi chương trình",
+            "Thiết kế giao diện đồ họa"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
-          "question": "Cho đoạn lệnh:\ns = \"mot hai ba bon\"\na = s.split()\nb = \"_\".join(a)\nprint(b)\nKết quả in ra .",
+          "question": "Nghề nào sau đây trực tiếp thực hiện việc viết mã nguồn (code) để tạo ra các ứng dụng?",
           "options": [
-            "mot_hai_ba_bon",
-            "['mot_hai_ba_bon']",
-            "mot hai ba bon",
-            "Lỗi chương trình"
+            "Lập trình viên",
+            "Chuyên viên bảo mật",
+            "Quản trị cơ sở dữ liệu",
+            "Thiết kế đồ họa"
           ],
           "correct": 0
         },
         {
-          "question": "Trong khai báo sau:\ndef tinhTong(a, b):\nreturn a + b\na và b được gọi là gì?",
+          "question": "Cho hàm sau, kết quả in ra là gì?\ndef tinh(x):\nreturn x * 2\nprint(tinh(tinh(3)))",
           "options": [
-            "Đối số",
-            "Tham số",
-            "Biến toàn cục",
-            "Hằng số"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Khi gọi hàm tinhTong(3, 5), số 3 và 5 được gọi .",
-          "options": [
-            "Tham số",
-            "Hàm con",
-            "Đối số",
-            "Biến cục bộ"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho hàm:\ndef xinChao():\nprint(\"Xin chao\")\nHàm này:",
-          "options": [
-            "Có trả về giá trị",
-            "Không trả về giá trị cụ thể",
-            "Trả về giá trị 0",
-            "Trả về chuỗi \"Xin chao\""
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho hàm:\ndef nhan(a, b):\nreturn a * b\nHàm này:",
-          "options": [
-            "Không có tham số",
-            "Có 1 tham số",
-            "Có 2 tham số",
-            "Có 3 tham số"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Điều gì xảy ra nếu số đối số không bằng số tham số?",
-          "options": [
-            "Chương trình vẫn chạy bình thường",
-            "Chương trình tự thêm giá trị 0",
-            "Báo lỗi",
-            "Bỏ qua tham số thừa"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Lời gọi nào sau đây đúng với hàm:\ndef cong(a, b, c):\nreturn a + b + c",
-          "options": [
-            "cong(1, 2)",
-            "cong(1, 2, 3)",
-            "cong(1)",
-            "cong()"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Đoạn chương trình sau in ra kết quả gì?\ndef tinh(a):\nreturn a + 2\nprint(tinh(3))",
-          "options": [
-            "3",
-            "2",
-            "5",
-            "Lỗi"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Nếu một hàm không có lệnh return, thì khi gọi hàm đó:",
-          "options": [
-            "Luôn báo lỗi",
-            "Trả về giá trị None",
-            "Trả về 0",
-            "Không thực hiện"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Khai báo nào sau đây sai cú pháp?",
-          "options": [
-            "def tinh():",
-            "def tinh(a,b):",
-            "def tinh a,b:",
-            "def tinh(a):"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho hàm:\ndef chao(ten):\nprint(\"Xin chao\", ten)\nLời gọi nào đúng?",
-          "options": [
-            "chao()",
-            "chao(\"An\")",
-            "chao(\"An\", \"Binh\")",
-            "print(chao)"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho đoạn chương trình:\ndef tru(a, b):\nprint(a - b)\nkq = tru(7, 2)\nprint(kq)\nKết quả in ra .",
-          "options": [
-            "5",
-            "None",
-            "7 2",
-            "Lỗi"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Hàm sau có bao nhiêu tham số?\ndef tinh(a, b, c, d):\nreturn a + b",
-          "options": [
-            "2",
-            "3",
-            "4",
-            "1"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Đoạn chương trình sau có đúng không?\ndef tong(a, b):\nreturn a + b\nprint(tong(5))",
-          "options": [
-            "Đúng và in ra 5",
-            "Đúng và in ra None",
-            "Sai vì thiếu đối số",
-            "Đúng và in ra 0"
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Cho đoạn chương trình:\ndef cong(a, b):\nreturn a + b\nprint(cong(2, 3))\nKết quả in ra .",
-          "options": [
-            "23",
-            "5",
-            "None",
-            "Lỗi chương trình"
-          ],
-          "correct": 1
-        },
-        {
-          "question": "Cho đoạn chương trình:\ndef nhan(a, b):\nprint(a * b)\nkq = nhan(3, 4)\nprint(kq)\nKết quả in ra .",
-          "options": [
+            "6",
+            "9",
             "12",
-            "12 và None",
-            "None",
-            "Lỗi chương trình"
+            "18"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Một trong các mục tiêu của việc \"Bảo trì phần mềm\" là:",
+          "options": [
+            "Xây dựng phần mềm mới hoàn toàn",
+            "Cập nhật phần mềm để thích nghi với môi trường mới hoặc sửa lỗi phát sinh",
+            "Kết thúc dự án và sa thải nhân viên",
+            "Quảng cáo sản phẩm"
+          ],
+          "correct": 1
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Học sinh viết một hàm tính lũy thừa như sau:\ndef luy_thua(a, n):\nres = a ** n\nreturn res\nx = 2\ny = 3\nprint(luy_thua(x, y))",
+          "statements": [
+            {
+              "question": "Kết quả của chương trình in ra là 8.",
+              "correct": true
+            },
+            {
+              "question": "a, n được gọi là các đối số (arguments).",
+              "correct": false
+            },
+            {
+              "question": "res là một biến cục bộ, không thể truy cập từ bên ngoài hàm.",
+              "correct": true
+            },
+            {
+              "question": "Nếu thay return res bằng print(res), hàm sẽ trả về giá trị None.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Cho đoạn chương trình làm việc với danh sách:\nlist_a = [10, 20, 30]\nfor i in range(len(list_a)):\nlist_a[i] = list_a[i] + i",
+          "statements": [
+            {
+              "question": "Sau khi chạy, list_a trở thành [10, 21, 32].",
+              "correct": true
+            },
+            {
+              "question": "Lệnh len(list_a) trả về giá trị là 2.",
+              "correct": false
+            },
+            {
+              "question": "Chương trình sẽ bị lỗi IndexError vì vượt quá chỉ số.",
+              "correct": false
+            },
+            {
+              "question": "Biến i trong vòng lặp sẽ nhận các giá trị lần lượt là 0, 1, 2.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Một học sinh thực hiện thao tác trên danh sách b = [5, 1, 8, 2]:",
+          "statements": [
+            {
+              "question": "Lệnh b.sort() sẽ sắp xếp danh sách b thành [1, 2, 5, 8].",
+              "correct": true
+            },
+            {
+              "question": "Lệnh b.pop(0) sẽ xóa số 2 khỏi danh sách.",
+              "correct": false
+            },
+            {
+              "question": "Lệnh b.insert(1, 10) sẽ chèn số 10 vào vị trí có chỉ số 1.",
+              "correct": true
+            },
+            {
+              "question": "Danh sách trong Python có thể chứa cả số nguyên và xâu kí tự.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Về phạm vi của biến trong Python:\ng = 100\ndef function():\nglobal g\ng = 50\nx = 10\nprint(x)\nfunction()\nprint(g)",
+          "statements": [
+            {
+              "question": "x là biến toàn cục (global).",
+              "correct": false
+            },
+            {
+              "question": "Giá trị của g in ra ở dòng cuối cùng là 50.",
+              "correct": true
+            },
+            {
+              "question": "Từ khóa global dùng để cho phép hàm thay đổi giá trị của biến toàn cục.",
+              "correct": true
+            },
+            {
+              "question": "Nếu không có dòng global g, lệnh g = 50 bên trong hàm sẽ tạo ra một biến cục bộ mới tên là g.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 2 - Kiểm Tra Cuối Kì 2",
+      "questions": [
+        {
+          "question": "Cho đoạn chương trình sau, kết quả in ra màn hình là gì?\nx = 5\nwhile x > 0:\nx = x - 2\nprint(x, end=\" \")",
+          "options": [
+            "5 3 1",
+            "3 1 -1",
+            "3 1",
+            "5 3 1 -1"
           ],
           "correct": 1
         },
         {
-          "question": "Cho hàm:\ndef tinh(a, b):\nreturn a - b\nLời gọi nào sau đây gây lỗi?",
+          "question": "Cho danh sách L = [10, 20, 30, 40]. Lệnh L.pop() sẽ làm cho danh sách L trở thành:",
           "options": [
-            "tinh(5, 2)",
-            "tinh(5)",
-            "tinh(7, 3)",
-            "print(tinh(4, 1))"
+            "[20, 30, 40]",
+            "[10, 20, 30]",
+            "[10, 30, 40]",
+            "[]"
           ],
           "correct": 1
         },
         {
-          "question": "Cho đoạn chương trình:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))\nKết quả in ra .",
+          "question": "Trong Python, để truy cập phần tử cuối cùng của một danh sách a bất kỳ, ta sử dụng chỉ số nào sau đây?",
           "options": [
-            "Xin chao",
-            "Xin chao An",
-            "An Xin chao",
-            "Lỗi"
+            "a[0]",
+            "a[len(a)]",
+            "a[len(a) - 1]",
+            "a[1]"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Lỗi NameError thường xảy ra khi nào?",
+          "options": [
+            "Khi sử dụng một biến chưa được khai báo/định nghĩa",
+            "Khi viết sai cú pháp lệnh for",
+            "Khi chia một số cho 0",
+            "Khi chỉ số danh sách nằm ngoài phạm vi"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Phần mềm SketchUp thường được ứng dụng chủ yếu trong lĩnh vực nào?",
+          "options": [
+            "Chỉnh sửa ảnh kỹ thuật số",
+            "Lập trình web",
+            "Thiết kế mô hình 3D và kiến trúc",
+            "Soạn thảo văn bản"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho hàm sau:\ndef kiem_tra(n):\nif n % 2 == 0:\nreturn \"Chan\"\nreturn \"Le\"\nprint(kiem_tra(7))",
+          "options": [
+            "Chan",
+            "7",
+            "n",
+            "Le"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Đoạn lệnh sau in ra bao nhiêu số?\nfor i in range(1, 10, 2):\nprint(i)",
+          "options": [
+            "10 số",
+            "5 số",
+            "4 số",
+            "9 số"
           ],
           "correct": 1
         },
         {
-          "question": "Cho hàm:\ndef tong(a, b):\nreturn a + b\nLời gọi nào sau đây gây lỗi?",
+          "question": "Trong quy trình phát triển phần mềm, bước \"Lập trình\" (Implementation) diễn ra sau bước nào?",
           "options": [
-            "tong(2, 3)",
-            "tong(\"2\", \"3\")",
-            "tong(2)",
-            "tong(5, 7)"
+            "Bảo trì",
+            "Kiểm thử",
+            "Thiết kế (Design)",
+            "Vận hành"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Để thêm phần tử 99 vào vị trí đầu tiên của danh sách a, ta dùng lệnh:",
+          "options": [
+            "a.append(99)",
+            "a.insert(0, 99)",
+            "a.insert(1, 99)",
+            "a.add(99)"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Công việc của một \"Chuyên viên kiểm thử phần mềm\" (Tester) là gì?",
+          "options": [
+            "Viết toàn bộ mã nguồn của dự án",
+            "Tìm lỗi và đảm bảo chất lượng phần mềm",
+            "Đi bán phần mềm cho khách hàng",
+            "Quản lý nhân sự trong công ty"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho đoạn code sau, biến s có giá trị bao nhiêu?\ns = 0\nfor i in [1, 2, 3]:\ns = s + i",
+          "options": [
+            "3",
+            "0",
+            "5",
+            "6"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Đâu là cách đặt tên biến đúng quy tắc trong Python?",
+          "options": [
+            "1_bien_so",
+            "bien so",
+            "bien_so_1",
+            "bien-so"
           ],
           "correct": 2
         }
       ],
       "questionGroups": [
         {
-          "passage": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1",
+          "passage": "Một học sinh viết chương trình tính tổng các số chẵn:\ntong = 0\nk = 2\nwhile k <= 6:\ntong = tong + k\nk = k + 2",
           "statements": [
             {
-              "question": "Cấu trúc cú pháp câu lệnh while i <= 3: là hợp lệ.",
+              "question": "Vòng lặp while sẽ thực hiện 3 lần lặp.",
               "correct": true
             },
             {
-              "question": "Số lần lặp của đoạn chương trình trên bằng 3.",
+              "question": "Sau khi kết thúc, giá trị của tong là 12.",
               "correct": true
             },
             {
-              "question": "Giá trị cuối cùng của biến i sau khi kết thúc vòng lặp bằng 4.",
-              "correct": true
-            },
-            {
-              "question": "Thực hiện chức năng in ra các số từ 1 đến 3.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "i = 5\nwhile i < 5:\n    print(i)\n    i = i + 1",
-          "statements": [
-            {
-              "question": "Điều kiện của vòng lặp được kiểm tra trước khi thực hiện khối lệnh.",
-              "correct": true
-            },
-            {
-              "question": "Số lần lặp của đoạn chương trình trên bằng 1.",
+              "question": "Nếu thay k = k + 2 bằng k = k + 1, vòng lặp sẽ bị vô hạn.",
               "correct": false
             },
             {
-              "question": "Chương trình không in ra giá trị nào vì điều kiện sai ngay từ đầu.",
+              "question": "Điều kiện dừng của vòng lặp là khi k > 6.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Cho đoạn mã nguồn về danh sách:\nds = [5, 10, 15]\nds.append(20)\nds[1] = 100",
+          "statements": [
+            {
+              "question": "Sau lệnh append(20), danh sách có 4 phần tử.",
               "correct": true
             },
             {
-              "question": "Chức năng của đoạn chương trình là in các số nhỏ hơn 5 bắt đầu từ 5.",
+              "question": "Lệnh ds[1] = 100 sẽ thay thế giá trị 10 thành 100.",
+              "correct": true
+            },
+            {
+              "question": "Sau tất cả các lệnh, ds có giá trị là [5, 100, 15, 20].",
+              "correct": true
+            },
+            {
+              "question": "Lệnh del ds[0] sẽ xóa phần tử có giá trị 5.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Xem xét về phạm vi biến trong đoạn code sau:\nx = 10\ndef thay_doi():\nx = 5\nreturn x\nprint(thay_doi())\nprint(x)",
+          "statements": [
+            {
+              "question": "Biến x ở dòng đầu tiên là biến toàn cục.",
+              "correct": true
+            },
+            {
+              "question": "Lệnh print(thay_doi()) sẽ in ra giá trị 10.",
+              "correct": false
+            },
+            {
+              "question": "Sau khi gọi hàm, giá trị của biến x toàn cục vẫn là 10.",
+              "correct": true
+            },
+            {
+              "question": "x = 5 bên trong hàm là một biến cục bộ.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Về các lỗi thường gặp trong lập trình:",
+          "statements": [
+            {
+              "question": "Chia một số cho 0 gây ra lỗi ZeroDivisionError.",
+              "correct": true
+            },
+            {
+              "question": "Quên dấu hai chấm (:) sau câu lệnh if gây ra lỗi IndexError.",
+              "correct": false
+            },
+            {
+              "question": "Lỗi logic (sai thuật toán) là loại lỗi mà chương trình vẫn chạy nhưng kết quả không đúng.",
+              "correct": true
+            },
+            {
+              "question": "Sử dụng thụt đầu dòng (indentation) không đồng nhất sẽ gây ra lỗi cú pháp.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 3 - Kiểm Tra Cuối Kì 2",
+      "questions": [
+        {
+          "question": "Cho đoạn chương trình sau, sau khi kết thúc, giá trị của s là bao nhiêu?\ns = 10\nfor i in range(3):\ns = s - i",
+          "options": [
+            "7",
+            "10",
+            "9",
+            "4"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Cho danh sách a = [1, 2, 3, 4, 5]. Để lấy giá trị 2 từ danh sách, ta dùng lệnh:",
+          "options": [
+            "a[2]",
+            "a[1]",
+            "a[0]",
+            "a[3]"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong Python, từ khóa nào dùng để bắt đầu định nghĩa một hàm?",
+          "options": [
+            "function",
+            "void",
+            "def",
+            "return"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Khi bạn gọi một hàm nhưng truyền thiếu đối số so với số lượng tham số đã định nghĩa, Python sẽ báo lỗi gì?",
+          "options": [
+            "SyntaxError",
+            "NameError",
+            "TypeError",
+            "IndexError"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Phần mềm Inkscape được sử dụng chính để làm gì?",
+          "options": [
+            "Lập trình hệ thống",
+            "Thiết kế đồ họa vector 2D",
+            "Quản lý dự án",
+            "Soạn thảo mã nguồn"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho đoạn chương trình sau:\na = 0\nwhile a < 5:\na = a + 2\nprint(a)",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "2"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Để đếm xem danh sách b có bao nhiêu phần tử, ta dùng hàm:",
+          "options": [
+            "count(b)",
+            "size(b)",
+            "len(b)",
+            "length(b)"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Giai đoạn nào trong phát triển phần mềm giúp phát hiện lỗi lập trình và lỗi logic?",
+          "options": [
+            "Lập kế hoạch",
+            "Kiểm thử (Testing)",
+            "Bảo trì",
+            "Phân tích yêu cầu"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Để xóa phần tử đầu tiên của danh sách L = [7, 8, 9], lệnh nào sau đây là sai?",
+          "options": [
+            "L.pop(0)",
+            "del L[0]",
+            "L.remove(7)",
+            "L.clear()"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "\"Xây dựng các sơ đồ thiết kế, kiến trúc hệ thống và cơ sở dữ liệu\" thuộc công đoạn nào?",
+          "options": [
+            "Lập trình",
+            "Thiết kế (Design)",
+            "Kiểm thử",
+            "Bảo trì"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho hàm sau:\ndef nhan(a, b=2):\nreturn a * b\nprint(nhan(5))",
+          "options": [
+            "5",
+            "2",
+            "10",
+            "Lỗi vì thiếu đối số b"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Biến được định nghĩa bên ngoài tất cả các hàm được gọi là:",
+          "options": [
+            "Biến cục bộ",
+            "Biến toàn cục",
+            "Biến tham số",
+            "Biến hằng"
+          ],
+          "correct": 1
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Một học sinh viết chương trình sử dụng danh sách như sau:\nhoa_qua = [\"Tao\", \"Le\"]\nhoa_qua.append(\"Cam\")\nhoa_qua.insert(1, \"Mit\")",
+          "statements": [
+            {
+              "question": "Sau khi thực hiện append(\"Cam\"), danh sách có giá trị [\"Tao\", \"Le\", \"Cam\"].",
+              "correct": true
+            },
+            {
+              "question": "Sau khi thực hiện insert(1, \"Mit\"), \"Mit\" sẽ nằm ở cuối danh sách.",
+              "correct": false
+            },
+            {
+              "question": "Danh sách cuối cùng là [\"Tao\", \"Mit\", \"Le\", \"Cam\"].",
+              "correct": true
+            },
+            {
+              "question": "Độ dài của danh sách sau khi chạy hết các lệnh là 4.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Xét đoạn chương trình về vòng lặp và điều kiện:\nn = 10\nwhile n > 0:\nif n % 4 == 0:\nprint(n)\nn = n - 1",
+          "statements": [
+            {
+              "question": "Chương trình sẽ in ra các số 8 và 4.",
+              "correct": true
+            },
+            {
+              "question": "Vòng lặp while thực hiện tổng cộng 10 lần lặp.",
+              "correct": true
+            },
+            {
+              "question": "Nếu không có dòng n = n - 1, vòng lặp sẽ bị vô hạn.",
+              "correct": true
+            },
+            {
+              "question": "Giá trị cuối cùng của n sau khi vòng lặp kết thúc là 0.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Một học sinh thực hành về hàm và phạm vi biến:\ntong = 0\ndef tinh_tong(a, b):\ntong = a + b\nreturn tong\nprint(tinh_tong(5, 5))\nprint(tong)",
+          "statements": [
+            {
+              "question": "Lệnh print(tinh_tong(5, 5)) in ra giá trị 10.",
+              "correct": true
+            },
+            {
+              "question": "Biến tong bên trong hàm và biến tong bên ngoài hàm là một.",
+              "correct": false
+            },
+            {
+              "question": "Lệnh print(tong) ở dòng cuối cùng sẽ in ra giá trị 0.",
+              "correct": true
+            },
+            {
+              "question": "a và b là các tham số của hàm tinh_tong.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Kiến thức về phát triển phần mềm và nghề nghiệp:",
+          "statements": [
+            {
+              "question": "Một dự án phần mềm có thể kết thúc ngay sau khi lập trình xong mà không cần kiểm thử.",
+              "correct": false
+            },
+            {
+              "question": "Người quản trị dự án (Project Manager) là người chịu trách nhiệm chính về tiến độ dự án.",
+              "correct": true
+            },
+            {
+              "question": "Phần mềm mã nguồn mở (như Inkscape) cho phép người dùng tự do sử dụng và nghiên cứu.",
+              "correct": true
+            },
+            {
+              "question": "Bảo trì phần mềm là công đoạn sửa lỗi hoặc nâng cấp sau khi phần mềm đã được bàn giao.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 4 - Kiểm Tra Cuối Kì 2",
+      "questions": [
+        {
+          "question": "Cho đoạn chương trình sau, kết quả in ra màn hình là gì?\na = 1\nwhile a < 10:\na = a * 3\nprint(a)",
+          "options": [
+            "3",
+            "9",
+            "27",
+            "12"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho danh sách ds = [1, 2, 3, 4]. Lệnh nào sau đây sẽ làm danh sách trở thành [1, 2, 3, 4, 5]?",
+          "options": [
+            "ds.insert(5)",
+            "ds.append(5)",
+            "ds.add(5)",
+            "ds.extend(5)"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong Python, khi gặp lỗi chia cho số 0, chương trình sẽ thông báo ngoại lệ nào?",
+          "options": [
+            "ValueError",
+            "ZeroDivisionError",
+            "TypeError",
+            "IndexError"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho đoạn code sau, lệnh print sẽ in ra giá trị nào?\ndef tinh(x):\nx = x + 10\nreturn x\nx = 5\ntinh(x)\nprint(x)",
+          "options": [
+            "15",
+            "5",
+            "10",
+            "Lỗi chương trình"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phần mềm nào sau đây không phải là phần mềm thiết kế đồ họa hay mô hình hóa?",
+          "options": [
+            "Inkscape",
+            "SketchUp",
+            "Blender",
+            "Python IDLE"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Để duyệt qua từng phần tử của danh sách A = [10, 20, 30], cách viết nào sau đây là đúng?",
+          "options": [
+            "for i in A:",
+            "while i in A:",
+            "for A in i:",
+            "if i in A:"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong quy trình phát triển phần mềm, việc \"Sửa lỗi và cập nhật tính năng theo yêu cầu người dùng sau khi bàn giao\" gọi là:",
+          "options": [
+            "Kiểm thử",
+            "Thiết kế",
+            "Bảo trì (Maintenance)",
+            "Phân tích hệ thống"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Giá trị của biểu thức len([\"Python\", \"C++\", \"Java\"]) là:",
+          "options": [
+            "3",
+            "15",
+            "1",
+            "6"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Công việc chính của người \"Thiết kế đồ họa\" (Graphic Designer) trong dự án phần mềm thường là:",
+          "options": [
+            "Viết thuật toán xử lý dữ liệu",
+            "Thiết kế giao diện người dùng (UI)",
+            "Cài đặt hệ điều hành cho máy chủ",
+            "Kiểm tra lỗi bảo mật"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Lệnh range(10, 0, -2) sẽ tạo ra dãy số nào?",
+          "options": [
+            "10, 8, 6, 4, 2, 0",
+            "10, 8, 6, 4, 2",
+            "8, 6, 4, 2, 0",
+            "10, 9, 8, 7, 6, 5, 4, 3, 2, 1"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho xâu s = \"Hoc Tin\". Phần tử s[2] là ký tự nào?",
+          "options": [
+            "H",
+            "o",
+            "c",
+            "Khoảng trắng"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Để định nghĩa một hàm không có tham số đầu vào, cách viết nào sau đây đúng?",
+          "options": [
+            "def xin_chao:",
+            "def xin_chao()",
+            "def xin_chao():",
+            "def xin_chao[]:"
+          ],
+          "correct": 2
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Xét chương trình xử lý danh sách sau:\nnumbers = [10, 20, 30, 40]\nnumbers.pop(2)\nnumbers.remove(10)",
+          "statements": [
+            {
+              "question": "Lệnh pop(2) sẽ xóa phần tử có giá trị là 20.",
+              "correct": false
+            },
+            {
+              "question": "Sau lệnh pop(2), danh sách còn lại là [10, 20, 40].",
+              "correct": true
+            },
+            {
+              "question": "Lệnh remove(10) sẽ tìm và xóa phần tử có giá trị là 10.",
+              "correct": true
+            },
+            {
+              "question": "Kết quả cuối cùng của danh sách numbers là [20, 40].",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Một học sinh viết hàm tính diện tích hình chữ nhật:\ndef dien_tich(dai, rong):\ns = dai * rong\nreturn s\na = 5\nb = 3",
+          "statements": [
+            {
+              "question": "dai và rong được gọi là các tham số của hàm.",
+              "correct": true
+            },
+            {
+              "question": "Lệnh print(dien_tich(a)) sẽ chạy bình thường và in ra kết quả là 15.",
+              "correct": false
+            },
+            {
+              "question": "Biến s bên trong hàm là biến cục bộ.",
+              "correct": true
+            },
+            {
+              "question": "Hàm này có giá trị trả về nhờ từ khóa return.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Về quy trình phát triển phần mềm và nghề nghiệp:",
+          "statements": [
+            {
+              "question": "Lập trình viên chỉ cần biết viết code, không cần quan tâm đến tài liệu thiết kế.",
+              "correct": false
+            },
+            {
+              "question": "Bước \"Phân tích yêu cầu\" thường là bước đầu tiên của mọi dự án phần mềm.",
+              "correct": true
+            },
+            {
+              "question": "SketchUp là một công cụ hỗ trợ cho các kiến trúc sư và nhà thiết kế 3D.",
+              "correct": true
+            },
+            {
+              "question": "Kiểm thử phần mềm giúp giảm thiểu rủi ro và tăng độ tin cậy của sản phẩm.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Xem xét logic của vòng lặp sau:\ndem = 0\nfor i in range(5):\nif i % 2 != 0:\ndem = dem + 1",
+          "statements": [
+            {
+              "question": "Vòng lặp for sẽ chạy với các giá trị i là: 0, 1, 2, 3, 4.",
+              "correct": true
+            },
+            {
+              "question": "Điều kiện i % 2 != 0 dùng để kiểm tra số i là số chẵn.",
+              "correct": false
+            },
+            {
+              "question": "Biến dem dùng để đếm các số lẻ trong khoảng từ 0 đến 4.",
+              "correct": true
+            },
+            {
+              "question": "Sau khi kết thúc chương trình, giá trị của dem là 2.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 5 - Kiểm Tra Cuối Kì 2",
+      "questions": [
+        {
+          "question": "Cho đoạn chương trình sau, kết quả in ra màn hình là gì?\ns = 0\nfor i in range(1, 5):\nif i == 3:\ncontinue\ns = s + i\nprint(s)",
+          "options": [
+            "10",
+            "7",
+            "6",
+            "3"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Lệnh nào sau đây dùng để xóa phần tử có giá trị 5 xuất hiện đầu tiên trong danh sách a?",
+          "options": [
+            "a.pop(5)",
+            "del a[5]",
+            "a.remove(5)",
+            "a.clear()"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho hàm sau, kết quả của lệnh gọi hàm tinh(10, 2) là bao nhiêu?\ndef tinh(a, b):\nreturn a // b + a % b",
+          "options": [
+            "5",
+            "0",
+            "5.0",
+            "5"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong Python, lỗi TypeError xảy ra trong trường hợp nào sau đây?",
+          "options": [
+            "Truy cập chỉ số nằm ngoài danh sách",
+            "Thực hiện phép toán trên các kiểu dữ liệu không phù hợp (ví dụ: số + xâu)",
+            "Gọi một biến chưa được định nghĩa",
+            "Sai quy tắc thụt đầu dòng"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phần mềm nào là phần mềm mã nguồn mở chuyên dụng cho thiết kế đồ họa vector?",
+          "options": [
+            "Adobe Photoshop",
+            "Inkscape",
+            "Microsoft Word",
+            "CorelDRAW"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho đoạn code sau, giá trị của n sau khi kết thúc là bao nhiêu?\nn = 1\nwhile n < 10:\nn = n + 3",
+          "options": [
+            "10",
+            "9",
+            "13",
+            "1"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Để kiểm tra xem giá trị x có nằm trong danh sách L hay không, ta dùng toán tử:",
+          "options": [
+            "is",
+            "in",
+            "==",
+            "exist"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong quy trình phát triển phần mềm, việc \"Mô tả chi tiết các chức năng và giao diện của hệ thống\" thuộc công đoạn:",
+          "options": [
+            "Lập trình",
+            "Thiết kế (Design)",
+            "Kiểm thử",
+            "Vận hành"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho danh sách b = [1, 2, 3]. Sau lệnh b = b * 2, danh sách b sẽ là:",
+          "options": [
+            "[2, 4, 6]",
+            "[1, 2, 3, 1, 2, 3]",
+            "[1, 2, 3, 2]",
+            "Lỗi vì không nhân được danh sách"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "\"Kiến trúc sư hệ thống\" là người làm nhiệm vụ gì trong dự án phần mềm?",
+          "options": [
+            "Viết mã nguồn cho từng chức năng nhỏ",
+            "Thiết kế cấu trúc tổng thể và các thành phần của phần mềm",
+            "Đi tìm lỗi (bug) trong chương trình",
+            "Soạn thảo văn bản hướng dẫn sử dụng"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho xâu s = \"Lop 11\". Lệnh len(s) trả về giá trị:",
+          "options": [
+            "5",
+            "6",
+            "4",
+            "7"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Để định nghĩa một hàm có tên là tong với hai tham số x và y, cách viết nào đúng?",
+          "options": [
+            "def tong(x, y)",
+            "function tong(x, y):",
+            "def tong(x, y):",
+            "def tong[x, y]:"
+          ],
+          "correct": 2
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Một học sinh viết chương trình quản lý danh sách học sinh:\nlop = [\"An\", \"Binh\", \"Chi\"]\nlop.insert(0, \"Dung\")\nlop.append(\"An\")",
+          "statements": [
+            {
+              "question": "Sau lệnh insert(0, \"Dung\"), \"Dung\" sẽ đứng ở vị trí đầu danh sách.",
+              "correct": true
+            },
+            {
+              "question": "Lệnh append(\"An\") sẽ báo lỗi vì tên \"An\" đã có trong danh sách.",
+              "correct": false
+            },
+            {
+              "question": "Danh sách cuối cùng có 5 phần tử.",
+              "correct": true
+            },
+            {
+              "question": "Trong danh sách cuối cùng, \"Chi\" nằm ở vị trí có chỉ số (index) là 3.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Xét về phạm vi của biến trong Python:\na = 5\ndef ham():\nglobal a\na = 10\nb = 20\nreturn a + b\nres = ham()",
+          "statements": [
+            {
+              "question": "a là biến toàn cục, b là biến cục bộ.",
+              "correct": true
+            },
+            {
+              "question": "Sau khi gọi hàm, giá trị của a vẫn là 5.",
+              "correct": false
+            },
+            {
+              "question": "Biến res nhận giá trị là 30.",
+              "correct": true
+            },
+            {
+              "question": "Ta có thể in giá trị của b bằng lệnh print(b) ở ngoài hàm.",
               "correct": false
             }
           ]
         },
         {
-          "passage": "i = 1\nwhile i <= 4\nprint(i)\ni = i + 1",
+          "passage": "Về nghề nghiệp và quy trình phần mềm:",
           "statements": [
             {
-              "question": "Đoạn chương trình trên có cấu trúc cú pháp hợp lệ.",
+              "question": "Giai đoạn kiểm thử (Testing) có thể được bỏ qua nếu lập trình viên tự tin không có lỗi.",
               "correct": false
             },
             {
-              "question": "Câu lệnh while bắt buộc phải có dấu hai chấm (:).",
+              "question": "Người quản trị dự án cần có kỹ năng lập kế hoạch và điều phối nguồn lực.",
               "correct": true
             },
             {
-              "question": "Nếu thêm dấu hai chấm (:) đúng vị trí thì vòng lặp sẽ thực hiện 4 lần.",
+              "question": "Blender và SketchUp đều là những phần mềm hỗ trợ thiết kế mô hình 3D.",
               "correct": true
             },
             {
-              "question": "Khi sửa đúng cú pháp, chương trình Thực hiện chức năng in các số từ 1 đến 4.",
+              "question": "Chuyên viên phân tích hệ thống là người làm cầu nối giữa khách hàng và đội ngũ phát triển.",
               "correct": true
             }
           ]
         },
         {
-          "passage": "i = 0\nwhile i < 3:\n    print(i)",
+          "passage": "Xem xét logic vòng lặp sau:\nn = 5\nwhile n > 0:\nn = n - 2\nif n == 1:\nprint(\"Hello\")",
           "statements": [
             {
-              "question": "Cấu trúc cú pháp của vòng lặp là hợp lệ.",
+              "question": "Vòng lặp while trên sẽ thực hiện 3 lần lặp.",
               "correct": true
             },
             {
-              "question": "Biến điều khiển vòng lặp chưa được thay đổi trong thân vòng lặp.",
+              "question": "Chữ \"Hello\" sẽ được in ra màn hình 1 lần.",
               "correct": true
             },
             {
-              "question": "Vì biến i không thay đổi nên vòng lặp sẽ lặp vô hạn.",
+              "question": "Khi kết thúc vòng lặp, giá trị của n là -1.",
               "correct": true
             },
             {
-              "question": "Thực hiện chức năng in số 0 vô hạn lần.",
+              "question": "Nếu ban đầu n = 4, chữ \"Hello\" sẽ không bao giờ được in ra.",
               "correct": true
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Đề 6 - Kiểm Tra Cuối Kì 2",
+      "questions": [
+        {
+          "question": "Cho đoạn chương trình sau, kết quả in ra màn hình là gì?\na = 10\nfor i in range(2):\na = a + 5\nprint(a)",
+          "options": [
+            "15",
+            "20",
+            "10",
+            "25"
+          ],
+          "correct": 1
         },
         {
-          "passage": "i = 1\ntong = 0\nwhile i <= 5:\n    tong = tong + i\n    i = i + 1\n    print(tong)",
-          "statements": [
-            {
-              "question": "Cấu trúc cú pháp vòng lặp while trong chương trình là hợp lệ.",
-              "correct": true
-            },
-            {
-              "question": "Vòng lặp thực hiện 5 lần.",
-              "correct": true
-            },
-            {
-              "question": "Sau khi kết thúc vòng lặp, biến tong có giá trị bằng 15.",
-              "correct": true
-            },
-            {
-              "question": "Chương trình Thực hiện chức năng tính tổng các số từ 1 đến 5.",
-              "correct": true
-            }
-          ]
+          "question": "Cho danh sách L = [\"Python\", \"Java\", \"C++\"]. Để thay đổi \"Java\" thành \"PHP\", ta dùng lệnh:",
+          "options": [
+            "L[1] = \"PHP\"",
+            "L[2] = \"PHP\"",
+            "L[\"Java\"] = \"PHP\"",
+            "L.insert(1, \"PHP\")"
+          ],
+          "correct": 0
         },
         {
-          "passage": "Cho danh sách:\na = [1, 2, 3]\nDanh sách a sau khi thực hiện lệnh .",
+          "question": "Hàm range(5) sẽ tạo ra một dãy số gồm:",
+          "options": [
+            "1, 2, 3, 4, 5",
+            "0, 1, 2, 3, 4, 5",
+            "0, 1, 2, 3, 4",
+            "5, 4, 3, 2, 1"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Khi bạn viết chương trình thiếu dấu đóng ngoặc ), Python sẽ báo lỗi:",
+          "options": [
+            "NameError",
+            "SyntaxError",
+            "ValueError",
+            "TypeError"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phần mềm nào sau đây là công cụ chuyên dụng để thiết kế mô hình 3D trong kiến trúc và kỹ thuật?",
+          "options": [
+            "Microsoft Word",
+            "SketchUp",
+            "Paint",
+            "Inkscape"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho đoạn code sau, giá trị của s là bao nhiêu?\ns = 0\ni = 1\nwhile i <= 4:\nif i % 2 == 0:\ns = s + i\ni = i + 1",
+          "options": [
+            "10",
+            "4",
+            "6",
+            "2"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Để thêm phần tử 100 vào cuối danh sách arr, ta sử dụng phương thức:",
+          "options": [
+            "arr.add(100)",
+            "arr.append(100)",
+            "arr.insert(100)",
+            "arr.push(100)"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong quy trình phát triển phần mềm, giai đoạn nào nhằm xác định các tính năng mà phần mềm cần có?",
+          "options": [
+            "Kiểm thử",
+            "Lập trình",
+            "Khảo sát và phân tích yêu cầu",
+            "Bảo trì"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Biến được khai báo bên trong một hàm và chỉ có thể sử dụng trong hàm đó được gọi là:",
+          "options": [
+            "Biến toàn cục",
+            "Biến cục bộ",
+            "Biến hằng",
+            "Biến môi trường"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Công việc của \"Người quản trị dự án\" (Project Manager) bao gồm:",
+          "options": [
+            "Chỉ ngồi viết code cả ngày",
+            "Lập kế hoạch, theo dõi tiến độ và quản lý nguồn lực",
+            "Sửa lỗi phần cứng máy tính",
+            "Đi lắp đặt mạng internet"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho hàm sau:\ndef chao(ten):\nreturn \"Xin chao \" + ten\nprint(chao(\"An\"))",
+          "options": [
+            "Xin chao ten",
+            "Xin chao",
+            "Xin chao An",
+            "An"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Để xóa toàn bộ các phần tử trong danh sách a, ta dùng lệnh:",
+          "options": [
+            "del a",
+            "a.clear()",
+            "a.remove()",
+            "a.pop()"
+          ],
+          "correct": 1
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Xét chương trình thực hiện trên danh sách:\nlist_x = [1, 3, 5]\nlist_x.insert(2, 7)\nlist_x.append(9)",
           "statements": [
             {
-              "question": "Danh sách trên được khai báo đúng cú pháp.",
-              "correct": true
-            },
-            {
-              "question": "Có thể khai báo danh sách rỗng bằng a = {}.",
+              "question": "Sau lệnh insert(2, 7), số 7 sẽ đứng ở vị trí cuối cùng của danh sách.",
               "correct": false
             },
             {
-              "question": "Sau lệnh a.append(4), danh sách trở thành [1, 2, 3, 4].",
+              "question": "Danh sách sau khi thực hiện insert là [1, 3, 7, 5].",
               "correct": true
             },
             {
-              "question": "Đoạn chương trình trên Thực hiện chức năng tạo một danh sách gồm 3 số nguyên.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "a = [10, 20, 30]",
-          "statements": [
-            {
-              "question": "Giá trị của a[1] là 20.",
-              "correct": true
-            },
-            {
-              "question": "Độ dài danh sách được tính bằng length(a).",
+              "question": "Lệnh append(9) thêm số 9 vào đầu danh sách.",
               "correct": false
             },
             {
-              "question": "Sau lệnh a.insert(1, 15), danh sách trở thành [10, 15, 20, 30].",
-              "correct": true
-            },
-            {
-              "question": "Nếu dùng vòng lặp\nfor x in a:\n    print(x)\n    thì chương trình sẽ in lần lượt từng phần tử của danh sách.",
+              "question": "Độ dài cuối cùng của danh sách list_x là 5.",
               "correct": true
             }
           ]
         },
         {
-          "passage": "a = [1, 2, 3, 2]",
+          "passage": "Một học sinh viết hàm và sử dụng biến như sau:\nn = 100\ndef ham_so():\nn = 10\nreturn n\nprint(ham_so())\nprint(n)",
           "statements": [
             {
-              "question": "Biểu thức 2 in a cho kết quả True.",
+              "question": "Chương trình trên in ra hai dòng kết quả là 10 và 100.",
               "correct": true
             },
             {
-              "question": "Có thể thay đổi phần tử thứ hai bằng lệnh a[2] = 5.",
+              "question": "Biến n = 10 bên trong hàm là biến toàn cục.",
               "correct": false
             },
             {
-              "question": "Sau lệnh a.remove(2), danh sách trở thành [1, 3, 2].",
+              "question": "Nếu muốn thay đổi giá trị của n bên ngoài từ trong hàm, ta cần dùng từ khóa global.",
               "correct": true
             },
             {
-              "question": "Lệnh remove() Thực hiện chức năng xóa tất cả các phần tử có giá trị 2 trong danh sách.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "a = [4, 5, 6]\nb = [7, 8]\nc = a + b",
-          "statements": [
-            {
-              "question": "Toán tử + dùng để ghép nối hai danh sách.",
-              "correct": true
-            },
-            {
-              "question": "Sau phép ghép, danh sách c có 4 phần tử.",
-              "correct": false
-            },
-            {
-              "question": "Nếu thực hiện del c[0] thì c trở thành [5, 6, 7, 8].",
-              "correct": true
-            },
-            {
-              "question": "Thực hiện chức năng tạo danh sách mới gồm toàn bộ phần tử của hai danh sách ban đầu.",
+              "question": "Hàm ham_so không có tham số truyền vào.",
               "correct": true
             }
           ]
         },
         {
-          "passage": "a = [1, 2, 3]\na.append(4)\na.clear()",
+          "passage": "Về nghề nghiệp và phát triển phần mềm:",
           "statements": [
             {
-              "question": "Lệnh append() dùng để thêm phần tử vào cuối danh sách.",
+              "question": "Thiết kế đồ họa vector (Inkscape) phù hợp để vẽ logo và biểu tượng vì không bị vỡ hình.",
               "correct": true
             },
             {
-              "question": "Lệnh clear() dùng để xóa toàn bộ danh sách.",
-              "correct": true
-            },
-            {
-              "question": "Sau khi thực hiện hai lệnh trên, danh sách a là [1, 2, 3, 4].",
+              "question": "Giai đoạn kiểm thử phần mềm giúp phát hiện lỗi nhưng không làm tăng chi phí dự án.",
               "correct": false
             },
             {
-              "question": "Thực hiện chức năng thêm số 4 vào danh sách rồi xóa toàn bộ các phần tử.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "",
-          "statements": [
-            {
-              "question": "Trong Python, xâu kí tự phải được đặt trong dấu nháy đơn ' ' hoặc nháy kép \" \".",
+              "question": "Một lập trình viên cần phải làm việc theo quy trình để đảm bảo chất lượng sản phẩm.",
               "correct": true
             },
             {
-              "question": "Để đo độ dài của xâu s, ta dùng lệnh len(s).",
-              "correct": true
-            },
-            {
-              "question": "Đoạn lệnh:\ns = \"Tin hoc\"\na = s.split()\nSau khi thực hiện, a là một danh sách gồm 2 phần tử.",
-              "correct": true
-            },
-            {
-              "question": "Đoạn chương trình sau in ra tất cả các kí tự trong xâu s:\ns = \"ABC\"\nfor i in range(len(s)):\n    print(s[i]).",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "",
-          "statements": [
-            {
-              "question": "Có thể duyệt từng kí tự của xâu bằng câu lệnh:\nfor ch in s:.",
-              "correct": true
-            },
-            {
-              "question": "Toán tử in không dùng được để kiểm tra xâu con trong xâu mẹ.",
-              "correct": false
-            },
-            {
-              "question": "Đoạn lệnh:\ns = \"python lap trinh\"\nprint(\"-\".join(s.split()))\nKết quả là: python-lap-trinh.",
-              "correct": true
-            },
-            {
-              "question": "Đoạn chương trình sau có chức năng đếm số kí tự \"a\" trong xâu:\ns = \"banana\"\ndem = 0\nfor ch in s:\n    if ch == \"a\":\n        dem = dem + 1\n        print(dem).",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "",
-          "statements": [
-            {
-              "question": "Lệnh s.find(\"a\") trả về vị trí đầu tiên của kí tự \"a\" trong xâu s.",
-              "correct": true
-            },
-            {
-              "question": "Nếu không tìm thấy xâu con, lệnh find() trả về giá trị 0.",
-              "correct": false
-            },
-            {
-              "question": "Đoạn lệnh:\ns = \"lap trinh python\"\nprint(s.find(\"python\", 5))\nSẽ trả về vị trí bắt đầu của từ \"python\" nếu tìm thấy sau vị trí 5.",
-              "correct": true
-            },
-            {
-              "question": "Đoạn chương trình sau in ra các vị trí chứa kí tự \"o\":\ns = \"hello world\"\nfor i in range(len(s)):\n    if s[i] == \"o\":\n        print(i).",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "",
-          "statements": [
-            {
-              "question": "Xâu kí tự trong Python là một dãy các kí tự.",
-              "correct": true
-            },
-            {
-              "question": "Có thể truy cập kí tự thứ i của xâu bằng cú pháp s[i].",
-              "correct": true
-            },
-            {
-              "question": "Đoạn lệnh:\ns = \"mot hai ba\"\na = s.split()\nprint(len(a))\nSẽ in ra 3.",
-              "correct": true
-            },
-            {
-              "question": "Đoạn chương trình sau có chức năng kiểm tra xem xâu t có xuất hiện trong xâu s hay không:\ns = \"lap trinh\"\nt = \"tr\"\nif t in s:\n    print(\"Co\")\nelse:\n        print(\"Khong\").",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "",
-          "statements": [
-            {
-              "question": "Lệnh len(\"abc\") cho kết quả bằng 2.",
-              "correct": false
-            },
-            {
-              "question": "Có thể dùng for i in range(len(s)) để duyệt xâu theo chỉ số.",
-              "correct": true
-            },
-            {
-              "question": "Đoạn lệnh:\ns = \"a,b,c\"\na = s.split(\",\")\nprint(\"_\".join(a))\nKết quả in ra là: a_b_c.",
-              "correct": true
-            },
-            {
-              "question": "Đoạn chương trình sau có chức năng đếm số từ trong xâu:\ns = \"hoc lap trinh python\"\ndem = 0\nfor ch in s:\n    if ch == \" \":\n        dem = dem + 1\n        print(dem + 1).",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\n    if x > 0:\n        s = s + x\n        return s",
-          "statements": [
-            {
-              "question": "Hàm trên được khai báo với cú pháp hợp lệ.",
-              "correct": true
-            },
-            {
-              "question": "Hàm có 1 tham số tên là ds.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của lời gọi tong_duong([1, -2, 3, -4]) được xác định là 2.",
-              "correct": false
-            },
-            {
-              "question": "Hàm trên Thực hiện chức năng tính tổng các số dương trong danh sách được truyền vào.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef dem_am(ds):\ndem = 0\nfor x in ds:\n    if x < 0:\n        dem = dem + 1\n        return dem",
-          "statements": [
-            {
-              "question": "Hàm có 1 tham số.",
-              "correct": true
-            },
-            {
-              "question": "Hàm không trả về giá trị vì không có lệnh print.",
-              "correct": false
-            },
-            {
-              "question": "Lời gọi dem_am([2, -1, -5, 4]) trả về 2.",
-              "correct": true
-            },
-            {
-              "question": "Lời gọi dem_am(5) sẽ gây lỗi khi thực hiện chương trình.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef tong_duong(ds, n):\ns = 0\nfor i in range(n):\n    if ds[i] > 0:\n        s = s + ds[i]\n        return s",
-          "statements": [
-            {
-              "question": "Hàm có 2 tham số.",
-              "correct": true
-            },
-            {
-              "question": "Khi gọi hàm, số đối số phải bằng số tham số.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của tong_duong([1, -2, 3, 4], 3) được xác định là 6.",
-              "correct": false
-            },
-            {
-              "question": "Nếu gọi tong_duong([1, 2, 3], 5) có thể gây lỗi do truy cập vượt quá phạm vi danh sách.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef dem_am(ds):\ndem = 0\nfor x in ds:\n    if x < 0:\n        dem = dem + 1",
-          "statements": [
-            {
-              "question": "Hàm trên không lỗi cú pháp.",
-              "correct": true
-            },
-            {
-              "question": "Hàm không có lệnh return.",
-              "correct": true
-            },
-            {
-              "question": "Khi gọi print(dem_am([-1, -2, 3])), kết quả in ra là 2.",
-              "correct": false
-            },
-            {
-              "question": "Để hàm trả về số lượng số âm, cần thêm lệnh return dem.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho chương trình:\ndef tong_duong(ds):\ns = 0\nfor x in ds:\n    if x > 0:\n        s = s + x\n        return s\n        a = [3, -1, 5, -2, 4]\n        kq = tong_duong(a)\n        print(kq)",
-          "statements": [
-            {
-              "question": "Hàm có 1 tham số.",
-              "correct": true
-            },
-            {
-              "question": "Hàm có trả về giá trị cụ thể.",
-              "correct": true
-            },
-            {
-              "question": "Kết quả in ra màn hình là 10.",
-              "correct": false
-            },
-            {
-              "question": "Chương trình trên tính tổng các số dương trong danh sách rồi in kết quả ra màn hình.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef dem_chu_a(s):\ndem = 0\nfor ch in s:\n    if ch == 'a':\n        dem = dem + 1\n        return dem",
-          "statements": [
-            {
-              "question": "Hàm có 1 tham số kiểu xâu kí tự.",
-              "correct": true
-            },
-            {
-              "question": "Hàm trả về số lần xuất hiện của kí tự 'a' trong chuỗi.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của dem_chu_a(\"banana\") được xác định là 2.",
-              "correct": false
-            },
-            {
-              "question": "Hàm phân biệt chữ hoa và chữ thường.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef tach_tu(s):\nreturn s.split()",
-          "statements": [
-            {
-              "question": "Hàm có 1 tham số.",
-              "correct": true
-            },
-            {
-              "question": "Hàm trả về một danh sách các từ trong chuỗi.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của tach_tu(\"Hoc Python rat vui\") được xác định là [\"Hoc\", \"Python\", \"rat\", \"vui\"].",
-              "correct": true
-            },
-            {
-              "question": "Lời gọi tach_tu(123) sẽ gây lỗi khi thực hiện chương trình.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef ghep_tu(ds):\nreturn \"-\".join(ds)",
-          "statements": [
-            {
-              "question": "Hàm có 1 tham số là một danh sách.",
-              "correct": true
-            },
-            {
-              "question": "Hàm sử dụng dấu \"-\" để nối các phần tử trong danh sách.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của ghep_tu([\"a\", \"b\", \"c\"]) được xác định là \"abc\".",
-              "correct": false
-            },
-            {
-              "question": "Nếu danh sách chứa số nguyên, ví dụ [1, 2, 3], hàm sẽ gây lỗi.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef xu_ly(s):\nds = s.split(\",\")\nreturn \"|\".join(ds)",
-          "statements": [
-            {
-              "question": "Hàm được khai báo đúng quy tắc cú pháp.",
-              "correct": true
-            },
-            {
-              "question": "Hàm tách chuỗi theo dấu phẩy.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của xu_ly(\"a,b,c\") được xác định là \"a,b,c\".",
-              "correct": false
-            },
-            {
-              "question": "Hàm thay dấu phẩy bằng dấu \"|\".",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Cho hàm sau:\ndef dem_tu(s):\nds = s.split()\nreturn len(ds)",
-          "statements": [
-            {
-              "question": "Hàm sử dụng split() để tách chuỗi thành danh sách các từ.",
-              "correct": true
-            },
-            {
-              "question": "Hàm trả về số phần tử trong danh sách sau khi tách.",
-              "correct": true
-            },
-            {
-              "question": "Giá trị trả về của dem_tu(\"Python la ngon ngu lap trinh\") được xác định là 6.",
-              "correct": true
-            },
-            {
-              "question": "Nếu chuỗi rỗng \"\", hàm trả về 1.",
+              "question": "Blender là phần mềm chỉ dùng để soạn thảo văn bản, không liên quan đến đồ họa.",
               "correct": false
             }
           ]
         },
         {
-          "passage": "Cho chương trình sau:\ndef dao_nguoc_tu(s):\nds = s.split()\nkq = []\nfor tu in ds:\n    kq.insert(0, tu)\n    return \" \".join(kq)\n    print(dao_nguoc_tu(\"Hoc Python that thu vi\"))",
+          "passage": "Xem xét vòng lặp while sau:\nx = 1\nwhile x < 5:\nx = x + 2\nprint(x)",
           "statements": [
             {
-              "question": "Hàm có 1 tham số.",
+              "question": "Vòng lặp sẽ in ra hai giá trị là 3 và 5.",
               "correct": true
             },
             {
-              "question": "Lệnh kq.insert(0, tu) thêm phần tử vào đầu danh sách kq.",
+              "question": "Vòng lặp này thực hiện tổng cộng 2 lần lặp.",
               "correct": true
             },
             {
-              "question": "Kết quả in ra màn hình là \"Hoc Python that thu vi\".",
+              "question": "Sau khi kết thúc vòng lặp, giá trị cuối cùng của x là 4.",
               "correct": false
             },
             {
-              "question": "Hàm Thực hiện chức năng đảo ngược thứ tự các từ trong chuỗi ban đầu.",
+              "question": "Nếu thay điều kiện thành while x > 0, vòng lặp sẽ bị vô hạn (nếu không có lệnh dừng).",
               "correct": true
             }
           ]

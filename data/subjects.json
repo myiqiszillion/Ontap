@@ -24,7 +24,7 @@
       "grade": 10,
       "name": "Tin Học 10",
       "icon": "💻",
-      "description": "Lập trình Python và công cụ",
+      "description": "Đề kiểm tra cuối kì 2 - Python, danh sách, hàm",
       "color": "#10b981",
       "dataFile": "tin.json"
     },
