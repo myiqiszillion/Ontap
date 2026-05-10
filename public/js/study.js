@@ -480,13 +480,21 @@ const Study = {
       `;
     } else {
       const letters = 'ABCD';
+      const opts = q.options || [];
+      if (opts.length === 0) {
+        // Skip corrupted question - remove from queue and move on
+        this.practiceQueue.shift();
+        this.savePracticeProgress();
+        this.renderPractice();
+        return;
+      }
       container.innerHTML = `
         <div class="practice-card">
           <div class="study-badge mcq">Trắc nghiệm</div>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
           ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="practice-options" id="practice-options">
-            ${q.options.map((opt, i) => `
+            ${opts.map((opt, i) => `
                 <div class="practice-option clickable" id="practice-opt-${i}" onclick="Study.practiceSelectMCQ(${i})">
                   <span class="study-option-letter">${letters[i]}</span>
                   <span class="study-option-text">${this.escapeHtml(opt)}</span>
