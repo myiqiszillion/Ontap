@@ -29,7 +29,13 @@ const Study = {
   init(data, mode, options = {}) {
     this.mode = mode;
     this.subject = data.subject;
-    this.options = { ...this.options, ...options };
+    // Reset to defaults then apply new options to prevent state leakage (e.g. resume flag)
+    this.options = {
+      chunkSize: 0,
+      useHighlight: false,
+      resume: false,
+      ...options
+    };
     
     // Chunking logic
     if (['study', 'flashcard'].includes(mode) && this.options.chunkSize > 0) {
