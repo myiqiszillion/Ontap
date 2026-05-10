@@ -646,19 +646,19 @@
           "image": "/images/sinh10/image26.png",
           "statements": [
             {
-              "question": "A. Cứ 20 phút vi khuẩn E.coli phân chia 1 lần.",
+              "question": "Cứ 20 phút vi khuẩn E.coli phân chia 1 lần.",
               "correct": true
             },
             {
-              "question": "B. Trong 1 giờ chúng phân chia 4 lần.",
+              "question": "Trong 1 giờ chúng phân chia 4 lần.",
               "correct": false
             },
             {
-              "question": "C. Sau 1 giờ 20 phút số tế bào trong quần thể là 16 tế bào.",
+              "question": "Sau 1 giờ 20 phút số tế bào trong quần thể là 16 tế bào.",
               "correct": true
             },
             {
-              "question": "D. Số tế bào vi khuẩn tăng theo cấp số nhân sau mỗi lần phân chia.",
+              "question": "Số tế bào vi khuẩn tăng theo cấp số nhân sau mỗi lần phân chia.",
               "correct": true
             }
           ]
@@ -668,19 +668,19 @@
           "image": null,
           "statements": [
             {
-              "question": "A. Người dân không nên tự ý đi mua thuốc kháng sinh về điều trị bệnh cho người thân vì sẽ gây ra hiện tượng kháng kháng sinh (nhờn kháng sinh).",
+              "question": "Người dân không nên tự ý đi mua thuốc kháng sinh về điều trị bệnh cho người thân vì sẽ gây ra hiện tượng kháng kháng sinh (nhờn kháng sinh).",
               "correct": true
             },
             {
-              "question": "B. Đối với cảm sốt nhẹ, có thể tự mua kháng sinh ở hiệu thuốc có uy tín để điều trị, vì kháng sinh có thể tiêu diệt hoặc ức chế vi sinh vật gây bệnh.",
+              "question": "Đối với cảm sốt nhẹ, có thể tự mua kháng sinh ở hiệu thuốc có uy tín để điều trị, vì kháng sinh có thể tiêu diệt hoặc ức chế vi sinh vật gây bệnh.",
               "correct": false
             },
             {
-              "question": "C. Khi tự ý mua thuốc kháng sinh về sử dụng có thể không tạo được hiệu quả điều trị mong muốn mà còn gây nên các tác dụng phụ nguy hiểm.",
+              "question": "Khi tự ý mua thuốc kháng sinh về sử dụng có thể không tạo được hiệu quả điều trị mong muốn mà còn gây nên các tác dụng phụ nguy hiểm.",
               "correct": true
             },
             {
-              "question": "D. Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
+              "question": "Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
               "correct": true
             }
           ]
@@ -822,18 +822,6 @@
           "correct": 3
         },
         {
-          "type": "mcq",
-          "question": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là Đúng hay Sai?",
-          "image": null,
-          "options": [
-            "a. giúp tăng kết cấu đất",
-            "b. cung cấp đủ các dưỡng chất khoáng đa lượng, trung lượng và vi lượng cho cây trồng",
-            "c. cải tạo, bồi dưỡng, tăng lượng mùn, tăng độ phì nhiêu, làm đất tơi xốp, không bị bạc màu.",
-            "d. có hiệu quả chậm hơn so với phân bón hóa học nên ít được sử dụng Phần III. Trắc nghiệm trả lời ngắn."
-          ],
-          "correct": 0
-        },
-        {
           "type": "shortanswer",
           "question": "Công nghệ vi sinh được ứng dụng vào bao nhiêu lĩnh vực sau đây? 1. Nông nghiệp\t2. Công nghiệp\t3. Lâm nghiệp 4. Y dược\t5. Bảo vệ môi trường\t6. Luyện kim",
           "image": null,
@@ -878,6 +866,28 @@
             {
               "question": "Là công nghệ sử dụng vi sinh vật và dẫn xuất của nó để tạo ra sản phẩm phục vụ cho đời sống con người.",
               "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là Đúng hay Sai?",
+          "image": null,
+          "statements": [
+            {
+              "question": "giúp tăng kết cấu đất",
+              "correct": false
+            },
+            {
+              "question": "cung cấp đủ các dưỡng chất khoáng đa lượng, trung lượng và vi lượng cho cây trồng",
+              "correct": false
+            },
+            {
+              "question": "cải tạo, bồi dưỡng, tăng lượng mùn, tăng độ phì nhiêu, làm đất tơi xốp, không bị bạc màu.",
+              "correct": false
+            },
+            {
+              "question": "có hiệu quả chậm hơn so với phân bón hóa học nên ít được sử dụng Phần III. Trắc nghiệm trả lời ngắn.",
+              "correct": false
             }
           ]
         }
@@ -1110,46 +1120,9 @@
             "Vì cơ thể người khỏe mạnh có hệ miễn dịch có khả năng chống lại virus mới xâm nhập.",
             "Vì người mắc bệnh không phải ổ chứa virus.",
             "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm.",
-            "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi. 2. CÂU HỎI  ĐÚNG - SAI"
+            "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
           ],
           "correct": 3
-        },
-        {
-          "type": "mcq",
-          "question": "Quan sát hình sau đây về HIV. Khi nói về HIV, phát biểu nào sau đây đúng, phát biểu nào sai?",
-          "image": "/images/sinh10/image28.png",
-          "options": [
-            "HIV thuộc loại virus DN",
-            "",
-            "HIV lây nhiễm cho mọi tế bào của cơ thể người.",
-            "HIV khi nhân lên trong tế bào vật chủ có xảy ra phiên mã ngược.",
-            "Mẹ bị nhiễm HIV không nên sinh con."
-          ],
-          "correct": 0
-        },
-        {
-          "type": "mcq",
-          "question": "Hình sau đây là một ví dụ về quá trình nhân lên của virus trong tế bào chủ. Khi nói về hình này, phát biểu nào sau đây đúng, phát biểu nào sai?",
-          "image": "/images/sinh10/image29.png",
-          "options": [
-            "Quá trình này gồm 5 giai đoạn.",
-            "Virus này xâm nhập bằng cách tiết enzyme lysozyme làm tan thành tế bào vật chủ.",
-            "Sự nhân lên của virus này được thực hiện theo chu trình tiềm tan.",
-            "Người ta dùng kháng sinh để tiêu diệt virus này."
-          ],
-          "correct": 0
-        },
-        {
-          "type": "mcq",
-          "question": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Một phương pháp dân gian giúp chống cúm cho rằng người bệnh nên ở qua đêm trong chuồng ngựa. Biết rằng không khí bên trong chuồng chứa amoniac.  Nhận định nào sau đây Đúng hay Sai?",
-          "image": "/images/sinh10/image30.png",
-          "options": [
-            "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",
-            "Virus chỉ lây nhiễm nucleic acid vào trong tế bào chủ.",
-            "H+ sẽ thúc đẩy quá trình giải phóng vật chất di truyền của virus ra khỏi bóng.",
-            "NH3 ức chế sự giải phóng vật chất di truyền của virus."
-          ],
-          "correct": 0
         },
         {
           "type": "shortanswer",
@@ -1157,6 +1130,74 @@
           "image": null,
           "correctAnswer": [
             3
+          ]
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Quan sát hình sau đây về HIV. Khi nói về HIV, phát biểu nào sau đây đúng, phát biểu nào sai?",
+          "image": "/images/sinh10/image28.png",
+          "statements": [
+            {
+              "question": "HIV thuộc loại virus DN",
+              "correct": false
+            },
+            {
+              "question": "HIV lây nhiễm cho mọi tế bào của cơ thể người.",
+              "correct": false
+            },
+            {
+              "question": "HIV khi nhân lên trong tế bào vật chủ có xảy ra phiên mã ngược.",
+              "correct": false
+            },
+            {
+              "question": "Mẹ bị nhiễm HIV không nên sinh con.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Hình sau đây là một ví dụ về quá trình nhân lên của virus trong tế bào chủ. Khi nói về hình này, phát biểu nào sau đây đúng, phát biểu nào sai?",
+          "image": "/images/sinh10/image29.png",
+          "statements": [
+            {
+              "question": "Quá trình này gồm 5 giai đoạn.",
+              "correct": false
+            },
+            {
+              "question": "Virus này xâm nhập bằng cách tiết enzyme lysozyme làm tan thành tế bào vật chủ.",
+              "correct": false
+            },
+            {
+              "question": "Sự nhân lên của virus này được thực hiện theo chu trình tiềm tan.",
+              "correct": false
+            },
+            {
+              "question": "Người ta dùng kháng sinh để tiêu diệt virus này.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Một phương pháp dân gian giúp chống cúm cho rằng người bệnh nên ở qua đêm trong chuồng ngựa. Biết rằng không khí bên trong chuồng chứa amoniac.  Nhận định nào sau đây Đúng hay Sai?",
+          "image": "/images/sinh10/image30.png",
+          "statements": [
+            {
+              "question": "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",
+              "correct": false
+            },
+            {
+              "question": "Virus chỉ lây nhiễm nucleic acid vào trong tế bào chủ.",
+              "correct": false
+            },
+            {
+              "question": "H+ sẽ thúc đẩy quá trình giải phóng vật chất di truyền của virus ra khỏi bóng.",
+              "correct": false
+            },
+            {
+              "question": "NH3 ức chế sự giải phóng vật chất di truyền của virus.",
+              "correct": false
+            }
           ]
         }
       ]

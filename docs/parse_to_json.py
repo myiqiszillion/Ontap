@@ -32,7 +32,7 @@ def parse_txt(filepath, subject_type):
         mode = 'mcq'
         if current_q['answer']:
             mode = 'sa'
-        elif current_q['tf_answers'] or 'Đọc đoạn tư liệu' in current_q['question']:
+        elif current_q['tf_answers'] or 'Đọc đoạn tư liệu' in current_q['question'] or 'đúng hay sai' in current_q['question'].lower() or 'phát biểu nào sau đây đúng, phát biểu nào sai' in current_q['question'].lower():
             mode = 'tf'
         else:
             # Check if options use uppercase A-D (MCQ) or lowercase a-d (TF)
@@ -84,8 +84,8 @@ def parse_txt(filepath, subject_type):
             
             for opt in current_q.get('options', []):
                 stmt_text = opt
-                # Optional remove a. b. c. d.
-                stmt_text = re.sub(r'^[a-d]\.\s*', '', stmt_text).strip()
+                # Optional remove a. b. c. d. or A. B. C. D.
+                stmt_text = re.sub(r'^[a-dA-D]\.\s*', '', stmt_text).strip()
                 
                 correct = False
                 if '(Đ)' in stmt_text:
@@ -95,7 +95,7 @@ def parse_txt(filepath, subject_type):
                     correct = False
                     stmt_text = stmt_text.replace('(S)', '').strip()
                 else:
-                    prefix_match = re.match(r'^([a-d])\.', opt)
+                    prefix_match = re.match(r'^([a-dA-D])\.', opt)
                     if prefix_match:
                         letter = prefix_match.group(1).lower()
                         correct = current_q.get('tf_answers', {}).get(letter, False)
@@ -165,7 +165,7 @@ def parse_txt(filepath, subject_type):
             continue
             
         # Ignore explicit section headers
-        if re.match(r'^(PHẦN|I\.|II\.|III\.)', line) and ('CÂU HỎI' in line.upper() or 'TRẮC NGHIỆM' in line.upper()):
+        if re.match(r'^(PHẦN|I\.|II\.|III\.|\d+\.)', line) and ('CÂU HỎI' in line.upper() or 'TRẮC NGHIỆM' in line.upper() or 'ĐÚNG' in line.upper() or 'SAI' in line.upper()):
             i += 1
             continue
             
