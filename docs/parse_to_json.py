@@ -143,8 +143,17 @@ def parse_txt(filepath, subject_type):
                 "questionGroups": []
             })
             
+        # Skip TỰ LUẬN sections entirely
+        if re.match(r'^(PHẦN|I\.|II\.|III\.)', line) and ('TỰ LUẬN' in line.upper()):
+            i += 1
+            while i < len(lines):
+                if re.match(r'^(BÀI|Bài)\s+\d+', lines[i]):
+                    break
+                i += 1
+            continue
+            
         # Ignore explicit section headers
-        if re.match(r'^(PHẦN|I\.|II\.|III\.)', line) and ('CÂU HỎI' in line or 'TRẮC NGHIỆM' in line):
+        if re.match(r'^(PHẦN|I\.|II\.|III\.)', line) and ('CÂU HỎI' in line.upper() or 'TRẮC NGHIỆM' in line.upper()):
             i += 1
             continue
             

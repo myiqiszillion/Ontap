@@ -366,9 +366,13 @@
       ],
       "questionGroups": [
         {
-          "passage": "Đọc đoạn tư liệu sau đây “Nền văn minh của người Việt cổ với biểu tượng trống đồng Đông Sơn thực chất là một nền văn minh nông nghiệp trồng lúa nước dựa trên nền tảng cộng đồng xóm làng và một cơ cấu chính trị nhà nước phôi thai; không những đã vươn tới một trình độ phát triển khá cao, mà còn xác lập lối sống Việt Nam, truyền thống Việt Nam, đặt cơ sở vững chắc cho toàn bộ sự tồn tại và phát triển của quốc gia - dân tộc sau đó”. (Theo Phan Huy Lê (Chủ biên), Lịch Sử Việt Nam, Tập I, NXB Giáo dục Việt Nam, 2012, tr. 173) Đoạn tư liệu cung cấp thông tin về quá trình xác lập các truyền thống tốt đẹp của dân tộc Việt Nam.",
+          "passage": "Đọc đoạn tư liệu sau đây “Nền văn minh của người Việt cổ với biểu tượng trống đồng Đông Sơn thực chất là một nền văn minh nông nghiệp trồng lúa nước dựa trên nền tảng cộng đồng xóm làng và một cơ cấu chính trị nhà nước phôi thai; không những đã vươn tới một trình độ phát triển khá cao, mà còn xác lập lối sống Việt Nam, truyền thống Việt Nam, đặt cơ sở vững chắc cho toàn bộ sự tồn tại và phát triển của quốc gia - dân tộc sau đó”. (Theo Phan Huy Lê (Chủ biên), Lịch Sử Việt Nam, Tập I, NXB Giáo dục Việt Nam, 2012, tr. 173)",
           "image": null,
           "statements": [
+            {
+              "question": "Đoạn tư liệu cung cấp thông tin về quá trình xác lập các truyền thống tốt đẹp của dân tộc Việt Nam.",
+              "correct": false
+            },
             {
               "question": "“Nền văn minh của người Việt cổ với biểu tượng trống đồng Đông Sơn” được nhắc đến trong đoạn tư liệu chính là nền văn minh Văn Lang - Âu Lạc.",
               "correct": true
@@ -414,7 +418,11 @@
               "correct": false
             },
             {
-              "question": "Thành Cổ Loa được xây dựng dưới thời An Dương Vương nhằm đối phó với nguy cơ giặc ngoại xâm lúc bấy giờ.  Thành Cổ Loa bao gồm có nhiều vòng, được xây dựng nhằm tạo nên một thế công thủ toàn diện.",
+              "question": "Thành Cổ Loa được xây dựng dưới thời An Dương Vương nhằm đối phó với nguy cơ giặc ngoại xâm lúc bấy giờ.",
+              "correct": true
+            },
+            {
+              "question": "Thành Cổ Loa bao gồm có nhiều vòng, được xây dựng nhằm tạo nên một thế công thủ toàn diện.",
               "correct": true
             },
             {
@@ -428,11 +436,11 @@
           "image": null,
           "statements": [
             {
-              "question": "Nhà nước Văn Lang ra đời trên cơ sở xã hội đã có sự phân chia thành các giai cấp, tầng lớp khác nhau và mâu thuẫn giai cấp đã trở nên gay gắt.  Nhà nước Văn Lang là một trong những nhà nước ra đời sớm nhất ở khu vực Đông Nam Á và trên",
+              "question": "Nhà nước Văn Lang ra đời trên cơ sở xã hội đã có sự phân chia thành các giai cấp, tầng lớp khác nhau và mâu thuẫn giai cấp đã trở nên gay gắt.",
               "correct": false
             },
             {
-              "question": "thế giới.",
+              "question": "Nhà nước Văn Lang là một trong những nhà nước ra đời sớm nhất ở khu vực Đông Nam Á và trên thế giới.",
               "correct": false
             },
             {
@@ -450,15 +458,15 @@
           "image": null,
           "statements": [
             {
-              "question": "Đoạn tư liệu cung cấp thông tin về đời sống văn hóa tinh thần của cư dân Văn Lang – Âu Lạc.  Các “hình tượng sinh thực khí nam, nữ cách điệu hóa” được in trên mặt trống đồng Đông Sơn chính",
+              "question": "Đoạn tư liệu cung cấp thông tin về đời sống văn hóa tinh thần của cư dân Văn Lang – Âu Lạc.",
               "correct": true
             },
             {
-              "question": "là biểu hiện của tín ngưỡng sùng bái tự nhiên.  Tín ngưỡng phồn thực là một trong những tín ngưỡng xuất phát từ nhu cầu phát triển nông nghiệp",
+              "question": "Các “hình tượng sinh thực khí nam, nữ cách điệu hóa” được in trên mặt trống đồng Đông Sơn chính là biểu hiện của tín ngưỡng sùng bái tự nhiên.",
               "correct": false
             },
             {
-              "question": "lúa nước của cư dân Việt cổ.",
+              "question": "Tín ngưỡng phồn thực là một trong những tín ngưỡng xuất phát từ nhu cầu phát triển nông nghiệp lúa nước của cư dân Việt cổ.",
               "correct": true
             },
             {
@@ -572,7 +580,7 @@
               "correct": false
             },
             {
-              "question": "Nhờ kỹ thuật luyện kim, xã hội Việt cổ đã phân hóa, chế độ phong kiến hình thành.  Câu 1 (Thông hiểu). Em hãy trình bày những điểm giống và khác nhau giữa nhà nước Văn Lang và nhà nước Âu Lạc. Câu 2 (Vận dụng): Em hãy trình bày một số biện pháp bảo tồn và giữ gìn các thành tựu văn minh Văn Lang - Âu Lạc. Câu 3 (Vận dụng): Theo em hiện nay thành tựu phong tục tập quán nào của nền văn minh Văn Lang - Âu Lạc còn tồn tại cho đến ngày nay và đề xuất một số biện pháp bảo tồn, giữ gìn mà em biết. Câu 4 (Thông hiểu): Em hãy cho biết lưỡi cày đồng có tác dụng như thế nào trong việc thúc đẩy nền kinh tế nông nghiệp trồng lúa nước của cư dân Văn Lang - Âu Lạc. Câu 5 (Thông hiểu): Từ kiến thức em đã học, hãy cho biết những nét đặc trưng trong âm thực của cư dân Văn Lang - Âu Lạc. Câu 6 (Thông hiểu): Theo em sản phẩm nào cho thấy nghề đúc đồng của người Việt cổ (cư dân Văn Lang - Âu Lạc) đạt đến đỉnh cao về kĩ thuật luyện kim và mĩ thuật? Ý nghĩa của sản phẩm đó đối với nền văn minh Văn Lang - Âu Lạc?",
+              "question": "Nhờ kỹ thuật luyện kim, xã hội Việt cổ đã phân hóa, chế độ phong kiến hình thành.",
               "correct": false
             }
           ]
@@ -1057,11 +1065,11 @@
               "correct": false
             },
             {
-              "question": "Tín ngưỡng thờ cúng tổ tiên của cư dân Chăm-pa có nhiều điểm tương đồng và khác biệt với cư dân Văn Lang - Âu Lạc.  Tục nhuộm răng đen của cư dân Chăm-pa bắt nguồn từ quan điểm cho rằng màu đen là màu đẹp.",
+              "question": "Tín ngưỡng thờ cúng tổ tiên của cư dân Chăm-pa có nhiều điểm tương đồng và khác biệt với cư dân Văn Lang - Âu Lạc.",
               "correct": true
             },
             {
-              "question": "Câu 1 (Vận dụng): Em hãy trình bày những điểm tương đồng về hoạt động kinh tế, đời sống vật chất, đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Chăm-pa. Câu 2 (Thông hiểu): Từ kiến thức đã được học, em hãy cho biết yếu tố văn minh Ấn Độ được biểu hiện như thế nào trong đời sống tinh thần của cư dân Vương quốc Chăm-pa?",
+              "question": "Tục nhuộm răng đen của cư dân Chăm-pa bắt nguồn từ quan điểm cho rằng màu đen là màu đẹp.",
               "correct": true
             }
           ]
@@ -1550,11 +1558,11 @@
               "correct": false
             },
             {
-              "question": "Cư dân cổ Phù Nam có tập quán đặt “những mảnh vàng” vào đáy trụ giới của mỗi ngôi đền với mong ước được thần thánh che chở và phù hộ.  Nghệ thuật Phù Nam chịu ảnh hưởng sâu sắc của các tôn giáo có nguồn gốc từ Ấn Độ và Trung",
+              "question": "Cư dân cổ Phù Nam có tập quán đặt “những mảnh vàng” vào đáy trụ giới của mỗi ngôi đền với mong ước được thần thánh che chở và phù hộ.",
               "correct": true
             },
             {
-              "question": "Hoa.",
+              "question": "Nghệ thuật Phù Nam chịu ảnh hưởng sâu sắc của các tôn giáo có nguồn gốc từ Ấn Độ và Trung Hoa.",
               "correct": false
             },
             {
@@ -1564,9 +1572,13 @@
           ]
         },
         {
-          "passage": "Đọc đoạn tư liệu sau đây: “Người Phù Nam khôn khéo kiệt hiệt, đánh chiếm các nước láng giềng không thần phục, bắt dân họ làm nô tì, đổi chác vàng bạc, lụa bạch. Con trai nhà giầu sang thì cắt gấm làm quần, con gái thì quấn tóc, người nghèo thì lấy vải mà che. Họ dùng vàng bạc để nạm khảm bát đĩa. Họ biết đẵn gỗ làm nhà. Vua họ ở gác nhiều tầng. Họ lấy gỗ ken làm thành. Bờ bể nước họ có một loại cây gọi là đại nhược, lá dài tới 8 – 9 thước. Người ta bện lại để lợp nhà. Dân thường cũng làm nhà gác để ở”. (Vũ Duy Mền (Chủ biên), Lịch sử Việt Nam, Tập 1 – Từ khởi thủy đến thế kỉ X, NXB Khoa học xã hội, 2017, tr.572) Đoạn tư liệu cung cấp một số thông tin về đời sống vật chất và tinh thần của cư dân cổ Phù Nam.",
+          "passage": "Đọc đoạn tư liệu sau đây: “Người Phù Nam khôn khéo kiệt hiệt, đánh chiếm các nước láng giềng không thần phục, bắt dân họ làm nô tì, đổi chác vàng bạc, lụa bạch. Con trai nhà giầu sang thì cắt gấm làm quần, con gái thì quấn tóc, người nghèo thì lấy vải mà che. Họ dùng vàng bạc để nạm khảm bát đĩa. Họ biết đẵn gỗ làm nhà. Vua họ ở gác nhiều tầng. Họ lấy gỗ ken làm thành. Bờ bể nước họ có một loại cây gọi là đại nhược, lá dài tới 8 – 9 thước. Người ta bện lại để lợp nhà. Dân thường cũng làm nhà gác để ở”. (Vũ Duy Mền (Chủ biên), Lịch sử Việt Nam, Tập 1 – Từ khởi thủy đến thế kỉ X, NXB Khoa học xã hội, 2017, tr.572)",
           "image": null,
           "statements": [
+            {
+              "question": "Đoạn tư liệu cung cấp một số thông tin về đời sống vật chất và tinh thần của cư dân cổ Phù Nam.",
+              "correct": false
+            },
             {
               "question": "Trong quá trình tồn tại, vương quốc Phù Nam đã tiến hành nhiều cuộc chiến tranh để mở rộng lãnh thổ ra bên ngoài.",
               "correct": true
@@ -1594,11 +1606,11 @@
               "correct": true
             },
             {
-              "question": "Trong quá trình tồn tại, vương quốc Phù Nam không ngừng mở rộng lãnh thổ ra bên ngoài và trở thành một đế quốc ở Đông Nam Á.  So với vương quốc Chăm – pa, vương quốc Phù Nam ra đời muộn hơn nhưng phát triển hùng mạnh",
+              "question": "Trong quá trình tồn tại, vương quốc Phù Nam không ngừng mở rộng lãnh thổ ra bên ngoài và trở thành một đế quốc ở Đông Nam Á.",
               "correct": true
             },
             {
-              "question": "hơn và tồn tại trong một khoảng thời gian dài.",
+              "question": "So với vương quốc Chăm – pa, vương quốc Phù Nam ra đời muộn hơn nhưng phát triển hùng mạnh hơn và tồn tại trong một khoảng thời gian dài.",
               "correct": false
             }
           ]
@@ -1620,7 +1632,7 @@
               "correct": true
             },
             {
-              "question": "Các sản phẩm từ nông nghiệp và khai thác lâm thổ sản của cư dân Phù Nam chỉ phục vụ cho nhu cầu của người dân chứ không buôn bán với bên ngoài.  Câu 1 (Vận dụng): So sánh điểm giống nhau và khác nhau về cơ sở hình thành của nền văn minh Chăm-pa và văn minh Phù Nam. Câu 2 (Vận dụng): So sánh điểm giống nhau và khác nhau về cơ sở hình thành của các nên văn minh cổ trên đất nước Việt Nam. Câu 3 (Thông hiểu): Từ kiến thức đã được học, em hãy cho biết yếu tố văn minh Ấn Độ được biểu hiện như thế nào trong đời sống tinh thần của cư dân Vương quốc Phù Nam?",
+              "question": "Các sản phẩm từ nông nghiệp và khai thác lâm thổ sản của cư dân Phù Nam chỉ phục vụ cho nhu cầu của người dân chứ không buôn bán với bên ngoài.",
               "correct": false
             }
           ]
@@ -2017,7 +2029,11 @@
               "correct": true
             },
             {
-              "question": "Bộ luật Hình thư được ban hành vào thế kỉ XI dưới vương triều nhà Trần.  Hình thư là bộ luật thành văn đầu tiên của nước ta và còn được lưu giữ nguyên vẹn đến ngày nay.",
+              "question": "Bộ luật Hình thư được ban hành vào thế kỉ XI dưới vương triều nhà Trần.",
+              "correct": false
+            },
+            {
+              "question": "Hình thư là bộ luật thành văn đầu tiên của nước ta và còn được lưu giữ nguyên vẹn đến ngày nay.",
               "correct": false
             },
             {
@@ -2043,7 +2059,7 @@
               "correct": true
             },
             {
-              "question": "Tính quan liêu, chuyên chế là một đặc điểm nổi bật của bộ máy nhà nước dưới thời kì vương triều Lê sơ.  Câu 1 (Vận dụng): Có ý kiến cho rằng: Văn minh Đại Việt phát triển rất phong phú, đa dạng và mang tính dân tộc sâu sắc. Em có đồng ý với ý kiến đó không? Vì sao? Câu 2 (Thông hiểu): Vì sao các triều đại phong kiến Việt Nam đều quan tâm đến phát triển giáo dục? Câu 3 (Vận dụng): Theo em, cần làm gì để bảo tồn và phát huy giá trị của những thành tựu văn minh Đại Việt trong thời đại ngày nay? Câu 4 (Thông hiểu): Bằng những kiến thức đã học, em hãy chứng minh những thành tựu văn minh Thăng Long thời Lý, Trần, Hồ thể hiện tính dân tộc sâu sắc. Câu 5 (Thông hiểu): Vì sao nông nghiệp Đại Việt trong các thế kỉ X - XV có bước phát triển? Sự phát triển kinh tế nông nghiệp thời kì này có ý nghĩa gì? Câu 6 (Thông hiểu - Vận dụng): Em hãy kể tên một số chính sách khuyến khích sản xuất nông nghiệp của Đại Việt trong các thế kỉ X - XV. Từ sự phát triển của kinh tế nông nghiệp Đại Việt giai đoạn này, em hãy rút ra những bài học kinh nghiệm đối với kinh tế nông nghiệp Việt Nam hiện nay. Câu 7 (Thông hiểu): Bằng những kiến thức đã học, em hãy chứng minh từ thế kỉ XI đến thế kỉ XV nhân dân Đại Việt đã xây dựng được nền kinh tế tự chủ, toàn diện. * Nông nghiệp: Có ngành kinh tế chủ đạo là nông nghiệp với cây trồng chính là lúa nước. Ngoài ra còn trồng nhiều loại cây khác (khoai, sắn, ngô,…). Các triều đại đều có chính sách khuyến khích sản xuất nông nghiệp, chú trọng công cuộc khai khẩn đất hoang. Nhà nước còn đặt chức Hà đê sứ, Khuyến nông sứ để chăm lo việc đê điều, thủy lợi. Người dân biết dùng cày sắt và sức kéo của trâu, bò. Thâm canh, trồng hai vụ lúa một năm. * Thủ công nghiệp: Các nghề thủ công cổ truyền (dệt lụa, rèn sắt, nhuộm,…) tiếp tục phát triển và nhiều nghề mới ra đời (làm tranh sơn mài, làm đường, làm giấy,…). Một số làng, phường thủ công chuyên nghiệp xuất hiện (lụa Hà Đông, gốm Bát Tràng, gốm Chu Đậu,…). Nghề đóng tàu thuyền ra đời sớm và đạt trình độ cao. Thế kỉ XIX, đóng được tàu thủy chạy bằng hơi nước. * Thương nghiệp: Nội thương: Chợ làng, chợ phiên phát triển, phục vụ nhu cầu của nhân dân. Nhiều trung tâm kinh tế lớn hình thành như Thăng Long, Kẻ Chợ, Phố Hiến, Hội An,… Ngoại thương: Việc buôn bán với nước ngoài ngày càng mở rộng (Trung Quốc, Đông Nam Á, Nhật Bản,…) qua các trung tâm kinh tế. Câu 8 (Thông hiểu): Từ những thành tựu về kinh tế thủ công nghiệp và thương nghiệp của văn minh Đại Việt trong các thế kỉ XI - XV, em hãy phân tích tác động của những thành tựu đó đối với sự phát triển của nền văn minh Đại Việt trong thời gian này.",
+              "question": "Tính quan liêu, chuyên chế là một đặc điểm nổi bật của bộ máy nhà nước dưới thời kì vương triều Lê sơ.",
               "correct": true
             }
           ]
@@ -2448,7 +2464,7 @@
               "correct": false
             },
             {
-              "question": "Chính sách dân tộc của Đảng, Nhà nước Việt Nam là đảm bảo quyền tự trị cho các dân tộc.  Câu 1 (Thông hiểu): Em hãy nhận xét vai trò, vị trí của kinh tế nông nghiệp và thủ công nghiệp trong đời sống của cộng đồng các dân tộc ở Việt Nam. Câu 2 (Vận dụng): Em hãy trình bày một số biện pháp của bảo tồn và phát huy các giá trị của trang phục truyền thống của cộng đồng các dân tộc ở Việt Nam. Câu 3 (Vận dụng): Hiện nay trang phục truyền thống của nhiều cộng đồng dân tộc ở Việt Nam bị xuyên tạc, biến tướng. Là một học sinh, em hãy đề xuất một số biện pháp để giải quyết vấn đề trên? Câu 4 (Vận dụng): Em hãy trình bày một lễ hội truyền thống của một dân tộc ở Việt Nam mà em biết. Đề xuất một số biện pháp để quảng bá lễ hội đó.",
+              "question": "Chính sách dân tộc của Đảng, Nhà nước Việt Nam là đảm bảo quyền tự trị cho các dân tộc.",
               "correct": false
             }
           ]
@@ -2865,18 +2881,6 @@
             "Trung đội cứu quốc quân."
           ],
           "correct": 2
-        },
-        {
-          "type": "mcq",
-          "question": "Hoạt động sản",
-          "image": null,
-          "options": [
-            "trồng lúa nước. | xuất | chính trong nông nghiệp của dân tộc Kinh ở Việt Nam là",
-            "trồng cây lúa mì.",
-            "trồng cây lúa mạch. |  |",
-            "trồng cây lúa nương. --- END TABLE ---"
-          ],
-          "correct": 0
         }
       ],
       "questionGroups": [
@@ -2907,8 +2911,12 @@
           "image": null,
           "statements": [
             {
-              "question": "Trong quá trình chống lại triều Nguyễn, các dân tộc miền núi cũng đã góp phần to lớn để củng cố khối đại đoàn kết dân tộc.  Cộng đồng các dân tộc đã không kề vai sát cánh trong việc củng cố khối đại đoàn kết toàn dân tộc.",
+              "question": "Trong quá trình chống lại triều Nguyễn, các dân tộc miền núi cũng đã góp phần to lớn để củng cố khối đại đoàn kết dân tộc.",
               "correct": true
+            },
+            {
+              "question": "Cộng đồng các dân tộc đã không kề vai sát cánh trong việc củng cố khối đại đoàn kết toàn dân tộc.",
+              "correct": false
             },
             {
               "question": "Sự bền vững của khối đoàn kết thống nhất đã được hình thành qua nhiều triều đại quân chủ.",
@@ -3003,28 +3011,8 @@
               "correct": false
             },
             {
-              "question": "Nhà nước cần có những chính sách phù hợp với đặc thù của từng vùng dân tộc thiểu số.  Câu 1 (Vận dụng): Là một công dân của nước Việt Nam, em hãy cho biết những hành động của bản thân có thể thực hiện để góp phần xây dựng khối đại đoàn kết dân tộc hiện nay. Câu 2 (Vận dụng): Em hiểu như thế nào về quan điểm sau đây của Chủ tịch Hồ Chí Minh? Lấy những dẫn chứng lịch sử để chứng minh cho luận giải của em. “Đoàn kết, đoàn kết, đại đoàn kết Thành công, thành công, đại thanh công” (Hồ Chí Minh) Câu 3 (Vận dụng): Nếu trường em hoặc địa phương nơi đang cứ trú phát động cuộc thi vẽ tranh hoặc sưu tầm hình ảnh và viết bài tham gia Ngày hội Đại đoàn kết toàn dân tộc, em sẽ lựa chọn hình ảnh nào? Vì sao? Em chọn hình ảnh này vì nó mang ý nghĩa lịch sử thiêng liêng, thể hiện rõ tinh thần đại đoàn kết dân tộc – mọi người dân Việt Nam, không phân biệt giàu nghèo, dân tộc, tôn giáo, đều cùng nhau hướng về độc lập, tự do và hạnh phúc chung của đất nước. Đó cũng chính là minh chứng sống động cho quan điểm của Chủ tịch Hồ Chí Minh: “Đoàn kết, đoàn kết, đại đoàn kết – Thành công, thành công, đại thành công”. Hơn nữa, khi chọn hình ảnh ấy, em muốn gửi gắm thông điệp rằng: ngày nay thế hệ trẻ chúng em cần tiếp nối tinh thần đoàn kết đó, cùng nhau học tập, rèn luyện và chung tay xây dựng quê hương, đất nước ngày càng giàu đẹp, văn minh. Nếu trường em hoặc địa phương phát động cuộc thi vẽ tranh hoặc sưu tầm hình ảnh và viết bài tham gia Ngày hội Đại đoàn kết toàn dân tộc, em sẽ lựa chọn hình ảnh nhân dân cả nước đoàn kết, chung sức phòng chống dịch COVID-19. Trong thời gian dịch bệnh diễn ra, em đã thấy rất nhiều hình ảnh xúc động: các y bác sĩ ngày đêm ở tuyến đầu chống dịch; bộ đội, công an hỗ trợ người dân tại khu cách ly; những chuyến xe chở lương thực miễn phí; những “ATM gạo”, “siêu thị 0 đồng” giúp đỡ người nghèo; học sinh, sinh viên và nhiều tình nguyện viên tham gia hỗ trợ cộng đồng. Tất cả đều cho thấy sức mạnh của tinh thần “mình vì mọi người, mọi người vì mình”. Em chọn hình ảnh này vì nó không chỉ thể hiện rõ tinh thần đại đoàn kết dân tộc trong thời kỳ khó khăn, mà còn là minh chứng sinh động rằng đoàn kết chính là sức mạnh để vượt qua thử thách, bảo vệ sức khỏe và tương lai của cả cộng đồng. Đây cũng là bài học quý giá để thế hệ trẻ chúng em tiếp tục nuôi dưỡng tinh thần đoàn kết trong học tập và cuộc sống sau này. Câu 4 (Vận dụng): Em hãy cho biết những việc học sinh có thể làm để góp phần xây dựng khối đại đoàn kết dân tộc hiện nay. --- TABLE 1 --- | Hiện thực lịch sử | Lịch sử được con người nhận thức Giống nhau | - Đều cho biết về những gì đã diễn ra trong quá khứ. | - Đều cho biết về những gì đã diễn ra trong quá khứ. Khác nhau | - Có trước Lịch sử được conngười nhận thức. | - Có sau Hiện thực lịch sử. Khác nhau | - Chỉ có một. | Đa dạng, phong phú vì được con người nhận thức và trình bày, tái hiện theo nhiều cách thức, góc độ khác nhau.Sự khác nhau của Lịch sử được con người nhận thức là do mục đích nghiên cứu, nguồn sử liệu, quan điểm tiếp cận, phương pháp nghiên cứu,… Khác nhau | - Không thể thay đổi theo thời gian. | - Có thể thay đổi theo thời gian. --- END TABLE --- --- TABLE 2 --- | - Tồn tại độc lập, khách quan, ngoài ý muốn của con người. | - Mang tính vừa khách quan vừa chủ quan, phụ thuộc vào Hiện thực lịch sử. --- END TABLE --- --- TABLE 3 --- | VĂN HÓA | VĂN MINH Giống nhau | - Tổng thể vật chất và tinh thần do con người sáng tạo ra. | - Tổng thể vật chất và tinh thần do con người sáng tạo ra. Khác nhau | Khi con người xuất hiện.Thời kì dã man (xã hội nguyên thủy). | Trạng khái phát triển cao của nền văn hóa.Khi nhà nước và chữ viết ra đời.Thời kì văn minh (xã hội có nhà nước). --- END TABLE --- --- TABLE 4 --- Lĩnh vực | Thành tựu Chữ viết | Chữ tượng hình, viết trên giấy Pa-pi-rút. Toán học | Nghĩ ra phép đếm đến 10, giỏi về hình học, đã tính được số Pi bằng 3,16… Kiến trúc, điêu khắc | Kim tự tháp, tượng Nhân sư… Y học | Kĩ thuật ướp xác --- END TABLE --- --- TABLE 5 --- Nền văn minh | Thành tựu Ai Cập | Chữ tượng hình; Toán học (nhất là hình học); kiến trúc và điêu khắc; kĩ thuật ướp xác, tín ngưỡng thờ đa thần Trung Hoa | Chữ tượng hình được viết trên mai rùa, xương thú; văn học (thơ Đường, tiểu thuyết thời Minh – Thanh); toán học (sử dụng hệ số đếm thập phân); kiến trúc và điêu khắc (Di hòa viên, Thập tam lăng…); kĩ thuật (in, giấy, thuốc súng…); tư tưởng, tôn giáo (Nho giáo, Đạo giáo…) Ấn Độ | Văn học (kinh Vê -đa, sử thi Ma-ha-bha-ra-ta; Ra-ma-y-a-na); toán học (sáng tạo số tự nhiên); tôn giáo (Bà-la-môn giáo, Hin-đu giáo…) --- END TABLE --- --- TABLE 6 --- | Văn minh Ấn Độ | Văn minh Trung Hoa Chữ viết | Chữ Bra-mi, chữ San-krít (Phạn)Ảnh hưởng đến chữ viết của nhiều quốc gia như Thái Lan, Lào, Cam-pu- chia | Chữ Giáp cốt, Tiểu triện, Đại triện, Lệ thư, Khải thư…Ảnh hưởng đến chữ viết của nhiều nước lân cận như Nhật Bản, Việt Nam… Tư tưởng, tôn giáo | Là nơi ra đời nhiều tôn giáo lớn như Hin-đu giáo, Phật giáo, đồng thời cũng là nơi du nhập và phát triển của Hồi giáo | Nho giáo, Đạo giáo, Mặc gia, Pháp gia, Phật giáo… --- END TABLE --- --- TABLE 7 --- Lĩnh vực | Thành tựu Tư tưởng | - Kịch liệt phê phán triết học duy tâm, lên án chế độ phong kiến, đề cao tri thức, lý trí của con người. Đại diện tiêu biểu là Mi-chen đơ Mông-ten-nhơ (Pháp), Ê-ra- xmơ (Hà Lan), La Ra-mê (Pháp),... Văn học | - Đạt nhiều thành tựu lớn, tiêu biểu là các tác phẩm Thần khúc (",
+              "question": "Nhà nước cần có những chính sách phù hợp với đặc thù của từng vùng dân tộc thiểu số.",
               "correct": true
-            },
-            {
-              "question": "A. Đan-tê), Đôn --- END TABLE --- --- TABLE 8 --- | Ki-hô-tê (M. Xéc-van-téc), Rô-mê-ô và Giu-li-ét (Sếch-xpia)... Nghệ thuật | - Nghệ thuật đạt nhiều thành tựu lớn, tiêu biểu là bức họa Nàng Mô-na Li-sa, Bữa ăn tối cuối cùng (Lê-ô-na đờ Vanh-xi), Tượng Đa-vít, Sự sáng tạo A-đam (Mi- ken-lăng-giơ), lâu đài Sam-bô (Pháp), nhà thờ Xanh Pi-tơ (Va-ti-căng),... Khoa học nghệ thuật | - Toán học, Thiên văn học, tiêu biểu là Cô-péc-ních, Bru-nô và Ga-li-lê với Thuyết Nhật tâm. --- END TABLE --- --- TABLE 9 --- Nước | Năm 1880(Triệu tấn) | Năm 1900(Triệu tấn) | Tỉ lệ tăng (%) Anh | 1,3 | 4,9 | 377 Mỹ | 1,2 | 10,2 | 850 Đức | 0,7 | 6,4 | 910 --- END TABLE --- --- TABLE 10 --- | Văn minh Chăm-pa | Văn minh Phù Nam Giống nhau | Cơ sở tự nhiên:+ Có các dòng sông lớn, như: sông Thu Bồn ở Chăm-pa; sông Cửu Long ở Phù Nam.+ Có các đồng bằng phù sa màu mỡ.+ Vương quốc Chăm-pa có nhiều vịnh cảng, còn Vương quốc Phù Nam có nhiều hải cảng => Có điều kiện thuận lợi để phát triển kinh tế thương nghiệp.+ Tiếp thu nhiều giá trị văn minh Ấn Độ.Cơ sở xã hội:+ Cư dân bản địa là người Môn cổ; bên cạnh đó còn có một bộ phận dân cư di cưtừ nơi khác tới.+ Xã hội có sự phân hóa giàu nghèo rõ rệt: Tầng lớp thống trị và tầng lớp bị trị. | Cơ sở tự nhiên:+ Có các dòng sông lớn, như: sông Thu Bồn ở Chăm-pa; sông Cửu Long ở Phù Nam.+ Có các đồng bằng phù sa màu mỡ.+ Vương quốc Chăm-pa có nhiều vịnh cảng, còn Vương quốc Phù Nam có nhiều hải cảng => Có điều kiện thuận lợi để phát triển kinh tế thương nghiệp.+ Tiếp thu nhiều giá trị văn minh Ấn Độ.Cơ sở xã hội:+ Cư dân bản địa là người Môn cổ; bên cạnh đó còn có một bộ phận dân cư di cưtừ nơi khác tới.+ Xã hội có sự phân hóa giàu nghèo rõ rệt: Tầng lớp thống trị và tầng lớp bị trị. Khác nhau | + Địa bàn: Vùng duyên hải và một phần cao nguyên miền Trung Việt Nam ngày nay.+ Chăm-pa có địa hình phức tạp khi phía Tây là dãy Trường Sơn, phía Đông là biển đảo. Xen kẽ là dải đồng bằng nhỏ, hẹp, dọc ven biển, bị chia cắt bởi sông ngắn và núi, đèo. Khí hậu khô nóng, đất đai cằn cỗi, thiên tai thường xuyên. | + Địa bàn: Ở lưu vực sông Cửu Long.+ Phù Nam thì thuận lợi hơn khi có mạng lưới sông ngòi dày đặc kết nối với nhau, trữ lượng nước ngọt dồi dào, nguồn lợi thủy sản phong phú, đa dạng. Đất đai giàu phù sa. --- END TABLE --- --- TABLE 11 --- | Văn minh Văn Lang - Âu Lạc | Văn minh Chăm-pa | Văn minh Phù Nam Giống nhau | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. --- END TABLE --- --- TABLE 12 --- | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. Khác nhau | + Khu vực Bắc Bộ và Bắc Trung bộ của Việt Nam hiện nay.+ Thương mại đường biển kém phát triển hơn so với Chăm-pa và Phù Nam+ Bộ phận cư dân chính là người Việt cổ.+ Không có sự ảnh hưởng của văn minh Ấn Độ. | + Khu vực Nam Trung Bộ và một phần cao nguyên Trường Sơn của Việt Nam hiện nay.+ Các hoạt động khai thác lâm sản và thương mại đường biển rất phát triển.+ Bộ phận cư dân chính là người Môn cổ, bên cạnh đó còn có một bộ phận dân cư di cư từ nơi khác tới.+ Tiếp thu nhiều giá trị văn minh Ấn Độ. | + Khu vực Nam Bộ của Việt Nam hiện nay.+ Hoạt động thương mại đường biển rất phát triển.+ Bộ phận cư dân chính là người Môn cổ, bên cạnh đó còn có một bộ phận dân cư di cư từ nơi khác tới.+ Tiếp thu nhiều giá trị văn minh Ấn Độ. --- END TABLE --- --- TABLE 13 ---",
-              "correct": false
-            },
-            {
-              "question": "★A. canh tác lúa nước. |  |",
-              "correct": false
-            },
-            {
-              "question": "B. chăn nuôi gia súc.",
-              "correct": false
-            },
-            {
-              "question": "C. nuôi trồng thủy sản. |  |",
-              "correct": false
-            },
-            {
-              "question": "D. trồng cây lúa nương.",
-              "correct": false
             }
           ]
         }
