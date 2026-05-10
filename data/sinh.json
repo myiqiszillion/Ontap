@@ -1,20 +1,20 @@
 {
   "lessons": [
     {
-      "name": "Bài 17: Thông tin giữa các tế bào",
+      "name": "Bài 17: THÔNG TIN GIỮA CÁC TẾ BÀO",
       "questions": [
         {
           "question": "Thông tin giữa các tế bào là",
           "options": [
             "sự truyền tín hiệu từ tế bào này sang tế bào khác thông qua phân tử tín hiệu để tạo ra các đáp ứng nhất định.",
             "sự truyền tín hiệu từ tế bào này sang tế bào khác của những cơ thể khác nhau.",
-            "sự truyền tín hiệu trong nội bộ tế bào thông qua chuỗi phản ứng sinh hóa để tạo ra các đáp ứng nhất định.",
+            "sự truyền tín hiệu trong nội bộ tế bào thông qua chuỗi phản ứng sinh hóa để tạo ra các đáp ứng nhất định.",
             "sự truyền tín hiệu từ não bộ đến các cơ quan trong cơ thể để trả lời các kích thích từ môi trường."
           ],
           "correct": 0
         },
         {
-          "question": "Hình bên dưới minh họa kiểu truyền tin nào? (Hình minh họa kháng nguyên và thụ thể tiếp xúc trực tiếp)",
+          "question": "Hình bên dưới minh họa kiểu truyền tin nào?",
           "options": [
             "Truyền tin tiếp xúc trực tiếp.",
             "Truyền tin qua mối nối giữa các tế bào.",
@@ -29,7 +29,7 @@
             "tiếp nhận - truyền tin - đáp ứng.",
             "tiếp nhận - chuyển đổi tín hiệu - đáp ứng.",
             "truyền tín hiệu - tiếp nhận - đáp ứng.",
-            "tiếp nhận - đáp ứng - truyền tín hiệu."
+            "tiếp nhận - đáp ứng- truyền tín hiệu."
           ],
           "correct": 0
         },
@@ -38,7 +38,7 @@
           "options": [
             "kênh nối giữa các tế bào.",
             "phân tử tín hiệu.",
-            "tế bào máu.",
+            "các tế bào máu.",
             "dòng máu tuần hoàn."
           ],
           "correct": 1
@@ -46,7 +46,7 @@
         {
           "question": "Thành phần nào của tế bào có vai trò tiếp nhận phân tử tín hiệu?",
           "options": [
-            "Thu thể",
+            "Thụ thể",
             "Màng tế bào",
             "Tế bào chất",
             "Nhân tế bào"
@@ -54,7 +54,7 @@
           "correct": 0
         },
         {
-          "question": "\"Trong giai đoạn này, một chuỗi các phản ứng sinh hoá diễn ra trong tế bào tạo thành con đường truyền tín hiệu thông qua các phân tử truyền tin\". Đây là giai đoạn nào?",
+          "question": "“Trong giai đoạn này, một chuỗi các phản ứng sinh hoá diễn ra trong tế bào tạo thành con đường truyền tín hiệu thông qua các phân tử truyền tin”?",
           "options": [
             "Giai đoạn đáp ứng.",
             "Giai đoạn tiếp nhận.",
@@ -64,7 +64,7 @@
           "correct": 3
         },
         {
-          "question": "\"Giai đoạn nào tín hiệu đã được truyền tin sẽ hoạt hoá một đáp ứng đặc hiệu của tế bào\"?",
+          "question": "“Giai đoạn nào tín hiệu đã được truyền tin sẽ hoạt hoá một đáp ứng đặc hiệu của tế bào” ?",
           "options": [
             "Giai đoạn đáp ứng.",
             "Giai đoạn tiếp nhận.",
@@ -94,19 +94,34 @@
           "correct": 0
         },
         {
-          "question": "Quan sát hình dưới đây và cho biết kiểu truyền thông giữa các tế bào được minh hoạ là gì? (Hình minh họa tế bào tiết và tế bào đích với các phân tử tín hiệu)",
+          "question": "Quan sát hình dưới đây và cho biết kiểu truyền thông giữa các tế bào được minh hoạ là gì?",
           "options": [
-            "Truyền tin tiếp xúc trực tiếp.",
-            "Truyền tin qua mối nối giữa các tế bào.",
+            "Tiếp xúc trực tiếp.",
+            "Qua mối nối giữa các tế bào.",
             "Truyền tin cục bộ.",
             "Vận chuyển thông tin nhờ hệ tuần hoàn."
           ],
           "correct": 2
+        },
+        {
+          "question": "Quá trình truyền thông tin giữa các tế bào diễn ra gồm mấy giai đoạn?",
+          "options": [],
+          "correct": "gồm 3 giai đoạn"
+        },
+        {
+          "question": ": Có bao nhiêu kiểu truyền thông tin giữa các tế bào gần nhau?",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": "Có bao nhiêu ý sau đây là truyền tin nhờ hệ tuần hoàn?",
+          "options": [],
+          "correct": "2"
         }
       ],
       "questionGroups": [
         {
-          "passage": "Mỗi phát biểu dưới đây là Đúng hay Sai khi nói về quá trình truyền tin giữa các tế bào?",
+          "passage": "Mỗi phát biểu dưới đây là Đúng hay Sai khi nói về quá trình truyền tin giữa các tế bào ? * Hướng dẫn giải: \tA. đúng              B. Đúng                 C. Đúng",
           "statements": [
             {
               "question": "Truyền tin tế bào là sự phát tán và nhận các phân tử tín hiệu qua lại giữa các tế bào.",
@@ -127,7 +142,7 @@
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về đặc điểm quá trình truyền thông tin giữa các tế bào?",
+          "passage": "Khi nói về đặc điểm quá trình truyền thông tin giữa các tế bào, mỗi phát biểu nào dưới đây là Đúng hay Sai? * Hướng dẫn giải",
           "statements": [
             {
               "question": "Tế bào đích đáp ứng lại các tín hiệu được truyền đến từ các tế bào khác nhau.",
@@ -135,31 +150,31 @@
             },
             {
               "question": "Có nhiều phương thức truyền thông tin với bất kể khoảng cách giữa các tế bào.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Các tế bào xa nhau sẽ truyền thông tin theo kiểu tiếp xúc trực tiếp nhờ các phân tử bề mặt.",
-              "correct": false
+              "correct": true
             },
             {
-              "question": "Các tế bào gần nhau truyền thông tin qua các phân tử tín hiệu được vận chuyển nhờ hệ tuần hoàn.",
-              "correct": false
+              "question": "Các tế bào gần sẽ truyền thông tin qua các phân tử tín hiệu được vận chuyển nhờ hệ tuần hoàn.",
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Quan sát sơ đồ cơ chế \"điều hòa lượng đường trong máu\" của hormone insulin và glucagon. Mỗi nhận định dưới đây là Đúng hay Sai về cơ chế điều hòa lượng đường trong máu?",
+          "passage": "Quan sát sơ đồ cơ chế “điều hòa lượng đường trong máu” của hormone insulin và glucagon sau đây. Mỗi nhận định dưới đây là Đúng hay Sai về cơ chế điều hòa lượng đường trong máu? * Hướng dẫn giải",
           "statements": [
             {
               "question": "Trong đường hợp này, chất đóng vai trò là phân tử tín hiệu là Hormone insulin, glucagon.",
               "correct": true
             },
             {
-              "question": "Hormone làm giảm lượng đường huyết là hormone glucagon.",
-              "correct": false
+              "question": "Hormone làm giảm lượng đường huyết là hormone glucagon",
+              "correct": true
             },
             {
-              "question": "Các hormone gửi tín hiệu báo động biến động lượng đường huyết đến gan để cơ quan này điều hòa đường huyết.",
+              "question": "Các hormone gửi tín hiệu báo động biến động lượng đường huyết đến gan để cơ quan này điều hòa đường huyết",
               "correct": true
             },
             {
@@ -167,32 +182,11 @@
               "correct": true
             }
           ]
-        },
-        {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát G₁ trong chu kì tế bào?",
-          "statements": [
-            {
-              "question": "Nhận diện sai hỏng để ngừng chu kì tế bào cho tới khi các sai hỏng được khắc phục.",
-              "correct": true
-            },
-            {
-              "question": "Kiểm soát sự sắp xếp của các nhiễm sắc thể trên thoi phân bào.",
-              "correct": false
-            },
-            {
-              "question": "Kích hoạt sự phân chia các nhiễm sắc tử.",
-              "correct": false
-            },
-            {
-              "question": "Kiểm soát sự nhân đôi của các nhiễm sắc thể.",
-              "correct": false
-            }
-          ]
         }
       ]
     },
     {
-      "name": "Bài 18: Chu kì tế bào",
+      "name": "Bài 18: CHU KÌ TẾ BÀO",
       "questions": [
         {
           "question": "Tên gọi khoảng thời gian giữa hai lần phân bào liên tiếp của tế bào nhân thực là gì?",
@@ -227,35 +221,35 @@
         {
           "question": "Trình tự lần lượt 3 pha của kì trung gian trong chu kì tế bào là trình tự nào?",
           "options": [
-            "G₁ → S → G₂.",
-            "G₁ → G₂ → S.",
-            "G₂ → S → G₁.",
-            "S → G₁ → G₂."
+            "G1 → S → G2.",
+            "G1 → G2 → S.",
+            "G2 → S → G1.",
+            "S → G1 → G2."
           ],
           "correct": 0
         },
         {
           "question": "Các pha trong một chu kì tế bào diễn ra theo trình tự nào sau đây?",
           "options": [
-            "G₁ → S → G₂ → M.",
-            "G₂ → S → G₁ → M.",
-            "M → S → G₁ → G₂.",
-            "S → G₁ → G₂ → M."
+            "G1 → S → G2 → M.",
+            "G2 → S → G1 → M.",
+            "M → S → G1 → G2.",
+            "S → G1 → G2 → M."
           ],
           "correct": 0
         },
         {
           "question": "Trong chu kỳ tế bào, DNA và NST nhân đôi ở pha",
           "options": [
-            "G₁.",
-            "G₂.",
+            "G1.",
+            "G2.",
             "S.",
             "Nguyên phân"
           ],
           "correct": 2
         },
         {
-          "question": "Trong chu kỳ tế bào, pha M bao gồm hai quá trình liên quan chặt chẽ với nhau là",
+          "question": "Trong chu kỳ tế bào, pha M bao gồm hai quá trình liên quan chặt chẽ",
           "options": [
             "phân chia NST và phân chia tế bào chất.",
             "Nhân đôi và phân chia NST.",
@@ -275,7 +269,7 @@
           "correct": 2
         },
         {
-          "question": "Số điểm kiểm soát chính trong chu kì tế bào của sinh vật nhân thực là",
+          "question": "Số điểm kiểm soát chính trong chu kì tế bào của sinh vật nhân thực là",
           "options": [
             "1.",
             "3.",
@@ -305,12 +299,22 @@
           "correct": 3
         },
         {
+          "question": "Hình bên mô tả các kiểm soát trong chu kì bào được đánh số thứ tự (1), (2) và (3). Đâu là vị trí của điểm kiểm soát giới hạn?",
+          "options": [
+            "(1).",
+            "(2).",
+            "(3).",
+            "(1) và (2)."
+          ],
+          "correct": 2
+        },
+        {
           "question": "Trong chu kỳ tế bào, thời điểm dễ gây đột biến gen nhất là",
           "options": [
             "Pha S.",
-            "Pha G₁.",
+            "Pha G1.",
             "Pha M.",
-            "Pha G₂."
+            "Pha G2."
           ],
           "correct": 0
         },
@@ -335,7 +339,7 @@
           "correct": 2
         },
         {
-          "question": "Khi nói về kì trung gian, có bao nhiêu phát biểu sau đây đúng? I. Có 3 pha: G₁, S và G₂. II. Chiếm phần lớn thời gian trong chu kỳ tế bào. III. Tổng hợp các chất cần thiết cho tế bào. IV. NST nhân đôi và phân chia về hai cực của tế bào.",
+          "question": "Khi nói về kì trung gian, có bao nhiêu phát biểu sau đây đúng?",
           "options": [
             "1.",
             "2.",
@@ -345,7 +349,7 @@
           "correct": 2
         },
         {
-          "question": "Khi nói về ung thư, có bao nhiêu phát biểu nào sau đây đúng? I. Ung thư là sự tăng sinh không kiểm soát được của một số loại tế bào trong cơ thể. II. U ác tính khác với u lành tính là các tế bào có khả năng tách khỏi mô ban đầu di chuyển đến nơi khác. III. Nguyên nhân gây ra ung thư có thể là do đột biến gen, đột biến NST. IV. Ung thư là một trong những bệnh nan y đã có thuốc chữa trị đặc hiệu.",
+          "question": "IV. Ung thư là một trong những bệnh nan y đã có thuốc chữa trị đặc hiệu.",
           "options": [
             "1.",
             "3.",
@@ -353,11 +357,57 @@
             "4."
           ],
           "correct": 1
+        },
+        {
+          "question": "Trong quá trình kiểm soát chu kì tế bào, có bao nhiêu điểm kiểm soát?",
+          "options": [],
+          "correct": "Có 3 điểm kiểm soát: điểm kiểm soát G1"
+        },
+        {
+          "question": "Cho các biện pháp sau:",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Sau một chu kì tế bào, từ năm tế bào mẹ sẽ tạo ra bao nhiêu tế bào con?",
+          "options": [],
+          "correct": "1"
+        },
+        {
+          "question": "Sau ba chu kì tế bào, từ năm tế bào mẹ sẽ tạo ra bao nhiêu tế bào con?",
+          "options": [],
+          "correct": "1"
+        },
+        {
+          "question": "Sau một chu kì tế bào, từ một tế bào mẹ sẽ tạo ra bao nhiêu tế bào con?",
+          "options": [],
+          "correct": "2"
         }
       ],
       "questionGroups": [
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát G₂/M trong chu kì tế bào?",
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát G1 trong chu kì tế bào? * Hướng dẫn giải: a (Đúng), b, c nói về điểm kiểm soát chuyển tiếp kì giữa - kì sau (Sai), d nói về điểm kiểm soát G2/M (Sai)",
+          "statements": [
+            {
+              "question": "Nhận diện sai hỏng để ngừng chu kì tế bào cho tới khi các sai hỏng được khắc phục.",
+              "correct": true
+            },
+            {
+              "question": "Kiểm soát sự sắp xếp của các nhiễm sắc thể trên thoi phân bào.",
+              "correct": true
+            },
+            {
+              "question": "Kích hoạt sự phân chia các nhiễm sắc tử.",
+              "correct": true
+            },
+            {
+              "question": "Kiểm soát sự nhân đôi của các nhiễm sắc thể.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát G2/M trong chu kì tế bào? * Hướng dẫn giải: a, c (Đúng), b nói về điểm kiểm soát chuyển tiếp kì giữa - kì sau (Sai), d nói về điểm kiểm soát G1 (Sai)",
           "statements": [
             {
               "question": "Điều chỉnh các sai hỏng trước khi tế bào bước vào giai đoạn phân chia nhân.",
@@ -365,7 +415,7 @@
             },
             {
               "question": "Kiểm soát việc đính tơ phân bào lên tâm động nhiễm sắc thể.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kiểm soát sự nhân đôi của các nhiễm sắc thể.",
@@ -373,23 +423,23 @@
             },
             {
               "question": "Nhận diện sai hỏng để ngừng chu kì tế bào cho tới khi các sai hỏng được khắc phục.",
-              "correct": false
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về chu kì tế bào?",
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về chu kì tế bào? * Hướng dẫn giải: a - pha G1 (Sai), b - pha S (Sai), c, d (Đúng)",
           "statements": [
             {
               "question": "Pha S, tế bào tổng hợp các chất cần thiết cho sự sinh trưởng.",
-              "correct": false
+              "correct": true
             },
             {
-              "question": "Pha G₁, nhân đôi DNA và nhiễm sắc thể.",
-              "correct": false
+              "question": "Pha G1, nhân đôi DNA và nhiễm sắc thể.",
+              "correct": true
             },
             {
-              "question": "Pha G₂, tổng hợp các chất cho tế bào.",
+              "question": "Pha G2, tổng hợp các chất cho tế bào.",
               "correct": true
             },
             {
@@ -399,7 +449,7 @@
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về ung thư?",
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về ung thư? * Hướng dẫn giải: a, b, c (Đúng), d (Sai)",
           "statements": [
             {
               "question": "Ung thư liên quan đến việc tăng sinh tế bào một cách mất kiểm soát.",
@@ -415,20 +465,20 @@
             },
             {
               "question": "Ung thư tuyệt đối không chữa trị được.",
-              "correct": false
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về chu kì tế bào?",
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về chu kì tế bào? * Hướng dẫn giải: a - Ở sinh vật nhân sơ, chu kì tế bào là trực phân (Sai), b - Chu kì tế bào gồm: giai đoạn chuẩn bị và giai đoạn phân chia tế bào (Sai), c, d (Đúng)",
           "statements": [
             {
-              "question": "Ở sinh vật nhân sơ, chu kì tế bào là trực phân.",
-              "correct": false
+              "question": "Ở sinh vật nhân sơ, chu kì tế bào là nguyên phân.",
+              "correct": true
             },
             {
-              "question": "Chu kì tế bào gồm: pha G₁, pha S, pha G₂.",
-              "correct": false
+              "question": "Chu kì tế bào gồm: pha G1, pha S, pha G2.",
+              "correct": true
             },
             {
               "question": "Qua mỗi chu kì tế bào, từ một tế bào mẹ tạo ra hai tế bào con.",
@@ -441,15 +491,15 @@
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về chu kì tế bào?",
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về chu kì tế bào? * Hướng dẫn giải: a (Sai), b - tạo 2 tế bào con (Sai), c (Đúng), d (Đúng)",
           "statements": [
             {
               "question": "Chu kì tế bào là thời gian từ lúc tế bào sinh ra đến khi tế bào chết đi.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Kết thúc mỗi chu kì tế bào, từ một tế bào mẹ tạo ra vô số tế bào con.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Thời gian của chu kì tế bào là thời gian của các giai đoạn trong chu kì tế bào.",
@@ -462,7 +512,7 @@
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát chuyển tiếp kì giữa - kì sau trong chu kì tế bào?",
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về điểm kiểm soát chuyển tiếp kì giữa - kì sau trong chu kì tế bào? * Hướng dẫn giải: a, b, d (Đúng), c - nói về điểm kiểm soát G2/M (Sai)",
           "statements": [
             {
               "question": "Kiểm soát việc đính tơ phân bào lên tâm động nhiễm sắc thể.",
@@ -474,10 +524,10 @@
             },
             {
               "question": "Kiểm soát sự nhân đôi của các nhiễm sắc thể.",
-              "correct": false
+              "correct": true
             },
             {
-              "question": "Kiểm soát sự sắp xếp của các nhiễm sắc thể trên thoi phân bào.",
+              "question": "Kiểm soát sự sắp xếp của các nhiễm sắc trên thoi phân bào.",
               "correct": true
             }
           ]
@@ -485,12 +535,12 @@
       ]
     },
     {
-      "name": "Bài 19: Nguyên phân và Giảm phân",
+      "name": "Bài 19: QUÁ TRÌNH PHÂN BÀO",
       "questions": [
         {
-          "question": "Trong nguyên phân, sự phân chia nhân trải qua mấy kì?",
+          "question": "Trong nguyên phân, sự phân chia nhân trải qua mấy kì?",
           "options": [
-            "1 kì",
+            "1 kì",
             "2 kì",
             "3 kì",
             "4 kì."
@@ -498,52 +548,52 @@
           "correct": 3
         },
         {
-          "question": "Quá trình nguyên phân không bao gồm kì nào sau đây?",
+          "question": "Quá trình nguyên phân không bao gồm kì nào sau đây?",
           "options": [
-            "Kì trung gian",
-            "Kì giữa",
-            "Kì đầu",
-            "Kì cuối."
+            "Kì trung gian",
+            "Kì giữa",
+            "Kì đầu",
+            "Kì cuối."
           ],
           "correct": 0
         },
         {
-          "question": "Trong kì đầu của nguyên phân, nhiễm sắc thể có hoạt động nào?",
+          "question": "Trong kì đầu của nguyên phân, nhiễm sắc thể có hoạt động nào?",
           "options": [
-            "Tự nhân đôi tạo nhiễm sắc thể kép",
-            "Bắt đầu co xoắn lại.",
-            "Co xoắn tối đa.",
-            "Bắt đầu dãn xoắn."
+            "Tự nhân đôi tạo nhiễm sắc thể kép",
+            "Bắt đầu co xoắn lại.",
+            "Co xoắn tối đa.",
+            "Bắt đầu dãn xoắn."
           ],
           "correct": 1
         },
         {
-          "question": "Trong quá trình nguyên phân, các nhiễm sắc thể co xoắn cực đại, có hình thái đặc trưng cho loài ở kì nào sau đây?",
+          "question": "Trong quá trình nguyên phân, các nhiễm sắc thể co xoắn cực đại, có hình thái đặc trưng cho loài ở kì nào sau đây?",
           "options": [
-            "Kì đầu",
-            "Kì giữa",
-            "Kì sau",
-            "Kì cuối."
+            "Kì đầu",
+            "Kì giữa",
+            "Kì sau",
+            "Kì cuối."
           ],
           "correct": 1
         },
         {
-          "question": "Ở kì giữa nguyên phân, các nhiễm sắc thể kép sắp xếp thành mấy hàng trên mặt phẳng xích đạo của thoi phân bào?",
+          "question": "Ở kì giữa nguyên phân, các nhiễm sắc thể kép sắp xếp thành mấy hàng trên mặt phẳng xích đạo của thoi phân bào?",
           "options": [
-            "4 hàng",
-            "3 hàng",
-            "2 hàng",
-            "1 hàng."
+            "4 hàng",
+            "3 hàng",
+            "2 hàng",
+            "1 hàng."
           ],
           "correct": 3
         },
         {
-          "question": "Trong quá trình nguyên phân, thoi phân bào dần xuất hiện ở kì nào?",
+          "question": "Trong quá trình nguyên phân, thoi phân bào dần xuất hiện ở kì nào?",
           "options": [
-            "Kì đầu",
-            "Kì giữa",
-            "Kì sau",
-            "Kì cuối."
+            "Kì đầu",
+            "Kì giữa",
+            "Kì sau",
+            "Kì cuối."
           ],
           "correct": 0
         },
@@ -560,15 +610,15 @@
         {
           "question": "Phát biểu nào sau đây không đúng khi nói về vai trò của quá trình nguyên phân?",
           "options": [
-            "Tạo ra nhiều biến dị tổ hợp, cung cấp nguyên liệu cho quá trình tiến hoá.",
-            "Đảm bảo ổn định bộ NST của loài qua các thế hệ.",
+            "Tạo ra nhiều biến di tổ hợp, cung cấp nguyên liệu cho quá trình tiến hoá.",
+            "Đảm bảo ổn đinh bộ NST của loài qua các thế hệ.",
             "Giúp thay thế các tế bào già, bị tổn thương ở cơ thể sinh vật đa bào.",
             "Làm tăng số lượng cá thể của quần thể đơn bào."
           ],
           "correct": 0
         },
         {
-          "question": "Từ một tế bào mẹ (2n) ban đầu sau một lần nguyên phân sẽ tạo ra được bao nhiêu tế bào con?",
+          "question": "Từ một tế bào mẹ (2n) ban đầu sau một lần nguyên phân sẽ tạo ra được bao nhiêu tế bào con?",
           "options": [
             "1",
             "2",
@@ -578,12 +628,12 @@
           "correct": 1
         },
         {
-          "question": "Giảm phân là quá trình phân bào ...(1)... xảy ra trong quá trình hình thành ...(2)... Từ còn thiếu ở (1) và (2) lần lượt là",
+          "question": "Giảm phân là quá trình phân bào …(1)… xảy ra trong quá trình hình thành …(2)… Từ còn thiếu ở (1) và (2) lần lượt là",
           "options": [
             "nguyên nhiễm, tế bào.",
             "nguyên nhiễm, giao tử.",
             "giảm nhiễm, tế bào.",
-            "giảm nhiễm, giao tử."
+            "giảm nhiễm, giao tử"
           ],
           "correct": 3
         },
@@ -618,52 +668,62 @@
           "correct": 0
         },
         {
-          "question": "Trong phân bào, tế bào động vật phân chia tế bào chất bằng cách nào?",
+          "question": "Trong phân bào, tế bào động vật phân chia tế bào chất bằng cách nào?",
           "options": [
-            "Tạo vách ngăn ở mặt phẳng xích đạo.",
-            "Kéo dài màng tế bào.",
-            "Màng tế bào thắt eo ở chính giữa tế bào chất.",
-            "Tạo màng mới giữa tế bào."
+            "Tạo vách ngăn ở mặt phẳng xích đạo.",
+            "Kéo dài màng tế bào.",
+            "Màng tế bào thắt eo ở chính giữa tế bào chất.",
+            "Tạo màng mới giữa tế bào."
           ],
           "correct": 2
         },
         {
           "question": "Trong nguyên phân, nhiễm sắc thể được quan sát rõ nhất ở kì nào sau đây?",
           "options": [
-            "Kì đầu.",
-            "Kì giữa.",
-            "Kì sau.",
-            "Kì cuối."
+            "Kì đầu.",
+            "Kì giữa.",
+            "Kì sau.",
+            "Kì cuối."
           ],
           "correct": 1
         },
         {
-          "question": "Trong nguyên phân, sự phân chia vật chất di truyền được thực hiện nhờ",
+          "question": "Khi quan sát quá trình phân bào bình thường ở một tế bào sinh dưỡng (tế bào A) của một loài dưới kính hiển vi, người ta bắt gặp hiện tượng được mô tả ở hình bên dưới. Theo em, tế bào đang ở kì nào của quá trình nguyên phân?",
           "options": [
-            "màng nhân.",
+            "Kì đầu.",
+            "Kì giữa.",
+            "Kì sau.",
+            "Kì cuối."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trong nguyên phân, sự phân chia vật chất di truyền được thực hiện nhờ",
+          "options": [
+            "màng nhân.",
             "nhân con.",
-            "trung thể.",
-            "thoi phân bào."
+            "trung thể.",
+            "thoi phân bào."
           ],
           "correct": 3
         },
         {
-          "question": "Trong quá trình nguyên phân, các nhiễm sắc thể phân li về hai cực của tế bào nhờ hoạt động của thành phần nào?",
+          "question": "Trong quá trình nguyên phân, các nhiễm sắc thể phân li về hai cực của tế bào nhờ hoạt động của thành phần nào?",
           "options": [
-            "Thoi phân bào.",
-            "Các bào quan.",
+            "Thoi phân bào.",
+            "Các bào quan.",
             "Nhân.",
-            "Vách tế bào."
+            "Vách tế bào."
           ],
           "correct": 0
         },
         {
-          "question": "Trong quá trình nguyên phân, thoi phân bào đóng vai trò gì?",
+          "question": "Trong quá trình nguyên phân, thoi phân bào đóng vai trò gì?",
           "options": [
-            "Nơi gắn nhiễm sắc thể.",
-            "Nơi xảy ra quá trình tự nhân đôi của nhiễm sắc thể.",
-            "Nơi gắn vào tâm động của nhiễm sắc thể vào kéo nhiễm sắc thể về hai cực của tế bào.",
-            "Hình thành màng nhân và nhân con cho các tế bào con."
+            "Nơi gắn nhiễm sắc thể.",
+            "Nơi xảy ra quá trình tự nhân đôi của nhiễm sắc thể.",
+            "Nơi gắn vào tâm động của nhiễm sắc thể vào kéo nhiễm sắc thể về hai cực của tế bào.",
+            "Hình thành màng nhân và nhân con cho các tế bào con."
           ],
           "correct": 2
         },
@@ -688,16 +748,6 @@
           "correct": 1
         },
         {
-          "question": "Có 8 tế bào của loài ruồi giấm đều tham gia nguyên phân 3 lần liên tiếp. Số lượng tế bào được tạo ra sau nguyên phân là",
-          "options": [
-            "8.",
-            "16.",
-            "32.",
-            "64."
-          ],
-          "correct": 3
-        },
-        {
           "question": "Đặc điểm nào sau đây chỉ có ở quá trình giảm phân mà không có ở quá trình nguyên phân?",
           "options": [
             "Có sự tiếp hợp giữa các nhiễm sắc thể kép trong cặp tương đồng.",
@@ -708,70 +758,180 @@
           "correct": 0
         },
         {
-          "question": "Ở động vật, bộ nhiễm sắc thể của tinh trùng là",
-          "options": [
-            "2n kép.",
-            "2n đơn.",
-            "n đơn.",
-            "n kép."
-          ],
-          "correct": 2
-        },
-        {
-          "question": "Khi nói về quá trình giảm phân, phát biểu nào sau đây là đúng?",
+          "question": "Ở Khi nói về quá trình giảm phân, phát biểu nào sau đây là đúng?",
           "options": [
             "Mỗi tế bào có thể tiến hành giảm phân 1 lần hoặc nhiều lần.",
             "Giảm phân trải qua hai lần phân bào nhưng NST chỉ nhân đôi 1 lần.",
             "Phân bào giảm phân diễn ra ở mọi tế bào của cơ quan sinh dục.",
-            "Phân bào giảm phân không quá trình phân chia tế bào chất."
+            "Phân bào giảm phân không quá trình phân chia tế bào chất"
           ],
           "correct": 1
         },
         {
-          "question": "Điểm giống nhau ở kì sau I và kì sau II trong giảm phân là",
+          "question": "A. Các NST đều ở trạng thái 2n đơn.",
           "options": [
-            "Các NST đều ở trạng thái 2n đơn.",
             "Các NST đều ở trạng thái 2n kép.",
             "Có sự dãn xoắn của các NST.",
             "Có sự phân li các NST về 2 cực tế bào."
           ],
-          "correct": 3
+          "correct": 2
         },
         {
-          "question": "Bộ nhiễm sắc thể và hình thái nhiễm sắc thể của các tế bào con sau khi kết thúc giảm phân I là",
+          "question": "A. n đơn, dãn xoắn.",
           "options": [
-            "n đơn, dãn xoắn.",
             "n kép, dãn xoắn.",
             "2n đơn, co xoắn.",
             "n đơn, co xoắn."
           ],
-          "correct": 1
+          "correct": 0
+        },
+        {
+          "question": "A. 78 nhiễm sắc thể đơn.",
+          "options": [
+            "78 nhiễm sắc thể kép",
+            "156 nhiễm sắc thể đơn.",
+            "156 nhiễm sắc thể kép."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Ở người (2n = 46), hai tế bào cùng tiến hành nguyên phân, vào kì giữa người ta đếm được tổng cộng bao nhiêu chromatid?",
+          "options": [
+            "46 chromtid.",
+            "184 chromtid.",
+            "92 chromtid.",
+            "230 chromtid."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Có 5 tế bào ruồi giấm (2n = 8) đang ở kì sau của nguyên phân. Số tâm động có thể đếm được là",
+          "options": [
+            "8",
+            "16",
+            "40.",
+            "80"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một tế bào lúa nước có 2n = 24 trải qua quá trình giảm phân hình thành giao tử. Số NST và số tâm động trong mỗi tế bào ở kì sau I là",
+          "options": [
+            "24 và 24",
+            "24 và 12.",
+            "12 và 24.",
+            "12 và 12."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một tế bào lúa nước có 2n = 24 trải qua quá trình giảm phân hình thành giao tử. Số nhiễm sắc thể  và số tâm động trong mỗi tế bào ở kì sau II là",
+          "options": [
+            "24 và 24.",
+            "24 và 12.",
+            "12 và 24.",
+            "12 và 12."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Năm tế bào ruồi giấm (2n = 8) đang ở kì giữa giảm phân I, người ta đếm được tổng số cromatit là",
+          "options": [
+            "40",
+            "80",
+            "120",
+            "160"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một nhóm tế bào sinh tinh tham gia quá trình giảm phân đã tạo ra 128 tinh trùng. Số tế bào sinh tinh là",
+          "options": [
+            "16",
+            "32",
+            "64",
+            "128"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Từ 20 tế bào sinh trứng giảm phân sẽ có:",
+          "options": [
+            "80 trứng và 80 thể định hướng.",
+            "20 trứng và 60 thể định hướng.",
+            "60 trứng và 20 thể định hướng.",
+            "80 thể định hướng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Từ một tế bào sinh tinh (2n) ban đầu sau quá trình giảm phân sẽ tạo ra được bao nhiêu tế bào tinh trùng?",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Từ một tế bào sinh trứng (2n) ban đầu sau quá trình giảm phân sẽ tạo ra được bao nhiêu trứng?",
+          "options": [],
+          "correct": "1"
+        },
+        {
+          "question": "Trong nguyên phân, có mấy kì NST ở trạng thái kép?",
+          "options": [],
+          "correct": "2"
+        },
+        {
+          "question": "Trong các yếu tố sau:",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Có 5 tế bào sinh dục chín của một loài (2n = 8) giảm phân bình thường. Nếu đó là các tế bào chín sinh dục của con cái thì sau giảm phân, số loại giao tử tối đa thu được là bao nhiêu?    Đáp án: 5",
+          "options": [],
+          "correct": "5"
+        },
+        {
+          "question": "Ở gà có 2n = 78. Một tế bào gà nguyên phân liên tiếp 3 lần cần môi trường cung cấp bao nhiêu NST đơn?",
+          "options": [],
+          "correct": "546"
+        },
+        {
+          "question": ": Ở kì giữa nguyên phân, các nhiễm sắc thể kép sắp xếp thành mấy hàng trên mặt phẳng xích đạo của thoi phân bào?",
+          "options": [],
+          "correct": "1"
         }
       ],
       "questionGroups": [
         {
-          "passage": "Cho các nhận định sau khi nói về chu kì tế bào:",
+          "passage": ":  Cho các nhận định sau:",
           "statements": [
             {
-              "question": "Trong chu kì tế bào, vật chất di truyền được nhân đôi sau đó được phân chia đồng đều cho các tế bào con.",
+              "question": "Trong chu kì tế bào, vật chất di truyền được nhân đôi sau đó được phân chia đồng đều cho các tế bào con.",
               "correct": true
             },
             {
-              "question": "Chu kì tế bào là khoảng thời gian từ khi tế bào sinh ra, lớn lên và phân chia thành hai tế bào con.",
+              "question": "Chu kì tế bào là khoảng thời gian từ khi tế bào sinh ra, lớn lên và phân chia thành hai tế bào con.",
               "correct": true
             },
             {
-              "question": "Chu kì tế bào của sinh vật nhân thực dài hơn và phức tạp hơn so với chu kì tế bào của sinh vật nhân sơ.",
+              "question": "Chu kì tế bào của sinh vật nhân thực dài hơn và phức tạp hơn so với chu kì tế bào của sinh vật nhân sơ.",
               "correct": true
             },
             {
-              "question": "Thời gian cần thiết để hoàn thành một chu kì tế bào là giống nhau giữa các loại tế bào của cùng một cơ thể.",
+              "question": "Thời gian cần thiết để hoàn thành một chu kì tế bào là giống nhau giữa các loại tế bào của cùng một cơ thể.",
               "correct": false
+            },
+            {
+              "question": "Nhận định nào là đúng hay sai khi được sử dụng để giải thích về chu kỳ tế bào?",
+              "correct": true
+            },
+            {
+              "question": "* Hướng dẫn giải:",
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình nguyên phân và giảm phân?",
+          "passage": ": Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình nguyên phân và giảm phân?",
           "statements": [
             {
               "question": "Ở kì giữa của giảm phân I, NST kép tập trung thành hai hàng trên mặt phẳng xích đạo.",
@@ -782,17 +942,21 @@
               "correct": false
             },
             {
-              "question": "Ở kì giữa của giảm phân I và II, các NST kép đều co xoắn cực đại; kì giữa của giảm phân I các NST kép tập trung 2 hàng trên mặt phẳng xích đạo; kì giữa giảm phân II các NST kép tập trung 1 hàng trên mặt phẳng xích đạo.",
+              "question": "Ở kì giữa của giảm phân I và II, các NST kép đều co xoắn cực đại và tập trung thành 1 hàng trên mặt phẳng xích đạo.",
               "correct": false
             },
             {
               "question": "Kì giữa của nguyên phân và giảm phân I có đặc điểm chung là các NST kép đều co xoắn cực đại và xếp thành 1 hàng ở mặt phẳng xích đạo của thoi phân bào.",
               "correct": false
+            },
+            {
+              "question": "* Hướng dẫn giải:",
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình nguyên phân và giảm phân?",
+          "passage": ": Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình nguyên phân và giảm phân?",
           "statements": [
             {
               "question": "Cách sắp xếp của các NST kép trong kì giữa của nguyên phân và kì giữa giảm phân I khác nhau.",
@@ -804,16 +968,20 @@
             },
             {
               "question": "Sự phân li NST trong nguyên phân và sự phân li NST kì sau I giống nhau.",
-              "correct": false
+              "correct": true
             },
             {
-              "question": "Ở mỗi tế bào con, nguyên phân có vật chất di truyền ổn định, còn vật chất di truyền giảm đi 1/2 ở giảm phân.",
+              "question": "Ở mỗi tế bào con, nguyên phân có vật chất di truyền ổn định, còn vật chất di truyền giảm đi  ở giảm phân.",
+              "correct": true
+            },
+            {
+              "question": "Hướng dẫn:",
               "correct": true
             }
           ]
         },
         {
-          "passage": "Ở ruồi giấm (2n=8). Một tế bào sinh tinh thực hiện quá trình giảm phân tạo giao tử. Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình giảm phân của tế bào này?",
+          "passage": ": Ở ruồi giấm (2n=8). Một tế bào sinh tinh thực hiện quá trình giảm phân tạo giao tử. Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình giảm phân của tế bào này?",
           "statements": [
             {
               "question": "Ở kì đầu của quá trình giảm phân I có 8 nhiễm sắc thể kép.",
@@ -830,11 +998,15 @@
             {
               "question": "Ở kì đầu của quá trình giảm phân II, mỗi tế bào con chứa 8 nhiễm sắc thể đơn.",
               "correct": false
+            },
+            {
+              "question": "Hướng dẫn:",
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Khi quan sát quá trình phân bào bình thường ở một tế bào (tế bào A) của một loài dưới kính hiển vi. Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình phân bào này? (Hình minh họa tế bào ở kì giữa giảm phân I với 2 cặp NST tương đồng)",
+          "passage": ": Khi quan sát quá trình phân bào bình thường ở một tế bào (tế bào A) của một loài dưới kính hiển vi, người ta bắt gặp hiện tượng được mô tả ở hình bên dưới. Mỗi nhận định sau đây là đúng hay sai khi nói về quá trình phân bào này?",
           "statements": [
             {
               "question": "Tế bào A đang ở kì giữa của quá trình nguyên phân.",
@@ -849,28 +1021,114 @@
               "correct": false
             },
             {
-              "question": "Tế bào A khi kết thúc quá trình phân bào tạo ra các tế bào con có bộ nhiễm sắc thể n = 2.",
+              "question": "Tế bào A khi kết thúc quá trình phân bào tạo ra các tb con có bộ nhiễm sắc thể n = 2",
+              "correct": true
+            },
+            {
+              "question": "Hướng dẫn:",
               "correct": true
             }
           ]
         },
         {
-          "passage": "Nhận định sau đây là đúng hay sai khi nói về kỳ đầu của nguyên phân?",
+          "passage": ": Nhận định sau đây là đúng hay sai khi nói về kỳ đầu của nguyên phân?",
           "statements": [
             {
-              "question": "Màng nhân và nhân con dần tiêu biến.",
+              "question": "Màng nhân và nhân con dần tiêu biến",
               "correct": true
             },
             {
-              "question": "Thoi phân bào dần xuất hiện.",
+              "question": "Thoi phân bào dần xuất hiện",
               "correct": true
             },
             {
-              "question": "Các NST kép co xoắn cực đại và tập trung thành 1 hàng ở mặt phẳng xích đạo.",
+              "question": "Các NST kép co xoắn cực đại và tập trung thành 1 hàng ở mặt phẳng xích đạo",
               "correct": false
             },
             {
-              "question": "Các nhiễm sắc tử tách nhau ra và di chuyển trên thoi phân bào về 2 cực của tế bào.",
+              "question": "Các nhiễm sắc tử tách nhau ra và di chuyển trên thoi phân bào về 2 cực của tế bào",
+              "correct": false
+            },
+            {
+              "question": "Hướng dẫn:",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 20: THỰC HÀNH: QUAN SÁT TIÊU BẢN CÁC KỲ PHÂN BÀO NGUYÊN PHÂN VÀ GIẢM PHÂN",
+      "questions": [
+        {
+          "question": "Theo dõi quá trình phân bào ở một cơ thể sinh vật lưỡng bội bình thường, người ta vẽ được sơ đồ minh họa như hình bên. Cho biết quá trình phân bào bình thường, không xảy ra đột biến. Hình bên mô tả",
+          "options": [
+            "kì sau của giảm phân I.",
+            "kì sau của nguyên nhân.",
+            "kì sau của giảm phân II.",
+            "kì giữa của nguyên phân."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Tế bào này đang ở",
+          "options": [
+            "kì sau I của giảm phân.",
+            "kì sau II của giảm phân.",
+            "kì sau của nguyên phân và kì sau I của giảm phân.",
+            "kì sau của nguyên phân và kì sau II của giảm phân."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Thứ tự nào sau đây là đúng với quy trình làm và quan sát tiêu bản quá trình nguyên phân của tế bào?",
+          "options": [
+            "Nhuộm mẫu vật → Cố định mẫu → Làm tiêu bản → Quan sát tiêu bản.",
+            "Nhuộm mẫu vật → Làm tiêu bản → Cố định mẫu → Quan sát tiêu bản.",
+            "Cố định mẫu → Nhuộm mẫu vật → Làm tiêu bản → Quan sát tiêu bản.",
+            "Cố định mẫu → Làm tiêu bản → Nhuộm mẫu vật → Quan sát tiêu bản."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Mục đích của bước nhuộm mẫu vật trong quy trình làm tiêu bản quan sát quá trình nguyên phân và giảm phân của tế bào là",
+          "options": [
+            "làm cho tế bào chất bắt màu, giúp nhận biết được NST của tế bào ở các kì phân bào.",
+            "làm cho NST bắt màu, giúp nhận biết được NST của tế bào ở các kì phân bào.",
+            "làm cho màng nhân biến mất, giúp nhận biết được NST của tế bào ở các kì phân bào.",
+            "làm cho các NST ngừng di chuyển, giúp nhận biết được NST của TB ở các kì phân bào."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Khi làm tiêu bản nhiễm sắc thể để quan sát quá trình nguyên phân ở rễ hành, cần sử dụng acid HCl 1,5 N nhỏ vào rễ hành và để yên khoảng 5 phút ở 60 oC nhằm",
+          "options": [
+            "nhuộm màu cho các nhiễm sắc thể của tế bào.",
+            "phá vỡ tế bào hoàn toàn để giải phóng các nhiễm sắc thể.",
+            "thủy phân thành tế bào để làm đầu rễ mềm giúp dàn đều tế bào trên lam kính.",
+            "thủy phân toàn bộ các bào quan trong tế bào chỉ để lại nhân."
+          ],
+          "correct": 2
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Quan sát hình ảnh sau và cho biết trong các nhận định sau nhận định nào là đúng, nhận định nào là sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Hình 1 các NST đang ở kì sau của quá trình nguyên phân.",
+              "correct": true
+            },
+            {
+              "question": "Hình 2 các NST đang ở kì giữa của quá trình nguyên phân.",
+              "correct": true
+            },
+            {
+              "question": "Hình 1 các NST đang ở kì cuối của quá trình nguyên phân.",
+              "correct": false
+            },
+            {
+              "question": "Hình 2 các NST đang ở kì đầu của quá trình nguyên phân.",
               "correct": false
             }
           ]
@@ -878,7 +1136,7 @@
       ]
     },
     {
-      "name": "Bài 21: Công nghệ tế bào",
+      "name": "Bài 21: CÔNG NGHỆ TẾ BÀO",
       "questions": [
         {
           "question": "Phương pháp nào sau đây có thể tạo ra giống cây trồng mới mang đặc điểm của hai loài?",
@@ -891,72 +1149,72 @@
           "correct": 1
         },
         {
-          "question": "Để tạo ra một quần thể cây trồng đồng hợp về tất cả các gene, các nhà khoa học đã sử dụng phương pháp nào sau đây?",
+          "question": "Để tạo ra một quần thể cây trồng đồng hợp về tất cả các gene, các nhà khoa học đã sử dụng phương pháp nào sau đây?",
           "options": [
-            "Nuôi cấy hạt phấn, noãn kết hợp lưỡng bội hóa.",
-            "Nuôi cấy mô tế bào.",
-            "Lai tế bào sinh dưỡng.",
-            "Gây đột biến rồi đem lai tạo."
+            "Nuôi cấy hạt phấn, noãn kết hợp lưỡng bội hóa",
+            "Nuôi cấy mô tế bào",
+            "Lai tế bào sinh dưỡng",
+            "Gây đột biến rồi đem lai tạo"
           ],
           "correct": 0
         },
         {
-          "question": "Cừu Dolly là thành tựu của phương pháp:",
+          "question": "Cừu Dolly là thành tựu của phương pháp:",
           "options": [
-            "lai giữa hai giống cừu khác nhau",
-            "lai giữa một con cừu bình thường với một con bị đột biến",
-            "nhân bản vô tính",
-            "công nghệ gene"
+            "lai giữa hai giống cừu khác nhau",
+            "lai giữa một con cừu bình thường với một con bị đột biến",
+            "nhân bản vô tính",
+            "công nghệ gene"
           ],
           "correct": 2
         },
         {
-          "question": "Tế bào có khả năng phân chia và biệt hóa tạo thành nhiều loại tế bào khác nhau gọi là:",
+          "question": "Tế bào có khả năng phân chia và biệt hóa taọ thành nhiều loại tế bào khác nhau gọi là:",
           "options": [
-            "tế bào trứng",
-            "tế bào gốc",
-            "tế bào toàn năng",
-            "tế bào biệt hóa"
+            "tế bào trứng",
+            "tế bào gốc",
+            "tế bào toàn năng",
+            "tế bào biệt hóa"
           ],
           "correct": 1
         },
         {
-          "question": "Động vật nào sau đây là thành tựu đầu tiên của các nhà khoa học Việt Nam khi tiến hành nhân bản vô tính?",
+          "question": "Động vật nào sau đây là thành tựu đầu tiên của các nhà khoa học Việt Nam khi tiến hành nhân bản vô tính?",
           "options": [
-            "Cá chép",
-            "Chó nhà",
-            "Lợn Ỉ",
-            "Cừu"
+            "Cá chép",
+            "Chó nhà",
+            "Lợn Ỉ",
+            "Cừu"
           ],
           "correct": 2
         },
         {
-          "question": "Nhận xét nào sau đây là đúng với Tế bào gốc trưởng thành (Tế bào gốc đa tiềm năng)?",
+          "question": "Nhận xét nào sau đây là đúng với Tế bào gốc trưởng thành (Tế bào gốc đa tiềm năng)?",
           "options": [
-            "có nguồn gốc từ các mô của cơ thể trưởng thành",
-            "có nguồn gốc từ phôi sớm của động vật",
-            "có thể phân chia và biệt hóa thành mọi loại tế bào của cơ thể trưởng thành",
-            "có nguồn gốc từ các mô của cơ thể trưởng thành và chỉ có thể biệt hóa thành một số loại tế bào nhất định"
+            "ó nguồn gốc từ các mô của cơ thể trưởng thành",
+            "có nguồn gốc từ phôi sớm của động vật",
+            "có thể phân chia và biệt hóa thành mọi loại tế bào của cơ thể trưởng thành",
+            "có nguồn gốc từ các mô của cơ thể trưởng thành và chỉ có thể biệt hóa thành một số loại tế bào nhất định"
           ],
           "correct": 3
         },
         {
-          "question": "Kĩ thuật chữa trị các bệnh di truyền bằng việc thay thế gene bệnh bằng gene lành được gọi là:",
+          "question": "Kĩ thuật chữa trị các bệnh di truyền bằng việc thay thế gene bệnh bằng gene lành được gọi là:",
           "options": [
-            "liệu pháp tế bào gốc",
-            "liệu pháp gene",
-            "kĩ thuật y học",
-            "kĩ thuật di truyền"
+            "liệu pháp tế bào gốc",
+            "liệu pháp gene",
+            "kĩ thuật y học",
+            "kĩ thuật di truyền"
           ],
           "correct": 1
         },
         {
-          "question": "Hình ảnh bên giúp bạn liên tưởng đến quy trình công nghệ nào? (Hình minh họa nuôi cấy mô)",
+          "question": "Hình ảnh bên giúp bạn liên tưởng đến qui trình công nghệ nào?",
           "options": [
-            "Nhân bản vô tính",
-            "Nuôi cấy mô tế bào",
-            "Lai tế bào sinh dưỡng",
-            "Nuôi cấy hạt phấn hoặc noãn chưa thụ tinh"
+            "Nhân bản vô tính",
+            "Nuôi cấy mô tế bào",
+            "Lai tế bào sinh dưỡng",
+            "Nuôi cấy hạt phấn hoặc noãn chưa thụ tinh"
           ],
           "correct": 1
         },
@@ -976,7 +1234,7 @@
             "Tính toàn năng.",
             "Tính ưu việt.",
             "Tính năng động.",
-            "Tính đa dạng."
+            "Tính đa dạng"
           ],
           "correct": 0
         },
@@ -985,8 +1243,8 @@
           "options": [
             "vitamin.",
             "Enzyme.",
-            "hormone.",
-            "Kháng thể."
+            "hormone",
+            "Kháng thể"
           ],
           "correct": 2
         },
@@ -994,16 +1252,16 @@
           "question": "Công nghệ tế bào có thể tạo ra những cá thể mới",
           "options": [
             "Đa dạng về kiểu gene, kiểu hình.",
-            "Đồng nhất về kiểu gene, kiểu hình.",
+            "Đồng nhất về kiểu gene, kiểu hình",
             "Đa dạng về di truyền, tính trạng.",
-            "Có ưu thế lai cao."
+            "Có ưu thế lai cao"
           ],
           "correct": 1
         },
         {
-          "question": "Công nghệ tế bào dựa trên nguyên lý chính là khả năng của các tế bào?",
+          "question": "Công nghệ tế bào dựa trên nghuyên lý chính là khả năng của của các tế bào?",
           "options": [
-            "Khả năng biệt hóa và phân biệt hóa",
+            "Khả năng biệt hóa và phản biệt hóa",
             "Khả năng sinh sản của TB",
             "Khả năng trao đổi chất của tế bào",
             "Khả năng chết theo chương trình của tế bào"
@@ -1011,10 +1269,9 @@
           "correct": 0
         },
         {
-          "question": "Trong công nghệ tế bào thực vật, người ta thường tách loại mô nào từ cơ thể thực vật để nuôi cấy đầu tiên?",
+          "question": "Trong công nghệ TB thực vật, người ta thường tách loại mô nào từ cơ thể thực vật để nuôi cấy đầu tiên?",
           "options": [
-            "Mô sẹo",
-            "Mô phân sinh",
+            "Mô phân sinh \t.",
             "Mô phần võ",
             "Mô gỗ"
           ],
@@ -1026,52 +1283,57 @@
             "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong giảm phân.",
             "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong nguyên phân.",
             "sự nhân đôi và phân li đồng đều của nhiễm sắc thể trong nguyên phân và giảm phân.",
-            "Sự kết hợp của 3 quá trình: nguyên phân, giảm phân, thụ tinh."
+            "Sự kết hợp của 3 quá trình: nguyên phân, giảm phân, thụ tinh"
           ],
           "correct": 1
         },
         {
-          "question": "Vật chất di truyền của con cừu Dolly được tạo ra trong giai đoạn nào say đây?",
+          "question": "Vật chất di truyền của con cừu Dolly được tạo ra trong giai đoạn nào say đây?",
           "options": [
-            "Chuyển nhân của tế bào trứng vào tế bào soma đã loại bỏ nhân",
-            "Chuyển nhân của tế bào soma 2n vào tế bào trứng",
-            "Chuyển nhân của tế bào soma n vào tế bào trứng đã loại bỏ nhân",
-            "Chuyển nhân của tế bào soma 2n vào tế bào trứng đã loại bỏ nhân"
+            "Chuyển nhân của tế bào trứng vào tế bào soma đã loại bỏ nhân",
+            "Chuyển nhân của tế bào soma 2n vào tế bào trứng",
+            "Chuyển nhân của tế bảo soma n vào tế bào trứng đã loại bỏ nhân",
+            "Chuyển nhân của tế bào soma 2n vào tế bào trứng đã loại bỏ nhân"
           ],
           "correct": 3
         },
         {
-          "question": "Cừu Dolly mang phần lớn đặc điểm của con nào sau đây?",
+          "question": "Cừu Dolly mang phần lớn đặc điểm của con nào sau đây?",
           "options": [
-            "Cừu cho tế bào tuyến vú",
-            "Cừu cho tế bào trứng",
-            "Cừu mang thai hộ",
+            "Cừu cho tế bào tuyến vú",
+            "Cừu cho tế bào trứng",
+            "Cừu mang thai hộ",
             "Cừu đực cho tinh trùng"
           ],
           "correct": 0
         },
         {
-          "question": "Có bao nhiêu giai đoạn chính trong một chu kì tế bào chuẩn?",
+          "question": "Quy trình thực hiện nhân bản vô tính cừu Dolly có mấy Cừu mẹ tham gia?",
           "options": [],
-          "correct": "4"
+          "correct": "3"
         },
         {
-          "question": "Hãy điền từ còn thiếu vào ô trống: Pha S là pha nhân đôi của ... và NST",
+          "question": "Trong số những kĩ thuật sau đây: nhân bản vô tính, lai tế bào sinh dưỡng, kĩ thuật cấy truyền phôi, nuôi cấy hạt phấn, có bao nhiêu phương pháp thuộc công nghệ tế bào động vật?",
           "options": [],
-          "correct": "DNA"
+          "correct": "là 2: nhân bản vô tính"
         },
         {
-          "question": "Ở ruồi giấm 2n=8. Số nhiễm sắc thể trong 1 tế bào ở kì sau của quá trình nguyên phân là bao nhiêu?",
+          "question": "Trong các thành tựu dưới đây, có bao nhiêu thành tựu của công nghệ tế bào động vật?",
           "options": [],
-          "correct": "16"
+          "correct": "3"
+        },
+        {
+          "question": "Người ta tiến hành nuôi cây mô cây phong lan có kiểu gene AABBdd thành 1000 cây phong lan con. 1000 cây con này có bao nhiêu loại kiểu gen ?",
+          "options": [],
+          "correct": "1"
         }
       ],
       "questionGroups": [
         {
-          "passage": "Sơ đồ dưới đây mô tả một kỹ thuật trong công nghệ tế bào thực vật được sử dụng để sản xuất cà rốt. Mỗi nhận định sau là đúng hay sai?",
+          "passage": "Sơ đồ dưới đây mô tả một kỹ thuật trong công nghệ tế bào thực vật được sử dụng để sản xuất cà rốt, mỗi nhận định sau là đúng hay sai? * Hướng dẫn giải",
           "statements": [
             {
-              "question": "Những cây mới được hình thành dựa trên cơ sở của quá trình giảm phân và thụ tinh.",
+              "question": "Những cây mới được hình thành dựa trên cơ sở của quá trình giảm phân và thụ tinh..",
               "correct": false
             },
             {
@@ -1089,28 +1351,7 @@
           ]
         },
         {
-          "passage": "Cừu Dolly (05/07/1996) là động vật có vú đầu tiên được nhân bản vô tính trên thế giới. Mỗi nhận định sau đây Đúng hay Sai về kỹ thuật này?",
-          "statements": [
-            {
-              "question": "Cừu (S) là cừu Dolly và tế bào Y là tế bào xoma.",
-              "correct": false
-            },
-            {
-              "question": "Sản phẩm của bước 5 là hợp tử.",
-              "correct": true
-            },
-            {
-              "question": "Bước 7 là chuyển phôi vào cừu cái mang thai hộ.",
-              "correct": true
-            },
-            {
-              "question": "Tế bào X là tế bào tuyến vú.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Mỗi nhận định sau đây là đúng hay sai khi nói về ý nghĩa của việc ứng dụng nhân giống vô tính trong ống nghiệm ở cây trồng?",
+          "passage": "Mỗi nhận định sau là đúng hay sai khi nói về ý nghĩa của việc ứng dụng nhân giống vô tính trong ống nghiệm ở cây trồng? * Hướng dẫn giải",
           "statements": [
             {
               "question": "Giúp tạo ra giống có nhiều ưu điểm như sạch nấm bệnh, đồng đều về đặc tính của giống gốc.",
@@ -1131,7 +1372,7 @@
           ]
         },
         {
-          "passage": "Khi nói về cơ sở khoa học của công nghệ tế bào. Phát biểu nào sau đây đúng, phát biểu nào sai?",
+          "passage": "Khi nói về cơ sở khoa học của công nghệ tế bào. Phát biểu nào sau đây đúng, phát biểu nào sai? * Hướng dẫn giải",
           "statements": [
             {
               "question": "Từ tế bào rễ, thân hoặc lá phát triển thành mô sẹo là một ví dụ điển hình về biệt hoá tế bào.",
@@ -1147,6 +1388,1691 @@
             },
             {
               "question": "Một tế bào gốc phôi có thể phân chia và biệt hoá thành mọi tế bào trong cơ thể.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 22: KHÁI QUÁT VỀ VI SINH VẬT",
+      "questions": [
+        {
+          "question": "Vi sinh vật có khả năng hấp thụ và chuyển hóa nhanh các chất dinh dưỡng nên chúng",
+          "options": [
+            "sinh trưởng và sinh sản rất nhanh.",
+            "sinh trưởng và sinh sản rất chậm.",
+            "sinh trưởng rất nhanh nhưng sinh sản rất chậm.",
+            "sinh sản rất nhanh nhưng sinh trưởng rất chậm."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Đặc điểm nào sau đây không đúng với vi sinh vật?",
+          "options": [
+            "Có kích thước nhỏ.",
+            "Phần lớn có cấu tạo đơn bào.",
+            "Đều có khả năng tự dưỡng.",
+            "Sinh trưởng nhanh."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Người ta thường quan sát vi sinh vật bằng",
+          "options": [
+            "mắt thường.",
+            "kính lúp.",
+            "kính hiển vi.",
+            "kính thiên văn"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Vi sinh vật phần lớn có cấu trúc",
+          "options": [
+            "đơn bào.",
+            "đa bào.",
+            "tập đoàn đa bào.",
+            "không có cấu trúc tế bào"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Nhóm sinh vật nào dưới đây không phải là vi sinh vật?",
+          "options": [
+            "Vi khuẩn cổ.",
+            "Vi khuẩn.",
+            "Tảo biển.",
+            "ĐV nguyên sinh."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Dựa vào cấu tạo tế bào có thể phân loại vi sinh vật thành hai nhóm đó là",
+          "options": [
+            "đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực.",
+            "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân thực.",
+            "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân sơ.",
+            "đơn bào nhân thực và đa bào hay tập đoàn đa bào nhân thực."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Các kiểu dinh dưỡng của vi sinh vật được phân loại dựa vào tiêu chí nào?",
+          "options": [
+            "Nhu cầu sử dụng nguồn carbon và chất hữu cơ của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon dioxide và chất hữu cơ của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon dioxide và năng lượng của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon và năng lượng của vi sinh vật."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Dựa vào đâu để phân loại vi sinh vật thành hai nhóm đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực?",
+          "options": [
+            "Cách hấp thụ chất dinh dưỡng.",
+            "Môi trường sống.",
+            "Cách chuyển hóa chất dinh dưỡng.",
+            "Cấu tạo tế bào."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Trùng roi xanh sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là CO2. Vậy trùng roi xanh có kiểu dinh dưỡng nào sau đây?",
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ chất vô cơ và nguồn carbon là CO2 có kiểu dinh dưỡng nào sau đây?",
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Phương pháp nghiên cứu vi sinh vật nào sau đây dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật?",
+          "options": [
+            "Phương pháp quan sát bằng kính hiển vi.",
+            "Phương pháp nuôi cấy.",
+            "Phương pháp phân lập vi sinh vật.",
+            "Phương pháp định danh vi khuẩn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Kĩ thuật nào sau đây dùng để nghiên cứu cấu trúc không gian của những phân tử?",
+          "options": [
+            "Kĩ thuật cố định và nhuộm màu.",
+            "Kĩ thuật siêu li tâm.",
+            "Kĩ thuật đồng vị phóng xạ.",
+            "Kĩ thuật nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Kĩ thuật nào sau đây dùng để theo dõi các quá trình tổng hợp bên trong tế bào ở mức độ phân tử?",
+          "options": [
+            "Kĩ thuật cố định và nhuộm màu",
+            "Kĩ thuật siêu li tâm.",
+            "Kĩ thuật đồng vị phóng xạ.",
+            "Kĩ thuật nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Dựa vào nhu cầu sử dụng nguồn carbon và năng lượng, vi sinh vật có mấy kiểu dinh dưỡng?",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Cho các phương pháp nghiên cứu sau. Để nghiên cứu vi sinh vật, người ta sử dụng phương pháp nghiên cứu nào?",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Cho các kĩ thuật nghiên cứu sau. Để nghiên cứu vi sinh vật, người ta sử dụng kĩ thuật nghiên cứu nào?",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": "Hình ảnh dưới đây chụp lại hiện tượng xảy ra với các quả đào khi để lâu ngoài không khí mà không được bảo quản:",
+          "options": [],
+          "correct": "3"
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho các phát biểu sau đây về đặc điểm của vi sinh vật. Mỗi nhận định sau đây là đúng hay sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Vi sinh vật là những sinh vật có kích thước nhỏ.",
+              "correct": true
+            },
+            {
+              "question": "Tất cả vi sinh vật đều có cấu trúc đơn bào nhân sơ.",
+              "correct": false
+            },
+            {
+              "question": "Vi sinh vật chỉ sống kí sinh bắt buộc.",
+              "correct": false
+            },
+            {
+              "question": "Vi sinh vật có kích thước nhỏ nên sinh sản nhanh.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Các phát biểu sau đây về phương pháp nghiên cứu vi sinh vật là đúng hay sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Phương pháp quang sát bằng kính hiển vi dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật.",
+              "correct": true
+            },
+            {
+              "question": "Phương pháp nuôi cấy để nghiên cứu khả năng hoạt động hiếu khí, kị khí của vi sinh vật và sản phẩm của chúng tạo ra.",
+              "correct": true
+            },
+            {
+              "question": "Vết cấy có bề mặt và màu sắc đa dạng, nhiều kích thước chứng tỏ giống mới phân lập được là giống thuần khiết.",
+              "correct": false
+            },
+            {
+              "question": "Hình thái của khuẩn lạc mang tính đặc trưng cho từng loài vi khuẩn.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Các phát biểu sau là đúng hay sai về các nhóm vi sinh vật * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Sự tồn tại của các vi sinh vật được tiên đoán trong nhiều thế kỉ trước khi chúng được quan sát thấy lần đầu tiên.",
+              "correct": true
+            },
+            {
+              "question": "Vi khuẩn là vi sinh vật thuộc nhóm đơn bào nhân thưc.",
+              "correct": true
+            },
+            {
+              "question": "Vi nấm và vi tảo thuộc cùng một nhóm trong phân loại vi sinh vật.",
+              "correct": true
+            },
+            {
+              "question": "Dựa vào đặc điểm cấu tạo tế bào, vi sinh vật được phân chia thành ba nhóm gồm đơn bào nhân sơ, đơn bào nhân thực và tập đoàn đơn bào nhân thực.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Hình ảnh sau đây mô tả cho phương pháp định danh vi khuẩn: Nguồn ảnh: Bệnh viện Nguyễn Tri Phương Mỗi nhận định sau đây về phương pháp này là đúng hay sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Đây là phương pháp mô tả chính xác khuẩn lạc đã tách rời.",
+              "correct": true
+            },
+            {
+              "question": "Khi vi khuẩn tăng trưởng và phát triển trên môi trường lỏng sẽ tạo ra những khuẩn lạc.",
+              "correct": false
+            },
+            {
+              "question": "Các vi khuẩn gây bệnh đa số có khuẩn lạc dạng S và M.",
+              "correct": true
+            },
+            {
+              "question": "Trực khuẩn than có khuẩn lạc dạng R nên chúng không gây bệnh.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 23: THỰC HÀNH: MỘT SỐ PHƯƠNG PHÁP NGHIÊN CỨU VI SINH VẬT",
+      "questions": [
+        {
+          "question": "Vai trò của tăm bông vô trùng trong nuôi cấy vi sinh vật là gì?",
+          "options": [
+            "Dùng để cấy vi sinh vật có tạo khuẩn ti.",
+            "Dùng để dàn trải vi khuẩn trên bể mặt thạch rắn.",
+            "Dùng để cấy giống từ môi trường lỏng lên bể mặt của môi trường rắn.",
+            "Dùng để chuyển một lượng vi khuẩn xác định lên bế mặt môi trường rắn hoặc lỏng."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Vai trò của pipette (ống hút thuỷ tinh) trong nuôi cấy vi sinh vật là gì?",
+          "options": [
+            "Dùng để chuyển một lượng vi khuẩn xác định lên bề mặt môi trường rắn hoặc lỏng.",
+            "Dùng cấy vi khuẩn từ môi trường rắn hoặc lỏng lên môi trường rắn, lỏng.",
+            "Dùng để dàn trải vi khuẩn trên bề mặt thạch rắn.",
+            "Dùng để cấy vi sinh vật có tạo khuẩn ti."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Hình bên mô tả kĩ thuật nào trong nghiên cứu vi sinh vật?",
+          "options": [
+            "Cấy ria.",
+            "Cấy mô.",
+            "Cấy trang.",
+            "Chuyển giống."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Hình bên mô tả kĩ thuật nào trong nghiên cứu vi sinh vật?",
+          "options": [
+            "Cấy ria.",
+            "Lấy giống.",
+            "Dàn trải vi sinh vật.",
+            "Vô trùng que cấy."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Loại que cấy nào được dùng để dàn đều vi khuẩn trên bề mặt rắn?",
+          "options": [
+            "Que cấy thẳng.",
+            "Que cấy vòng.",
+            "Que cấy trang.",
+            "Que cấy móc."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Loại que cấy nào được dùng để cấy trích sâu trong môi trường đặc.",
+          "options": [
+            "Que cấy thẳng.",
+            "Que cấy vòng.",
+            "Que cấy trang.",
+            "Que cấy móc."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Để dịch chuyển 1 lượng dung tích nhỏ và chính xác vi sinh vật từ môi trường lỏng sang môi trường khác cần sử dụng dụng cụ nào sau đây?",
+          "options": [
+            "Ống hút thủy tinh.",
+            "Ống hút nhỏ giọt.",
+            "Đầu tăm bông vô trùng.",
+            "Micro pipette đầu rời."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Dựa vào trạng thái môi trường, môi trường nuôi cấy vi sinh vật gồm 2 loại là",
+          "options": [
+            "môi trường tự nhiên và môi trường tổng hợp.",
+            "môi trường tổng hợp và bán tổng hợp.",
+            "môi trường dạng lỏng và môi trường dạng đặc.",
+            "môi trường tự nhiên và  môi trường phòng thí nghiệm."
+          ],
+          "correct": 2
+        },
+        {
+          "question": ": Phương pháp nào được sử dụng để phân lập và nuôi cấy vi khuẩn?",
+          "options": [
+            "Phương pháp cấy trên môi trường thạch.",
+            "Phương pháp nhuộm Gram.",
+            "Phương pháp quan sát dưới kính hiển vi.",
+            "Phương pháp xác định số lượng vi khuẩn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Mục đích chính của việc cấy ria trên đĩa petri là gì? (1) Làm tăng số lượng vi khuẩn. (2) Phân lập các khuẩn lạc đơn thuần. (3) Quan sát hình thái khuẩn lạc\t. (4) Lưu giữ giống vi khuẩn trong thời gian dài.",
+          "options": [
+            "(1), (2), (3).",
+            "(1), (2).",
+            "(1), (2), (4).",
+            "(1), (2), (3), (4)."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "\"Nhúng đầu thanh gạt vào cồn, hơ qua ngọn lửa để khử trùng. Để đầu thanh gạt nguội trong không gian vô trùng của ngọn lửa. Mở đĩa petri, đặt nhẹ nhàng thanh gạt lên bề mặt thạch của đĩa petri. Dùng đầu thanh gạt trải đều dịch vi khuẩn lên bề mặt thạch. Trong khi thực hiện, xoay đĩa một vài lần, mỗi lẩn khoảng nửa chu vi đĩa để tạo điểu kiện cho thanh gạt trải dịch vi khuẩn đều khắp bề mặt môi trường.\" Đây là kĩ thuật nào trong các lựa chọn sau?",
+          "options": [
+            "Lấy giống.",
+            "Cấy trang.",
+            "Cấy ria.",
+            "Khử trùng."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Trong quá trình cấy vi khuẩn, tại sao phải đốt nóng que cấy trước và sau khi cấy?",
+          "options": [
+            "Để tăng nhiệt độ cho môi trường.",
+            "Để tiêu diệt vi khuẩn bám trên que cấy.",
+            "Để kích thích vi khuẩn sinh trưởng.",
+            "Để tạo điều kiện cho vi khuẩn di chuyển."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Khi nói về mục tiêu của bài thực hành một số phương pháp nghiên cứu vi sinh vật, phát biểu nào sau đây là sai?",
+          "options": [
+            "Nhận diện được các loại que cấy trong nghiên cứu vi sinh vật.",
+            "Nhận biết được các môi trường trong nghiên cứu vi sinh vật.",
+            "Phân loại được các chủng nghiên cứu vi sinh vật.",
+            "Phân biệt được các phương pháp nghiên cứu vi sinh vật."
+          ],
+          "correct": 2
+        },
+        {
+          "question": ": Có bao nhiêu phương pháp sau đây được sử dụng để xác định hình thái và cấu trúc của vi khuẩn?",
+          "options": [],
+          "correct": "2"
+        },
+        {
+          "question": ": Công việc nuôi cấy vi sinh vật nhằm bao nhiêu mục đích chính sau đây?",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": "Hình sau mô tả kĩ thuật cấy vi sinh vật. Khi nói về các thao tác trong kĩ thuật cấy, có bao nhiêu phát biểu sau đây là đúng?",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": ": Để đảm bảo sự phát triển của vi khuẩn, sau khi cấy vi khuẩn xong phải quan tâm đến bao nhiêu điều kiện môi trường sau đây?",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": ": Khi nói về mục tiêu của bài thực hành một số phương pháp nghiên cứu vi sinh vật, có bao nhiêu phát biểu sau đây là đúng?",
+          "options": [],
+          "correct": "3"
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": ": Khi nói về vai trò của các loại que cấy được sử dụng trong nghiên cứu vi sinh vật, các phát biểu sau đây là đúng hay sai. Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Que cấy thẳng được làm bằng kim loại, đầu thẳng (nhọn), dùng để cấy trích sâu trong môi trường đặc.",
+              "correct": true
+            },
+            {
+              "question": "Que cấy gạt (que cấy trang) được làm bằng kim loại, đầu uốn hơi cong giống như cái móc, dùng để cấy nấm hoặc xạ khuẩn.",
+              "correct": true
+            },
+            {
+              "question": "Que cấy vòng (que khuyên cấy) được làm bằng kim loại, đầu có vòng tròn, thường dùng để cấy chủng vi khuẩn từ môi trường rắn hoặc lỏng sang môi trường rắn, lỏng.",
+              "correct": true
+            },
+            {
+              "question": "Que cấy móc dùng để lấy dịch nuôi cấy ở môi trường đặc sâu trong ống nghiệm.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": ": Phân tích hình dưới đây và cho biết các phát biểu sau đây là đúng hay sai. Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Đây là kĩ thuật cấy ria trên đĩa thạch.",
+              "correct": true
+            },
+            {
+              "question": "Bước (1), (4), (6) là khử trùng que cấy.",
+              "correct": true
+            },
+            {
+              "question": "Bước (2), (3), (5) có thao tác giống nhau.",
+              "correct": true
+            },
+            {
+              "question": "Kĩ thuật này chỉ thực hiện để cấy vi khuẩn lactic.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Hình sau mô tả các bước thực hiện cấy vi sinh vật. Kết luận nào sau đây là đúng, kết luận nào sai? Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Bước 1: Vô trùng que cấy trên ngọn lửa đèn cồn.",
+              "correct": true
+            },
+            {
+              "question": "Bước 2: Mở nút ống nghiệm, xoay miệng ống nghiệm qua ngọn lửa đèn cồn.",
+              "correct": true
+            },
+            {
+              "question": "Bước 3: Cấy giống vi khuẩn vào môi trường mới.",
+              "correct": false
+            },
+            {
+              "question": "Đây là kĩ thuật cấy giống từ môi trường lỏng sang ống nghiệm thạch nghiêng bằng que cấy gạt.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "\"Nhúng đầu thanh gạt vào cồn, hơ qua ngọn lửa để khử trùng. Để đầu thanh gạt nguội trong không gian vô trùng của ngọn lửa. Mở đĩa petri, đặt nhẹ nhàng thanh gạt lên bề mặt thạch của đĩa petri. Dùng đầu thanh gạt trải đều dịch vi khuẩn lên bề mặt thạch. Trong khi thực hiện, xoay đĩa một vài lần, mỗi lẩn khoảng nửa chu vi đĩa để tạo điểu kiện cho thanh gạt trải dịch vi khuẩn đều khắp bề mặt môi trường.\" Phát biểu nào sau đây là đúng, phát biểu nào sai? Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Đây là kĩ thuật lấy giống.",
+              "correct": false
+            },
+            {
+              "question": "Que cấy được sử dụng chủ yếu là que cấy gạt.",
+              "correct": true
+            },
+            {
+              "question": "Môi trường nuôi cấy vi khuẩn được dùng trong thí nghiệm trên là môi trường thạch trên đĩa petri.",
+              "correct": true
+            },
+            {
+              "question": "Sau khi vừa thực hiện xong, có thể quan sát màu sắc và hình dạng khuẩn lạc.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": ": Quan sát hình sau và cho biết khi nói về điểm khác biệt trong hai phương pháp cấy vi sinh vật, phát biểu nào sau đây là đúng, phát biểu nào sai. Đáp án : 2",
+          "statements": [
+            {
+              "question": "Phương pháp 1 chuyển 0,1 mL dịch khuẩn mẫu, phương pháp 2 chuyển 1 mL dịch khuẩn mẫu.",
+              "correct": false
+            },
+            {
+              "question": "Phương pháp 1 chuyển dịch khuẩn mẫu lên trên bề mặt môi trường thạch trong đĩa petri sau đó dàn đều dịch lên trên bề mặt thạch, phương pháp 2 chuyển dịch khuẩn mẫu trộn với môi trường nuôi cấy sau đó đổ phần dịch đã trộn vào đĩa petri.",
+              "correct": true
+            },
+            {
+              "question": "Phương pháp 1 sử dụng que cấy gạt, phương pháp 2  sử dụng que cấy móc.",
+              "correct": false
+            },
+            {
+              "question": "Phương pháp 1 khuẩn lạc chỉ phát triển trên bề mặt thạch, phương pháp 2 khuẩn lạc phát triển cả trên và dưới bề mặt thạch.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 24: QUÁ TRÌNH TỔNG HỢP VÀ PHÂN GIẢI Ở VI SINH VẬT",
+      "questions": [
+        {
+          "question": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen cần hợp chất mở đầu là",
+          "options": [
+            "Glucose.",
+            "ATP.",
+            "ADP - Glucose.",
+            "ATP - Glucose."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Phát biểu nào sau đây là sai khi nói về sự tổng hợp protein của vi sinh vật?",
+          "options": [
+            "Vi sinh vật có khả năng tự tổng hợp các loại amino acid.",
+            "Vi sinh vật có khả năng tổng hợp protein.",
+            "Protein tổng hợp được khi liên kết các amino acid với nhau bằng liên kết glycosid.",
+            "Phương trình tổng hợp protein là: (Amino acid)n  Protein."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Vi sinh vật tổng hợp lipid bằng cách",
+          "options": [
+            "liên kết glycerol và glutamic acid.",
+            "liên kết lysine và acid béo.",
+            "liên kết glycerol và acid béo.",
+            "liên kết lysine và glutamic acid."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Sản phẩm được tạo ra sau quá trình phân giải các hợp chất carbohydrate (polysaccharide) ở vi sinh vật là",
+          "options": [
+            "đường đơn.",
+            "đường đôi.",
+            "cellulose.",
+            "tinh bột."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Có hai hình thức lên men, đó là",
+          "options": [
+            "lên men rượu và lên men lactic.",
+            "lên men hiếu khí và lên men kị khí.",
+            "lên men lactic và lên men hiếu khí.",
+            "lên men rượu và lên men kị khí."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm: (1) Gôm có vai trò bảo vệ tế bào vi sinh vật khỏi bị khô. (2) Gôm giúp ngăn cản sự tiếp xúc với virus. (3) Gôm là nguồn dự trữ carbon cho vi sinh vật. (4) Gôm là nguồn dự trữ năng lượng cho vi sinh vật. Trong các phát biểu trên, có bao nhiêu phát biểu đúng?",
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Sản phẩm nào sau đây luôn xuất hiện sau quá trình lên men lactic?",
+          "options": [
+            "CO2.",
+            "Ethanol.",
+            "Lactic acid.",
+            "Acetic acid."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Sản xuất nước mắm là ứng dụng của quá trình nào ở vi sinh vật?",
+          "options": [
+            "Phân giải carbohydrate.",
+            "Phân giải protein.",
+            "Tổng hợp carbohydrate.",
+            "Tổng hợp protein."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Khi nói về vai trò của vi sinh vật trong sản xuất dược phẩm, cho các phát biểu sau đây:",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Cho các ứng dụng sau:",
+          "options": [],
+          "correct": "2"
+        },
+        {
+          "question": "Cho các phát biểu sau đây về vai trò của vi sinh vật trong cải thiện chất lượng đất:",
+          "options": [],
+          "correct": "Có 4 phát biểu đúng"
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho sơ đồ dưới đây về quá trình tổng hợp ở vi sinh vật. Mỗi phát biểu sau đây về sơ đồ trên là Đúng hay Sai? Hướng dẫn giải:",
+          "statements": [
+            {
+              "question": "Tổng hợp là quá trình tạo ra phân tử hữu cơ phức tạp từ những chất đơn giản.",
+              "correct": true
+            },
+            {
+              "question": "Quá trình tổng hợp cung cấp nguyên liệu cho quá trình phân giải chất hữu cơ.",
+              "correct": true
+            },
+            {
+              "question": "Carbohydrate có thể tổng hợp từ N-acetyl glucosamin.",
+              "correct": true
+            },
+            {
+              "question": "Amino acid là nguyên liệu để tổng hợp lipid.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Sữa chua là một chế phẩm sữa được sản xuất bằng cách lên men sữa bò tươi, sữa bột hay sữa động vật nói chung. Sữa chua là một thực phẩm rất thơm ngon và bổ dưỡng cho con người. Dựa trên thông tin và kiến thức đã học, phát biểu sau đây là Đúng hay Sai về quá trình làm sữa chua. (2) Lên men sữa chua là lên men ethanol. (3) Quá trình lên men sữa chua có sự tham gia của vi khuẩn lactic dị hình. (4) Quá trình lên men sữa chua có tạo ra ethanol và acetic acid. Trả lời: (1) Quá trình làm sữa chua thực chất là quá trình phân giải carbohydrate của vi sinh vật. (Biết) 🡪 Đúng (2) Lên men sữa chua là lên men ethanol.  (Biết) 🡪 Sai (3) Quá trình lên men sữa chua có sự tham gia của vi khuẩn lactic dị hình. (Hiểu) 🡪 Sai (4) Quá trình lên men sữa chua có tạo ra ethanol và acetic acid. (Vận dụng )🡪 Sai Câu 3. Các phát biểu sau là Đúng hay Sai về quá trình tổng hợp carbohydrate ở vi sinh vật:",
+          "statements": [
+            {
+              "question": "Quá trình làm sữa chua thực chất là quá trình phân giải carbohydrate của vi sinh vật.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Các phát biểu sau là Đúng hay Sai về quá trình tổng hợp carbohydrate ở vi sinh vật: (2) Sản phẩm của quá trình tổng hợp carbohydrate là polypeptide. (3) Một số vi sinh vật còn tổng hợp chitin và cellulose. (4) Gôm bản chất là một loại polysaccharide mà vi sinh vật tiết vào môi trường. Trả lời: (1) Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen không cần hợp chất mở đầu. (Biết) 🡪 Sai, cần chất mở đầu là ADP_glucose (2) Sản phẩm của quá trình tổng hợp carbohydrate là polypeptide. (Hiểu) 🡪 Sai (3) Một số vi sinh vật còn tổng hợp chitin và cellulose. (Biết) 🡪 Đúng (4) Gôm bản chất là một loại polysaccharide mà vi sinh vật tiết vào môi trường. (Biết) 🡪 Đúng",
+          "statements": [
+            {
+              "question": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen không cần hợp chất mở đầu.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 25: SINH TRƯỞNG VÀ SINH SẢN Ở VI SINH VẬT",
+      "questions": [
+        {
+          "question": "Sinh trưởng ở vi sinh vật là sự gia tăng",
+          "options": [
+            "khối lượng cơ thể vi sinh vật.",
+            "số lượng cá thể của quần thể vi sinh vật.",
+            "kích thước cơ thể vi sinh vật.",
+            "số lượng loài của quần thể vi sinh vật."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi",
+          "options": [
+            "quần thể.",
+            "cá thể.",
+            "tế bào.",
+            "quần xã."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Môi trường nuôi cấy không liên tục là môi trường nuôi cấy",
+          "options": [
+            "được bổ sung chất dinh dưỡng mới và được lấy đi các sản phẩm của quá trình nuôi cấy.",
+            "không được bổ sung chất dinh dưỡng mới nhưng lấy đi sản phẩm của quá trình nuôi cấy.",
+            "không được bổ sung chất dinh dưỡng mới cũng không lấy đi các sản phẩm của quá trình nuôi cấy.",
+            "liên tục được bổ sung chất dinh dưỡng mới và liên tục lấy đi các sản phẩm của quá trình nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trình tự sắp xếp nào sau đây là đúng khi nói về các pha sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
+          "options": [
+            "Pha tiềm phát → Pha lũy thừa → Pha cân bằng → Pha suy vong.",
+            "Pha tiềm phát → Pha cân bằng → Pha lũy thừa → Pha suy vong.",
+            "Pha suy vong → Pha tiềm phát → Pha lũy thừa → Pha cân bằng.",
+            "Pha suy vong → Pha lũy thừa → Pha tiềm phát → Pha cân bằng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong nuôi cấy không liên tục, tốc độ phân chia của vi khuẩn đạt tối đa ở pha nào sau đây?",
+          "options": [
+            "Pha tiềm phát.",
+            "Pha lũy thừa.",
+            "Pha suy vong.",
+            "Pha cân bằng."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Pha nào sau đây chỉ có ở sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
+          "options": [
+            "Pha lũy thừa.",
+            "Pha tiềm phát.",
+            "Pha cân bằng.",
+            "Pha suy vong."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi quần thể vì",
+          "options": [
+            "vi khuẩn hoàn toàn không có sự thay đổi về kích thước và khối lượng.",
+            "khó nhận ra sự thay đổi về kích thước và khối lượng của tế bào vi khuẩn.",
+            "vi khuẩn có khả năng trao đổi chất, sinh trưởng và phát triển rất nhanh.",
+            "khó nhận ra sự tồn tại, phát triển của tế bào vi khuẩn trong môi trường tự nhiên."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Trong điều kiện nuôi cấy không liên tục, chất dinh dưỡng cạn dần, sản phẩm chuyển hóa tăng lên sẽ dẫn đến hiện tượng",
+          "options": [
+            "tăng tốc độ sinh trưởng của vi khuẩn.",
+            "số vi khuẩn sinh ra bằng số vi khuẩn chết đi.",
+            "quần thể vi khuẩn bị suy vong",
+            "số vi khuẩn tăng lên theo cấp số nhân."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trong nuôi cấy không liên tục, với mục đích thu vi khuẩn để làm giống nên tiến hành thu hoạch vào thời điểm nào sau đây?",
+          "options": [
+            "Đầu pha lũy thừa.",
+            "Đầu pha cân bằng.",
+            "Đầu pha tiềm phát.",
+            "Đầu pha suy vong."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây? (1) Phân đôi.\t(2) Tiếp hợp.\t(3) Nảy chồi.\t(4) Bào tử.",
+          "options": [
+            "(1), (2), (3).",
+            "(1), (2), (4).",
+            "(1), (3), (4).",
+            "(2), (3), (4)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Cho các đặc điểm sau: (1) Số lượng tế bào sinh ra bằng số tế bào chết đi. (2) Chất độc hại tích lũy quá nhiều. (3) Vi khuẩn bị chết do chất dinh dưỡng giảm dần. (4) Số lượng vi khuẩn tăng lên rất nhanh. Pha cân bằng gồm các đặc điểm nào?",
+          "options": [
+            "1, 2.",
+            "1, 3.",
+            "1, 4.",
+            "2, 3."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Vi khuẩn E.coli trong điều kiện nuôi cấy thích hợp cứ 20 phút lại phân đôi một lần. Số tế bào của quần thể vi khuẩn E.coli có được sau 3 giờ 20 phút từ một tế bào vi khuẩn ban đầu là",
+          "options": [
+            "1024.",
+            "1240.",
+            "1420.",
+            "200."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Sinh khối vi khuẩn đạt cao nhất vào thời điểm nào?",
+          "options": [
+            "Pha cân bằng.",
+            "Cuối pha lũy thừa, đầu pha cân bằng.",
+            "Pha tiềm phát.",
+            "Cuối pha cân bằng, đầu pha suy vong."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Khi tiêm kháng sinh cho bò sữa, sau đó dùng sữa bò để làm sữa chua thì không thể lên men sữa chua được vì lí do nào sau đây?",
+          "options": [
+            "Khi đó sữa bò mất hết chất dinh dưỡng.",
+            "Khi đó sữa bò có môi trường kiềm tính ức chế sự phát triển của vi khuẩn lactic.",
+            "Trong sữa bò còn tồn đọng kháng sinh ức chế sự phát triển của vi khuẩn lactic.",
+            "Khi đó trong sữa bò còn nhiều vi sinh vật gây bệnh chưa bị tiêu diệt nên cạnh tranh với vi khuẩn."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Thức ăn được bảo quản tương đối lâu trong tủ lạnh vì nhiệt độ thấp có tác dụng",
+          "options": [
+            "làm cho thức ăn ngon hơn.",
+            "tiêu diệt được vi sinh vật.",
+            "kìm hãm sự sinh trưởng của vi sinh vật.",
+            "thanh trùng vi sinh vật."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Trong môi trường nuôi cấy liên tục quần thể vi sinh vật sinh trưởng theo mấy pha?",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": "Có bao nhiêu phát biểu dưới đây là đúng khi nói về sinh trưởng của quần thể vi sinh vật?",
+          "options": [],
+          "correct": "1"
+        },
+        {
+          "question": "Có bao nhiêu phát biểu sau đây là đúng khi nói về hình thức sinh sản có ở cả vi sinh vật nhân sơ và nhân thực?",
+          "options": [],
+          "correct": "3"
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Sự sinh trưởng của một quần thể vi khuẩn được thể hiện như sơ đồ bên. Phân tích sơ đồ và cho biết mỗi nhận định sau đây là Đúng hay Sai? Đây là sự sinh trưởng của quần thể vi khuẩn trong môi trường nuôi cấy không liên tục. Để thu được sinh khối tối đa người ta sẽ thu ở cuối pha số (3). * Đáp án: A đúng; B Sai, C đúng, D sai",
+          "statements": [
+            {
+              "question": "Tốc độ sinh trưởng của quần thể vi khuẩn ở pha số (2) cao hơn pha số (3).",
+              "correct": true
+            },
+            {
+              "question": "Pha số (1), vi khuẩn không sinh trưởng vì lượng chất dinh dưỡng rất ít.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Quan sát bảng sau và cho biết mỗi nhận định sau đây là đúng hay sai về sinh trưởng ở vi khuẩn E.coli? * Đáp án: A đúng; B Sai, C đúng, D đúng",
+          "statements": [
+            {
+              "question": "Cứ 20 phút vi khuẩn E.coli phân chia 1 lần.",
+              "correct": true
+            },
+            {
+              "question": "Trong 1 giờ chúng phân chia 4 lần.",
+              "correct": false
+            },
+            {
+              "question": "Sau 1 giờ 20 phút số tế bào trong quần thể là 16 tế bào.",
+              "correct": true
+            },
+            {
+              "question": "Số tế bào vi khuẩn tăng theo cấp số nhân sau mỗi lần phân chia.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Thông thường, khi có người thân bị cảm, sốt, nhức đầu,... người dân hay tự ý đi mua thuốc kháng sinh về điều trị bệnh. Mỗi nhận định dưới đây là đúng hay sai về việc làm này? * Đáp án: A đúng; B sai, C đúng, D đúng",
+          "statements": [
+            {
+              "question": "Người dân không nên tự ý đi mua thuốc kháng sinh về điều trị bệnh cho người thân vì sẽ gây ra hiện tượng kháng kháng sinh (nhờn kháng sinh).",
+              "correct": true
+            },
+            {
+              "question": "Đối với cảm sốt nhẹ, có thể tự mua kháng sinh ở hiệu thuốc có uy tín để điều trị, vì kháng sinh có thể tiêu diệt hoặc ức chế vi sinh vật gây bệnh.",
+              "correct": false
+            },
+            {
+              "question": "Khi tự ý mua thuốc kháng sinh về sử dụng có thể không tạo được hiệu quả điều trị mong muốn mà còn gây nên các tác dụng phụ nguy hiểm.",
+              "correct": true
+            },
+            {
+              "question": "Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 26: CÔNG NGHỆ VI SINH VẬT",
+      "questions": [
+        {
+          "question": "Công nghệ vi sinh vật là lĩnh vực",
+          "options": [
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến sản phẩm phục vụ đời sống con người.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Hoạt động nào sau đây là ứng dụng của quá trình phân giải ở vi sinh vật?",
+          "options": [
+            "Sản xuất các chất xúc tác sinh học.",
+            "Sản xuất sinh khối.",
+            "Sản xuất Bột giặt sinh học.",
+            "Sản xuất amino acid."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Ví dụ nào sau đây nói về ứng dụng đặc điểm quá trình phân giải các chất của vi sinh vật?",
+          "options": [
+            "Sản xuất protein đơn bào.",
+            "Sản xuất acid amin.",
+            "Nước mắm.",
+            "Sản xuất các chất xúc tác sinh học."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Xử lý nước thải là ứng dụng của công nghệ vi sinh vật trong",
+          "options": [
+            "y học.",
+            "nông nghiệp.",
+            "bảo vệ môi trường.",
+            "sinh hoạt."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Xử lý mùi hôi trong chăn nuôi là ứng dụng của chế phẩm vi sinh vật trong",
+          "options": [
+            "sinh hoạt.",
+            "nông nghiệp.",
+            "công nghiệp.",
+            "môi trường."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Thành tựu nào sau đây là ứng dụng của công nghệ vi sinh vật trong nông nghiệp?",
+          "options": [
+            "Kháng sinh.",
+            "Dưa muối.",
+            "Nước tương.",
+            "Phân bón."
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Bón phân vi sinh vật lâu thường xuyên thì",
+          "options": [
+            "không gây hại cho đất.",
+            "đất sẽ bị thoái hóa.",
+            "đất sẽ bị bạc màu.",
+            "khiến kết cấu đất kém bền."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Dựa vào đặc điểm nào của vi sinh vật người ta sử dụng chúng để xử lí ô nhiễm môi trường?",
+          "options": [
+            "Vi sinh vật có khả năng phân giải các chất phức tạp.",
+            "Khả năng sinh trưởng và sinh sản nhanh.",
+            "Khả năng phân bố và thích nghi cao.",
+            "Khả năng sống trong những môi trường cực đoan."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Sản xuất men vi sinh là ứng dụng của công nghệ vi sinh vật trong lĩnh vực nào?",
+          "options": [
+            "Trồng trọt.",
+            "Dược học.",
+            "Chăn nuôi.",
+            "Thủy sản."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Công nghệ vi sinh vật là gì?",
+          "options": [
+            "Là công nghệ sử dụng vi sinh vật và hoặc các dẫn xuất để tạo ra sản phẩm phục vụ cho đời sống con người.",
+            "Là lĩnh vực quan trọng của công nghệ tế bào.",
+            "Là công nghệ sử dụng vi sinh vật và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người.",
+            "Là công nghệ sử dụng virus và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Sản phẩm tạo ra từ công nghệ vi sinh vật có đặc điểm như thế nào?",
+          "options": [
+            "An toàn, thân thiện với môi trường, giá thành cao, hiệu quả lâu dài.",
+            "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
+            "Gây hại cho người sử dụng nên giá thành rẻ, hiệu quả lâu dài.",
+            "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài."
+          ],
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về công nghệ vi sinh vật? Đáp án: A, C, D Đúng.   \t\t\t B Sai",
+          "statements": [
+            {
+              "question": "Là lĩnh vực quan trọng của công nghệ sinh học.",
+              "correct": true
+            },
+            {
+              "question": "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
+              "correct": false
+            },
+            {
+              "question": "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài.",
+              "correct": true
+            },
+            {
+              "question": "Là công nghệ sử dụng vi sinh vật và dẫn xuất của nó để tạo ra sản phẩm phục vụ cho đời sống con người.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là Đúng hay Sai? Đáp án: A, C, D Đúng.   \t\t\t B Sai",
+          "statements": [
+            {
+              "question": "giúp tăng kết cấu đất",
+              "correct": true
+            },
+            {
+              "question": "cung cấp đủ các dưỡng chất khoáng đa lượng, trung lượng và vi lượng cho cây trồng",
+              "correct": false
+            },
+            {
+              "question": "cải tạo, bồi dưỡng, tăng lượng mùn, tăng độ phì nhiêu, làm đất tơi xốp, không bị bạc màu.",
+              "correct": true
+            },
+            {
+              "question": "có hiệu quả chậm hơn so với phân bón hóa học nên ít được sử dụng",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 27: ỨNG DỤNG VI SINH VẬT TRONG THỰC TIỄN",
+      "questions": [
+        {
+          "question": "Việc sản xuất các protein đơn bào dựa vào khả năng nào sau đây của vi sinh vật?",
+          "options": [
+            "Vi sinh vật có khả năng tự tổng hợp các chất cần thiết.",
+            "Vi sinh vật có khả năng tiết enzyme phân giải ngoại bào.",
+            "Vi sinh vật đóng vai trò là kháng nguyên.",
+            "Vi sinh vật có khả năng tạo ra chất gây độc hại cho côn trùng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Việc sản xuất nước tương, nước mắm dựa vào khả năng nào sau đây của vi sinh vật?",
+          "options": [
+            "Vi sinh vật có khả năng tự tổng hợp các chất cần thiết.",
+            "Vi sinh vật có khả năng tiết enzyme phân giải ngoại bào.",
+            "Vi sinh vật đóng vai trò là kháng nguyên.",
+            "Vi sinh vật đóng vai trò là vector chuyển gene."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cho một số đặc điểm sau: (1) Có khả năng chuyển hóa mạnh, sinh sản nhanh. (2) Có khả năng tổng hợp được một số chất quý. (3) Có khả năng phân giải các chất hữu cơ dư thừa. (4) Có thể gây độc cho một số loài gây hại mùa màng. Trong các đặc điểm trên, số đặc điểm có lợi của vi sinh vật được ứng dụng trong thực tiễn là",
+          "options": [
+            "3.",
+            "1.",
+            "4.",
+            "2."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Vi sinh vật tham gia vào sản xuất phomat là",
+          "options": [
+            "Vi khuẩn Azotobacter.",
+            "Vi khuẩn lactic.",
+            "Vi khuẩn lam.",
+            "Vi khuẩn phản nitrat."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Mốc vàng hoa cau (Aspergillus oryzae) có vai trò gì trong sản xuất nước tương?",
+          "options": [
+            "Lên men tạo vị chua cho tương.",
+            "Tạo enzyme phân hủy tinh bột và protein có trong đậu tương.",
+            "Tạo độ pH thấp làm tương không bị thối.",
+            "Làm cho tương có màu vàng như màu của nấm mốc."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Con người đã sử dụng vi sinh vật nào sau đây để tạo ra phần lớn thuốc kháng sinh?",
+          "options": [
+            "Nấm mem",
+            "Tảo đơn bào.",
+            "Xạ khuẩn",
+            "Vi khuẩn lactic"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Quy trình sản xuất Phomat là",
+          "options": [
+            "Thanh trùng sữa  Cấy vi khuẩn  Thêm chất phụ gia CaCl2 Cắt cục vón  Rửa cục vón bằng nước Clo năm phần triệu, cho vào khuôn nén  Thu được phomat.",
+            "Thanh trùng sữa  Thêm chất phụ gia CaCl2 Cấy vi khuẩn  Cắt cục vón  Rửa cục vón bằng nước Clo năm phần triệu, cho vào khuôn nén  Thu được phomat.",
+            "Thanh trùng sữa  Cấy vi khuẩn  Cắt cục vón  Rửa cục vón bằng nước Clo năm phần triệu, cho vào khuôn nén  Thêm chất phụ gia CaCl2 Thu được phomat.",
+            "Thanh trùng sữa  Thêm chất phụ gia CaCl2 Cấy vi khuẩn  Cắt cục vón  Rửa cục vón bằng nước Clo năm phần triệu, cho vào khuôn nén  Thu được phomat."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Xạ khuẩn (chi Streptomyces) được dùng sản xuất:",
+          "options": [
+            "nước tương",
+            "phomat",
+            "kháng sinh",
+            "thuốc trừ sâu"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Có bao nhiêu ứng dụng sau đây là ứng dụng của vi sinh vật trong thực tiễn?",
+          "options": [],
+          "correct": "4"
+        },
+        {
+          "question": "Cho các loại phân bón sau:",
+          "options": [],
+          "correct": "3"
+        },
+        {
+          "question": "Cho một số đặc điểm sau:",
+          "options": [],
+          "correct": "4"
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Phomat là một trong những loại thực phẩm xa xưa nhất của nhân loại, xuất hiện từ 6.000 năm TCN. Phomat được làm từ sữa bò, cừu, dê hoặc một số loài vật khác. Để làm phomat, ta phải tách sữa đông ra khỏi chất béo và nước sữa. Sau đó, số sữa còn lại phải được lên men và ủ trong một khoảng thời gian nhất định. Mỗi nhận định sau là  ĐÚNG hay SAI khi nói về phomat? Hướng dẫn giải:",
+          "statements": [
+            {
+              "question": "Sữa làm phomat phải được tiệt trùng.",
+              "correct": true
+            },
+            {
+              "question": "Chủng vi khuẩn được sử dụng là Lactococcus lactic.",
+              "correct": true
+            },
+            {
+              "question": "Trong sữa thành phần được lên men tạo acid là đường lactose.",
+              "correct": true
+            },
+            {
+              "question": "Việc chế biến sữa tươi thành phomat giúp cho việc bảo quản sữa được lâu hơn.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Penicillin là một nhóm thuốc kháng khuẩn có thể tấn công và tiêu diệt nhiều loại vi khuẩn. Việc phát hiện và sản xuất kháng sinh penicillin đã đã đánh dấu một cột mốc mới trong lịch sử y tế, bởi đây là những loại thuốc kháng sinh đầu tiên được áp dụng trong việc điều trị, khiến cho y học thay đổi và phát triển, cứu sống hàng triệu người nhiễm khuẩn trong suốt quá trình lịch sử. Kháng sinh này có thể dùng đường uống hoặc đường tiêm. Hiện nay, kháng sinh penicillin đang được sử dụng rộng rãi với mục đích điều trị nhiễm trùng và một số tình trạng có liên quan đến bệnh lý do nhiễm trùng gây ra. Mỗi nhận định sau là  ĐÚNG hay SAI khi nói về kháng sinh penicillin? Hướng dẫn giải:",
+          "statements": [
+            {
+              "question": "Kháng sinh penicillin được sản xuất từ vi khuẩn .",
+              "correct": true
+            },
+            {
+              "question": "Cơ sở khoa học là sử dụng vi sinh vật có khả năng tổng hợp các chất.",
+              "correct": true
+            },
+            {
+              "question": "Để đạt năng suất kháng sinh cao người ta cho thêm tiền chất phenylacetic vào môi trường nuôi cấy.",
+              "correct": true
+            },
+            {
+              "question": "Kháng sinh penicillin có thể điều trị các bệnh do virus gây ra.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": ": Gạo nếp sàng sạch, nhặt bỏ sạn rồi đem vo sạch, ngâm khoảng nửa tiếng rồi vớt ráo, đồ chín cho vào nong, xếp một lượt lá nhãn hoặc lá khoai, chờ lên mốc vàng như hoa cải. Đỗ tương đem rang với cát, đảo đều với lửa nhỏ để cho hạt chín đều từ bên ngoài vào bên trong, có màu vàng và mùi thơm lừng. Sau khi rang, xay, cho đỗ tương vào ngâm nước đúng 7 ngày 7 đêm, không ít hơn hoặc nhiều hơn, nếu không thì hạt sẽ bị chua (ít hơn 7 ngày) hoặc úng (nhiều hơn 7 ngày). Nước ngâm đỗ đó được đem ủ với mốc, bóp thật nhuyễn cho hai thứ quyện với nhau, gia vị bằng nước muối đã được lọc sạch rồi bỏ tất cả hỗn hợp ấy vào chum phơi nắng ít nhất từ 2 tháng đến 6 tháng, tốt nhất là 2 năm. Trong khoảng thời gian phơi nắng, người làm đỗ tương phải lấy cây khuấy tương mỗi buổi sáng. Nắng là một yếu tố quan trọng, trời càng nắng nóng thì chất lượng tương càng cao. Mỗi nhận định sau là  ĐÚNG hay SAI khi nói về tương? Hướng dẫn giải:",
+          "statements": [
+            {
+              "question": "Gạo nếp là nguyên liệu để tạo chủng vi sinh vật cho quá trình làm tương.",
+              "correct": true
+            },
+            {
+              "question": "Cơ sở khoa học là sử dụng vi sinh vật có khả năng tiết enzyme lipaza.",
+              "correct": true
+            },
+            {
+              "question": "Muối được bổ sung vào làm cho tương không bị thối.",
+              "correct": true
+            },
+            {
+              "question": "Ánh nắng giúp cho quá trình chuyển hóa của tương diễn ra nhanh hơn.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": ": Vi sinh vật được ứng dụng rộng rãi và phổ biến trong thực tiễn, từ các hoạt động sống hàng ngày của người dân (muối dưa cà, làm sữa chua, làm giấm, nấu rượu ...) đến các hoạt động sản xuất nông nghiệp, công nghiệp (thuốc trừ sâu, phân bón vi sinh vật ...), trong y học (thuốc kháng sinh, vaccine) và trong bảo vệ môi trường(xử lí rác thải, nước thải,...). Mỗi nhận định sau là  ĐÚNG hay SAI ? Hướng dẫn giải:",
+          "statements": [
+            {
+              "question": "Nhờ khả năng tổng hợp ra các loại kháng sinh nên một số được sử dụng trong sản xuất kháng sinh, thuốc trừ sâu vi sinh.",
+              "correct": true
+            },
+            {
+              "question": "Lên men sữa là quá trình chuyển hóa đường thành acid lactic của vi khuẩn lactic, pH do acid lactic được sinh ra sẽ làm sữa chuyển từ trạng thái lỏng sang dạng đông đặc sau khi lên men.",
+              "correct": true
+            },
+            {
+              "question": "Các vi sinh vật được ứng dụng tạo ra các sản phẩm có lợi cho con người đều có tốc độ sinh trưởng nhanh.",
+              "correct": true
+            },
+            {
+              "question": "Trong chế phẩm vaccine chứa vi sinh vật có độc lực rất cao.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 28: THỰC HÀNH LÊN MEN",
+      "questions": [
+        {
+          "question": "Khi muối dưa chua, việc cho nguyên liệu đã xử lí vào dung dịch nước muối 5-6% nhằm mục đích gì?",
+          "options": [
+            "Để tạo vị mặn cho dưa.",
+            "Để dưa nhanh chua hơn",
+            "Để ức chế các vi sinh vật gây thối",
+            "Để kích thích quá trình lên men."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong những ngày đầu lên men trái cây, có rất nhiều bọt khí nổi lên. Lời giải thích nào sau đây về hiện tượng trên là đúng?",
+          "options": [
+            "Đây là khí CO2 do quá trình lên men tạo ra, quá trình lên men diễn ra bình thường.",
+            "Đây là khí CO2 do quá trình lên men tạo ra, quá trình lên men bị hư.",
+            "Đây là khí O2 do quá trình lên men tạo ra, quá trình lên men diễn ra bình thường.",
+            "Đây là khí O2 do quá trình lên men tạo ra, quá trình lên men bị hư."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Việc cho vitamin C (hoặc nước chanh, giấm gạo) vào bột bánh mì nhằm mục đích gì?",
+          "options": [
+            "Làm cho bột mì nở nhiều hơn.",
+            "Làm cho bánh mì không bị cháy khi nướng.",
+            "Làm cho bánh mì dai và giòn hơn",
+            "Làm cho bột mì không bị hỏng."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Để làm sữa chua, cần những nguyên liệu nào sau đây? Sữa đặc \t(2) Nước sôi \t(3) Hộp sữa chua làm giông (4) Nồi nhôm \t(5) Sữa tươi \t(6) Thùng xốp",
+          "options": [
+            "(1), (2), (4), (6)",
+            "(1), (2), (3), (4)",
+            "(1), (2), (3), (5)",
+            "(2), (3), (5), (6)"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Khi làm bánh mì chúng ta cần những nguyên liệu nào sau đây? (1) Bột mì \t(2) Đường \t(3) Muối (4) Vitamin C \t(5) Dầu ăn \t(6) Rượu",
+          "options": [
+            "(1), (2), (4), (6)",
+            "(1), (2), (3), (4)",
+            "(1), (3), (4), (5)",
+            "(2), (3), (5), (6)"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Biểu hiện nào sau đây chứng tỏ kết quả muối dưa chua đã thành công? (1) Ăn có vị chua, giòn \t\t(2) Mùi thơm đặc trưng (3)  Sủi bọt nhiều\t(4) Nước có màu đục \t(5) Có vị chua nhẹ",
+          "options": [
+            "(1), (2), (4).",
+            "(1), (2), (5).",
+            "(1), (3), (5).",
+            "(3), (4), (5)."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Khi muối dưa, người ta thường cho thêm một ít nước dưa của lần muối dưa trước vào cùng. Việc này có mục đích gì?",
+          "options": [
+            "Để dưa nhanh chua hơn.",
+            "Để dưa không bị mùi hôi, thối.",
+            "Để dưa giòn hơn.",
+            "Để dưa chậm chua hơn."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Vì sao phải để nguội hỗn hợp sữa nguyên liệu (khoảng 40 oC) trước khi cho hộp sữa chua làm men giống vào?",
+          "options": [
+            "Vì nhiệt độ quá cao sẽ khiến vi khuẩn lactic giống bị chết.",
+            "Vì nhiệt độ quá cao sẽ làm giảm độ pH của nguyên liệu.",
+            "Vì nhiệt độ quá cao sẽ làm vi khuẩn lactic giống bị đột biến.",
+            "Vì nhiệt độ quá cao sẽ làm tăng áp suất thẩm thấu của nguyên liệu."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Vi sinh vật nào sau đây được ứng dụng để sản xuất bánh mì?",
+          "options": [
+            "Lactococcus lactis.",
+            "Aspergillus oryzae.",
+            "Bacillus thuringiensis.",
+            "Saccharomyces cerevisiae."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Làm bánh mì là ứng dụng của quá trình",
+          "options": [
+            "lên men lactic.",
+            "lên men rượu.",
+            "lên men acetic.",
+            "lên men propionic."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Cần bảo quản sữa chua thành phẩm trong ngăn mát tủ lạnh (2 – 8 oC) nhằm",
+          "options": [
+            "ức chế sự phát triển của vi khuẩn lactic để tránh sự lên men quá mức.",
+            "tăng cường sự phát triển của vi khuẩn lactic để ức chế vi khuẩn có hại.",
+            "hạ thấp nhiệt độ của sữa chua thành phẩm để tăng độ thơm ngon.",
+            "hạ thấp nhiệt độ của sữa chua thành phẩm để tăng độ đông tụ."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Tại sao phải để nguội hỗn hợp sữa nguyên liệu (khoảng 40 oC) trước khi cho hộp sữa chua làm men giống vào?",
+          "options": [
+            "Vì nhiệt độ quá cao sẽ khiến vi khuẩn lactic giống bị chết.",
+            "Vì nhiệt độ quá cao sẽ làm giảm độ pH của nguyên liệu.",
+            "Vì nhiệt độ quá cao sẽ làm vi khuẩn lactic giống bị đột biến.",
+            "Vì nhiệt độ quá cao sẽ làm tăng áp suất thẩm thấu của nguyên liệu."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Khi làm bánh mì, ở bước nhào bột, không để men tiếp xúc trực tiếp với muối vì",
+          "options": [
+            "muối sẽ làm cho men bị vón cục.",
+            "muối sẽ làm cho men bị đột biến.",
+            "muối sẽ làm cho men bị chết, hỏng.",
+            "muối sẽ làm cho men hoạt động quá mạnh."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Thực chất của quá trình lên men trái cây là",
+          "options": [
+            "quá trình lên men rượu.",
+            "quá trình lên men giấm.",
+            "quá trình lên men lactic.",
+            "quá trình tổng hợp đường."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong quá trình lên men trái cây, không nên đậy nắp quá kín nhằm",
+          "options": [
+            "tạo điều kiện để cho khí CO2 tạo ra được thoát ra ngoài.",
+            "tạo điều kiện để cho khí O2 tạo ra được thoát ra ngoài.",
+            "tạo điều kiện để cho khí N2 tạo ra được thoát ra ngoài.",
+            "tạo điều kiện để cho khí H2 tạo ra được thoát ra ngoài."
+          ],
+          "correct": 0
+        }
+      ],
+      "questionGroups": []
+    },
+    {
+      "name": "Bài 29: VIRUS",
+      "questions": [
+        {
+          "question": ": Hình thức sống của viruslà gì?",
+          "options": [
+            "Sống kí sinh không bắt buộc.",
+            "Sống tự dưỡng kiểu quang hợp.",
+            "Sống cộng sinh với tế bào.",
+            "Sống kí sinh nội bào bắt buộc."
+          ],
+          "correct": 3
+        },
+        {
+          "question": ": Virus được cấu tạo bởi 2 thành phần cơ bản là",
+          "options": [
+            "lõi nucleic acid và lớp vỏ capsid.",
+            "lõi nucleic acid và lớp vỏ phospholipid.",
+            "lõi nucleic acid và lớp vỏ peptidoglycan.",
+            "lõi nucleic acid và lớp vỏ carbohydrate."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Ngoài 2 thành phần cơ bản, một số virus còn có lớp vỏ ngoài (envelope) cấu tạo từ",
+          "options": [
+            "lớp kép phospholipid và protein.",
+            "lớp kép phospholipid và cellulose.",
+            "lớp kép phospholipid và nucleic acid.",
+            "Lớp đơn phospholipid và chitin."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Chu trình nhân lên của virus trong tế bào chủ diễn ra theo trình tự là",
+          "options": [
+            "hấp phụ → tổng hợp → lắp ráp → xâm nhập → phóng thích.",
+            "hấp phụ → xâm nhập → tổng hợp → lắp ráp → phóng thích.",
+            "hấp phụ → lắp ráp → tổng hợp → xâm nhập → phóng thích.",
+            "hấp phụ → xâm nhập → lắp ráp → tổng hợp → phóng thích."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Trong giai đoạn hấp phụ, phân tử bề mặt virus gắn đặc hiệu vào thụ thể bề mặt tế bào vật chủ theonguyên tắc",
+          "options": [
+            "bán bảo tồn.",
+            "chìa và khoá.",
+            "ngẫu nhiên.",
+            "bổ sung."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ":  Trong quá trình nhân lên của virus, giai đoạn nào sau đây virus dùng bộ máy của tế bào chủ tạo nên các capsomer?",
+          "options": [
+            "Hấp phụ.",
+            "Phóng thích\t.",
+            "Tổng hợp.",
+            "Lắp ráp."
+          ],
+          "correct": 2
+        },
+        {
+          "question": ": Chu trình tan là chu trình",
+          "options": [
+            "virus nhân lên làm tan và giết chết tế bào vật chủ.",
+            "virus chỉ nhân bản hệ gene và không phá vỡ tế bào vật chủ.",
+            "virus làm tan hệ gene nhưng không gây chết tế bào vật chủ.",
+            "virus chỉ nhân bản vỏ capsid mà không nhân bản hệ gene."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Virus nhân lên theo chu trình tan gọi là?",
+          "options": [
+            "Virus ôn hoà.",
+            "Virus độc.",
+            "Virus lưỡng tính.",
+            "Virus trần."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Chu trình tiềm tan là chu trình",
+          "options": [
+            "virus nhân lên làm tan và giết chết tế bào vật chủ",
+            "virus chỉ nhân bản hệ gene và không phá vỡ tế bào vật chủ.",
+            "virus làm tan hệ gene nhưng không gây chết tế bào vật chủ.",
+            "virus chỉ nhân bản vỏ capsid mà không nhân bản hệ gene."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Virus có khả năng dùng cả 2 chu trình tan và tiềm tan trong 1 tế bào vật chủ gọi là?",
+          "options": [
+            "Virus ôn hoà.",
+            "Virus độc.",
+            "Virus lưỡng tính.",
+            "Virus trần."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Cấu trúc nào quyết định kích thước và hình thái virus?",
+          "options": [
+            "Lõi nucleic acid.",
+            "Vỏ capsid.",
+            "Vỏ ngoài.",
+            "Protein capsomer."
+          ],
+          "correct": 3
+        },
+        {
+          "question": ": Cấu trúc nào quyết định tính di truyền của virus?",
+          "options": [
+            "Lõi nucleicacid.",
+            "Vỏ capsid.",
+            "Vỏ ngoài.",
+            "Protein capsomer."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Trong thí nghiệm của Martinus Beijerinck, dịch lọc (số 2) không chứa vi khuẩn vì:",
+          "options": [
+            "dịch đã được lọc qua màng lọc vi khuẩn.",
+            "lúc chiết xuất đã làm tan hết vi khuẩn.",
+            "trong dịch chiết xuất vốn không hề có vi khuẩn.",
+            "vi khuẩn đã bị chết hết lúc làm chiết xuất."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Trong thí nghiệm của Martinus Beijerinck. Dù dịch lọc không có vi khuẩn, nhưng cây thuốc lá khoẻ mạnh vẫn bị nhiễm bệnh là vì",
+          "options": [
+            "dịch lọc chứa cấu trúc gây bệnh nhỏ hơn cả vi khuẩn.",
+            "cây nhiễm sẵn bệnh nhưng chưa biểu hiện.",
+            "dịch lọc bị nhiễm vi khuẩn trong quá trình lọc.",
+            "dịch chiết bị nhiễm độc trong lúc thu mẫu."
+          ],
+          "correct": 0
+        },
+        {
+          "question": ": Vì sao virus không được xem là một cơ thể sống hoàn chỉnh?",
+          "options": [
+            "Do virus sống kí sinh nội bào.",
+            "Do virus không có có cấu tạo tế bào.",
+            "Do virus không có hệ enzyme riêng.",
+            "Do virus có kích thước quá nhỏ bé."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Mỗi loại virus chỉ xâm nhập vào một số tế bào vật chủ nhất định vì",
+          "options": [
+            "bề mặt của tế bào vật chủ được bảo vệ bởi một lớp protein chống lại sự xâm nhập của virus.",
+            "bề mặt của virus có lớp vỏ ngoài hoặc vỏ capsid trơ với các thụ thể của tế bào vật chủ.",
+            "virus chỉ xâm nhập được khi phân tử bề mặt khớp đặc hiệu với thụ thể bề mặt tế bào vật chủ.",
+            "virus chỉ xâm nhập được khi hệ gene của nó khớp hoàn toàn với hệ gene của tế bào vật chủ"
+          ],
+          "correct": 2
+        },
+        {
+          "question": ": Phát biểu nào sau đây sai khi nói về sự khác nhau giữa chu trình tan và chu trình tiềm tan?",
+          "options": [
+            "Chu trình tan có sự nhân lên tạo ra vô số virus mới, còn chu trình tiềm tan chỉ nhân bản hệ gene mà không tạo ra các virus mới.",
+            "Chu trình tan cho phép hệ gene của virus tồn tại và nhân lên trong tế bào vật chủ, còn chu trình tiềm tan thì hệ gene không có khả năng nhân lên trong tê bào vật chủ.",
+            "Chu trình tan kết thúc bằng việc virus gây chết tế bào vật chủ, còn chu trình tiểm tan hệ gene của virus sống chung và không phá vỡ tế bào vật chủ.",
+            "Chu trình tiềm tan có thể tạo ra quẩn thể nhiều tế bào mang gene và bị nhiễm virus, còn chu trình tan thì làm chết tế bào vật chủ."
+          ],
+          "correct": 1
+        },
+        {
+          "question": ":  Cho các nhận định sau: 1) Là dạng sống đã có cấu tạo tế bào. 2) Có kích thước siêu nhỏ. 3) Sống độc lập trong môi trường. 4) Cấu tạo phức tạp hơn tế bào nhân thực. 5) Sống kí sinh bắt buộc. Có bao nhiêu nhận định là đúng với virus?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1
+        },
+        {
+          "question": ": Virus HIV có trong máu người bệnh nhiễm HIV/AIDS. Tuy nhiên, muỗi đốt người bệnh sau đó sang đốt người khỏe mạnh lại không làm người đó mắc bệnh. Vì sao HIV không truyền từ người sang người qua đường muỗi đốt?",
+          "options": [
+            "Vì cơ thể người khỏe mạnh có hệ miễn dịch có khả năng chống lại virus mới xâm nhập.",
+            "Vì người mắc bệnh không phải ổ chứa virus.",
+            "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm.",
+            "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
+          ],
+          "correct": 3
+        },
+        {
+          "question": ": Virus được cấu tạo bởi mấy thành phần cơ bản?",
+          "options": [],
+          "correct": "Đáp án: 2"
+        },
+        {
+          "question": ": Quá trình nhân lên của virus được chia thành mấy giai đoạn?",
+          "options": [],
+          "correct": "Đáp án: 5"
+        },
+        {
+          "question": ":Virus trần không có mấy thành phần sau đây?",
+          "options": [],
+          "correct": "Đáp án: 2."
+        },
+        {
+          "question": ": Cho các chức năng sau:",
+          "options": [],
+          "correct": "Đáp án: 2 /"
+        },
+        {
+          "question": ": Có bao nhiêu nhận định sau đây không đúng về chu trình tan?",
+          "options": [],
+          "correct": "Đáp án: 3/"
+        },
+        {
+          "question": ": Có bao nhiêu nhận định sau đây đúng về virus",
+          "options": [],
+          "correct": "Đáp án: 3 /"
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": ": Quan sát hình sau đây về HIV. Khi nói về HIV, phát biểu nào sau đây đúng, phát biểu nào sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "HIV thuộc loại virus DNA.",
+              "correct": true
+            },
+            {
+              "question": "HIV lây nhiễm cho mọi tế bào của cơ thể người.",
+              "correct": true
+            },
+            {
+              "question": "HIV khi nhân lên trong tế bào vật chủ có xảy ra phiên mã ngược.",
+              "correct": true
+            },
+            {
+              "question": "Mẹ bị nhiễm HIV không nên sinh con.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": ": Hình sau đây là một ví dụ về quá trình nhân lên của virus trong tế bào chủ. Khi nói về hình này, phát biểu nào sau đây đúng, phát biểu nào sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Quá trình này gồm 5 giai đoạn.",
+              "correct": true
+            },
+            {
+              "question": "Virus này xâm nhập bằng cách tiết enzyme lysozyme làm tan thành tế bào vật chủ.",
+              "correct": true
+            },
+            {
+              "question": "Sự nhân lên của virus này được thực hiện theo chu trình tiềm tan.",
+              "correct": false
+            },
+            {
+              "question": "Người ta dùng kháng sinh để tiêu diệt virus này.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Một phương pháp dân gian giúp chống cúm cho rằng người bệnh nên ở qua đêm trong chuồng ngựa. Biết rằng không khí bên trong chuồng chứa amoniac. Nhận định nào sau đây Đúng hay Sai? * Hướng dẫn giải",
+          "statements": [
+            {
+              "question": "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",
+              "correct": true
+            },
+            {
+              "question": "Virus chỉ lây nhiễm nucleic acid vào trong tế bào chủ.",
+              "correct": true
+            },
+            {
+              "question": "H+ sẽ thúc đẩy quá trình giải phóng vật chất di truyền của virus ra khỏi bóng.",
+              "correct": true
+            },
+            {
+              "question": "NH3 ức chế sự giải phóng vật chất di truyền của virus.",
               "correct": true
             }
           ]
