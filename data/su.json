@@ -1,7 +1,7 @@
 {
   "lessons": [
     {
-      "name": "BÀI 1:",
+      "name": "BÀI 1: HIỆN THỰC LỊCH SỬ VÀ LỊCH SỬ ĐƯỢC CON NGƯỜI NHẬN THỨC",
       "questions": [
         {
           "type": "mcq",
@@ -44,8 +44,10 @@
           "question": "Tất cả những điều đã diễn ra trong quá khứ tồn tại một cách khách quan, độc lập là",
           "image": null,
           "options": [
-            "hiện thực lịch sử.\tB. khoa học lịch sử.",
-            "nhận thức lịch sử.\tD. nhận thức của con người."
+            "hiện thực lịch sử.",
+            "khoa học lịch sử.",
+            "nhận thức lịch sử.",
+            "nhận thức của con người."
           ],
           "correct": 0
         },
@@ -54,18 +56,22 @@
           "question": "Tìm kiếm sử liệu, dùng những phương pháp và cách tiếp cận phù hợp giúp con người",
           "image": null,
           "options": [
-            "sửa lại lịch sử.\tB. bôi đen lịch sử.",
-            "tô hồng lịch sử.\tD. nhận thức về lịch sử."
+            "sửa lại lịch sử.",
+            "bôi đen lịch sử.",
+            "tô hồng lịch sử.",
+            "nhận thức về lịch sử."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Cơ quan biên soạn, ghi chép lịch sử thời phong kiến gọi là",
           "image": null,
           "options": [
-            "Quốc sử quán.\tB. Quốc vụ viện.",
-            "Quốc vụ khanh.\tD. Hàn lâm viện."
+            "Quốc sử quán.",
+            "Quốc vụ viện.",
+            "Quốc vụ khanh.",
+            "Hàn lâm viện."
           ],
           "correct": 0
         },
@@ -74,8 +80,10 @@
           "question": "Cơ quan nghiên cứu khoa học lịch sử thời hiện đại gọi là",
           "image": null,
           "options": [
-            "Viện sử học.\tB. Viện Hán Nôm.",
-            "Viện Hàn Quốc học.\tD. Viện Triết học."
+            "Viện sử học.",
+            "Viện Hán Nôm.",
+            "Viện Hàn Quốc học.",
+            "Viện Triết học."
           ],
           "correct": 0
         },
@@ -84,8 +92,10 @@
           "question": "Đối tượng nghiên cứu của sử học là quá trình phát sinh, phát triển của xã hội loài người trong",
           "image": null,
           "options": [
-            "quá khứ.\tB. hiện tại.",
-            "tương lai gần.\tD. tương lai xa."
+            "quá khứ.",
+            "hiện tại.",
+            "tương lai gần.",
+            "tương lai xa."
           ],
           "correct": 0
         },
@@ -94,10 +104,12 @@
           "question": "Lịch sử được con người nhận thức là những hiểu biết của con người về",
           "image": null,
           "options": [
-            "phương pháp nghiên cứu.\tB. xã hội loài người.",
-            "quá khứ.\tD. hiện thực lịch sử."
+            "phương pháp nghiên cứu.",
+            "xã hội loài người.",
+            "quá khứ.",
+            "hiện thực lịch sử."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -116,46 +128,58 @@
           "question": "Hiện thực lịch sử là tất cả những điều đã diễn ra trong quá khứ tồn tại một cách",
           "image": null,
           "options": [
-            "chủ quan của con người.\tB. khách quan, độc lập.",
-            "chủ quan, độc lập.\tD. theo ý chí con người"
+            "chủ quan của con người.",
+            "khách quan, độc lập.",
+            "chủ quan, độc lập.",
+            "theo ý chí con người"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Để phục dựng bức tranh lịch sử một cách chân thực, nhà Sử học không thể tiến hành ở?",
           "image": null,
           "options": [
-            "Các đền thờ cổ.\tB. Tư liệu lịch sử.\tC. Khu di tích.\tD. Phòng thí nghiệm."
+            "Các đền thờ cổ.",
+            "Tư liệu lịch sử.",
+            "Khu di tích.",
+            "Phòng thí nghiệm."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Đối tượng của sử học mang tính",
           "image": null,
           "options": [
-            "trung thực.\tB. tiến bộ.\tC. toàn diện.\tD. xuyên tạc."
+            "trung thực.",
+            "tiến bộ.",
+            "toàn diện.",
+            "xuyên tạc."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Lịch sử là những gì đã diễn ra trong quá khứ gắn với",
           "image": null,
           "options": [
-            "thiên nhiên.\tB. văn hóa.",
-            "con người.\tD. văn minh."
+            "thiên nhiên.",
+            "văn hóa.",
+            "con người.",
+            "văn minh."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Các chức năng của Sử học bao gồm",
           "image": null,
           "options": [
-            "khoa học, xã hội và giáo dục.\tB. khách quan, trung thực và khoa học.",
-            "xã hội, văn hóa và giáo dục.\tD. trung thực, khoa học và giáo dục."
+            "khoa học, xã hội và giáo dục.",
+            "khách quan, trung thực và khoa học.",
+            "xã hội, văn hóa và giáo dục.",
+            "trung thực, khoa học và giáo dục."
           ],
           "correct": 0
         },
@@ -164,10 +188,12 @@
           "question": "Lịch sử là gì?",
           "image": null,
           "options": [
-            "Là khoa học dự đoán về tương lai.\tB. Là những gì đang diễn ra ở hiện tại.",
-            "Là những gì đã diễn ra trong quá khứ.\tD. Là những gì sẽ diễn ra trong tương lai."
+            "Là khoa học dự đoán về tương lai.",
+            "Là những gì đang diễn ra ở hiện tại.",
+            "Là những gì đã diễn ra trong quá khứ.",
+            "Là những gì sẽ diễn ra trong tương lai."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -198,18 +224,22 @@
           "question": "Ngành khoa học nghiên cứu lịch sử xã hội loài người là",
           "image": null,
           "options": [
-            "Triết học.\tB. Sử học.",
-            "Toán học.\tD. Văn học."
+            "Triết học.",
+            "Sử học.",
+            "Toán học.",
+            "Văn học."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Lịch sử được con người nhận thức được hiểu là những hiểu biết của con người về",
           "image": null,
           "options": [
-            "hiện thực lịch sử.\tB. tương lai loài người.",
-            "các ngành khoa học.\tD. lịch sử bản thân."
+            "hiện thực lịch sử.",
+            "tương lai loài người.",
+            "các ngành khoa học.",
+            "lịch sử bản thân."
           ],
           "correct": 0
         },
@@ -230,11 +260,16 @@
           "question": "Nhận thức lịch sử không phụ thuộc vào yếu tố nào sau đây?",
           "image": null,
           "options": [
-            "Nhu cầu và năng lực của người tìm hiểu.\tB. Điều kiện và phương pháp để tìm hiểu.",
-            "Mức độ phong phú của thông tin sử liệu.\tD. Nội dung và phương pháp nghiên cứu. Câu 23 Khôi phục các sự kiện lịch sử diễn ra trong quá khứ là chức năng nào sau đây của Sử học?",
-            "Khoa học.\tB. Xã hội.\tC. Nhận biết.\tD. Giáo dục."
+            "Nhu cầu và năng lực của người tìm hiểu.",
+            "Điều kiện và phương pháp để tìm hiểu.",
+            "Mức độ phong phú của thông tin sử liệu.",
+            "Nội dung và phương pháp nghiên cứu. Câu 23 Khôi phục các sự kiện lịch sử diễn ra trong quá khứ là chức năng nào sau đây của Sử học?",
+            "Khoa học.",
+            "Xã hội.",
+            "Nhận biết.",
+            "Giáo dục."
           ],
-          "correct": 2
+          "correct": 4
         },
         {
           "type": "mcq",
@@ -253,20 +288,24 @@
           "question": "Hiện thực lịch sử có điểm gì khác biệt so với nhận thức lịch sử?",
           "image": null,
           "options": [
-            "Phản ánh nhận thức của con người.\tB. Luôn tồn tại một cách khách quan.",
-            "Biến đổi không ngừng theo thời gian.\tD. Phụ thuộc vào ý muốn của con người."
+            "Phản ánh nhận thức của con người.",
+            "Luôn tồn tại một cách khách quan.",
+            "Biến đổi không ngừng theo thời gian.",
+            "Phụ thuộc vào ý muốn của con người."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Một trong những lí do cần khám phá lịch sử suốt đời là giúp mỗi người",
           "image": null,
           "options": [
-            "bắt kịp những công nghệ mới.\tB. làm giàu trí thức cho bản thân.",
-            "hoàn thiện năng lực thẩm mĩ.\tD. hoàn thiện năng lực tính toán."
+            "bắt kịp những công nghệ mới.",
+            "làm giàu trí thức cho bản thân.",
+            "hoàn thiện năng lực thẩm mĩ.",
+            "hoàn thiện năng lực tính toán."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -285,10 +324,12 @@
           "question": "Học tập và tìm hiểu lịch sử giúp đưa lại những cơ hội nghề nghiệp mới trên lĩnh vực nào sau đây?",
           "image": null,
           "options": [
-            "Công nghệ thông tin.\tB. Chế biến thủy sản.",
-            "Công nghiệp văn hóa.\tD. Xuất khẩu dầu mỏ."
+            "Công nghệ thông tin.",
+            "Chế biến thủy sản.",
+            "Công nghiệp văn hóa.",
+            "Xuất khẩu dầu mỏ."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -307,18 +348,22 @@
           "question": "Lập danh mục sử liệu cần sưu tầm; tìm kiếm, thu thập thông tin liên quan đến đối tượng tìm hiểu là các bước cơ bản của quá trình",
           "image": null,
           "options": [
-            "xử lý thông tin sử liệu.\tB. tiến hành thí nghiệm lịch sử.",
-            "sưu tầm, thu thập sử liệu.\tD. xác minh, đánh giá sử liệu."
+            "xử lý thông tin sử liệu.",
+            "tiến hành thí nghiệm lịch sử.",
+            "sưu tầm, thu thập sử liệu.",
+            "xác minh, đánh giá sử liệu."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Phân loại, đánh giá, thẩm định, so sánh nguồn sử liệu là các bước cơ bản của quá trình",
           "image": null,
           "options": [
-            "xử lý thông tin sử liệu.\tB. tiến hành thí nghiệm lịch sử.",
-            "sưu tầm, thu thập sử liệu.\tD. tìm hiểu các di chỉ khảo cổ."
+            "xử lý thông tin sử liệu.",
+            "tiến hành thí nghiệm lịch sử.",
+            "sưu tầm, thu thập sử liệu.",
+            "tìm hiểu các di chỉ khảo cổ."
           ],
           "correct": 0
         },
@@ -327,10 +372,12 @@
           "question": "Nội dung nào sau đây không phải là hình thức để học tập, khám phá lịch sử?",
           "image": null,
           "options": [
-            "Tham quan các bảo tàng.\tB. Xem các phim lịch sử.",
-            "Khám phá các đại dương.\tD. Tham quan khu lưu niệm."
+            "Tham quan các bảo tàng.",
+            "Xem các phim lịch sử.",
+            "Khám phá các đại dương.",
+            "Tham quan khu lưu niệm."
           ],
-          "correct": 1
+          "correct": 2
         }
       ],
       "questionGroups": [
@@ -645,7 +692,7 @@
       ]
     },
     {
-      "name": "BÀI 2:",
+      "name": "BÀI 2: VAI TRÒ CỦA SỬ HỌC",
       "questions": [
         {
           "type": "mcq",
@@ -736,14 +783,16 @@
           "question": "Yếu tố cốt lõi trong hoạt động bảo tồn di sản là gì?",
           "image": null,
           "options": [
-            "Xác định giá trị thực tế của di sản.\tB. Phát huy giá trị của di sản văn hóa.",
-            "Đảm bảo tính nguyên trạng của di sản.\tD. Tu bổ và phục hồi di sản thường xuyên. Câu 9. Nội dung nào sau đây phản ánh đúng vai trò của Sử học đối với công tác bảo tồn và phát huy giá trị di sản?",
+            "Xác định giá trị thực tế của di sản.",
+            "Phát huy giá trị của di sản văn hóa.",
+            "Đảm bảo tính nguyên trạng của di sản.",
+            "Tu bổ và phục hồi di sản thường xuyên. Câu 9. Nội dung nào sau đây phản ánh đúng vai trò của Sử học đối với công tác bảo tồn và phát huy giá trị di sản?",
             "Kết quả nghiên cứu của Sử học là cơ sở khoa học để xác định giá trị của di sản.",
             "Sử học tái hiện đầy đủ mọi giá trị của di sản văn hóa và di sản thiên nhiên.",
             "Sử học giúp cho giá trị của di sản văn hóa và di sản thiên nhiên luôn bền vững.",
             "Các phương pháp nghiên cứu Sử học luôn phục dựng lại nguyên vẹn di sản."
           ],
-          "correct": 2
+          "correct": 4
         },
         {
           "type": "mcq",
@@ -774,8 +823,10 @@
           "question": "Nội dung nào sau đây là một trong những vai trò của công tác bảo tồn và phát huy giá trị di sản thiên nhiên?",
           "image": null,
           "options": [
-            "Góp phần phát triển đa dạng sinh học.\tB. Loại bỏ tác động của con người đến di sản.",
-            "Thực hành giá trị của các di sản thiên nhiên.\tD. Góp phần bảo vệ sự đa dạng văn hóa."
+            "Góp phần phát triển đa dạng sinh học.",
+            "Loại bỏ tác động của con người đến di sản.",
+            "Thực hành giá trị của các di sản thiên nhiên.",
+            "Góp phần bảo vệ sự đa dạng văn hóa."
           ],
           "correct": 0
         },
@@ -808,14 +859,16 @@
           "question": "Nội dung nào sau đây phản ánh đúng mối quan hệ giữa lịch sử và văn hóa với ngành du lịch?",
           "image": null,
           "options": [
-            "Chỉ có lịch sử tác động lên ngành du lịch.   B. Tồn tại độc lập, không liên quan đến nhau.",
-            "Có mối quan hệ tương tác hai chiều.\tD. Chỉ ngành du lịch mới tác động đến lịch sử. Câu 16. Nội dung nào sau đây không phải là vai trò của lịch sử và văn hóa đối với sự phát triển ngành du lịch?",
+            "Chỉ có lịch sử tác động lên ngành du lịch.",
+            "Tồn tại độc lập, không liên quan đến nhau.",
+            "Có mối quan hệ tương tác hai chiều.",
+            "Chỉ ngành du lịch mới tác động đến lịch sử. Câu 16. Nội dung nào sau đây không phải là vai trò của lịch sử và văn hóa đối với sự phát triển ngành du lịch?",
             "Quảng bá lịch sử và văn hóa cộng đồng ra bên ngoài.",
             "Là nguồn di sản, tài nguyên quý giá của ngành du lịch.",
             "Cung cấp tri thức để hỗ trợ quảng bá ngành du lịch.",
             "Góp phần thúc đẩy ngành du lịch phát triển bền vững."
           ],
-          "correct": 2
+          "correct": 4
         },
         {
           "type": "mcq",
@@ -834,7 +887,10 @@
           "question": "Lễ hội Nghinh Ông là nét văn hóa của cư dân vùng biển Việt Nam thờ cúng",
           "image": null,
           "options": [
-            "cá Ông (cá Voi).\tB. cá Tra.\tC. cá Ngừ đại dương.\tD. cá Ngừ và cá Ông."
+            "cá Ông (cá Voi).",
+            "cá Tra.",
+            "cá Ngừ đại dương.",
+            "cá Ngừ và cá Ông."
           ],
           "correct": 0
         },
@@ -843,10 +899,12 @@
           "question": "Sự phát triển của du lịch sẽ góp phần",
           "image": null,
           "options": [
-            "phát triển kinh tế nông nghiệp.\tB. phát triển kinh tế công nghiệp.",
-            "quảng bá văn hóa.\tD. quảng bá lịch sử, văn hoá cộng đồng ra bên ngoài."
+            "phát triển kinh tế nông nghiệp.",
+            "phát triển kinh tế công nghiệp.",
+            "quảng bá văn hóa.",
+            "quảng bá lịch sử, văn hoá cộng đồng ra bên ngoài."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -901,9 +959,12 @@
           "question": "Di sản văn hóa là sản phẩm của",
           "image": null,
           "options": [
-            "thiên nhiên.\tB. lịch sử.\tC. văn hóa.\tD. tự nhiên."
+            "thiên nhiên.",
+            "lịch sử.",
+            "văn hóa.",
+            "tự nhiên."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -1022,16 +1083,19 @@
       ]
     },
     {
-      "name": "BÀI 3:",
+      "name": "BÀI 3: KHÁI NIỆM VĂN MINH",
       "questions": [
         {
           "type": "mcq",
           "question": "Chọn cụm từ thích hợp điền vào chỗ trống để hoàn thiện khái niệm sau: “.\tlà những giá trị vật chất và tinh thần do con người sáng tạo ra trong lịch sử.”",
           "image": null,
           "options": [
-            "Văn vật.\tB. Văn hiến.\tC. Văn hóa.\tD. Văn minh."
+            "Văn vật.",
+            "Văn hiến.",
+            "Văn hóa.",
+            "Văn minh."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -1050,7 +1114,10 @@
           "question": "Đối lập với văn minh là",
           "image": null,
           "options": [
-            "dã man.\tB. văn hiến.\tC. văn hóa.\tD. văn vật."
+            "dã man.",
+            "văn hiến.",
+            "văn hóa.",
+            "văn vật."
           ],
           "correct": 0
         },
@@ -1059,19 +1126,24 @@
           "question": "Văn hóa xuất hiện cùng với sự xuất hiện của",
           "image": null,
           "options": [
-            "nhà nước.\tB. chữ viết.\tC. Trái Đất.\tD. loài người."
+            "nhà nước.",
+            "chữ viết.",
+            "Trái Đất.",
+            "loài người."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Khi nào thì nhân loại bước vào thời kì văn minh?",
           "image": null,
           "options": [
-            "Khi công cụ bằng đá ra đời.\tB. Khi Nhà nước và chữ viết ra đời.",
-            "Khi con người xuất hiện trên Trái Đất.\tD. Khi con người biết trồng trọt."
+            "Khi công cụ bằng đá ra đời.",
+            "Khi Nhà nước và chữ viết ra đời.",
+            "Khi con người xuất hiện trên Trái Đất.",
+            "Khi con người biết trồng trọt."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -1090,10 +1162,12 @@
           "question": "Thành tựu văn hóa nào sau đây không phải là biểu hiện của văn minh?",
           "image": null,
           "options": [
-            "Thể chế nhà nước quân chủ chuyên chế.\tB. Vạn Lý Trường Thành (Trung Quốc).",
-            "Đền Pác-tê-nông (Hy Lạp cổ đại).\tD. Đồ trang sức của người nguyên thủy."
+            "Thể chế nhà nước quân chủ chuyên chế.",
+            "Vạn Lý Trường Thành (Trung Quốc).",
+            "Đền Pác-tê-nông (Hy Lạp cổ đại).",
+            "Đồ trang sức của người nguyên thủy."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -1136,8 +1210,10 @@
           "question": "Văn hóa là tổng thể những giá trị vật chất và tinh thần do con người sáng tạo ra:",
           "image": null,
           "options": [
-            "trong quá trình lịch sử.\tB. khi nhà nước ra đời.",
-            "khi chữ viết ra đời.\tD. trong thời kì văn minh."
+            "trong quá trình lịch sử.",
+            "khi nhà nước ra đời.",
+            "khi chữ viết ra đời.",
+            "trong thời kì văn minh."
           ],
           "correct": 0
         },
@@ -1146,8 +1222,10 @@
           "question": "Văn hóa là tổng thế những giá trị vật chất và tinh thần do người sáng tạo ra trong thời kì nào?",
           "image": null,
           "options": [
-            "Thời kì nguyên thủy.\tB. Thời kì phong kiến.",
-            "Thời kì chiếm hữu nô lệ.\tD. Thời kì tư bản chủ nghĩa."
+            "Thời kì nguyên thủy.",
+            "Thời kì phong kiến.",
+            "Thời kì chiếm hữu nô lệ.",
+            "Thời kì tư bản chủ nghĩa."
           ],
           "correct": 0
         },
@@ -1168,29 +1246,36 @@
           "question": "Những nền văn minh đầu tiên trên thế giới hình thành ở đâu?",
           "image": null,
           "options": [
-            "Trung Quốc.\tB. Ấn Độ.",
-            "Tây Á, Đông Bắc châu Phi.\tD. Hy Lạp, La Mã."
+            "Trung Quốc.",
+            "Ấn Độ.",
+            "Tây Á, Đông Bắc châu Phi.",
+            "Hy Lạp, La Mã."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Những nền văn minh nào ở phương Đông vào thời cổ đại vẫn tiếp tục phát triển thời kỳ trung đại?",
           "image": null,
           "options": [
-            "Văn minh May-a và văn minh In-ca.\tB. Văn minh Ấn Độ và văn minh Trung Hoa.",
-            "Văn minh Hy Lạp và văn minh La Mã.\tD. Văn minh A-dơ-tếch và văn minh In-ca."
+            "Văn minh May-a và văn minh In-ca.",
+            "Văn minh Ấn Độ và văn minh Trung Hoa.",
+            "Văn minh Hy Lạp và văn minh La Mã.",
+            "Văn minh A-dơ-tếch và văn minh In-ca."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Đâu không phải là tiêu chuẩn cơ bản để nhận diện văn minh loài người?",
           "image": null,
           "options": [
-            "Nhà nước.\tB. Đô thị.\tC. Tôn giáo.\tD. Tổ chức xã hội."
+            "Nhà nước.",
+            "Đô thị.",
+            "Tôn giáo.",
+            "Tổ chức xã hội."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -1209,8 +1294,10 @@
           "question": "Văn minh Văn Lang - Âu Lạc ở Việt Nam thuộc giai đoạn nào của lịch sử văn minh thế giới?",
           "image": null,
           "options": [
-            "Văn minh thời kì cổ đại.\tB. Văn minh thời Phục hưng",
-            "Văn minh thời cận đại\tD. Văn minh thời hiện đại."
+            "Văn minh thời kì cổ đại.",
+            "Văn minh thời Phục hưng",
+            "Văn minh thời cận đại",
+            "Văn minh thời hiện đại."
           ],
           "correct": 0
         },
@@ -1219,76 +1306,96 @@
           "question": "Văn minh Đại Việt ở Việt Nam thuộc giai đoạn nào của lịch sử văn minh thế giới?",
           "image": null,
           "options": [
-            "Văn minh thời cổ đại.\tB. Văn minh thời trung đại.",
-            "Văn minh thời cận đại.\tD. Văn minh thời hiện đại."
+            "Văn minh thời cổ đại.",
+            "Văn minh thời trung đại.",
+            "Văn minh thời cận đại.",
+            "Văn minh thời hiện đại."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Từ giữa thiên niên kỉ III TCN đến năm 1857 là khoảng thời gian tồn tại của nền văn minh nào dưới đây?",
           "image": null,
           "options": [
-            "Văn minh Ai Cập cổ đại.\tB. Văn minh Ấn Độ cổ - trung đại.",
-            "Văn minh Trung Hoa cổ - trung đại.\tD. Văn minh Tây Âu thời kì Phục hưng."
+            "Văn minh Ai Cập cổ đại.",
+            "Văn minh Ấn Độ cổ - trung đại.",
+            "Văn minh Trung Hoa cổ - trung đại.",
+            "Văn minh Tây Âu thời kì Phục hưng."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Một trong những nền văn minh tiêu biểu của phương Đông thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "Hi Lạp.\tB. Rô – ma.\tC. Ấn Độ.\tD. La Mã."
+            "Hi Lạp.",
+            "Rô – ma.",
+            "Ấn Độ.",
+            "La Mã."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Nền văn minh nào dưới đây ra đời sớm nhất trên thế giới?",
           "image": null,
           "options": [
-            "Trung Quốc.\tB. Ấn Độ.\tC. Ai Cập.\tD. Hy Lạp."
+            "Trung Quốc.",
+            "Ấn Độ.",
+            "Ai Cập.",
+            "Hy Lạp."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Chữ viết của người Ai Cập cổ đại là",
           "image": null,
           "options": [
-            "chữ Phạn.\tB. chữ số La Mã.\tC. chữ tượng hình.\tD. chữ hình nêm."
+            "chữ Phạn.",
+            "chữ số La Mã.",
+            "chữ tượng hình.",
+            "chữ hình nêm."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Người Ai Cập cổ đại viết chữ trên",
           "image": null,
           "options": [
-            "những tấm đất sét còn ướt.\tB. giấy làm từ cây pa-pi-rút.",
-            "thẻ tre, trúc.\tD. mai rùa, xương thú."
+            "những tấm đất sét còn ướt.",
+            "giấy làm từ cây pa-pi-rút.",
+            "thẻ tre, trúc.",
+            "mai rùa, xương thú."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Công trình kiến trúc nào ở Ai Cập được coi là môt trong bảy kì quan của thế giới cổ đại?",
           "image": null,
           "options": [
-            "Vườn treo Ba-bi-lon.\tB. Kim tự tháp.",
-            "Đại bảo tháp Shan-chi.\tD. Đền Pác-te-nông."
+            "Vườn treo Ba-bi-lon.",
+            "Kim tự tháp.",
+            "Đại bảo tháp Shan-chi.",
+            "Đền Pác-te-nông."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Trong Toán học, người Ai Cập giỏi nhất về lĩnh vực gì?",
           "image": null,
           "options": [
-            "Giải tích.\tB. Đại số.\tC. Toán cao cấp.\tD. Hình học."
+            "Giải tích.",
+            "Đại số.",
+            "Toán cao cấp.",
+            "Hình học."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -1307,102 +1414,130 @@
           "question": "Nội dung nào dưới đây không phản là thành tựu văn hóa của cư dân Ai Cập cổ đại?",
           "image": null,
           "options": [
-            "Kĩ thuật ướp xác.\tB. Chữ tượng hình.",
-            "Tượng nhân sư.\tD. Đền Pác-tê-nông."
+            "Kĩ thuật ướp xác.",
+            "Chữ tượng hình.",
+            "Tượng nhân sư.",
+            "Đền Pác-tê-nông."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Người Ai Cập đã sáng tạo chữ tượng hình, sau đó vẽ thêm biểu hiện âm tiết phát triển thành bao nhiêu chữ cái",
           "image": null,
           "options": [
-            "20.\tB. 21.\tC. 22.\tD. 24."
+            "20.",
+            "21.",
+            "22.",
+            "24."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Ngoài cách tính thời gian bằng đồng hồ đo bóng Mặt Trời thì người Ai Cập còn tính bằng?",
           "image": null,
           "options": [
-            "Đồng hồ đeo tay.\tB. Đồng hồ quả lắc.\tC. Đồng hồ cát.\tD. Đồng hồ nước."
+            "Đồng hồ đeo tay.",
+            "Đồng hồ quả lắc.",
+            "Đồng hồ cát.",
+            "Đồng hồ nước."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Người Ai Cập tính được một năm có bao nhiêu ngày?",
           "image": null,
           "options": [
-            "361.\tB. 363.\tC. 365.\tD. 367."
+            "361.",
+            "363.",
+            "365.",
+            "367."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Nhờ quan sát thiên văn và quy luật lên xuống của mực nước sông Nin người Ai Cập đã làm ra được gì?",
           "image": null,
           "options": [
-            "Kiến trúc.\tB. 12 cung hoàng đạo.",
-            "Toán học.\tD. Dương lịch cổ."
+            "Kiến trúc.",
+            "12 cung hoàng đạo.",
+            "Toán học.",
+            "Dương lịch cổ."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Do tục ướp xác, người Ai Cập sớm có những hiểu biết về",
           "image": null,
           "options": [
-            "các phương thuốc chữa bệnh.\tB. kỹ thuật châm cứu.",
-            "phẫu thuật.\tD. cấu tạo cơ thể người."
+            "các phương thuốc chữa bệnh.",
+            "kỹ thuật châm cứu.",
+            "phẫu thuật.",
+            "cấu tạo cơ thể người."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Về số học người Ai Cập ngoài phát minh hệ đếm thập phân, sáng tạo chữ số, còn có",
           "image": null,
           "options": [
-            "Tính được diện tích.\tB. thể tích của một số hình cơ bản.",
-            "Tính được tích phân.\tD. Giải phương trình bậc nhất."
+            "Tính được diện tích.",
+            "thể tích của một số hình cơ bản.",
+            "Tính được tích phân.",
+            "Giải phương trình bậc nhất."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Về hình học người Ai Cập ngoài tính được diện tích còn có",
           "image": null,
           "options": [
-            "tính được căn bậc 2.\tB. thể tích của một số hình cơ bản.",
-            "tính được tích phân.\tD. giải phương trình bậc nhất."
+            "tính được căn bậc 2.",
+            "thể tích của một số hình cơ bản.",
+            "tính được tích phân.",
+            "giải phương trình bậc nhất."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Tượng bán thân Nữ hoàng Nê-phéc-ti-ti là thành tựu điêu khắc của quốc gia nào?",
           "image": null,
           "options": [
-            "Trung Quốc.\tB. Ấn Độ.\tC. Hy Lạp.\tD. Ai Cập."
+            "Trung Quốc.",
+            "Ấn Độ.",
+            "Hy Lạp.",
+            "Ai Cập."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Vua ở Ai Cập được gọi là gì?",
           "image": null,
           "options": [
-            "Thiên tử.\tB. Hoàng đế.\tC. En-xi.\tD. Pha-ra-ông."
+            "Thiên tử.",
+            "Hoàng đế.",
+            "En-xi.",
+            "Pha-ra-ông."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nền văn minh Ai Cập cổ hình thành và phát triển gắn liền với dòng sông nào?",
           "image": null,
           "options": [
-            "Sông Nin.\tB. Sông Ti-grơ.\tC. Sông Ơ-phrát.\tD. sông Hằng"
+            "Sông Nin.",
+            "Sông Ti-grơ.",
+            "Sông Ơ-phrát.",
+            "sông Hằng"
           ],
           "correct": 0
         },
@@ -1411,7 +1546,10 @@
           "question": "Nền văn minh Ai Cập cổ đại được hình thành ở châu lục nào sau đây?",
           "image": null,
           "options": [
-            "Châu Phi.\tB. Châu Á.\tC. Châu Âu.\tD. Châu Mĩ."
+            "Châu Phi.",
+            "Châu Á.",
+            "Châu Âu.",
+            "Châu Mĩ."
           ],
           "correct": 0
         },
@@ -1444,17 +1582,22 @@
           "question": "Loại hình kiến trúc tiêu biểu nhất của người Ai Cập cổ đại là",
           "image": null,
           "options": [
-            "Tháp Thạt Luổng.\tB. các kim tự tháp.",
-            "Đấu trường Rô-ma.\tD. Vạn lí trường thành."
+            "Tháp Thạt Luổng.",
+            "các kim tự tháp.",
+            "Đấu trường Rô-ma.",
+            "Vạn lí trường thành."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nguyên liệu làm giấy viết của người Ai Cập cổ đại chủ yếu được làm từ",
           "image": null,
           "options": [
-            "vỏ cây pa-pi-rút.\tB. đất sét ướt.\tC. mai rùa.\tD. vỏ cây tre."
+            "vỏ cây pa-pi-rút.",
+            "đất sét ướt.",
+            "mai rùa.",
+            "vỏ cây tre."
           ],
           "correct": 0
         },
@@ -1463,36 +1606,46 @@
           "question": "Thành tựu về lĩnh vực nào sau đây của cư dân Ai Cập cổ đại đã được ứng dụng hiệu quả trong việc xây dựng kim tự tháp?",
           "image": null,
           "options": [
-            "Tôn giáo.\tB. Toán học.\tC. Tín ngưỡng.\tD. Chữ viết."
+            "Tôn giáo.",
+            "Toán học.",
+            "Tín ngưỡng.",
+            "Chữ viết."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Những thành tựu về toán học của cư dân Ai Cập cổ đại đã được ứng dụng rộng rãi trong việc",
           "image": null,
           "options": [
-            "sáng tác văn học.\tB. hội nhập quốc tế.",
-            "đo đạc ruộng đất.\tD. phân chia đẳng cấp."
+            "sáng tác văn học.",
+            "hội nhập quốc tế.",
+            "đo đạc ruộng đất.",
+            "phân chia đẳng cấp."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Yếu tố nào sau đây thúc đẩy sự ra đời sớm của những tri thức toán học ở Ai Cập cổ đại?",
           "image": null,
           "options": [
-            "Nhu cầu sáng tác văn học nghệ thuật.\tB. Nhu cầu tính toán trong xây dựng.",
-            "Nhu cầu phát triển sản xuất thủ công nghiệp.\tD. Nhu cầu phát triển thương nghiệp."
+            "Nhu cầu sáng tác văn học nghệ thuật.",
+            "Nhu cầu tính toán trong xây dựng.",
+            "Nhu cầu phát triển sản xuất thủ công nghiệp.",
+            "Nhu cầu phát triển thương nghiệp."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Chữ tượng hình của người Trung Quốc ra đời trong khoảng thế kỉ XVI - XII TCN, khắc trên mai rùa, xương thú gọi là chữ",
           "image": null,
           "options": [
-            "Giáp cốt.\tB. Tiểu triện.\tC. Hành Khải.\tD. Kim văn."
+            "Giáp cốt.",
+            "Tiểu triện.",
+            "Hành Khải.",
+            "Kim văn."
           ],
           "correct": 0
         },
@@ -1501,7 +1654,10 @@
           "question": "Chữ viết của người Trung Quốc được cải tiến và định hình như ngày nay vào thời nhà",
           "image": null,
           "options": [
-            "Hán.\tB. Thương.\tC. Đường.\tD. Tần."
+            "Hán.",
+            "Thương.",
+            "Đường.",
+            "Tần."
           ],
           "correct": 0
         },
@@ -1510,16 +1666,21 @@
           "question": "Chữ viết của người Trung Quốc được cải tiến và thống nhất gọi là chữ Tiểu Triện vào thời nào?",
           "image": null,
           "options": [
-            "Tần.\tB. Hán.\tC. Đường.\tD. Thương."
+            "Tần.",
+            "Hán.",
+            "Đường.",
+            "Thương."
           ],
           "correct": 0
         },
         {
           "type": "mcq",
-          "question": "Thời cổ đại của Trung Quốc, thơ ca phát triển, hàng trăm bài thơ đã được tập hợp trong Kinh Thi và Sở Từ.\tB. Tứ Thư và Ngũ Kinh.",
+          "question": "Thời cổ đại của Trung Quốc, thơ ca phát triển, hàng trăm bài thơ đã được tập hợp trong Kinh Thi và Sở Từ.",
           "image": null,
           "options": [
-            "Sử thi và kinh Xuân Thu.\tD. Tập thơ Đường."
+            "Tứ Thư và Ngũ Kinh.",
+            "Sử thi và kinh Xuân Thu.",
+            "Tập thơ Đường."
           ],
           "correct": 0
         },
@@ -1528,7 +1689,10 @@
           "question": "Văn học Trung Quốc thời trung đại, thơ phát triển mạnh dưới thời",
           "image": null,
           "options": [
-            "Đường.\tB. Tần.\tC. Hán.\tD. Minh."
+            "Đường.",
+            "Tần.",
+            "Hán.",
+            "Minh."
           ],
           "correct": 0
         },
@@ -1537,7 +1701,10 @@
           "question": "Văn học Trung Quốc thời Trung đại, tiểu thuyết phát triển dưới thời",
           "image": null,
           "options": [
-            "Minh - Thanh.\tB. Tần - Hán.\tC. Đường.\tD. Tống."
+            "Minh - Thanh.",
+            "Tần - Hán.",
+            "Đường.",
+            "Tống."
           ],
           "correct": 0
         },
@@ -1558,7 +1725,10 @@
           "question": "Về sử học của Trung Quốc, những ghi chép mang nội dung lịch sử đã xuất hiện từ thời",
           "image": null,
           "options": [
-            "cổ đại.\tB. nguyên thủy.\tC. trung đại.\tD. chiếm nô."
+            "cổ đại.",
+            "nguyên thủy.",
+            "trung đại.",
+            "chiếm nô."
           ],
           "correct": 0
         },
@@ -1567,7 +1737,10 @@
           "question": "Trung Quốc vào thời Đường, cơ quan biên soạn lịch sử của nhà nước được gọi là",
           "image": null,
           "options": [
-            "Sử quán.\tB. Sử gia.\tC. Sử thi.\tD. Sử học."
+            "Sử quán.",
+            "Sử gia.",
+            "Sử thi.",
+            "Sử học."
           ],
           "correct": 0
         },
@@ -1576,7 +1749,10 @@
           "question": "Vào thời Chu ở Trung Quốc, môn học nào sau đây được xem là một trong 6 môn (lục nghệ) mà con em quý tộc phải học?",
           "image": null,
           "options": [
-            "Toán.\tB. Thơ.\tC. Họa.\tD. Y học."
+            "Toán.",
+            "Thơ.",
+            "Họa.",
+            "Y học."
           ],
           "correct": 0
         },
@@ -1585,7 +1761,10 @@
           "question": "Trung Quốc vào thời Nam - Bắc triều, nhà toán học Tổ Xung Chi đã tìm ra",
           "image": null,
           "options": [
-            "số Pi.\tB. dãy số tự nhiên.\tC. số 0.\tD. dãy số La Mã."
+            "số Pi.",
+            "dãy số tự nhiên.",
+            "số 0.",
+            "dãy số La Mã."
           ],
           "correct": 0
         },
@@ -1606,7 +1785,10 @@
           "question": "Vào thời nào của Trung Quốc, lịch pháp tiếp tục có sửa đổi, hoàn thiện và đươc sử dụng cho đến nay?",
           "image": null,
           "options": [
-            "Hán.\tB. Tần.\tC. Thương.\tD. Đường."
+            "Hán.",
+            "Tần.",
+            "Thương.",
+            "Đường."
           ],
           "correct": 0
         },
@@ -1615,8 +1797,10 @@
           "question": "Nét độc đáo của nghệ thuật điêu khắc Trung Hoa cổ - trung đại là",
           "image": null,
           "options": [
-            "nghệ thuật chạm trổ trên ngọc và đá quý.\tB. nghệ thuật tạc tượng thần.",
-            "các phù điêu trên các công trình kiến trúc.\tD. tượng gốm điêu khắc thủ công."
+            "nghệ thuật chạm trổ trên ngọc và đá quý.",
+            "nghệ thuật tạc tượng thần.",
+            "các phù điêu trên các công trình kiến trúc.",
+            "tượng gốm điêu khắc thủ công."
           ],
           "correct": 0
         },
@@ -1625,8 +1809,10 @@
           "question": "Chọn đáp án đúng nhất điền vào chỗ trống: Trong hội họa của Trung Quốc cổ - trung đại, tranh được vẽ với phong cách ước lệ, chú trọng .......................hơn..........................",
           "image": null,
           "options": [
-            "đường nét, màu sắc.\tB. màu sắc, đường nét.",
-            "kích thước, màu sắc.\tD. đối tượng, đường nét."
+            "đường nét, màu sắc.",
+            "màu sắc, đường nét.",
+            "kích thước, màu sắc.",
+            "đối tượng, đường nét."
           ],
           "correct": 0
         },
@@ -1647,7 +1833,10 @@
           "question": "Bộ thơ ca ra đời sớm nhất ở Trung Quốc là",
           "image": null,
           "options": [
-            "Kinh Thi.\tB. Xuân Thu.\tC. Tả truyện.\tD. Chiến quốc sách."
+            "Kinh Thi.",
+            "Xuân Thu.",
+            "Tả truyện.",
+            "Chiến quốc sách."
           ],
           "correct": 0
         },
@@ -1656,8 +1845,10 @@
           "question": "“Thể hiện yếu tố duy vật biện chứng thô sơ, có ảnh hưởng lớn trong tư tưởng triết học ở Trung Quốc và những nước chịu ảnh hưởng văn hóa Hán” là các thuyết",
           "image": null,
           "options": [
-            "Âm dương, Bát quái, Ngũ hành.\tB. Kinh Thi và Xuân Thu.",
-            "12 cung hoàng đạo.\tD. 10 Thiên can và 12 Địa chi."
+            "Âm dương, Bát quái, Ngũ hành.",
+            "Kinh Thi và Xuân Thu.",
+            "12 cung hoàng đạo.",
+            "10 Thiên can và 12 Địa chi."
           ],
           "correct": 0
         },
@@ -1666,7 +1857,10 @@
           "question": "Người sáng lập ra học phái Nho gia ở Trung Quốc là",
           "image": null,
           "options": [
-            "Khổng Tử.\tB. Lão Tử.\tC. Mạnh Tử.\tD. Tuân Tử."
+            "Khổng Tử.",
+            "Lão Tử.",
+            "Mạnh Tử.",
+            "Tuân Tử."
           ],
           "correct": 0
         },
@@ -1675,18 +1869,22 @@
           "question": "Tiêu biểu nhất cho nền văn học Trung Hoa thời cổ-trung đại là loại hình nào?",
           "image": null,
           "options": [
-            "Truyền thuyết, truyện ngắn.\tB. Thơ Đường, tiểu thuyết.",
-            "Thơ ca, truyện ngụ ngôn.\tD. Văn học viết, thần thoại."
+            "Truyền thuyết, truyện ngắn.",
+            "Thơ Đường, tiểu thuyết.",
+            "Thơ ca, truyện ngụ ngôn.",
+            "Văn học viết, thần thoại."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Đâu là một trong bốn phát minh lớn của người Trung Hoa vào thời cổ-trung đại và thế giới vẫn còn tiếp tục sử dụng đến ngày nay?",
           "image": null,
           "options": [
-            "Phát minh ra la bàn.\tB. Chế tạo bê tông.",
-            "Nêu ra thuyết nguyên tử.\tD. Giỏi về giải phẩu người."
+            "Phát minh ra la bàn.",
+            "Chế tạo bê tông.",
+            "Nêu ra thuyết nguyên tử.",
+            "Giỏi về giải phẩu người."
           ],
           "correct": 0
         },
@@ -1695,18 +1893,24 @@
           "question": "Một trong những chữ viết cổ của người Trung Quốc là",
           "image": null,
           "options": [
-            "chữ Bra-mi.\tB. chữ giáp cốt.\tC. chữ Phạn.\tD. chữ La-tinh."
+            "chữ Bra-mi.",
+            "chữ giáp cốt.",
+            "chữ Phạn.",
+            "chữ La-tinh."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Một trong những nhà toán học nổi tiếng của Trung Quốc thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "Hoa Đà.\tB. Tư Mã Thiên.\tC. Tổ Xung Chi.\tD. Tư Mã Quang."
+            "Hoa Đà.",
+            "Tư Mã Thiên.",
+            "Tổ Xung Chi.",
+            "Tư Mã Quang."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -1725,34 +1929,46 @@
           "question": "Tôn giáo nào sau đây có nguồn gốc từ Trung Quốc?",
           "image": null,
           "options": [
-            "Phật giáo.\tB. Hồi giáo.\tC. Đạo giáo.\tD. Hin-đu giáo."
+            "Phật giáo.",
+            "Hồi giáo.",
+            "Đạo giáo.",
+            "Hin-đu giáo."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Loại hình văn học nổi tiếng nhất ở Trung Quốc dưới thời Đường là",
           "image": null,
           "options": [
-            "sử thi.\tB. thơ.\tC. kinh kịch.\tD. tiểu thuyết."
+            "sử thi.",
+            "thơ.",
+            "kinh kịch.",
+            "tiểu thuyết."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "“Dùng pháp luật để quản lí đất nước, chú trọng đến các biện pháp làm cho nước giàu, binh mạnh” là chủ trương của",
           "image": null,
           "options": [
-            "Nho gia.\tB. Pháp gia.\tC. Mặc gia.\tD. Đạo gia."
+            "Nho gia.",
+            "Pháp gia.",
+            "Mặc gia.",
+            "Đạo gia."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nền văn minh Ấn Độ thời kì cổ - trung đại được hình thành ở lưu vực con sông nào sau đây?",
           "image": null,
           "options": [
-            "Sông Hằng\tB. Sông Nin\tC. Sông Hoàng Hà\tD. Sông Trường Giang"
+            "Sông Hằng",
+            "Sông Nin",
+            "Sông Hoàng Hà",
+            "Sông Trường Giang"
           ],
           "correct": 0
         },
@@ -1761,25 +1977,34 @@
           "question": "Nền văn minh Ấn Độ cổ - trung đại được hình thành ở châu lục nào sau đây?",
           "image": null,
           "options": [
-            "Châu Phi\tB. Châu Á\tC. Châu Âu\tD. Châu Mĩ"
+            "Châu Phi",
+            "Châu Á",
+            "Châu Âu",
+            "Châu Mĩ"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Cư dân Ấn Độ đã sớm tạo ra chữ viết riêng của mình, gọi là chữ",
           "image": null,
           "options": [
-            "La – tinh\tB. Hán\tC. Phạn\tD. Nôm"
+            "La – tinh",
+            "Hán",
+            "Phạn",
+            "Nôm"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Chữ viết của Ấn Độ có ảnh hưởng sâu sắc đến chữ viết của nhiều quốc gia ở khu vực",
           "image": null,
           "options": [
-            "Đông Nam Á\tB. Đông Bắc Á\tC. Mĩ La – tinh\tD. Đông Nam Âu"
+            "Đông Nam Á",
+            "Đông Bắc Á",
+            "Mĩ La – tinh",
+            "Đông Nam Âu"
           ],
           "correct": 0
         },
@@ -1788,34 +2013,46 @@
           "question": "Sự ra đời của chữ viết đã tạo cơ sở cho nền văn minh Ấn Độ phát triển rực rỡ trên lĩnh vực nào sau đây?",
           "image": null,
           "options": [
-            "Kiến trúc\tB. Điêu khắc\tC. Tín ngưỡng\tD. Văn học"
+            "Kiến trúc",
+            "Điêu khắc",
+            "Tín ngưỡng",
+            "Văn học"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Tác phẩm nào sau đây không phải thành tựu văn học của Ấn Độ thời cổ - trung đại?",
           "image": null,
           "options": [
-            "Kinh Vê - đa.\tB. Tây du kí.\tC. Ra – ma – y – a – na.\tD. Ma – ha – bha – ra - ta."
+            "Kinh Vê - đa.",
+            "Tây du kí.",
+            "Ra – ma – y – a – na.",
+            "Ma – ha – bha – ra - ta."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Phật giáo có nguồn gốc từ quốc gia nào sau đây?",
           "image": null,
           "options": [
-            "Mianma.\tB. Ấn Độ.\tC. Anh.\tD. Pháp."
+            "Mianma.",
+            "Ấn Độ.",
+            "Anh.",
+            "Pháp."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Tôn giáo nào sau đây không được khởi nguồn từ Ấn Độ?",
           "image": null,
           "options": [
-            "Hồi giáo.\tB. Phật giáo.\tC. Hin-đu giáo.\tD. Bà La Môn giáo."
+            "Hồi giáo.",
+            "Phật giáo.",
+            "Hin-đu giáo.",
+            "Bà La Môn giáo."
           ],
           "correct": 0
         },
@@ -1824,16 +2061,22 @@
           "question": "Tôn giáo nào sau đây ra đời ở Ấn Độ, do Thích Ca Mâu Ni khởi xướng?",
           "image": null,
           "options": [
-            "Hồi giáo.\tB. Phật giáo.\tC. Hin-đu giáo.\tD. Bà La Môn giáo."
+            "Hồi giáo.",
+            "Phật giáo.",
+            "Hin-đu giáo.",
+            "Bà La Môn giáo."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Trong quá trình tồn tại và phát triển, văn minh Ấn Độ đã du nhập tôn giáo nào sau đây từ bên ngoài?",
           "image": null,
           "options": [
-            "Hồi giáo.\tB. Phật giáo.\tC. Hin-đu giáo.\tD. Bà La Môn giáo."
+            "Hồi giáo.",
+            "Phật giáo.",
+            "Hin-đu giáo.",
+            "Bà La Môn giáo."
           ],
           "correct": 0
         },
@@ -1842,72 +2085,94 @@
           "question": "Loại hình kiến trúc Phật giáo tiêu biểu của văn minh Ấn Độ thời cổ - trung đại là",
           "image": null,
           "options": [
-            "pháo đài\tB. lăng mộ\tC. chùa hang\tD. thánh đường"
+            "pháo đài",
+            "lăng mộ",
+            "chùa hang",
+            "thánh đường"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Lăng ta – giơ Ma – han, Pháo đài Đỏ là những thành tựu tiêu biểu của văn minh Ấn Độ trên lĩnh vực nào sau đây?",
           "image": null,
           "options": [
-            "Văn học\tB. Y học\tC. Toán học\tD. Kiến trúc"
+            "Văn học",
+            "Y học",
+            "Toán học",
+            "Kiến trúc"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Phát minh ra chữ số tự nhiên và số 0 là thành tựu nổi bật của nền văn minh nào sau đây?",
           "image": null,
           "options": [
-            "Ai Cập.\tB. Ấn Độ.\tC. Trung Quốc.\tD. Lưỡng Hà."
+            "Ai Cập.",
+            "Ấn Độ.",
+            "Trung Quốc.",
+            "Lưỡng Hà."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "“Tính được căn bậc 2 và bậc 3, tính được diện tích các hình tiêu biểu” là thành tựu tiêu biểu của văn minh Ấn Độ trên lĩnh vực nào sau đây?",
           "image": null,
           "options": [
-            "Kiến trúc\tB. Điêu khắc\tC. Y học\tD. Toán học"
+            "Kiến trúc",
+            "Điêu khắc",
+            "Y học",
+            "Toán học"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Ấn Độ là quê hương của những tôn giáo lớn nào sau đây?",
           "image": null,
           "options": [
-            "Phật giáo, Đạo giáo.\tB. Phật giáo, Hin-đu giáo.",
-            "Thiên Chúa giáo, Hồi giáo.\tD. Phật giáo, Hồi giáo."
+            "Phật giáo, Đạo giáo.",
+            "Phật giáo, Hin-đu giáo.",
+            "Thiên Chúa giáo, Hồi giáo.",
+            "Phật giáo, Hồi giáo."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Văn hoá truyền thống Ấn Độ có ảnh hưởng rõ nét nhất ở khu vực nào sau đây?",
           "image": null,
           "options": [
-            "Đông Bắc Á.\tB. Trung Đông.\tC. Đông Nam Á.\tD. Tây Á."
+            "Đông Bắc Á.",
+            "Trung Đông.",
+            "Đông Nam Á.",
+            "Tây Á."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Cư dân quốc gia cổ đại nào sau đây đã phát minh ra chữ số 0?",
           "image": null,
           "options": [
-            "Ai Cập.\tB. Trung Quốc.\tC. Ấn Độ.\tD. La Mã."
+            "Ai Cập.",
+            "Trung Quốc.",
+            "Ấn Độ.",
+            "La Mã."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Thành tựu nào sau đây của Ấn Độ là di sản văn hóa thế giới?",
           "image": null,
           "options": [
-            "Lăng Ta – giơ Ma - han\tB. Vạn lí trường thành.",
-            "Kim tự tháp.\tD. Hoàng thành Thăng Long"
+            "Lăng Ta – giơ Ma - han",
+            "Vạn lí trường thành.",
+            "Kim tự tháp.",
+            "Hoàng thành Thăng Long"
           ],
           "correct": 0
         },
@@ -1916,18 +2181,22 @@
           "question": "Nội dung nào sau đây là đặc điểm chung của các nền văn minh Ấn Độ và Trung Hoa thời kì cổ - trung đại?",
           "image": null,
           "options": [
-            "Theo chế độ quân chủ lập hiến\tB. Hình thành gắn với các dòng sông lớn",
-            "Xây dựng được nhiều kim tự tháp\tD. Hình thành gắn với các cuộc chiến tranh"
+            "Theo chế độ quân chủ lập hiến",
+            "Hình thành gắn với các dòng sông lớn",
+            "Xây dựng được nhiều kim tự tháp",
+            "Hình thành gắn với các cuộc chiến tranh"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Một trong những thành tựu của văn minh Ấn Độ và Trung Hoa thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "sớm sáng tạo ra chữ viết riêng của mình\tB. kĩ thuật ướp xác và xây dựng kim tự tháp",
-            "xây dựng được chế độ dân chủ cộng hòa\tD. nơi khởi nguồn và phát triển của Phật giáo"
+            "sớm sáng tạo ra chữ viết riêng của mình",
+            "kĩ thuật ướp xác và xây dựng kim tự tháp",
+            "xây dựng được chế độ dân chủ cộng hòa",
+            "nơi khởi nguồn và phát triển của Phật giáo"
           ],
           "correct": 0
         },
@@ -1936,35 +2205,46 @@
           "question": "Nói đến nền văn minh cổ đại phương Tây là nói đến nền văn minh của",
           "image": null,
           "options": [
-            "Trung Quốc.\tB. Hy Lạp- La Mã.\tC. Ấn Độ.\tD. Ai Cập."
+            "Trung Quốc.",
+            "Hy Lạp- La Mã.",
+            "Ấn Độ.",
+            "Ai Cập."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Hệ chữ cái A, B, C và hệ chữ số La Mã (I, II, III,…) là thành tựu của cư dân cổ",
           "image": null,
           "options": [
-            "Ấn Độ.\tB. Lưỡng Hà.\tC. Trung Quốc.\tD. Hy Lạp – La Mã."
+            "Ấn Độ.",
+            "Lưỡng Hà.",
+            "Trung Quốc.",
+            "Hy Lạp – La Mã."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Văn học phương Tây hình thành trên cơ sở nền văn học cổ đại đồ sộ của",
           "image": null,
           "options": [
-            "Đức.\tB. Anh.\tC. Hy Lạp - La Mã.\tD. Pháp."
+            "Đức.",
+            "Anh.",
+            "Hy Lạp - La Mã.",
+            "Pháp."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Đâu là những thể loại tạo nguồn cảm hứng và phong phú cho nền văn học cổ đại Hy Lạp –La Mã?",
           "image": null,
           "options": [
-            "Thần thoại, thơ, văn xuôi, kịch.\tB. Kí sự, thần thoại, truyện cười.",
-            "Văn học dân gian, truyện ngắn.\tD. Tiểu thuyết, thơ ca, kịch."
+            "Thần thoại, thơ, văn xuôi, kịch.",
+            "Kí sự, thần thoại, truyện cười.",
+            "Văn học dân gian, truyện ngắn.",
+            "Tiểu thuyết, thơ ca, kịch."
           ],
           "correct": 0
         },
@@ -1973,16 +2253,22 @@
           "question": "Trong nghệ thuật, người Hy Lạp – La Mã cổ đại đã đạt được những thành tựu rực rỡ trong lĩnh vực nào dưới đây?",
           "image": null,
           "options": [
-            "Xây chùa.\tB. Kiến trúc.\tC. Sân khấu.\tD. Dân gian."
+            "Xây chùa.",
+            "Kiến trúc.",
+            "Sân khấu.",
+            "Dân gian."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Đền Pác –tê-nông, đền thờ thần Dớt, đấu trường Cô-li-dê,… là những thành tựu của người Hy Lạp – La Mã cổ đại trên lĩnh vực",
           "image": null,
           "options": [
-            "kiến trúc.\tB. điêu khắc.\tC. hội họa.\tD. xây dựng."
+            "kiến trúc.",
+            "điêu khắc.",
+            "hội họa.",
+            "xây dựng."
           ],
           "correct": 0
         },
@@ -1991,19 +2277,24 @@
           "question": "Thành tựu tính lịch 1 năm có 365 ngày và ¼ ngày là thành quả rất lớn của người",
           "image": null,
           "options": [
-            "Hy Lạp.\tB. La Mã.\tC. Ai Cập.\tD. Trung Quốc."
+            "Hy Lạp.",
+            "La Mã.",
+            "Ai Cập.",
+            "Trung Quốc."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Tôn giáo cổ xưa nhất và được coi là chính thống giáo của người Hy Lạp - La Mã cổ đại là",
           "image": null,
           "options": [
-            "Phật giáo.\tB. Nho giáo.",
-            "Cơ Đốc giáo (Ki tô giáo).\tD. Hin-đu giáo."
+            "Phật giáo.",
+            "Nho giáo.",
+            "Cơ Đốc giáo (Ki tô giáo).",
+            "Hin-đu giáo."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -2074,8 +2365,10 @@
           "question": "Một trong những cống hiến lớn có giá trị đến nay của cư dân La Mã là",
           "image": null,
           "options": [
-            "Bảng chữ cái gồm 26 chữ.\tB. Đền Pác-tê-nông.",
-            "Giấy, thuốc súng, la bàn.\tD. Đấu trường La Mã."
+            "Bảng chữ cái gồm 26 chữ.",
+            "Đền Pác-tê-nông.",
+            "Giấy, thuốc súng, la bàn.",
+            "Đấu trường La Mã."
           ],
           "correct": 0
         },
@@ -2108,10 +2401,12 @@
           "question": "Chữ Quốc ngữ của Việt Nam hiện nay có nguồn gốc từ",
           "image": null,
           "options": [
-            "Chữ tượng hình Trung Hoa.\tB. Chữ Phạn của Ấn Độ.",
-            "Hệ chữ cái La Mã.\tD. Hệ chữ cái Hy Lạp."
+            "Chữ tượng hình Trung Hoa.",
+            "Chữ Phạn của Ấn Độ.",
+            "Hệ chữ cái La Mã.",
+            "Hệ chữ cái Hy Lạp."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -2130,10 +2425,12 @@
           "question": "Lê-ô-na đờ Vanh-xi là một nhà danh họa, nhà điêu khắc nổi tiếng nhất trong thời kì văn hóa",
           "image": null,
           "options": [
-            "cổ đại Hy Lap - La Mã.\tB. Phục hưng đầu cận đại.",
-            "phương Tây hiện đại.\tD. phương Đông cổ đại."
+            "cổ đại Hy Lap - La Mã.",
+            "Phục hưng đầu cận đại.",
+            "phương Tây hiện đại.",
+            "phương Đông cổ đại."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -2192,10 +2489,12 @@
             "cuộc đấu tranh trên lĩnh vực văn hóa, tư tưởng của tầng lớp quý tộc chống lại giai cấp tư sản đang lên.",
             "bước tiến kì diệu của văn minh phương Tây sau gần một ngàn năm chìm đắm trong “đêm trường trung cổ”.",
             "cuộc cách mạng văn hóa, có ý nghĩa mở đường cho sự phát triển của văn minh phương Đông ở những thế kỉ sau đó. Câu 7 : Văn hóa Phục hưng đề cao vấn đề gì?",
-            "Đề cao khoa học xã hội – nhân văn.\tB. Đề cao tình yêu đất nước",
-            "Đề cao tự do cá nhân.\tD. Đề cao giá trị con người và khoa học tự nhiên."
+            "Đề cao khoa học xã hội – nhân văn.",
+            "Đề cao tình yêu đất nước",
+            "Đề cao tự do cá nhân.",
+            "Đề cao giá trị con người và khoa học tự nhiên."
           ],
-          "correct": 5
+          "correct": 7
         },
         {
           "type": "mcq",
@@ -2214,18 +2513,22 @@
           "question": "Văn hóa Phục hưng đề cao giá trị con người. Đó là con người nào?",
           "image": null,
           "options": [
-            "Con người trong xã hội nói chung.\tB. Con người lao động khốn khổ.",
-            "Con người của giai cấp tư sản.\tD. Con người trong xã hội phong kiến."
+            "Con người trong xã hội nói chung.",
+            "Con người lao động khốn khổ.",
+            "Con người của giai cấp tư sản.",
+            "Con người trong xã hội phong kiến."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Phong trào Văn hóa Phục hưng không chỉ có vai trò tích cực là phát động quần chúng đấu tranh chống lại chế độ phong kiến mà còn là",
           "image": null,
           "options": [
-            "cuộc cách mạng tiến bộ vĩ đại.\tB. cuộc cách mạng dân chủ tư sản.",
-            "cuộc cách mạng văn hóa.\tD. cuộc cách mạng tư tưởng."
+            "cuộc cách mạng tiến bộ vĩ đại.",
+            "cuộc cách mạng dân chủ tư sản.",
+            "cuộc cách mạng văn hóa.",
+            "cuộc cách mạng tư tưởng."
           ],
           "correct": 0
         },
@@ -2234,17 +2537,22 @@
           "question": "“Ông đã chứng minh được trung tâm hệ thống hành tinh chúng ta là Mặt trời, Trái Đất tự xoay xung quanh trục của nó và xoay xung quanh Mặt Trời”. Ông là ai ?",
           "image": null,
           "options": [
-            "Ga-li-lê.\tB. Cô-pec-ních.\tC. Bru-nô.\tD. Đê-các-tơ."
+            "Ga-li-lê.",
+            "Cô-pec-ních.",
+            "Bru-nô.",
+            "Đê-các-tơ."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "I-ta-li-a được coi là quê hương của",
           "image": null,
           "options": [
-            "phong trào Văn hoá Phục hưng.\tB. cuộc cải cách tôn giáo.",
-            "trào lưu triết học Ánh sáng.\tD. chủ nghĩa xã hội không tưởng."
+            "phong trào Văn hoá Phục hưng.",
+            "cuộc cải cách tôn giáo.",
+            "trào lưu triết học Ánh sáng.",
+            "chủ nghĩa xã hội không tưởng."
           ],
           "correct": 0
         },
@@ -2631,14 +2939,17 @@
       ]
     },
     {
-      "name": "Bài 9:",
+      "name": "BÀI 9: CÁCH MẠNG CÔNG NGHIỆP THỜI CẬN ĐẠI",
       "questions": [
         {
           "type": "mcq",
           "question": "Cuộc cách mạng công nghiệp lần thứ nhất diễn ra đầu tiên ở",
           "image": null,
           "options": [
-            "Anh.\tB. Mỹ.\tC. Đức.\tD. Pháp."
+            "Anh.",
+            "Mỹ.",
+            "Đức.",
+            "Pháp."
           ],
           "correct": 0
         },
@@ -2647,10 +2958,12 @@
           "question": "Cuộc cách mạng công nghiệp lần thứ nhất chủ yếu diễn ra ở khu vực nào sau đây?",
           "image": null,
           "options": [
-            "Châu Á và châu Âu.\tB. Châu Âu và Bắc Mỹ.",
-            "Châu Á và châu Phi.\tD. Châu Phi và Mỹ Latinh."
+            "Châu Á và châu Âu.",
+            "Châu Âu và Bắc Mỹ.",
+            "Châu Á và châu Phi.",
+            "Châu Phi và Mỹ Latinh."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -2669,9 +2982,13 @@
           "question": "Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ nhất là",
           "image": null,
           "options": [
-            "máy bay.\tB. ô tô.\tC. máy hơi nước.\tD. máy tính. phát minh kĩ thuật đầu tiên của cuộc cách mạng công nghiệp lần thứ nhất diễn ra trong điện.\t luyện kim.\tC. ngành dầu mỏ.\t dệt."
+            "máy bay.",
+            "ô tô.",
+            "máy hơi nước.",
+            "máy tính. phát minh kĩ thuật đầu tiên của cuộc cách mạng công nghiệp lần thứ nhất diễn ra trong điện.\t luyện kim.",
+            "ngành dầu mỏ.\t dệt."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -2690,9 +3007,12 @@
           "question": "Cuối thế kỉ XVIII, phát minh nào sau đây đã khởi đầu quá trình công nghiệp hóa ở nước Anh?",
           "image": null,
           "options": [
-            "Máy tính điện tử\tB. Trí tuệ nhân tạo\tC. Máy hơi nước\tD. Động cơ điện"
+            "Máy tính điện tử",
+            "Trí tuệ nhân tạo",
+            "Máy hơi nước",
+            "Động cơ điện"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -2723,7 +3043,10 @@
           "question": "Sự ra đời của máy hơi nước vào cuối thế kỉ XVIII gắn liền với công lao to lớn của",
           "image": null,
           "options": [
-            "Giêm Oát.\tB. Giôn Ba-bơ.\tC. Xti-phen-xơn.\tD. Các-ben."
+            "Giêm Oát.",
+            "Giôn Ba-bơ.",
+            "Xti-phen-xơn.",
+            "Các-ben."
           ],
           "correct": 0
         },
@@ -2744,19 +3067,24 @@
           "question": "Trong cuộc cách mạng công nghiệp lần thứ nhất, phát minh kĩ thuật nào sau đây đã tạo ra bước chuyển căn bản trong nền sản xuất tư bản chủ nghĩa?",
           "image": null,
           "options": [
-            "Động cơ đốt trong.\tB. Máy điện tín.\tC. Máy tính điện tử.\tD. Máy hơi nước."
+            "Động cơ đốt trong.",
+            "Máy điện tín.",
+            "Máy tính điện tử.",
+            "Máy hơi nước."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Trong cuộc cách mạng công nghiệp lần thứ nhất, Rô-bớt Phơn-tơn đã chế tạo thành công",
           "image": null,
           "options": [
-            "máy tính điện tử.\tB. tàu thủy chạy bằng hơi nước.",
-            "hệ thống máy tự động.\tD. động cơ điện xoay chiều."
+            "máy tính điện tử.",
+            "tàu thủy chạy bằng hơi nước.",
+            "hệ thống máy tự động.",
+            "động cơ điện xoay chiều."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -2775,7 +3103,10 @@
           "question": "Trong cuộc cách mạng công nghiệp lần thứ nhất, Xti-phen-xơn đã chế tạo thành công",
           "image": null,
           "options": [
-            "đầu máy xe lửa.\tB. động cơ hơi nước.\tC. máy tính điện tử.\tD. bóng đèn điện."
+            "đầu máy xe lửa.",
+            "động cơ hơi nước.",
+            "máy tính điện tử.",
+            "bóng đèn điện."
           ],
           "correct": 0
         },
@@ -2784,8 +3115,10 @@
           "question": "Động cơ đốt trong được phát minh trong cuộc cách mạng công nghiệp lần thứ nhất có ý nghĩa",
           "image": null,
           "options": [
-            "thúc đẩy cơ giới hoá sản xuất.\tB. khởi đầu quá trình công nghiệp hoá.",
-            "giúp liên lạc ngày càng thuận tiện.\tD. mở đầu thời kì sản xuất hàng loạt."
+            "thúc đẩy cơ giới hoá sản xuất.",
+            "khởi đầu quá trình công nghiệp hoá.",
+            "giúp liên lạc ngày càng thuận tiện.",
+            "mở đầu thời kì sản xuất hàng loạt."
           ],
           "correct": 0
         },
@@ -2842,36 +3175,46 @@
           "question": "Một trong những quốc gia khởi đầu cuộc cách mạng công nghiệp lần thứ hai là",
           "image": null,
           "options": [
-            "Trung Quốc.\tB. Nhật Bản.\tC. Đức.\tD. Ấn Độ."
+            "Trung Quốc.",
+            "Nhật Bản.",
+            "Đức.",
+            "Ấn Độ."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Cuộc cách mạng công nghiệp lần thứ hai được tiến hành trong khoảng thời gian nào sau đây?",
           "image": null,
           "options": [
-            "Cuối thế kỉ XX đến đầu thế kỉ XXI.\tB. Cuối thế kỉ XIX đến đầu thế kỉ XX.",
-            "Cuối thế kỉ XVII đến đầu thế kỉ XVIII.\tD. Cuối thế kỉ XVIII đến đầu thế kỉ XIX."
+            "Cuối thế kỉ XX đến đầu thế kỉ XXI.",
+            "Cuối thế kỉ XIX đến đầu thế kỉ XX.",
+            "Cuối thế kỉ XVII đến đầu thế kỉ XVIII.",
+            "Cuối thế kỉ XVIII đến đầu thế kỉ XIX."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Những thành tựu cơ bản của cuộc cách mạng công nghiệp lần thứ hai là gì?",
           "image": null,
           "options": [
-            "Máy hơi nước, điện thoại, điện, ô tô.\tB. Điện, điện thoại, ô tô, máy bay.",
-            "Ô tô, máy bay, máy tính, internet.\tD. Điện thoại, điện, ô tô, tàu hoả."
+            "Máy hơi nước, điện thoại, điện, ô tô.",
+            "Điện, điện thoại, ô tô, máy bay.",
+            "Ô tô, máy bay, máy tính, internet.",
+            "Điện thoại, điện, ô tô, tàu hoả."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Tô-mát Ê-đi-xơn là người đã phát minh ra",
           "image": null,
           "options": [
-            "bóng đèn sợi đốt.\tB. máy bay.\tC. vô tuyến điện.\tD. điện thoại."
+            "bóng đèn sợi đốt.",
+            "máy bay.",
+            "vô tuyến điện.",
+            "điện thoại."
           ],
           "correct": 0
         },
@@ -2880,16 +3223,22 @@
           "question": "Nguồn năng lượng nào không được ứng dụng rộng rãi vào sản xuất trong cuộc cách mạng công nghiệp lần thứ hai?",
           "image": null,
           "options": [
-            "Than đá.\tB. Điện.\tC. Hạt nhân.\tD. Dầu mỏ."
+            "Than đá.",
+            "Điện.",
+            "Hạt nhân.",
+            "Dầu mỏ."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ hai là việc phát minh ra",
           "image": null,
           "options": [
-            "máy điện tín.\tB. thiết bị điện tử.\tC. máy hơi nước.\tD. máy tính."
+            "máy điện tín.",
+            "thiết bị điện tử.",
+            "máy hơi nước.",
+            "máy tính."
           ],
           "correct": 0
         },
@@ -2934,9 +3283,12 @@
           "question": "Thành tựu nào sau đây đã được ra đời từ cuộc cách mạng công nghiệp lần thứ nhất và tiếp tục được cải tiến, ứng dụng rộng rãi trong cuộc cách mạng công nghiệp lần thứ hai?",
           "image": null,
           "options": [
-            "máy hơi nước.\tB. động cơ đốt trong.\tC. máy tính điện tử.\tD. thiết bị điện tử."
+            "máy hơi nước.",
+            "động cơ đốt trong.",
+            "máy tính điện tử.",
+            "thiết bị điện tử."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -2955,18 +3307,24 @@
           "question": "Trong cuộc cách mạng công nghiệp lần thứ hai, phát minh nào sau đây đã đánh dấu sự ra đời của ngành hàng không thế giới?",
           "image": null,
           "options": [
-            "Ô tô.\tB. Động cơ điện.\tC. Máy điện tín.\tD. Máy bay."
+            "Ô tô.",
+            "Động cơ điện.",
+            "Máy điện tín.",
+            "Máy bay."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Trong cuộc cách mạng công nghiệp lần thứ hai, phát minh nào sau đây giúp cho việc liên lạc ngày càng trở nên thuận tiện hơn?",
           "image": null,
           "options": [
-            "Động cơ đốt trong.\tB. Động cơ điện.\tC. Máy điện tín.\tD. Máy hơi nước."
+            "Động cơ đốt trong.",
+            "Động cơ điện.",
+            "Máy điện tín.",
+            "Máy hơi nước."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3021,17 +3379,22 @@
           "question": "Cuộc cách mạng công nghiệp lần thứ ba được khởi đầu tại quốc gia nào sau đây?",
           "image": null,
           "options": [
-            "Anh.\tB. Đức.\tC. Mỹ.\tD. Nhật Bản."
+            "Anh.",
+            "Đức.",
+            "Mỹ.",
+            "Nhật Bản."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Cuộc cách mạng công nghiệp lần thứ ba diễn ra trong khoảng thời gian nào sau đây?",
           "image": null,
           "options": [
-            "Từ nửa sau thế kỉ XX đến đầu thế kỉ XXI.\tB. Từ nửa sau thế kỉ XIX đến đầu thế kỉ XX.",
-            "Từ nửa sau thế kỉ XVIII đến đầu thế kỉ XIX.\tD. Từ nửa sau thế kỉ XIX đến nửa sau thế kỉ XX."
+            "Từ nửa sau thế kỉ XX đến đầu thế kỉ XXI.",
+            "Từ nửa sau thế kỉ XIX đến đầu thế kỉ XX.",
+            "Từ nửa sau thế kỉ XVIII đến đầu thế kỉ XIX.",
+            "Từ nửa sau thế kỉ XIX đến nửa sau thế kỉ XX."
           ],
           "correct": 0
         },
@@ -3040,56 +3403,74 @@
           "question": "Thành tựu cơ bản của cách mạng công nghiệp lần thứ ba không bao gồm",
           "image": null,
           "options": [
-            "internet.\tB. thiết bị điện tử.\tC. máy tính.\tD. động cơ đốt trong."
+            "internet.",
+            "thiết bị điện tử.",
+            "máy tính.",
+            "động cơ đốt trong."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Cuộc cách mạng công nghiệp lần thứ ba thời hiện đại còn được gọi là",
           "image": null,
           "options": [
-            "cách mạng 4.0.\tB. cách mạng công nghệ.",
-            "cách mạng di truyền học.\tD. Cách mạng kĩ thuật số."
+            "cách mạng 4.0.",
+            "cách mạng công nghệ.",
+            "cách mạng di truyền học.",
+            "Cách mạng kĩ thuật số."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây không phải là thành tựu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực công nghệ thông tin?",
           "image": null,
           "options": [
-            "máy tính điện tử.\tB. vệ tinh nhân tạo.\tC. Trình duyệt web.\tD. mạng kết nối internet. Câu 6: Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực chinh phục vũ trụ là",
-            "vệ tinh nhân tạo.\tB. tàu hỏa siêu tốc.\tC. công nghệ vi sinh.\tD. công nghệ nano."
+            "máy tính điện tử.",
+            "vệ tinh nhân tạo.",
+            "Trình duyệt web.",
+            "mạng kết nối internet. Câu 6: Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực chinh phục vũ trụ là",
+            "vệ tinh nhân tạo.",
+            "tàu hỏa siêu tốc.",
+            "công nghệ vi sinh.",
+            "công nghệ nano."
           ],
-          "correct": 1
+          "correct": 4
         },
         {
           "type": "mcq",
           "question": "Thành tựu quan trọng đầu tiên của cuộc cách mạng công nghiệp lần thứ ba là",
           "image": null,
           "options": [
-            "người máy.\tB. vệ tinh.\tC. tàu chiến.\tD. máy tính."
+            "người máy.",
+            "vệ tinh.",
+            "tàu chiến.",
+            "máy tính."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Hệ thống máy tự động là một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực nào sau đây?",
           "image": null,
           "options": [
-            "Công nghệ sinh học.\tB. Giao thông vận tải.",
-            "Công cụ sản xuất mới.\tD. Chinh phục vũ trụ."
+            "Công nghệ sinh học.",
+            "Giao thông vận tải.",
+            "Công cụ sản xuất mới.",
+            "Chinh phục vũ trụ."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Trong cuộc cách mạng công nghiệp lần thứ ba, bước tiến quan trọng của ngành công nghệ thông tin là",
           "image": null,
           "options": [
-            "mạng kết nối Internet.\tB. kính thiên văn.",
-            "máy tính điện tử.\tD. vệ tinh nhân tạo."
+            "mạng kết nối Internet.",
+            "kính thiên văn.",
+            "máy tính điện tử.",
+            "vệ tinh nhân tạo."
           ],
           "correct": 0
         },
@@ -3098,18 +3479,22 @@
           "question": "Sự ra đời của máy tính điện tử trong cuộc cách mạng công nghiệp lần thứ ba đã dẫn đến",
           "image": null,
           "options": [
-            "điện khí hóa trong quá trình sản xuất.\tB. tự động hóa trong quá trình sản xuất.",
-            "số hóa trong quá trình sản xuất.\tD. cơ khí hóa trong quá trình sản xuất."
+            "điện khí hóa trong quá trình sản xuất.",
+            "tự động hóa trong quá trình sản xuất.",
+            "số hóa trong quá trình sản xuất.",
+            "cơ khí hóa trong quá trình sản xuất."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Sự xuất hiện và phát triển của mạng lưới kết nối Internet trong cuộc cách mạng công nghiệp lần thứ ba đã mang lại tác dụng nào sau đây?",
           "image": null,
           "options": [
-            "Thúc đẩy thương mại điện tử phát triển.\tB. Khởi đầu quá trình công nghiệp hóa.",
-            "Mở ra dây chuyền sản xuất hàng loạt.\tD. Khởi đầu quá trình điện khí hóa."
+            "Thúc đẩy thương mại điện tử phát triển.",
+            "Khởi đầu quá trình công nghiệp hóa.",
+            "Mở ra dây chuyền sản xuất hàng loạt.",
+            "Khởi đầu quá trình điện khí hóa."
           ],
           "correct": 0
         },
@@ -3118,7 +3503,10 @@
           "question": "Thành tựu máy tính điện tử trong cuộc cách mạng công nghiệp lần thứ ba ra đời đầu tiên ở",
           "image": null,
           "options": [
-            "Mỹ.\tB. Đức.\tC. Anh.\tD. Pháp."
+            "Mỹ.",
+            "Đức.",
+            "Anh.",
+            "Pháp."
           ],
           "correct": 0
         },
@@ -3127,7 +3515,10 @@
           "question": "Quốc gia đầu tiên phát minh ra Internet là",
           "image": null,
           "options": [
-            "Mỹ.\tB. Đức.\tC. Anh.\tD. Pháp."
+            "Mỹ.",
+            "Đức.",
+            "Anh.",
+            "Pháp."
           ],
           "correct": 0
         },
@@ -3136,37 +3527,50 @@
           "question": "Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ ba trên lĩnh vực công nghệ sinh học là",
           "image": null,
           "options": [
-            "tàu hỏa siêu tốc.\tB. thiết bị điện tử.",
-            "điện toán đám mây.\tD. sinh sản vô tính."
+            "tàu hỏa siêu tốc.",
+            "thiết bị điện tử.",
+            "điện toán đám mây.",
+            "sinh sản vô tính."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Thành tựu quan trọng nào sau đây của các cuộc cách mạng công nghiệp thời kì hiện đại đã trực tiếp góp phần giải quyết vấn đề lương thực cho con người?",
           "image": null,
           "options": [
-            "Động cơ đốt trong.\tB. Máy hơi nước.\tC. Cách mạng xanh.\tD. Máy tính điện tử. Câu 16: Những quốc gia khởi đầu Cách mạng xanh trong nông nghiệp vào những năm 50 và 60 của thế kỉ XX là",
-            "Mỹ và Nhật.\tB. Anh và Pháp.",
-            "Thái Lan và Trung Quốc.\tD. Ấn Độ và Mê-hi-cô."
+            "Động cơ đốt trong.",
+            "Máy hơi nước.",
+            "Cách mạng xanh.",
+            "Máy tính điện tử. Câu 16: Những quốc gia khởi đầu Cách mạng xanh trong nông nghiệp vào những năm 50 và 60 của thế kỉ XX là",
+            "Mỹ và Nhật.",
+            "Anh và Pháp.",
+            "Thái Lan và Trung Quốc.",
+            "Ấn Độ và Mê-hi-cô."
           ],
-          "correct": 2
+          "correct": 7
         },
         {
           "type": "mcq",
           "question": "Từ những năm 70 của thế kỉ XX, cuộc cách mạng công nghiệp lần thứ ba diễn ra chủ yếu trên lĩnh vực",
           "image": null,
           "options": [
-            "hóa học.\tB. sinh học.\tC. luyện kim.\tD. công nghệ."
+            "hóa học.",
+            "sinh học.",
+            "luyện kim.",
+            "công nghệ."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Cuộc cách mạng công nghiệp lần thứ tư được bắt đầu trong khoảng thời gian nào sau đây?",
           "image": null,
           "options": [
-            "Đầu thế kỉ XXI.\tB. Đầu thế kỉ XX.\tC. Đầu thế kỉ XIX.\tD. Nửa sau thế kỉ XIX ."
+            "Đầu thế kỉ XXI.",
+            "Đầu thế kỉ XX.",
+            "Đầu thế kỉ XIX.",
+            "Nửa sau thế kỉ XIX ."
           ],
           "correct": 0
         },
@@ -3175,29 +3579,40 @@
           "question": "Phát minh nào sau đây không khởi nguồn từ cuộc cách mạng công nghiệp lần thứ tư?",
           "image": null,
           "options": [
-            "Trí tuệ nhân tạo.\tB. Dữ liệu lớn.\tC. Internet.\tD. Điện toán đám mây."
+            "Trí tuệ nhân tạo.",
+            "Dữ liệu lớn.",
+            "Internet.",
+            "Điện toán đám mây."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Thành tựu của cách mạng công nghiệp lần thứ tư không bao gồm",
           "image": null,
           "options": [
-            "internet kết nối vạn vật.\tB. động cơ điện.\tC. dữ liệu lớn.\tD. điện toán đám mây. Câu 21: Đoạn trích sau đây phản ánh thành tựu của cách mạng công nghiệp lần thứ tư trên lĩnh vực nào sau đây: “Trước đây, phải mất hơn 10 năm và 2,7 tỉ USD để hoàn thành Dự án Bản đồ Gen người. Ngày nay, một gen có thể được giải mã trình tự trong vài tiếng với chi phí dưới một nghìn đô la Mỹ” (Cờ-lau Xva-bơ, Cách mạng công nghiệp lần thứ tư, NXB Chính trị quốc gia Sự thật, 2018, tr.44)",
-            "Sinh học\tB. Điện toán đám mây\tC. Công nghệ na-nô\tD. Kĩ thuật số"
+            "internet kết nối vạn vật.",
+            "động cơ điện.",
+            "dữ liệu lớn.",
+            "điện toán đám mây. Câu 21: Đoạn trích sau đây phản ánh thành tựu của cách mạng công nghiệp lần thứ tư trên lĩnh vực nào sau đây: “Trước đây, phải mất hơn 10 năm và 2,7 tỉ USD để hoàn thành Dự án Bản đồ Gen người. Ngày nay, một gen có thể được giải mã trình tự trong vài tiếng với chi phí dưới một nghìn đô la Mỹ” (Cờ-lau Xva-bơ, Cách mạng công nghiệp lần thứ tư, NXB Chính trị quốc gia Sự thật, 2018, tr.44)",
+            "Sinh học",
+            "Điện toán đám mây",
+            "Công nghệ na-nô",
+            "Kĩ thuật số"
           ],
-          "correct": 1
+          "correct": 4
         },
         {
           "type": "mcq",
           "question": "Công nghệ thực tế ảo là một trong những thành tựu tiêu biểu của",
           "image": null,
           "options": [
-            "cách mạng công nghiệp lần thứ hai\tB. cách mạng công nghiệp lần thứ ba",
-            "cách mạng công nghiệp lần thứ nhất\tD. cách mạng công nghiệp lần thứ tư"
+            "cách mạng công nghiệp lần thứ hai",
+            "cách mạng công nghiệp lần thứ ba",
+            "cách mạng công nghiệp lần thứ nhất",
+            "cách mạng công nghiệp lần thứ tư"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -3216,9 +3631,12 @@
           "question": "Cỗ máy IBM Oát – xơn có biệt danh “Bác sĩ biết tuốt” là thành tựu tiêu biểu của cách mạng công nghiệp lần thứ tư trên lĩnh vực nào sau đây?",
           "image": null,
           "options": [
-            "Giáo dục\t B. Y tế\tC. Thông tin liên lạc\tD. Giao thông vận tải"
+            "Giáo dục",
+            "Y tế",
+            "Thông tin liên lạc",
+            "Giao thông vận tải"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -3237,18 +3655,24 @@
           "question": "Một trong những thành tựu tiêu biểu của cuộc cách mạng công nghiệp lần thứ tư trên lĩnh vực vật lý là",
           "image": null,
           "options": [
-            "công nghệ vi sinh\tB. dữ liệu lớn\t C. vật liệu mới\tD. công nghệ tế bào"
+            "công nghệ vi sinh",
+            "dữ liệu lớn",
+            "vật liệu mới",
+            "công nghệ tế bào"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Cuộc cách mạng công nghiệp lần thứ ba và lần thứ tư đã đưa nhân loại bước sang nền văn minh",
           "image": null,
           "options": [
-            "công nghiệp.\tB. nông nghiệp.\t C. thông tin.\tD. toàn cầu."
+            "công nghiệp.",
+            "nông nghiệp.",
+            "thông tin.",
+            "toàn cầu."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3279,10 +3703,12 @@
           "question": "Nguồn gốc chung dẫn đến các cuộc cách mạng công nghiệp thời cận đại và hiện đại là do",
           "image": null,
           "options": [
-            "nhu cầu của chiến tranh thế giới.\tB. nhu cầu xâm chiếm thuộc địa",
-            "sự cạn kiệt tài nguyên thiên nhiên\t D. nhu cầu cuộc sống và sản xuất."
+            "nhu cầu của chiến tranh thế giới.",
+            "nhu cầu xâm chiếm thuộc địa",
+            "sự cạn kiệt tài nguyên thiên nhiên",
+            "nhu cầu cuộc sống và sản xuất."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -3313,10 +3739,12 @@
           "question": "Một trong những tác động tiêu cực của các cuộc cách mạng công nghiệp thời hiện đại về mặt văn hóa đối với các quốc gia, dân tộc hiện nay là",
           "image": null,
           "options": [
-            "thúc đẩy sự phát triển xu thế toàn cầu hoá.\tB. gia tăng số lượng công nhân có trình độ",
-            "gia tăng tình trạng thất nghiệp trên toàn cầu\tD. nguy cơ đánh mất văn hóa truyền thống"
+            "thúc đẩy sự phát triển xu thế toàn cầu hoá.",
+            "gia tăng số lượng công nhân có trình độ",
+            "gia tăng tình trạng thất nghiệp trên toàn cầu",
+            "nguy cơ đánh mất văn hóa truyền thống"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -3335,8 +3763,10 @@
           "question": "Tự động hóa và công nghệ rô – bốt ra đời trong các cuộc cách mạng công nghiệp thời kì hiện đại đã",
           "image": null,
           "options": [
-            "tạo nguy cơ người lao động bị mất việc làm.\tB. gây ra tình trạng ô nhiểm môi trường.",
-            "gây ra sự phân hóa giàu nghèo trong xã hội.\tD. thúc đẩy sự giao lưu văn hóa toàn cầu PHẦN II. CÂU TRẮC NGHIỆM ĐÚNG SAI. TRONG MỖI Ý A), B), C), D) Ở MỖI CÂU, THÍ SINH CHỌN ĐÚNG HOẶC SAI"
+            "tạo nguy cơ người lao động bị mất việc làm.",
+            "gây ra tình trạng ô nhiểm môi trường.",
+            "gây ra sự phân hóa giàu nghèo trong xã hội.",
+            "thúc đẩy sự giao lưu văn hóa toàn cầu PHẦN II. CÂU TRẮC NGHIỆM ĐÚNG SAI. TRONG MỖI Ý A), B), C), D) Ở MỖI CÂU, THÍ SINH CHỌN ĐÚNG HOẶC SAI"
           ],
           "correct": 0
         },
@@ -3345,20 +3775,24 @@
           "question": "Từ thế kỉ VII đến cuối thế kỉ XV là giai đoạn văn minh Đông Nam Á",
           "image": null,
           "options": [
-            "bước đầu hình thành.\tB. bước đầu phát triển.",
-            "phát triển rực rỡ.\tD. tiếp tục phát triển."
+            "bước đầu hình thành.",
+            "bước đầu phát triển.",
+            "phát triển rực rỡ.",
+            "tiếp tục phát triển."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Văn minh phương Tây bắt đầu ảnh hưởng đến Đông Nam Á trong giai đoạn",
           "image": null,
           "options": [
-            "đầu Công nguyên đến thế kỉ VII.\tB. thế kỉ VII đến thế kỉ XV.",
-            "thế kỉ XVI đến thế kỉ XIX.\tD. thế kỉ XIX đến nay."
+            "đầu Công nguyên đến thế kỉ VII.",
+            "thế kỉ VII đến thế kỉ XV.",
+            "thế kỉ XVI đến thế kỉ XIX.",
+            "thế kỉ XIX đến nay."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3377,10 +3811,12 @@
           "question": "Một trong những yếu tố tác động đến sự khủng hoảng và suy vong của nhiều quốc gia phong kiến Đông Nam Á từ thế kỉ XVI đến thế kỉ XIX là",
           "image": null,
           "options": [
-            "sự du nhập của Thiên Chúa giáo.\tB. sự xâm nhập của các nước phương Tây.",
-            "sự xâm nhập và lan tỏa của Hồi giáo.\tD. sự bành trướng và xâm lược của Trung Hoa."
+            "sự du nhập của Thiên Chúa giáo.",
+            "sự xâm nhập của các nước phương Tây.",
+            "sự xâm nhập và lan tỏa của Hồi giáo.",
+            "sự bành trướng và xâm lược của Trung Hoa."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -3432,7 +3868,10 @@
           "question": "Sự ra đời của thánh lễ Thiên chúa giáo đầu tiên ở Phi-lip-pin năm 1521 là biểu hiện của sự du nhập yếu tố văn hóa nào sau đây đến từ phương Tây?",
           "image": null,
           "options": [
-            "Tôn giáo.\tB. Chữ viết.\tC. Văn học.\tD. Nghệ thuật."
+            "Tôn giáo.",
+            "Chữ viết.",
+            "Văn học.",
+            "Nghệ thuật."
           ],
           "correct": 0
         },
@@ -3441,22 +3880,28 @@
           "question": "Nguyên nhân chủ yếu dẫn đến sự phát triển rực rỡ của văn hóa Đông Nam Á từ thế kỉ X đến thế kỉ XV là",
           "image": null,
           "options": [
-            "ảnh hưởng mạnh mẽ của văn minh Ấn Độ.\tB. sự tiếp thu có chọn lọc văn minh Trung Hoa.",
-            "quá trình sáp nhập và hợp nhất các tiểu quốc.\tD. sự phát triển về kinh tế và ổn định chính trị. Câu 11: “Cư dân Đông Nam Á thờ thần Lúa để bảo trợ cho sản xuất nông nghiệp”. Thông tin trên phản ánh tín ngưỡng nào sau đây của cư dân Đông Nam Á?",
-            "Tín ngưỡng thờ cúng tổ tiên.\tB. Tín ngưỡng phồn thực.",
-            "Tín ngưỡng tờ thần tự nhiên.\tD. Tín ngưỡng thờ thần động vật."
+            "ảnh hưởng mạnh mẽ của văn minh Ấn Độ.",
+            "sự tiếp thu có chọn lọc văn minh Trung Hoa.",
+            "quá trình sáp nhập và hợp nhất các tiểu quốc.",
+            "sự phát triển về kinh tế và ổn định chính trị. Câu 11: “Cư dân Đông Nam Á thờ thần Lúa để bảo trợ cho sản xuất nông nghiệp”. Thông tin trên phản ánh tín ngưỡng nào sau đây của cư dân Đông Nam Á?",
+            "Tín ngưỡng thờ cúng tổ tiên.",
+            "Tín ngưỡng phồn thực.",
+            "Tín ngưỡng tờ thần tự nhiên.",
+            "Tín ngưỡng thờ thần động vật."
           ],
-          "correct": 3
+          "correct": 6
         },
         {
           "type": "mcq",
           "question": "Ngày giổ tổ Hùng Vương của Việt Nam hàng năm là một biểu hiện của hình thức tín ngưỡng nào sau đây?",
           "image": null,
           "options": [
-            "Thờ thần động vật.\tB. Thờ thần tự nhiên.",
-            "Thờ cúng tổ tiên.\tD. Tín ngưỡng phồn thực."
+            "Thờ thần động vật.",
+            "Thờ thần tự nhiên.",
+            "Thờ cúng tổ tiên.",
+            "Tín ngưỡng phồn thực."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3475,17 +3920,22 @@
           "question": "“Cư dân Đông Nam Á thờ các con vật gần gũi với cuộc sống của xã hội nông nghiệp như trâu, cóc, chim, rắn…”. Thông tin trên phản ánh tín ngưỡng nào sau đây của cư dân Đông Nam Á?",
           "image": null,
           "options": [
-            "Tín ngưỡng thờ cúng tổ tiên.\tB. Tín ngưỡng phồn thực.",
-            "Tín ngưỡng tờ thần tự nhiên.\tD. Tín ngưỡng thờ thần động vật."
+            "Tín ngưỡng thờ cúng tổ tiên.",
+            "Tín ngưỡng phồn thực.",
+            "Tín ngưỡng tờ thần tự nhiên.",
+            "Tín ngưỡng thờ thần động vật."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Tôn giáo nào sau đây có nguồn gốc từ Ấn Độ và được truyền bá mạnh mẽ vào khu vực Đông Nam Á?",
           "image": null,
           "options": [
-            "Phật giáo.\tB. Đạo giáo.\tC. Hồi giáo.\tD. Thiên chúa giáo."
+            "Phật giáo.",
+            "Đạo giáo.",
+            "Hồi giáo.",
+            "Thiên chúa giáo."
           ],
           "correct": 0
         },
@@ -3494,18 +3944,24 @@
           "question": "Từ thế kỉ XVI, thông qua hoạt động của các gião sĩ phương Tây, tôn giáo nào sau đây đã từng bước được du nhập vào Đông Nam Á ?",
           "image": null,
           "options": [
-            "Phật giáo.\tB. Đạo giáo.\tC. Hồi giáo.\tD. Thiên chúa giáo."
+            "Phật giáo.",
+            "Đạo giáo.",
+            "Hồi giáo.",
+            "Thiên chúa giáo."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Từ khoảng thế kỉ XIII, tôn giáo nào theo chân các thương nhân A-rập và Ấn Độ du nhập vào Đông Nam Á?",
           "image": null,
           "options": [
-            "Ấn Độ giáo.    B. Thiên Chúa giáo.\tC. Phật giáo.\tD. Hồi giáo."
+            "Ấn Độ giáo.",
+            "Thiên Chúa giáo.",
+            "Phật giáo.",
+            "Hồi giáo."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -3524,35 +3980,46 @@
           "question": "Trên cơ sở tiếp thu một phần chữ Hán của Trung Quốc, người Việt đã sáng tạo ra chữ viết riêng của mình, có tên gọi là",
           "image": null,
           "options": [
-            "chữ Chăm cổ.\tB. chữ Nôm.\tC. Chữ Khơ-me cổ.\tD. chữ Mã Lai cổ."
+            "chữ Chăm cổ.",
+            "chữ Nôm.",
+            "Chữ Khơ-me cổ.",
+            "chữ Mã Lai cổ."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Người Chăm, người Khơ-me, người Thái,… ở khu vực Đông Nam Á đã sáng tạo ra chữ viết riêng của mình trên cơ sở tiếp thu chữ viết cổ của quốc gia nào sau đây ?",
           "image": null,
           "options": [
-            "Nhật Bản.\tB. Ai Cập.\tC. Ấn Độ.\tD. Trung Quốc."
+            "Nhật Bản.",
+            "Ai Cập.",
+            "Ấn Độ.",
+            "Trung Quốc."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Người Việt đã sáng tạo ra chữ Nôm trên cơ sở tiếp thu chữ Hán của quốc gia nào sau đây ?",
           "image": null,
           "options": [
-            "Nhật Bản.\tB. Ai Cập.\tC. Ấn Độ.\tD. Trung Quốc."
+            "Nhật Bản.",
+            "Ai Cập.",
+            "Ấn Độ.",
+            "Trung Quốc."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây phản ánh đúng đặc điểm về chữ viết ở khu vực Đông Nam Á thời kì cổ - trung đại?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng của chữ viết từ bên ngoài.\tB. Ra đời sớm, trước khi xuất hiện Nhà nước.",
-            "Có sự đa dạng nhưng thiếu tính thống nhất.\tD. Ra đời cùng quá trình du nhập tôn giáo."
+            "Chịu ảnh hưởng của chữ viết từ bên ngoài.",
+            "Ra đời sớm, trước khi xuất hiện Nhà nước.",
+            "Có sự đa dạng nhưng thiếu tính thống nhất.",
+            "Ra đời cùng quá trình du nhập tôn giáo."
           ],
           "correct": 0
         },
@@ -3573,35 +4040,46 @@
           "question": "Một trong những tác phẩm văn học dân gian nổi tiếng của Việt Nam thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "Truyền thuyết Pơ-rắc Thon.\tB. Truyện sử Me-lay-u.",
-            "Sử thi Đẻ đất đẻ nước.\tD. Thần thoại Pun-nha Nhun-nho."
+            "Truyền thuyết Pơ-rắc Thon.",
+            "Truyện sử Me-lay-u.",
+            "Sử thi Đẻ đất đẻ nước.",
+            "Thần thoại Pun-nha Nhun-nho."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Một trong những thể loại văn học dân gian tiêu biểu ở khu vực Đông Nam Á thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "truyện ngắn.\tB. kí sự.\tC. tản văn.\tD. thần thoại."
+            "truyện ngắn.",
+            "kí sự.",
+            "tản văn.",
+            "thần thoại."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Một trong những tác phẩm văn học viết tiêu biểu của Malayxia thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "Sử thi Đẻ đất đẻ nước.\tB. Truyện sử Me-lay-u.\tC. Truyện Kiều.\tD. Ức trai thi tập"
+            "Sử thi Đẻ đất đẻ nước.",
+            "Truyện sử Me-lay-u.",
+            "Truyện Kiều.",
+            "Ức trai thi tập"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Tác phẩm nào sau đây không phải là thành tựu văn học của Việt Nam thời kì cổ - trung đại?",
           "image": null,
           "options": [
-            "Tây du kí.\tB. Truyện Kiều.\tC. Hịch tướng sĩ.\tD. Bình ngô đại cáo."
+            "Tây du kí.",
+            "Truyện Kiều.",
+            "Hịch tướng sĩ.",
+            "Bình ngô đại cáo."
           ],
           "correct": 0
         },
@@ -3610,18 +4088,22 @@
           "question": "Tác phẩm nào sau đây là thành tựu văn học của Cam-pu-chia thời kì cổ - trung đại?",
           "image": null,
           "options": [
-            "Tam quốc diễn nghĩa.\tB. Hồng lâu mộng.",
-            "Nam quốc sơn hà.\tD. Riêm Kê."
+            "Tam quốc diễn nghĩa.",
+            "Hồng lâu mộng.",
+            "Nam quốc sơn hà.",
+            "Riêm Kê."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Một trong những công trình kiến trúc điển hình ở khu vực Đông Nam Á thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "đền tháp Bô-rô-bu-đua.\tB. Vạn Lý Trường Thành.",
-            "đấu trường Rô-ma.\tD. Kim tự tháp."
+            "đền tháp Bô-rô-bu-đua.",
+            "Vạn Lý Trường Thành.",
+            "đấu trường Rô-ma.",
+            "Kim tự tháp."
           ],
           "correct": 0
         },
@@ -3630,17 +4112,22 @@
           "question": "Điền vào chỗ trống để hoàn thành câu dưới đây: “Khu đền Ăng-co Vát và Ăng-co Thom ở Cam-pu-chia, Thạt Luổng ở Lào, tháp Chàm ở Việt Nam vừa mang dáng dấp kiến trúc của\t, vừa có nét độc đáo riêng của nền văn hoá dân tộc, là những di tích lịch sử - văn hoá nổi tiếng thế giới”.",
           "image": null,
           "options": [
-            "Trung Quốc.\tB. Thái Lan.\tC. Ấn Độ.\tD. In-đô-nê-xi-a."
+            "Trung Quốc.",
+            "Thái Lan.",
+            "Ấn Độ.",
+            "In-đô-nê-xi-a."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Công trình kiến trúc nào ở khu vực Đông Nam Á là di sản văn hóa thế giới?",
           "image": null,
           "options": [
-            "tháp Thạt Luổng.\tB. Đền Pác-tê-nông.",
-            "Vạn lý trường thành.\tD. Kim tự tháp."
+            "tháp Thạt Luổng.",
+            "Đền Pác-tê-nông.",
+            "Vạn lý trường thành.",
+            "Kim tự tháp."
           ],
           "correct": 0
         },
@@ -3649,7 +4136,10 @@
           "question": "Nghệ thuật kiến trúc Đông Nam Á thời kì cổ - trung đại chịu ảnh hưởng mạnh mẽ của kiến trúc",
           "image": null,
           "options": [
-            "Ấn Độ.\tB. Ai Cập.\tC. Hy Lạp.\tD. La Mã."
+            "Ấn Độ.",
+            "Ai Cập.",
+            "Hy Lạp.",
+            "La Mã."
           ],
           "correct": 0
         },
@@ -3658,8 +4148,10 @@
           "question": "Một trong những công trình kiến trúc Phật giáo điển hình ở khu vực Đông Nam Á là",
           "image": null,
           "options": [
-            "chùa Vàng.\tB. cố cung Bắc Kinh.",
-            "Đền Ăng-co-vát.\tD. lăng mộ Ta-giơ Ma-han."
+            "chùa Vàng.",
+            "cố cung Bắc Kinh.",
+            "Đền Ăng-co-vát.",
+            "lăng mộ Ta-giơ Ma-han."
           ],
           "correct": 0
         },
@@ -3668,8 +4160,10 @@
           "question": "Một trong những công trình điêu khắc tiêu biểu ở khu vực Đông Nam Á thời kì cổ - trung đại là",
           "image": null,
           "options": [
-            "trống đồng Đông Sơn.\tB. tượng Lực sĩ ném đĩa.",
-            "tượng thần Vệ nữ thành Mi – lô.\tD. đấu trường La Mã."
+            "trống đồng Đông Sơn.",
+            "tượng Lực sĩ ném đĩa.",
+            "tượng thần Vệ nữ thành Mi – lô.",
+            "đấu trường La Mã."
           ],
           "correct": 0
         },
@@ -3678,10 +4172,12 @@
           "question": "Nội dung nào sau đây là điểm tương đồng giữa văn minh Đông Nam Á thời kì cổ - trung đại với văn minh phương Tây thời kì cổ đại?",
           "image": null,
           "options": [
-            "Cùng theo một tôn giáo, tín ngưỡng.\tB. Có thành tựu phong phú, đa dạng.",
-            "Có kinh tế nông nghiệp là chủ đạo.\tD. Cùng sử dụng chung một ngôn ngữ."
+            "Cùng theo một tôn giáo, tín ngưỡng.",
+            "Có thành tựu phong phú, đa dạng.",
+            "Có kinh tế nông nghiệp là chủ đạo.",
+            "Cùng sử dụng chung một ngôn ngữ."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -3700,21 +4196,28 @@
           "question": "Nội dung nào sau đây không phản ánh đúng đặc điểm của nghệ thuật kiến trúc, điêu khắc ở khu vực Đông Nam Á thời kì cổ - trung đại?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng sâu sắc của tôn giáo.\tB. kiến trúc và điêu khắc độc lập với nhau.",
-            "Có tính thống nhất trong đa dạng.\tD. Đạt trình độ cao và mang tính độc đáo."
+            "Chịu ảnh hưởng sâu sắc của tôn giáo.",
+            "kiến trúc và điêu khắc độc lập với nhau.",
+            "Có tính thống nhất trong đa dạng.",
+            "Đạt trình độ cao và mang tính độc đáo."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nhà nước đầu tiên được hình thành trên lãnh thổ Việt Nam có tên gọi là",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Lâm Ấp.\tC. Chăm-pa.\tD. Phù Nam. Câu 2: Nền văn minh Văn Lang - Âu Lạc chủ yếu được hình thành trên lưu vực các con sông nào sau đây?",
-            "Sông Hằng, sông Ấn.\tB. Sông Hoàng Hà, sông Trường Giang.",
-            "Sông Hồng, sông Mã, sông Cả.\tD. Sông Bạch Đằng, sông Hương."
+            "Văn Lang.",
+            "Lâm Ấp.",
+            "Chăm-pa.",
+            "Phù Nam. Câu 2: Nền văn minh Văn Lang - Âu Lạc chủ yếu được hình thành trên lưu vực các con sông nào sau đây?",
+            "Sông Hằng, sông Ấn.",
+            "Sông Hoàng Hà, sông Trường Giang.",
+            "Sông Hồng, sông Mã, sông Cả.",
+            "Sông Bạch Đằng, sông Hương."
           ],
-          "correct": 2
+          "correct": 6
         },
         {
           "type": "mcq",
@@ -3733,10 +4236,12 @@
           "question": "Điều kiện tự nhiên nào sau đây tạo thuận lợi cho cư dân Văn Lang - Âu Lạc phát triển ngành nông nghiệp lúa nước?",
           "image": null,
           "options": [
-            "Tài nguyên khoáng sản phong phú.\tB. Khí hậu khô hạn, lượng nhiệt lớn.",
-            "Hệ thống đất phù sa màu mỡ.\tD. Tiếp giáp với các nền văn minh lớn."
+            "Tài nguyên khoáng sản phong phú.",
+            "Khí hậu khô hạn, lượng nhiệt lớn.",
+            "Hệ thống đất phù sa màu mỡ.",
+            "Tiếp giáp với các nền văn minh lớn."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3755,8 +4260,10 @@
           "question": "Cư dân Văn Lang - Âu Lạc sớm phát triển nghề luyện kim nhờ điều kiện tự nhiên thuận lợi nào sau đây?",
           "image": null,
           "options": [
-            "Tài nguyên khoáng sản phong phú.\tB. Khí hậu nhiệt đới ẩm gió mùa.",
-            "Các vùng đồng bằng phù sa màu mỡ.\tD. Hệ thống sông ngòi chằng chịt."
+            "Tài nguyên khoáng sản phong phú.",
+            "Khí hậu nhiệt đới ẩm gió mùa.",
+            "Các vùng đồng bằng phù sa màu mỡ.",
+            "Hệ thống sông ngòi chằng chịt."
           ],
           "correct": 0
         },
@@ -3765,26 +4272,34 @@
           "question": "Văn minh Văn Lang - Âu Lạc được hình thành trên cơ sở của nền văn hóa nào sau đây?",
           "image": null,
           "options": [
-            "Sa Huỳnh.\tB. Óc Eo.\tC. Đông Sơn.\tD. Sơn Vi."
+            "Sa Huỳnh.",
+            "Óc Eo.",
+            "Đông Sơn.",
+            "Sơn Vi."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Khí hậu nhiệt đới ẩm gió mùa, lượng mưa nhiều là điều kiện thuận lợi để cư dân Văn Lang Âu Lạc phát triển ngành kinh tế nào sau đây?",
           "image": null,
           "options": [
-            "Luyện kim, đúc đồng.\tB. Trồng trọt, chăn nuôi.",
-            "Thương nghiệp biển.\tD. Chế tạo vũ khí."
+            "Luyện kim, đúc đồng.",
+            "Trồng trọt, chăn nuôi.",
+            "Thương nghiệp biển.",
+            "Chế tạo vũ khí."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nhà nước nào sau đây ở Việt Nam ra đời vào khoảng thế kỉ VII TCN?",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Âu Lạc.\tC. Phù Nam.\tD. Đại Việt."
+            "Văn Lang.",
+            "Âu Lạc.",
+            "Phù Nam.",
+            "Đại Việt."
           ],
           "correct": 0
         },
@@ -3793,18 +4308,22 @@
           "question": "Kinh đô của nhà nước Văn Lang đặt tại",
           "image": null,
           "options": [
-            "Cổ Loa (Hà Nội).\tB. Phong Châu (Phú Thọ).",
-            "Phú Xuân (Huế).\tD. Quy Nhơn (Bình Định)."
+            "Cổ Loa (Hà Nội).",
+            "Phong Châu (Phú Thọ).",
+            "Phú Xuân (Huế).",
+            "Quy Nhơn (Bình Định)."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Năm 208 TCN, nước Âu Lạc ra đời, đặt kinh đô tại",
           "image": null,
           "options": [
-            "Đông Anh (Hà Nội).\tB. Phong Châu (Phú Thọ).",
-            "Trà Kiệu (Quảng Nam).\tD. Thoại Sơn (An Giang)."
+            "Đông Anh (Hà Nội).",
+            "Phong Châu (Phú Thọ).",
+            "Trà Kiệu (Quảng Nam).",
+            "Thoại Sơn (An Giang)."
           ],
           "correct": 0
         },
@@ -3813,25 +4332,34 @@
           "question": "Đứng đầu nhà nước Văn Lang là Vua Hùng, giúp việc cho vua là",
           "image": null,
           "options": [
-            "Tể tướng.\tB. Lục bộ.\tC. Lạc hầu.\tD. đại hành khiển"
+            "Tể tướng.",
+            "Lục bộ.",
+            "Lạc hầu.",
+            "đại hành khiển"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Bộ máy hành chính nhà nước dưới thời kì Văn Lang không tồn tại chức vụ nào sau đây?",
           "image": null,
           "options": [
-            "Lạc hầu.\tB. Lạc tướng.\tC. Bồ chính.\tD. Thượng thư."
+            "Lạc hầu.",
+            "Lạc tướng.",
+            "Bồ chính.",
+            "Thượng thư."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nhà nước nào sau đây là sự kế thừa và phát triển của nhà nước Văn Lang?",
           "image": null,
           "options": [
-            "Âu Lạc.\tB. Lâm Ấp.\tC. Chămpa.\tD. Phù Nam."
+            "Âu Lạc.",
+            "Lâm Ấp.",
+            "Chămpa.",
+            "Phù Nam."
           ],
           "correct": 0
         },
@@ -3852,19 +4380,24 @@
           "question": "Nội dung nào sau đây phản ánh đúng đặc điểm của bộ máy nhà nước Văn Lang - Âu Lạc?",
           "image": null,
           "options": [
-            "Hoàn chỉnh, chặt chẽ.\tB. Đơn giản, sơ khai.",
-            "Quan liêu, tập quyền.\tD. Phân quyền, pháp trị."
+            "Hoàn chỉnh, chặt chẽ.",
+            "Đơn giản, sơ khai.",
+            "Quan liêu, tập quyền.",
+            "Phân quyền, pháp trị."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Một trong những công trình kiến trúc tiêu biểu được xây dựng dưới thời kì nhà nước Âu Lạc là",
           "image": null,
           "options": [
-            "chùa Một Cột.\tB. tháp Phổ Minh.\tC. thành Cổ Loa.\tD. chùa Dâu."
+            "chùa Một Cột.",
+            "tháp Phổ Minh.",
+            "thành Cổ Loa.",
+            "chùa Dâu."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3883,9 +4416,12 @@
           "question": "Ngành kinh tế nào sau đây phát triển mạnh dưới thời kì Văn Lang - Âu Lạc?",
           "image": null,
           "options": [
-            "Chế tạo máy.\tB. Đóng tàu biển.\tC. Trồng lúa nước.\tD. Làm giấy."
+            "Chế tạo máy.",
+            "Đóng tàu biển.",
+            "Trồng lúa nước.",
+            "Làm giấy."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -3904,18 +4440,22 @@
           "question": "Ngành kinh tế chủ đạo của cư dân Văn Lang - Âu Lạc là",
           "image": null,
           "options": [
-            "Công nghiệp khai khoáng.\tB. Buôn bán đường biển.",
-            "Dịch vụ du lịch.\tD. Nông nghiệp lúa nước."
+            "Công nghiệp khai khoáng.",
+            "Buôn bán đường biển.",
+            "Dịch vụ du lịch.",
+            "Nông nghiệp lúa nước."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Hiện vật nào sau đây trở thành biểu tượng của nền văn minh Văn Lang - Âu Lạc?",
           "image": null,
           "options": [
-            "Trống đồng Đông Sơn.\tB. Tượng Phật Đồng Dương.",
-            "Phù điêu Khương Mỹ.\tD. Tiền đồng Óc Eo."
+            "Trống đồng Đông Sơn.",
+            "Tượng Phật Đồng Dương.",
+            "Phù điêu Khương Mỹ.",
+            "Tiền đồng Óc Eo."
           ],
           "correct": 0
         },
@@ -3924,9 +4464,12 @@
           "question": "Cho đến nay, các nhà khảo cổ học đã phát hiện được gần 300 trống đồng Đông Sơn trên lãnh thổ Việt Nam. Đó là minh chứng cho sự phát triển rực rỡ của ngành kinh tế nào sau đây dưới thời kì Văn Lang - Âu Lạc?",
           "image": null,
           "options": [
-            "Đóng tàu.\tB. Luyện kim.\tC. Chế tạo máy.\tD. Cơ khí."
+            "Đóng tàu.",
+            "Luyện kim.",
+            "Chế tạo máy.",
+            "Cơ khí."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -3957,33 +4500,40 @@
           "question": "Tục thờ thần Mặt Trời là biểu hiện của tín ngưỡng nào sau đây của cư dân Văn Lang - Âu Lạc?",
           "image": null,
           "options": [
-            "Thờ cúng tổ tiên.\tB. Tín ngưỡng phồn thực.",
-            "Sùng bái tự nhiên.\tD. Thờ thần động vật."
+            "Thờ cúng tổ tiên.",
+            "Tín ngưỡng phồn thực.",
+            "Sùng bái tự nhiên.",
+            "Thờ thần động vật."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Một trong những nét độc đáo trong đời sống tinh thần của cư dân Văn Lang - Âu Lạc là",
           "image": null,
           "options": [
-            "chữ viết thể hiện tính bác học, uyên thâm.\tB. sùng bái núi thiêng và nàng công chúa rắn.",
-            "thịnh hành tục thờ Mẫu và thờ cúng tổ tiên.\tD. tục lệ chôn người chết trong các mộ chum."
+            "chữ viết thể hiện tính bác học, uyên thâm.",
+            "sùng bái núi thiêng và nàng công chúa rắn.",
+            "thịnh hành tục thờ Mẫu và thờ cúng tổ tiên.",
+            "tục lệ chôn người chết trong các mộ chum."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Cư dân Văn Lang - Âu Lạc không có phong tục, tập quán nào sau đây?",
           "image": null,
           "options": [
-            "ở nhà sàn.\tB. nhuộm răng đen.\tC. Xăm mình.\tD. thờ thần Dớt. Câu 31: Nhận xét nào dưới đây là không đúng về vai trò của nền văn minh Văn Lang - Âu Lạc đối với tiến trình phát triển của lịch sử Việt Nam?",
+            "ở nhà sàn.",
+            "nhuộm răng đen.",
+            "Xăm mình.",
+            "thờ thần Dớt. Câu 31: Nhận xét nào dưới đây là không đúng về vai trò của nền văn minh Văn Lang - Âu Lạc đối với tiến trình phát triển của lịch sử Việt Nam?",
             "Là nền văn minh đầu tiên của lịch sử dân tộc Việt Nam.",
             "Góp phần định hình bản sắc văn hóa dân tộc Việt Nam.",
             "Đưa Việt Nam trở thành quốc gia giàu mạnh nhất khu vực.",
             "Đặt nền tảng cho sự phát triển của các nền văn minh sau này."
           ],
-          "correct": 3
+          "correct": 6
         },
         {
           "type": "mcq",
@@ -4002,26 +4552,34 @@
           "question": "Nền văn minh cổ đại nào sau đây được hình thành trên vùng duyên hải và một phần cao nguyên miền Trung Việt Nam ngày nay?",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Âu Lạc.\tC. Chăm-pa.\tD. Phù Nam."
+            "Văn Lang.",
+            "Âu Lạc.",
+            "Chăm-pa.",
+            "Phù Nam."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Nền văn minh Chăm-pa chủ yếu được hình thành trên lưu vực con sông nào sau đây?",
           "image": null,
           "options": [
-            "Sông Mã.\tB. Sông Thu Bồn.\tC. Sông Hồng.\tD. Sông Mê Công. và Tây Nguyên."
+            "Sông Mã.",
+            "Sông Thu Bồn.",
+            "Sông Hồng.",
+            "Sông Mê Công. và Tây Nguyên."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Những cánh đồng màu mỡ ven sông Thu Bồn đã tạo điều kiện thuận lợi để cư dân cổ Chăm- pa phát triển ngành kinh tế nào sau đây?",
           "image": null,
           "options": [
-            "Nông nghiệp lúa nước.\tB. Khai thác lâm thổ sản.",
-            "Luyện kim, đúc đồng.\tD. Thương mại đường biển."
+            "Nông nghiệp lúa nước.",
+            "Khai thác lâm thổ sản.",
+            "Luyện kim, đúc đồng.",
+            "Thương mại đường biển."
           ],
           "correct": 0
         },
@@ -4054,7 +4612,10 @@
           "question": "Văn minh Chăm-pa được hình thành trên cơ sở của nền văn hóa nào sau đây?",
           "image": null,
           "options": [
-            "Sa Huỳnh.\tB. Óc Eo.\tC. Đông Sơn.\tD. Phùng Nguyên."
+            "Sa Huỳnh.",
+            "Óc Eo.",
+            "Đông Sơn.",
+            "Phùng Nguyên."
           ],
           "correct": 0
         },
@@ -4087,32 +4648,40 @@
           "question": "Văn hóa Ấn Độ ảnh hưởng sâu sắc đến văn minh Chăm-pa thông qua vai trò to lớn của tầng lớp",
           "image": null,
           "options": [
-            "thợ thủ công.\tB. nông dân công xã.\tC. nô lệ.\tD. các nhà truyền giáo."
+            "thợ thủ công.",
+            "nông dân công xã.",
+            "nô lệ.",
+            "các nhà truyền giáo."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nhà nước cổ đại nào sau đây ở Việt Nam ra đời vào khoảng thế kỉ II?",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Âu Lạc.\tC. Phù Nam.\tD. Chăm-pa."
+            "Văn Lang.",
+            "Âu Lạc.",
+            "Phù Nam.",
+            "Chăm-pa."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây không phải là cơ sở hình thành của văn minh Chăm-pa?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng từ nền văn minh Ấn Độ.\tB. Hình thành trên cơ sở của văn hóa Sa Huỳnh.",
-            "Lưu giữ và phát huy nền văn hóa bản địa.\tD. Chịu ảnh hưởng của nền văn hóa Trung Hoa. Câu 13: Nội dung nào sau đây là điểm khác biệt về cơ sở hình thành của nền văn minh Chăm-pa so với nền văn minh Văn Lang - Âu Lạc?",
+            "Chịu ảnh hưởng từ nền văn minh Ấn Độ.",
+            "Hình thành trên cơ sở của văn hóa Sa Huỳnh.",
+            "Lưu giữ và phát huy nền văn hóa bản địa.",
+            "Chịu ảnh hưởng của nền văn hóa Trung Hoa. Câu 13: Nội dung nào sau đây là điểm khác biệt về cơ sở hình thành của nền văn minh Chăm-pa so với nền văn minh Văn Lang - Âu Lạc?",
             "Kinh tế nông nghiệp, thủ công nghiệp phát triển.",
             "Xã hội có sự phân hóa thành các giai cấp, tầng lớp.",
             "Chịu ảnh hưởng sâu sắc của văn minh Trung Hoa.",
             "Chịu ảnh hưởng sâu sắc của nền văn minh Ấn Độ."
           ],
-          "correct": 5
+          "correct": 7
         },
         {
           "type": "mcq",
@@ -4131,27 +4700,34 @@
           "question": "Trên cơ sở của văn hoá Sa Huỳnh, quốc gia cổ đại nào sau đây đã được hình thành trên lãnh thổ Việt Nam?",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Âu Lạc.\tC. Chăm-pa.\tD. Phù Nam."
+            "Văn Lang.",
+            "Âu Lạc.",
+            "Chăm-pa.",
+            "Phù Nam."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Nhà nước Chăm-pa được tổ chức theo mô hình của thể chế",
           "image": null,
           "options": [
-            "dân chủ cộng hòa.\tB. dân chủ chủ nô.",
-            "quân chủ chuyên chế.\tD. quân chủ lập hiến"
+            "dân chủ cộng hòa.",
+            "dân chủ chủ nô.",
+            "quân chủ chuyên chế.",
+            "quân chủ lập hiến"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Dưới thời kì nhà nước Chăm-pa, ở cấp địa phương, cả nước được chia thành các",
           "image": null,
           "options": [
-            "châu, huyện, làng.\tB. tỉnh, huyện, xã.",
-            "tỉnh, huyện, làng.\tD. phủ, huyện, tổng."
+            "châu, huyện, làng.",
+            "tỉnh, huyện, xã.",
+            "tỉnh, huyện, làng.",
+            "phủ, huyện, tổng."
           ],
           "correct": 0
         },
@@ -4160,8 +4736,10 @@
           "question": "Hoạt động kinh tế chủ yếu của cư dân Chăm-pa là",
           "image": null,
           "options": [
-            "nông nghiệp, thủ công nghiệp.\tB. công nghiệp chế tạo, đóng tàu.",
-            "chế biến rượu nho và dầu ô liu.\tD. buôn bán bằng đường biển."
+            "nông nghiệp, thủ công nghiệp.",
+            "công nghiệp chế tạo, đóng tàu.",
+            "chế biến rượu nho và dầu ô liu.",
+            "buôn bán bằng đường biển."
           ],
           "correct": 0
         },
@@ -4182,10 +4760,12 @@
           "question": "Ngành kinh tế nào sau đây phát triển mạnh dưới thời kì nhà nước Chăm-pa?",
           "image": null,
           "options": [
-            "Chế tạo máy.\tB. Đóng tàu biển.",
-            "Nông nghiệp lúa nước.\tD. Chế tạo vũ khí."
+            "Chế tạo máy.",
+            "Đóng tàu biển.",
+            "Nông nghiệp lúa nước.",
+            "Chế tạo vũ khí."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -4204,7 +4784,10 @@
           "question": "Cư dân Chăm-pa đã tiếp thu tôn giáo nào sau đây từ đất nước Ấn Độ?",
           "image": null,
           "options": [
-            "Hin-đu giáo.\tB. Đạo giáo.\tC. Nho giáo.\tD. Thiên chúa giáo."
+            "Hin-đu giáo.",
+            "Đạo giáo.",
+            "Nho giáo.",
+            "Thiên chúa giáo."
           ],
           "correct": 0
         },
@@ -4213,16 +4796,22 @@
           "question": "Cư dân Chăm-pa đã tiếp thu Phật giáo từ quốc gia nào sau đây?",
           "image": null,
           "options": [
-            "Ai Cập.\tB. Hà Lan.\tC. Tây Ban Nha.\tD. Ấn Độ."
+            "Ai Cập.",
+            "Hà Lan.",
+            "Tây Ban Nha.",
+            "Ấn Độ."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Cư dân Chăm-pa đã sáng tạo ra chữ Chăm cổ trên cơ sở tiếp thu chữ viết nào sau đây?",
           "image": null,
           "options": [
-            "Chữ Phạn.\tB. Chữ Hán.\tC. Chữ La-tinh.\tD. Chữ Nôm."
+            "Chữ Phạn.",
+            "Chữ Hán.",
+            "Chữ La-tinh.",
+            "Chữ Nôm."
           ],
           "correct": 0
         },
@@ -4231,20 +4820,28 @@
           "question": "Công trình kiến trúc nào sau đây của văn minh Chăm-pa được công nhận là di sản văn hóa thế giới?",
           "image": null,
           "options": [
-            "Thành Cổ Loa.\tB. Thánh địa Mĩ Sơn.\tC. Chùa Một Cột.\tD. Tháp Phổ Minh."
+            "Thành Cổ Loa.",
+            "Thánh địa Mĩ Sơn.",
+            "Chùa Một Cột.",
+            "Tháp Phổ Minh."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Lễ hội truyền thống nào sau đây thuộc văn minh Chăm-pa?",
           "image": null,
           "options": [
-            "Lễ hội Ka-tê.\tB. Lễ hội Oóc Om Bóc.\tC. Lễ hội Cơm mới.\tD. Lễ hội Lồng tồng. Câu 27: Nội dung nào sau đây là điểm tương đồng giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
-            "Cùng theo một tôn giáo, tín ngưỡng.\tB. Có nhiều thành tựu phong phú, đa dạng.",
-            "Có kinh tế thương nghiệp là chủ đạo.\tD. Chịu ảnh hưởng văn minh Ấn Độ."
+            "Lễ hội Ka-tê.",
+            "Lễ hội Oóc Om Bóc.",
+            "Lễ hội Cơm mới.",
+            "Lễ hội Lồng tồng. Câu 27: Nội dung nào sau đây là điểm tương đồng giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
+            "Cùng theo một tôn giáo, tín ngưỡng.",
+            "Có nhiều thành tựu phong phú, đa dạng.",
+            "Có kinh tế thương nghiệp là chủ đạo.",
+            "Chịu ảnh hưởng văn minh Ấn Độ."
           ],
-          "correct": 1
+          "correct": 5
         },
         {
           "type": "mcq",
@@ -4263,85 +4860,106 @@
           "question": "Nội dung nào sau đây là điểm tương đồng về kinh tế giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng của văn minh Trung Hoa.\tB. Kinh tế nông nghiệp đóng vai trò chủ đạo.",
-            "Kĩ thuật đóng gạch xây tháp đạt trình độ cao.\tD. Giao lưu buôn bán với phương Tây phát triển."
+            "Chịu ảnh hưởng của văn minh Trung Hoa.",
+            "Kinh tế nông nghiệp đóng vai trò chủ đạo.",
+            "Kĩ thuật đóng gạch xây tháp đạt trình độ cao.",
+            "Giao lưu buôn bán với phương Tây phát triển."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây không phản ánh đúng đời sống tinh thần của cư dân Chăm-pa?",
           "image": null,
           "options": [
-            "Tiếp thu đạo Phật và đạo Hin-đu từ Ấn Độ.\tB. Âm nhạc, ca múa đóng vai trò quan trọng.",
-            "Văn học viết và văn học dân gian phát triển.\tD. Sử dụng trống đồng Đông Sơn trong lễ hội."
+            "Tiếp thu đạo Phật và đạo Hin-đu từ Ấn Độ.",
+            "Âm nhạc, ca múa đóng vai trò quan trọng.",
+            "Văn học viết và văn học dân gian phát triển.",
+            "Sử dụng trống đồng Đông Sơn trong lễ hội."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Văn minh Chăm-pa và văn minh Văn Lang - Âu Lạc có sự khác biệt về",
           "image": null,
           "options": [
-            "ngành kinh tế chủ đạo.\tB. thiết chế chính trị.",
-            "nguồn lương thực chính.\tD. tiếp thu tôn giáo."
+            "ngành kinh tế chủ đạo.",
+            "thiết chế chính trị.",
+            "nguồn lương thực chính.",
+            "tiếp thu tôn giáo."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây là điểm tương đồng về đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Chăm-pa?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng mạnh mẽ của Phật giáo.\tB. Chịu ảnh hưởng mạnh mẽ của Nho giáo.",
-            "Phổ biến tín ngưỡng thờ cúng tổ tiên.\tD. Sớm sáng tạo ra chữ viết riêng."
+            "Chịu ảnh hưởng mạnh mẽ của Phật giáo.",
+            "Chịu ảnh hưởng mạnh mẽ của Nho giáo.",
+            "Phổ biến tín ngưỡng thờ cúng tổ tiên.",
+            "Sớm sáng tạo ra chữ viết riêng."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Văn minh Phù Nam được hình thành và phát triển chủ yếu ở khu vực nào ở Việt Nam hiện nay?",
           "image": null,
           "options": [
-            "Đồng bằng sông Hồng.\tB. Trung du Bắc Bộ.",
-            "Nam Bộ.\tD. Duyên hải Trung Bộ"
+            "Đồng bằng sông Hồng.",
+            "Trung du Bắc Bộ.",
+            "Nam Bộ.",
+            "Duyên hải Trung Bộ"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Văn minh Chăm-pa và văn minh Phù Nam đều chịu ảnh hưởng mạnh mẽ của văn minh",
           "image": null,
           "options": [
-            "Trung Hoa.\tB. Ấn Độ.\tC. Ai Cập.\tD. Hy Lạp."
+            "Trung Hoa.",
+            "Ấn Độ.",
+            "Ai Cập.",
+            "Hy Lạp."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nền văn minh cổ đại nào sau đây được hình thành trên khu vực Nam Bộ Việt Nam ngày nay?",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Âu Lạc.\tC. Chăm-pa.\tD. Phù Nam."
+            "Văn Lang.",
+            "Âu Lạc.",
+            "Chăm-pa.",
+            "Phù Nam."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Văn minh Phù Nam được hình thành trên cơ sở của nền văn hóa nào sau đây?",
           "image": null,
           "options": [
-            "Sa Huỳnh.\tB. Óc Eo.\tC. Đông Sơn.\tD. Đồng Đậu."
+            "Sa Huỳnh.",
+            "Óc Eo.",
+            "Đông Sơn.",
+            "Đồng Đậu."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Đồng bằng màu mỡ, nguồn nước dồi dào đã tạo điều kiện thuận lợi để cư dân Phù Nam phát triển ngành kinh tế nào sau đây?",
           "image": null,
           "options": [
-            "Nông nghiệp lúa nước.\tB. Khai thác lâm thổ sản.",
-            "Luyện kim, đúc đồng.\tD. Thương mại đường biển."
+            "Nông nghiệp lúa nước.",
+            "Khai thác lâm thổ sản.",
+            "Luyện kim, đúc đồng.",
+            "Thương mại đường biển."
           ],
           "correct": 0
         },
@@ -4398,19 +5016,24 @@
           "question": "Nhà nước cổ đại nào sau đây ở Việt Nam ra đời vào khoảng thế kỉ I?",
           "image": null,
           "options": [
-            "Văn Lang.\tB. Âu Lạc.\tC. Phù Nam.\tD. Chăm-pa."
+            "Văn Lang.",
+            "Âu Lạc.",
+            "Phù Nam.",
+            "Chăm-pa."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây không phải là cơ sở hình thành của văn minh Phù Nam?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng từ nền văn minh Ấn Độ.\tB. Hình thành trên cơ sở của văn hóa Óc Eo.",
-            "Lưu giữ và phát huy nền văn hóa bản địa.\tD. Chịu ảnh hưởng của nền văn hóa Ai Cập."
+            "Chịu ảnh hưởng từ nền văn minh Ấn Độ.",
+            "Hình thành trên cơ sở của văn hóa Óc Eo.",
+            "Lưu giữ và phát huy nền văn hóa bản địa.",
+            "Chịu ảnh hưởng của nền văn hóa Ai Cập."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -4441,48 +5064,62 @@
           "question": "Văn hóa Ấn Độ ảnh hưởng sâu sắc đến văn minh Chăm-pa thông qua vai trò to lớn của",
           "image": null,
           "options": [
-            "thợ thủ công.\tB. nông dân công xã.\tC. nô lệ.\tD. các nhà truyền giáo. Câu 15: Nội dung nào sau đây là điểm tương đồng về cơ sở xã hội dẫn đến sự hình thành của nền văn minh Chăm-pa và Phù Nam?",
+            "thợ thủ công.",
+            "nông dân công xã.",
+            "nô lệ.",
+            "các nhà truyền giáo. Câu 15: Nội dung nào sau đây là điểm tương đồng về cơ sở xã hội dẫn đến sự hình thành của nền văn minh Chăm-pa và Phù Nam?",
             "Ngành nông nghiệp lúa nước đóng vai trò chủ đạo.",
             "Sự kết hợp giữa người bản địa với bộ phận di cư.",
             "Chịu ảnh hưởng sâu sắc của văn minh Trung Hoa.",
             "Tiếp thu có chọn lọc ảnh hưởng văn hóa Ai Cập."
           ],
-          "correct": 2
+          "correct": 5
         },
         {
           "type": "mcq",
           "question": "Trong xã hội Phù Nam, lực lượng nào sau đây là tầng lớp bị trị trong xã hội?",
           "image": null,
           "options": [
-            "Quý tộc.\tB. Tăng lữ.\tC. Quan lại.\tD. Nông dân."
+            "Quý tộc.",
+            "Tăng lữ.",
+            "Quan lại.",
+            "Nông dân."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Trong xã hội Phù Nam, lực lượng nào sau đây là tầng lớp thống trị trong xã hội?",
           "image": null,
           "options": [
-            "Thợ thủ công.\tB. Tăng lữ.\tC. Nô lệ.\tD. Nông dân."
+            "Thợ thủ công.",
+            "Tăng lữ.",
+            "Nô lệ.",
+            "Nông dân."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nhà nước Chăm-pa và nhà nước Phù Nam đều được tổ chức theo mô hình của thể chế",
           "image": null,
           "options": [
-            "dân chủ cộng hòa.\tB. dân chủ chủ nô.",
-            "quân chủ chuyên chế.\tD. quân chủ lập hiến"
+            "dân chủ cộng hòa.",
+            "dân chủ chủ nô.",
+            "quân chủ chuyên chế.",
+            "quân chủ lập hiến"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Thiết chế chính trị và xã hội của văn minh Phù Nam chịu ảnh hưởng sâu sắc của văn minh",
           "image": null,
           "options": [
-            "Ấn Độ.\tB. Trung Hoa.\tC. La Mã.\tD. Hi Lạp."
+            "Ấn Độ.",
+            "Trung Hoa.",
+            "La Mã.",
+            "Hi Lạp."
           ],
           "correct": 0
         },
@@ -4503,16 +5140,22 @@
           "question": "Ngành kinh tế nào sau đây phát triển mạnh dưới thời kì nhà nước Phù Nam?",
           "image": null,
           "options": [
-            "Chế tạo máy.\tB. Làm đồng hồ.\tC. Thương nghiệp biển.\tD. Chế tạo vũ khí."
+            "Chế tạo máy.",
+            "Làm đồng hồ.",
+            "Thương nghiệp biển.",
+            "Chế tạo vũ khí."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Thương cảng nào sau đây đã trở thành trung tâm buôn bán sầm uất của vương quốc Phù Nam?",
           "image": null,
           "options": [
-            "Óc Eo.\tB. Vân Đồn.\tC. Hải Phòng.\tD. Đà Nẵng."
+            "Óc Eo.",
+            "Vân Đồn.",
+            "Hải Phòng.",
+            "Đà Nẵng."
           ],
           "correct": 0
         },
@@ -4521,27 +5164,34 @@
           "question": "Một trong những điểm khác biệt về kinh tế của văn minh Phù Nam so với văn minh Văn Lang - Âu Lạc là",
           "image": null,
           "options": [
-            "kĩ thuật đóng gạch đạt đến trình độ cao.\tB. Thương nghiệp đường biển phát triển.",
-            "Nông nghiệp lúa nước có vai trò chủ đạo.\tD. Sản xuất nông nghiệp quy mô đồn điền."
+            "kĩ thuật đóng gạch đạt đến trình độ cao.",
+            "Thương nghiệp đường biển phát triển.",
+            "Nông nghiệp lúa nước có vai trò chủ đạo.",
+            "Sản xuất nông nghiệp quy mô đồn điền."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nội dung nào sau đây không phản ánh đúng điểm giống nhau về đời sống vật chất của cư dân Văn Lang - Âu Lạc, Chăm-pa và Phù Nam?",
           "image": null,
           "options": [
-            "Nguồn lương thực chính.\tB. Nhà ở.",
-            "Phương tiện đi lại chủ yếu.\tD. Trang phục"
+            "Nguồn lương thực chính.",
+            "Nhà ở.",
+            "Phương tiện đi lại chủ yếu.",
+            "Trang phục"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Loại hình tôn giáo nào sau đây phổ biến trong đời sống tâm linh của cư dân Phù Nam?",
           "image": null,
           "options": [
-            "Hin-đu giáo.\tB. Hồi giáo.\tC. Công giáo.\tD. Nho giáo."
+            "Hin-đu giáo.",
+            "Hồi giáo.",
+            "Công giáo.",
+            "Nho giáo."
           ],
           "correct": 0
         },
@@ -4550,19 +5200,24 @@
           "question": "Trong các thế kỉ III - V là thời kì quốc gia Phù Nam",
           "image": null,
           "options": [
-            "hình thành.\tB. phát triển.\tC. suy yếu.\tD. khủng hoảng."
+            "hình thành.",
+            "phát triển.",
+            "suy yếu.",
+            "khủng hoảng."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Một trong những nhân tố tạo nên sự phát triển mạnh mẽ của thương nghiệp đường biển của vương quốc Phù Nam là",
           "image": null,
           "options": [
-            "sự xuất hiện của tiền giấy.\tB. kĩ thuật đóng tàu phát triển.",
-            "vị trí địa lí thuận lợi.\tD. liền kề với văn minh Trung Hoa."
+            "sự xuất hiện của tiền giấy.",
+            "kĩ thuật đóng tàu phát triển.",
+            "vị trí địa lí thuận lợi.",
+            "liền kề với văn minh Trung Hoa."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -4581,31 +5236,40 @@
           "question": "Một trong những điểm giống nhau trong đời sống tinh thần của cư dân Chăm-pa và Phù Nam là",
           "image": null,
           "options": [
-            "sống trong các nhà sàn.\tB. sớm có chữ viết riêng.",
-            "không duy trì tín ngưỡng.\tD. thích dùng đồ trang sức."
+            "sống trong các nhà sàn.",
+            "sớm có chữ viết riêng.",
+            "không duy trì tín ngưỡng.",
+            "thích dùng đồ trang sức."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Các nền văn minh cổ đại trên đất nước Việt Nam có đặc điểm chung nào sau đây?",
           "image": null,
           "options": [
-            "Chịu ảnh hưởng củavăn minh Ấn Độ.\tB. Chịu ảnh hưởng của văn minh Trung Hoa.",
-            "Hình thành ở lưu vực các con sông.\tD. Được hình thành ở vùng đồi núi khô cằn."
+            "Chịu ảnh hưởng củavăn minh Ấn Độ.",
+            "Chịu ảnh hưởng của văn minh Trung Hoa.",
+            "Hình thành ở lưu vực các con sông.",
+            "Được hình thành ở vùng đồi núi khô cằn."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Một trong những tín ngưỡng phổ biến của cư dân Phù Nam là",
           "image": null,
           "options": [
-            "Thờ thần Dớt.\tB. thờ thần Mặt Trời.   C. thờ thần Bra-ma.\tD. thờ thần Si-va. Câu 32: Nội dung nào sau đây là điểm tương đồng về đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Phù Nam?",
-            "Chịu ảnh hưởng của Phật giáo.\tB. Có nền văn học viết phát triển.",
-            "Phổ biến tín ngưỡng phồn thực.\tD. Sớm sáng tạo ra chữ viết riêng."
+            "Thờ thần Dớt.",
+            "thờ thần Mặt Trời.",
+            "thờ thần Bra-ma.",
+            "thờ thần Si-va. Câu 32: Nội dung nào sau đây là điểm tương đồng về đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Phù Nam?",
+            "Chịu ảnh hưởng của Phật giáo.",
+            "Có nền văn học viết phát triển.",
+            "Phổ biến tín ngưỡng phồn thực.",
+            "Sớm sáng tạo ra chữ viết riêng."
           ],
-          "correct": 2
+          "correct": 6
         },
         {
           "type": "mcq",
@@ -4708,47 +5372,58 @@
           "question": "Luật Hồng Đức là bộ luật được ban hành dưới triều đại nào?",
           "image": null,
           "options": [
-            "Lý.\tB. Trần.\tC. Lê sơ.\tD. Nguyễn"
+            "Lý.",
+            "Trần.",
+            "Lê sơ.",
+            "Nguyễn"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Tư tưởng yêu nước thương dân của người Việt phát triển theo hai xu hướng nào?",
           "image": null,
           "options": [
-            "Dân tộc và dân chủ.\tB. Bình đẳng và văn minh.",
-            "Dân tộc và thân dân.\tD. Dân chủ và bình đẳng."
+            "Dân tộc và dân chủ.",
+            "Bình đẳng và văn minh.",
+            "Dân tộc và thân dân.",
+            "Dân chủ và bình đẳng."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Phật giáo trở thành quốc giáo ở Việt Nam dưới thời nào?",
           "image": null,
           "options": [
-            "Ngô - Đinh - Tiền Lê.\tB. Lý - Trần.",
-            "Lê sơ - Lê trung hưng.\tD. Tây Sơn - Nguyễn."
+            "Ngô - Đinh - Tiền Lê.",
+            "Lý - Trần.",
+            "Lê sơ - Lê trung hưng.",
+            "Tây Sơn - Nguyễn."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Các nhà nước phong kiến Việt Nam được xây dựng theo thể chế",
           "image": null,
           "options": [
-            "Quân chủ lập hiến.\tB. Chiếm hữu nô lệ.",
-            "Dân chủ chủ nô.\tD. Quân chủ chuyên chế."
+            "Quân chủ lập hiến.",
+            "Chiếm hữu nô lệ.",
+            "Dân chủ chủ nô.",
+            "Quân chủ chuyên chế."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Văn minh Đại Việt được phát triển trong điều kiện độc lập, tự chủ của quốc gia Đại Việt, với kinh đô chủ yếu là",
           "image": null,
           "options": [
-            "Thăng Long (Hà Nội).\tB. Phú Xuân (Huế).",
-            "Hoa Lư (Ninh Bình).\tD. Thiên Trường (Nam Định)."
+            "Thăng Long (Hà Nội).",
+            "Phú Xuân (Huế).",
+            "Hoa Lư (Ninh Bình).",
+            "Thiên Trường (Nam Định)."
           ],
           "correct": 0
         },
@@ -4769,10 +5444,12 @@
           "question": "“Lễ Tịch điền” được các vua thời Tiền Lê và Lý tổ chức hàng năm nhằm khuyến khích",
           "image": null,
           "options": [
-            "bảo vệ, tôn tạo đê điều.\tB. sản xuất thủ công nghiệp",
-            "sản xuất nông nghiệp.\tD. sự phát triển của giáo dục"
+            "bảo vệ, tôn tạo đê điều.",
+            "sản xuất thủ công nghiệp",
+            "sản xuất nông nghiệp.",
+            "sự phát triển của giáo dục"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -4803,7 +5480,10 @@
           "question": "Nền giáo dục, khoa cử của Đại Việt bắt đầu được triển khai từ triều đại nào?",
           "image": null,
           "options": [
-            "Nhà Lý.\tB. Nhà Trần.\tC. Nhà Lê sơ.\tD. Nhà Nguyễn."
+            "Nhà Lý.",
+            "Nhà Trần.",
+            "Nhà Lê sơ.",
+            "Nhà Nguyễn."
           ],
           "correct": 0
         },
@@ -4812,36 +5492,46 @@
           "question": "Từ thời Lê sơ, tôn giáo nào sau đây giữ địa vị độc tôn ở nước ta?",
           "image": null,
           "options": [
-            "Phật giáo.\tB. Đạo giáo.\tC. Nho giáo.\tD. Công giáo."
+            "Phật giáo.",
+            "Đạo giáo.",
+            "Nho giáo.",
+            "Công giáo."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Một trong bốn “An Nam tứ đại khí” của nền văn minh Đại Việt là",
           "image": null,
           "options": [
-            "chùa Thiên Mụ.\tB. Chuông Thanh Mai.",
-            "tháp Báo Thiên.\tD. tượng Phật chùa Tây Phương."
+            "chùa Thiên Mụ.",
+            "Chuông Thanh Mai.",
+            "tháp Báo Thiên.",
+            "tượng Phật chùa Tây Phương."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Văn minh Đại Việt kế thừa những thành tựu chủ yếu của",
           "image": null,
           "options": [
-            "văn minh Chăm-pa.\tB. văn minh Văn Lang - Âu Lạc.",
-            "văn minh Phù Nam.\tD. văn minh Trung Hoa."
+            "văn minh Chăm-pa.",
+            "văn minh Văn Lang - Âu Lạc.",
+            "văn minh Phù Nam.",
+            "văn minh Trung Hoa."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Cơ quan chuyên trách chép sử của nhà nước phong kiến thời Nguyễn là",
           "image": null,
           "options": [
-            "Quốc sử quán.\tB. Nội mệnh phủ.\tC. Hàn lâm viện.\tD. Ngự sử đài."
+            "Quốc sử quán.",
+            "Nội mệnh phủ.",
+            "Hàn lâm viện.",
+            "Ngự sử đài."
           ],
           "correct": 0
         },
@@ -4886,10 +5576,12 @@
           "question": "Dưới triều đại nhà Lý bộ luật thành văn nào sau đây được ban hành?",
           "image": null,
           "options": [
-            "Hình luật.\tB. Hình thư.",
-            "Quốc triều hình luật.\tD. Hoàng Việt luật lệ."
+            "Hình luật.",
+            "Hình thư.",
+            "Quốc triều hình luật.",
+            "Hoàng Việt luật lệ."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -4920,10 +5612,12 @@
           "question": "Văn học Đại Việt trong các thế kỉ X - XV không bao gồm thể loại nào sau đây?",
           "image": null,
           "options": [
-            "Văn học dân gian.\tB. Văn học chữ Nôm.",
-            "Văn học chữ Phạn.\tD. Văn học chữ Hán."
+            "Văn học dân gian.",
+            "Văn học chữ Nôm.",
+            "Văn học chữ Phạn.",
+            "Văn học chữ Hán."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -4954,17 +5648,22 @@
           "question": "Trong hoạt động sản xuất nông nghiệp, các dân tộc thiểu số ở miền núi, trung du chủ yếu áp dụng hình thức canh tác",
           "image": null,
           "options": [
-            "lúa nước.\tB. nương rẫy.\tC. trang trại.\tD. đồn điền."
+            "lúa nước.",
+            "nương rẫy.",
+            "trang trại.",
+            "đồn điền."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Những nghề thủ công ra đời sớm, phát triển mạnh ở hầu hết các dân tộc ở nước ta là",
           "image": null,
           "options": [
-            "nghề dệt và nghề đan.\tB. nghề rèn, đúc và nghề mộc.",
-            "nghề gốm và nghề rèn đúc.\tD. nghề gốm và làm đồ trang sức."
+            "nghề dệt và nghề đan.",
+            "nghề rèn, đúc và nghề mộc.",
+            "nghề gốm và nghề rèn đúc.",
+            "nghề gốm và làm đồ trang sức."
           ],
           "correct": 0
         },
@@ -4973,7 +5672,10 @@
           "question": "Về thủ công nghiệp, sản phẩm của người Kinh rất đa dạng và tinh xảo, không những đáp ứng nhu cầu trong nước mà còn",
           "image": null,
           "options": [
-            "xuất khẩu.\tB. nhập khẩu.\tC. giao lưu.\tD. biếu, tặng."
+            "xuất khẩu.",
+            "nhập khẩu.",
+            "giao lưu.",
+            "biếu, tặng."
           ],
           "correct": 0
         },
@@ -4982,8 +5684,10 @@
           "question": "Ở Việt Nam, những nghề thủ công ra đời sớm và phát triển mạnh ở các dân tộc thiểu số là",
           "image": null,
           "options": [
-            "nghề dệt và nghề đan.\tB. nghề rèn, đúc và nghề mộc.",
-            "nghề gốm và nghề rèn đúc.\tD. nghề gốm và làm đồ trang sức."
+            "nghề dệt và nghề đan.",
+            "nghề rèn, đúc và nghề mộc.",
+            "nghề gốm và nghề rèn đúc.",
+            "nghề gốm và làm đồ trang sức."
           ],
           "correct": 0
         },
@@ -5004,9 +5708,12 @@
           "question": "Trong hoạt động sản xuất nông nghiệp, các dân tộc thiểu số ở miền núi, trung du chủ yếu phát triển hoạt động canh tác",
           "image": null,
           "options": [
-            "lúa nước.\tB. nương rẫy.\tC. trang trại.\tD. đồn điền."
+            "lúa nước.",
+            "nương rẫy.",
+            "trang trại.",
+            "đồn điền."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -5025,8 +5732,10 @@
           "question": "Nội dung nào sau đây phản ánh điểm tương đồng về sản xuất nông nghiệp của người Kinh và các dân tộc thiểu số ở Việt Nam?",
           "image": null,
           "options": [
-            "Canh tác lúa và các cây lương thực.\tB. Chủ yếu canh tác ở nương rẫy.",
-            "Canh tác lúa bằng ruộng bậc thang.\tD. Chủ yếu canh tác ở đồng bằng."
+            "Canh tác lúa và các cây lương thực.",
+            "Chủ yếu canh tác ở nương rẫy.",
+            "Canh tác lúa bằng ruộng bậc thang.",
+            "Chủ yếu canh tác ở đồng bằng."
           ],
           "correct": 0
         },
@@ -5035,17 +5744,22 @@
           "question": "Chợ trên sông là hình thức họp chợ tồn tại chủ yếu ở khu vực",
           "image": null,
           "options": [
-            "Bắc Bộ.\tB. Nam Bộ.\tC. Tây Nguyên.\tD. Trung Bộ."
+            "Bắc Bộ.",
+            "Nam Bộ.",
+            "Tây Nguyên.",
+            "Trung Bộ."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Vì sao hoạt động kinh tế chính của người Kinh là sản xuất nông nghiệp trồng cây lúa nước?",
           "image": null,
           "options": [
-            "Do cư trú chủ yếu ở vùng đồng bằng.\tB. Do cư trú ở các sườn núi và đồi cao.",
-            "Do cú trú chủ yếu ở các thung lũng.\tD. Do cư trú chủ ở vùng có địa hình cao."
+            "Do cư trú chủ yếu ở vùng đồng bằng.",
+            "Do cư trú ở các sườn núi và đồi cao.",
+            "Do cú trú chủ yếu ở các thung lũng.",
+            "Do cư trú chủ ở vùng có địa hình cao."
           ],
           "correct": 0
         },
@@ -5090,18 +5804,22 @@
           "question": "Nội dung nào sau đây không phản ánh đúng vai trò của các nghề thủ công đối với đời sống kinh tế - xã hội của người Kinh?",
           "image": null,
           "options": [
-            "Đáp ứng nhu cầu của người dân.\tB. Tạo ra nguồn hàng hóa xuất khẩu.",
-            "Đem lại việc làm cho người dân.\tD. Là động lực chính phát triển kinh tế."
+            "Đáp ứng nhu cầu của người dân.",
+            "Tạo ra nguồn hàng hóa xuất khẩu.",
+            "Đem lại việc làm cho người dân.",
+            "Là động lực chính phát triển kinh tế."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Nhận xét nào sau đây không đúng về trang phục của các dân tộc ở Việt Nam?",
           "image": null,
           "options": [
-            "Chủ yếu vay mượn từ bên ngoài.\tB. Phong phú về hoa văn trang trí.",
-            "Đa dạng về kiểu dáng và màu sắc.\tD. Thể hiện tập quán của mỗi dân tộc."
+            "Chủ yếu vay mượn từ bên ngoài.",
+            "Phong phú về hoa văn trang trí.",
+            "Đa dạng về kiểu dáng và màu sắc.",
+            "Thể hiện tập quán của mỗi dân tộc."
           ],
           "correct": 0
         },
@@ -5110,8 +5828,10 @@
           "question": "Dựa trên cơ sở nào cư dân các dân tộc trên đất nước Việt Nam xây dựng mô hình nhà ở cho mình?",
           "image": null,
           "options": [
-            "Địa bàn sinh sống.\tB. Thành phần dân cư.",
-            "Phân hóa xã hội.\tD. Yếu tố tâm lí."
+            "Địa bàn sinh sống.",
+            "Thành phần dân cư.",
+            "Phân hóa xã hội.",
+            "Yếu tố tâm lí."
           ],
           "correct": 0
         },
@@ -5120,8 +5840,10 @@
           "question": "Dựa trên cơ sở nào cư dân các dân tộc trên đất nước Việt Nam xây dựng mô hình nhà ở cho mình?",
           "image": null,
           "options": [
-            "Điều kiện tự nhiên.\tB. Thành phần dân cư.",
-            "Phân hóa xã hội.\tD. Yếu tố tâm lí."
+            "Điều kiện tự nhiên.",
+            "Thành phần dân cư.",
+            "Phân hóa xã hội.",
+            "Yếu tố tâm lí."
           ],
           "correct": 0
         },
@@ -5130,8 +5852,10 @@
           "question": "Dựa trên cơ sở nào cư dân các dân tộc trên đất nước Việt Nam xây dựng mô hình nhà ở cho mình?",
           "image": null,
           "options": [
-            "Hoạt động kinh tế, văn hóa.\tB. Thành phần dân cư.",
-            "Phân hóa chính trị, xã hội.\tD. Yếu tố tâm lí xã hội."
+            "Hoạt động kinh tế, văn hóa.",
+            "Thành phần dân cư.",
+            "Phân hóa chính trị, xã hội.",
+            "Yếu tố tâm lí xã hội."
           ],
           "correct": 0
         },
@@ -5140,8 +5864,10 @@
           "question": "Vì sao cư dân các dân tộc thiểu số ở miền núi (Việt Nam) chủ yếu đi bộ và vận chuyển đồ bằng gùi?",
           "image": null,
           "options": [
-            "Địa hình phức tạp, độ dốc lớn, hẹp.\tB. Địa hình bằng phẳng, đường xi măng.",
-            "Địa hình phức tạp, độ dốc thấp, rộng.\tD. Có nhiều cây cối chặn các lối đi."
+            "Địa hình phức tạp, độ dốc lớn, hẹp.",
+            "Địa hình bằng phẳng, đường xi măng.",
+            "Địa hình phức tạp, độ dốc thấp, rộng.",
+            "Có nhiều cây cối chặn các lối đi."
           ],
           "correct": 0
         },
@@ -5150,8 +5876,10 @@
           "question": "Tín ngưỡng phổ biến và tiêu biểu nhất của người Việt là",
           "image": null,
           "options": [
-            "thờ cúng tổ tiên.\tB. thờ Thần linh.",
-            "thờ phồn thực.\tD. thờ cúng Phật"
+            "thờ cúng tổ tiên.",
+            "thờ Thần linh.",
+            "thờ phồn thực.",
+            "thờ cúng Phật"
           ],
           "correct": 0
         },
@@ -5184,8 +5912,10 @@
           "question": "Yếu tố nào không phải là đặc điểm trong hoạt động sản xuất chủ yếu của tộc người Kinh?",
           "image": null,
           "options": [
-            "Trồng lúa trên ruộng bậc thang.\tB. Phát triển nuôi trồng thủy - hải sản.",
-            "Thường xuyên đắp đê ngăn lũ lụt.\tD. Trồng lúa và cây lương thực khác."
+            "Trồng lúa trên ruộng bậc thang.",
+            "Phát triển nuôi trồng thủy - hải sản.",
+            "Thường xuyên đắp đê ngăn lũ lụt.",
+            "Trồng lúa và cây lương thực khác."
           ],
           "correct": 0
         },
@@ -5194,18 +5924,22 @@
           "question": "Nội dung nào sau đây phải là vai trò quan trọng trong canh tác lúa nước của người Kinh ở Việt Nam?",
           "image": null,
           "options": [
-            "Là nguồn lương thực chính.\tB. Đáp ứng nhu cầu trong nước.",
-            "Mặt hàng xuất khẩu quan trọng.\tD. Chủ yếu hỗ trợ các nước nghèo."
+            "Là nguồn lương thực chính.",
+            "Đáp ứng nhu cầu trong nước.",
+            "Mặt hàng xuất khẩu quan trọng.",
+            "Chủ yếu hỗ trợ các nước nghèo."
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "“Đoàn kết, đoàn kết, đại đoàn kết – Thành công, thành công, đại thành công” là câu nói nổi tiếng của ai?",
           "image": null,
           "options": [
-            "Chủ tịch Hồ Chí Minh.\tB. Đại tướng Võ Nguyên Giáp.",
-            "Thủ tướng Phạm Văn Đồng.\tD. Tổng Bí thư Nguyễn Phú trọng."
+            "Chủ tịch Hồ Chí Minh.",
+            "Đại tướng Võ Nguyên Giáp.",
+            "Thủ tướng Phạm Văn Đồng.",
+            "Tổng Bí thư Nguyễn Phú trọng."
           ],
           "correct": 0
         },
@@ -5214,8 +5948,10 @@
           "question": "Khối đoàn kết dân tộc Việt Nam đã được hình thành từ khi nào?",
           "image": null,
           "options": [
-            "Từ thời dựng nước Văn Lang – Âu Lạc.\tB. Từ sau chiến thắng của Ngô Quyền năm 938.",
-            "Từ khi giành được nền độc lập tự chủ.\tD. Từ khi giặc phương Bắc sang xâm lược"
+            "Từ thời dựng nước Văn Lang – Âu Lạc.",
+            "Từ sau chiến thắng của Ngô Quyền năm 938.",
+            "Từ khi giành được nền độc lập tự chủ.",
+            "Từ khi giặc phương Bắc sang xâm lược"
           ],
           "correct": 0
         },
@@ -5224,8 +5960,10 @@
           "question": "Nhân tố quan trọng nào dưới đây quyết định sự thành công của các cuộc đấu tranh chống ngoại xâm của dân tộc Việt Nam trong lịch sử?",
           "image": null,
           "options": [
-            "Khối Đại đoàn kết dân tộc.\tB. Tinh thần đấu tranh anh dũng.",
-            "Nghệ thuật quân sự độc đáo.\tD. Sự lãnh đạo tài tình, sáng suốt."
+            "Khối Đại đoàn kết dân tộc.",
+            "Tinh thần đấu tranh anh dũng.",
+            "Nghệ thuật quân sự độc đáo.",
+            "Sự lãnh đạo tài tình, sáng suốt."
           ],
           "correct": 0
         },
@@ -5246,8 +5984,10 @@
           "question": "Trong thời kì hòa bình, đoàn kết dân tộc là nhân tố",
           "image": null,
           "options": [
-            "ổn định xã hội.\tB. giải quyết việc làm.",
-            "bạo động xã hội.\tD. mở rộng lãnh thổ."
+            "ổn định xã hội.",
+            "giải quyết việc làm.",
+            "bạo động xã hội.",
+            "mở rộng lãnh thổ."
           ],
           "correct": 0
         },
@@ -5268,8 +6008,10 @@
           "question": "Câu nói “Các dân tộc bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng phát triển” được ghi trong văn kiện nào dưới đây?",
           "image": null,
           "options": [
-            "Hiến pháp năm 2013.\tB. Nghị quyết về hỗ trợ đồng bào dân tộc thiểu số.",
-            "Luật bình đẳng.\tD. Đề cương văn hóa."
+            "Hiến pháp năm 2013.",
+            "Nghị quyết về hỗ trợ đồng bào dân tộc thiểu số.",
+            "Luật bình đẳng.",
+            "Đề cương văn hóa."
           ],
           "correct": 0
         },
@@ -5278,50 +6020,62 @@
           "question": "Điểm nổi bật nhất trong chính sách dân tộc của Nhà nước Việt Nam hiện nay là",
           "image": null,
           "options": [
-            "tính toàn diện.\tB. tính dân chủ.\tC. tính dân tộc.\tD. tính cụ thể. Câu 9: Trong chính sách dân tộc về kinh tế, Đảng và Nhà nước Việt Nam có chủ trương nào dưới đây?",
+            "tính toàn diện.",
+            "tính dân chủ.",
+            "tính dân tộc.",
+            "tính cụ thể. Câu 9: Trong chính sách dân tộc về kinh tế, Đảng và Nhà nước Việt Nam có chủ trương nào dưới đây?",
             "Xây dựng cơ chế quản lí kinh tế thị trường năng động, linh hoạt.",
             "Phát triển nền kinh tế nhiều ngành, quy mô, trình độ công nghệ.",
             "Ưu tiên đầu tư phát triển kinh tế các vùng dân tộc và miền núi.",
             "Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa."
           ],
-          "correct": 3
+          "correct": 6
         },
         {
           "type": "mcq",
           "question": "Nghị định 57/2007/NĐ – CP về chính sách ưu tiên tuyển sinh và hỗ trợ học tập đối với học sinh dân tộc thiểu số là biểu hiện cụ thể của chính sách dân tộc trên lĩnh vực nào dưới đây?",
           "image": null,
           "options": [
-            "Kinh tế.\tB. Giáo dục.\tC. Quốc phòng.\tD. Y tế."
+            "Kinh tế.",
+            "Giáo dục.",
+            "Quốc phòng.",
+            "Y tế."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Ngoài mục tiêu kinh tế, chính sách dân tộc của Đảng và Nhà nước hiện nay đặc biệt chú trọng lĩnh vực nào?",
           "image": null,
           "options": [
-            "Chăm sóc y tế.\tB. Giáo dục và đào tạo.",
-            "Xây dựng hệ thống giao thông.\tD. Xây dựng các công trình văn hóa."
+            "Chăm sóc y tế.",
+            "Giáo dục và đào tạo.",
+            "Xây dựng hệ thống giao thông.",
+            "Xây dựng các công trình văn hóa."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
           "question": "Nhân tố quan trọng nhất trong khối đại đoàn kết dân tộc là gì?",
           "image": null,
           "options": [
-            "Lãnh đạo của Đảng.\tB. Chính sách của Nhà nước.",
-            "Ý thức đoàn kết của nhân dân.\tD. Sự phát triển kinh tế."
+            "Lãnh đạo của Đảng.",
+            "Chính sách của Nhà nước.",
+            "Ý thức đoàn kết của nhân dân.",
+            "Sự phát triển kinh tế."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
           "question": "Ở Việt Nam, Ngày hội đại đoàn kết toàn dân tộc là ngày nào dưới đây?",
           "image": null,
           "options": [
-            "Ngày 18/11 hằng năm.\tB. Ngày 27/7 hằng năm.",
-            "Ngày 25/6 hằng năm.\tD. Ngày 18/3 hằng năm."
+            "Ngày 18/11 hằng năm.",
+            "Ngày 27/7 hằng năm.",
+            "Ngày 25/6 hằng năm.",
+            "Ngày 18/3 hằng năm."
           ],
           "correct": 0
         },
@@ -5354,8 +6108,10 @@
           "question": "Nhà nước chủ trương phát triển kinh tế miền núi, vùng dân tộc thiểu số để khắc phục vấn đề nào dưới đây?",
           "image": null,
           "options": [
-            "Chênh lệch giữa các vùng, các dân tộc.\tB. Tình trạng thiếu lương thực, thực phẩm.",
-            "Tình trạng lạc hậu về khoa học kỹ thuật.\tD. Cơ sở hạ tầng phát triển không đồng bộ."
+            "Chênh lệch giữa các vùng, các dân tộc.",
+            "Tình trạng thiếu lương thực, thực phẩm.",
+            "Tình trạng lạc hậu về khoa học kỹ thuật.",
+            "Cơ sở hạ tầng phát triển không đồng bộ."
           ],
           "correct": 0
         },
@@ -5364,10 +6120,12 @@
           "question": "Nội dung nào dưới đây không phải là nguyên tắc xây dựng, phát triển khối đại đoàn kết dân tộc của Đảng và Nhà nước Việt Nam hiện nay?",
           "image": null,
           "options": [
-            "Bình đẳng.\tB. Đoàn kết.",
-            "Quyền tự quyết của mỗi dân tộc.\tD. Tương trợ nhau cùng phát triển."
+            "Bình đẳng.",
+            "Đoàn kết.",
+            "Quyền tự quyết của mỗi dân tộc.",
+            "Tương trợ nhau cùng phát triển."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -5446,19 +6204,24 @@
           "question": "“Các dân tộc Việt Nam, dù có sự khác nhau về số dân, trình độ phát triển, phong tục tập quán,… song đều có quyền ngang nhau” – đó là nội dung của nguyên tắc nào trong chính sách dân tộc?",
           "image": null,
           "options": [
-            "Tự quyết.\tB. Đoàn kết.\tC. Cùng giúp nhau phát triển.   D. Bình đẳng."
+            "Tự quyết.",
+            "Đoàn kết.",
+            "Cùng giúp nhau phát triển.",
+            "Bình đẳng."
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "type": "mcq",
           "question": "Khối đại đoàn kết dân tộc có ảnh hưởng như thế nào đến sự phát triển của đất nước?",
           "image": null,
           "options": [
-            "Giúp tăng cường quan hệ ngoại giao.\tB. Đảm bảo sự ổn định và phát triển bền vững.",
-            "Giúp phát triển văn hóa dân tộc.\tD. Tăng cường sức mạnh quân sự."
+            "Giúp tăng cường quan hệ ngoại giao.",
+            "Đảm bảo sự ổn định và phát triển bền vững.",
+            "Giúp phát triển văn hóa dân tộc.",
+            "Tăng cường sức mạnh quân sự."
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -5477,9 +6240,12 @@
           "question": "Hồ Chí Minh từng căn dặn: “Đại đoàn kết dân tộc phải luôn luôn được nhận thức là vấn đề…\t, quyết định thành bại của cách mạng”",
           "image": null,
           "options": [
-            "cơ bản.\tB. quan trọng.\tC. sống còn.\tD. then chốt."
+            "cơ bản.",
+            "quan trọng.",
+            "sống còn.",
+            "then chốt."
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -5558,17 +6324,22 @@
           "question": "Tổ chức nào sau đây có vai trò to lớn trong việc củng cố, mở rộng và phát huy khối đại đoàn kết dân tộc ở Việt Nam hiện nay?",
           "image": null,
           "options": [
-            "Việt Nam độc lập đồng minh.\tB. Hội Văn hóa cứu quốc Việt Nam.",
-            "Mặt trận Tổ quốc Việt Nam.\tD. Trung đội cứu quốc quân."
+            "Việt Nam độc lập đồng minh.",
+            "Hội Văn hóa cứu quốc Việt Nam.",
+            "Mặt trận Tổ quốc Việt Nam.",
+            "Trung đội cứu quốc quân."
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "type": "mcq",
-          "question": "Hoạt động sản★A. trồng lúa nước. | xuất | chính trong nông nghiệp của dân tộc Kinh ở Việt Nam làB. trồng cây lúa mì.",
+          "question": "Hoạt động sản",
           "image": null,
           "options": [
-            "trồng cây lúa mạch. |  | D. trồng cây lúa nương. --- END TABLE ---"
+            "trồng lúa nước. | xuất | chính trong nông nghiệp của dân tộc Kinh ở Việt Nam là",
+            "trồng cây lúa mì.",
+            "trồng cây lúa mạch. |  |",
+            "trồng cây lúa nương. --- END TABLE ---"
           ],
           "correct": 0
         }
@@ -5835,9 +6606,13 @@
           ]
         },
         {
-          "passage": "Đọc đoạn tư liệu sau đây: “Đông Nam Á là một thuật ngữ đã trở nên thông dụng trong Chiến tranh thế giới thứ hai dùng để miêu tả các lãnh thổ thuộc lục địa Đông Á tạo thành bán đảo Đông Dương và quần đảo rộng lớn bao gồm Inđônêxia và Philippin.” (D.G.E. HALL, Lịch sử Đông Nam Á, NXB Chính trị quốc gia, 1997, tr.20)",
+          "passage": "Đọc đoạn tư liệu sau đây: “Đông Nam Á là một thuật ngữ đã trở nên thông dụng trong Chiến tranh thế giới thứ hai dùng để miêu tả các lãnh thổ thuộc lục địa Đông Á tạo thành bán đảo Đông Dương và quần đảo rộng lớn bao gồm Inđônêxia và Philippin.” (",
           "image": null,
           "statements": [
+            {
+              "question": "D.G.E. HALL, Lịch sử Đông Nam Á, NXB Chính trị quốc gia, 1997, tr.20)",
+              "correct": false
+            },
             {
               "question": "Thuật ngữ Đông Nam Á được sử dụng phổ biến từ trong Chiến tranh thế giới thứ hai.",
               "correct": true
@@ -5857,9 +6632,13 @@
           ]
         },
         {
-          "passage": "Đọc đoạn tư liệu sau đây: “Ảnh hưởng của Ấn Độ khác với ảnh hưởng của Trung Quốc không có tác động chính trị - là trong quá trình được các xã hội bản xứ ở Đông Nam Á hấp thụ, nó đã bị biến đổi nhiều, chẳng hạn như ảnh hưởng của Hy Lạp cổ ở Tây Âu. Vì như George Coedès đã nói những dân tộc cảm nhận được tác động của nền văn hóa Ấn Độ, thì không phải là \"những loại người mông muội\" mà là những cộng đồng có một nền văn minh tương đối cao của chính mình. Và ngay cả người Việt Nam, đã sống dưới sự thống trị của Trung Quốc từ năm 111 trước Công nguyên đến năm 939 sau Công nguyên và dưới triều Hán đã bị Hán hóa mạnh mẽ, cũng đã phát triển được một nền văn hóa, tuy chịu ảnh hưởng nhiều của Trung Quốc, nhưng vẫn giữ được bản sắc riêng của mình, và có cội rễ sâu từ thời kỳ quá khứ chịu ảnh hưởng của Trung Quốc.” (D.G.E. HALL, Lịch sử Đông Nam Á, NXB Chính trị quốc gia, 1997, tr.21)",
+          "passage": "Đọc đoạn tư liệu sau đây: “Ảnh hưởng của Ấn Độ khác với ảnh hưởng của Trung Quốc không có tác động chính trị - là trong quá trình được các xã hội bản xứ ở Đông Nam Á hấp thụ, nó đã bị biến đổi nhiều, chẳng hạn như ảnh hưởng của Hy Lạp cổ ở Tây Âu. Vì như George Coedès đã nói những dân tộc cảm nhận được tác động của nền văn hóa Ấn Độ, thì không phải là \"những loại người mông muội\" mà là những cộng đồng có một nền văn minh tương đối cao của chính mình. Và ngay cả người Việt Nam, đã sống dưới sự thống trị của Trung Quốc từ năm 111 trước Công nguyên đến năm 939 sau Công nguyên và dưới triều Hán đã bị Hán hóa mạnh mẽ, cũng đã phát triển được một nền văn hóa, tuy chịu ảnh hưởng nhiều của Trung Quốc, nhưng vẫn giữ được bản sắc riêng của mình, và có cội rễ sâu từ thời kỳ quá khứ chịu ảnh hưởng của Trung Quốc.” (",
           "image": null,
           "statements": [
+            {
+              "question": "D.G.E. HALL, Lịch sử Đông Nam Á, NXB Chính trị quốc gia, 1997, tr.21)",
+              "correct": false
+            },
             {
               "question": "Nhận định trong tư liệu nói về đặc điểm của quá trình tiếp nhận ảnh hưởng từ văn minh bên ngoài ở Đông Nam Á.",
               "correct": true
@@ -5879,9 +6658,13 @@
           ]
         },
         {
-          "passage": "Đọc đoạn tư liệu sau đây: “Các hải cảng chủ yếu như Óc Eo của Funan, Palembang của Srivijaya, Malacca và Tuban của Java đã phát triển quan hệ thương mại rộng rãi. Bán đảo Mã Lai và Inđônêxia từ thời xa xưa là một khu vực trung chuyển về thương mại, là nơi gặp gỡ của các nhà buôn từ phương Đông đến và phương Tây sang. Gió mùa của Ấn Độ Dương và gió mậu dịch của biển phía đông buộc các con tàu phải nằm đợi tại các cảng để chờ gió thuận, và điều đó cũng khuyến khích thương mại.” (D.G.E. HALL, Lịch sử Đông Nam Á, NXB Chính trị quốc gia, 1997, tr.397)",
+          "passage": "Đọc đoạn tư liệu sau đây: “Các hải cảng chủ yếu như Óc Eo của Funan, Palembang của Srivijaya, Malacca và Tuban của Java đã phát triển quan hệ thương mại rộng rãi. Bán đảo Mã Lai và Inđônêxia từ thời xa xưa là một khu vực trung chuyển về thương mại, là nơi gặp gỡ của các nhà buôn từ phương Đông đến và phương Tây sang. Gió mùa của Ấn Độ Dương và gió mậu dịch của biển phía đông buộc các con tàu phải nằm đợi tại các cảng để chờ gió thuận, và điều đó cũng khuyến khích thương mại.” (",
           "image": null,
           "statements": [
+            {
+              "question": "D.G.E. HALL, Lịch sử Đông Nam Á, NXB Chính trị quốc gia, 1997, tr.397)",
+              "correct": false
+            },
             {
               "question": "Tư liệu khẳng định các quốc gia Đông Nam Á cổ trung đại phát triển thương mại biển.",
               "correct": true
@@ -6667,15 +7450,27 @@
               "correct": false
             },
             {
-              "question": "Nhà nước cần có những chính sách phù hợp với đặc thù của từng vùng dân tộc thiểu số.  Câu 1 (Vận dụng): Là một công dân của nước Việt Nam, em hãy cho biết những hành động của bản thân có thể thực hiện để góp phần xây dựng khối đại đoàn kết dân tộc hiện nay. Câu 2 (Vận dụng): Em hiểu như thế nào về quan điểm sau đây của Chủ tịch Hồ Chí Minh? Lấy những dẫn chứng lịch sử để chứng minh cho luận giải của em. “Đoàn kết, đoàn kết, đại đoàn kết Thành công, thành công, đại thanh công” (Hồ Chí Minh) Câu 3 (Vận dụng): Nếu trường em hoặc địa phương nơi đang cứ trú phát động cuộc thi vẽ tranh hoặc sưu tầm hình ảnh và viết bài tham gia Ngày hội Đại đoàn kết toàn dân tộc, em sẽ lựa chọn hình ảnh nào? Vì sao? Em chọn hình ảnh này vì nó mang ý nghĩa lịch sử thiêng liêng, thể hiện rõ tinh thần đại đoàn kết dân tộc – mọi người dân Việt Nam, không phân biệt giàu nghèo, dân tộc, tôn giáo, đều cùng nhau hướng về độc lập, tự do và hạnh phúc chung của đất nước. Đó cũng chính là minh chứng sống động cho quan điểm của Chủ tịch Hồ Chí Minh: “Đoàn kết, đoàn kết, đại đoàn kết – Thành công, thành công, đại thành công”. Hơn nữa, khi chọn hình ảnh ấy, em muốn gửi gắm thông điệp rằng: ngày nay thế hệ trẻ chúng em cần tiếp nối tinh thần đoàn kết đó, cùng nhau học tập, rèn luyện và chung tay xây dựng quê hương, đất nước ngày càng giàu đẹp, văn minh. Nếu trường em hoặc địa phương phát động cuộc thi vẽ tranh hoặc sưu tầm hình ảnh và viết bài tham gia Ngày hội Đại đoàn kết toàn dân tộc, em sẽ lựa chọn hình ảnh nhân dân cả nước đoàn kết, chung sức phòng chống dịch COVID-19. Trong thời gian dịch bệnh diễn ra, em đã thấy rất nhiều hình ảnh xúc động: các y bác sĩ ngày đêm ở tuyến đầu chống dịch; bộ đội, công an hỗ trợ người dân tại khu cách ly; những chuyến xe chở lương thực miễn phí; những “ATM gạo”, “siêu thị 0 đồng” giúp đỡ người nghèo; học sinh, sinh viên và nhiều tình nguyện viên tham gia hỗ trợ cộng đồng. Tất cả đều cho thấy sức mạnh của tinh thần “mình vì mọi người, mọi người vì mình”. Em chọn hình ảnh này vì nó không chỉ thể hiện rõ tinh thần đại đoàn kết dân tộc trong thời kỳ khó khăn, mà còn là minh chứng sinh động rằng đoàn kết chính là sức mạnh để vượt qua thử thách, bảo vệ sức khỏe và tương lai của cả cộng đồng. Đây cũng là bài học quý giá để thế hệ trẻ chúng em tiếp tục nuôi dưỡng tinh thần đoàn kết trong học tập và cuộc sống sau này. Câu 4 (Vận dụng): Em hãy cho biết những việc học sinh có thể làm để góp phần xây dựng khối đại đoàn kết dân tộc hiện nay. --- TABLE 1 --- | Hiện thực lịch sử | Lịch sử được con người nhận thức Giống nhau | - Đều cho biết về những gì đã diễn ra trong quá khứ. | - Đều cho biết về những gì đã diễn ra trong quá khứ. Khác nhau | - Có trước Lịch sử được conngười nhận thức. | - Có sau Hiện thực lịch sử. Khác nhau | - Chỉ có một. | Đa dạng, phong phú vì được con người nhận thức và trình bày, tái hiện theo nhiều cách thức, góc độ khác nhau.Sự khác nhau của Lịch sử được con người nhận thức là do mục đích nghiên cứu, nguồn sử liệu, quan điểm tiếp cận, phương pháp nghiên cứu,… Khác nhau | - Không thể thay đổi theo thời gian. | - Có thể thay đổi theo thời gian. --- END TABLE --- --- TABLE 2 --- | - Tồn tại độc lập, khách quan, ngoài ý muốn của con người. | - Mang tính vừa khách quan vừa chủ quan, phụ thuộc vào Hiện thực lịch sử. --- END TABLE --- --- TABLE 3 --- | VĂN HÓA | VĂN MINH Giống nhau | - Tổng thể vật chất và tinh thần do con người sáng tạo ra. | - Tổng thể vật chất và tinh thần do con người sáng tạo ra. Khác nhau | Khi con người xuất hiện.Thời kì dã man (xã hội nguyên thủy). | Trạng khái phát triển cao của nền văn hóa.Khi nhà nước và chữ viết ra đời.Thời kì văn minh (xã hội có nhà nước). --- END TABLE --- --- TABLE 4 --- Lĩnh vực | Thành tựu Chữ viết | Chữ tượng hình, viết trên giấy Pa-pi-rút. Toán học | Nghĩ ra phép đếm đến 10, giỏi về hình học, đã tính được số Pi bằng 3,16… Kiến trúc, điêu khắc | Kim tự tháp, tượng Nhân sư… Y học | Kĩ thuật ướp xác --- END TABLE --- --- TABLE 5 --- Nền văn minh | Thành tựu Ai Cập | Chữ tượng hình; Toán học (nhất là hình học); kiến trúc và điêu khắc; kĩ thuật ướp xác, tín ngưỡng thờ đa thần Trung Hoa | Chữ tượng hình được viết trên mai rùa, xương thú; văn học (thơ Đường, tiểu thuyết thời Minh – Thanh); toán học (sử dụng hệ số đếm thập phân); kiến trúc và điêu khắc (Di hòa viên, Thập tam lăng…); kĩ thuật (in, giấy, thuốc súng…); tư tưởng, tôn giáo (Nho giáo, Đạo giáo…) Ấn Độ | Văn học (kinh Vê -đa, sử thi Ma-ha-bha-ra-ta; Ra-ma-y-a-na); toán học (sáng tạo số tự nhiên); tôn giáo (Bà-la-môn giáo, Hin-đu giáo…) --- END TABLE --- --- TABLE 6 --- | Văn minh Ấn Độ | Văn minh Trung Hoa Chữ viết | Chữ Bra-mi, chữ San-krít (Phạn)Ảnh hưởng đến chữ viết của nhiều quốc gia như Thái Lan, Lào, Cam-pu- chia | Chữ Giáp cốt, Tiểu triện, Đại triện, Lệ thư, Khải thư…Ảnh hưởng đến chữ viết của nhiều nước lân cận như Nhật Bản, Việt Nam… Tư tưởng, tôn giáo | Là nơi ra đời nhiều tôn giáo lớn như Hin-đu giáo, Phật giáo, đồng thời cũng là nơi du nhập và phát triển của Hồi giáo | Nho giáo, Đạo giáo, Mặc gia, Pháp gia, Phật giáo… --- END TABLE --- --- TABLE 7 --- Lĩnh vực | Thành tựu Tư tưởng | - Kịch liệt phê phán triết học duy tâm, lên án chế độ phong kiến, đề cao tri thức, lý trí của con người. Đại diện tiêu biểu là Mi-chen đơ Mông-ten-nhơ (Pháp), Ê-ra- xmơ (Hà Lan), La Ra-mê (Pháp),... Văn học | - Đạt nhiều thành tựu lớn, tiêu biểu là các tác phẩm Thần khúc (A. Đan-tê), Đôn --- END TABLE --- --- TABLE 8 --- | Ki-hô-tê (M. Xéc-van-téc), Rô-mê-ô và Giu-li-ét (Sếch-xpia)... Nghệ thuật | - Nghệ thuật đạt nhiều thành tựu lớn, tiêu biểu là bức họa Nàng Mô-na Li-sa, Bữa ăn tối cuối cùng (Lê-ô-na đờ Vanh-xi), Tượng Đa-vít, Sự sáng tạo A-đam (Mi- ken-lăng-giơ), lâu đài Sam-bô (Pháp), nhà thờ Xanh Pi-tơ (Va-ti-căng),... Khoa học nghệ thuật | - Toán học, Thiên văn học, tiêu biểu là Cô-péc-ních, Bru-nô và Ga-li-lê với Thuyết Nhật tâm. --- END TABLE --- --- TABLE 9 --- Nước | Năm 1880(Triệu tấn) | Năm 1900(Triệu tấn) | Tỉ lệ tăng (%) Anh | 1,3 | 4,9 | 377 Mỹ | 1,2 | 10,2 | 850 Đức | 0,7 | 6,4 | 910 --- END TABLE --- --- TABLE 10 --- | Văn minh Chăm-pa | Văn minh Phù Nam Giống nhau | Cơ sở tự nhiên:+ Có các dòng sông lớn, như: sông Thu Bồn ở Chăm-pa; sông Cửu Long ở Phù Nam.+ Có các đồng bằng phù sa màu mỡ.+ Vương quốc Chăm-pa có nhiều vịnh cảng, còn Vương quốc Phù Nam có nhiều hải cảng => Có điều kiện thuận lợi để phát triển kinh tế thương nghiệp.+ Tiếp thu nhiều giá trị văn minh Ấn Độ.Cơ sở xã hội:+ Cư dân bản địa là người Môn cổ; bên cạnh đó còn có một bộ phận dân cư di cưtừ nơi khác tới.+ Xã hội có sự phân hóa giàu nghèo rõ rệt: Tầng lớp thống trị và tầng lớp bị trị. | Cơ sở tự nhiên:+ Có các dòng sông lớn, như: sông Thu Bồn ở Chăm-pa; sông Cửu Long ở Phù Nam.+ Có các đồng bằng phù sa màu mỡ.+ Vương quốc Chăm-pa có nhiều vịnh cảng, còn Vương quốc Phù Nam có nhiều hải cảng => Có điều kiện thuận lợi để phát triển kinh tế thương nghiệp.+ Tiếp thu nhiều giá trị văn minh Ấn Độ.Cơ sở xã hội:+ Cư dân bản địa là người Môn cổ; bên cạnh đó còn có một bộ phận dân cư di cưtừ nơi khác tới.+ Xã hội có sự phân hóa giàu nghèo rõ rệt: Tầng lớp thống trị và tầng lớp bị trị. Khác nhau | + Địa bàn: Vùng duyên hải và một phần cao nguyên miền Trung Việt Nam ngày nay.+ Chăm-pa có địa hình phức tạp khi phía Tây là dãy Trường Sơn, phía Đông là biển đảo. Xen kẽ là dải đồng bằng nhỏ, hẹp, dọc ven biển, bị chia cắt bởi sông ngắn và núi, đèo. Khí hậu khô nóng, đất đai cằn cỗi, thiên tai thường xuyên. | + Địa bàn: Ở lưu vực sông Cửu Long.+ Phù Nam thì thuận lợi hơn khi có mạng lưới sông ngòi dày đặc kết nối với nhau, trữ lượng nước ngọt dồi dào, nguồn lợi thủy sản phong phú, đa dạng. Đất đai giàu phù sa. --- END TABLE --- --- TABLE 11 --- | Văn minh Văn Lang - Âu Lạc | Văn minh Chăm-pa | Văn minh Phù Nam Giống nhau | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. --- END TABLE --- --- TABLE 12 --- | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. Khác nhau | + Khu vực Bắc Bộ và Bắc Trung bộ của Việt Nam hiện nay.+ Thương mại đường biển kém phát triển hơn so với Chăm-pa và Phù Nam+ Bộ phận cư dân chính là người Việt cổ.+ Không có sự ảnh hưởng của văn minh Ấn Độ. | + Khu vực Nam Trung Bộ và một phần cao nguyên Trường Sơn của Việt Nam hiện nay.+ Các hoạt động khai thác lâm sản và thương mại đường biển rất phát triển.+ Bộ phận cư dân chính là người Môn cổ, bên cạnh đó còn có một bộ phận dân cư di cư từ nơi khác tới.+ Tiếp thu nhiều giá trị văn minh Ấn Độ. | + Khu vực Nam Bộ của Việt Nam hiện nay.+ Hoạt động thương mại đường biển rất phát triển.+ Bộ phận cư dân chính là người Môn cổ, bên cạnh đó còn có một bộ phận dân cư di cư từ nơi khác tới.+ Tiếp thu nhiều giá trị văn minh Ấn Độ. --- END TABLE --- --- TABLE 13 ---",
+              "question": "Nhà nước cần có những chính sách phù hợp với đặc thù của từng vùng dân tộc thiểu số.  Câu 1 (Vận dụng): Là một công dân của nước Việt Nam, em hãy cho biết những hành động của bản thân có thể thực hiện để góp phần xây dựng khối đại đoàn kết dân tộc hiện nay. Câu 2 (Vận dụng): Em hiểu như thế nào về quan điểm sau đây của Chủ tịch Hồ Chí Minh? Lấy những dẫn chứng lịch sử để chứng minh cho luận giải của em. “Đoàn kết, đoàn kết, đại đoàn kết Thành công, thành công, đại thanh công” (Hồ Chí Minh) Câu 3 (Vận dụng): Nếu trường em hoặc địa phương nơi đang cứ trú phát động cuộc thi vẽ tranh hoặc sưu tầm hình ảnh và viết bài tham gia Ngày hội Đại đoàn kết toàn dân tộc, em sẽ lựa chọn hình ảnh nào? Vì sao? Em chọn hình ảnh này vì nó mang ý nghĩa lịch sử thiêng liêng, thể hiện rõ tinh thần đại đoàn kết dân tộc – mọi người dân Việt Nam, không phân biệt giàu nghèo, dân tộc, tôn giáo, đều cùng nhau hướng về độc lập, tự do và hạnh phúc chung của đất nước. Đó cũng chính là minh chứng sống động cho quan điểm của Chủ tịch Hồ Chí Minh: “Đoàn kết, đoàn kết, đại đoàn kết – Thành công, thành công, đại thành công”. Hơn nữa, khi chọn hình ảnh ấy, em muốn gửi gắm thông điệp rằng: ngày nay thế hệ trẻ chúng em cần tiếp nối tinh thần đoàn kết đó, cùng nhau học tập, rèn luyện và chung tay xây dựng quê hương, đất nước ngày càng giàu đẹp, văn minh. Nếu trường em hoặc địa phương phát động cuộc thi vẽ tranh hoặc sưu tầm hình ảnh và viết bài tham gia Ngày hội Đại đoàn kết toàn dân tộc, em sẽ lựa chọn hình ảnh nhân dân cả nước đoàn kết, chung sức phòng chống dịch COVID-19. Trong thời gian dịch bệnh diễn ra, em đã thấy rất nhiều hình ảnh xúc động: các y bác sĩ ngày đêm ở tuyến đầu chống dịch; bộ đội, công an hỗ trợ người dân tại khu cách ly; những chuyến xe chở lương thực miễn phí; những “ATM gạo”, “siêu thị 0 đồng” giúp đỡ người nghèo; học sinh, sinh viên và nhiều tình nguyện viên tham gia hỗ trợ cộng đồng. Tất cả đều cho thấy sức mạnh của tinh thần “mình vì mọi người, mọi người vì mình”. Em chọn hình ảnh này vì nó không chỉ thể hiện rõ tinh thần đại đoàn kết dân tộc trong thời kỳ khó khăn, mà còn là minh chứng sinh động rằng đoàn kết chính là sức mạnh để vượt qua thử thách, bảo vệ sức khỏe và tương lai của cả cộng đồng. Đây cũng là bài học quý giá để thế hệ trẻ chúng em tiếp tục nuôi dưỡng tinh thần đoàn kết trong học tập và cuộc sống sau này. Câu 4 (Vận dụng): Em hãy cho biết những việc học sinh có thể làm để góp phần xây dựng khối đại đoàn kết dân tộc hiện nay. --- TABLE 1 --- | Hiện thực lịch sử | Lịch sử được con người nhận thức Giống nhau | - Đều cho biết về những gì đã diễn ra trong quá khứ. | - Đều cho biết về những gì đã diễn ra trong quá khứ. Khác nhau | - Có trước Lịch sử được conngười nhận thức. | - Có sau Hiện thực lịch sử. Khác nhau | - Chỉ có một. | Đa dạng, phong phú vì được con người nhận thức và trình bày, tái hiện theo nhiều cách thức, góc độ khác nhau.Sự khác nhau của Lịch sử được con người nhận thức là do mục đích nghiên cứu, nguồn sử liệu, quan điểm tiếp cận, phương pháp nghiên cứu,… Khác nhau | - Không thể thay đổi theo thời gian. | - Có thể thay đổi theo thời gian. --- END TABLE --- --- TABLE 2 --- | - Tồn tại độc lập, khách quan, ngoài ý muốn của con người. | - Mang tính vừa khách quan vừa chủ quan, phụ thuộc vào Hiện thực lịch sử. --- END TABLE --- --- TABLE 3 --- | VĂN HÓA | VĂN MINH Giống nhau | - Tổng thể vật chất và tinh thần do con người sáng tạo ra. | - Tổng thể vật chất và tinh thần do con người sáng tạo ra. Khác nhau | Khi con người xuất hiện.Thời kì dã man (xã hội nguyên thủy). | Trạng khái phát triển cao của nền văn hóa.Khi nhà nước và chữ viết ra đời.Thời kì văn minh (xã hội có nhà nước). --- END TABLE --- --- TABLE 4 --- Lĩnh vực | Thành tựu Chữ viết | Chữ tượng hình, viết trên giấy Pa-pi-rút. Toán học | Nghĩ ra phép đếm đến 10, giỏi về hình học, đã tính được số Pi bằng 3,16… Kiến trúc, điêu khắc | Kim tự tháp, tượng Nhân sư… Y học | Kĩ thuật ướp xác --- END TABLE --- --- TABLE 5 --- Nền văn minh | Thành tựu Ai Cập | Chữ tượng hình; Toán học (nhất là hình học); kiến trúc và điêu khắc; kĩ thuật ướp xác, tín ngưỡng thờ đa thần Trung Hoa | Chữ tượng hình được viết trên mai rùa, xương thú; văn học (thơ Đường, tiểu thuyết thời Minh – Thanh); toán học (sử dụng hệ số đếm thập phân); kiến trúc và điêu khắc (Di hòa viên, Thập tam lăng…); kĩ thuật (in, giấy, thuốc súng…); tư tưởng, tôn giáo (Nho giáo, Đạo giáo…) Ấn Độ | Văn học (kinh Vê -đa, sử thi Ma-ha-bha-ra-ta; Ra-ma-y-a-na); toán học (sáng tạo số tự nhiên); tôn giáo (Bà-la-môn giáo, Hin-đu giáo…) --- END TABLE --- --- TABLE 6 --- | Văn minh Ấn Độ | Văn minh Trung Hoa Chữ viết | Chữ Bra-mi, chữ San-krít (Phạn)Ảnh hưởng đến chữ viết của nhiều quốc gia như Thái Lan, Lào, Cam-pu- chia | Chữ Giáp cốt, Tiểu triện, Đại triện, Lệ thư, Khải thư…Ảnh hưởng đến chữ viết của nhiều nước lân cận như Nhật Bản, Việt Nam… Tư tưởng, tôn giáo | Là nơi ra đời nhiều tôn giáo lớn như Hin-đu giáo, Phật giáo, đồng thời cũng là nơi du nhập và phát triển của Hồi giáo | Nho giáo, Đạo giáo, Mặc gia, Pháp gia, Phật giáo… --- END TABLE --- --- TABLE 7 --- Lĩnh vực | Thành tựu Tư tưởng | - Kịch liệt phê phán triết học duy tâm, lên án chế độ phong kiến, đề cao tri thức, lý trí của con người. Đại diện tiêu biểu là Mi-chen đơ Mông-ten-nhơ (Pháp), Ê-ra- xmơ (Hà Lan), La Ra-mê (Pháp),... Văn học | - Đạt nhiều thành tựu lớn, tiêu biểu là các tác phẩm Thần khúc (",
               "correct": true
             },
             {
-              "question": "★A. canh tác lúa nước. |  | B. chăn nuôi gia súc.",
+              "question": "A. Đan-tê), Đôn --- END TABLE --- --- TABLE 8 --- | Ki-hô-tê (M. Xéc-van-téc), Rô-mê-ô và Giu-li-ét (Sếch-xpia)... Nghệ thuật | - Nghệ thuật đạt nhiều thành tựu lớn, tiêu biểu là bức họa Nàng Mô-na Li-sa, Bữa ăn tối cuối cùng (Lê-ô-na đờ Vanh-xi), Tượng Đa-vít, Sự sáng tạo A-đam (Mi- ken-lăng-giơ), lâu đài Sam-bô (Pháp), nhà thờ Xanh Pi-tơ (Va-ti-căng),... Khoa học nghệ thuật | - Toán học, Thiên văn học, tiêu biểu là Cô-péc-ních, Bru-nô và Ga-li-lê với Thuyết Nhật tâm. --- END TABLE --- --- TABLE 9 --- Nước | Năm 1880(Triệu tấn) | Năm 1900(Triệu tấn) | Tỉ lệ tăng (%) Anh | 1,3 | 4,9 | 377 Mỹ | 1,2 | 10,2 | 850 Đức | 0,7 | 6,4 | 910 --- END TABLE --- --- TABLE 10 --- | Văn minh Chăm-pa | Văn minh Phù Nam Giống nhau | Cơ sở tự nhiên:+ Có các dòng sông lớn, như: sông Thu Bồn ở Chăm-pa; sông Cửu Long ở Phù Nam.+ Có các đồng bằng phù sa màu mỡ.+ Vương quốc Chăm-pa có nhiều vịnh cảng, còn Vương quốc Phù Nam có nhiều hải cảng => Có điều kiện thuận lợi để phát triển kinh tế thương nghiệp.+ Tiếp thu nhiều giá trị văn minh Ấn Độ.Cơ sở xã hội:+ Cư dân bản địa là người Môn cổ; bên cạnh đó còn có một bộ phận dân cư di cưtừ nơi khác tới.+ Xã hội có sự phân hóa giàu nghèo rõ rệt: Tầng lớp thống trị và tầng lớp bị trị. | Cơ sở tự nhiên:+ Có các dòng sông lớn, như: sông Thu Bồn ở Chăm-pa; sông Cửu Long ở Phù Nam.+ Có các đồng bằng phù sa màu mỡ.+ Vương quốc Chăm-pa có nhiều vịnh cảng, còn Vương quốc Phù Nam có nhiều hải cảng => Có điều kiện thuận lợi để phát triển kinh tế thương nghiệp.+ Tiếp thu nhiều giá trị văn minh Ấn Độ.Cơ sở xã hội:+ Cư dân bản địa là người Môn cổ; bên cạnh đó còn có một bộ phận dân cư di cưtừ nơi khác tới.+ Xã hội có sự phân hóa giàu nghèo rõ rệt: Tầng lớp thống trị và tầng lớp bị trị. Khác nhau | + Địa bàn: Vùng duyên hải và một phần cao nguyên miền Trung Việt Nam ngày nay.+ Chăm-pa có địa hình phức tạp khi phía Tây là dãy Trường Sơn, phía Đông là biển đảo. Xen kẽ là dải đồng bằng nhỏ, hẹp, dọc ven biển, bị chia cắt bởi sông ngắn và núi, đèo. Khí hậu khô nóng, đất đai cằn cỗi, thiên tai thường xuyên. | + Địa bàn: Ở lưu vực sông Cửu Long.+ Phù Nam thì thuận lợi hơn khi có mạng lưới sông ngòi dày đặc kết nối với nhau, trữ lượng nước ngọt dồi dào, nguồn lợi thủy sản phong phú, đa dạng. Đất đai giàu phù sa. --- END TABLE --- --- TABLE 11 --- | Văn minh Văn Lang - Âu Lạc | Văn minh Chăm-pa | Văn minh Phù Nam Giống nhau | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. | - Sự hình thành và phát triển của các nền văn minh cổ trên đất nước Việt Nam đều gắn vớiđiều kiện tự nhiên tại lưu vực của những con sông lớn. --- END TABLE --- --- TABLE 12 --- | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. | Kinh tế nông nghiệp trồng lúa nước là ngành sản xuất chính của cư dân Việt cổ, Chăm- pa và Phù Nam.Cơ sở xã hội:+ Làng là tổ chức xã hội phổ biến của cư dân Việt cổ, Chăm-pa, Phù Nam+ Cư dân bản địa là những người đóng góp chủ yếu trong quá trình xây dựng nền văn minhcủa họ. Khác nhau | + Khu vực Bắc Bộ và Bắc Trung bộ của Việt Nam hiện nay.+ Thương mại đường biển kém phát triển hơn so với Chăm-pa và Phù Nam+ Bộ phận cư dân chính là người Việt cổ.+ Không có sự ảnh hưởng của văn minh Ấn Độ. | + Khu vực Nam Trung Bộ và một phần cao nguyên Trường Sơn của Việt Nam hiện nay.+ Các hoạt động khai thác lâm sản và thương mại đường biển rất phát triển.+ Bộ phận cư dân chính là người Môn cổ, bên cạnh đó còn có một bộ phận dân cư di cư từ nơi khác tới.+ Tiếp thu nhiều giá trị văn minh Ấn Độ. | + Khu vực Nam Bộ của Việt Nam hiện nay.+ Hoạt động thương mại đường biển rất phát triển.+ Bộ phận cư dân chính là người Môn cổ, bên cạnh đó còn có một bộ phận dân cư di cư từ nơi khác tới.+ Tiếp thu nhiều giá trị văn minh Ấn Độ. --- END TABLE --- --- TABLE 13 ---",
               "correct": false
             },
             {
-              "question": "C. nuôi trồng thủy sản. |  | D. trồng cây lúa nương.",
+              "question": "★A. canh tác lúa nước. |  |",
+              "correct": false
+            },
+            {
+              "question": "B. chăn nuôi gia súc.",
+              "correct": false
+            },
+            {
+              "question": "C. nuôi trồng thủy sản. |  |",
+              "correct": false
+            },
+            {
+              "question": "D. trồng cây lúa nương.",
               "correct": false
             }
           ]

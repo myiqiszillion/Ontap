@@ -161,12 +161,12 @@ def parse_txt(filepath, subject_type):
             i += 1
             while i < len(lines):
                 next_l = lines[i]
-                if re.match(r'^(Câu\s+\d+|[A-D]\.|★?[A-D]\.|[a-d]\.|\*\s*Đáp án|\*\s*Hướng dẫn|Đáp án:)', next_l) or re.search(r'\([SĐ]\)', next_l):
+                if re.match(r'^(Câu\s+\d+|[A-D]\.|★?[A-D]\.|[a-d]\.|\*\s*Đáp án|\*\s*Hướng dẫn|Đáp án:|BÀI|Bài)', next_l) or re.search(r'\([SĐ]\)', next_l):
                     # But wait, if next_l has (S)/(Đ) and does NOT start with a/b/c/d, it might be an option without letter
                     # In su10.txt, statements might not start with a. b. c. d.
                     # e.g., "Văn minh Ai Cập là ... (Đ)"
                     # We should treat it as an option
-                    if re.match(r'^(Câu\s+\d+|★?[A-D]\.|\*\s*Đáp án|\*\s*Hướng dẫn|Đáp án:)', next_l):
+                    if re.match(r'^(Câu\s+\d+|★?[A-D]\.|\*\s*Đáp án|Đáp án|BÀI|Bài)', next_l):
                         break
                     if re.match(r'^([a-d]\.)', next_l):
                         break
@@ -199,18 +199,24 @@ def parse_txt(filepath, subject_type):
                 i += 1
             continue
             
-        elif '* Đáp án' in line or 'Đáp án:' in line:
-            i += 1
-            if i < len(lines):
-                ans_text = lines[i]
-                m = re.match(r'^(\d+)', ans_text)
-                if m:
-                    current_q['answer'] = m.group(1)
-                else:
-                    current_q['answer'] = ans_text
+        elif '* Đáp án' in line or 'Đáp án' in line:
+            inline_ans = re.sub(r'^.*?[Đđ]áp án\s*\:?\s*', '', line).strip()
+            if inline_ans:
+                current_q['answer'] = inline_ans
+                i += 1
+            else:
+                i += 1
+                if i < len(lines):
+                    ans_text = lines[i]
+                    m = re.match(r'^(\d+)', ans_text)
+                    if m:
+                        current_q['answer'] = m.group(1)
+                    else:
+                        current_q['answer'] = ans_text
+                    i += 1
             continue
             
-        elif re.match(r'^(★?[A-D]\.)', line) or re.match(r'^([a-d]\.)', line) or re.search(r'\([SĐ]\)', line):
+        elif re.match(r'^([★\s]*[A-D]\.)', line) or re.match(r'^([a-d]\.)', line) or re.search(r'\([SĐ]\)', line):
             current_q['options'].append(line)
         else:
             if current_q['options']:
