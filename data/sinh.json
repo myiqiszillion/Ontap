@@ -4,6 +4,186 @@
       "name": "BÀI 22: KHÁI QUÁT VỀ VI SINH VẬT",
       "questions": [
         {
+          "type": "mcq",
+          "question": "Vi sinh vật có khả năng hấp thụ và chuyển hóa nhanh các chất dinh dưỡng nên chúng",
+          "image": null,
+          "options": [
+            "sinh trưởng và sinh sản rất nhanh.",
+            "sinh trưởng và sinh sản rất chậm.",
+            "sinh trưởng rất nhanh nhưng sinh sản rất chậm.",
+            "sinh sản rất nhanh nhưng sinh trưởng rất chậm."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Đặc điểm nào sau đây ★không đúng với vi sinh vật?",
+          "image": null,
+          "options": [
+            "Có kích thước nhỏ.",
+            "Phần lớn có cấu tạo đơn bào.",
+            "Đều có khả năng tự dưỡng.",
+            "Sinh trưởng nhanh."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Người ta thường quan sát vi sinh vật bằng",
+          "image": null,
+          "options": [
+            "mắt thường.",
+            "kính lúp.",
+            "kính hiển vi.",
+            "kính thiên văn"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật phần lớn có cấu trúc",
+          "image": null,
+          "options": [
+            "đơn bào.",
+            "đa bào.",
+            "tập đoàn đa bào.",
+            "không có cấu trúc tế bào"
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Nhóm sinh vật nào dưới đây không phải là vi sinh vật?",
+          "image": null,
+          "options": [
+            "Vi khuẩn cổ.",
+            "Vi khuẩn.",
+            "Tảo biển.",
+            "ĐV nguyên sinh."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Dựa vào cấu tạo tế bào có thể phân loại vi sinh vật thành hai nhóm đó là",
+          "image": null,
+          "options": [
+            "đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực.",
+            "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân thực.",
+            "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân sơ.",
+            "đơn bào nhân thực và đa bào hay tập đoàn đa bào nhân thực."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Các kiểu dinh dưỡng của vi sinh vật được phân loại dựa vào tiêu chí nào?",
+          "image": null,
+          "options": [
+            "Nhu cầu sử dụng nguồn carbon và chất hữu cơ của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon dioxide và chất hữu cơ của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon dioxide và năng lượng của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon và năng lượng của vi sinh vật."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Dựa vào đâu để phân loại vi sinh vật thành hai nhóm đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực?",
+          "image": null,
+          "options": [
+            "Cách hấp thụ chất dinh dưỡng.",
+            "Môi trường sống.",
+            "Cách chuyển hóa chất dinh dưỡng.",
+            "Cấu tạo tế bào."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Trùng roi xanh sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là CO2. Vậy trùng roi xanh có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ chất vô cơ và nguồn carbon là CO2 có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Phương pháp nghiên cứu vi sinh vật nào sau đây dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật?",
+          "image": null,
+          "options": [
+            "Phương pháp quan sát bằng kính hiển vi.",
+            "Phương pháp nuôi cấy.",
+            "Phương pháp phân lập vi sinh vật.",
+            "Phương pháp định danh vi khuẩn."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Kĩ thuật nào sau đây dùng để nghiên cứu cấu trúc không gian của những phân tử?",
+          "image": null,
+          "options": [
+            "Kĩ thuật cố định và nhuộm màu.",
+            "Kĩ thuật siêu li tâm.",
+            "Kĩ thuật đồng vị phóng xạ.",
+            "Kĩ thuật nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Kĩ thuật nào sau đây dùng để theo dõi các quá trình tổng hợp bên trong tế bào ở mức độ phân tử?",
+          "image": null,
+          "options": [
+            "Kĩ thuật cố định và nhuộm màu",
+            "Kĩ thuật siêu li tâm.",
+            "Kĩ thuật đồng vị phóng xạ.",
+            "Kĩ thuật nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
           "type": "shortanswer",
           "question": "Dựa vào nhu cầu sử dụng nguồn carbon và năng lượng, vi sinh vật có mấy kiểu dinh dưỡng?",
           "image": null,
@@ -37,336 +217,6 @@
         }
       ],
       "questionGroups": [
-        {
-          "passage": "Vi sinh vật có khả năng hấp thụ và chuyển hóa nhanh các chất dinh dưỡng nên chúng",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. sinh trưởng và sinh sản rất nhanh.",
-              "correct": false
-            },
-            {
-              "question": "B. sinh trưởng và sinh sản rất chậm.",
-              "correct": false
-            },
-            {
-              "question": "C. sinh trưởng rất nhanh nhưng sinh sản rất chậm.",
-              "correct": true
-            },
-            {
-              "question": "D. sinh sản rất nhanh nhưng sinh trưởng rất chậm.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Đặc điểm nào sau đây ★không đúng với vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Có kích thước nhỏ.",
-              "correct": true
-            },
-            {
-              "question": "B. Phần lớn có cấu tạo đơn bào.",
-              "correct": false
-            },
-            {
-              "question": "★C. Đều có khả năng tự dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "D. Sinh trưởng nhanh.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Quang tự dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "★B. Quang dị dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "C. Hóa tự dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "D. Hóa dị dưỡng",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Người ta thường quan sát vi sinh vật bằng",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. mắt thường.",
-              "correct": true
-            },
-            {
-              "question": "B. kính lúp.",
-              "correct": false
-            },
-            {
-              "question": "★C. kính hiển vi.",
-              "correct": false
-            },
-            {
-              "question": "D. kính thiên văn",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Vi sinh vật phần lớn có cấu trúc",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. đơn bào.",
-              "correct": false
-            },
-            {
-              "question": "B. đa bào.",
-              "correct": false
-            },
-            {
-              "question": "C. tập đoàn đa bào.",
-              "correct": true
-            },
-            {
-              "question": "D. không có cấu trúc tế bào",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Nhóm sinh vật nào dưới đây không phải là vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Vi khuẩn cổ.",
-              "correct": true
-            },
-            {
-              "question": "B. Vi khuẩn.",
-              "correct": false
-            },
-            {
-              "question": "★C. Tảo biển.",
-              "correct": false
-            },
-            {
-              "question": "D. ĐV nguyên sinh.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Dựa vào cấu tạo tế bào có thể phân loại vi sinh vật thành hai nhóm đó là",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực.",
-              "correct": false
-            },
-            {
-              "question": "B. đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân thực.",
-              "correct": false
-            },
-            {
-              "question": "C. đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân sơ.",
-              "correct": true
-            },
-            {
-              "question": "D. đơn bào nhân thực và đa bào hay tập đoàn đa bào nhân thực.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Các kiểu dinh dưỡng của vi sinh vật được phân loại dựa vào tiêu chí nào?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Nhu cầu sử dụng nguồn carbon và chất hữu cơ của vi sinh vật.",
-              "correct": true
-            },
-            {
-              "question": "B. Nhu cầu sử dụng nguồn carbon dioxide và chất hữu cơ của vi sinh vật.",
-              "correct": false
-            },
-            {
-              "question": "C. Nhu cầu sử dụng nguồn carbon dioxide và năng lượng của vi sinh vật.",
-              "correct": true
-            },
-            {
-              "question": "★D. Nhu cầu sử dụng nguồn carbon và năng lượng của vi sinh vật.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Dựa vào đâu để phân loại vi sinh vật thành hai nhóm đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Cách hấp thụ chất dinh dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "B. Môi trường sống.",
-              "correct": false
-            },
-            {
-              "question": "C. Cách chuyển hóa chất dinh dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "★D. Cấu tạo tế bào.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Trùng roi xanh sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là CO2. Vậy trùng roi xanh có kiểu dinh dưỡng nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. Quang tự dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "B. Quang dị dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "C. Hóa tự dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "D. Hóa dị dưỡng.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Vi sinh vật sử dụng nguồn năng lượng từ chất vô cơ và nguồn carbon là CO2 có kiểu dinh dưỡng nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Quang tự dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "B. Quang dị dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "★C. Hóa tự dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "D. Hóa dị dưỡng.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Quang tự dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "★B. Quang dị dưỡng.",
-              "correct": false
-            },
-            {
-              "question": "C. Hóa tự dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "D. Hóa dị dưỡng",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Phương pháp nghiên cứu vi sinh vật nào sau đây dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. Phương pháp quan sát bằng kính hiển vi.",
-              "correct": false
-            },
-            {
-              "question": "B. Phương pháp nuôi cấy.",
-              "correct": false
-            },
-            {
-              "question": "C. Phương pháp phân lập vi sinh vật.",
-              "correct": true
-            },
-            {
-              "question": "D. Phương pháp định danh vi khuẩn.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Kĩ thuật nào sau đây dùng để nghiên cứu cấu trúc không gian của những phân tử?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Kĩ thuật cố định và nhuộm màu.",
-              "correct": true
-            },
-            {
-              "question": "B. Kĩ thuật siêu li tâm.",
-              "correct": false
-            },
-            {
-              "question": "★C. Kĩ thuật đồng vị phóng xạ.",
-              "correct": false
-            },
-            {
-              "question": "D. Kĩ thuật nuôi cấy.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Kĩ thuật nào sau đây dùng để theo dõi các quá trình tổng hợp bên trong tế bào ở mức độ phân tử?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Kĩ thuật cố định và nhuộm màu",
-              "correct": true
-            },
-            {
-              "question": "B. Kĩ thuật siêu li tâm.",
-              "correct": false
-            },
-            {
-              "question": "★C. Kĩ thuật đồng vị phóng xạ.",
-              "correct": false
-            },
-            {
-              "question": "D. Kĩ thuật nuôi cấy.",
-              "correct": false
-            }
-          ]
-        },
         {
           "passage": "Cho các phát biểu sau đây về đặc điểm của vi sinh vật. Mỗi nhận định sau đây là đúng hay sai?",
           "image": null,
@@ -461,6 +311,102 @@
       "name": "BÀI 24: QUÁ TRÌNH TỔNG HỢP VÀ PHÂN GIẢI Ở VI SINH VẬT",
       "questions": [
         {
+          "type": "mcq",
+          "question": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen cần hợp chất mở đầu là",
+          "image": null,
+          "options": [
+            "Glucose.",
+            "ATP.",
+            "ADP - Glucose.",
+            "ATP - Glucose."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Phát biểu nào sau đây là ★sai khi nói về sự tổng hợp protein của vi sinh vật?",
+          "image": null,
+          "options": [
+            "Vi sinh vật có khả năng tự tổng hợp các loại amino acid.",
+            "Vi sinh vật có khả năng tổng hợp protein.",
+            "Protein tổng hợp được khi liên kết các amino acid với nhau bằng liên kết glycosid.",
+            "Phương trình tổng hợp protein là: (Amino acid)n  Protein."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật tổng hợp lipid bằng cách",
+          "image": null,
+          "options": [
+            "liên kết glycerol và glutamic acid.",
+            "liên kết lysine và acid béo.",
+            "liên kết glycerol và acid béo.",
+            "liên kết lysine và glutamic acid."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Sản phẩm được tạo ra sau quá trình phân giải các hợp chất carbohydrate (polysaccharide) ở vi sinh vật là",
+          "image": null,
+          "options": [
+            "đường đơn.",
+            "đường đôi.",
+            "cellulose.",
+            "tinh bột."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Có hai hình thức lên men, đó là",
+          "image": null,
+          "options": [
+            "lên men rượu và lên men lactic.",
+            "lên men hiếu khí và lên men kị khí.",
+            "lên men lactic và lên men hiếu khí.",
+            "lên men rượu và lên men kị khí. (S)"
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm: (1) Gôm có vai trò bảo vệ tế bào vi sinh vật khỏi bị khô. (2) Gôm giúp ngăn cản sự tiếp xúc với virus. (3) Gôm là nguồn dự trữ carbon cho vi sinh vật. (4) Gôm là nguồn dự trữ năng lượng cho vi sinh vật. Trong các phát biểu trên, có bao nhiêu phát biểu đúng?",
+          "image": null,
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4"
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Sản phẩm nào sau đây luôn xuất hiện sau quá trình lên men lactic?",
+          "image": null,
+          "options": [
+            "CO2.",
+            "Ethanol.",
+            "Lactic acid.",
+            "Acetic acid."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Sản xuất nước mắm là ứng dụng của quá trình nào ở vi sinh vật?",
+          "image": null,
+          "options": [
+            "Phân giải carbohydrate.",
+            "Phân giải protein.",
+            "Tổng hợp carbohydrate.",
+            "Tổng hợp protein."
+          ],
+          "correct": 1
+        },
+        {
           "type": "shortanswer",
           "question": "Khi nói về vai trò của vi sinh vật trong sản xuất dược phẩm, cho các phát biểu sau đây: (1) Con người sử dụng một số chủng xạ khuẩn và nấm mốc để sản xuất chất kháng sinh giúp tiêu diệt mầm bệnh. (2) Sử dụng vi sinh vật làm suy yếu để sản xuất vaccine phòng bệnh. (3) Sử dụng vi khuẩn có lợi để sản xuất men tiêu hóa cho người. (4) Sử dụng VK có lợi để sản xuất một số đồ uống nhằm hỗ trợ quá trình tiêu hóa của người. Trong các phát biểu trên, có bao nhiêu phát biểu đúng?",
           "image": null,
@@ -484,203 +430,197 @@
             4
           ]
         }
-      ],
-      "questionGroups": [
-        {
-          "passage": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen cần hợp chất mở đầu là",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Glucose.",
-              "correct": true
-            },
-            {
-              "question": "B. ATP.",
-              "correct": false
-            },
-            {
-              "question": "★C. ADP - Glucose.",
-              "correct": false
-            },
-            {
-              "question": "D. ATP - Glucose.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Phát biểu nào sau đây là ★sai khi nói về sự tổng hợp protein của vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Vi sinh vật có khả năng tự tổng hợp các loại amino acid.",
-              "correct": true
-            },
-            {
-              "question": "B. Vi sinh vật có khả năng tổng hợp protein.",
-              "correct": false
-            },
-            {
-              "question": "★C. Protein tổng hợp được khi liên kết các amino acid với nhau bằng liên kết glycosid.",
-              "correct": false
-            },
-            {
-              "question": "D. Phương trình tổng hợp protein là: (Amino acid)n  Protein.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Vi sinh vật tổng hợp lipid bằng cách",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. liên kết glycerol và glutamic acid.",
-              "correct": true
-            },
-            {
-              "question": "B. liên kết lysine và acid béo.",
-              "correct": false
-            },
-            {
-              "question": "★C. liên kết glycerol và acid béo.",
-              "correct": false
-            },
-            {
-              "question": "D. liên kết lysine và glutamic acid.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sản phẩm được tạo ra sau quá trình phân giải các hợp chất carbohydrate (polysaccharide) ở vi sinh vật là",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. đường đơn.",
-              "correct": false
-            },
-            {
-              "question": "B. đường đôi.",
-              "correct": false
-            },
-            {
-              "question": "C. cellulose.",
-              "correct": true
-            },
-            {
-              "question": "D. tinh bột.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Có hai hình thức lên men, đó là",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. lên men rượu và lên men lactic.",
-              "correct": false
-            },
-            {
-              "question": "B. lên men hiếu khí và lên men kị khí.",
-              "correct": false
-            },
-            {
-              "question": "C. lên men lactic và lên men hiếu khí.",
-              "correct": true
-            },
-            {
-              "question": "D. lên men rượu và lên men kị khí.  2. THÔNG HIỂU",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm: (1) Gôm có vai trò bảo vệ tế bào vi sinh vật khỏi bị khô. (2) Gôm giúp ngăn cản sự tiếp xúc với virus. (3) Gôm là nguồn dự trữ carbon cho vi sinh vật. (4) Gôm là nguồn dự trữ năng lượng cho vi sinh vật. Trong các phát biểu trên, có bao nhiêu phát biểu đúng?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. 1.",
-              "correct": true
-            },
-            {
-              "question": "B. 2.",
-              "correct": false
-            },
-            {
-              "question": "C. 3.",
-              "correct": true
-            },
-            {
-              "question": "★D. 4",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sản phẩm nào sau đây luôn xuất hiện sau quá trình lên men lactic?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. CO2.",
-              "correct": true
-            },
-            {
-              "question": "B. Ethanol.",
-              "correct": false
-            },
-            {
-              "question": "★C. Lactic acid.",
-              "correct": false
-            },
-            {
-              "question": "D. Acetic acid.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sản xuất nước mắm là ứng dụng của quá trình nào ở vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Phân giải carbohydrate.",
-              "correct": true
-            },
-            {
-              "question": "★B. Phân giải protein.",
-              "correct": false
-            },
-            {
-              "question": "C. Tổng hợp carbohydrate.",
-              "correct": true
-            },
-            {
-              "question": "D. Tổng hợp protein.",
-              "correct": false
-            }
-          ]
-        }
       ]
     },
     {
       "name": "BÀI 25: SINH TRƯỞNG VÀ SINH SẢN Ở VI SINH VẬT",
       "questions": [
         {
+          "type": "mcq",
+          "question": "Sinh trưởng ở vi sinh vật là sự gia tăng",
+          "image": null,
+          "options": [
+            "khối lượng cơ thể vi sinh vật.",
+            "số lượng cá thể của quần thể vi sinh vật.",
+            "kích thước cơ thể vi sinh vật.",
+            "số lượng loài của quần thể vi sinh vật."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi",
+          "image": null,
+          "options": [
+            "quần thể.",
+            "cá thể.",
+            "tế bào.",
+            "quần xã."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Môi trường nuôi cấy không liên tục là môi trường nuôi cấy",
+          "image": null,
+          "options": [
+            "được bổ sung chất dinh dưỡng mới và được lấy đi các sản phẩm của quá trình nuôi cấy.",
+            "không được bổ sung chất dinh dưỡng mới nhưng lấy đi sản phẩm của quá trình nuôi cấy.",
+            "không được bổ sung chất dinh dưỡng mới cũng không lấy đi các sản phẩm của quá trình nuôi cấy.",
+            "liên tục được bổ sung chất dinh dưỡng mới và liên tục lấy đi các sản phẩm của quá trình nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Trình tự sắp xếp nào sau đây là đúng khi nói về các pha sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
+          "image": null,
+          "options": [
+            "Pha tiềm phát → Pha lũy thừa → Pha cân bằng → Pha suy vong.",
+            "Pha tiềm phát → Pha cân bằng → Pha lũy thừa → Pha suy vong.",
+            "Pha suy vong → Pha tiềm phát → Pha lũy thừa → Pha cân bằng.",
+            "Pha suy vong → Pha lũy thừa → Pha tiềm phát → Pha cân bằng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Trong nuôi cấy không liên tục, tốc độ phân chia của vi khuẩn đạt tối đa ở pha nào sau đây?",
+          "image": null,
+          "options": [
+            "Pha tiềm phát.",
+            "Pha lũy thừa.",
+            "Pha suy vong.",
+            "Pha cân bằng."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Pha nào sau đây chỉ có ở sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
+          "image": null,
+          "options": [
+            "Pha lũy thừa.",
+            "Pha tiềm phát.",
+            "Pha cân bằng.",
+            "Pha suy vong."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi quần thể vì",
+          "image": null,
+          "options": [
+            "vi khuẩn hoàn toàn không có sự thay đổi về kích thước và khối lượng.",
+            "khó nhận ra sự thay đổi về kích thước và khối lượng của tế bào vi khuẩn.",
+            "vi khuẩn có khả năng trao đổi chất, sinh trưởng và phát triển rất nhanh.",
+            "khó nhận ra sự tồn tại, phát triển của tế bào vi khuẩn trong môi trường tự nhiên."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Trong điều kiện nuôi cấy không liên tục, chất dinh dưỡng cạn dần, sản phẩm chuyển hóa tăng lên sẽ dẫn đến hiện tượng",
+          "image": null,
+          "options": [
+            "tăng tốc độ sinh trưởng của vi khuẩn.",
+            "số vi khuẩn sinh ra bằng số vi khuẩn chết đi.",
+            "quần thể vi khuẩn bị suy vong",
+            "số vi khuẩn tăng lên theo cấp số nhân."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Trong nuôi cấy không liên tục, với mục đích thu vi khuẩn để làm giống nên tiến hành thu hoạch vào thời điểm nào sau đây?",
+          "image": null,
+          "options": [
+            "Đầu pha lũy thừa.",
+            "Đầu pha cân bằng.",
+            "Đầu pha tiềm phát.",
+            "Đầu pha suy vong."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây? (1) Phân đôi.\t(2) Tiếp hợp.\t(3) Nảy chồi.\t(4) Bào tử.",
+          "image": null,
+          "options": [
+            "(1), (2), (3).",
+            "(1), (2), (4).",
+            "(1), (3), (4).",
+            "(2), (3), (4)."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Cho các đặc điểm sau: (1) Số lượng tế bào sinh ra bằng số tế bào chết đi. (2) Chất độc hại tích lũy quá nhiều. (3) Vi khuẩn bị chết do chất dinh dưỡng giảm dần. (4) Số lượng vi khuẩn tăng lên rất nhanh. Pha cân bằng gồm các đặc điểm nào?",
+          "image": null,
+          "options": [
+            "1, 2.",
+            "1, 3.",
+            "1, 4.",
+            "2, 3."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Vi khuẩn E.coli trong điều kiện nuôi cấy thích hợp cứ 20 phút lại phân đôi một lần. Số tế bào của quần thể vi khuẩn E.coli có được sau 3 giờ 20 phút từ một tế bào vi khuẩn ban đầu là",
+          "image": null,
+          "options": [
+            "1024.",
+            "1240.",
+            "1420.",
+            "200."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh khối vi khuẩn đạt cao nhất vào thời điểm nào?",
+          "image": null,
+          "options": [
+            "Pha cân bằng.",
+            "Cuối pha lũy thừa, đầu pha cân bằng.",
+            "Pha tiềm phát.",
+            "Cuối pha cân bằng, đầu pha suy vong."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Khi tiêm kháng sinh cho bò sữa, sau đó dùng sữa bò để làm sữa chua thì không thể lên men sữa chua được vì lí do nào sau đây?",
+          "image": null,
+          "options": [
+            "Khi đó sữa bò mất hết chất dinh dưỡng.",
+            "Khi đó sữa bò có môi trường kiềm tính ức chế sự phát triển của vi khuẩn lactic.",
+            "Trong sữa bò còn tồn đọng kháng sinh ức chế sự phát triển của vi khuẩn lactic.",
+            "Khi đó trong sữa bò còn nhiều vi sinh vật gây bệnh chưa bị tiêu diệt nên cạnh tranh với vi khuẩn."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Thức ăn được bảo quản tương đối lâu trong tủ lạnh vì nhiệt độ thấp có tác dụng",
+          "image": null,
+          "options": [
+            "làm cho thức ăn ngon hơn.",
+            "tiêu diệt được vi sinh vật.",
+            "kìm hãm sự sinh trưởng của vi sinh vật.",
+            "thanh trùng vi sinh vật."
+          ],
+          "correct": 2
+        },
+        {
           "type": "shortanswer",
           "question": "Trong môi trường nuôi cấy liên tục quần thể vi sinh vật sinh trưởng theo mấy pha?",
           "image": null,
           "correctAnswer": [
             3
-          ]
-        },
-        {
-          "type": "shortanswer",
-          "question": "Biết thời gian thế hệ của E.coli là 20 phút, từ 8 tế bào ban đầu sau một giờ nuôi cấy tạo ra bao nhiêu tế bào?",
-          "image": null,
-          "correctAnswer": [
-            64
           ]
         },
         {
@@ -701,336 +641,6 @@
         }
       ],
       "questionGroups": [
-        {
-          "passage": "Sinh trưởng ở vi sinh vật là sự gia tăng",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. khối lượng cơ thể vi sinh vật.",
-              "correct": true
-            },
-            {
-              "question": "★B. số lượng cá thể của quần thể vi sinh vật.",
-              "correct": false
-            },
-            {
-              "question": "C. kích thước cơ thể vi sinh vật.",
-              "correct": true
-            },
-            {
-              "question": "D. số lượng loài của quần thể vi sinh vật.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. quần thể.",
-              "correct": false
-            },
-            {
-              "question": "B. cá thể.",
-              "correct": false
-            },
-            {
-              "question": "C. tế bào.",
-              "correct": true
-            },
-            {
-              "question": "D. quần xã.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Môi trường nuôi cấy không liên tục là môi trường nuôi cấy",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. được bổ sung chất dinh dưỡng mới và được lấy đi các sản phẩm của quá trình nuôi cấy.",
-              "correct": true
-            },
-            {
-              "question": "B. không được bổ sung chất dinh dưỡng mới nhưng lấy đi sản phẩm của quá trình nuôi cấy.",
-              "correct": false
-            },
-            {
-              "question": "★C. không được bổ sung chất dinh dưỡng mới cũng không lấy đi các sản phẩm của quá trình nuôi cấy.",
-              "correct": false
-            },
-            {
-              "question": "D. liên tục được bổ sung chất dinh dưỡng mới và liên tục lấy đi các sản phẩm của quá trình nuôi cấy.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Trình tự sắp xếp nào sau đây là đúng khi nói về các pha sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. Pha tiềm phát → Pha lũy thừa → Pha cân bằng → Pha suy vong.",
-              "correct": false
-            },
-            {
-              "question": "B. Pha tiềm phát → Pha cân bằng → Pha lũy thừa → Pha suy vong.",
-              "correct": false
-            },
-            {
-              "question": "C. Pha suy vong → Pha tiềm phát → Pha lũy thừa → Pha cân bằng.",
-              "correct": true
-            },
-            {
-              "question": "D. Pha suy vong → Pha lũy thừa → Pha tiềm phát → Pha cân bằng.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Trong nuôi cấy không liên tục, tốc độ phân chia của vi khuẩn đạt tối đa ở pha nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Pha tiềm phát.",
-              "correct": true
-            },
-            {
-              "question": "★B. Pha lũy thừa.",
-              "correct": false
-            },
-            {
-              "question": "C. Pha suy vong.",
-              "correct": true
-            },
-            {
-              "question": "D. Pha cân bằng.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Pha nào sau đây chỉ có ở sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Pha lũy thừa.",
-              "correct": true
-            },
-            {
-              "question": "B. Pha tiềm phát.",
-              "correct": false
-            },
-            {
-              "question": "C. Pha cân bằng.",
-              "correct": true
-            },
-            {
-              "question": "★D. Pha suy vong.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi quần thể vì",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. vi khuẩn hoàn toàn không có sự thay đổi về kích thước và khối lượng.",
-              "correct": true
-            },
-            {
-              "question": "★B. khó nhận ra sự thay đổi về kích thước và khối lượng của tế bào vi khuẩn.",
-              "correct": false
-            },
-            {
-              "question": "C. vi khuẩn có khả năng trao đổi chất, sinh trưởng và phát triển rất nhanh.",
-              "correct": true
-            },
-            {
-              "question": "D. khó nhận ra sự tồn tại, phát triển của tế bào vi khuẩn trong môi trường tự nhiên.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Trong điều kiện nuôi cấy không liên tục, chất dinh dưỡng cạn dần, sản phẩm chuyển hóa tăng lên sẽ dẫn đến hiện tượng",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. tăng tốc độ sinh trưởng của vi khuẩn.",
-              "correct": true
-            },
-            {
-              "question": "B. số vi khuẩn sinh ra bằng số vi khuẩn chết đi.",
-              "correct": false
-            },
-            {
-              "question": "★C. quần thể vi khuẩn bị suy vong",
-              "correct": false
-            },
-            {
-              "question": "D. số vi khuẩn tăng lên theo cấp số nhân.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Trong nuôi cấy không liên tục, với mục đích thu vi khuẩn để làm giống nên tiến hành thu hoạch vào thời điểm nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. Đầu pha lũy thừa.",
-              "correct": false
-            },
-            {
-              "question": "B. Đầu pha cân bằng.",
-              "correct": false
-            },
-            {
-              "question": "C. Đầu pha tiềm phát.",
-              "correct": true
-            },
-            {
-              "question": "D. Đầu pha suy vong.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây? (1) Phân đôi.\t(2) Tiếp hợp.\t(3) Nảy chồi.\t(4) Bào tử.",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. (1), (2), (3).",
-              "correct": true
-            },
-            {
-              "question": "B. (1), (2), (4).",
-              "correct": false
-            },
-            {
-              "question": "★C. (1), (3), (4).",
-              "correct": false
-            },
-            {
-              "question": "D. (2), (3), (4).",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Cho các đặc điểm sau: (1) Số lượng tế bào sinh ra bằng số tế bào chết đi. (2) Chất độc hại tích lũy quá nhiều. (3) Vi khuẩn bị chết do chất dinh dưỡng giảm dần. (4) Số lượng vi khuẩn tăng lên rất nhanh. Pha cân bằng gồm các đặc điểm nào?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. 1, 2.",
-              "correct": true
-            },
-            {
-              "question": "★B. 1, 3.",
-              "correct": false
-            },
-            {
-              "question": "C. 1, 4.",
-              "correct": true
-            },
-            {
-              "question": "D. 2, 3.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Vi khuẩn E.coli trong điều kiện nuôi cấy thích hợp cứ 20 phút lại phân đôi một lần. Số tế bào của quần thể vi khuẩn E.coli có được sau 3 giờ 20 phút từ một tế bào vi khuẩn ban đầu là",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. 1024.",
-              "correct": false
-            },
-            {
-              "question": "B. 1240.",
-              "correct": false
-            },
-            {
-              "question": "C. 1420.",
-              "correct": true
-            },
-            {
-              "question": "D. 200.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Sinh khối vi khuẩn đạt cao nhất vào thời điểm nào?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Pha cân bằng.",
-              "correct": true
-            },
-            {
-              "question": "★B. Cuối pha lũy thừa, đầu pha cân bằng.",
-              "correct": false
-            },
-            {
-              "question": "C. Pha tiềm phát.",
-              "correct": true
-            },
-            {
-              "question": "D. Cuối pha cân bằng, đầu pha suy vong.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Khi tiêm kháng sinh cho bò sữa, sau đó dùng sữa bò để làm sữa chua thì không thể lên men sữa chua được vì lí do nào sau đây?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Khi đó sữa bò mất hết chất dinh dưỡng.",
-              "correct": true
-            },
-            {
-              "question": "B. Khi đó sữa bò có môi trường kiềm tính ức chế sự phát triển của vi khuẩn lactic.",
-              "correct": false
-            },
-            {
-              "question": "★C. Trong sữa bò còn tồn đọng kháng sinh ức chế sự phát triển của vi khuẩn lactic.",
-              "correct": false
-            },
-            {
-              "question": "D. Khi đó trong sữa bò còn nhiều vi sinh vật gây bệnh chưa bị tiêu diệt nên cạnh tranh với vi khuẩn.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Thức ăn được bảo quản tương đối lâu trong tủ lạnh vì nhiệt độ thấp có tác dụng",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. làm cho thức ăn ngon hơn.",
-              "correct": true
-            },
-            {
-              "question": "B. tiêu diệt được vi sinh vật.",
-              "correct": false
-            },
-            {
-              "question": "★C. kìm hãm sự sinh trưởng của vi sinh vật.",
-              "correct": false
-            },
-            {
-              "question": "D. thanh trùng vi sinh vật.  PHẦN II. Câu trắc nghiệm đúng sai.",
-              "correct": false
-            }
-          ]
-        },
         {
           "passage": "Quan sát bảng sau và cho biết mỗi nhận định sau đây là đúng hay sai về sinh trưởng ở vi khuẩn E.coli?",
           "image": "/images/sinh10/image26.png",
@@ -1070,7 +680,7 @@
               "correct": true
             },
             {
-              "question": "D. Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.  PHẦN III. Câu trắc nghiệm trả lời ngắn.",
+              "question": "D. Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
               "correct": true
             }
           ]
@@ -1080,6 +690,137 @@
     {
       "name": "BÀI 26: CÔNG NGHỆ VI SINH VẬT",
       "questions": [
+        {
+          "type": "mcq",
+          "question": "Công nghệ vi sinh vật là lĩnh vực",
+          "image": null,
+          "options": [
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến sản phẩm phục vụ đời sống con người.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường. (S) C nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm thuốc chữa bệnh động vật.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các loại thực phẩm giàu giá trị dinh dưỡng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Hoạt động nào sau đây là ứng dụng của quá trình phân giải ở vi sinh vật?",
+          "image": null,
+          "options": [
+            "Sản xuất các chất xúc tác sinh học.",
+            "Sản xuất sinh khối.",
+            "Sản xuất Bột giặt sinh học.",
+            "Sản xuất amino acid."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Ví dụ nào sau đây nói về ứng dụng đặc điểm quá trình phân giải các chất của vi sinh vật?",
+          "image": null,
+          "options": [
+            "Sản xuất protein đơn bào.",
+            "Sản xuất acid amin.",
+            "Nước mắm.",
+            "Sản xuất các chất xúc tác sinh học."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Xử lý nước thải là ứng dụng của công nghệ vi sinh vật trong",
+          "image": null,
+          "options": [
+            "y học.",
+            "nông nghiệp.",
+            "bảo vệ môi trường.",
+            "sinh hoạt."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Xử lý mùi hôi trong chăn nuôi là ứng dụng của chế phẩm vi sinh vật trong",
+          "image": null,
+          "options": [
+            "sinh hoạt.",
+            "nông nghiệp.",
+            "công nghiệp.",
+            "môi trường."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Thành tựu nào sau đây là ứng dụng của công nghệ vi sinh vật trong nông nghiệp?",
+          "image": null,
+          "options": [
+            "Kháng sinh.",
+            "Dưa muối.",
+            "Nước tương.",
+            "Phân bón."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Bón phân vi sinh vật lâu thường xuyên thì",
+          "image": null,
+          "options": [
+            "không gây hại cho đất.",
+            "đất sẽ bị thoái hóa.",
+            "đất sẽ bị bạc màu.",
+            "khiến kết cấu đất kém bền."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Dựa vào đặc điểm nào của vi sinh vật người ta sử dụng chúng để xử lí ô nhiễm môi trường?",
+          "image": null,
+          "options": [
+            "Vi sinh vật có khả năng phân giải các chất phức tạp.",
+            "Khả năng sinh trưởng và sinh sản nhanh.",
+            "Khả năng phân bố và thích nghi cao.",
+            "Khả năng sống trong những môi trường cực đoan."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sản xuất men vi sinh là ứng dụng của công nghệ vi sinh vật trong lĩnh vực nào?",
+          "image": null,
+          "options": [
+            "Trồng trọt.",
+            "Dược học.",
+            "Chăn nuôi.",
+            "Thủy sản."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Công nghệ vi sinh vật là gì?",
+          "image": null,
+          "options": [
+            "Là công nghệ sử dụng vi sinh vật và hoặc các dẫn xuất để tạo ra sản phẩm phục vụ cho đời sống con người.",
+            "Là lĩnh vực quan trọng của công nghệ tế bào.",
+            "Là công nghệ sử dụng vi sinh vật và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người.",
+            "Là công nghệ sử dụng virus và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sản phẩm tạo ra từ công nghệ vi sinh vật có đặc điểm như thế nào?",
+          "image": null,
+          "options": [
+            "An toàn, thân thiện với môi trường, giá thành cao, hiệu quả lâu dài.",
+            "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
+            "Gây hại cho người sử dụng nên giá thành rẻ, hiệu quả lâu dài.",
+            "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài. Phần II. Trắc nghiệm đúng sai"
+          ],
+          "correct": 3
+        },
         {
           "type": "mcq",
           "question": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là Đúng hay Sai?",
@@ -1097,7 +838,7 @@
           "question": "Công nghệ vi sinh được ứng dụng vào bao nhiêu lĩnh vực sau đây? 1. Nông nghiệp\t2. Công nghiệp\t3. Lâm nghiệp 4. Y dược\t5. Bảo vệ môi trường\t6. Luyện kim",
           "image": null,
           "correctAnswer": [
-            4
+            "4  ( 1,2,4,5)"
           ]
         },
         {
@@ -1105,7 +846,7 @@
           "question": "Cho các đặc điểm: (1) Kích thước hiển vi; \t\t\t\t(2) Thời gian sinh trưởng nhanh; (3) Môi trường sống khá hạn chế; \t\t(4) Có hình thức dinh dưỡng đa dạng; (5) Quá trình tổng hợp và phân giải các chất nhanh. (6) Khả năng trao đổi chất với môi trường kém. Có bao nhiêu đặc điểm trên là cơ sở khoa học của việc ứng dụng công nghệ vi sinh vậl?",
           "image": null,
           "correctAnswer": [
-            4
+            "4   (1), (2), (4), (5)."
           ]
         },
         {
@@ -1113,257 +854,11 @@
           "question": "Để tăng lượng vi sinh vật và chất mùn trong đất trồng, người dân nên bón bao nhiêu loại phân trong các loại phân sau đây ? (1) Phân chuồng;\t(2) Phân xanh (từ thực vật); \t(3) Phân đạm; (4) Phân lân;\t(5) Phân vi sinh;\t                 (6) Phân kali.",
           "image": null,
           "correctAnswer": [
-            3
-          ]
-        },
-        {
-          "type": "shortanswer",
-          "question": "Có bao nhiêu ứng dụng sau đây là của tổng hợp protein ở vi sinh vật? 1. Sản xuất sinh khối (protein đơn bào). 2. Làm rượu, tương cà, dưa muối. 3. Sản xuất các chế phẩm sinh học (enzyme, gôm,...). 4. Sản xuất amino acid.",
-          "image": null,
-          "correctAnswer": [
-            3
+            "3  (1), (2), (5)."
           ]
         }
       ],
       "questionGroups": [
-        {
-          "passage": "Công nghệ vi sinh vật là lĩnh vực",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến sản phẩm phục vụ đời sống con người.",
-              "correct": false
-            },
-            {
-              "question": "B. nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường.  C nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm thuốc chữa bệnh động vật.",
-              "correct": false
-            },
-            {
-              "question": "D. nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các loại thực phẩm giàu giá trị dinh dưỡng.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Hoạt động nào sau đây là ứng dụng của quá trình phân giải ở vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Sản xuất các chất xúc tác sinh học.",
-              "correct": true
-            },
-            {
-              "question": "B. Sản xuất sinh khối.",
-              "correct": false
-            },
-            {
-              "question": "★C. Sản xuất Bột giặt sinh học.",
-              "correct": false
-            },
-            {
-              "question": "D. Sản xuất amino acid.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Ví dụ nào sau đây nói về ứng dụng đặc điểm quá trình phân giải các chất của vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Sản xuất protein đơn bào.",
-              "correct": true
-            },
-            {
-              "question": "B. Sản xuất acid amin.",
-              "correct": false
-            },
-            {
-              "question": "★C. Nước mắm.",
-              "correct": false
-            },
-            {
-              "question": "D. Sản xuất các chất xúc tác sinh học.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Xử lý nước thải là ứng dụng của công nghệ vi sinh vật trong",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. y học.",
-              "correct": true
-            },
-            {
-              "question": "B. nông nghiệp.",
-              "correct": false
-            },
-            {
-              "question": "★C. bảo vệ môi trường.",
-              "correct": false
-            },
-            {
-              "question": "D. sinh hoạt.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Xử lý mùi hôi trong chăn nuôi là ứng dụng của chế phẩm vi sinh vật trong",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. sinh hoạt.",
-              "correct": true
-            },
-            {
-              "question": "★B. nông nghiệp.",
-              "correct": false
-            },
-            {
-              "question": "C. công nghiệp.",
-              "correct": true
-            },
-            {
-              "question": "D. môi trường.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Thành tựu nào sau đây là ứng dụng của công nghệ vi sinh vật trong nông nghiệp?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Kháng sinh.",
-              "correct": true
-            },
-            {
-              "question": "B. Dưa muối.",
-              "correct": false
-            },
-            {
-              "question": "C. Nước tương.",
-              "correct": true
-            },
-            {
-              "question": "★D. Phân bón.",
-              "correct": false
-            }
-          ]
-        },
-        {
-          "passage": "Bón phân vi sinh vật lâu thường xuyên thì",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. không gây hại cho đất.",
-              "correct": false
-            },
-            {
-              "question": "B. đất sẽ bị thoái hóa.",
-              "correct": false
-            },
-            {
-              "question": "C. đất sẽ bị bạc màu.",
-              "correct": true
-            },
-            {
-              "question": "D. khiến kết cấu đất kém bền.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Dựa vào đặc điểm nào của vi sinh vật người ta sử dụng chúng để xử lí ô nhiễm môi trường?",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. Vi sinh vật có khả năng phân giải các chất phức tạp.",
-              "correct": false
-            },
-            {
-              "question": "B. Khả năng sinh trưởng và sinh sản nhanh.",
-              "correct": false
-            },
-            {
-              "question": "C. Khả năng phân bố và thích nghi cao.",
-              "correct": true
-            },
-            {
-              "question": "D. Khả năng sống trong những môi trường cực đoan.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Sản xuất men vi sinh là ứng dụng của công nghệ vi sinh vật trong lĩnh vực nào?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. Trồng trọt.",
-              "correct": true
-            },
-            {
-              "question": "B. Dược học.",
-              "correct": false
-            },
-            {
-              "question": "★C. Chăn nuôi.",
-              "correct": false
-            },
-            {
-              "question": "D. Thủy sản.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Công nghệ vi sinh vật là gì?",
-          "image": null,
-          "statements": [
-            {
-              "question": "★A. Là công nghệ sử dụng vi sinh vật và hoặc các dẫn xuất để tạo ra sản phẩm phục vụ cho đời sống con người.",
-              "correct": false
-            },
-            {
-              "question": "B. Là lĩnh vực quan trọng của công nghệ tế bào.",
-              "correct": false
-            },
-            {
-              "question": "C. Là công nghệ sử dụng vi sinh vật và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người.",
-              "correct": true
-            },
-            {
-              "question": "D. Là công nghệ sử dụng virus và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Sản phẩm tạo ra từ công nghệ vi sinh vật có đặc điểm như thế nào?",
-          "image": null,
-          "statements": [
-            {
-              "question": "A. An toàn, thân thiện với môi trường, giá thành cao, hiệu quả lâu dài.",
-              "correct": true
-            },
-            {
-              "question": "B. Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
-              "correct": false
-            },
-            {
-              "question": "C. Gây hại cho người sử dụng nên giá thành rẻ, hiệu quả lâu dài.",
-              "correct": true
-            },
-            {
-              "question": "★D. An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài. Phần II. Trắc nghiệm đúng sai",
-              "correct": false
-            }
-          ]
-        },
         {
           "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về công nghệ vi sinh vật?",
           "image": null,
@@ -1662,38 +1157,6 @@
           "image": null,
           "correctAnswer": [
             3
-          ]
-        },
-        {
-          "type": "shortanswer",
-          "question": "Quá trình nhân lên của virus được chia thành mấy giai đoạn?",
-          "image": null,
-          "correctAnswer": [
-            5
-          ]
-        },
-        {
-          "type": "shortanswer",
-          "question": "Virus trần không có mấy thành phần sau đây? 1. Lõi nucleic acid (DNA hoặc RNA). 2. Lớp vỏ (capsid). 3. Vỏ ngoài. 4. Gai glycoprotein.",
-          "image": null,
-          "correctAnswer": [
-            2
-          ]
-        },
-        {
-          "type": "shortanswer",
-          "question": "Cho các chức năng sau: (1). Nhận diện tế bào vật chủ để xâm nhập. (2). Bảo vệ virus khỏi hệ thống miễn dịch của tế bào vật chủ. (3). Giúp virus bám vào tế bào vật chủ. (4). Giúp virus nhân lên nhanh chóng. Lớp vỏ ngoài của virus đảm nhận bao nhiêu chức năng?",
-          "image": null,
-          "correctAnswer": [
-            3
-          ]
-        },
-        {
-          "type": "shortanswer",
-          "question": "Có bao nhiêu nhận định sau đây không đúng về chu trình tan? (1). Vật chất di truyền của virus tồn tại và nhân lên độc lập với vật chất di truyền của tế bào chủ. (2). Virus nhân lên theo chu trình này là virus độc vì phá vỡ tế bào chủ. (3). Virus nhân lên cùng sự nhân lên của tế bào chủ và không bao giờ thoát ra khỏi tế bào chủ. (4). Nhân lên nhiều thế hệ virus mới trong một tế bào chủ. (5). Virus chỉ nhân vật chất di truyền khi ở bên ngoài tế bào chủ.",
-          "image": null,
-          "correctAnswer": [
-            2
           ]
         }
       ]

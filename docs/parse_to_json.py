@@ -35,13 +35,21 @@ def parse_txt(filepath, subject_type):
         elif current_q['tf_answers'] or 'Đọc đoạn tư liệu' in current_q['question']:
             mode = 'tf'
         else:
-            # Check options for (Đ)/(S) or [a-d].
-            has_tf_markers = False
-            for opt in current_q['options']:
-                if '(Đ)' in opt or '(S)' in opt:
-                    has_tf_markers = True
-                    break
-            if has_tf_markers:
+            # Check if options use uppercase A-D (MCQ) or lowercase a-d (TF)
+            has_star = any('★' in opt for opt in current_q['options'])
+            has_uppercase_abcd = any(re.match(r'^[★\s]*[A-D]\.', opt) for opt in current_q['options'])
+            has_lowercase_abcd = any(re.match(r'^[a-d]\.', opt) for opt in current_q['options'])
+            has_tf_markers = any('(Đ)' in opt or '(S)' in opt for opt in current_q['options'])
+            
+            # If options use uppercase A-D with ★, it's MCQ even if (Đ)/(S) present
+            if has_uppercase_abcd and has_star:
+                mode = 'mcq'
+            elif has_lowercase_abcd and has_tf_markers:
+                mode = 'tf'
+            elif has_tf_markers and not has_uppercase_abcd:
+                mode = 'tf'
+            elif has_tf_markers and has_uppercase_abcd and not has_star:
+                # Uppercase A-D with (Đ)/(S) but no ★ - treat as TF
                 mode = 'tf'
                 
         if mode == 'mcq':
@@ -55,6 +63,10 @@ def parse_txt(filepath, subject_type):
                     opt = opt.replace('★', '')
                 
                 opt = re.sub(r'^[A-D]\.\s*', '', opt).strip()
+                # Strip (Đ)/(S) markers from MCQ options
+                opt = re.sub(r'\s*\([SĐ]\)\s*$', '', opt).strip()
+                # Strip trailing section headers like "2. THÔNG HIỂU"
+                opt = re.sub(r'\s+\d+\.\s*(NHẬN BIẾT|THÔNG HIỂU|VẬN DỤNG|VẬN DỤNG CAO)\s*$', '', opt).strip()
                 clean_opts.append(opt)
                 
             if clean_opts:
