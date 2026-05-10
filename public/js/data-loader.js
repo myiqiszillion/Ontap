@@ -24,16 +24,19 @@ const DataLoader = {
     const data = await API.getQuestions(subjectId);
 
     const lessons = data.lessons.map((lesson, index) => {
-      const mcqCount = (lesson.questions || []).length;
+      const allQs = lesson.questions || [];
+      const mcqCount = allQs.filter(q => !q.type || q.type === 'mcq').length;
+      const saCount = allQs.filter(q => q.type === 'shortanswer').length;
       const tfGroupCount = (lesson.questionGroups || []).length;
+      
       return {
         bai: index + 1,
         title: lesson.name,
         mcqCount,
         tfGroupCount,
-        saCount: 0,
-        totalItems: mcqCount + tfGroupCount,
-        estimatedTime: Math.ceil((mcqCount + tfGroupCount * 4) * 1)
+        saCount,
+        totalItems: mcqCount + tfGroupCount + saCount,
+        estimatedTime: Math.ceil((mcqCount + tfGroupCount * 4 + saCount * 2) * 1)
       };
     });
 
@@ -42,11 +45,6 @@ const DataLoader = {
 
   /**
    * Load quiz data for selected bài numbers
-   * @param {string} subjectId
-   * @param {number[]} selectedBais - Array of bài numbers (1-indexed)
-   * @param {string} examMode - 'exam', 'mcq', 'tf', 'all'
-   * @param {number|null} mcqLimit
-   * @param {number|null} tfLimit
    */
   async loadQuizData(subjectId, selectedBais, examMode = 'exam', mcqLimit = null, tfLimit = null, saLimit = null) {
     const data = await API.getQuestions(subjectId);
@@ -56,19 +54,28 @@ const DataLoader = {
 
     let mcqQuestions = [];
     let tfGroups = [];
+    let saQuestions = [];
 
     selectedLessons.forEach(lesson => {
-      // MCQ questions
+      // Questions (MCQ & Short Answer)
       if (lesson.questions) {
         lesson.questions.forEach(q => {
-          mcqQuestions.push({
-            type: 'mcq',
+          const type = q.type || 'mcq';
+          const processedQ = {
+            type,
             question: q.question,
-            options: q.options,
-            correctAnswer: q.correct !== undefined ? q.correct : q.correctAnswer,
             image: q.image || null,
             lessonTitle: lesson.name
-          });
+          };
+
+          if (type === 'mcq') {
+            processedQ.options = q.options;
+            processedQ.correctAnswer = q.correct !== undefined ? q.correct : q.correctAnswer;
+            mcqQuestions.push(processedQ);
+          } else if (type === 'shortanswer') {
+            processedQ.correctAnswer = q.correct !== undefined ? q.correct : q.correctAnswer;
+            saQuestions.push(processedQ);
+          }
         });
       }
 
@@ -95,15 +102,17 @@ const DataLoader = {
     if (shouldShuffle) {
       mcqQuestions = this.shuffle(mcqQuestions);
       tfGroups = this.shuffle(tfGroups);
+      saQuestions = this.shuffle(saQuestions);
     }
 
     if (mcqLimit !== null) mcqQuestions = mcqQuestions.slice(0, mcqLimit);
     if (tfLimit !== null) tfGroups = tfGroups.slice(0, tfLimit);
+    if (saLimit !== null) saQuestions = saQuestions.slice(0, saLimit);
 
     if (shouldShuffle) {
-      questions = this.shuffle([...mcqQuestions, ...tfGroups]);
+      questions = this.shuffle([...mcqQuestions, ...tfGroups, ...saQuestions]);
     } else {
-      questions = [...mcqQuestions, ...tfGroups];
+      questions = [...mcqQuestions, ...tfGroups, ...saQuestions];
     }
 
     return {

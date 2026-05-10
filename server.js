@@ -66,15 +66,35 @@ app.get('/api/announcements', async (req, res) => {
 
 app.post('/api/announcements', async (req, res) => {
   try {
-    const { title, content, link } = req.body;
+    const { title, content, link, image_url } = req.body;
     const { data, error } = await supabase
       .from('announcements')
-      .insert([{ title, content, link, timestamp: new Date().toISOString() }])
+      .insert([{ title, content, link, image_url, timestamp: new Date().toISOString() }])
       .select();
     if (error) throw error;
     res.status(201).json(data[0]);
   } catch (error) {
     console.error('POST Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.patch('/api/pin-announcement', async (req, res) => {
+  try {
+    const { id } = req.query;
+    const { pinned } = req.body;
+    if (!id) return res.status(400).json({ error: 'ID is required' });
+    
+    const { data, error } = await supabase
+      .from('announcements')
+      .update({ pinned })
+      .eq('id', id)
+      .select();
+      
+    if (error) throw error;
+    res.json(data[0]);
+  } catch (error) {
+    console.error('PATCH Error:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -99,6 +119,12 @@ app.delete('/api/delete-announcement', async (req, res) => {
 app.get('/api/data/:subject', (req, res) => {
   try {
     const { subject } = req.params;
+    
+    // Security check: only allow alphanumeric and underscores
+    if (!/^[a-z0-9_]+$/.test(subject)) {
+      return res.status(400).json({ error: 'Invalid subject name' });
+    }
+
     const dataPath = path.join(__dirname, 'data', `${subject}.json`);
     if (!fs.existsSync(dataPath)) return res.status(404).json({ error: 'Not found' });
     const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
