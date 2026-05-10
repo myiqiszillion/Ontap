@@ -11,13 +11,21 @@
             "Văn Lang.",
             "Lâm Ấp.",
             "Chăm-pa.",
-            "Phù Nam. Câu 2: Nền văn minh Văn Lang - Âu Lạc chủ yếu được hình thành trên lưu vực các con sông nào sau đây?",
+            "Phù Nam."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Nền văn minh Văn Lang - Âu Lạc chủ yếu được hình thành trên lưu vực các con sông nào sau đây?",
+          "image": null,
+          "options": [
             "Sông Hằng, sông Ấn.",
             "Sông Hoàng Hà, sông Trường Giang.",
             "Sông Hồng, sông Mã, sông Cả.",
             "Sông Bạch Đằng, sông Hương."
           ],
-          "correct": 6
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -327,13 +335,21 @@
             "ở nhà sàn.",
             "nhuộm răng đen.",
             "Xăm mình.",
-            "thờ thần Dớt. Câu 31: Nhận xét nào dưới đây là không đúng về vai trò của nền văn minh Văn Lang - Âu Lạc đối với tiến trình phát triển của lịch sử Việt Nam?",
+            "thờ thần Dớt."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Nhận xét nào dưới đây là không đúng về vai trò của nền văn minh Văn Lang - Âu Lạc đối với tiến trình phát triển của lịch sử Việt Nam?",
+          "image": null,
+          "options": [
             "Là nền văn minh đầu tiên của lịch sử dân tộc Việt Nam.",
             "Góp phần định hình bản sắc văn hóa dân tộc Việt Nam.",
             "Đưa Việt Nam trở thành quốc gia giàu mạnh nhất khu vực.",
             "Đặt nền tảng cho sự phát triển của các nền văn minh sau này."
           ],
-          "correct": 6
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -694,13 +710,21 @@
             "Chịu ảnh hưởng từ nền văn minh Ấn Độ.",
             "Hình thành trên cơ sở của văn hóa Sa Huỳnh.",
             "Lưu giữ và phát huy nền văn hóa bản địa.",
-            "Chịu ảnh hưởng của nền văn hóa Trung Hoa. Câu 13: Nội dung nào sau đây là điểm khác biệt về cơ sở hình thành của nền văn minh Chăm-pa so với nền văn minh Văn Lang - Âu Lạc?",
+            "Chịu ảnh hưởng của nền văn hóa Trung Hoa."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là điểm khác biệt về cơ sở hình thành của nền văn minh Chăm-pa so với nền văn minh Văn Lang - Âu Lạc?",
+          "image": null,
+          "options": [
             "Kinh tế nông nghiệp, thủ công nghiệp phát triển.",
             "Xã hội có sự phân hóa thành các giai cấp, tầng lớp.",
             "Chịu ảnh hưởng sâu sắc của văn minh Trung Hoa.",
             "Chịu ảnh hưởng sâu sắc của nền văn minh Ấn Độ."
           ],
-          "correct": 7
+          "correct": 3
         },
         {
           "type": "mcq",
@@ -854,13 +878,21 @@
             "Lễ hội Ka-tê.",
             "Lễ hội Oóc Om Bóc.",
             "Lễ hội Cơm mới.",
-            "Lễ hội Lồng tồng. Câu 27: Nội dung nào sau đây là điểm tương đồng giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
+            "Lễ hội Lồng tồng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là điểm tương đồng giữa văn minh Văn Lang - Âu Lạc với văn minh Chăm-pa?",
+          "image": null,
+          "options": [
             "Cùng theo một tôn giáo, tín ngưỡng.",
             "Có nhiều thành tựu phong phú, đa dạng.",
             "Có kinh tế thương nghiệp là chủ đạo.",
             "Chịu ảnh hưởng văn minh Ấn Độ."
           ],
-          "correct": 5
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -1203,13 +1235,21 @@
             "thợ thủ công.",
             "nông dân công xã.",
             "nô lệ.",
-            "các nhà truyền giáo. Câu 15: Nội dung nào sau đây là điểm tương đồng về cơ sở xã hội dẫn đến sự hình thành của nền văn minh Chăm-pa và Phù Nam?",
+            "các nhà truyền giáo."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là điểm tương đồng về cơ sở xã hội dẫn đến sự hình thành của nền văn minh Chăm-pa và Phù Nam?",
+          "image": null,
+          "options": [
             "Ngành nông nghiệp lúa nước đóng vai trò chủ đạo.",
             "Sự kết hợp giữa người bản địa với bộ phận di cư.",
             "Chịu ảnh hưởng sâu sắc của văn minh Trung Hoa.",
             "Tiếp thu có chọn lọc ảnh hưởng văn hóa Ai Cập."
           ],
-          "correct": 5
+          "correct": 1
         },
         {
           "type": "mcq",
@@ -1399,13 +1439,21 @@
             "Thờ thần Dớt.",
             "thờ thần Mặt Trời.",
             "thờ thần Bra-ma.",
-            "thờ thần Si-va. Câu 32: Nội dung nào sau đây là điểm tương đồng về đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Phù Nam?",
+            "thờ thần Si-va."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là điểm tương đồng về đời sống tinh thần của cư dân Văn Lang - Âu Lạc và cư dân Phù Nam?",
+          "image": null,
+          "options": [
             "Chịu ảnh hưởng của Phật giáo.",
             "Có nền văn học viết phát triển.",
             "Phổ biến tín ngưỡng phồn thực.",
             "Sớm sáng tạo ra chữ viết riêng."
           ],
-          "correct": 6
+          "correct": 2
         },
         {
           "type": "mcq",
@@ -2344,11 +2392,11 @@
           "image": null,
           "statements": [
             {
-              "question": "Đoạn tư liệu phản ánh đời sống tín ngưỡng của các dân tộc Việt Nam.  Tín ngưỡng của người Việt mang trong mình những đặc trưng của nền văn minh nông nghiệp lúa",
+              "question": "Đoạn tư liệu phản ánh đời sống tín ngưỡng của các dân tộc Việt Nam.",
               "correct": true
             },
             {
-              "question": "nước.",
+              "question": "Tín ngưỡng của người Việt mang trong mình những đặc trưng của nền văn minh nông nghiệp lúa nước.",
               "correct": true
             },
             {
@@ -2502,13 +2550,21 @@
             "tính toàn diện.",
             "tính dân chủ.",
             "tính dân tộc.",
-            "tính cụ thể. Câu 9: Trong chính sách dân tộc về kinh tế, Đảng và Nhà nước Việt Nam có chủ trương nào dưới đây?",
+            "tính cụ thể."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Trong chính sách dân tộc về kinh tế, Đảng và Nhà nước Việt Nam có chủ trương nào dưới đây?",
+          "image": null,
+          "options": [
             "Xây dựng cơ chế quản lí kinh tế thị trường năng động, linh hoạt.",
             "Phát triển nền kinh tế nhiều ngành, quy mô, trình độ công nghệ.",
             "Ưu tiên đầu tư phát triển kinh tế các vùng dân tộc và miền núi.",
             "Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa."
           ],
-          "correct": 6
+          "correct": 2
         },
         {
           "type": "mcq",
