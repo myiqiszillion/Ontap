@@ -634,9 +634,9 @@ const Study = {
 
   // Utility
   escapeHtml(text) {
-    if (typeof text !== 'string') return '';
+    if (text === null || text === undefined) return '';
     const div = document.createElement('div');
-    div.textContent = text;
+    div.textContent = String(text);
     return div.innerHTML;
   }
 };
