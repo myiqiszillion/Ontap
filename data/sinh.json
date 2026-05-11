@@ -209,8 +209,8 @@
         },
         {
           "type": "shortanswer",
-          "question": "Hình ảnh dưới đây chụp lại hiện tượng xảy ra với các quả đào khi để lâu ngoài không khí mà không được bảo quản:  Nguồn ảnh: Wikipedia.org Trong các phát biểu sau về hiện tượng trên, có bao nhiêu phát biểu đúng? 1. Hiện tượng xảy ra với quả đào là do vi sinh vật gây ra. 2. Nấm men là tác nhân chính gây ra hiện tượng xảy ra trên quả đào. 3. Tác nhân gây ra hiện tượng trên có kiểu dinh dưỡng là hóa tự dưỡng. 4. Trong quá trình trên, sinh vật có nguồn năng lượng từ chất hữu cơ. 5. Trong quá trình trên, sinh vật có nguồn carbon là chất hữu cơ.",
-          "image": "/images/sinh10/image17.jpg",
+          "question": "Hình ảnh dưới đây chụp lại hiện tượng xảy ra với các quả đào khi để lâu ngoài không khí mà không được bảo quản: Nguồn ảnh: Wikipedia.org Trong các phát biểu sau về hiện tượng trên, có bao nhiêu phát biểu đúng? 1. Hiện tượng xảy ra với quả đào là do vi sinh vật gây ra. 2. Nấm men là tác nhân chính gây ra hiện tượng xảy ra trên quả đào. 3. Tác nhân gây ra hiện tượng trên có kiểu dinh dưỡng là hóa tự dưỡng. 4. Trong quá trình trên, sinh vật có nguồn năng lượng từ chất hữu cơ. 5. Trong quá trình trên, sinh vật có nguồn carbon là chất hữu cơ.",
+          "image": null,
           "correctAnswer": [
             3
           ]
@@ -284,8 +284,8 @@
           ]
         },
         {
-          "passage": "Hình ảnh sau đây mô tả cho phương pháp định danh vi khuẩn:  Nguồn ảnh: Bệnh viện Nguyễn Tri Phương Mỗi nhận định sau đây về phương pháp này là đúng hay sai?",
-          "image": "/images/sinh10/image16.jpg",
+          "passage": "Hình ảnh sau đây mô tả cho phương pháp định danh vi khuẩn: Nguồn ảnh: Bệnh viện Nguyễn Tri Phương Mỗi nhận định sau đây về phương pháp này là đúng hay sai?",
+          "image": null,
           "statements": [
             {
               "question": "Đây là phương pháp mô tả chính xác khuẩn lạc đã tách rời.",
@@ -308,7 +308,7 @@
       ]
     },
     {
-      "name": "BÀI 24: QUÁ TRÌNH TỔNG HỢP VÀ PHÂN GIẢI Ở VI SINH VẬT",
+      "name": "Bài 24. QUÁ TRÌNH TỔNG HỢP VÀ PHÂN GIẢI Ở VI SINH VẬT",
       "questions": [
         {
           "type": "mcq",
@@ -317,7 +317,7 @@
           "options": [
             "Glucose.",
             "ATP.",
-            "ADP - Glucose.",
+            "C. ADP - Glucose.",
             "ATP - Glucose."
           ],
           "correct": 2
@@ -366,7 +366,7 @@
             "lên men rượu và lên men lactic.",
             "lên men hiếu khí và lên men kị khí.",
             "lên men lactic và lên men hiếu khí.",
-            "lên men rượu và lên men kị khí. (S)"
+            "lên men rượu và lên men kị khí."
           ],
           "correct": 0
         },
@@ -419,7 +419,7 @@
           "question": "Cho các ứng dụng sau: 1. Sản xuất sinh khối (protein đơn bào).\t\t\t2. Sản xuất nước tương. 3. Sản xuất chế phẩm sinh học (gôm,…)\t\t\t4. Sản xuất sữa chua. Có bao nhiêu ứng dụng từ quá trình tổng hợp ở vi sinh vật?",
           "image": null,
           "correctAnswer": [
-            2
+            "2 (1 và 3)"
           ]
         },
         {
@@ -427,13 +427,25 @@
           "question": "Cho các phát biểu sau đây về vai trò của vi sinh vật trong cải thiện chất lượng đất: (1) Tăng khả năng kết dính các hạt đất. (2) Chuyển hóa chất dinh dưỡng giúp cây dễ hấp thụ. (3) Tiết ra chất có lợi cho cây trồng. (4) Tiêu diệt sâu hại. Trong các phát biểu trên, có bao nhiêu phát biểu đúng?",
           "image": null,
           "correctAnswer": [
-            4
+            ": Có 4 phát biểu đúng"
+          ]
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho sơ đồ dưới đây về quá trình tổng hợp ở vi sinh vật. Mỗi phát biểu sau đây về sơ đồ trên là Đúng hay Sai? a) Tổng hợp là quá trình tạo ra phân tử hữu cơ phức tạp từ những chất đơn giản. b) Quá trình tổng hợp cung cấp nguyên liệu cho quá trình phân giải chất hữu cơ. c) Carbohydrate có thể tổng hợp từ N-acetyl glucosamin. d) Amino acid là nguyên liệu để tổng hợp lipid. Hướng dẫn giải:",
+          "image": null,
+          "statements": [
+            {
+              "question": "Đúng\tb. Đúng\tc. Đúng\td. Sai",
+              "correct": false
+            }
           ]
         }
       ]
     },
     {
-      "name": "BÀI 25: SINH TRƯỞNG VÀ SINH SẢN Ở VI SINH VẬT",
+      "name": "BÀI 25:  SINH TRƯỞNG VÀ SINH SẢN Ở VI SINH VẬT",
       "questions": [
         {
           "type": "mcq",
@@ -617,10 +629,34 @@
         },
         {
           "type": "shortanswer",
+          "question": "Sự sinh trưởng của một quần thể vi khuẩn được thể hiện như sơ đồ bên. Phân tích sơ đồ và cho biết mỗi nhận định sau đây là Đúng hay Sai? Đây là sự sinh trưởng của quần thể vi khuẩn trong môi trường nuôi cấy không liên tục. Để thu được sinh khối tối đa người ta sẽ thu ở cuối pha số (3). c) Tốc độ sinh trưởng của quần thể vi khuẩn ở pha số (2) cao hơn pha số (3). d) Pha số (1), vi khuẩn không sinh trưởng vì lượng chất dinh dưỡng rất ít.",
+          "image": null,
+          "correctAnswer": [
+            "A đúng; B Sai, C đúng, D sai"
+          ]
+        },
+        {
+          "type": "shortanswer",
+          "question": "Quan sát bảng sau và cho biết mỗi nhận định sau đây là đúng hay sai về sinh trưởng ở vi khuẩn E.coli?",
+          "image": null,
+          "correctAnswer": [
+            "A đúng; B Sai, C đúng, D đúng"
+          ]
+        },
+        {
+          "type": "shortanswer",
+          "question": "Thông thường, khi có người thân bị cảm, sốt, nhức đầu,... người dân hay tự ý đi mua thuốc kháng sinh về điều trị bệnh. Mỗi nhận định dưới đây là đúng hay sai về việc làm này?",
+          "image": null,
+          "correctAnswer": [
+            "A đúng; B sai, C đúng, D đúng"
+          ]
+        },
+        {
+          "type": "shortanswer",
           "question": "Trong môi trường nuôi cấy liên tục quần thể vi sinh vật sinh trưởng theo mấy pha?",
           "image": null,
           "correctAnswer": [
-            3
+            "3 (tiềm phát, lũy thừa, cân bằng)"
           ]
         },
         {
@@ -628,7 +664,7 @@
           "question": "Có bao nhiêu phát biểu dưới đây là đúng khi nói về sinh trưởng của quần thể vi sinh vật? (1) Pha suy vong không có tốc độ sinh trưởng. (2) Pha lũy thừa có tốc độ sinh trưởng lớn nhất do số cá thể sinh ra nhiều, không có cá thể chết đi. (3) Pha cân bằng có tốc độ phân chia của vi khuẩn đạt tối đa do chất dinh dưỡng dồi dào. (4) Pha suy vong cá thể giảm do chất dinh dưỡng cạn kiệt, chất độc hại tích lũy nhiều.",
           "image": null,
           "correctAnswer": [
-            1
+            "1 (chỉ phát biểu 4 đúng)"
           ]
         },
         {
@@ -636,53 +672,7 @@
           "question": "Có bao nhiêu phát biểu sau đây là đúng khi nói về hình thức sinh sản có ở cả vi sinh vật nhân sơ và nhân thực? (1) Phân đôi.\t(2) Nảy chồi.\t\t(3) Bào tử trần. (4) Hình thành bào tử tiếp hợp. CHƯƠNG 5: VI SINH VẬT VÀ ỨNG DỤNG",
           "image": null,
           "correctAnswer": [
-            3
-          ]
-        }
-      ],
-      "questionGroups": [
-        {
-          "passage": "Quan sát bảng sau và cho biết mỗi nhận định sau đây là đúng hay sai về sinh trưởng ở vi khuẩn E.coli?",
-          "image": "/images/sinh10/image26.png",
-          "statements": [
-            {
-              "question": "Cứ 20 phút vi khuẩn E.coli phân chia 1 lần.",
-              "correct": true
-            },
-            {
-              "question": "Trong 1 giờ chúng phân chia 4 lần.",
-              "correct": false
-            },
-            {
-              "question": "Sau 1 giờ 20 phút số tế bào trong quần thể là 16 tế bào.",
-              "correct": true
-            },
-            {
-              "question": "Số tế bào vi khuẩn tăng theo cấp số nhân sau mỗi lần phân chia.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Thông thường, khi có người thân bị cảm, sốt, nhức đầu,... người dân hay tự ý đi mua thuốc kháng sinh về điều trị bệnh. Mỗi nhận định dưới đây là đúng hay sai về việc làm này?",
-          "image": null,
-          "statements": [
-            {
-              "question": "Người dân không nên tự ý đi mua thuốc kháng sinh về điều trị bệnh cho người thân vì sẽ gây ra hiện tượng kháng kháng sinh (nhờn kháng sinh).",
-              "correct": true
-            },
-            {
-              "question": "Đối với cảm sốt nhẹ, có thể tự mua kháng sinh ở hiệu thuốc có uy tín để điều trị, vì kháng sinh có thể tiêu diệt hoặc ức chế vi sinh vật gây bệnh.",
-              "correct": false
-            },
-            {
-              "question": "Khi tự ý mua thuốc kháng sinh về sử dụng có thể không tạo được hiệu quả điều trị mong muốn mà còn gây nên các tác dụng phụ nguy hiểm.",
-              "correct": true
-            },
-            {
-              "question": "Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
-              "correct": true
-            }
+            "3 (1, 2 và 3)"
           ]
         }
       ]
@@ -696,7 +686,7 @@
           "image": null,
           "options": [
             "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến sản phẩm phục vụ đời sống con người.",
-            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường. (S) C nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm thuốc chữa bệnh động vật.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường. C nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm thuốc chữa bệnh động vật.",
             "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các loại thực phẩm giàu giá trị dinh dưỡng."
           ],
           "correct": 0
@@ -823,6 +813,22 @@
         },
         {
           "type": "shortanswer",
+          "question": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về công nghệ vi sinh vật?",
+          "image": null,
+          "correctAnswer": [
+            "A, C, D Đúng.   \t\t\t B Sai"
+          ]
+        },
+        {
+          "type": "shortanswer",
+          "question": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là Đúng hay Sai?",
+          "image": null,
+          "correctAnswer": [
+            "A, C, D Đúng.   \t\t\t B Sai"
+          ]
+        },
+        {
+          "type": "shortanswer",
           "question": "Công nghệ vi sinh được ứng dụng vào bao nhiêu lĩnh vực sau đây? 1. Nông nghiệp\t2. Công nghiệp\t3. Lâm nghiệp 4. Y dược\t5. Bảo vệ môi trường\t6. Luyện kim",
           "image": null,
           "correctAnswer": [
@@ -845,56 +851,10 @@
             "3  (1), (2), (5)."
           ]
         }
-      ],
-      "questionGroups": [
-        {
-          "passage": "Mỗi nhận định sau đây là Đúng hay Sai khi nói về công nghệ vi sinh vật?",
-          "image": null,
-          "statements": [
-            {
-              "question": "Là lĩnh vực quan trọng của công nghệ sinh học.",
-              "correct": true
-            },
-            {
-              "question": "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
-              "correct": false
-            },
-            {
-              "question": "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài.",
-              "correct": true
-            },
-            {
-              "question": "Là công nghệ sử dụng vi sinh vật và dẫn xuất của nó để tạo ra sản phẩm phục vụ cho đời sống con người.",
-              "correct": true
-            }
-          ]
-        },
-        {
-          "passage": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là Đúng hay Sai?",
-          "image": null,
-          "statements": [
-            {
-              "question": "giúp tăng kết cấu đất",
-              "correct": false
-            },
-            {
-              "question": "cung cấp đủ các dưỡng chất khoáng đa lượng, trung lượng và vi lượng cho cây trồng",
-              "correct": false
-            },
-            {
-              "question": "cải tạo, bồi dưỡng, tăng lượng mùn, tăng độ phì nhiêu, làm đất tơi xốp, không bị bạc màu.",
-              "correct": false
-            },
-            {
-              "question": "có hiệu quả chậm hơn so với phân bón hóa học nên ít được sử dụng Phần III. Trắc nghiệm trả lời ngắn.",
-              "correct": false
-            }
-          ]
-        }
       ]
     },
     {
-      "name": "BÀI 29: VIRUS",
+      "name": "Bài 29: VIRUS",
       "questions": [
         {
           "type": "mcq",
@@ -1043,7 +1003,7 @@
         {
           "type": "mcq",
           "question": "Trong thí nghiệm của Martinus Beijerinck, dịch lọc (số 2) không chứa vi khuẩn vì:",
-          "image": "/images/sinh10/image27.png",
+          "image": null,
           "options": [
             "dịch đã được lọc qua màng lọc vi khuẩn.",
             "lúc chiết xuất đã làm tan hết vi khuẩn.",
@@ -1119,27 +1079,18 @@
           "options": [
             "Vì cơ thể người khỏe mạnh có hệ miễn dịch có khả năng chống lại virus mới xâm nhập.",
             "Vì người mắc bệnh không phải ổ chứa virus.",
-            "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm.",
-            "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
+            "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm. D. Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
           ],
-          "correct": 3
-        },
-        {
-          "type": "shortanswer",
-          "question": "Có bao nhiêu nhận định sau đây đúng về virus (1) Glycoprotein ở virus có vỏ ngoài giúp virus nhận diện tế bào chủ để xâm nhập. (2) Vỏ capsid được cấu tạo từ các phân tử phospholipid giúp bao bọc lõi nucleic acid. (3) Virus hỗn hợp thường có đầu dạng hình cầu, đuôi có cấu trúc xoắn. (4) Vỏ ngoài ở một số loại virus được cấu tạo từ lớp phospholipid kép và protein. (5) Virus nhận ra tế bào vật chủ theo nguyên tắc “chìa và khóa”",
-          "image": null,
-          "correctAnswer": [
-            3
-          ]
+          "correct": 2
         }
       ],
       "questionGroups": [
         {
           "passage": "Quan sát hình sau đây về HIV. Khi nói về HIV, phát biểu nào sau đây đúng, phát biểu nào sai?",
-          "image": "/images/sinh10/image28.png",
+          "image": null,
           "statements": [
             {
-              "question": "HIV thuộc loại virus DN",
+              "question": "HIV thuộc loại virus DNA.",
               "correct": false
             },
             {
@@ -1158,15 +1109,15 @@
         },
         {
           "passage": "Hình sau đây là một ví dụ về quá trình nhân lên của virus trong tế bào chủ. Khi nói về hình này, phát biểu nào sau đây đúng, phát biểu nào sai?",
-          "image": "/images/sinh10/image29.png",
+          "image": null,
           "statements": [
             {
               "question": "Quá trình này gồm 5 giai đoạn.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Virus này xâm nhập bằng cách tiết enzyme lysozyme làm tan thành tế bào vật chủ.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Sự nhân lên của virus này được thực hiện theo chu trình tiềm tan.",
@@ -1174,13 +1125,13 @@
             },
             {
               "question": "Người ta dùng kháng sinh để tiêu diệt virus này.",
-              "correct": false
+              "correct": true
             }
           ]
         },
         {
-          "passage": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Một phương pháp dân gian giúp chống cúm cho rằng người bệnh nên ở qua đêm trong chuồng ngựa. Biết rằng không khí bên trong chuồng chứa amoniac.  Nhận định nào sau đây Đúng hay Sai?",
-          "image": "/images/sinh10/image30.png",
+          "passage": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Một phương pháp dân gian giúp chống cúm cho rằng người bệnh nên ở qua đêm trong chuồng ngựa. Biết rằng không khí bên trong chuồng chứa amoniac. Nhận định nào sau đây Đúng hay Sai?",
+          "image": null,
           "statements": [
             {
               "question": "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",

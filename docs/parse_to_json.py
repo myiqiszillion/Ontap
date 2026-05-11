@@ -209,7 +209,7 @@ def parse_txt(filepath, subject_type):
             i += 1
             while i < len(lines):
                 next_l = lines[i]
-                if re.match(r'^(Câu\s+\d+|PHẦN|I\.|II\.|III\.)', next_l):
+                if re.match(r'^(Câu\s+\d+|PHẦN|I\.|II\.|III\.|BÀI|Bài)', next_l):
                     break
                 
                 ans_matches = re.findall(r'([a-d])\.\s*([^\.]*?(?:Đúng|Sai|đúng|sai|Biết\s*Đúng|Biết\s*Sai|Hiểu\s*Đúng|Hiểu\s*Sai))', next_l, re.IGNORECASE)
@@ -238,7 +238,13 @@ def parse_txt(filepath, subject_type):
             continue
             
         elif re.match(r'^([★\s]*[A-D]\.)', line) or re.match(r'^([a-d]\.)', line) or re.search(r'\([SĐ]\)', line):
-            current_q['options'].append(line)
+            if re.search(r'\s+[★\s]*[B-D]\.', line):
+                parts = re.findall(r'[★\s]*[A-D]\..*?(?=\s*[★\s]*[A-D]\.|$)', line)
+                for p in parts:
+                    if p.strip():
+                        current_q['options'].append(p.strip())
+            else:
+                current_q['options'].append(line)
         else:
             if current_q['options']:
                 current_q['options'][-1] += ' ' + line
