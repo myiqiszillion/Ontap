@@ -270,7 +270,7 @@
               "correct": true
             },
             {
-              "question": "Vi khuẩn là vi sinh vật thuộc nhóm đơn bào nhân thưc.",
+              "question": "Vi khuẩn là vi sinh vật thuộc nhóm đơn bào nhân thực.",
               "correct": true
             },
             {
@@ -317,7 +317,7 @@
           "options": [
             "Glucose.",
             "ATP.",
-            "C. ADP - Glucose.",
+            "ADP - Glucose.",
             "ATP - Glucose."
           ],
           "correct": 2
@@ -858,7 +858,7 @@
       "questions": [
         {
           "type": "mcq",
-          "question": "Hình thức sống của viruslà gì?",
+          "question": "Hình thức sống của virus là gì?",
           "image": null,
           "options": [
             "Sống kí sinh không bắt buộc.",
@@ -906,7 +906,7 @@
         },
         {
           "type": "mcq",
-          "question": "Trong giai đoạn hấp phụ, phân tử bề mặt virus gắn đặc hiệu vào thụ thể bề mặt tế bào vật chủ theonguyên tắc",
+          "question": "Trong giai đoạn hấp phụ, phân tử bề mặt virus gắn đặc hiệu vào thụ thể bề mặt tế bào vật chủ theo nguyên tắc",
           "image": null,
           "options": [
             "bán bảo tồn.",
@@ -993,7 +993,7 @@
           "question": "Cấu trúc nào quyết định tính di truyền của virus?",
           "image": null,
           "options": [
-            "Lõi nucleicacid.",
+            "Lõi nucleic acid.",
             "Vỏ capsid.",
             "Vỏ ngoài.",
             "Protein capsomer."
@@ -1055,8 +1055,8 @@
           "options": [
             "Chu trình tan có sự nhân lên tạo ra vô số virus mới, còn chu trình tiềm tan chỉ nhân bản hệ gene mà không tạo ra các virus mới.",
             "Chu trình tan cho phép hệ gene của virus tồn tại và nhân lên trong tế bào vật chủ, còn chu trình tiềm tan thì hệ gene không có khả năng nhân lên trong tê bào vật chủ.",
-            "Chu trình tan kết thúc bằng việc virus gây chết tế bào vật chủ, còn chu trình tiểm tan hệ gene của virus sống chung và không phá vỡ tế bào vật chủ.",
-            "Chu trình tiềm tan có thể tạo ra quẩn thể nhiều tế bào mang gene và bị nhiễm virus, còn chu trình tan thì làm chết tế bào vật chủ."
+            "Chu trình tan kết thúc bằng việc virus gây chết tế bào vật chủ, còn chu trình tiềm tan hệ gene của virus sống chung và không phá vỡ tế bào vật chủ.",
+            "Chu trình tiềm tan có thể tạo ra quần thể nhiều tế bào mang gene và bị nhiễm virus, còn chu trình tan thì làm chết tế bào vật chủ."
           ],
           "correct": 1
         },
@@ -1079,9 +1079,10 @@
           "options": [
             "Vì cơ thể người khỏe mạnh có hệ miễn dịch có khả năng chống lại virus mới xâm nhập.",
             "Vì người mắc bệnh không phải ổ chứa virus.",
-            "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm. D. Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
+            "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm.",
+            "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
           ],
-          "correct": 2
+          "correct": 3
         }
       ],
       "questionGroups": [
@@ -1099,11 +1100,11 @@
             },
             {
               "question": "HIV khi nhân lên trong tế bào vật chủ có xảy ra phiên mã ngược.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Mẹ bị nhiễm HIV không nên sinh con.",
-              "correct": false
+              "correct": true
             }
           ]
         },
@@ -1125,7 +1126,7 @@
             },
             {
               "question": "Người ta dùng kháng sinh để tiêu diệt virus này.",
-              "correct": true
+              "correct": false
             }
           ]
         },
@@ -1135,7 +1136,7 @@
           "statements": [
             {
               "question": "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "Virus chỉ lây nhiễm nucleic acid vào trong tế bào chủ.",
@@ -1143,11 +1144,11 @@
             },
             {
               "question": "H+ sẽ thúc đẩy quá trình giải phóng vật chất di truyền của virus ra khỏi bóng.",
-              "correct": false
+              "correct": true
             },
             {
               "question": "NH3 ức chế sự giải phóng vật chất di truyền của virus.",
-              "correct": false
+              "correct": true
             }
           ]
         }
