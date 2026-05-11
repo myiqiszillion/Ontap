@@ -1,2320 +1,1251 @@
-[
-  {
-    "id": "bai22_phan1_cau1",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Vi sinh vật có khả năng hấp thụ và chuyển hóa nhanh các chất dinh dưỡng nên chúng",
-    "options": [
-      {
-        "key": "A",
-        "text": "sinh trưởng và sinh sản rất nhanh."
-      },
-      {
-        "key": "B",
-        "text": "sinh trưởng và sinh sản rất chậm."
-      },
-      {
-        "key": "C",
-        "text": "sinh trưởng rất nhanh nhưng sinh sản rất chậm."
-      },
-      {
-        "key": "D",
-        "text": "sinh sản rất nhanh nhưng sinh trưởng rất chậm."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai22_phan1_cau2",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Đặc điểm nào sau đây không đúng với vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Có kích thước nhỏ."
-      },
-      {
-        "key": "B",
-        "text": "Phần lớn có cấu tạo đơn bào."
-      },
-      {
-        "key": "C",
-        "text": "Đều có khả năng tự dưỡng."
-      },
-      {
-        "key": "D",
-        "text": "Sinh trưởng nhanh."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai22_phan1_cau3",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Quang tự dưỡng."
-      },
-      {
-        "key": "B",
-        "text": "Quang dị dưỡng."
-      },
-      {
-        "key": "C",
-        "text": "Hóa tự dưỡng."
-      },
-      {
-        "key": "D",
-        "text": "Hóa dị dưỡng."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai22_phan1_cau4",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Người ta thường quan sát vi sinh vật bằng",
-    "options": [
-      {
-        "key": "A",
-        "text": "mắt thường."
-      },
-      {
-        "key": "B",
-        "text": "kính lúp."
-      },
-      {
-        "key": "C",
-        "text": "kính hiển vi."
-      },
-      {
-        "key": "D",
-        "text": "kính thiên văn."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai22_phan1_cau5",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Vi sinh vật phần lớn có cấu trúc",
-    "options": [
-      {
-        "key": "A",
-        "text": "đơn bào."
-      },
-      {
-        "key": "B",
-        "text": "đa bào."
-      },
-      {
-        "key": "C",
-        "text": "tập đoàn đa bào."
-      },
-      {
-        "key": "D",
-        "text": "không có cấu trúc tế bào."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai22_phan1_cau6",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Nhóm sinh vật nào dưới đây không phải là vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Vi khuẩn cổ."
-      },
-      {
-        "key": "B",
-        "text": "Vi khuẩn."
-      },
-      {
-        "key": "C",
-        "text": "Tảo biển."
-      },
-      {
-        "key": "D",
-        "text": "ĐV nguyên sinh."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai22_phan1_cau7",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Dựa vào cấu tạo tế bào có thể phân loại vi sinh vật thành hai nhóm đó là",
-    "options": [
-      {
-        "key": "A",
-        "text": "đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực."
-      },
-      {
-        "key": "B",
-        "text": "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân thực."
-      },
-      {
-        "key": "C",
-        "text": "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân sơ."
-      },
-      {
-        "key": "D",
-        "text": "đơn bào nhân thực và đa bào hay tập đoàn đa bào nhân thực."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai22_phan1_cau8",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Các kiểu dinh dưỡng của vi sinh vật được phân loại dựa vào tiêu chí nào?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Nhu cầu sử dụng nguồn carbon và chất hữu cơ của vi sinh vật."
-      },
-      {
-        "key": "B",
-        "text": "Nhu cầu sử dụng nguồn carbon dioxide và chất hữu cơ của vi sinh vật."
-      },
-      {
-        "key": "C",
-        "text": "Nhu cầu sử dụng nguồn carbon dioxide và năng lượng của vi sinh vật."
-      },
-      {
-        "key": "D",
-        "text": "Nhu cầu sử dụng nguồn carbon và năng lượng của vi sinh vật."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai22_phan1_cau9",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Dựa vào đâu để phân loại vi sinh vật thành hai nhóm đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Cách hấp thụ chất dinh dưỡng."
-      },
-      {
-        "key": "B",
-        "text": "Môi trường sống."
-      },
-      {
-        "key": "C",
-        "text": "Cách chuyển hóa chất dinh dưỡng."
-      },
-      {
-        "key": "D",
-        "text": "Cấu tạo tế bào."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai22_phan1_cau10",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Trùng roi xanh sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là CO2. Vậy trùng roi xanh có kiểu dinh dưỡng nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Quang tự dưỡng."
-      },
-      {
-        "key": "B",
-        "text": "Quang dị dưỡng."
-      },
-      {
-        "key": "C",
-        "text": "Hóa tự dưỡng."
-      },
-      {
-        "key": "D",
-        "text": "Hóa dị dưỡng."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai22_phan1_cau11",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Vi sinh vật sử dụng nguồn năng lượng từ chất vô cơ và nguồn carbon là CO2 có kiểu dinh dưỡng nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Quang tự dưỡng."
-      },
-      {
-        "key": "B",
-        "text": "Quang dị dưỡng."
-      },
-      {
-        "key": "C",
-        "text": "Hóa tự dưỡng."
-      },
-      {
-        "key": "D",
-        "text": "Hóa dị dưỡng."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai22_phan1_cau12",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Quang tự dưỡng."
-      },
-      {
-        "key": "B",
-        "text": "Quang dị dưỡng."
-      },
-      {
-        "key": "C",
-        "text": "Hóa tự dưỡng."
-      },
-      {
-        "key": "D",
-        "text": "Hóa dị dưỡng."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai22_phan1_cau13",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Phương pháp nghiên cứu vi sinh vật nào sau đây dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Phương pháp quan sát bằng kính hiển vi."
-      },
-      {
-        "key": "B",
-        "text": "Phương pháp nuôi cấy."
-      },
-      {
-        "key": "C",
-        "text": "Phương pháp phân lập vi sinh vật."
-      },
-      {
-        "key": "D",
-        "text": "Phương pháp định danh vi khuẩn."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai22_phan1_cau14",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Kĩ thuật nào sau đây dùng để nghiên cứu cấu trúc không gian của những phân tử?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Kĩ thuật cố định và nhuộm màu."
-      },
-      {
-        "key": "B",
-        "text": "Kĩ thuật siêu li tâm."
-      },
-      {
-        "key": "C",
-        "text": "Kĩ thuật đồng vị phóng xạ."
-      },
-      {
-        "key": "D",
-        "text": "Kĩ thuật nuôi cấy."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai22_phan1_cau15",
-    "lesson": 22,
-    "type": "multiple_choice",
-    "question": "Kĩ thuật nào sau đây dùng để theo dõi các quá trình tổng hợp bên trong tế bào ở mức độ phân tử?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Kĩ thuật cố định và nhuộm màu."
-      },
-      {
-        "key": "B",
-        "text": "Kĩ thuật siêu li tâm."
-      },
-      {
-        "key": "C",
-        "text": "Kĩ thuật đồng vị phóng xạ."
-      },
-      {
-        "key": "D",
-        "text": "Kĩ thuật nuôi cấy."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai22_phan2_cau1",
-    "lesson": 22,
-    "type": "true_false",
-    "question": "Cho các phát biểu sau đây về đặc điểm của vi sinh vật. Mỗi nhận định sau đây là đúng hay sai?",
-    "statements": [
-      {
-        "key": "a",
-        "text": "Vi sinh vật là những sinh vật có kích thước nhỏ.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "Tất cả vi sinh vật đều có cấu trúc đơn bào nhân sơ.",
-        "correct": false
-      },
-      {
-        "key": "c",
-        "text": "Vi sinh vật chỉ sống kí sinh bắt buộc.",
-        "correct": false
-      },
-      {
-        "key": "d",
-        "text": "Vi sinh vật có kích thước nhỏ nên sinh sản nhanh.",
-        "correct": true
-      }
-    ],
-    "answer": "a. Đúng; b. Sai; c. Sai; d. Đúng"
-  },
-  {
-    "id": "bai22_phan2_cau2",
-    "lesson": 22,
-    "type": "true_false",
-    "question": "Các phát biểu sau đây về phương pháp nghiên cứu vi sinh vật là đúng hay sai?",
-    "statements": [
-      {
-        "key": "a",
-        "text": "Phương pháp quan sát bằng kính hiển vi dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "Phương pháp nuôi cấy để nghiên cứu khả năng hoạt động hiếu khí, kị khí của vi sinh vật và sản phẩm của chúng tạo ra.",
-        "correct": true
-      },
-      {
-        "key": "c",
-        "text": "Vết cấy có bề mặt và màu sắc đa dạng, nhiều kích thước chứng tỏ giống mới phân lập được là giống thuần khiết.",
-        "correct": false
-      },
-      {
-        "key": "d",
-        "text": "Hình thái của khuẩn lạc mang tính đặc trưng cho từng loài vi khuẩn.",
-        "correct": true
-      }
-    ],
-    "answer": "a. Đúng; b. Đúng; c. Sai; d. Đúng"
-  },
-  {
-    "id": "bai22_phan2_cau3",
-    "lesson": 22,
-    "type": "true_false",
-    "question": "Các phát biểu sau là đúng hay sai về các nhóm vi sinh vật?",
-    "statements": [
-      {
-        "key": "a",
-        "text": "Sự tồn tại của các vi sinh vật được tiên đoán trong nhiều thế kỉ trước khi chúng được quan sát thấy lần đầu tiên.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "Vi khuẩn là vi sinh vật thuộc nhóm đơn bào nhân thực.",
-        "correct": false
-      },
-      {
-        "key": "c",
-        "text": "Vi nấm và vi tảo thuộc cùng một nhóm trong phân loại vi sinh vật.",
-        "correct": true
-      },
-      {
-        "key": "d",
-        "text": "Dựa vào đặc điểm cấu tạo tế bào, vi sinh vật được phân chia thành ba nhóm gồm đơn bào nhân sơ, đơn bào nhân thực và tập đoàn đơn bào nhân thực.",
-        "correct": false
-      }
-    ],
-    "answer": "a. Đúng; b. Sai; c. Đúng; d. Sai"
-  },
-  {
-    "id": "bai22_phan2_cau4",
-    "lesson": 22,
-    "type": "true_false",
-    "question": "Hình ảnh sau đây mô tả cho phương pháp định danh vi khuẩn:",
-    "image": "public/images/sinh10/image24.png",
-    "statements": [
-      {
-        "key": "a",
-        "text": "Đây là phương pháp mô tả chính xác khuẩn lạc đã tách rời.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "Khi vi khuẩn tăng trưởng và phát triển trên môi trường lỏng sẽ tạo ra những khuẩn lạc.",
-        "correct": false
-      },
-      {
-        "key": "c",
-        "text": "Các vi khuẩn gây bệnh đa số có khuẩn lạc dạng S và M.",
-        "correct": true
-      },
-      {
-        "key": "d",
-        "text": "Trực khuẩn than có khuẩn lạc dạng R nên chúng không gây bệnh.",
-        "correct": false
-      }
-    ],
-    "answer": "a. Đúng; b. Sai; c. Đúng; d. Sai"
-  },
-  {
-    "id": "bai22_phan3_cau1",
-    "lesson": 22,
-    "type": "short_answer",
-    "question": "Dựa vào nhu cầu sử dụng nguồn carbon và năng lượng, vi sinh vật có mấy kiểu dinh dưỡng?",
-    "answer": 4,
-    "answer_raw": "4"
-  },
-  {
-    "id": "bai22_phan3_cau2",
-    "lesson": 22,
-    "type": "short_answer",
-    "question": "Cho các phương pháp nghiên cứu sau. Để nghiên cứu vi sinh vật, người ta sử dụng phương pháp nghiên cứu nào?",
-    "answer": 4,
-    "answer_raw": "4"
-  },
-  {
-    "id": "bai22_phan3_cau3",
-    "lesson": 22,
-    "type": "short_answer",
-    "question": "Cho các kĩ thuật nghiên cứu sau. Để nghiên cứu vi sinh vật, người ta sử dụng kĩ thuật nghiên cứu nào?",
-    "answer": 3,
-    "answer_raw": "3"
-  },
-  {
-    "id": "bai22_phan3_cau4",
-    "lesson": 22,
-    "type": "short_answer",
-    "question": "Trong các phát biểu sau về hiện tượng trên, có bao nhiêu phát biểu đúng?",
-    "answer": 3,
-    "answer_raw": "3"
-  },
-  {
-    "id": "bai24_phan1_cau1",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen cần hợp chất mở đầu là",
-    "options": [
-      {
-        "key": "A",
-        "text": "Glucose."
-      },
-      {
-        "key": "B",
-        "text": "ATP."
-      },
-      {
-        "key": "C",
-        "text": "ADP - Glucose."
-      },
-      {
-        "key": "D",
-        "text": "ATP - Glucose."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai24_phan1_cau2",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Phát biểu nào sau đây là sai khi nói về sự tổng hợp protein của vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Vi sinh vật có khả năng tự tổng hợp các loại amino acid."
-      },
-      {
-        "key": "B",
-        "text": "Vi sinh vật có khả năng tổng hợp protein."
-      },
-      {
-        "key": "C",
-        "text": "Protein tổng hợp được khi liên kết các amino acid với nhau bằng liên kết glycosid."
-      },
-      {
-        "key": "D",
-        "text": "Phương trình tổng hợp protein là: (Amino acid)n Protein."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai24_phan1_cau3",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Vi sinh vật tổng hợp lipid bằng cách",
-    "options": [
-      {
-        "key": "A",
-        "text": "liên kết glycerol và glutamic acid."
-      },
-      {
-        "key": "B",
-        "text": "liên kết lysine và acid béo."
-      },
-      {
-        "key": "C",
-        "text": "liên kết glycerol và acid béo."
-      },
-      {
-        "key": "D",
-        "text": "liên kết lysine và glutamic acid."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai24_phan1_cau4",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Sản phẩm được tạo ra sau quá trình phân giải các hợp chất carbohydrate (polysaccharide) ở vi sinh vật là",
-    "options": [
-      {
-        "key": "A",
-        "text": "đường đơn."
-      },
-      {
-        "key": "B",
-        "text": "đường đôi."
-      },
-      {
-        "key": "C",
-        "text": "cellulose."
-      },
-      {
-        "key": "D",
-        "text": "tinh bột."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai24_phan1_cau5",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Có hai hình thức lên men, đó là",
-    "options": [
-      {
-        "key": "A",
-        "text": "lên men rượu và lên men lactic."
-      },
-      {
-        "key": "B",
-        "text": "lên men hiếu khí và lên men kị khí."
-      },
-      {
-        "key": "C",
-        "text": "lên men lactic và lên men hiếu khí."
-      },
-      {
-        "key": "D",
-        "text": "lên men rượu và lên men kị khí."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai24_phan1_cau6",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm:",
-    "options": [
-      {
-        "key": "A",
-        "text": "1."
-      },
-      {
-        "key": "B",
-        "text": "2."
-      },
-      {
-        "key": "C",
-        "text": "3."
-      },
-      {
-        "key": "D",
-        "text": "4."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai24_phan1_cau7",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Sản phẩm nào sau đây luôn xuất hiện sau quá trình lên men lactic?",
-    "options": [
-      {
-        "key": "A",
-        "text": "CO2."
-      },
-      {
-        "key": "B",
-        "text": "Ethanol."
-      },
-      {
-        "key": "C",
-        "text": "Lactic acid."
-      },
-      {
-        "key": "D",
-        "text": "Acetic acid."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai24_phan1_cau8",
-    "lesson": 24,
-    "type": "multiple_choice",
-    "question": "Sản xuất nước mắm là ứng dụng của quá trình nào ở vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Phân giải carbohydrate."
-      },
-      {
-        "key": "B",
-        "text": "Phân giải protein."
-      },
-      {
-        "key": "C",
-        "text": "Tổng hợp carbohydrate."
-      },
-      {
-        "key": "D",
-        "text": "Tổng hợp protein."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai24_phan2_cau1",
-    "lesson": 24,
-    "type": "true_false",
-    "question": "Cho sơ đồ dưới đây về quá trình tổng hợp ở vi sinh vật. Mỗi phát biểu sau đây về sơ đồ trên là đúng hay sai?",
-    "statements": [
-      {
-        "key": "a",
-        "text": "Tổng hợp là quá trình tạo ra phân tử hữu cơ phức tạp từ những chất đơn giản.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "Quá trình tổng hợp cung cấp nguyên liệu cho quá trình phân giải chất hữu cơ.",
-        "correct": true
-      },
-      {
-        "key": "c",
-        "text": "Carbohydrate có thể tổng hợp từ N-acetyl glucosamin.",
-        "correct": true
-      },
-      {
-        "key": "d",
-        "text": "Amino acid là nguyên liệu để tổng hợp lipid.",
-        "correct": false
-      }
-    ],
-    "answer": "a. Đúng; b. Đúng; c. Đúng; d. Sai"
-  },
-  {
-    "id": "bai24_phan2_cau2",
-    "lesson": 24,
-    "type": "true_false",
-    "question": "Sữa chua là một chế phẩm sữa được sản xuất bằng cách lên men sữa bò tươi, sữa bột hay sữa động vật nói chung. Sữa chua là một thực phẩm rất thơm ngon và bổ dưỡng cho con người. Dựa trên thông tin và kiến thức đã học, phát biểu sau đây là đúng hay sai về quá trình làm sữa chua.",
-    "statements": [
-      {
-        "key": "1",
-        "text": "Quá trình làm sữa chua thực chất là quá trình phân giải carbohydrate của vi sinh vật.",
-        "correct": true
-      },
-      {
-        "key": "2",
-        "text": "Lên men sữa chua là lên men ethanol.",
-        "correct": false
-      },
-      {
-        "key": "3",
-        "text": "Quá trình lên men sữa chua có sự tham gia của vi khuẩn lactic dị hình.",
-        "correct": false
-      },
-      {
-        "key": "4",
-        "text": "Quá trình lên men sữa chua có tạo ra ethanol và acetic acid.",
-        "correct": false
-      }
-    ],
-    "answer": "1. Đúng; 2. Sai; 3. Sai; 4. Sai"
-  },
-  {
-    "id": "bai24_phan2_cau3",
-    "lesson": 24,
-    "type": "true_false",
-    "question": "Các phát biểu sau là đúng hay sai về quá trình tổng hợp carbohydrate ở vi sinh vật:",
-    "statements": [
-      {
-        "key": "1",
-        "text": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen không cần hợp chất mở đầu.",
-        "correct": false
-      },
-      {
-        "key": "2",
-        "text": "Sản phẩm của quá trình tổng hợp carbohydrate là polypeptide.",
-        "correct": false
-      },
-      {
-        "key": "3",
-        "text": "Một số vi sinh vật còn tổng hợp chitin và cellulose.",
-        "correct": true
-      },
-      {
-        "key": "4",
-        "text": "Gôm bản chất là một loại polysaccharide mà vi sinh vật tiết vào môi trường.",
-        "correct": true
-      }
-    ],
-    "answer": "1. Sai; 2. Sai; 3. Đúng; 4. Đúng"
-  },
-  {
-    "id": "bai24_phan3_cau1",
-    "lesson": 24,
-    "type": "short_answer",
-    "question": "Khi nói về vai trò của vi sinh vật trong sản xuất dược phẩm, cho các phát biểu sau đây:",
-    "answer": 4,
-    "answer_raw": "4"
-  },
-  {
-    "id": "bai24_phan3_cau2",
-    "lesson": 24,
-    "type": "short_answer",
-    "question": "Cho các ứng dụng sau:",
-    "answer": 2,
-    "answer_note": "1 và 3",
-    "answer_raw": "2 (1 và 3)"
-  },
-  {
-    "id": "bai24_phan3_cau3",
-    "lesson": 24,
-    "type": "short_answer",
-    "question": "Cho các phát biểu sau đây về vai trò của vi sinh vật trong cải thiện chất lượng đất:",
-    "answer": 4,
-    "answer_raw": "4"
-  },
-  {
-    "id": "bai25_phan1_cau1",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Sinh trưởng ở vi sinh vật là sự gia tăng",
-    "options": [
-      {
-        "key": "A",
-        "text": "khối lượng cơ thể vi sinh vật."
-      },
-      {
-        "key": "B",
-        "text": "số lượng cá thể của quần thể vi sinh vật."
-      },
-      {
-        "key": "C",
-        "text": "kích thước cơ thể vi sinh vật."
-      },
-      {
-        "key": "D",
-        "text": "số lượng loài của quần thể vi sinh vật."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai25_phan1_cau2",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi",
-    "options": [
-      {
-        "key": "A",
-        "text": "quần thể."
-      },
-      {
-        "key": "B",
-        "text": "cá thể."
-      },
-      {
-        "key": "C",
-        "text": "tế bào."
-      },
-      {
-        "key": "D",
-        "text": "quần xã."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai25_phan1_cau3",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Môi trường nuôi cấy không liên tục là môi trường nuôi cấy",
-    "options": [
-      {
-        "key": "A",
-        "text": "được bổ sung chất dinh dưỡng mới và được lấy đi các sản phẩm của quá trình nuôi cấy."
-      },
-      {
-        "key": "B",
-        "text": "không được bổ sung chất dinh dưỡng mới nhưng lấy đi sản phẩm của quá trình nuôi cấy."
-      },
-      {
-        "key": "C",
-        "text": "không được bổ sung chất dinh dưỡng mới cũng không lấy đi các sản phẩm của quá trình nuôi cấy."
-      },
-      {
-        "key": "D",
-        "text": "liên tục được bổ sung chất dinh dưỡng mới và liên tục lấy đi các sản phẩm của quá trình nuôi cấy."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai25_phan1_cau4",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Trình tự sắp xếp nào sau đây là đúng khi nói về các pha sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Pha tiềm phát → Pha lũy thừa → Pha cân bằng → Pha suy vong."
-      },
-      {
-        "key": "B",
-        "text": "Pha tiềm phát → Pha cân bằng → Pha lũy thừa → Pha suy vong."
-      },
-      {
-        "key": "C",
-        "text": "Pha suy vong → Pha tiềm phát → Pha lũy thừa → Pha cân bằng."
-      },
-      {
-        "key": "D",
-        "text": "Pha suy vong → Pha lũy thừa → Pha tiềm phát → Pha cân bằng."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai25_phan1_cau5",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Trong nuôi cấy không liên tục, tốc độ phân chia của vi khuẩn đạt tối đa ở pha nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Pha tiềm phát."
-      },
-      {
-        "key": "B",
-        "text": "Pha lũy thừa."
-      },
-      {
-        "key": "C",
-        "text": "Pha suy vong."
-      },
-      {
-        "key": "D",
-        "text": "Pha cân bằng."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai25_phan1_cau6",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Pha nào sau đây chỉ có ở sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Pha lũy thừa."
-      },
-      {
-        "key": "B",
-        "text": "Pha tiềm phát."
-      },
-      {
-        "key": "C",
-        "text": "Pha cân bằng."
-      },
-      {
-        "key": "D",
-        "text": "Pha suy vong."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai25_phan1_cau7",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi quần thể vì",
-    "options": [
-      {
-        "key": "A",
-        "text": "vi khuẩn hoàn toàn không có sự thay đổi về kích thước và khối lượng."
-      },
-      {
-        "key": "B",
-        "text": "khó nhận ra sự thay đổi về kích thước và khối lượng của tế bào vi khuẩn."
-      },
-      {
-        "key": "C",
-        "text": "vi khuẩn có khả năng trao đổi chất, sinh trưởng và phát triển rất nhanh."
-      },
-      {
-        "key": "D",
-        "text": "khó nhận ra sự tồn tại, phát triển của tế bào vi khuẩn trong môi trường tự nhiên."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai25_phan1_cau8",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Trong điều kiện nuôi cấy không liên tục, chất dinh dưỡng cạn dần, sản phẩm chuyển hóa tăng lên sẽ dẫn đến hiện tượng",
-    "options": [
-      {
-        "key": "A",
-        "text": "tăng tốc độ sinh trưởng của vi khuẩn."
-      },
-      {
-        "key": "B",
-        "text": "số vi khuẩn sinh ra bằng số vi khuẩn chết đi."
-      },
-      {
-        "key": "C",
-        "text": "quần thể vi khuẩn bị suy vong."
-      },
-      {
-        "key": "D",
-        "text": "số vi khuẩn tăng lên theo cấp số nhân."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai25_phan1_cau9",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Trong nuôi cấy không liên tục, với mục đích thu vi khuẩn để làm giống nên tiến hành thu hoạch vào thời điểm nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Đầu pha lũy thừa."
-      },
-      {
-        "key": "B",
-        "text": "Đầu pha cân bằng."
-      },
-      {
-        "key": "C",
-        "text": "Đầu pha tiềm phát."
-      },
-      {
-        "key": "D",
-        "text": "Đầu pha suy vong."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai25_phan1_cau10",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "(1), (2), (3)."
-      },
-      {
-        "key": "B",
-        "text": "(1), (2), (4)."
-      },
-      {
-        "key": "C",
-        "text": "(1), (3), (4)."
-      },
-      {
-        "key": "D",
-        "text": "(2), (3), (4)."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai25_phan1_cau11",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Cho các đặc điểm sau:",
-    "options": [
-      {
-        "key": "A",
-        "text": "1, 2."
-      },
-      {
-        "key": "B",
-        "text": "1, 3."
-      },
-      {
-        "key": "C",
-        "text": "1, 4."
-      },
-      {
-        "key": "D",
-        "text": "2, 3."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai25_phan1_cau12",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Vi khuẩn E.coli trong điều kiện nuôi cấy thích hợp cứ 20 phút lại phân đôi một lần. Số tế bào của quần thể vi khuẩn E.coli có được sau 3 giờ 20 phút từ một tế bào vi khuẩn ban đầu là",
-    "options": [
-      {
-        "key": "A",
-        "text": "1024."
-      },
-      {
-        "key": "B",
-        "text": "1240."
-      },
-      {
-        "key": "C",
-        "text": "1420."
-      },
-      {
-        "key": "D",
-        "text": "200."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai25_phan1_cau13",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Sinh khối vi khuẩn đạt cao nhất vào thời điểm nào?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Pha cân bằng."
-      },
-      {
-        "key": "B",
-        "text": "Cuối pha lũy thừa, đầu pha cân bằng."
-      },
-      {
-        "key": "C",
-        "text": "Pha tiềm phát."
-      },
-      {
-        "key": "D",
-        "text": "Cuối pha cân bằng, đầu pha suy vong."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai25_phan1_cau14",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Khi tiêm kháng sinh cho bò sữa, sau đó dùng sữa bò để làm sữa chua thì không thể lên men sữa chua được vì lí do nào sau đây?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Khi đó sữa bò mất hết chất dinh dưỡng."
-      },
-      {
-        "key": "B",
-        "text": "Khi đó sữa bò có môi trường kiềm tính ức chế sự phát triển của vi khuẩn lactic."
-      },
-      {
-        "key": "C",
-        "text": "Trong sữa bò còn tồn đọng kháng sinh ức chế sự phát triển của vi khuẩn lactic."
-      },
-      {
-        "key": "D",
-        "text": "Khi đó trong sữa bò còn nhiều vi sinh vật gây bệnh chưa bị tiêu diệt nên cạnh tranh với vi khuẩn."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai25_phan1_cau15",
-    "lesson": 25,
-    "type": "multiple_choice",
-    "question": "Thức ăn được bảo quản tương đối lâu trong tủ lạnh vì nhiệt độ thấp có tác dụng",
-    "options": [
-      {
-        "key": "A",
-        "text": "làm cho thức ăn ngon hơn."
-      },
-      {
-        "key": "B",
-        "text": "tiêu diệt được vi sinh vật."
-      },
-      {
-        "key": "C",
-        "text": "kìm hãm sự sinh trưởng của vi sinh vật."
-      },
-      {
-        "key": "D",
-        "text": "thanh trùng vi sinh vật."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai25_phan2_cau1",
-    "lesson": 25,
-    "type": "true_false",
-    "question": "Sự sinh trưởng của một quần thể vi khuẩn được thể hiện như sơ đồ bên. Phân tích sơ đồ và cho biết mỗi nhận định sau đây là đúng hay sai?",
-    "statements": [
-      {
-        "key": "A",
-        "text": "Đây là sự sinh trưởng của quần thể vi khuẩn trong môi trường nuôi cấy không liên tục.",
-        "correct": true
-      },
-      {
-        "key": "B",
-        "text": "Để thu được sinh khối tối đa người ta sẽ thu ở cuối pha số (3).",
-        "correct": false
-      },
-      {
-        "key": "C",
-        "text": "Tốc độ sinh trưởng của quần thể vi khuẩn ở pha số (2) cao hơn pha số (3).",
-        "correct": true
-      },
-      {
-        "key": "D",
-        "text": "Pha số (1), vi khuẩn không sinh trưởng vì lượng chất dinh dưỡng rất ít.",
-        "correct": false
-      }
-    ],
-    "answer": "A. Đúng; B. Sai; C. Đúng; D. Sai"
-  },
-  {
-    "id": "bai25_phan2_cau2",
-    "lesson": 25,
-    "type": "true_false",
-    "question": "Quan sát bảng sau và cho biết mỗi nhận định sau đây là đúng hay sai về sinh trưởng ở vi khuẩn E.coli.",
-    "statements": [
-      {
-        "key": "A",
-        "text": "Cứ 20 phút vi khuẩn E.coli phân chia 1 lần.",
-        "correct": true
-      },
-      {
-        "key": "B",
-        "text": "Trong 1 giờ chúng phân chia 4 lần.",
-        "correct": false
-      },
-      {
-        "key": "C",
-        "text": "Sau 1 giờ 20 phút số tế bào trong quần thể là 16 tế bào.",
-        "correct": true
-      },
-      {
-        "key": "D",
-        "text": "Số tế bào vi khuẩn tăng theo cấp số nhân sau mỗi lần phân chia.",
-        "correct": true
-      }
-    ],
-    "answer": "A. Đúng; B. Sai; C. Đúng; D. Đúng"
-  },
-  {
-    "id": "bai25_phan2_cau3",
-    "lesson": 25,
-    "type": "true_false",
-    "question": "Thông thường, khi có người thân bị cảm, sốt, nhức đầu,... người dân hay tự ý đi mua thuốc kháng sinh về điều trị bệnh. Mỗi nhận định dưới đây là đúng hay sai về việc làm này?",
-    "statements": [
-      {
-        "key": "A",
-        "text": "Người dân không nên tự ý đi mua thuốc kháng sinh về điều trị bệnh cho người thân vì sẽ gây ra hiện tượng kháng kháng sinh.",
-        "correct": true
-      },
-      {
-        "key": "B",
-        "text": "Đối với cảm sốt nhẹ, có thể tự mua kháng sinh ở hiệu thuốc có uy tín để điều trị, vì kháng sinh có thể tiêu diệt hoặc ức chế vi sinh vật gây bệnh.",
-        "correct": false
-      },
-      {
-        "key": "C",
-        "text": "Khi tự ý mua thuốc kháng sinh về sử dụng có thể không tạo được hiệu quả điều trị mong muốn mà còn gây nên các tác dụng phụ nguy hiểm.",
-        "correct": true
-      },
-      {
-        "key": "D",
-        "text": "Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
-        "correct": true
-      }
-    ],
-    "answer": "A. Đúng; B. Sai; C. Đúng; D. Đúng"
-  },
-  {
-    "id": "bai25_phan3_cau1",
-    "lesson": 25,
-    "type": "short_answer",
-    "question": "Trong môi trường nuôi cấy liên tục quần thể vi sinh vật sinh trưởng theo mấy pha?",
-    "answer": 3,
-    "answer_note": "tiềm phát, lũy thừa, cân bằng",
-    "answer_raw": "3 (tiềm phát, lũy thừa, cân bằng)"
-  },
-  {
-    "id": "bai25_phan3_cau2",
-    "lesson": 25,
-    "type": "short_answer",
-    "question": "Biết thời gian thế hệ của E.coli là 20 phút, từ 8 tế bào ban đầu sau một giờ nuôi cấy tạo ra bao nhiêu tế bào?",
-    "answer": 64,
-    "answer_raw": "64"
-  },
-  {
-    "id": "bai25_phan3_cau3",
-    "lesson": 25,
-    "type": "short_answer",
-    "question": "Có bao nhiêu phát biểu dưới đây là đúng khi nói về sinh trưởng của quần thể vi sinh vật?",
-    "answer": 1,
-    "answer_note": "chỉ phát biểu 4 đúng",
-    "answer_raw": "1 (chỉ phát biểu 4 đúng)"
-  },
-  {
-    "id": "bai25_phan3_cau4",
-    "lesson": 25,
-    "type": "short_answer",
-    "question": "Có bao nhiêu phát biểu sau đây là đúng khi nói về hình thức sinh sản có ở cả vi sinh vật nhân sơ và nhân thực?",
-    "answer": 3,
-    "answer_note": "1, 2 và 3",
-    "answer_raw": "3 (1, 2 và 3)"
-  },
-  {
-    "id": "bai26_phan1_cau1",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Công nghệ vi sinh vật là lĩnh vực",
-    "options": [
-      {
-        "key": "A",
-        "text": "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến sản phẩm phục vụ đời sống con người."
-      },
-      {
-        "key": "B",
-        "text": "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường."
-      },
-      {
-        "key": "C",
-        "text": "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm thuốc chữa bệnh động vật."
-      },
-      {
-        "key": "D",
-        "text": "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các loại thực phẩm giàu giá trị dinh dưỡng."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai26_phan1_cau2",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Hoạt động nào sau đây là ứng dụng của quá trình phân giải ở vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Sản xuất các chất xúc tác sinh học."
-      },
-      {
-        "key": "B",
-        "text": "Sản xuất sinh khối."
-      },
-      {
-        "key": "C",
-        "text": "Sản xuất bột giặt sinh học."
-      },
-      {
-        "key": "D",
-        "text": "Sản xuất amino acid."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai26_phan1_cau3",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Ví dụ nào sau đây nói về ứng dụng đặc điểm quá trình phân giải các chất của vi sinh vật?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Sản xuất protein đơn bào."
-      },
-      {
-        "key": "B",
-        "text": "Sản xuất acid amin."
-      },
-      {
-        "key": "C",
-        "text": "Nước mắm."
-      },
-      {
-        "key": "D",
-        "text": "Sản xuất các chất xúc tác sinh học."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai26_phan1_cau4",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Xử lý nước thải là ứng dụng của công nghệ vi sinh vật trong",
-    "options": [
-      {
-        "key": "A",
-        "text": "y học."
-      },
-      {
-        "key": "B",
-        "text": "nông nghiệp."
-      },
-      {
-        "key": "C",
-        "text": "bảo vệ môi trường."
-      },
-      {
-        "key": "D",
-        "text": "sinh hoạt."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai26_phan1_cau5",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Xử lý mùi hôi trong chăn nuôi là ứng dụng của chế phẩm vi sinh vật trong",
-    "options": [
-      {
-        "key": "A",
-        "text": "sinh hoạt."
-      },
-      {
-        "key": "B",
-        "text": "nông nghiệp."
-      },
-      {
-        "key": "C",
-        "text": "công nghiệp."
-      },
-      {
-        "key": "D",
-        "text": "môi trường."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai26_phan1_cau6",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Thành tựu nào sau đây là ứng dụng của công nghệ vi sinh vật trong nông nghiệp?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Kháng sinh."
-      },
-      {
-        "key": "B",
-        "text": "Dưa muối."
-      },
-      {
-        "key": "C",
-        "text": "Nước tương."
-      },
-      {
-        "key": "D",
-        "text": "Phân bón."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai26_phan1_cau7",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Bón phân vi sinh vật lâu thường xuyên thì",
-    "options": [
-      {
-        "key": "A",
-        "text": "không gây hại cho đất."
-      },
-      {
-        "key": "B",
-        "text": "đất sẽ bị thoái hóa."
-      },
-      {
-        "key": "C",
-        "text": "đất sẽ bị bạc màu."
-      },
-      {
-        "key": "D",
-        "text": "khiến kết cấu đất kém bền."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai26_phan1_cau8",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Dựa vào đặc điểm nào của vi sinh vật người ta sử dụng chúng để xử lí ô nhiễm môi trường?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Vi sinh vật có khả năng phân giải các chất phức tạp."
-      },
-      {
-        "key": "B",
-        "text": "Khả năng sinh trưởng và sinh sản nhanh."
-      },
-      {
-        "key": "C",
-        "text": "Khả năng phân bố và thích nghi cao."
-      },
-      {
-        "key": "D",
-        "text": "Khả năng sống trong những môi trường cực đoan."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai26_phan1_cau9",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Sản xuất men vi sinh là ứng dụng của công nghệ vi sinh vật trong lĩnh vực nào?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Trồng trọt."
-      },
-      {
-        "key": "B",
-        "text": "Dược học."
-      },
-      {
-        "key": "C",
-        "text": "Chăn nuôi."
-      },
-      {
-        "key": "D",
-        "text": "Thủy sản."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai26_phan1_cau10",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Công nghệ vi sinh vật là gì?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Là công nghệ sử dụng vi sinh vật và hoặc các dẫn xuất để tạo ra sản phẩm phục vụ cho đời sống con người."
-      },
-      {
-        "key": "B",
-        "text": "Là lĩnh vực quan trọng của công nghệ tế bào."
-      },
-      {
-        "key": "C",
-        "text": "Là công nghệ sử dụng vi sinh vật và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người."
-      },
-      {
-        "key": "D",
-        "text": "Là công nghệ sử dụng virus và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai26_phan1_cau11",
-    "lesson": 26,
-    "type": "multiple_choice",
-    "question": "Sản phẩm tạo ra từ công nghệ vi sinh vật có đặc điểm như thế nào?",
-    "options": [
-      {
-        "key": "A",
-        "text": "An toàn, thân thiện với môi trường, giá thành cao, hiệu quả lâu dài."
-      },
-      {
-        "key": "B",
-        "text": "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời."
-      },
-      {
-        "key": "C",
-        "text": "Gây hại cho người sử dụng nên giá thành rẻ, hiệu quả lâu dài."
-      },
-      {
-        "key": "D",
-        "text": "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai26_phan2_cau1",
-    "lesson": 26,
-    "type": "true_false",
-    "question": "Mỗi nhận định sau đây là đúng hay sai khi nói về công nghệ vi sinh vật?",
-    "statements": [
-      {
-        "key": "a",
-        "text": "Là lĩnh vực quan trọng của công nghệ sinh học.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
-        "correct": false
-      },
-      {
-        "key": "c",
-        "text": "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài.",
-        "correct": true
-      },
-      {
-        "key": "d",
-        "text": "Là công nghệ sử dụng vi sinh vật và dẫn xuất của nó để tạo ra sản phẩm phục vụ cho đời sống con người.",
-        "correct": true
-      }
-    ],
-    "answer": "a. Đúng; b. Sai; c. Đúng; d. Đúng"
-  },
-  {
-    "id": "bai26_phan2_cau2",
-    "lesson": 26,
-    "type": "true_false",
-    "question": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là đúng hay sai?",
-    "statements": [
-      {
-        "key": "a",
-        "text": "giúp tăng kết cấu đất.",
-        "correct": true
-      },
-      {
-        "key": "b",
-        "text": "cung cấp đủ các dưỡng chất khoáng đa lượng, trung lượng và vi lượng cho cây trồng.",
-        "correct": false
-      },
-      {
-        "key": "c",
-        "text": "cải tạo, bồi dưỡng, tăng lượng mùn, tăng độ phì nhiêu, làm đất tơi xốp, không bị bạc màu.",
-        "correct": true
-      },
-      {
-        "key": "d",
-        "text": "có hiệu quả chậm hơn so với phân bón hóa học nên ít được sử dụng.",
-        "correct": true
-      }
-    ],
-    "answer": "a. Đúng; b. Sai; c. Đúng; d. Đúng"
-  },
-  {
-    "id": "bai26_phan3_cau1",
-    "lesson": 26,
-    "type": "short_answer",
-    "question": "Công nghệ vi sinh được ứng dụng vào bao nhiêu lĩnh vực sau đây?",
-    "answer": 4,
-    "answer_note": "1, 2, 4, 5",
-    "answer_raw": "4 (1, 2, 4, 5)"
-  },
-  {
-    "id": "bai26_phan3_cau2",
-    "lesson": 26,
-    "type": "short_answer",
-    "question": "Cho các đặc điểm:",
-    "answer": 4,
-    "answer_note": "1), (2), (4), (5",
-    "answer_raw": "4 (1), (2), (4), (5)"
-  },
-  {
-    "id": "bai26_phan3_cau3",
-    "lesson": 26,
-    "type": "short_answer",
-    "question": "Để tăng lượng vi sinh vật và chất mùn trong đất trồng, người dân nên bón bao nhiêu loại phân trong các loại phân sau đây?",
-    "answer": 3,
-    "answer_note": "1), (2), (5",
-    "answer_raw": "3 (1), (2), (5)"
-  },
-  {
-    "id": "bai26_phan3_cau4",
-    "lesson": 26,
-    "type": "short_answer",
-    "question": "Có bao nhiêu ứng dụng sau đây là của tổng hợp protein ở vi sinh vật?",
-    "answer": 3,
-    "answer_note": "1, 3, 4",
-    "answer_raw": "3 (1, 3, 4)"
-  },
-  {
-    "id": "bai29_phan1_cau1",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Hình thức sống của virus là gì?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Sống kí sinh không bắt buộc."
-      },
-      {
-        "key": "B",
-        "text": "Sống tự dưỡng kiểu quang hợp."
-      },
-      {
-        "key": "C",
-        "text": "Sống cộng sinh với tế bào."
-      },
-      {
-        "key": "D",
-        "text": "Sống kí sinh nội bào bắt buộc."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai29_phan1_cau2",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Virus được cấu tạo bởi 2 thành phần cơ bản là",
-    "options": [
-      {
-        "key": "A",
-        "text": "lõi nucleic acid và lớp vỏ capsid."
-      },
-      {
-        "key": "B",
-        "text": "lõi nucleic acid và lớp vỏ phospholipid."
-      },
-      {
-        "key": "C",
-        "text": "lõi nucleic acid và lớp vỏ peptidoglycan."
-      },
-      {
-        "key": "D",
-        "text": "lõi nucleic acid và lớp vỏ carbohydrate."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau3",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Ngoài 2 thành phần cơ bản, một số virus còn có lớp vỏ ngoài (envelope) cấu tạo từ",
-    "options": [
-      {
-        "key": "A",
-        "text": "lớp kép phospholipid và protein."
-      },
-      {
-        "key": "B",
-        "text": "lớp kép phospholipid và cellulose."
-      },
-      {
-        "key": "C",
-        "text": "lớp kép phospholipid và nucleic acid."
-      },
-      {
-        "key": "D",
-        "text": "lớp đơn phospholipid và chitin."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau4",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Chu trình nhân lên của virus trong tế bào chủ diễn ra theo trình tự là",
-    "options": [
-      {
-        "key": "A",
-        "text": "hấp phụ → tổng hợp → lắp ráp → xâm nhập → phóng thích."
-      },
-      {
-        "key": "B",
-        "text": "hấp phụ → xâm nhập → tổng hợp → lắp ráp → phóng thích."
-      },
-      {
-        "key": "C",
-        "text": "hấp phụ → lắp ráp → tổng hợp → xâm nhập → phóng thích."
-      },
-      {
-        "key": "D",
-        "text": "hấp phụ → xâm nhập → lắp ráp → tổng hợp → phóng thích."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau5",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Trong giai đoạn hấp phụ, phân tử bề mặt virus gắn đặc hiệu vào thụ thể bề mặt tế bào vật chủ theo nguyên tắc",
-    "options": [
-      {
-        "key": "A",
-        "text": "bán bảo tồn."
-      },
-      {
-        "key": "B",
-        "text": "chìa và khóa."
-      },
-      {
-        "key": "C",
-        "text": "ngẫu nhiên."
-      },
-      {
-        "key": "D",
-        "text": "bổ sung."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau6",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Trong quá trình nhân lên của virus, giai đoạn nào sau đây virus dùng bộ máy của tế bào chủ tạo nên các capsomer?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Hấp phụ."
-      },
-      {
-        "key": "B",
-        "text": "Phóng thích."
-      },
-      {
-        "key": "C",
-        "text": "Tổng hợp."
-      },
-      {
-        "key": "D",
-        "text": "Lắp ráp."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai29_phan1_cau7",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Chu trình tan là chu trình",
-    "options": [
-      {
-        "key": "A",
-        "text": "virus nhân lên làm tan và giết chết tế bào vật chủ."
-      },
-      {
-        "key": "B",
-        "text": "virus chỉ nhân bản hệ gene và không phá vỡ tế bào vật chủ."
-      },
-      {
-        "key": "C",
-        "text": "virus làm tan hệ gene nhưng không gây chết tế bào vật chủ."
-      },
-      {
-        "key": "D",
-        "text": "virus chỉ nhân bản vỏ capsid mà không nhân bản hệ gene."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau8",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Virus nhân lên theo chu trình tan gọi là?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Virus ôn hòa."
-      },
-      {
-        "key": "B",
-        "text": "Virus độc."
-      },
-      {
-        "key": "C",
-        "text": "Virus lưỡng tính."
-      },
-      {
-        "key": "D",
-        "text": "Virus trần."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau9",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Chu trình tiềm tan là chu trình",
-    "options": [
-      {
-        "key": "A",
-        "text": "virus nhân lên làm tan và giết chết tế bào vật chủ."
-      },
-      {
-        "key": "B",
-        "text": "virus chỉ nhân bản hệ gene và không phá vỡ tế bào vật chủ."
-      },
-      {
-        "key": "C",
-        "text": "virus làm tan hệ gene nhưng không gây chết tế bào vật chủ."
-      },
-      {
-        "key": "D",
-        "text": "virus chỉ nhân bản vỏ capsid mà không nhân bản hệ gene."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau10",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Virus có khả năng dùng cả 2 chu trình tan và tiềm tan trong 1 tế bào vật chủ gọi là?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Virus ôn hòa."
-      },
-      {
-        "key": "B",
-        "text": "Virus độc."
-      },
-      {
-        "key": "C",
-        "text": "Virus lưỡng tính."
-      },
-      {
-        "key": "D",
-        "text": "Virus trần."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau11",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Cấu trúc nào quyết định kích thước và hình thái virus?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Lõi nucleic acid."
-      },
-      {
-        "key": "B",
-        "text": "Vỏ capsid."
-      },
-      {
-        "key": "C",
-        "text": "Vỏ ngoài."
-      },
-      {
-        "key": "D",
-        "text": "Protein capsomer."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai29_phan1_cau12",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Cấu trúc nào quyết định tính di truyền của virus?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Lõi nucleic acid."
-      },
-      {
-        "key": "B",
-        "text": "Vỏ capsid."
-      },
-      {
-        "key": "C",
-        "text": "Vỏ ngoài."
-      },
-      {
-        "key": "D",
-        "text": "Protein capsomer."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau13",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Trong thí nghiệm của Martinus Beijerinck, dịch lọc (số 2) không chứa vi khuẩn vì:",
-    "options": [
-      {
-        "key": "A",
-        "text": "dịch đã được lọc qua màng lọc vi khuẩn."
-      },
-      {
-        "key": "B",
-        "text": "lúc chiết xuất đã làm tan hết vi khuẩn."
-      },
-      {
-        "key": "C",
-        "text": "trong dịch chiết xuất vốn không hề có vi khuẩn."
-      },
-      {
-        "key": "D",
-        "text": "vi khuẩn đã bị chết hết lúc làm chiết xuất."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau14",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Trong thí nghiệm của Martinus Beijerinck, dù dịch lọc không có vi khuẩn, nhưng cây thuốc lá khỏe mạnh vẫn bị nhiễm bệnh là vì",
-    "options": [
-      {
-        "key": "A",
-        "text": "dịch lọc chứa cấu trúc gây bệnh nhỏ hơn cả vi khuẩn."
-      },
-      {
-        "key": "B",
-        "text": "cây nhiễm sẵn bệnh nhưng chưa biểu hiện."
-      },
-      {
-        "key": "C",
-        "text": "dịch lọc bị nhiễm vi khuẩn trong quá trình lọc."
-      },
-      {
-        "key": "D",
-        "text": "dịch chiết bị nhiễm độc trong lúc thu mẫu."
-      }
-    ],
-    "correct": "A"
-  },
-  {
-    "id": "bai29_phan1_cau15",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Vì sao virus không được xem là một cơ thể sống hoàn chỉnh?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Do virus sống kí sinh nội bào."
-      },
-      {
-        "key": "B",
-        "text": "Do virus không có cấu tạo tế bào."
-      },
-      {
-        "key": "C",
-        "text": "Do virus không có hệ enzyme riêng."
-      },
-      {
-        "key": "D",
-        "text": "Do virus có kích thước quá nhỏ bé."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau16",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Mỗi loại virus chỉ xâm nhập vào một số tế bào vật chủ nhất định vì",
-    "options": [
-      {
-        "key": "A",
-        "text": "bề mặt của tế bào vật chủ được bảo vệ bởi một lớp protein chống lại sự xâm nhập của virus."
-      },
-      {
-        "key": "B",
-        "text": "bề mặt của virus có lớp vỏ ngoài hoặc vỏ capsid trơ với các thụ thể của tế bào vật chủ."
-      },
-      {
-        "key": "C",
-        "text": "virus chỉ xâm nhập được khi phân tử bề mặt khớp đặc hiệu với thụ thể bề mặt tế bào vật chủ."
-      },
-      {
-        "key": "D",
-        "text": "virus chỉ xâm nhập được khi hệ gene của nó khớp hoàn toàn với hệ gene của tế bào vật chủ."
-      }
-    ],
-    "correct": "C"
-  },
-  {
-    "id": "bai29_phan1_cau17",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Phát biểu nào sau đây sai khi nói về sự khác nhau giữa chu trình tan và chu trình tiềm tan?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Chu trình tan có sự nhân lên tạo ra vô số virus mới, còn chu trình tiềm tan chỉ nhân bản hệ gene mà không tạo ra các virus mới."
-      },
-      {
-        "key": "B",
-        "text": "Chu trình tan cho phép hệ gene của virus tồn tại và nhân lên trong tế bào vật chủ, còn chu trình tiềm tan thì hệ gene không có khả năng nhân lên trong tế bào vật chủ."
-      },
-      {
-        "key": "C",
-        "text": "Chu trình tan kết thúc bằng việc virus gây chết tế bào vật chủ, còn chu trình tiềm tan hệ gene của virus sống chung và không phá vỡ tế bào vật chủ."
-      },
-      {
-        "key": "D",
-        "text": "Chu trình tiềm tan có thể tạo ra quần thể nhiều tế bào mang gene và bị nhiễm virus, còn chu trình tan thì làm chết tế bào vật chủ."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau18",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Cho các nhận định sau:",
-    "options": [
-      {
-        "key": "A",
-        "text": "1."
-      },
-      {
-        "key": "B",
-        "text": "2."
-      },
-      {
-        "key": "C",
-        "text": "3."
-      },
-      {
-        "key": "D",
-        "text": "4."
-      }
-    ],
-    "correct": "B"
-  },
-  {
-    "id": "bai29_phan1_cau19",
-    "lesson": 29,
-    "type": "multiple_choice",
-    "question": "Virus HIV có trong máu người bệnh nhiễm HIV/AIDS. Tuy nhiên, muỗi đốt người bệnh sau đó sang đốt người khỏe mạnh lại không làm người đó mắc bệnh. Vì sao HIV không truyền từ người sang người qua đường muỗi đốt?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Vì cơ thể người khỏe mạnh có hệ miễn dịch có khả năng chống lại virus mới xâm nhập."
-      },
-      {
-        "key": "B",
-        "text": "Vì người mắc bệnh không phải ổ chứa virus."
-      },
-      {
-        "key": "C",
-        "text": "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm."
-      },
-      {
-        "key": "D",
-        "text": "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
-      }
-    ],
-    "correct": "D"
-  },
-  {
-    "id": "bai29_phan2_cau1",
-    "lesson": 29,
-    "type": "true_false",
-    "question": "Quan sát hình sau đây về HIV. Khi nói về HIV, phát biểu nào sau đây đúng, phát biểu nào sai?",
-    "image": "public/images/sinh10/image25.png",
-    "statements": [
-      {
-        "key": "A",
-        "text": "HIV thuộc loại virus DNA.",
-        "correct": false
-      },
-      {
-        "key": "B",
-        "text": "HIV lây nhiễm cho mọi tế bào của cơ thể người.",
-        "correct": false
-      },
-      {
-        "key": "C",
-        "text": "HIV khi nhân lên trong tế bào vật chủ có xảy ra phiên mã ngược.",
-        "correct": true
-      },
-      {
-        "key": "D",
-        "text": "Mẹ bị nhiễm HIV không nên sinh con.",
-        "correct": true
-      }
-    ],
-    "answer": "A. Sai; B. Sai; C. Đúng; D. Đúng"
-  },
-  {
-    "id": "bai29_phan2_cau2",
-    "lesson": 29,
-    "type": "true_false",
-    "question": "Hình sau đây là một ví dụ về quá trình nhân lên của virus trong tế bào chủ. Khi nói về hình này, phát biểu nào sau đây đúng, phát biểu nào sai?",
-    "image": "public/images/sinh10/image26.png",
-    "statements": [
-      {
-        "key": "A",
-        "text": "Quá trình này gồm 5 giai đoạn.",
-        "correct": true
-      },
-      {
-        "key": "B",
-        "text": "Virus này xâm nhập bằng cách tiết enzyme lysozyme làm tan thành tế bào vật chủ.",
-        "correct": true
-      },
-      {
-        "key": "C",
-        "text": "Sự nhân lên của virus này được thực hiện theo chu trình tiềm tan.",
-        "correct": false
-      },
-      {
-        "key": "D",
-        "text": "Người ta dùng kháng sinh để tiêu diệt virus này.",
-        "correct": false
-      }
-    ],
-    "answer": "A. Đúng; B. Đúng; C. Sai; D. Sai"
-  },
-  {
-    "id": "bai29_phan2_cau3",
-    "lesson": 29,
-    "type": "true_false",
-    "question": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Nhận định nào sau đây đúng hay sai?",
-    "image": "public/images/sinh10/image27.png",
-    "statements": [
-      {
-        "key": "A",
-        "text": "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",
-        "correct": true
-      },
-      {
-        "key": "B",
-        "text": "Virus chỉ lây nhiễm nucleic acid vào trong tế bào chủ.",
-        "correct": false
-      },
-      {
-        "key": "C",
-        "text": "H+ sẽ thúc đẩy quá trình giải phóng vật chất di truyền của virus ra khỏi bóng.",
-        "correct": true
-      },
-      {
-        "key": "D",
-        "text": "NH3 ức chế sự giải phóng vật chất di truyền của virus.",
-        "correct": true
-      }
-    ],
-    "answer": "A. Đúng; B. Sai; C. Đúng; D. Đúng"
-  },
-  {
-    "id": "bai29_phan3_cau1",
-    "lesson": 29,
-    "type": "short_answer",
-    "question": "Virus được cấu tạo bởi mấy thành phần cơ bản?",
-    "answer": 2,
-    "answer_raw": "2"
-  },
-  {
-    "id": "bai29_phan3_cau2",
-    "lesson": 29,
-    "type": "short_answer",
-    "question": "Quá trình nhân lên của virus được chia thành mấy giai đoạn?",
-    "answer": 5,
-    "answer_raw": "5"
-  },
-  {
-    "id": "bai29_phan3_cau3",
-    "lesson": 29,
-    "type": "short_answer",
-    "question": "Virus trần không có mấy thành phần sau đây?",
-    "answer": 2,
-    "answer_raw": "2"
-  },
-  {
-    "id": "bai29_phan3_cau4",
-    "lesson": 29,
-    "type": "short_answer",
-    "question": "Cho các chức năng sau:",
-    "answer": 2,
-    "answer_note": "1, 3",
-    "answer_raw": "2 (1, 3)"
-  },
-  {
-    "id": "bai29_phan3_cau5",
-    "lesson": 29,
-    "type": "short_answer",
-    "question": "Có bao nhiêu nhận định sau đây không đúng về chu trình tan?",
-    "answer": 3,
-    "answer_note": "3, 4, 5",
-    "answer_raw": "3 (3, 4, 5)"
-  },
-  {
-    "id": "bai29_phan3_cau6",
-    "lesson": 29,
-    "type": "short_answer",
-    "question": "Có bao nhiêu nhận định sau đây đúng về virus?",
-    "answer": 3,
-    "answer_note": "1, 4, 5",
-    "answer_raw": "3 (1, 4, 5)"
-  }
-]
+{
+  "lessons": [
+    {
+      "name": "BÀI 22: VI SINH VẬT VÀ CÁC PHƯƠNG PHÁP NGHIÊN CỨU VI SINH VẬT",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật có khả năng hấp thụ và chuyển hóa nhanh các chất dinh dưỡng nên chúng",
+          "image": null,
+          "options": [
+            "sinh trưởng và sinh sản rất nhanh.",
+            "sinh trưởng và sinh sản rất chậm.",
+            "sinh trưởng rất nhanh nhưng sinh sản rất chậm.",
+            "sinh sản rất nhanh nhưng sinh trưởng rất chậm."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Đặc điểm nào sau đây không đúng với vi sinh vật?",
+          "image": null,
+          "options": [
+            "Có kích thước nhỏ.",
+            "Phần lớn có cấu tạo đơn bào.",
+            "Đều có khả năng tự dưỡng.",
+            "Sinh trưởng nhanh."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Người ta thường quan sát vi sinh vật bằng",
+          "image": null,
+          "options": [
+            "mắt thường.",
+            "kính lúp.",
+            "kính hiển vi.",
+            "kính thiên văn."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật phần lớn có cấu trúc",
+          "image": null,
+          "options": [
+            "đơn bào.",
+            "đa bào.",
+            "tập đoàn đa bào.",
+            "không có cấu trúc tế bào."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Nhóm sinh vật nào dưới đây không phải là vi sinh vật?",
+          "image": null,
+          "options": [
+            "Vi khuẩn cổ.",
+            "Vi khuẩn.",
+            "Tảo biển.",
+            "ĐV nguyên sinh."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Dựa vào cấu tạo tế bào có thể phân loại vi sinh vật thành hai nhóm đó là",
+          "image": null,
+          "options": [
+            "đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực.",
+            "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân thực.",
+            "đơn bào nhân sơ và đa bào hay tập đoàn đa bào nhân sơ.",
+            "đơn bào nhân thực và đa bào hay tập đoàn đa bào nhân thực."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Các kiểu dinh dưỡng của vi sinh vật được phân loại dựa vào tiêu chí nào?",
+          "image": null,
+          "options": [
+            "Nhu cầu sử dụng nguồn carbon và chất hữu cơ của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon dioxide và chất hữu cơ của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon dioxide và năng lượng của vi sinh vật.",
+            "Nhu cầu sử dụng nguồn carbon và năng lượng của vi sinh vật."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Dựa vào đâu để phân loại vi sinh vật thành hai nhóm đơn bào nhân sơ và đơn bào hay tập đoàn đơn bào nhân thực?",
+          "image": null,
+          "options": [
+            "Cách hấp thụ chất dinh dưỡng.",
+            "Môi trường sống.",
+            "Cách chuyển hóa chất dinh dưỡng.",
+            "Cấu tạo tế bào."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Trùng roi xanh sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là CO2. Vậy trùng roi xanh có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ chất vô cơ và nguồn carbon là CO2 có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật sử dụng nguồn năng lượng từ ánh sáng và nguồn carbon là chất hữu cơ có kiểu dinh dưỡng nào sau đây?",
+          "image": null,
+          "options": [
+            "Quang tự dưỡng.",
+            "Quang dị dưỡng.",
+            "Hóa tự dưỡng.",
+            "Hóa dị dưỡng."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Phương pháp nghiên cứu vi sinh vật nào sau đây dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật?",
+          "image": null,
+          "options": [
+            "Phương pháp quan sát bằng kính hiển vi.",
+            "Phương pháp nuôi cấy.",
+            "Phương pháp phân lập vi sinh vật.",
+            "Phương pháp định danh vi khuẩn."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Kĩ thuật nào sau đây dùng để nghiên cứu cấu trúc không gian của những phân tử?",
+          "image": null,
+          "options": [
+            "Kĩ thuật cố định và nhuộm màu.",
+            "Kĩ thuật siêu li tâm.",
+            "Kĩ thuật đồng vị phóng xạ.",
+            "Kĩ thuật nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Kĩ thuật nào sau đây dùng để theo dõi các quá trình tổng hợp bên trong tế bào ở mức độ phân tử?",
+          "image": null,
+          "options": [
+            "Kĩ thuật cố định và nhuộm màu.",
+            "Kĩ thuật siêu li tâm.",
+            "Kĩ thuật đồng vị phóng xạ.",
+            "Kĩ thuật nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "shortanswer",
+          "question": "Dựa vào nhu cầu sử dụng nguồn carbon và năng lượng, vi sinh vật có mấy kiểu dinh dưỡng?",
+          "image": null,
+          "correct": 4
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho các phương pháp nghiên cứu sau. Để nghiên cứu vi sinh vật, người ta sử dụng phương pháp nghiên cứu nào?",
+          "image": null,
+          "correct": 4
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho các kĩ thuật nghiên cứu sau. Để nghiên cứu vi sinh vật, người ta sử dụng kĩ thuật nghiên cứu nào?",
+          "image": null,
+          "correct": 3
+        },
+        {
+          "type": "shortanswer",
+          "question": "Trong các phát biểu sau về hiện tượng trên, có bao nhiêu phát biểu đúng?",
+          "image": null,
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho các phát biểu sau đây về đặc điểm của vi sinh vật. Mỗi nhận định sau đây là đúng hay sai?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Các phát biểu sau đây về phương pháp nghiên cứu vi sinh vật là đúng hay sai?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Các phát biểu sau là đúng hay sai về các nhóm vi sinh vật?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Hình ảnh sau đây mô tả cho phương pháp định danh vi khuẩn:",
+          "image": "public/images/sinh10/image24.png",
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BÀI 24: THỰC HÀNH LÊN MEN",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen cần hợp chất mở đầu là",
+          "image": null,
+          "options": [
+            "Glucose.",
+            "ATP.",
+            "ADP - Glucose.",
+            "ATP - Glucose."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Phát biểu nào sau đây là sai khi nói về sự tổng hợp protein của vi sinh vật?",
+          "image": null,
+          "options": [
+            "Vi sinh vật có khả năng tự tổng hợp các loại amino acid.",
+            "Vi sinh vật có khả năng tổng hợp protein.",
+            "Protein tổng hợp được khi liên kết các amino acid với nhau bằng liên kết glycosid.",
+            "Phương trình tổng hợp protein là: (Amino acid)n Protein."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Vi sinh vật tổng hợp lipid bằng cách",
+          "image": null,
+          "options": [
+            "liên kết glycerol và glutamic acid.",
+            "liên kết lysine và acid béo.",
+            "liên kết glycerol và acid béo.",
+            "liên kết lysine và glutamic acid."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Sản phẩm được tạo ra sau quá trình phân giải các hợp chất carbohydrate (polysaccharide) ở vi sinh vật là",
+          "image": null,
+          "options": [
+            "đường đơn.",
+            "đường đôi.",
+            "cellulose.",
+            "tinh bột."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Có hai hình thức lên men, đó là",
+          "image": null,
+          "options": [
+            "lên men rượu và lên men lactic.",
+            "lên men hiếu khí và lên men kị khí.",
+            "lên men lactic và lên men hiếu khí.",
+            "lên men rượu và lên men kị khí."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm:",
+          "image": null,
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Sản phẩm nào sau đây luôn xuất hiện sau quá trình lên men lactic?",
+          "image": null,
+          "options": [
+            "CO2.",
+            "Ethanol.",
+            "Lactic acid.",
+            "Acetic acid."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Sản xuất nước mắm là ứng dụng của quá trình nào ở vi sinh vật?",
+          "image": null,
+          "options": [
+            "Phân giải carbohydrate.",
+            "Phân giải protein.",
+            "Tổng hợp carbohydrate.",
+            "Tổng hợp protein."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "shortanswer",
+          "question": "Khi nói về vai trò của vi sinh vật trong sản xuất dược phẩm, cho các phát biểu sau đây:",
+          "image": null,
+          "correct": 4
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho các ứng dụng sau:",
+          "image": null,
+          "correct": 2
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho các phát biểu sau đây về vai trò của vi sinh vật trong cải thiện chất lượng đất:",
+          "image": null,
+          "correct": 4
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho sơ đồ dưới đây về quá trình tổng hợp ở vi sinh vật. Mỗi phát biểu sau đây về sơ đồ trên là đúng hay sai?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Sữa chua là một chế phẩm sữa được sản xuất bằng cách lên men sữa bò tươi, sữa bột hay sữa động vật nói chung. Sữa chua là một thực phẩm rất thơm ngon và bổ dưỡng cho con người. Dựa trên thông tin và kiến thức đã học, phát biểu sau đây là đúng hay sai về quá trình làm sữa chua.",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Các phát biểu sau là đúng hay sai về quá trình tổng hợp carbohydrate ở vi sinh vật:",
+          "image": null,
+          "statements": [
+            {
+              "correct": false
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BÀI 25: SINH TRƯỞNG CỦA VI SINH VẬT",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Sinh trưởng ở vi sinh vật là sự gia tăng",
+          "image": null,
+          "options": [
+            "khối lượng cơ thể vi sinh vật.",
+            "số lượng cá thể của quần thể vi sinh vật.",
+            "kích thước cơ thể vi sinh vật.",
+            "số lượng loài của quần thể vi sinh vật."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi",
+          "image": null,
+          "options": [
+            "quần thể.",
+            "cá thể.",
+            "tế bào.",
+            "quần xã."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Môi trường nuôi cấy không liên tục là môi trường nuôi cấy",
+          "image": null,
+          "options": [
+            "được bổ sung chất dinh dưỡng mới và được lấy đi các sản phẩm của quá trình nuôi cấy.",
+            "không được bổ sung chất dinh dưỡng mới nhưng lấy đi sản phẩm của quá trình nuôi cấy.",
+            "không được bổ sung chất dinh dưỡng mới cũng không lấy đi các sản phẩm của quá trình nuôi cấy.",
+            "liên tục được bổ sung chất dinh dưỡng mới và liên tục lấy đi các sản phẩm của quá trình nuôi cấy."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Trình tự sắp xếp nào sau đây là đúng khi nói về các pha sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
+          "image": null,
+          "options": [
+            "Pha tiềm phát → Pha lũy thừa → Pha cân bằng → Pha suy vong.",
+            "Pha tiềm phát → Pha cân bằng → Pha lũy thừa → Pha suy vong.",
+            "Pha suy vong → Pha tiềm phát → Pha lũy thừa → Pha cân bằng.",
+            "Pha suy vong → Pha lũy thừa → Pha tiềm phát → Pha cân bằng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Trong nuôi cấy không liên tục, tốc độ phân chia của vi khuẩn đạt tối đa ở pha nào sau đây?",
+          "image": null,
+          "options": [
+            "Pha tiềm phát.",
+            "Pha lũy thừa.",
+            "Pha suy vong.",
+            "Pha cân bằng."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Pha nào sau đây chỉ có ở sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục?",
+          "image": null,
+          "options": [
+            "Pha lũy thừa.",
+            "Pha tiềm phát.",
+            "Pha cân bằng.",
+            "Pha suy vong."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh trưởng ở vi khuẩn cần được xem xét trên phạm vi quần thể vì",
+          "image": null,
+          "options": [
+            "vi khuẩn hoàn toàn không có sự thay đổi về kích thước và khối lượng.",
+            "khó nhận ra sự thay đổi về kích thước và khối lượng của tế bào vi khuẩn.",
+            "vi khuẩn có khả năng trao đổi chất, sinh trưởng và phát triển rất nhanh.",
+            "khó nhận ra sự tồn tại, phát triển của tế bào vi khuẩn trong môi trường tự nhiên."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Trong điều kiện nuôi cấy không liên tục, chất dinh dưỡng cạn dần, sản phẩm chuyển hóa tăng lên sẽ dẫn đến hiện tượng",
+          "image": null,
+          "options": [
+            "tăng tốc độ sinh trưởng của vi khuẩn.",
+            "số vi khuẩn sinh ra bằng số vi khuẩn chết đi.",
+            "quần thể vi khuẩn bị suy vong.",
+            "số vi khuẩn tăng lên theo cấp số nhân."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Trong nuôi cấy không liên tục, với mục đích thu vi khuẩn để làm giống nên tiến hành thu hoạch vào thời điểm nào sau đây?",
+          "image": null,
+          "options": [
+            "Đầu pha lũy thừa.",
+            "Đầu pha cân bằng.",
+            "Đầu pha tiềm phát.",
+            "Đầu pha suy vong."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây?",
+          "image": null,
+          "options": [
+            "(1), (2), (3).",
+            "(1), (2), (4).",
+            "(1), (3), (4).",
+            "(2), (3), (4)."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Cho các đặc điểm sau:",
+          "image": null,
+          "options": [
+            "1, 2.",
+            "1, 3.",
+            "1, 4.",
+            "2, 3."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Vi khuẩn E.coli trong điều kiện nuôi cấy thích hợp cứ 20 phút lại phân đôi một lần. Số tế bào của quần thể vi khuẩn E.coli có được sau 3 giờ 20 phút từ một tế bào vi khuẩn ban đầu là",
+          "image": null,
+          "options": [
+            "1024.",
+            "1240.",
+            "1420.",
+            "200."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sinh khối vi khuẩn đạt cao nhất vào thời điểm nào?",
+          "image": null,
+          "options": [
+            "Pha cân bằng.",
+            "Cuối pha lũy thừa, đầu pha cân bằng.",
+            "Pha tiềm phát.",
+            "Cuối pha cân bằng, đầu pha suy vong."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Khi tiêm kháng sinh cho bò sữa, sau đó dùng sữa bò để làm sữa chua thì không thể lên men sữa chua được vì lí do nào sau đây?",
+          "image": null,
+          "options": [
+            "Khi đó sữa bò mất hết chất dinh dưỡng.",
+            "Khi đó sữa bò có môi trường kiềm tính ức chế sự phát triển của vi khuẩn lactic.",
+            "Trong sữa bò còn tồn đọng kháng sinh ức chế sự phát triển của vi khuẩn lactic.",
+            "Khi đó trong sữa bò còn nhiều vi sinh vật gây bệnh chưa bị tiêu diệt nên cạnh tranh với vi khuẩn."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Thức ăn được bảo quản tương đối lâu trong tủ lạnh vì nhiệt độ thấp có tác dụng",
+          "image": null,
+          "options": [
+            "làm cho thức ăn ngon hơn.",
+            "tiêu diệt được vi sinh vật.",
+            "kìm hãm sự sinh trưởng của vi sinh vật.",
+            "thanh trùng vi sinh vật."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "shortanswer",
+          "question": "Trong môi trường nuôi cấy liên tục quần thể vi sinh vật sinh trưởng theo mấy pha?",
+          "image": null,
+          "correct": 3
+        },
+        {
+          "type": "shortanswer",
+          "question": "Biết thời gian thế hệ của E.coli là 20 phút, từ 8 tế bào ban đầu sau một giờ nuôi cấy tạo ra bao nhiêu tế bào?",
+          "image": null,
+          "correct": 64
+        },
+        {
+          "type": "shortanswer",
+          "question": "Có bao nhiêu phát biểu dưới đây là đúng khi nói về sinh trưởng của quần thể vi sinh vật?",
+          "image": null,
+          "correct": 1
+        },
+        {
+          "type": "shortanswer",
+          "question": "Có bao nhiêu phát biểu sau đây là đúng khi nói về hình thức sinh sản có ở cả vi sinh vật nhân sơ và nhân thực?",
+          "image": null,
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Sự sinh trưởng của một quần thể vi khuẩn được thể hiện như sơ đồ bên. Phân tích sơ đồ và cho biết mỗi nhận định sau đây là đúng hay sai?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Quan sát bảng sau và cho biết mỗi nhận định sau đây là đúng hay sai về sinh trưởng ở vi khuẩn E.coli.",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Thông thường, khi có người thân bị cảm, sốt, nhức đầu,... người dân hay tự ý đi mua thuốc kháng sinh về điều trị bệnh. Mỗi nhận định dưới đây là đúng hay sai về việc làm này?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BÀI 26: SINH SẢN CỦA VI SINH VẬT",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Công nghệ vi sinh vật là lĩnh vực",
+          "image": null,
+          "options": [
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến sản phẩm phục vụ đời sống con người.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm xử lí ô nhiễm môi trường.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các sản phẩm thuốc chữa bệnh động vật.",
+            "nghiên cứu, ứng dụng vi sinh vật trong sản xuất, chế biến các loại thực phẩm giàu giá trị dinh dưỡng."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Hoạt động nào sau đây là ứng dụng của quá trình phân giải ở vi sinh vật?",
+          "image": null,
+          "options": [
+            "Sản xuất các chất xúc tác sinh học.",
+            "Sản xuất sinh khối.",
+            "Sản xuất bột giặt sinh học.",
+            "Sản xuất amino acid."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Ví dụ nào sau đây nói về ứng dụng đặc điểm quá trình phân giải các chất của vi sinh vật?",
+          "image": null,
+          "options": [
+            "Sản xuất protein đơn bào.",
+            "Sản xuất acid amin.",
+            "Nước mắm.",
+            "Sản xuất các chất xúc tác sinh học."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Xử lý nước thải là ứng dụng của công nghệ vi sinh vật trong",
+          "image": null,
+          "options": [
+            "y học.",
+            "nông nghiệp.",
+            "bảo vệ môi trường.",
+            "sinh hoạt."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Xử lý mùi hôi trong chăn nuôi là ứng dụng của chế phẩm vi sinh vật trong",
+          "image": null,
+          "options": [
+            "sinh hoạt.",
+            "nông nghiệp.",
+            "công nghiệp.",
+            "môi trường."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Thành tựu nào sau đây là ứng dụng của công nghệ vi sinh vật trong nông nghiệp?",
+          "image": null,
+          "options": [
+            "Kháng sinh.",
+            "Dưa muối.",
+            "Nước tương.",
+            "Phân bón."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Bón phân vi sinh vật lâu thường xuyên thì",
+          "image": null,
+          "options": [
+            "không gây hại cho đất.",
+            "đất sẽ bị thoái hóa.",
+            "đất sẽ bị bạc màu.",
+            "khiến kết cấu đất kém bền."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Dựa vào đặc điểm nào của vi sinh vật người ta sử dụng chúng để xử lí ô nhiễm môi trường?",
+          "image": null,
+          "options": [
+            "Vi sinh vật có khả năng phân giải các chất phức tạp.",
+            "Khả năng sinh trưởng và sinh sản nhanh.",
+            "Khả năng phân bố và thích nghi cao.",
+            "Khả năng sống trong những môi trường cực đoan."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sản xuất men vi sinh là ứng dụng của công nghệ vi sinh vật trong lĩnh vực nào?",
+          "image": null,
+          "options": [
+            "Trồng trọt.",
+            "Dược học.",
+            "Chăn nuôi.",
+            "Thủy sản."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Công nghệ vi sinh vật là gì?",
+          "image": null,
+          "options": [
+            "Là công nghệ sử dụng vi sinh vật và hoặc các dẫn xuất để tạo ra sản phẩm phục vụ cho đời sống con người.",
+            "Là lĩnh vực quan trọng của công nghệ tế bào.",
+            "Là công nghệ sử dụng vi sinh vật và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người.",
+            "Là công nghệ sử dụng virus và các chất hóa học để tạo ra sản phẩm phục vụ cho đời sống con người."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Sản phẩm tạo ra từ công nghệ vi sinh vật có đặc điểm như thế nào?",
+          "image": null,
+          "options": [
+            "An toàn, thân thiện với môi trường, giá thành cao, hiệu quả lâu dài.",
+            "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
+            "Gây hại cho người sử dụng nên giá thành rẻ, hiệu quả lâu dài.",
+            "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "shortanswer",
+          "question": "Công nghệ vi sinh được ứng dụng vào bao nhiêu lĩnh vực sau đây?",
+          "image": null,
+          "correct": 4
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho các đặc điểm:",
+          "image": null,
+          "correct": 4
+        },
+        {
+          "type": "shortanswer",
+          "question": "Để tăng lượng vi sinh vật và chất mùn trong đất trồng, người dân nên bón bao nhiêu loại phân trong các loại phân sau đây?",
+          "image": null,
+          "correct": 3
+        },
+        {
+          "type": "shortanswer",
+          "question": "Có bao nhiêu ứng dụng sau đây là của tổng hợp protein ở vi sinh vật?",
+          "image": null,
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Mỗi nhận định sau đây là đúng hay sai khi nói về công nghệ vi sinh vật?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Khi nói về tác dụng của phân bón hữu cơ vi sinh, mỗi nhận định sau đây là đúng hay sai?",
+          "image": null,
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BÀI 29: VIRUS",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Hình thức sống của virus là gì?",
+          "image": null,
+          "options": [
+            "Sống kí sinh không bắt buộc.",
+            "Sống tự dưỡng kiểu quang hợp.",
+            "Sống cộng sinh với tế bào.",
+            "Sống kí sinh nội bào bắt buộc."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Virus được cấu tạo bởi 2 thành phần cơ bản là",
+          "image": null,
+          "options": [
+            "lõi nucleic acid và lớp vỏ capsid.",
+            "lõi nucleic acid và lớp vỏ phospholipid.",
+            "lõi nucleic acid và lớp vỏ peptidoglycan.",
+            "lõi nucleic acid và lớp vỏ carbohydrate."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Ngoài 2 thành phần cơ bản, một số virus còn có lớp vỏ ngoài (envelope) cấu tạo từ",
+          "image": null,
+          "options": [
+            "lớp kép phospholipid và protein.",
+            "lớp kép phospholipid và cellulose.",
+            "lớp kép phospholipid và nucleic acid.",
+            "lớp đơn phospholipid và chitin."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Chu trình nhân lên của virus trong tế bào chủ diễn ra theo trình tự là",
+          "image": null,
+          "options": [
+            "hấp phụ → tổng hợp → lắp ráp → xâm nhập → phóng thích.",
+            "hấp phụ → xâm nhập → tổng hợp → lắp ráp → phóng thích.",
+            "hấp phụ → lắp ráp → tổng hợp → xâm nhập → phóng thích.",
+            "hấp phụ → xâm nhập → lắp ráp → tổng hợp → phóng thích."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Trong giai đoạn hấp phụ, phân tử bề mặt virus gắn đặc hiệu vào thụ thể bề mặt tế bào vật chủ theo nguyên tắc",
+          "image": null,
+          "options": [
+            "bán bảo tồn.",
+            "chìa và khóa.",
+            "ngẫu nhiên.",
+            "bổ sung."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Trong quá trình nhân lên của virus, giai đoạn nào sau đây virus dùng bộ máy của tế bào chủ tạo nên các capsomer?",
+          "image": null,
+          "options": [
+            "Hấp phụ.",
+            "Phóng thích.",
+            "Tổng hợp.",
+            "Lắp ráp."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Chu trình tan là chu trình",
+          "image": null,
+          "options": [
+            "virus nhân lên làm tan và giết chết tế bào vật chủ.",
+            "virus chỉ nhân bản hệ gene và không phá vỡ tế bào vật chủ.",
+            "virus làm tan hệ gene nhưng không gây chết tế bào vật chủ.",
+            "virus chỉ nhân bản vỏ capsid mà không nhân bản hệ gene."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Virus nhân lên theo chu trình tan gọi là?",
+          "image": null,
+          "options": [
+            "Virus ôn hòa.",
+            "Virus độc.",
+            "Virus lưỡng tính.",
+            "Virus trần."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Chu trình tiềm tan là chu trình",
+          "image": null,
+          "options": [
+            "virus nhân lên làm tan và giết chết tế bào vật chủ.",
+            "virus chỉ nhân bản hệ gene và không phá vỡ tế bào vật chủ.",
+            "virus làm tan hệ gene nhưng không gây chết tế bào vật chủ.",
+            "virus chỉ nhân bản vỏ capsid mà không nhân bản hệ gene."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Virus có khả năng dùng cả 2 chu trình tan và tiềm tan trong 1 tế bào vật chủ gọi là?",
+          "image": null,
+          "options": [
+            "Virus ôn hòa.",
+            "Virus độc.",
+            "Virus lưỡng tính.",
+            "Virus trần."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Cấu trúc nào quyết định kích thước và hình thái virus?",
+          "image": null,
+          "options": [
+            "Lõi nucleic acid.",
+            "Vỏ capsid.",
+            "Vỏ ngoài.",
+            "Protein capsomer."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "mcq",
+          "question": "Cấu trúc nào quyết định tính di truyền của virus?",
+          "image": null,
+          "options": [
+            "Lõi nucleic acid.",
+            "Vỏ capsid.",
+            "Vỏ ngoài.",
+            "Protein capsomer."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Trong thí nghiệm của Martinus Beijerinck, dịch lọc (số 2) không chứa vi khuẩn vì:",
+          "image": null,
+          "options": [
+            "dịch đã được lọc qua màng lọc vi khuẩn.",
+            "lúc chiết xuất đã làm tan hết vi khuẩn.",
+            "trong dịch chiết xuất vốn không hề có vi khuẩn.",
+            "vi khuẩn đã bị chết hết lúc làm chiết xuất."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Trong thí nghiệm của Martinus Beijerinck, dù dịch lọc không có vi khuẩn, nhưng cây thuốc lá khỏe mạnh vẫn bị nhiễm bệnh là vì",
+          "image": null,
+          "options": [
+            "dịch lọc chứa cấu trúc gây bệnh nhỏ hơn cả vi khuẩn.",
+            "cây nhiễm sẵn bệnh nhưng chưa biểu hiện.",
+            "dịch lọc bị nhiễm vi khuẩn trong quá trình lọc.",
+            "dịch chiết bị nhiễm độc trong lúc thu mẫu."
+          ],
+          "correct": 0
+        },
+        {
+          "type": "mcq",
+          "question": "Vì sao virus không được xem là một cơ thể sống hoàn chỉnh?",
+          "image": null,
+          "options": [
+            "Do virus sống kí sinh nội bào.",
+            "Do virus không có cấu tạo tế bào.",
+            "Do virus không có hệ enzyme riêng.",
+            "Do virus có kích thước quá nhỏ bé."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Mỗi loại virus chỉ xâm nhập vào một số tế bào vật chủ nhất định vì",
+          "image": null,
+          "options": [
+            "bề mặt của tế bào vật chủ được bảo vệ bởi một lớp protein chống lại sự xâm nhập của virus.",
+            "bề mặt của virus có lớp vỏ ngoài hoặc vỏ capsid trơ với các thụ thể của tế bào vật chủ.",
+            "virus chỉ xâm nhập được khi phân tử bề mặt khớp đặc hiệu với thụ thể bề mặt tế bào vật chủ.",
+            "virus chỉ xâm nhập được khi hệ gene của nó khớp hoàn toàn với hệ gene của tế bào vật chủ."
+          ],
+          "correct": 2
+        },
+        {
+          "type": "mcq",
+          "question": "Phát biểu nào sau đây sai khi nói về sự khác nhau giữa chu trình tan và chu trình tiềm tan?",
+          "image": null,
+          "options": [
+            "Chu trình tan có sự nhân lên tạo ra vô số virus mới, còn chu trình tiềm tan chỉ nhân bản hệ gene mà không tạo ra các virus mới.",
+            "Chu trình tan cho phép hệ gene của virus tồn tại và nhân lên trong tế bào vật chủ, còn chu trình tiềm tan thì hệ gene không có khả năng nhân lên trong tế bào vật chủ.",
+            "Chu trình tan kết thúc bằng việc virus gây chết tế bào vật chủ, còn chu trình tiềm tan hệ gene của virus sống chung và không phá vỡ tế bào vật chủ.",
+            "Chu trình tiềm tan có thể tạo ra quần thể nhiều tế bào mang gene và bị nhiễm virus, còn chu trình tan thì làm chết tế bào vật chủ."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Cho các nhận định sau:",
+          "image": null,
+          "options": [
+            "1.",
+            "2.",
+            "3.",
+            "4."
+          ],
+          "correct": 1
+        },
+        {
+          "type": "mcq",
+          "question": "Virus HIV có trong máu người bệnh nhiễm HIV/AIDS. Tuy nhiên, muỗi đốt người bệnh sau đó sang đốt người khỏe mạnh lại không làm người đó mắc bệnh. Vì sao HIV không truyền từ người sang người qua đường muỗi đốt?",
+          "image": null,
+          "options": [
+            "Vì cơ thể người khỏe mạnh có hệ miễn dịch có khả năng chống lại virus mới xâm nhập.",
+            "Vì người mắc bệnh không phải ổ chứa virus.",
+            "Vì khi xâm nhập cơ thể người, virus đã giảm hoạt tính, không còn khả năng lây nhiễm.",
+            "Vì virus không thể tồn tại quá lâu trong nước bọt và ống tiêu hóa của muỗi."
+          ],
+          "correct": 3
+        },
+        {
+          "type": "shortanswer",
+          "question": "Virus được cấu tạo bởi mấy thành phần cơ bản?",
+          "image": null,
+          "correct": 2
+        },
+        {
+          "type": "shortanswer",
+          "question": "Quá trình nhân lên của virus được chia thành mấy giai đoạn?",
+          "image": null,
+          "correct": 5
+        },
+        {
+          "type": "shortanswer",
+          "question": "Virus trần không có mấy thành phần sau đây?",
+          "image": null,
+          "correct": 2
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho các chức năng sau:",
+          "image": null,
+          "correct": 2
+        },
+        {
+          "type": "shortanswer",
+          "question": "Có bao nhiêu nhận định sau đây không đúng về chu trình tan?",
+          "image": null,
+          "correct": 3
+        },
+        {
+          "type": "shortanswer",
+          "question": "Có bao nhiêu nhận định sau đây đúng về virus?",
+          "image": null,
+          "correct": 3
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Quan sát hình sau đây về HIV. Khi nói về HIV, phát biểu nào sau đây đúng, phát biểu nào sai?",
+          "image": "public/images/sinh10/image25.png",
+          "statements": [
+            {
+              "correct": false
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        },
+        {
+          "passage": "Hình sau đây là một ví dụ về quá trình nhân lên của virus trong tế bào chủ. Khi nói về hình này, phát biểu nào sau đây đúng, phát biểu nào sai?",
+          "image": "public/images/sinh10/image26.png",
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": false
+            }
+          ]
+        },
+        {
+          "passage": "Virus cúm A gây bệnh cúm ở chim và một số động vật có vú. Hình bên cạnh mô tả một phần quá trình lây nhiễm của virus cúm A vào tế bào người. Nhận định nào sau đây đúng hay sai?",
+          "image": "public/images/sinh10/image27.png",
+          "statements": [
+            {
+              "correct": true
+            },
+            {
+              "correct": false
+            },
+            {
+              "correct": true
+            },
+            {
+              "correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
