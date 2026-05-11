@@ -3,7 +3,18 @@
     "allow": [
       "Bash(node -e \"const fs=require\\('fs'\\); const data=JSON.parse\\(fs.readFileSync\\('D:/Ontap/data/sinh.json','utf8'\\)\\); console.log\\('Total lessons:', data.lessons.length\\); data.lessons.forEach\\(l=>console.log\\('-', l.name, '| Q:', l.questions?.length||0, '| G:', l.questionGroups?.length||0\\)\\);\")",
       "Bash(node -e \"const fs=require\\('fs'\\); const data=JSON.parse\\(fs.readFileSync\\('D:/Ontap/data/sinh.json','utf8'\\)\\); let mcq=0, sa=0, grp=0; data.lessons.forEach\\(l=>{ mcq+=\\(l.questions||[]\\).filter\\(q=>q.type==='mcq'\\).length; sa+=\\(l.questions||[]\\).filter\\(q=>q.type==='shortanswer'\\).length; grp+=\\(l.questionGroups||[]\\).length;}\\); console.log\\('mcq:', mcq, 'shortanswer:', sa, 'groups:', grp\\);\")",
-      "Bash(curl -s \"http://localhost:3000/api/data/sinh\")"
+      "Bash(curl -s \"http://localhost:3000/api/data/sinh\")",
+      "Bash(python -X utf8 -c 'from pathlib import Path; import re; txt=Path\\('\\\\''D:/Ontap/docs/su10.txt'\\\\''\\).read_text\\(encoding='\\\\''utf-8'\\\\''\\);:*)",
+      "Bash(python -)",
+      "Bash(python \"d:/Ontap/docs/normalize_sinh.py\")",
+      "Bash(git -C \"d:/Ontap\" diff -- \"data/sinh.json\" \"docs/sinh10_bai_22_24_25_26_29_clean.txt\")",
+      "Bash(git -C \"d:/Ontap\" log -5 --oneline)",
+      "Bash(git -C \"d:/Ontap\" ls-files \"sinh10_bai_22_24_25_26_29_clean.txt\" \"docs/sinh10_bai_22_24_25_26_29_clean.txt\")",
+      "Bash(git -C \"d:/Ontap\" add -u \"docs/__pycache__\")",
+      "Bash(git -C d:/Ontap commit -m ':*)",
+      "Bash(git -C \"d:/Ontap\" push)",
+      "Bash(git -C \"d:\\\\Ontap\" branch --show-current)",
+      "Bash(git -C \"d:\\\\Ontap\" rev-parse --abbrev-ref --symbolic-full-name @{u})"
     ]
   }
 }

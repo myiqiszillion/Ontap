@@ -214,15 +214,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Vi sinh vật là những sinh vật có kích thước nhỏ.",
               "correct": true
             },
             {
+              "question": "Tất cả vi sinh vật đều có cấu trúc đơn bào nhân sơ.",
               "correct": false
             },
             {
+              "question": "Vi sinh vật chỉ sống kí sinh bắt buộc.",
               "correct": false
             },
             {
+              "question": "Vi sinh vật có kích thước nhỏ nên sinh sản nhanh.",
               "correct": true
             }
           ]
@@ -232,15 +236,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Phương pháp quan sát bằng kính hiển vi dùng để nghiên cứu hình dạng, kích thước của một số nhóm vi sinh vật.",
               "correct": true
             },
             {
+              "question": "Phương pháp nuôi cấy để nghiên cứu khả năng hoạt động hiếu khí, kị khí của vi sinh vật và sản phẩm của chúng tạo ra.",
               "correct": true
             },
             {
+              "question": "Vết cấy có bề mặt và màu sắc đa dạng, nhiều kích thước chứng tỏ giống mới phân lập được là giống thuần khiết.",
               "correct": false
             },
             {
+              "question": "Hình thái của khuẩn lạc mang tính đặc trưng cho từng loài vi khuẩn.",
               "correct": true
             }
           ]
@@ -250,15 +258,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Sự tồn tại của các vi sinh vật được tiên đoán trong nhiều thế kỉ trước khi chúng được quan sát thấy lần đầu tiên.",
               "correct": true
             },
             {
+              "question": "Vi khuẩn là vi sinh vật thuộc nhóm đơn bào nhân thực.",
               "correct": false
             },
             {
+              "question": "Vi nấm và vi tảo thuộc cùng một nhóm trong phân loại vi sinh vật.",
               "correct": true
             },
             {
+              "question": "Dựa vào đặc điểm cấu tạo tế bào, vi sinh vật được phân chia thành ba nhóm gồm đơn bào nhân sơ, đơn bào nhân thực và tập đoàn đơn bào nhân thực.",
               "correct": false
             }
           ]
@@ -268,15 +280,19 @@
           "image": "public/images/sinh10/image24.png",
           "statements": [
             {
+              "question": "Đây là phương pháp mô tả chính xác khuẩn lạc đã tách rời.",
               "correct": true
             },
             {
+              "question": "Khi vi khuẩn tăng trưởng và phát triển trên môi trường lỏng sẽ tạo ra những khuẩn lạc.",
               "correct": false
             },
             {
+              "question": "Các vi khuẩn gây bệnh đa số có khuẩn lạc dạng S và M.",
               "correct": true
             },
             {
+              "question": "Trực khuẩn than có khuẩn lạc dạng R nên chúng không gây bệnh.",
               "correct": false
             }
           ]
@@ -348,7 +364,7 @@
         },
         {
           "type": "mcq",
-          "question": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm:",
+          "question": "Một số loại polysaccharide mà vi sinh vật tiết vào môi trường gọi là gôm. Các phát biểu sau đây nói về vai trò của gôm:\n(1) Gôm có vai trò bảo vệ tế bào vi sinh vật khỏi bị khô.\n(2) Gôm giúp ngăn cản sự tiếp xúc với virus.\n(3) Gôm là nguồn dự trữ carbon cho vi sinh vật.\n(4) Gôm là nguồn dự trữ năng lượng cho vi sinh vật.\nTrong các phát biểu trên, có bao nhiêu phát biểu đúng?",
           "image": null,
           "options": [
             "1.",
@@ -407,15 +423,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Tổng hợp là quá trình tạo ra phân tử hữu cơ phức tạp từ những chất đơn giản.",
               "correct": true
             },
             {
+              "question": "Quá trình tổng hợp cung cấp nguyên liệu cho quá trình phân giải chất hữu cơ.",
               "correct": true
             },
             {
+              "question": "Carbohydrate có thể tổng hợp từ N-acetyl glucosamin.",
               "correct": true
             },
             {
+              "question": "Amino acid là nguyên liệu để tổng hợp lipid.",
               "correct": false
             }
           ]
@@ -425,15 +445,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Quá trình làm sữa chua thực chất là quá trình phân giải carbohydrate của vi sinh vật.",
               "correct": true
             },
             {
+              "question": "Lên men sữa chua là lên men ethanol.",
               "correct": false
             },
             {
+              "question": "Quá trình lên men sữa chua có sự tham gia của vi khuẩn lactic dị hình.",
               "correct": false
             },
             {
+              "question": "Quá trình lên men sữa chua có tạo ra ethanol và acetic acid.",
               "correct": false
             }
           ]
@@ -443,15 +467,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Ở vi khuẩn và tảo, việc tổng hợp tinh bột và glycogen không cần hợp chất mở đầu.",
               "correct": false
             },
             {
+              "question": "Sản phẩm của quá trình tổng hợp carbohydrate là polypeptide.",
               "correct": false
             },
             {
+              "question": "Một số vi sinh vật còn tổng hợp chitin và cellulose.",
               "correct": true
             },
             {
+              "question": "Gôm bản chất là một loại polysaccharide mà vi sinh vật tiết vào môi trường.",
               "correct": true
             }
           ]
@@ -571,7 +599,7 @@
         },
         {
           "type": "mcq",
-          "question": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây?",
+          "question": "Sinh sản vô tính ở vi sinh vật nhân thực gồm các hình thức nào sau đây?\n(1) Phân đôi.\n(2) Tiếp hợp.\n(3) Nảy chồi.\n(4) Bào tử.",
           "image": null,
           "options": [
             "(1), (2), (3).",
@@ -583,7 +611,7 @@
         },
         {
           "type": "mcq",
-          "question": "Cho các đặc điểm sau:",
+          "question": "Cho các đặc điểm sau:\n(1) Số lượng tế bào sinh ra bằng số tế bào chết đi.\n(2) Chất độc hại tích lũy quá nhiều.\n(3) Vi khuẩn bị chết do chất dinh dưỡng giảm dần.\n(4) Số lượng vi khuẩn tăng lên rất nhanh.\nPha cân bằng gồm các đặc điểm nào?",
           "image": null,
           "options": [
             "1, 2.",
@@ -672,15 +700,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Đây là sự sinh trưởng của quần thể vi khuẩn trong môi trường nuôi cấy không liên tục.",
               "correct": true
             },
             {
+              "question": "Để thu được sinh khối tối đa người ta sẽ thu ở cuối pha số (3).",
               "correct": false
             },
             {
+              "question": "Tốc độ sinh trưởng của quần thể vi khuẩn ở pha số (2) cao hơn pha số (3).",
               "correct": true
             },
             {
+              "question": "Pha số (1), vi khuẩn không sinh trưởng vì lượng chất dinh dưỡng rất ít.",
               "correct": false
             }
           ]
@@ -690,15 +722,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Cứ 20 phút vi khuẩn E.coli phân chia 1 lần.",
               "correct": true
             },
             {
+              "question": "Trong 1 giờ chúng phân chia 4 lần.",
               "correct": false
             },
             {
+              "question": "Sau 1 giờ 20 phút số tế bào trong quần thể là 16 tế bào.",
               "correct": true
             },
             {
+              "question": "Số tế bào vi khuẩn tăng theo cấp số nhân sau mỗi lần phân chia.",
               "correct": true
             }
           ]
@@ -708,15 +744,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Người dân không nên tự ý đi mua thuốc kháng sinh về điều trị bệnh cho người thân vì sẽ gây ra hiện tượng kháng kháng sinh.",
               "correct": true
             },
             {
+              "question": "Đối với cảm sốt nhẹ, có thể tự mua kháng sinh ở hiệu thuốc có uy tín để điều trị, vì kháng sinh có thể tiêu diệt hoặc ức chế vi sinh vật gây bệnh.",
               "correct": false
             },
             {
+              "question": "Khi tự ý mua thuốc kháng sinh về sử dụng có thể không tạo được hiệu quả điều trị mong muốn mà còn gây nên các tác dụng phụ nguy hiểm.",
               "correct": true
             },
             {
+              "question": "Thuốc kháng sinh cần được sử dụng theo chỉ dẫn của bác sĩ, không tự ý sử dụng và sử dụng tràn lan.",
               "correct": true
             }
           ]
@@ -889,15 +929,19 @@
           "image": null,
           "statements": [
             {
+              "question": "Là lĩnh vực quan trọng của công nghệ sinh học.",
               "correct": true
             },
             {
+              "question": "Gây ô nhiễm môi trường, giá thành rẻ, hiệu quả tức thời.",
               "correct": false
             },
             {
+              "question": "An toàn, thân thiện với môi trường, giá thành rẻ, hiệu quả lâu dài.",
               "correct": true
             },
             {
+              "question": "Là công nghệ sử dụng vi sinh vật và dẫn xuất của nó để tạo ra sản phẩm phục vụ cho đời sống con người.",
               "correct": true
             }
           ]
@@ -907,15 +951,19 @@
           "image": null,
           "statements": [
             {
+              "question": "giúp tăng kết cấu đất.",
               "correct": true
             },
             {
+              "question": "cung cấp đủ các dưỡng chất khoáng đa lượng, trung lượng và vi lượng cho cây trồng.",
               "correct": false
             },
             {
+              "question": "cải tạo, bồi dưỡng, tăng lượng mùn, tăng độ phì nhiêu, làm đất tơi xốp, không bị bạc màu.",
               "correct": true
             },
             {
+              "question": "có hiệu quả chậm hơn so với phân bón hóa học nên ít được sử dụng.",
               "correct": true
             }
           ]
@@ -1196,15 +1244,19 @@
           "image": "public/images/sinh10/image25.png",
           "statements": [
             {
+              "question": "HIV thuộc loại virus DNA.",
               "correct": false
             },
             {
+              "question": "HIV lây nhiễm cho mọi tế bào của cơ thể người.",
               "correct": false
             },
             {
+              "question": "HIV khi nhân lên trong tế bào vật chủ có xảy ra phiên mã ngược.",
               "correct": true
             },
             {
+              "question": "Mẹ bị nhiễm HIV không nên sinh con.",
               "correct": true
             }
           ]
@@ -1214,15 +1266,19 @@
           "image": "public/images/sinh10/image26.png",
           "statements": [
             {
+              "question": "Quá trình này gồm 5 giai đoạn.",
               "correct": true
             },
             {
+              "question": "Virus này xâm nhập bằng cách tiết enzyme lysozyme làm tan thành tế bào vật chủ.",
               "correct": true
             },
             {
+              "question": "Sự nhân lên của virus này được thực hiện theo chu trình tiềm tan.",
               "correct": false
             },
             {
+              "question": "Người ta dùng kháng sinh để tiêu diệt virus này.",
               "correct": false
             }
           ]
@@ -1232,15 +1288,19 @@
           "image": "public/images/sinh10/image27.png",
           "statements": [
             {
+              "question": "Virus cúm A xâm nhập vào tế bào vật chủ kiểu nhập bào.",
               "correct": true
             },
             {
+              "question": "Virus chỉ lây nhiễm nucleic acid vào trong tế bào chủ.",
               "correct": false
             },
             {
+              "question": "H+ sẽ thúc đẩy quá trình giải phóng vật chất di truyền của virus ra khỏi bóng.",
               "correct": true
             },
             {
+              "question": "NH3 ức chế sự giải phóng vật chất di truyền của virus.",
               "correct": true
             }
           ]
