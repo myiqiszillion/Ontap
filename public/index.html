@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTMK — Nền Tảng Ôn Tập Thông Minh | GDPT 2018</title>
+  <meta name="description"
+    content="NTMK EdTech - Nền tảng học tập thông minh cho học sinh THPT: Toán, Vật lí, Hóa học, Tiếng Anh. Luyện thi GDPT 2018, thi thử, flashcard và ôn tập cá nhân hóa.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/edtech-design-system.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+
+<body id="app-body">
+
+  <!-- ═══════════════════════════════════════════════════════════
+     APP SHELL HEADER
+     ═══════════════════════════════════════════════════════════ -->
+  <header class="app-shell-header">
+    <div class="header-container">
+      <div class="brand-logo" onclick="app.navigateTo('dashboard')">
+        <img src="assets/logo.png" alt="NTMK Logo" class="brand-logo-img">
+        <span class="brand-title">NTMK</span>
+        <span class="brand-badge">GDPT 2018</span>
+      </div>
+
+      <nav class="header-nav-desktop" aria-label="Điều hướng chính">
+        <button class="nav-item-btn active" data-route="dashboard" onclick="app.navigateTo('dashboard')">
+          🏠 Trang chủ
+        </button>
+        <button class="nav-item-btn" data-route="subjects" onclick="app.navigateTo('subjects')">
+          📚 Khám phá môn học
+        </button>
+        <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
+          📢 Thông báo
+        </button>
+      </nav>
+
+      <div class="header-actions-group">
+        <button id="header-student-badge" class="profile-pill-btn" onclick="app.startOnboarding(true)" aria-label="Hồ sơ và mục tiêu học tập">
+          <span id="header-grade-text">Lớp 10</span>
+          <span style="font-size:0.75rem; color: var(--text-dim);">⚙️</span>
+        </button>
+
+        <button id="theme-toggle" class="theme-toggle-btn" onclick="app.toggleTheme()" aria-label="Chuyển chế độ Sáng / Tối">
+          <span class="theme-icon light-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     MOBILE BOTTOM NAVIGATION BAR
+     ═══════════════════════════════════════════════════════════ -->
+  <nav class="mobile-bottom-nav" aria-label="Điều hướng di động">
+    <button class="mob-nav-item active" data-route="dashboard" onclick="app.navigateTo('dashboard')">
+      <span class="mob-nav-icon">🏠</span>
+      <span>Tổng quan</span>
+    </button>
+    <button class="mob-nav-item" data-route="subjects" onclick="app.navigateTo('subjects')">
+      <span class="mob-nav-icon">📚</span>
+      <span>Môn học</span>
+    </button>
+    <button class="mob-nav-item" data-route="announcements" onclick="app.navigateTo('announcements')">
+      <span class="mob-nav-icon">📢</span>
+      <span>Bảng tin</span>
+    </button>
+    <button class="mob-nav-item" onclick="app.startOnboarding(true)">
+      <span class="mob-nav-icon">⚙️</span>
+      <span>Mục tiêu</span>
+    </button>
+  </nav>
+
+  <main class="app" id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 0: ONBOARDING WIZARD
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-onboarding" class="screen" aria-label="Thiết lập học tập ban đầu">
+      <div class="onboarding-screen-wrapper">
+        <div class="wizard-card">
+          <div class="wizard-steps-header">
+            <div class="wizard-step-item active" data-step="1">
+              <div class="step-number">1</div>
+              <span>Khối lớp</span>
+            </div>
+            <div class="wizard-step-item" data-step="2">
+              <div class="step-number">2</div>
+              <span>Môn học</span>
+            </div>
+            <div class="wizard-step-item" data-step="3">
+              <div class="step-number">3</div>
+              <span>Mục tiêu</span>
+            </div>
+          </div>
+
+          <div id="onboarding-wizard">
+            <!-- Step 1: Chọn Khối lớp -->
+            <div class="wizard-step-view active" id="wizard-step-1">
+              <h2 class="wizard-step-title">Bạn đang học lớp mấy?</h2>
+              <p class="wizard-step-desc">Hệ thống sẽ cá nhân hóa nội dung và cấu trúc đề thi GDPT 2018 phù hợp với khối lớp của bạn.</p>
+              <div class="options-vertical-grid" id="step-1-options"></div>
+            </div>
+
+            <!-- Step 2: Chọn Môn học -->
+            <div class="wizard-step-view" id="wizard-step-2">
+              <h2 class="wizard-step-title">Bạn muốn tập trung môn nào?</h2>
+              <p class="wizard-step-desc">Chọn một hoặc nhiều môn trong tổ hợp 4 môn trọng tâm của NTMK.</p>
+              <div class="options-vertical-grid" id="step-2-options"></div>
+            </div>
+
+            <!-- Step 3: Chọn Mục tiêu -->
+            <div class="wizard-step-view" id="wizard-step-3">
+              <h2 class="wizard-step-title">Mục tiêu học tập của bạn là gì?</h2>
+              <p class="wizard-step-desc">Xác định mục tiêu giúp thuật toán tối ưu hóa bài tập và tần suất ôn luyện.</p>
+              <div class="options-vertical-grid" id="step-3-options"></div>
+            </div>
+
+            <!-- Actions Bar -->
+            <div class="wizard-actions-bar">
+              <button class="btn btn-outline" id="wizard-btn-back" onclick="Onboarding.prevStep()" style="display: none;">
+                ← Quay lại
+              </button>
+              <div style="flex: 1;"></div>
+              <button class="btn btn-primary" id="wizard-btn-next" onclick="Onboarding.nextStep()">
+                Tiếp tục →
+              </button>
+              <button class="btn btn-teal" id="wizard-btn-finish" onclick="Onboarding.finish()" style="display: none;">
+                ✓ Bắt đầu học ngay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 1: STUDENT DASHBOARD FOUNDATION
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-dashboard" class="screen on" aria-label="Bảng điều khiển học sinh">
+      <!-- Dynamic Rendered via DashboardView.render() -->
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 2: SUBJECT EXPLORER (4 TARGET SUBJECTS + LEGACY)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-subjects" class="screen" aria-label="Khám phá môn học">
+      <!-- Dynamic Rendered via SubjectExplorer.render() -->
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 3: TOPIC SELECTION + MODE SELECTOR (LEGACY COMPATIBLE)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-topics" class="screen" aria-label="Chọn chuyên đề ôn tập">
+      <header class="quiz-header">
+        <button class="back-btn" onclick="app.navigateTo('subjects')">← Danh sách môn</button>
+        <div class="quiz-info">
+          <span class="subject-badge" id="selected-subject-name">Môn học</span>
+        </div>
+        <div class="timer" style="visibility: hidden;">
+          <span class="timer-icon">⏱️</span>
+          <span>00:00</span>
+        </div>
+      </header>
+
+      <div class="topics-container">
+        <!-- Mode Selector -->
+        <div class="mode-selector" id="mode-selector">
+          <h2>Chọn chế độ ôn tập</h2>
+          <div class="mode-cards">
+            <div class="mode-card selected" data-mode="exam" onclick="app.selectMode('exam')">
+              <div class="mode-icon">📝</div>
+              <div class="mode-name">Thi thử</div>
+              <div class="mode-desc">Bấm giờ &amp; Chấm điểm theo chuẩn</div>
+            </div>
+            <div class="mode-card" data-mode="study" onclick="app.selectMode('study')">
+              <div class="mode-icon">📖</div>
+              <div class="mode-name">Học &amp; Đọc</div>
+              <div class="mode-desc">Xem câu hỏi kèm lời giải ngay</div>
+            </div>
+            <div class="mode-card" data-mode="flashcard" onclick="app.selectMode('flashcard')">
+              <div class="mode-icon">🃏</div>
+              <div class="mode-name">Flashcard</div>
+              <div class="mode-desc">Lật thẻ ôn kiến thức nhanh</div>
+            </div>
+            <div class="mode-card" data-mode="practice" onclick="app.selectMode('practice')">
+              <div class="mode-icon">💪</div>
+              <div class="mode-name">Luyện tập</div>
+              <div class="mode-desc">Phản hồi đúng/sai tức thì</div>
+            </div>
+            <div class="mode-card" data-mode="wrong" onclick="app.selectMode('wrong')">
+              <div class="mode-icon">❌</div>
+              <div class="mode-name">Câu sai</div>
+              <div class="mode-desc wrong-count-desc">Luyện lại câu sai (<span id="wrong-count-badge">0</span>)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topic list -->
+        <div class="topics-header">
+          <h2>Chọn các bài học</h2>
+          <p class="topics-subtitle">Chọn ít nhất 1 bài để bắt đầu làm bài</p>
+          <button class="select-all-btn" onclick="app.selectAll()">Chọn tất cả</button>
+        </div>
+
+        <div class="topics-list" id="topics-list">
+          <!-- Dynamic: Render topics from JSON -->
+        </div>
+
+        <!-- Exam config (only visible in exam mode) -->
+        <div class="quiz-config" id="quiz-config-exam">
+          <label class="config-label">Cấu trúc đề thi thử:</label>
+          <div class="config-grid">
+            <div class="config-item" id="config-item-mcq">
+              <label for="exam-mcq-limit">Trắc nghiệm</label>
+              <input type="number" id="exam-mcq-limit" min="0" value="12" class="config-input">
+            </div>
+            <div class="config-item" id="config-item-tf">
+              <label for="exam-tf-limit">Đúng/Sai</label>
+              <input type="number" id="exam-tf-limit" min="0" value="4" class="config-input">
+            </div>
+            <div class="config-item" id="config-item-sa">
+              <label for="exam-sa-limit">Trả lời ngắn</label>
+              <input type="number" id="exam-sa-limit" min="0" value="2" class="config-input">
+            </div>
+          </div>
+          <div class="config-row">
+            <label for="quiz-duration">Thời gian làm bài:</label>
+            <select id="quiz-duration">
+              <option value="10">10 phút</option>
+              <option value="20" selected>20 phút</option>
+              <option value="30">30 phút</option>
+              <option value="45">45 phút</option>
+              <option value="50">50 phút (Chuẩn Lí, Hóa, Anh)</option>
+              <option value="90">90 phút (Chuẩn Toán)</option>
+              <option value="0">Không giới hạn</option>
+            </select>
+          </div>
+
+          <div class="quiz-summary" id="quiz-summary">
+            <span class="summary-item">
+              <strong id="summary-questions">0</strong> câu
+            </span>
+            <span class="summary-divider">•</span>
+            <span class="summary-item">
+              <strong id="summary-time">0</strong> phút
+            </span>
+          </div>
+        </div>
+
+        <!-- Practice/Study/Flashcard config -->
+        <div class="quiz-config" id="quiz-config-practice" style="display: none;">
+          <label class="config-label">Chọn thể loại câu hỏi:</label>
+          <div class="config-grid">
+            <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
+              <input type="checkbox" class="topic-checkbox" id="prac-mcq-toggle" checked>
+              <span class="topic-checkmark"></span>
+              <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Trắc nghiệm</span>
+            </label>
+            <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
+              <input type="checkbox" class="topic-checkbox" id="prac-tf-toggle" checked>
+              <span class="topic-checkmark"></span>
+              <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Đúng/Sai</span>
+            </label>
+            <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
+              <input type="checkbox" class="topic-checkbox" id="prac-sa-toggle" checked>
+              <span class="topic-checkmark"></span>
+              <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Trả lời ngắn</span>
+            </label>
+          </div>
+
+          <div class="quiz-summary" style="margin-bottom: 0;">
+            <span class="summary-item">
+              <strong>Tổng cộng: </strong><strong id="summary-questions-practice">0 câu</strong>
+            </span>
+          </div>
+        </div>
+
+        <!-- Flashcard Specific Config -->
+        <div class="quiz-config" id="quiz-config-flashcard" style="display: none;">
+          <label class="config-label">Tùy chọn chia nhỏ học tập:</label>
+          <div class="config-grid">
+            <div class="config-item" style="display:flex; flex-direction:column;">
+              <label for="fc-chunk-size" style="margin-bottom:5px; font-weight:500;">Học từng nhóm nhỏ (0 = Tất cả)</label>
+              <input type="number" id="fc-chunk-size" min="0" value="0" class="config-input" placeholder="VD: 10 câu">
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; width: 100%;">
+          <button class="start-btn" id="start-btn" disabled style="flex: 1;">
+            🚀 Bắt đầu làm bài
+          </button>
+          <button class="start-btn" id="resume-btn" style="flex: 1; display: none; background: #10b981;">
+            🔄 Tiếp tục phiên trước
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 4: QUIZ INTERFACE (PHÒNG THI TRẮC NGHIỆM)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-quiz" class="screen" aria-label="Phòng thi trắc nghiệm">
+      <header class="quiz-header">
+        <button class="back-btn" onclick="app.quitQuiz()">← Thoát phòng thi</button>
+        <div class="quiz-info">
+          <span class="subject-badge" id="quiz-subject">Môn học</span>
+          <span class="progress-badge" id="quiz-progress">1/20</span>
+        </div>
+        <div class="timer" id="active-timer">
+          <span class="timer-icon">⏱️</span>
+          <span id="active-timer-display">20:00</span>
+        </div>
+      </header>
+
+      <div class="quiz-layout">
+        <aside class="quiz-sidebar">
+          <div class="sidebar-header">Danh sách câu hỏi</div>
+          <div class="question-dots" id="question-dots"></div>
+        </aside>
+
+        <main class="quiz-main">
+          <div class="question-card">
+            <div class="question-meta">
+              <span class="question-type-badge" id="q-type-badge">MCQ</span>
+              <span class="question-number">Câu <span id="q-num">1</span></span>
+            </div>
+            <div class="question-text" id="q-text">Đang tải câu hỏi...</div>
+            <div class="options" id="options-container"></div>
+          </div>
+
+          <div class="quiz-nav">
+            <button class="nav-btn prev" id="btn-prev" onclick="Quiz.prev()">← Câu trước</button>
+            <button class="nav-btn next" id="btn-next" onclick="Quiz.next()">Câu tiếp →</button>
+            <button class="nav-btn submit hidden" id="btn-submit" onclick="Quiz.submit()">✓ Nộp bài thi</button>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 5: STUDY MODE (HỌC & ĐỌC)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-study" class="screen" aria-label="Chế độ học và đọc">
+      <header class="quiz-header">
+        <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+        <div class="quiz-info">
+          <span class="subject-badge study-badge-header">📖 Học &amp; Đọc</span>
+          <span class="progress-badge" id="study-progress">1/20</span>
+        </div>
+        <div class="study-progress-bar">
+          <div class="study-progress-fill" id="study-progress-fill"></div>
+        </div>
+      </header>
+
+      <div class="study-layout">
+        <div id="study-content" class="study-content"></div>
+        <div class="study-nav">
+          <button class="nav-btn prev" id="study-prev" onclick="Study.studyPrev()">← Trước</button>
+          <button class="nav-btn next" id="study-next" onclick="Study.studyNext()">Tiếp →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 6: FLASHCARD MODE
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-flashcard" class="screen" aria-label="Chế độ Flashcard">
+      <header class="quiz-header">
+        <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+        <div class="quiz-info">
+          <span class="subject-badge fc-badge-header">🃏 Flashcard</span>
+          <span class="progress-badge" id="fc-counter">0/0</span>
+        </div>
+        <div class="fc-known-counter" id="fc-known">✓ 0</div>
+      </header>
+
+      <div class="fc-progress-bar">
+        <div class="fc-progress-fill" id="fc-progress-fill"></div>
+      </div>
+
+      <div class="fc-layout">
+        <div id="flashcard-content" class="fc-content"></div>
+        <div class="fc-actions" id="fc-actions">
+          <button class="fc-btn unknown" onclick="Study.markUnknown()">❌ Chưa thuộc</button>
+          <button class="fc-btn known" onclick="Study.markKnown()">✅ Đã thuộc</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 7: PRACTICE MODE (LUYỆN TẬP THÍCH ỨNG)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-practice" class="screen" aria-label="Chế độ luyện tập">
+      <header class="quiz-header">
+        <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+        <div class="quiz-info">
+          <span class="subject-badge practice-badge-header">💪 Luyện tập</span>
+          <span class="progress-badge" id="practice-progress">1/20</span>
+        </div>
+        <div class="practice-score-display" id="practice-score">✓ 0 ✗ 0</div>
+      </header>
+
+      <div class="practice-progress-bar">
+        <div class="practice-progress-fill" id="practice-progress-fill"></div>
+      </div>
+
+      <div class="practice-layout">
+        <div id="practice-content" class="practice-content"></div>
+        <div class="practice-nav">
+          <button class="nav-btn prev" id="practice-prev" onclick="Study.practicePrev()">← Trước</button>
+          <button class="nav-btn next" id="practice-next" onclick="Study.practiceNext()">Tiếp →</button>
+          <button class="nav-btn submit hidden" id="practice-finish" onclick="Study.practiceFinish()">✓ Hoàn thành</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 8: RESULTS
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-result" class="screen" aria-label="Kết quả bài thi">
+      <div class="result-card">
+        <div class="score-circle">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00B074" />
+                <stop offset="50%" stop-color="#33C08F" />
+                <stop offset="100%" stop-color="#66D4AD" />
+              </linearGradient>
+            </defs>
+            <circle class="score-bg" cx="50" cy="50" r="45" />
+            <circle class="score-fill" id="score-ring" cx="50" cy="50" r="45" stroke-dasharray="282.74"
+              stroke-dashoffset="282.74" />
+          </svg>
+          <div class="score-text">
+            <span class="score-value" id="score-value">0</span>
+            <span class="score-total">/ <span id="score-total">20</span></span>
+          </div>
+        </div>
+
+        <h2 class="result-title">Kết quả làm bài</h2>
+        <p class="result-message" id="result-message">Chúc mừng bạn đã hoàn thành!</p>
+
+        <div class="result-stats">
+          <div class="stat correct">
+            <span class="stat-num" id="correct-count">0</span>
+            <span class="stat-label">Số câu đúng</span>
+          </div>
+          <div class="stat wrong">
+            <span class="stat-num" id="wrong-count">0</span>
+            <span class="stat-label">Số câu sai</span>
+          </div>
+          <div class="stat time">
+            <span class="stat-num" id="time-used">0:00</span>
+            <span class="stat-label">Thời gian</span>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button class="action-btn primary" onclick="app.navigateTo('dashboard')">
+            🏠 Về Dashboard
+          </button>
+          <button class="action-btn secondary" onclick="Quiz.review()">
+            📝 Xem chi tiết đáp án
+          </button>
+          <button class="action-btn secondary" onclick="Quiz.retry()">
+            🔄 Làm lại đề này
+          </button>
+        </div>
+
+        <div class="review-section hidden" id="review-section">
+          <h3>Chi tiết đáp án từng câu</h3>
+          <div class="review-list" id="review-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 9: ANNOUNCEMENTS
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-announcements" class="screen" aria-label="Bảng tin cộng đồng">
+      <div class="dashboard-wrapper">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <h1 class="explorer-title">Bảng Tin &amp; Thông Báo Cộng Đồng</h1>
+          <p class="explorer-subtitle">Cập nhật lịch thi, đề cương ôn tập và tin tức từ ban quản trị NTMK.</p>
+        </div>
+        <div class="announcements-container" id="announcements-container">
+          <div style="text-align: center; color: var(--text-dim); padding: 40px;">
+            Đang tải thông báo...
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modular Scripts Architecture -->
+  <script defer src="js/api.js"></script>
+  <script defer src="js/state.js"></script>
+  <script defer src="js/router.js"></script>
+  <script defer src="js/onboarding.js"></script>
+  <script defer src="js/dashboard.js"></script>
+  <script defer src="js/subject-explorer.js"></script>
+  <script defer src="js/data-loader.js"></script>
+  <script defer src="js/timer.js"></script>
+  <script defer src="js/study.js"></script>
+  <script defer src="js/quiz.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+
+</html>

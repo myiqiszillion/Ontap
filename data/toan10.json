@@ -1,0 +1,133 @@
+{
+  "subject": "Toán học 10",
+  "lessons": [
+    {
+      "name": "Bài 1: Mệnh đề toán học",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Trong các câu sau, câu nào là một mệnh đề toán học?",
+          "options": [
+            "15 là số nguyên tố.",
+            "Hôm nay trời đẹp quá!",
+            "Bạn có thích học Toán không?",
+            "x + 2 > 5."
+          ],
+          "correct": 0,
+          "explanation": "'15 là số nguyên tố' là một khẳng định có tính đúng sai rõ ràng (mệnh đề sai). Các câu còn lại là câu cảm thán, câu hỏi hoặc mệnh đề chứa biến."
+        },
+        {
+          "type": "mcq",
+          "question": "Mệnh đề phủ định của mệnh đề 'Mọi hình vuông đều là hình thoi' là:",
+          "options": [
+            "Có ít nhất một hình vuông không phải là hình thoi.",
+            "Mọi hình vuông đều không phải là hình thoi.",
+            "Mọi hình thoi đều là hình vuông.",
+            "Không có hình vuông nào là hình thoi."
+          ],
+          "correct": 0,
+          "explanation": "Phủ định của khẳng định chứa 'mọi' (∀) là 'tồn tại ít nhất một' (∃) không thỏa mãn tính chất."
+        },
+        {
+          "type": "mcq",
+          "question": "Cho hai mệnh đề P: 'Tam giác ABC cân' và Q: 'Tam giác ABC đều'. Mệnh đề kéo theo P => Q có nghĩa là:",
+          "options": [
+            "Nếu tam giác ABC cân thì tam giác ABC đều.",
+            "Nếu tam giác ABC đều thì tam giác ABC cân.",
+            "Tam giác ABC cân khi và chỉ khi tam giác ABC đều.",
+            "Tam giác ABC không cân thì tam giác ABC không đều."
+          ],
+          "correct": 0,
+          "explanation": "P => Q phát biểu là 'Nếu P thì Q'."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho mệnh đề chứa biến P(n): 'n chia hết cho 5'. Trong các số nguyên 12, 17, 25, 33, có bao nhiêu số làm cho P(n) là mệnh đề đúng?",
+          "correct": "1",
+          "explanation": "Chỉ có n = 25 chia hết cho 5. Vậy có đúng 1 số thỏa mãn."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Xét tính đúng sai của các khẳng định liên quan đến mệnh đề logic và tập hợp số học sau đây:",
+          "statements": [
+            {
+              "question": "Số nguyên tố chẵn duy nhất trong tập hợp số tự nhiên là số 2.",
+              "correct": true
+            },
+            {
+              "question": "Tổng của hai số vô tỉ luôn luôn là một số vô tỉ.",
+              "correct": false
+            },
+            {
+              "question": "Mệnh đề 'Nếu tứ giác có 4 góc vuông thì tứ giác đó là hình chữ nhật' là mệnh đề đúng.",
+              "correct": true
+            },
+            {
+              "question": "Phủ định của mệnh đề '∃x ∈ ℝ, x² < 0' là '∀x ∈ ℝ, x² > 0'.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 2: Tập hợp và các phép toán trên tập hợp",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Cho tập hợp A = {x ∈ ℕ | x < 5}. Tập hợp A viết dưới dạng liệt kê các phần tử là:",
+          "options": [
+            "A = {0, 1, 2, 3, 4}",
+            "A = {1, 2, 3, 4, 5}",
+            "A = {1, 2, 3, 4}",
+            "A = {0, 1, 2, 3, 4, 5}"
+          ],
+          "correct": 0,
+          "explanation": "Vì x ∈ ℕ nên x nhận các giá trị từ 0 trở đi và x < 5, do đó A = {0, 1, 2, 3, 4}."
+        },
+        {
+          "type": "mcq",
+          "question": "Cho hai tập hợp A = {1, 2, 3, 4} và B = {2, 4, 6}. Giao của hai tập hợp A và B là:",
+          "options": [
+            "{2, 4}",
+            "{1, 2, 3, 4, 6}",
+            "{1, 3}",
+            "{6}"
+          ],
+          "correct": 0,
+          "explanation": "A ∩ B là tập hợp các phần tử thuộc cả A và B, tức {2, 4}."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho tập hợp M có 3 phần tử. Hỏi tập hợp M có tất cả bao nhiêu tập con?",
+          "correct": "8",
+          "explanation": "Số tập con của một tập hợp có n phần tử là 2^n = 2^3 = 8."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho hai tập hợp A = [-2; 4) và B = (0; 5]. Xét tính đúng sai của các mệnh đề sau:",
+          "statements": [
+            {
+              "question": "Giao của hai tập hợp A ∩ B = (0; 4).",
+              "correct": true
+            },
+            {
+              "question": "Hợp của hai tập hợp A ∪ B = [-2; 5].",
+              "correct": true
+            },
+            {
+              "question": "Hiệu của hai tập hợp A \\ B = [-2; 0].",
+              "correct": true
+            },
+            {
+              "question": "Số phần tử nguyên thuộc tập A ∩ B là 4.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
