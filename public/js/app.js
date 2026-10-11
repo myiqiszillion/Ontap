@@ -36,12 +36,52 @@ const app = {
         this.updateHeaderProfileBadge(profile);
         SubjectExplorer.setGrade(profile.grade);
 
-        // Respect initial hash or route to dashboard
-        const currentHash = window.location.hash.replace(/^#/, '').split('/')[0];
-        if (currentHash && AppRouter.ROUTES.includes(currentHash)) {
-          this.navigateTo(currentHash);
+        // Check for active in-progress quiz session (F5 Reload recovery)
+        let activeExam = null;
+        try {
+          const rawSession = sessionStorage.getItem('ntmk_active_exam_session_v2') || localStorage.getItem('ntmk_active_exam_session_v2');
+          if (rawSession) activeExam = JSON.parse(rawSession);
+        } catch (e) {}
+
+        if (activeExam && activeExam.status === 'in_progress' && activeExam.questions && activeExam.questions.length > 0) {
+          this.currentSubject = activeExam.subjectId;
+          const subject = this.subjects.find(s => s.id === this.currentSubject);
+          this.navigateTo('quiz');
+          const quizSubEl = document.getElementById('quiz-subject');
+          if (quizSubEl && subject) quizSubEl.textContent = subject.name;
+          Quiz.restoreSession(activeExam);
+
+          // Restore timer callbacks & ticker
+          if (activeExam.untimed) { Timer.stop(); const display=document.getElementById('active-timer-display'); if(display)display.textContent='∞'; } else {
+          const savedTimer = Timer.loadState();
+          const remainingSecs = savedTimer ? savedTimer.remaining : Math.max(0, (activeExam.remainingSeconds || 0));
+          Timer.duration = savedTimer ? savedTimer.duration : remainingSecs;
+          Timer.remaining = remainingSecs;
+          Timer.startTime = savedTimer ? savedTimer.startTime : Date.now();
+          Timer.onTick = (display, remaining) => {
+            const timerEl = document.getElementById('active-timer');
+            const timerDisplay = document.getElementById('active-timer-display');
+            if (timerDisplay) timerDisplay.textContent = display;
+            if (timerEl) {
+              timerEl.classList.remove('warning', 'danger');
+              if (remaining <= 60) timerEl.classList.add('danger');
+              else if (remaining <= 300) timerEl.classList.add('warning');
+            }
+          };
+          Timer.onExpire = () => {
+            alert('Hết thời gian làm bài! Hệ thống tự động nộp bài thi.');
+            Quiz.submit(true);
+          };
+          Timer.start();
+          }
         } else {
-          this.navigateTo('dashboard');
+          // Respect initial hash or route to dashboard
+          const currentHash = window.location.hash.replace(/^#/, '').split('/')[0];
+          if (currentHash && AppRouter.ROUTES.includes(currentHash) && currentHash !== 'quiz') {
+            this.navigateTo(currentHash);
+          } else {
+            this.navigateTo('dashboard');
+          }
         }
       }
     } catch (error) {
@@ -177,7 +217,7 @@ const app = {
     const startBtn = document.getElementById('start-btn');
     if (startBtn) {
       const labels = {
-        exam: '📝 Bắt đầu thi thử',
+        exam: '📝 Bắt đầu luyện đề',
         study: '📖 Bắt đầu học & đọc',
         flashcard: '🃏 Bắt đầu flashcard',
         practice: '💪 Bắt đầu luyện tập',
@@ -507,6 +547,8 @@ const app = {
         this.navigateTo('quiz');
         const quizSubEl = document.getElementById('quiz-subject');
         if (quizSubEl && subject) quizSubEl.textContent = subject.name;
+        Timer.stop(); Timer.clearState();
+        Quiz.untimed = this.quizDuration <= 0;
         Quiz.init(quizData);
 
         if (this.quizDuration > 0) {
@@ -521,7 +563,7 @@ const app = {
             }
           }, () => {
             alert('Hết thời gian làm bài! Hệ thống tự động nộp bài thi.');
-            Quiz.submit();
+            Quiz.submit(true);
           });
         } else {
           const timerDisplay = document.getElementById('active-timer-display');
@@ -549,7 +591,7 @@ const app = {
 
   // ═══════════ RESULTS & RECORDING ═══════════
 
-  showResults(correct, total) {
+  showResults(correct, total, sessionId) {
     Timer.stop();
 
     const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
@@ -557,6 +599,7 @@ const app = {
     // Record real learning attempt into ProfileStore
     const subject = this.subjects.find(s => s.id === this.currentSubject);
     ProfileStore.recordSession({
+      id: sessionId,
       subjectId: this.currentSubject,
       subjectName: subject ? subject.name : (this.currentSubject || 'Bài thi'),
       score: correct,
@@ -571,10 +614,14 @@ const app = {
     const wrgCntEl = document.getElementById('wrong-count');
     const timeUsedEl = document.getElementById('time-used');
 
-    if (scoreValEl) scoreValEl.textContent = correct;
-    if (scoreTotEl) scoreTotEl.textContent = total;
-    if (corCntEl) corCntEl.textContent = correct;
-    if (wrgCntEl) wrgCntEl.textContent = total - correct;
+    const cleanCorrect = typeof correct === 'number' ? (Math.round(correct * 100) / 100) : correct;
+    const cleanTotal = typeof total === 'number' ? (Math.round(total * 100) / 100) : total;
+    const cleanWrong = Math.round((cleanTotal - cleanCorrect) * 100) / 100;
+
+    if (scoreValEl) scoreValEl.textContent = cleanCorrect;
+    if (scoreTotEl) scoreTotEl.textContent = cleanTotal;
+    if (corCntEl) corCntEl.textContent = cleanCorrect;
+    if (wrgCntEl) wrgCntEl.textContent = cleanWrong;
     if (timeUsedEl) timeUsedEl.textContent = Timer.formatTime(Timer.getTimeUsed());
 
     const circumference = 2 * Math.PI * 45;

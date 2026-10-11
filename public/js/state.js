@@ -118,8 +118,9 @@ const ProfileStore = {
    */
   recordSession(session) {
     const history = this.getHistory();
+    if (session.id) { const existing = history.find(entry=>entry.id === session.id); if (existing) return existing; }
     const entry = {
-      id: 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 6),
+      id: session.id || 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 6),
       subjectId: session.subjectId,
       subjectName: session.subjectName || session.subjectId,
       score: session.score,

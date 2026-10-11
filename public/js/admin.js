@@ -3,13 +3,9 @@ const Admin = {
   selectedFiles: [], // Array to hold File objects
 
   async init() {
-    const SUPABASE_URL = "https://bjcgwophobdkjrscilni.supabase.co";
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJqY2d3b3Bob2Jka2pyc2NpbG5pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2NTM5MDAsImV4cCI6MjA4OTIyOTkwMH0.ZTprDdGsQIuIgGkjOI0UgBu7cpJWpm78-W3Uvr9Lur4";
-    
-    if (typeof supabase !== 'undefined') {
-        this.supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-    }
-    
+    const label = document.createElement('label'); label.textContent = 'Khóa quản trị ';
+    const key = document.createElement('input'); key.type = 'password'; key.id = 'announcement-admin-key'; key.autocomplete = 'off'; label.append(key);
+    document.getElementById('announcement-form').prepend(label);
     this.setupEventListeners();
     this.loadAnnouncements();
   },
@@ -141,6 +137,7 @@ const Admin = {
       let image_url = null;
       let uploadedUrls = [];
 
+      if (this.selectedFiles.length > 0 && !this.supabase) throw new Error('Tải ảnh cần cấu hình backend có xác thực');
       if (this.selectedFiles.length > 0 && this.supabase) {
         submitBtn.innerText = `Đang tải lên ${this.selectedFiles.length} ảnh...`;
         
@@ -169,7 +166,7 @@ const Admin = {
       submitBtn.innerText = 'Đang đăng...';
       const res = await fetch('/api/announcements', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Key': document.getElementById('announcement-admin-key').value },
         body: JSON.stringify({ title, content, link, image_url })
       });
 
@@ -242,9 +239,11 @@ const Admin = {
 
     try {
       const res = await fetch(`/api/delete-announcement?id=${id}`, {
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: { 'X-Admin-Key': document.getElementById('announcement-admin-key').value }
       });
 
+      if (!res.ok) throw new Error('Thao tác không được phép hoặc thất bại');
       this.showToast('Đã xóa thông báo!', 'success');
       
       document.getElementById(`ann-${id}`).remove();

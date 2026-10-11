@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="css/edtech-design-system.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/diagnostic.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
 
 <body id="app-body">
@@ -39,6 +42,9 @@
         </button>
         <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
           📢 Thông báo
+        </button>
+        <button class="nav-item-btn" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
+          🎯 Chẩn đoán năng lực
         </button>
       </nav>
 
@@ -70,6 +76,10 @@
     <button class="mob-nav-item" data-route="announcements" onclick="app.navigateTo('announcements')">
       <span class="mob-nav-icon">📢</span>
       <span>Bảng tin</span>
+    </button>
+    <button class="mob-nav-item" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
+      <span class="mob-nav-icon">🎯</span>
+      <span>Chẩn đoán</span>
     </button>
     <button class="mob-nav-item" onclick="app.startOnboarding(true)">
       <span class="mob-nav-icon">⚙️</span>
@@ -174,10 +184,11 @@
         <div class="mode-selector" id="mode-selector">
           <h2>Chọn chế độ ôn tập</h2>
           <div class="mode-cards">
+            <p>Ngân hàng mẫu trên thiết bị phục vụ luyện tập. <a href="/verified-practice.html">Luyện từ ngân hàng đã duyệt</a></p>
             <div class="mode-card selected" data-mode="exam" onclick="app.selectMode('exam')">
               <div class="mode-icon">📝</div>
-              <div class="mode-name">Thi thử</div>
-              <div class="mode-desc">Bấm giờ &amp; Chấm điểm theo chuẩn</div>
+              <div class="mode-name">Luyện đề có thời gian</div>
+              <div class="mode-desc">Bài luyện rút gọn trên thiết bị</div>
             </div>
             <div class="mode-card" data-mode="study" onclick="app.selectMode('study')">
               <div class="mode-icon">📖</div>
@@ -498,7 +509,10 @@
           </div>
         </div>
       </div>
-    </section>
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 10: DIAGNOSTIC ASSESSMENT & SKILL ANALYTICS
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-diagnostic" class="screen" aria-label="Chẩn đoán năng lực học tập"></section>
 
   </main>
 
@@ -510,9 +524,13 @@
   <script defer src="js/dashboard.js"></script>
   <script defer src="js/subject-explorer.js"></script>
   <script defer src="js/data-loader.js"></script>
+  <script defer src="js/formula-renderer.js"></script>
   <script defer src="js/timer.js"></script>
   <script defer src="js/study.js"></script>
+  <script defer src="js/question-schema.js"></script>
+  <script defer src="js/scoring-engine.js"></script>
   <script defer src="js/quiz.js"></script>
+  <script defer src="js/diagnostic-view.js"></script>
   <script defer src="js/app.js"></script>
 </body>
 

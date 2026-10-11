@@ -2,6 +2,11 @@
   "buildCommand": "",
   "outputDirectory": "public",
   "rewrites": [
-    { "source": "/admin", "destination": "/admin.html" }
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/api/v2/exam/:action", "destination": "/api/v2/questions?action=:action" },
+    { "source": "/api/v2/exam-blueprint", "destination": "/api/v2/questions?action=blueprint" },
+    { "source": "/api/v2/sources", "destination": "/api/v2/questions?action=sources" },
+    { "source": "/api/v2/diagnostic/:action", "destination": "/api/v2/diagnostic?action=:action" },
+    { "source": "/api/admin/:action*", "destination": "/api/v2/admin?action=:action" }
   ]
 }

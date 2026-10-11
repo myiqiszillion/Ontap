@@ -1,22 +1,93 @@
 /**
- * Quiz Module - Quiz rendering & scoring logic
- * Supports both MCQ (single answer) and TF-Group (passage + 4 Đúng/Sai statements)
+ * Quiz Module - Quiz rendering, assessment & scoring engine (NTMK Rebuild Phase 02)
+ * Supports MCQ, MOET True/False Group (Decision 764/QĐ-BGDĐT partial scoring),
+ * Short Answer normalization, Formula KaTeX rendering, session persistence & reload recovery.
  */
+
 const Quiz = {
   currentQuestionIndex: 0,
   questions: [],
-  answers: {},     // MCQ: { index: selectedOption }, TF-Group: { index: {0: true/false, 1: true/false, ...} }
+  answers: {},     // MCQ: { index: selectedOption }, TF-Group: { index: {0: bool, 1: bool, ...} }, SA: { index: text }
   subject: null,
+  isSubmitting: false,
+  isSubmitted: false,
+  STORAGE_KEY: 'ntmk_active_exam_session_v2',
 
   /**
    * Initialize quiz
    */
   init(data) {
+    this.sessionId = crypto.randomUUID();
     this.subject = data.subject;
     this.answers = {};
     this.currentQuestionIndex = 0;
-    this.questions = data.questions;
+    this.questions = data.questions || [];
+    this.isSubmitting = false;
+    this.isSubmitted = false;
+
+    this.saveSession();
     this.render();
+  },
+
+  /**
+   * Restore quiz from existing session (F5 Reload Recovery)
+   */
+  restoreSession(session) {
+    if (!session || !session.questions || session.questions.length === 0) return false;
+    this.untimed = Boolean(session.untimed);
+    this.sessionId = session.id || crypto.randomUUID();
+    this.subject = session.subjectId || session.subject;
+    this.questions = session.questions;
+    this.answers = session.answers || {};
+    this.currentQuestionIndex = session.currentQuestionIndex || 0;
+    this.isSubmitting = false;
+    this.isSubmitted = false;
+
+    this.render();
+    return true;
+  },
+
+  /**
+   * Persist session state to storage for reload recovery
+   */
+  saveSession() {
+    try {
+      if (this.isSubmitted) return;
+      const session = {
+        id: this.sessionId,
+        untimed: Boolean(this.untimed),
+        subjectId: this.subject,
+        questions: this.questions,
+        answers: this.answers,
+        currentQuestionIndex: this.currentQuestionIndex,
+        status: 'in_progress',
+        updatedAt: Date.now()
+      };
+      sessionStorage.setItem(this.STORAGE_KEY, JSON.stringify(session));
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(session));
+    } catch (e) {
+      console.warn('Failed to save quiz session:', e);
+    }
+  },
+
+  /**
+   * Clear active session upon submission
+   */
+  clearSession() {
+    try {
+      sessionStorage.removeItem(this.STORAGE_KEY);
+      localStorage.removeItem(this.STORAGE_KEY);
+    } catch (e) {}
+  },
+
+  /**
+   * Helper: Render math/formula or escape HTML safely
+   */
+  renderContent(text) {
+    if (typeof FormulaRenderer !== 'undefined' && FormulaRenderer.render) {
+      return FormulaRenderer.render(text);
+    }
+    return this.escapeHtml(text);
   },
 
   /**
@@ -26,28 +97,34 @@ const Quiz = {
     const q = this.questions[this.currentQuestionIndex];
     if (!q) return;
 
-    const isGroup = q.type === 'tf-group';
-    const isShortAnswer = q.type === 'shortanswer';
+    const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
+    const isShortAnswer = q.type === 'shortanswer' || q.format === 'short_answer';
 
     // Update type badge
     const typeBadge = document.getElementById('q-type-badge');
     if (typeBadge) {
       if (isGroup) {
-        typeBadge.textContent = 'Đúng/Sai';
+        typeBadge.textContent = 'Đúng/Sai (Phần II)';
         typeBadge.className = 'question-type-badge tf';
       } else if (isShortAnswer) {
-        typeBadge.textContent = 'Trả lời ngắn';
+        typeBadge.textContent = 'Trả lời ngắn (Phần III)';
         typeBadge.className = 'question-type-badge sa';
       } else {
-        typeBadge.textContent = 'Trắc nghiệm';
+        typeBadge.textContent = 'Trắc nghiệm (Phần I)';
         typeBadge.className = 'question-type-badge';
       }
     }
 
     // Update progress
-    document.getElementById('quiz-progress').textContent =
-      `${this.currentQuestionIndex + 1}/${this.questions.length}`;
-    document.getElementById('q-num').textContent = this.currentQuestionIndex + 1;
+    const progressEl = document.getElementById('quiz-progress');
+    if (progressEl) {
+      progressEl.textContent = `${this.currentQuestionIndex + 1}/${this.questions.length}`;
+    }
+
+    const qNumEl = document.getElementById('q-num');
+    if (qNumEl) {
+      qNumEl.textContent = this.currentQuestionIndex + 1;
+    }
 
     const qTextEl = document.getElementById('q-text');
     const container = document.getElementById('options-container');
@@ -55,21 +132,26 @@ const Quiz = {
     if (isGroup) {
       // === TF GROUP: passage + multiple statements ===
       const imgHtml = q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : '';
-      qTextEl.innerHTML = `<div class="question-passage">${this.escapeHtml(q.passage)}</div>${imgHtml}`;
+      const passageHtml = this.renderContent(q.passage || q.prompt || '');
+      qTextEl.innerHTML = `<div class="question-passage">${passageHtml}</div>${imgHtml}`;
 
       const groupAnswers = this.answers[this.currentQuestionIndex] || {};
+      const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
 
-      container.innerHTML = q.statements.map((stmt, si) => {
+      container.innerHTML = statements.map((stmt, si) => {
         const userAnswer = groupAnswers[si];
         const isDung = userAnswer === true;
         const isSai = userAnswer === false;
+        const stmtText = stmt.statement || stmt.question || '';
 
         return `
           <div class="tf-statement">
-            <div class="tf-statement-text">${String.fromCharCode(97 + si)}) ${this.escapeHtml(stmt.question)}</div>
+            <div class="tf-statement-text">
+              <strong>${String.fromCharCode(97 + si)})</strong> ${this.renderContent(stmtText)}
+            </div>
             <div class="tf-buttons">
-              <button class="tf-btn${isDung ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, true)">Đúng</button>
-              <button class="tf-btn${isSai ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, false)">Sai</button>
+              <button class="tf-btn${isDung ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, true)" aria-label="Chọn Đúng">Đúng</button>
+              <button class="tf-btn${isSai ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, false)" aria-label="Chọn Sai">Sai</button>
             </div>
           </div>
         `;
@@ -77,34 +159,42 @@ const Quiz = {
 
     } else if (isShortAnswer) {
       // === SHORT ANSWER ===
-      qTextEl.textContent = q.question;
+      const promptText = q.question || q.prompt || '';
+      qTextEl.innerHTML = this.renderContent(promptText);
 
       const userText = this.answers[this.currentQuestionIndex] || '';
-      
+
       container.innerHTML = `
         <div class="sa-container">
-          <input type="text" 
-                 class="sa-input" 
-                 placeholder="Nhập câu trả lời của bạn..." 
+          <label for="sa-input-field" class="sr-only">Nhập câu trả lời</label>
+          <input type="text"
+                 id="sa-input-field"
+                 class="sa-input"
+                 placeholder="Nhập kết quả hoặc số cần điền..."
                  value="${this.escapeHtml(userText)}"
                  oninput="Quiz.inputShortAnswer(this.value)">
+          <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 8px;">
+            💡 Hỗ trợ cả số thập phân dấu phẩy (vd: 1,5) và dấu chấm (vd: 1.5).
+          </div>
         </div>
       `;
     } else {
       // === MCQ: single question with options ===
       const mcqImgHtml = q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : '';
-      qTextEl.innerHTML = `${this.escapeHtml(q.question)}${mcqImgHtml}`;
+      const promptText = q.question || q.prompt || '';
+      qTextEl.innerHTML = `${this.renderContent(promptText)}${mcqImgHtml}`;
 
       const letters = 'ABCD';
       const selected = this.answers[this.currentQuestionIndex];
+      const options = (q.mcqPayload && q.mcqPayload.options) || q.options || [];
 
-      container.innerHTML = q.options.map((opt, i) => {
+      container.innerHTML = options.map((opt, i) => {
         const isSelected = selected === i;
         return `
           <button class="option${isSelected ? ' selected' : ''}"
                   onclick="Quiz.selectOption(${i})">
-            <span class="option-letter">${letters[i]}</span>
-            <span class="option-text">${this.escapeHtml(opt)}</span>
+            <span class="option-letter">${letters[i] || (i + 1)}</span>
+            <span class="option-text">${this.renderContent(opt)}</span>
           </button>
         `;
       }).join('');
@@ -113,10 +203,14 @@ const Quiz = {
     this.renderDots();
 
     // Nav buttons
-    document.getElementById('btn-prev').disabled = this.currentQuestionIndex === 0;
+    const btnPrev = document.getElementById('btn-prev');
+    if (btnPrev) btnPrev.disabled = this.currentQuestionIndex === 0;
+
     const isLast = this.currentQuestionIndex === this.questions.length - 1;
-    document.getElementById('btn-next').classList.toggle('hidden', isLast);
-    document.getElementById('btn-submit').classList.toggle('hidden', !isLast);
+    const btnNext = document.getElementById('btn-next');
+    const btnSubmit = document.getElementById('btn-submit');
+    if (btnNext) btnNext.classList.toggle('hidden', isLast);
+    if (btnSubmit) btnSubmit.classList.toggle('hidden', !isLast);
   },
 
   /**
@@ -124,23 +218,28 @@ const Quiz = {
    */
   renderDots() {
     const container = document.getElementById('question-dots');
+    if (!container) return;
+
     container.innerHTML = this.questions.map((q, i) => {
       const isCurrent = i === this.currentQuestionIndex;
       let isAnswered = false;
 
-      if (q.type === 'tf-group') {
-        // TF group is "answered" if all statements have answers
+      const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
+      const isShortAnswer = q.type === 'shortanswer' || q.format === 'short_answer';
+      const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
+
+      if (isGroup) {
         const ga = this.answers[i];
-        isAnswered = ga && Object.keys(ga).length === q.statements.length;
-      } else if (q.type === 'shortanswer') {
-        isAnswered = this.answers[i] !== undefined && this.answers[i].trim() !== '';
+        isAnswered = ga && Object.keys(ga).length === statements.length;
+      } else if (isShortAnswer) {
+        isAnswered = this.answers[i] !== undefined && String(this.answers[i]).trim() !== '';
       } else {
         isAnswered = this.answers[i] !== undefined;
       }
 
       let typeClass = '';
-      if (q.type === 'tf-group') typeClass = ' tf-dot';
-      if (q.type === 'shortanswer') typeClass = ' sa-dot';
+      if (isGroup) typeClass = ' tf-dot';
+      if (isShortAnswer) typeClass = ' sa-dot';
       return `
         <div class="q-dot ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''}${typeClass}"
              onclick="Quiz.goTo(${i})">
@@ -155,6 +254,7 @@ const Quiz = {
    */
   selectOption(index) {
     this.answers[this.currentQuestionIndex] = index;
+    this.saveSession();
     this.render();
   },
 
@@ -166,6 +266,7 @@ const Quiz = {
       this.answers[this.currentQuestionIndex] = {};
     }
     this.answers[this.currentQuestionIndex][statementIndex] = value;
+    this.saveSession();
     this.render();
   },
 
@@ -174,12 +275,14 @@ const Quiz = {
    */
   inputShortAnswer(value) {
     this.answers[this.currentQuestionIndex] = value;
-    this.renderDots(); // Only update dots, don't re-render full screen to keep focus
+    this.saveSession();
+    this.renderDots();
   },
 
   prev() {
     if (this.currentQuestionIndex > 0) {
       this.currentQuestionIndex--;
+      this.saveSession();
       this.render();
     }
   },
@@ -187,6 +290,7 @@ const Quiz = {
   next() {
     if (this.currentQuestionIndex < this.questions.length - 1) {
       this.currentQuestionIndex++;
+      this.saveSession();
       this.render();
     }
   },
@@ -194,135 +298,216 @@ const Quiz = {
   goTo(index) {
     if (index >= 0 && index < this.questions.length) {
       this.currentQuestionIndex = index;
+      this.saveSession();
       this.render();
     }
   },
 
   /**
-   * Submit quiz and calculate score
+   * Submit quiz with MOET Partial Scoring and Duplicate Submission Prevention
    */
-  submit() {
-    // Count unanswered
+  submit(force = false) {
+    if (this.isSubmitting || this.isSubmitted) {
+      console.warn('Submission already in progress or completed.');
+      return;
+    }
+
+    // Count unanswered questions
     let unanswered = 0;
     this.questions.forEach((q, i) => {
-      if (q.type === 'tf-group') {
+      const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
+      const isShortAnswer = q.type === 'shortanswer' || q.format === 'short_answer';
+      const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
+
+      if (isGroup) {
         const ga = this.answers[i] || {};
-        if (Object.keys(ga).length < q.statements.length) unanswered++;
-      } else if (q.type === 'shortanswer') {
-        if (!this.answers[i] || this.answers[i].trim() === '') unanswered++;
+        if (Object.keys(ga).length < statements.length) unanswered++;
+      } else if (isShortAnswer) {
+        if (!this.answers[i] || String(this.answers[i]).trim() === '') unanswered++;
       } else {
         if (this.answers[i] === undefined) unanswered++;
       }
     });
 
-    if (unanswered > 0) {
-      if (!confirm(`Còn ${unanswered} câu chưa trả lời đầy đủ. Nộp bài?`)) return;
+    if (unanswered > 0 && !force) {
+      if (!confirm(`Còn ${unanswered} câu chưa hoàn thành đầy đủ. Bạn có chắc chắn muốn nộp bài?`)) {
+        return;
+      }
     }
 
-    // Calculate score
-    let totalPoints = 0;
+    // Set lock
+    this.isSubmitting = true;
+
+    // Use Subject Scoring Engine if available, or robust built-in MOET scoring
     let earnedPoints = 0;
+    let totalPoints = 0;
+
+    const TF_MOET_MAP = { 0: 0.0, 1: 0.1, 2: 0.25, 3: 0.5, 4: 1.0 };
 
     this.questions.forEach((q, i) => {
-      if (q.type === 'tf-group') {
-        // Each statement = 1 point
+      const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
+      const isShortAnswer = q.type === 'shortanswer' || q.format === 'short_answer';
+
+      if (isGroup) {
+        // True/False group: Max 1.0 point under MOET QĐ 764
+        totalPoints += 1.0;
         const ga = this.answers[i] || {};
-        q.statements.forEach((stmt, si) => {
-          totalPoints++;
-          if (ga[si] === stmt.correct) earnedPoints++;
+        const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
+        let correctCount = 0;
+
+        statements.forEach((stmt, si) => {
+          if (ga[si] !== undefined && ga[si] === stmt.correct) {
+            correctCount++;
+          }
         });
-      } else if (q.type === 'shortanswer') {
-        // Short answer = 1 point
-        totalPoints++;
-        const userText = (this.answers[i] || '').trim().toLowerCase();
-        const correctText = String(q.correctAnswer).trim().toLowerCase();
-        if (userText === correctText) earnedPoints++;
+
+        const partial = TF_MOET_MAP[correctCount] || 0.0;
+        earnedPoints += partial;
+
+      } else if (isShortAnswer) {
+        // Short Answer: 1.0 point (or subject weighted)
+        totalPoints += 1.0;
+        const isCorrect = typeof ScoringEngine !== 'undefined' && ScoringEngine.evaluateShortAnswer(this.answers[i], q).isCorrect;
+
+        if (isCorrect) earnedPoints += 1.0;
+
       } else {
-        // MCQ = 1 point
-        totalPoints++;
-        if (this.answers[i] === q.correctAnswer) earnedPoints++;
+        // MCQ: 1.0 point (or subject weighted)
+        totalPoints += 1.0;
+        const correctOpt = q.mcqPayload !== undefined
+          ? q.mcqPayload.correctOptionIndex
+          : (q.correctAnswer !== undefined ? q.correctAnswer : q.correct);
+
+        if (this.answers[i] !== undefined && Number(this.answers[i]) === Number(correctOpt)) {
+          earnedPoints += 1.0;
+        }
       }
     });
 
-    app.showResults(earnedPoints, totalPoints);
+    // Round cleanly
+    earnedPoints = Math.round(earnedPoints * 100) / 100;
+    totalPoints = Math.round(totalPoints * 100) / 100;
+
+    this.isSubmitted = true;
+    this.clearSession();
+
+    if (typeof app !== 'undefined' && app.showResults) {
+      app.showResults(earnedPoints, totalPoints, this.sessionId);
+    }
   },
 
   /**
-   * Review answers
+   * Detailed answer review screen
    */
   review() {
     const section = document.getElementById('review-section');
     const container = document.getElementById('review-list');
+    if (!section || !container) return;
+
+    const TF_MOET_MAP = { 0: 0.0, 1: 0.1, 2: 0.25, 3: 0.5, 4: 1.0 };
 
     container.innerHTML = this.questions.map((q, i) => {
-      if (q.type === 'tf-group') {
+      const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
+      const isShortAnswer = q.type === 'shortanswer' || q.format === 'short_answer';
+
+      if (isGroup) {
         const ga = this.answers[i] || {};
-        const statementsHtml = q.statements.map((stmt, si) => {
+        const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
+        let correctCount = 0;
+
+        const statementsHtml = statements.map((stmt, si) => {
           const userVal = ga[si];
-          const isCorrect = userVal === stmt.correct;
+          const isCorrect = userVal !== undefined && userVal === stmt.correct;
+          if (isCorrect) correctCount++;
+
           const userText = userVal === true ? 'Đúng' : userVal === false ? 'Sai' : 'Chưa trả lời';
           const correctText = stmt.correct ? 'Đúng' : 'Sai';
+          const stmtText = stmt.statement || stmt.question || '';
+
           return `
             <div class="review-tf-statement ${isCorrect ? 'correct' : 'wrong'}">
               <span class="review-tf-label">${String.fromCharCode(97 + si)})</span>
-              ${this.escapeHtml(stmt.question)}
+              ${this.renderContent(stmtText)}
               <span class="review-tf-answer">
-                ${isCorrect ? '✓' : '✗'} ${userText}
-                ${!isCorrect ? `→ ${correctText}` : ''}
+                ${isCorrect ? '✓' : '✗'} Bạn chọn: ${userText}
+                ${!isCorrect ? `→ Đáp án: ${correctText}` : ''}
               </span>
             </div>
           `;
         }).join('');
 
+        const scoreEarned = TF_MOET_MAP[correctCount] || 0.0;
+
         return `
           <div class="review-item tf-review">
-            <div class="review-question">
-              <span class="review-type">Đ/S</span>
-              Câu ${i + 1}: Bài đọc hiểu
+            <div class="review-question" style="display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <span class="review-type">Đ/S (Phần II)</span>
+                Câu ${i + 1}: Bài tập Đúng/Sai (${correctCount}/${statements.length} ý đúng)
+              </div>
+              <div style="font-weight:600; color: ${scoreEarned > 0 ? 'var(--color-success, #10b981)' : 'var(--color-danger, #ef4444)'}">
+                Điểm: +${scoreEarned} / 1.0 đ
+              </div>
             </div>
-            <div class="review-passage-short">${this.escapeHtml(q.passage).substring(0, 120)}...</div>
+            <div class="review-passage-short">${this.renderContent(q.passage || q.prompt || '')}</div>
             ${statementsHtml}
           </div>
         `;
-      } else if (q.type === 'shortanswer') {
-        const userText = (this.answers[i] || '').trim();
-        const correctText = String(q.correctAnswer).trim();
-        const isCorrect = userText.toLowerCase() === correctText.toLowerCase();
+      } else if (isShortAnswer) {
+        const userText = String(this.answers[i] || '').trim();
+        const normUser = userText.replace(/,/g, '.').toLowerCase();
+
+        let accepted = [];
+        if (q.shortAnswerPayload && Array.isArray(q.shortAnswerPayload.correctAnswers)) {
+          accepted = q.shortAnswerPayload.correctAnswers.map(a => String(a).trim());
+        } else {
+          const ans = q.correct !== undefined ? q.correct : (q.correctAnswer !== undefined ? q.correctAnswer : '');
+          accepted = [String(ans).trim()];
+        }
+
+        const isCorrect = accepted.some(a => a.replace(/,/g, '.').toLowerCase() === normUser);
+        const promptText = q.question || q.prompt || '';
 
         return `
           <div class="review-item ${isCorrect ? 'correct' : 'wrong'}">
             <div class="review-question">
-              <span class="review-type">TLN</span>
-              Câu ${i + 1}: ${this.escapeHtml(q.question)}
+              <span class="review-type">TLN (Phần III)</span>
+              Câu ${i + 1}: ${this.renderContent(promptText)}
             </div>
             <div class="review-answer ${isCorrect ? 'correct' : 'wrong'}">
               ${isCorrect ? '✓' : '✗'} Bạn điền: ${userText ? this.escapeHtml(userText) : '<em>Chưa trả lời</em>'}
             </div>
             ${!isCorrect ? `
               <div class="review-answer correct">
-                ✓ Đáp án đúng: ${this.escapeHtml(correctText)}
+                ✓ Đáp án đúng: ${accepted.map(a => this.escapeHtml(a)).join(' hoặc ')}
               </div>
             ` : ''}
           </div>
         `;
       } else {
         const userAnswer = this.answers[i];
-        const isCorrect = userAnswer === q.correctAnswer;
-        const userText = userAnswer !== undefined ? q.options[userAnswer] : 'Chưa trả lời';
-        const correctText = q.options[q.correctAnswer];
+        const correctOpt = q.mcqPayload !== undefined
+          ? q.mcqPayload.correctOptionIndex
+          : (q.correctAnswer !== undefined ? q.correctAnswer : q.correct);
+
+        const options = (q.mcqPayload && q.mcqPayload.options) || q.options || [];
+        const isCorrect = userAnswer !== undefined && Number(userAnswer) === Number(correctOpt);
+        const userText = userAnswer !== undefined && options[userAnswer] ? options[userAnswer] : 'Chưa trả lời';
+        const correctText = options[correctOpt] || '';
+        const promptText = q.question || q.prompt || '';
 
         return `
           <div class="review-item ${isCorrect ? 'correct' : 'wrong'}">
             <div class="review-question">
-              <span class="review-type">TN</span>
-              Câu ${i + 1}: ${this.escapeHtml(q.question)}
+              <span class="review-type">TN (Phần I)</span>
+              Câu ${i + 1}: ${this.renderContent(promptText)}
             </div>
             <div class="review-answer ${isCorrect ? 'correct' : 'wrong'}">
-              ${isCorrect ? '✓' : '✗'} Bạn chọn: ${this.escapeHtml(userText)}
+              ${isCorrect ? '✓' : '✗'} Bạn chọn: ${this.renderContent(userText)}
             </div>
             ${!isCorrect ? `
               <div class="review-answer correct">
-                ✓ Đáp án đúng: ${this.escapeHtml(correctText)}
+                ✓ Đáp án đúng: ${this.renderContent(correctText)}
               </div>
             ` : ''}
           </div>
@@ -334,15 +519,22 @@ const Quiz = {
   },
 
   retry() {
-    document.getElementById('review-section').classList.add('hidden');
-    app.startQuiz();
+    const revEl = document.getElementById('review-section');
+    if (revEl) revEl.classList.add('hidden');
+    this.clearSession();
+    if (typeof app !== 'undefined' && app.startLearning) {
+      app.startLearning();
+    }
   },
 
   escapeHtml(text) {
     if (typeof text !== 'string') return '';
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
   }
 };
 

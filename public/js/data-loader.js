@@ -100,7 +100,7 @@ const DataLoader = {
     const shouldShuffle = examMode === 'exam';
 
     if (shouldShuffle) {
-      mcqQuestions = this.shuffle(mcqQuestions);
+      mcqQuestions = this.shuffle(mcqQuestions.map(q => this._shuffleMcqOptions(q)));
       tfGroups = this.shuffle(tfGroups);
       saQuestions = this.shuffle(saQuestions);
     }
@@ -109,11 +109,8 @@ const DataLoader = {
     if (tfLimit !== null) tfGroups = tfGroups.slice(0, tfLimit);
     if (saLimit !== null) saQuestions = saQuestions.slice(0, saLimit);
 
-    if (shouldShuffle) {
-      questions = this.shuffle([...mcqQuestions, ...tfGroups, ...saQuestions]);
-    } else {
-      questions = [...mcqQuestions, ...tfGroups, ...saQuestions];
-    }
+    // Structure into Part I (MCQ) -> Part II (TF Groups) -> Part III (Short Answer)
+    questions = [...mcqQuestions, ...tfGroups, ...saQuestions];
 
     return {
       subject: subjectId,
@@ -127,7 +124,21 @@ const DataLoader = {
    * Shuffle MCQ options while tracking correct answer
    */
   _shuffleMcqOptions(q) {
-    return { ...q };
+    if (!q || !Array.isArray(q.options) || q.options.length < 2) {
+      return { ...q };
+    }
+    const originalCorrect = q.correctAnswer !== undefined ? q.correctAnswer : q.correct;
+    const indexed = q.options.map((opt, i) => ({ opt, isCorrect: i === originalCorrect }));
+    const shuffled = this.shuffle(indexed);
+    const newOptions = shuffled.map(item => item.opt);
+    const newCorrect = shuffled.findIndex(item => item.isCorrect);
+
+    return {
+      ...q,
+      options: newOptions,
+      correctAnswer: newCorrect >= 0 ? newCorrect : 0,
+      correct: newCorrect >= 0 ? newCorrect : 0
+    };
   }
 };
 

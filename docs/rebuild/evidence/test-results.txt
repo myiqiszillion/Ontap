@@ -1,0 +1,161 @@
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.
+▶ 1. Repository & Data Integrity (4 Core GDPT 2018 Subjects)
+  ✔ subjects.json contains grades 10, 11, 12 and target 4 subjects exclusively (11.464ms)
+  ✔ Legacy subjects (Lịch sử, Sinh học, Tin học) are completely removed (15.7288ms)
+  ✔ Core question bank files exist and are valid JSON (7.8282ms)
+  ✔ Legacy question bank files are preserved for backup and migration (8.8967ms)
+✔ 1. Repository & Data Integrity (4 Core GDPT 2018 Subjects) (46.2609ms)
+▶ 2. State Management & Zero-Mock Metrics
+  ✔ Empty state initially reports 0 sessions and null average (1.1093ms)
+  ✔ Onboarding profile save and retrieval (2.1163ms)
+  ✔ Recording real test attempts calculates genuine metrics (0.9469ms)
+✔ 2. State Management & Zero-Mock Metrics (4.8332ms)
+▶ 3. Timer Persistence & Edge Cases
+  ✔ Timer formats seconds to MM:SS correctly (0.504ms)
+✔ 3. Timer Persistence & Edge Cases (0.9273ms)
+▶ 4. GDPT 2018 Decision 764/QĐ-BGDĐT Specifications
+  ✔ Question formats include MCQ, TF Group, Short Answer in toan10.json, vatli10.json & hoahoc10.json (6.1534ms)
+✔ 4. GDPT 2018 Decision 764/QĐ-BGDĐT Specifications (6.4218ms)
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.
+▶ Question Bank API V2 Integration
+  ✔ GET /api/v2/questions: returns normalized V2 questions with pagination (73.1878ms)
+  ✔ GET /api/v2/questions?format=multiple_choice: filters by format (4.6727ms)
+  ✔ GET /api/v2/exam-blueprint?subject=toan: returns MOET Decision 764 blueprint (5.0167ms)
+  ✔ GET /api/v2/sources: returns registered educational sources (6.2692ms)
+  ✔ POST /api/v2/questions/validate: validates candidate question payload (32.8683ms)
+  ✔ GET /api/v2/questions?mode=exam: sanitizes answer keys to prevent leaks to test-takers (4.8559ms)
+  ✔ POST /api/v2/exam/submit: scores student submission securely on server (8.3997ms)
+✔ Question Bank API V2 Integration (138.0499ms)
+[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.
+▶ Express Server API Integration (4 Core GDPT 2018 Subjects)
+  ✔ GET / serves index.html (68.8869ms)
+  ✔ GET /admin serves admin.html (12.9613ms)
+  ✔ GET /api/subjects returns only 4 core target subjects for grades [10, 11, 12] (15.7483ms)
+  ✔ GET /api/subjects?active_only=true returns active ready subjects (10.5107ms)
+  ✔ GET /api/data/toan10 returns toan10.json questions (5.6227ms)
+  ✔ GET /api/data/vatli10 returns vatli10.json questions (3.4042ms)
+  ✔ GET /api/data/hoahoc10 returns hoahoc10.json questions (4.7385ms)
+  ✔ GET /api/data/tienganh10 returns tienganh10.json questions (5.7684ms)
+  ✔ GET /api/data/su returns 200 preserving legacy question bank data (8.3379ms)
+  ✔ GET /api/data/notfound_subject returns 404 for non-existent subject (4.1975ms)
+  ✔ GET /api/data/invalid@name returns 400 Bad Request (2.7169ms)
+  ✔ GET /api/announcements returns JSON without crashing (2.1147ms)
+✔ Express Server API Integration (4 Core GDPT 2018 Subjects) (147.3298ms)
+▶ Exam Blueprint Generator (MOET Decision 764/QĐ-BGDĐT)
+  ✔ Registered Blueprints conform to Decision 764 specifications (1.7937ms)
+  ✔ Exam Assembly: sections are strictly ordered Part I -> Part II -> Part III (1.2674ms)
+  ✔ Shortage Reporting: flags bank deficiency honestly when pool < target (0.4964ms)
+✔ Exam Blueprint Generator (MOET Decision 764/QĐ-BGDĐT) (5.9006ms)
+▶ KaTeX / Formula Renderer & Offline Fallback
+  ✔ Inline Math ($...$) renders with fallback markup when KaTeX is offline (7.3719ms)
+  ✔ Display Math ($$...$$) renders in block display mode (3.8866ms)
+  ✔ Chemistry & Math Symbol Substitutions (0.5162ms)
+  ✔ Anti-XSS Protection: escapes malicious scripts in non-math text (0.4857ms)
+✔ KaTeX / Formula Renderer & Offline Fallback (15.4743ms)
+✔ Actual profile result store deduplicates session IDs (9.2441ms)
+✔ Timer uses elapsed wall time and expires immediately after reload past deadline (3.8972ms)
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.
+✔ HTTP E2E: fixture sync, authorized review, publication, public API, exam and double submit (665.492ms)
+✔ SSRF: denied schemes, hosts, credentials, private DNS, IPv6 and redirect (18.4751ms)
+✔ HTTP content type, response size, ETag cache and secret-free logging (4.4296ms)
+✔ HTTP 429 and 503 retry, timeout, terminal failure and DNS deadline (19.9306ms)
+✔ Extraction never manufactures missing answers or grade classification (6.3385ms)
+✔ Corrupt LaTeX, unsupported images and malicious HTML rejected (0.7449ms)
+✔ Source compliance needs explicit permission evidence (1.2966ms)
+✔ Case-sensitive answer policy and unit metadata alone never loosen grading (2.3312ms)
+✔ API pagination and schema-change failure; HTML explicit contract and invalid HTML (7.4125ms)
+▶ NTMK PHASE 02C — ADDITIONAL ACCEPTANCE REQUIREMENTS
+  ▶ 1. Cloud Persistence Gate
+    ✔ 1.1 Question bank, review queue, sync history, and exam results survive process restart and cold start (56.1646ms)
+    ✔ 1.2 Refuses ephemeral filesystem or process memory as production source in serverless/production mode (4.8936ms)
+  ✔ 1. Cloud Persistence Gate (64.0626ms)
+  ▶ 2. Concurrency & Transactional Constraints Gate
+    ✔ 2.1 Two serverless instances concurrently submitting the same exam session return identical result without race conditions (12.7714ms)
+    ✔ 2.2 Two serverless instances concurrently running ingestion are serialized by distributed lock (17.1934ms)
+    ✔ 2.3 Database unique constraints prevent duplicate ingestion under concurrent race conditions (4.7934ms)
+  ✔ 2. Concurrency & Transactional Constraints Gate (35.4289ms)
+  ▶ 3. Legacy API Security & Answer Key Protection Gate
+    ✔ 3.1 Path traversal attack on /api/data/[subject] is blocked and rejects access to .ntmk or exam sessions (3.4589ms)
+    ✔ 3.2 Legacy endpoint in exam mode (?mode=exam) strips answer keys and explanations (3.5415ms)
+    ✔ 3.3 API V2 sanitizeForStudent removes all answer keys across MCQ, TF, and Short Answer (3.1518ms)
+  ✔ 3. Legacy API Security & Answer Key Protection Gate (10.8996ms)
+  ▶ 4. Reviewer Authorization & Identity Audit Gate
+    ✔ 4.1 Shared ADMIN_API_KEY without valid reviewer token is rejected for pedagogical verification (3.2357ms)
+    ✔ 4.2 Reviewer cannot verify questions outside their certified subject specialty (2.3181ms)
+    ✔ 4.3 Publishing requires Curriculum Lead authorization; pedagogical auditor cannot publish (3.4533ms)
+    ✔ 4.4 Fake approval without verified identity is strictly rejected, and real approval creates audit entry (6.3127ms)
+  ✔ 4. Reviewer Authorization & Identity Audit Gate (15.9108ms)
+  ▶ 5. Source Licensing & Re-publication Evidence Gate
+    ✔ 5.1 HTTP 200 metadata, robots.txt, and registry registration alone are REJECTED as license evidence (2.5159ms)
+    ✔ 5.2 Ingestion & verification fails closed for unapproved external sources lacking re-publication permits (4.7984ms)
+  ✔ 5. Source Licensing & Re-publication Evidence Gate (7.6182ms)
+  ▶ 6. Acceptance Separation Gate
+    ✔ 6.1 Cloud Persistence Gate is VERIFIED while Live Source Gate remains BLOCKED (1.9973ms)
+  ✔ 6. Acceptance Separation Gate (2.1625ms)
+  ▶ 7. Deployment Safeguards & RLS Policy Gate
+    ✔ 7.1 RLS tests verify that anon and authenticated roles are revoked from private tables (1.6922ms)
+    ✔ 7.2 SQL migration files (001, 002, 003) and rollback plan (004) exist and contain valid definitions (2.0947ms)
+  ✔ 7. Deployment Safeguards & RLS Policy Gate (4.017ms)
+✔ NTMK PHASE 02C — ADDITIONAL ACCEPTANCE REQUIREMENTS (141.7272ms)
+▶ Phase 02B Priority Fixes — Task 1 Verification
+  ▶ 1. Short Answer Question-Specific Answer Policy
+    ✔ Strict Policy: Does NOT apply tolerance when not configured on question (6.3453ms)
+    ✔ Configured Tolerance: Applies tolerance when explicitly specified in answerPolicy (0.8732ms)
+    ✔ Strict Policy: Does NOT strip units when question does not authorize unit stripping (1.7317ms)
+    ✔ Configured Unit Policy: Strips unit when explicitly specified and authorized (0.4997ms)
+  ✔ 1. Short Answer Question-Specific Answer Policy (11.3217ms)
+  ▶ 2. Idempotent Submission & Anti-Duplicate Protection
+    ✔ Idempotency: Re-submitting with same sessionId returns identical stored result (3.9289ms)
+    ✔ Idempotency Key: Client-provided idempotencyKey returns exact cached result (1.0749ms)
+  ✔ 2. Idempotent Submission & Anti-Duplicate Protection (5.6194ms)
+  ▶ 3. Public API Answer Key Protection & Sanitization
+    ✔ sanitizeForStudent removes all answer keys and explanations in exam mode (0.9466ms)
+  ✔ 3. Public API Answer Key Protection & Sanitization (1.3237ms)
+  ▶ 4. Official Blueprint vs Practice Quiz Distinction
+    ✔ Full Official Blueprint achieves isOfficialBlueprint: true (3.9212ms)
+    ✔ Reduced Practice Quiz is marked as practice_quiz with relative scaledScore (0.4208ms)
+  ✔ 4. Official Blueprint vs Practice Quiz Distinction (4.8383ms)
+✔ Phase 02B Priority Fixes — Task 1 Verification (25.6443ms)
+▶ Scoring Engine — MOET QĐ 764 & Assessment Accuracy
+  ✔ MCQ Scoring: awards points strictly for correct answers (2.5909ms)
+  ✔ True/False MOET Partial Scoring Matrix (0, 1, 2, 3, 4 statements correct) (2.9208ms)
+  ✔ Short Answer: Handles comma decimal normalization (1,5 == 1.5) (1.1456ms)
+  ✔ Short Answer: Whitespace, case-insensitivity, and unit stripping (0.3683ms)
+  ✔ Short Answer: Tolerance check for floating calculations (0.3407ms)
+  ✔ Subject-specific 10-point scale weights (Math vs English) (1.0856ms)
+✔ Scoring Engine — MOET QĐ 764 & Assessment Accuracy (11.058ms)
+No active session to submit.
+▶ Exam Session Manager & Reload Resilience
+  ✔ Session Start: creates valid in-progress session (2.4737ms)
+  ✔ Answer Persistence: auto-saves answers and pointers (0.8528ms)
+  ✔ Reload Recovery: resumes active session with remaining time (0.5979ms)
+  ✔ Anti-Duplicate Submission: prevents multiple concurrent submits (3.2606ms)
+✔ Exam Session Manager & Reload Resilience (10.8065ms)
+✔ Fixture E2E: fetch -> extract -> normalize -> validate -> review -> publish -> exam, persistence and duplicate sync (61.3888ms)
+✔ Default sources report blocked; never manufacture live questions (10.7972ms)
+✔ Automatic verification and publication forbidden (5.1205ms)
+✔ Unapproved license and malformed candidates rejected (8.4731ms)
+✔ Source unavailable isolated and job history retained (9.2375ms)
+✔ Serverless local storage refuses false persistence (0.8055ms)
+▶ Question Validator & Schema V2 Integrity
+  ✔ Valid MCQ passes validation (5.575ms)
+  ✔ Invalid questions are rejected with clear diagnostics (0.9403ms)
+✔ Question Validator & Schema V2 Integrity (8.5899ms)
+▶ Ingestion Pipeline & Review Queue Workflow
+  ✔ Source Registry: verifies educational licenses & compliance (0.8179ms)
+  ✔ Markdown Block Parser: extracts MCQ, TF, and Short Answer correctly (9.4507ms)
+  ✔ Deduplication: duplicate questions are filtered out during ingestion (2.5004ms)
+  ✔ Review Queue Gate: questions require pedagogical verification signature (2.2947ms)
+✔ Ingestion Pipeline & Review Queue Workflow (15.9054ms)
+ℹ tests 94
+ℹ suites 25
+ℹ pass 94
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 966.1225

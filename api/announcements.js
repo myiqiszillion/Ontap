@@ -1,3 +1,4 @@
+const { requireAdmin } = require('../engine/admin-auth.js');
 const { createClient } = require('@supabase/supabase-js');
 
 module.exports = async (req, res) => {
@@ -9,7 +10,9 @@ module.exports = async (req, res) => {
     return res.status(200).end();
   }
 
+  if (['POST','PATCH','DELETE'].includes(req.method) && !requireAdmin(req, res)) return;
   // Initialize Supabase inside handler for environment variable consistency
+  if (['PATCH'].includes(req.method) && !requireAdmin(req, res)) return;
   const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseKey = process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 

@@ -22,10 +22,7 @@ const DashboardView = {
       toan: 'Toán học',
       vatli: 'Vật lí',
       hoahoc: 'Hóa học',
-      tienganh: 'Tiếng Anh',
-      su: 'Lịch Sử 10',
-      sinh: 'Sinh Học 10',
-      tin: 'Tin Học 10'
+      tienganh: 'Tiếng Anh'
     };
 
     const targetSubjectBadges = (profile.targetSubjects || [])
@@ -48,7 +45,10 @@ const DashboardView = {
             </div>
           </div>
           <div class="hero-actions">
-            <button class="btn btn-primary" onclick="app.navigateTo('subjects')">
+            <button class="btn btn-primary" onclick="app.navigateTo('diagnostic')">
+              🎯 Đánh giá năng lực đầu vào
+            </button>
+            <button class="btn btn-outline" onclick="app.navigateTo('subjects')">
               📚 Chọn môn luyện tập
             </button>
             <button class="btn btn-outline" onclick="app.startOnboarding(true)">

@@ -13,10 +13,11 @@
       "grade": 10,
       "name": "Toán học 10",
       "icon": "📐",
-      "description": "Đại số, Hình học và Thống kê theo GDPT 2018",
+      "description": "Mệnh đề, Tập hợp, Bất phương trình theo GDPT 2018",
       "color": "#3b82f6",
-      "status": "in_development",
-      "ready": false,
+      "dataFile": "toan10.json",
+      "status": "active",
+      "ready": true,
       "examStructure": { "mcq": 12, "tf": 4, "sa": 6, "durationMinutes": 90 }
     },
     {
@@ -25,10 +26,11 @@
       "grade": 10,
       "name": "Vật lí 10",
       "icon": "⚡",
-      "description": "Động học, Động lực học, Năng lượng và Động lượng",
+      "description": "Đo lường, Chuyển động thẳng, Vận tốc và Gia tốc",
       "color": "#6366f1",
-      "status": "in_development",
-      "ready": false,
+      "dataFile": "vatli10.json",
+      "status": "active",
+      "ready": true,
       "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
     },
     {
@@ -37,10 +39,11 @@
       "grade": 10,
       "name": "Hóa học 10",
       "icon": "🧪",
-      "description": "Cấu tạo nguyên tử, Bảng tuần hoàn và Liên kết hóa học",
+      "description": "Thành phần nguyên tử, Vỏ electron và Cấu hình e",
       "color": "#06b6d4",
-      "status": "in_development",
-      "ready": false,
+      "dataFile": "hoahoc10.json",
+      "status": "active",
+      "ready": true,
       "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
     },
     {
@@ -49,10 +52,11 @@
       "grade": 10,
       "name": "Tiếng Anh 10",
       "icon": "🌐",
-      "description": "Từ vựng, Ngữ pháp, Ngữ âm và Đọc hiểu GDPT 2018",
+      "description": "Family Life, Humans & Environment theo GDPT 2018",
       "color": "#0d9488",
-      "status": "in_development",
-      "ready": false,
+      "dataFile": "tienganh10.json",
+      "status": "active",
+      "ready": true,
       "examStructure": { "mcq": 40, "tf": 0, "sa": 0, "durationMinutes": 50 }
     },
     {
@@ -150,45 +154,6 @@
       "status": "in_development",
       "ready": false,
       "examStructure": { "mcq": 40, "tf": 0, "sa": 0, "durationMinutes": 50 }
-    },
-    {
-      "id": "su",
-      "subjectKey": "su",
-      "grade": 10,
-      "name": "Lịch Sử 10 (Legacy)",
-      "icon": "📜",
-      "description": "Lịch sử thế giới và văn minh Việt Nam (Đang hoạt động)",
-      "color": "#7c6aef",
-      "dataFile": "su.json",
-      "status": "active",
-      "ready": true,
-      "isLegacy": true
-    },
-    {
-      "id": "sinh",
-      "subjectKey": "sinh",
-      "grade": 10,
-      "name": "Sinh Học 10 (Legacy)",
-      "icon": "🧬",
-      "description": "Sinh học tế bào, vi sinh vật và chuyển hóa (Đang hoạt động)",
-      "color": "#10b981",
-      "dataFile": "sinh.json",
-      "status": "active",
-      "ready": true,
-      "isLegacy": true
-    },
-    {
-      "id": "tin",
-      "subjectKey": "tin",
-      "grade": 10,
-      "name": "Tin Học 10 (Legacy)",
-      "icon": "💻",
-      "description": "Lập trình Python, danh sách, xâu ký tự và hàm (Đang hoạt động)",
-      "color": "#059669",
-      "dataFile": "tin.json",
-      "status": "active",
-      "ready": true,
-      "isLegacy": true
     }
   ]
 }

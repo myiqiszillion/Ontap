@@ -1,0 +1,109 @@
+{
+  "subject": "Vật lí 10",
+  "lessons": [
+    {
+      "name": "Bài 1: Mô tả chuyển động & Vận tốc",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Đại lượng nào sau đây là đại lượng vectơ đặc trưng cho sự thay đổi vị trí của vật?",
+          "options": [
+            "Độ dịch chuyển.",
+            "Quãng đường đi được.",
+            "Tốc độ trung bình.",
+            "Thời gian chuyển động."
+          ],
+          "correct": 0,
+          "explanation": "Độ dịch chuyển là đại lượng vectơ nối vị trí đầu và vị trí cuối của vật."
+        },
+        {
+          "type": "mcq",
+          "question": "Một người đi từ điểm A đến điểm B cách nhau 4 km rồi quay trở lại điểm A. Độ dịch chuyển tổng cộng của người đó là:",
+          "options": [
+            "0 km.",
+            "4 km.",
+            "8 km.",
+            "16 km."
+          ],
+          "correct": 0,
+          "explanation": "Vị trí ban đầu và vị trí kết thúc trùng nhau nên độ dịch chuyển d = 0 km."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một xe ô tô chuyển động thẳng đều đi được quãng đường 90 km trong thời gian 1,5 giờ. Tính tốc độ của xe ô tô theo đơn vị km/h (chỉ ghi số nguyên):",
+          "correct": "60",
+          "explanation": "v = s / t = 90 / 1.5 = 60 km/h."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Một chất điểm chuyển động dọc theo trục Ox từ vị trí x₁ = 2 m đến x₂ = 10 m trong khoảng thời gian 4 giây. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Độ dịch chuyển của chất điểm là d = 8 m.",
+              "correct": true
+            },
+            {
+              "question": "Vận tốc trung bình của chất điểm trong khoảng thời gian trên là v = 2 m/s.",
+              "correct": true
+            },
+            {
+              "question": "Chất điểm này chắc chắn chuyển động tròn đều.",
+              "correct": false
+            },
+            {
+              "question": "Nếu chất điểm chuyển động theo chiều ngược lại từ x₂ về x₁, độ dịch chuyển sẽ mang dấu âm.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 2: Chuyển động biến đổi & Gia tốc",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Đơn vị đo chuẩn của gia tốc trong hệ đơn vị SI là:",
+          "options": [
+            "m/s².",
+            "m/s.",
+            "km/h.",
+            "m.s²."
+          ],
+          "correct": 0,
+          "explanation": "Gia tốc a = Δv / Δt có đơn vị là mét trên giây bình phương (m/s²)."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một đoàn tàu đang chạy với vận tốc 15 m/s thì hãm phanh chuyển động chậm dần đều với gia tốc có độ lớn 1,5 m/s². Sau bao nhiêu giây thì tàu dừng hẳn?",
+          "correct": "10",
+          "explanation": "t = (v - v₀) / a = (0 - 15) / (-1.5) = 10 s."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Một ô tô bắt đầu khởi hành từ trạng thái nghỉ với gia tốc không đổi a = 2 m/s² trên một đường thẳng. Xét tính đúng sai của các nhận định:",
+          "statements": [
+            {
+              "question": "Sau 5 giây kể từ lúc xuất phát, vận tốc của ô tô đạt 10 m/s.",
+              "correct": true
+            },
+            {
+              "question": "Quãng đường ô tô đi được trong 5 giây đầu tiên là 25 m.",
+              "correct": true
+            },
+            {
+              "question": "Gia tốc của ô tô tăng dần theo thời gian chuyển động.",
+              "correct": false
+            },
+            {
+              "question": "Đây là chuyển động thẳng nhanh dần đều với vận tốc ban đầu bằng 0.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

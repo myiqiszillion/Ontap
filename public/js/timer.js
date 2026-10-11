@@ -35,6 +35,7 @@ const Timer = {
       this.startTime = Date.now();
     }
 
+    this.saveState();
     this.start();
   },
 
@@ -59,6 +60,7 @@ const Timer = {
       if (!saved) return null;
 
       const state = JSON.parse(saved);
+      if (!Number.isFinite(state.startTime) || !Number.isFinite(state.duration) || state.duration < 0) return null;
       // Recalculate remaining time based on actual elapsed time
       const elapsed = Math.floor((Date.now() - state.startTime) / 1000);
       state.remaining = Math.max(0, state.duration - elapsed);
@@ -78,8 +80,9 @@ const Timer = {
     // Update immediately
     this.updateDisplay();
 
+    if (this.remaining <= 0) { if (this.onExpire) this.onExpire(); return; }
     this.interval = setInterval(() => {
-      this.remaining--;
+      this.remaining = Math.max(0, this.duration - Math.floor((Date.now() - this.startTime) / 1000));
       this.updateDisplay();
       this.saveState();
 

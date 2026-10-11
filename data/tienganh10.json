@@ -1,0 +1,111 @@
+{
+  "subject": "Tiếng Anh 10",
+  "lessons": [
+    {
+      "name": "Unit 1: Family Life",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "In my family, both my parents work, so they always _______ the household chores.",
+          "options": [
+            "split",
+            "divide up",
+            "take",
+            "make"
+          ],
+          "correct": 0,
+          "explanation": "'Split the household chores' means to share household chores equally between family members."
+        },
+        {
+          "type": "mcq",
+          "question": "My father is the _______ in the house. He works hard to earn money for our family.",
+          "options": [
+            "breadwinner",
+            "homemaker",
+            "housekeeper",
+            "caretaker"
+          ],
+          "correct": 0,
+          "explanation": "'Breadwinner' is the person who earns money to support their family."
+        },
+        {
+          "type": "mcq",
+          "question": "Look at the dark clouds! It _______ rain soon.",
+          "options": [
+            "is going to",
+            "will",
+            "is raining",
+            "rains"
+          ],
+          "correct": 0,
+          "explanation": "We use 'be going to' for predictions based on present evidence (dark clouds)."
+        },
+        {
+          "type": "mcq",
+          "question": "Choose the word whose underlined part is pronounced differently: /br/ vs /kr/",
+          "options": [
+            "bread",
+            "breakfast",
+            "crash",
+            "brother"
+          ],
+          "correct": 2,
+          "explanation": "'crash' starts with /kr/, while bread, breakfast, and brother start with /br/."
+        }
+      ]
+    },
+    {
+      "name": "Unit 2: Humans and the Environment",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "We should adopt a _______ lifestyle to protect the environment for future generations.",
+          "options": [
+            "green",
+            "sustainable",
+            "eco-friendly",
+            "all of the above"
+          ],
+          "correct": 3,
+          "explanation": "Green, sustainable, and eco-friendly lifestyles all refer to protecting the environment."
+        },
+        {
+          "type": "mcq",
+          "question": "Turning off electrical appliances when not in use helps reduce our carbon _______.",
+          "options": [
+            "footprint",
+            "mark",
+            "step",
+            "fingerprint"
+          ],
+          "correct": 0,
+          "explanation": "'Carbon footprint' is the amount of greenhouse gases produced by our activities."
+        },
+        {
+          "type": "mcq",
+          "question": "Single-use plastic items take hundreds of years to _______ in the environment.",
+          "options": [
+            "decompose",
+            "pollute",
+            "recycle",
+            "manufacture"
+          ],
+          "correct": 0,
+          "explanation": "'Decompose' means to decay or break down naturally."
+        },
+        {
+          "type": "mcq",
+          "question": "The passive form of 'People throw away plastic bags every day' is:",
+          "options": [
+            "Plastic bags are thrown away every day.",
+            "Plastic bags were thrown away every day.",
+            "Plastic bags are being thrown away every day.",
+            "Plastic bags have been thrown away every day."
+          ],
+          "correct": 0,
+          "explanation": "Present simple passive: S + am/is/are + V3/ed."
+        }
+      ]
+    }
+  ]
+}

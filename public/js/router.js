@@ -6,7 +6,7 @@
 const AppRouter = {
   currentRoute: 'dashboard',
 
-  ROUTES: ['onboarding', 'dashboard', 'subjects', 'topics', 'quiz', 'study', 'flashcard', 'practice', 'result', 'announcements'],
+  ROUTES: ['onboarding', 'dashboard', 'subjects', 'topics', 'quiz', 'study', 'flashcard', 'practice', 'result', 'announcements', 'diagnostic'],
 
   init() {
     window.addEventListener('hashchange', () => this.handleHashChange());
@@ -51,7 +51,7 @@ const AppRouter = {
     }
 
     // Update desktop header active tabs
-    document.querySelectorAll('.header-nav .nav-item').forEach(btn => {
+    document.querySelectorAll('.header-nav-desktop .nav-item-btn').forEach(btn => {
       const target = btn.getAttribute('data-route');
       btn.classList.toggle('active', target === routeId);
     });
@@ -69,6 +69,8 @@ const AppRouter = {
       SubjectExplorer.render();
     } else if (routeId === 'onboarding') {
       Onboarding.render();
+    } else if (routeId === 'diagnostic') {
+      if (window.DiagnosticView) DiagnosticView.render(param || 'welcome');
     }
 
     // Smooth scroll to top

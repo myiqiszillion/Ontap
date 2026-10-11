@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-11",
+  "timezone": "Asia/Saigon",
+  "method": "Chrome DevTools on local Express; manual tool-driven assertions",
+  "checks": [
+    {
+      "flow": "onboarding to dashboard to Math 10 bundled practice",
+      "result": "9 questions/groups loaded; empty initial history"
+    },
+    {
+      "flow": "local quiz reload",
+      "result": "answer restored; initial timer reset found and corrected; deterministic elapsed-time regression added"
+    },
+    {
+      "flow": "verified-practice empty actual bank",
+      "status": "Insufficient verified published data",
+      "questions": 0,
+      "retryEnabled": true
+    },
+    {
+      "flow": "question-admin without credentials",
+      "status": "Unauthorized",
+      "queueItems": 0
+    },
+    {
+      "flow": "synthetic browser session and injected network-failure fetch double",
+      "rapidClicks": 2,
+      "requests": 1,
+      "savedAnswer": "2",
+      "retryEnabled": true
+    },
+    {
+      "flow": "reload synthetic verified-practice session",
+      "restoredAnswer": "2",
+      "questionCount": 1
+    },
+    {
+      "flow": "Final immediate reload of actual nine-item bundled quiz after timer fix",
+      "savedStartTime": 1791703321399,
+      "restoredStartTime": 1791703321399,
+      "sessionIdBefore": "1d3863b8-d6f1-4a75-baa2-62867dcc04b8",
+      "sessionIdAfter": "1d3863b8-d6f1-4a75-baa2-62867dcc04b8",
+      "restoredAnswer": 0,
+      "remainingSeconds": 1200,
+      "result": "Timer persisted before first tick; no new deadline on reload"
+    }
+  ],
+  "liveQuestionIngestion": false,
+  "providerRecordsPublished": 0
+}

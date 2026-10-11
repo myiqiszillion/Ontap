@@ -1,0 +1,366 @@
+{
+  "generatedAt": "2026-10-11T07:14:26.492Z",
+  "fixtureDataExcluded": true,
+  "rows": [
+    {
+      "subjectId": "toan",
+      "grade": 10,
+      "comboKey": "toan10",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 12,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 9,
+      "bundledMCQ": 5,
+      "bundledTF": 2,
+      "bundledSA": 2
+    },
+    {
+      "subjectId": "toan",
+      "grade": 11,
+      "comboKey": "toan11",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 12,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "toan",
+      "grade": 12,
+      "comboKey": "toan12",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 12,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "vatli",
+      "grade": 10,
+      "comboKey": "vatli10",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 18,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 7,
+      "bundledMCQ": 3,
+      "bundledTF": 2,
+      "bundledSA": 2
+    },
+    {
+      "subjectId": "vatli",
+      "grade": 11,
+      "comboKey": "vatli11",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 18,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "vatli",
+      "grade": 12,
+      "comboKey": "vatli12",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 18,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "hoahoc",
+      "grade": 10,
+      "comboKey": "hoahoc10",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 18,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 7,
+      "bundledMCQ": 3,
+      "bundledTF": 2,
+      "bundledSA": 2
+    },
+    {
+      "subjectId": "hoahoc",
+      "grade": 11,
+      "comboKey": "hoahoc11",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 18,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "hoahoc",
+      "grade": 12,
+      "comboKey": "hoahoc12",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 18,
+        "tfShortage": 4,
+        "saShortage": 6
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "tienganh",
+      "grade": 10,
+      "comboKey": "tienganh10",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 40,
+        "tfShortage": 0,
+        "saShortage": 0
+      },
+      "bundledUnverifiedCount": 8,
+      "bundledMCQ": 8,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "tienganh",
+      "grade": 11,
+      "comboKey": "tienganh11",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 40,
+        "tfShortage": 0,
+        "saShortage": 0
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    },
+    {
+      "subjectId": "tienganh",
+      "grade": 12,
+      "comboKey": "tienganh12",
+      "totalDiscovered": 0,
+      "totalNormalized": 0,
+      "totalVerified": 0,
+      "totalPublished": 0,
+      "topicCount": 0,
+      "missingCurriculum": "Curriculum mapping requires authorized subject review",
+      "mcqCount": 0,
+      "tfGroupCount": 0,
+      "shortAnswerCount": 0,
+      "blueprintTarget": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0
+      },
+      "isPracticeReady": false,
+      "isOfficialBlueprintReady": false,
+      "deficiencies": {
+        "mcqShortage": 40,
+        "tfShortage": 0,
+        "saShortage": 0
+      },
+      "bundledUnverifiedCount": 0,
+      "bundledMCQ": 0,
+      "bundledTF": 0,
+      "bundledSA": 0
+    }
+  ]
+}

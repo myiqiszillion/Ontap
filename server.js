@@ -23,7 +23,12 @@ if (supabaseUrl && supabaseKey) {
   console.warn('⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.');
 }
 
-app.use(express.json());
+app.use(express.json({ limit: '256kb' }));
+const { requireAdmin } = require('./engine/admin-auth.js');
+app.use('/api', (req,res,next) => {
+ if (['POST','PATCH','DELETE'].includes(req.method) && ['announcements','pin-announcement','delete-announcement'].some(p=>req.path==='/' + p) && !requireAdmin(req,res)) return;
+ next();
+});
 
 // ═════════════════════════════════════════════════════════════
 // HELPER: Load and Annotate Subjects Data
@@ -182,6 +187,27 @@ app.delete('/api/delete-announcement', async (req, res) => {
   }
 });
 
+function sanitizeLegacyLessonQuestions(data) {
+  if (!data || !Array.isArray(data.lessons)) return data;
+  return {
+    ...data,
+    lessons: data.lessons.map(lesson => ({
+      ...lesson,
+      questions: Array.isArray(lesson.questions) ? lesson.questions.map(q => {
+        const { correct, correctAnswer, explanation, ...safeQ } = q;
+        return safeQ;
+      }) : [],
+      questionGroups: Array.isArray(lesson.questionGroups) ? lesson.questionGroups.map(g => ({
+        ...g,
+        statements: Array.isArray(g.statements) ? g.statements.map(s => {
+          const { correct, explanation, ...safeS } = s;
+          return safeS;
+        }) : []
+      })) : []
+    }))
+  };
+}
+
 // API: Subject question data
 app.get('/api/data/:subject', (req, res) => {
   try {
@@ -192,11 +218,24 @@ app.get('/api/data/:subject', (req, res) => {
       return res.status(400).json({ error: 'Invalid subject name' });
     }
 
-    const dataPath = path.join(__dirname, 'data', `${subject}.json`);
+    const dataDir = path.resolve(__dirname, 'data');
+    const dataPath = path.resolve(dataDir, `${subject}.json`);
+
+    // Guard against path traversal
+    if (!dataPath.startsWith(dataDir) || path.dirname(dataPath) !== dataDir) {
+      return res.status(400).json({ error: 'Invalid subject name' });
+    }
+
     if (!fs.existsSync(dataPath)) {
       return res.status(404).json({ error: 'Subject data file not found' });
     }
-    const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    let data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+
+    // Prevent indirect leak of answer keys when exam mode requested
+    if (req.query.mode === 'exam' || req.headers['x-exam-mode'] === 'true') {
+      data = sanitizeLegacyLessonQuestions(data);
+    }
+
     res.json(data);
   } catch (error) {
     res.status(500).json({ error: 'Failed to load data' });
@@ -204,9 +243,74 @@ app.get('/api/data/:subject', (req, res) => {
 });
 
 // ═════════════════════════════════════════════════════════════
+// PHASE 02 API ROUTES (Question Engine V2 & Blueprint API)
+// ═════════════════════════════════════════════════════════════
+const questionsV2Handler = require('./api/v2/questions.js');
+
+app.post('/api/v2/questions', (req,res)=>questionsV2Handler(req,res));
+app.get('/api/v2/questions', (req, res) => questionsV2Handler(req, res));
+app.get('/api/v2/questions/:id', (req, res) => {
+  req.query = { ...req.query, id: req.params.id };
+  questionsV2Handler(req, res);
+});
+app.post('/api/v2/questions/validate', (req, res) => {
+  req.query = { ...req.query, action: 'validate' };
+  questionsV2Handler(req, res);
+});
+app.get('/api/v2/exam-blueprint', (req, res) => {
+  req.query = { ...req.query, action: 'blueprint' };
+  questionsV2Handler(req, res);
+});
+app.get('/api/v2/sources', (req, res) => {
+  req.query = { ...req.query, action: 'sources' };
+  questionsV2Handler(req, res);
+});
+app.post('/api/v2/exam/start', (req,res) => { req.query = { ...req.query, action: 'start' }; questionsV2Handler(req,res); });
+app.post('/api/v2/exam/submit', (req, res) => {
+  req.query = { ...req.query, action: 'submit' };
+  questionsV2Handler(req, res);
+});
+app.post('/api/v2/questions/submit', (req, res) => {
+  req.query = { ...req.query, action: 'submit' };
+  questionsV2Handler(req, res);
+});
+
+// ═════════════════════════════════════════════════════════════
+// PHASE 03A DIAGNOSTIC ASSESSMENT ROUTES
+// ═════════════════════════════════════════════════════════════
+const diagnosticV2Handler = require('./api/v2/diagnostic.js');
+app.all('/api/v2/diagnostic/:action', (req, res) => {
+  req.query = { ...req.query, action: req.params.action };
+  diagnosticV2Handler(req, res);
+});
+app.all('/api/v2/diagnostic', (req, res) => diagnosticV2Handler(req, res));
+
+// ═════════════════════════════════════════════════════════════
+// ADMIN API ROUTES (Sync Manager, Review Queue, Coverage Matrix)
+// ═════════════════════════════════════════════════════════════
+const { adminHandlers } = require('./api/v2/admin.js');
+
+app.get('/api/admin/status', (req, res) => adminHandlers.status(req, res));
+app.get('/api/admin/health', (req, res) => adminHandlers.health(req, res));
+app.post('/api/admin/sync', (req, res) => adminHandlers.sync(req, res));
+app.get('/api/admin/sync/history', (req, res) => adminHandlers.syncHistory(req, res));
+app.get('/api/admin/review', (req, res) => adminHandlers.reviewList(req, res));
+app.post('/api/admin/review/:id/verify', (req, res) => adminHandlers.verifyQuestion(req, res));
+app.post('/api/admin/review/:id/reject', (req, res) => adminHandlers.rejectQuestion(req, res));
+app.post('/api/admin/review/:id/publish', (req, res) => adminHandlers.publishQuestion(req, res));
+app.get('/api/admin/coverage', (req, res) => adminHandlers.coverage(req, res));
+app.get('/api/admin/bank', (req, res) => adminHandlers.bankQuery(req, res));
+app.get('/api/admin/reviewers', (req, res) => adminHandlers.listReviewers(req, res));
+app.post('/api/admin/reviewers/onboard', (req, res) => adminHandlers.onboardReviewer(req, res));
+app.post('/api/admin/reviewers/:id/revoke', (req, res) => adminHandlers.revokeReviewer(req, res));
+app.post('/api/admin/reviewers/rectify-unverified', (req, res) => adminHandlers.rectifyUnverifiedApprovals(req, res));
+
+// ═════════════════════════════════════════════════════════════
 // STATIC & PAGE ROUTES
 // ═════════════════════════════════════════════════════════════
 
+app.all('/api/v2/manage', require('./api/v2/manage.js'));
+app.all('/api/v2/sync', require('./api/v2/sync.js'));
 // Admin page
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));
@@ -214,7 +318,18 @@ app.get('/admin', (req, res) => {
 
 // Static files (public and data)
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/data', express.static(path.join(__dirname, 'data')));
+app.use('/data', (req, res, next) => {
+  const match = req.path.match(/^\/([a-z]+(?:10|11|12)?)\.json$/);
+  if (!match) return res.status(404).json({ error: 'Not found' });
+  if (req.query.mode === 'exam' || req.headers['x-exam-mode'] === 'true') {
+    const filePath = path.join(__dirname, 'data', `${match[1]}.json`);
+    if (fs.existsSync(filePath)) {
+      const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      return res.json(sanitizeLegacyLessonQuestions(raw));
+    }
+  }
+  next();
+}, express.static(path.join(__dirname, 'data')));
 
 // Root route
 app.get('/', (req, res) => {

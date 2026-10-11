@@ -1,0 +1,7 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quản trị ngân hàng câu hỏi</title>
+<style>body{font:16px system-ui;margin:2rem auto;max-width:1000px;padding:1rem;background:#f8fafc;color:#172554}button,input,select,textarea{font:inherit;padding:.65rem;margin:.3rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}article{background:white;padding:1rem;margin:1rem 0;border:1px solid #cbd5e1}label{display:block}</style>
+<h1>Ngân hàng câu hỏi</h1><p>Nguồn chưa được cấp phép sẽ bị chặn. Câu hỏi cần hồ sơ kiểm định trước khi xuất bản.</p>
+<label>Khóa quản trị <input id="key" type="password" autocomplete="off"></label><button id="load">Tải trạng thái</button>
+<label>Nguồn <select id="source"></select></label><button id="sync">Chạy đồng bộ nguồn đã chọn</button>
+<p id="message" role="status"></p><h2>Trạng thái &amp; độ phủ</h2><pre id="status"></pre><h2>Lịch sử đồng bộ</h2><pre id="history"></pre><h2>Hàng đợi kiểm duyệt</h2><div id="review"></div>
+<script src="js/question-admin.js"></script></html>

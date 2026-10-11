@@ -1,0 +1,31 @@
+const {test} = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('fs'), os = require('os'), path = require('path'), crypto = require('crypto');
+test('HTTP E2E: fixture sync, authorized review, publication, public API, exam and double submit', async t => {
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ntmk-api-'));
+ process.env.NTMK_BANK_PATH=path.join(dir,'bank.json');process.env.NTMK_EXAM_PATH=path.join(dir,'sessions.json');
+ process.env.ADMIN_API_KEY=crypto.randomBytes(32).toString('hex');process.env.ADMIN_REVIEWER_ID='fixture-authorized-reviewer';
+ const {app}=require('../server');const {getSyncManager}=require('../api/v2/admin');const fixture=require('./fixtures/source');
+ const manager=getSyncManager();manager.connectors.clear();manager.registerConnector('fixture_source',fixture.connector());
+ const server=app.listen(0);await new Promise(resolve=>server.on('listening',resolve));const base='http://localhost:'+server.address().port;
+ t.after(async()=>{await new Promise(resolve=>server.close(resolve));fs.rmSync(dir,{recursive:true,force:true});delete process.env.NTMK_BANK_PATH;delete process.env.NTMK_EXAM_PATH;delete process.env.ADMIN_API_KEY;delete process.env.ADMIN_REVIEWER_ID;});
+ const call=async(url,body,admin=false)=>{const r=await fetch(base+url,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(admin?{'X-Admin-Key':process.env.ADMIN_API_KEY}:{})},body:body?JSON.stringify(body):undefined});const text=await r.text();try{return{status:r.status,data:JSON.parse(text)};}catch(e){throw new Error(url+': '+text.slice(0,800));}};
+ assert.equal((await call('/api/v2/manage?action=status')).status,401);
+ assert.equal((await call('/api/v2/manage?action=status&admin_key=ntmk_admin_secret_dev')).status,401);
+ for(const endpoint of ['/api/announcements','/api/v2/sync'])assert.equal((await call(endpoint,{})).status,401);
+ const sync=await call('/api/v2/sync',{connectorId:'fixture_source',subjects:['toan'],grades:[10]},true);assert.equal(sync.data.totalIngested,1);
+ const review=await call('/api/v2/manage?action=review',null,true);const id=review.data.items[0].id;
+ assert.equal((await call('/api/v2/manage?action=publish&id='+id,{},true)).status,400);
+ assert.equal((await call('/api/v2/manage?action=verify&id='+id,{verifiedBy:'invented'},true)).status,400);
+ const verified=await call('/api/v2/manage?action=verify&id='+id,{verifiedBy:'invented',evidence:fixture.reviewer.evidence},true);assert.equal(verified.data.question.source.verifiedBy,'fixture-authorized-reviewer');
+ const published=await call('/api/v2/manage?action=publish&id='+id,{},true);assert.equal(published.status,200);
+ const catalog=await call('/api/v2/questions?subject=toan10&sanitize=false');assert.equal(catalog.data.questions.length,1);assert.equal(catalog.data.questions[0].mcqPayload.correctOptionIndex,undefined);assert.equal(catalog.data.questions[0].rawSource,undefined);
+ assert.equal((await call('/api/v2/questions?id='+id)).data.mcqPayload.correctOptionIndex,undefined);
+ const start=await call('/api/v2/questions?action=start',{subjectId:'toan',grade:10});assert.equal(start.status,201);assert.equal(start.data.questions[0].mcqPayload.correctOptionIndex,undefined);
+ const submission={sessionId:start.data.sessionId,token:start.data.token,userAnswers:{[id]:0}};
+ assert.equal((await call('/api/v2/questions?action=submit',{...submission,token:'wrong'})).status,400);
+ assert.equal((await call('/api/v2/questions?action=submit',{...submission,userAnswers:{[id]:'invalid'}})).status,400);
+ const results=await Promise.all([call('/api/v2/questions?action=submit',submission),call('/api/v2/questions?action=submit',submission)]);assert.equal(results[0].status,200);assert.deepEqual(results[0],results[1]);assert.equal(results[0].data.rawScore,.25);assert.equal(results[0].data.itemBreakdown,undefined);
+ // Expiry check uses an isolated service; production session paths are never modified by tests.
+ const Exam=require('../engine/exam-service');const expiryService=new Exam(manager.bankStorage,path.join(dir,'expiry.json'));const expired=expiryService.start('toan',10);const sessions=expiryService.store.read({});sessions[expired.sessionId].expiresAt=0;expiryService.store.write(sessions);assert.throws(()=>expiryService.submit({sessionId:expired.sessionId,token:expired.token,userAnswers:{}}),/expired/);
+});

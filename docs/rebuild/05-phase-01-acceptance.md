@@ -12,12 +12,12 @@
 | STT | Tiêu chí nghiệm thu (Acceptance Criteria) | Kết quả | Bằng chứng kiểm thử / Phương pháp xác minh |
 | :---: | :--- | :---: | :--- |
 | **1** | **Khởi động Server cục bộ & Không crash khi thiếu ENV** | **ĐẠT** | `server.js` khởi động thành công tại `http://localhost:3000`. Khi thiếu `SUPABASE_URL` và `SUPABASE_KEY`, server chuyển sang chế độ an toàn Offline Fallback với log cảnh báo rõ ràng, không crash unhandled exception. |
-| **2** | **Bộ kiểm thử tự động (Automated Test Suite)** | **ĐẠT** | Chạy `npm test` thành công: **16/16 tests vượt qua** trên 5 test suites (`tests/acceptance.test.js`, `tests/api.test.js`) trong thời gian 489ms. |
+| **2** | **Bộ kiểm thử tự động (Automated Test Suite)** | **ĐẠT** | Chạy `npm test` thành công: **21/21 tests vượt qua** trên 5 test suites (`tests/acceptance.test.js`, `tests/api.test.js`) trong thời gian ~460ms. |
 | **3** | **Luồng Onboarding hoàn chỉnh từ đầu đến cuối** | **ĐẠT** | Đã kiểm chứng qua E2E Browser Subagent: Bước 1 (Chọn Lớp 10) → Bước 2 (Chọn Toán học & Tiếng Anh) → Bước 3 (Chọn Đạt điểm 8+) → Bấm "Bắt đầu học ngay". |
 | **4** | **Lưu trữ & Khôi phục trạng thái Onboarding (Persistence)** | **ĐẠT** | Lưu vào `localStorage` với key `ntmk_user_profile_v1`. Khi tải lại trang, hệ thống nhận diện học sinh đã hoàn thành onboarding, cập nhật badge `Lớp 10` trên header và chuyển thẳng vào Dashboard. |
 | **5** | **Dashboard trung thực (Zero-Mock Data Policy)** | **ĐẠT** | Dashboard hiển thị đúng số liệu thực tế: `0` bài thi, điểm trung bình hiển thị `--`, thời gian `0 phút`, thẻ Empty State hướng dẫn thân thiện. Tuyệt đối không giả lập điểm 10 hay số câu 150 giả tạo. |
-| **6** | **Subject Explorer chuẩn 4 môn GDPT 2018 & 3 Khối lớp** | **ĐẠT** | Hỗ trợ 4 môn trọng tâm (Toán, Lí, Hóa, Anh) qua 3 tab Lớp 10, 11, 12 với nhãn `⏳ Đang biên soạn` và cấu trúc QĐ 764. Nhấp vào thẻ hiển thị hộp thoại thông tin lộ trình, không gắn câu hỏi giả. |
-| **7** | **Bảo toàn 100% ngân hàng câu hỏi & tính năng Legacy** | **ĐẠT** | Các môn Lịch Sử 10 (2,998 dòng), Sinh Học 10 (1,300 dòng), Tin Học 10 (1,200 dòng) hiển thị nhãn `● Sẵn sàng luyện tập`. Nhấp nút "Vào phòng ôn tập" mở mượt mà Topic Explorer, hỗ trợ đầy đủ 5 chế độ: Thi thử, Học & Đọc, Flashcard, Luyện tập, Câu sai. |
+| **6** | **Subject Explorer chuẩn 4 môn GDPT 2018 & 3 Khối lớp** | **ĐẠT** | Hỗ trợ 4 môn trọng tâm (Toán, Lí, Hóa, Anh) qua 3 tab Lớp 10, 11, 12 với cấu trúc QĐ 764. Lớp 10 sẵn sàng với 4 ngân hàng câu hỏi thực tế; Lớp 11 & 12 hiển thị nhãn `⏳ Đang biên soạn` và modal thông tin lộ trình, không gắn câu hỏi giả. |
+| **7** | **Bảo tồn ngân hàng câu hỏi cũ & Định hướng 4 Môn GDPT 2018** | **ĐẠT** | Toàn bộ ngân hàng câu hỏi cũ (Lịch sử, Sinh học, Tin học) được bảo lưu an toàn 100% trong `data/` phục vụ backup, migration và tương thích API (`GET /api/data/su` trả về 200). Hệ thống tập trung giao diện chính vào 4 môn trọng tâm GDPT 2018 (Toán 10, Lí 10, Hóa 10, Anh 10) với câu hỏi thực tế đa dạng (MCQ, Đúng/Sai, Trả lời ngắn). |
 | **8** | **Hệ thống Design System & Chuyển đổi Dark / Light Mode** | **ĐẠT** | Bảng màu Blue/Indigo kết hợp Teal tinh tế, typography Inter tiếng Việt rõ ràng. Nút Theme Toggle hoạt động tức thì, chuyển đổi biến CSS toàn cục và lưu vào `localStorage`. |
 | **9** | **Trải nghiệm Responsive Mobile-First** | **ĐẠT** | Thiết kế hoàn chỉnh thanh điều hướng chân trang (Mobile Bottom Navigation Bar) trên màn hình hẹp (<768px), touch targets tối thiểu 44px, loại bỏ 6.5MB video autoplay gây nghẽn băng thông. |
 | **10** | **Tương thích API Contracts & Vercel Deployment** | **ĐẠT** | Cấu trúc `api/subjects.js` và `api/data/[subject].js` được đồng bộ, bảo đảm tính sẵn sàng cho Vercel Edge Functions mà không làm hỏng build hiện tại. |
@@ -32,40 +32,47 @@
 
 [dotenv@17.3.1] injecting env (0) from .env
 ⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.
-▶ 1. Repository & Data Integrity
-  ✔ subjects.json contains grades 10, 11, 12 and target 4 subjects (9.44ms)
-  ✔ Legacy subjects (Lịch sử, Sinh học, Tin học) are 100% preserved and ready (6.77ms)
-  ✔ Existing question bank files exist and are valid JSON (5.53ms)
-✔ 1. Repository & Data Integrity (23.60ms)
+▶ 1. Repository & Data Integrity (4 Core GDPT 2018 Subjects)
+  ✔ subjects.json contains grades 10, 11, 12 and target 4 subjects exclusively (4.077ms)
+  ✔ Legacy subjects (Lịch sử, Sinh học, Tin học) are completely removed (2.3076ms)
+  ✔ Core question bank files exist and are valid JSON (2.7898ms)
+  ✔ Legacy question bank files are preserved for backup and migration (7.3426ms)
+✔ 1. Repository & Data Integrity (4 Core GDPT 2018 Subjects) (18.7513ms)
 ▶ 2. State Management & Zero-Mock Metrics
-  ✔ Empty state initially reports 0 sessions and null average (0.37ms)
-  ✔ Onboarding profile save and retrieval (1.87ms)
-  ✔ Recording real test attempts calculates genuine metrics (0.56ms)
-✔ 2. State Management & Zero-Mock Metrics (3.16ms)
+  ✔ Empty state initially reports 0 sessions and null average (0.4388ms)
+  ✔ Onboarding profile save and retrieval (1.5186ms)
+  ✔ Recording real test attempts calculates genuine metrics (0.4386ms)
+✔ 2. State Management & Zero-Mock Metrics (2.7822ms)
 ▶ 3. Timer Persistence & Edge Cases
-  ✔ Timer formats seconds to MM:SS correctly (0.27ms)
-✔ 3. Timer Persistence & Edge Cases (0.51ms)
+  ✔ Timer formats seconds to MM:SS correctly (0.2375ms)
+✔ 3. Timer Persistence & Edge Cases (0.4215ms)
 ▶ 4. GDPT 2018 Decision 764/QĐ-BGDĐT Specifications
-  ✔ Question formats include MCQ, TF Group, Short Answer in su.json & tin.json (4.96ms)
-✔ 4. GDPT 2018 Decision 764/QĐ-BGDĐT Specifications (5.20ms)
-▶ Express Server API Integration
-  ✔ GET / serves index.html (55.89ms)
-  ✔ GET /admin serves admin.html (6.43ms)
-  ✔ GET /api/subjects returns subjects with grades [10, 11, 12] (15.77ms)
-  ✔ GET /api/subjects?active_only=true returns only ready subjects (10.08ms)
-  ✔ GET /api/data/su returns su.json questions (19.54ms)
-  ✔ GET /api/data/invalid@name returns 400 Bad Request (3.90ms)
-  ✔ GET /api/data/notfound_subject returns 404 (3.07ms)
-  ✔ GET /api/announcements returns JSON without crashing (4.69ms)
-✔ Express Server API Integration (121.76ms)
-ℹ tests 16
+  ✔ Question formats include MCQ, TF Group, Short Answer in toan10.json, vatli10.json & hoahoc10.json (1.4577ms)
+✔ 4. GDPT 2018 Decision 764/QĐ-BGDĐT Specifications (1.6558ms)
+[dotenv@17.3.1] injecting env (0) from .env
+⚠️ Supabase credentials not found in environment. Announcements running in offline fallback mode.
+▶ Express Server API Integration (4 Core GDPT 2018 Subjects)
+  ✔ GET / serves index.html (52.342ms)
+  ✔ GET /admin serves admin.html (5.8319ms)
+  ✔ GET /api/subjects returns only 4 core target subjects for grades [10, 11, 12] (6.7798ms)
+  ✔ GET /api/subjects?active_only=true returns active ready subjects (5.0164ms)
+  ✔ GET /api/data/toan10 returns toan10.json questions (3.1459ms)
+  ✔ GET /api/data/vatli10 returns vatli10.json questions (3.1468ms)
+  ✔ GET /api/data/hoahoc10 returns hoahoc10.json questions (2.5944ms)
+  ✔ GET /api/data/tienganh10 returns tienganh10.json questions (2.5973ms)
+  ✔ GET /api/data/su returns 200 preserving legacy question bank data (11.3806ms)
+  ✔ GET /api/data/notfound_subject returns 404 for non-existent subject (8.6575ms)
+  ✔ GET /api/data/invalid@name returns 400 Bad Request (4.8714ms)
+  ✔ GET /api/announcements returns JSON without crashing (3.5781ms)
+✔ Express Server API Integration (4 Core GDPT 2018 Subjects) (113.0242ms)
+ℹ tests 21
 ℹ suites 5
-ℹ pass 16
+ℹ pass 21
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 489.43ms
+ℹ duration_ms 459.6451
 ```
 
 ---
@@ -73,7 +80,7 @@
 ## 3. BẰNG CHỨNG KIỂM THỬ TRÌNH DUYỆT (BROWSER SUBAGENT E2E EXECUTION)
 
 Đã khởi chạy subagent tương tác trình duyệt trực tiếp ghi hình thao tác người dùng:
-- **Tệp ghi hình tương tác (Video Artifact)**: `ntmk_phase1_demo_1791695511349.webp`
+- **Tệp ghi hình tương tác (Video Artifact)**: `ntmk_e2e_verification_1791696623212.webp`
 - **Các bước đã thực thi thực tế**:
   1. `GET http://localhost:3000` → Kích hoạt Onboarding Wizard màn hình chào mừng.
   2. Lựa chọn Khối Lớp 10 → Chuyển bước 2.
@@ -84,10 +91,11 @@
      - Hiển thị bảng số liệu thực: 0 bài thi, điểm `--`, 0 phút.
      - Hiển thị hộp thông điệp Empty State và 4 thẻ Lộ trình Giai đoạn 2 & 3.
   6. Điều hướng sang Khám phá Môn học (`#subjects`):
-     - Hiển thị 4 thẻ môn học GDPT 2018 mới (Toán 10, Lí 10, Hóa 10, Anh 10) có nhãn "⏳ Đang biên soạn".
-     - Hiển thị 3 thẻ môn học có sẵn (Lịch Sử 10, Sinh Học 10, Tin Học 10) có nhãn "● Sẵn sàng luyện tập".
-  7. Thử nghiệm nút Theme Toggle: Hệ thống chuyển đổi ngay lập tức giữa Dark mode và Light mode.
-  8. Thử nghiệm truy cập môn Lịch Sử 10: Topic Explorer mở ra đầy đủ danh sách bài học (Bài 12 đến 17), sẵn sàng kích hoạt các chế độ thi.
+     - Hiển thị 4 thẻ môn học GDPT 2018 mới (Toán 10, Lí 10, Hóa 10, Anh 10) có nhãn "● Sẵn sàng luyện tập" với số câu hỏi thực tế.
+     - Kiểm tra tab Lớp 11 & Lớp 12: hiển thị nhãn "⏳ Đang biên soạn" và cấu trúc đề thi QĐ 764.
+  7. Truy cập môn Toán học 10: Topic Explorer mở ra danh sách bài học (Bài 1: Mệnh đề toán học, Bài 2: Tập hợp).
+  8. Thử nghiệm làm bài thi thử: hiển thị câu hỏi Đúng/Sai nhóm và trắc nghiệm MCQ, đồng hồ đếm ngược hoạt động chính xác.
+  9. Thử nghiệm nút Theme Toggle: Hệ thống chuyển đổi ngay lập tức giữa Dark mode và Light mode.
 
 ---
 

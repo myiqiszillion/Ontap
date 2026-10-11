@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://openstax.org/robots.txt",
+    "checkedAt": "2026-10-11T07:10:36.746Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "httpStatus": 200,
+    "contentType": "text/plain",
+    "bytes": 453,
+    "robots": "User-agent: *\nDisallow: /accounts\nDisallow: /admin\nDisallow: /l/\nDisallow: /r/\nDisallow: /confirmation/\nDisallow: /adoption-confirmation\nDisallow: /general\nDisallow: /contents\nDisallow: /extras\nDisallow: /errata\nDisallow: /resources\nDisallow: /apps/archive\nDisallow: /apps/archive-preview\nDisallow: /apps/cms/api/spike\n\nUser-agent: GPTBot\nDisallow: /books/\n\nSitemap: https://openstax.org/sitemap.xml\nSitemap: https://openstax.org/rex/sitemaps/index.xml\n"
+  },
+  {
+    "url": "https://help.openstax.org/s/article/Licensing-information-of-OpenStax-textbooks",
+    "checkedAt": "2026-10-11T07:10:37.263Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "httpStatus": 200,
+    "contentType": "text/html;charset=UTF-8",
+    "bytes": 55515
+  },
+  {
+    "url": "https://vqa.moet.gov.vn/robots.txt",
+    "checkedAt": "2026-10-11T07:10:38.259Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "httpStatus": 200,
+    "contentType": "text/plain; charset=utf-8",
+    "bytes": 242,
+    "robots": "User-agent: *\nDisallow: /admin/\nDisallow: /cache/\nDisallow: /data/\nDisallow: /includes/\nDisallow: /install/\nDisallow: /language/\nDisallow: /logs/\nDisallow: /modules/\nDisallow: /robots.php\nDisallow: /sess/\nDisallow: /tmp/\nDisallow: /web.config"
+  },
+  {
+    "url": "https://vqa.moet.gov.vn/vi/news/tin-tuc-su-kien/de-thi-tham-khao-ky-thi-tot-nghiep-thpt-tu-nam-2025-159.html",
+    "checkedAt": "2026-10-11T07:10:38.437Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 72275
+  },
+  {
+    "url": "https://www.khanacademy.org/robots.txt",
+    "checkedAt": "2026-10-11T07:10:48.506Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 3038,
+    "accessStatus": "BLOCKED: HTML client challenge; no bypass attempted"
+  },
+  {
+    "url": "https://www.ck12.org/robots.txt",
+    "checkedAt": "2026-10-11T07:10:48.701Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "error": "Source HTTP 403",
+    "httpStatus": 403
+  },
+  {
+    "url": "https://vietjack.com/robots.txt",
+    "checkedAt": "2026-10-11T07:10:48.783Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "error": "Source HTTP 404",
+    "httpStatus": 404
+  },
+  {
+    "url": "https://loigiaihay.com/robots.txt",
+    "checkedAt": "2026-10-11T07:10:48.961Z",
+    "purpose": "metadata research; not ingestion",
+    "receivedItems": 0,
+    "extractedQuestions": 0,
+    "publishedQuestions": 0,
+    "httpStatus": 200,
+    "contentType": "text/plain; charset=UTF-8",
+    "bytes": 322,
+    "robots": "User-agent: *\r\nAllow: /\r\nDisallow: /ngheo-nan-ve-vat-chat-de-chua-ngheo-nan-ve-tam-hon-kho-chua-c30a9781.html\r\nDisallow: /detail/ajaxUpdateRating\r\nDisallow: /event/ajaxUpdateRating\r\nDisallow: /tsAjax/feedBack\r\nDisallow: /categories/ajaxUpdateRating\r\nDisallow: /comment/update\r\nsitemap: https://loigiaihay.com/sitemap.xml\r\n"
+  }
+]
