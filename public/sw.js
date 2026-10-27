@@ -1,9 +1,9 @@
 /**
  * NTMK Service Worker — PWA & Offline Caching Engine
- * Caching strategy: Stale-While-Revalidate for app shell, Cache-First for static assets & question data
+ * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v3';
+const CACHE_NAME = 'ntmk-cache-v4-typeui';
 
 const STATIC_SHELL = [
   '/',
@@ -85,7 +85,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const request = event.request;
 
-  // Only cache GET requests
+  // Only handle GET requests
   if (request.method !== 'GET') return;
 
   const url = new URL(request.url);
@@ -93,7 +93,41 @@ self.addEventListener('fetch', (event) => {
   // Ignore non-http(s)
   if (!url.protocol.startsWith('http')) return;
 
-  // Question data & static assets: Stale-While-Revalidate
+  // Network-First for navigation, JavaScript, and CSS to guarantee instant UI freshness
+  const isAppCode = request.mode === 'navigate' ||
+                    url.pathname.endsWith('.js') ||
+                    url.pathname.endsWith('.css') ||
+                    url.pathname === '/' ||
+                    url.pathname === '/index.html';
+
+  if (isAppCode) {
+    event.respondWith(
+      fetch(request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseClone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(request, responseClone);
+            });
+          }
+          return networkResponse;
+        })
+        .catch(() => {
+          return caches.open(CACHE_NAME).then((cache) => {
+            return cache.match(request).then((cachedResponse) => {
+              if (cachedResponse) return cachedResponse;
+              if (request.mode === 'navigate') {
+                return cache.match('/index.html');
+              }
+              return null;
+            });
+          });
+        })
+    );
+    return;
+  }
+
+  // Stale-While-Revalidate for other static assets (images, fonts, offline data)
   event.respondWith(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.match(request).then((cachedResponse) => {
@@ -102,13 +136,7 @@ self.addEventListener('fetch', (event) => {
             cache.put(request, networkResponse.clone());
           }
           return networkResponse;
-        }).catch(() => {
-          // Network failed, if no cached response, fallback to offline html if navigation
-          if (!cachedResponse && request.mode === 'navigate') {
-            return cache.match('/index.html');
-          }
-          return cachedResponse;
-        });
+        }).catch(() => cachedResponse);
 
         return cachedResponse || fetchPromise;
       });
