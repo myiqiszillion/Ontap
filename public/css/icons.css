@@ -1,0 +1,112 @@
+/* ═════════════════════════════════════════════════════════════
+   NTMK UI/UX PRO MAX — ICONOGRAPHY & ACCESSIBILITY STYLES
+   Complies with UI/UX Pro Max guidelines:
+   - Consistent Lucide SVG rendering (stroke=currentColor)
+   - Micro-interaction transitions (150-250ms)
+   - Skip to main content keyboard accessibility
+   - Minimum 44x44px touch target enforcement
+   ═════════════════════════════════════════════════════════════ */
+
+.ui-icon {
+  display: inline-block;
+  vertical-align: -0.15em;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.2s ease, color 0.2s ease;
+}
+
+.ui-icon-xs { width: 14px; height: 14px; }
+.ui-icon-sm { width: 16px; height: 16px; }
+.ui-icon-md { width: 20px; height: 20px; }
+.ui-icon-lg { width: 24px; height: 24px; }
+.ui-icon-xl { width: 28px; height: 28px; }
+
+/* In navigation items */
+.nav-item-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-item-btn:hover .ui-icon {
+  transform: translateY(-1px);
+}
+
+.mob-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  gap: 3px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mob-nav-item:active {
+  transform: scale(0.96);
+}
+
+.mob-nav-item .ui-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Skip link for keyboard navigation (WCAG AAA) */
+.skip-link {
+  position: absolute;
+  top: -120px;
+  left: 20px;
+  background: var(--brand-primary, #3b82f6);
+  color: #ffffff !important;
+  padding: 10px 18px;
+  border-radius: var(--radius-md, 12px);
+  font-weight: 700;
+  font-size: 0.95rem;
+  z-index: 99999;
+  text-decoration: none;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 16px;
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Flag button animation in exam room */
+.btn-flag-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-flag-toggle:hover .ui-icon {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.btn-flag-toggle.active .ui-icon {
+  color: #ef4444;
+  fill: #ef4444;
+}
+
+/* High contrast touch feedback for mobile */
+@media (max-width: 768px) {
+  .exam-tool-btn {
+    min-height: 40px;
+    min-width: 40px;
+    padding: 6px 10px;
+  }
+}

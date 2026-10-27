@@ -47,25 +47,32 @@ const DashboardView = {
           </div>
           <div class="hero-actions">
             <button class="btn btn-primary" onclick="app.navigateTo('planner')">
-              📅 Kế hoạch học tập cá nhân
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+              <span>Kế hoạch học tập</span>
             </button>
             <button class="btn btn-outline" onclick="app.navigateTo('diagnostic')">
-              🎯 Đánh giá năng lực đầu vào
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              <span>Đánh giá năng lực</span>
             </button>
             <button class="btn btn-outline" onclick="app.navigateTo('subjects')">
-              📚 Chọn môn luyện tập
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <span>Chọn môn học</span>
             </button>
             <button class="btn btn-outline" style="border-color: #f59e0b; color: #f59e0b;" onclick="app.navigateTo('checker')">
-              🔍 Dò trắc nghiệm
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <span>Dò trắc nghiệm</span>
             </button>
             <button class="btn btn-outline" style="border-color: #d97706; color: #d97706;" onclick="app.navigateTo('custom-exam')">
-              🎯 Tự tạo đề thi
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              <span>Tự tạo đề thi</span>
             </button>
             <button class="btn btn-outline" style="border-color: #dc2626; color: #dc2626;" onclick="app.navigateTo('mistakes')">
-              📕 Sổ tay câu sai
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+              <span>Sổ tay câu sai</span>
             </button>
             <button class="btn btn-outline" onclick="app.startOnboarding(true)">
-              ⚙️ Đổi mục tiêu
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg>
+              <span>Đổi mục tiêu</span>
             </button>
           </div>
 
@@ -83,13 +90,16 @@ const DashboardView = {
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">
             <button class="btn btn-primary" onclick="app.selectSubject('lichsu11')">
-              📜 Ôn Lịch sử 11
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+              <span>Ôn Lịch sử 11</span>
             </button>
             <button class="btn btn-outline" onclick="app.selectSubject('lichsu10')">
-              🏛️ Ôn Lịch sử 10
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+              <span>Ôn Lịch sử 10</span>
             </button>
             <button class="btn btn-outline" style="border-color: #f59e0b; color: #f59e0b;" onclick="Checker.init('lichsu11'); app.navigateTo('checker');">
-              🔍 Dò đáp án
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <span>Dò đáp án</span>
             </button>
           </div>
         </div>
@@ -97,7 +107,9 @@ const DashboardView = {
         <!-- Real Metrics Section (No Fake Data) -->
         <div class="metrics-grid">
           <div class="metric-card">
-            <div class="metric-icon">📝</div>
+            <div class="metric-icon">
+              <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+            </div>
             <div class="metric-info">
               <div class="metric-value">${metrics.totalSessions}</div>
               <div class="metric-label">Bài thi đã hoàn thành</div>
@@ -105,7 +117,9 @@ const DashboardView = {
           </div>
 
           <div class="metric-card">
-            <div class="metric-icon">🎯</div>
+            <div class="metric-icon">
+              <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
             <div class="metric-info">
               <div class="metric-value">${metrics.averagePercentage !== null ? metrics.averagePercentage + '%' : '--'}</div>
               <div class="metric-label">Điểm trung bình thực tế</div>
@@ -113,7 +127,9 @@ const DashboardView = {
           </div>
 
           <div class="metric-card">
-            <div class="metric-icon">⏱️</div>
+            <div class="metric-icon">
+              <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
             <div class="metric-info">
               <div class="metric-value">${metrics.totalTimeMinutes} <small>phút</small></div>
               <div class="metric-label">Thời gian đã ôn luyện</div>
@@ -121,7 +137,9 @@ const DashboardView = {
           </div>
 
           <div class="metric-card" onclick="app.navigateTo('mistakes')" style="cursor: pointer;" title="Xem chi tiết các câu sai cần phục hồi">
-            <div class="metric-icon">📕</div>
+            <div class="metric-icon">
+              <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+            </div>
             <div class="metric-info">
               <div class="metric-value" style="color: #dc2626;">${typeof MistakeStore !== 'undefined' ? MistakeStore.getActiveCount() : 0}</div>
               <div class="metric-label">Câu sai cần phục hồi</div>
@@ -129,7 +147,9 @@ const DashboardView = {
           </div>
 
           <div class="metric-card">
-            <div class="metric-icon">🏆</div>
+            <div class="metric-icon">
+              <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
             <div class="metric-info">
               <div class="metric-value">${metrics.hasActivity ? 'Đang kích hoạt' : 'Khởi động'}</div>
               <div class="metric-label">Trạng thái học tập</div>

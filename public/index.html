@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/printable-exam.css">
   <link rel="stylesheet" href="css/command-palette.css">
   <link rel="stylesheet" href="css/result-view.css">
+  <link rel="stylesheet" href="css/icons.css">
   <meta name="theme-color" content="#d97706">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -33,6 +34,8 @@
 </head>
 
 <body id="app-body">
+  <!-- Accessibility Skip Link (WCAG AAA) -->
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
   <!-- ═══════════════════════════════════════════════════════════
      APP SHELL HEADER
@@ -47,42 +50,45 @@
 
       <nav class="header-nav-desktop" aria-label="Điều hướng chính">
         <button class="nav-item-btn active" data-route="dashboard" onclick="app.navigateTo('dashboard')">
-          🏠 Trang chủ
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Trang chủ</span>
         </button>
         <button class="nav-item-btn" data-route="subjects" onclick="app.navigateTo('subjects')">
-          📚 Môn học
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span>Môn học</span>
         </button>
 
         <!-- Dropdown Bộ công cụ ôn luyện -->
         <div class="nav-dropdown-wrapper" id="nav-tools-dropdown">
-          <button class="nav-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
-            <span>🧰 Bộ công cụ</span>
+          <button class="nav-dropdown-btn" onclick="this.parentElement.classList.toggle('open')" aria-haspopup="true" aria-expanded="false">
+            <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <span>Bộ công cụ</span>
             <span class="nav-dropdown-arrow">▼</span>
           </button>
           <div class="nav-dropdown-menu">
             <button class="nav-dropdown-item" onclick="app.navigateTo('custom-exam'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <span>🎯</span>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
               <div>
                 <div>Tự tạo đề thi</div>
                 <div class="nav-dropdown-desc">Tùy biến câu hỏi & thời gian</div>
               </div>
             </button>
             <button class="nav-dropdown-item" onclick="app.navigateTo('checker'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <span>🔍</span>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               <div>
                 <div>Dò trắc nghiệm</div>
                 <div class="nav-dropdown-desc">So khớp đáp án & tra giải</div>
               </div>
             </button>
             <button class="nav-dropdown-item" onclick="app.navigateTo('mistakes'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <span>📕</span>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
               <div>
                 <div>Sổ tay câu sai <span id="header-mistakes-badge" class="badge-count hidden">0</span></div>
                 <div class="nav-dropdown-desc">Phục hồi lỗ hổng kiến thức</div>
               </div>
             </button>
             <button class="nav-dropdown-item" onclick="app.navigateTo('importer'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <span>📥</span>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
               <div>
                 <div>Nhập đề thông minh</div>
                 <div class="nav-dropdown-desc">Bóc tách Word & Live Editor</div>
@@ -92,39 +98,43 @@
         </div>
 
         <button class="nav-item-btn" data-route="planner" onclick="app.navigateTo('planner')">
-          📅 Kế hoạch
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          <span>Kế hoạch</span>
         </button>
         <button class="nav-item-btn" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
-          🎯 Chẩn đoán
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          <span>Chẩn đoán</span>
         </button>
         <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
-          📢 Bảng tin
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span>Bảng tin</span>
         </button>
       </nav>
 
 
       <div class="header-actions-group">
         <button id="header-search-btn" class="header-search-pill-btn" onclick="CommandPalette.open()" aria-label="Tìm kiếm nhanh">
-          <span>🔍</span>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           <span style="font-size:0.8rem; font-weight:600;">Tìm kiếm...</span>
           <span class="header-search-kbd">Ctrl K</span>
         </button>
 
         <button id="sound-toggle-btn" class="sound-btn" onclick="SoundFX.toggle()" aria-label="Bật/Tắt âm thanh tương tác" title="Âm thanh tương tác">
-          🔊
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
         </button>
 
         <button id="header-auth-btn" class="header-auth-btn" onclick="AuthView.showModal()" aria-label="Tài khoản và đăng nhập">
-          👤 <span>Đăng nhập</span>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+          <span>Đăng nhập</span>
         </button>
 
         <button id="header-student-badge" class="profile-pill-btn" onclick="app.startOnboarding(true)" aria-label="Hồ sơ và mục tiêu học tập">
           <span id="header-grade-text">Lớp 10</span>
-          <span style="font-size:0.75rem; color: var(--text-dim);">⚙️</span>
+          <svg class="ui-icon ui-icon-xs" style="color: var(--text-dim);" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg>
         </button>
 
         <button id="theme-toggle" class="theme-toggle-btn" onclick="app.toggleTheme()" aria-label="Chuyển chế độ Sáng / Tối">
-          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon light-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
         </button>
       </div>
     </div>
@@ -134,24 +144,24 @@
      MOBILE BOTTOM NAVIGATION BAR
      ═══════════════════════════════════════════════════════════ -->
   <nav class="mobile-bottom-nav" aria-label="Điều hướng di động">
-    <button class="mob-nav-item active" data-route="dashboard" onclick="app.navigateTo('dashboard')">
-      <span class="mob-nav-icon">🏠</span>
+    <button class="mob-nav-item active" data-route="dashboard" onclick="app.navigateTo('dashboard')" aria-label="Tổng quan học tập">
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       <span>Tổng quan</span>
     </button>
-    <button class="mob-nav-item" data-route="subjects" onclick="app.navigateTo('subjects')">
-      <span class="mob-nav-icon">📚</span>
+    <button class="mob-nav-item" data-route="subjects" onclick="app.navigateTo('subjects')" aria-label="Danh sách môn học">
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
       <span>Môn học</span>
     </button>
-    <button class="mob-nav-item" data-route="mistakes" onclick="app.navigateTo('mistakes')">
-      <span class="mob-nav-icon">📕</span>
+    <button class="mob-nav-item" data-route="mistakes" onclick="app.navigateTo('mistakes')" aria-label="Sổ tay câu sai">
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
       <span>Sổ câu sai</span>
     </button>
-    <button class="mob-nav-item" onclick="CommandPalette.open()">
-      <span class="mob-nav-icon">🔍</span>
+    <button class="mob-nav-item" onclick="CommandPalette.open()" aria-label="Tìm kiếm nhanh">
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       <span>Tìm kiếm</span>
     </button>
-    <button class="mob-nav-item" id="mob-menu-btn" onclick="document.getElementById('mobile-drawer-overlay').classList.add('open')">
-      <span class="mob-nav-icon">☰</span>
+    <button class="mob-nav-item" id="mob-menu-btn" onclick="document.getElementById('mobile-drawer-overlay').classList.add('open')" aria-label="Mở menu công cụ mở rộng">
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
       <span>Thêm</span>
     </button>
   </nav>
@@ -161,40 +171,40 @@
     <div class="mobile-drawer-content" onclick="event.stopPropagation()">
       <div class="mobile-drawer-handle"></div>
       <div class="mobile-drawer-grid">
-        <div class="drawer-app-item" onclick="app.navigateTo('custom-exam'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">🎯</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('custom-exam'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
           <span class="drawer-app-label">Tự tạo đề</span>
         </div>
-        <div class="drawer-app-item" onclick="app.navigateTo('checker'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">🔍</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('checker'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
           <span class="drawer-app-label">Dò đáp án</span>
         </div>
-        <div class="drawer-app-item" onclick="app.navigateTo('importer'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">📥</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('importer'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg></span>
           <span class="drawer-app-label">Nhập đề</span>
         </div>
-        <div class="drawer-app-item" onclick="app.navigateTo('planner'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">📅</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('planner'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
           <span class="drawer-app-label">Kế hoạch</span>
         </div>
-        <div class="drawer-app-item" onclick="app.navigateTo('diagnostic'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">🎯</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('diagnostic'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
           <span class="drawer-app-label">Chẩn đoán</span>
         </div>
-        <div class="drawer-app-item" onclick="app.navigateTo('announcements'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">📢</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('announcements'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
           <span class="drawer-app-label">Bảng tin</span>
         </div>
-        <div class="drawer-app-item" onclick="app.startOnboarding(true); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">⚙️</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.startOnboarding(true); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg></span>
           <span class="drawer-app-label">Mục tiêu</span>
         </div>
-        <div class="drawer-app-item" onclick="app.toggleTheme(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">🌓</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.toggleTheme(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/></svg></span>
           <span class="drawer-app-label">Giao diện</span>
         </div>
-        <div class="drawer-app-item" onclick="if(window.ThemeFocus)ThemeFocus.toggleFocus(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon">⏳</span>
+        <div class="drawer-app-item" role="button" tabindex="0" onclick="if(window.ThemeFocus)ThemeFocus.toggleFocus(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
           <span class="drawer-app-label">Tập trung</span>
         </div>
       </div>
@@ -455,7 +465,7 @@
           <button class="exam-tool-btn" onclick="Quiz.toggleZenMode()" title="Chế độ tập trung toàn màn hình">⛶ Zen</button>
         </div>
         <div class="timer" id="active-timer">
-          <span class="timer-icon">⏱️</span>
+          <span class="timer-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
           <span id="active-timer-display">20:00</span>
         </div>
       </header>
@@ -683,6 +693,7 @@
   </main>
 
   <!-- Modular Scripts Architecture -->
+  <script defer src="js/icons.js"></script>
   <script defer src="js/audio.js"></script>
   <script defer src="js/api.js"></script>
   <script defer src="js/state.js"></script>

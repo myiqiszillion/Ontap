@@ -3,7 +3,7 @@
  * Caching strategy: Stale-While-Revalidate for app shell, Cache-First for static assets & question data
  */
 
-const CACHE_NAME = 'ntmk-cache-v2';
+const CACHE_NAME = 'ntmk-cache-v3';
 
 const STATIC_SHELL = [
   '/',
@@ -24,6 +24,8 @@ const STATIC_SHELL = [
   '/css/printable-exam.css',
   '/css/command-palette.css',
   '/css/result-view.css',
+  '/css/icons.css',
+  '/js/icons.js',
   '/js/audio.js',
   '/js/api.js',
   '/js/state.js',

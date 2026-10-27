@@ -167,7 +167,10 @@ const Quiz = {
     if (flagBtn) {
       const isFlagged = this.flaggedQuestions && this.flaggedQuestions.has(this.currentQuestionIndex);
       flagBtn.className = `btn-flag-toggle ${isFlagged ? 'active' : ''}`;
-      flagBtn.innerHTML = `<span>${isFlagged ? '🚩 Đã cắm cờ' : '🏳️ Cắm cờ'}</span>`;
+      const flagSvg = isFlagged
+        ? '<svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>'
+        : '<svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>';
+      flagBtn.innerHTML = `${flagSvg} <span>${isFlagged ? 'Đã cắm cờ' : 'Cắm cờ'}</span>`;
     }
 
     const qTextEl = document.getElementById('q-text');
