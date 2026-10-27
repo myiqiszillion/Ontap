@@ -167,6 +167,8 @@ const app = {
       if (window.MistakeView) MistakeView.render();
     } else if (routeId === 'custom-exam') {
       if (window.CustomExam) CustomExam.init(param || this.currentSubject || 'lichsu11');
+    } else if (routeId === 'importer') {
+      if (window.SmartImporterView) SmartImporterView.init();
     }
   },
 

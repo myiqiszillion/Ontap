@@ -404,3 +404,36 @@
   cursor: not-allowed;
   box-shadow: none;
 }
+
+.custom-exam-actions-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.print-custom-exam-btn {
+  width: 100%;
+  background: var(--card-bg, #ffffff);
+  color: #b45309;
+  border: 1.5px solid #d97706;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.print-custom-exam-btn:hover:not(:disabled) {
+  background: rgba(217, 119, 6, 0.08);
+  transform: translateY(-1px);
+}
+
+.print-custom-exam-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

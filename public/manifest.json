@@ -1,0 +1,25 @@
+{
+  "name": "NTMK — Nền Tảng Ôn Tập Thông Minh GDPT 2018",
+  "short_name": "NTMK Ôn Tập",
+  "description": "Nền tảng ôn thi và kiểm tra trắc nghiệm thông minh chuẩn chương trình GDPT 2018 và QĐ 764/QĐ-BGDĐT",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#d97706",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

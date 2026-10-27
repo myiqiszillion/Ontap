@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="css/mistakes.css">
   <link rel="stylesheet" href="css/custom-exam.css">
   <link rel="stylesheet" href="css/theme-focus.css">
+  <link rel="stylesheet" href="css/smart-importer.css">
+  <link rel="stylesheet" href="css/printable-exam.css">
+  <meta name="theme-color" content="#d97706">
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
@@ -51,6 +55,9 @@
         </button>
         <button class="nav-item-btn" data-route="custom-exam" onclick="app.navigateTo('custom-exam')">
           🎯 Tự tạo đề
+        </button>
+        <button class="nav-item-btn" data-route="importer" onclick="app.navigateTo('importer')">
+          📥 Nhập đề thi
         </button>
         <button class="nav-item-btn" data-route="mistakes" onclick="app.navigateTo('mistakes')">
           📕 Sổ câu sai <span id="header-mistakes-badge" class="badge-count hidden">0</span>
@@ -103,6 +110,10 @@
     <button class="mob-nav-item" data-route="checker" onclick="app.navigateTo('checker')">
       <span class="mob-nav-icon">🔍</span>
       <span>Dò đáp án</span>
+    </button>
+    <button class="mob-nav-item" data-route="importer" onclick="app.navigateTo('importer')">
+      <span class="mob-nav-icon">📥</span>
+      <span>Nhập đề</span>
     </button>
     <button class="mob-nav-item" data-route="planner" onclick="app.navigateTo('planner')">
       <span class="mob-nav-icon">📅</span>
@@ -580,6 +591,11 @@
        ═══════════════════════════════════════════════════════════ -->
     <section id="screen-custom-exam" class="screen" aria-label="Tự tạo đề thi theo yêu cầu"></section>
 
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 15: BỘ NHẬP ĐỀ THI THÔNG MINH (SMART IMPORTER & WYSIWYG)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-importer" class="screen" aria-label="Nhập đề thi thông minh"></section>
+
   </main>
 
   <!-- Modular Scripts Architecture -->
@@ -605,7 +621,18 @@
   <script defer src="js/diagnostic-view.js"></script>
   <script defer src="js/planner-view.js"></script>
   <script defer src="js/auth-view.js"></script>
+  <script defer src="js/smart-importer.js"></script>
+  <script defer src="js/printable-exam.js"></script>
   <script defer src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(err => {
+          console.warn('SW registration skipped:', err);
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>

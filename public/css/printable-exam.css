@@ -1,0 +1,419 @@
+/**
+ * NTMK Printable Exam & OMR Bubble Sheet Styles
+ * Supports high-fidelity A4 two-column exam layout, bubble sheet and print media rules
+ */
+
+/* ═══════════════════════════════════════════════════════════
+   SCREEN PREVIEW MODAL
+   ═══════════════════════════════════════════════════════════ */
+.printable-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 99999;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.printable-modal-overlay.open {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.printable-modal-content {
+  background: #f1f5f9;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.printable-top-toolbar {
+  background: #1e293b;
+  color: #ffffff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.toolbar-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.printable-tab-pills {
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.pill-btn {
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.pill-btn.active {
+  background: #d97706;
+  color: #ffffff;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-print-action {
+  background: linear-gradient(135deg, #059669, #047857);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(4, 120, 87, 0.3);
+}
+
+.btn-close-print {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #cbd5e1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Document Container */
+.printable-document-view {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background: #e2e8f0;
+}
+
+.print-page {
+  background: #ffffff;
+  color: #000000;
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 16mm;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11pt;
+  line-height: 1.35;
+  box-sizing: border-box;
+}
+
+/* Exam Paper Layout */
+.exam-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.school-name { font-weight: bold; font-size: 11pt; }
+.exam-name { font-weight: bold; font-size: 11pt; }
+.exam-desc { font-style: italic; font-size: 9.5pt; }
+
+.exam-subject-title { font-weight: bold; font-size: 12pt; }
+.exam-time-limit { font-style: italic; font-size: 9.5pt; margin-top: 2px; }
+.exam-code-box {
+  display: inline-block;
+  border: 1.5px solid #000;
+  padding: 2px 10px;
+  margin-top: 4px;
+  font-size: 10pt;
+}
+
+.student-info-strip {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 10.5pt;
+}
+
+.exam-rule-hint {
+  text-align: center;
+  font-style: italic;
+  font-size: 9.5pt;
+  margin: 6px 0;
+}
+
+.exam-divider {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 8px 0 14px;
+}
+
+/* 2-Column Questions */
+.exam-questions-two-column {
+  columns: 2;
+  column-gap: 20px;
+  column-rule: 0.5px solid #ccc;
+  text-align: justify;
+}
+
+.part-banner {
+  break-inside: avoid;
+  margin: 8px 0 10px;
+  font-size: 10.5pt;
+  border-bottom: 1px dashed #666;
+  padding-bottom: 4px;
+}
+
+.print-q-card {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  font-size: 10.5pt;
+}
+
+.q-options-list {
+  margin-top: 4px;
+}
+
+.opt-line {
+  margin-bottom: 2px;
+}
+
+.print-passage-quote {
+  font-style: italic;
+  background: #f9f9f9;
+  border-left: 2px solid #333;
+  padding: 4px 8px;
+  margin: 4px 0 6px;
+  font-size: 10pt;
+}
+
+.tf-statements-print {
+  margin-top: 4px;
+}
+
+.tf-stmt-line {
+  margin-bottom: 3px;
+}
+
+.exam-footer-end {
+  text-align: center;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   OMR BUBBLE SHEET STYLING
+   ═══════════════════════════════════════════════════════════ */
+.omr-page {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+.omr-header {
+  text-align: center;
+  border-bottom: 1.5px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.omr-title { font-size: 10pt; font-weight: bold; }
+.omr-main-heading { font-size: 15pt; font-weight: 900; letter-spacing: 0.05em; margin: 4px 0; }
+.omr-sub-heading { font-size: 9pt; }
+
+.omr-top-tables {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.omr-info-box {
+  line-height: 1.8;
+  font-size: 9.5pt;
+  border: 1px solid #333;
+  padding: 8px 12px;
+}
+
+.omr-numbers-box {
+  display: flex;
+  gap: 8px;
+}
+
+.bubble-grid-column {
+  border: 1px solid #000;
+  padding: 4px;
+  text-align: center;
+  flex: 1;
+}
+
+.grid-title { font-size: 8pt; font-weight: bold; margin-bottom: 4px; }
+
+.code-boxes-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.code-boxes-row span {
+  width: 14px;
+  height: 16px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.digit-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
+.bubble {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7pt;
+  font-weight: bold;
+}
+
+.bubble.filled { background: #000; color: #fff; }
+.bubble.wrong-mark { color: #dc2626; }
+
+.omr-guide-banner {
+  border: 1px dashed #000;
+  padding: 6px 10px;
+  font-size: 8.5pt;
+  margin-bottom: 12px;
+}
+
+.omr-section-title {
+  font-size: 9.5pt;
+  font-weight: bold;
+  background: #eee;
+  padding: 3px 8px;
+  border: 1px solid #333;
+  margin-bottom: 8px;
+}
+
+.omr-mcq-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px 14px;
+}
+
+.omr-q-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 8.5pt;
+}
+
+.omr-q-row .q-label {
+  font-weight: bold;
+  min-width: 18px;
+}
+
+.omr-tf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.omr-tf-card {
+  border: 1px solid #333;
+  padding: 6px 8px;
+}
+
+.tf-card-title { font-weight: bold; font-size: 9pt; margin-bottom: 4px; border-bottom: 1px solid #ccc; }
+
+.omr-tf-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+  font-size: 8.5pt;
+}
+
+.sub-letter { font-weight: bold; min-width: 14px; }
+
+/* ═══════════════════════════════════════════════════════════
+   PRINT MEDIA RULES (In ra chuẩn A4, ẩn giao diện web)
+   ═══════════════════════════════════════════════════════════ */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Ẩn toàn bộ header, nav, floating bars, modals */
+  header, nav, .mobile-bottom-nav, #main-content, .printable-top-toolbar, .no-print {
+    display: none !important;
+  }
+
+  .printable-modal-overlay {
+    position: static !important;
+    display: block !important;
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .printable-modal-content {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+
+  .printable-document-view {
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .print-page {
+    width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm;
+  }
+}

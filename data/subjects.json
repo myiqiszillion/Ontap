@@ -307,6 +307,24 @@
         "sa": 0,
         "durationMinutes": 50
       }
+    },
+    {
+      "id": "lichsu12",
+      "subjectKey": "lichsu",
+      "grade": 12,
+      "name": "Lịch sử 12 (Luyện thi TN)",
+      "icon": "🇻🇳",
+      "description": "Trật tự thế giới, ASEAN, CMT8, Kháng chiến và Đổi mới",
+      "color": "#dc2626",
+      "dataFile": "lichsu12.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 24,
+        "tf": 4,
+        "sa": 0,
+        "durationMinutes": 50
+      }
     }
   ]
 }

@@ -17,6 +17,7 @@ const CustomExam = {
   },
 
   SUBJECT_OPTIONS: [
+    { id: 'lichsu12', name: 'Lịch sử 12', grade: 12, defaultMcq: 24, defaultTf: 4, defaultDuration: 50 },
     { id: 'lichsu11', name: 'Lịch sử 11', grade: 11, defaultMcq: 20, defaultTf: 4, defaultDuration: 50 },
     { id: 'lichsu10', name: 'Lịch sử 10', grade: 10, defaultMcq: 20, defaultTf: 4, defaultDuration: 50 },
     { id: 'toan10', name: 'Toán 10', grade: 10, defaultMcq: 12, defaultTf: 4, defaultDuration: 90 },
@@ -233,12 +234,20 @@ const CustomExam = {
                 </button>
               </div>
 
-              <button class="start-custom-exam-btn" 
-                      id="start-custom-exam-btn"
-                      ${(this.settings.mcqCount + this.settings.tfCount === 0 || this.selectedBais.length === 0) ? 'disabled' : ''}
-                      onclick="CustomExam.generateAndStart()">
-                🚀 Bắt đầu làm bài thi ngay
-              </button>
+              <div class="custom-exam-actions-row">
+                <button class="start-custom-exam-btn" 
+                        id="start-custom-exam-btn"
+                        ${(this.settings.mcqCount + this.settings.tfCount === 0 || this.selectedBais.length === 0) ? 'disabled' : ''}
+                        onclick="CustomExam.generateAndStart()">
+                  🚀 Bắt đầu làm bài thi ngay
+                </button>
+                <button class="print-custom-exam-btn" 
+                        id="print-custom-exam-btn"
+                        ${(this.settings.mcqCount + this.settings.tfCount === 0 || this.selectedBais.length === 0) ? 'disabled' : ''}
+                        onclick="CustomExam.generateAndPrint()">
+                  🖨️ Xuất bản in A4 & Phiếu OMR
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -322,12 +331,17 @@ const CustomExam = {
   },
 
   /**
-   * Tạo đề thi ngẫu nhiên và kích hoạt phòng thi
+   * Tạo payload đề thi theo cấu hình
    */
-  async generateAndStart() {
+  async buildExamPayload() {
     if (this.selectedBais.length === 0) {
       alert('Vui lòng chọn ít nhất một bài học.');
-      return;
+      return null;
+    }
+
+    if (this.settings.mcqCount + this.settings.tfCount === 0) {
+      alert('Vui lòng chọn số lượng câu hỏi trắc nghiệm hoặc đúng/sai lớn hơn 0.');
+      return null;
     }
 
     try {
@@ -376,17 +390,30 @@ const CustomExam = {
 
       if (finalQuestions.length === 0) {
         alert('Không tìm thấy đủ câu hỏi phù hợp với cấu hình của bạn.');
-        return;
+        return null;
       }
 
-      const generatedExam = {
+      return {
         subject: this.currentSubject,
         questions: finalQuestions,
         duration: this.settings.durationMinutes,
         title: `Đề thi tùy biến — ${this.SUBJECT_OPTIONS.find(s=>s.id === this.currentSubject)?.name || ''}`
       };
+    } catch (e) {
+      console.error('Lỗi khi sinh đề thi:', e);
+      alert('Đã xảy ra lỗi khi tạo đề thi. Vui lòng thử lại.');
+      return null;
+    }
+  },
 
-      // 5. Điều hướng sang phòng thi (Screen Quiz)
+  /**
+   * Tạo đề thi ngẫu nhiên và kích hoạt phòng thi trực tuyến
+   */
+  async generateAndStart() {
+    const generatedExam = await this.buildExamPayload();
+    if (!generatedExam) return;
+
+    try {
       if (typeof app !== 'undefined' && app.navigateTo) {
         app.currentSubject = this.currentSubject;
         app.quizDuration = this.settings.durationMinutes;
@@ -421,10 +448,22 @@ const CustomExam = {
           });
         }
       }
-
     } catch (e) {
-      console.error('Lỗi khi sinh đề thi:', e);
-      alert('Đã xảy ra lỗi khi tạo đề thi. Vui lòng thử lại.');
+      console.error('Lỗi khi kích hoạt phòng thi:', e);
+    }
+  },
+
+  /**
+   * Tạo đề thi ngẫu nhiên và mở giao diện in ấn A4 & OMR
+   */
+  async generateAndPrint() {
+    const generatedExam = await this.buildExamPayload();
+    if (!generatedExam) return;
+
+    if (typeof PrintableExam !== 'undefined') {
+      PrintableExam.open(generatedExam);
+    } else {
+      alert('Mô-đun in ấn PrintableExam chưa sẵn sàng.');
     }
   }
 };
