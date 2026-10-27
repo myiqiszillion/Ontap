@@ -35,13 +35,17 @@ const SoundFX = {
   updateToggleBtn() {
     const btn = document.getElementById('sound-toggle-btn');
     if (btn) {
-      btn.innerHTML = this.enabled ? '🔊' : '🔇';
+      if (typeof Icons !== 'undefined' && Icons.get) {
+        btn.innerHTML = this.enabled ? Icons.get('volume-2', { size: 18 }) : Icons.get('volume-x', { size: 18 });
+      } else {
+        btn.innerHTML = this.enabled ? '🔊' : '🔇';
+      }
       btn.title = this.enabled ? 'Âm thanh: Bật' : 'Âm thanh: Tắt';
       btn.classList.toggle('muted', !this.enabled);
     }
   },
 
-  // Crisp button click sound
+  // Crisp, tactile mechanical switch sound ("thock")
   playClick() {
     if (!this.enabled) return;
     try {
@@ -49,15 +53,15 @@ const SoundFX = {
       if (!ctx) return;
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(600, ctx.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.04);
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(260, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(120, ctx.currentTime + 0.035);
       gain.gain.setValueAtTime(0.08, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.035);
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start();
-      osc.stop(ctx.currentTime + 0.04);
+      osc.stop(ctx.currentTime + 0.035);
     } catch (e) {}
   },
 

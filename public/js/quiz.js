@@ -156,6 +156,28 @@ const Quiz = {
     const progressEl = document.getElementById('quiz-progress');
     if (progressEl) {
       progressEl.textContent = `${this.currentQuestionIndex + 1}/${this.questions.length}`;
+      if (!progressEl.dataset.scrollBound) {
+        progressEl.dataset.scrollBound = 'true';
+        progressEl.style.cursor = 'pointer';
+        progressEl.setAttribute('role', 'button');
+        progressEl.setAttribute('tabindex', '0');
+        progressEl.setAttribute('title', 'Bấm để cuộn nhanh tới bảng danh sách câu hỏi');
+        const jumpToPalette = () => {
+          const target = document.getElementById('question-dots') || document.querySelector('.quiz-sidebar');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            target.classList.add('highlight-pulse');
+            setTimeout(() => target.classList.remove('highlight-pulse'), 1200);
+          }
+        };
+        progressEl.addEventListener('click', jumpToPalette);
+        progressEl.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            jumpToPalette();
+          }
+        });
+      }
     }
 
     const qNumEl = document.getElementById('q-num');

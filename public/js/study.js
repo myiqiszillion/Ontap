@@ -197,7 +197,7 @@ const Study = {
       container.innerHTML = `
         <div class="study-card">
           <div class="study-badge tf">Đúng/Sai</div>
-          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc văn bản">🔊</button>
+          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc văn bản"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
           <div class="study-passage">${this.escapeHtml(q.passage)}</div>
           ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
@@ -216,7 +216,7 @@ const Study = {
       container.innerHTML = `
         <div class="study-card">
           <div class="study-badge sa">Trả lời ngắn</div>
-          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc">🔊</button>
+          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
           ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
@@ -232,7 +232,7 @@ const Study = {
       container.innerHTML = `
         <div class="study-card">
           <div class="study-badge mcq">Trắc nghiệm</div>
-          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc">🔊</button>
+          <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(readText.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
           <div class="study-question">${this.escapeHtml(q.question)}</div>
           ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
@@ -288,7 +288,7 @@ const Study = {
               <div class="fc-done-icon">🎉</div>
               <h2>Hoàn thành phần ${this.currentChunk} !</h2>
               <p>Bạn đã ghi nhớ ${total} câu. Sẵn sàng học phần tiếp theo chứ?</p>
-              <button class="fc-btn known" onclick="Study.renderFlashcard()">🚀 Học phần tiếp theo ngay</button>
+              <button class="fc-btn known" onclick="Study.renderFlashcard()"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg> Học phần tiếp theo ngay</button>
             </div>
           `;
       } else {
@@ -297,7 +297,7 @@ const Study = {
               <div class="fc-done-icon">🎉</div>
               <h2>Đã thuộc hết!</h2>
               <p>Bạn đã ghi nhớ mượt mà toàn bộ câu hỏi.</p>
-              <button class="fc-btn reset" onclick="Study.resetFlashcards()">🔄 Học lại từ đầu</button>
+              <button class="fc-btn reset" onclick="Study.resetFlashcards()"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg> Học lại từ đầu</button>
             </div>
           `;
       }
@@ -322,7 +322,7 @@ const Study = {
         <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
           <div class="fc-front">
             <div class="fc-type tf">Đúng/Sai</div>
-            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
+            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
             <div class="fc-question">${this.escapeHtml(q.passage)}</div>
             ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
             <div class="fc-statements">
@@ -348,13 +348,13 @@ const Study = {
         <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
           <div class="fc-front">
             <div class="fc-type sa">Trả lời ngắn</div>
-            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
+            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
             <div class="fc-question">${this.escapeHtml(q.question)}</div>
             <div class="fc-hint">👆 Nhấn để xem đáp án</div>
           </div>
           <div class="fc-back">
             <div class="fc-type sa">Đáp án</div>
-            <button class="tts-btn" id="fc-tts-btn2" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.correctAnswer.replace(/'/g, "\\'"))}', 'fc-tts-btn2')" title="Đọc">🔊</button>
+            <button class="tts-btn" id="fc-tts-btn2" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.correctAnswer.replace(/'/g, "\\'"))}', 'fc-tts-btn2')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
             <div class="fc-correct-answer">${this.escapeHtml(q.correctAnswer)}</div>
           </div>
         </div>
@@ -365,7 +365,7 @@ const Study = {
         <div class="fc-card" id="fc-card" onclick="Study.flipCard()">
           <div class="fc-front">
             <div class="fc-type mcq">Trắc nghiệm</div>
-            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc">🔊</button>
+            <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
             <div class="fc-question">${this.escapeHtml(q.question)}</div>
             ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
             <div class="fc-options-preview">
@@ -377,7 +377,7 @@ const Study = {
           </div>
           <div class="fc-back">
             <div class="fc-type mcq">Đáp án</div>
-            <button class="tts-btn" id="fc-tts-btn2" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.options[q.correctAnswer].replace(/'/g, "\\'"))}', 'fc-tts-btn2')" title="Đọc">🔊</button>
+            <button class="tts-btn" id="fc-tts-btn2" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.options[q.correctAnswer].replace(/'/g, "\\'"))}', 'fc-tts-btn2')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
             <div class="fc-correct-answer">${letters[q.correctAnswer]}. ${this.escapeHtml(q.options[q.correctAnswer])}</div>
           </div>
         </div>

@@ -109,7 +109,7 @@ const Checker = {
         <header class="checker-header">
           <div class="checker-title-area">
             <button class="back-btn" onclick="app.navigateTo('dashboard')">← Trang chủ</button>
-            <div class="checker-badge">🔍 CÔNG CỤ DÒ ĐÁP ÁN NHANH</div>
+            <div class="checker-badge"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> CÔNG CỤ DÒ ĐÁP ÁN NHANH</div>
             <h1 class="checker-heading">Dò Trắc Nghiệm & So Khớp Đáp Án GDPT 2018</h1>
             <p class="checker-subheading">Tra cứu bảng đáp án chuẩn xác, kiểm tra đối chiếu bài làm từ giấy, xem lời giải chi tiết và luyện tập trắc nghiệm Đúng/Sai.</p>
           </div>
@@ -141,13 +141,13 @@ const Checker = {
 
             <div class="checker-tab-pills">
               <button class="checker-tab-btn ${this.activeTab === 'matrix' ? 'active' : ''}" onclick="Checker.switchTab('matrix')">
-                📊 Ma trận đáp án
+                <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg> Ma trận đáp án
               </button>
               <button class="checker-tab-btn ${this.activeTab === 'selfcheck' ? 'active' : ''}" onclick="Checker.switchTab('selfcheck')">
-                ✏️ Dò bài tự chấm
+                <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Dò bài tự chấm
               </button>
               <button class="checker-tab-btn ${this.activeTab === 'explorer' ? 'active' : ''}" onclick="Checker.switchTab('explorer')">
-                📖 Tra cứu lời giải
+                <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Tra cứu lời giải
               </button>
             </div>
           </div>

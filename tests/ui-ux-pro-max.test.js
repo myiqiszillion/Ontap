@@ -26,7 +26,8 @@ describe('UI/UX Pro Max — 1. Lucide SVG Icon Engine', () => {
       'home', 'book-open', 'wrench', 'calendar', 'target', 'bell',
       'search', 'bookmark', 'book-marked', 'file-text', 'upload', 'download',
       'user', 'settings', 'sun', 'moon', 'volume-2', 'volume-x',
-      'flag', 'flag-fill', 'maximize-2', 'minimize-2', 'menu', 'clock', 'check', 'sliders'
+      'flag', 'flag-fill', 'maximize-2', 'minimize-2', 'menu', 'clock', 'check', 'sliders',
+      'play', 'rotate-ccw', 'scale', 'camera'
     ];
 
     for (const icon of requiredIcons) {
@@ -105,5 +106,55 @@ describe('UI/UX Pro Max — 3. Design System & WCAG Tokens', () => {
   test('Design system enforces focus-visible and prefers-reduced-motion', () => {
     assert.ok(css.includes(':focus-visible'), 'Must define visible focus rings');
     assert.ok(css.includes('prefers-reduced-motion: reduce'), 'Must respect user motion preferences');
+  });
+});
+
+describe('UI/UX Pro Max — 4. Mode Cards & Micro-Interaction Integrity', () => {
+  const htmlPath = path.join(__dirname, '..', 'public', 'index.html');
+  const html = fs.readFileSync(htmlPath, 'utf8');
+
+  test('Mode selector cards use SVG icons instead of raw emojis', () => {
+    assert.ok(html.includes('data-mode="exam"'), 'Must have exam mode card');
+    assert.ok(html.includes('data-mode="study"'), 'Must have study mode card');
+    assert.ok(html.includes('data-mode="flashcard"'), 'Must have flashcard mode card');
+    assert.ok(html.includes('data-mode="practice"'), 'Must have practice mode card');
+    assert.ok(html.includes('data-mode="tf"'), 'Must have tf mode card');
+    assert.ok(html.includes('data-mode="checker"'), 'Must have checker mode card');
+    assert.ok(html.includes('data-mode="wrong"'), 'Must have wrong mode card');
+
+    // Check that none of the mode cards use raw emojis
+    assert.ok(!html.includes('<div class="mode-icon">📝</div>'), 'Exam mode card must use SVG icon');
+    assert.ok(!html.includes('<div class="mode-icon">📖</div>'), 'Study mode card must use SVG icon');
+    assert.ok(!html.includes('<div class="mode-icon">🃏</div>'), 'Flashcard mode card must use SVG icon');
+    assert.ok(!html.includes('<div class="mode-icon">💪</div>'), 'Practice mode card must use SVG icon');
+    assert.ok(!html.includes('<div class="mode-icon">⚖️</div>'), 'TF mode card must use SVG icon');
+    assert.ok(!html.includes('<div class="mode-icon">🔍</div>'), 'Checker mode card must use SVG icon');
+    assert.ok(!html.includes('<div class="mode-icon">❌</div>'), 'Wrong mode card must use SVG icon');
+  });
+
+  test('Result action buttons and start buttons use SVG icons', () => {
+    assert.ok(html.includes('btn-share-card'), 'Must contain share card button');
+    assert.ok(html.includes('btn-result-action primary'), 'Must contain dashboard return button');
+    assert.ok(!html.includes('📸 Xuất Thẻ Ảnh'), 'Share button must not use raw camera emoji');
+    assert.ok(!html.includes('🏠 Về Dashboard'), 'Dashboard action button must not use raw house emoji');
+    assert.ok(!html.includes('📝 Xem chi tiết đáp án'), 'Review action button must not use raw note emoji');
+    assert.ok(!html.includes('📕 Sổ tay câu sai'), 'Mistakes action button must not use raw book emoji');
+    assert.ok(!html.includes('🔄 Làm lại đề này'), 'Retry action button must not use raw repeat emoji');
+  });
+
+  test('Tactile mechanical switch audio feedback in audio.js', () => {
+    const audioPath = path.join(__dirname, '..', 'public', 'js', 'audio.js');
+    const audioCode = fs.readFileSync(audioPath, 'utf8');
+    assert.ok(audioCode.includes("Icons.get('volume-2'"), 'audio.js must integrate Lucide volume icon');
+    assert.ok(audioCode.includes("Icons.get('volume-x'"), 'audio.js must integrate Lucide volume mute icon');
+    assert.ok(audioCode.includes("osc.type = 'triangle'"), 'playClick must use velvety triangle wave');
+  });
+
+  test('Quiz progress badge tap-to-scroll implementation in quiz.js', () => {
+    const quizPath = path.join(__dirname, '..', 'public', 'js', 'quiz.js');
+    const quizCode = fs.readFileSync(quizPath, 'utf8');
+    assert.ok(quizCode.includes("progressEl.dataset.scrollBound"), 'quiz.js must guard event attachment with scrollBound');
+    assert.ok(quizCode.includes("highlight-pulse"), 'quiz.js must trigger highlight-pulse animation');
+    assert.ok(quizCode.includes("scrollIntoView"), 'quiz.js must smoothly scroll to palette');
   });
 });
