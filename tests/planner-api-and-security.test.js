@@ -61,7 +61,7 @@ function httpPost(path, data, headers = {}) {
 }
 
 describe('Task 9 & 11 — Learning Planner API Contracts & Security Gates', () => {
-  const testStudentId = 'student_api_test_01';
+  const testStudentId = 'student_api_test_' + Date.now();
 
   test('9.1 GET & PUT /api/v2/learning/profile manage learning profile cleanly', async () => {
     // 1. GET default profile

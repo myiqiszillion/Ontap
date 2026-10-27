@@ -25,6 +25,7 @@ const STATIC_SHELL = [
   '/css/command-palette.css',
   '/css/result-view.css',
   '/css/icons.css',
+  '/css/athenaeum-theme.css',
   '/js/icons.js',
   '/js/audio.js',
   '/js/api.js',

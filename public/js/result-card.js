@@ -58,23 +58,23 @@ const ResultCard = {
     ctx.fillStyle = '#f59e0b';
     ctx.font = 'bold 22px Inter, sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText('TRƯỜNG THPT NGUYỄN THỊ MINH KHAI', 70, 85);
+    ctx.fillText('TRƯỜNG THPT NGUYỄN THỊ MINH KHAI (EST. 1913)', 70, 85);
 
     ctx.fillStyle = '#94a3b8';
     ctx.font = '600 15px Inter, sans-serif';
-    ctx.fillText('NỀN TẢNG ÔN TẬP THÔNG MINH • CHƯƠNG TRÌNH GDPT 2018', 70, 112);
+    ctx.fillText('VIỆN HÀN LÂM SỐ • CHỨNG NHẬN NĂNG LỰC KHẢO THÍ GDPT 2018', 70, 112);
 
     // Header Right: Badge
     ctx.fillStyle = 'rgba(217, 119, 6, 0.2)';
-    this.roundRect(ctx, 940, 65, 190, 44, 22, true, false);
+    this.roundRect(ctx, 920, 65, 210, 44, 22, true, false);
     ctx.strokeStyle = '#d97706';
     ctx.lineWidth = 1.5;
-    this.roundRect(ctx, 940, 65, 190, 44, 22, false, true);
+    this.roundRect(ctx, 920, 65, 210, 44, 22, false, true);
 
     ctx.fillStyle = '#fbbf24';
     ctx.font = 'bold 15px Inter, sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('CHỨNG NHẬN KẾT QUẢ', 1035, 93);
+    ctx.fillText('CHỨNG CHỈ DANH DỰ', 1025, 93);
 
     // Divider Line
     ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';

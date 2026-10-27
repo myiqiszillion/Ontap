@@ -1,0 +1,290 @@
+/* ═════════════════════════════════════════════════════════════
+   THE GRAND DIGITAL ATHENAEUM — NTMK BESPOKE SIGNATURE THEME
+   Inspired by 113-year Scholastic Heritage (Est. 1913) & Neo-Modernism
+   Palette: Imperial Violet (#7c3aed), Heritage Amber Gold (#f59e0b), Parchment (#fcfbf7)
+   ═════════════════════════════════════════════════════════════ */
+
+/* ─── 1. Brand Tokens & Typography ─── */
+:root {
+  --athenaeum-violet-dark: #3b0764;
+  --athenaeum-violet: #7c3aed;
+  --athenaeum-violet-hover: #6d28d9;
+  --athenaeum-violet-glow: rgba(124, 58, 237, 0.28);
+  --athenaeum-violet-soft: rgba(124, 58, 237, 0.08);
+
+  --athenaeum-gold: #d97706;
+  --athenaeum-gold-bright: #f59e0b;
+  --athenaeum-gold-glow: rgba(245, 158, 11, 0.28);
+  --athenaeum-gold-soft: rgba(245, 158, 11, 0.1);
+  --athenaeum-gold-border: rgba(245, 158, 11, 0.22);
+
+  --athenaeum-parchment: #fcfbf7;
+  --athenaeum-parchment-border: rgba(217, 119, 6, 0.18);
+  --athenaeum-paper-card: rgba(255, 255, 255, 0.92);
+
+  --font-serif-scholastic: 'Playfair Display', Georgia, Cambria, serif;
+}
+
+/* ─── 2. App Shell Header (Scholastic Glassmorphism) ─── */
+.app-shell-header {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(24px) saturate(1.8) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.8) !important;
+  border-bottom: 1px solid var(--athenaeum-gold-border) !important;
+  box-shadow: 0 4px 20px -2px rgba(124, 58, 237, 0.05) !important;
+}
+
+[data-theme="dark"] .app-shell-header {
+  background: rgba(9, 13, 22, 0.92) !important;
+  border-bottom: 1px solid var(--athenaeum-gold-border) !important;
+  box-shadow: 0 4px 25px -2px rgba(0, 0, 0, 0.6) !important;
+}
+
+.brand-logo {
+  gap: 10px;
+}
+
+.brand-logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px var(--athenaeum-gold-glow);
+  border: 1px solid var(--athenaeum-gold-bright);
+}
+
+.brand-title {
+  font-family: var(--font-serif-scholastic) !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  font-size: 1.45rem !important;
+  letter-spacing: -0.01em !important;
+  background: linear-gradient(135deg, #f59e0b 0%, #c084fc 50%, #7c3aed 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.brand-badge {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  background: var(--athenaeum-gold-soft) !important;
+  color: var(--athenaeum-gold-bright) !important;
+  border: 1px solid var(--athenaeum-gold-border) !important;
+  padding: 3px 8px !important;
+}
+
+/* ─── 3. Navigation Items (Tactile Pill States) ─── */
+.nav-item-btn {
+  font-weight: 600 !important;
+  border-radius: var(--radius-pill) !important;
+  padding: 8px 16px !important;
+}
+
+.nav-item-btn.active {
+  background: var(--athenaeum-violet-soft) !important;
+  color: var(--athenaeum-violet) !important;
+  border: 1px solid rgba(124, 58, 237, 0.25) !important;
+}
+
+[data-theme="dark"] .nav-item-btn.active {
+  background: rgba(124, 58, 237, 0.18) !important;
+  color: #c084fc !important;
+  border-color: rgba(192, 132, 252, 0.3) !important;
+}
+
+/* ─── 4. Grand Dashboard Hero (The Athenaeum Codex) ─── */
+.dashboard-hero-card {
+  background: radial-gradient(ellipse at top left, rgba(124, 58, 237, 0.12), transparent 70%),
+              radial-gradient(ellipse at bottom right, rgba(245, 158, 11, 0.1), transparent 70%),
+              var(--bg-surface) !important;
+  border: 1.5px solid var(--athenaeum-gold-border) !important;
+  box-shadow: 0 10px 30px -5px rgba(124, 58, 237, 0.07), 0 0 0 1px rgba(245, 158, 11, 0.08) !important;
+  border-radius: 20px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-hero-card::before {
+  content: '1913';
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  font-family: var(--font-serif-scholastic);
+  font-size: 8rem;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(245, 158, 11, 0.035);
+  pointer-events: none;
+  line-height: 1;
+  user-select: none;
+}
+
+.hero-tag {
+  background: var(--athenaeum-violet-soft) !important;
+  color: var(--athenaeum-violet) !important;
+  border: 1px solid rgba(124, 58, 237, 0.25) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  font-size: 0.72rem !important;
+}
+
+[data-theme="dark"] .hero-tag {
+  color: #c084fc !important;
+}
+
+.hero-title {
+  font-family: var(--font-serif-scholastic) !important;
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--text-main) !important;
+}
+
+/* ─── 5. Bento Grid Metrics Cards ─── */
+.metric-card {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 16px !important;
+  padding: 18px 20px !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: var(--athenaeum-gold-bright) !important;
+  box-shadow: 0 12px 24px -6px var(--athenaeum-gold-soft), 0 0 0 1px var(--athenaeum-gold-bright) !important;
+}
+
+.metric-card .metric-icon {
+  background: var(--athenaeum-gold-soft) !important;
+  color: var(--athenaeum-gold-bright) !important;
+  border-radius: 12px !important;
+  width: 48px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.metric-card .metric-value {
+  font-family: 'Space Grotesk', 'Inter', monospace !important;
+  font-size: 1.85rem !important;
+  font-weight: 800 !important;
+  color: var(--text-main) !important;
+}
+
+/* ─── 6. Exam Sanctuary 2.0 (Phòng thi Tĩnh Lặng) ─── */
+.quiz-header {
+  border-bottom: 1px solid var(--athenaeum-gold-border) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.timer {
+  background: var(--athenaeum-gold-soft) !important;
+  border: 1px solid var(--athenaeum-gold-border) !important;
+  border-radius: var(--radius-pill) !important;
+  padding: 6px 14px !important;
+  color: var(--athenaeum-gold-bright) !important;
+  font-family: 'Space Grotesk', 'Inter', monospace !important;
+  font-weight: 800 !important;
+  box-shadow: 0 0 15px var(--athenaeum-gold-soft) !important;
+}
+
+/* Split-Pane Passage (Parchment Paper Feel) */
+.tf-split-passage-pane {
+  background: var(--athenaeum-parchment) !important;
+  border: 1px solid var(--athenaeum-parchment-border) !important;
+  border-left: 4px solid var(--athenaeum-gold-bright) !important;
+  border-radius: 14px !important;
+  padding: 22px 24px !important;
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.05) !important;
+}
+
+[data-theme="dark"] .tf-split-passage-pane {
+  background: rgba(17, 23, 38, 0.85) !important;
+  border: 1px solid var(--athenaeum-gold-border) !important;
+  border-left: 4px solid var(--athenaeum-gold-bright) !important;
+}
+
+.tf-passage-badge {
+  font-family: var(--font-serif-scholastic) !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  color: var(--athenaeum-gold-bright) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+}
+
+/* Question Dots (Horology Matrix) */
+.q-dot {
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  font-family: 'Space Grotesk', 'Inter', monospace !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.q-dot.current {
+  border: 2px solid var(--athenaeum-gold-bright) !important;
+  box-shadow: 0 0 12px var(--athenaeum-gold-glow) !important;
+  transform: scale(1.08) !important;
+}
+
+.q-dot.answered {
+  background: var(--athenaeum-violet) !important;
+  color: #ffffff !important;
+}
+
+.q-dot.flagged::after {
+  background: #ef4444 !important;
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.8) !important;
+}
+
+/* Tactile Flag Button */
+.btn-flag-toggle {
+  background: var(--bg-surface-secondary) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-pill) !important;
+  padding: 6px 14px !important;
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  color: var(--text-sub) !important;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-flag-toggle:hover {
+  border-color: #ef4444 !important;
+  color: #ef4444 !important;
+}
+
+.btn-flag-toggle.active {
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-color: #ef4444 !important;
+  color: #ef4444 !important;
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* ─── 7. Result View (Imperial Honors) ─── */
+.result-score-gauge svg circle.gauge-bar {
+  stroke: var(--athenaeum-gold-bright) !important;
+  filter: drop-shadow(0 0 8px var(--athenaeum-gold-glow));
+}
+
+.btn-share-card {
+  background: linear-gradient(135deg, var(--athenaeum-gold) 0%, var(--athenaeum-gold-bright) 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 6px 20px -2px var(--athenaeum-gold-glow) !important;
+  border: none !important;
+}
+
+.btn-share-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px -2px var(--athenaeum-gold-glow) !important;
+}
