@@ -58,6 +58,12 @@ const DashboardView = {
             <button class="btn btn-outline" style="border-color: #f59e0b; color: #f59e0b;" onclick="app.navigateTo('checker')">
               🔍 Dò trắc nghiệm
             </button>
+            <button class="btn btn-outline" style="border-color: #d97706; color: #d97706;" onclick="app.navigateTo('custom-exam')">
+              🎯 Tự tạo đề thi
+            </button>
+            <button class="btn btn-outline" style="border-color: #dc2626; color: #dc2626;" onclick="app.navigateTo('mistakes')">
+              📕 Sổ tay câu sai
+            </button>
             <button class="btn btn-outline" onclick="app.startOnboarding(true)">
               ⚙️ Đổi mục tiêu
             </button>
@@ -111,6 +117,14 @@ const DashboardView = {
             <div class="metric-info">
               <div class="metric-value">${metrics.totalTimeMinutes} <small>phút</small></div>
               <div class="metric-label">Thời gian đã ôn luyện</div>
+            </div>
+          </div>
+
+          <div class="metric-card" onclick="app.navigateTo('mistakes')" style="cursor: pointer;" title="Xem chi tiết các câu sai cần phục hồi">
+            <div class="metric-icon">📕</div>
+            <div class="metric-info">
+              <div class="metric-value" style="color: #dc2626;">${typeof MistakeStore !== 'undefined' ? MistakeStore.getActiveCount() : 0}</div>
+              <div class="metric-label">Câu sai cần phục hồi</div>
             </div>
           </div>
 

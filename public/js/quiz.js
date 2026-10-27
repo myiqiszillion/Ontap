@@ -365,13 +365,30 @@ const Quiz = {
 
         const partial = TF_MOET_MAP[correctCount] || 0.0;
         earnedPoints += partial;
+        if (correctCount < statements.length && window.MistakeStore) {
+          MistakeStore.recordMistake({
+            subjectId: this.subject,
+            lessonName: q.lessonTitle || 'Bài thi trắc nghiệm',
+            question: q,
+            userAnswer: ga
+          });
+        }
 
       } else if (isShortAnswer) {
         // Short Answer: 1.0 point (or subject weighted)
         totalPoints += 1.0;
         const isCorrect = typeof ScoringEngine !== 'undefined' && ScoringEngine.evaluateShortAnswer(this.answers[i], q).isCorrect;
 
-        if (isCorrect) earnedPoints += 1.0;
+        if (isCorrect) {
+          earnedPoints += 1.0;
+        } else if (window.MistakeStore) {
+          MistakeStore.recordMistake({
+            subjectId: this.subject,
+            lessonName: q.lessonTitle || 'Bài thi trắc nghiệm',
+            question: q,
+            userAnswer: this.answers[i]
+          });
+        }
 
       } else {
         // MCQ: 1.0 point (or subject weighted)
@@ -380,8 +397,16 @@ const Quiz = {
           ? q.mcqPayload.correctOptionIndex
           : (q.correctAnswer !== undefined ? q.correctAnswer : q.correct);
 
-        if (this.answers[i] !== undefined && Number(this.answers[i]) === Number(correctOpt)) {
+        const isMcqCorrect = (this.answers[i] !== undefined && Number(this.answers[i]) === Number(correctOpt));
+        if (isMcqCorrect) {
           earnedPoints += 1.0;
+        } else if (window.MistakeStore) {
+          MistakeStore.recordMistake({
+            subjectId: this.subject,
+            lessonName: q.lessonTitle || 'Bài thi trắc nghiệm',
+            question: q,
+            userAnswer: this.answers[i]
+          });
         }
       }
     });

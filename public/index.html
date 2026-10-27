@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="css/planner.css">
   <link rel="stylesheet" href="css/checker.css">
   <link rel="stylesheet" href="css/heritage-theme.css">
+  <link rel="stylesheet" href="css/mistakes.css">
+  <link rel="stylesheet" href="css/custom-exam.css">
+  <link rel="stylesheet" href="css/theme-focus.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
@@ -45,6 +48,12 @@
         </button>
         <button class="nav-item-btn" data-route="checker" onclick="app.navigateTo('checker')">
           🔍 Dò trắc nghiệm
+        </button>
+        <button class="nav-item-btn" data-route="custom-exam" onclick="app.navigateTo('custom-exam')">
+          🎯 Tự tạo đề
+        </button>
+        <button class="nav-item-btn" data-route="mistakes" onclick="app.navigateTo('mistakes')">
+          📕 Sổ câu sai <span id="header-mistakes-badge" class="badge-count hidden">0</span>
         </button>
         <button class="nav-item-btn" data-route="planner" onclick="app.navigateTo('planner')">
           📅 Kế hoạch học tập
@@ -561,6 +570,16 @@
        ═══════════════════════════════════════════════════════════ -->
     <section id="screen-checker" class="screen" aria-label="Bộ công cụ dò trắc nghiệm"></section>
 
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 13: SỔ TAY CÂU SAI & PHỤC HỒI KIẾN THỨC
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-mistakes" class="screen" aria-label="Sổ tay câu sai"></section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 14: TỰ TẠO ĐỀ THI THEO YÊU CẦU (CUSTOM EXAM)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-custom-exam" class="screen" aria-label="Tự tạo đề thi theo yêu cầu"></section>
+
   </main>
 
   <!-- Modular Scripts Architecture -->
@@ -580,6 +599,9 @@
   <script defer src="js/quiz.js"></script>
   <script defer src="js/checker.js"></script>
   <script defer src="js/keyboard.js"></script>
+  <script defer src="js/mistakes.js"></script>
+  <script defer src="js/custom-exam.js"></script>
+  <script defer src="js/theme-focus.js"></script>
   <script defer src="js/diagnostic-view.js"></script>
   <script defer src="js/planner-view.js"></script>
   <script defer src="js/auth-view.js"></script>

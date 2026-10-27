@@ -6,7 +6,7 @@
 const AppRouter = {
   currentRoute: 'dashboard',
 
-  ROUTES: ['onboarding', 'dashboard', 'subjects', 'topics', 'quiz', 'study', 'flashcard', 'practice', 'result', 'announcements', 'diagnostic', 'planner', 'checker'],
+  ROUTES: ['onboarding', 'dashboard', 'subjects', 'topics', 'quiz', 'study', 'flashcard', 'practice', 'result', 'announcements', 'diagnostic', 'planner', 'checker', 'mistakes', 'custom-exam'],
 
 
   init() {

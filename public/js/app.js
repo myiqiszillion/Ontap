@@ -112,6 +112,10 @@ const app = {
   },
 
   toggleTheme() {
+    if (window.ThemeManager) {
+      ThemeManager.cycleNext();
+      return;
+    }
     const isDark = document.body.getAttribute('data-theme') === 'dark';
     const toggleBtn = document.getElementById('theme-toggle');
 
@@ -159,6 +163,10 @@ const app = {
       if (window.PlannerView) PlannerView.init();
     } else if (routeId === 'checker') {
       if (window.Checker) Checker.init(param || this.currentSubject || 'lichsu11');
+    } else if (routeId === 'mistakes') {
+      if (window.MistakeView) MistakeView.render();
+    } else if (routeId === 'custom-exam') {
+      if (window.CustomExam) CustomExam.init(param || this.currentSubject || 'lichsu11');
     }
   },
 

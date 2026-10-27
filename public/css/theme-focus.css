@@ -1,0 +1,151 @@
+/**
+ * NTMK Theme & Focus Mode Styles
+ */
+
+/* ═══════════════════════════════════════════════════════════
+   THEME: MIDNIGHT DARK (OLED + EMERALD / CYAN ACCENTS)
+   ═══════════════════════════════════════════════════════════ */
+body.theme-midnight {
+  --bg-color: #0b0f19;
+  --bg-alt: #111827;
+  --card-bg: #182234;
+  --border-color: #273549;
+  --text-color: #f1f5f9;
+  --text-dim: #94a3b8;
+  --primary-color: #06b6d4;
+  --primary-hover: #0891b2;
+  --accent-color: #10b981;
+}
+
+body.theme-midnight .app-shell-header {
+  background: rgba(17, 24, 39, 0.92);
+  border-bottom: 1px solid #1f293d;
+}
+
+body.theme-midnight .mobile-bottom-nav {
+  background: rgba(17, 24, 39, 0.95);
+  border-top: 1px solid #1f293d;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   THEME: ACADEMIC CLEAN (CRISP SEPIA / PAPER MINIMAL)
+   ═══════════════════════════════════════════════════════════ */
+body.theme-academic {
+  --bg-color: #fcfbf9;
+  --bg-alt: #f4f1ea;
+  --card-bg: #ffffff;
+  --border-color: #e5dfd3;
+  --text-color: #26221c;
+  --text-dim: #71695d;
+  --primary-color: #3b6088;
+  --primary-hover: #2d4a6a;
+  --accent-color: #b85d19;
+}
+
+body.theme-academic .app-shell-header {
+  background: rgba(252, 251, 249, 0.94);
+  border-bottom: 1px solid #e5dfd3;
+}
+
+body.theme-academic .mobile-bottom-nav {
+  background: rgba(252, 251, 249, 0.97);
+  border-top: 1px solid #e5dfd3;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FOCUS MODE (Chế độ tập trung giải đề)
+   ═══════════════════════════════════════════════════════════ */
+body.focus-mode-active .app-shell-header,
+body.focus-mode-active .mobile-bottom-nav {
+  display: none !important;
+}
+
+body.focus-mode-active #main-content {
+  padding-top: 20px !important;
+  max-width: 900px;
+}
+
+/* Floating Pomodoro Bar */
+.focus-floating-bar {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  padding: 6px 16px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  animation: slideInDown 0.3s ease;
+}
+
+.focus-bar-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.focus-indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.focus-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.focus-timer-text {
+  font-family: monospace;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fbbf24;
+}
+
+.focus-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.focus-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.focus-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.focus-btn.exit {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+}
+
+.focus-btn.exit:hover {
+  background: #dc2626;
+  color: #ffffff;
+}

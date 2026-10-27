@@ -519,6 +519,9 @@ const Study = {
       this.practiceMastered++;
       // Remove from queue
       this.practiceQueue.shift();
+      if (window.MistakeStore && this.currentPracticeQuestion) {
+        MistakeStore.recordSuccess(this.currentPracticeQuestion.id || this.currentPracticeQuestion.question);
+      }
     } else {
       if (window.SoundFX) SoundFX.playWrong();
       this.practiceScore.wrong++;
@@ -526,6 +529,14 @@ const Study = {
       const qIndex = this.practiceQueue.shift();
       this.practiceQueue.push(qIndex);
       WrongTracker.addWrong(this.subject, this.currentPracticeQuestion);
+      if (window.MistakeStore && this.currentPracticeQuestion) {
+        MistakeStore.recordMistake({
+          subjectId: this.subject,
+          lessonName: this.currentPracticeQuestion.lessonTitle || 'Luyện tập chuyên đề',
+          question: this.currentPracticeQuestion,
+          userAnswer: null
+        });
+      }
     }
     this.savePracticeProgress();
     // Show next button
