@@ -51,17 +51,34 @@ const AppRouter = {
       targetEl.removeAttribute('aria-hidden');
     }
 
-    // Update desktop header active tabs
+    // Update desktop header active tabs (Finding A1: Structure and active state)
     document.querySelectorAll('.header-nav-desktop .nav-item-btn').forEach(btn => {
       const target = btn.getAttribute('data-route');
-      btn.classList.toggle('active', target === routeId);
+      const isActive = target === routeId;
+      btn.classList.toggle('active', isActive);
+      if (isActive) {
+        btn.setAttribute('aria-current', 'page');
+      } else {
+        btn.removeAttribute('aria-current');
+      }
     });
 
     // Update mobile bottom bar active tabs
     document.querySelectorAll('.mobile-bottom-nav .mob-nav-item').forEach(btn => {
       const target = btn.getAttribute('data-route');
-      btn.classList.toggle('active', target === routeId);
+      const isActive = target === routeId;
+      btn.classList.toggle('active', isActive);
+      if (isActive) {
+        btn.setAttribute('aria-current', 'page');
+      } else {
+        btn.removeAttribute('aria-current');
+      }
     });
+
+    // Toggle onboarding isolation state on body (Finding U2: Full nav competes with onboarding)
+    if (typeof document !== 'undefined' && document.body) {
+      document.body.classList.toggle('is-onboarding', routeId === 'onboarding');
+    }
 
     // Trigger view-specific render hooks
     if (routeId === 'dashboard') {

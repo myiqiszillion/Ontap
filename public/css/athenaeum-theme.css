@@ -389,3 +389,28 @@ button.drawer-app-item {
   width: 100%;
   text-align: center;
 }
+
+/* ─── Distraction-Free Onboarding Isolation Mode (Finding U2) ─── */
+body.is-onboarding .header-nav-desktop,
+body.is-onboarding .mobile-bottom-nav,
+body.is-onboarding .header-actions-group .header-search-pill-btn,
+body.is-onboarding .header-actions-group .sound-btn,
+body.is-onboarding .header-actions-group .header-auth-btn,
+body.is-onboarding .header-actions-group #header-student-badge {
+  display: none !important;
+}
+
+/* ─── High Contrast Step Badges & Wizard Spacing (Findings A3 & B1) ─── */
+.badge-subtle {
+  background: rgba(30, 64, 175, 0.08) !important;
+  color: #1e40af !important;
+  border: 1px solid rgba(30, 64, 175, 0.22) !important;
+  font-weight: 600 !important;
+  font-size: 0.82rem !important;
+}
+
+[data-theme="dark"] .badge-subtle {
+  background: rgba(147, 197, 253, 0.12) !important;
+  color: #93c5fd !important;
+  border-color: rgba(147, 197, 253, 0.25) !important;
+}

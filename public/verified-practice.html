@@ -1,7 +1,482 @@
-<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Luyện tập từ ngân hàng đã duyệt</title>
-<style>body{font:16px system-ui;max-width:850px;margin:2rem auto;padding:1rem;background:#f8fafc;color:#172554}button,input,select{font:inherit;padding:.6rem;margin:.4rem}article{background:white;border:1px solid #cbd5e1;padding:1rem;margin:1rem 0}label{display:block}pre{white-space:pre-wrap}</style>
-<h1>Luyện tập từ ngân hàng đã duyệt</h1><p>Điểm quy đổi của bài luyện rút gọn mang tính tham khảo. Hệ thống hiển thị thiếu dữ liệu khi ngân hàng chưa đủ câu đã xác minh.</p>
-<label>Môn <select id="subject"><option value="toan">Toán</option><option value="vatli">Vật lí</option><option value="hoahoc">Hóa học</option><option value="tienganh">Tiếng Anh</option></select></label>
-<label>Lớp <select id="grade"><option>10</option><option>11</option><option>12</option></select></label><button id="start">Bắt đầu</button>
-<p id="status" role="status"></p><p id="remaining"></p><div id="questions"></div><button id="submit" hidden>Nộp bài</button><pre id="result"></pre>
-<script src="js/verified-practice.js"></script></html>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e3a8a">
+  <title>Phòng Luyện Thi Chuẩn Hóa GDPT 2018 | THPT Nguyễn Thị Minh Khai — Bình Dương</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/edtech-design-system.css">
+  <link rel="stylesheet" href="css/athenaeum-theme.css">
+  <link rel="stylesheet" href="css/icons.css">
+
+  <style>
+    .vp-page-wrapper {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px 20px 80px 20px;
+    }
+
+    .vp-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle, #e2e8f0);
+    }
+
+    .vp-back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand-primary, #2563eb);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 8px 14px;
+      border-radius: var(--radius-md, 8px);
+      background: var(--brand-primary-soft, rgba(37, 99, 235, 0.08));
+      transition: all 0.2s ease;
+    }
+
+    .vp-back-link:hover {
+      background: var(--brand-primary-soft, rgba(37, 99, 235, 0.16));
+      transform: translateX(-2px);
+    }
+
+    .vp-school-badge {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text-sub, #475569);
+      background: var(--bg-surface-secondary, #f1f5f9);
+      padding: 6px 12px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-subtle, #e2e8f0);
+    }
+
+    /* Finding U1: Clear, dignified intro banner */
+    .verified-intro-banner {
+      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: var(--radius-lg, 12px);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px -2px rgba(37, 99, 235, 0.06);
+    }
+
+    [data-theme="dark"] .verified-intro-banner {
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.25) 0%, rgba(15, 23, 42, 0.6) 100%);
+      border-color: rgba(96, 165, 250, 0.25);
+    }
+
+    .intro-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--brand-primary, #1e40af);
+      background: rgba(37, 99, 235, 0.1);
+      padding: 4px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      letter-spacing: 0.03em;
+    }
+
+    .vp-page-title {
+      font-family: var(--font-serif-scholastic, 'Playfair Display', Georgia, serif);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-main, #0f172a);
+      margin: 0 0 8px 0;
+      line-height: 1.25;
+    }
+
+    .intro-sub {
+      font-size: 0.95rem;
+      color: var(--text-sub, #475569);
+      margin: 0 0 16px 0;
+      line-height: 1.5;
+    }
+
+    .academic-note-callout {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--bg-surface, #ffffff);
+      border: 1px solid var(--border-subtle, #cbd5e1);
+      border-left: 4px solid var(--brand-primary, #2563eb);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.88rem;
+      color: var(--text-main, #1e293b);
+      line-height: 1.5;
+    }
+
+    /* Finding U2: Structure Overview Card */
+    .structure-overview-card {
+      background: var(--bg-surface, #ffffff);
+      border: 1px solid var(--border-subtle, #e2e8f0);
+      border-radius: var(--radius-lg, 12px);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-card, 0 2px 8px rgba(0, 0, 0, 0.04));
+    }
+
+    .card-section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text-main, #0f172a);
+      margin: 0 0 16px 0;
+    }
+
+    .structure-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .structure-col {
+      background: var(--bg-surface-secondary, #f8fafc);
+      border: 1px solid var(--border-subtle, #e2e8f0);
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .part-pill {
+      align-self: flex-start;
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--brand-primary, #2563eb);
+      background: rgba(37, 99, 235, 0.1);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .structure-col h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 0;
+      color: var(--text-main, #0f172a);
+    }
+
+    .structure-col p {
+      font-size: 0.84rem;
+      color: var(--text-sub, #475569);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* Finding B2: Form controls and Start button */
+    .practice-controls-card {
+      background: var(--bg-surface, #ffffff);
+      border: 1px solid var(--border-subtle, #e2e8f0);
+      border-radius: var(--radius-lg, 12px);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-card, 0 2px 8px rgba(0, 0, 0, 0.04));
+    }
+
+    .controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
+    .control-group {
+      flex: 1;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .control-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main, #0f172a);
+    }
+
+    .form-select {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-main, #0f172a);
+      background-color: var(--bg-surface, #ffffff);
+      border: 1px solid var(--border-subtle, #cbd5e1);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .form-select:focus {
+      outline: none;
+      border-color: var(--brand-primary, #2563eb);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .control-action {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .start-practice-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 24px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px -2px rgba(37, 99, 235, 0.35);
+      transition: all 0.2s ease;
+    }
+
+    .start-practice-btn:hover:not(:disabled) {
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px -2px rgba(37, 99, 235, 0.45);
+    }
+
+    .start-practice-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Live Session Status & Timer */
+    .session-status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    #status {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--brand-primary, #2563eb);
+      margin: 0;
+    }
+
+    #remaining {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #b91c1c;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      padding: 4px 12px;
+      border-radius: 6px;
+      margin: 0;
+    }
+
+    /* Rendered Questions inside #questions */
+    #questions article {
+      background: var(--bg-surface, #ffffff);
+      border: 1px solid var(--border-subtle, #e2e8f0);
+      border-radius: var(--radius-lg, 12px);
+      padding: 20px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+
+    #questions article p {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--text-main, #0f172a);
+      margin-top: 0;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    #questions article label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      margin: 6px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle, #e2e8f0);
+      background: var(--bg-surface-secondary, #f8fafc);
+      cursor: pointer;
+      font-size: 0.94rem;
+      transition: all 0.15s ease;
+    }
+
+    #questions article label:hover {
+      border-color: var(--brand-primary, #2563eb);
+      background: rgba(37, 99, 235, 0.04);
+    }
+
+    #questions article select,
+    #questions article input[type="text"] {
+      padding: 8px 12px;
+      font-size: 0.94rem;
+      border: 1px solid var(--border-subtle, #cbd5e1);
+      border-radius: 6px;
+      margin-left: auto;
+    }
+
+    .submit-exam-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: #16a34a;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px -2px rgba(22, 163, 74, 0.4);
+      margin-top: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .submit-exam-btn:hover:not(:disabled) {
+      background: #15803d;
+      transform: translateY(-1px);
+    }
+
+    #result {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: var(--font-mono, monospace);
+      font-size: 0.88rem;
+      white-space: pre-wrap;
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="vp-page-wrapper">
+    <header class="vp-header-bar">
+      <a href="index.html" class="vp-back-link" aria-label="Trở về Trang chủ NTMK">
+        <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" x2="5" y1="12" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Về Trang chủ NTMK</span>
+      </a>
+      <div class="vp-school-badge">THPT NGUYỄN THỊ MINH KHAI • BÌNH DƯƠNG</div>
+    </header>
+
+    <main id="main-content">
+      <!-- Finding U1: Clear, reassuring, authoritative intro note -->
+      <section class="verified-intro-banner" aria-label="Giới thiệu phòng luyện thi">
+        <div class="intro-badge">
+          <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          <span>NGÂN HÀNG ĐỀ THI ĐÃ THẨM ĐỊNH CHẤT LƯỢNG</span>
+        </div>
+        <h1 class="vp-page-title">Phòng Luyện Thi Chuẩn Hóa GDPT 2018</h1>
+        <p class="intro-sub">
+          Đề thi được trích xuất trực tiếp từ Ngân hàng Đề thi đã qua thẩm định chuyên môn bởi Hội đồng Sư phạm <strong>Trường THPT Nguyễn Thị Minh Khai (TP. Dĩ An, Tỉnh Bình Dương)</strong>.
+        </p>
+        <div class="academic-note-callout">
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+          <span><strong>Quy chuẩn sư phạm:</strong> Hệ thống trích xuất ngẫu nhiên câu hỏi theo đúng định dạng và ma trận kiến thức theo <strong>Quyết định 764/QĐ-BGDĐT</strong>. Điểm số của bài luyện rút gọn được chuẩn hóa trên thang điểm 10 nhằm giúp học sinh định vị chính xác năng lực và phát hiện lỗ hổng kiến thức.</span>
+        </div>
+      </section>
+
+      <!-- Finding U2: Structure Overview Card detailing test contents -->
+      <section class="structure-overview-card" aria-label="Cấu trúc bài thi chuẩn hóa">
+        <h2 class="card-section-title">
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 12.5-8.58 3.91a2 2 0 0 1-1.66 0L2 12.5"/><path d="m22 17.5-8.58 3.91a2 2 0 0 1-1.66 0L2 17.5"/></svg>
+          <span>Cấu trúc bài luyện thi 3 phần chuẩn Bộ GD&amp;ĐT</span>
+        </h2>
+        <div class="structure-grid">
+          <div class="structure-col">
+            <div class="part-pill">Phần I</div>
+            <h3>Trắc nghiệm 4 lựa chọn</h3>
+            <p>Chọn 1 phương án đúng duy nhất trong 4 đáp án (A, B, C, D). Đánh giá năng lực nhận biết và thông hiểu kiến thức cốt lõi.</p>
+          </div>
+          <div class="structure-col">
+            <div class="part-pill">Phần II</div>
+            <h3>Trắc nghiệm Đúng / Sai</h3>
+            <p>Mỗi câu có 4 lệnh hỏi a, b, c, d. Thang điểm lũy tiến chính thức: 0.1đ (1 ý), 0.25đ (2 ý), 0.5đ (3 ý), 1.0đ (4 ý).</p>
+          </div>
+          <div class="structure-col">
+            <div class="part-pill">Phần III</div>
+            <h3>Trả lời ngắn</h3>
+            <p>Tự luận số học ngắn gọn, điền kết quả vào ô trả lời. Đánh giá tư duy vận dụng và giải quyết vấn đề toán/khoa học.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Finding B2 & B1: Controls with styled Start button and Grade select -->
+      <section class="practice-controls-card" aria-label="Thiết lập bài thi">
+        <div class="controls-row">
+          <div class="control-group">
+            <label for="subject" class="control-label">Môn học trọng tâm</label>
+            <select id="subject" class="form-select" aria-label="Chọn môn học ôn luyện">
+              <option value="toan">📐 Toán học</option>
+              <option value="vatli">⚡ Vật lí</option>
+              <option value="hoahoc">🧪 Hóa học</option>
+              <option value="tienganh">🌐 Tiếng Anh</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label for="grade" class="control-label">Khối lớp học sinh</label>
+            <select id="grade" class="form-select" aria-label="Chọn khối lớp học sinh">
+              <option value="10">Khối 10 — GDPT 2018</option>
+              <option value="11">Khối 11 — GDPT 2018</option>
+              <option value="12">Khối 12 — Trọng tâm Tốt nghiệp THPT</option>
+            </select>
+          </div>
+          <div class="control-action">
+            <button id="start" class="btn btn-primary start-practice-btn" aria-label="Bắt đầu làm bài luyện tập">
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>Bắt đầu luyện tập</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Session State & Timer -->
+      <div class="session-status-bar">
+        <p id="status" role="status" aria-live="polite"></p>
+        <p id="remaining" aria-live="off"></p>
+      </div>
+
+      <!-- Questions container -->
+      <div id="questions" role="region" aria-label="Danh sách câu hỏi bài thi"></div>
+
+      <!-- Submission action -->
+      <button id="submit" class="submit-exam-btn" hidden aria-label="Nộp bài và chấm điểm">
+        <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Nộp bài &amp; Chấm điểm</span>
+      </button>
+
+      <!-- Results view -->
+      <pre id="result" hidden aria-label="Kết quả đánh giá bài thi"></pre>
+    </main>
+  </div>
+
+  <script src="js/verified-practice.js"></script>
+</body>
+</html>

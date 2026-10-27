@@ -67,39 +67,75 @@ const Onboarding = {
     const container = document.getElementById('step-1-options');
     if (!container) return;
 
+    // Finding A2: Grade options grouped as radiogroup for accessibility
+    container.setAttribute('role', 'radiogroup');
+    container.setAttribute('aria-label', 'Chọn khối lớp học sinh');
+
     const grades = [
       { grade: 10, title: 'Lớp 10', badge: 'Khởi đầu THPT', desc: 'Làm quen chương trình GDPT 2018 mới, định hướng tổ hợp môn' },
       { grade: 11, title: 'Lớp 11', badge: 'Tăng tốc', desc: 'Khối lượng kiến thức trọng tâm, chuẩn bị nền tảng lớp 12' },
       { grade: 12, title: 'Lớp 12', badge: 'Về đích', desc: 'Trọng tâm thi Tốt nghiệp THPT và Xét tuyển Đại học' }
     ];
 
-    container.innerHTML = grades.map(g => `
-      <div class="choice-card ${this.data.grade === g.grade ? 'selected' : ''}"
-           role="button"
-           tabindex="0"
-           aria-pressed="${this.data.grade === g.grade}"
-           onclick="Onboarding.selectGrade(${g.grade})">
+    container.innerHTML = grades.map(g => {
+      const isSelected = this.data.grade === g.grade;
+      return `
+      <div class="choice-card ${isSelected ? 'selected' : ''}"
+           id="grade-opt-${g.grade}"
+           role="radio"
+           tabindex="${isSelected ? '0' : '-1'}"
+           aria-checked="${isSelected}"
+           onclick="Onboarding.selectGrade(${g.grade})"
+           onkeydown="Onboarding.handleGradeKey(event, ${g.grade})">
         <div class="choice-header">
           <span class="choice-title">${g.title}</span>
-          <span class="badge ${this.data.grade === g.grade ? 'badge-primary' : 'badge-subtle'}">${g.badge}</span>
+          <span class="badge ${isSelected ? 'badge-primary' : 'badge-subtle'}">${g.badge}</span>
         </div>
         <p class="choice-desc">${g.desc}</p>
       </div>
-    `).join('');
+    `;
+    }).join('');
+  },
+
+  handleGradeKey(e, grade) {
+    const grades = [10, 11, 12];
+    const currentIndex = grades.indexOf(grade);
+    let nextGrade = null;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      nextGrade = grades[(currentIndex + 1) % grades.length];
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      nextGrade = grades[(currentIndex - 1 + grades.length) % grades.length];
+    } else if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      this.selectGrade(grade);
+      return;
+    }
+    if (nextGrade !== null) {
+      this.selectGrade(nextGrade);
+      const el = document.getElementById(`grade-opt-${nextGrade}`);
+      if (el) el.focus();
+    }
   },
 
   renderStep2() {
     const container = document.getElementById('step-2-options');
     if (!container) return;
 
+    container.setAttribute('role', 'group');
+    container.setAttribute('aria-label', 'Chọn môn học trọng tâm');
+
     container.innerHTML = this.CORE_SUBJECTS.map(s => {
       const isSelected = this.data.targetSubjects.includes(s.key);
       return `
         <div class="choice-card subject-choice ${isSelected ? 'selected' : ''}"
+             id="subject-opt-${s.key}"
              role="checkbox"
              tabindex="0"
              aria-checked="${isSelected}"
-             onclick="Onboarding.toggleSubject('${s.key}')">
+             onclick="Onboarding.toggleSubject('${s.key}')"
+             onkeydown="Onboarding.handleSubjectKey(event, '${s.key}')">
           <div class="choice-icon">${s.icon}</div>
           <div class="choice-info">
             <div class="choice-title">${s.name}</div>
@@ -113,25 +149,62 @@ const Onboarding = {
     }).join('');
   },
 
+  handleSubjectKey(e, subjectKey) {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      this.toggleSubject(subjectKey);
+    }
+  },
+
   renderStep3() {
     const container = document.getElementById('step-3-options');
     if (!container) return;
 
+    container.setAttribute('role', 'radiogroup');
+    container.setAttribute('aria-label', 'Chọn mục tiêu điểm số');
+
     const goals = Object.values(ProfileStore.GOAL_META);
 
-    container.innerHTML = goals.map(g => `
-      <div class="choice-card ${this.data.goal === g.id ? 'selected' : ''}"
-           role="button"
-           tabindex="0"
-           aria-pressed="${this.data.goal === g.id}"
-           onclick="Onboarding.selectGoal('${g.id}')">
+    container.innerHTML = goals.map(g => {
+      const isSelected = this.data.goal === g.id;
+      return `
+      <div class="choice-card ${isSelected ? 'selected' : ''}"
+           id="goal-opt-${g.id}"
+           role="radio"
+           tabindex="${isSelected ? '0' : '-1'}"
+           aria-checked="${isSelected}"
+           onclick="Onboarding.selectGoal('${g.id}')"
+           onkeydown="Onboarding.handleGoalKey(event, '${g.id}')">
         <div class="choice-header">
           <span class="choice-icon-sm">${g.icon}</span>
           <span class="choice-title">${g.title}</span>
         </div>
         <p class="choice-desc">${g.desc}</p>
       </div>
-    `).join('');
+    `;
+    }).join('');
+  },
+
+  handleGoalKey(e, goalId) {
+    const goals = Object.keys(ProfileStore.GOAL_META);
+    const currentIndex = goals.indexOf(goalId);
+    let nextGoal = null;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      nextGoal = goals[(currentIndex + 1) % goals.length];
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      nextGoal = goals[(currentIndex - 1 + goals.length) % goals.length];
+    } else if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      this.selectGoal(goalId);
+      return;
+    }
+    if (nextGoal !== null) {
+      this.selectGoal(nextGoal);
+      const el = document.getElementById(`goal-opt-${nextGoal}`);
+      if (el) el.focus();
+    }
   },
 
   selectGrade(grade) {
