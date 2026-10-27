@@ -39,7 +39,22 @@ class DiagnosticReportBuilder {
         totalRawScore: scoringResult.totalRawScore,
         totalMaxScore: scoringResult.totalMaxScore,
         observedAccuracy: scoringResult.observedAccuracy,
-        completionRate: scoringResult.completionRate
+        completionRate: scoringResult.completionRate,
+        scoringNotice: scoringResult.scoringNotice || 'Điểm số bài chẩn đoán KHÔNG PHẢI là điểm thi tốt nghiệp chính thức.'
+      },
+      scoringSummary: {
+        totalQuestions: scoringResult.totalQuestions,
+        answeredCount: scoringResult.answeredCount,
+        unansweredCount: scoringResult.unansweredCount,
+        correctCount: scoringResult.correctCount,
+        incorrectCount: scoringResult.incorrectCount,
+        rawScore: scoringResult.totalRawScore,
+        maxScore: scoringResult.totalMaxScore,
+        totalRawScore: scoringResult.totalRawScore,
+        totalMaxScore: scoringResult.totalMaxScore,
+        observedAccuracy: scoringResult.observedAccuracy,
+        completionRate: scoringResult.completionRate,
+        scoringNotice: scoringResult.scoringNotice || 'Điểm số bài chẩn đoán KHÔNG PHẢI là điểm thi tốt nghiệp chính thức.'
       },
 
       // 2. Evaluated Question Details (Sanitized: student sees their answer vs correct after submit)

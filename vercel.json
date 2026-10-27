@@ -7,6 +7,8 @@
     { "source": "/api/v2/exam-blueprint", "destination": "/api/v2/questions?action=blueprint" },
     { "source": "/api/v2/sources", "destination": "/api/v2/questions?action=sources" },
     { "source": "/api/v2/diagnostic/:action", "destination": "/api/v2/diagnostic?action=:action" },
+    { "source": "/api/v2/learning/:action", "destination": "/api/v2/learning?action=:action" },
+    { "source": "/api/v2/auth/:action", "destination": "/api/v2/auth?action=:action" },
     { "source": "/api/admin/:action*", "destination": "/api/v2/admin?action=:action" }
   ]
 }

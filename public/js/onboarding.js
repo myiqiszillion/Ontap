@@ -15,7 +15,8 @@ const Onboarding = {
     { key: 'toan', name: 'Toán học', icon: '📐', desc: 'Đại số, Hình học & Thống kê' },
     { key: 'vatli', name: 'Vật lí', icon: '⚡', desc: 'Động học, Dao động & Nhiệt học' },
     { key: 'hoahoc', name: 'Hóa học', icon: '🧪', desc: 'Liên kết, Hữu cơ & Vô cơ' },
-    { key: 'tienganh', name: 'Tiếng Anh', icon: '🌐', desc: 'Ngữ pháp, Từ vựng & Đọc hiểu' }
+    { key: 'tienganh', name: 'Tiếng Anh', icon: '🌐', desc: 'Ngữ pháp, Từ vựng & Đọc hiểu' },
+    { key: 'lichsu', name: 'Lịch sử', icon: '📜', desc: 'Lịch sử Việt Nam & Thế giới (GDPT 2018)' }
   ],
 
   init() {

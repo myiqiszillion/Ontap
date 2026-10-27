@@ -12,6 +12,8 @@
 const SyncManager = require('../../engine/ingestion/sync-manager.js');
 const { defaultDirectory, REVIEWER_ROLES } = require('../../engine/auth/reviewer-directory.js');
 const { requireAdmin } = require('../../engine/admin-auth.js');
+const EnvironmentConfig = require('../../engine/config/environment-config.js');
+const QuestionSchemaV2 = require('../../engine/schema.js');
 
 // Singleton sync manager instance
 let syncManagerInstance = null;
@@ -30,12 +32,15 @@ function extractReviewer(req) {
     req.query?.reviewer_token;
   if (token) return defaultDirectory.authenticateByToken(token);
 
-  // Fallback for test fixtures when ADMIN_REVIEWER_ID is explicitly configured in test env
+  // Fallback for test fixtures when explicitly permitted in demo/test environment
   const actorId = req.adminActor || process.env.ADMIN_REVIEWER_ID;
   if (actorId) {
     const existing = defaultDirectory.getReviewerById(actorId);
     if (existing) return existing;
     if (String(actorId).startsWith('fixture') || String(actorId).includes('test')) {
+      if (!EnvironmentConfig.isDemoAllowed()) {
+        return null; // Fail-closed: Never synthesize fixture reviewer outside permitted demo/test
+      }
       return {
         id: actorId,
         displayName: `Test Fixture Reviewer (${actorId})`,
@@ -293,6 +298,77 @@ const adminHandlers = {
   },
 
   /**
+   * POST /api/admin/review/:id/rollback
+   * Unpublish / rollback erroneous published question and flag affected student sessions
+   */
+  async rollbackQuestion(req, res) {
+    if (!requireAdmin(req, res)) return;
+    const sm = getSyncManager();
+    const { id } = req.params;
+    const { reason } = req.body || {};
+
+    const reviewer = extractReviewer(req);
+    if (!reviewer) {
+      return res.status(403).json({
+        error: 'Rollback/unpublish requires Curriculum Lead or authorized Administrator. Provide valid X-Reviewer-Token.'
+      });
+    }
+
+    const authCheck = defaultDirectory.authorizeAction({
+      reviewer,
+      action: 'publish', // Curriculum Lead / authorized operator
+      subjectId: null
+    });
+    if (!authCheck.authorized && reviewer.role !== REVIEWER_ROLES.CURRICULUM_LEAD && reviewer.role !== REVIEWER_ROLES.SYSTEM_OPERATOR) {
+      return res.status(403).json({ error: authCheck.reason || 'Insufficient permissions to unpublish question' });
+    }
+
+    try {
+      const rollbackResult = await sm.bankStorage.rollback(id, {
+        rolledBackBy: reviewer.displayName || reviewer.id,
+        reason: reason || 'Erronenous answer/content rollback'
+      });
+
+      // Also update in reviewQueue if present
+      const qInQueue = sm.reviewQueue.getQuestion(id);
+      if (qInQueue) {
+        qInQueue.status = QuestionSchemaV2.PUBLISH_STATUS.ARCHIVED;
+        qInQueue.reviewStatus = 'needs_review';
+        qInQueue.auditTrail.push({
+          state: 'unpublished_rollback',
+          timestamp: new Date().toISOString(),
+          by: reviewer.id,
+          notes: reason || 'Rollback from published bank'
+        });
+        sm.reviewQueue.persist();
+      }
+
+      // Check affected student learning tasks / exam sessions
+      let affectedSessionsCount = 0;
+      try {
+        const LearningStorage = require('../../engine/planner/learning-storage.js');
+        const ls = new LearningStorage();
+        if (typeof ls.flagQuestionAffectedSessions === 'function') {
+          const flagged = ls.flagQuestionAffectedSessions(id, reason);
+          affectedSessionsCount = flagged.length;
+        }
+      } catch (e) {
+        // Non-fatal
+      }
+
+      return res.status(200).json({
+        message: `Question ${id} successfully rolled back and removed from active bank`,
+        questionId: id,
+        rolledBackBy: reviewer.id,
+        newStatus: rollbackResult.status,
+        affectedStudentSessionsFlagged: affectedSessionsCount
+      });
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  },
+
+  /**
    * GET /api/admin/coverage
    */
   coverage(req, res) {
@@ -382,6 +458,133 @@ const adminHandlers = {
       rectifiedCount: rectified.length,
       rectified
     });
+  },
+
+  /**
+   * POST /api/admin/questions/draft
+   * Internal authoring API for curriculum editors
+   */
+  draftQuestion(req, res) {
+    if (!requireAdmin(req, res)) return;
+    const sm = getSyncManager();
+    const candidate = req.body || {};
+
+    const QuestionValidator = require('../../engine/validator.js');
+    const QuestionSchemaV2 = require('../../engine/schema.js');
+
+    if (!candidate.id) {
+      candidate.id = `draft_${candidate.subjectId || 'q'}_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`;
+    }
+
+    if (candidate.isAiAssisted) {
+      candidate.source = {
+        ...(candidate.source || {}),
+        isAiAssisted: true,
+        sourceName: candidate.source?.sourceName || 'NTMK AI-Assisted Draft Tool',
+        license: QuestionSchemaV2.LICENSES.INTERNAL,
+        verificationStatus: QuestionSchemaV2.VERIFICATION_STATUS.UNVERIFIED
+      };
+      candidate.reviewReasons = [...(candidate.reviewReasons || []), 'ai_assisted_draft_unverified'];
+    }
+
+    const validation = QuestionValidator.validate(candidate);
+    if (!validation.valid) {
+      return res.status(400).json({
+        error: 'Validation failed for question draft',
+        errors: validation.errors
+      });
+    }
+
+    try {
+      const enqueued = sm.reviewQueue.enqueue(candidate, {
+        sourceId: candidate.source?.sourceId || 'ntmk_internal_editorial',
+        sourceName: candidate.source?.sourceName || 'NTMK Editorial Draft',
+        license: candidate.source?.license || QuestionSchemaV2.LICENSES.INTERNAL,
+        licenseEvidence: candidate.source?.licenseEvidence || 'Internal authoring draft awaiting pedagogical review',
+        permissionApproved: true,
+        needsReview: true
+      });
+
+      return res.status(201).json({
+        message: 'Question draft enqueued into review queue',
+        question: enqueued
+      });
+    } catch (err) {
+      return res.status(500).json({ error: err.message });
+    }
+  },
+
+  /**
+   * POST /api/admin/review/:id/revision
+   */
+  revisionQuestion(req, res) {
+    if (!requireAdmin(req, res)) return;
+    const sm = getSyncManager();
+    const { id } = req.params;
+    const { feedback } = req.body || {};
+
+    const reviewer = extractReviewer(req);
+    if (!reviewer) {
+      return res.status(403).json({ error: 'Reviewer authentication required to request revision' });
+    }
+
+    const candidate = sm.reviewQueue.getQuestion(id);
+    if (!candidate) {
+      return res.status(404).json({ error: `Question ${id} not found in review queue` });
+    }
+
+    const authCheck = defaultDirectory.authorizeAction({
+      reviewer,
+      action: 'reject', // Auditor authority
+      subjectId: candidate.subjectId
+    });
+    if (!authCheck.authorized) {
+      return res.status(403).json({ error: authCheck.reason });
+    }
+
+    try {
+      const revised = sm.reviewQueue.requestRevision(id, {
+        requestedBy: reviewer.id,
+        feedback: feedback || 'Please refine question prompt or solution explanation'
+      });
+      return res.status(200).json({
+        message: `Revision requested for question ${id}`,
+        question: revised,
+        requestedBy: reviewer.id
+      });
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  },
+
+  /**
+   * POST /api/admin/review/:id/rollback
+   * Rollback publication (Curriculum Lead authority)
+   */
+  async rollbackQuestion(req, res) {
+    if (!requireAdmin(req, res)) return;
+    const sm = getSyncManager();
+    const { id } = req.params;
+    const { reason } = req.body || {};
+
+    const reviewer = extractReviewer(req);
+    if (!reviewer || reviewer.role !== REVIEWER_ROLES.CURRICULUM_LEAD) {
+      return res.status(403).json({ error: 'Only Curriculum Lead can rollback published questions' });
+    }
+
+    try {
+      const rolledBack = await sm.bankStorage.rollback(id, {
+        rolledBackBy: reviewer.id,
+        reason: reason || 'Administrative quality rollback'
+      });
+      return res.status(200).json({
+        message: `Question ${id} rolled back from published status`,
+        question: rolledBack,
+        rolledBackBy: reviewer.id
+      });
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
   }
 };
 

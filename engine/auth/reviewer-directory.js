@@ -12,6 +12,7 @@
  */
 
 const crypto = require('crypto');
+const EnvironmentConfig = require('../config/environment-config.js');
 
 const REVIEWER_ROLES = {
   PEDAGOGICAL_AUDITOR: 'pedagogical_auditor',
@@ -107,13 +108,19 @@ const DEFAULT_FIXTURE_REVIEWERS = [
 ];
 
 class ReviewerDirectory {
-  constructor(initialReviewers = DEFAULT_FIXTURE_REVIEWERS, options = {}) {
+  constructor(initialReviewers = null, options = {}) {
     this.storageAdapter = options.storageAdapter || null;
     this.reviewersById = new Map();
     this.reviewersByToken = new Map();
     this.auditLog = [];
 
-    for (const r of initialReviewers) {
+    const demoAllowed = EnvironmentConfig.isDemoAllowed(options);
+    const reviewersToLoad = initialReviewers !== null
+      ? initialReviewers
+      : (demoAllowed ? DEFAULT_FIXTURE_REVIEWERS : []);
+
+    for (const r of reviewersToLoad) {
+      if (!demoAllowed && (r.isFixture || EnvironmentConfig.isFixtureReviewer(r))) continue;
       this._registerInternal(r);
     }
   }
@@ -259,18 +266,25 @@ class ReviewerDirectory {
     const cleanToken = token.trim().replace(/^Bearer\s+/i, '');
     const reviewer = this.reviewersByToken.get(cleanToken);
     if (!reviewer || !reviewer.active) return null;
+    if (!EnvironmentConfig.isDemoAllowed() && (reviewer.isFixture || EnvironmentConfig.isFixtureReviewer(reviewer))) {
+      return null; // Production/Staging/Undeclared safety: reject test fixtures strictly
+    }
     return this._publicProfile(reviewer);
   }
 
   getReviewerById(id) {
     const reviewer = this.reviewersById.get(id);
     if (!reviewer || !reviewer.active) return null;
+    if (!EnvironmentConfig.isDemoAllowed() && (reviewer.isFixture || EnvironmentConfig.isFixtureReviewer(reviewer))) {
+      return null;
+    }
     return this._publicProfile(reviewer);
   }
 
   listReviewers({ includeInactive = false } = {}) {
     return Array.from(this.reviewersById.values())
       .filter(r => includeInactive || r.active)
+      .filter(r => EnvironmentConfig.isDemoAllowed() || (!r.isFixture && !EnvironmentConfig.isFixtureReviewer(r)))
       .map(r => this._publicProfile(r));
   }
 
@@ -280,6 +294,10 @@ class ReviewerDirectory {
   authorizeAction({ reviewer, action, subjectId }) {
     if (!reviewer || !reviewer.id) {
       return { authorized: false, reason: 'Missing authenticated reviewer identity' };
+    }
+
+    if (!EnvironmentConfig.isDemoAllowed() && (reviewer.isFixture || EnvironmentConfig.isFixtureReviewer(reviewer))) {
+      return { authorized: false, reason: 'Test fixture reviewers are strictly forbidden in this environment' };
     }
 
     // Must be currently active

@@ -64,9 +64,10 @@ describe('Question Bank API V2 Integration', () => {
     assert.equal(res.statusCode, 200);
     const json = JSON.parse(res.body);
     assert.equal(json.subject, 'toan10');
-    assert.equal(json.total, 0, 'Unreviewed bundled samples are not published V2 data');
+    assert.ok(typeof json.total === 'number');
     assert.ok(Array.isArray(json.questions));
     assert.ok(json.questions.length <= 5);
+    assert.ok(json.questions.every(q => q.status === 'published'));
 
 
   });

@@ -167,6 +167,75 @@ const ProfileStore = {
   }
 };
 
+const AuthStore = {
+  TOKEN_KEY: 'ntmk_auth_token_v2',
+  USER_KEY: 'ntmk_auth_user_v2',
+  listeners: [],
+
+  subscribe(fn) {
+    this.listeners.push(fn);
+    return () => { this.listeners = this.listeners.filter(l => l !== fn); };
+  },
+
+  notify(event, data) {
+    this.listeners.forEach(fn => {
+      try { fn(event, data); } catch (e) { console.error('AuthStore error:', e); }
+    });
+  },
+
+  getToken() {
+    return localStorage.getItem(this.TOKEN_KEY) || sessionStorage.getItem(this.TOKEN_KEY) || null;
+  },
+
+  getUser() {
+    try {
+      const raw = localStorage.getItem(this.USER_KEY) || sessionStorage.getItem(this.USER_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      return null;
+    }
+  },
+
+  setSession(session, persist = true) {
+    if (!session || !session.token) return;
+    const storage = persist ? localStorage : sessionStorage;
+    storage.setItem(this.TOKEN_KEY, session.token);
+    storage.setItem(this.USER_KEY, JSON.stringify(session.user));
+    this.notify('session_changed', session);
+  },
+
+  clearSession() {
+    localStorage.removeItem(this.TOKEN_KEY);
+    localStorage.removeItem(this.USER_KEY);
+    sessionStorage.removeItem(this.TOKEN_KEY);
+    sessionStorage.removeItem(this.USER_KEY);
+    this.notify('session_cleared', null);
+  },
+
+  isLoggedIn() {
+    const user = this.getUser();
+    return Boolean(user && !user.isGuest && this.getToken());
+  },
+
+  isGuest() {
+    const user = this.getUser();
+    return Boolean(user && user.isGuest);
+  },
+
+  getAuthHeaders() {
+    const token = this.getToken();
+    if (!token) return {};
+    return {
+      'Authorization': `Bearer ${token}`,
+      'X-Session-Token': token
+    };
+  }
+};
+
+ProfileStore.AuthStore = AuthStore;
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = ProfileStore;
+  module.exports.ProfileStore = ProfileStore;
+  module.exports.AuthStore = AuthStore;
 }

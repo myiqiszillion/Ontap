@@ -22,7 +22,8 @@ const DashboardView = {
       toan: 'Toán học',
       vatli: 'Vật lí',
       hoahoc: 'Hóa học',
-      tienganh: 'Tiếng Anh'
+      tienganh: 'Tiếng Anh',
+      lichsu: 'Lịch sử'
     };
 
     const targetSubjectBadges = (profile.targetSubjects || [])
@@ -45,14 +46,44 @@ const DashboardView = {
             </div>
           </div>
           <div class="hero-actions">
-            <button class="btn btn-primary" onclick="app.navigateTo('diagnostic')">
+            <button class="btn btn-primary" onclick="app.navigateTo('planner')">
+              📅 Kế hoạch học tập cá nhân
+            </button>
+            <button class="btn btn-outline" onclick="app.navigateTo('diagnostic')">
               🎯 Đánh giá năng lực đầu vào
             </button>
             <button class="btn btn-outline" onclick="app.navigateTo('subjects')">
               📚 Chọn môn luyện tập
             </button>
+            <button class="btn btn-outline" style="border-color: #f59e0b; color: #f59e0b;" onclick="app.navigateTo('checker')">
+              🔍 Dò trắc nghiệm
+            </button>
             <button class="btn btn-outline" onclick="app.startOnboarding(true)">
               ⚙️ Đổi mục tiêu
+            </button>
+          </div>
+
+        </div>
+
+        <!-- History & GDPT 2018 Featured Banner -->
+        <div class="history-feature-banner" style="background: linear-gradient(135deg, rgba(225,29,72,0.1), rgba(245,158,11,0.1)); border: 1.5px solid rgba(245,158,11,0.3); border-radius: var(--radius); padding: 22px 26px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div style="flex: 1; min-width: 280px;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span style="background: #e11d48; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase;">Mới cập nhật</span>
+              <span style="color: #f59e0b; font-weight: 700; font-size: 0.85rem;">Trọn bộ Đề Ôn Lịch Sử GDPT 2018</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-bottom: 4px;">Lịch sử 11 &amp; Lịch sử 10 — Trắc nghiệm nhiều lựa chọn &amp; Đúng/Sai</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">Đầy đủ 4 bài Lịch sử 11 (80 câu TN + 16 bài Đ/S) &amp; 6 bài Lịch sử 10 (183 câu TN + 36 bài Đ/S) kèm lời giải chi tiết và công cụ dò đáp án nhanh.</p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="app.selectSubject('lichsu11')">
+              📜 Ôn Lịch sử 11
+            </button>
+            <button class="btn btn-outline" onclick="app.selectSubject('lichsu10')">
+              🏛️ Ôn Lịch sử 10
+            </button>
+            <button class="btn btn-outline" style="border-color: #f59e0b; color: #f59e0b;" onclick="Checker.init('lichsu11'); app.navigateTo('checker');">
+              🔍 Dò đáp án
             </button>
           </div>
         </div>

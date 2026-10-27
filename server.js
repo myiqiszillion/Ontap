@@ -286,6 +286,24 @@ app.all('/api/v2/diagnostic/:action', (req, res) => {
 app.all('/api/v2/diagnostic', (req, res) => diagnosticV2Handler(req, res));
 
 // ═════════════════════════════════════════════════════════════
+// PHASE 03B PERSONALIZED LEARNING PLANNER & ADAPTIVE PRACTICE ROUTES
+// ═════════════════════════════════════════════════════════════
+const learningV2Handler = require('./api/v2/learning.js');
+app.all('/api/v2/learning*', (req, res) => {
+  learningV2Handler(req, res);
+});
+
+// ═════════════════════════════════════════════════════════════
+// PHASE 04A STUDENT AUTHENTICATION & ACCESS CONTROL ROUTES
+// ═════════════════════════════════════════════════════════════
+const authV2Handler = require('./api/v2/auth.js');
+app.all('/api/v2/auth*', (req, res) => {
+  authV2Handler(req, res);
+});
+
+
+
+// ═════════════════════════════════════════════════════════════
 // ADMIN API ROUTES (Sync Manager, Review Queue, Coverage Matrix)
 // ═════════════════════════════════════════════════════════════
 const { adminHandlers } = require('./api/v2/admin.js');
@@ -298,6 +316,9 @@ app.get('/api/admin/review', (req, res) => adminHandlers.reviewList(req, res));
 app.post('/api/admin/review/:id/verify', (req, res) => adminHandlers.verifyQuestion(req, res));
 app.post('/api/admin/review/:id/reject', (req, res) => adminHandlers.rejectQuestion(req, res));
 app.post('/api/admin/review/:id/publish', (req, res) => adminHandlers.publishQuestion(req, res));
+app.post('/api/admin/questions/draft', (req, res) => adminHandlers.draftQuestion(req, res));
+app.post('/api/admin/review/:id/revision', (req, res) => adminHandlers.revisionQuestion(req, res));
+app.post('/api/admin/review/:id/rollback', (req, res) => adminHandlers.rollbackQuestion(req, res));
 app.get('/api/admin/coverage', (req, res) => adminHandlers.coverage(req, res));
 app.get('/api/admin/bank', (req, res) => adminHandlers.bankQuery(req, res));
 app.get('/api/admin/reviewers', (req, res) => adminHandlers.listReviewers(req, res));

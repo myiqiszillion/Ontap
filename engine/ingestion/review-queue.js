@@ -215,6 +215,25 @@ class ReviewQueue {
     return q;
   }
 
+  /**
+   * Request revision with feedback
+   */
+  requestRevision(questionId, { requestedBy = 'Reviewer', feedback = '' } = {}) {
+    const q = this.items.get(questionId);
+    if (!q) throw new Error(`Question ${questionId} not found in review queue`);
+
+    q.reviewStatus = 'revision_requested';
+    q.updatedAt = new Date().toISOString();
+    q.auditTrail.push({
+      state: 'revision_requested',
+      timestamp: q.updatedAt,
+      by: requestedBy.trim(),
+      notes: feedback || 'Revision requested by reviewer'
+    });
+    this.persist();
+    return q;
+  }
+
   getStats() {
     let unverified = 0;
     let needsReview = 0;

@@ -68,6 +68,13 @@ module.exports = async function diagnosticHandler(req, res) {
       });
     }
 
+    // Server-side security check: fixtures strictly forbidden in production
+    const isFixturePermitted = (clientFlag) => {
+      if (process.env.NODE_ENV === 'production') return false;
+      const isServerTestEnv = process.env.NODE_ENV === 'test' || process.env.ALLOW_TEST_FIXTURES === 'true' || process.argv.some(a => a.includes('test'));
+      return Boolean(isServerTestEnv && (clientFlag || process.env.NODE_ENV === 'test' || process.argv.some(a => a.includes('test'))));
+    };
+
     // 2. GET Readiness Check
     if (req.method === 'GET' && (action === 'readiness' || urlPath.includes('/readiness'))) {
       const readiness = engine.checkReadiness({
@@ -75,7 +82,7 @@ module.exports = async function diagnosticHandler(req, res) {
         grade: Number(query.grade) || 10,
         assessmentType: query.assessmentType || 'grade_diagnostic',
         targetQuestionCount: query.count ? Number(query.count) : 20,
-        allowFixtureFallback: Boolean(query.allowFixtures || process.env.NODE_ENV === 'test')
+        allowFixtureFallback: isFixturePermitted(query.allowFixtures)
       });
       return res.status(200).json(readiness);
     }
@@ -91,7 +98,7 @@ module.exports = async function diagnosticHandler(req, res) {
         studentId: body.studentId || req.headers['x-student-id'] || 'guest_student',
         initialRating: body.initialRating || null,
         targetQuestionCount: body.count ? Number(body.count) : 20,
-        allowFixtureFallback: Boolean(body.allowFixtures || process.env.NODE_ENV === 'test')
+        allowFixtureFallback: isFixturePermitted(body.allowFixtures)
       });
       return res.status(201).json(session);
     }

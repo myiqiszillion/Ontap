@@ -44,7 +44,15 @@ class KnowledgeGapAnalyzer {
 
     // 2. Prerequisite Diagnosis: for every confirmed gap or failing advanced skill,
     // trace upstream prerequisites to discover root causes.
-    for (const gap of confirmedGaps) {
+    // 2. Prerequisite Diagnosis: for every confirmed gap, developing skill, or sampled skill with errors,
+    // trace upstream prerequisites to discover root causes.
+    const candidatesToInvestigate = [
+      ...confirmedGaps,
+      ...developingAreas,
+      ...insufficientEvidenceSkills.filter(s => s.correctCount === 0 && s.evidenceCount > 0)
+    ];
+
+    for (const gap of candidatesToInvestigate) {
       const prereqDiags = this.graph.diagnosePrerequisiteGaps(gap.skillId, Object.fromEntries(masteryMap));
       if (prereqDiags.length > 0) {
         prerequisiteInvestigations.push({
@@ -58,7 +66,12 @@ class KnowledgeGapAnalyzer {
 
     // 3. Priority Scoring & Ranking
     // Formula: PriorityScore = (1 - mastery) * 40 + confidence * 20 + dependentSkillsCount * 25 + crossGradeBonus * 15
-    const prioritizedGaps = confirmedGaps.map(gap => {
+    const gapsToRank = [...confirmedGaps];
+    if (gapsToRank.length === 0) {
+      gapsToRank.push(...insufficientEvidenceSkills.filter(s => s.correctCount === 0 && s.evidenceCount > 0));
+    }
+
+    const prioritizedGaps = gapsToRank.map(gap => {
       const dependentSkills = this.graph.getDependents(gap.skillId, { recursive: true });
       const prereqs = this.graph.getDirectPrerequisites(gap.skillId);
 
@@ -78,7 +91,9 @@ class KnowledgeGapAnalyzer {
         blockingSkillTitles: dependentSkills.slice(0, 3).map(d => d.title),
         actionPlan: isFoundationalBlocker
           ? `Ưu tiên cao nhất: Kỹ năng nền tảng đang chặn ${dependentSkills.length} kỹ năng nâng cao tiếp theo.`
-          : 'Củng cố thông qua các bài tập chuyên đề.'
+          : (gap.status === 'insufficient_evidence'
+              ? 'Làm thêm bài đánh giá bổ trợ để xác định mức độ thiếu hụt.'
+              : 'Củng cố thông qua các bài tập chuyên đề.')
       };
     });
 
@@ -97,31 +112,37 @@ class KnowledgeGapAnalyzer {
         unassessedCount: unassessedSkills.length,
         strengthsCount: strengths.length
       },
+      confirmedGaps,
       prioritizedGaps,
       developingAreas,
       insufficientEvidenceSkills,
       strengths,
       prerequisiteInvestigations,
-      readinessVerdict: this._generateReadinessVerdict(confirmedGaps, strengths, developingAreas)
+      readinessVerdict: this._generateReadinessVerdict(
+        confirmedGaps,
+        strengths,
+        developingAreas,
+        insufficientEvidenceSkills.filter(s => s.correctCount === 0 && s.evidenceCount > 0)
+      )
     };
   }
 
-  _generateReadinessVerdict(gaps, strengths, developing) {
-    if (gaps.length === 0 && developing.length <= 1 && strengths.length >= 3) {
+  _generateReadinessVerdict(gaps, strengths, developing, insufficientWithErrors = []) {
+    if (gaps.length === 0 && developing.length <= 1 && (strengths.length >= 1 || insufficientWithErrors.length === 0)) {
       return {
         level: 'good_foundation',
         message: 'Nền tảng kiến thức rất vững vàng. Sẵn sàng cho các chuyên đề nâng cao và luyện đề chuẩn hóa.'
       };
     }
-    if (gaps.length <= 2) {
+    if ((gaps.length >= 2 && strengths.length === 0) || gaps.length >= 3 || (insufficientWithErrors.length >= 2 && strengths.length === 0)) {
       return {
-        level: 'moderate_gaps',
-        message: 'Nắm được đa số kiến thức cơ bản nhưng còn một vài lỗ hổng cần củng cố sớm trước khi bước vào luyện đề.'
+        level: 'critical_foundational_gaps',
+        message: 'Phát hiện nhiều lỗ hổng nền tảng trọng tâm. Cần ưu tiên ôn luyện các kỹ năng nền trước khi tiếp tục học nâng cao.'
       };
     }
     return {
-      level: 'critical_foundational_gaps',
-      message: 'Phát hiện nhiều lỗ hổng nền tảng trọng tâm. Cần ưu tiên ôn luyện các kỹ năng nền trước khi tiếp tục học nâng cao.'
+      level: 'moderate_gaps',
+      message: 'Nắm được đa số kiến thức cơ bản nhưng còn một vài lỗ hổng cần củng cố sớm trước khi bước vào luyện đề.'
     };
   }
 }

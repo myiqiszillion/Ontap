@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/quiz.css">
   <link rel="stylesheet" href="css/diagnostic.css">
+  <link rel="stylesheet" href="css/planner.css">
+  <link rel="stylesheet" href="css/checker.css">
+  <link rel="stylesheet" href="css/heritage-theme.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
@@ -40,6 +43,12 @@
         <button class="nav-item-btn" data-route="subjects" onclick="app.navigateTo('subjects')">
           📚 Khám phá môn học
         </button>
+        <button class="nav-item-btn" data-route="checker" onclick="app.navigateTo('checker')">
+          🔍 Dò trắc nghiệm
+        </button>
+        <button class="nav-item-btn" data-route="planner" onclick="app.navigateTo('planner')">
+          📅 Kế hoạch học tập
+        </button>
         <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
           📢 Thông báo
         </button>
@@ -48,7 +57,16 @@
         </button>
       </nav>
 
+
       <div class="header-actions-group">
+        <button id="sound-toggle-btn" class="sound-btn" onclick="SoundFX.toggle()" aria-label="Bật/Tắt âm thanh tương tác" title="Âm thanh tương tác">
+          🔊
+        </button>
+
+        <button id="header-auth-btn" class="header-auth-btn" onclick="AuthView.showModal()" aria-label="Tài khoản và đăng nhập">
+          👤 <span>Đăng nhập</span>
+        </button>
+
         <button id="header-student-badge" class="profile-pill-btn" onclick="app.startOnboarding(true)" aria-label="Hồ sơ và mục tiêu học tập">
           <span id="header-grade-text">Lớp 10</span>
           <span style="font-size:0.75rem; color: var(--text-dim);">⚙️</span>
@@ -73,10 +91,19 @@
       <span class="mob-nav-icon">📚</span>
       <span>Môn học</span>
     </button>
+    <button class="mob-nav-item" data-route="checker" onclick="app.navigateTo('checker')">
+      <span class="mob-nav-icon">🔍</span>
+      <span>Dò đáp án</span>
+    </button>
+    <button class="mob-nav-item" data-route="planner" onclick="app.navigateTo('planner')">
+      <span class="mob-nav-icon">📅</span>
+      <span>Kế hoạch</span>
+    </button>
     <button class="mob-nav-item" data-route="announcements" onclick="app.navigateTo('announcements')">
       <span class="mob-nav-icon">📢</span>
       <span>Bảng tin</span>
     </button>
+
     <button class="mob-nav-item" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
       <span class="mob-nav-icon">🎯</span>
       <span>Chẩn đoán</span>
@@ -204,6 +231,16 @@
               <div class="mode-icon">💪</div>
               <div class="mode-name">Luyện tập</div>
               <div class="mode-desc">Phản hồi đúng/sai tức thì</div>
+            </div>
+            <div class="mode-card" data-mode="tf" onclick="app.selectMode('tf')">
+              <div class="mode-icon">⚖️</div>
+              <div class="mode-name">Luyện Đúng / Sai</div>
+              <div class="mode-desc">Chuyên sâu 4 ý a, b, c, d (QĐ 764)</div>
+            </div>
+            <div class="mode-card" data-mode="checker" onclick="app.navigateTo('checker', app.currentSubject)">
+              <div class="mode-icon">🔍</div>
+              <div class="mode-name">Dò trắc nghiệm</div>
+              <div class="mode-desc">Bảng đáp án &amp; tra cứu lời giải</div>
             </div>
             <div class="mode-card" data-mode="wrong" onclick="app.selectMode('wrong')">
               <div class="mode-icon">❌</div>
@@ -514,9 +551,20 @@
        ═══════════════════════════════════════════════════════════ -->
     <section id="screen-diagnostic" class="screen" aria-label="Chẩn đoán năng lực học tập"></section>
 
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 11: PERSONALIZED STUDY PLANNER & ADAPTIVE PRACTICE
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-planner" class="screen" aria-label="Kế hoạch học tập cá nhân hóa"></section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SCREEN 12: DÒ TRẮC NGHIỆM & SO KHỚP ĐÁP ÁN (GDPT 2018)
+       ═══════════════════════════════════════════════════════════ -->
+    <section id="screen-checker" class="screen" aria-label="Bộ công cụ dò trắc nghiệm"></section>
+
   </main>
 
   <!-- Modular Scripts Architecture -->
+  <script defer src="js/audio.js"></script>
   <script defer src="js/api.js"></script>
   <script defer src="js/state.js"></script>
   <script defer src="js/router.js"></script>
@@ -530,7 +578,11 @@
   <script defer src="js/question-schema.js"></script>
   <script defer src="js/scoring-engine.js"></script>
   <script defer src="js/quiz.js"></script>
+  <script defer src="js/checker.js"></script>
+  <script defer src="js/keyboard.js"></script>
   <script defer src="js/diagnostic-view.js"></script>
+  <script defer src="js/planner-view.js"></script>
+  <script defer src="js/auth-view.js"></script>
   <script defer src="js/app.js"></script>
 </body>
 

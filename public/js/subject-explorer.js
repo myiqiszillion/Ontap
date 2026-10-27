@@ -32,9 +32,9 @@ const SubjectExplorer = {
       <div class="explorer-wrapper">
         <div class="explorer-header">
           <div>
-            <h1 class="explorer-title">Khám phá 4 Môn Trọng Tâm GDPT 2018</h1>
+            <h1 class="explorer-title">Khám phá Môn Học GDPT 2018</h1>
             <p class="explorer-subtitle">
-              Tập trung 4 môn mũi nhọn: Toán học, Vật lí, Hóa học và Tiếng Anh bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT.
+              Hệ thống môn học bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Toán học, Vật lí, Hóa học, Tiếng Anh và Lịch sử.
             </p>
           </div>
           <div class="grade-pill-group" role="tablist" aria-label="Chọn khối lớp">
@@ -50,7 +50,7 @@ const SubjectExplorer = {
         </div>
 
         <div class="subject-section-label">
-          <span>DANH SÁCH 4 MÔN HỌC — KHỐI LỚP ${this.currentGrade}</span>
+          <span>DANH SÁCH MÔN HỌC — KHỐI LỚP ${this.currentGrade}</span>
         </div>
 
         <div class="subjects-cards-grid">

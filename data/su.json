@@ -1,7 +1,9 @@
 {
+  "subject": "Lịch sử 10",
   "lessons": [
     {
-      "name": "BÀI 12",
+      "id": 1,
+      "name": "Bài 12: Nền văn minh Văn Lang - Âu Lạc",
       "questions": [
         {
           "type": "mcq",
@@ -578,7 +580,8 @@
       ]
     },
     {
-      "name": "BÀI 13",
+      "id": 2,
+      "name": "Bài 13: Nền văn minh Chăm-pa",
       "questions": [
         {
           "type": "mcq",
@@ -1074,7 +1077,8 @@
       ]
     },
     {
-      "name": "BÀI 14",
+      "id": 3,
+      "name": "Bài 14: Nền văn minh Phù Nam",
       "questions": [
         {
           "type": "mcq",
@@ -1633,7 +1637,8 @@
       ]
     },
     {
-      "name": "BÀI 15",
+      "id": 4,
+      "name": "Bài 15: Nền văn minh Đại Việt",
       "questions": [
         {
           "type": "mcq",
@@ -2054,7 +2059,8 @@
       ]
     },
     {
-      "name": "BÀI 16",
+      "id": 5,
+      "name": "Bài 16: Các dân tộc trên đất nước Việt Nam",
       "questions": [
         {
           "type": "mcq",
@@ -2454,7 +2460,8 @@
       ]
     },
     {
-      "name": "BÀI 17",
+      "id": 6,
+      "name": "Bài 17: Khối đại đoàn kết dân tộc trong lịch sử Việt Nam",
       "questions": [
         {
           "type": "mcq",

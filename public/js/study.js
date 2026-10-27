@@ -514,11 +514,13 @@ const Study = {
 
   handleAnswerFeedback(isCorrect) {
     if (isCorrect) {
+      if (window.SoundFX) SoundFX.playCorrect();
       this.practiceScore.correct++;
       this.practiceMastered++;
       // Remove from queue
       this.practiceQueue.shift();
     } else {
+      if (window.SoundFX) SoundFX.playWrong();
       this.practiceScore.wrong++;
       // Move to end of queue to repeat later
       const qIndex = this.practiceQueue.shift();
@@ -615,6 +617,7 @@ const Study = {
   },
 
   renderPracticeFinish() {
+    if (window.SoundFX) SoundFX.playVictory();
     const container = document.getElementById('practice-content');
     container.innerHTML = `
       <div class="practice-card completion-card" style="text-align: center; padding: 40px 20px;">

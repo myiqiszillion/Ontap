@@ -8,6 +8,7 @@ const path = require('path');
 const LocalState = require('./local-state.js');
 const CloudStorageAdapter = require('./cloud-storage-adapter.js');
 const QuestionSchemaV2 = require('../schema.js');
+const EnvironmentConfig = require('../config/environment-config.js');
 
 class BankStorage {
   constructor(options = {}) {
@@ -146,6 +147,31 @@ class BankStorage {
   }
 
   /**
+   * Rollback published question to archived status
+   */
+  async rollback(questionId, { rolledBackBy = 'Curriculum Lead', reason = '' } = {}) {
+    const q = this.getById(questionId);
+    if (!q) throw new Error(`Question ${questionId} not found in bank`);
+
+    const updated = {
+      ...q,
+      status: QuestionSchemaV2.PUBLISH_STATUS.ARCHIVED,
+      auditLog: [
+        ...(q.auditLog || []),
+        {
+          action: 'rollback',
+          by: rolledBackBy,
+          timestamp: new Date().toISOString(),
+          notes: reason || 'Publication rolled back'
+        }
+      ],
+      updatedAt: new Date().toISOString()
+    };
+
+    return this.save(updated);
+  }
+
+  /**
    * Query questions with filter
    */
   query(filter = {}) {
@@ -207,8 +233,20 @@ class BankStorage {
         if (sub === 'vatli' || sub === 'hoahoc') { targetMcq = 18; targetTf = 4; targetSa = 6; }
         if (sub === 'tienganh') { targetMcq = 40; targetTf = 0; targetSa = 0; }
 
+        const totalDraft = questions.filter(q => q.status === QuestionSchemaV2.PUBLISH_STATUS.NEEDS_REVIEW || q.status === QuestionSchemaV2.PUBLISH_STATUS.DRAFT).length;
         const isExamReady = mcq >= targetMcq && tf >= targetTf && sa >= targetSa;
         const isPracticeReady = published.length >= 5;
+        const isDraftAllowed = EnvironmentConfig.isDemoAllowed();
+        const isInternalDemoReady = isDraftAllowed && questions.length >= 5;
+
+        let readinessLevel = 'blocked_insufficient_content';
+        if (isExamReady) {
+          readinessLevel = 'official_blueprint_ready';
+        } else if (isPracticeReady) {
+          readinessLevel = 'reviewed_pilot_ready';
+        } else if (isInternalDemoReady) {
+          readinessLevel = 'internal_demo_ready';
+        }
 
         matrix[sub][gr] = {
           subjectId: sub,
@@ -216,6 +254,7 @@ class BankStorage {
           comboKey: key,
           totalDiscovered: questions.length,
           totalNormalized: questions.length,
+          totalDraft,
           totalVerified: verified.length,
           totalPublished: published.length,
           topicCount: new Set(published.map(q=>q.topic).filter(Boolean)).size,
@@ -224,8 +263,10 @@ class BankStorage {
           tfGroupCount: tf,
           shortAnswerCount: sa,
           blueprintTarget: { mcq: targetMcq, tf: targetTf, sa: targetSa },
+          isInternalDemoReady,
           isPracticeReady,
           isOfficialBlueprintReady: isExamReady,
+          readinessLevel,
           deficiencies: {
             mcqShortage: Math.max(0, targetMcq - mcq),
             tfShortage: Math.max(0, targetTf - tf),

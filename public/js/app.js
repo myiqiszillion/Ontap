@@ -18,6 +18,9 @@ const app = {
   async init() {
     try {
       this.initTheme();
+      if (typeof SoundFX !== 'undefined') {
+        SoundFX.init();
+      }
       AppRouter.init();
 
       // Load subjects catalog
@@ -26,6 +29,9 @@ const app = {
       this.grades = this.subjectsData.grades || [10, 11, 12];
 
       SubjectExplorer.init();
+      if (typeof AuthView !== 'undefined') {
+        AuthView.init();
+      }
       this.setupEventListeners();
 
       // Check onboarding status
@@ -147,8 +153,15 @@ const app = {
 
     if (routeId === 'announcements') {
       this.loadAnnouncements();
+    } else if (routeId === 'diagnostic') {
+      if (window.DiagnosticView) DiagnosticView.init();
+    } else if (routeId === 'planner') {
+      if (window.PlannerView) PlannerView.init();
+    } else if (routeId === 'checker') {
+      if (window.Checker) Checker.init(param || this.currentSubject || 'lichsu11');
     }
   },
+
 
   showScreen(screenId) {
     this.navigateTo(screenId);
@@ -188,10 +201,23 @@ const app = {
   // ═══════════ MODE SELECTION ═══════════
 
   selectMode(mode) {
+    if (mode === 'checker') {
+      this.navigateTo('checker', this.currentSubject);
+      return;
+    }
     this.learningMode = mode;
     document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
     const targetCard = document.querySelector(`.mode-card[data-mode="${mode}"]`);
     if (targetCard) targetCard.classList.add('selected');
+
+    if (mode === 'tf') {
+      const pracMcqToggle = document.getElementById('prac-mcq-toggle');
+      const pracTfToggle = document.getElementById('prac-tf-toggle');
+      const pracSaToggle = document.getElementById('prac-sa-toggle');
+      if (pracMcqToggle) pracMcqToggle.checked = false;
+      if (pracTfToggle) pracTfToggle.checked = true;
+      if (pracSaToggle) pracSaToggle.checked = false;
+    }
 
     // Show/hide exam vs practice config
     const examConfig = document.getElementById('quiz-config-exam');
@@ -199,7 +225,7 @@ const app = {
     const fcConfig = document.getElementById('quiz-config-flashcard');
 
     if (examConfig) examConfig.style.display = mode === 'exam' ? 'block' : 'none';
-    if (pracConfig) pracConfig.style.display = ['study', 'flashcard', 'practice'].includes(mode) ? 'block' : 'none';
+    if (pracConfig) pracConfig.style.display = ['study', 'flashcard', 'practice', 'tf'].includes(mode) ? 'block' : 'none';
     if (fcConfig) fcConfig.style.display = ['study', 'flashcard'].includes(mode) ? 'block' : 'none';
 
     // Show/hide topic list for wrong mode
@@ -221,6 +247,7 @@ const app = {
         study: '📖 Bắt đầu học & đọc',
         flashcard: '🃏 Bắt đầu flashcard',
         practice: '💪 Bắt đầu luyện tập',
+        tf: '⚖️ Bắt đầu luyện Đúng/Sai',
         wrong: '❌ Luyện câu sai'
       };
       startBtn.textContent = labels[mode] || '🚀 Bắt đầu';
@@ -517,6 +544,10 @@ const app = {
         mcqLimit = mcqInput ? (parseInt(mcqInput.value) || 0) : null;
         tfLimit = tfInput ? (parseInt(tfInput.value) || 0) : null;
         saLimit = saInput ? (parseInt(saInput.value) || 0) : null;
+      } else if (this.learningMode === 'tf') {
+        mcqLimit = 0;
+        tfLimit = null;
+        saLimit = 0;
       } else {
         const mcqCheck = document.getElementById('prac-mcq-toggle');
         const tfCheck = document.getElementById('prac-tf-toggle');
@@ -579,7 +610,7 @@ const app = {
         const chunkSize = chunkSizeCheck && chunkSizeCheck.value > 0 ? parseInt(chunkSizeCheck.value) : 0;
         this.navigateTo('flashcard');
         Study.init(quizData, 'flashcard', { chunkSize });
-      } else if (this.learningMode === 'practice') {
+      } else if (this.learningMode === 'practice' || this.learningMode === 'tf') {
         this.navigateTo('practice');
         Study.init(quizData, 'practice');
       }

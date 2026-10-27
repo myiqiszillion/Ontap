@@ -105,7 +105,7 @@ class DiagnosticScoringAdapter {
 
         if (isAnswered && typeof rawAns === 'string') {
           answeredCount++;
-          const evalResult = this.scoringEngine.evaluateShortAnswer(rawAns, accepted, policy);
+          const evalResult = this.scoringEngine.evaluateShortAnswer(rawAns, q);
           if (evalResult.isCorrect) {
             qScore = qMaxScore;
             isCorrect = true;
@@ -137,6 +137,7 @@ class DiagnosticScoringAdapter {
         isAnswered,
         isCorrect,
         isPartial,
+        rawScore: Number(qScore.toFixed(3)),
         scoreEarned: Number(qScore.toFixed(3)),
         maxScore: Number(qMaxScore.toFixed(3)),
         details
@@ -153,6 +154,7 @@ class DiagnosticScoringAdapter {
         format: q.format,
         isAnswered,
         isCorrect,
+        rawScore: Number(qScore.toFixed(3)),
         scoreRatio: qMaxScore > 0 ? qScore / qMaxScore : 0,
         evaluatedAt: new Date().toISOString()
       });

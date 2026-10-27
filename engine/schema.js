@@ -23,12 +23,14 @@ const QuestionSchemaV2 = {
   VERIFICATION_STATUS: {
     VERIFIED: 'verified',
     UNVERIFIED: 'unverified',
+    PENDING: 'pending',
     FLAGGED: 'flagged'
   },
 
   PUBLISH_STATUS: {
     PUBLISHED: 'published',
     REVIEW: 'review',
+    NEEDS_REVIEW: 'needs_review',
     ARCHIVED: 'archived'
   },
 

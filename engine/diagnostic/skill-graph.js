@@ -11,14 +11,21 @@
  */
 
 class SkillGraph {
-  constructor(curriculumRepository) {
-    this.repo = curriculumRepository;
+  constructor(curriculumRepository = null) {
+    const CurriculumRepository = require('./curriculum-repository.js');
+    this.repo = curriculumRepository || new CurriculumRepository();
     this.adjList = new Map();         // skillId -> Set of prerequisiteSkillIds
     this.reverseAdjList = new Map();  // skillId -> Set of dependentSkillIds (skills that require this skill)
     this._buildGraph();
   }
 
+
+  getSkill(skillId) {
+    return this.repo ? this.repo.getSkillById(skillId) : null;
+  }
+
   _buildGraph() {
+
     this.adjList.clear();
     this.reverseAdjList.clear();
 

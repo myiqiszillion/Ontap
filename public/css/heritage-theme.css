@@ -1,0 +1,274 @@
+/* ═════════════════════════════════════════════════════════════
+   NEO-SCHOLAR & HERITAGE DESIGN SYSTEM (NTMK IDENTITY)
+   Sử thi & Tri thức - Phong cách tinh hoa, hiện đại và xúc giác
+   ═════════════════════════════════════════════════════════════ */
+
+/* Heritage Color Variables */
+:root {
+  --heritage-gold: #f59e0b;
+  --heritage-gold-dark: #d97706;
+  --heritage-gold-glow: rgba(245, 158, 11, 0.25);
+  --heritage-gold-soft: rgba(245, 158, 11, 0.08);
+
+  --heritage-crimson: #e11d48;
+  --heritage-crimson-dark: #be123c;
+  --heritage-crimson-glow: rgba(225, 29, 72, 0.25);
+  --heritage-crimson-soft: rgba(225, 29, 72, 0.08);
+
+  --heritage-parchment: rgba(254, 243, 199, 0.35);
+  --heritage-border: rgba(245, 158, 11, 0.25);
+}
+
+[data-theme="dark"] {
+  --heritage-parchment: rgba(245, 158, 11, 0.04);
+  --heritage-border: rgba(245, 158, 11, 0.2);
+}
+
+/* ═════════════════════════════════════════════════════════════
+   1. HISTORICAL PASSAGE & SOURCE DOCUMENT BOX
+   ═════════════════════════════════════════════════════════════ */
+.question-passage,
+.study-passage,
+.explorer-passage-box {
+  background: var(--heritage-parchment) !important;
+  border: 1px solid var(--heritage-border) !important;
+  border-left: 4px solid var(--heritage-gold) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 18px 20px 18px 22px !important;
+  margin-bottom: 22px !important;
+  position: relative !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+  color: var(--text-primary) !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.06) !important;
+}
+
+.question-passage::before,
+.study-passage::before {
+  content: '📜 ĐOẠN TƯ LIỆU LỊCH SỬ / NGUỒN KHẢO CỨU (GDPT 2018)';
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--heritage-gold);
+  margin-bottom: 10px;
+}
+
+/* ═════════════════════════════════════════════════════════════
+   2. TACTILE OPTION BUTTONS & HOVER EFFECTS
+   ═════════════════════════════════════════════════════════════ */
+.option,
+.practice-option,
+.study-option {
+  position: relative;
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  padding: 14px 18px !important;
+  background: var(--bg-card) !important;
+  border: 1.5px solid var(--border) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.option:hover,
+.practice-option:hover {
+  transform: translateY(-2px) scale(1.008);
+  border-color: var(--primary) !important;
+  box-shadow: 0 6px 18px var(--primary-glow) !important;
+}
+
+.option:active,
+.practice-option:active {
+  transform: scale(0.985);
+}
+
+.option.selected,
+.practice-option.selected {
+  background: var(--primary-soft) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 2px var(--primary-glow), 0 6px 18px var(--primary-glow) !important;
+}
+
+.option-letter,
+.study-option-letter {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  background: var(--bg-page) !important;
+  border: 1.5px solid var(--border) !important;
+  color: var(--text-secondary) !important;
+  flex-shrink: 0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.option.selected .option-letter,
+.practice-option.selected .study-option-letter {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #ffffff !important;
+}
+
+/* ═════════════════════════════════════════════════════════════
+   3. TRUE / FALSE STATEMENTS MATRIX
+   ═════════════════════════════════════════════════════════════ */
+.tf-statement,
+.practice-tf-stmt {
+  background: var(--bg-card) !important;
+  border: 1.5px solid var(--border) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 16px 18px !important;
+  margin-bottom: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.tf-statement:hover,
+.practice-tf-stmt:hover {
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+}
+
+.tf-statement-text,
+.study-tf-text {
+  font-size: 0.98rem !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  color: var(--text-primary) !important;
+  flex: 1 !important;
+}
+
+.tf-buttons,
+.practice-tf-btns {
+  display: flex !important;
+  gap: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+.tf-btn {
+  padding: 8px 18px !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-xs) !important;
+  border: 1.5px solid var(--border) !important;
+  background: var(--bg-page) !important;
+  color: var(--text-secondary) !important;
+  cursor: pointer !important;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.tf-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--primary);
+  background: var(--bg-hover);
+}
+
+.tf-btn.selected {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px var(--primary-glow) !important;
+}
+
+.practice-tf-stmt.correct {
+  border-color: var(--green) !important;
+  background: rgba(16, 185, 129, 0.06) !important;
+}
+
+.practice-tf-stmt.wrong {
+  border-color: var(--red) !important;
+  background: rgba(239, 68, 68, 0.06) !important;
+}
+
+/* ═════════════════════════════════════════════════════════════
+   4. MOET LADDER & STREAK BADGES
+   ═════════════════════════════════════════════════════════════ */
+.moet-score-ladder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.moet-ladder-step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.moet-ladder-step.active {
+  color: var(--heritage-gold);
+  font-weight: 800;
+}
+
+/* ═════════════════════════════════════════════════════════════
+   5. KEYBOARD SHORTCUT HELPER BADGE (KBD)
+   ═════════════════════════════════════════════════════════════ */
+kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-muted);
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  margin-left: 6px;
+}
+
+/* ═════════════════════════════════════════════════════════════
+   6. HEADER QUICK LINK & SOUND BUTTON
+   ═════════════════════════════════════════════════════════════ */
+.nav-item-btn[data-route="checker"] {
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.nav-item-btn[data-route="checker"]:hover {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--heritage-gold);
+}
+
+.sound-btn {
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.sound-btn:hover {
+  background: var(--bg-hover);
+  transform: scale(1.05);
+}
+
+.sound-btn.muted {
+  opacity: 0.55;
+}

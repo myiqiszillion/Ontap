@@ -12,9 +12,18 @@ class LocalState {
   }
   write(value) {
     fs.mkdirSync(path.dirname(this.filename), { recursive: true });
-    const temp = this.filename + '.tmp';
+    const temp = this.filename + '.' + process.pid + '.' + Date.now() + '.tmp';
     fs.writeFileSync(temp, JSON.stringify(value, null, 2), { mode: 0o600 });
-    fs.renameSync(temp, this.filename);
+    try {
+      fs.renameSync(temp, this.filename);
+    } catch (e) {
+      if (e.code === 'EPERM' || e.code === 'EBUSY') {
+        fs.copyFileSync(temp, this.filename);
+        try { fs.unlinkSync(temp); } catch (_) {}
+      } else {
+        throw e;
+      }
+    }
   }
 }
 module.exports = LocalState;

@@ -127,16 +127,20 @@ class SkillMasteryEstimator {
     const upperBound = Number(Math.min(1, posteriorMean + (1.28 * standardError)).toFixed(2));
 
     // 3. Mastery State Classification
+    // Safety & Reliability Rule: Prevent premature overconfidence
+    // - 'strong' strictly requires testedCount >= 4 and confidenceScore >= 0.60
+    // - 'proficient' strictly requires testedCount >= 3
+    // - testedCount == 2 with correct answers is conservatively kept at 'developing'
     let status = 'developing';
     let statusLabel = 'Đang phát triển';
 
     if (posteriorMean < 0.45) {
       status = 'needs_foundation';
       statusLabel = 'Cần củng cố nền tảng';
-    } else if (posteriorMean >= 0.85 && confidenceScore >= 0.60) {
+    } else if (posteriorMean >= 0.85 && confidenceScore >= 0.60 && testedCount >= 4) {
       status = 'strong';
       statusLabel = 'Vững vàng';
-    } else if (posteriorMean >= 0.65) {
+    } else if (posteriorMean >= 0.65 && testedCount >= 3) {
       status = 'proficient';
       statusLabel = 'Thành thạo';
     } else {
@@ -147,6 +151,10 @@ class SkillMasteryEstimator {
     // 4. Human-readable Pedagogical Explanations
     const reasons = [];
     reasons.push(`Đã kiểm tra ${testedCount} câu: ${correctCount} câu đúng, ${incorrectCount} câu sai${unansweredCount > 0 ? `, ${unansweredCount} câu chưa làm` : ''}.`);
+
+    if (testedCount === 2 && posteriorMean >= 0.65) {
+      reasons.push('Đã trả lời đúng 2 câu hỏi kiểm tra ban đầu; cần làm thêm tối thiểu 1 câu hỏi để xác nhận mức độ thành thạo đáng tin cậy.');
+    }
 
     if (status === 'needs_foundation') {
       reasons.push('Tỉ lệ trả lời đúng thấp trên các mức độ nhận thức cơ bản; cần ôn tập lại khái niệm và phương pháp giải.');
@@ -186,6 +194,7 @@ class SkillMasteryEstimator {
       confidenceScore,
       confidenceLevel,
       uncertaintyBand: [lowerBound, upperBound],
+      credibleInterval80: { lowerBound, upperBound },
       reasons,
       recommendedNextAssessment
     };

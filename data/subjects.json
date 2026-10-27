@@ -1,10 +1,67 @@
 {
-  "grades": [10, 11, 12],
+  "grades": [
+    10,
+    11,
+    12
+  ],
   "targetSubjectMeta": {
-    "toan": { "name": "Toán học", "shortName": "Toán", "icon": "📐", "color": "#3b82f6", "examDuration": 90, "formats": ["mcq", "tf_group", "short_answer"] },
-    "vatli": { "name": "Vật lí", "shortName": "Vật lí", "icon": "⚡", "color": "#6366f1", "examDuration": 50, "formats": ["mcq", "tf_group", "short_answer"] },
-    "hoahoc": { "name": "Hóa học", "shortName": "Hóa học", "icon": "🧪", "color": "#06b6d4", "examDuration": 50, "formats": ["mcq", "tf_group", "short_answer"] },
-    "tienganh": { "name": "Tiếng Anh", "shortName": "Tiếng Anh", "icon": "🌐", "color": "#0d9488", "examDuration": 50, "formats": ["mcq"] }
+    "toan": {
+      "name": "Toán học",
+      "shortName": "Toán",
+      "icon": "📐",
+      "color": "#3b82f6",
+      "examDuration": 90,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
+    },
+    "vatli": {
+      "name": "Vật lí",
+      "shortName": "Vật lí",
+      "icon": "⚡",
+      "color": "#6366f1",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
+    },
+    "hoahoc": {
+      "name": "Hóa học",
+      "shortName": "Hóa học",
+      "icon": "🧪",
+      "color": "#06b6d4",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
+    },
+    "tienganh": {
+      "name": "Tiếng Anh",
+      "shortName": "Tiếng Anh",
+      "icon": "🌐",
+      "color": "#0d9488",
+      "examDuration": 50,
+      "formats": [
+        "mcq"
+      ]
+    },
+    "lichsu": {
+      "name": "Lịch sử",
+      "shortName": "Sử",
+      "icon": "📜",
+      "color": "#e11d48",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group"
+      ]
+    }
   },
   "subjects": [
     {
@@ -18,7 +75,12 @@
       "dataFile": "toan10.json",
       "status": "active",
       "ready": true,
-      "examStructure": { "mcq": 12, "tf": 4, "sa": 6, "durationMinutes": 90 }
+      "examStructure": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 90
+      }
     },
     {
       "id": "vatli10",
@@ -31,7 +93,12 @@
       "dataFile": "vatli10.json",
       "status": "active",
       "ready": true,
-      "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "hoahoc10",
@@ -44,7 +111,12 @@
       "dataFile": "hoahoc10.json",
       "status": "active",
       "ready": true,
-      "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "tienganh10",
@@ -57,7 +129,12 @@
       "dataFile": "tienganh10.json",
       "status": "active",
       "ready": true,
-      "examStructure": { "mcq": 40, "tf": 0, "sa": 0, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "toan11",
@@ -69,7 +146,12 @@
       "color": "#3b82f6",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 12, "tf": 4, "sa": 6, "durationMinutes": 90 }
+      "examStructure": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 90
+      }
     },
     {
       "id": "vatli11",
@@ -81,7 +163,12 @@
       "color": "#6366f1",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "hoahoc11",
@@ -93,7 +180,12 @@
       "color": "#06b6d4",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "tienganh11",
@@ -105,7 +197,12 @@
       "color": "#0d9488",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 40, "tf": 0, "sa": 0, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "toan12",
@@ -117,7 +214,12 @@
       "color": "#3b82f6",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 12, "tf": 4, "sa": 6, "durationMinutes": 90 }
+      "examStructure": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 90
+      }
     },
     {
       "id": "vatli12",
@@ -129,7 +231,12 @@
       "color": "#6366f1",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "hoahoc12",
@@ -141,7 +248,12 @@
       "color": "#06b6d4",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 18, "tf": 4, "sa": 6, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
     },
     {
       "id": "tienganh12",
@@ -153,7 +265,48 @@
       "color": "#0d9488",
       "status": "in_development",
       "ready": false,
-      "examStructure": { "mcq": 40, "tf": 0, "sa": 0, "durationMinutes": 50 }
+      "examStructure": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0,
+        "durationMinutes": 50
+      }
+    },
+    {
+      "id": "lichsu10",
+      "subjectKey": "lichsu",
+      "grade": 10,
+      "name": "Lịch sử 10",
+      "icon": "🏛️",
+      "description": "Văn minh Văn Lang - Âu Lạc, Chăm-pa, Phù Nam, Đại Việt",
+      "color": "#f59e0b",
+      "dataFile": "lichsu10.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 24,
+        "tf": 4,
+        "sa": 0,
+        "durationMinutes": 50
+      }
+    },
+    {
+      "id": "lichsu11",
+      "subjectKey": "lichsu",
+      "grade": 11,
+      "name": "Lịch sử 11",
+      "icon": "📜",
+      "description": "Cách mạng tư sản, Chủ nghĩa tư bản và Chủ nghĩa xã hội",
+      "color": "#e11d48",
+      "dataFile": "lichsu11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 20,
+        "tf": 4,
+        "sa": 0,
+        "durationMinutes": 50
+      }
     }
   ]
 }

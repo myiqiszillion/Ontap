@@ -597,13 +597,17 @@ const DiagnosticView = {
         </div>
 
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <button class="diag-btn-primary" onclick="DiagnosticView.render('welcome')">
+          <button class="diag-btn-primary" onclick="app.navigateTo('planner')" style="background:var(--brand-primary);">
+            📅 Tạo Kế Hoạch Học Tập (Phase 03B)
+          </button>
+          <button class="diag-btn-secondary" onclick="DiagnosticView.render('welcome')">
             🔄 Làm bài chẩn đoán khác
           </button>
           <button class="diag-btn-secondary" onclick="app.navigateTo('dashboard')">
             🏠 Trở về Bảng điều khiển
           </button>
         </div>
+
       </div>
     `;
   },

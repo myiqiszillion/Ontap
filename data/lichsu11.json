@@ -1,0 +1,1401 @@
+{
+  "subject": "Lịch sử 11",
+  "lessons": [
+    {
+      "id": 1,
+      "name": "Bài 1: Một số vấn đề chung về cách mạng tư sản",
+      "topic": "CHỦ ĐỀ 1: CÁCH MẠNG TƯ SẢN VÀ SỰ PHÁT TRIỂN CỦA CHỦ NGHĨA TƯ BẢN",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Một trong những nhiệm vụ của các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII là",
+          "options": [
+            "đưa giai cấp công nhân lên nắm quyền",
+            "xóa bỏ triệt để mâu thuẫn trong xã hội",
+            "xác lập sự thống trị của chủ nghĩa thực dân",
+            "xóa bỏ tình trạng phong kiến cát cứ"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: xóa bỏ tình trạng phong kiến cát cứ."
+        },
+        {
+          "type": "mcq",
+          "question": "Lãnh đạo của các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII là",
+          "options": [
+            "địa chủ",
+            "nông dân",
+            "công nhân",
+            "tư sản"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: tư sản."
+        },
+        {
+          "type": "mcq",
+          "question": "Lực lượng nào sau đây không phải là lãnh đạo của các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII?",
+          "options": [
+            "Giai cấp tư sản",
+            "Giai cấp công nhân",
+            "Tầng lớp chủ nô",
+            "Quý tộc tư sản hóa"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Giai cấp công nhân."
+        },
+        {
+          "type": "mcq",
+          "question": "Trong các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII, động lực quyết định thắng lợi của cách mạng là",
+          "options": [
+            "mục tiêu của cách mạng",
+            "giai cấp lãnh đạo",
+            "quần chúng nhân dân",
+            "phương pháp đấu tranh"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: quần chúng nhân dân."
+        },
+        {
+          "type": "mcq",
+          "question": "Một trong những mục tiêu của các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII là",
+          "options": [
+            "đưa giai cấp công nhân lên nắm chính quyền",
+            "xóa bỏ những rào cản của chế độ phong kiến",
+            "xóa bỏ triệt để những mâu thuẫn trong xã hội",
+            "xác lập sự thống trị của chủ nghĩa thực dân"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: xóa bỏ những rào cản của chế độ phong kiến."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là tiền đề về kinh tế dẫn đến sự bùng nổ và thắng lợi của các cuộc cách mạng tư sản từ giữa thế kỉ XVI đến cuối thế kỉ XVIII?",
+          "options": [
+            "Những rào cản của chế độ phong kiến kìm hãm sự phát triển của kinh tế tư bản chủ nghĩa",
+            "Giai cấp tư sản và đồng minh có thế lực rất lớn cả về kinh tế và quyền lực chính trị",
+            "Quan hệ sản xuất tư bản chủ nghĩa thay thế hoàn toàn quan hệ sản xuất phong kiến",
+            "Triết học Ánh sáng ra đời, thức tĩnh, dọn đường cho sự đấu tranh của quần chúng nhân dân"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Những rào cản của chế độ phong kiến kìm hãm sự phát triển của kinh tế tư bản chủ nghĩa."
+        },
+        {
+          "type": "mcq",
+          "question": "Kết quả thắng lợi của các cuộc cách mạng tư sản từ giữa thế kỉ XVI đến cuối thế kỉ XVIII có ý nghĩa quan trọng nào sau đây?",
+          "options": [
+            "Giải quyết triệt để mọi yêu cầu về giải quyết vấn đề ruộng đất của nông dân",
+            "Xóa bỏ được tình trạng phân hóa giai cấp và áp bức trong xã hội",
+            "Thúc đẩy phong trào giải phóng dân tộc ở khu vực Mỹ La-tinh phát triển",
+            "Đưa giai cấp công nhân lên nắm chính quyền sau khi cách mạng thành công"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Thúc đẩy phong trào giải phóng dân tộc ở khu vực Mỹ La-tinh phát triển."
+        },
+        {
+          "type": "mcq",
+          "question": "Cuộc cách mạng tư sản được đánh giá là triệt để nhất trong thời kì lịch sử thế giới cận đại là",
+          "options": [
+            "cách mạng tư sản Anh",
+            "cách mạng tư sản Pháp",
+            "cách mạng tư sản Hà Lan",
+            "cải cách nông nô ở Nga"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: cách mạng tư sản Pháp."
+        },
+        {
+          "type": "mcq",
+          "question": "Cuộc cách mạng tư sản đầu tiên trên thế giới được diễn ra tại",
+          "options": [
+            "Hà Lan",
+            "Pháp",
+            "Anh",
+            "Bắc Mỹ"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Hà Lan."
+        },
+        {
+          "type": "mcq",
+          "question": "Điểm khác nhau giữa cuộc cách mạng tư sản Anh thế kỉ XVII với cuộc Chiến tranh giành độc lập của 13 bang thuộc địa Anh ở Bắc Mỹ thế kỷ XVIII là gì?",
+          "options": [
+            "Động lực cách mạng là quần chúng nhân dân",
+            "Mục tiêu là lật đổ nền quân chủ chuyên chế",
+            "Có sự tham gia lãnh đạo của giai cấp tư sản",
+            "Nhiệm vụ là xác lập nền dân chủ tư sản"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Mục tiêu là lật đổ nền quân chủ chuyên chế."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào dưới đây phản ánh đúng vai trò của trào lưu Triết học Ánh sáng đối với cách mạng tư sản Pháp vào cuối thế kỷ XVIII?",
+          "options": [
+            "Lên án chế độ tư bản chủ nghĩa, đưa ra lí thuyết xây dựng nhà nước xã hội chủ nghĩa",
+            "Lên án chế độ phong kiến, giáo hội Thiên chúa và mặt trái của chủ nghĩa tư bản",
+            "Tấn công hệ tư tưởng phong kiến bảo thủ, dọn đường cho cách mạng tư sản bùng nổ",
+            "Lên án chế độ tư bản chủ nghĩa, chế độ phong kiến, đề nghị xây dựng xã hội tiến bộ"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Tấn công hệ tư tưởng phong kiến bảo thủ, dọn đường cho cách mạng tư sản bùng nổ."
+        },
+        {
+          "type": "mcq",
+          "question": "Một trong những điểm điểm giống nhau giữa các cuộc cách mạng tư sản ở Tây Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII là",
+          "options": [
+            "đều có sự tham gia của tầng lớp nô lệ",
+            "đều nhằm xoá bỏ chủ nghĩa thực dân",
+            "đều mở đường cho chủ nghĩa tư bản phát triển",
+            "đều do tầng lớp quý tộc tư sản hóa lãnh đạo"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: đều mở đường cho chủ nghĩa tư bản phát triển."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây không phản ánh đúng khái niệm cách mạng tư sản?",
+          "options": [
+            "Lực lượng chủ yếu là quần chúng nhân dân",
+            "Mở đường cho chủ nghĩa tư bản phát triển",
+            "Do giai cấp tư sản và đồng minh lãnh đạo",
+            "Thiết lập nền chuyên chính vô sản"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Thiết lập nền chuyên chính vô sản."
+        },
+        {
+          "type": "mcq",
+          "question": "Cách mạng tư sản Pháp cuối thế kỉ XVIII được đánh giá là cuộc cách mạng tư sản triệt để nhất thời cận đại vì lí do nào sau đây?",
+          "options": [
+            "Giai cấp tư sản liên minh với tầng lớp quý tộc lãnh đạo quần chúng nhân dân",
+            "Lật đổ chế độ phong kiến chuyên chế và nhân dân được làm chủ đất nước",
+            "Giải quyết vấn đề ruộng đất cho nông dân và thực hiện bình đẳng trong xã hội",
+            "Hoàn thành đầy đủ nhiệm vụ dân tộc và dân chủ của cuộc cách mạng tư sản"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Hoàn thành đầy đủ nhiệm vụ dân tộc và dân chủ của cuộc cách mạng tư sản."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là tiền đề về chính trị dẫn đến sự bùng nổ của các cuộc cách mạng tư sản từ giữa thế kỉ XVI đến cuối thế kỉ XVIII?",
+          "options": [
+            "Quan hệ sản xuất tư bản chủ nghĩa thay thế hoàn toàn quan hệ phong kiến",
+            "Giai cấp tư sản và đồng minh có thế lực rất lớn cả về kinh tế và chính trị",
+            "Triết học Ánh sáng ra đời, đã dọn đường cho quần chúng nhân dân đấu tranh",
+            "Chế độ cai trị của nhà nước phong kiến chuyên chế gây ra sự bất mãn trong xã hội"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Chế độ cai trị của nhà nước phong kiến chuyên chế gây ra sự bất mãn trong xã hội."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là tiền đề về kinh tế dẫn đến sự bùng nổ và thắng lợi của các cuộc cách mạng tư sản từ giữa thế kỉ XVI đến cuối thế kỉ XVIII?",
+          "options": [
+            "Quan hệ sản xuất tư bản chủ nghĩa thay thế hoàn toàn quan hệ sản xuất phong kiến",
+            "Trào lưu Triết học Ánh sáng ra đời, dọn đường cho quần chúng nhân dân đấu tranh",
+            "Giai cấp tư sản và đồng minh có thế lực rất lớn cả về kinh tế và chính trị",
+            "Kinh tế tư bản chủ nghĩa ra đời và phát triển trong lòng chế độ phong kiến"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Kinh tế tư bản chủ nghĩa ra đời và phát triển trong lòng chế độ phong kiến."
+        },
+        {
+          "type": "mcq",
+          "question": "Điểm giống nhau giữa cuộc cách mạng tư sản Hà Lan giữa thế kỉ XVII với cuộc Chiến tranh giành độc lập của 13 bang thuộc địa Anh ở Bắc Mỹ thế kỷ XVIII là gì?",
+          "options": [
+            "Xóa bỏ tình trạng phong kiến cát cứ",
+            "Nhiệm vụ cơ bản là giải phóng dân tộc",
+            "Tầng lớp chủ nô tham gia lãnh đạo",
+            "Chống lại âm mưu xâm lược từ bên ngoài"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Nhiệm vụ cơ bản là giải phóng dân tộc."
+        },
+        {
+          "type": "mcq",
+          "question": "Một trong những nhiệm vụ của các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII là",
+          "options": [
+            "đưa giai cấp công nhân lên nắm quyền",
+            "hình thành thị trường dân tộc thống nhất",
+            "xóa bỏ triệt để mâu thuẫn trong xã hội",
+            "xác lập sự thống trị của chủ nghĩa thực dân"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: hình thành thị trường dân tộc thống nhất."
+        },
+        {
+          "type": "mcq",
+          "question": "Đâu không phải là động lực của các cuộc cách mạng tư sản ở châu Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII?",
+          "options": [
+            "Giáo hội Ki-tô",
+            "Giai cấp công nhân",
+            "Tầng lớp chủ nô",
+            "Giai cấp tư sản"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Giáo hội Ki-tô."
+        },
+        {
+          "type": "mcq",
+          "question": "Cuộc cách mạng tư sản Anh thế kỉ XVII có điểm gì khác so với cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII?",
+          "options": [
+            "Xóa bỏ chế độ phong kiến chuyên chế",
+            "Giai cấp tư sản là lãnh đạo cách mạng",
+            "Là cuộc nội chiến trong lòng đất nước",
+            "Giai cấp nông dân tham gia cách mạng"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Là cuộc nội chiến trong lòng đất nước."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc đoạn trích sau đây:\n\n“Ở Pháp, vương quyền là đỉnh cao của lâu đài phong kiến và chuyên chế. Nhà vua luôn có quyền hành chuyên chế và vô hạn; … quyết định mọi công việc đối nội và đối ngoại của quốc gia. Triều vua Lu-I XVI là một sự chuyên chế cao độ. Theo những “mật lệnh có ấn vua” nhằm khủng bố nhân dân, hàng trăm người bị bắt, bị tù đày ở các nơi trong nước”.\n\n(A. Man-phờ-rét, Đại Cách mạng Pháp 1789, NXB Khoa học, Hà Nội, 1965, tr.18-19)",
+          "statements": [
+            {
+              "question": "Chính sách cai trị của nhà nước phong kiến chuyên chế gây bất mãn cho nhân dân.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Sự tồn tại của nhà nước quân chủ lập hiến gây bất mãn cho tầng lớp quý tộc mới.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Mâu thuẫn giữa quần chúng nhân dân với nền dân chủ tư sản ngày càng sâu sắc.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Tình hình chính trị ở Pháp dưới triều vua Lu-I XVI khủng hoảng trầm trọng.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Cho bảng dữ kiện về ý nghĩa của các cuộc cách mạng tư sản ở Tây Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII:\n\nCách mạng tư sản\n\nÝ nghĩa\n\nCách mạng tư sản Anh\n\nCách mạng tư sản thành công đã đặt dấu mốc cho sự xác lập chủ nghĩa tư bản ở Anh, thiết lập chế độ quân chủ lập hiến. Vì vậy, cuộc cách mạng tư sản Anh có ý nghĩa to lớn đối với sự phát triển của xã hội loài người trong buổi đầu chuyển từ chế độ phong kiến sang chế độ tư bản.\n\nChiến tranh giành độc lập của 13 bang thuộc địa Anh ở Bắc Mỹ\n\nChiến tranh giành độc lập của 13 bang thuộc địa Anh ở Bắc Mỹ đã giải phóng nhân dân nơi đây khỏi ách thực dân, đưa đến sự thành lập nhà nước tư sản đầu tiên ở ngoài châu Âu, thúc đẩy phong trào giải phóng dân tộc ở khu vực Mỹ La-tinh phát triển và có ảnh hưởng tích cực đến phong trào giành độc lập ở nhiều nơi trên thế giới vào cuối thế kỉ XVIII đến đầu thế kỉ XIX.\n\nCách mạng tư sản Pháp\n\nCách mạng tư sản Pháp đã lật đổ và xóa bỏ mọi tàn dư của chế độ phong kiến. Nông dân được giải phóng, vấn đề ruộng đất được giải quyết, những cản trở đối với công thương nghiệp bị xóa bỏ,... tạo điều kiện cho chủ nghĩa tư bản phát triển. Cách mạng tư sản Pháp đã làm cho chế độ phong kiến bị lung lay trên khắp châu Âu. Cách mạng tư sản Pháp đã mở ra thời đại mới, thời đại thắng lợi và củng cố của chủ nghĩa tư bản ở châu Âu và châu Mỹ.",
+          "statements": [
+            {
+              "question": "Cuộc cách mạng tư sản Anh có ý nghĩa to lớn trong lịch sử thế giới vì đã khiến chế độ phong kiến chuyên chế bị lung lay khắp các quốc gia ở châu Âu.",
+              "correct": false,
+              "explanation": "Ý a) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Cuộc cách mạng tư sản Pháp được đánh giá là cuộc cách mạng có ý nghĩa to lớn nhất vì đã lật đổ và xóa bỏ mọi tàn dư của chế độ phong kiến chuyên chế.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Chiến tranh giành độc lập của 13 bang thuộc địa Anh ở Bắc Mỹ thắng lợi đã thúc đẩy phong trào giành độc lập phát triển ở Á - Phi - Mỹ La-tinh cuối thế kỉ XVIII đến đầu thế kỉ XIX.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Các cuộc cách mạng tư sản đều mang một ý nghĩa lớn lao vì đã mở ra thời kỳ thắng lợi và củng cố của chủ nghĩa tư bản trên phạm vi toàn thế giới.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Cho bảng dữ kiện về một số nhiệm vụ của các cuộc cách mạng tư sản ở Tây Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII:\n\nCách mạng tư sản\n\nNhiệm vụ\n\nCách mạng tư sản Anh\n\nXóa bỏ tính chuyên chế phong kiến, thống nhất thị trường dân tộc, xác lập nền dân chủ tư sản.\n\nChiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ\n\nGiành độc lập dân tộc, thống nhất thị trường dân tộc, hình thành quốc gia dân tộc; xác lập nền dân chủ tư sản, đảm bảo các quyền tự do chính trị, tự do kinh doanh và tư hữu tài sản.\n\nCách mạng tư sản Pháp\n\nHình thành thị trường dân tộc thống nhất; chống ngoại xâm và nội phản, bảo vệ độc lập dân tộc và chính quyền cách mạng; xác lập nền dân chủ tư sản; xóa bỏ chế độ đẳng cấp, ban hành các quyền tự do, bình đẳng; đảm bảo quyền tư hữu về ruộng đất cho nông dân.",
+          "statements": [
+            {
+              "question": "Các cuộc cách mạng tư sản ở Tây Âu và Bắc Mỹ từ giữa thế kỉ XVI đến cuối thế kỉ XVIII chỉ thực hiện nhiệm vụ dân tộc.",
+              "correct": false,
+              "explanation": "Ý a) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Xóa bỏ tình trạng phong kiến cát cứ, thống nhất thị trường dân tộc hoặc giành độc lập dân tộc là nhiệm vụ dân tộc của các cuộc cách mạng tư sản thời cận đại.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Xóa bỏ tính chất chuyên chế phong kiến, xác lập nền dân chủ tư sản là nhiệm vụ dân chủ chung của các cuộc cách mạng tư sản thời cận đại.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Các cuộc cách mạng tư sản ở Tây Âu và Bắc Mỹ thời cận đại chỉ thực hiện một nhiệm vụ chung là nhiệm vụ dân chủ điển hình.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc các đoạn tư liệu sau đây:\n\nTư liệu 1: “Tất cả mọi người sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”.\n\n(Tuyên ngôn Độc lập Mỹ, năm 1776)\n\nTư liệu 2:“Điều 1. Con người sinh ra đều có quyền tự do và bình đẳng. Những sự phân biệt xã hội chỉ có thể dựa trên lợi ích chung. Điều 17. Quyền tư hữu là quyền bất khả xâm phạm và thiêng liêng không ai có thể bị tước bỏ”\n\n(Tuyên ngôn Nhân quyền và Dân quyền của Pháp, năm 1789)",
+          "statements": [
+            {
+              "question": "Bản Tuyên ngôn Nhân quyền và Dân quyền là một trong những thành quả từ cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Điểm chung của Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của Pháp là đề cao quyền con người và quyền công dân.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Bản Tuyên ngôn Nhân quyền và Dân quyền của Pháp không đề cao quyền tư hữu cá nhân vì đó là biểu hiện cho sự phân biệt giàu - nghèo trong xã hội.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "chủ tịch Hồ Chí Minh đã trích dẫn những câu nói nổi tiếng trong bản Tuyên ngôn Độc lập Mỹ và Tuyên ngôn Nhân quyền và Dân quyền của Pháp vào trong Tuyên ngôn độc lập của nước Việt Nam dân chủ cộng hòa (2/9/1945).",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bài 2: Sự xác lập và phát triển của chủ nghĩa tư bản",
+      "topic": "CHỦ ĐỀ 1: CÁCH MẠNG TƯ SẢN VÀ SỰ PHÁT TRIỂN CỦA CHỦ NGHĨA TƯ BẢN",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Đầu thế kỉ XX, quốc gia nào sau đây có hệ thống thuộc địa rộng lớn nhất thế giới?",
+          "options": [
+            "Đức",
+            "I-ta-li-a",
+            "Nhật",
+            "Anh"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Anh."
+        },
+        {
+          "type": "mcq",
+          "question": "Quốc gia nào sau đây được mệnh danh là “đế quốc mà Mặt Trời không bao giờ lặn”?",
+          "options": [
+            "Pháp",
+            "Đức",
+            "Anh",
+            "Mỹ"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Anh."
+        },
+        {
+          "type": "mcq",
+          "question": "Quốc gia nào sau đây được mệnh danh là “chủ nghĩa đế quốc cho vay nặng lãi”?",
+          "options": [
+            "Pháp",
+            "Đức",
+            "Anh",
+            "Mỹ"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Pháp."
+        },
+        {
+          "type": "mcq",
+          "question": "Thuật ngữ “chủ nghĩa tư bản hiện đại” dùng để chỉ sự phát triển của chủ nghĩa tư bản trong giai đoạn",
+          "options": [
+            "trước Chiến tranh thế giới thứ hai đến nay",
+            "sau Chiến tranh thế giới thứ hai đến nay",
+            "sau Chiến tranh thế giới thứ nhất đến nay",
+            "trước Chiến tranh thế giới thứ nhất đến nay"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: sau Chiến tranh thế giới thứ hai đến nay."
+        },
+        {
+          "type": "mcq",
+          "question": "Cho đến cuối thế kỉ XIX, các nước đế quốc chủ nghĩa đã thiết lập hệ thống thuộc địa rộng khắp ở",
+          "options": [
+            "châu Âu, châu Mỹ và khu vực Tây Âu",
+            "châu Âu, châu Úc và khu vực Bắc Mỹ",
+            "châu Á, châu Phi và khu vực Mỹ La-tinh",
+            "châu Mỹ, Tây Âu và khu vực Đông Âu"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: châu Á, châu Phi và khu vực Mỹ La-tinh."
+        },
+        {
+          "type": "mcq",
+          "question": "Từ thế kỉ XVI, để đáp ứng nhu cầu ngày càng cao về nguyên liệu và nhân công các nước tư bản phương Tây đã tăng cường",
+          "options": [
+            "hợp tác và mở rộng đầu tư",
+            "thu hút vốn đầu tư bên ngoài",
+            "xâm lược và mở rộng thuộc địa",
+            "đổi mới hình thức kinh doanh"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: xâm lược và mở rộng thuộc địa."
+        },
+        {
+          "type": "mcq",
+          "question": "Chủ nghĩa đế quốc ra đời từ cuối thế kỉ XIX - đầu thế kỉ XX là hệ quả trực tiếp của quá trình",
+          "options": [
+            "xâm lược thuộc địa",
+            "giao lưu buôn bán",
+            "mở rộng thị trường",
+            "hợp tác kinh tế"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: xâm lược thuộc địa."
+        },
+        {
+          "type": "mcq",
+          "question": "Lĩnh vực nào sau đây là tiềm năng phát triển của chủ nghĩa tư bản hiện đại?",
+          "options": [
+            "Quân sự và văn hóa",
+            "Văn hóa - giáo dục",
+            "Chính trị và ngoại giao",
+            "Khoa học - công nghệ"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Khoa học - công nghệ."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là thách thức mà chủ nghĩa tư bản hiện đại phải đối mặt?",
+          "options": [
+            "Sự phát triển mạnh mẽ của khoa học – công nghệ",
+            "Sự sáp nhập của các công ty độc quyền lũng đoạn",
+            "Sự vươn lên mạnh mẽ của các nước đang phát triển",
+            "Khủng hoảng kinh tế, tài chính mang tính toàn cầu"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Khủng hoảng kinh tế, tài chính mang tính toàn cầu."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây là tiềm năng phát triển của chủ nghĩa tư bản hiện đại?",
+          "options": [
+            "Kinh nghiệm quản lí",
+            "Liên minh quân sự",
+            "Liên kết khu vực",
+            "Hợp tác quốc tế"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Kinh nghiệm quản lí."
+        },
+        {
+          "type": "mcq",
+          "question": "Chính sách xâm lược và mở rộng thuộc địa của các nước tư bản chủ nghĩa nhằm mục đích đáp ứng nhu cầu về",
+          "options": [
+            "phát triển khoa học – kĩ thuật",
+            "thu hút nguồn vốn đầu tư bên ngoài",
+            "nguyên liệu và nguồn nhân công",
+            "giải quyết tình trạng thất nghiệp"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: nguyên liệu và nguồn nhân công."
+        },
+        {
+          "type": "mcq",
+          "question": "Nước Anh được mệnh danh là “đế quốc mà Mặt Trời không bao giờ lặn” vì lí do nào sau đây?",
+          "options": [
+            "Nước Anh luôn phải đối mặt với nạn ngoại xâm",
+            "Nước Anh có hệ thống thuộc địa rộng khắp thế giới",
+            "Nguồn vốn đầu tư của nước Anh trải khắp toàn cầu",
+            "Các nước đế quốc tranh nhau đầu tư vào nước Anh"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Nước Anh có hệ thống thuộc địa rộng khắp thế giới."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây phản ánh đúng về bản chất chủ nghĩa tư bản hiện đại?",
+          "options": [
+            "Luôn tìm cách xóa bỏ sự chênh lệch giàu nghèo và những bất công xã hội",
+            "Theo đuổi lợi nhuận là mục tiêu cao nhất và cuối cùng của các nhà tư bản",
+            "Đầu tư, hợp tác nhằm mục tiêu thúc đẩy sự phát triến kinh tế toàn cầu",
+            "Không ngừng đấu tranh đòi quyền lợi chính đáng cho người lao động"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Theo đuổi lợi nhuận là mục tiêu cao nhất và cuối cùng của các nhà tư bản."
+        },
+        {
+          "type": "mcq",
+          "question": "Yếu tố nào sau đây đưa đến sự chuyển biến của chủ nghĩa tư bản từ tự do cạnh tranh sang giai đoạn độc quyền?",
+          "options": [
+            "Sự xuất hiện của những xí nghiệp khổng lồ và các tổ chức độc quyền",
+            "Sự sáp nhập của các công ty độc quyền với các tổ chức tín dụng quốc tế",
+            "Sự phát triển của các tổ chức liên kết khu vực nhiều nơi trên thế giới",
+            "Sự hình thành của các trung tâm kinh tế tài chính nhiều nơi trên thế giới"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Sự xuất hiện của những xí nghiệp khổng lồ và các tổ chức độc quyền."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây tạo cơ sở cho bước chuyển biến của chủ nghĩa tư bản từ tự do cạnh tranh sang giai đoạn độc quyền?",
+          "options": [
+            "Quá trình hợp tác ở các nước tư bản",
+            "Sự phát triển của các tổ chức độc quyền",
+            "Nhiều trung tâm kinh tế - tài chính ra đời",
+            "Sự ra đời nhiều tổ chức liên kết khu vực"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Sự phát triển của các tổ chức độc quyền."
+        },
+        {
+          "type": "mcq",
+          "question": "Cuối thế kỉ XIX – đầu thế kỉ XX, các nước tư bản chủ nghĩa đã chuyển sang giai đoạn",
+          "options": [
+            "tự do cạnh tranh",
+            "cải cách đất nước",
+            "đế quốc chủ nghĩa",
+            "chủ nghĩa phát xít"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: đế quốc chủ nghĩa."
+        },
+        {
+          "type": "mcq",
+          "question": "Trong những năm cuối thế kỉ XIX – đầu thế kỉ XX, cùng với việc các nước đế quốc đẩy mạnh xâm lược thuộc địa thì",
+          "options": [
+            "chủ nghĩa tư bản đã mở rộng phạm vi ảnh hưởng trên toàn thế giới",
+            "chủ nghĩa tư bản trên toàn thế giới dần bị thay thế bởi chủ nghĩa xã hội",
+            "chủ nghĩa tư bản đang chuyển từ giai đoạn độc quyền sang cạnh tranh tự do",
+            "chủ nghĩa tư bản hiện đại đang dần được hình thành ở nhiều quốc gia"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: chủ nghĩa tư bản đã mở rộng phạm vi ảnh hưởng trên toàn thế giới."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguyên nhân dẫn đến sự ra đời của các tổ chức độc quyền ở các nước tư bản từ thế kỉ XIX là gì?",
+          "options": [
+            "Quá trình tập trung sản xuất và tập trung tư bản",
+            "Do sự xâm lược và mở rộng hệ thống thuộc địa",
+            "Sự ra đời của chủ nghĩa đế quốc và chiến tranh thế giới",
+            "Sự ra đời của chủ nghĩa tư bản hiện đại ở nhiều quốc gia"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Quá trình tập trung sản xuất và tập trung tư bản."
+        },
+        {
+          "type": "mcq",
+          "question": "Biểu hiện tiêu biểu của chủ nghĩa tư bản hiện đại là",
+          "options": [
+            "sự cạnh tranh gây gắt giữa các xí nghiệp vừa và nhỏ, với các xí nghiệp khổng lồ và các tổ chức độc quyền",
+            "sự liên minh giữa các nhà tư bản lớn để tập trung vào tay phần lớn việc sản xuất hoặc tiêu thụ một số hàng hóa",
+            "sự đẩy mạnh quá trình xâm lược thuộc địa cùng với sự mở rộng phạm vi ảnh hưởng của chủ nghĩa tư bản",
+            "sự kết hợp giữa sức mạnh kinh tế của các tổ chức độc quyền tư nhân với sức mạnh chính trị của nhà nước tư sản"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: sự kết hợp giữa sức mạnh kinh tế của các tổ chức độc quyền tư nhân với sức mạnh chính trị của nhà nước tư sản."
+        },
+        {
+          "type": "mcq",
+          "question": "Nhật Bản trở thành nước tư bản chủ nghĩa nhờ vào",
+          "options": [
+            "cuộc Cách mạng Tân Hợi năm 1911",
+            "cuộc Duy tân Minh Trị từ năm 1868",
+            "cuộc đấu tranh thống nhất đất nước thế kỉ XIX",
+            "cuộc nội chiến giữa thế kỉ XVII"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: cuộc Duy tân Minh Trị từ năm 1868."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Điều quan trọng là chủ nghĩa tư bản không thể tồn tại và phát triển được nếu không thường xuyên mở rộng phạm vi thống trị của nó, không khai phá những xứ sở mới và lôi cuốn các xứ sở không phải tư bản chủ nghĩa vào cơn lốc kinh tế thế giới”.\n\n(Lênin, Toàn tập, Tập 3, NXB Chính trị quốc gia, Hà Nội, 2005, tr.751)",
+          "statements": [
+            {
+              "question": "Chủ nghĩa đế quốc là hệ quả trực tiếp của quá trình xâm lược thuộc địa nhằm mục đích chính là khẳng định sức mạnh kinh tế.",
+              "correct": false,
+              "explanation": "Ý a) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Hệ thông thuộc địa có vai trò quan trọng trong quá trình phát triển và mở rộng phạm vi ảnh hưởng của chủ nghĩa tư bản.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Cùng với quá trình xâm lược thuộc địa của các nước đế quốc, chủ nghĩa tư bản đã mở rộng phạm vi ảnh hưởng ra toàn thế giới.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Chủ nghĩa tư bản đã chuyển sang giai đoạn đế quốc chủ nghĩa mà không cần tiến hành chiến tranh xâm lược thuộc địa.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“V.I.Lênin phân tích một cách khoa học giai đoạn phát triển mới của chủ nghĩa tư bản, nêu lên bản chất và địa vị lịch sử của nó. Người vạch ra 5 đặc trưng cơ bản của chủ nghĩa đế quốc là:\n\n- Sự tập trung sản xuất và tư bản đạt tới mức độ phát triển rất cao, tạo thành những tổ chức lũng đoạn có một vai trò quyết định trong sinh hoạt kinh tế.\n\n- Sự dung hợp tư bản ngân hàng với tư bản công nghiệp thành tư bản tài chính.\n\n- Việc xuất khẩu tư bản trở thành đặc biệt quan trọng.\n\n- Sự hình thành những khối liên minh tư bản độc quyền chia nhau thế giới.\n\n- Việc các cường quốc tư bản lớn nhất đã chia nhau xong đất đai trên thế giới.”\n\n(Vũ Dương Ninh, Nguyễn Văn Hồng, Lịch sử thế giới cận đại, NXB Giáo dục, Hà Nội, 2006, tr.228)",
+          "statements": [
+            {
+              "question": "Chủ nghĩa đế quốc được hình thành sau Chiến tranh thế giới thứ hai.",
+              "correct": false,
+              "explanation": "Ý a) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Chủ nghĩa tư bản hiện đại có bản chất khác so với đặc trưng của chủ nghĩa đế quốc.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Tự điều chỉnh để tồn tại và phát triển là đặc trưng cơ bản của chủ nghĩa đế quốc.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Nền kinh tế của các nước đế quốc chủ nghĩa phụ thuộc vào các tổ chức độc quyền.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Khi phân tích về chủ nghĩa tư bản, C. Mác và Ph. Ăng-ghen khẳng định: Chủ nghĩa tư bản, với tư cách là phương thức sản xuất được hình thành và thay thế phương thức sản xuất phong kiến trong lịch sử, là chế độ kinh tế - xã hội tiến bộ hơn nhiều so với các chế độ kinh tế - xã hội trước đó. Đặc biệt, nhờ vận dụng hiệu quả quy luật của kinh tế thị trường, giai cấp tư sản trong quá trình thống trị chưa đầy một thế kỷ “đã tạo ra những lực lượng sản xuất nhiều hơn và đồ sộ hơn lực lượng sản xuất của tất cả các thế hệ trước kia gộp lại”.\n\n(Trần Hoa Phượng, Một số vấn đề về nhận diện bản chất của chủ nghĩa tư bản trong thời đại mới, góp phần củng cố vững chắc định hướng đi lên chủ nghĩa xã hội ở Việt Nam hiện nay, Tạp chí Lý luận chính trị và truyền thông, 2024)",
+          "statements": [
+            {
+              "question": "Chủ nghĩa tư bản là phương thức sản xuất tiến bộ, đã đem lại lực lượng sản xuất to lớn chưa từng có trong lịch sử thế giới.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Chủ nghĩa tư bản là phương thức sản xuất kế tiếp, thay thế cho phương thức sản xuất trong thời kì xã hội nguyên thuỷ.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Một trong những kinh nghiệm, bài học thành công của chủ nghĩa tư bản là vận dụng hiệu quả quy luật của kinh tế thị trường.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Trong xã hội chủ nghĩa tư bản, không có giai cấp thống trị, mọi hoạt động kinh tế, sản xuất và hưởng thụ đều mang tính công bằng, dân chủ.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Thuộc địa không chỉ là nơi vơ vét nguyên liệu và tiêu thụ hàng hóa mà còn có ý nghĩa rất quan trọng cho việc xuất khẩu tư bản. Các nước đế quốc đua nhau chiếm đoạt những vùng đất đai còn “bỏ trống” nghĩa là những nơi chưa bị xâm lược. Lịch sử ba mươi năm cuối thế kỉ XIX gắn liền với những cuộc chiến tranh xâm lược do các nước đế quốc tiến hành ở châu Á, châu Phi và châu Mĩ Latinh. Ngoài những nước thực dân lớn trước kia như Anh, Pháp, Nga... còn xuất hiện thêm nhiều nước mới có thuộc địa như Mĩ, Đức, Ý, Nhật...”\n\n(Vũ Dương Ninh, Nguyễn Văn Hồng, Lịch sử thế giới cận đại, NXB Giáo dục, Hà Nội, 2006, tr.225)",
+          "statements": [
+            {
+              "question": "Chủ nghĩa thực dân gắn liền với sự phát triển của nền kinh tế các nước đế quốc.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Nước Anh là nước đế quốc có hệ thống thuộc địa rộng lớn nhất thế kỉ XIX.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Đông Nam Á là khu vực không bị ảnh hưởng bởi quá trình xâm lược thuộc địa.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Nguyên liệu và nhân công là mục đích chính của quá trình xâm lược thuộc địa.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bài 3: Sự hình thành Liên bang Cộng hòa xã hội chủ nghĩa Xô Viết",
+      "topic": "CHỦ ĐỀ 2: CHỦ NGHĨA XÃ HỘI TỪ NĂM 1917 ĐẾN NAY",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Sau Cách mạng tháng Mười Nga năm 1917, người đứng đầu Chính quyền Xô viết là",
+          "options": [
+            "Lê-nin",
+            "Xta-lin",
+            "Pu-tin",
+            "Goóc-ba-chốp"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Lê-nin."
+        },
+        {
+          "type": "mcq",
+          "question": "Một trong những tư tưởng chỉ đạo của Lê-nin trong việc thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết năm 1922 là",
+          "options": [
+            "sự bình đẳng về mọi mặt",
+            "phân biệt về tôn giáo",
+            "thống nhất về văn hóa",
+            "phân biệt về chủng tộc"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: sự bình đẳng về mọi mặt."
+        },
+        {
+          "type": "mcq",
+          "question": "Thắng lợi nào sau đây dẫn đến sự ra đời của Nhà nước xã hội chủ nghĩa đầu tiên trên thế giới?",
+          "options": [
+            "Cách mạng tháng Hai Nga năm 1917",
+            "Cách mạng tháng Mười Nga năm 1917",
+            "Cách mạng Nga năm 1905 - 1907",
+            "Cải cách nông nô ở Nga năm 1861"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Cách mạng tháng Mười Nga năm 1917."
+        },
+        {
+          "type": "mcq",
+          "question": "Đại hội Xô viết toàn Nga lần thứ hai, khai mạc đêm 25-10-1917 đã ra tuyên bố",
+          "options": [
+            "thông qua sắc lệnh “Ruộng đất”",
+            "thông qua sắc lệnh “Hòa bình”",
+            "thành lập chính quyền Xô viết",
+            "Thông qua chính sách “Kinh tế mới”"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: thành lập chính quyền Xô viết."
+        },
+        {
+          "type": "mcq",
+          "question": "Khi mới thành lập, Liên bang Cộng hòa xã hội chủ nghĩa Xô viết gồm 4 nước Cộng hòa là",
+          "options": [
+            "Liên Xô, Hung-ga-ri, Bung-ra-ri và Ngoại Cáp-ca-dơ",
+            "Nga, Hung-ga-ri, Bê-lô-rút-xi-a và Ngoại Cáp-ca-dơ",
+            "Nga, Hung-ga-ri, Bung-ra-ri và Ngoại Cáp-ca-dơ",
+            "Nga, U-crai-na, Bê-lô-rút-xi-a và Ngoại Cáp-ca-dơ"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Nga, U-crai-na, Bê-lô-rút-xi-a và Ngoại Cáp-ca-dơ."
+        },
+        {
+          "type": "mcq",
+          "question": "Một trong những tư tưởng chỉ đạo của Lê-nin trong việc thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết năm 1922 là",
+          "options": [
+            "quyền dân tộc tự quyết",
+            "phân biệt về tôn giáo",
+            "thống nhất về văn hóa",
+            "phân biệt về chủng tộc"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: quyền dân tộc tự quyết."
+        },
+        {
+          "type": "mcq",
+          "question": "Sự kiện nào sau đây đánh dấu hoàn thành quá trình thành lập Nhà nước Liên bang Cộng hòa xã hội chủ nghĩa đầu tiên trên thế giới?",
+          "options": [
+            "Khi hoàn thành quá trình khôi phục và phát triển kinh tế",
+            "Bản Hiệp ước Liên bang lần đầu tiên được thông qua",
+            "Thắng lợi trong đấu tranh chống thù trong, giặc ngoài",
+            "Bản Hiến pháp đầu tiên của Liên Xô được thông qua"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Bản Hiến pháp đầu tiên của Liên Xô được thông qua."
+        },
+        {
+          "type": "mcq",
+          "question": "Sau cuộc chiến đấu chống thù trong giặc ngoài, công cuộc xây dựng chủ nghĩa xã hội đặt ra yêu cầu gì đối với các dân tộc trên lãnh thổ nước Nga Xô viết?",
+          "options": [
+            "Một vài dân tộc lớn liên minh với nhau giành quyền lực",
+            "Liên minh, đoàn kết với nhau nhằm tăng cường sức mạnh",
+            "Độc lập với nhau để phát huy sức mạnh của mỗi dân tộc",
+            "Liên kết với các nước bên ngoài để nhận sự giúp đỡ"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Liên minh, đoàn kết với nhau nhằm tăng cường sức mạnh."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào không phải ý nghĩa trong nước của sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Thể hiện sức mạnh đoàn kết, giúp đỡ nhau giữa các dân tộc Xô viết",
+            "Phù hợp với lợi ích chung của các dân tộc trên đất nước Xô viết",
+            "Tăng cường vị thế của Nhà nước Liên Xô trên trường quốc tế",
+            "Tạo tiền đề cho sự ra đời của hệ thống xã hội chủ nghĩa trên thế giới"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Tạo tiền đề cho sự ra đời của hệ thống xã hội chủ nghĩa trên thế giới."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào không phải ý nghĩa trong nước của sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Thể hiện sức mạnh đoàn kết, giúp đỡ nhau giữa các dân tộc Xô viết",
+            "Phù hợp với lợi ích chung của các dân tộc trên đất nước Xô viết",
+            "Trở thành biểu tượng và chỗ dựa cho phong trào cách mạng thế giới",
+            "Tăng cường vị thế của Nhà nước Liên Xô trên trường quốc tế"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Trở thành biểu tượng và chỗ dựa cho phong trào cách mạng thế giới."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào không phải ý nghĩa trong nước của sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Thể hiện sức mạnh đoàn kết, giúp đỡ nhau giữa các dân tộc Xô viết",
+            "Phù hợp với lợi ích chung của các dân tộc trên đất nước Xô viết",
+            "Tăng cường vị thế của Nhà nước Liên Xô trên trường quốc tế",
+            "Cổ vũ mạnh mẽ phong trào giải phóng dân tộc ở Á, Phi, khu vực Mỹ-La tinh"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Cổ vũ mạnh mẽ phong trào giải phóng dân tộc ở Á, Phi, khu vực Mỹ-La tinh."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào không phải ý nghĩa quốc tế của sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Phù hợp với lợi ích chung của các dân tộc trên đất nước Xô viết",
+            "Cổ vũ mạnh mẽ phong trào giải phóng dân tộc ở Á, Phi, Mỹ La-tinh",
+            "Tạo tiền đề cho sự ra đời của hệ thống xã hội chủ nghĩa trên thế giới",
+            "Trở thành biểu tượng và chỗ dựa cho phong trào cách mạng thế giới"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Phù hợp với lợi ích chung của các dân tộc trên đất nước Xô viết."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào không phải ý nghĩa quốc tế của sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Tăng cường vị thế của Nhà nước Liên Xô trên trường quốc tế",
+            "Cổ vũ mạnh mẽ phong trào giải phóng dân tộc ở Á, Phi, Mỹ La-tinh",
+            "Tạo tiền đề cho sự ra đời của hệ thống xã hội chủ nghĩa trên thế giới",
+            "Trở thành biểu tượng và chỗ dựa cho phong trào cách mạng thế giới"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Tăng cường vị thế của Nhà nước Liên Xô trên trường quốc tế."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây phản ánh không đúng ý nghĩa sự ra đời Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Thể hiện sức mạnh đoàn kết, giúp đỡ nhau giữa các dân tộc Xô viết",
+            "Đánh dấu chủ nghĩa xã hội được mở rộng về không gian, vùng địa lý",
+            "Tăng cường vị thế của Nhà nước Liên Xô trên trường quốc tế",
+            "Phù hợp với lợi ích chung của các dân tộc trên đất nước Xô viết"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Đánh dấu chủ nghĩa xã hội được mở rộng về không gian, vùng địa lý."
+        },
+        {
+          "type": "mcq",
+          "question": "Trong giai đoạn xây dựng và bảo vệ đất nước hiện nay, Việt Nam học tập điều gì từ sự ra đời và thành công của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Tinh thần đoàn kết, hợp tác, giúp đỡ nhau giữa các dân tộc",
+            "Mở rộng, giao lưu hợp tác quốc tế để khẳng định vị thế đất nước",
+            "Đoàn kết, hợp tác trong đấu tranh chống ngoại xâm giữa các dân tộc",
+            "Tham gia các liên minh quân sự để tăng cường sức mạnh phòng thủ"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Tinh thần đoàn kết, hợp tác, giúp đỡ nhau giữa các dân tộc."
+        },
+        {
+          "type": "mcq",
+          "question": "Nhận xét nào sau đây đúng về vai trò của Lê-nin đối với sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết?",
+          "options": [
+            "Nhà lãnh đạo chuyên chế nắm mọi quyền hành chính trị, quân sự, tài chính",
+            "Tạo ra sự đoàn kết, vạch ra chủ trương và đường lối cho sự ra đời của Liên Xô",
+            "Là đối trọng với các nước tư bản chủ nghĩa trong quá trình thiết lập trật tự thế giới",
+            "Chủ trương ủng hộ, giúp đỡ, viện trợ cho các nước gia nhập vào Liên Xô"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Tạo ra sự đoàn kết, vạch ra chủ trương và đường lối cho sự ra đời của Liên Xô."
+        },
+        {
+          "type": "mcq",
+          "question": "Quốc gia đầu tiên thành công trong việc xây dựng Nhà nước Liên bang Cộng hòa xã hội chủ nghĩa đầu tiên trên thế giới là",
+          "options": [
+            "Anh",
+            "Pháp",
+            "Nga",
+            "Đức"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Nga."
+        },
+        {
+          "type": "mcq",
+          "question": "Những thành tựu của Liên Xô đã cổ vũ, lôi cuốn mạnh mẽ phong trào giải phóng dân tộc tại",
+          "options": [
+            "các nước thuộc địa ở châu Á, châu Phi và khu vực Mỹ La-tinh",
+            "các nước tư bản ở châu Âu và châu Mỹ",
+            "các nước phong kiến ở châu Á, châu Phi và khu vực Mỹ La-tinh",
+            "các nước xã hội chủ nghĩa ở châu Âu và châu Mỹ"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: các nước thuộc địa ở châu Á, châu Phi và khu vực Mỹ La-tinh."
+        },
+        {
+          "type": "mcq",
+          "question": "Tiền đề cho sự ra đời của hệ thống xã hội chủ nghĩa trên thế giới là",
+          "options": [
+            "quá trình sụp đổ của chế độ phong kiến trên toàn thế giới",
+            "sự mở rộng của ảnh hưởng của các nước tư bản chủ nghĩa",
+            "quá trình đẩy mạnh của chính sách thực dân xâm lược",
+            "sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết."
+        },
+        {
+          "type": "mcq",
+          "question": "Con đường giải quyết các vấn đề dân tộc trong một quốc gia nhiều dân tộc được đề cập trong bản Hiến pháp đầu tiên của Liên Xô là",
+          "options": [
+            "trên cơ sở nguyên tắc bình đẳng và tình hữu nghị giữa các dân tộc",
+            "trên cơ sở sức mạnh kinh tế và chính trị của mỗi dân tộc",
+            "trên cơ sở quyền tự quyết và quyền tài phán của mỗi dân tộc",
+            "trên cơ sở lịch sử hình thành và phát triển của mỗi dân tộc"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: trên cơ sở nguyên tắc bình đẳng và tình hữu nghị giữa các dân tộc."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc tư liệu sau đây:\n\nLênin khẳng định: “Chúng ta có quyền tự hào và quả thật chúng ta tự hào là đã có cái hân hạnh được bắt đầu việc xây dựng Nhà nước Xô viết, và do đó, mở đầu một thời đại mới trong lịch sử thế giới..”.\n\n(Lênin, Toàn tập, Tập 44, NXB Tiến bộ, Hà Nội, 1977, tr.184)",
+          "statements": [
+            {
+              "question": "Nhà nước Liên bang cộng hòa xã hội chủ nghĩa Xô viết là niềm tự hào của toàn thể các dân tộc của các nước Cộng hòa Xô viết.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên bang cộng hòa xã hội chủ nghĩa Xô viết được thành lập là sự kiện đã mở đầu một thời đại mới trong lịch sử thế giới loài người.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Nhà nước Liên Xô chỉ là ước mơ của loài người về chủ nghĩa cộng sản trong thời kỳ chủ nghĩa tư bản chuyển sang giai đoạn đế quốc chủ nghĩa.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Sự thành lập của Liên Xô đã dẫn đến tư bản chủ nghĩa không còn là hệ thống chính trị - xã hội duy nhất trên thế giới.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc tư liệu sau đây:\n\n“Nhưng bước vào thời kì hòa bình, với nhiệm vụ xây dựng chủ nghĩa xã hội và giữ vững nền quốc phòng an ninh, các nước Cộng hòa Xô viết càng phải thống nhất, đoàn kết chặt chẽ hơn nữa, nhất là về kinh tế và chính trị, trong một Liên bang duy nhất về mặt Nhà nước. Hệ thống hiệp ước liên minh giữa các nước cộng hòa trước đây vẫn không đủ đảm bảo sự thống nhất kinh tế cần thiết (như việc phân công lao động giữa các vùng, sử dụng một cách hợp lí các nguồn tài nguyên dự trữ). Việc đập tan cuộc can thiệp vũ trang của nước ngoài cũng chưa phải đã xóa bỏ hoàn toàn những nguy cơ xâm lược của chủ nghĩa đế quốc và mưu đồ phục hồi chủ nghĩa tư bản của bọn phản cách mạng trong nước. Sự thống nhất các lực lượng vũ trang cũng như các phương tiện quốc phòng là một đòi hỏi cần thiết đối với công cuộc phòng thủ và bảo vệ vững chắc Tổ quốc xã hội chủ nghĩa Xô viết.”\n\n(Nguyễn Anh Thái, Lịch sử thế giới hiện đại , NXB Giáo dục, Hà Nội, 2006, tr.46)",
+          "statements": [
+            {
+              "question": "Liên bang Cộng hoà xã hội chủ nghĩa Xô viết thành lập trong bối cảnh nước Nga xuất hiện cục diện hai chính quyền song song tồn tại.",
+              "correct": false,
+              "explanation": "Ý a) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Mục tiêu của việc thành lập Liên Xô là thiết lập một liên minh quân sự chống lại cuộc chiến tranh bao vây từ 14 nước đế quốc.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Trước khi Liên Xô thành lập, các nước Cộng hoà Xô viết chưa có sự thống nhất về các chính sách phát triển kinh tế, văn hoá, giáo dục.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên Xô thành lập đã xóa bỏ hoàn toàn nguy cơ chống phá, xâm lược của các thế lực thù địch đối với các nước Cộng hoà Xô viết non trẻ.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Cho bảng thống kê các sự kiện lịch sử sau đây:\n\nThời gian\n\nSự kiện\n\n25/10/1917\n\nChính quyền Xô viết do Lê-nin đứng đầu được thành lập.\n\n1918 - 1921\n\nCác nước Cộng hòa Xô viết đoàn kết chiến đấu chống thù trong, giặc ngoài.\n\n30/12/1922\n\nLiên bang Cộng hòa xã hội chủ nghĩa Xô viết được thành lập.\n\n1/1924\n\nBản Hiến pháp đầu tiên của Liên Xô được thông qua.",
+          "statements": [
+            {
+              "question": "Sự ra đời của Liên Xô là nguồn lực cổ vũ mạnh mẽ phong trào giải phóng dân tộc ở các nước thuộc địa.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên Xô là một nhà nước liên bang do nhiều nước Cộng hòa theo chế độ tư bản chủ nghĩa liên kết thành.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Sự thành lập của Liên Xô đã đánh dấu sự thắng lợi hoàn toàn của cuộc cách mạng dân chủ tư sản ở Nga.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên Xô ra đời là thành quả từ cuộc chiến tranh chống thù trong, giặc ngoài của các nước Cộng hòa Xô viết.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc tư liệu sau đây:\n\n“Sự ra đời của Liên bang Xô viết là một sự kiện quan trọng. Sức mạnh của Nhà nước Xô viết được củng cố và tăng cường. Đồng thời, đó là thắng lợi của chính sách dân tộc theo chủ nghĩa Lênin, của tình hữu nghị anh em giữa các dân tộc trong quốc gia công nông đầu tiên trên thế giới. Lần đầu tiên trong lịch sử, loài người tiến bộ đã được thấy một con đường giải phóng đúng đắn vấn đề dân tộc, đó là thủ tiêu mọi bất bình đẳng dân tộc và xây dựng một cộng đồng anh em giữa các dân tộc”.\n\n(Nguyễn Anh Thái, Lịch sử thế giới hiện đại, NXB Giáo dục, Hà Nội, 2006, tr.46-47)",
+          "statements": [
+            {
+              "question": "Sự ra đời của Liên Xô đã khẳng định tính đúng đắn trong chính sách dân tộc theo chủ nghĩa Lê-nin.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên Xô thành lập trên cơ sở đoàn kết các dân tộc, nhưng dân tộc Nga có quyền quyết định tuyệt đối.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên Xô thành lập đã mở ra con đường giải quyết đúng đắn vấn đề dân tộc trong một quốc gia nhiều dân tộc.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Liên Xô không phải là mô hình Nhà nước liên bang đầu tiên trong lịch sử nhằm giải quyết vấn đề dân tộc.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bài 4: Sự phát triển của chủ nghĩa xã hội từ sau Chiến tranh thế giới thứ hai đến nay",
+      "topic": "CHỦ ĐỀ 2: CHỦ NGHĨA XÃ HỘI TỪ NĂM 1917 ĐẾN NAY",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Từ năm 2010, quốc gia nào sau đây có quy mô GDP đứng thứ hai thế giới?",
+          "options": [
+            "Liên Xô",
+            "Nhật Bản",
+            "Việt Nam",
+            "Trung Quốc"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Trung Quốc."
+        },
+        {
+          "type": "mcq",
+          "question": "Những thành tựu trong công cuộc cải cách mở cửa ở Trung Quốc cho thấy sự đúng đắn của con đường xây dựng",
+          "options": [
+            "chủ nghĩa xã hội",
+            "chủ nghĩa dân tộc",
+            "chủ nghĩa tư bản",
+            "chủ nghĩa cơ hội"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: chủ nghĩa xã hội."
+        },
+        {
+          "type": "mcq",
+          "question": "Trọng tâm của công cuộc cải cách mở cửa ở Trung Quốc (từ tháng 12/1978) là",
+          "options": [
+            "phát triển văn hóa",
+            "cải tổ chính trị",
+            "phát triển kinh tế",
+            "cải cách giáo dục"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: phát triển kinh tế."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây phản ánh không đúng về công cuộc cải cách mở cửa ở Trung Quốc từ năm 1978?",
+          "options": [
+            "Lấy phát triển kinh tế làm trung tâm",
+            "Thúc đẩy phát triển khoa học – công nghệ",
+            "Xây dựng kinh tế thị trường xã hội chủ nghĩa",
+            "Thực hiện đường lối “Ba ngọn cờ hồng”"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Thực hiện đường lối “Ba ngọn cờ hồng”."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguồn cổ vũ mạnh mẽ đối với các nước Đông Âu trong công cuộc xây dựng chủ nghĩa xã hội thế kỉ XX là",
+          "options": [
+            "sự đoàn kết của các nước xã hội chủ nghĩa ở châu Âu",
+            "các thành tựu của Liên Xô sau Chiến tranh thế giới thứ hai",
+            "phong trào giải phóng dân tộc phát triển mạnh ở châu Âu",
+            "sự ủng hộ và nguồn viện trợ trực tiếp từ Trung Quốc"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: các thành tựu của Liên Xô sau Chiến tranh thế giới thứ hai."
+        },
+        {
+          "type": "mcq",
+          "question": "Trong Chiến tranh thế giới thứ hai, điều kiện thuận lợi để nhân dân các nước Đông Âu nổi dậy giành chính quyền là",
+          "options": [
+            "chủ nghĩa phát bị tiêu diệt ở châu Âu",
+            "Mỹ ném bom nguyên tử xuống Nhật Bản",
+            "Liên Xô tấn công đạo quân Quan Đông",
+            "phát xít Nhật đầu hàng không điều kiện"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: chủ nghĩa phát bị tiêu diệt ở châu Âu."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây không phải là thành tựu của Trung Quốc từ khi tiến hành công cuộc cải cách mở cửa đến nay?",
+          "options": [
+            "Bình quân tăng trưởng hằng năm vượt xa mức trung bình của thế giới",
+            "Có những trung tâm công nghệ cao, đặc khu kinh tế hàng đầu châu Á",
+            "Trở thành một cường quốc đổi mới sáng tạo đứng đầu thế giới",
+            "Đạt được những tiến bộ vượt bậc trong lĩnh vực công nghệ mới"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Trở thành một cường quốc đổi mới sáng tạo đứng đầu thế giới."
+        },
+        {
+          "type": "mcq",
+          "question": "Quốc gia nào sau đây vẫn tiếp tục kiên định trên con đường xây dựng xã hội chủ nghĩa sau năm 1991 đến nay?",
+          "options": [
+            "Lào",
+            "Cam-pu-chia",
+            "Đức",
+            "Mông Cổ"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Lào."
+        },
+        {
+          "type": "mcq",
+          "question": "Sự kiện đánh dấu bước phát triển của chủ nghĩa xã hội vượt ra khỏi phạm vi một quốc gia và trở thành hệ thống thế giới là",
+          "options": [
+            "nước Cộng hòa Nhân dân Trung Hoa ra đời",
+            "các nước xã hội chủ nghĩa ở Đông Âu được thành lập",
+            "Mông Cổ đi theo con đường xã hội chủ nghĩa",
+            "Cu-ba bước vào thời kì xây dựng chủ nghĩa xã hội"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: các nước xã hội chủ nghĩa ở Đông Âu được thành lập."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguyển nhân khách quan dẫn đến sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và Liên Xô là",
+          "options": [
+            "đường lối chủ quan, duy ý chí, tập trung quan liêu bao cấp",
+            "không bắt kịp sự phát triển của khoa học – kĩ thuật hiện đại",
+            "khi tiến hành cải tổ phạm phải nhiều sai lầm trên nhiều mặt",
+            "sự chống phá của các thế lực thù địch trong và ngoài nước"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: sự chống phá của các thế lực thù địch trong và ngoài nước."
+        },
+        {
+          "type": "mcq",
+          "question": "Điểm giống nhau cơ bản giữa cuộc cải cách mở cửa ở Trung Quốc (12/1978) và công cuộc đổi mới ở Việt Nam (12/1986) là gì?",
+          "options": [
+            "Lấy cải tổ chính trị làm trọng tâm",
+            "Lấy phát triển kinh tế làm trọng tâm",
+            "Chỉ chú trọng phát triển giáo dục",
+            "Tập trung cải cách triệt để về kinh tế"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Lấy phát triển kinh tế làm trọng tâm."
+        },
+        {
+          "type": "mcq",
+          "question": "Điểm tương đồng trong công cuộc cải cách mở cửa ở Trung Quốc (12/1978), công cuộc cải tổ của Liên Xô (1985 - 1991) và công cuộc đổi mới đất nước ở Việt Nam (12/1986) là gì?",
+          "options": [
+            "Củng cố và nâng cao vai trò lãnh đạo của Đảng Cộng sản",
+            "Lấy phát triển kinh tế làm trọng tâm, tiến hành cải cách mở cửa",
+            "Lấy cải tổ chính trị làm trọng tâm và thực hiện đa nguyên, đa đảng",
+            "Tiến hành khi đất nước lâm vào tình trạng khủng hoảng kéo dài"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án đúng là D: Tiến hành khi đất nước lâm vào tình trạng khủng hoảng kéo dài."
+        },
+        {
+          "type": "mcq",
+          "question": "Nội dung nào sau đây phản ánh đúng về thành tựu cơ bản của nền kinh tế Trung Quốc từ sau khi thực hiện công cuộc cải cách mở cửa (12/1978)?",
+          "options": [
+            "Tốc độ tăng trưởng kinh tế cao và ổn định",
+            "Nền nông nghiệp phát triển toàn diện",
+            "Văn hóa – giáo dục phát triển hoàn chỉnh",
+            "Trở thành cường quốc công nghiệp đứng đầu thế giới"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: Tốc độ tăng trưởng kinh tế cao và ổn định."
+        },
+        {
+          "type": "mcq",
+          "question": "Bài học kinh nghiệm rút ra từ cuộc cải cách mở cửa của Trung Quốc (1978) và công cuộc cải tổ của Liên Xô (1985 – 1991) đối với công cuộc đổi mới ở Việt Nam (1986) là",
+          "options": [
+            "duy trì cơ chế quản lí kinh tế tập trung, bao cấp",
+            "kiên trì với vai trò lãnh đạo của Đảng Cộng sản",
+            "phải xây dựng nền kinh tế thị trường năng động",
+            "phải thay đổi thể chế chính trị cho phù hợp với tình hình"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: kiên trì với vai trò lãnh đạo của Đảng Cộng sản."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguyên nhân chủ yếu dẫn đến sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và Liên Xô là",
+          "options": [
+            "đường lối chủ quan, duy ý chí, tập trung quan liêu bao cấp",
+            "không bắt kịp sự phát triển của khoa học – kĩ thuật hiện đại",
+            "khi tiến hành cải tổ phạm phải nhiều sai lầm trên nhiều mặt",
+            "sự chống phá của các thế lực thù địch trong và ngoài nước"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: đường lối chủ quan, duy ý chí, tập trung quan liêu bao cấp."
+        },
+        {
+          "type": "mcq",
+          "question": "Nhiệm vụ nào sau đây không được các nước xã hội chủ nghĩa ở Đông Âu thực hiện trong giai đoạn 1945 – 1949?",
+          "options": [
+            "Tiến hành cải cách ruộng đất",
+            "Quốc hữu hóa tài sản tư bản",
+            "Tiến hành chiến tranh du kích",
+            "Thực hiện các quyền tự do, dân chủ"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án đúng là C: Tiến hành chiến tranh du kích."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguyên nhân chính dẫn đến một số quốc gia ở châu Á, châu Phi và khu vực Mỹ La-tinh lựa chọn con đường đi lên xây dựng chủ nghĩa xã hội là",
+          "options": [
+            "chịu hậu quả nặng nề của chủ nghĩa thực dân",
+            "đáp ứng được yêu cầu thực tiễn của đất nước",
+            "do bị các nước phương Tây bao vây, cấm vận",
+            "để nhận được nguồn viện trợ to lớn từ Liên Xô"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: đáp ứng được yêu cầu thực tiễn của đất nước."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguyên nhân chủ quan để các nước xã hội chủ nghĩa ở Đông Âu đạt được nhiều thành tựu trong công cuộc xây dựng chủ nghĩa xã hội sau Chiến tranh thế giới thứ hai là",
+          "options": [
+            "sự giúp đỡ của Liên Xô",
+            "tinh thần tự lực, tự cường",
+            "tài nguyên giàu có, phong phú",
+            "học tập mô hình phương Tây"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: tinh thần tự lực, tự cường."
+        },
+        {
+          "type": "mcq",
+          "question": "Nguyên nhân khách quan để các nước xã hội chủ nghĩa ở Đông Âu đạt được nhiều thành tựu trong công cuộc xây dựng chủ nghĩa xã hội sau Chiến tranh thế giới thứ hai là",
+          "options": [
+            "sự giúp đỡ của Liên Xô",
+            "tinh thần tự lực, tự cường",
+            "tài nguyên giàu có, phong phú",
+            "học tập mô hình phương Tây"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án đúng là A: sự giúp đỡ của Liên Xô."
+        },
+        {
+          "type": "mcq",
+          "question": "Một trong những thách thức của Cu-ba phải đối mặt trong quá trình xây dựng chủ nghĩa xã hội từ năm 1991 đến nay là",
+          "options": [
+            "chịu ảnh hưởng nặng nề của chủ nghĩa thực dân",
+            "Mỹ và nhiều nước tư bản phương Tây cấm vận",
+            "không còn sự viện trợ to lớn về kinh tế từ Liên Xô",
+            "nền kinh tế hàng hóa không được vận hành đúng cách"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án đúng là B: Mỹ và nhiều nước tư bản phương Tây cấm vận."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Khi Chiến tranh nổ ra, các nước Đông Âu đã bị phát xít Đức, Italia xâm lược, chiếm đóng. Trong thời gian đó, đại bộ phận giai cấp tư sản và các đảng phái chính trị của chúng đã thoả hiệp, đầu hàng và làm tay sai cho bọn phát xít chống lại nhân dân. Một bộ phận khác sống lưu vong ở nước ngoài, dựa vào Anh, Mĩ để tập hợp lực lượng chống lại. Chỉ có các Đảng Cộng sản là kiên định đứng ra lãnh đạo cuộc kháng chiến chống phát xít. Khoảng trong năm 1944-1945, khi Hồng quân Liên Xô truy kích phát xít qua vùng Đông Âu, nhân dân và lực lưỡng vũ trang các nước này đã kịp thời nổi dậy phối hợp tiêu diệt bọn phát xít, khởi nghĩa giành chính quyền và lập các nhà nước dân chủ nhân dân”.\n\n(Đỗ Thanh Bình, Lịch sử thế giới hiện đại, quyển 1, NXB Đại học sư phạm, Hà Nội, 2012, tr.93-94)",
+          "statements": [
+            {
+              "question": "Trong Chiến tranh thế giới thứ hai, các nước Đông Âu đã bị chủ nghĩa phát xít xâm lược và chiếm đóng.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Các lực lượng chính trị ở các nước Đông Âu đã đoàn kết cao độ trong cuộc đấu tranh chống chủ nghĩa phát xít.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Sự có mặt của Hồng quân Liên Xô không tác động tới quá trình giải phóng đạt nước của các nước Đông Âu.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Các nhà nước dân chủ nhân dân Đông Âu ra đời đã đưa chủ nghĩa xã hội trở thành một hệ thống trên thế giới.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Tôi cho rằng tình hình quốc tế hiện nay đã bước sang một bước ngoặt mới. Trên thế giới hiện nay có hai loại gió là gió Đông và gió Tây. Người Trung Quốc có câu: “Gió Đông thắng gió Tây hoặc gió Tây thắng gió Đông”. Tôi tin rằng đặc điểm của tình hình ngày nay là Gió Đông đang thắng Gió Tây. Điều đó có nghĩa là, các lực lượng của Chủ nghĩa Xã hội đã trở nên vượt trội hoàn toàn so với các lực lượng của chủ nghĩa Đế quốc”.\n\n(Trích Bài phát biểu của Mao Trạch Đông tại Đại hội Đảng Cộng sản và Công nhân Mátxcơva ngày 18/11/1957)",
+          "statements": [
+            {
+              "question": "Trong đoạn tư liệu, từ “Gió Đông” nhằm ám chỉ chủ nghĩa tư bản và từ “Gió Tây” là chủ nghĩa xã hội.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Đoạn tư liệu phản ánh nội dung cuối thập niên 1950, chủ nghĩa đế quốc đang thắng thế trước chủ nghĩa xã hội.",
+              "correct": false,
+              "explanation": "Ý b) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Sự lớn mạnh của chủ nghĩa xã hội so với chủ nghĩa đế quốc tạo ra bước ngoặt mới trong quan hệ quốc tế.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Sự lớn mạnh của chủ nghĩa xã hội tác động lớn tới phong trào giải phóng dân tộc trên thế giới, trong đó có Việt Nam.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Năm 2020, 75% thành phố của Trung Quốc với dân số 500 nghìn người trở lên có đường sắt cao tốc. Trong khi đó, ở Tây Ban Nha, quốc gia có mạng lưới đường sắt tốc độ cao lớn nhất châu Âu và đứng thứ 2 toàn cầu chỉ có hơn 3 nghìn km đường sắt chuyên dụng đáp ứng tàu tốc độ 250km/h. Ở Vương quốc Anh chỉ có 107km, trong khi ở Mĩ chỉ có 1 tuyến đường sắt gần như đủ tiêu chuẩn cho tàu cao tốc. Đến cuối năm 2021, tổng chièu dài đường sắt của Trung Quốc đã lên đến 150 nghìn km, bao gồm 40 nhìn km đường sắt cao tốc. Đường sắt cao tốc Trung Quốc hiện chiếm 66,3% tổng chiều dài đường sắt cao tốc trên toàn thế giới”.\n\n(Tạp chí Giao thông vận tải, Trung Quốc đã trở thành cường quốc đường sắt cao tốc như thế nào?, phát hành ngày 19/3/2022)",
+          "statements": [
+            {
+              "question": "Từ năm 2020 đến nay, Trung Quốc đang là quốc gia có mạng lưới đường sắt cao tốc phát triển nhất trên thế giới.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Tổng chiều dài đường sắt cao tốc của Trung Quốc nhiều hơn tổng chiều dài đường sắt cao tốc của Tây Ban Nha, Anh, Mĩ cộng lại.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Đoạn trích phản ánh một trong những thành tựu nổi bật về khoa học - kĩ thuật và phát triển cơ sở hạ tầng của Trung Quốc.",
+              "correct": true,
+              "explanation": "Ý c) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Năm 2020, toàn bộ các thành phố trên lãnh thổ Trung Quốc đều có hệ thống đường sắt cao tốc bao phủ.",
+              "correct": false,
+              "explanation": "Ý d) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        },
+        {
+          "passage": "Đọc đoạn tư liệu sau đây:\n\n“Mỗi trẻ em sinh ra ở Cuba, khi lên 5 tuổi, đều có quyền bắt đầu những năm tháng đi học hoàn toàn miễn phí. Học xong mẫu giáo, các em sẽ được chuyển sang học tại một trường tiểu học. Phổ cập giáo dục áp dụng với mọi trẻ em từ 6 tuổi tới hết cấp hai cơ bản (thường là 15 tuổi). Giáo dục, gồm cả giáo dục đại học đều miễn phí với mọi công dân Cuba, không phân biệt giàu nghèo hay thành phần xã hội. Ngày nay, chế độ giáo dục bắt buộc ở Cuba là từ mẫu giáo đến lớp 9.… Cuba đứng số 1 thế giới về tỉ lệ đầu tư ngân sách cho giáo dục, chiếm tới 13% GDP. Với số lượng đi kèm chất lượng đào tạo hiện nay, UNESCO xếp Cuba là nước có hệ thống giáo dục tốt nhất khu vực Mĩ Ltinh, bất chấp việc Cuba là một trong những quốc gia kém phát triển nhất khu vực”.\n\n(Tạp chí Mặt trận, Cuba và hệ thống phúc lợi xã hội thuộc top đầu thế giới, phát hành ngày 10/8/2018)",
+          "statements": [
+            {
+              "question": "Hệ thống giáo dục miễn phí luôn là ưu tiên hàng đầu của Cu-ba, thể hiện tính ưu việt của chủ nghĩa xã hội.",
+              "correct": true,
+              "explanation": "Ý a) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Hiện nay Cu-ba đã thực hiện chính sách giáo dục bắt buộc đối với mọi trẻ em đến hết cấp hai cơ bản.",
+              "correct": true,
+              "explanation": "Ý b) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Do có nền kinh tế phát triển hàng đầu khu vực Mỹ La-tinh nên Cu-ba có điều kiện đầu tư tốt nhất cho giáo dục.",
+              "correct": false,
+              "explanation": "Ý c) là Sai theo nội dung tư liệu và kiến thức lịch sử bài học."
+            },
+            {
+              "question": "Hệ thống giáo dục của Cu-ba hiện nay đã được cộng đồng quốc tế đánh giá cao về chất lượng đào tạo.",
+              "correct": true,
+              "explanation": "Ý d) là Đúng theo nội dung tư liệu và kiến thức lịch sử bài học."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

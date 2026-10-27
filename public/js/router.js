@@ -6,7 +6,8 @@
 const AppRouter = {
   currentRoute: 'dashboard',
 
-  ROUTES: ['onboarding', 'dashboard', 'subjects', 'topics', 'quiz', 'study', 'flashcard', 'practice', 'result', 'announcements', 'diagnostic'],
+  ROUTES: ['onboarding', 'dashboard', 'subjects', 'topics', 'quiz', 'study', 'flashcard', 'practice', 'result', 'announcements', 'diagnostic', 'planner', 'checker'],
+
 
   init() {
     window.addEventListener('hashchange', () => this.handleHashChange());

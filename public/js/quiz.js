@@ -253,6 +253,7 @@ const Quiz = {
    * Select MCQ answer
    */
   selectOption(index) {
+    if (window.SoundFX) SoundFX.playClick();
     this.answers[this.currentQuestionIndex] = index;
     this.saveSession();
     this.render();
@@ -262,6 +263,7 @@ const Quiz = {
    * Select TF statement answer
    */
   selectTF(statementIndex, value) {
+    if (window.SoundFX) SoundFX.playClick();
     if (!this.answers[this.currentQuestionIndex]) {
       this.answers[this.currentQuestionIndex] = {};
     }
@@ -391,6 +393,7 @@ const Quiz = {
     this.isSubmitted = true;
     this.clearSession();
 
+    if (window.SoundFX) SoundFX.playVictory();
     if (typeof app !== 'undefined' && app.showResults) {
       app.showResults(earnedPoints, totalPoints, this.sessionId);
     }
