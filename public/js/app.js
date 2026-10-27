@@ -835,6 +835,10 @@ const app = {
   }
 };
 
+if (typeof window !== 'undefined') {
+  window.app = app;
+}
+
 // Start application
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => app.init());

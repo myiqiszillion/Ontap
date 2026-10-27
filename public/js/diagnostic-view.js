@@ -23,9 +23,10 @@ const DiagnosticView = {
   selectedGrade: 10,
   selectedType: 'grade_diagnostic',
 
-  init() {
+  init(subView = 'welcome') {
     this.selectedSubject = localStorage.getItem('ntmk_diag_subject') || 'toan';
     this.selectedGrade = Number(localStorage.getItem('ntmk_diag_grade') || 10);
+    this.render(subView);
   },
 
   render(subView = 'welcome', param = null) {

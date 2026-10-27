@@ -80,15 +80,33 @@ const AppRouter = {
       document.body.classList.toggle('is-onboarding', routeId === 'onboarding');
     }
 
-    // Trigger view-specific render hooks
+    // Trigger view-specific render hooks (Full lifecycle execution for all SPA views)
     if (routeId === 'dashboard') {
-      DashboardView.render();
+      if (typeof DashboardView !== 'undefined') DashboardView.render();
     } else if (routeId === 'subjects') {
-      SubjectExplorer.render();
+      if (typeof SubjectExplorer !== 'undefined') SubjectExplorer.render();
     } else if (routeId === 'onboarding') {
-      Onboarding.render();
+      if (typeof Onboarding !== 'undefined') Onboarding.render();
     } else if (routeId === 'diagnostic') {
-      if (window.DiagnosticView) DiagnosticView.render(param || 'welcome');
+      if (typeof DiagnosticView !== 'undefined') DiagnosticView.init(param || 'welcome');
+    } else if (routeId === 'planner') {
+      if (typeof PlannerView !== 'undefined') PlannerView.init();
+    } else if (routeId === 'custom-exam') {
+      if (typeof CustomExam !== 'undefined') {
+        const currentSub = (typeof app !== 'undefined' && app.currentSubject) ? app.currentSubject : 'toan10';
+        CustomExam.init(param || currentSub);
+      }
+    } else if (routeId === 'checker') {
+      if (typeof Checker !== 'undefined') {
+        const currentSub = (typeof app !== 'undefined' && app.currentSubject) ? app.currentSubject : 'toan10';
+        Checker.init(param || currentSub);
+      }
+    } else if (routeId === 'mistakes') {
+      if (typeof MistakeView !== 'undefined') MistakeView.render();
+    } else if (routeId === 'importer') {
+      if (typeof SmartImporterView !== 'undefined') SmartImporterView.init();
+    } else if (routeId === 'announcements') {
+      if (typeof app !== 'undefined' && app.loadAnnouncements) app.loadAnnouncements();
     }
 
     // Smooth scroll to top

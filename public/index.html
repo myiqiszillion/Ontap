@@ -130,7 +130,7 @@
       <div class="header-actions-group">
         <button id="header-search-btn" class="header-search-pill-btn" onclick="CommandPalette.open()" aria-label="Tìm kiếm nhanh">
           <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <span style="font-size:0.8rem; font-weight:600;">Tìm kiếm...</span>
+          <span class="search-text" style="font-size:0.8rem; font-weight:600;">Tìm kiếm...</span>
           <span class="header-search-kbd">Ctrl K</span>
         </button>
 
@@ -284,6 +284,11 @@
               <button class="btn btn-teal" id="wizard-btn-finish" onclick="Onboarding.finish()" style="display: none;">
                 ✓ Bắt đầu học ngay
               </button>
+            </div>
+            <div style="text-align: center; margin-top: 14px;">
+              <a href="#dashboard" onclick="app.navigateTo('dashboard'); return false;" class="wizard-skip-link">
+                Bỏ qua thiết lập &amp; Khám phá Trang chủ NTMK →
+              </a>
             </div>
           </div>
         </div>
@@ -677,6 +682,8 @@
           </div>
         </div>
       </div>
+    </section>
+
     <!-- ═══════════════════════════════════════════════════════════
        SCREEN 10: DIAGNOSTIC ASSESSMENT & SKILL ANALYTICS
        ═══════════════════════════════════════════════════════════ -->

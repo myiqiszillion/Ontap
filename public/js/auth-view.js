@@ -29,16 +29,16 @@ const AuthView = {
 
     if (typeof AuthStore !== 'undefined' && AuthStore.isLoggedIn()) {
       const user = AuthStore.getUser();
-      authBtn.innerHTML = `👤 <span class="auth-user-name">${user.displayName || 'Học sinh'}</span>`;
+      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">👤</span> <span class="auth-text auth-user-name">${user.displayName || 'Học sinh'}</span>`;
       authBtn.title = `Đã đăng nhập: ${user.email || user.displayName}`;
       authBtn.classList.add('logged-in');
     } else if (typeof AuthStore !== 'undefined' && AuthStore.isGuest()) {
       const user = AuthStore.getUser();
-      authBtn.innerHTML = `👤 Khách <span style="font-size:0.75rem; color:var(--text-dim);">(Lưu tạm)</span>`;
+      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">👤</span> <span class="auth-text">Khách</span>`;
       authBtn.title = 'Đang sử dụng chế độ Khách';
       authBtn.classList.remove('logged-in');
     } else {
-      authBtn.innerHTML = `👤 Đăng nhập`;
+      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">👤</span> <span class="auth-text">Đăng nhập</span>`;
       authBtn.title = 'Đăng nhập hoặc đăng ký tài khoản';
       authBtn.classList.remove('logged-in');
     }
