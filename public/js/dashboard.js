@@ -36,7 +36,7 @@ const DashboardView = {
         <div class="dashboard-hero-card">
           <div class="hero-left">
             <div class="hero-greeting">
-              <span class="hero-tag">Học sinh Lớp ${profile.grade}</span>
+              <span class="hero-tag">THPT NTMK BÌNH DƯƠNG • LỚP ${profile.grade}</span>
               <h1 class="hero-title">Xin chào! Sẵn sàng chinh phục mục tiêu hôm nay?</h1>
               <p class="hero-subtitle">Mục tiêu hiện tại: <strong>${goalMeta.icon} ${goalMeta.title}</strong></p>
             </div>

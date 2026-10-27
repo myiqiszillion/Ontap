@@ -58,11 +58,11 @@ const ResultCard = {
     ctx.fillStyle = '#f59e0b';
     ctx.font = 'bold 22px Inter, sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText('TRƯỜNG THPT NGUYỄN THỊ MINH KHAI (EST. 1913)', 70, 85);
+    ctx.fillText('TRƯỜNG THPT NGUYỄN THỊ MINH KHAI — BÌNH DƯƠNG', 70, 85);
 
     ctx.fillStyle = '#94a3b8';
     ctx.font = '600 15px Inter, sans-serif';
-    ctx.fillText('VIỆN HÀN LÂM SỐ • CHỨNG NHẬN NĂNG LỰC KHẢO THÍ GDPT 2018', 70, 112);
+    ctx.fillText('NỀN TẢNG KHẢO THÍ THÔNG MINH • THÀNH PHỐ DĨ AN, BÌNH DƯƠNG', 70, 112);
 
     // Header Right: Badge
     ctx.fillStyle = 'rgba(217, 119, 6, 0.2)';

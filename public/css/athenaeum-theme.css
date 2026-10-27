@@ -1,6 +1,7 @@
 /* ═════════════════════════════════════════════════════════════
    THE GRAND DIGITAL ATHENAEUM — NTMK BESPOKE SIGNATURE THEME
-   Inspired by 113-year Scholastic Heritage (Est. 1913) & Neo-Modernism
+   THPT NGUYỄN THỊ MINH KHAI - THÀNH PHỐ DĨ AN, TỈNH BÌNH DƯƠNG
+   Smart Neo-EdTech & Cyber-Scholastic Signature Theme
    Palette: Imperial Violet (#7c3aed), Heritage Amber Gold (#f59e0b), Parchment (#fcfbf7)
    ═════════════════════════════════════════════════════════════ */
 
@@ -106,7 +107,7 @@
 }
 
 .dashboard-hero-card::before {
-  content: '1913';
+  content: 'NTMK - BD';
   position: absolute;
   right: 20px;
   bottom: -20px;
