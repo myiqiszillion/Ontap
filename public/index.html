@@ -12,22 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/edtech-design-system.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/quiz.css">
-  <link rel="stylesheet" href="css/diagnostic.css">
-  <link rel="stylesheet" href="css/planner.css">
-  <link rel="stylesheet" href="css/checker.css">
-  <link rel="stylesheet" href="css/heritage-theme.css">
-  <link rel="stylesheet" href="css/mistakes.css">
-  <link rel="stylesheet" href="css/custom-exam.css">
-  <link rel="stylesheet" href="css/theme-focus.css">
-  <link rel="stylesheet" href="css/smart-importer.css">
-  <link rel="stylesheet" href="css/printable-exam.css">
-  <link rel="stylesheet" href="css/command-palette.css">
-  <link rel="stylesheet" href="css/result-view.css">
+  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/style.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/quiz.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/diagnostic.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/planner.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/checker.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/heritage-theme.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/mistakes.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/custom-exam.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/theme-focus.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/smart-importer.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/printable-exam.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/command-palette.css?v=20261028-v2">
+  <link rel="stylesheet" href="css/result-view.css?v=20261028-v2">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/athenaeum-theme.css">
+  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261028-v2">
   <meta name="theme-color" content="#d97706">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -101,6 +101,20 @@
                     <div class="nav-dropdown-desc">Bóc tách Word & Live Editor</div>
                   </div>
                 </button>
+                              <button class="nav-dropdown-item" onclick="app.navigateTo('diagnostic'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
+                  <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                  <div>
+                    <div>Chẩn đoán năng lực</div>
+                    <div class="nav-dropdown-desc">Khảo sát &amp; định vị lỗ hổng</div>
+                  </div>
+                </button>
+                <button class="nav-dropdown-item" onclick="app.navigateTo('announcements'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
+                  <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                  <div>
+                    <div>Bảng tin cộng đồng</div>
+                    <div class="nav-dropdown-desc">Lịch thi, tin tức &amp; thông báo</div>
+                  </div>
+                </button>
               </div>
             </div>
           </li>
@@ -111,13 +125,13 @@
               <span>Kế hoạch</span>
             </button>
           </li>
-          <li>
+          <li class="nav-item-hide-tablet">
             <button class="nav-item-btn" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
               <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
               <span>Chẩn đoán</span>
             </button>
           </li>
-          <li>
+          <li class="nav-item-hide-tablet">
             <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
               <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
               <span>Bảng tin</span>
