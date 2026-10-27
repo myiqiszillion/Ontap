@@ -26,8 +26,9 @@
 
   /* Text */
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --text-dim: #475569;
   --text-white: #ffffff;
 
   /* Borders */
@@ -76,9 +77,10 @@
   --bg-card: rgba(21, 26, 46, 0.9);
   --header-bg: rgba(12, 15, 26, 0.82);
 
-  --text-primary: #e8ecf4;
-  --text-secondary: #a0aec0;
-  --text-muted: #5a6b8a;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #94a3b8;
   --text-white: #ffffff;
 
   --border: rgba(99, 102, 241, 0.12);
@@ -1949,7 +1951,7 @@ body {
   .mode-card { padding: 12px 8px; }
   .mode-icon { font-size: 1.4rem; }
   .mode-name { font-size: 0.78rem; }
-  .mode-desc { font-size: 0.65rem; }
+  .mode-desc { font-size: 0.78rem; }
   .fc-actions { flex-direction: column; align-items: center; }
   .fc-btn { max-width: 100%; width: 100%; }
 }

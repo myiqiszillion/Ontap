@@ -301,14 +301,16 @@ const app = {
 
     container.innerHTML = this.lessonData.lessons.map(lesson => `
       <div class="topic-card" data-bai="${lesson.bai}">
-        <label class="topic-checkbox-wrapper">
+        <label class="topic-checkbox-wrapper" for="topic-cb-${lesson.bai}">
           <input type="checkbox"
+                 id="topic-cb-${lesson.bai}"
                  class="topic-checkbox"
                  value="${lesson.bai}"
+                 aria-label="Chọn bài học: ${lesson.title}"
                  onchange="app.toggleBai(${lesson.bai})">
-          <span class="topic-checkmark"></span>
+          <span class="topic-checkmark" aria-hidden="true"></span>
         </label>
-        <div class="topic-info" onclick="app.toggleBai(${lesson.bai}, true)">
+        <div class="topic-info" role="button" tabindex="0" onclick="app.toggleBai(${lesson.bai}, true)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.toggleBai(${lesson.bai}, true);}" aria-label="Xem chi tiết và chọn bài: ${lesson.title}">
           <div class="topic-title">${lesson.title}</div>
           <div class="topic-meta">
             <span class="topic-questions">${lesson.mcqCount} TN</span>

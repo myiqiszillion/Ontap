@@ -43,7 +43,7 @@
      ═══════════════════════════════════════════════════════════ -->
   <header class="app-shell-header">
     <div class="header-container">
-      <div class="brand-logo" onclick="app.navigateTo('dashboard')">
+      <a href="#dashboard" class="brand-logo" onclick="app.navigateTo('dashboard'); return false;" aria-label="Trang chủ NTMK — THPT Nguyễn Thị Minh Khai">
         <img src="assets/logo.png" alt="NTMK Logo" class="brand-logo-img">
         <span class="brand-title">NTMK</span>
         <span class="brand-badge">THPT NTMK • BÌNH DƯƠNG</span>
@@ -51,45 +51,45 @@
 
       <nav class="header-nav-desktop" aria-label="Điều hướng chính">
         <button class="nav-item-btn active" data-route="dashboard" onclick="app.navigateTo('dashboard')">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           <span>Trang chủ</span>
         </button>
         <button class="nav-item-btn" data-route="subjects" onclick="app.navigateTo('subjects')">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           <span>Môn học</span>
         </button>
 
         <!-- Dropdown Bộ công cụ ôn luyện -->
         <div class="nav-dropdown-wrapper" id="nav-tools-dropdown">
           <button class="nav-dropdown-btn" onclick="this.parentElement.classList.toggle('open')" aria-haspopup="true" aria-expanded="false">
-            <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             <span>Bộ công cụ</span>
             <span class="nav-dropdown-arrow">▼</span>
           </button>
           <div class="nav-dropdown-menu">
             <button class="nav-dropdown-item" onclick="app.navigateTo('custom-exam'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
               <div>
                 <div>Tự tạo đề thi</div>
                 <div class="nav-dropdown-desc">Tùy biến câu hỏi & thời gian</div>
               </div>
             </button>
             <button class="nav-dropdown-item" onclick="app.navigateTo('checker'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               <div>
                 <div>Dò trắc nghiệm</div>
                 <div class="nav-dropdown-desc">So khớp đáp án & tra giải</div>
               </div>
             </button>
             <button class="nav-dropdown-item" onclick="app.navigateTo('mistakes'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
               <div>
                 <div>Sổ tay câu sai <span id="header-mistakes-badge" class="badge-count hidden">0</span></div>
                 <div class="nav-dropdown-desc">Phục hồi lỗ hổng kiến thức</div>
               </div>
             </button>
             <button class="nav-dropdown-item" onclick="app.navigateTo('importer'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
-              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+              <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
               <div>
                 <div>Nhập đề thông minh</div>
                 <div class="nav-dropdown-desc">Bóc tách Word & Live Editor</div>
@@ -99,15 +99,15 @@
         </div>
 
         <button class="nav-item-btn" data-route="planner" onclick="app.navigateTo('planner')">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
           <span>Kế hoạch</span>
         </button>
         <button class="nav-item-btn" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
           <span>Chẩn đoán</span>
         </button>
         <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
           <span>Bảng tin</span>
         </button>
       </nav>
@@ -115,27 +115,27 @@
 
       <div class="header-actions-group">
         <button id="header-search-btn" class="header-search-pill-btn" onclick="CommandPalette.open()" aria-label="Tìm kiếm nhanh">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           <span style="font-size:0.8rem; font-weight:600;">Tìm kiếm...</span>
           <span class="header-search-kbd">Ctrl K</span>
         </button>
 
         <button id="sound-toggle-btn" class="sound-btn" onclick="SoundFX.toggle()" aria-label="Bật/Tắt âm thanh tương tác" title="Âm thanh tương tác">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
         </button>
 
         <button id="header-auth-btn" class="header-auth-btn" onclick="AuthView.showModal()" aria-label="Tài khoản và đăng nhập">
-          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+          <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
           <span>Đăng nhập</span>
         </button>
 
         <button id="header-student-badge" class="profile-pill-btn" onclick="app.startOnboarding(true)" aria-label="Hồ sơ và mục tiêu học tập">
           <span id="header-grade-text">Lớp 10</span>
-          <svg class="ui-icon ui-icon-xs" style="color: var(--text-dim);" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg>
+          <svg class="ui-icon ui-icon-xs" style="color: var(--text-dim);" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg>
         </button>
 
         <button id="theme-toggle" class="theme-toggle-btn" onclick="app.toggleTheme()" aria-label="Chuyển chế độ Sáng / Tối">
-          <span class="theme-icon light-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+          <span class="theme-icon light-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
         </button>
       </div>
     </div>
@@ -146,73 +146,74 @@
      ═══════════════════════════════════════════════════════════ -->
   <nav class="mobile-bottom-nav" aria-label="Điều hướng di động">
     <button class="mob-nav-item active" data-route="dashboard" onclick="app.navigateTo('dashboard')" aria-label="Tổng quan học tập">
-      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       <span>Tổng quan</span>
     </button>
     <button class="mob-nav-item" data-route="subjects" onclick="app.navigateTo('subjects')" aria-label="Danh sách môn học">
-      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
       <span>Môn học</span>
     </button>
     <button class="mob-nav-item" data-route="mistakes" onclick="app.navigateTo('mistakes')" aria-label="Sổ tay câu sai">
-      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
       <span>Sổ câu sai</span>
     </button>
     <button class="mob-nav-item" onclick="CommandPalette.open()" aria-label="Tìm kiếm nhanh">
-      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       <span>Tìm kiếm</span>
     </button>
     <button class="mob-nav-item" id="mob-menu-btn" onclick="document.getElementById('mobile-drawer-overlay').classList.add('open')" aria-label="Mở menu công cụ mở rộng">
-      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
       <span>Thêm</span>
     </button>
   </nav>
 
   <!-- Mobile Bottom Sheet Drawer -->
-  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" onclick="this.classList.remove('open')">
-    <div class="mobile-drawer-content" onclick="event.stopPropagation()">
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true">
+    <div class="mobile-drawer-content">
       <div class="mobile-drawer-handle"></div>
       <div class="mobile-drawer-grid">
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('custom-exam'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+        <button type="button" class="drawer-app-item" onclick="app.navigateTo('custom-exam'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
           <span class="drawer-app-label">Tự tạo đề</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('checker'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.navigateTo('checker'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
           <span class="drawer-app-label">Dò đáp án</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('importer'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.navigateTo('importer'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg></span>
           <span class="drawer-app-label">Nhập đề</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('planner'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.navigateTo('planner'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
           <span class="drawer-app-label">Kế hoạch</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('diagnostic'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.navigateTo('diagnostic'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
           <span class="drawer-app-label">Chẩn đoán</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.navigateTo('announcements'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.navigateTo('announcements'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
           <span class="drawer-app-label">Bảng tin</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.startOnboarding(true); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.startOnboarding(true); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/></svg></span>
           <span class="drawer-app-label">Mục tiêu</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="app.toggleTheme(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="app.toggleTheme(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/></svg></span>
           <span class="drawer-app-label">Giao diện</span>
-        </div>
-        <div class="drawer-app-item" role="button" tabindex="0" onclick="if(window.ThemeFocus)ThemeFocus.toggleFocus(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
-          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        </button>
+        <button type="button" class="drawer-app-item" onclick="if(window.ThemeFocus)ThemeFocus.toggleFocus(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
           <span class="drawer-app-label">Tập trung</span>
-        </div>
+        </button>
       </div>
     </div>
   </div>
 
   <main class="app" id="main-content">
+    <h1 class="sr-only">NTMK — Nền Tảng Khảo Thí Thông Minh &amp; Ôn Luyện GDPT 2018 | THPT Nguyễn Thị Minh Khai</h1>
 
     <!-- ═══════════════════════════════════════════════════════════
        SCREEN 0: ONBOARDING WIZARD
@@ -310,41 +311,41 @@
           <h2>Chọn chế độ ôn tập</h2>
           <div class="mode-cards">
             <p>Ngân hàng mẫu trên thiết bị phục vụ luyện tập. <a href="/verified-practice.html">Luyện từ ngân hàng đã duyệt</a></p>
-            <div class="mode-card selected" data-mode="exam" onclick="app.selectMode('exam')">
+            <button type="button" class="mode-card selected" data-mode="exam" onclick="app.selectMode('exam')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('exam');}" aria-label="Chế độ Luyện đề có thời gian">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div>
               <div class="mode-name">Luyện đề có thời gian</div>
               <div class="mode-desc">Bài luyện rút gọn trên thiết bị</div>
-            </div>
-            <div class="mode-card" data-mode="study" onclick="app.selectMode('study')">
+            </button>
+            <button type="button" class="mode-card" data-mode="study" onclick="app.selectMode('study')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('study');}" aria-label="Chế độ Học &amp; Đọc">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
               <div class="mode-name">Học &amp; Đọc</div>
               <div class="mode-desc">Xem câu hỏi kèm lời giải ngay</div>
-            </div>
-            <div class="mode-card" data-mode="flashcard" onclick="app.selectMode('flashcard')">
+            </button>
+            <button type="button" class="mode-card" data-mode="flashcard" onclick="app.selectMode('flashcard')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('flashcard');}" aria-label="Chế độ Flashcard">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 12.5-8.58 3.91a2 2 0 0 1-1.66 0L2 12.5"/><path d="m22 17.5-8.58 3.91a2 2 0 0 1-1.66 0L2 17.5"/></svg></div>
               <div class="mode-name">Flashcard</div>
               <div class="mode-desc">Lật thẻ ôn kiến thức nhanh</div>
-            </div>
-            <div class="mode-card" data-mode="practice" onclick="app.selectMode('practice')">
+            </button>
+            <button type="button" class="mode-card" data-mode="practice" onclick="app.selectMode('practice')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('practice');}" aria-label="Chế độ Luyện tập">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
               <div class="mode-name">Luyện tập</div>
               <div class="mode-desc">Phản hồi đúng/sai tức thì</div>
-            </div>
-            <div class="mode-card" data-mode="tf" onclick="app.selectMode('tf')">
+            </button>
+            <button type="button" class="mode-card" data-mode="tf" onclick="app.selectMode('tf')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('tf');}" aria-label="Chế độ Luyện Đúng / Sai">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
               <div class="mode-name">Luyện Đúng / Sai</div>
               <div class="mode-desc">Chuyên sâu 4 ý a, b, c, d (QĐ 764)</div>
-            </div>
-            <div class="mode-card" data-mode="checker" onclick="app.navigateTo('checker', app.currentSubject)">
+            </button>
+            <button type="button" class="mode-card" data-mode="checker" onclick="app.navigateTo('checker', app.currentSubject)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.navigateTo('checker', app.currentSubject);}" aria-label="Chế độ Dò trắc nghiệm">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
               <div class="mode-name">Dò trắc nghiệm</div>
               <div class="mode-desc">Bảng đáp án &amp; tra cứu lời giải</div>
-            </div>
-            <div class="mode-card" data-mode="wrong" onclick="app.selectMode('wrong')">
+            </button>
+            <button type="button" class="mode-card" data-mode="wrong" onclick="app.selectMode('wrong')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('wrong');}" aria-label="Chế độ Câu sai">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" x2="9" y1="9" y2="15"/><line x1="9" x2="15" y1="9" y2="15"/></svg></div>
               <div class="mode-name">Câu sai</div>
               <div class="mode-desc wrong-count-desc">Luyện lại câu sai (<span id="wrong-count-badge">0</span>)</div>
-            </div>
+            </button>
           </div>
         </div>
 
@@ -361,24 +362,24 @@
 
         <!-- Exam config (only visible in exam mode) -->
         <div class="quiz-config" id="quiz-config-exam">
-          <label class="config-label">Cấu trúc đề thi thử:</label>
+          <div class="config-label" role="heading" aria-level="3">Cấu trúc đề thi thử:</div>
           <div class="config-grid">
             <div class="config-item" id="config-item-mcq">
               <label for="exam-mcq-limit">Trắc nghiệm</label>
-              <input type="number" id="exam-mcq-limit" min="0" value="12" class="config-input">
+              <input type="number" id="exam-mcq-limit" min="0" value="12" class="config-input" aria-label="Số câu trắc nghiệm nhiều lựa chọn">
             </div>
             <div class="config-item" id="config-item-tf">
               <label for="exam-tf-limit">Đúng/Sai</label>
-              <input type="number" id="exam-tf-limit" min="0" value="4" class="config-input">
+              <input type="number" id="exam-tf-limit" min="0" value="4" class="config-input" aria-label="Số bài trắc nghiệm Đúng/Sai">
             </div>
             <div class="config-item" id="config-item-sa">
               <label for="exam-sa-limit">Trả lời ngắn</label>
-              <input type="number" id="exam-sa-limit" min="0" value="2" class="config-input">
+              <input type="number" id="exam-sa-limit" min="0" value="2" class="config-input" aria-label="Số câu trắc nghiệm trả lời ngắn">
             </div>
           </div>
           <div class="config-row">
             <label for="quiz-duration">Thời gian làm bài:</label>
-            <select id="quiz-duration">
+            <select id="quiz-duration" aria-label="Thời gian làm bài thi">
               <option value="10">10 phút</option>
               <option value="20" selected>20 phút</option>
               <option value="30">30 phút</option>
@@ -402,21 +403,21 @@
 
         <!-- Practice/Study/Flashcard config -->
         <div class="quiz-config" id="quiz-config-practice" style="display: none;">
-          <label class="config-label">Chọn thể loại câu hỏi:</label>
+          <div class="config-label" role="heading" aria-level="3">Chọn thể loại câu hỏi:</div>
           <div class="config-grid">
-            <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
-              <input type="checkbox" class="topic-checkbox" id="prac-mcq-toggle" checked>
-              <span class="topic-checkmark"></span>
+            <label class="topic-checkbox-wrapper" for="prac-mcq-toggle" style="margin-bottom: 10px;">
+              <input type="checkbox" class="topic-checkbox" id="prac-mcq-toggle" aria-label="Luyện tập trắc nghiệm nhiều lựa chọn" checked>
+              <span class="topic-checkmark" aria-hidden="true"></span>
               <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Trắc nghiệm</span>
             </label>
-            <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
-              <input type="checkbox" class="topic-checkbox" id="prac-tf-toggle" checked>
-              <span class="topic-checkmark"></span>
+            <label class="topic-checkbox-wrapper" for="prac-tf-toggle" style="margin-bottom: 10px;">
+              <input type="checkbox" class="topic-checkbox" id="prac-tf-toggle" aria-label="Luyện tập trắc nghiệm Đúng/Sai" checked>
+              <span class="topic-checkmark" aria-hidden="true"></span>
               <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Đúng/Sai</span>
             </label>
-            <label class="topic-checkbox-wrapper" style="margin-bottom: 10px;">
-              <input type="checkbox" class="topic-checkbox" id="prac-sa-toggle" checked>
-              <span class="topic-checkmark"></span>
+            <label class="topic-checkbox-wrapper" for="prac-sa-toggle" style="margin-bottom: 10px;">
+              <input type="checkbox" class="topic-checkbox" id="prac-sa-toggle" aria-label="Luyện tập trắc nghiệm trả lời ngắn" checked>
+              <span class="topic-checkmark" aria-hidden="true"></span>
               <span style="margin-left: 10px; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Trả lời ngắn</span>
             </label>
           </div>
@@ -430,11 +431,11 @@
 
         <!-- Flashcard Specific Config -->
         <div class="quiz-config" id="quiz-config-flashcard" style="display: none;">
-          <label class="config-label">Tùy chọn chia nhỏ học tập:</label>
+          <div class="config-label" role="heading" aria-level="3">Tùy chọn chia nhỏ học tập:</div>
           <div class="config-grid">
             <div class="config-item" style="display:flex; flex-direction:column;">
               <label for="fc-chunk-size" style="margin-bottom:5px; font-weight:500;">Học từng nhóm nhỏ (0 = Tất cả)</label>
-              <input type="number" id="fc-chunk-size" min="0" value="0" class="config-input" placeholder="VD: 10 câu">
+              <input type="number" id="fc-chunk-size" min="0" value="0" class="config-input" placeholder="VD: 10 câu" aria-label="Số lượng câu hỏi mỗi nhóm flashcard">
             </div>
           </div>
         </div>
@@ -466,7 +467,7 @@
           <button class="exam-tool-btn" onclick="Quiz.toggleZenMode()" title="Chế độ tập trung toàn màn hình">⛶ Zen</button>
         </div>
         <div class="timer" id="active-timer">
-          <span class="timer-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <span class="timer-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
           <span id="active-timer-display">20:00</span>
         </div>
       </header>
@@ -477,7 +478,7 @@
           <div class="question-dots" id="question-dots"></div>
         </aside>
 
-        <main class="quiz-main">
+        <div class="quiz-main">
           <div class="question-card">
             <div class="question-meta">
               <div style="display:flex; align-items:center; gap:8px;">
@@ -497,7 +498,7 @@
             <button class="nav-btn next" id="btn-next" onclick="Quiz.next()">Câu tiếp →</button>
             <button class="nav-btn submit hidden" id="btn-submit" onclick="Quiz.submit()"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Nộp bài thi</button>
           </div>
-        </main>
+        </div>
       </div>
     </section>
 
@@ -584,7 +585,8 @@
     <section id="screen-result" class="screen" aria-label="Kết quả bài thi">
       <div class="result-card">
         <div class="score-circle">
-          <svg viewBox="0 0 100 100">
+          <svg viewBox="0 0 100 100" role="img" aria-label="Biểu đồ vòng tròn hiển thị điểm số bài thi">
+            <title>Biểu đồ điểm số</title>
             <defs>
               <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stop-color="#00B074" />
@@ -652,7 +654,7 @@
     <section id="screen-announcements" class="screen" aria-label="Bảng tin cộng đồng">
       <div class="dashboard-wrapper">
         <div class="section-header" style="margin-bottom: 24px;">
-          <h1 class="explorer-title">Bảng Tin &amp; Thông Báo Cộng Đồng</h1>
+          <h2 class="explorer-title">Bảng Tin &amp; Thông Báo Cộng Đồng</h2>
           <p class="explorer-subtitle">Cập nhật lịch thi, đề cương ôn tập và tin tức từ ban quản trị NTMK.</p>
         </div>
         <div class="announcements-container" id="announcements-container">

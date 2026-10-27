@@ -66,7 +66,7 @@
 
 .brand-badge {
   font-family: 'Inter', sans-serif !important;
-  font-size: 0.68rem !important;
+  font-size: 0.75rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.05em !important;
   background: var(--athenaeum-gold-soft) !important;
@@ -128,7 +128,7 @@
   font-weight: 700 !important;
   letter-spacing: 0.04em !important;
   text-transform: uppercase !important;
-  font-size: 0.72rem !important;
+  font-size: 0.75rem !important;
 }
 
 [data-theme="dark"] .hero-tag {
@@ -321,4 +321,71 @@
 
 .highlight-pulse {
   animation: pulseGlowHighlight 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* ─── 9. WCAG AAA & WAVE Accessibility Overrides ─── */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.mode-desc {
+  color: var(--text-secondary, #334155) !important;
+  font-weight: 500 !important;
+  font-size: 0.82rem !important;
+}
+
+[data-theme="dark"] .mode-desc {
+  color: #cbd5e1 !important;
+}
+
+.topics-subtitle {
+  color: var(--text-secondary, #334155) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="dark"] .topics-subtitle {
+  color: #cbd5e1 !important;
+}
+
+.config-item label {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="dark"] .config-item label {
+  color: #f1f5f9 !important;
+}
+
+.summary-divider {
+  color: #475569 !important;
+}
+
+[data-theme="dark"] .summary-divider {
+  color: #94a3b8 !important;
+}
+
+button.mode-card {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  text-align: center;
+}
+
+button.drawer-app-item {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  text-align: center;
 }
