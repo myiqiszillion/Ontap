@@ -3,7 +3,7 @@
  * Caching strategy: Stale-While-Revalidate for app shell, Cache-First for static assets & question data
  */
 
-const CACHE_NAME = 'ntmk-cache-v1';
+const CACHE_NAME = 'ntmk-cache-v2';
 
 const STATIC_SHELL = [
   '/',
@@ -22,6 +22,8 @@ const STATIC_SHELL = [
   '/css/theme-focus.css',
   '/css/smart-importer.css',
   '/css/printable-exam.css',
+  '/css/command-palette.css',
+  '/css/result-view.css',
   '/js/audio.js',
   '/js/api.js',
   '/js/state.js',
@@ -46,6 +48,9 @@ const STATIC_SHELL = [
   '/js/auth-view.js',
   '/js/smart-importer.js',
   '/js/printable-exam.js',
+  '/js/command-palette.js',
+  '/js/confetti.js',
+  '/js/result-card.js',
   '/js/app.js',
   '/api/subjects'
 ];

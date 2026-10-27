@@ -29,6 +29,9 @@ const app = {
       this.grades = this.subjectsData.grades || [10, 11, 12];
 
       SubjectExplorer.init();
+      if (typeof CommandPalette !== 'undefined') {
+        CommandPalette.init();
+      }
       if (typeof AuthView !== 'undefined') {
         AuthView.init();
       }
@@ -659,11 +662,37 @@ const app = {
     const cleanTotal = typeof total === 'number' ? (Math.round(total * 100) / 100) : total;
     const cleanWrong = Math.round((cleanTotal - cleanCorrect) * 100) / 100;
 
-    if (scoreValEl) scoreValEl.textContent = cleanCorrect;
     if (scoreTotEl) scoreTotEl.textContent = cleanTotal;
     if (corCntEl) corCntEl.textContent = cleanCorrect;
     if (wrgCntEl) wrgCntEl.textContent = cleanWrong;
     if (timeUsedEl) timeUsedEl.textContent = Timer.formatTime(Timer.getTimeUsed());
+
+    // Animated Count-Up Score
+    if (scoreValEl) {
+      scoreValEl.textContent = '0';
+      if (typeof window !== 'undefined' && typeof window.requestAnimationFrame === 'function') {
+        const startTimestamp = performance.now();
+        const duration = 1200;
+        const animateScore = (now) => {
+          const progress = Math.min(1, (now - startTimestamp) / duration);
+          const currentScore = progress * cleanCorrect;
+          scoreValEl.textContent = currentScore % 1 === 0 ? currentScore.toFixed(0) : currentScore.toFixed(2);
+          if (progress < 1) {
+            requestAnimationFrame(animateScore);
+          } else {
+            scoreValEl.textContent = cleanCorrect;
+          }
+        };
+        requestAnimationFrame(animateScore);
+      } else {
+        scoreValEl.textContent = cleanCorrect;
+      }
+    }
+
+    // Celebratory Confetti for high achievement (score >= 80%)
+    if (percentage >= 80 && typeof Confetti !== 'undefined') {
+      setTimeout(() => Confetti.fire(3500), 200);
+    }
 
     const circumference = 2 * Math.PI * 45;
     const offset = circumference - (percentage / 100) * circumference;
@@ -688,6 +717,28 @@ const app = {
   },
 
   // ═══════════ NAVIGATION & EXIT HANDLERS ═══════════
+
+  downloadResultCard() {
+    if (typeof ResultCard !== 'undefined') {
+      const subject = this.subjects.find(s => s.id === this.currentSubject);
+      const profile = (typeof ProfileStore !== 'undefined' && ProfileStore.getProfile) ? ProfileStore.getProfile() : null;
+      const score = document.getElementById('score-value')?.textContent || '0';
+      const total = document.getElementById('score-total')?.textContent || '10';
+      const timeUsed = document.getElementById('time-used')?.textContent || '0:00';
+      const percentage = Math.round((parseFloat(score) / (parseFloat(total) || 1)) * 100) || 0;
+
+      ResultCard.generate({
+        subjectName: subject ? subject.name : (this.currentSubject || 'Bài thi trắc nghiệm'),
+        score: score,
+        total: total,
+        timeUsed: timeUsed,
+        percentage: percentage,
+        studentName: profile?.name || 'Học sinh NTMK'
+      });
+    } else {
+      alert('Chức năng xuất ảnh chưa sẵn sàng.');
+    }
+  },
 
   exitStudy() {
     if (confirm('Thoát khỏi chế độ học? Tiến trình hiện tại sẽ được lưu lại.')) {

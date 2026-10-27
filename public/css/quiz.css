@@ -776,3 +776,164 @@
   opacity: 1;
   animation: pulse 1s infinite alternate;
 }
+
+/* ═════════════════════════════════════════════════════════════
+   EXAM ROOM 2.0 (PHASE 07 ELEVATION)
+   ═════════════════════════════════════════════════════════════ */
+
+/* Flag for Review */
+.btn-flag-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--bg-gray);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-flag-toggle:hover {
+  border-color: #f59e0b;
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.btn-flag-toggle.active {
+  background: #f59e0b;
+  border-color: #d97706;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+}
+
+/* Flagged question dot in sidebar */
+.q-dot.flagged {
+  border-color: #f59e0b !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #b45309 !important;
+  position: relative;
+  font-weight: 800;
+}
+
+.q-dot.flagged::after {
+  content: '🚩';
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  font-size: 0.65rem;
+  line-height: 1;
+}
+
+/* Split-Pane Layout for True/False questions (Phần II) */
+.tf-split-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+@media (max-width: 860px) {
+  .tf-split-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tf-split-passage-pane {
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  position: sticky;
+  top: 14px;
+}
+
+.passage-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.tf-split-passage-pane .question-passage {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.tf-split-statements-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statements-header-hint {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* Exam Room Toolbar */
+.exam-tools-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exam-tool-btn {
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-xs);
+  padding: 4px 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.exam-tool-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--bg-white);
+}
+
+/* Zen Mode (Distraction-Free) */
+body.zen-mode .app-shell-header,
+body.zen-mode .mobile-bottom-nav {
+  display: none !important;
+}
+
+body.zen-mode .app {
+  padding-top: 12px !important;
+}
+
+/* Option Shortcut Hint */
+.option-shortcut-hint {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+[data-theme="dark"] .option-shortcut-hint {
+  background: rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+}

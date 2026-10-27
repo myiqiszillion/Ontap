@@ -11,6 +11,8 @@ const Quiz = {
   subject: null,
   isSubmitting: false,
   isSubmitted: false,
+  flaggedQuestions: new Set(),
+  fontSizeLevel: 0,
   STORAGE_KEY: 'ntmk_active_exam_session_v2',
 
   /**
@@ -24,6 +26,7 @@ const Quiz = {
     this.questions = data.questions || [];
     this.isSubmitting = false;
     this.isSubmitted = false;
+    this.flaggedQuestions = new Set();
 
     this.saveSession();
     this.render();
@@ -42,6 +45,7 @@ const Quiz = {
     this.currentQuestionIndex = session.currentQuestionIndex || 0;
     this.isSubmitting = false;
     this.isSubmitted = false;
+    this.flaggedQuestions = new Set(session.flags || []);
 
     this.render();
     return true;
@@ -59,6 +63,7 @@ const Quiz = {
         subjectId: this.subject,
         questions: this.questions,
         answers: this.answers,
+        flags: Array.from(this.flaggedQuestions),
         currentQuestionIndex: this.currentQuestionIndex,
         status: 'in_progress',
         updatedAt: Date.now()
@@ -93,7 +98,39 @@ const Quiz = {
   /**
    * Render current question
    */
+  toggleFlag(idx = this.currentQuestionIndex) {
+    if (!this.flaggedQuestions) this.flaggedQuestions = new Set();
+    if (this.flaggedQuestions.has(idx)) {
+      this.flaggedQuestions.delete(idx);
+    } else {
+      this.flaggedQuestions.add(idx);
+      if (typeof SoundFX !== 'undefined' && SoundFX.playClick) SoundFX.playClick();
+    }
+    this.saveSession();
+    this.render();
+  },
+
+  changeFontSize(delta) {
+    this.fontSizeLevel = Math.max(-2, Math.min(3, this.fontSizeLevel + delta));
+    if (typeof document === 'undefined') return;
+    const mainEl = document.querySelector('.quiz-main');
+    if (mainEl) {
+      const ptSizes = ['0.85rem', '0.92rem', '1.05rem', '1.18rem', '1.3rem', '1.45rem'];
+      const targetSize = ptSizes[this.fontSizeLevel + 2];
+      mainEl.style.fontSize = targetSize;
+      const qText = document.getElementById('q-text');
+      if (qText) qText.style.fontSize = targetSize;
+    }
+  },
+
+  toggleZenMode() {
+    if (typeof document !== 'undefined') {
+      document.body.classList.toggle('zen-mode');
+    }
+  },
+
   render() {
+    if (typeof document === 'undefined') return;
     const q = this.questions[this.currentQuestionIndex];
     if (!q) return;
 
@@ -126,36 +163,56 @@ const Quiz = {
       qNumEl.textContent = this.currentQuestionIndex + 1;
     }
 
+    const flagBtn = document.getElementById('q-flag-btn');
+    if (flagBtn) {
+      const isFlagged = this.flaggedQuestions && this.flaggedQuestions.has(this.currentQuestionIndex);
+      flagBtn.className = `btn-flag-toggle ${isFlagged ? 'active' : ''}`;
+      flagBtn.innerHTML = `<span>${isFlagged ? '🚩 Đã cắm cờ' : '🏳️ Cắm cờ'}</span>`;
+    }
+
     const qTextEl = document.getElementById('q-text');
     const container = document.getElementById('options-container');
 
     if (isGroup) {
-      // === TF GROUP: passage + multiple statements ===
+      // === TF GROUP: Split-Pane (passage on left, statements on right) ===
       const imgHtml = q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : '';
       const passageHtml = this.renderContent(q.passage || q.prompt || '');
-      qTextEl.innerHTML = `<div class="question-passage">${passageHtml}</div>${imgHtml}`;
-
       const groupAnswers = this.answers[this.currentQuestionIndex] || {};
       const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
 
-      container.innerHTML = statements.map((stmt, si) => {
-        const userAnswer = groupAnswers[si];
-        const isDung = userAnswer === true;
-        const isSai = userAnswer === false;
-        const stmtText = stmt.statement || stmt.question || '';
-
-        return `
-          <div class="tf-statement">
-            <div class="tf-statement-text">
-              <strong>${String.fromCharCode(97 + si)})</strong> ${this.renderContent(stmtText)}
-            </div>
-            <div class="tf-buttons">
-              <button class="tf-btn${isDung ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, true)" aria-label="Chọn Đúng">Đúng</button>
-              <button class="tf-btn${isSai ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, false)" aria-label="Chọn Sai">Sai</button>
-            </div>
+      qTextEl.innerHTML = '';
+      container.innerHTML = `
+        <div class="tf-split-layout">
+          <div class="tf-split-passage-pane">
+            <span class="passage-badge">📜 NGỮ LIỆU / ĐOẠN TƯ LIỆU ĐỌC HIỂU</span>
+            <div class="question-passage">${passageHtml}</div>
+            ${imgHtml}
           </div>
-        `;
-      }).join('');
+          <div class="tf-split-statements-pane">
+            <div class="statements-header-hint">
+              Thí sinh chọn Đúng [Đ] hoặc Sai [S] cho từng mệnh đề sau:
+            </div>
+            ${statements.map((stmt, si) => {
+              const userAnswer = groupAnswers[si];
+              const isDung = userAnswer === true;
+              const isSai = userAnswer === false;
+              const stmtText = stmt.statement || stmt.question || '';
+
+              return `
+                <div class="tf-statement">
+                  <div class="tf-statement-text">
+                    <strong>${String.fromCharCode(97 + si)})</strong> ${this.renderContent(stmtText)}
+                  </div>
+                  <div class="tf-buttons">
+                    <button class="tf-btn${isDung ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, true)" aria-label="Chọn Đúng">Đúng</button>
+                    <button class="tf-btn${isSai ? ' selected' : ''}" onclick="Quiz.selectTF(${si}, false)" aria-label="Chọn Sai">Sai</button>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
 
     } else if (isShortAnswer) {
       // === SHORT ANSWER ===
@@ -195,6 +252,7 @@ const Quiz = {
                   onclick="Quiz.selectOption(${i})">
             <span class="option-letter">${letters[i] || (i + 1)}</span>
             <span class="option-text">${this.renderContent(opt)}</span>
+            <span class="option-shortcut-hint">[${letters[i]}]</span>
           </button>
         `;
       }).join('');
@@ -217,11 +275,13 @@ const Quiz = {
    * Render question navigation dots
    */
   renderDots() {
+    if (typeof document === 'undefined') return;
     const container = document.getElementById('question-dots');
     if (!container) return;
 
     container.innerHTML = this.questions.map((q, i) => {
       const isCurrent = i === this.currentQuestionIndex;
+      const isFlagged = this.flaggedQuestions && this.flaggedQuestions.has(i);
       let isAnswered = false;
 
       const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
@@ -241,7 +301,7 @@ const Quiz = {
       if (isGroup) typeClass = ' tf-dot';
       if (isShortAnswer) typeClass = ' sa-dot';
       return `
-        <div class="q-dot ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''}${typeClass}"
+        <div class="q-dot ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''} ${isFlagged ? 'flagged' : ''}${typeClass}"
              onclick="Quiz.goTo(${i})">
           ${i + 1}
         </div>

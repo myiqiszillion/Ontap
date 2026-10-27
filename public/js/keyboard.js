@@ -45,6 +45,13 @@ const KeyboardDrill = {
         }
       }
 
+      // Flag question shortcut
+      if (key === 'F') {
+        e.preventDefault();
+        Quiz.toggleFlag();
+        return;
+      }
+
       // Navigation
       if (e.key === 'ArrowRight' || e.key === 'Enter') {
         e.preventDefault();

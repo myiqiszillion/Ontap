@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="css/theme-focus.css">
   <link rel="stylesheet" href="css/smart-importer.css">
   <link rel="stylesheet" href="css/printable-exam.css">
+  <link rel="stylesheet" href="css/command-palette.css">
+  <link rel="stylesheet" href="css/result-view.css">
   <meta name="theme-color" content="#d97706">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -48,33 +50,66 @@
           🏠 Trang chủ
         </button>
         <button class="nav-item-btn" data-route="subjects" onclick="app.navigateTo('subjects')">
-          📚 Khám phá môn học
+          📚 Môn học
         </button>
-        <button class="nav-item-btn" data-route="checker" onclick="app.navigateTo('checker')">
-          🔍 Dò trắc nghiệm
-        </button>
-        <button class="nav-item-btn" data-route="custom-exam" onclick="app.navigateTo('custom-exam')">
-          🎯 Tự tạo đề
-        </button>
-        <button class="nav-item-btn" data-route="importer" onclick="app.navigateTo('importer')">
-          📥 Nhập đề thi
-        </button>
-        <button class="nav-item-btn" data-route="mistakes" onclick="app.navigateTo('mistakes')">
-          📕 Sổ câu sai <span id="header-mistakes-badge" class="badge-count hidden">0</span>
-        </button>
+
+        <!-- Dropdown Bộ công cụ ôn luyện -->
+        <div class="nav-dropdown-wrapper" id="nav-tools-dropdown">
+          <button class="nav-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">
+            <span>🧰 Bộ công cụ</span>
+            <span class="nav-dropdown-arrow">▼</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <button class="nav-dropdown-item" onclick="app.navigateTo('custom-exam'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
+              <span>🎯</span>
+              <div>
+                <div>Tự tạo đề thi</div>
+                <div class="nav-dropdown-desc">Tùy biến câu hỏi & thời gian</div>
+              </div>
+            </button>
+            <button class="nav-dropdown-item" onclick="app.navigateTo('checker'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
+              <span>🔍</span>
+              <div>
+                <div>Dò trắc nghiệm</div>
+                <div class="nav-dropdown-desc">So khớp đáp án & tra giải</div>
+              </div>
+            </button>
+            <button class="nav-dropdown-item" onclick="app.navigateTo('mistakes'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
+              <span>📕</span>
+              <div>
+                <div>Sổ tay câu sai <span id="header-mistakes-badge" class="badge-count hidden">0</span></div>
+                <div class="nav-dropdown-desc">Phục hồi lỗ hổng kiến thức</div>
+              </div>
+            </button>
+            <button class="nav-dropdown-item" onclick="app.navigateTo('importer'); this.closest('.nav-dropdown-wrapper').classList.remove('open')">
+              <span>📥</span>
+              <div>
+                <div>Nhập đề thông minh</div>
+                <div class="nav-dropdown-desc">Bóc tách Word & Live Editor</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
         <button class="nav-item-btn" data-route="planner" onclick="app.navigateTo('planner')">
-          📅 Kế hoạch học tập
-        </button>
-        <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
-          📢 Thông báo
+          📅 Kế hoạch
         </button>
         <button class="nav-item-btn" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
-          🎯 Chẩn đoán năng lực
+          🎯 Chẩn đoán
+        </button>
+        <button class="nav-item-btn" data-route="announcements" onclick="app.navigateTo('announcements')">
+          📢 Bảng tin
         </button>
       </nav>
 
 
       <div class="header-actions-group">
+        <button id="header-search-btn" class="header-search-pill-btn" onclick="CommandPalette.open()" aria-label="Tìm kiếm nhanh">
+          <span>🔍</span>
+          <span style="font-size:0.8rem; font-weight:600;">Tìm kiếm...</span>
+          <span class="header-search-kbd">Ctrl K</span>
+        </button>
+
         <button id="sound-toggle-btn" class="sound-btn" onclick="SoundFX.toggle()" aria-label="Bật/Tắt âm thanh tương tác" title="Âm thanh tương tác">
           🔊
         </button>
@@ -107,32 +142,64 @@
       <span class="mob-nav-icon">📚</span>
       <span>Môn học</span>
     </button>
-    <button class="mob-nav-item" data-route="checker" onclick="app.navigateTo('checker')">
+    <button class="mob-nav-item" data-route="mistakes" onclick="app.navigateTo('mistakes')">
+      <span class="mob-nav-icon">📕</span>
+      <span>Sổ câu sai</span>
+    </button>
+    <button class="mob-nav-item" onclick="CommandPalette.open()">
       <span class="mob-nav-icon">🔍</span>
-      <span>Dò đáp án</span>
+      <span>Tìm kiếm</span>
     </button>
-    <button class="mob-nav-item" data-route="importer" onclick="app.navigateTo('importer')">
-      <span class="mob-nav-icon">📥</span>
-      <span>Nhập đề</span>
-    </button>
-    <button class="mob-nav-item" data-route="planner" onclick="app.navigateTo('planner')">
-      <span class="mob-nav-icon">📅</span>
-      <span>Kế hoạch</span>
-    </button>
-    <button class="mob-nav-item" data-route="announcements" onclick="app.navigateTo('announcements')">
-      <span class="mob-nav-icon">📢</span>
-      <span>Bảng tin</span>
-    </button>
-
-    <button class="mob-nav-item" data-route="diagnostic" onclick="app.navigateTo('diagnostic')">
-      <span class="mob-nav-icon">🎯</span>
-      <span>Chẩn đoán</span>
-    </button>
-    <button class="mob-nav-item" onclick="app.startOnboarding(true)">
-      <span class="mob-nav-icon">⚙️</span>
-      <span>Mục tiêu</span>
+    <button class="mob-nav-item" id="mob-menu-btn" onclick="document.getElementById('mobile-drawer-overlay').classList.add('open')">
+      <span class="mob-nav-icon">☰</span>
+      <span>Thêm</span>
     </button>
   </nav>
+
+  <!-- Mobile Bottom Sheet Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" onclick="this.classList.remove('open')">
+    <div class="mobile-drawer-content" onclick="event.stopPropagation()">
+      <div class="mobile-drawer-handle"></div>
+      <div class="mobile-drawer-grid">
+        <div class="drawer-app-item" onclick="app.navigateTo('custom-exam'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">🎯</span>
+          <span class="drawer-app-label">Tự tạo đề</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.navigateTo('checker'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">🔍</span>
+          <span class="drawer-app-label">Dò đáp án</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.navigateTo('importer'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">📥</span>
+          <span class="drawer-app-label">Nhập đề</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.navigateTo('planner'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">📅</span>
+          <span class="drawer-app-label">Kế hoạch</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.navigateTo('diagnostic'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">🎯</span>
+          <span class="drawer-app-label">Chẩn đoán</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.navigateTo('announcements'); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">📢</span>
+          <span class="drawer-app-label">Bảng tin</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.startOnboarding(true); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">⚙️</span>
+          <span class="drawer-app-label">Mục tiêu</span>
+        </div>
+        <div class="drawer-app-item" onclick="app.toggleTheme(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">🌓</span>
+          <span class="drawer-app-label">Giao diện</span>
+        </div>
+        <div class="drawer-app-item" onclick="if(window.ThemeFocus)ThemeFocus.toggleFocus(); document.getElementById('mobile-drawer-overlay').classList.remove('open')">
+          <span class="drawer-app-icon">⏳</span>
+          <span class="drawer-app-label">Tập trung</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <main class="app" id="main-content">
 
@@ -382,6 +449,11 @@
           <span class="subject-badge" id="quiz-subject">Môn học</span>
           <span class="progress-badge" id="quiz-progress">1/20</span>
         </div>
+        <div class="exam-tools-row">
+          <button class="exam-tool-btn" onclick="Quiz.changeFontSize(-1)" title="Giảm cỡ chữ">A-</button>
+          <button class="exam-tool-btn" onclick="Quiz.changeFontSize(1)" title="Tăng cỡ chữ">A+</button>
+          <button class="exam-tool-btn" onclick="Quiz.toggleZenMode()" title="Chế độ tập trung toàn màn hình">⛶ Zen</button>
+        </div>
         <div class="timer" id="active-timer">
           <span class="timer-icon">⏱️</span>
           <span id="active-timer-display">20:00</span>
@@ -397,8 +469,13 @@
         <main class="quiz-main">
           <div class="question-card">
             <div class="question-meta">
-              <span class="question-type-badge" id="q-type-badge">MCQ</span>
-              <span class="question-number">Câu <span id="q-num">1</span></span>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span class="question-type-badge" id="q-type-badge">MCQ</span>
+                <span class="question-number">Câu <span id="q-num">1</span></span>
+              </div>
+              <button id="q-flag-btn" class="btn-flag-toggle" onclick="Quiz.toggleFlag()" title="Cắm cờ câu này để xem lại trước khi nộp (Phím F)">
+                <span>🏳️ Cắm cờ</span>
+              </button>
             </div>
             <div class="question-text" id="q-text">Đang tải câu hỏi...</div>
             <div class="options" id="options-container"></div>
@@ -532,14 +609,21 @@
           </div>
         </div>
 
-        <div class="result-actions">
-          <button class="action-btn primary" onclick="app.navigateTo('dashboard')">
+        <button class="btn-share-card" onclick="app.downloadResultCard()">
+          📸 Xuất Thẻ Ảnh Thành Tích (Chia sẻ Zalo / Facebook)
+        </button>
+
+        <div class="result-actions-grid">
+          <button class="btn-result-action primary" onclick="app.navigateTo('dashboard')">
             🏠 Về Dashboard
           </button>
-          <button class="action-btn secondary" onclick="Quiz.review()">
+          <button class="btn-result-action secondary" onclick="Quiz.review()">
             📝 Xem chi tiết đáp án
           </button>
-          <button class="action-btn secondary" onclick="Quiz.retry()">
+          <button class="btn-result-action secondary" onclick="app.navigateTo('mistakes')">
+            📕 Sổ tay câu sai
+          </button>
+          <button class="btn-result-action secondary" onclick="Quiz.retry()">
             🔄 Làm lại đề này
           </button>
         </div>
@@ -623,6 +707,9 @@
   <script defer src="js/auth-view.js"></script>
   <script defer src="js/smart-importer.js"></script>
   <script defer src="js/printable-exam.js"></script>
+  <script defer src="js/command-palette.js"></script>
+  <script defer src="js/confetti.js"></script>
+  <script defer src="js/result-card.js"></script>
   <script defer src="js/app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
