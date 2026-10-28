@@ -304,10 +304,22 @@ const SmartImporterView = {
           <div class="importer-input-col">
             <div class="importer-card">
               <div class="card-title-row">
-                <h3 class="card-title">1. Nội dung đề thi văn bản</h3>
+                <h3 class="card-title">1. Nội dung đề thi văn bản / URL</h3>
                 <button class="btn-sample-paste" onclick="SmartImporterView.pasteSample()">
                   <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> Dán đề mẫu
                 </button>
+              </div>
+
+              <!-- CÀO TỰ ĐỘNG TỪ WEB NGOÀI -->
+              <div class="importer-url-section" style="margin-bottom: 14px; background: rgba(59, 130, 246, 0.05); padding: 12px; border-radius: 10px; border: 1px dashed rgba(59, 130, 246, 0.3);">
+                <label for="importer-url-input" style="font-size: 0.84rem; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; display: block;">Lấy đề tự động từ Web ngoài (VietJack, ToánMath, Thư viện học liệu, Hoc247...):</label>
+                <div style="display: flex; gap: 8px;">
+                  <input type="url" id="importer-url-input" class="import-input" placeholder="https://vietjack.com/... hoặc https://toanmath.com/..." style="flex: 1; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-surface); color: var(--text-primary);">
+                  <button type="button" class="btn btn-primary" id="btn-crawl-from-url" onclick="SmartImporterView.crawlFromUrl()" style="white-space: nowrap; padding: 8px 14px;">
+                    <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <span>Cào đề về</span>
+                  </button>
+                </div>
               </div>
 
               <textarea id="importer-textarea" 
@@ -324,13 +336,11 @@ const SmartImporterView = {
                 <div class="config-field">
                   <label>Gán vào môn học:</label>
                   <select id="import-target-subject" class="import-select" onchange="SmartImporterView.targetSubject = this.value">
+                    <option value="toan11">Toán học 11</option>
+                    <option value="vatli11">Vật lí 11</option>
+                    <option value="hoahoc11">Hóa học 11</option>
+                    <option value="tienganh11">Tiếng Anh 11</option>
                     <option value="lichsu11" selected>Lịch sử 11</option>
-                    <option value="vatli10">Vật lí 10</option>
-                    <option value="hoahoc10">Hóa học 10</option>
-                    <option value="tienganh10">Tiếng Anh 10</option>
-                    <option value="lichsu10">Lịch sử 10</option>
-                    <option value="lichsu11">Lịch sử 11</option>
-                    <option value="lichsu12">Lịch sử 12</option>
                   </select>
                 </div>
 
@@ -465,6 +475,55 @@ const SmartImporterView = {
     if (area) {
       area.value = SmartImporter.SAMPLE_TEXT;
       this.triggerParse();
+    }
+  },
+
+  async crawlFromUrl() {
+    const urlInput = document.getElementById('importer-url-input');
+    const url = urlInput ? urlInput.value.trim() : '';
+    if (!url) {
+      alert('Vui lòng nhập đường dẫn liên kết đề thi (URL).');
+      return;
+    }
+
+    const btn = document.getElementById('btn-crawl-from-url');
+    if (btn) {
+      btn.disabled = true;
+      btn.innerHTML = '<span>Đang cào dữ liệu...</span>';
+    }
+
+    try {
+      const res = await fetch('/api/v2/crawler/crawl', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, sourceId: 'custom' })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Thu thập nội dung thất bại');
+      }
+
+      const area = document.getElementById('importer-textarea');
+      if (area) {
+        area.value = data.rawText || '';
+        this.triggerParse();
+      }
+
+      if (data.metadata && data.metadata.title) {
+        const topicInput = document.getElementById('import-topic-title');
+        if (topicInput) topicInput.value = data.metadata.title;
+        this.topicTitle = data.metadata.title;
+      }
+
+      if (window.SoundFX) SoundFX.playCorrect();
+    } catch (err) {
+      console.error('Lỗi khi cào đề từ URL:', err);
+      alert('Không thể cào dữ liệu từ đường dẫn này: ' + err.message);
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = '<svg class=\"ui-icon ui-icon-xs\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg> <span>Cào đề về</span>';
+      }
     }
   },
 
