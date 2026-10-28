@@ -13,25 +13,27 @@ const { loadSubjectsData } = require('../server.js');
 const ProfileStore = require('../public/js/state.js');
 const Timer = require('../public/js/timer.js');
 
-describe('1. Repository & Data Integrity (Lịch Sử 11 GDPT 2018 Focus)', () => {
-  test('subjects.json contains grade 11 and lichsu11 active subject', () => {
+describe('1. Repository & Data Integrity (GDPT 2018 - Grade 11 Core Subjects)', () => {
+  test('subjects.json contains grade 11 and 5 core active subjects (toan, vatli, hoahoc, tienganh, lichsu)', () => {
     const data = loadSubjectsData(path.join(__dirname, '..'));
     assert.deepEqual(data.grades, [11], 'Should support grade 11');
     
-    // Check lichsu11 exists and is ready
-    const found11 = data.subjects.find(s => s.id === 'lichsu11' && s.grade === 11);
-    assert.ok(found11, 'Subject lichsu11 must exist');
-    assert.equal(found11.ready, true, 'Subject lichsu11 must have ready: true');
-    assert.equal(found11.status, 'active', 'Subject lichsu11 status must be active');
-    assert.ok(found11.questionCount > 0, 'Subject lichsu11 must have questions');
+    const coreKeys = ['toan11', 'vatli11', 'hoahoc11', 'tienganh11', 'lichsu11'];
+    coreKeys.forEach(id => {
+      const found = data.subjects.find(s => s.id === id && s.grade === 11);
+      assert.ok(found, `Subject ${id} must exist`);
+      assert.equal(found.ready, true, `Subject ${id} must have ready: true`);
+      assert.equal(found.status, 'active', `Subject ${id} status must be active`);
+      assert.ok(found.questionCount > 0, `Subject ${id} must have questions`);
+    });
   });
 
-  test('Redundant subject files are completely cleaned and removed', () => {
+  test('Redundant legacy files are completely cleaned and removed', () => {
     const redundantFiles = [
-      'toan10.json', 'toan11.json', 'toan12.json',
-      'vatli10.json', 'vatli11.json', 'vatli12.json',
-      'hoahoc10.json', 'hoahoc11.json', 'hoahoc12.json',
-      'tienganh10.json', 'tienganh11.json', 'tienganh12.json',
+      'toan10.json', 'toan12.json',
+      'vatli10.json', 'vatli12.json',
+      'hoahoc10.json', 'hoahoc12.json',
+      'tienganh10.json', 'tienganh12.json',
       'lichsu10.json', 'lichsu12.json',
       'su.json', 'sinh.json', 'tin.json'
     ];
@@ -41,12 +43,15 @@ describe('1. Repository & Data Integrity (Lịch Sử 11 GDPT 2018 Focus)', () =
     });
   });
 
-  test('Authentic question bank lichsu11.json exists and is valid JSON', () => {
-    const p = path.join(__dirname, '..', 'data', 'lichsu11.json');
-    assert.ok(fs.existsSync(p), 'File data/lichsu11.json must exist');
-    const content = JSON.parse(fs.readFileSync(p, 'utf8'));
-    assert.ok(Array.isArray(content.lessons), 'data/lichsu11.json must have lessons array');
-    assert.equal(content.lessons.length, 4, 'data/lichsu11.json must have 4 core lessons');
+  test('Authentic question bank files exist and are valid JSON with lessons', () => {
+    const coreFiles = ['toan11.json', 'vatli11.json', 'hoahoc11.json', 'tienganh11.json', 'lichsu11.json'];
+    coreFiles.forEach(f => {
+      const p = path.join(__dirname, '..', 'data', f);
+      assert.ok(fs.existsSync(p), `File data/${f} must exist`);
+      const content = JSON.parse(fs.readFileSync(p, 'utf8'));
+      assert.ok(Array.isArray(content.lessons), `data/${f} must have lessons array`);
+      assert.ok(content.lessons.length > 0, `data/${f} must contain lessons`);
+    });
   });
 });
 
@@ -74,14 +79,14 @@ describe('2. State Management & Zero-Mock Metrics', () => {
 
     ProfileStore.saveProfile({
       grade: 11,
-      targetSubjects: ['lichsu'],
+      targetSubjects: ['toan', 'lichsu'],
       goal: 'score_8_plus'
     });
 
     assert.equal(ProfileStore.hasCompletedOnboarding(), true, 'Should be true after saving');
     const profile = ProfileStore.getProfile();
     assert.equal(profile.grade, 11);
-    assert.deepEqual(profile.targetSubjects, ['lichsu']);
+    assert.deepEqual(profile.targetSubjects, ['toan', 'lichsu']);
     assert.equal(profile.goal, 'score_8_plus');
   });
 
@@ -97,8 +102,8 @@ describe('2. State Management & Zero-Mock Metrics', () => {
     });
 
     ProfileStore.recordSession({
-      subjectId: 'lichsu11',
-      subjectName: 'Lịch sử 11',
+      subjectId: 'toan11',
+      subjectName: 'Toán học 11',
       score: 14,
       total: 20,
       mode: 'exam',
@@ -130,13 +135,19 @@ describe('3. Timer Persistence & Edge Cases', () => {
 });
 
 describe('4. GDPT 2018 Decision 764/QĐ-BGDĐT Specifications', () => {
-  test('Question formats include MCQ and TF Group in lichsu11.json', () => {
+  test('Question formats include MCQ and TF Group in lichsu11.json and toan11.json', () => {
     const suData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'lichsu11.json'), 'utf8'));
+    const toanData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'toan11.json'), 'utf8'));
 
     const hasSuMcq = suData.lessons.some(l => l.questions && l.questions.some(q => q.type === 'mcq'));
     const hasSuTf = suData.lessons.some(l => l.questionGroups && l.questionGroups.length > 0);
 
+    const hasToanMcq = toanData.lessons.some(l => l.questions && l.questions.some(q => q.type === 'mcq'));
+    const hasToanTf = toanData.lessons.some(l => l.questionGroups && l.questionGroups.length > 0);
+
     assert.ok(hasSuMcq, 'lichsu11.json must contain MCQ questions');
     assert.ok(hasSuTf, 'lichsu11.json must contain True/False groups');
+    assert.ok(hasToanMcq, 'toan11.json must contain MCQ questions');
+    assert.ok(hasToanTf, 'toan11.json must contain True/False groups');
   });
 });

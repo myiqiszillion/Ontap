@@ -21,7 +21,7 @@ function httpGet(path) {
   });
 }
 
-describe('Express Server API Integration (Lịch Sử 11 GDPT 2018 Focus)', () => {
+describe('Express Server API Integration (GDPT 2018 - Grade 11 Core Subjects)', () => {
   before(() => {
     return new Promise((resolve) => {
       // Find an available port
@@ -56,12 +56,13 @@ describe('Express Server API Integration (Lịch Sử 11 GDPT 2018 Focus)', () =
     assert.ok(res.body.includes('<!DOCTYPE html>'));
   });
 
-  test('GET /api/subjects returns Lịch sử 11 target subject for grade 11', async () => {
+  test('GET /api/subjects returns 5 core target subjects for grade 11', async () => {
     const res = await httpGet('/api/subjects');
     assert.equal(res.statusCode, 200);
     const json = JSON.parse(res.body);
     assert.deepEqual(json.grades, [11]);
     assert.ok(Array.isArray(json.subjects));
+    assert.equal(json.subjects.length, 5);
 
     // Check that legacy subjects are NOT present
     const hasLegacy = json.subjects.some(s => ['su', 'sinh', 'tin', 'toan10', 'vatli10'].includes(s.subjectKey || s.id));
@@ -72,9 +73,43 @@ describe('Express Server API Integration (Lịch Sử 11 GDPT 2018 Focus)', () =
     const res = await httpGet('/api/subjects?active_only=true');
     assert.equal(res.statusCode, 200);
     const json = JSON.parse(res.body);
-    assert.ok(json.subjects.length >= 1, 'Lịch sử 11 is active and ready');
+    assert.ok(json.subjects.length >= 5, 'All 5 core subjects are active and ready');
     assert.ok(json.subjects.every(s => s.ready === true), 'All returned subjects must be ready');
+    assert.ok(json.subjects.some(s => s.id === 'toan11'), 'Must include toan11');
     assert.ok(json.subjects.some(s => s.id === 'lichsu11'), 'Must include lichsu11');
+  });
+
+  test('GET /api/data/toan11 returns toan11.json questions', async () => {
+    const res = await httpGet('/api/data/toan11');
+    assert.equal(res.statusCode, 200);
+    const json = JSON.parse(res.body);
+    assert.ok(Array.isArray(json.lessons));
+    assert.ok(json.lessons.length > 0);
+    assert.equal(json.subject, 'Toán học 11');
+  });
+
+  test('GET /api/data/vatli11 returns vatli11.json questions', async () => {
+    const res = await httpGet('/api/data/vatli11');
+    assert.equal(res.statusCode, 200);
+    const json = JSON.parse(res.body);
+    assert.ok(Array.isArray(json.lessons));
+    assert.equal(json.subject, 'Vật lí 11');
+  });
+
+  test('GET /api/data/hoahoc11 returns hoahoc11.json questions', async () => {
+    const res = await httpGet('/api/data/hoahoc11');
+    assert.equal(res.statusCode, 200);
+    const json = JSON.parse(res.body);
+    assert.ok(Array.isArray(json.lessons));
+    assert.equal(json.subject, 'Hóa học 11');
+  });
+
+  test('GET /api/data/tienganh11 returns tienganh11.json questions', async () => {
+    const res = await httpGet('/api/data/tienganh11');
+    assert.equal(res.statusCode, 200);
+    const json = JSON.parse(res.body);
+    assert.ok(Array.isArray(json.lessons));
+    assert.equal(json.subject, 'Tiếng Anh 11');
   });
 
   test('GET /api/data/lichsu11 returns lichsu11.json questions', async () => {

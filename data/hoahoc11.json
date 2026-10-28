@@ -1,0 +1,124 @@
+{
+  "subject": "Hóa học 11",
+  "subjectKey": "hoahoc",
+  "grade": 11,
+  "curriculum": "GDPT 2018 — QĐ 764/QĐ-BGDĐT",
+  "source": "Ngân hàng đề thi chuẩn hóa THPT & Kho học liệu mở (VietJack / Thư Viện Học Liệu)",
+  "lessons": [
+    {
+      "id": 1,
+      "bai": 1,
+      "name": "Bài 1: Cân bằng hóa học và Sự điện li",
+      "topic": "CHỦ ĐỀ 1: CÂN BẰNG HÓA HỌC",
+      "questions": [
+        {
+          "id": "hoahoc11_b1_mcq01",
+          "type": "mcq",
+          "question": "Đặc điểm nào sau đây KHÔNG đúng đối với một phản ứng thuận nghịch ở trạng thái cân bằng?",
+          "options": [
+            "Phản ứng dừng lại hoàn toàn, không còn sự chuyển hóa giữa các chất",
+            "Tốc độ phản ứng thuận bằng tốc độ phản ứng nghịch ($v_t = v_n$)",
+            "Nồng độ của các chất trong hệ phản ứng không thay đổi theo thời gian",
+            "Trạng thái cân bằng là cân bằng động"
+          ],
+          "correct": 0,
+          "explanation": "Cân bằng hóa học là cân bằng động, phản ứng vẫn diễn ra theo cả hai chiều với tốc độ bằng nhau chứ không dừng lại hoàn toàn. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b1_mcq02",
+          "type": "mcq",
+          "question": "Theo thuyết Brønsted - Lowry về acid - base, acid là chất có khả năng:",
+          "options": [
+            "Cho proton ($H^+$)",
+            "Nhận proton ($H^+$)",
+            "Cho electron",
+            "Nhận hydroxide ($OH^-$)"
+          ],
+          "correct": 0,
+          "explanation": "Theo thuyết Brønsted - Lowry: Acid là chất cho proton ($H^+$), Base là chất nhận proton ($H^+$). Chọn A."
+        },
+        {
+          "id": "hoahoc11_b1_mcq03",
+          "type": "mcq",
+          "question": "Dung dịch có pH = 3 có nồng độ ion $[H^+]$ bằng:",
+          "options": [
+            "$10^{-3}$ M",
+            "$10^{-11}$ M",
+            "$3$ M",
+            "$0{,}3$ M"
+          ],
+          "correct": 0,
+          "explanation": "Ta có công thức: $[H^+] = 10^{-\\text{pH}} = 10^{-3}$ M. Môi trường có tính acid. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b1_mcq04",
+          "type": "mcq",
+          "question": "Theo nguyên lí chuyển dịch cân bằng Le Chatelier, khi tăng nhiệt độ của hệ cân bằng tỏa nhiệt ($\\Delta_r H^0_{298} < 0$), cân bằng sẽ dịch chuyển theo chiều:",
+          "options": [
+            "Chiều nghịch (chiều thu nhiệt)",
+            "Chiều thuận (chiều tỏa nhiệt)",
+            "Không dịch chuyển",
+            "Chiều tạo thêm nhiều sản phẩm"
+          ],
+          "correct": 0,
+          "explanation": "Khi tăng nhiệt độ, cân bằng chuyển dịch theo chiều làm giảm nhiệt độ của hệ (chiều thu nhiệt, tức chiều nghịch). Chọn A."
+        },
+        {
+          "id": "hoahoc11_b1_mcq05",
+          "type": "mcq",
+          "question": "Chất nào sau đây là chất điện li mạnh trong nước?",
+          "options": [
+            "$HCl$",
+            "$CH_3COOH$",
+            "$HF$",
+            "$H_2O$"
+          ],
+          "correct": 0,
+          "explanation": "$HCl$ là acid mạnh phân li hoàn toàn trong dung dịch nước thành $H^+$ và $Cl^-$. Các chất còn lại là chất điện li yếu. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b1_mcq06",
+          "type": "mcq",
+          "question": "Trong phản ứng tổng hợp Ammonia: $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$ ($\\Delta_r H^0_{298} = -92$ kJ). Biện pháp nào sau đây giúp tăng hiệu suất tổng hợp $NH_3$?",
+          "options": [
+            "Tăng áp suất chung của hệ",
+            "Tăng nhiệt độ của hệ",
+            "Giảm nồng độ khí $N_2$",
+            "Dùng chất xúc tác sắt ($Fe$)"
+          ],
+          "correct": 0,
+          "explanation": "Phía phản ứng thuận có 4 mol khí tạo 2 mol khí (giảm số mol khí), do đó khi tăng áp suất, cân bằng dịch chuyển sang chiều thuận làm tăng hiệu suất tạo $NH_3$. Chọn A."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "hoahoc11_b1_tf01",
+          "type": "tf-group",
+          "passage": "Xét cân bằng hóa học trong bình kín ở $450^\\circ$C có chất xúc tác sắt: $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$ ($\\Delta_r H^0_{298} = -92$ kJ).",
+          "statements": [
+            {
+              "question": "a) Biểu thức hằng số cân bằng nồng độ của phản ứng là $K_C = \\frac{[NH_3]^2}{[N_2][H_2]^3}$.",
+              "correct": true,
+              "explanation": "Đúng. Biểu thức $K_C$ bằng tích nồng độ sản phẩm với số mũ tương ứng chia cho tích nồng độ chất phản ứng."
+            },
+            {
+              "question": "b) Khi tăng áp suất của hệ, cân bằng chuyển dịch theo chiều thuận tạo thêm $NH_3$.",
+              "correct": true,
+              "explanation": "Đúng. Chiều thuận làm giảm số mol khí từ 4 mol xuống 2 mol."
+            },
+            {
+              "question": "c) Thêm chất xúc tác bột sắt ($Fe$) làm tăng giá trị của hằng số cân bằng $K_C$.",
+              "correct": false,
+              "explanation": "Sai. Chất xúc tác chỉ làm tăng tốc độ đạt trạng thái cân bằng chứ không làm thay đổi giá trị của $K_C$."
+            },
+            {
+              "question": "d) Hạ nhiệt độ của bình phản ứng giúp cân bằng chuyển dịch theo chiều thuận.",
+              "correct": true,
+              "explanation": "Đúng. Phản ứng thuận tỏa nhiệt ($\\Delta H < 0$), nên hạ nhiệt độ thúc đẩy chiều thuận tỏa nhiệt."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

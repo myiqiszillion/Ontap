@@ -31,7 +31,7 @@ const CRAWLER_SOURCES = [
     description: 'Thư viện tài liệu học liệu mở phong phú đầy đủ các môn Toán, Vật lí, Hóa học, Tiếng Anh theo CT GDPT 2018.',
     baseUrl: 'https://thuvienhoclieu.com',
     sampleUrl: 'https://thuvienhoclieu.com/de-kiem-tra-dinh-ky-vat-li-11-chuong-trinh-moi.html',
-    subjects: ['toan', 'vatli', 'hoahoc', 'tienganh'],
+    subjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'],
     grades: [10, 11, 12],
     status: 'active'
   },
@@ -41,7 +41,7 @@ const CRAWLER_SOURCES = [
     description: 'Ngân hàng đề thi trắc nghiệm 3 phần (Nhiều lựa chọn, Đúng/Sai, Trả lời ngắn) kèm lời giải chi tiết theo QĐ 764.',
     baseUrl: 'https://vietjack.com',
     sampleUrl: 'https://vietjack.com/de-thi-thpt-quoc-gia-mon-hoa-hoc-2025-cau-truc-moi.jsp',
-    subjects: ['toan', 'vatli', 'hoahoc', 'tienganh'],
+    subjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'],
     grades: [10, 11, 12],
     status: 'active'
   },
@@ -51,7 +51,7 @@ const CRAWLER_SOURCES = [
     description: 'Thu thập từ liên kết bất kỳ hoặc dán trực tiếp nội dung văn bản / HTML của đề thi để tự động phân tích.',
     baseUrl: '',
     sampleUrl: '',
-    subjects: ['toan', 'vatli', 'hoahoc', 'tienganh'],
+    subjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'],
     grades: [10, 11, 12],
     status: 'active'
   }
@@ -283,24 +283,37 @@ class AutoCrawlerService {
   /**
    * Internal HTTP/HTTPS fetch with timeout and byte limit
    */
-  _fetchUrl(targetUrl) {
+  _fetchUrl(targetUrl, redirectHops = 0) {
+    if (redirectHops > 5) {
+      return Promise.reject(new Error('Quá nhiều chuyển hướng (Redirect loop > 5)'));
+    }
     return new Promise((resolve, reject) => {
       const client = targetUrl.protocol === 'https:' ? https : http;
       const req = client.get(
         targetUrl.href,
         {
           headers: {
-            'User-Agent': this.userAgent,
-            Accept: 'text/html,application/xhtml+xml,text/plain;q=0.9'
+            'User-Agent': this.userAgent || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 NTMK-Crawler/2.0',
+            Accept: 'text/html,application/xhtml+xml,text/plain;q=0.9',
+            'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
           },
           timeout: this.timeoutMs
         },
         res => {
           if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-            return reject(new Error(`Redirect đến ${res.headers.location} (chưa cấu hình redirect tự động)`));
+            let nextUrl;
+            try {
+              nextUrl = new URL(res.headers.location, targetUrl);
+            } catch (e) {
+              return reject(new Error('Redirect location không hợp lệ: ' + res.headers.location));
+            }
+            if (AutoCrawlerService.isDisallowedHost(nextUrl.hostname)) {
+              return reject(new Error('SSRF blocked: ' + nextUrl.hostname));
+            }
+            return this._fetchUrl(nextUrl, redirectHops + 1).then(resolve).catch(reject);
           }
           if (res.statusCode !== 200) {
-            return reject(new Error(`Mã phản hồi HTTP: ${res.statusCode}`));
+            return reject(new Error('Mã phản hồi HTTP: ' + res.statusCode));
           }
 
           const chunks = [];
@@ -329,7 +342,7 @@ class AutoCrawlerService {
 
       req.on('timeout', () => {
         req.destroy();
-        reject(new Error(`Quá thời gian kết nối (${this.timeoutMs}ms)`));
+        reject(new Error('Quá thời gian kết nối (' + this.timeoutMs + 'ms)'));
       });
 
       req.on('error', reject);
