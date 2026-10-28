@@ -78,70 +78,61 @@ const CommandPalette = {
     },
 
     // ═══════════════════════════════════════════════════════════
-    // 2. MÔN HỌC & NGÂN HÀNG CÂU HỎI
+    // 2. MÔN HỌC & NGÂN HÀNG CÂU HỎI (5 Môn GDPT 2018 Khối 11)
     // ═══════════════════════════════════════════════════════════
     {
-      id: 'sub_lichsu12',
+      id: 'sub_toan11',
       category: 'Môn học (GDPT 2018)',
-      title: 'Lịch sử 12 (Luyện thi Tốt nghiệp)',
-      icon: 'scroll',
-      desc: 'Trọn bộ 9 chuyên đề: Trật tự 2 cực Ianta, ASEAN, CMT8, Kháng chiến, Đổi mới',
-      keywords: ['lich su 12', 'su 12', 'tot nghiep', 'ianta', 'asean', 'dien bien phu'],
-      action: () => app.selectSubject('lichsu12')
+      title: 'Toán học 11',
+      icon: 'ruler',
+      desc: 'Lượng giác, Cấp số cộng/nhân, Giới hạn và Hình không gian (QĐ 764)',
+      keywords: ['toan 11', 'toan hoc 11', 'luong giac', 'cap so cong', 'hinh khong gian', 'toan11'],
+      action: () => app.selectSubject('toan11')
+    },
+    {
+      id: 'sub_vatli11',
+      category: 'Môn học (GDPT 2018)',
+      title: 'Vật lí 11',
+      icon: 'zap',
+      desc: 'Dao động điều hòa, Sóng cơ, Giao thoa sóng và Điện trường (QĐ 764)',
+      keywords: ['vat li 11', 'vat ly 11', 'dao dong', 'song co', 'giao thoa', 'vatli11'],
+      action: () => app.selectSubject('vatli11')
+    },
+    {
+      id: 'sub_hoahoc11',
+      category: 'Môn học (GDPT 2018)',
+      title: 'Hóa học 11',
+      icon: 'flask-conical',
+      desc: 'Cân bằng hóa học, Sự điện li, Nitrogen - Sulfur và Hóa hữu cơ (QĐ 764)',
+      keywords: ['hoa hoc 11', 'hoa 11', 'can bang hoa hoc', 'dien li', 'ph', 'hoahoc11'],
+      action: () => app.selectSubject('hoahoc11')
+    },
+    {
+      id: 'sub_tienganh11',
+      category: 'Môn học (GDPT 2018)',
+      title: 'Tiếng Anh 11',
+      icon: 'globe',
+      desc: 'Global Success: Phonetics, Stress, Vocabulary, Reading Comprehension',
+      keywords: ['tieng anh 11', 'anh 11', 'english', 'grammar', 'reading', 'tienganh11'],
+      action: () => app.selectSubject('tienganh11')
     },
     {
       id: 'sub_lichsu11',
       category: 'Môn học (GDPT 2018)',
       title: 'Lịch sử 11',
-      icon: 'scroll',
-      desc: 'Cách mạng tư sản, Chủ nghĩa tư bản, Liên bang Xô Viết và ASEAN',
-      keywords: ['lich su 11', 'su 11', 'cach mang tu san'],
-      action: () => app.selectSubject('lichsu11')
-    },
-    {
-      id: 'sub_lichsu10',
-      category: 'Môn học (GDPT 2018)',
-      title: 'Lịch sử 10',
-      icon: 'scroll',
-      desc: 'Văn minh Văn Lang - Âu Lạc, Chăm-pa, Phù Nam, Đại Việt',
-      keywords: ['lich su 10', 'su 10', 'van lang', 'dai viet'],
-      action: () => app.selectSubject('lichsu10')
-    },
-    {
-      id: 'sub_lichsu11',
-      title: 'Lịch sử 11',
-      subtitle: 'Khối 11 • Ôn tập Lịch sử GDPT 2018',
       icon: 'book-open',
-      section: 'Môn học',
+      desc: 'Cách mạng tư sản, Chủ nghĩa tư bản và Chủ nghĩa xã hội (Đặc sắc NTMK)',
       keywords: ['lich su 11', 'su 11', 'cach mang tu san', 'chu nghia xa hoi', 'lichsu11'],
       action: () => app.selectSubject('lichsu11')
     },
     {
-      id: 'sub_vatli10',
+      id: 'sub_lichsu12',
       category: 'Môn học (GDPT 2018)',
-      title: 'Vật lí 10',
-      icon: 'zap',
-      desc: 'Đo lường, Chuyển động thẳng đều, Vận tốc, Gia tốc và Động lực học',
-      keywords: ['vat li 10', 'vat ly 10', 'chuyen dong', 'van toc'],
-      action: () => app.selectSubject('vatli10')
-    },
-    {
-      id: 'sub_hoahoc10',
-      category: 'Môn học (GDPT 2018)',
-      title: 'Hóa học 10',
-      icon: 'flask-conical',
-      desc: 'Cấu tạo nguyên tử, Vỏ electron, Cấu hình e và Bảng tuần hoàn',
-      keywords: ['hoa hoc 10', 'hoa 10', 'nguyen tu', 'electron'],
-      action: () => app.selectSubject('hoahoc10')
-    },
-    {
-      id: 'sub_tienganh10',
-      category: 'Môn học (GDPT 2018)',
-      title: 'Tiếng Anh 10',
-      icon: 'globe',
-      desc: 'Family Life, Humans & Environment, Ngữ pháp và Từ vựng theo chủ điểm',
-      keywords: ['tieng anh 10', 'anh 10', 'english', 'grammar'],
-      action: () => app.selectSubject('tienganh10')
+      title: 'Lịch sử 12 (Luyện thi Tốt nghiệp)',
+      icon: 'book-open',
+      desc: 'Trọn bộ chuyên đề Lịch sử ôn thi Tốt nghiệp THPT và Xét tuyển Đại học',
+      keywords: ['lich su 12', 'su 12', 'tot nghiep', 'ianta', 'asean', 'dien bien phu'],
+      action: () => app.selectSubject('lichsu11')
     },
 
     // ═══════════════════════════════════════════════════════════

@@ -6,8 +6,8 @@
 const Onboarding = {
   currentStep: 1,
   data: {
-    grade: 10,
-    targetSubjects: ['lichsu'],
+    grade: 11,
+    targetSubjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'],
     goal: 'score_8_plus'
   },
 
@@ -22,10 +22,10 @@ const Onboarding = {
   init() {
     const existing = ProfileStore.getProfile();
     if (existing) {
-      this.data.grade = existing.grade || 10;
+      this.data.grade = existing.grade || 11;
       this.data.targetSubjects = Array.isArray(existing.targetSubjects) && existing.targetSubjects.length > 0
         ? existing.targetSubjects
-        : ['lichsu'];
+        : ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'];
       this.data.goal = existing.goal || 'score_8_plus';
     }
     this.currentStep = 1;

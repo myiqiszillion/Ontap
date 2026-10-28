@@ -1,6 +1,11 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": "data/**"
+    }
+  },
   "rewrites": [
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/api/delete-announcement", "destination": "/api/announcements" },

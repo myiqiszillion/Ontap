@@ -73,7 +73,8 @@ const DiagnosticView = {
             <div class="diag-form-group">
               <label for="diag-subject-select">Môn học:</label>
               <select id="diag-subject-select" class="diag-select" onchange="DiagnosticView.onSubjectChange(this.value)">
-                <option value="lichsu" selected>Lịch sử 11</option>
+                <option value="toan" ${this.selectedSubject === 'toan' ? 'selected' : ''}>Toán học</option>
+                <option value="lichsu" ${this.selectedSubject === 'lichsu' ? 'selected' : ''}>Lịch sử 11</option>
                 <option value="vatli" ${this.selectedSubject === 'vatli' ? 'selected' : ''}>Vật lí</option>
                 <option value="hoahoc" ${this.selectedSubject === 'hoahoc' ? 'selected' : ''}>Hóa học</option>
                 <option value="tienganh" ${this.selectedSubject === 'tienganh' ? 'selected' : ''}>Tiếng Anh</option>

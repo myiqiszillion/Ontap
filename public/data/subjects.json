@@ -1,0 +1,156 @@
+{
+  "grades": [
+    11
+  ],
+  "targetSubjectMeta": {
+    "toan": {
+      "name": "Toán học",
+      "shortName": "Toán",
+      "icon": "ruler",
+      "color": "#3b82f6",
+      "examDuration": 90,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
+    },
+    "vatli": {
+      "name": "Vật lí",
+      "shortName": "Vật lí",
+      "icon": "zap",
+      "color": "#6366f1",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
+    },
+    "hoahoc": {
+      "name": "Hóa học",
+      "shortName": "Hóa học",
+      "icon": "flask-conical",
+      "color": "#06b6d4",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
+    },
+    "tienganh": {
+      "name": "Tiếng Anh",
+      "shortName": "Tiếng Anh",
+      "icon": "globe",
+      "color": "#0d9488",
+      "examDuration": 50,
+      "formats": [
+        "mcq"
+      ]
+    },
+    "lichsu": {
+      "name": "Lịch sử",
+      "shortName": "Lịch sử",
+      "icon": "book-open",
+      "color": "#e11d48",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group"
+      ]
+    }
+  },
+  "subjects": [
+    {
+      "id": "toan11",
+      "subjectKey": "toan",
+      "grade": 11,
+      "name": "Toán học 11",
+      "icon": "ruler",
+      "description": "Lượng giác, Dãy số, Cấp số cộng/nhân, Giới hạn và Hình không gian (GDPT 2018)",
+      "color": "#3b82f6",
+      "dataFile": "toan11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 12,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 90
+      }
+    },
+    {
+      "id": "vatli11",
+      "subjectKey": "vatli",
+      "grade": 11,
+      "name": "Vật lí 11",
+      "icon": "zap",
+      "description": "Dao động cơ học, Sóng cơ, Giao thoa sóng và Điện trường (GDPT 2018)",
+      "color": "#6366f1",
+      "dataFile": "vatli11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
+    },
+    {
+      "id": "hoahoc11",
+      "subjectKey": "hoahoc",
+      "grade": 11,
+      "name": "Hóa học 11",
+      "icon": "flask-conical",
+      "description": "Cân bằng hóa học, Sự điện li, Nitrogen - Sulfur và Hóa hữu cơ (GDPT 2018)",
+      "color": "#06b6d4",
+      "dataFile": "hoahoc11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
+        "durationMinutes": 50
+      }
+    },
+    {
+      "id": "tienganh11",
+      "subjectKey": "tienganh",
+      "grade": 11,
+      "name": "Tiếng Anh 11",
+      "icon": "globe",
+      "description": "Global Success 11: Phonetics, Vocabulary, Grammar, Reading Comprehension (GDPT 2018)",
+      "color": "#0d9488",
+      "dataFile": "tienganh11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 40,
+        "tf": 0,
+        "sa": 0,
+        "durationMinutes": 50
+      }
+    },
+    {
+      "id": "lichsu11",
+      "subjectKey": "lichsu",
+      "grade": 11,
+      "name": "Lịch sử 11",
+      "icon": "book-open",
+      "description": "Cách mạng tư sản, Sự phát triển CNTB và Chủ nghĩa xã hội (GDPT 2018)",
+      "color": "#e11d48",
+      "dataFile": "lichsu11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 20,
+        "tf": 4,
+        "sa": 0,
+        "durationMinutes": 50
+      }
+    }
+  ]
+}

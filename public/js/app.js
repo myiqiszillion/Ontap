@@ -187,14 +187,50 @@ const app = {
     this.navigateTo(screenId);
   },
 
+  getSubject(subjectId) {
+    if (!subjectId) return null;
+    let s = (this.subjects || []).find(sub => sub.id === subjectId || sub.subjectKey === subjectId);
+    if (s) return s;
+    const aliasMap = {
+      'toan': 'toan11', 'toan10': 'toan11', 'toan11': 'toan11', 'toan12': 'toan11',
+      'vatli': 'vatli11', 'vatly': 'vatli11', 'vatli10': 'vatli11', 'vatli11': 'vatli11', 'vatli12': 'vatli11',
+      'hoahoc': 'hoahoc11', 'hoa': 'hoahoc11', 'hoahoc10': 'hoahoc11', 'hoahoc11': 'hoahoc11', 'hoahoc12': 'hoahoc11',
+      'tienganh': 'tienganh11', 'anh': 'tienganh11', 'english': 'tienganh11', 'tienganh10': 'tienganh11', 'tienganh11': 'tienganh11', 'tienganh12': 'tienganh11',
+      'lichsu': 'lichsu11', 'su': 'lichsu11', 'lichsu10': 'lichsu11', 'lichsu11': 'lichsu11', 'lichsu12': 'lichsu11'
+    };
+    const mapped = aliasMap[String(subjectId).toLowerCase()];
+    if (mapped) {
+      return (this.subjects || []).find(sub => sub.id === mapped);
+    }
+    return null;
+  },
+
   // ═══════════ SUBJECT SELECTION ═══════════
 
   async selectSubject(subjectId) {
-    const subject = this.subjects.find(s => s.id === subjectId);
+    let subject = this.getSubject(subjectId);
+
+    // If not found in current subjects array, force-refresh catalog
+    if (!subject) {
+      try {
+        const fresh = await API.getSubjects(true);
+        if (fresh && Array.isArray(fresh.subjects)) {
+          this.subjectsData = fresh;
+          this.subjects = fresh.subjects;
+          subject = this.getSubject(subjectId);
+        }
+      } catch (e) {
+        console.warn('Failed to refresh subjects catalog:', e);
+      }
+    }
+
     if (!subject) {
       alert('Không tìm thấy thông tin môn học.');
       return;
     }
+
+    // Canonicalize to subject.id (e.g. toan11)
+    subjectId = subject.id;
 
     // Check readiness: if in development, show honest modal info without attaching fake questions
     if (!subject.ready) {

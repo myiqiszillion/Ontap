@@ -26,7 +26,11 @@ const SubjectExplorer = {
     const allSubjects = subjectsData.subjects || [];
 
     // Filter by selected grade
-    const gradeSubjects = allSubjects.filter(s => s.grade === this.currentGrade);
+    let gradeSubjects = allSubjects.filter(s => s.grade === this.currentGrade);
+    if (gradeSubjects.length === 0 && allSubjects.length > 0) {
+      this.currentGrade = 11;
+      gradeSubjects = allSubjects.filter(s => s.grade === 11);
+    }
 
     container.innerHTML = `
       <div class="explorer-wrapper">
@@ -34,7 +38,7 @@ const SubjectExplorer = {
           <div>
             <h1 class="explorer-title">Khám phá Môn Học GDPT 2018</h1>
             <p class="explorer-subtitle">
-              Hệ thống ôn luyện bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Lịch sử 11.
+              Hệ thống ôn luyện bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Toán, Vật lí, Hóa học, Tiếng Anh và Lịch sử 11.
             </p>
           </div>
           <div class="grade-pill-group" role="tablist" aria-label="Chọn khối lớp">

@@ -8,15 +8,17 @@ const API = {
   /**
    * Get list of subjects
    */
-  async getSubjects() {
-    const cached = this.cache.get('subjects');
-    if (cached) return cached;
+  async getSubjects(forceRefresh = false) {
+    if (!forceRefresh) {
+      const cached = this.cache.get('subjects');
+      if (cached && Array.isArray(cached.subjects) && cached.subjects.length >= 5) return cached;
+    }
 
     try {
       // Try API first (Express server), fallback to static JSON
       let response = await fetch('/api/subjects');
       if (!response.ok) {
-        response = await fetch('/data/subjects.json');
+        response = await fetch(`/data/subjects.json?_t=${Date.now()}`);
       }
       if (!response.ok) throw new Error('Failed to fetch subjects');
       const data = await response.json();

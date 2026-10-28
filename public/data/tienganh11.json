@@ -1,0 +1,96 @@
+{
+  "subject": "Tiếng Anh 11",
+  "subjectKey": "tienganh",
+  "grade": 11,
+  "curriculum": "GDPT 2018 — Global Success (QĐ 764/QĐ-BGDĐT)",
+  "source": "Ngân hàng đề thi chuẩn hóa THPT & Kho học liệu mở (VietJack / Thư Viện Học Liệu)",
+  "lessons": [
+    {
+      "id": 1,
+      "bai": 1,
+      "name": "Unit 1: A Long and Healthy Life",
+      "topic": "UNIT 1: A LONG AND HEALTHY LIFE (GLOBAL SUCCESS)",
+      "questions": [
+        {
+          "id": "tienganh11_u1_mcq01",
+          "type": "mcq",
+          "question": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the other three in pronunciation:\nA. gen**e**ration\nB. r**e**ly\nC. exp**e**rience\nD. pr**e**fer",
+          "options": [
+            "A. generation",
+            "B. rely",
+            "C. experience",
+            "D. prefer"
+          ],
+          "correct": 0,
+          "explanation": "Phương án A phát âm là /e/ (generation), các phương án còn lại phát âm là /i/ hoặc /ɪ/. Chọn A."
+        },
+        {
+          "id": "tienganh11_u1_mcq02",
+          "type": "mcq",
+          "question": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress:\nA. nutrient\nB. bacteria\nC. infectious\nD. examine",
+          "options": [
+            "A. nutrient",
+            "B. bacteria",
+            "C. infectious",
+            "D. examine"
+          ],
+          "correct": 0,
+          "explanation": "'Nutrient' trọng âm rơi vào âm tiết thứ nhất. Các từ 'bacteria', 'infectious', 'examine' trọng âm rơi vào âm tiết thứ hai. Chọn A."
+        },
+        {
+          "id": "tienganh11_u1_mcq03",
+          "type": "mcq",
+          "question": "Regular physical exercise helps boost the immune system and increase life ________.",
+          "options": [
+            "expectancy",
+            "expectation",
+            "expectant",
+            "expecting"
+          ],
+          "correct": 0,
+          "explanation": "Cụm danh từ cố định 'life expectancy' có nghĩa là 'tuổi thọ kỳ vọng'. Chọn A."
+        },
+        {
+          "id": "tienganh11_u1_mcq04",
+          "type": "mcq",
+          "question": "Antibiotics are used to treat infections caused by ________, not viruses.",
+          "options": [
+            "bacteria",
+            "nutrients",
+            "ingredients",
+            "habits"
+          ],
+          "correct": 0,
+          "explanation": "'Antibiotics' (thuốc kháng sinh) chỉ có tác dụng tiêu diệt vi khuẩn ('bacteria'), không diệt được virus. Chọn A."
+        },
+        {
+          "id": "tienganh11_u1_mcq05",
+          "type": "mcq",
+          "question": "Eating a balanced diet with plenty of fruits and vegetables is essential for ________ health.",
+          "options": [
+            "maintaining",
+            "injuring",
+            "destroying",
+            "ignoring"
+          ],
+          "correct": 0,
+          "explanation": "'Maintain health' mang nghĩa là duy trì sức khỏe tốt. Chọn A."
+        },
+        {
+          "id": "tienganh11_u1_mcq06",
+          "type": "mcq",
+          "question": "She has been working out at the gym regularly ________ she wants to stay fit and energetic.",
+          "options": [
+            "because",
+            "although",
+            "despite",
+            "in spite of"
+          ],
+          "correct": 0,
+          "explanation": "Mệnh đề chỉ nguyên nhân: 'because + S + V' (bởi vì). 'Despite' và 'in spite of' đi với danh từ hoặc V-ing. Chọn A."
+        }
+      ],
+      "questionGroups": []
+    }
+  ]
+}

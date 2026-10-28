@@ -1,0 +1,124 @@
+{
+  "subject": "Vật lí 11",
+  "subjectKey": "vatli",
+  "grade": 11,
+  "curriculum": "GDPT 2018 — QĐ 764/QĐ-BGDĐT",
+  "source": "Ngân hàng đề thi chuẩn hóa THPT & Kho học liệu mở (VietJack / Thư Viện Học Liệu)",
+  "lessons": [
+    {
+      "id": 1,
+      "bai": 1,
+      "name": "Bài 1: Dao động điều hòa và các đặc trưng dao động",
+      "topic": "CHỦ ĐỀ 1: DAO ĐỘNG CƠ HỌC",
+      "questions": [
+        {
+          "id": "vatli11_b1_mcq01",
+          "type": "mcq",
+          "question": "Phương trình dao động điều hòa của một chất điểm là $x = A\\cos(\\omega t + \\varphi)$. Đại lượng $\\omega$ được gọi là:",
+          "options": [
+            "Tần số góc của dao động",
+            "Biên độ dao động",
+            "Pha ban đầu của dao động",
+            "Chu kì dao động"
+          ],
+          "correct": 0,
+          "explanation": "Trong phương trình $x = A\\cos(\\omega t + \\varphi)$, $\\omega$ là tần số góc (rad/s), $A$ là biên độ, $\\varphi$ là pha ban đầu. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_mcq02",
+          "type": "mcq",
+          "question": "Gia tốc của một chất điểm dao động điều hòa biến thiên theo hệ thức:",
+          "options": [
+            "$a = -\\omega^2 x$",
+            "$a = \\omega^2 x$",
+            "$a = -\\omega x$",
+            "$a = -\\frac{\\omega^2}{x}$"
+          ],
+          "correct": 0,
+          "explanation": "Ta có $v = x' = -\\omega A\\sin(\\omega t + \\varphi)$, $a = v' = -\\omega^2 A\\cos(\\omega t + \\varphi) = -\\omega^2 x$. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_mcq03",
+          "type": "mcq",
+          "question": "Vận tốc của chất điểm dao động điều hòa đạt giá trị cực đại khi:",
+          "options": [
+            "Chất điểm đi qua vị trí cân bằng theo chiều dương",
+            "Chất điểm ở vị trí biên dương",
+            "Chất điểm ở vị trí biên âm",
+            "Chất điểm đi qua vị trí cân bằng theo chiều âm"
+          ],
+          "correct": 0,
+          "explanation": "Vận tốc cực đại $v_{\\max} = +\\omega A$ khi chất điểm qua vị trí cân bằng ($x = 0$) theo chiều dương. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_mcq04",
+          "type": "mcq",
+          "question": "Một con lắc lò xo gồm vật nặng khối lượng $m$ và lò xo nhẹ có độ cứng $k$. Chu kỳ dao động riêng của con lắc là:",
+          "options": [
+            "$T = 2\\pi \\sqrt{\\frac{m}{k}}$",
+            "$T = 2\\pi \\sqrt{\\frac{k}{m}}$",
+            "$T = \\frac{1}{2\\pi} \\sqrt{\\frac{m}{k}}$",
+            "$T = 2\\pi \\sqrt{\\frac{g}{l}}$"
+          ],
+          "correct": 0,
+          "explanation": "Công thức chu kì con lắc lò xo: $T = 2\\pi\\sqrt{\\frac{m}{k}}$. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_mcq05",
+          "type": "mcq",
+          "question": "Động năng của vật dao động điều hòa biến thiên tuần hoàn với tần số góc bằng:",
+          "options": [
+            "$2\\omega$",
+            "$\\omega$",
+            "$\\frac{\\omega}{2}$",
+            "$4\\omega$"
+          ],
+          "correct": 0,
+          "explanation": "Động năng và thế năng biến thiên tuần hoàn với chu kì $T' = \\frac{T}{2}$, tần số $f' = 2f$, tần số góc $\\omega' = 2\\omega$. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_mcq06",
+          "type": "mcq",
+          "question": "Đồ thị biểu diễn mối liên hệ giữa gia tốc $a$ và li độ $x$ trong dao động điều hòa là:",
+          "options": [
+            "Một đoạn thẳng qua gốc tọa độ",
+            "Một đường elip",
+            "Một đường tròn",
+            "Một đường parabol"
+          ],
+          "correct": 0,
+          "explanation": "Vì $a = -\\omega^2 x$ với $-A \\le x \\le A$ nên đồ thị biểu diễn là một đoạn thẳng đi qua gốc tọa độ có hệ số góc âm. Chọn A."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "vatli11_b1_tf01",
+          "type": "tf-group",
+          "passage": "Một chất điểm dao động điều hòa dọc theo trục $Ox$ với phương trình li độ $x = 6\\cos(4\\pi t - \\frac{\\pi}{3})$ (cm, s). Lấy $\\pi^2 = 10$.",
+          "statements": [
+            {
+              "question": "a) Biên độ dao động của chất điểm là $A = 6$ cm và chu kì dao động $T = 0{,}5$ s.",
+              "correct": true,
+              "explanation": "Đúng. $A = 6$ cm, $\\omega = 4\\pi \\Rightarrow T = \\frac{2\\pi}{4\\pi} = 0{,}5$ s."
+            },
+            {
+              "question": "b) Tốc độ cực đại của chất điểm trong quá trình dao động là $v_{\\max} = 24\\pi$ cm/s.",
+              "correct": true,
+              "explanation": "Đúng. $v_{\\max} = \\omega A = 4\\pi \\times 6 = 24\\pi$ cm/s."
+            },
+            {
+              "question": "c) Gia tốc cực đại của chất điểm có độ lớn bằng $96$ m/s$^2$.",
+              "correct": false,
+              "explanation": "Sai. $a_{\\max} = \\omega^2 A = (4\\pi)^2 \\times 6 = 16\\pi^2 \\times 6 = 960$ cm/s$^2 = 9{,}6$ m/s$^2$."
+            },
+            {
+              "question": "d) Tại thời điểm $t = 0{,}25$ s, chất điểm đang chuyển động theo chiều âm của trục tọa độ.",
+              "correct": true,
+              "explanation": "Đúng. Pha tại $t = 0{,}25$: $4\\pi(0{,}25) - \\frac{\\pi}{3} = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$. Vì $\\sin\\frac{2\\pi}{3} > 0$ nên $v = -\\omega A \\sin\\frac{2\\pi}{3} < 0$ (chuyển động theo chiều âm)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

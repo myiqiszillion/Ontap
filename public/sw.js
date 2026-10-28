@@ -3,7 +3,7 @@
  * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v6-unified-tools';
+const CACHE_NAME = 'ntmk-cache-v7-authentic-curriculum';
 
 const STATIC_SHELL = [
   '/',
@@ -55,7 +55,7 @@ const STATIC_SHELL = [
   '/js/confetti.js',
   '/js/result-card.js',
   '/js/app.js',
-  '/api/subjects'
+  '/data/subjects.json'
 ];
 
 self.addEventListener('install', (event) => {
@@ -93,8 +93,9 @@ self.addEventListener('fetch', (event) => {
   // Ignore non-http(s)
   if (!url.protocol.startsWith('http')) return;
 
-  // Network-First for navigation, JavaScript, and CSS to guarantee instant UI freshness
+  // Network-First for navigation, API endpoints, JavaScript, and CSS to guarantee instant freshness
   const isAppCode = request.mode === 'navigate' ||
+                    url.pathname.startsWith('/api/') ||
                     url.pathname.endsWith('.js') ||
                     url.pathname.endsWith('.css') ||
                     url.pathname === '/' ||
