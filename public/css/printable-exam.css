@@ -1,6 +1,6 @@
 /**
  * NTMK Printable Exam & OMR Bubble Sheet Styles
- * Supports high-fidelity A4 two-column exam layout, bubble sheet and print media rules
+ * High-fidelity A4 two-column exam layout, MOET Decision 764 OMR answer sheet, and print media rules
  */
 
 /* ═══════════════════════════════════════════════════════════
@@ -31,7 +31,7 @@
   background: #f1f5f9;
   border-radius: 14px;
   width: 100%;
-  max-width: 900px;
+  max-width: 960px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   margin: 20px auto;
@@ -51,12 +51,16 @@
 .toolbar-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .toolbar-title {
   font-weight: 700;
   font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .printable-tab-pills {
@@ -77,10 +81,57 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .pill-btn.active {
   background: #d97706;
+  color: #ffffff;
+}
+
+/* Multi-variant Switcher */
+.printable-variant-pills {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3px 6px;
+  border-radius: 8px;
+  margin-left: 6px;
+}
+
+.variant-label {
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 4px;
+}
+
+.variant-pill {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #cbd5e1;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.variant-pill:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.variant-pill.active {
+  background: #0284c7;
+  border-color: #38bdf8;
   color: #ffffff;
 }
 
@@ -100,6 +151,9 @@
   font-size: 0.88rem;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(4, 120, 87, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .btn-close-print {
@@ -110,6 +164,9 @@
   border-radius: 8px;
   font-size: 0.85rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* Document Container */
@@ -125,12 +182,13 @@
   color: #000000;
   width: 210mm;
   min-height: 297mm;
-  padding: 18mm 16mm;
+  padding: 16mm 16mm;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   font-family: 'Times New Roman', Times, serif;
   font-size: 11pt;
   line-height: 1.35;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Exam Paper Layout */
@@ -138,20 +196,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.school-name { font-weight: bold; font-size: 11pt; }
-.exam-name { font-weight: bold; font-size: 11pt; }
-.exam-desc { font-style: italic; font-size: 9.5pt; }
+.school-authority { font-weight: bold; font-size: 10.5pt; text-transform: uppercase; }
+.school-name { font-weight: bold; font-size: 11pt; text-transform: uppercase; }
+.exam-desc { font-style: italic; font-size: 9.5pt; margin-top: 2px; }
 
-.exam-subject-title { font-weight: bold; font-size: 12pt; }
+.exam-subject-title { font-weight: bold; font-size: 11.5pt; text-transform: uppercase; }
 .exam-time-limit { font-style: italic; font-size: 9.5pt; margin-top: 2px; }
 .exam-code-box {
   display: inline-block;
   border: 1.5px solid #000;
-  padding: 2px 10px;
+  padding: 2px 12px;
   margin-top: 4px;
   font-size: 10pt;
 }
@@ -161,6 +219,8 @@
   justify-content: space-between;
   margin-top: 10px;
   font-size: 10.5pt;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .exam-rule-hint {
@@ -173,19 +233,20 @@
 .exam-divider {
   border: 0;
   border-top: 1px solid #000;
-  margin: 8px 0 14px;
+  margin: 8px 0 12px;
 }
 
-/* 2-Column Questions */
+/* True 2-Column Questions Layout */
 .exam-questions-two-column {
   columns: 2;
   column-gap: 20px;
-  column-rule: 0.5px solid #ccc;
+  column-rule: 0.5px solid #999;
   text-align: justify;
 }
 
 .part-banner {
   break-inside: avoid;
+  page-break-inside: avoid;
   margin: 8px 0 10px;
   font-size: 10.5pt;
   border-bottom: 1px dashed #666;
@@ -194,6 +255,7 @@
 
 .print-q-card {
   break-inside: avoid;
+  page-break-inside: avoid;
   margin-bottom: 10px;
   font-size: 10.5pt;
 }
@@ -208,7 +270,7 @@
 
 .print-passage-quote {
   font-style: italic;
-  background: #f9f9f9;
+  background: #f8fafc;
   border-left: 2px solid #333;
   padding: 4px 8px;
   margin: 4px 0 6px;
@@ -225,41 +287,68 @@
 
 .exam-footer-end {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
 /* ═══════════════════════════════════════════════════════════
-   OMR BUBBLE SHEET STYLING
+   OMR BUBBLE SHEET STYLING (MOET Decision 764/QĐ-BGDĐT)
    ═══════════════════════════════════════════════════════════ */
 .omr-page {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
+  position: relative;
+  border: 1px solid transparent;
 }
+
+/* Optical Calibration Corner Marks & Timing Marks for OMR Scanner */
+.omr-corner-mark {
+  position: absolute;
+  width: 7mm;
+  height: 7mm;
+  background: #000000;
+}
+
+.omr-corner-mark.top-left { top: 6mm; left: 6mm; }
+.omr-corner-mark.top-right { top: 6mm; right: 6mm; }
+.omr-corner-mark.bottom-left { bottom: 6mm; left: 6mm; }
+.omr-corner-mark.bottom-right { bottom: 6mm; right: 6mm; }
+
+.omr-timing-mark {
+  position: absolute;
+  width: 3.5mm;
+  top: 22mm;
+  bottom: 22mm;
+  background-image: repeating-linear-gradient(to bottom, #000000 0, #000000 2.5mm, transparent 2.5mm, transparent 5mm);
+}
+
+.omr-timing-mark.timing-left { left: 5mm; }
+.omr-timing-mark.timing-right { right: 5mm; }
 
 .omr-header {
   text-align: center;
   border-bottom: 1.5px solid #000;
-  padding-bottom: 8px;
-  margin-bottom: 12px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
 }
 
-.omr-title { font-size: 10pt; font-weight: bold; }
-.omr-main-heading { font-size: 15pt; font-weight: 900; letter-spacing: 0.05em; margin: 4px 0; }
-.omr-sub-heading { font-size: 9pt; }
+.omr-authority { font-size: 9.5pt; font-weight: bold; text-transform: uppercase; }
+.omr-school { font-size: 9.5pt; font-weight: bold; }
+.omr-main-heading { font-size: 14pt; font-weight: 900; letter-spacing: 0.05em; margin: 3px 0; }
+.omr-sub-heading { font-size: 8.5pt; font-style: italic; }
 
 .omr-top-tables {
   display: grid;
   grid-template-columns: 1fr 240px;
-  gap: 16px;
-  margin-bottom: 12px;
+  gap: 14px;
+  margin-bottom: 10px;
 }
 
 .omr-info-box {
-  line-height: 1.8;
-  font-size: 9.5pt;
+  line-height: 1.7;
+  font-size: 9pt;
   border: 1px solid #333;
-  padding: 8px 12px;
+  padding: 6px 10px;
 }
 
 .omr-numbers-box {
@@ -287,7 +376,11 @@
   width: 14px;
   height: 16px;
   border: 1px solid #000;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 8pt;
 }
 
 .digit-row {
@@ -298,47 +391,50 @@
 }
 
 .bubble {
-  width: 14px;
-  height: 14px;
-  border: 1px solid #000;
+  width: 13.5px;
+  height: 13.5px;
+  border: 1.2px solid #000;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 7pt;
+  font-size: 6.8pt;
   font-weight: bold;
+  background: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
 }
 
-.bubble.filled { background: #000; color: #fff; }
-.bubble.wrong-mark { color: #dc2626; }
+.bubble.filled { background: #000000; color: #ffffff; }
+.bubble.wrong-mark { color: #dc2626; font-weight: bold; }
 
 .omr-guide-banner {
   border: 1px dashed #000;
-  padding: 6px 10px;
-  font-size: 8.5pt;
-  margin-bottom: 12px;
+  padding: 5px 8px;
+  font-size: 8pt;
+  margin-bottom: 8px;
 }
 
 .omr-section-title {
-  font-size: 9.5pt;
+  font-size: 9pt;
   font-weight: bold;
-  background: #eee;
+  background: #f1f5f9;
   padding: 3px 8px;
   border: 1px solid #333;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .omr-mcq-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4px 14px;
+  gap: 3px 12px;
 }
 
 .omr-q-row {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 8.5pt;
+  font-size: 8pt;
 }
 
 .omr-q-row .q-label {
@@ -349,28 +445,205 @@
 .omr-tf-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 8px;
 }
 
 .omr-tf-card {
   border: 1px solid #333;
-  padding: 6px 8px;
+  padding: 5px 6px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
-.tf-card-title { font-weight: bold; font-size: 9pt; margin-bottom: 4px; border-bottom: 1px solid #ccc; }
+.tf-card-title { font-weight: bold; font-size: 8.5pt; margin-bottom: 3px; border-bottom: 1px solid #ccc; }
 
 .omr-tf-row {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 3px;
-  font-size: 8.5pt;
+  margin-bottom: 2px;
+  font-size: 8pt;
 }
 
 .sub-letter { font-weight: bold; min-width: 14px; }
 
+/* Part III Short Answer Grid */
+.omr-sa-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.omr-sa-card {
+  border: 1px solid #000;
+  padding: 4px 3px;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.sa-card-title {
+  font-weight: bold;
+  font-size: 8pt;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 1px;
+}
+
+.sa-boxes-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 3px;
+}
+
+.sa-boxes-row span {
+  width: 11px;
+  height: 14px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.sa-matrix {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+}
+
+.sa-matrix-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.sa-matrix-row .bubble {
+  width: 12px;
+  height: 12px;
+  font-size: 6pt;
+}
+
 /* ═══════════════════════════════════════════════════════════
-   PRINT MEDIA RULES (In ra chuẩn A4, ẩn giao diện web)
+   ANSWER KEY & SCORING GUIDE STYLING
+   ═══════════════════════════════════════════════════════════ */
+.key-page {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+.key-header {
+  text-align: center;
+  margin-bottom: 14px;
+  border-bottom: 1.5px solid #000;
+  padding-bottom: 8px;
+}
+
+.key-header h2 {
+  font-size: 12pt;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+.key-header p {
+  margin: 0;
+  font-size: 9.5pt;
+  font-style: italic;
+}
+
+.key-section-title {
+  font-size: 9.5pt;
+  font-weight: bold;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-left: 3px solid #0284c7;
+  margin-bottom: 8px;
+}
+
+.key-matrix-table table,
+.sa-key-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+
+.key-matrix-table th,
+.key-matrix-table td,
+.sa-key-table th,
+.sa-key-table td {
+  border: 1px solid #333;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.key-matrix-table th,
+.sa-key-table th {
+  background: #e2e8f0;
+  font-weight: bold;
+}
+
+.key-ans {
+  font-weight: bold;
+  color: #0369a1;
+}
+
+.moet-scoring-rule-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  padding: 4px 8px;
+  font-size: 8.5pt;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.tf-key-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.tf-key-card {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.tf-key-card h4 {
+  margin: 0 0 6px;
+  font-size: 9.5pt;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 4px;
+}
+
+.sub-key-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+}
+
+.sub-key-table td {
+  padding: 3px 4px;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.badge-cell {
+  font-weight: bold;
+  text-align: center;
+  width: 60px;
+}
+
+.badge-cell.dung { color: #047857; }
+.badge-cell.sai { color: #b91c1c; }
+
+.sa-key-table td {
+  padding: 6px;
+}
+
+.sa-ans-value {
+  color: #0369a1;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PRINT MEDIA RULES (True A4 Two-Column & No Orphaned Questions)
    ═══════════════════════════════════════════════════════════ */
 @media print {
   body {
@@ -380,8 +653,13 @@
     padding: 0 !important;
   }
 
-  /* Ẩn toàn bộ header, nav, floating bars, modals */
-  header, nav, .mobile-bottom-nav, #main-content, .printable-top-toolbar, .no-print {
+  /* Hide screen-only interactive chrome */
+  header,
+  nav,
+  .mobile-bottom-nav,
+  #main-content,
+  .printable-top-toolbar,
+  .no-print {
     display: none !important;
   }
 
@@ -410,10 +688,21 @@
     box-shadow: none !important;
     padding: 0 !important;
     margin: 0 !important;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  /* Prevent orphaned questions across columns & pages */
+  .print-q-card,
+  .part-banner,
+  .omr-tf-card,
+  .omr-sa-card {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   @page {
     size: A4 portrait;
-    margin: 12mm 10mm;
+    margin: 12mm 15mm;
   }
 }
