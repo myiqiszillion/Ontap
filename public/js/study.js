@@ -209,7 +209,7 @@ const Study = {
               </div>
             `).join('')}
           </div>
-          </div>
+          ${this.renderStructuredSolution(q)}
         </div>
       `;
     } else if (q.type === 'shortanswer') {
@@ -225,6 +225,7 @@ const Study = {
                <span class="study-correct-icon"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
           </div>
+          ${this.renderStructuredSolution(q)}
         </div>
       `;
     } else {
@@ -244,6 +245,7 @@ const Study = {
               </div>
             `).join('')}
           </div>
+          ${this.renderStructuredSolution(q)}
         </div>
       `;
     }
@@ -649,9 +651,224 @@ const Study = {
   // Utility
   escapeHtml(text) {
     if (text === null || text === undefined) return '';
-    const div = document.createElement('div');
-    div.textContent = String(text);
-    return div.innerHTML;
+    if (typeof document !== 'undefined' && document.createElement) {
+      const div = document.createElement('div');
+      div.textContent = String(text);
+      return div.innerHTML;
+    }
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  },
+
+  renderContent(text) {
+    if (typeof FormulaRenderer !== 'undefined' && FormulaRenderer.render) {
+      return FormulaRenderer.render(text);
+    }
+    return this.escapeHtml(text);
+  },
+
+  /**
+   * Render Interactive Pedagogical Solution Accordion
+   * Step-by-step breakdown, core method, and common pitfalls
+   */
+  renderStructuredSolution(q) {
+    if (!q) return '';
+
+    let method = '';
+    let steps = [];
+    let pitfall = '';
+
+    // 1. Direct structured fields
+    const obj = (typeof q.solution === 'object' && q.solution !== null) ? q.solution :
+                (typeof q.pedagogicalSolution === 'object' && q.pedagogicalSolution !== null) ? q.pedagogicalSolution : q;
+
+    if (obj.method || obj.solutionMethod || obj.coreMethod) {
+      method = String(obj.method || obj.solutionMethod || obj.coreMethod).trim();
+    }
+    if (obj.steps || obj.solutionSteps) {
+      const rawSteps = obj.steps || obj.solutionSteps;
+      if (Array.isArray(rawSteps)) {
+        steps = rawSteps.map(s => typeof s === 'string' ? s.trim() : (s.text || s.content || s.title || '')).filter(Boolean);
+      } else if (typeof rawSteps === 'string') {
+        steps = rawSteps.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+      }
+    }
+    if (obj.pitfall || obj.pitfalls || obj.solutionPitfall || obj.commonPitfalls || obj.warning) {
+      const rawPitfall = obj.pitfall || obj.pitfalls || obj.solutionPitfall || obj.commonPitfalls || obj.warning;
+      if (Array.isArray(rawPitfall)) {
+        pitfall = rawPitfall.join('; ');
+      } else {
+        pitfall = String(rawPitfall).trim();
+      }
+    }
+
+    // 2. Text / markdown parsing from explanation or solution string
+    const rawText = typeof q.explanation === 'string' ? q.explanation :
+                    (typeof q.solution === 'string' ? q.solution :
+                    (typeof q.loi_giai === 'string' ? q.loi_giai : ''));
+
+    if (rawText && (!method || steps.length === 0 || !pitfall)) {
+      const lines = rawText.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+      let currentSec = null;
+      const parsedMethod = [];
+      const parsedSteps = [];
+      const parsedPitfall = [];
+
+      const isMethodHeader = (line) => /^(?:[-*#>\s]*)(?:phương pháp(?: giải)?|kiến thức trọng tâm|lý thuyết cốt lõi|core method|trọng tâm)[\s:*_–-]*(.*)$/i.exec(line);
+      const isPitfallHeader = (line) => /^(?:[-*#>\s]*)(?:lưu ý(?: bẫy(?: đề thi)?)?|bẫy đề thi|sai lầm thường gặp|chú ý|cạm bẫy|pitfalls?|warning)[\s:*_–-]*(.*)$/i.exec(line);
+      const isStepsHeader = (line) => /^(?:[-*#>\s]*)(?:các bước(?: giải| thực hiện)?|hướng dẫn giải|trình tự giải)[\s:*_–-]*(.*)$/i.exec(line);
+      const isStepItem = (line) => /^(?:[-*#>\s]*)(?:bước\s*\d+|step\s*\d+|\d+\.)[\s:*_–-]*(.*)$/i.exec(line);
+
+      let hasExplicitHeaders = false;
+
+      for (const line of lines) {
+        const mMatch = isMethodHeader(line);
+        const pMatch = isPitfallHeader(line);
+        const sHeader = isStepsHeader(line);
+        const sItem = isStepItem(line);
+
+        if (mMatch) {
+          hasExplicitHeaders = true;
+          currentSec = 'method';
+          if (mMatch[1] && mMatch[1].trim()) parsedMethod.push(mMatch[1].trim());
+        } else if (pMatch) {
+          hasExplicitHeaders = true;
+          currentSec = 'pitfall';
+          if (pMatch[1] && pMatch[1].trim()) parsedPitfall.push(pMatch[1].trim());
+        } else if (sHeader) {
+          hasExplicitHeaders = true;
+          currentSec = 'steps';
+          if (sHeader[1] && sHeader[1].trim()) parsedSteps.push(sHeader[1].trim());
+        } else if (sItem) {
+          hasExplicitHeaders = true;
+          currentSec = 'steps';
+          parsedSteps.push(line.replace(/^[-*#>\s]+/, ''));
+        } else {
+          if (currentSec === 'method') {
+            parsedMethod.push(line);
+          } else if (currentSec === 'steps') {
+            parsedSteps.push(line);
+          } else if (currentSec === 'pitfall') {
+            parsedPitfall.push(line);
+          }
+        }
+      }
+
+      if (hasExplicitHeaders) {
+        if (!method && parsedMethod.length > 0) method = parsedMethod.join(' ');
+        if (steps.length === 0 && parsedSteps.length > 0) steps = parsedSteps;
+        if (!pitfall && parsedPitfall.length > 0) pitfall = parsedPitfall.join(' ');
+      }
+
+      // 3. Fallback for unstructured text
+      if (!method && steps.length === 0 && !pitfall && rawText.trim()) {
+        const sentences = rawText.split(/(?<=[.?!;])\s+/).map(s => s.trim()).filter(Boolean);
+        if (sentences.length >= 3) {
+          method = sentences[0];
+          steps = sentences.slice(1, -1);
+          pitfall = sentences[sentences.length - 1];
+        } else if (sentences.length === 2) {
+          method = sentences[0];
+          steps = [sentences[1]];
+          pitfall = 'Đọc kỹ câu hỏi, đối chiếu điều kiện bài toán và kiểm tra kỹ đơn vị trước khi chọn/điền đáp án.';
+        } else {
+          method = rawText.trim();
+          steps = [
+            'Bước 1: Phân tích kỹ dữ kiện câu hỏi và áp dụng trực tiếp kiến thức trọng tâm.',
+            'Bước 2: Đối chiếu với các phương án để chọn hoặc điền kết quả chính xác.'
+          ];
+          pitfall = 'Lưu ý bẫy đề thi: Tránh đọc lướt câu hỏi dẫn tới nhầm lẫn các khái niệm tương đồng hoặc bỏ sót điều kiện biên.';
+        }
+      }
+    }
+
+    // Default fallbacks if partially missing
+    if (!method && (steps.length > 0 || pitfall)) {
+      method = 'Vận dụng định lý và quy tắc trọng tâm của bài học để giải quyết yêu cầu.';
+    }
+    if (steps.length === 0 && (method || pitfall)) {
+      steps = [
+        'Bước 1: Xác định rõ giả thiết và công thức / kiến thức liên quan.',
+        'Bước 2: Tiến hành biến đổi logic hoặc tính toán để xác định đáp án chính xác.'
+      ];
+    }
+    if (!pitfall && (method || steps.length > 0)) {
+      pitfall = 'Lưu ý bẫy đề thi: Cần kiểm tra kỹ các phương án nhiễu, đơn vị đo lường và điều kiện bài toán trước khi hoàn thành.';
+    }
+
+    if (!method && steps.length === 0 && !pitfall) {
+      if (q.question || q.passage || q.prompt) {
+        method = 'Vận dụng kiến thức trọng tâm và định nghĩa cốt lõi của chủ đề.';
+        steps = [
+          'Bước 1: Phân tích kỹ yêu cầu của đề bài và các giả thiết cho trước.',
+          'Bước 2: Áp dụng phương pháp giải đặc trưng để tìm ra kết quả chính xác.'
+        ];
+        pitfall = 'Lưu ý bẫy đề thi: Tránh nhầm lẫn giữa các câu hỏi phủ định (không đúng/sai) và kiểm tra lại đơn vị.';
+      } else {
+        return '';
+      }
+    }
+
+    const renderText = (str) => {
+      if (typeof this.renderContent === 'function') {
+        return this.renderContent(str);
+      }
+      if (typeof this.escapeHtml === 'function') {
+        return this.escapeHtml(str);
+      }
+      return String(str || '');
+    };
+
+    const stepsHtml = steps.map((s, idx) => `
+      <li class="solution-step-item">
+        <span class="solution-step-badge">${idx + 1}</span>
+        <div class="solution-step-body">${renderText(s)}</div>
+      </li>
+    `).join('');
+
+    return `
+      <details class="solution-accordion pedagogical-solution" open>
+        <summary class="solution-summary">
+          <div class="solution-summary-title">
+            <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span>Phương pháp giải & Hướng dẫn sư phạm chi tiết</span>
+          </div>
+          <div class="solution-toggle-indicator">
+            <span class="solution-toggle-text">Thu gọn / Mở rộng</span>
+            <svg class="ui-icon ui-icon-xs chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </summary>
+        <div class="solution-details-content">
+          <div class="solution-method">
+            <div class="solution-section-header">
+              <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              <span class="solution-section-title">Phương pháp giải / Kiến thức trọng tâm</span>
+            </div>
+            <div class="solution-method-text">${renderText(method)}</div>
+          </div>
+          <div class="solution-steps">
+            <div class="solution-section-header">
+              <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 12.5-8.58 3.91a2 2 0 0 1-1.66 0L2 12.5"/><path d="m22 17.5-8.58 3.91a2 2 0 0 1-1.66 0L2 17.5"/></svg>
+              <span class="solution-section-title">Trình tự các bước thực hiện</span>
+            </div>
+            <ol class="solution-steps-list">
+              ${stepsHtml}
+            </ol>
+          </div>
+          <div class="solution-pitfall pitfall-alert">
+            <div class="solution-section-header">
+              <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+              <span class="solution-section-title">Lưu ý bẫy đề thi & Sai lầm thường gặp</span>
+            </div>
+            <div class="solution-pitfall-text">${renderText(pitfall)}</div>
+          </div>
+        </div>
+      </details>
+    `;
   }
 };
 

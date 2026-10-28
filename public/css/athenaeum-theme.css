@@ -3532,3 +3532,340 @@ body:not([data-theme="dark"]) .hist-score-val {
 [data-theme="dark"] .section-header-link {
   color: #818cf8 !important;
 }
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   PEDAGOGICAL SOLUTION ACCORDION (STEP-BY-STEP, METHOD & PITFALLS)
+   Smart Neo-EdTech & Cyber-Scholastic Signature Dual-Theme Styling
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Light Mode Base ── */
+.solution-accordion,
+.pedagogical-solution {
+  margin-top: 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(124, 58, 237, 0.18);
+  background: linear-gradient(180deg, #ffffff 0%, #faf8f5 100%);
+  box-shadow: 0 4px 18px -2px rgba(124, 58, 237, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.solution-accordion[open] {
+  border-color: rgba(124, 58, 237, 0.28);
+  box-shadow: 0 6px 24px -4px rgba(124, 58, 237, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.solution-summary {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 12px 18px !important;
+  background: linear-gradient(90deg, rgba(124, 58, 237, 0.07) 0%, rgba(245, 158, 11, 0.04) 100%) !important;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #3b0764;
+  list-style: none !important;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.solution-summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.solution-summary:hover {
+  background: linear-gradient(90deg, rgba(124, 58, 237, 0.11) 0%, rgba(245, 158, 11, 0.07) 100%) !important;
+}
+
+.solution-summary:focus-visible {
+  outline: 2px solid var(--athenaeum-violet, #7c3aed);
+  outline-offset: -2px;
+}
+
+.solution-accordion[open] > .solution-summary {
+  border-bottom-color: rgba(124, 58, 237, 0.12);
+}
+
+.solution-summary-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3b0764;
+  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+}
+
+.solution-summary-title svg {
+  color: #7c3aed;
+  flex-shrink: 0;
+}
+
+.solution-toggle-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6d28d9;
+}
+
+.solution-accordion .chevron-icon {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #7c3aed;
+}
+
+.solution-accordion[open] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.solution-details-content {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.solution-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* 1. Core Method (Phương pháp giải / Kiến thức trọng tâm) - Clear border, Indigo/Violet accents */
+.solution-method {
+  padding: 14px 16px;
+  background: rgba(99, 102, 241, 0.04);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  border-left: 4px solid #6366f1;
+  border-radius: 10px;
+}
+
+.solution-method .solution-section-header {
+  color: #4338ca;
+}
+
+.solution-method .solution-section-header svg {
+  color: #6366f1;
+}
+
+.solution-method-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+/* 2. Step-by-Step breakdown - Emerald/Indigo accents */
+.solution-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-steps .solution-section-header {
+  color: #065f46;
+}
+
+.solution-steps .solution-section-header svg {
+  color: #059669;
+}
+
+.solution-steps-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.solution-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(16, 185, 129, 0.04);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-left: 3px solid #10b981;
+  border-radius: 10px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.solution-step-item:hover {
+  transform: translateX(2px);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.solution-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.28);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.solution-step-body {
+  flex: 1;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+/* 3. Common Pitfalls (Lưu ý bẫy đề thi) - Amber/Rose accents */
+.solution-pitfall,
+.pitfall-alert {
+  padding: 14px 16px;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-left: 4px solid #f59e0b;
+  border-radius: 10px;
+}
+
+.solution-pitfall .solution-section-header,
+.pitfall-alert .solution-section-header {
+  color: #b45309;
+}
+
+.solution-pitfall .solution-section-header svg,
+.pitfall-alert .solution-section-header svg {
+  color: #d97706;
+}
+
+.solution-pitfall-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #78350f;
+  font-weight: 500;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DARK MODE — OBSIDIAN GLASS, GLOWING STEP BADGES & AMBER GLASS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+[data-theme="dark"] .solution-accordion,
+[data-theme="dark"] .pedagogical-solution {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(16px) saturate(1.8) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45) !important;
+}
+
+[data-theme="dark"] .solution-accordion[open] {
+  border-color: rgba(124, 58, 237, 0.4) !important;
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.6), 0 0 16px rgba(124, 58, 237, 0.2) !important;
+}
+
+[data-theme="dark"] .solution-summary {
+  background: rgba(30, 41, 59, 0.65) !important;
+  color: #f1f5f9 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .solution-summary:hover {
+  background: rgba(51, 65, 85, 0.75) !important;
+}
+
+[data-theme="dark"] .solution-summary-title {
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .solution-summary-title svg {
+  color: #a78bfa !important;
+}
+
+[data-theme="dark"] .solution-toggle-indicator {
+  color: #c4b5fd !important;
+}
+
+[data-theme="dark"] .solution-accordion .chevron-icon {
+  color: #a78bfa !important;
+}
+
+[data-theme="dark"] .solution-method {
+  background: rgba(99, 102, 241, 0.12) !important;
+  border: 1px solid rgba(99, 102, 241, 0.28) !important;
+  border-left: 4px solid #818cf8 !important;
+}
+
+[data-theme="dark"] .solution-method .solution-section-header {
+  color: #a5b4fc !important;
+}
+
+[data-theme="dark"] .solution-method .solution-section-header svg {
+  color: #818cf8 !important;
+}
+
+[data-theme="dark"] .solution-method-text {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .solution-steps .solution-section-header {
+  color: #6ee7b7 !important;
+}
+
+[data-theme="dark"] .solution-steps .solution-section-header svg {
+  color: #34d399 !important;
+}
+
+[data-theme="dark"] .solution-step-item {
+  background: rgba(16, 185, 129, 0.08) !important;
+  border: 1px solid rgba(16, 185, 129, 0.22) !important;
+  border-left: 3px solid #34d399 !important;
+}
+
+[data-theme="dark"] .solution-step-item:hover {
+  background: rgba(16, 185, 129, 0.14) !important;
+  border-color: rgba(52, 211, 153, 0.45) !important;
+}
+
+/* Glowing step badges in dark mode */
+[data-theme="dark"] .solution-step-badge {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .solution-step-body {
+  color: #e2e8f0 !important;
+}
+
+/* Amber glass for pitfalls in dark mode */
+[data-theme="dark"] .solution-pitfall,
+[data-theme="dark"] .pitfall-alert {
+  background: rgba(245, 158, 11, 0.12) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  border-left: 4px solid #fbbf24 !important;
+  box-shadow: 0 4px 20px -2px rgba(245, 158, 11, 0.15) !important;
+}
+
+[data-theme="dark"] .solution-pitfall .solution-section-header,
+[data-theme="dark"] .pitfall-alert .solution-section-header {
+  color: #fcd34d !important;
+}
+
+[data-theme="dark"] .solution-pitfall .solution-section-header svg,
+[data-theme="dark"] .pitfall-alert .solution-section-header svg {
+  color: #fbbf24 !important;
+}
+
+[data-theme="dark"] .solution-pitfall-text {
+  color: #fef3c7 !important;
+}
