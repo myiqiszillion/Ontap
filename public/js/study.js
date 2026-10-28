@@ -205,7 +205,7 @@ const Study = {
               <div class="study-tf-item ${s.correct ? 'correct' : 'wrong'}">
                 <span class="study-tf-letter">${String.fromCharCode(97 + i)})</span>
                 <span class="study-tf-text">${this.escapeHtml(s.question)}</span>
-                <span class="study-tf-label ${s.correct ? 'correct' : 'wrong'}">${s.correct ? '✓ Đúng' : '✗ Sai'}</span>
+                <span class="study-tf-label ${s.correct ? 'correct' : 'wrong'}">${s.correct ? '<span class="status-icon-check"></span>Đúng' : '<span class="status-icon-cross"></span>Sai'}</span>
               </div>
             `).join('')}
           </div>
@@ -222,7 +222,7 @@ const Study = {
           <div class="study-answers">
             <div class="study-option correct">
                <span class="study-option-text">Đáp án: <strong>${this.escapeHtml(q.correctAnswer)}</strong></span>
-               <span class="study-correct-icon">✓</span>
+               <span class="study-correct-icon"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ const Study = {
               <div class="study-option ${i === q.correctAnswer ? 'correct' : ''}">
                 <span class="study-option-letter">${letters[i]}</span>
                 <span class="study-option-text">${this.escapeHtml(opt)}</span>
-                ${i === q.correctAnswer ? '<span class="study-correct-icon">✓</span>' : ''}
+                ${i === q.correctAnswer ? '<span class="study-correct-icon"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>' : ''}
               </div>
             `).join('')}
           </div>
@@ -278,14 +278,14 @@ const Study = {
     const known = this.flashcardKnown.size;
 
     document.getElementById('fc-counter').textContent = `Còn ${remaining} / ${total} câu`;
-    document.getElementById('fc-known').textContent = `✓ Đã thuộc: ${known}`;
+    document.getElementById('fc-known').textContent = `Đã thuộc: ${known}`;
     document.getElementById('fc-progress-fill').style.width = `${(known / total) * 100}%`;
 
     if (remaining === 0) {
       if (this.nextChunk()) {
           document.getElementById('flashcard-content').innerHTML = `
             <div class="fc-done">
-              <div class="fc-done-icon">🎉</div>
+              <div class="fc-done-icon"><svg class="ui-icon ui-icon-xl" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
               <h2>Hoàn thành phần ${this.currentChunk} !</h2>
               <p>Bạn đã ghi nhớ ${total} câu. Sẵn sàng học phần tiếp theo chứ?</p>
               <button class="fc-btn known" onclick="Study.renderFlashcard()"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg> Học phần tiếp theo ngay</button>
@@ -294,7 +294,7 @@ const Study = {
       } else {
           document.getElementById('flashcard-content').innerHTML = `
             <div class="fc-done">
-              <div class="fc-done-icon">🎉</div>
+              <div class="fc-done-icon"><svg class="ui-icon ui-icon-xl" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
               <h2>Đã thuộc hết!</h2>
               <p>Bạn đã ghi nhớ mượt mà toàn bộ câu hỏi.</p>
               <button class="fc-btn reset" onclick="Study.resetFlashcards()"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg> Học lại từ đầu</button>
@@ -330,13 +330,13 @@ const Study = {
                 <div class="fc-stmt">${String.fromCharCode(97 + i)}) ${this.escapeHtml(s.question)}</div>
               `).join('')}
             </div>
-            <div class="fc-hint">👆 Nhấn để lật thẻ</div>
+            <div class="fc-hint"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8"/><path d="M9 19.8V15m0 0H4.2m4.8 0L3 21"/><path d="M15 4.2V9m0 0h4.8M15 9l6-6"/><path d="M9 4.2V9m0 0H4.2M9 9 3 3"/></svg> Nhấn để lật thẻ</div>
           </div>
           <div class="fc-back">
             <div class="fc-type tf">Đáp án</div>
             ${q.statements.map((s, i) => `
               <div class="fc-answer-item ${s.correct ? 'correct' : 'wrong'}">
-                ${String.fromCharCode(97 + i)}) ${s.correct ? '✓ Đúng' : '✗ Sai'}
+                ${String.fromCharCode(97 + i)}) ${s.correct ? '<span class="status-icon-check"></span>Đúng' : '<span class="status-icon-cross"></span>Sai'}
               </div>
             `).join('')}
           </div>
@@ -350,7 +350,7 @@ const Study = {
             <div class="fc-type sa">Trả lời ngắn</div>
             <button class="tts-btn" id="fc-tts-btn" onclick="event.stopPropagation(); Study.playTTS('${this.escapeHtml(q.question.replace(/'/g, "\\'"))}', 'fc-tts-btn')" title="Đọc"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
             <div class="fc-question">${this.escapeHtml(q.question)}</div>
-            <div class="fc-hint">👆 Nhấn để xem đáp án</div>
+            <div class="fc-hint"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg> Nhấn để xem đáp án</div>
           </div>
           <div class="fc-back">
             <div class="fc-type sa">Đáp án</div>
@@ -373,7 +373,7 @@ const Study = {
                 <div class="fc-opt-preview">${letters[i]}. ${this.escapeHtml(opt)}</div>
               `).join('')}
             </div>
-            <div class="fc-hint">👆 Nhấn để lật thẻ</div>
+            <div class="fc-hint"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8"/><path d="M9 19.8V15m0 0H4.2m4.8 0L3 21"/><path d="M15 4.2V9m0 0h4.8M15 9l6-6"/><path d="M9 4.2V9m0 0H4.2M9 9 3 3"/></svg> Nhấn để lật thẻ</div>
           </div>
           <div class="fc-back">
             <div class="fc-type mcq">Đáp án</div>
@@ -557,10 +557,10 @@ const Study = {
       opt.onclick = null;
       if (i === q.correctAnswer) {
         opt.classList.add('correct');
-        opt.innerHTML += '<span class="study-correct-icon">✓</span>';
+        opt.innerHTML += '<span class="study-correct-icon"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>';
       } else if (i === optIndex && !isCorrect) {
         opt.classList.add('wrong');
-        opt.innerHTML += '<span class="practice-wrong-icon">✗</span>';
+        opt.innerHTML += '<span class="practice-wrong-icon"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>';
       } else {
         opt.classList.add('disabled');
       }
@@ -586,7 +586,7 @@ const Study = {
     const btnsContainer = document.getElementById(`practice-tf-btns-${stmtIdx}`);
     
     btnsContainer.innerHTML = `
-      <span class="practice-result ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? '✓' : '✗'} ${value ? 'Đúng' : 'Sai'}</span>
+      <span class="practice-result ${isCorrect ? 'correct' : 'wrong'}">${value ? 'Đúng' : 'Sai'}</span>
       ${!isCorrect ? `<span class="practice-correct-label">→ ${s.correct ? 'Đúng' : 'Sai'}</span>` : ''}
     `;
 
@@ -613,8 +613,8 @@ const Study = {
     container.innerHTML = `
       <div class="practice-sa-result ${isCorrect ? 'correct' : 'wrong'}">
         <div class="practice-sa-input-readonly">${this.escapeHtml(userText)}</div>
-        ${isCorrect ? '<span class="practice-result correct">✓ Đúng</span>' : `
-          <span class="practice-result wrong">✗ Sai</span>
+        ${isCorrect ? '<span class="practice-result correct"><span class="status-icon-check"></span>Đúng</span>' : `
+          <span class="practice-result wrong"><span class="status-icon-cross"></span>Sai</span>
           <div class="practice-sa-correct-ans">Đáp án đúng: <strong>${this.escapeHtml(q.correctAnswer)}</strong></div>
         `}
       </div>
@@ -632,11 +632,11 @@ const Study = {
     const container = document.getElementById('practice-content');
     container.innerHTML = `
       <div class="practice-card completion-card" style="text-align: center; padding: 40px 20px;">
-        <h2 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 10px;">🎉 Chúc mừng bạn! 🎉</h2>
+        <h2 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 10px;">Chúc mừng bạn hoàn thành xuất sắc!</h2>
         <p style="font-size: 1.1rem; color: var(--text-color); margin-bottom: 30px;">
           Bạn đã ôn tập vô hạn thành công và thông thạo toàn bộ ${this.totalOriginalQuestions} câu hỏi xuất sắc!
         </p>
-        <div style="font-size: 4rem; margin-bottom: 20px;">🏆</div>
+        <div style="margin-bottom: 20px;"><svg class="ui-icon" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
         <p><strong>Lỗi sai trong quá trình:</strong> ${this.practiceScore.wrong}</p>
         <button class="nav-btn submit" style="margin-top: 30px;" onclick="app.goHome()">Quay về Trang chủ</button>
       </div>
@@ -707,6 +707,11 @@ const WrongTracker = {
     this._save(data);
   }
 };
+
+if (typeof window !== 'undefined') {
+  window.Study = Study;
+  window.WrongTracker = WrongTracker;
+}
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { Study, WrongTracker };

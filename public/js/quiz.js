@@ -12,6 +12,7 @@ const Quiz = {
   isSubmitting: false,
   isSubmitted: false,
   flaggedQuestions: new Set(),
+  sidebarFilter: 'all',
   fontSizeLevel: 0,
   STORAGE_KEY: 'ntmk_active_exam_session_v2',
 
@@ -98,6 +99,28 @@ const Quiz = {
   /**
    * Render current question
    */
+
+  setSidebarFilter(filter) {
+    this.sidebarFilter = filter;
+    ['all', 'unanswered', 'flagged'].forEach(f => {
+      const btn = document.getElementById(`tab-filter-${f}`);
+      if (btn) btn.classList.toggle('active', f === filter);
+    });
+    this.renderDots();
+  },
+
+  insertMathSymbol(sym) {
+    const el = document.getElementById('sa-input-field');
+    if (!el) return;
+    if (sym === 'BACKSPACE') {
+      el.value = el.value.slice(0, -1);
+    } else {
+      el.value += sym;
+    }
+    el.focus();
+    this.inputShortAnswer(el.value);
+  },
+
   toggleFlag(idx = this.currentQuestionIndex) {
     if (!this.flaggedQuestions) this.flaggedQuestions = new Set();
     if (this.flaggedQuestions.has(idx)) {
@@ -209,7 +232,7 @@ const Quiz = {
       container.innerHTML = `
         <div class="tf-split-layout">
           <div class="tf-split-passage-pane">
-            <span class="passage-badge">📜 NGỮ LIỆU / ĐOẠN TƯ LIỆU ĐỌC HIỂU</span>
+            <span class="passage-badge"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> NGỮ LIỆU / ĐOẠN TƯ LIỆU ĐỌC HIỂU</span>
             <div class="question-passage">${passageHtml}</div>
             ${imgHtml}
           </div>
@@ -249,14 +272,24 @@ const Quiz = {
       container.innerHTML = `
         <div class="sa-container">
           <label for="sa-input-field" class="sr-only">Nhập câu trả lời</label>
+          <div class="sa-math-keypad" role="toolbar" aria-label="Bàn phím ký hiệu toán học nhanh">
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('-')">-</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('/')">/</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol(',')">,</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('.')">.</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('√')">√</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('π')">π</button>
+            <button type="button" class="math-key-btn clear" onclick="Quiz.insertMathSymbol('BACKSPACE')" title="Xóa ký tự cuối">⌫ Xóa</button>
+          </div>
           <input type="text"
                  id="sa-input-field"
                  class="sa-input"
                  placeholder="Nhập kết quả hoặc số cần điền..."
                  value="${this.escapeHtml(userText)}"
                  oninput="Quiz.inputShortAnswer(this.value)">
-          <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 8px;">
-            💡 Hỗ trợ cả số thập phân dấu phẩy (vd: 1,5) và dấu chấm (vd: 1.5).
+          <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 8px; display: flex; align-items: center; gap: 6px;">
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            <span>Hỗ trợ cả số thập phân dấu phẩy (vd: 1,5) và dấu chấm (vd: 1.5).</span>
           </div>
         </div>
       `;
@@ -304,9 +337,14 @@ const Quiz = {
     const container = document.getElementById('question-dots');
     if (!container) return;
 
+    ['all', 'unanswered', 'flagged'].forEach(f => {
+      const btn = document.getElementById(`tab-filter-${f}`);
+      if (btn) btn.classList.toggle('active', f === (this.sidebarFilter || 'all'));
+    });
+
     container.innerHTML = this.questions.map((q, i) => {
       const isCurrent = i === this.currentQuestionIndex;
-      const isFlagged = this.flaggedQuestions && this.flaggedQuestions.has(i);
+      const isFlagged = Boolean(this.flaggedQuestions && this.flaggedQuestions.has(i));
       let isAnswered = false;
 
       const isGroup = q.type === 'tf-group' || q.format === 'true_false_group';
@@ -315,18 +353,26 @@ const Quiz = {
 
       if (isGroup) {
         const ga = this.answers[i];
-        isAnswered = ga && Object.keys(ga).length === statements.length;
+        isAnswered = Boolean(ga && Object.keys(ga).length === statements.length);
       } else if (isShortAnswer) {
         isAnswered = this.answers[i] !== undefined && String(this.answers[i]).trim() !== '';
       } else {
         isAnswered = this.answers[i] !== undefined;
       }
 
+      let matchesFilter = true;
+      if (this.sidebarFilter === 'unanswered') matchesFilter = !isAnswered;
+      else if (this.sidebarFilter === 'flagged') matchesFilter = isFlagged;
+
       let typeClass = '';
       if (isGroup) typeClass = ' tf-dot';
       if (isShortAnswer) typeClass = ' sa-dot';
+      const filterStyle = matchesFilter ? '' : 'opacity: 0.22; transform: scale(0.88);';
+
       return `
         <div class="q-dot ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''} ${isFlagged ? 'flagged' : ''}${typeClass}"
+             style="${filterStyle}"
+             title="Câu ${i + 1}${isFlagged ? ' (Đã cắm cờ)' : ''}${isAnswered ? ' (Đã làm)' : ' (Chưa làm)'}"
              onclick="Quiz.goTo(${i})">
           ${i + 1}
         </div>
@@ -429,6 +475,12 @@ const Quiz = {
     let earnedPoints = 0;
     let totalPoints = 0;
 
+    const breakdown = {
+      p1: { earned: 0, total: 0, count: 0, correct: 0 },
+      p2: { earned: 0, total: 0, count: 0, correctFull: 0 },
+      p3: { earned: 0, total: 0, count: 0, correct: 0 }
+    };
+
     const TF_MOET_MAP = { 0: 0.0, 1: 0.1, 2: 0.25, 3: 0.5, 4: 1.0 };
 
     this.questions.forEach((q, i) => {
@@ -437,7 +489,10 @@ const Quiz = {
 
       if (isGroup) {
         // True/False group: Max 1.0 point under MOET QĐ 764
+        breakdown.p2.count++;
+        breakdown.p2.total += 1.0;
         totalPoints += 1.0;
+
         const ga = this.answers[i] || {};
         const statements = (q.tfPayload && q.tfPayload.statements) || q.statements || [];
         let correctCount = 0;
@@ -450,6 +505,9 @@ const Quiz = {
 
         const partial = TF_MOET_MAP[correctCount] || 0.0;
         earnedPoints += partial;
+        breakdown.p2.earned += partial;
+        if (correctCount === statements.length) breakdown.p2.correctFull++;
+
         if (correctCount < statements.length && window.MistakeStore) {
           MistakeStore.recordMistake({
             subjectId: this.subject,
@@ -461,11 +519,16 @@ const Quiz = {
 
       } else if (isShortAnswer) {
         // Short Answer: 1.0 point (or subject weighted)
+        breakdown.p3.count++;
+        breakdown.p3.total += 1.0;
         totalPoints += 1.0;
+
         const isCorrect = typeof ScoringEngine !== 'undefined' && ScoringEngine.evaluateShortAnswer(this.answers[i], q).isCorrect;
 
         if (isCorrect) {
           earnedPoints += 1.0;
+          breakdown.p3.earned += 1.0;
+          breakdown.p3.correct++;
         } else if (window.MistakeStore) {
           MistakeStore.recordMistake({
             subjectId: this.subject,
@@ -477,7 +540,10 @@ const Quiz = {
 
       } else {
         // MCQ: 1.0 point (or subject weighted)
+        breakdown.p1.count++;
+        breakdown.p1.total += 1.0;
         totalPoints += 1.0;
+
         const correctOpt = q.mcqPayload !== undefined
           ? q.mcqPayload.correctOptionIndex
           : (q.correctAnswer !== undefined ? q.correctAnswer : q.correct);
@@ -485,6 +551,8 @@ const Quiz = {
         const isMcqCorrect = (this.answers[i] !== undefined && Number(this.answers[i]) === Number(correctOpt));
         if (isMcqCorrect) {
           earnedPoints += 1.0;
+          breakdown.p1.earned += 1.0;
+          breakdown.p1.correct++;
         } else if (window.MistakeStore) {
           MistakeStore.recordMistake({
             subjectId: this.subject,
@@ -497,6 +565,10 @@ const Quiz = {
     });
 
     // Round cleanly
+    breakdown.p1.earned = Math.round(breakdown.p1.earned * 100) / 100;
+    breakdown.p2.earned = Math.round(breakdown.p2.earned * 100) / 100;
+    breakdown.p3.earned = Math.round(breakdown.p3.earned * 100) / 100;
+
     earnedPoints = Math.round(earnedPoints * 100) / 100;
     totalPoints = Math.round(totalPoints * 100) / 100;
 
@@ -505,7 +577,7 @@ const Quiz = {
 
     if (window.SoundFX) SoundFX.playVictory();
     if (typeof app !== 'undefined' && app.showResults) {
-      app.showResults(earnedPoints, totalPoints, this.sessionId);
+      app.showResults(earnedPoints, totalPoints, this.sessionId, breakdown);
     }
   },
 
@@ -542,8 +614,8 @@ const Quiz = {
               <span class="review-tf-label">${String.fromCharCode(97 + si)})</span>
               ${this.renderContent(stmtText)}
               <span class="review-tf-answer">
-                ${isCorrect ? '✓' : '✗'} Bạn chọn: ${userText}
-                ${!isCorrect ? `→ Đáp án: ${correctText}` : ''}
+                <span class="review-status-tag ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? 'Đúng' : 'Sai'}</span>
+                Bạn chọn: ${userText} ${!isCorrect ? `→ Đáp án: ${correctText}` : ''}
               </span>
             </div>
           `;
@@ -588,11 +660,13 @@ const Quiz = {
               Câu ${i + 1}: ${this.renderContent(promptText)}
             </div>
             <div class="review-answer ${isCorrect ? 'correct' : 'wrong'}">
-              ${isCorrect ? '✓' : '✗'} Bạn điền: ${userText ? this.escapeHtml(userText) : '<em>Chưa trả lời</em>'}
+              <span class="review-status-tag ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? 'Đúng' : 'Sai'}</span>
+              Bạn điền: ${userText ? this.escapeHtml(userText) : '<em>Chưa trả lời</em>'}
             </div>
             ${!isCorrect ? `
               <div class="review-answer correct">
-                ✓ Đáp án đúng: ${accepted.map(a => this.escapeHtml(a)).join(' hoặc ')}
+                <span class="review-status-tag correct">Đáp án</span>
+                ${accepted.map(a => this.escapeHtml(a)).join(' hoặc ')}
               </div>
             ` : ''}
           </div>
@@ -616,11 +690,13 @@ const Quiz = {
               Câu ${i + 1}: ${this.renderContent(promptText)}
             </div>
             <div class="review-answer ${isCorrect ? 'correct' : 'wrong'}">
-              ${isCorrect ? '✓' : '✗'} Bạn chọn: ${this.renderContent(userText)}
+              <span class="review-status-tag ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? 'Đúng' : 'Sai'}</span>
+              Bạn chọn: ${this.renderContent(userText)}
             </div>
             ${!isCorrect ? `
               <div class="review-answer correct">
-                ✓ Đáp án đúng: ${this.renderContent(correctText)}
+                <span class="review-status-tag correct">Đáp án đúng</span>
+                ${this.renderContent(correctText)}
               </div>
             ` : ''}
           </div>
@@ -650,6 +726,10 @@ const Quiz = {
       .replace(/'/g, '&#039;');
   }
 };
+
+if (typeof window !== 'undefined') {
+  window.Quiz = Quiz;
+}
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = Quiz;

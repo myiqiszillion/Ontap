@@ -32,6 +32,7 @@ const DashboardView = {
 
     const grade = profile.grade || 10;
     const mistakesCount = (typeof MistakeStore !== 'undefined') ? MistakeStore.getActiveCount() : 0;
+    const dueMistakesCount = (typeof MistakeStore !== 'undefined' && MistakeStore.getDueCount) ? MistakeStore.getDueCount() : 0;
 
     container.innerHTML = `
       <div class="dashboard-wrapper">
@@ -49,12 +50,12 @@ const DashboardView = {
                 <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 KHỐI ${grade}
               </span>
-              <span class="hero-status-pill">${metrics.hasActivity ? '⚡ Đang ôn luyện tích cực' : '🌱 Khởi đầu hành trình'}</span>
+              <span class="hero-status-pill">${metrics.hasActivity ? '<svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Đang ôn luyện tích cực' : '<svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Khởi đầu hành trình'}</span>
             </div>
 
             <h1 class="hero-title">Xin chào, Sĩ tử Minh Khai!</h1>
             <p class="hero-subtitle">
-              Mục tiêu học tập: <strong>${goalMeta.icon} ${goalMeta.title}</strong>
+              Mục tiêu học tập: <strong>${(typeof Icons !== 'undefined' && Icons.has(goalMeta.icon)) ? Icons.get(goalMeta.icon, { size: 16 }) + ' ' : ''}${goalMeta.title}</strong>
               <span class="hero-standard-pill">Chuẩn GDPT 2018 • QĐ 764</span>
             </p>
 
@@ -81,7 +82,7 @@ const DashboardView = {
           <div class="hero-right">
             <div class="hero-stat-widget">
               <div class="widget-row">
-                <div class="widget-icon fire">🔥</div>
+                <div class="widget-icon fire"><svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"/></svg></div>
                 <div class="widget-data">
                   <span class="widget-val">${metrics.hasActivity ? Math.min(metrics.totalSessions, 7) + ' ngày' : 'Khởi động'}</span>
                   <span class="widget-lbl">Chuỗi ôn tập liên tục</span>
@@ -89,7 +90,7 @@ const DashboardView = {
               </div>
               <div class="widget-divider"></div>
               <div class="widget-row">
-                <div class="widget-icon target">🎯</div>
+                <div class="widget-icon target"><svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
                 <div class="widget-data">
                   <span class="widget-val">${metrics.averagePercentage !== null ? metrics.averagePercentage + '%' : '100%'}</span>
                   <span class="widget-lbl">Độ sẵn sàng kiến thức</span>
@@ -210,6 +211,34 @@ const DashboardView = {
           </div>
         </div>
 
+        ${dueMistakesCount > 0 ? `
+        <!-- ═══════════════════════════════════════════════════════════
+           DAILY SPACED REPETITION (SM-2) QUEUE BANNER
+           ═══════════════════════════════════════════════════════════ -->
+        <div class="daily-sm2-card clickable" onclick="app.navigateTo('mistakes')" role="region" aria-label="Nhiệm vụ lặp lại ngắt quãng hôm nay">
+          <div class="sm2-card-glow"></div>
+          <div class="sm2-card-inner">
+            <div class="sm2-badge-row">
+              <span class="sm2-pill">
+                <span class="live-dot" aria-hidden="true"></span>
+                NHIỆM VỤ ÔN TẬP HÔM NAY (SPACED REPETITION SM-2)
+              </span>
+              <span class="sm2-due-tag">${dueMistakesCount} câu đến hạn</span>
+            </div>
+            <div class="sm2-card-content">
+              <div class="sm2-info">
+                <h3 class="sm2-title">Phục hồi trí nhớ dài hạn các câu từng làm sai</h3>
+                <p class="sm2-desc">Thuật toán SuperMemo-2 đã tính toán các điểm mù kiến thức cần ôn lại ngay hôm nay để không bị quên lãng.</p>
+              </div>
+              <button class="sm2-btn-cta" onclick="event.stopPropagation(); app.navigateTo('mistakes');">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+                <span>Vào ôn lại ngay</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        ` : ''}
+
         <!-- ═══════════════════════════════════════════════════════════
            3. REAL METRICS BENTO (Zero Mock Data)
            ═══════════════════════════════════════════════════════════ -->
@@ -228,7 +257,7 @@ const DashboardView = {
               <div class="metric-info">
                 <div class="metric-value">${metrics.totalSessions}</div>
                 <div class="metric-label">Bài thi đã hoàn thành</div>
-                <div class="metric-sub-hint">${metrics.totalSessions > 0 ? '✓ Đã ghi nhận hệ thống' : 'Chưa có bài thi'}</div>
+                <div class="metric-sub-hint">${metrics.totalSessions > 0 ? 'Đã ghi nhận hệ thống' : 'Chưa có bài thi'}</div>
               </div>
             </div>
 
@@ -261,7 +290,7 @@ const DashboardView = {
               <div class="metric-info">
                 <div class="metric-value ${mistakesCount > 0 ? 'metric-val-danger' : ''}">${mistakesCount}</div>
                 <div class="metric-label">Câu sai cần phục hồi</div>
-                <div class="metric-sub-hint">${mistakesCount > 0 ? '⚡ Nhấn vào sửa lỗi ngay' : '✓ Không có lỗ hổng'}</div>
+                <div class="metric-sub-hint">${mistakesCount > 0 ? 'Khắc phục lỗ hổng ngay' : 'Kiến thức vững vàng'}</div>
               </div>
             </div>
           </div>
@@ -326,7 +355,7 @@ const DashboardView = {
             </div>
           ` : `
             <div class="empty-state-card">
-              <div class="empty-state-icon">🌱</div>
+              <div class="empty-state-icon"><svg class="ui-icon ui-icon-xl" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></div>
               <h3 class="empty-state-title">Chưa có bài thi nào được ghi nhận</h3>
               <p class="empty-state-desc">
                 Bạn chưa hoàn thành bài thi thử nào trên thiết bị này. Hãy chọn một môn học ở danh sách bên trên để bắt đầu làm bài và theo dõi tiến độ chính xác.

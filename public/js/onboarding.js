@@ -176,7 +176,7 @@ const Onboarding = {
            onclick="Onboarding.selectGoal('${g.id}')"
            onkeydown="Onboarding.handleGoalKey(event, '${g.id}')">
         <div class="choice-header">
-          <span class="choice-icon-sm">${g.icon}</span>
+          <span class="choice-icon-sm">${(typeof Icons !== 'undefined' && Icons.has(g.icon)) ? Icons.get(g.icon, { size: 18 }) : g.icon}</span>
           <span class="choice-title">${g.title}</span>
         </div>
         <p class="choice-desc">${g.desc}</p>

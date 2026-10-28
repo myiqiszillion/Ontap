@@ -881,14 +881,18 @@ body {
   color: var(--text-muted);
 }
 
-.topic-questions::before { content: '📝 '; }
-.topic-tf::before { content: '✅ '; }
-.topic-time::before { content: '⏱️ '; }
+.topic-questions, .topic-tf, .topic-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
 
 /* Quiz Config Panel */
 .quiz-config {
-  max-width: 520px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 24px;
   padding: 24px;
   background: var(--bg-white);
   border: 1px solid var(--border);

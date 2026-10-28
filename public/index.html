@@ -12,22 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/style.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/quiz.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/diagnostic.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/planner.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/checker.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/heritage-theme.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/mistakes.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/custom-exam.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/theme-focus.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/smart-importer.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/printable-exam.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/command-palette.css?v=20261028-v5">
-  <link rel="stylesheet" href="css/result-view.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/style.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/quiz.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/diagnostic.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/planner.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/checker.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/heritage-theme.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/mistakes.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/custom-exam.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/theme-focus.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/smart-importer.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/printable-exam.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/command-palette.css?v=20261028-v6">
+  <link rel="stylesheet" href="css/result-view.css?v=20261028-v6">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261028-v6">
   <meta name="theme-color" content="#d97706">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -357,6 +357,11 @@
               <div class="mode-name">Luyện đề có thời gian</div>
               <div class="mode-desc">Bài luyện rút gọn trên thiết bị</div>
             </button>
+            <button type="button" class="mode-card" data-mode="tf" onclick="app.selectMode('tf')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('tf');}" aria-label="Chế độ Luyện Đúng / Sai">
+              <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
+              <div class="mode-name">Luyện Đúng / Sai</div>
+              <div class="mode-desc">Chuyên sâu 4 ý a, b, c, d (QĐ 764)</div>
+            </button>
             <button type="button" class="mode-card" data-mode="study" onclick="app.selectMode('study')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('study');}" aria-label="Chế độ Học &amp; Đọc">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
               <div class="mode-name">Học &amp; Đọc</div>
@@ -372,11 +377,6 @@
               <div class="mode-name">Luyện tập</div>
               <div class="mode-desc">Phản hồi đúng/sai tức thì</div>
             </button>
-            <button type="button" class="mode-card" data-mode="tf" onclick="app.selectMode('tf')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('tf');}" aria-label="Chế độ Luyện Đúng / Sai">
-              <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
-              <div class="mode-name">Luyện Đúng / Sai</div>
-              <div class="mode-desc">Chuyên sâu 4 ý a, b, c, d (QĐ 764)</div>
-            </button>
             <button type="button" class="mode-card" data-mode="checker" onclick="app.navigateTo('checker', app.currentSubject)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.navigateTo('checker', app.currentSubject);}" aria-label="Chế độ Dò trắc nghiệm">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
               <div class="mode-name">Dò trắc nghiệm</div>
@@ -386,6 +386,11 @@
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" x2="9" y1="9" y2="15"/><line x1="9" x2="15" y1="9" y2="15"/></svg></div>
               <div class="mode-name">Câu sai</div>
               <div class="mode-desc wrong-count-desc">Luyện lại câu sai (<span id="wrong-count-badge">0</span>)</div>
+            </button>
+            <button type="button" class="mode-card" data-mode="custom-exam" onclick="app.navigateTo('custom-exam', app.currentSubject)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.navigateTo('custom-exam', app.currentSubject);}" aria-label="Chế độ Tự tạo đề thi theo yêu cầu">
+              <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="20" y1="21" y2="21"/><line x1="4" x2="20" y1="14" y2="14"/><line x1="4" x2="20" y1="7" y2="7"/><circle cx="8" cy="7" r="2"/><circle cx="16" cy="14" r="2"/><circle cx="12" cy="21" r="2"/></svg></div>
+              <div class="mode-name">Tự tạo đề thi</div>
+              <div class="mode-desc">Tùy biến số câu &amp; xuất PDF/OMR</div>
             </button>
           </div>
         </div>
@@ -516,6 +521,11 @@
       <div class="quiz-layout">
         <aside class="quiz-sidebar">
           <div class="sidebar-header">Danh sách câu hỏi</div>
+          <div class="sidebar-filter-tabs" role="tablist" style="display: flex; gap: 4px; margin-bottom: 12px;">
+            <button type="button" id="tab-filter-all" class="s-tab active" onclick="Quiz.setSidebarFilter('all')">Tất cả</button>
+            <button type="button" id="tab-filter-unanswered" class="s-tab" onclick="Quiz.setSidebarFilter('unanswered')">Chưa làm</button>
+            <button type="button" id="tab-filter-flagged" class="s-tab" onclick="Quiz.setSidebarFilter('flagged')">Cắm cờ</button>
+          </div>
           <div class="question-dots" id="question-dots"></div>
         </aside>
 
@@ -768,34 +778,34 @@
 
   <!-- Modular Scripts Architecture -->
   <script defer src="js/icons.js"></script>
-  <script defer src="js/audio.js?v=20261028-v5"></script>
-  <script defer src="js/api.js?v=20261028-v5"></script>
-  <script defer src="js/state.js?v=20261028-v5"></script>
-  <script defer src="js/router.js?v=20261028-v5"></script>
-  <script defer src="js/onboarding.js?v=20261028-v5"></script>
-  <script defer src="js/dashboard.js?v=20261028-v5"></script>
-  <script defer src="js/subject-explorer.js?v=20261028-v5"></script>
-  <script defer src="js/data-loader.js?v=20261028-v5"></script>
-  <script defer src="js/formula-renderer.js?v=20261028-v5"></script>
-  <script defer src="js/timer.js?v=20261028-v5"></script>
-  <script defer src="js/study.js?v=20261028-v5"></script>
-  <script defer src="js/question-schema.js?v=20261028-v5"></script>
-  <script defer src="js/scoring-engine.js?v=20261028-v5"></script>
-  <script defer src="js/quiz.js?v=20261028-v5"></script>
-  <script defer src="js/checker.js?v=20261028-v5"></script>
-  <script defer src="js/keyboard.js?v=20261028-v5"></script>
-  <script defer src="js/mistakes.js?v=20261028-v5"></script>
-  <script defer src="js/custom-exam.js?v=20261028-v5"></script>
-  <script defer src="js/theme-focus.js?v=20261028-v5"></script>
-  <script defer src="js/diagnostic-view.js?v=20261028-v5"></script>
-  <script defer src="js/planner-view.js?v=20261028-v5"></script>
-  <script defer src="js/auth-view.js?v=20261028-v5"></script>
-  <script defer src="js/smart-importer.js?v=20261028-v5"></script>
-  <script defer src="js/printable-exam.js?v=20261028-v5"></script>
-  <script defer src="js/command-palette.js?v=20261028-v5"></script>
-  <script defer src="js/confetti.js?v=20261028-v5"></script>
-  <script defer src="js/result-card.js?v=20261028-v5"></script>
-  <script defer src="js/app.js?v=20261028-v5"></script>
+  <script defer src="js/audio.js?v=20261028-v6"></script>
+  <script defer src="js/api.js?v=20261028-v6"></script>
+  <script defer src="js/state.js?v=20261028-v6"></script>
+  <script defer src="js/router.js?v=20261028-v6"></script>
+  <script defer src="js/onboarding.js?v=20261028-v6"></script>
+  <script defer src="js/dashboard.js?v=20261028-v6"></script>
+  <script defer src="js/subject-explorer.js?v=20261028-v6"></script>
+  <script defer src="js/data-loader.js?v=20261028-v6"></script>
+  <script defer src="js/formula-renderer.js?v=20261028-v6"></script>
+  <script defer src="js/timer.js?v=20261028-v6"></script>
+  <script defer src="js/study.js?v=20261028-v6"></script>
+  <script defer src="js/question-schema.js?v=20261028-v6"></script>
+  <script defer src="js/scoring-engine.js?v=20261028-v6"></script>
+  <script defer src="js/quiz.js?v=20261028-v6"></script>
+  <script defer src="js/checker.js?v=20261028-v6"></script>
+  <script defer src="js/keyboard.js?v=20261028-v6"></script>
+  <script defer src="js/mistakes.js?v=20261028-v6"></script>
+  <script defer src="js/custom-exam.js?v=20261028-v6"></script>
+  <script defer src="js/theme-focus.js?v=20261028-v6"></script>
+  <script defer src="js/diagnostic-view.js?v=20261028-v6"></script>
+  <script defer src="js/planner-view.js?v=20261028-v6"></script>
+  <script defer src="js/auth-view.js?v=20261028-v6"></script>
+  <script defer src="js/smart-importer.js?v=20261028-v6"></script>
+  <script defer src="js/printable-exam.js?v=20261028-v6"></script>
+  <script defer src="js/command-palette.js?v=20261028-v6"></script>
+  <script defer src="js/confetti.js?v=20261028-v6"></script>
+  <script defer src="js/result-card.js?v=20261028-v6"></script>
+  <script defer src="js/app.js?v=20261028-v6"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

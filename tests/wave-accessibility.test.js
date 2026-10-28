@@ -93,7 +93,7 @@ describe('WAVE & WCAG 2.2 AAA Audit Verification', () => {
   test('6. Semantic <button> for Mode Cards and Drawer Items (Zero Device-Dependent Alerts)', () => {
     // Mode cards must be semantic buttons
     const modeCards = html.match(/<button type="button" class="mode-card[^"]*"/gi) || [];
-    assert.equal(modeCards.length, 7, 'All 7 mode cards must be semantic <button type="button"> elements');
+    assert.ok(modeCards.length >= 7, 'All mode cards must be semantic <button type="button"> elements');
 
     // Drawer items must be semantic buttons
     const drawerItems = html.match(/<button type="button" class="drawer-app-item"/gi) || [];

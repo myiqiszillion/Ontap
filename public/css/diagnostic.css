@@ -13,14 +13,15 @@
    1. WELCOME SCREEN
    ═════════════════════════════════════════════════════════════ */
 .diag-welcome-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  box-shadow: var(--shadow-card);
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 32px 30px;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
   margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
+  color: #f8fafc;
 }
 
 .diag-welcome-card::before {
@@ -133,7 +134,7 @@
 
 .diag-spec-item .spec-label {
   font-size: 0.75rem;
-  color: var(--text-dim);
+  color: #94a3b8 !important;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -141,7 +142,7 @@
 .diag-spec-item .spec-val {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: #f8fafc !important;
   margin-top: 0.2rem;
 }
 
@@ -627,4 +628,35 @@
   .diag-main-card { padding: 1.25rem; }
   .diag-welcome-title { font-size: 1.35rem; }
   .diag-score-big { font-size: 2.25rem; }
+}
+
+.diag-select option { background: #0f172a; color: #f8fafc; }
+.diag-blueprint-specs {
+  background: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 14px !important;
+}
+.diag-spec-val { color: #f8fafc !important; }
+.diag-spec-label { color: #94a3b8 !important; }
+.diag-disclaimer-box {
+  background: rgba(245, 158, 11, 0.1) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  color: #fbbf24 !important;
+  border-radius: 12px !important;
+}
+
+.diag-welcome-card .diag-welcome-title {
+  color: #f8fafc !important;
+}
+.diag-welcome-card .diag-welcome-desc {
+  color: #94a3b8 !important;
+}
+.diag-welcome-card .diag-form-group label {
+  color: #cbd5e1 !important;
+}
+.diag-welcome-card .diag-spec-val {
+  color: #f8fafc !important;
+}
+.diag-welcome-card .diag-spec-label {
+  color: #94a3b8 !important;
 }

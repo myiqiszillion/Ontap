@@ -7,9 +7,9 @@ const ThemeManager = {
   STORAGE_KEY: 'ntmk_theme_style_v2',
   THEMES: ['heritage', 'midnight', 'academic'],
   THEME_LABELS: {
-    heritage: { id: 'heritage', name: 'Di Sản Học Giả', icon: '🏛️' },
-    midnight: { id: 'midnight', name: 'Đêm Huyền Bí', icon: '🌙' },
-    academic: { id: 'academic', name: 'Trang Giấy Thanh Nhã', icon: '📖' }
+    heritage: { id: 'heritage', name: 'Di Sản Học Giả', iconName: 'landmark' },
+    midnight: { id: 'midnight', name: 'Đêm Huyền Bí', iconName: 'moon' },
+    academic: { id: 'academic', name: 'Trang Giấy Thanh Nhã', iconName: 'book-open' }
   },
 
   init() {
@@ -30,8 +30,12 @@ const ThemeManager = {
     // Giữ tương thích data-theme="dark" cho legacy styles nếu là midnight
     if (themeName === 'midnight') {
       document.body.setAttribute('data-theme', 'dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.body.removeAttribute('data-theme');
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
     }
 
     localStorage.setItem(this.STORAGE_KEY, themeName);
@@ -51,7 +55,8 @@ const ThemeManager = {
     const btn = document.getElementById('theme-toggle');
     if (btn) {
       const meta = this.THEME_LABELS[themeName] || this.THEME_LABELS.heritage;
-      btn.innerHTML = `<span class="theme-icon">${meta.icon}</span>`;
+      const iconSvg = (typeof Icons !== 'undefined') ? Icons.get(meta.iconName, { size: 18 }) : '';
+      btn.innerHTML = `<span class="theme-icon">${iconSvg}</span>`;
       btn.title = `Giao diện: ${meta.name} (Bấm để đổi)`;
     }
   }

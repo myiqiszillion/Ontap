@@ -107,10 +107,12 @@ const app = {
 
     if (savedTheme === 'dark' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.body.setAttribute('data-theme', 'dark');
-      if (toggleBtn) toggleBtn.innerHTML = '🌙';
+      document.documentElement.setAttribute('data-theme', 'dark');
+      if (toggleBtn) toggleBtn.innerHTML = (typeof Icons !== 'undefined') ? Icons.get('moon', { size: 18 }) : '';
     } else {
       document.body.removeAttribute('data-theme');
-      if (toggleBtn) toggleBtn.innerHTML = '☀️';
+      document.documentElement.removeAttribute('data-theme');
+      if (toggleBtn) toggleBtn.innerHTML = (typeof Icons !== 'undefined') ? Icons.get('sun', { size: 18 }) : '';
     }
   },
 
@@ -124,12 +126,14 @@ const app = {
 
     if (isDark) {
       document.body.removeAttribute('data-theme');
+      document.documentElement.removeAttribute('data-theme');
       localStorage.setItem('theme', 'light');
-      if (toggleBtn) toggleBtn.innerHTML = '☀️';
+      if (toggleBtn) toggleBtn.innerHTML = (typeof Icons !== 'undefined') ? Icons.get('sun', { size: 18 }) : '';
     } else {
       document.body.setAttribute('data-theme', 'dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
-      if (toggleBtn) toggleBtn.innerHTML = '🌙';
+      if (toggleBtn) toggleBtn.innerHTML = (typeof Icons !== 'undefined') ? Icons.get('moon', { size: 18 }) : '';
     }
   },
 
@@ -314,9 +318,9 @@ const app = {
         <div class="topic-info" role="button" tabindex="0" onclick="app.toggleBai(${lesson.bai}, true)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.toggleBai(${lesson.bai}, true);}" aria-label="Xem chi tiết và chọn bài: ${lesson.title}">
           <div class="topic-title">${lesson.title}</div>
           <div class="topic-meta">
-            <span class="topic-questions">${lesson.mcqCount} TN</span>
-            <span class="topic-tf">${lesson.tfGroupCount} bài Đ/S</span>
-            <span class="topic-time">~${lesson.estimatedTime} phút</span>
+            <span class="topic-meta-pill"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/></svg> ${lesson.mcqCount} TN</span>
+            <span class="topic-meta-pill"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg> ${lesson.tfGroupCount} bài Đ/S</span>
+            <span class="topic-meta-pill"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ~${lesson.estimatedTime} phút</span>
           </div>
         </div>
       </div>
@@ -638,7 +642,7 @@ const app = {
 
   // ═══════════ RESULTS & RECORDING ═══════════
 
-  showResults(correct, total, sessionId) {
+  showResults(correct, total, sessionId, breakdown = null) {
     Timer.stop();
 
     const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
@@ -715,6 +719,40 @@ const app = {
 
     const resultMsgEl = document.getElementById('result-message');
     if (resultMsgEl) resultMsgEl.textContent = message;
+
+    // Render dynamic Decision 764 Assessment Breakdown
+    const bdContainer = document.getElementById('result-764-breakdown');
+    if (bdContainer && breakdown) {
+      bdContainer.innerHTML = `
+        <div class="breakdown-header">
+          <span class="breakdown-tag">CẤU TRÚC ĐỀ THI BỘ GD&ĐT</span>
+          <h3 class="breakdown-title">Bóc tách điểm số 3 phần theo QĐ 764/QĐ-BGDĐT</h3>
+        </div>
+        <div class="breakdown-grid">
+          <div class="breakdown-item p1">
+            <div class="bd-part">PHẦN I</div>
+            <div class="bd-name">Trắc nghiệm 4 lựa chọn</div>
+            <div class="bd-score-badge ${breakdown.p1.earned > 0 ? 'score-positive' : ''}">+${breakdown.p1.earned} / ${breakdown.p1.total} đ</div>
+            <div class="bd-desc">Đúng ${breakdown.p1.correct}/${breakdown.p1.count} câu nhận biết &amp; thông hiểu</div>
+            <div class="bd-scale">0.25 điểm / câu</div>
+          </div>
+          <div class="breakdown-item p2">
+            <div class="bd-part">PHẦN II</div>
+            <div class="bd-name">Trắc nghiệm Đúng / Sai</div>
+            <div class="bd-score-badge ${breakdown.p2.earned > 0 ? 'score-positive' : ''}">+${breakdown.p2.earned} / ${breakdown.p2.total} đ</div>
+            <div class="bd-desc">Đạt tối đa ${breakdown.p2.correctFull}/${breakdown.p2.count} bài thi logic 4 ý</div>
+            <div class="bd-scale">Đúng 4 ý: 1.0 đ • 3 ý: 0.5 đ</div>
+          </div>
+          <div class="breakdown-item p3">
+            <div class="bd-part">PHẦN III</div>
+            <div class="bd-name">Trả lời ngắn</div>
+            <div class="bd-score-badge ${breakdown.p3.earned > 0 ? 'score-positive' : ''}">+${breakdown.p3.earned} / ${breakdown.p3.total} đ</div>
+            <div class="bd-desc">Đúng ${breakdown.p3.correct}/${breakdown.p3.count} câu vận dụng &amp; tư duy số</div>
+            <div class="bd-scale">Toán: 0.5 đ • Lí/Hóa: 0.25 đ</div>
+          </div>
+        </div>
+      `;
+    }
 
     this.navigateTo('result');
   },

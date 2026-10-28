@@ -62,7 +62,7 @@ const DiagnosticView = {
     container.innerHTML = `
       <div class="diag-container">
         <div class="diag-welcome-card">
-          <span class="diag-badge-pill primary">🎯 Đánh Giá Năng Lực Đầu Vào</span>
+          <span class="diag-badge-pill primary" style="background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.3); color:#fbbf24;"><span class="live-dot-pulse"></span> THPT NGUYỄN THỊ MINH KHAI • ĐÁNH GIÁ NĂNG LỰC ĐẦU VÀO</span>
           <h1 class="diag-welcome-title">Chẩn Đoán Năng Lực & Bản Đồ Kỹ Năng</h1>
           <p class="diag-welcome-desc">
             Xác định chính xác những kiến thức bạn đã nắm vững, các kỹ năng còn yếu và phát hiện kịp thời
@@ -118,16 +118,16 @@ const DiagnosticView = {
           </div>
 
           <div class="diag-disclaimer-box">
-            ⚠️ <strong>Lưu ý khảo thí:</strong> Bài đánh giá chẩn đoán gồm 15–25 câu hỏi được lấy mẫu trọng tâm.
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> <strong>Lưu ý khảo thí:</strong> Bài đánh giá chẩn đoán gồm 15–25 câu hỏi được lấy mẫu trọng tâm.
             Kết quả nhằm xác định điểm mạnh và lỗ hổng kiến thức để tối ưu lộ trình học, không thay thế kỳ thi tốt nghiệp THPT hay xếp loại chính thức.
           </div>
 
           <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
             <button id="diag-start-btn" class="diag-btn-primary" onclick="DiagnosticView.startAssessment()">
-              🚀 Bắt đầu bài chẩn đoán
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg> Bắt đầu bài chẩn đoán
             </button>
             <button class="diag-btn-secondary" onclick="DiagnosticView.render('mastery')">
-              📊 Xem bản đồ kỹ năng hiện tại
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> Xem bản đồ kỹ năng hiện tại
             </button>
           </div>
         </div>

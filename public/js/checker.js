@@ -108,7 +108,7 @@ const Checker = {
         <!-- Header -->
         <header class="checker-header">
           <div class="checker-title-area">
-            <button class="back-btn" onclick="app.navigateTo('dashboard')">← Trang chủ</button>
+            <button class="back-btn" onclick="app.navigateTo('dashboard')"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" x2="5" y1="12" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Trang chủ</button>
             <div class="checker-badge"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> CÔNG CỤ DÒ ĐÁP ÁN NHANH</div>
             <h1 class="checker-heading">Dò Trắc Nghiệm & So Khớp Đáp Án GDPT 2018</h1>
             <p class="checker-subheading">Tra cứu bảng đáp án chuẩn xác, kiểm tra đối chiếu bài làm từ giấy, xem lời giải chi tiết và luyện tập trắc nghiệm Đúng/Sai.</p>
@@ -154,11 +154,11 @@ const Checker = {
         </header>
 
         <!-- Main Content Area based on Tab -->
-        <main class="checker-main">
+        <div class="checker-main" role="region" aria-label="Bảng điều khiển dò đáp án">
           ${this.activeTab === 'matrix' ? this.renderMatrixTab(mcqs, tfs) : ''}
           ${this.activeTab === 'selfcheck' ? this.renderSelfCheckTab(mcqs, tfs) : ''}
           ${this.activeTab === 'explorer' ? this.renderExplorerTab(mcqs, tfs) : ''}
-        </main>
+        </div>
       </div>
     `;
   },
@@ -176,10 +176,10 @@ const Checker = {
           </div>
           <div class="matrix-buttons">
             <button class="btn btn-sm btn-outline" onclick="Checker.copyAnswerKeyText()">
-              📋 Sao chép mã đáp án
+              <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> Sao chép mã đáp án
             </button>
             <button class="btn btn-sm btn-primary" onclick="Checker.startQuickPractice()">
-              🚀 Ôn luyện bộ câu này ngay
+              <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Ôn luyện bộ câu này ngay
             </button>
           </div>
         </div>
@@ -243,12 +243,12 @@ const Checker = {
     return `
       <div class="selfcheck-view-wrapper">
         <div class="selfcheck-guide-banner">
-          <div class="guide-icon">💡</div>
+          <div class="guide-icon"><svg class="ui-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div>
           <div class="guide-text">
             <strong>Hướng dẫn tự dò bài:</strong> Chọn phương án bạn đã làm trên giấy hoặc nháp dưới đây. Hệ thống sẽ ngay lập tức đối chiếu với đáp án chuẩn, chỉ ra câu đúng/sai và tính tổng điểm theo chuẩn Bộ GD&ĐT!
           </div>
           <button class="btn btn-sm btn-primary" onclick="Checker.evaluateSelfCheck()">
-            ⚡ Chấm điểm &amp; So khớp
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Chấm điểm &amp; So khớp
           </button>
         </div>
 
@@ -320,7 +320,7 @@ const Checker = {
 
         <div style="margin-top: 30px; text-align: center;">
           <button class="btn btn-primary btn-lg" onclick="Checker.evaluateSelfCheck()" style="padding: 14px 36px; font-size: 1.1rem;">
-            🎯 Chấm điểm toàn diện ngay
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Chấm điểm toàn diện ngay
           </button>
         </div>
       </div>
@@ -446,7 +446,7 @@ const Checker = {
     return `
       <div class="explorer-view-wrapper">
         <div class="explorer-search-bar">
-          <input type="text" id="checker-search-input" placeholder="🔍 Tìm kiếm câu hỏi theo từ khóa (vd: Cách mạng Pháp, Hồ Chí Minh, Liên Xô...)" oninput="Checker.filterExplorer()">
+          <input type="text" id="checker-search-input" placeholder="Tìm kiếm câu hỏi theo từ khóa (vd: Cách mạng Pháp, Hồ Chí Minh, Liên Xô...)" oninput="Checker.filterExplorer()">
           <select id="checker-filter-type" onchange="Checker.filterExplorer()">
             <option value="all">Tất cả định dạng</option>
             <option value="mcq">Chỉ Trắc nghiệm nhiều lựa chọn</option>
@@ -480,7 +480,7 @@ const Checker = {
               </div>
               ${q.explanation ? `
                 <div class="explorer-explanation">
-                  <strong>💡 Lời giải / Phân tích:</strong> ${this.escapeHtml(q.explanation)}
+                  <strong><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> Lời giải / Phân tích:</strong> ${this.escapeHtml(q.explanation)}
                 </div>
               ` : ''}
             </div>
@@ -495,7 +495,7 @@ const Checker = {
                 <span class="qlesson-badge">${g.lessonName}</span>
               </div>
               <div class="explorer-passage-box">
-                <span class="passage-icon">📜</span>
+                <span class="passage-icon"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
                 <div class="passage-text">${this.renderMathOrText(g.passage)}</div>
               </div>
               <div class="explorer-tf-statements">
@@ -563,7 +563,7 @@ const Checker = {
             `).join('')}
           </div>
           <div class="detail-exp-box">
-            <strong>💡 Giải thích:</strong> ${this.escapeHtml(q.explanation || `Đáp án đúng là ${letters[correctIdx]}.`)}
+            <strong><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> Giải thích:</strong> ${this.escapeHtml(q.explanation || `Đáp án đúng là ${letters[correctIdx]}.`)}
           </div>
         </div>
       `;

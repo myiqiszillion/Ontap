@@ -95,10 +95,10 @@ const ResultCard = {
     ctx.fillText(`Thí sinh: ${studentName}`, 70, 255);
 
     // Title / Rank Badge
-    let rankBadge = '🎖️ HOÀN THÀNH TỐT';
+    let rankBadge = 'HOÀN THÀNH TỐT';
     let badgeBg = '#3b82f6';
-    if (percentage >= 90) { rankBadge = '👑 THỦ KHOA XUẤT SẮC'; badgeBg = '#d97706'; }
-    else if (percentage >= 75) { rankBadge = '🌟 THÀNH TÍCH GIỎI'; badgeBg = '#10b981'; }
+    if (percentage >= 90) { rankBadge = 'THỦ KHOA XUẤT SẮC'; badgeBg = '#d97706'; }
+    else if (percentage >= 75) { rankBadge = 'THÀNH TÍCH GIỎI'; badgeBg = '#10b981'; }
 
     ctx.fillStyle = badgeBg;
     this.roundRect(ctx, 70, 280, 260, 42, 10, true, false);

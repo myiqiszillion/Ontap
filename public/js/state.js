@@ -13,25 +13,25 @@ const ProfileStore = {
       id: 'score_8_plus',
       title: 'Đạt điểm 8+ trên lớp',
       desc: 'Nắm vững kiến thức SGK, chinh phục bài kiểm tra định kỳ',
-      icon: '🎯'
+      icon: 'target'
     },
     graduation_pass: {
       id: 'graduation_pass',
       title: 'Tốt nghiệp THPT vững vàng',
       desc: 'Bám sát cấu trúc đề thi QĐ 764/QĐ-BGDĐT mới nhất',
-      icon: '🎓'
+      icon: 'graduation-cap'
     },
     university_exam: {
       id: 'university_exam',
       title: 'Luyện thi ĐGNL & Đại học',
       desc: 'Luyện đề nâng cao, tư duy giải nhanh và phản xạ',
-      icon: '🚀'
+      icon: 'rocket'
     },
     quick_review: {
       id: 'quick_review',
       title: 'Củng cố kiến thức cấp tốc',
       desc: 'Ôn tập nhanh lý thuyết cốt lõi và dạng bài cơ bản',
-      icon: '⚡'
+      icon: 'zap'
     }
   },
 

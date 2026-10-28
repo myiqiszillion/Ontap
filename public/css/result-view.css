@@ -152,14 +152,15 @@
 }
 
 .btn-result-action.primary {
-  background: linear-gradient(135deg, #d97706, #b45309);
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
 }
 
 .btn-result-action.primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35);
+  background: linear-gradient(135deg, #6d28d9, #4f46e5);
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.45);
 }
 
 .btn-result-action.secondary {

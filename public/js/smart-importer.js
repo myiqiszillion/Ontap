@@ -272,7 +272,7 @@ d) Tuyên ngôn Độc lập Mỹ xóa bỏ hoàn toàn quyền sở hữu tư n
  */
 const SmartImporterView = {
   currentParsed: { mcq: [], tf: [], shortAnswer: [] },
-  targetSubject: 'lichsu11',
+  targetSubject: 'toan10',
   topicTitle: 'Đề thi tự nạp của Giáo viên',
 
   init() {
@@ -288,7 +288,12 @@ const SmartImporterView = {
         <!-- HEADER -->
         <div class="importer-header">
           <div class="header-badge">CÔNG CỤ GIÁO VIÊN & BIÊN TẬP VIÊN</div>
-          <h1 class="header-title">📥 Nhập Đề Thi Thông Minh (Smart Importer)</h1>
+          <h1 class="header-title">
+    <span class="title-icon-box">
+      <svg class="ui-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+    </span>
+    Nhập Đề Thi Thông Minh (Smart Importer)
+  </h1>
           <p class="header-desc">
             Dán nội dung đề thi từ Word/Text hoặc kéo thả file. Hệ thống tự động nhận diện câu hỏi trắc nghiệm nhiều phương án và câu Đúng/Sai chuẩn GDPT 2018.
           </p>
@@ -301,7 +306,7 @@ const SmartImporterView = {
               <div class="card-title-row">
                 <h3 class="card-title">1. Nội dung đề thi văn bản</h3>
                 <button class="btn-sample-paste" onclick="SmartImporterView.pasteSample()">
-                  📋 Dán đề mẫu
+                  <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> Dán đề mẫu
                 </button>
               </div>
 
@@ -311,7 +316,7 @@ const SmartImporterView = {
                         oninput="SmartImporterView.onTextChange()"></textarea>
 
               <div class="importer-drop-zone" id="importer-drop-zone">
-                <span>📁 Kéo thả file <strong>.txt</strong> hoặc <strong>.docx</strong> vào đây</span>
+                <span><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg> Kéo thả file <strong>.txt</strong> hoặc <strong>.docx</strong> vào đây</span>
                 <input type="file" id="importer-file-input" accept=".txt,.docx" onchange="SmartImporterView.handleFile(this.files[0])">
               </div>
 
@@ -319,13 +324,13 @@ const SmartImporterView = {
                 <div class="config-field">
                   <label>Gán vào môn học:</label>
                   <select id="import-target-subject" class="import-select" onchange="SmartImporterView.targetSubject = this.value">
-                    <option value="lichsu11">Lịch sử 11</option>
-                    <option value="lichsu10">Lịch sử 10</option>
-                    <option value="lichsu12">Lịch sử 12</option>
-                    <option value="toan10">Toán 10</option>
+                    <option value="toan10" selected>Toán học 10</option>
                     <option value="vatli10">Vật lí 10</option>
                     <option value="hoahoc10">Hóa học 10</option>
                     <option value="tienganh10">Tiếng Anh 10</option>
+                    <option value="lichsu10">Lịch sử 10</option>
+                    <option value="lichsu11">Lịch sử 11</option>
+                    <option value="lichsu12">Lịch sử 12</option>
                   </select>
                 </div>
 
@@ -336,7 +341,7 @@ const SmartImporterView = {
               </div>
 
               <button class="btn-parse-trigger" onclick="SmartImporterView.triggerParse()">
-                ⚡ Phân tích & Bóc tách câu hỏi
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Phân tích & Bóc tách câu hỏi
               </button>
             </div>
           </div>
@@ -361,13 +366,13 @@ const SmartImporterView = {
                         id="btn-save-system"
                         ${(this.currentParsed.mcq.length + this.currentParsed.tf.length === 0) ? 'disabled' : ''}
                         onclick="SmartImporterView.saveToSystem()">
-                  💾 Lưu vào Ngân Hàng & Luyện Ngay
+                  <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg> Lưu vào Ngân Hàng & Luyện Ngay
                 </button>
                 <button class="btn-export-json" 
                         id="btn-export-json"
                         ${(this.currentParsed.mcq.length + this.currentParsed.tf.length === 0) ? 'disabled' : ''}
                         onclick="SmartImporterView.exportJson()">
-                  📥 Xuất File JSON
+                  <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Xuất File JSON
                 </button>
               </div>
             </div>
@@ -382,7 +387,7 @@ const SmartImporterView = {
     if (mcq.length === 0 && tf.length === 0) {
       return `
         <div class="preview-empty-state">
-          <div class="empty-icon">📝</div>
+          <div class="empty-icon"><svg class="ui-icon" viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div>
           <h4>Chưa có câu hỏi nào được bóc tách</h4>
           <p>Hãy dán đề thi vào ô bên trái hoặc bấm "Dán đề mẫu" để xem trước sức mạnh của bộ bóc tách thông minh.</p>
         </div>

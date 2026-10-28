@@ -3,7 +3,7 @@
  * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v5-sanctuary';
+const CACHE_NAME = 'ntmk-cache-v6-unified-tools';
 
 const STATIC_SHELL = [
   '/',

@@ -51,17 +51,13 @@
 
 /* ── Today's Learning Dashboard ── */
 .planner-hero-card {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(124, 58, 237, 0.06) 100%);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 1.75rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
   margin-bottom: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
+  color: #f8fafc;
 }
 
 .planner-hero-stats {
@@ -471,4 +467,32 @@
     width: 100%;
     justify-content: flex-end;
   }
+}
+
+.planner-empty-state-card {
+  background: rgba(30, 41, 59, 0.65) !important;
+  border: 1px dashed rgba(255, 255, 255, 0.15) !important;
+  border-radius: 20px !important;
+  padding: 50px 24px !important;
+  color: #f8fafc !important;
+}
+.planner-empty-state-card h3 { color: #f8fafc !important; }
+.planner-empty-state-card p { color: #94a3b8 !important; }
+
+.planner-hero-card h1, .planner-hero-card h2, .planner-hero-card h3 {
+  color: #f8fafc !important;
+}
+.planner-hero-card p {
+  color: #cbd5e1 !important;
+}
+.planner-tab-btn {
+  color: #475569;
+}
+[data-theme="dark"] .planner-tab-btn {
+  color: #94a3b8;
+}
+.planner-tab-btn.active {
+  background: rgba(124, 58, 237, 0.2) !important;
+  color: #c084fc !important;
+  border-bottom: 2px solid #7c3aed !important;
 }

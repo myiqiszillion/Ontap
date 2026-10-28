@@ -76,8 +76,11 @@ const PlannerView = {
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
           <div>
             <h1 style="font-size:1.75rem; font-weight:800; margin:0; display:flex; align-items:center; gap:0.5rem;">
-              📅 Kế Hoạch Học Tập Cá Nhân Hóa
-              <span class="task-type-badge adaptive_practice" style="font-size:0.75rem;">Phase 03B</span>
+              <span style="display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:10px; background:rgba(124,58,237,0.25); border:1px solid rgba(124,58,237,0.5); color:#c084fc;">
+                <svg class="ui-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+              </span>
+              Kế Hoạch Học Tập Cá Nhân Hóa
+              <span class="task-type-badge adaptive_practice" style="font-size:0.75rem; background:rgba(124,58,237,0.2); color:#c084fc; border:1px solid rgba(124,58,237,0.4);">Chuẩn GDPT 2018</span>
             </h1>
             <p style="color:var(--text-sub); font-size:0.9rem; margin:0.35rem 0 0 0;">
               Lộ trình thích ứng tự động tối ưu hóa dựa trên điểm mạnh và lỗ hổng kiến thức của bạn.
@@ -85,7 +88,7 @@ const PlannerView = {
           </div>
           <div style="display:flex; gap:0.5rem;">
             <button class="diag-btn-primary" onclick="PlannerView.generateOrReplan()" style="padding:0.6rem 1.25rem; font-size:0.88rem;">
-              ✨ ${this.activePlan ? 'Tối ưu lại kế hoạch' : 'Tạo kế hoạch mới'}
+              <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg> ${this.activePlan ? 'Tối ưu lại kế hoạch' : 'Tạo kế hoạch mới'}
             </button>
           </div>
         </div>
@@ -93,16 +96,16 @@ const PlannerView = {
         <!-- Navigation Tabs -->
         <div class="planner-nav-tabs">
           <button class="planner-tab-btn ${this.currentTab === 'today' ? 'active' : ''}" onclick="PlannerView.switchTab('today')">
-            🎯 Hôm nay cần học gì?
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Hôm nay cần học gì?
           </button>
           <button class="planner-tab-btn ${this.currentTab === 'plan' ? 'active' : ''}" onclick="PlannerView.switchTab('plan')">
-            🗓️ Lộ trình & Lịch học
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg> Lộ trình & Lịch học
           </button>
           <button class="planner-tab-btn ${this.currentTab === 'progress' ? 'active' : ''}" onclick="PlannerView.switchTab('progress')">
-            📈 Tiến trình & Kỹ năng
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> Tiến trình & Kỹ năng
           </button>
           <button class="planner-tab-btn ${this.currentTab === 'settings' ? 'active' : ''}" onclick="PlannerView.switchTab('settings')">
-            ⚙️ Cài đặt mục tiêu
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Cài đặt mục tiêu
           </button>
         </div>
 
@@ -151,17 +154,17 @@ const PlannerView = {
   renderEmptyPlanState() {
     return `
       <div class="planner-hero-card" style="text-align:center; flex-direction:column; padding:3rem 1.5rem;">
-        <div style="font-size:3rem; margin-bottom:0.5rem;">📋</div>
+        <div style="margin-bottom:1rem; color:#818cf8;"><svg class="ui-icon" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg></div>
         <h2 style="font-size:1.4rem; font-weight:700; margin-bottom:0.5rem;">Bạn chưa có Kế hoạch Học tập nào</h2>
         <p style="color:var(--text-sub); max-width:540px; margin-bottom:1.5rem; line-height:1.5;">
           Hệ thống sẽ dựa trên kết quả bài Đánh giá Chẩn đoán Năng lực để tự động lập lịch ôn tập phù hợp với thời gian bạn có mỗi ngày.
         </p>
         <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
           <button class="diag-btn-primary" onclick="PlannerView.generateOrReplan()">
-            🚀 Tạo Kế Hoạch 14 Ngày Ngay
+            <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg> Tạo Kế Hoạch 14 Ngày Ngay
           </button>
           <button class="diag-btn-secondary" onclick="app.navigateTo('diagnostic')">
-            🎯 Làm bài chẩn đoán trước
+            <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Làm bài chẩn đoán trước
           </button>
         </div>
       </div>

@@ -1,10 +1,12 @@
 /**
  * NTMK Custom Exam Generator (Bộ Sinh Đề Thi Tùy Biến)
  * Cho phép học sinh và giáo viên tạo đề thi kiểm tra 15p, 45p, 50p theo ma trận tùy chỉnh
+ * Bám sát cấu trúc khảo thí Quyết định 764/QĐ-BGDĐT & GDPT 2018
  */
 
 const CustomExam = {
-  currentSubject: 'lichsu11',
+  currentSubject: 'toan10',
+  currentGradeFilter: 10,
   lessons: [],
   selectedBais: [],
   settings: {
@@ -17,17 +19,30 @@ const CustomExam = {
   },
 
   SUBJECT_OPTIONS: [
-    { id: 'lichsu12', name: 'Lịch sử 12', grade: 12, defaultMcq: 24, defaultTf: 4, defaultDuration: 50 },
-    { id: 'lichsu11', name: 'Lịch sử 11', grade: 11, defaultMcq: 20, defaultTf: 4, defaultDuration: 50 },
-    { id: 'lichsu10', name: 'Lịch sử 10', grade: 10, defaultMcq: 20, defaultTf: 4, defaultDuration: 50 },
-    { id: 'toan10', name: 'Toán 10', grade: 10, defaultMcq: 12, defaultTf: 4, defaultDuration: 90 },
-    { id: 'vatli10', name: 'Vật lí 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50 },
-    { id: 'hoahoc10', name: 'Hóa học 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50 },
-    { id: 'tienganh10', name: 'Tiếng Anh 10', grade: 10, defaultMcq: 40, defaultTf: 0, defaultDuration: 50 }
+    { id: 'toan10', name: 'Toán học 10', grade: 10, defaultMcq: 12, defaultTf: 4, defaultDuration: 90, color: '#3b82f6' },
+    { id: 'vatli10', name: 'Vật lí 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#6366f1' },
+    { id: 'hoahoc10', name: 'Hóa học 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#06b6d4' },
+    { id: 'tienganh10', name: 'Tiếng Anh 10', grade: 10, defaultMcq: 40, defaultTf: 0, defaultDuration: 50, color: '#0d9488' },
+    { id: 'lichsu10', name: 'Lịch sử 10', grade: 10, defaultMcq: 20, defaultTf: 4, defaultDuration: 50, color: '#e11d48' },
+    { id: 'lichsu11', name: 'Lịch sử 11', grade: 11, defaultMcq: 20, defaultTf: 4, defaultDuration: 50, color: '#e11d48' },
+    { id: 'lichsu12', name: 'Lịch sử 12', grade: 12, defaultMcq: 24, defaultTf: 4, defaultDuration: 50, color: '#e11d48' }
   ],
 
-  async init(subjectId = 'lichsu11') {
-    this.currentSubject = subjectId;
+  async init(subjectId = null) {
+    if (subjectId) {
+      this.currentSubject = subjectId;
+      const sub = this.SUBJECT_OPTIONS.find(s => s.id === subjectId);
+      if (sub) this.currentGradeFilter = sub.grade;
+    } else if (typeof ProfileStore !== 'undefined' && ProfileStore.getProfile) {
+      const p = ProfileStore.getProfile();
+      const grade = p?.grade || 10;
+      this.currentGradeFilter = grade;
+      const match = this.SUBJECT_OPTIONS.find(s => s.grade === grade);
+      this.currentSubject = match ? match.id : 'toan10';
+    } else {
+      this.currentSubject = 'toan10';
+    }
+
     await this.loadSubjectData(this.currentSubject);
     this.render();
   },
@@ -35,10 +50,11 @@ const CustomExam = {
   async loadSubjectData(subjectId) {
     this.currentSubject = subjectId;
     try {
-      const data = await DataLoader.getLessons(subjectId);
-      this.lessons = data ? data.lessons : [];
-      // Mặc định chọn tất cả bài học
-      this.selectedBais = this.lessons.map(l => l.bai);
+      if (typeof DataLoader !== 'undefined' && DataLoader.getLessons) {
+        const data = await DataLoader.getLessons(subjectId);
+        this.lessons = data ? data.lessons : [];
+        this.selectedBais = this.lessons.map(l => l.bai);
+      }
     } catch (e) {
       console.warn('Could not load lessons for', subjectId, e);
       this.lessons = [];
@@ -52,31 +68,50 @@ const CustomExam = {
     if (!container) return;
 
     const currentSub = this.SUBJECT_OPTIONS.find(s => s.id === this.currentSubject) || this.SUBJECT_OPTIONS[0];
-
-    // Tính tổng số câu hỏi có sẵn từ các bài đã chọn
     const available = this.calculateAvailableQuestions();
+
+    const filteredSubjects = this.SUBJECT_OPTIONS.filter(s => s.grade === this.currentGradeFilter);
 
     container.innerHTML = `
       <div class="custom-exam-container">
-        <!-- HEADER -->
-        <div class="custom-exam-header">
-          <div class="header-tag">CÔNG CỤ SINH ĐỀ GDPT 2018</div>
-          <h1 class="header-title">🎯 Tự Tạo Đề Thi Theo Yêu Cầu</h1>
+        <!-- HEADER TRANG TRỌNG TYPEUI -->
+        <div class="custom-exam-header-banner">
+          <div class="header-tag">
+            <span class="live-dot-pulse"></span>
+            THPT NGUYỄN THỊ MINH KHAI • CÔNG CỤ SINH ĐỀ GDPT 2018
+          </div>
+          <h1 class="header-title">
+            <span class="title-icon-box">
+              <svg class="ui-icon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </span>
+            Tự Tạo Đề Thi Theo Yêu Cầu
+          </h1>
           <p class="header-desc">
-            Tùy biến số lượng câu hỏi, thời gian làm bài và phạm vi chuyên đề. Đề thi được xáo trộn tự động theo thuật toán ma trận đề thi chuẩn Bộ GD&ĐT.
+            Tùy biến số lượng câu hỏi, thời gian làm bài và ma trận phân phối bám sát Quyết định 764/QĐ-BGDĐT. Thuật toán Fisher-Yates xáo trộn chuẩn hóa chống trùng lặp.
           </p>
         </div>
 
         <div class="custom-exam-grid">
           <!-- CỘT TRÁI: THIẾT LẬP CẤU HÌNH -->
           <div class="custom-exam-settings-col">
-            <!-- 1. CHỌN MÔN HỌC -->
+            <!-- 1. CHỌN MÔN HỌC & KHỐI LỚP -->
             <div class="config-card">
-              <h3 class="config-title">1. Chọn môn thi</h3>
+              <div class="card-header-flex">
+                <h3 class="config-title">1. Chọn khối lớp &amp; môn thi</h3>
+                <div class="grade-filter-pills" role="tablist">
+                  ${[10, 11, 12].map(g => `
+                    <button role="tab" class="grade-pill-btn ${this.currentGradeFilter === g ? 'active' : ''}" 
+                            onclick="CustomExam.filterGrade(${g})">
+                      Khối ${g}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
               <div class="subject-pills-row">
-                ${this.SUBJECT_OPTIONS.map(s => `
+                ${filteredSubjects.map(s => `
                   <button class="sub-pill ${this.currentSubject === s.id ? 'active' : ''}" 
                           onclick="CustomExam.changeSubject('${s.id}')">
+                    <span class="sub-dot" style="background: ${s.color};"></span>
                     ${s.name}
                   </button>
                 `).join('')}
@@ -86,7 +121,7 @@ const CustomExam = {
             <!-- 2. CHỌN PHẠM VI BÀI HỌC -->
             <div class="config-card">
               <div class="card-header-flex">
-                <h3 class="config-title">2. Chọn bài học</h3>
+                <h3 class="config-title">2. Chọn phạm vi bài học</h3>
                 <div class="select-all-group">
                   <button class="link-btn" onclick="CustomExam.toggleSelectAll(true)">Chọn tất cả</button>
                   <span class="sep">•</span>
@@ -95,7 +130,9 @@ const CustomExam = {
               </div>
 
               <div class="lessons-checklist">
-                ${this.lessons.map(l => `
+                ${this.lessons.length === 0 ? `
+                  <div class="no-lessons-hint">Đang tải dữ liệu bài học môn ${currentSub.name}...</div>
+                ` : this.lessons.map(l => `
                   <label class="lesson-check-row">
                     <input type="checkbox" 
                            value="${l.bai}" 
@@ -116,14 +153,14 @@ const CustomExam = {
                 <!-- MCQ -->
                 <div class="matrix-input-item">
                   <div class="input-label-row">
-                    <label>Trắc nghiệm nhiều lựa chọn (Phần I)</label>
-                    <span class="available-hint">Tối đa: ${available.mcq} câu</span>
+                    <label for="custom-mcq-count">Trắc nghiệm 4 lựa chọn (Phần I)</label>
+                    <span class="available-hint">Khả dụng: ${available.mcq} câu</span>
                   </div>
                   <div class="stepper-input">
                     <input type="number" 
                            id="custom-mcq-count" 
                            min="0" 
-                           max="${available.mcq}" 
+                           max="${Math.max(1, available.mcq)}" 
                            value="${Math.min(this.settings.mcqCount, available.mcq)}"
                            oninput="CustomExam.updateSetting('mcqCount', parseInt(this.value) || 0)">
                     <span class="unit-text">câu</span>
@@ -133,14 +170,14 @@ const CustomExam = {
                 <!-- TF Group -->
                 <div class="matrix-input-item">
                   <div class="input-label-row">
-                    <label>Trắc nghiệm Đúng / Sai (Phần II)</label>
-                    <span class="available-hint">Tối đa: ${available.tf} bài</span>
+                    <label for="custom-tf-count">Trắc nghiệm Đúng / Sai (Phần II)</label>
+                    <span class="available-hint">Khả dụng: ${available.tf} bài</span>
                   </div>
                   <div class="stepper-input">
                     <input type="number" 
                            id="custom-tf-count" 
                            min="0" 
-                           max="${available.tf}" 
+                           max="${Math.max(1, available.tf)}" 
                            value="${Math.min(this.settings.tfCount, available.tf)}"
                            oninput="CustomExam.updateSetting('tfCount', parseInt(this.value) || 0)">
                     <span class="unit-text">bài (mỗi bài 4 ý)</span>
@@ -151,14 +188,14 @@ const CustomExam = {
 
             <!-- 4. THỜI GIAN & ĐẢO ĐỀ -->
             <div class="config-card">
-              <h3 class="config-title">4. Thời gian & Tùy chọn đảo đề</h3>
+              <h3 class="config-title">4. Thời gian &amp; Tùy chọn đảo đề</h3>
 
               <div class="duration-presets-row">
                 <span class="duration-label">Thời gian:</span>
                 ${[
-                  { m: 15, label: '15 phút (Kiểm tra nhanh)' },
+                  { m: 15, label: '15 phút' },
                   { m: 45, label: '45 phút (1 tiết)' },
-                  { m: 50, label: '50 phút (Chuẩn thi)' },
+                  { m: 50, label: '50 phút (Chuẩn Bộ)' },
                   { m: 90, label: '90 phút' },
                   { m: 0, label: 'Không giới hạn' }
                 ].map(d => `
@@ -174,14 +211,16 @@ const CustomExam = {
                   <input type="checkbox" 
                          ${this.settings.shuffleQuestions ? 'checked' : ''}
                          onchange="CustomExam.updateSetting('shuffleQuestions', this.checked)">
-                  <span>🔀 Đảo ngẫu nhiên thứ tự các câu hỏi</span>
+                  <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" x2="21" y1="20" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" x2="21" y1="15" y2="21"/><line x1="4" x2="9" y1="4" y2="9"/></svg>
+                  <span>Đảo ngẫu nhiên thứ tự các câu hỏi</span>
                 </label>
 
                 <label class="toggle-row">
                   <input type="checkbox" 
                          ${this.settings.shuffleOptions ? 'checked' : ''}
                          onchange="CustomExam.updateSetting('shuffleOptions', this.checked)">
-                  <span>🔀 Đảo ngẫu nhiên thứ tự phương án A, B, C, D</span>
+                  <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" x2="21" y1="20" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" x2="21" y1="15" y2="21"/><line x1="4" x2="9" y1="4" y2="9"/></svg>
+                  <span>Đảo ngẫu nhiên thứ tự phương án A, B, C, D</span>
                 </label>
               </div>
             </div>
@@ -190,7 +229,10 @@ const CustomExam = {
           <!-- CỘT PHẢI: BẢNG TỔNG HỢP VÀ BẮT ĐẦU -->
           <div class="custom-exam-summary-col">
             <div class="summary-sticky-card">
-              <h3 class="summary-card-title">📋 Thông Tin Đề Thi Tạo Mới</h3>
+              <h3 class="summary-card-title">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                Thông Tin Đề Thi Tạo Mới
+              </h3>
 
               <div class="summary-meta-list">
                 <div class="summary-meta-row">
@@ -224,13 +266,16 @@ const CustomExam = {
               <div class="exam-presets-quick">
                 <div class="quick-title">Gợi ý cấu hình nhanh:</div>
                 <button class="quick-preset-btn" onclick="CustomExam.applyPreset('quick15')">
-                  ⚡ Đề kiểm tra 15 phút (10 câu TN + 1 Đ/S)
+                  <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  Đề kiểm tra 15 phút (10 câu TN + 1 Đ/S)
                 </button>
                 <button class="quick-preset-btn" onclick="CustomExam.applyPreset('mid45')">
-                  📝 Đề kiểm tra 1 tiết 45 phút (16 câu TN + 3 Đ/S)
+                  <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Đề kiểm tra 1 tiết 45 phút (16 câu TN + 3 Đ/S)
                 </button>
                 <button class="quick-preset-btn" onclick="CustomExam.applyPreset('standard50')">
-                  🎓 Đề thi học kỳ / tốt nghiệp 50 phút (24 câu TN + 4 Đ/S)
+                  <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  Đề thi học kỳ / chuẩn 50 phút (24 câu TN + 4 Đ/S)
                 </button>
               </div>
 
@@ -239,13 +284,15 @@ const CustomExam = {
                         id="start-custom-exam-btn"
                         ${(this.settings.mcqCount + this.settings.tfCount === 0 || this.selectedBais.length === 0) ? 'disabled' : ''}
                         onclick="CustomExam.generateAndStart()">
-                  🚀 Bắt đầu làm bài thi ngay
+                  <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                  Bắt đầu làm bài thi ngay
                 </button>
                 <button class="print-custom-exam-btn" 
                         id="print-custom-exam-btn"
                         ${(this.settings.mcqCount + this.settings.tfCount === 0 || this.selectedBais.length === 0) ? 'disabled' : ''}
                         onclick="CustomExam.generateAndPrint()">
-                  🖨️ Xuất bản in A4 & Phiếu OMR
+                  <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                  Xuất bản in A4 &amp; Phiếu OMR
                 </button>
               </div>
             </div>
@@ -253,6 +300,16 @@ const CustomExam = {
         </div>
       </div>
     `;
+  },
+
+  filterGrade(grade) {
+    this.currentGradeFilter = grade;
+    const match = this.SUBJECT_OPTIONS.find(s => s.grade === grade);
+    if (match) {
+      this.changeSubject(match.id);
+    } else {
+      this.render();
+    }
   },
 
   calculateAvailableQuestions() {
@@ -271,6 +328,7 @@ const CustomExam = {
     await this.loadSubjectData(subId);
     const sub = this.SUBJECT_OPTIONS.find(s => s.id === subId);
     if (sub) {
+      this.currentGradeFilter = sub.grade;
       this.settings.mcqCount = sub.defaultMcq || 20;
       this.settings.tfCount = sub.defaultTf !== undefined ? sub.defaultTf : 4;
       this.settings.durationMinutes = sub.defaultDuration || 50;
@@ -345,125 +403,75 @@ const CustomExam = {
     }
 
     try {
-      // 1. Tải toàn bộ câu hỏi từ các bài học đã chọn
       const quizData = await DataLoader.loadQuizData(
         this.currentSubject,
         this.selectedBais,
-        'exam',
-        null, // lấy hết để tự trích xuất
-        null,
-        null
+        'exam'
       );
 
-      const allMcq = quizData.questions.filter(q => q.type === 'mcq' || (!q.type && q.options));
-      const allTf = quizData.questions.filter(q => q.type === 'tf-group' || q.statements);
+      let poolMcq = [...(quizData.mcqQuestions || [])];
+      let poolTf = [...(quizData.tfGroups || [])];
 
-      // 2. Xáo trộn câu hỏi
-      let chosenMcq = this.settings.shuffleQuestions ? this.shuffleArray(allMcq) : [...allMcq];
-      let chosenTf = this.settings.shuffleQuestions ? this.shuffleArray(allTf) : [...allTf];
+      if (this.settings.shuffleQuestions) {
+        poolMcq = this.shuffleArray(poolMcq);
+        poolTf = this.shuffleArray(poolTf);
+      }
 
-      // 3. Cắt theo số lượng đã cài đặt
-      chosenMcq = chosenMcq.slice(0, this.settings.mcqCount);
-      chosenTf = chosenTf.slice(0, this.settings.tfCount);
+      const selectedMcq = poolMcq.slice(0, this.settings.mcqCount);
+      const selectedTf = poolTf.slice(0, this.settings.tfCount);
 
-      // 4. Đảo phương án A, B, C, D nếu được kích hoạt
       if (this.settings.shuffleOptions) {
-        chosenMcq = chosenMcq.map(q => {
-          if (!q.options || q.options.length === 0) return q;
-          const originalCorrect = q.correctAnswer !== undefined ? q.correctAnswer : q.correct;
-          const correctText = q.options[originalCorrect];
-
-          // Trộn các phương án
-          const shuffledOpts = this.shuffleArray(q.options);
-          const newCorrect = shuffledOpts.indexOf(correctText);
-
-          return {
-            ...q,
-            options: shuffledOpts,
-            correctAnswer: newCorrect,
-            correct: newCorrect
-          };
+        selectedMcq.forEach(q => {
+          if (q.options && q.options.length > 1) {
+            const originalCorrectText = q.options[q.correct !== undefined ? q.correct : q.correctAnswer];
+            const shuffled = this.shuffleArray(q.options);
+            q.options = shuffled;
+            q.correct = shuffled.indexOf(originalCorrectText);
+            q.correctAnswer = q.correct;
+          }
         });
       }
 
-      const finalQuestions = [...chosenMcq, ...chosenTf];
-
-      if (finalQuestions.length === 0) {
-        alert('Không tìm thấy đủ câu hỏi phù hợp với cấu hình của bạn.');
-        return null;
-      }
-
+      const finalQuestions = [...selectedMcq, ...selectedTf];
       return {
-        subject: this.currentSubject,
+        subjectId: this.currentSubject,
+        durationMinutes: this.settings.durationMinutes,
         questions: finalQuestions,
-        duration: this.settings.durationMinutes,
-        title: `Đề thi tùy biến — ${this.SUBJECT_OPTIONS.find(s=>s.id === this.currentSubject)?.name || ''}`
+        mcqCount: selectedMcq.length,
+        tfCount: selectedTf.length
       };
     } catch (e) {
-      console.error('Lỗi khi sinh đề thi:', e);
-      alert('Đã xảy ra lỗi khi tạo đề thi. Vui lòng thử lại.');
+      console.error('Lỗi khi tạo payload đề thi:', e);
+      alert('Không thể tải câu hỏi cho môn này. Vui lòng thử lại!');
       return null;
     }
   },
 
-  /**
-   * Tạo đề thi ngẫu nhiên và kích hoạt phòng thi trực tuyến
-   */
   async generateAndStart() {
-    const generatedExam = await this.buildExamPayload();
-    if (!generatedExam) return;
+    const payload = await this.buildExamPayload();
+    if (!payload) return;
 
-    try {
-      if (typeof app !== 'undefined' && app.navigateTo) {
-        app.currentSubject = this.currentSubject;
-        app.quizDuration = this.settings.durationMinutes;
-        app.navigateTo('quiz');
+    app.currentSubject = payload.subjectId;
+    app.currentQuestions = payload.questions;
+    app.examMode = 'custom';
+    app.customExamDuration = payload.durationMinutes * 60;
 
-        const quizSubEl = document.getElementById('quiz-subject');
-        if (quizSubEl) quizSubEl.textContent = generatedExam.title;
-
-        if (typeof Timer !== 'undefined') {
-          Timer.stop();
-          Timer.clearState();
-        }
-
-        if (typeof Quiz !== 'undefined') {
-          Quiz.untimed = this.settings.durationMinutes <= 0;
-          Quiz.init(generatedExam);
-        }
-
-        if (this.settings.durationMinutes > 0 && typeof Timer !== 'undefined') {
-          Timer.init(this.settings.durationMinutes, (display, remaining) => {
-            const timerEl = document.getElementById('active-timer');
-            const timerDisplay = document.getElementById('active-timer-display');
-            if (timerDisplay) timerDisplay.textContent = display;
-            if (timerEl) {
-              timerEl.classList.remove('warning', 'danger');
-              if (remaining <= 60) timerEl.classList.add('danger');
-              else if (remaining <= 300) timerEl.classList.add('warning');
-            }
-          }, () => {
-            alert('Hết thời gian làm bài! Hệ thống tự động nộp bài thi.');
-            if (typeof Quiz !== 'undefined') Quiz.submit(true);
-          });
-        }
-      }
-    } catch (e) {
-      console.error('Lỗi khi kích hoạt phòng thi:', e);
-    }
+    app.navigateTo('quiz');
   },
 
-  /**
-   * Tạo đề thi ngẫu nhiên và mở giao diện in ấn A4 & OMR
-   */
   async generateAndPrint() {
-    const generatedExam = await this.buildExamPayload();
-    if (!generatedExam) return;
+    const payload = await this.buildExamPayload();
+    if (!payload) return;
 
-    if (typeof PrintableExam !== 'undefined') {
-      PrintableExam.open(generatedExam);
+    if (typeof PrintableExam !== 'undefined' && PrintableExam.openPrintPreview) {
+      PrintableExam.openPrintPreview({
+        subjectId: payload.subjectId,
+        subjectName: (this.SUBJECT_OPTIONS.find(s => s.id === payload.subjectId) || {}).name || payload.subjectId,
+        durationMinutes: payload.durationMinutes,
+        questions: payload.questions
+      });
     } else {
-      alert('Mô-đun in ấn PrintableExam chưa sẵn sàng.');
+      alert('Tính năng in đề thi đang được tải...');
     }
   }
 };
