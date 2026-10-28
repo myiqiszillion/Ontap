@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post Thông Báo - Admin</title>
+    <title>Hệ Thống Quản Trị & Thu Thập Sinh Đề — THPT Nguyễn Thị Minh Khai</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
 <body id="app-body" class="dark-mode">
 
@@ -17,51 +19,203 @@
         <div class="header-inner">
             <div class="logo">
                 <img src="assets/logo.png" alt="NTMK Logo" class="logo-img">
-                <span class="logo-text">Admin Panel</span>
+                <div style="display:flex;flex-direction:column;">
+                    <span class="logo-text">Admin Panel — THPT Nguyễn Thị Minh Khai</span>
+                    <span style="font-size:0.75rem;color:var(--text-muted,#94a3b8);font-weight:600;">HỆ THỐNG QUẢN TRỊ & THU THẬP SINH ĐỀ GDPT 2018</span>
+                </div>
             </div>
             <button class="back-btn" onclick="window.location.href='/'" style="margin-left: auto;">Về Trang Chủ</button>
         </div>
     </header>
 
-    <div class="admin-container glass-card">
-        <h2 class="admin-title">Đăng Thông Báo Mới (Database Supabase)</h2>
-        
-        <form id="announcement-form">
-            <div class="form-group">
-                <label for="title">Tiêu đề bài viết (*)</label>
-                <input type="text" id="title" placeholder="Nhập tiêu đề..." required>
-            </div>
-            
-            <div class="form-group">
-                <label for="content">Nội dung chi tiết (*)</label>
-                <textarea id="content" placeholder="Bạn có thể viết câu hỏi, đáp án, hoặc bài viết hay vào đây..." required style="min-height: 150px;"></textarea>
-            </div>
-            
-            <div class="form-group">
-                <label for="link">Đường dẫn / Link đính kèm (Tuỳ chọn)</label>
-                <input type="url" id="link" placeholder="https://...">
+    <div class="admin-container glass-card" style="max-width: 960px;">
+        <!-- TAB BAR -->
+        <div class="admin-tab-bar" role="tablist">
+            <button type="button" class="admin-tab-btn active" id="tab-crawler-btn" onclick="Admin.switchTab('crawler')">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                <span>Trạm Thu Thập & Tự Động Sinh Đề (QĐ 764)</span>
+            </button>
+            <button type="button" class="admin-tab-btn" id="tab-announcements-btn" onclick="Admin.switchTab('announcements')">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                <span>Đăng & Quản Lý Thông Báo</span>
+            </button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             PANEL 1: CRAWLER & AUTO EXAM MAKER (DECISION 764)
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="crawler-panel" class="crawler-panel active">
+            <h2 class="admin-title" style="margin-bottom: 8px;">Trạm Thu Thập & Tự Động Sinh Đề</h2>
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">
+                Thu thập đề thi từ các kho học liệu mở (ToánMath, Thư Viện Học Liệu, VietJack), tự động phân tích 3 phần theo QĐ 764/QĐ-BGDĐT và tạo 4 mã đề hoán vị (101 - 104) chuẩn trường THPT Nguyễn Thị Minh Khai.
+            </p>
+
+            <!-- 1. SOURCE SELECTOR CARDS -->
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 10px;">1. Chọn kho lưu trữ đề thi nguồn:</div>
+            <div class="crawler-sources-grid" id="crawler-sources-grid">
+                <!-- Dynamically loaded or preset cards -->
+                <div class="crawler-source-card selected" data-source="toanmath" onclick="Admin.selectCrawlerSource('toanmath')">
+                    <div class="crawler-source-title">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <span>TOANMATH.com</span>
+                    </div>
+                    <div class="crawler-source-desc">Đề thi thử tốt nghiệp THPT, đề học kỳ môn Toán 10, 11, 12 chuẩn cấu trúc Bộ GD&ĐT.</div>
+                </div>
+
+                <div class="crawler-source-card" data-source="thuvienhoclieu" onclick="Admin.selectCrawlerSource('thuvienhoclieu')">
+                    <div class="crawler-source-title">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span>THUVIENHOCLIEU.com</span>
+                    </div>
+                    <div class="crawler-source-desc">Tài liệu học liệu mở đa môn: Toán, Vật lí, Hóa học, Tiếng Anh theo CT GDPT 2018.</div>
+                </div>
+
+                <div class="crawler-source-card" data-source="vietjack" onclick="Admin.selectCrawlerSource('vietjack')">
+                    <div class="crawler-source-title">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span>VIETJACK.com</span>
+                    </div>
+                    <div class="crawler-source-desc">Ngân hàng đề thi trắc nghiệm 3 phần có bảng đáp án và hướng dẫn giải chi tiết.</div>
+                </div>
+
+                <div class="crawler-source-card" data-source="custom" onclick="Admin.selectCrawlerSource('custom')">
+                    <div class="crawler-source-title">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                        <span>Tùy biến / Dán Đề</span>
+                    </div>
+                    <div class="crawler-source-desc">Nhập đường dẫn web bất kỳ hoặc dán trực tiếp nội dung đề thi dạng văn bản / HTML.</div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Hình ảnh đính kèm (Có thể chọn hoặc dán nhiều ảnh)</label>
-                <div id="drop-zone" class="drop-zone">
-                    <svg class="drop-zone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
-                    <span class="drop-zone-text">Kéo thả ảnh vào đây, hoặc <span style="color:var(--primary);cursor:pointer">chọn tệp</span><br><small style="color:var(--text-muted);font-weight:normal">Hỗ trợ <code>Ctrl + V</code> để dán nhiều ảnh trực tiếp</small></span>
-                    <input type="file" id="image" accept="image/*" multiple class="drop-zone-input">
+            <!-- 2. PARAMETERS -->
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 10px;">2. Tham số đề thi & Liên kết nguồn:</div>
+            <div class="crawler-form-row">
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="crawler-subject">Môn học</label>
+                    <select id="crawler-subject" style="padding: 13px; border-radius: 12px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">
+                        <option value="toan" selected>Toán học</option>
+                        <option value="vatli">Vật lí</option>
+                        <option value="hoahoc">Hóa học</option>
+                        <option value="tienganh">Tiếng Anh</option>
+                    </select>
                 </div>
-                <div id="image-preview" class="admin-image-grid" style="display: none;">
-                    <!-- Previews injected here -->
+
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="crawler-grade">Khối lớp</label>
+                    <select id="crawler-grade" style="padding: 13px; border-radius: 12px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">
+                        <option value="12" selected>Lớp 12</option>
+                        <option value="11">Lớp 11</option>
+                        <option value="10">Lớp 10</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="crawler-url">Liên kết đề thi (URL)</label>
+                    <input type="url" id="crawler-url" placeholder="https://toanmath.com/de-thi-thu-tot-nghiep-thpt..." value="https://toanmath.com/de-thi-thu-tot-nghiep-thpt-2025-mon-toan-so-gd-dt-binh-duong.html">
                 </div>
             </div>
-            
-            <button type="submit" class="submit-btn" id="submit-btn">Đăng Lên Website</button>
-        </form>
-    </div>
 
-    <div class="management-section">
-        <h2 class="section-title">Quản lý Thông báo</h2>
-        <div id="announcements-list" class="announcements-list">
-            <p style="text-align: center; color: var(--text-muted);">Đang tải thông báo...</p>
+            <div class="form-group" style="margin-top: 14px;">
+                <label for="crawler-raw-text" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>Hoặc dán trực tiếp nội dung văn bản đề thi (Kèm bảng đáp án / Hướng dẫn giải nếu có):</span>
+                    <button type="button" class="btn-crawler btn-crawler-outline" style="padding: 4px 10px; font-size: 0.78rem;" onclick="Admin.loadPresetSampleToTextarea()">Nạp đề mẫu chuẩn Bộ GD&ĐT</button>
+                </label>
+                <textarea id="crawler-raw-text" placeholder="Dán nội dung đề thi tại đây (Có thể gồm Phần I, Phần II, Phần III, Bảng đáp án, Hướng dẫn giải chi tiết)..." style="min-height: 140px; font-family: monospace; font-size: 0.88rem;"></textarea>
+            </div>
+
+            <!-- 3. ACTIONS -->
+            <div class="crawler-actions-bar">
+                <button type="button" class="btn-crawler btn-crawler-primary" id="btn-crawl-parse" onclick="Admin.handleCrawlAndParse()">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    <span>Thu Thập & Phân Tích Đề</span>
+                </button>
+
+                <button type="button" class="btn-crawler btn-crawler-variants" id="btn-auto-make-variants" onclick="Admin.handleAutoMakeVariants()">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <span>Tự Động Sinh 4 Mã Đề (101 - 104)</span>
+                </button>
+
+                <button type="button" class="btn-crawler btn-crawler-success" id="btn-save-to-bank" onclick="Admin.handleSaveToBank()">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
+                    <span>Lưu Vào Ngân Hàng Câu Hỏi</span>
+                </button>
+
+                <button type="button" class="btn-crawler btn-crawler-outline" id="btn-open-printable" onclick="Admin.handleOpenPrintableStudio()">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    <span>Mở Studio In Đề & Phiếu OMR</span>
+                </button>
+            </div>
+
+            <!-- 4. LIVE PREVIEW & RESULTS -->
+            <div id="crawler-results-card" class="crawler-results-card" style="display: none;">
+                <div class="crawler-results-header">
+                    <div class="crawler-meta-school" id="preview-meta-school">SỞ GD&ĐT BÌNH DƯƠNG — TRƯỜNG THPT NGUYỄN THỊ MINH KHAI</div>
+                    <h3 class="crawler-meta-title" id="preview-meta-title">Đề Khảo Sát Chất Lượng — GDPT 2018</h3>
+                    <div class="crawler-stats-chips" id="preview-stats-chips">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- VARIANT SELECTOR TABS -->
+                <div class="crawler-variant-nav" id="preview-variant-nav">
+                    <button type="button" class="crawler-vtab-btn active" onclick="Admin.selectVariantView('raw')">Đề Phân Tích (Gốc)</button>
+                    <button type="button" class="crawler-vtab-btn" id="vbtn-101" onclick="Admin.selectVariantView('101')" style="display:none;">Mã Đề 101</button>
+                    <button type="button" class="crawler-vtab-btn" id="vbtn-102" onclick="Admin.selectVariantView('102')" style="display:none;">Mã Đề 102</button>
+                    <button type="button" class="crawler-vtab-btn" id="vbtn-103" onclick="Admin.selectVariantView('103')" style="display:none;">Mã Đề 103</button>
+                    <button type="button" class="crawler-vtab-btn" id="vbtn-104" onclick="Admin.selectVariantView('104')" style="display:none;">Mã Đề 104</button>
+                    <button type="button" class="crawler-vtab-btn" id="vbtn-matrix" onclick="Admin.selectVariantView('matrix')" style="display:none;">Bảng Đáp Án Tổng Hợp</button>
+                </div>
+
+                <!-- PREVIEW CONTAINER -->
+                <div id="preview-content-area" class="crawler-q-list">
+                    <!-- Questions or Matrix injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             PANEL 2: ANNOUNCEMENTS MANAGEMENT (PRESERVED)
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="announcements-panel" class="crawler-panel">
+            <h2 class="admin-title">Đăng Thông Báo Mới (Database Supabase)</h2>
+            
+            <form id="announcement-form">
+                <div class="form-group">
+                    <label for="title">Tiêu đề bài viết (*)</label>
+                    <input type="text" id="title" placeholder="Nhập tiêu đề..." required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">Nội dung chi tiết (*)</label>
+                    <textarea id="content" placeholder="Bạn có thể viết câu hỏi, đáp án, hoặc bài viết hay vào đây..." required style="min-height: 150px;"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="link">Đường dẫn / Link đính kèm (Tuỳ chọn)</label>
+                    <input type="url" id="link" placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label>Hình ảnh đính kèm (Có thể chọn hoặc dán nhiều ảnh)</label>
+                    <div id="drop-zone" class="drop-zone">
+                        <svg class="drop-zone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                        <span class="drop-zone-text">Kéo thả ảnh vào đây, hoặc <span style="color:var(--primary);cursor:pointer">chọn tệp</span><br><small style="color:var(--text-muted);font-weight:normal">Hỗ trợ <code>Ctrl + V</code> để dán nhiều ảnh trực tiếp</small></span>
+                        <input type="file" id="image" accept="image/*" multiple class="drop-zone-input">
+                    </div>
+                    <div id="image-preview" class="admin-image-grid" style="display: none;">
+                        <!-- Previews injected here -->
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submit-btn">Đăng Lên Website</button>
+            </form>
+
+            <div class="management-section" style="margin-top: 40px;">
+                <h2 class="section-title">Quản lý Thông báo</h2>
+                <div id="announcements-list" class="announcements-list">
+                    <p style="text-align: center; color: var(--text-muted);">Đang tải thông báo...</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

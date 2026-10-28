@@ -301,6 +301,12 @@ app.all('/api/v2/auth*', (req, res) => {
   authV2Handler(req, res);
 });
 
+// ═════════════════════════════════════════════════════════════
+// CRAWLER & AUTO EXAM MAKER ROUTES (GDPT 2018 / Decision 764)
+// ═════════════════════════════════════════════════════════════
+const crawlerRouter = require('./api/v2/crawler.js');
+app.use('/api/v2/crawler', crawlerRouter);
+
 
 
 // ═════════════════════════════════════════════════════════════
