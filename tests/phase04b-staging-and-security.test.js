@@ -196,17 +196,17 @@ describe('NTMK Phase 04B — Cloud Staging, Demo Isolation & Security Acceptance
   // TASK 2: MIGRATION RUNNER STATIC INTEGRITY
   // ═════════════════════════════════════════════════════════════
   describe('Task 2 — Migration Runner Static Verification & Guarding', () => {
-    test('2.1 Static validation verifies 6 forward migrations with transactions and excludes rollback', () => {
+    test('2.1 Static validation verifies forward migrations with transactions and excludes rollback', () => {
       const runner = new MigrationRunner();
       const report = runner.validateStaticAll();
       assert.equal(report.valid, true);
       assert.equal(report.errors.length, 0);
-      assert.equal(report.validatedFiles.length, 6);
+      assert.equal(report.validatedFiles.length, 7);
 
       // Ensure 004 is NOT in forward list
       assert.equal(runner.forwardList.includes('004_rollback_phase02c.sql'), false);
 
-      // Ensure all 6 forward migrations have transactions
+      // Ensure all 7 forward migrations have transactions
       report.validatedFiles.forEach(f => {
         assert.equal(f.hasTransaction, true, `${f.fileName} must have BEGIN/COMMIT`);
       });

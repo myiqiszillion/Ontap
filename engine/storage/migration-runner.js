@@ -3,7 +3,7 @@
  * NTMK Rebuild Phase 04B — Task 2
  *
  * Responsibilities:
- * - Define strict, deterministic forward migration order (001, 002, 003, 005, 006, 007).
+ * - Define strict, deterministic forward migration order (001, 002, 003, 005, 006, 007, 008).
  * - Strictly exclude rollback scripts (004_rollback_phase02c.sql) from forward migration.
  * - Perform static validation (transactions, idempotent guards, RLS, foreign keys).
  * - Safe dry-run and live transactional application when credentials are provided.
@@ -22,7 +22,8 @@ const FORWARD_MIGRATIONS = [
   '003_cloud_concurrency_and_audit.sql',
   '005_diagnostic_skill_graph.sql',
   '006_personalized_learning_planner.sql',
-  '007_student_auth_and_pilot_content.sql'
+  '007_student_auth_and_pilot_content.sql',
+  '008_multi_tenant_saas_core.sql'
 ];
 
 const ROLLBACK_MIGRATIONS = {
