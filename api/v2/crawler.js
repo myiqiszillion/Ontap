@@ -1,5 +1,5 @@
 /**
- * Crawler & Auto Exam Maker API Handler
+ * Crawler & Auto Exam Maker API Handler (Universal Express & Vercel Serverless)
  * NTMK Rebuild Phase GDPT 2018 / Decision 764/QĐ-BGDĐT
  *
  * Exposes endpoints:
@@ -247,4 +247,28 @@ router.post('/save-to-bank', (req, res) => {
   }
 });
 
-module.exports = router;
+/**
+ * Universal Handler for Express & Vercel Serverless Functions
+ */
+function crawlerHandler(req, res, next) {
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Admin-Key');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
+  // Handle Vercel rewrite parameter (?action=...)
+  if (req.query?.action) {
+    req.url = '/' + req.query.action;
+  }
+
+  return router(req, res, next || (() => {
+    return res.status(404).json({ success: false, error: 'Endpoint not found' });
+  }));
+}
+
+Object.setPrototypeOf(crawlerHandler, router);
+module.exports = crawlerHandler;
