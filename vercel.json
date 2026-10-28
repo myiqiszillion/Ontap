@@ -3,6 +3,10 @@
   "outputDirectory": "public",
   "rewrites": [
     { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/api/delete-announcement", "destination": "/api/announcements" },
+    { "source": "/api/pin-announcement", "destination": "/api/announcements" },
+    { "source": "/api/v2/manage", "destination": "/api/v2/admin" },
+    { "source": "/api/v2/sync", "destination": "/api/v2/admin?action=sync" },
     { "source": "/api/v2/exam/:action", "destination": "/api/v2/questions?action=:action" },
     { "source": "/api/v2/exam-blueprint", "destination": "/api/v2/questions?action=blueprint" },
     { "source": "/api/v2/sources", "destination": "/api/v2/questions?action=sources" },

@@ -312,7 +312,8 @@ app.use('/api/v2/crawler', crawlerRouter);
 // ═════════════════════════════════════════════════════════════
 // ADMIN API ROUTES (Sync Manager, Review Queue, Coverage Matrix)
 // ═════════════════════════════════════════════════════════════
-const { adminHandlers } = require('./api/v2/admin.js');
+const adminModule = require('./api/v2/admin.js');
+const { adminHandlers } = adminModule;
 
 app.get('/api/admin/status', (req, res) => adminHandlers.status(req, res));
 app.get('/api/admin/health', (req, res) => adminHandlers.health(req, res));
@@ -336,8 +337,8 @@ app.post('/api/admin/reviewers/rectify-unverified', (req, res) => adminHandlers.
 // STATIC & PAGE ROUTES
 // ═════════════════════════════════════════════════════════════
 
-app.all('/api/v2/manage', require('./api/v2/manage.js'));
-app.all('/api/v2/sync', require('./api/v2/sync.js'));
+app.all('/api/v2/manage', adminModule.manage);
+app.all('/api/v2/sync', adminModule.sync);
 // Admin page
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));

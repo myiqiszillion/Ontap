@@ -588,4 +588,94 @@ const adminHandlers = {
   }
 };
 
-module.exports = { adminHandlers, getSyncManager, extractReviewer };
+async function syncHandler(req, res) {
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  if (!requireAdmin(req, res)) return;
+  try {
+    if (!req.body?.connectorId) return res.status(400).json({ error: 'Explicit connectorId required' });
+    const result = await getSyncManager().syncConnector(req.body.connectorId, req.body);
+    return res.status(200).json(result);
+  } catch (e) {
+    return res.status(503).json({ error: e.message });
+  }
+}
+
+async function manageHandler(req, res) {
+  const actions = {
+    status: ['GET', 'status'],
+    health: ['GET', 'health'],
+    history: ['GET', 'syncHistory'],
+    syncHistory: ['GET', 'syncHistory'],
+    review: ['GET', 'reviewList'],
+    reviewList: ['GET', 'reviewList'],
+    coverage: ['GET', 'coverage'],
+    bank: ['GET', 'bankQuery'],
+    bankQuery: ['GET', 'bankQuery'],
+    verify: ['POST', 'verifyQuestion'],
+    verifyQuestion: ['POST', 'verifyQuestion'],
+    reject: ['POST', 'rejectQuestion'],
+    rejectQuestion: ['POST', 'rejectQuestion'],
+    publish: ['POST', 'publishQuestion'],
+    publishQuestion: ['POST', 'publishQuestion'],
+    draft: ['POST', 'draftQuestion'],
+    draftQuestion: ['POST', 'draftQuestion'],
+    revision: ['POST', 'revisionQuestion'],
+    revisionQuestion: ['POST', 'revisionQuestion'],
+    rollback: ['POST', 'rollbackQuestion'],
+    rollbackQuestion: ['POST', 'rollbackQuestion'],
+    reviewers: ['GET', 'listReviewers'],
+    listReviewers: ['GET', 'listReviewers'],
+    sync: ['POST', 'sync']
+  };
+
+  const actionKey = req.query?.action;
+  const action = actions[actionKey];
+  if (!action || req.method !== action[0]) {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+  req.params = { ...(req.params || {}), id: req.query.id || req.params?.id };
+  try {
+    return await adminHandlers[action[1]](req, res);
+  } catch (e) {
+    return res.status(503).json({ error: e.message });
+  }
+}
+
+async function adminHandler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Admin-Key, X-Reviewer-Token, Authorization');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
+  const action = req.query?.action;
+
+  if (action === 'sync') {
+    return syncHandler(req, res);
+  }
+
+  if (action) {
+    return manageHandler(req, res);
+  }
+
+  if (req.method === 'GET') {
+    return adminHandlers.status(req, res);
+  }
+
+  return res.status(400).json({ error: 'Missing or unsupported action parameter' });
+}
+
+adminHandler.adminHandlers = adminHandlers;
+adminHandler.getSyncManager = getSyncManager;
+adminHandler.extractReviewer = extractReviewer;
+adminHandler.manage = manageHandler;
+adminHandler.sync = syncHandler;
+
+module.exports = adminHandler;
+module.exports.adminHandlers = adminHandlers;
+module.exports.getSyncManager = getSyncManager;
+module.exports.extractReviewer = extractReviewer;
+module.exports.manage = manageHandler;
+module.exports.sync = syncHandler;
