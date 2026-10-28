@@ -302,12 +302,18 @@ app.all('/api/v2/auth*', (req, res) => {
 });
 
 // ═════════════════════════════════════════════════════════════
+// SAAS MULTI-TENANT CONFIGURATION & WHITE-LABEL ROUTES
+// ═════════════════════════════════════════════════════════════
+const tenantV2Handler = require('./api/v2/tenant.js');
+app.all('/api/v2/tenant*', (req, res) => {
+  tenantV2Handler(req, res);
+});
+
+// ═════════════════════════════════════════════════════════════
 // CRAWLER & AUTO EXAM MAKER ROUTES (GDPT 2018 / Decision 764)
 // ═════════════════════════════════════════════════════════════
 const crawlerRouter = require('./api/v2/crawler.js');
 app.use('/api/v2/crawler', crawlerRouter);
-
-
 
 // ═════════════════════════════════════════════════════════════
 // ADMIN API ROUTES (Sync Manager, Review Queue, Coverage Matrix)

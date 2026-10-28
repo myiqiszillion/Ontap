@@ -43,10 +43,10 @@
      ═══════════════════════════════════════════════════════════ -->
   <header class="app-shell-header">
     <div class="header-container">
-      <a href="#dashboard" class="brand-logo" onclick="app.navigateTo('dashboard'); return false;" aria-label="Trang chủ NTMK — THPT Nguyễn Thị Minh Khai">
-        <img src="assets/logo.png" alt="NTMK Logo" class="brand-logo-img">
-        <span class="brand-title">NTMK</span>
-        <span class="brand-badge">THPT NTMK • BÌNH DƯƠNG</span>
+      <a href="#dashboard" class="brand-logo" onclick="app.navigateTo('dashboard'); return false;" aria-label="Trang chủ NTMK">
+        <img src="assets/logo.png" alt="Logo" class="brand-logo-img" data-tenant="logo">
+        <span class="brand-title" data-tenant="name">NTMK</span>
+        <span class="brand-badge" data-tenant="badge">THPT NTMK • BÌNH DƯƠNG</span>
       </a>
 
       <nav class="header-nav-desktop" aria-label="Điều hướng chính">
@@ -805,6 +805,7 @@
   <script defer src="js/command-palette.js?v=20261028-v6"></script>
   <script defer src="js/confetti.js?v=20261028-v6"></script>
   <script defer src="js/result-card.js?v=20261028-v6"></script>
+  <script defer src="js/tenant-branding.js?v=20261028-v6"></script>
   <script defer src="js/app.js?v=20261028-v6"></script>
   <script>
     if ('serviceWorker' in navigator) {

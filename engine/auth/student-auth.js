@@ -1,16 +1,17 @@
 /**
  * Student Identity, Authentication & Secure Access Control Module
- * NTMK Rebuild Phase 04A — Task 3
+ * NTMK Rebuild Phase 04A & SaaS Multi-Tenant Evolution
  *
  * Security & Privacy Principles:
  * 1. Minimal PII: Collects only essential learning data (email/username, grade, display name).
- * 2. Never trust client-provided user IDs in query/body; identity strictly derived from validated session token.
- * 3. Cryptographically signed tokens (HMAC-SHA256) + Supabase Auth JWT compatibility.
- * 4. Cross-user isolation: Student A cannot read/modify Student B resources.
- * 5. Tamper-proof Guest Sessions: Guests receive signed tokens scoped to guest permissions.
- * 6. Smooth Guest-to-Student upgrade: Migrates guest learning records to new account upon registration/login.
- * 7. Secure password hashing: Salted scrypt key derivation.
- * 8. Account deletion: Secure scrub of student account and personal identifiers.
+ * 2. Multi-tenant awareness: Associates accounts and sessions with tenant_id.
+ * 3. Never trust client-provided user IDs in query/body; identity strictly derived from validated session token.
+ * 4. Cryptographically signed tokens (HMAC-SHA256) + Supabase Auth JWT compatibility.
+ * 5. Cross-user & Cross-tenant isolation: Tenant A cannot access Tenant B resources.
+ * 6. Tamper-proof Guest Sessions: Guests receive signed tokens scoped to guest permissions and tenant.
+ * 7. Smooth Guest-to-Student upgrade: Migrates guest learning records to new account upon registration/login.
+ * 8. Secure password hashing: Salted scrypt key derivation.
+ * 9. Account deletion: Secure scrub of student account and personal identifiers.
  */
 
 const crypto = require('crypto');
@@ -23,6 +24,7 @@ const AUTH_ROLES = {
   ADMIN: 'admin'
 };
 
+const DEFAULT_TENANT_ID = 'a0000000-0000-0000-0000-000000000001'; // Default THPT NTMK
 const path = require('path');
 const fs = require('fs');
 
@@ -32,6 +34,8 @@ class StudentAuthManager {
   constructor(options = {}) {
     this.secret = options.secret || DEFAULT_SECRET;
     this.tokenTtlMs = options.tokenTtlMs || 7 * 24 * 60 * 60 * 1000; // 7 days
+    this.defaultTenantId = options.defaultTenantId || DEFAULT_TENANT_ID;
+    this.storageAdapter = options.storageAdapter || null;
     this.users = new Map(); // id -> user object
     this.sessions = new Map(); // token -> session info
     this.emailIndex = new Map(); // lower(email) -> user id
@@ -62,6 +66,7 @@ class StudentAuthManager {
       }
       if (Array.isArray(data.users)) {
         for (const u of data.users) {
+          if (!u.tenantId) u.tenantId = this.defaultTenantId;
           this.users.set(u.id, u);
           if (u.email) this.emailIndex.set(u.email.toLowerCase(), u.id);
         }
@@ -86,6 +91,7 @@ class StudentAuthManager {
           displayName: u.displayName,
           grade: u.grade,
           role: u.role,
+          tenantId: u.tenantId || this.defaultTenantId,
           passwordHash: u.passwordHash,
           isGuest: u.isGuest,
           createdAt: u.createdAt
@@ -105,7 +111,8 @@ class StudentAuthManager {
           email: 'alice@student.ntmk.internal',
           password: 'AlicePassword123!',
           displayName: 'Alice Student (Test)',
-          grade: 10
+          grade: 10,
+          tenantId: this.defaultTenantId
         });
       } catch (e) {
         // Ignore if already seeded
@@ -118,7 +125,8 @@ class StudentAuthManager {
           email: 'bob@student.ntmk.internal',
           password: 'BobPassword123!',
           displayName: 'Bob Student (Test)',
-          grade: 11
+          grade: 11,
+          tenantId: this.defaultTenantId
         });
       } catch (e) {
         // Ignore if already seeded
@@ -155,7 +163,7 @@ class StudentAuthManager {
   /**
    * Register a new student account
    */
-  registerStudent({ email, password, displayName, grade, id }) {
+  registerStudent({ email, password, displayName, grade, id, tenantId }) {
     if (!email || typeof email !== 'string' || !email.includes('@')) {
       throw new Error('Email không hợp lệ.');
     }
@@ -167,6 +175,7 @@ class StudentAuthManager {
     const userId = id || `std_${crypto.randomUUID()}`;
     const passwordHash = this.hashPassword(password);
     const now = new Date().toISOString();
+    const finalTenantId = tenantId || this.defaultTenantId;
 
     const user = {
       id: userId,
@@ -174,6 +183,7 @@ class StudentAuthManager {
       displayName: (displayName || email.split('@')[0]).trim(),
       grade: [10, 11, 12].includes(Number(grade)) ? Number(grade) : 10,
       role: AUTH_ROLES.STUDENT,
+      tenantId: finalTenantId,
       passwordHash,
       createdAt: now,
       updatedAt: now,
@@ -239,6 +249,7 @@ class StudentAuthManager {
       displayName: 'Khách',
       grade: [10, 11, 12].includes(Number(metadata.grade)) ? Number(metadata.grade) : 10,
       role: AUTH_ROLES.GUEST,
+      tenantId: metadata.tenantId || this.defaultTenantId,
       isGuest: true,
       createdAt: new Date().toISOString()
     };
@@ -250,11 +261,13 @@ class StudentAuthManager {
    */
   createSession(user) {
     const expiresAt = Date.now() + this.tokenTtlMs;
+    const tenantId = user.tenantId || this.defaultTenantId;
     const payload = {
       sub: user.id,
       role: user.role,
       isGuest: Boolean(user.isGuest),
       email: user.email || null,
+      tenantId,
       exp: expiresAt,
       iat: Date.now()
     };
@@ -274,6 +287,7 @@ class StudentAuthManager {
         displayName: user.displayName,
         grade: user.grade,
         role: user.role,
+        tenantId,
         isGuest: Boolean(user.isGuest)
       },
       expiresAt: new Date(expiresAt).toISOString()
@@ -307,6 +321,7 @@ class StudentAuthManager {
         return null;
       }
       if (new Date(sess.expiresAt).getTime() > Date.now()) {
+        if (!sess.user.tenantId) sess.user.tenantId = this.defaultTenantId;
         return sess.user;
       }
       this.sessions.delete(token);
@@ -348,6 +363,7 @@ class StudentAuthManager {
             displayName: user.displayName,
             grade: user.grade,
             role: user.role,
+            tenantId: user.tenantId || payload.tenantId || this.defaultTenantId,
             isGuest: false
           };
         }
@@ -355,6 +371,7 @@ class StudentAuthManager {
         return {
           id: payload.sub,
           role: payload.role,
+          tenantId: payload.tenantId || this.defaultTenantId,
           isGuest: true,
           email: null
         };
@@ -379,6 +396,7 @@ class StudentAuthManager {
                 id: payload.sub,
                 email: payload.email,
                 role: payload.role === 'authenticated' ? AUTH_ROLES.STUDENT : AUTH_ROLES.GUEST,
+                tenantId: payload.app_metadata?.tenantId || payload.user_metadata?.tenantId || this.defaultTenantId,
                 isGuest: payload.role !== 'authenticated'
               };
             }
@@ -415,7 +433,12 @@ class StudentAuthManager {
     }
 
     if (!token) return null;
-    return this.verifySessionToken(token);
+    const user = this.verifySessionToken(token);
+    if (user && req) {
+      req.authenticatedUser = user;
+      req.tenantId = user.tenantId;
+    }
+    return user;
   }
 
   /**
@@ -433,6 +456,26 @@ class StudentAuthManager {
     }
     if (authenticatedUser.id !== targetOwnerId) {
       const err = new Error('Bạn không có quyền truy cập dữ liệu của học sinh khác.');
+      err.statusCode = 403;
+      throw err;
+    }
+    return true;
+  }
+
+  /**
+   * Enforce tenant-level isolation
+   */
+  assertTenantIsolation(authenticatedUser, targetTenantId) {
+    if (!authenticatedUser) {
+      const err = new Error('Yêu cầu đăng nhập để truy cập tài nguyên.');
+      err.statusCode = 401;
+      throw err;
+    }
+    if (authenticatedUser.role === AUTH_ROLES.ADMIN) {
+      return true; // Platform admin has multi-tenant oversight
+    }
+    if (targetTenantId && authenticatedUser.tenantId && authenticatedUser.tenantId !== targetTenantId) {
+      const err = new Error('Bạn không có quyền truy cập dữ liệu của trường/tổ chức khác.');
       err.statusCode = 403;
       throw err;
     }
@@ -549,5 +592,6 @@ const defaultStudentAuth = new StudentAuthManager({
 module.exports = {
   StudentAuthManager,
   defaultStudentAuth,
-  AUTH_ROLES
+  AUTH_ROLES,
+  DEFAULT_TENANT_ID
 };

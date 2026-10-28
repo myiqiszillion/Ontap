@@ -1,20 +1,24 @@
 /**
  * Learning Storage Repository & Local Adapter
- * NTMK Rebuild Phase 03B — Task 10
+ * NTMK Rebuild Phase 03B & SaaS Multi-Tenant Evolution
  *
  * Responsibilities:
  * - Abstract persistence layer for Learning Profiles, Plans, Tasks, Versions, and Review Schedules.
+ * - Supports multi-tenant isolation via tenantId scoping.
  * - Supports in-memory & local file persistence (LocalState) for development & testing.
- * - Fully compatible with future PostgreSQL / Supabase repository bridge.
+ * - Fully compatible with PostgreSQL / Supabase repository bridge.
  * - Enforces data integrity: avoids overwriting historical records.
  */
 
 const path = require('path');
 const LocalState = require('../storage/local-state.js');
 
+const DEFAULT_TENANT_ID = 'a0000000-0000-0000-0000-000000000001';
+
 class LearningStorage {
   constructor(options = {}) {
     this.storageAdapter = options.storageAdapter || null;
+    this.defaultTenantId = options.defaultTenantId || DEFAULT_TENANT_ID;
     this.baseDir = options.baseDir || path.join(process.cwd(), '.ntmk');
 
     this.profilesStore = new LocalState(path.join(this.baseDir, 'learning-profiles.json'));
@@ -32,18 +36,28 @@ class LearningStorage {
     const key = profile.profileId || profile.userId;
     all[key] = {
       ...profile,
+      tenantId: profile.tenantId || this.defaultTenantId,
       updatedAt: new Date().toISOString()
     };
     this.profilesStore.write(all);
     return all[key];
   }
 
-  getProfile(userId) {
+  getProfile(userId, options = {}) {
     const all = this.profilesStore.read({});
+    const targetTenantId = typeof options === 'string' ? options : (options && options.tenantId);
     // Search by profileId or userId
-    if (all[userId]) return all[userId];
+    if (all[userId]) {
+      const p = all[userId];
+      if (targetTenantId && p.tenantId && p.tenantId !== targetTenantId) return null;
+      return p;
+    }
     for (const k of Object.keys(all)) {
-      if (all[k].userId === userId) return all[k];
+      if (all[k].userId === userId) {
+        const p = all[k];
+        if (targetTenantId && p.tenantId && p.tenantId !== targetTenantId) continue;
+        return p;
+      }
     }
     return null;
   }
@@ -54,6 +68,7 @@ class LearningStorage {
     const all = this.plansStore.read({});
     all[plan.planId] = {
       ...plan,
+      tenantId: plan.tenantId || this.defaultTenantId,
       updatedAt: new Date().toISOString()
     };
     this.plansStore.write(all);
@@ -62,7 +77,10 @@ class LearningStorage {
     if (Array.isArray(plan.tasks)) {
       const allTasks = this.tasksStore.read({});
       for (const t of plan.tasks) {
-        allTasks[t.taskId] = t;
+        allTasks[t.taskId] = {
+          ...t,
+          tenantId: t.tenantId || plan.tenantId || this.defaultTenantId
+        };
       }
       this.tasksStore.write(allTasks);
     }
@@ -75,14 +93,19 @@ class LearningStorage {
     return all[planId] || null;
   }
 
-  getActivePlan(userId) {
+  getActivePlan(userId, options = {}) {
     const all = this.plansStore.read({});
+    const targetTenantId = typeof options === 'string' ? options : (options && options.tenantId);
     const userPlans = Object.values(all)
-      .filter(p => p.userId === userId || p.profileId === userId || p.profileId === `prof-${userId}` || p.studentId === userId)
+      .filter(p => {
+        const matchesUser = p.userId === userId || p.profileId === userId || p.profileId === `prof-${userId}` || p.studentId === userId;
+        if (!matchesUser) return false;
+        if (targetTenantId && p.tenantId && p.tenantId !== targetTenantId) return false;
+        return true;
+      })
       .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     return userPlans.length > 0 ? userPlans[0] : null;
   }
-
 
   // --- Plan Versions ---
   savePlanVersion(planId, versionData) {

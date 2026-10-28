@@ -18,6 +18,9 @@ const app = {
   async init() {
     try {
       this.initTheme();
+      if (typeof TenantBranding !== 'undefined') {
+        TenantBranding.init();
+      }
       if (typeof SoundFX !== 'undefined') {
         SoundFX.init();
       }
