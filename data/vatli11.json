@@ -1,0 +1,209 @@
+{
+  "subject": "Vật lí 11",
+  "lessons": [
+    {
+      "name": "Bài 1: Dao động điều hòa và Con lắc lò xo",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Một chất điểm dao động điều hòa theo phương trình $x = A \\cos(\\omega t + \\varphi)$. Đại lượng $\\omega$ được gọi là:",
+          "options": [
+            "Tần số góc của dao động",
+            "Chu kỳ dao động",
+            "Pha ban đầu của dao động",
+            "Biên độ của dao động"
+          ],
+          "correct": 0,
+          "explanation": "Trong phương trình $x = A\\cos(\\omega t + \\varphi)$, $A$ là biên độ, $\\omega$ là tần số góc (đơn vị rad/s), $\\varphi$ là pha ban đầu."
+        },
+        {
+          "type": "mcq",
+          "question": "Gia tốc của một vật dao động điều hòa luôn biến thiên theo thời gian và:",
+          "options": [
+            "Ngược pha với li độ dao động",
+            "Cùng pha với li độ dao động",
+            "Sớm pha $\\frac{\\pi}{2}$ so với li độ dao động",
+            "Trễ pha $\\frac{\\pi}{2}$ so với li độ dao động"
+          ],
+          "correct": 0,
+          "explanation": "Ta có hệ thức gia tốc $a = -\\omega^2 x = \\omega^2 A \\cos(\\omega t + \\varphi + \\pi)$, do đó gia tốc ngược pha so với li độ."
+        },
+        {
+          "type": "mcq",
+          "question": "Một con lắc lò xo gồm lò xo nhẹ có độ cứng $k$ và vật nhỏ khối lượng $m$. Tần số góc của dao động điều hòa được xác định bởi công thức:",
+          "options": [
+            "$\\omega = \\sqrt{\\frac{k}{m}}$",
+            "$\\omega = \\sqrt{\\frac{m}{k}}$",
+            "$\\omega = 2\\pi \\sqrt{\\frac{k}{m}}$",
+            "$\\omega = \\frac{1}{2\\pi} \\sqrt{\\frac{m}{k}}$"
+          ],
+          "correct": 0,
+          "explanation": "Tần số góc của con lắc lò xo là $\\omega = \\sqrt{\\frac{k}{m}}$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một vật dao động điều hòa với biên độ $A = 5\\text{ cm}$ và tần số góc $\\omega = 10\\text{ rad/s}$. Tốc độ cực đại $v_{\\max}$ của vật là bao nhiêu cm/s?",
+          "correct": "50",
+          "explanation": "Tốc độ cực đại khi qua vị trí cân bằng: $v_{\\max} = \\omega A = 10 \\times 5 = 50\\text{ cm/s}$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một con lắc lò xo có độ cứng $k = 100\\text{ N/m}$ dao động điều hòa với biên độ $A = 0,1\\text{ m}$. Cơ năng dao động của con lắc bằng bao nhiêu Jun (J)?",
+          "correct": "0.5",
+          "explanation": "Cơ năng $W = \\frac{1}{2} k A^2 = \\frac{1}{2} \\times 100 \\times (0,1)^2 = 0,5\\text{ J}$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Một chất điểm khối lượng $m = 200\\text{ g}$ dao động điều hòa dọc theo trục Ox với phương trình li độ $x = 5\\cos\\left(4\\pi t - \\frac{\\pi}{6}\\right)\\text{ cm}$ ($t$ tính bằng giây). Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Biên độ dao động của chất điểm là $A = 5\\text{ cm}$.",
+              "correct": true,
+              "explanation": "Phương trình có dạng chuẩn $x = A\\cos(\\omega t + \\varphi)$ với $A = 5\\text{ cm}$."
+            },
+            {
+              "question": "Chu kỳ dao động của chất điểm là $T = 0,5\\text{ s}$.",
+              "correct": true,
+              "explanation": "$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{4\\pi} = 0,5\\text{ s}$."
+            },
+            {
+              "question": "Pha ban đầu của dao động là $\\varphi = \\frac{\\pi}{6}\\text{ rad}$.",
+              "correct": false,
+              "explanation": "Pha ban đầu là $\\varphi = -\\frac{\\pi}{6}\\text{ rad}$."
+            },
+            {
+              "question": "Động năng của chất điểm biến thiên tuần hoàn với tần số $f' = 4\\text{ Hz}$.",
+              "correct": true,
+              "explanation": "Tần số dao động là $f = \\frac{1}{T} = 2\\text{ Hz}$. Động năng và thế năng biến thiên tuần hoàn với tần số $f' = 2f = 4\\text{ Hz}$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 2: Sóng cơ và Giao thoa sóng",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Bước sóng $\\lambda$ là:",
+          "options": [
+            "Quãng đường mà sóng truyền đi được trong một chu kỳ dao động",
+            "Khoảng cách giữa hai điểm bất kỳ trên phương truyền sóng",
+            "Tốc độ truyền sóng nhân với tần số của sóng",
+            "Biên độ dao động cực đại của các phần tử môi trường"
+          ],
+          "correct": 0,
+          "explanation": "Theo định nghĩa, bước sóng là quãng đường sóng lan truyền được trong một chu kỳ dao động: $\\lambda = v \\cdot T = \\frac{v}{f}$."
+        },
+        {
+          "type": "mcq",
+          "question": "Sóng ngang là sóng cơ trong đó các phần tử của môi trường dao động theo phương:",
+          "options": [
+            "Vuông góc với phương truyền sóng",
+            "Trùng với phương truyền sóng",
+            "Ngược chiều với phương truyền sóng",
+            "Hợp với phương truyền sóng một góc $45^\\circ$"
+          ],
+          "correct": 0,
+          "explanation": "Sóng ngang có phương dao động của các phần tử vuông góc với phương truyền sóng (truyền được trong chất rắn và trên bề mặt chất lỏng)."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một sóng âm truyền trong không khí với tốc độ $v = 340\\text{ m/s}$ và có tần số $f = 680\\text{ Hz}$. Tính bước sóng $\\lambda$ của sóng âm này theo đơn vị mét (m):",
+          "correct": "0.5",
+          "explanation": "Bước sóng $\\lambda = \\frac{v}{f} = \\frac{340}{680} = 0,5\\text{ m}$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Trên một sợi dây đàn hồi dài căng ngang có sóng dừng ổn định với hai đầu cố định. Tốc độ truyền sóng trên dây là $v = 20\\text{ m/s}$, tần số dao động là $f = 50\\text{ Hz}$. Chiều dài sợi dây là $L = 1\\text{ m}$. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Bước sóng của sóng truyền trên sợi dây là $\\lambda = 0,4\\text{ m}$ ($40\\text{ cm}$).",
+              "correct": true,
+              "explanation": "$\\lambda = \\frac{v}{f} = \\frac{20}{50} = 0,4\\text{ m}$."
+            },
+            {
+              "question": "Khoảng cách giữa hai nút sóng liên tiếp bằng một nửa bước sóng ($20\\text{ cm}$).",
+              "correct": true,
+              "explanation": "Khoảng cách giữa hai nút sóng liên tiếp (hoặc hai bụng sóng liên tiếp) trong sóng dừng luôn là $\\frac{\\lambda}{2} = 0,2\\text{ m} = 20\\text{ cm}$."
+            },
+            {
+              "question": "Tại các điểm bụng sóng trên dây, biên độ dao động luôn bằng 0.",
+              "correct": false,
+              "explanation": "Tại bụng sóng biên độ đạt cực đại ($2A$), tại nút sóng biên độ mới bằng 0."
+            },
+            {
+              "question": "Số bụng sóng quan sát được trên toàn bộ chiều dài sợi dây là 5 bụng sóng.",
+              "correct": true,
+              "explanation": "Điều kiện sóng dừng hai đầu cố định: $L = k \\frac{\\lambda}{2} \\implies 1 = k \\times 0,2 \\implies k = 5$ (tương ứng với 5 bụng sóng)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 3: Điện trường và Định luật Coulomb",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Đơn vị đo của cường độ điện trường trong hệ đơn vị quốc tế SI là:",
+          "options": [
+            "Vôn trên mét (V/m)",
+            "Coulomb (C)",
+            "Newton (N)",
+            "Jun (J)"
+          ],
+          "correct": 0,
+          "explanation": "Cường độ điện trường có đơn vị là Vôn trên mét (V/m) hoặc Newton trên Coulomb (N/C)."
+        },
+        {
+          "type": "mcq",
+          "question": "Điện trường đều là một vùng không gian điện trường mà:",
+          "options": [
+            "Vectơ cường độ điện trường tại mọi điểm là như nhau về cả hướng và độ lớn",
+            "Đường sức điện là những đường cong khép kín đồng tâm",
+            "Cường độ điện trường tăng dần tỉ lệ thuận với khoảng cách",
+            "Không xuất hiện lực điện tác dụng lên các điện tích thử"
+          ],
+          "correct": 0,
+          "explanation": "Điện trường đều có vectơ cường độ điện trường $\\vec{E}$ như nhau tại mọi điểm, các đường sức điện là những đường thẳng song song và cách đều."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Hai điện tích điểm $q_1 = 2 \\cdot 10^{-8}\\text{ C}$ và $q_2 = 2 \\cdot 10^{-8}\\text{ C}$ đặt cách nhau $r = 0,1\\text{ m}$ trong chân không ($k = 9 \\cdot 10^9\\text{ N}\\cdot\\text{m}^2/\\text{C}^2$). Lực tương tác tĩnh điện giữa hai điện tích có độ lớn bằng bao nhiêu nhân $10^{-4}\\text{ N}$?",
+          "correct": "3.6",
+          "explanation": "$F = k \\frac{|q_1 q_2|}{r^2} = 9 \\cdot 10^9 \\times \\frac{4 \\cdot 10^{-16}}{0,01} = 3,6 \\cdot 10^{-4}\\text{ N}$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Hai bản kim loại phẳng tích điện trái dấu đặt song song cách nhau $d = 2\\text{ cm} = 0,02\\text{ m}$ tạo ra một điện trường đều ở khoảng giữa hai bản. Hiệu điện thế giữa hai bản kim loại là $U = 100\\text{ V}$. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Độ lớn cường độ điện trường đều giữa hai bản là $E = 5000\\text{ V/m}$.",
+              "correct": true,
+              "explanation": "$E = \\frac{U}{d} = \\frac{100}{0,02} = 5000\\text{ V/m}$."
+            },
+            {
+              "question": "Đường sức của điện trường hướng từ bản tích điện âm sang bản tích điện dương.",
+              "correct": false,
+              "explanation": "Đường sức điện trường luôn đi ra từ điện tích dương và đi vào điện tích âm (tức từ bản dương sang bản âm)."
+            },
+            {
+              "question": "Lực điện tác dụng lên một electron đặt trong điện trường này có chiều ngược chiều đường sức điện trường.",
+              "correct": true,
+              "explanation": "Vì điện tích electron mang dấu âm ($q_e = -1,6 \\cdot 10^{-19}\\text{ C} < 0$) nên $\\vec{F} = q\\vec{E}$ ngược hướng với $\\vec{E}$."
+            },
+            {
+              "question": "Công của lực điện trường khi dịch chuyển điện tích vuông góc với đường sức điện bằng 0.",
+              "correct": true,
+              "explanation": "$A = qEd\\cos\\alpha$, khi dịch chuyển vuông góc thì $\\alpha = 90^\\circ \\implies \\cos 90^\\circ = 0 \\implies A = 0$."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

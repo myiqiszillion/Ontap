@@ -1,0 +1,301 @@
+{
+  "subject": "Toán học 11",
+  "lessons": [
+    {
+      "name": "Bài 1: Hàm số lượng giác và phương trình lượng giác",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Chu kỳ tuần hoàn của hàm số $y = \\sin 2x$ là:",
+          "options": [
+            "$\\pi$",
+            "$2\\pi$",
+            "$\\frac{\\pi}{2}$",
+            "$4\\pi$"
+          ],
+          "correct": 0,
+          "explanation": "Hàm số $y = \\sin(\\omega x)$ có chu kỳ tuần hoàn là $T = \\frac{2\\pi}{\\omega}$. Với $\\omega = 2$, ta có $T = \\frac{2\\pi}{2} = \\pi$."
+        },
+        {
+          "type": "mcq",
+          "question": "Tất cả các nghiệm của phương trình lượng giác cơ bản $\\cos x = 0$ là:",
+          "options": [
+            "$x = \\frac{\\pi}{2} + k\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = k2\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = \\pi + k2\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = k\\pi \\quad (k \\in \\mathbb{Z})$"
+          ],
+          "correct": 0,
+          "explanation": "Điểm trên đường tròn lượng giác có hoành độ bằng 0 ứng với các cung $\\frac{\\pi}{2} + k\\pi$ với $k \\in \\mathbb{Z}$."
+        },
+        {
+          "type": "mcq",
+          "question": "Tập giá trị của hàm số $y = 3\\sin x - 2$ là đoạn nào sau đây?",
+          "options": [
+            "$[-5; 1]$",
+            "$[-3; 3]$",
+            "$[-1; 5]$",
+            "$[-2; 2]$"
+          ],
+          "correct": 0,
+          "explanation": "Vì $-1 \\le \\sin x \\le 1$ với mọi $x \\in \\mathbb{R}$, nên $-3 \\le 3\\sin x \\le 3 \\implies -5 \\le 3\\sin x - 2 \\le 1$. Do đó tập giá trị là $[-5; 1]$."
+        },
+        {
+          "type": "mcq",
+          "question": "Nghiệm của phương trình lượng giác $\\tan x = 1$ là:",
+          "options": [
+            "$x = \\frac{\\pi}{4} + k\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = \\frac{\\pi}{4} + k2\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = -\\frac{\\pi}{4} + k\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = \\frac{\\pi}{2} + k\\pi \\quad (k \\in \\mathbb{Z})$"
+          ],
+          "correct": 0,
+          "explanation": "Vì $\\tan\\left(\\frac{\\pi}{4}\\right) = 1$ nên phương trình $\\tan x = 1$ có họ nghiệm $x = \\frac{\\pi}{4} + k\\pi$ với $k \\in \\mathbb{Z}$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Số nghiệm của phương trình lượng giác $\\sin x = \\frac{1}{2}$ thuộc đoạn $[0; 2\\pi]$ là bao nhiêu?",
+          "correct": "2",
+          "explanation": "Trên đoạn $[0; 2\\pi]$, phương trình $\\sin x = \\frac{1}{2}$ có đúng hai nghiệm là $x = \\frac{\\pi}{6}$ và $x = \\frac{5\\pi}{6}$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Tìm giá trị lớn nhất của hàm số $y = 4\\cos x + 5$ trên tập số thực $\\mathbb{R}$:",
+          "correct": "9",
+          "explanation": "Ta có $\\cos x \\le 1 \\implies y = 4\\cos x + 5 \\le 4(1) + 5 = 9$. Dấu bằng xảy ra khi $\\cos x = 1$ (ví dụ $x = 0$)."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho hàm số lượng giác $y = f(x) = 2\\sin\\left(2x - \\frac{\\pi}{3}\\right) + 1$. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Tập xác định của hàm số $f(x)$ là $D = \\mathbb{R}$.",
+              "correct": true,
+              "explanation": "Hàm số sin xác định với mọi giá trị thực của biến số."
+            },
+            {
+              "question": "Hàm số $f(x)$ là một hàm số chẵn trên $\\mathbb{R}$.",
+              "correct": false,
+              "explanation": "$f(-x) = 2\\sin(-2x - \\pi/3) + 1 \\ne f(x)$ và $\\ne -f(x)$, nên hàm số không chẵn và không lẻ."
+            },
+            {
+              "question": "Chu kỳ tuần hoàn của hàm số là $T = \\pi$.",
+              "correct": true,
+              "explanation": "Chu kỳ của hàm số $\\sin(2x + \\varphi)$ là $T = \\frac{2\\pi}{2} = \\pi$."
+            },
+            {
+              "question": "Giá trị nhỏ nhất của hàm số trên $\\mathbb{R}$ là $-1$.",
+              "correct": true,
+              "explanation": "Giá trị nhỏ nhất đạt được khi $\\sin(2x - \\pi/3) = -1$, khi đó $y_{\\min} = 2(-1) + 1 = -1$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 2: Dãy số, cấp số cộng và cấp số nhân",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_1 = 3$ và công sai $d = 2$. Giá trị của số hạng thứ năm $u_5$ là:",
+          "options": [
+            "11",
+            "13",
+            "15",
+            "9"
+          ],
+          "correct": 0,
+          "explanation": "Số hạng tổng quát của cấp số cộng là $u_n = u_1 + (n - 1)d$. Với $n = 5$: $u_5 = 3 + 4 \\times 2 = 11$."
+        },
+        {
+          "type": "mcq",
+          "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và công bội $q = 3$. Giá trị của số hạng $u_3$ là:",
+          "options": [
+            "18",
+            "12",
+            "54",
+            "6"
+          ],
+          "correct": 0,
+          "explanation": "Số hạng tổng quát của cấp số nhân là $u_n = u_1 \\cdot q^{n-1}$. Do đó $u_3 = 2 \\times 3^2 = 18$."
+        },
+        {
+          "type": "mcq",
+          "question": "Tổng của 10 số hạng đầu tiên của cấp số cộng $(u_n)$ có $u_1 = 1$ và công sai $d = 2$ bằng:",
+          "options": [
+            "100",
+            "90",
+            "110",
+            "120"
+          ],
+          "correct": 0,
+          "explanation": "$S_{10} = \\frac{10}{2} [2(1) + (10 - 1) \\times 2] = 5 \\times [2 + 18] = 100$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho cấp số cộng $(u_n)$ có $u_1 = 5$ và $u_2 = 9$. Tìm giá trị của số hạng thứ mười $u_{10}$:",
+          "correct": "41",
+          "explanation": "Công sai $d = u_2 - u_1 = 9 - 5 = 4$. Số hạng $u_{10} = u_1 + 9d = 5 + 9 \\times 4 = 41$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho cấp số nhân lùi vô hạn $(u_n)$ có số hạng đầu $u_1 = 6$ và công bội $q = 0,5$. Tính tổng $S$ của cấp số nhân lùi vô hạn này:",
+          "correct": "12",
+          "explanation": "Tổng của cấp số nhân lùi vô hạn là $S = \\frac{u_1}{1 - q} = \\frac{6}{1 - 0,5} = 12$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho dãy số $(u_n)$ xác định bởi công thức số hạng tổng quát $u_n = 3n - 1$ với mọi $n \\in \\mathbb{N}^*$. Xét tính đúng sai của các mệnh đề sau:",
+          "statements": [
+            {
+              "question": "Dãy số $(u_n)$ là một dãy số tăng trên tập các số nguyên dương $\\mathbb{N}^*$.",
+              "correct": true,
+              "explanation": "Ta có $u_{n+1} - u_n = [3(n+1) - 1] - (3n - 1) = 3 > 0$, suy ra dãy số tăng."
+            },
+            {
+              "question": "Dãy số $(u_n)$ là một cấp số cộng với công sai $d = 3$.",
+              "correct": true,
+              "explanation": "Hiệu giữa hai số hạng liên tiếp luôn bằng hằng số $d = 3$."
+            },
+            {
+              "question": "Số hạng đầu tiên của dãy số là $u_1 = 1$.",
+              "correct": false,
+              "explanation": "Số hạng đầu tiên là $u_1 = 3(1) - 1 = 2$ chứ không phải $1$."
+            },
+            {
+              "question": "Tổng 20 số hạng đầu tiên của dãy số là $S_{20} = 610$.",
+              "correct": true,
+              "explanation": "$u_{20} = 3(20) - 1 = 59$. Tổng $S_{20} = \\frac{20}{2} \\times (u_1 + u_{20}) = 10 \\times (2 + 59) = 610$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 3: Giới hạn và Hàm số liên tục",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Giới hạn của dãy số $\\lim_{n \\to \\infty} \\frac{3n + 1}{2n - 5}$ bằng:",
+          "options": [
+            "$\\frac{3}{2}$",
+            "$\\frac{1}{2}$",
+            "$3$",
+            "$0$"
+          ],
+          "correct": 0,
+          "explanation": "Chia cả tử và mẫu cho $n$, ta được $\\lim \\frac{3 + 1/n}{2 - 5/n} = \\frac{3}{2}$."
+        },
+        {
+          "type": "mcq",
+          "question": "Tính giới hạn của hàm số $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$:",
+          "options": [
+            "$4$",
+            "$2$",
+            "$0$",
+            "Vô cực"
+          ],
+          "correct": 0,
+          "explanation": "Ta phân tích nhân tử: $\\frac{x^2 - 4}{x - 2} = \\frac{(x - 2)(x + 2)}{x - 2} = x + 2$. Khi $x \\to 2$, giới hạn bằng $2 + 2 = 4$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Tính giá trị của giới hạn sau: $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$:",
+          "correct": "6",
+          "explanation": "Khử dạng vô định $\\frac{0}{0}$: $\\lim_{x \\to 3} \\frac{(x-3)(x+3)}{x-3} = \\lim_{x \\to 3} (x+3) = 6$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho hàm số $f(x) = \\begin{cases} \\frac{x^2 - 1}{x - 1} & \\text{khi } x \\ne 1 \\\\ m & \\text{khi } x = 1 \\end{cases}$ với $m$ là tham số thực. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Giới hạn của hàm số khi $x$ tiến tới 1 là $\\lim_{x \\to 1} f(x) = 2$.",
+              "correct": true,
+              "explanation": "$\\lim_{x \\to 1} \\frac{(x-1)(x+1)}{x-1} = \\lim_{x \\to 1} (x+1) = 2$."
+            },
+            {
+              "question": "Tập xác định của hàm số $f(x)$ là $D = \\mathbb{R} \\setminus \\{1\\}$.",
+              "correct": false,
+              "explanation": "Hàm số đã được định nghĩa tại $x = 1$ với giá trị bằng $m$, nên tập xác định là $D = \\mathbb{R}$."
+            },
+            {
+              "question": "Hàm số liên tục tại điểm $x_0 = 1$ khi và chỉ khi $m = 2$.",
+              "correct": true,
+              "explanation": "Hàm số liên tục tại $x = 1 \\iff \\lim_{x \\to 1} f(x) = f(1) \\iff 2 = m$."
+            },
+            {
+              "question": "Với $m = 0$, hàm số liên tục trên toàn bộ tập số thực $\\mathbb{R}$.",
+              "correct": false,
+              "explanation": "Với $m = 0 \\ne 2$, hàm số bị gián đoạn tại điểm $x = 1$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 4: Quan hệ song song và vuông góc trong không gian",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Trong không gian, hai đường thẳng phân biệt không có điểm chung thì:",
+          "options": [
+            "Song song hoặc chéo nhau",
+            "Luôn luôn song song với nhau",
+            "Luôn luôn chéo nhau",
+            "Cắt nhau tại một điểm ở vô cực"
+          ],
+          "correct": 0,
+          "explanation": "Hai đường thẳng phân biệt không có điểm chung có thể cùng thuộc một mặt phẳng (song song) hoặc không cùng thuộc mặt phẳng nào (chéo nhau)."
+        },
+        {
+          "type": "mcq",
+          "question": "Nếu đường thẳng $d$ song song với mặt phẳng $(\\alpha)$ thì đường thẳng $d$ song song với:",
+          "options": [
+            "Ít nhất một đường thẳng nằm trong mặt phẳng $(\\alpha)$",
+            "Mọi đường thẳng nằm trong mặt phẳng $(\\alpha)$",
+            "Hai đường thẳng cắt nhau bất kỳ trong $(\\alpha)$",
+            "Đường thẳng vuông góc với $(\\alpha)$"
+          ],
+          "correct": 0,
+          "explanation": "Theo định nghĩa và định lí, nếu $d \\parallel (\\alpha)$ thì qua $d$ có mặt phẳng cắt $(\\alpha)$ theo giao tuyến song song với $d$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Cho hình lập phương $ABCD.A'B'C'D'$. Hỏi hình lập phương này có tất cả bao nhiêu đường chéo chính nối hai đỉnh đối diện?",
+          "correct": "4",
+          "explanation": "Hình lập phương có 4 đường chéo chính là $AC', BD', CA', DB'$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình bình hành tâm $O$. Gọi $M, N$ lần lượt là trung điểm của $SA$ và $SC$. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Đường thẳng $MN$ song song với mặt phẳng đáy $(ABCD)$.",
+              "correct": true,
+              "explanation": "Trong tam giác $SAC$, $MN$ là đường trung bình nên $MN \\parallel AC$. Mà $AC \\subset (ABCD)$, suy ra $MN \\parallel (ABCD)$."
+            },
+            {
+              "question": "Đường thẳng $SO$ cắt mặt phẳng $(ABCD)$ tại trọng tâm của tam giác $SBD$.",
+              "correct": false,
+              "explanation": "Đường thẳng $SO$ cắt mặt phẳng đáy $(ABCD)$ tại chính tâm đối xứng $O$ của đáy hình bình hành."
+            },
+            {
+              "question": "Giao tuyến của hai mặt phẳng $(SAB)$ và $(SCD)$ là đường thẳng đi qua $S$ và song song với $AB$.",
+              "correct": true,
+              "explanation": "Hai mặt phẳng $(SAB)$ và $(SCD)$ có điểm chung $S$ và lần lượt chứa hai đường thẳng song song là $AB$ và $CD$, nên giao tuyến của chúng là đường thẳng qua $S$ song song với $AB$."
+            },
+            {
+              "question": "Mặt phẳng $(OMN)$ chứa cạnh $SB$ của hình chóp.",
+              "correct": false,
+              "explanation": "$O, M, N$ nằm trên mặt phẳng $(SAC)$, không chứa cạnh $SB$."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

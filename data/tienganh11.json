@@ -1,0 +1,236 @@
+{
+  "subject": "Tiếng Anh 11",
+  "lessons": [
+    {
+      "name": "Unit 1: A Long and Healthy Life",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Regular physical exercise and a balanced diet are essential for building a robust _______ system against common diseases.",
+          "options": [
+            "immune",
+            "circulatory",
+            "muscular",
+            "digestive"
+          ],
+          "correct": 0,
+          "explanation": "'Immune system' is the bodily system that protects against infectious organisms and diseases."
+        },
+        {
+          "type": "mcq",
+          "question": "The doctor strongly advised him to cut down on processed foods and take _______ yoga to alleviate work stress.",
+          "options": [
+            "up",
+            "down",
+            "in",
+            "off"
+          ],
+          "correct": 0,
+          "explanation": "'Take up' is a phrasal verb meaning to start a new hobby, interest, or healthy activity."
+        },
+        {
+          "type": "mcq",
+          "question": "Many adolescents nowadays suffer _______ chronic sleep deprivation due to excessive late-night screen time.",
+          "options": [
+            "from",
+            "of",
+            "with",
+            "at"
+          ],
+          "correct": 0,
+          "explanation": "The verb 'suffer' collocates with the preposition 'from' when referring to an illness or difficult condition."
+        },
+        {
+          "type": "mcq",
+          "question": "Choose the word whose underlined part is pronounced differently from the others: /ɪ/ vs /aɪ/",
+          "options": [
+            "diet",
+            "fitness",
+            "lifestyle",
+            "vital"
+          ],
+          "correct": 1,
+          "explanation": "In 'fitness', the letter 'i' is pronounced /ɪ/, whereas in 'diet', 'lifestyle', and 'vital', it is pronounced /aɪ/."
+        },
+        {
+          "type": "mcq",
+          "question": "Bacterial infections can be treated effectively with _______ prescribed by certified physicians.",
+          "options": [
+            "antibiotics",
+            "nutrients",
+            "calories",
+            "minerals"
+          ],
+          "correct": 0,
+          "explanation": "'Antibiotics' are medications specifically designed to inhibit the growth of or destroy bacteria."
+        },
+        {
+          "type": "mcq",
+          "question": "She _______ jogging around the lake every morning since she joined the athletic club three months ago.",
+          "options": [
+            "has gone",
+            "went",
+            "is going",
+            "was going"
+          ],
+          "correct": 0,
+          "explanation": "The present perfect tense 'has gone' is required with the time marker 'since + past time point'."
+        }
+      ]
+    },
+    {
+      "name": "Unit 2: The Generation Gap",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "In an extended family, traditional values held by elderly grandparents can occasionally trigger a _______ conflict with modern adolescents.",
+          "options": [
+            "generational",
+            "financial",
+            "technological",
+            "vocational"
+          ],
+          "correct": 0,
+          "explanation": "'Generational conflict' denotes disputes or differences in viewpoint between people of different age generations."
+        },
+        {
+          "type": "mcq",
+          "question": "You _______ stay out past 10 p.m. without permission because our parents have set a strict house curfew.",
+          "options": [
+            "mustn't",
+            "needn't",
+            "don't have to",
+            "shouldn't have"
+          ],
+          "correct": 0,
+          "explanation": "'Mustn't' expresses a strong prohibition or rule that must not be broken."
+        },
+        {
+          "type": "mcq",
+          "question": "Parents should strive to be open-_______ and listen attentively when their children voice unconventional opinions.",
+          "options": [
+            "minded",
+            "hearted",
+            "handed",
+            "sighted"
+          ],
+          "correct": 0,
+          "explanation": "'Open-minded' is a compound adjective describing willingness to consider new and different ideas."
+        },
+        {
+          "type": "mcq",
+          "question": "All students _______ wear the school uniform on Mondays; it is an obligatory school regulation.",
+          "options": [
+            "have to",
+            "might",
+            "could",
+            "ought"
+          ],
+          "correct": 0,
+          "explanation": "'Have to' expresses external obligation imposed by external authority or institutional rules."
+        },
+        {
+          "type": "mcq",
+          "question": "Living in a nuclear family typically means residing only with one's _______ and siblings.",
+          "options": [
+            "parents",
+            "grandparents",
+            "cousins",
+            "uncles"
+          ],
+          "correct": 0,
+          "explanation": "A nuclear family consists strictly of two generations: parents and their dependent offspring."
+        },
+        {
+          "type": "mcq",
+          "question": "Teenagers frequently complain that their elders hold overly _______ views regarding contemporary fashion and music.",
+          "options": [
+            "conservative",
+            "innovative",
+            "reckless",
+            "spontaneous"
+          ],
+          "correct": 0,
+          "explanation": "'Conservative' describes beliefs that favor tradition and oppose sudden change."
+        }
+      ]
+    },
+    {
+      "name": "Unit 3: Cities of the Future",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Eco-friendly smart cities will prioritize _______ energy solutions like photovoltaic solar cells and wind turbines.",
+          "options": [
+            "renewable",
+            "exhaustible",
+            "combustible",
+            "hazardous"
+          ],
+          "correct": 0,
+          "explanation": "'Renewable energy' comes from natural resources that replenish themselves without running out."
+        },
+        {
+          "type": "mcq",
+          "question": "Autonomous electric shuttles are deployed across modern campuses to alleviate severe traffic _______.",
+          "options": [
+            "congestion",
+            "preservation",
+            "diversification",
+            "purification"
+          ],
+          "correct": 0,
+          "explanation": "'Traffic congestion' refers to roadways clogged with excessive vehicular movement."
+        },
+        {
+          "type": "mcq",
+          "question": "Air quality in tomorrow's urban centers will improve significantly due to extensive rooftop _______ and green vertical facades.",
+          "options": [
+            "gardens",
+            "tunnels",
+            "chimneys",
+            "warehouses"
+          ],
+          "correct": 0,
+          "explanation": "'Rooftop gardens' provide vegetation that absorbs carbon dioxide and cools metropolitan buildings."
+        },
+        {
+          "type": "mcq",
+          "question": "Sensors embedded along metropolitan streets will automatically dim illumination to _______ electrical power during late hours.",
+          "options": [
+            "conserve",
+            "exhaust",
+            "consume",
+            "deplete"
+          ],
+          "correct": 0,
+          "explanation": "'Conserve' means to protect from harm or use sparingly to prevent depletion."
+        },
+        {
+          "type": "mcq",
+          "question": "Demographers forecast that by 2050, roughly two-thirds of humanity _______ in major metropolitan centers.",
+          "options": [
+            "will be living",
+            "lived",
+            "had lived",
+            "have lived"
+          ],
+          "correct": 0,
+          "explanation": "Future continuous 'will be living' emphasizes an ongoing state or activity in progress at a specific future timeframe."
+        },
+        {
+          "type": "mcq",
+          "question": "Choose the word whose primary stress is positioned differently from the other three:",
+          "options": [
+            "futuristic",
+            "renewable",
+            "pedestrian",
+            "sustainable"
+          ],
+          "correct": 0,
+          "explanation": "'futuristic' has stress on the 3rd syllable (/ˌfjuːtʃəˈrɪstɪk/), while renewable, pedestrian, and sustainable have stress on the 2nd syllable."
+        }
+      ]
+    }
+  ]
+}

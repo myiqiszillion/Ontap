@@ -144,14 +144,15 @@
       "icon": "📐",
       "description": "Lượng giác, Dãy số, Giới hạn và Hình học không gian",
       "color": "#3b82f6",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 12,
         "tf": 4,
         "sa": 6,
         "durationMinutes": 90
-      }
+      },
+      "dataFile": "toan11.json"
     },
     {
       "id": "vatli11",
@@ -161,14 +162,15 @@
       "icon": "⚡",
       "description": "Dao động, Sóng, Điện trường và Dòng điện",
       "color": "#6366f1",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 18,
         "tf": 4,
         "sa": 6,
         "durationMinutes": 50
-      }
+      },
+      "dataFile": "vatli11.json"
     },
     {
       "id": "hoahoc11",
@@ -178,14 +180,15 @@
       "icon": "🧪",
       "description": "Cân bằng hóa học, Nitrogen - Sulfur và Hóa học hữu cơ",
       "color": "#06b6d4",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 18,
         "tf": 4,
         "sa": 6,
         "durationMinutes": 50
-      }
+      },
+      "dataFile": "hoahoc11.json"
     },
     {
       "id": "tienganh11",
@@ -195,14 +198,15 @@
       "icon": "🌐",
       "description": "Chủ điểm từ vựng nâng cao, Mệnh đề quan hệ và Viết luận",
       "color": "#0d9488",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 40,
         "tf": 0,
         "sa": 0,
         "durationMinutes": 50
-      }
+      },
+      "dataFile": "tienganh11.json"
     },
     {
       "id": "toan12",
@@ -212,14 +216,15 @@
       "icon": "📐",
       "description": "Ứng dụng đạo hàm, Tọa độ không gian, Tích phân và Xác suất",
       "color": "#3b82f6",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 12,
         "tf": 4,
         "sa": 6,
         "durationMinutes": 90
-      }
+      },
+      "dataFile": "toan12.json"
     },
     {
       "id": "vatli12",
@@ -229,14 +234,15 @@
       "icon": "⚡",
       "description": "Vật lí nhiệt, Khí lí tưởng, Từ trường và Hạt nhân",
       "color": "#6366f1",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 18,
         "tf": 4,
         "sa": 6,
         "durationMinutes": 50
-      }
+      },
+      "dataFile": "vatli12.json"
     },
     {
       "id": "hoahoc12",
@@ -246,14 +252,15 @@
       "icon": "🧪",
       "description": "Ester - Lipid, Carbohydrate, Polymer và Kim loại chuyển tiếp",
       "color": "#06b6d4",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 18,
         "tf": 4,
         "sa": 6,
         "durationMinutes": 50
-      }
+      },
+      "dataFile": "hoahoc12.json"
     },
     {
       "id": "tienganh12",
@@ -263,14 +270,15 @@
       "icon": "🌐",
       "description": "Chuyên đề luyện đề tổng hợp Tốt nghiệp THPT QĐ 764",
       "color": "#0d9488",
-      "status": "in_development",
-      "ready": false,
+      "status": "active",
+      "ready": true,
       "examStructure": {
         "mcq": 40,
         "tf": 0,
         "sa": 0,
         "durationMinutes": 50
-      }
+      },
+      "dataFile": "tienganh12.json"
     },
     {
       "id": "lichsu10",

@@ -1,0 +1,259 @@
+{
+  "subject": "Hóa học 12 (Luyện thi TN)",
+  "lessons": [
+    {
+      "name": "Bài 1: Ester và Lipid - Xà phòng và Chất giặt rửa",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Công thức phân tử tổng quát của ester no, đơn chức, mạch hở là:",
+          "options": [
+            "$\\text{C}_n\\text{H}_{2n}\\text{O}_2 \\quad (n \\ge 2)$",
+            "$\\text{C}_n\\text{H}_{2n-2}\\text{O}_2 \\quad (n \\ge 3)$",
+            "$\\text{C}_n\\text{H}_{2n+2}\\text{O}_2 \\quad (n \\ge 1)$",
+            "$\\text{C}_n\\text{H}_{2n}\\text{O} \\quad (n \\ge 1)$"
+          ],
+          "correct": 0,
+          "explanation": "Ester no đơn chức mạch hở tạo bởi acid no đơn chức và alcohol no đơn chức có công thức chung là $\\text{C}_n\\text{H}_{2n}\\text{O}_2$ với $n \\ge 2$."
+        },
+        {
+          "type": "mcq",
+          "question": "Thủy phân hoàn toàn chất béo tristearin trong dung dịch $\\text{NaOH}$ dư thu được muối nào sau đây?",
+          "options": [
+            "$\\text{C}_{17}\\text{H}_{35}\\text{COONa}$",
+            "$\\text{C}_{17}\\text{H}_{33}\\text{COONa}$",
+            "$\\text{C}_{15}\\text{H}_{31}\\text{COONa}$",
+            "$\\text{CH}_3\\text{COONa}$"
+          ],
+          "correct": 0,
+          "explanation": "Tristearin có công thức $(\\text{C}_{17}\\text{H}_{35}\\text{COO})_3\\text{C}_3\\text{H}_5$. Khi xà phòng hóa thu được sodium stearate ($\\text{C}_{17}\\text{H}_{35}\\text{COONa}$) và glycerol."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Trong một phân tử glycerol (glycerin), có tất cả bao nhiêu nhóm chức alcohol (-OH)?",
+          "correct": "3",
+          "explanation": "Glycerol là alcohol no ba chức mạch hở có công thức cấu tạo $\\text{C}_3\\text{H}_5(\\text{OH})_3$ gồm đúng 3 nhóm -OH."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Khối lượng mol phân tử của ester methyl formate ($\\text{HCOOCH}_3$) bằng bao nhiêu g/mol?",
+          "correct": "60",
+          "explanation": "Công thức phân tử $\\text{C}_2\\text{H}_4\\text{O}_2 \\implies M = 12 \\times 2 + 4 + 32 = 60\\text{ g/mol}$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Thực hiện phản ứng ester hóa giữa acetic acid ($\\text{CH}_3\\text{COOH}$) và ethanol ($\\text{C}_2\\text{H}_5\\text{OH}$) với xúc tác $\\text{H}_2\\text{SO}_4$ đặc, đun nóng nhẹ trong nồi cách thủy. Xét tính đúng sai của các nhận định sau:",
+          "statements": [
+            {
+              "question": "Phản ứng ester hóa giữa acetic acid và ethanol là phản ứng thuận nghịch.",
+              "correct": true,
+              "explanation": "Phản ứng ester hóa không xảy ra hoàn toàn mà đạt đến một trạng thái cân bằng hóa học."
+            },
+            {
+              "question": "Sulfuric acid đặc đóng vai trò vừa làm xúc tác vừa hút nước để làm cân bằng chuyển dịch theo chiều thuận.",
+              "correct": true,
+              "explanation": "$\\text{H}_2\\text{SO}_4$ đặc có tính háo nước mạnh, lấy bớt $\\text{H}_2\\text{O}$ sản phẩm giúp cân bằng chuyển dịch sang phía tạo ester."
+            },
+            {
+              "question": "Ethyl acetate có nhiệt độ sôi cao hơn acetic acid do có liên kết hydrogen liên phân tử bền hơn.",
+              "correct": false,
+              "explanation": "Ethyl acetate không tạo được liên kết hydrogen liên phân tử như alcohol và acid nên có nhiệt độ sôi thấp hơn nhiều."
+            },
+            {
+              "question": "Sau khi kết thúc phản ứng, có thể tách ethyl acetate ra khỏi hỗn hợp bằng phễu chiết do chất này ít tan và nhẹ hơn nước.",
+              "correct": true,
+              "explanation": "Ethyl acetate nổi lên trên thành lớp chất lỏng không màu tách biệt với dung dịch muối nước."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 2: Carbohydrate (Monosaccharide, Disaccharide và Polysaccharide)",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Chất nào sau đây thuộc nhóm monosaccharide và có nhiều trong quả nho chín?",
+          "options": [
+            "Glucose",
+            "Saccharose",
+            "Maltose",
+            "Tinh bột"
+          ],
+          "correct": 0,
+          "explanation": "Glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) là monosaccharide tiêu biểu, còn được gọi là đường nho."
+        },
+        {
+          "type": "mcq",
+          "question": "Để nhận biết hồ tinh bột ở điều kiện nhiệt độ thường, người ta thường dùng thuốc thử nào sau đây?",
+          "options": [
+            "Dung dịch iodine ($\\text{I}_2$)",
+            "Dung dịch $\\text{AgNO}_3$ trong $\\text{NH}_3$",
+            "Dung dịch nước bromine",
+            "Dung dịch quỳ tím"
+          ],
+          "correct": 0,
+          "explanation": "Iodine len lỏi vào các cuộn xoắn của amylose trong tinh bột tạo phức chất có màu xanh tím đặc trưng."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Khi thủy phân hoàn toàn một phân tử saccharose (sucrose) trong môi trường acid, thu được bao nhiêu phân tử monosaccharide?",
+          "correct": "2",
+          "explanation": "Thủy phân 1 phân tử saccharose tạo ra 1 phân tử $\\alpha$-glucose và 1 phân tử $\\beta$-fructose (tổng cộng 2 phân tử monosaccharide)."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) và fructose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) là hai loại carbohydrate quan trọng trong chuyển hóa sinh học. Xét tính đúng sai của các nhận định sau:",
+          "statements": [
+            {
+              "question": "Glucose và fructose là hai chất đồng phân cấu tạo của nhau.",
+              "correct": true,
+              "explanation": "Cả hai đều có cùng công thức phân tử $\\text{C}_6\\text{H}_{12}\\text{O}_6$ nhưng glucose là polyhydroxy aldehyde còn fructose là polyhydroxy ketone."
+            },
+            {
+              "question": "Trong môi trường kiềm, fructose có thể chuyển hóa thuận nghịch thành glucose.",
+              "correct": true,
+              "explanation": "Cân bằng enediol chuyển hóa thuận nghịch giữa glucose và fructose trong dung dịch kiềm."
+            },
+            {
+              "question": "Cả glucose và fructose đều có phản ứng tráng bạc với thuốc thử Tollens.",
+              "correct": true,
+              "explanation": "Trong môi trường base của thuốc thử Tollens, fructose chuyển hóa thành glucose và phản ứng khử $\\text{Ag}^+$ thành Ag."
+            },
+            {
+              "question": "Cellulose có cấu trúc phân tử mạch phân nhánh tương tự như amylopectin trong tinh bột.",
+              "correct": false,
+              "explanation": "Phân tử cellulose gồm nhiều mắt xích $\\beta$-glucose liên kết với nhau tạo thành mạch kéo dài không phân nhánh."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 3: Amine, Amino acid, Peptide và Protein",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Hợp chất nào sau đây là một amine bậc 1?",
+          "options": [
+            "Methylamine ($\\text{CH}_3\\text{NH}_2$)",
+            "Dimethylamine ($(\\text{CH}_3)_2\\text{NH}$)",
+            "Trimethylamine ($(\\text{CH}_3)_3\\text{N}$)",
+            "N-methylethanamine"
+          ],
+          "correct": 0,
+          "explanation": "Amine bậc 1 có nhóm $-\\text{NH}_2$ gắn với gốc hydrocarbon, tiêu biểu là $\\text{CH}_3\\text{NH}_2$."
+        },
+        {
+          "type": "mcq",
+          "question": "Amino acid đơn giản nhất là glycine có công thức cấu tạo thu gọn là:",
+          "options": [
+            "$\\text{H}_2\\text{N-CH}_2\\text{-COOH}$",
+            "$\\text{CH}_3\\text{-CH(NH}_2\\text{)-COOH}$",
+            "$\\text{H}_2\\text{N-CH}_2\\text{-CH}_2\\text{-COOH}$",
+            "$\\text{HOOC-CH}_2\\text{-COOH}$"
+          ],
+          "correct": 0,
+          "explanation": "Glycine (acid aminoacetic) có công thức là $\\text{H}_2\\text{N-CH}_2\\text{-COOH}$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một phân tử tripeptide mạch hở tạo thành từ các $\\alpha$-amino acid có bao nhiêu liên kết peptide (-CO-NH-)?",
+          "correct": "2",
+          "explanation": "Một oligopeptide gồm $n$ gốc $\\alpha$-amino acid có $(n - 1)$ liên kết peptide. Với tripeptide ($n = 3$), số liên kết là $3 - 1 = 2$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Xét các tính chất hóa học của amino acid glycine ($\\text{H}_2\\text{N-CH}_2\\text{-COOH}$) và peptide. Xét tính đúng sai của các nhận định sau:",
+          "statements": [
+            {
+              "question": "Glycine là một hợp chất lưỡng tính, vừa tác dụng được với dung dịch acid mạnh vừa tác dụng với dung dịch base mạnh.",
+              "correct": true,
+              "explanation": "Nhóm $-\\text{NH}_2$ có tính base phản ứng với acid; nhóm $-\\text{COOH}$ có tính acid phản ứng với base."
+            },
+            {
+              "question": "Dung dịch glycine trong nước làm quỳ tím chuyển sang màu đỏ rõ rệt.",
+              "correct": false,
+              "explanation": "Số nhóm $-\\text{NH}_2$ bằng số nhóm $-\\text{COOH}$ (1:1) nên dung dịch có pH xấp xỉ trung tính, không đổi màu quỳ tím."
+            },
+            {
+              "question": "Protein bị đông tụ khi đun nóng hoặc khi thêm acid, base và muối kim loại nặng.",
+              "correct": true,
+              "explanation": "Đây là hiện tượng biến tính và đông tụ protein do phá vỡ cấu trúc không gian bậc cao."
+            },
+            {
+              "question": "Dipeptide mạch hở Gly-Ala có phản ứng màu biuret tạo dung dịch màu tím đặc trưng với $\\text{Cu(OH)}_2$.",
+              "correct": false,
+              "explanation": "Phản ứng biuret chỉ xảy ra với các peptide có từ 2 liên kết peptide trở lên (tức tripeptide trở lên); dipeptide không có phản ứng biuret."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 4: Đại cương về Kim loại và Phức chất",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Kim loại có tính dẫn điện tốt nhất trong tất cả các kim loại ở điều kiện thường là:",
+          "options": [
+            "Bạc (Ag)",
+            "Đồng (Cu)",
+            "Vàng (Au)",
+            "Nhôm (Al)"
+          ],
+          "correct": 0,
+          "explanation": "Thứ tự dẫn điện giảm dần của kim loại: $\\text{Ag} > \\text{Cu} > \\text{Au} > \\text{Al} > \\text{Fe}$."
+        },
+        {
+          "type": "mcq",
+          "question": "Trong pin điện hóa Zn - Cu khi hoạt động, tại điện cực kẽm (Zn) xảy ra quá trình nào?",
+          "options": [
+            "Oxi hóa kẽm (anode): $\\text{Zn} \\to \\text{Zn}^{2+} + 2e$",
+            "Khử kẽm (cathode): $\\text{Zn}^{2+} + 2e \\to \\text{Zn}$",
+            "Khử ion đồng: $\\text{Cu}^{2+} + 2e \\to \\text{Cu}$",
+            "Oxi hóa nước giải phóng khí oxygen"
+          ],
+          "correct": 0,
+          "explanation": "Kẽm có thế điện cực chuẩn âm hơn đồng nên đóng vai trò là cực âm (anode) và xảy ra quá trình oxi hóa kẽm."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Khối lượng mol nguyên tử của kim loại đồng (Cu) bằng bao nhiêu g/mol?",
+          "correct": "64",
+          "explanation": "Khối lượng nguyên tử của Copper (Đồng) là $M = 64\\text{ g/mol}$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Nhúng một thanh sắt (Fe) nguyên chất vào dung dịch copper(II) sulfate ($\\text{CuSO}_4$) loãng ở nhiệt độ phòng. Xét tính đúng sai của các khẳng định sau:",
+          "statements": [
+            {
+              "question": "Sau một thời gian ngắn, trên bề mặt thanh sắt xuất hiện lớp kim loại đồng (Cu) màu đỏ bám vào.",
+              "correct": true,
+              "explanation": "Phương trình phản ứng: $\\text{Fe} + \\text{Cu}^{2+} \\to \\text{Fe}^{2+} + \\text{Cu}\\downarrow$."
+            },
+            {
+              "question": "Khối lượng thanh sắt sau khi phản ứng và rửa sạch, sấy khô bị giảm so với ban đầu.",
+              "correct": false,
+              "explanation": "Cứ 1 mol Fe ($56\\text{ g}$) tan ra thì có 1 mol Cu ($64\\text{ g}$) bám vào, làm khối lượng thanh kim loại tăng lên."
+            },
+            {
+              "question": "Trong dung dịch sau phản ứng, xuất hiện đồng thời hiện tượng ăn mòn điện hóa học thanh sắt.",
+              "correct": true,
+              "explanation": "Kim loại Cu sinh ra bám trực tiếp lên Fe, cùng tiếp xúc với dung dịch chất điện li hình thành pin điện hóa Fe-Cu gây ăn mòn điện hóa Fe."
+            },
+            {
+              "question": "Phản ứng giữa sắt và dung dịch $\\text{CuSO}_4$ là một phản ứng trao đổi ion không có sự thay đổi số oxi hóa.",
+              "correct": false,
+              "explanation": "Đây là phản ứng oxi hóa - khử điển hình: $\\text{Fe}^0$ nhường electron thành $\\text{Fe}^{2+}$ và $\\text{Cu}^{2+}$ nhận electron thành $\\text{Cu}^0$."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

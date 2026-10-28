@@ -1,0 +1,191 @@
+{
+  "subject": "Hóa học 11",
+  "lessons": [
+    {
+      "name": "Bài 1: Cân bằng hóa học và Sự điện li",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Đối với một phản ứng thuận nghịch ở trạng thái cân bằng hóa học, nhận xét nào sau đây luôn đúng?",
+          "options": [
+            "Tốc độ của phản ứng thuận bằng tốc độ của phản ứng nghịch",
+            "Phản ứng thuận đã ngừng lại hoàn toàn",
+            "Nồng độ của các chất phản ứng và các chất sản phẩm luôn bằng nhau",
+            "Hằng số cân bằng $K_C$ của phản ứng luôn bằng 1"
+          ],
+          "correct": 0,
+          "explanation": "Cân bằng hóa học là cân bằng động, tại đó phản ứng thuận và nghịch vẫn diễn ra liên tục với tốc độ bằng nhau: $v_{\\text{thuận}} = v_{\\text{nghịch}}$."
+        },
+        {
+          "type": "mcq",
+          "question": "Dung dịch chất nào sau đây có môi trường base (pH > 7) ở $25^\\circ\\text{C}$?",
+          "options": [
+            "$\\text{NaOH}$",
+            "$\\text{HCl}$",
+            "$\\text{NaCl}$",
+            "$\\text{H}_2\\text{SO}_4$"
+          ],
+          "correct": 0,
+          "explanation": "$\\text{NaOH}$ là một base mạnh, khi tan trong nước phân li hoàn toàn tạo ion $\\text{OH}^-$ làm pH dung dịch lớn hơn 7."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Một dung dịch axit có nồng độ ion $\\text{H}^+$ là $[\\text{H}^+] = 10^{-3}\\text{ M}$. Giá trị pH của dung dịch này bằng bao nhiêu?",
+          "correct": "3",
+          "explanation": "Theo định nghĩa: $\\text{pH} = -\\log[\\text{H}^+] = -\\log(10^{-3}) = 3$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho phản ứng tổng hợp ammonia trong bình kín: $\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g), \\Delta_r H_{298}^0 = -92\\text{ kJ}$. Xét tính đúng sai của các khẳng định sau về sự chuyển dịch cân bằng:",
+          "statements": [
+            {
+              "question": "Phản ứng thuận tổng hợp ammonia là một phản ứng tỏa nhiệt.",
+              "correct": true,
+              "explanation": "Biến thiên enthalpy tiêu chuẩn của phản ứng $\\Delta_r H_{298}^0 = -92\\text{ kJ} < 0$, do đó phản ứng thuận tỏa nhiệt."
+            },
+            {
+              "question": "Khi tăng nhiệt độ của hệ phản ứng, cân bằng chuyển dịch theo chiều thuận tạo thêm $\\text{NH}_3$.",
+              "correct": false,
+              "explanation": "Theo nguyên lí Le Chatelier, khi tăng nhiệt độ cân bằng chuyển dịch theo chiều thu nhiệt (chiều nghịch), làm giảm hiệu suất tạo $\\text{NH}_3$."
+            },
+            {
+              "question": "Khi tăng áp suất chung của hệ, cân bằng chuyển dịch theo chiều thuận.",
+              "correct": true,
+              "explanation": "Bên chất phản ứng có 4 mol khí ($1\\text{N}_2 + 3\\text{H}_2$), bên sản phẩm có 2 mol khí. Tăng áp suất cân bằng chuyển dịch theo chiều giảm số mol khí (chiều thuận)."
+            },
+            {
+              "question": "Chất xúc tác bột sắt (Fe) làm tăng tốc độ phản ứng nhưng không làm chuyển dịch cân bằng hóa học.",
+              "correct": true,
+              "explanation": "Xúc tác làm giảm năng lượng hoạt hóa như nhau cho cả chiều thuận và chiều nghịch, giúp hệ nhanh đạt trạng thái cân bằng mà không làm thay đổi vị trí cân bằng."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 2: Đơn chất Nitrogen và hợp chất của Nitrogen - Sulfur",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Khí nitrogen ($\\text{N}_2$) tương đối trơ về mặt hóa học ở nhiệt độ thường là do nguyên nhân nào sau đây?",
+          "options": [
+            "Phân tử có liên kết ba $\\text{N}\\equiv\\text{N}$ rất bền vững với năng lượng liên kết lớn",
+            "Bán kính nguyên tử của nitrogen rất lớn so với các nguyên tố khác",
+            "Nitrogen có độ âm điện nhỏ nhất trong các nguyên tố nhóm VA",
+            "Phân tử nitrogen có cấu trúc phân cực mạnh"
+          ],
+          "correct": 0,
+          "explanation": "Phân tử $\\text{N}_2$ có liên kết ba bền vững ($E_b = 945\\text{ kJ/mol}$) nên ở nhiệt độ phòng rất khó bị phá vỡ để tham gia phản ứng."
+        },
+        {
+          "type": "mcq",
+          "question": "Khí ammonia ($\\text{NH}_3$) thể hiện tính base yếu khi tan trong nước là do:",
+          "options": [
+            "Nguyên tử N còn cặp electron tự do có khả năng nhận proton $\\text{H}^+$ từ nước",
+            "Phân tử $\\text{NH}_3$ có liên kết ion rất mạnh",
+            "Ammonia phân li hoàn toàn thành các ion tự do trong dung dịch",
+            "Ammonia có tính khử mạnh do số oxi hóa -3"
+          ],
+          "correct": 0,
+          "explanation": "Theo thuyết Bronsted-Lowry, nguyên tử N trong phân tử $\\text{NH}_3$ còn một cặp electron chưa liên kết, có thể nhận proton $\\text{H}^+$ để tạo thành cation $\\text{NH}_4^+$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Số oxi hóa cao nhất của nguyên tố Nitrogen trong các hợp chất hóa học là bao nhiêu (chỉ ghi số nguyên dương)?",
+          "correct": "5",
+          "explanation": "Nitrogen thuộc nhóm VA, có 5 electron hóa trị nên số oxi hóa cao nhất là +5 (như trong $\\text{HNO}_3$, $\\text{NO}_3^-$)."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Cho các tính chất hóa học của acid nitric ($\\text{HNO}_3$) và sulfur dioxide ($\\text{SO}_2$). Xét tính đúng sai của các nhận định sau:",
+          "statements": [
+            {
+              "question": "Dung dịch $\\text{HNO}_3$ đặc, nguội làm thụ động hóa các kim loại Fe, Al và Cr.",
+              "correct": true,
+              "explanation": "Acid nitric đặc nguội tạo màng oxide bảo vệ đặc khít trên bề mặt Fe, Al, Cr làm kim loại bị thụ động hóa."
+            },
+            {
+              "question": "Khí $\\text{SO}_2$ thải ra từ hoạt động đốt cháy nhiên liệu hóa thạch là một trong các nguyên nhân chính gây mưa acid.",
+              "correct": true,
+              "explanation": "$\\text{SO}_2$ bị oxi hóa trong khí quyển thành $\\text{SO}_3$ rồi tan trong nước mưa tạo sulfuric acid gây mưa acid."
+            },
+            {
+              "question": "Trong phản ứng tác dụng với dung dịch kiềm $\\text{NaOH}$, $\\text{SO}_2$ đóng vai trò là một chất khử.",
+              "correct": false,
+              "explanation": "Đây là phản ứng acid-base tạo muối và nước, không có sự thay đổi số oxi hóa nên $\\text{SO}_2$ không đóng vai trò chất khử."
+            },
+            {
+              "question": "Sulfuric acid đặc ($\\text{H}_2\\text{SO}_4$) có tính háo nước mạnh và có thể làm than hóa các carbohydrate như đường sucrose.",
+              "correct": true,
+              "explanation": "$\\text{H}_2\\text{SO}_4$ đặc lấy nước từ hợp chất hữu cơ: $\\text{C}_{12}\\text{H}_{22}\\text{O}_{11} \\to 12\\text{C} + 11\\text{H}_2\\text{O}$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bài 3: Đại cương Hóa hữu cơ và Hydrocarbon",
+      "questions": [
+        {
+          "type": "mcq",
+          "question": "Alkane là những hydrocarbon mạch hở trong phân tử chỉ chứa loại liên kết nào?",
+          "options": [
+            "Các liên kết đơn C-C và C-H",
+            "Một liên kết đôi C=C",
+            "Một liên kết ba C≡C",
+            "Một vòng thơm benzene"
+          ],
+          "correct": 0,
+          "explanation": "Alkane là hydrocarbon no mạch hở, chỉ gồm các liên kết đơn $\\sigma$ giữa C-C và C-H."
+        },
+        {
+          "type": "mcq",
+          "question": "Phản ứng đặc trưng của hydrocarbon không no chứa liên kết đôi C=C (như ethylene) là:",
+          "options": [
+            "Phản ứng cộng",
+            "Phản ứng thế gốc tự do",
+            "Phản ứng xà phòng hóa",
+            "Phản ứng este hóa"
+          ],
+          "correct": 0,
+          "explanation": "Liên kết $\\pi$ kém bền trong liên kết đôi C=C dễ dàng tham gia phản ứng cộng với các tác nhân như $\\text{Br}_2, \\text{H}_2, \\text{HCl}$."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Khối lượng mol phân tử của hydrocarbon methane ($\\text{CH}_4$) bằng bao nhiêu g/mol?",
+          "correct": "16",
+          "explanation": "$M = 12 + 4 \\times 1 = 16\\text{ g/mol}$."
+        }
+      ],
+      "questionGroups": [
+        {
+          "passage": "Xét hai hydrocarbon không no mạch hở là ethylene ($\\text{C}_2\\text{H}_4$) và acetylene ($\\text{C}_2\\text{H}_2$). Xét tính đúng sai của các nhận định sau:",
+          "statements": [
+            {
+              "question": "Cả ethylene và acetylene đều làm mất màu dung dịch nước bromine ở nhiệt độ thường.",
+              "correct": true,
+              "explanation": "Cả hai đều chứa liên kết $\\pi$ không no nên phản ứng cộng dễ dàng với dung dịch nước bromine."
+            },
+            {
+              "question": "Acetylene phản ứng được với dung dịch $\\text{AgNO}_3$ trong $\\text{NH}_3$ tạo kết tủa màu vàng nhạt.",
+              "correct": true,
+              "explanation": "Acetylene có liên kết ba đầu mạch chứa nguyên tử H linh động phản ứng thế ion kim loại: $\\text{HC}\\equiv\\text{CH} + 2\\text{AgNO}_3 + 2\\text{NH}_3 \\to \\text{AgC}\\equiv\\text{CAg}\\downarrow + 2\\text{NH}_4\\text{NO}_3$."
+            },
+            {
+              "question": "Ethylene có thể tham gia phản ứng trùng hợp để tạo ra poly(ethylene) (nhựa PE).",
+              "correct": true,
+              "explanation": "Dưới áp suất, nhiệt độ và xúc tác thích hợp, ethylene tham gia phản ứng trùng hợp mở liên kết đôi tạo chuỗi polymer PE."
+            },
+            {
+              "question": "Tỉ lệ số mol $\\text{CO}_2$ và $\\text{H}_2\\text{O}$ khi đốt cháy hoàn toàn ethylene luôn lớn hơn 1.",
+              "correct": false,
+              "explanation": "Phương trình đốt cháy: $\\text{C}_2\\text{H}_4 + 3\\text{O}_2 \\to 2\\text{CO}_2 + 2\\text{H}_2\\text{O}$. Tỉ lệ số mol $n_{\\text{CO}_2} : n_{\\text{H}_2\\text{O}} = 1 : 1$."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
