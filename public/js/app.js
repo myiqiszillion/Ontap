@@ -252,18 +252,19 @@ const app = {
       if (topicsHeader) topicsHeader.style.display = '';
     }
 
-    // Update start button text
+    // Update start button text with clean SVG icon
     const startBtn = document.getElementById('start-btn');
     if (startBtn) {
       const labels = {
-        exam: '📝 Bắt đầu luyện đề',
-        study: '📖 Bắt đầu học & đọc',
-        flashcard: '🃏 Bắt đầu flashcard',
-        practice: '💪 Bắt đầu luyện tập',
-        tf: '⚖️ Bắt đầu luyện Đúng/Sai',
-        wrong: '❌ Luyện câu sai'
+        exam: 'Bắt đầu làm bài thi',
+        study: 'Bắt đầu đọc & học',
+        flashcard: 'Bắt đầu lật Flashcard',
+        practice: 'Bắt đầu luyện tập thích ứng',
+        tf: 'Bắt đầu luyện Đúng / Sai',
+        wrong: 'Luyện lại các câu sai'
       };
-      startBtn.textContent = labels[mode] || '🚀 Bắt đầu';
+      const text = labels[mode] || 'Bắt đầu làm bài';
+      startBtn.innerHTML = `<svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> <span>${text}</span>`;
     }
 
     if (mode === 'wrong') {

@@ -12,22 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/style.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/quiz.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/diagnostic.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/planner.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/checker.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/heritage-theme.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/mistakes.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/custom-exam.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/theme-focus.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/smart-importer.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/printable-exam.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/command-palette.css?v=20261028-v4">
-  <link rel="stylesheet" href="css/result-view.css?v=20261028-v4">
+  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/style.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/quiz.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/diagnostic.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/planner.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/checker.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/heritage-theme.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/mistakes.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/custom-exam.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/theme-focus.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/smart-importer.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/printable-exam.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/command-palette.css?v=20261028-v5">
+  <link rel="stylesheet" href="css/result-view.css?v=20261028-v5">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261028-v4">
+  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261028-v5">
   <meta name="theme-color" content="#d97706">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -341,9 +341,17 @@
       <div class="topics-container">
         <!-- Mode Selector -->
         <div class="mode-selector" id="mode-selector">
-          <h2>Chọn chế độ ôn tập</h2>
+          <div class="mode-selector-header">
+            <div>
+              <h2 class="section-title">Chọn chế độ ôn tập</h2>
+              <p class="section-hint">Tùy biến phương pháp học tập bám sát mục tiêu và thời gian của bạn</p>
+            </div>
+            <a href="/verified-practice.html" class="verified-link-pill">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>Phòng luyện chuẩn Bộ GD&ĐT →</span>
+            </a>
+          </div>
           <div class="mode-cards">
-            <p>Ngân hàng mẫu trên thiết bị phục vụ luyện tập. <a href="/verified-practice.html">Luyện từ ngân hàng đã duyệt</a></p>
             <button type="button" class="mode-card selected" data-mode="exam" onclick="app.selectMode('exam')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();app.selectMode('exam');}" aria-label="Chế độ Luyện đề có thời gian">
               <div class="mode-icon"><svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div>
               <div class="mode-name">Luyện đề có thời gian</div>
@@ -655,6 +663,34 @@
           </div>
         </div>
 
+        <!-- 3-Part Assessment Breakdown (Decision 764/QD-BGDDT) -->
+        <div class="decision-764-breakdown" id="result-764-breakdown">
+          <div class="breakdown-header">
+            <span class="breakdown-tag">CẤU TRÚC ĐỀ THI BỘ GD&ĐT</span>
+            <h3 class="breakdown-title">Bóc tách điểm số 3 phần theo QĐ 764/QĐ-BGDĐT</h3>
+          </div>
+          <div class="breakdown-grid">
+            <div class="breakdown-item p1">
+              <div class="bd-part">PHẦN I</div>
+              <div class="bd-name">Trắc nghiệm 4 lựa chọn</div>
+              <div class="bd-desc">Đánh giá kiến thức cốt lõi & nhận biết</div>
+              <div class="bd-scale">0.25 điểm / câu</div>
+            </div>
+            <div class="breakdown-item p2">
+              <div class="bd-part">PHẦN II</div>
+              <div class="bd-name">Trắc nghiệm Đúng / Sai</div>
+              <div class="bd-desc">Thử thách 4 mệnh đề logic đa tầng</div>
+              <div class="bd-scale">Đúng 4 ý: 1.0 đ • 3 ý: 0.5 đ</div>
+            </div>
+            <div class="breakdown-item p3">
+              <div class="bd-part">PHẦN III</div>
+              <div class="bd-name">Trả lời ngắn</div>
+              <div class="bd-desc">Vận dụng cao & tư duy giải toán số</div>
+              <div class="bd-scale">Toán: 0.5 đ • Lí/Hóa: 0.25 đ</div>
+            </div>
+          </div>
+        </div>
+
         <button class="btn-share-card" onclick="app.downloadResultCard()">
           <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg> Xuất Thẻ Ảnh Thành Tích (Chia sẻ Zalo / Facebook)
         </button>
@@ -732,34 +768,34 @@
 
   <!-- Modular Scripts Architecture -->
   <script defer src="js/icons.js"></script>
-  <script defer src="js/audio.js?v=20261028-v4"></script>
-  <script defer src="js/api.js?v=20261028-v4"></script>
-  <script defer src="js/state.js?v=20261028-v4"></script>
-  <script defer src="js/router.js?v=20261028-v4"></script>
-  <script defer src="js/onboarding.js?v=20261028-v4"></script>
-  <script defer src="js/dashboard.js?v=20261028-v4"></script>
-  <script defer src="js/subject-explorer.js?v=20261028-v4"></script>
-  <script defer src="js/data-loader.js?v=20261028-v4"></script>
-  <script defer src="js/formula-renderer.js?v=20261028-v4"></script>
-  <script defer src="js/timer.js?v=20261028-v4"></script>
-  <script defer src="js/study.js?v=20261028-v4"></script>
-  <script defer src="js/question-schema.js?v=20261028-v4"></script>
-  <script defer src="js/scoring-engine.js?v=20261028-v4"></script>
-  <script defer src="js/quiz.js?v=20261028-v4"></script>
-  <script defer src="js/checker.js?v=20261028-v4"></script>
-  <script defer src="js/keyboard.js?v=20261028-v4"></script>
-  <script defer src="js/mistakes.js?v=20261028-v4"></script>
-  <script defer src="js/custom-exam.js?v=20261028-v4"></script>
-  <script defer src="js/theme-focus.js?v=20261028-v4"></script>
-  <script defer src="js/diagnostic-view.js?v=20261028-v4"></script>
-  <script defer src="js/planner-view.js?v=20261028-v4"></script>
-  <script defer src="js/auth-view.js?v=20261028-v4"></script>
-  <script defer src="js/smart-importer.js?v=20261028-v4"></script>
-  <script defer src="js/printable-exam.js?v=20261028-v4"></script>
-  <script defer src="js/command-palette.js?v=20261028-v4"></script>
-  <script defer src="js/confetti.js?v=20261028-v4"></script>
-  <script defer src="js/result-card.js?v=20261028-v4"></script>
-  <script defer src="js/app.js?v=20261028-v4"></script>
+  <script defer src="js/audio.js?v=20261028-v5"></script>
+  <script defer src="js/api.js?v=20261028-v5"></script>
+  <script defer src="js/state.js?v=20261028-v5"></script>
+  <script defer src="js/router.js?v=20261028-v5"></script>
+  <script defer src="js/onboarding.js?v=20261028-v5"></script>
+  <script defer src="js/dashboard.js?v=20261028-v5"></script>
+  <script defer src="js/subject-explorer.js?v=20261028-v5"></script>
+  <script defer src="js/data-loader.js?v=20261028-v5"></script>
+  <script defer src="js/formula-renderer.js?v=20261028-v5"></script>
+  <script defer src="js/timer.js?v=20261028-v5"></script>
+  <script defer src="js/study.js?v=20261028-v5"></script>
+  <script defer src="js/question-schema.js?v=20261028-v5"></script>
+  <script defer src="js/scoring-engine.js?v=20261028-v5"></script>
+  <script defer src="js/quiz.js?v=20261028-v5"></script>
+  <script defer src="js/checker.js?v=20261028-v5"></script>
+  <script defer src="js/keyboard.js?v=20261028-v5"></script>
+  <script defer src="js/mistakes.js?v=20261028-v5"></script>
+  <script defer src="js/custom-exam.js?v=20261028-v5"></script>
+  <script defer src="js/theme-focus.js?v=20261028-v5"></script>
+  <script defer src="js/diagnostic-view.js?v=20261028-v5"></script>
+  <script defer src="js/planner-view.js?v=20261028-v5"></script>
+  <script defer src="js/auth-view.js?v=20261028-v5"></script>
+  <script defer src="js/smart-importer.js?v=20261028-v5"></script>
+  <script defer src="js/printable-exam.js?v=20261028-v5"></script>
+  <script defer src="js/command-palette.js?v=20261028-v5"></script>
+  <script defer src="js/confetti.js?v=20261028-v5"></script>
+  <script defer src="js/result-card.js?v=20261028-v5"></script>
+  <script defer src="js/app.js?v=20261028-v5"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
