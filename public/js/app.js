@@ -497,6 +497,15 @@ const app = {
     }
   },
 
+  startCustomExam(config) {
+    if (!config || !config.questions || config.questions.length === 0) return;
+    this.currentSubject = config.subjectId || 'mixed';
+    this.currentQuestions = config.questions;
+    this.examMode = 'custom';
+    this.customExamDuration = (config.durationMinutes || 15) * 60;
+    this.navigateTo('quiz');
+  },
+
   // ═══════════ START LEARNING / EXAM ═══════════
 
   async resumePractice() {
@@ -876,6 +885,7 @@ const app = {
 
 if (typeof window !== 'undefined') {
   window.app = app;
+  window.App = app;
 }
 
 // Start application
