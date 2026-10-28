@@ -121,7 +121,7 @@ const Checker = {
               <select id="checker-subject-select" onchange="Checker.selectSubject(this.value)">
                 ${subjects.map(s => `
                   <option value="${s.id}" ${s.id === this.currentSubject ? 'selected' : ''}>
-                    ${s.icon || '📖'} ${s.name} (${s.questionCount || 0} câu)
+                    ${s.name} (${s.questionCount || 0} câu)
                   </option>
                 `).join('')}
               </select>
@@ -371,11 +371,11 @@ const Checker = {
         if (fb) fb.innerHTML = `<span class="eval-blank">Chưa chọn (Đáp án: ${q.correctLetter})</span>`;
       } else if (userOpt === correctOpt) {
         mcqCorrect++;
-        if (fb) fb.innerHTML = `<span class="eval-correct">✓ Đúng (+0.25đ)</span>`;
+        if (fb) fb.innerHTML = `<span class="eval-correct">${typeof Icons !== 'undefined' ? Icons.get('check', { size: 14 }) + ' ' : ''}Đúng (+0.25đ)</span>`;
         if (row) row.classList.add('is-row-correct');
       } else {
         const letters = ['A', 'B', 'C', 'D'];
-        if (fb) fb.innerHTML = `<span class="eval-wrong">✗ Sai (Đúng: ${letters[correctOpt]})</span>`;
+        if (fb) fb.innerHTML = `<span class="eval-wrong">${typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) + ' ' : ''}Sai (Đúng: ${letters[correctOpt]})</span>`;
         if (row) row.classList.add('is-row-wrong');
       }
     });
@@ -392,9 +392,9 @@ const Checker = {
           if (tag) tag.innerHTML = `<span class="eval-blank">Chưa chọn (Chuẩn: ${s.correct ? 'Đúng' : 'Sai'})</span>`;
         } else if (userVal === s.correct) {
           groupCorrectStmts++;
-          if (tag) tag.innerHTML = `<span class="eval-correct">✓ Đúng</span>`;
+          if (tag) tag.innerHTML = `<span class="eval-correct">${typeof Icons !== 'undefined' ? Icons.get('check', { size: 14 }) + ' ' : ''}Đúng</span>`;
         } else {
-          if (tag) tag.innerHTML = `<span class="eval-wrong">✗ Sai (Chuẩn: ${s.correct ? 'Đúng' : 'Sai'})</span>`;
+          if (tag) tag.innerHTML = `<span class="eval-wrong">${typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) + ' ' : ''}Sai (Chuẩn: ${s.correct ? 'Đúng' : 'Sai'})</span>`;
         }
       });
 
@@ -406,7 +406,7 @@ const Checker = {
       if (evalBox) {
         evalBox.innerHTML = `
           <div class="tf-eval-result">
-            Kết quả: Đúng <strong>${groupCorrectStmts}/4 ý</strong> ➔ Đạt: <strong>${awarded} / 1.0 điểm</strong>
+            Kết quả: Đúng <strong>${groupCorrectStmts}/4 ý</strong> — Đạt: <strong>${awarded} / 1.0 điểm</strong>
           </div>
         `;
       }
@@ -422,7 +422,7 @@ const Checker = {
       summaryEl.style.display = 'block';
       summaryEl.innerHTML = `
         <div class="score-banner-content">
-          <div class="score-trophy">${percentage >= 80 ? '🏆' : percentage >= 50 ? '🎉' : '📚'}</div>
+          <div class="score-trophy">${percentage >= 80 ? (typeof Icons !== 'undefined' ? Icons.get('trophy', { size: 36 }) : '') : percentage >= 50 ? (typeof Icons !== 'undefined' ? Icons.get('sparkles', { size: 36 }) : '') : (typeof Icons !== 'undefined' ? Icons.get('book-open', { size: 36 }) : '')}</div>
           <div class="score-details">
             <h3>Kết quả tự dò bài: <span class="score-highlight">${totalPoints} / ${maxPoints} điểm</span> (${percentage}%)</h3>
             <p>Trắc nghiệm Phần I: <strong>${mcqCorrect}/${mcqTotal} câu</strong> (${mcqPoints}đ) • Đúng/Sai Phần II: <strong>${tfPoints} / ${tfTotalMax}đ</strong></p>
@@ -473,7 +473,7 @@ const Checker = {
                     <div class="explorer-opt-row ${isCorrect ? 'is-correct-answer' : ''}">
                       <span class="opt-letter-tag">${letters[oi]}</span>
                       <span class="opt-text">${this.renderMathOrText(opt)}</span>
-                      ${isCorrect ? '<span class="correct-check">✓ ĐÁP ÁN ĐÚNG</span>' : ''}
+                      ${isCorrect ? '<span class="correct-check">' + (typeof Icons !== 'undefined' ? Icons.get('check', { size: 14 }) + ' ' : '') + 'ĐÁP ÁN ĐÚNG</span>' : ''}
                     </div>
                   `;
                 }).join('')}
@@ -504,7 +504,7 @@ const Checker = {
                     <span class="stmt-letter-box">${String.fromCharCode(97 + si)})</span>
                     <span class="stmt-text">${this.renderMathOrText(s.question)}</span>
                     <span class="stmt-status-badge ${s.correct ? 'badge-true' : 'badge-false'}">
-                      ${s.correct ? '✓ ĐÚNG' : '✗ SAI'}
+                      ${s.correct ? ((typeof Icons !== 'undefined' ? Icons.get('check', { size: 12 }) + ' ' : '') + 'ĐÚNG') : ((typeof Icons !== 'undefined' ? Icons.get('x', { size: 12 }) + ' ' : '') + 'SAI')}
                     </span>
                   </div>
                 `).join('')}
@@ -550,7 +550,7 @@ const Checker = {
         <div class="detail-box-inner">
           <div class="detail-box-header">
             <h4>Chi tiết Câu ${q.globalNum} (Trắc nghiệm) — ${q.lessonName}</h4>
-            <button class="close-box-btn" onclick="document.getElementById('checker-detail-container').style.display='none'">✕</button>
+            <button class="close-box-btn" onclick="document.getElementById('checker-detail-container').style.display='none'">${typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) : 'Đóng'}</button>
           </div>
           <p class="detail-q-prompt"><strong>Câu hỏi:</strong> ${this.escapeHtml(q.question)}</p>
           <div class="detail-options-list">
@@ -577,7 +577,7 @@ const Checker = {
         <div class="detail-box-inner">
           <div class="detail-box-header">
             <h4>Chi tiết Câu ${g.globalNum} (Đúng / Sai) — ${g.lessonName}</h4>
-            <button class="close-box-btn" onclick="document.getElementById('checker-detail-container').style.display='none'">✕</button>
+            <button class="close-box-btn" onclick="document.getElementById('checker-detail-container').style.display='none'">${typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) : 'Đóng'}</button>
           </div>
           <div class="detail-passage">
             <strong>Tư liệu lịch sử:</strong>

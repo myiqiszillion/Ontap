@@ -12,11 +12,11 @@ const Onboarding = {
   },
 
   CORE_SUBJECTS: [
-    { key: 'toan', name: 'Toán học', icon: '📐', desc: 'Đại số, Hình học & Thống kê' },
-    { key: 'vatli', name: 'Vật lí', icon: '⚡', desc: 'Động học, Dao động & Nhiệt học' },
-    { key: 'hoahoc', name: 'Hóa học', icon: '🧪', desc: 'Liên kết, Hữu cơ & Vô cơ' },
-    { key: 'tienganh', name: 'Tiếng Anh', icon: '🌐', desc: 'Ngữ pháp, Từ vựng & Đọc hiểu' },
-    { key: 'lichsu', name: 'Lịch sử', icon: '📜', desc: 'Lịch sử Việt Nam & Thế giới (GDPT 2018)' }
+    { key: 'toan', name: 'Toán học', icon: 'ruler', desc: 'Đại số, Hình học & Thống kê' },
+    { key: 'vatli', name: 'Vật lí', icon: 'zap', desc: 'Động học, Dao động & Nhiệt học' },
+    { key: 'hoahoc', name: 'Hóa học', icon: 'flask-conical', desc: 'Liên kết, Hữu cơ & Vô cơ' },
+    { key: 'tienganh', name: 'Tiếng Anh', icon: 'globe', desc: 'Ngữ pháp, Từ vựng & Đọc hiểu' },
+    { key: 'lichsu', name: 'Lịch sử', icon: 'scroll', desc: 'Lịch sử Việt Nam & Thế giới (GDPT 2018)' }
   ],
 
   init() {
@@ -136,13 +136,13 @@ const Onboarding = {
              aria-checked="${isSelected}"
              onclick="Onboarding.toggleSubject('${s.key}')"
              onkeydown="Onboarding.handleSubjectKey(event, '${s.key}')">
-          <div class="choice-icon">${s.icon}</div>
+          <div class="choice-icon">${(typeof Icons !== 'undefined' && Icons.has(s.icon)) ? Icons.get(s.icon, { size: 24 }) : s.icon}</div>
           <div class="choice-info">
             <div class="choice-title">${s.name}</div>
             <div class="choice-desc">${s.desc}</div>
           </div>
           <div class="choice-check">
-            <span class="checkmark-icon">${isSelected ? '✓' : '+'}</span>
+            <span class="checkmark-icon">${isSelected ? ((typeof Icons !== 'undefined') ? Icons.get('check', { size: 14 }) : 'OK') : '+'}</span>
           </div>
         </div>
       `;

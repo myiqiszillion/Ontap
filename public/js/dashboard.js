@@ -439,7 +439,7 @@ const DashboardView = {
             <div>
               <div class="comm-title-row">
                 <h3 class="comm-title">Tham gia cộng đồng học tập THPT Miki</h3>
-                <span class="comm-status-badge">🟢 Đang hoạt động</span>
+                <span class="comm-status-badge">${(typeof Icons !== 'undefined' && Icons.get) ? Icons.get('circle', { size: 10, className: 'status-dot-active' }) : '<span class="status-indicator-dot" aria-hidden="true"></span>'} Đang hoạt động</span>
               </div>
               <p class="comm-desc">Giao lưu hỏi bài, chia sẻ đề thi và tham gia phòng học trực tuyến cùng các bạn học sinh THPT NTMK.</p>
             </div>

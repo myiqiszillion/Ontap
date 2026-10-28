@@ -165,15 +165,15 @@ const DiagnosticView = {
       const data = await res.json();
 
       if (data.ready) {
-        statusEl.innerHTML = '✅ Đã sẵn sàng';
+        statusEl.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('check-circle', { size: 14 }) + ' ' : '') + 'Đã sẵn sàng';
         statusEl.style.color = 'var(--color-success)';
         if (startBtn) startBtn.disabled = false;
       } else {
-        statusEl.innerHTML = `⚠️ Thiếu ${data.shortages ? data.shortages.length : 0} câu`;
+        statusEl.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('alert-triangle', { size: 14 }) + ' ' : '') + `Thiếu ${data.shortages ? data.shortages.length : 0} câu`;
         statusEl.style.color = 'var(--color-warning)';
       }
     } catch (e) {
-      statusEl.innerHTML = 'ℹ️ Chế độ Kiểm thử Sẵn sàng';
+      statusEl.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('info', { size: 14 }) + ' ' : '') + 'Chế độ Kiểm thử Sẵn sàng';
       statusEl.style.color = 'var(--brand-teal)';
     }
   },
@@ -185,7 +185,7 @@ const DiagnosticView = {
     const startBtn = document.getElementById('diag-start-btn');
     if (startBtn) {
       startBtn.disabled = true;
-      startBtn.innerHTML = '⏳ Đang khởi tạo...';
+      startBtn.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('clock', { size: 14 }) + ' ' : '') + 'Đang khởi tạo...';
     }
 
     try {
@@ -220,7 +220,7 @@ const DiagnosticView = {
       alert(`Không thể bắt đầu bài chẩn đoán: ${err.message}`);
       if (startBtn) {
         startBtn.disabled = false;
-        startBtn.innerHTML = '🚀 Bắt đầu bài chẩn đoán';
+        startBtn.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('rocket', { size: 16 }) + ' ' : '') + 'Bắt đầu bài chẩn đoán';
       }
     }
   },
@@ -262,10 +262,10 @@ const DiagnosticView = {
             <div class="diag-topbar">
               <div style="display:flex; align-items:center; gap:0.75rem;">
                 <span class="diag-badge-pill primary">Câu ${this.currentQuestionIndex + 1} / ${questions.length}</span>
-                <span class="diag-autosave-pill" id="diag-autosave-status">🟢 Đã lưu tự động</span>
+                <span class="diag-autosave-pill" id="diag-autosave-status">${typeof Icons !== 'undefined' ? Icons.get('check-circle', { size: 12 }) + ' ' : ''}Đã lưu tự động</span>
               </div>
               <div class="diag-timer-badge">
-                ⏱️ <span id="diag-timer-display">--:--</span>
+                ${typeof Icons !== 'undefined' ? Icons.get('clock', { size: 14 }) + ' ' : ''}<span id="diag-timer-display">--:--</span>
               </div>
             </div>
 
@@ -288,15 +288,15 @@ const DiagnosticView = {
 
             <div class="diag-nav-actions">
               <button class="diag-btn-secondary" onclick="DiagnosticView.goToPrevQuestion()" ${this.currentQuestionIndex === 0 ? 'disabled' : ''}>
-                ⬅️ Câu trước
+                ${typeof Icons !== 'undefined' ? Icons.get('arrow-left', { size: 14 }) + ' ' : ''}Câu trước
               </button>
 
               <button class="diag-btn-secondary" onclick="DiagnosticView.confirmSubmitModal()">
-                📝 Nộp bài chẩn đoán
+                ${typeof Icons !== 'undefined' ? Icons.get('file-text', { size: 14 }) + ' ' : ''}Nộp bài chẩn đoán
               </button>
 
               <button class="diag-btn-primary" onclick="DiagnosticView.goToNextQuestion()" ${this.currentQuestionIndex === questions.length - 1 ? 'disabled' : ''}>
-                Câu tiếp ➡️
+                Câu tiếp ${typeof Icons !== 'undefined' ? Icons.get('arrow-right', { size: 14 }) : ''}
               </button>
             </div>
           </div>
@@ -416,7 +416,7 @@ const DiagnosticView = {
 
   triggerAutoSave() {
     const statusEl = document.getElementById('diag-autosave-status');
-    if (statusEl) statusEl.innerHTML = '🟡 Đang lưu...';
+    if (statusEl) statusEl.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('clock', { size: 12 }) + ' ' : '') + 'Đang lưu...';
 
     clearTimeout(this.autoSaveTimeout);
     this.autoSaveTimeout = setTimeout(async () => {
@@ -432,9 +432,9 @@ const DiagnosticView = {
             currentQuestionIndex: this.currentQuestionIndex
           })
         });
-        if (statusEl) statusEl.innerHTML = '🟢 Đã lưu tự động';
+        if (statusEl) statusEl.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('check-circle', { size: 12 }) + ' ' : '') + 'Đã lưu tự động';
       } catch (e) {
-        if (statusEl) statusEl.innerHTML = '⚠️ Lưu cục bộ';
+        if (statusEl) statusEl.innerHTML = (typeof Icons !== 'undefined' ? Icons.get('alert-triangle', { size: 12 }) + ' ' : '') + 'Lưu cục bộ';
       }
     }, 800);
   },
@@ -526,12 +526,12 @@ const DiagnosticView = {
 
         <!-- 3.1 Prioritized Knowledge Gaps -->
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
-          ⚠️ Những Lỗ Hổng Kiến Thức Cần Ưu Tiên Củng Cố (${gaps.length})
+          ${typeof Icons !== 'undefined' ? Icons.get('alert-triangle', { size: 18 }) + ' ' : ''}Những Lỗ Hổng Kiến Thức Cần Ưu Tiên Củng Cố (${gaps.length})
         </h2>
 
         ${gaps.length === 0 ? `
           <div class="diag-welcome-card" style="padding:1.5rem; text-align:center; color:var(--color-success);">
-            🎉 Không phát hiện lỗ hổng nền tảng nghiêm trọng nào trong bài kiểm tra này!
+            ${typeof Icons !== 'undefined' ? Icons.get('sparkles', { size: 16 }) + ' ' : ''}Không phát hiện lỗ hổng nền tảng nghiêm trọng nào trong bài kiểm tra này!
           </div>
         ` : gaps.map((gap, i) => `
           <div class="diag-gap-card ${gap.isFoundationalBlocker ? 'blocker' : ''}">
@@ -542,7 +542,7 @@ const DiagnosticView = {
             <div class="diag-gap-body">
               <p style="margin:0 0 0.5rem 0;">${gap.reasons ? gap.reasons.join(' ') : ''}</p>
               <div style="font-size:0.82rem; font-weight:600; color:var(--brand-primary);">
-                💡 Hướng xử lý: ${gap.actionPlan || gap.recommendedNextAssessment}
+                ${typeof Icons !== 'undefined' ? Icons.get('lightbulb', { size: 14 }) + ' ' : ''}Hướng xử lý: ${gap.actionPlan || gap.recommendedNextAssessment}
               </div>
             </div>
           </div>
@@ -550,7 +550,7 @@ const DiagnosticView = {
 
         <!-- 3.2 Assessed Skills Overview Table -->
         <h2 style="font-size:1.25rem; font-weight:700; margin:2rem 0 1rem 0;">
-          📊 Bản Đồ Mức Độ Thành Thạo Các Kỹ Năng Đã Kiểm Tra
+          ${typeof Icons !== 'undefined' ? Icons.get('activity', { size: 18 }) + ' ' : ''}Bản Đồ Mức Độ Thành Thạo Các Kỹ Năng Đã Kiểm Tra
         </h2>
 
         <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:1rem; overflow-x:auto;">
@@ -584,7 +584,7 @@ const DiagnosticView = {
 
         <!-- 3.3 Actionable Recommendations -->
         <h2 style="font-size:1.25rem; font-weight:700; margin:2rem 0 1rem 0;">
-          🚀 Lộ Trình Ôn Tập Đề Xuất (Phase 03B)
+          ${typeof Icons !== 'undefined' ? Icons.get('rocket', { size: 18 }) + ' ' : ''}Lộ Trình Ôn Tập Đề Xuất (Phase 03B)
         </h2>
 
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1rem; margin-bottom:2rem;">
@@ -599,13 +599,13 @@ const DiagnosticView = {
 
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
           <button class="diag-btn-primary" onclick="app.navigateTo('planner')" style="background:var(--brand-primary);">
-            📅 Tạo Kế Hoạch Học Tập (Phase 03B)
+            ${typeof Icons !== 'undefined' ? Icons.get('calendar', { size: 14 }) + ' ' : ''}Tạo Kế Hoạch Học Tập (Phase 03B)
           </button>
           <button class="diag-btn-secondary" onclick="DiagnosticView.render('welcome')">
-            🔄 Làm bài chẩn đoán khác
+            ${typeof Icons !== 'undefined' ? Icons.get('rotate-ccw', { size: 14 }) + ' ' : ''}Làm bài chẩn đoán khác
           </button>
           <button class="diag-btn-secondary" onclick="app.navigateTo('dashboard')">
-            🏠 Trở về Bảng điều khiển
+            ${typeof Icons !== 'undefined' ? Icons.get('home', { size: 14 }) + ' ' : ''}Trở về Bảng điều khiển
           </button>
         </div>
 
@@ -625,7 +625,7 @@ const DiagnosticView = {
             <p style="color:var(--text-sub); font-size:0.9rem; margin:0.3rem 0 0 0;">Theo dõi tiến độ tích lũy năng lực GDPT 2018 theo thời gian thực.</p>
           </div>
           <button class="diag-btn-primary" onclick="DiagnosticView.render('welcome')">
-            🎯 Làm bài đánh giá mới
+            ${typeof Icons !== 'undefined' ? Icons.get('target', { size: 14 }) + ' ' : ''}Làm bài đánh giá mới
           </button>
         </div>
 

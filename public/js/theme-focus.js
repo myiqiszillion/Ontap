@@ -119,7 +119,7 @@ const FocusMode = {
   pauseResume() {
     this.isPaused = !this.isPaused;
     const btn = document.getElementById('focus-pause-btn');
-    if (btn) btn.textContent = this.isPaused ? '▶️ Tiếp tục' : '⏸️ Tạm dừng';
+    if (btn) btn.innerHTML = this.isPaused ? ((typeof Icons !== 'undefined') ? Icons.get('play', { size: 14 }) + ' Tiếp tục' : 'Tiếp tục') : ((typeof Icons !== 'undefined') ? Icons.get('pause', { size: 14 }) + ' Tạm dừng' : 'Tạm dừng');
     if (window.SoundFX) SoundFX.playClick();
   },
 
@@ -131,7 +131,7 @@ const FocusMode = {
   onPomodoroComplete() {
     this.stopPomodoro();
     if (window.SoundFX) SoundFX.playVictory();
-    alert('🎉 Tuyệt vời! Bạn đã hoàn thành trọn vẹn 25 phút tập trung cao độ.');
+    alert('Tuyệt vời! Bạn đã hoàn thành trọn vẹn 25 phút tập trung cao độ.');
     this.exit();
   },
 
@@ -150,8 +150,8 @@ const FocusMode = {
         <span class="focus-label">Chế độ tập trung</span>
         <span class="focus-timer-text" id="focus-time-display">25:00</span>
         <div class="focus-controls">
-          <button id="focus-pause-btn" class="focus-btn" onclick="FocusMode.pauseResume()">⏸️ Tạm dừng</button>
-          <button class="focus-btn exit" onclick="FocusMode.exit()">✕ Thoát [Esc]</button>
+          <button id="focus-pause-btn" class="focus-btn" onclick="FocusMode.pauseResume()">${typeof Icons !== 'undefined' ? Icons.get('pause', { size: 14 }) + ' ' : ''}Tạm dừng</button>
+          <button class="focus-btn exit" onclick="FocusMode.exit()">${typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) + ' ' : ''}Thoát [Esc]</button>
         </div>
       </div>
     `;

@@ -73,13 +73,13 @@ const SubjectExplorer = {
            style="--sub-color: ${subject.color || '#3b82f6'};">
         <div class="card-top">
           <div class="sub-icon-box" style="background: ${subject.color}15; color: ${subject.color};">
-            ${subject.icon || '📖'}
+            ${(typeof Icons !== 'undefined') ? (subject.id?.includes('vatli') ? Icons.get('zap', { size: 24 }) : subject.id?.includes('hoahoc') ? Icons.get('flask-conical', { size: 24 }) : subject.id?.includes('anh') ? Icons.get('globe', { size: 24 }) : subject.id?.includes('toan') ? Icons.get('ruler', { size: 24 }) : Icons.get('book-open', { size: 24 })) : ''}
           </div>
           <div class="card-status-badge">
             ${isReady ? `
               <span class="badge badge-success">● Sẵn sàng luyện tập</span>
             ` : `
-              <span class="badge badge-warning">⏳ Đang biên soạn</span>
+              <span class="badge badge-warning">${typeof Icons !== 'undefined' ? Icons.get('clock', { size: 14 }) + ' ' : ''}Đang biên soạn</span>
             `}
           </div>
         </div>

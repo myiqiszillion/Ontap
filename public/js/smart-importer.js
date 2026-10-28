@@ -404,7 +404,7 @@ const SmartImporterView = {
         <div class="parsed-q-card" id="parsed-mcq-${idx}">
           <div class="q-header">
             <span class="q-num">Câu ${idx + 1}</span>
-            <button class="btn-del-q" onclick="SmartImporterView.deleteMcq(${idx})" title="Xóa câu này">✕</button>
+            <button class="btn-del-q" onclick="SmartImporterView.deleteMcq(${idx})" title="Xóa câu này">${(typeof Icons !== 'undefined' && Icons.get) ? Icons.get('x', { size: 14 }) : 'Xóa'}</button>
           </div>
           <div class="q-text-editable" contenteditable="true" onblur="SmartImporterView.updateMcqPrompt(${idx}, this.innerText)">
             ${this.escapeHtml(q.question)}
@@ -416,7 +416,7 @@ const SmartImporterView = {
                    title="Bấm để chọn đây là đáp án đúng">
                 <span class="opt-key">${letters[optIdx]}.</span>
                 <span class="opt-val">${this.escapeHtml(opt)}</span>
-                ${optIdx === Number(q.correctAnswer) ? '<span class="correct-tick">✓ Đúng</span>' : ''}
+                ${optIdx === Number(q.correctAnswer) ? '<span class="correct-tick">' + ((typeof Icons !== 'undefined' && Icons.get) ? Icons.get('check', { size: 14 }) + ' ' : '') + 'Đúng</span>' : ''}
               </div>
             `).join('')}
           </div>
@@ -430,7 +430,7 @@ const SmartImporterView = {
         <div class="parsed-q-card" id="parsed-tf-${idx}">
           <div class="q-header">
             <span class="q-num">Bài Đúng/Sai ${idx + 1}</span>
-            <button class="btn-del-q" onclick="SmartImporterView.deleteTf(${idx})" title="Xóa câu này">✕</button>
+            <button class="btn-del-q" onclick="SmartImporterView.deleteTf(${idx})" title="Xóa câu này">${(typeof Icons !== 'undefined' && Icons.get) ? Icons.get('x', { size: 14 }) : 'Xóa'}</button>
           </div>
           <div class="q-passage-box" contenteditable="true" onblur="SmartImporterView.updateTfPassage(${idx}, this.innerText)">
             ${this.escapeHtml(q.passage)}
@@ -572,7 +572,7 @@ const SmartImporterView = {
       localStorage.setItem('ntmk_custom_quizzes_v1', JSON.stringify(existing));
 
       if (window.SoundFX) SoundFX.playVictory();
-      alert(`🎉 Đã lưu thành công ${questions.length} câu hỏi vào hệ thống! Bạn có thể luyện tập đề này ngay.`);
+      alert(`Đã lưu thành công ${questions.length} câu hỏi vào hệ thống! Bạn có thể luyện tập đề này ngay.`);
 
       // Chuyển hướng sang phòng thi ngay nếu muốn
       if (typeof app !== 'undefined' && app.navigateTo) {

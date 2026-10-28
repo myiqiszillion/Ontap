@@ -851,7 +851,7 @@ const app = {
           <div class="announcement-card social-style" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 16px;">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
               <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--brand-primary-soft); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-                📢
+                ${(typeof Icons !== 'undefined' && Icons.get) ? Icons.get('bell', { size: 20 }) : '<svg class="ui-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>'}
               </div>
               <div>
                 <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem;">Ban Quản Trị NTMK</div>

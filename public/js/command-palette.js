@@ -16,7 +16,8 @@ const CommandPalette = {
     {
       id: 'cmd_custom_exam',
       category: 'Công cụ ôn luyện',
-      title: '🎯 Tự tạo đề thi theo yêu cầu',
+      title: 'Tự tạo đề thi theo yêu cầu',
+      icon: 'target',
       desc: 'Tùy biến câu hỏi MCQ & Đúng/Sai, ma trận 15p, 45p, 50p',
       keywords: ['tu tao de', 'custom exam', 'tao de', 'kiem tra', 'sinh de', 'de thi'],
       action: () => app.navigateTo('custom-exam')
@@ -24,7 +25,8 @@ const CommandPalette = {
     {
       id: 'cmd_checker',
       category: 'Công cụ ôn luyện',
-      title: '🔍 Dò trắc nghiệm & So khớp đáp án',
+      title: 'Dò trắc nghiệm & So khớp đáp án',
+      icon: 'search',
       desc: 'Bảng đáp án trực quan, tra cứu lời giải nhanh theo mã đề',
       keywords: ['do dap an', 'checker', 'so dap an', 'tra dap an', 'giai'],
       action: () => app.navigateTo('checker')
@@ -32,7 +34,8 @@ const CommandPalette = {
     {
       id: 'cmd_mistakes',
       category: 'Công cụ ôn luyện',
-      title: '📕 Sổ tay câu sai & Phục hồi kiến thức',
+      title: 'Sổ tay câu sai & Phục hồi kiến thức',
+      icon: 'book',
       desc: 'Xem lại các câu làm sai, giải thích chi tiết và luyện tập lại',
       keywords: ['so tay cau sai', 'cau sai', 'mistakes', 'sai', 'on lai'],
       action: () => app.navigateTo('mistakes')
@@ -40,7 +43,8 @@ const CommandPalette = {
     {
       id: 'cmd_importer',
       category: 'Công cụ ôn luyện',
-      title: '📥 Nhập đề thi thông minh (Smart Importer)',
+      title: 'Nhập đề thi thông minh (Smart Importer)',
+      icon: 'inbox',
       desc: 'Dán Word/Text hoặc kéo thả file, tự nhận diện câu hỏi & sửa trực tiếp',
       keywords: ['nhap de', 'importer', 'smart importer', 'word', 'file', 'giao vien'],
       action: () => app.navigateTo('importer')
@@ -48,7 +52,8 @@ const CommandPalette = {
     {
       id: 'cmd_planner',
       category: 'Học tập & Kế hoạch',
-      title: '📅 Kế hoạch học tập cá nhân hóa',
+      title: 'Kế hoạch học tập cá nhân hóa',
+      icon: 'calendar',
       desc: 'Lịch ôn tập thông minh, nhiệm vụ hàng ngày và mục tiêu điểm',
       keywords: ['ke hoach', 'planner', 'lich hoc', 'muc tieu', 'spaced repetition'],
       action: () => app.navigateTo('planner')
@@ -56,7 +61,8 @@ const CommandPalette = {
     {
       id: 'cmd_diagnostic',
       category: 'Học tập & Kế hoạch',
-      title: '🎯 Chẩn đoán năng lực học tập',
+      title: 'Chẩn đoán năng lực học tập',
+      icon: 'activity',
       desc: 'Kiểm tra điểm mạnh, điểm yếu và mức độ thông hiểu các chương',
       keywords: ['chan doan', 'diagnostic', 'nang luc', 'danh gia'],
       action: () => app.navigateTo('diagnostic')
@@ -64,7 +70,8 @@ const CommandPalette = {
     {
       id: 'cmd_announcements',
       category: 'Học tập & Kế hoạch',
-      title: '📢 Bảng tin & Thông báo cộng đồng',
+      title: 'Bảng tin & Thông báo cộng đồng',
+      icon: 'bell',
       desc: 'Cập nhật lịch thi, đề cương ôn tập và tin tức từ nhà trường',
       keywords: ['bang tin', 'thong bao', 'tin tuc', 'announcements'],
       action: () => app.navigateTo('announcements')
@@ -76,7 +83,8 @@ const CommandPalette = {
     {
       id: 'sub_lichsu12',
       category: 'Môn học (GDPT 2018)',
-      title: '🇻🇳 Lịch sử 12 (Luyện thi Tốt nghiệp)',
+      title: 'Lịch sử 12 (Luyện thi Tốt nghiệp)',
+      icon: 'scroll',
       desc: 'Trọn bộ 9 chuyên đề: Trật tự 2 cực Ianta, ASEAN, CMT8, Kháng chiến, Đổi mới',
       keywords: ['lich su 12', 'su 12', 'tot nghiep', 'ianta', 'asean', 'dien bien phu'],
       action: () => app.selectSubject('lichsu12')
@@ -84,7 +92,8 @@ const CommandPalette = {
     {
       id: 'sub_lichsu11',
       category: 'Môn học (GDPT 2018)',
-      title: '📜 Lịch sử 11',
+      title: 'Lịch sử 11',
+      icon: 'scroll',
       desc: 'Cách mạng tư sản, Chủ nghĩa tư bản, Liên bang Xô Viết và ASEAN',
       keywords: ['lich su 11', 'su 11', 'cach mang tu san'],
       action: () => app.selectSubject('lichsu11')
@@ -92,7 +101,8 @@ const CommandPalette = {
     {
       id: 'sub_lichsu10',
       category: 'Môn học (GDPT 2018)',
-      title: '🏛️ Lịch sử 10',
+      title: 'Lịch sử 10',
+      icon: 'scroll',
       desc: 'Văn minh Văn Lang - Âu Lạc, Chăm-pa, Phù Nam, Đại Việt',
       keywords: ['lich su 10', 'su 10', 'van lang', 'dai viet'],
       action: () => app.selectSubject('lichsu10')
@@ -100,7 +110,8 @@ const CommandPalette = {
     {
       id: 'sub_toan10',
       category: 'Môn học (GDPT 2018)',
-      title: '📐 Toán học 10',
+      title: 'Toán học 10',
+      icon: 'ruler',
       desc: 'Mệnh đề, Tập hợp, Bất phương trình và Hệ bất phương trình bậc nhất 2 ẩn',
       keywords: ['toan 10', 'toan hoc', 'menh de', 'tap hop'],
       action: () => app.selectSubject('toan10')
@@ -108,7 +119,8 @@ const CommandPalette = {
     {
       id: 'sub_vatli10',
       category: 'Môn học (GDPT 2018)',
-      title: '⚡ Vật lí 10',
+      title: 'Vật lí 10',
+      icon: 'zap',
       desc: 'Đo lường, Chuyển động thẳng đều, Vận tốc, Gia tốc và Động lực học',
       keywords: ['vat li 10', 'vat ly 10', 'chuyen dong', 'van toc'],
       action: () => app.selectSubject('vatli10')
@@ -116,7 +128,8 @@ const CommandPalette = {
     {
       id: 'sub_hoahoc10',
       category: 'Môn học (GDPT 2018)',
-      title: '🧪 Hóa học 10',
+      title: 'Hóa học 10',
+      icon: 'flask-conical',
       desc: 'Cấu tạo nguyên tử, Vỏ electron, Cấu hình e và Bảng tuần hoàn',
       keywords: ['hoa hoc 10', 'hoa 10', 'nguyen tu', 'electron'],
       action: () => app.selectSubject('hoahoc10')
@@ -124,7 +137,8 @@ const CommandPalette = {
     {
       id: 'sub_tienganh10',
       category: 'Môn học (GDPT 2018)',
-      title: '🌐 Tiếng Anh 10',
+      title: 'Tiếng Anh 10',
+      icon: 'globe',
       desc: 'Family Life, Humans & Environment, Ngữ pháp và Từ vựng theo chủ điểm',
       keywords: ['tieng anh 10', 'anh 10', 'english', 'grammar'],
       action: () => app.selectSubject('tienganh10')
@@ -136,7 +150,8 @@ const CommandPalette = {
     {
       id: 'act_theme',
       category: 'Hành động nhanh',
-      title: '🌓 Đổi giao diện Sáng / Tối (Toggle Theme)',
+      title: 'Đổi giao diện Sáng / Tối (Toggle Theme)',
+      icon: 'moon',
       desc: 'Chuyển đổi giữa chế độ Neo-Scholar, Midnight Dark và Academic Clean',
       keywords: ['doi theme', 'dark mode', 'sang toi', 'theme', 'mau sac'],
       action: () => app.toggleTheme()
@@ -144,7 +159,8 @@ const CommandPalette = {
     {
       id: 'act_focus',
       category: 'Hành động nhanh',
-      title: '⏳ Bật / Tắt chế độ Tập trung (Focus Mode)',
+      title: 'Bật / Tắt chế độ Tập trung (Focus Mode)',
+      icon: 'clock',
       desc: 'Đồng hồ Pomodoro 25 phút, ẩn toàn bộ yếu tố gây xao nhãng',
       keywords: ['focus mode', 'pomodoro', 'tap trung', 'dong ho'],
       action: () => {
@@ -154,7 +170,8 @@ const CommandPalette = {
     {
       id: 'act_sound',
       category: 'Hành động nhanh',
-      title: '🔊 Bật / Tắt âm thanh tương tác (Sound FX)',
+      title: 'Bật / Tắt âm thanh tương tác (Sound FX)',
+      icon: 'volume-2',
       desc: 'Âm thanh phản hồi khi bấm nút, cắm cờ và nộp bài',
       keywords: ['am thanh', 'sound', 'bat tat am thanh', 'loa'],
       action: () => {
@@ -164,7 +181,8 @@ const CommandPalette = {
     {
       id: 'act_login',
       category: 'Hành động nhanh',
-      title: '👤 Đăng nhập / Hồ sơ học sinh',
+      title: 'Đăng nhập / Hồ sơ học sinh',
+      icon: 'user',
       desc: 'Đăng nhập tài khoản, lưu tiến trình và đồng bộ dữ liệu đám mây',
       keywords: ['dang nhap', 'tai khoan', 'ho so', 'login', 'auth'],
       action: () => {
@@ -188,7 +206,7 @@ const CommandPalette = {
     backdrop.innerHTML = `
       <div class="cmd-palette-modal" onclick="event.stopPropagation()">
         <div class="cmd-search-row">
-          <span class="cmd-search-icon">🔍</span>
+          <span class="cmd-search-icon">${(typeof Icons !== 'undefined' && Icons.get) ? Icons.get('search', { size: 18 }) : ''}</span>
           <input type="text" 
                  id="cmd-palette-input" 
                  class="cmd-search-input" 
@@ -344,7 +362,7 @@ const CommandPalette = {
                data-idx="${item.globalIndex}" 
                onclick="CommandPalette.selectAndExecute(${item.globalIndex})">
             <div class="cmd-item-left">
-              <span class="cmd-item-icon">${this.extractIcon(item.title)}</span>
+              <span class="cmd-item-icon">${this.extractIcon(item)}</span>
               <div class="cmd-item-info">
                 <span class="cmd-item-title">${this.escapeHtml(item.title)}</span>
                 <span class="cmd-item-desc">${this.escapeHtml(item.desc)}</span>
@@ -360,9 +378,13 @@ const CommandPalette = {
     this.scrollSelectedIntoView();
   },
 
-  extractIcon(title) {
-    const match = title.match(/^(\p{Emoji}|\u200d)+/u);
-    return match ? match[0] : '⚡';
+  extractIcon(item) {
+    if (typeof Icons !== 'undefined' && Icons.get) {
+      const iconName = (item && item.icon) ? item.icon : 'zap';
+      if (Icons.has(iconName)) return Icons.get(iconName, { size: 18 });
+      return Icons.get('zap', { size: 18 });
+    }
+    return '';
   },
 
   moveSelection(delta) {

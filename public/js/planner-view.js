@@ -199,7 +199,7 @@ const PlannerView = {
         <div>
           <span class="task-type-badge remediation" style="margin-bottom:0.5rem; display:inline-block;">Mục tiêu hôm nay</span>
           <h2 style="font-size:1.35rem; font-weight:700; margin:0.25rem 0;">
-            ${completedToday >= todayTasks.length && todayTasks.length > 0 ? '🎉 Bạn đã hoàn thành toàn bộ bài hôm nay!' : `Hôm nay: ${todayTasks.length - completedToday} nhiệm vụ cần hoàn thành`}
+            ${completedToday >= todayTasks.length && todayTasks.length > 0 ? ((typeof Icons !== 'undefined' ? Icons.get('trophy', { size: 18 }) + ' ' : '') + 'Bạn đã hoàn thành toàn bộ bài hôm nay!') : `Hôm nay: ${todayTasks.length - completedToday} nhiệm vụ cần hoàn thành`}
           </h2>
           <p style="color:var(--text-sub); font-size:0.85rem; margin:0;">
             Ngân sách thời gian: ${this.activePlan.dailyStudyMinutes} phút/ngày • Dự kiến hôm nay: ${totalMinutes} phút
@@ -227,7 +227,7 @@ const PlannerView = {
       <!-- Change Reason Notice if Replan Occurred -->
       ${this.activePlan.changeReason ? `
         <div style="background:rgba(37,99,235,0.06); border:1px solid rgba(37,99,235,0.2); border-radius:var(--radius-md); padding:1rem 1.25rem; margin-bottom:1.5rem; display:flex; align-items:flex-start; gap:0.75rem;">
-          <span style="font-size:1.25rem;">💡</span>
+          <span style="font-size:1.25rem; display:inline-flex; align-items:center;">${typeof Icons !== 'undefined' ? Icons.get('lightbulb', { size: 20 }) : ''}</span>
           <div>
             <strong style="font-size:0.9rem; color:var(--brand-primary); display:block; margin-bottom:0.2rem;">Kế hoạch phiên bản v${this.activePlan.planVersion || 1} vừa được cập nhật thích ứng:</strong>
             <span style="font-size:0.85rem; color:var(--text-sub);">${this.activePlan.changeReason}</span>
@@ -237,7 +237,7 @@ const PlannerView = {
 
       <!-- Today Tasks List -->
       <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
-        📝 Danh sách nhiệm vụ học tập thực tế (${todayTasks.length})
+        ${typeof Icons !== 'undefined' ? Icons.get('file-text', { size: 18 }) + ' ' : ''}Danh sách nhiệm vụ học tập thực tế (${todayTasks.length})
       </h3>
 
       <div class="planner-task-list">
@@ -247,15 +247,15 @@ const PlannerView = {
               <div class="planner-task-badges">
                 <span class="task-type-badge ${task.taskType}">${this.formatTaskType(task.taskType)}</span>
                 <span class="task-status-pill ${task.status}">${this.formatTaskStatus(task.status)}</span>
-                <span style="font-size:0.75rem; color:var(--text-dim); font-weight:500;">⏱️ ${task.estimatedMinutes} phút</span>
-                <span style="font-size:0.75rem; color:var(--text-dim); font-weight:500;">📚 [${task.subjectId.toUpperCase()}]</span>
+                <span style="font-size:0.75rem; color:var(--text-dim); font-weight:500; display:inline-flex; align-items:center; gap:3px;">${typeof Icons !== 'undefined' ? Icons.get('clock', { size: 12 }) : ''} ${task.estimatedMinutes} phút</span>
+                <span style="font-size:0.75rem; color:var(--text-dim); font-weight:500; display:inline-flex; align-items:center; gap:3px;">${typeof Icons !== 'undefined' ? Icons.get('book-open', { size: 12 }) : ''} [${task.subjectId.toUpperCase()}]</span>
               </div>
               <h4 class="planner-task-title">${task.title}</h4>
               <p class="planner-task-reason"><strong>Lý do:</strong> ${task.reason}</p>
-              ${task.contentNotice ? `<p style="font-size:0.8rem; color:var(--color-warning); margin:0;">⚠️ ${task.contentNotice}</p>` : ''}
+              ${task.contentNotice ? `<p style="font-size:0.8rem; color:var(--color-warning); margin:0;">${typeof Icons !== 'undefined' ? Icons.get('alert-triangle', { size: 14 }) + ' ' : ''}${task.contentNotice}</p>` : ''}
               ${task.completionEvidence ? `
                 <div style="font-size:0.8rem; color:var(--color-success); font-weight:600; margin-top:0.25rem;">
-                  ✅ Hoàn thành: ${Math.round(task.completionEvidence.accuracy * 100)}% chính xác (${task.completionEvidence.correctCount}/${task.completionEvidence.totalQuestions} câu)
+                  ${typeof Icons !== 'undefined' ? Icons.get('check-circle', { size: 14 }) + ' ' : ''}Hoàn thành: ${Math.round(task.completionEvidence.accuracy * 100)}% chính xác (${task.completionEvidence.correctCount}/${task.completionEvidence.totalQuestions} câu)
                 </div>
               ` : ''}
             </div>
@@ -266,7 +266,7 @@ const PlannerView = {
                 <button class="diag-btn-secondary" style="font-size:0.8rem; padding:0.4rem 0.8rem;" disabled title="Chờ câu hỏi được thẩm định bản quyền">Tạm khóa</button>
               ` : `
                 <button class="diag-btn-primary" onclick="PlannerView.startPractice('${task.taskId}')" style="font-size:0.85rem; padding:0.5rem 1rem;">
-                  ${task.status === 'in_progress' ? '▶️ Tiếp tục bài' : '🚀 Bắt đầu học'}
+                  ${task.status === 'in_progress' ? ((typeof Icons !== 'undefined' ? Icons.get('play', { size: 14 }) + ' ' : '') + 'Tiếp tục bài') : ((typeof Icons !== 'undefined' ? Icons.get('rocket', { size: 14 }) + ' ' : '') + 'Bắt đầu học')}
                 </button>
               `}
             </div>
@@ -301,7 +301,7 @@ const PlannerView = {
             </div>
             ${day.tasks.length === 0 ? `
               <p style="font-size:0.8rem; color:var(--text-dim); margin:auto 0; text-align:center;">
-                ${day.isStudyDay ? 'Không có nhiệm vụ' : '☕ Ngày nghỉ ngơi'}
+                ${day.isStudyDay ? 'Không có nhiệm vụ' : ((typeof Icons !== 'undefined' ? Icons.get('moon', { size: 12 }) + ' ' : '') + 'Ngày nghỉ ngơi')}
               </p>
             ` : day.tasks.map(t => `
               <div style="background:var(--bg-main); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:0.6rem; font-size:0.82rem;">
@@ -400,10 +400,10 @@ const PlannerView = {
         </div>
         <div style="display:flex; align-items:center; gap:1.25rem;">
           <div style="font-weight:700; font-size:1.1rem; color:var(--brand-primary); display:flex; align-items:center; gap:0.4rem;">
-            ⏱️ <span id="focus-timer-text">00:00</span>
+            ${typeof Icons !== 'undefined' ? Icons.get('clock', { size: 16 }) + ' ' : ''}<span id="focus-timer-text">00:00</span>
           </div>
           <button class="diag-btn-secondary" onclick="PlannerView.closeFocusMode()" style="padding:0.4rem 0.8rem; font-size:0.85rem;">
-            ✕ Tạm dừng
+            ${typeof Icons !== 'undefined' ? Icons.get('pause', { size: 14 }) + ' ' : ''}Tạm dừng
           </button>
         </div>
       </div>
@@ -433,7 +433,7 @@ const PlannerView = {
             </button>
           ` : `
             <button class="diag-btn-primary" onclick="PlannerView.submitPractice()" style="background:var(--color-success);">
-              ✅ Nộp bài luyện tập
+              ${typeof Icons !== 'undefined' ? Icons.get('check', { size: 16 }) + ' ' : ''}Nộp bài luyện tập
             </button>
           `}
         </div>
@@ -574,13 +574,13 @@ const PlannerView = {
       <div class="focus-mode-header">
         <h3 style="font-size:1.1rem; font-weight:700; margin:0;">Kết quả phiên luyện tập</h3>
         <button class="diag-btn-primary" onclick="PlannerView.closeFocusMode(); PlannerView.init();" style="padding:0.4rem 0.9rem; font-size:0.85rem;">
-          ✕ Đóng & Quay về
+          ${typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) + ' ' : ''}Đóng & Quay về
         </button>
       </div>
 
       <div class="focus-mode-body">
         <div class="focus-result-summary">
-          <div style="font-size:3rem; margin-bottom:0.5rem;">${accuracyPct >= 80 ? '🎯' : (accuracyPct >= 50 ? '📈' : '💡')}</div>
+          <div style="font-size:3rem; margin-bottom:0.5rem; display:flex; justify-content:center;">${accuracyPct >= 80 ? (typeof Icons !== 'undefined' ? Icons.get('target', { size: 48 }) : '') : (accuracyPct >= 50 ? (typeof Icons !== 'undefined' ? Icons.get('sparkles', { size: 48 }) : '') : (typeof Icons !== 'undefined' ? Icons.get('lightbulb', { size: 48 }) : ''))}</div>
           <h2 style="font-size:1.5rem; font-weight:800; margin:0.25rem 0;">
             ${accuracyPct >= 80 ? 'Xuất sắc! Nắm vững kỹ năng' : (accuracyPct >= 50 ? 'Khá tốt! Đang tiến bộ' : 'Cần củng cố thêm nền tảng')}
           </h2>
@@ -588,7 +588,7 @@ const PlannerView = {
             Độ chính xác: <strong>${accuracyPct}%</strong> (${ev.correctCount}/${ev.totalQuestions} câu đúng) • Thời gian: ${Math.round(ev.timeSpentSeconds / 60)} phút
           </p>
           <div style="display:inline-block; background:rgba(37,99,235,0.08); border-radius:var(--radius-md); padding:0.6rem 1rem; font-size:0.85rem; color:var(--brand-primary); font-weight:600;">
-            🚀 Khuyến nghị thích ứng: ${ev.difficultyProgression === 'increase' ? 'Tăng độ khó cho phiên tiếp theo' : (ev.difficultyProgression === 'decrease' ? 'Ôn lại kiến thức nền tảng tiên quyết' : 'Duy trì luyện tập')}
+            ${typeof Icons !== 'undefined' ? Icons.get('rocket', { size: 14 }) + ' ' : ''}Khuyến nghị thích ứng: ${ev.difficultyProgression === 'increase' ? 'Tăng độ khó cho phiên tiếp theo' : (ev.difficultyProgression === 'decrease' ? 'Ôn lại kiến thức nền tảng tiên quyết' : 'Duy trì luyện tập')}
           </div>
         </div>
 
@@ -598,7 +598,7 @@ const PlannerView = {
             <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
               <span style="font-weight:700;">Câu ${idx + 1} (${evalItem.cognitiveLevel})</span>
               <span style="font-weight:700; color:${evalItem.isCorrect ? 'var(--color-success)' : 'var(--color-danger)'};">
-                ${evalItem.isCorrect ? '✓ Đúng' : '✗ Chưa đúng'} (+${evalItem.awardedPoints}đ)
+                ${evalItem.isCorrect ? ((typeof Icons !== 'undefined' ? Icons.get('check', { size: 14 }) + ' ' : '') + 'Đúng') : ((typeof Icons !== 'undefined' ? Icons.get('x', { size: 14 }) + ' ' : '') + 'Chưa đúng')} (+${evalItem.awardedPoints}đ)
               </span>
             </div>
             <div style="line-height:1.5; margin-bottom:0.75rem;">${evalItem.prompt}</div>
@@ -671,7 +671,7 @@ const PlannerView = {
               <h4 style="font-size:1rem; font-weight:700; margin:0.25rem 0;">${r.skillId}</h4>
               <p style="font-size:0.8rem; color:var(--text-sub); margin:0.25rem 0 0.5rem 0;">${r.explanation || ''}</p>
               <div style="font-size:0.78rem; color:var(--brand-primary); font-weight:600;">
-                📅 Lần ôn tiếp theo: ${r.nextReviewDate} ${r.isDue ? '🔥 (Đến hạn hôm nay)' : ''}
+                ${typeof Icons !== 'undefined' ? Icons.get('calendar-check', { size: 14 }) + ' ' : ''}Lần ôn tiếp theo: ${r.nextReviewDate} ${r.isDue ? ((typeof Icons !== 'undefined' ? Icons.get('flame', { size: 14 }) + ' ' : '') + '(Đến hạn hôm nay)') : ''}
               </div>
             </div>
           `).join('')}
@@ -722,7 +722,7 @@ const PlannerView = {
 
         <div style="display:flex; gap:1rem; margin-top:2rem;">
           <button class="diag-btn-primary" onclick="PlannerView.saveSettingsAndReplan()">
-            💾 Lưu & Cập nhật kế hoạch
+            ${typeof Icons !== 'undefined' ? Icons.get('save', { size: 14 }) + ' ' : ''}Lưu & Cập nhật kế hoạch
           </button>
         </div>
       </div>

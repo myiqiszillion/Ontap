@@ -29,16 +29,16 @@ const AuthView = {
 
     if (typeof AuthStore !== 'undefined' && AuthStore.isLoggedIn()) {
       const user = AuthStore.getUser();
-      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">👤</span> <span class="auth-text auth-user-name">${user.displayName || 'Học sinh'}</span>`;
+      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">${typeof Icons !== 'undefined' ? Icons.get('user', { size: 16 }) : ''}</span> <span class="auth-text auth-user-name">${user.displayName || 'Học sinh'}</span>`;
       authBtn.title = `Đã đăng nhập: ${user.email || user.displayName}`;
       authBtn.classList.add('logged-in');
     } else if (typeof AuthStore !== 'undefined' && AuthStore.isGuest()) {
       const user = AuthStore.getUser();
-      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">👤</span> <span class="auth-text">Khách</span>`;
+      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">${typeof Icons !== 'undefined' ? Icons.get('user', { size: 16 }) : ''}</span> <span class="auth-text">Khách</span>`;
       authBtn.title = 'Đang sử dụng chế độ Khách';
       authBtn.classList.remove('logged-in');
     } else {
-      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">👤</span> <span class="auth-text">Đăng nhập</span>`;
+      authBtn.innerHTML = `<span class="auth-icon" aria-hidden="true">${typeof Icons !== 'undefined' ? Icons.get('user', { size: 16 }) : ''}</span> <span class="auth-text">Đăng nhập</span>`;
       authBtn.title = 'Đăng nhập hoặc đăng ký tài khoản';
       authBtn.classList.remove('logged-in');
     }
@@ -121,7 +121,7 @@ const AuthView = {
       tabLogin?.classList.add('active');
       body.innerHTML = `
         <div class="auth-profile-box">
-          <div class="auth-profile-avatar">🎓</div>
+          <div class="auth-profile-avatar">${typeof Icons !== 'undefined' ? Icons.get('graduation-cap', { size: 32 }) : ''}</div>
           <h3>${user.displayName || 'Học sinh'}</h3>
           <p class="auth-profile-email">${user.email || 'Tài khoản học sinh'}</p>
           <div class="auth-profile-meta">
@@ -143,7 +143,7 @@ const AuthView = {
       const isGuest = typeof AuthStore !== 'undefined' && AuthStore.isGuest();
       body.innerHTML = `
         <form id="auth-register-form" onsubmit="AuthView.handleRegister(event)" class="auth-form">
-          ${isGuest ? `<div class="auth-alert-info">💡 Bạn đang có bài làm ở chế độ Khách. Khi đăng ký, toàn bộ kết quả sẽ được tự động chuyển vào tài khoản mới của bạn!</div>` : ''}
+          ${isGuest ? `<div class="auth-alert-info">${typeof Icons !== 'undefined' ? Icons.get('lightbulb', { size: 16 }) : ''} <span>Bạn đang có bài làm ở chế độ Khách. Khi đăng ký, toàn bộ kết quả sẽ được tự động chuyển vào tài khoản mới của bạn!</span></div>` : ''}
           <div class="form-group">
             <label for="reg-email">Email học tập</label>
             <input type="email" id="reg-email" required placeholder="vidu: hocsinh@gmail.com" autocomplete="email" />
@@ -172,7 +172,7 @@ const AuthView = {
       tabGuest?.classList.add('active');
       body.innerHTML = `
         <div class="auth-guest-box">
-          <div class="auth-guest-icon">⚡</div>
+          <div class="auth-guest-icon">${typeof Icons !== 'undefined' ? Icons.get('zap', { size: 32 }) : ''}</div>
           <h3>Chế độ Khách (Ẩn danh)</h3>
           <p>Bạn có thể trải nghiệm đầy đủ các tính năng kiểm tra năng lực, lập kế hoạch học tập và luyện tập thích ứng mà không cần cung cấp email.</p>
           <div class="form-group" style="text-align:left; margin-top:1rem;">
@@ -233,7 +233,7 @@ const AuthView = {
         AuthStore.setSession(data.session);
       }
       this.hideModal();
-      this.showToast('✅ Đăng nhập thành công! Chào mừng bạn quay trở lại.');
+      this.showToast('Đăng nhập thành công! Chào mừng bạn quay trở lại.', 'success');
     } catch (err) {
       if (errEl) {
         errEl.textContent = err.message;
@@ -266,7 +266,7 @@ const AuthView = {
         AuthStore.setSession(data.session);
       }
       this.hideModal();
-      this.showToast('🎉 Đăng ký tài khoản thành công!');
+      this.showToast('Đăng ký tài khoản thành công!', 'success');
     } catch (err) {
       if (errEl) {
         errEl.textContent = err.message;
@@ -290,7 +290,7 @@ const AuthView = {
         AuthStore.setSession(data.session);
       }
       this.hideModal();
-      this.showToast('⚡ Bạn đang tham gia học tập ở chế độ Khách.');
+      this.showToast('Bạn đang tham gia học tập ở chế độ Khách.', 'info');
     } catch (err) {
       alert(err.message);
     }

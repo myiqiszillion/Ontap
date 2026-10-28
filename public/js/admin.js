@@ -172,7 +172,7 @@ const Admin = {
 
       if (!res.ok) throw new Error('Đăng bài thất bại');
 
-      this.showToast('Đã đăng thông báo thành công! 🎉', 'success');
+      this.showToast('Đã đăng thông báo thành công!', 'success');
       e.target.reset();
       
       this.selectedFiles = [];
@@ -212,7 +212,7 @@ const Admin = {
             <div class="admin-ann-info">
               <div class="admin-ann-header">
                 <img src="assets/avatar.jpg" alt="Admin Avatar" class="admin-ann-avatar">
-                <div class="admin-ann-title">${isPinned ? '📌 ' : ''}${ann.title}</div>
+                <div class="admin-ann-title">${isPinned ? '<span class="pinned-tag" aria-label="Đã ghim">' + pinIcon + ' </span>' : ''}${ann.title}</div>
               </div>
               <div class="admin-ann-time">${date}</div>
             </div>
@@ -265,7 +265,7 @@ const Admin = {
 
       if (!res.ok) throw new Error('Thao tác thất bại');
 
-      this.showToast(pinned ? 'Đã ghim thông báo! 📌' : 'Đã bỏ ghim thông báo.', 'success');
+      this.showToast(pinned ? 'Đã ghim thông báo!' : 'Đã bỏ ghim thông báo.', 'success');
       this.loadAnnouncements();
     } catch (err) {
       this.showToast('Lỗi: ' + err.message, 'error');

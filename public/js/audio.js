@@ -38,7 +38,7 @@ const SoundFX = {
       if (typeof Icons !== 'undefined' && Icons.get) {
         btn.innerHTML = this.enabled ? Icons.get('volume-2', { size: 18 }) : Icons.get('volume-x', { size: 18 });
       } else {
-        btn.innerHTML = this.enabled ? '🔊' : '🔇';
+        btn.innerHTML = this.enabled ? '<span class="sound-state-on" aria-hidden="true">ON</span>' : '<span class="sound-state-off" aria-hidden="true">OFF</span>';
       }
       btn.title = this.enabled ? 'Âm thanh: Bật' : 'Âm thanh: Tắt';
       btn.classList.toggle('muted', !this.enabled);
