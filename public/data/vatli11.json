@@ -14,109 +14,420 @@
         {
           "id": "vatli11_b1_mcq01",
           "type": "mcq",
-          "question": "Phương trình dao động điều hòa của một chất điểm là $x = A\\cos(\\omega t + \\varphi)$. Đại lượng $\\omega$ được gọi là:",
+          "question": "Trong phương trình dao động điều hòa $x = A\\cos(\\omega t + \\varphi)$, đại lượng $\\omega$ là:",
           "options": [
-            "Tần số góc của dao động",
-            "Biên độ dao động",
-            "Pha ban đầu của dao động",
-            "Chu kì dao động"
+            "Tần số góc",
+            "Biên độ",
+            "Pha ban đầu",
+            "Chu kì"
           ],
           "correct": 0,
-          "explanation": "Trong phương trình $x = A\\cos(\\omega t + \\varphi)$, $\\omega$ là tần số góc (rad/s), $A$ là biên độ, $\\varphi$ là pha ban đầu. Chọn A."
+          "explanation": "$\\omega$ là tần số góc (rad/s). Chọn A."
         },
         {
           "id": "vatli11_b1_mcq02",
           "type": "mcq",
-          "question": "Gia tốc của một chất điểm dao động điều hòa biến thiên theo hệ thức:",
+          "question": "Gia tốc của một chất điểm dao động điều hòa biến thiên theo phương trình:",
           "options": [
             "$a = -\\omega^2 x$",
             "$a = \\omega^2 x$",
             "$a = -\\omega x$",
-            "$a = -\\frac{\\omega^2}{x}$"
+            "$a = -\\omega^2 / x$"
           ],
           "correct": 0,
-          "explanation": "Ta có $v = x' = -\\omega A\\sin(\\omega t + \\varphi)$, $a = v' = -\\omega^2 A\\cos(\\omega t + \\varphi) = -\\omega^2 x$. Chọn A."
+          "explanation": "$a = v' = -\\omega^2 x$. Chọn A."
         },
         {
           "id": "vatli11_b1_mcq03",
           "type": "mcq",
-          "question": "Vận tốc của chất điểm dao động điều hòa đạt giá trị cực đại khi:",
+          "question": "Vận tốc của chất điểm đạt giá trị cực đại khi chất điểm đi qua:",
           "options": [
-            "Chất điểm đi qua vị trí cân bằng theo chiều dương",
-            "Chất điểm ở vị trí biên dương",
-            "Chất điểm ở vị trí biên âm",
-            "Chất điểm đi qua vị trí cân bằng theo chiều âm"
+            "Vị trí cân bằng theo chiều dương",
+            "Vị trí biên dương",
+            "Vị trí biên âm",
+            "Vị trí cân bằng theo chiều âm"
           ],
           "correct": 0,
-          "explanation": "Vận tốc cực đại $v_{\\max} = +\\omega A$ khi chất điểm qua vị trí cân bằng ($x = 0$) theo chiều dương. Chọn A."
+          "explanation": "$v_{\\max} = +\\omega A$ tại vị trí cân bằng theo chiều dương. Chọn A."
         },
         {
           "id": "vatli11_b1_mcq04",
           "type": "mcq",
-          "question": "Một con lắc lò xo gồm vật nặng khối lượng $m$ và lò xo nhẹ có độ cứng $k$. Chu kỳ dao động riêng của con lắc là:",
+          "question": "Một con lắc lò xo có khối lượng $m$ và độ cứng $k$. Chu kỳ dao động riêng là:",
           "options": [
             "$T = 2\\pi \\sqrt{\\frac{m}{k}}$",
             "$T = 2\\pi \\sqrt{\\frac{k}{m}}$",
-            "$T = \\frac{1}{2\\pi} \\sqrt{\\frac{m}{k}}$",
-            "$T = 2\\pi \\sqrt{\\frac{g}{l}}$"
+            "$T = \\frac{1}{2\\pi}\\sqrt{\\frac{m}{k}}$",
+            "$T = 2\\pi\\sqrt{\\frac{g}{l}}$"
           ],
           "correct": 0,
-          "explanation": "Công thức chu kì con lắc lò xo: $T = 2\\pi\\sqrt{\\frac{m}{k}}$. Chọn A."
+          "explanation": "$T = 2\\pi\\sqrt{m/k}$. Chọn A."
         },
         {
           "id": "vatli11_b1_mcq05",
           "type": "mcq",
-          "question": "Động năng của vật dao động điều hòa biến thiên tuần hoàn với tần số góc bằng:",
+          "question": "Động năng của dao động điều hòa biến thiên tuần hoàn với tần số góc bằng:",
           "options": [
             "$2\\omega$",
             "$\\omega$",
-            "$\\frac{\\omega}{2}$",
+            "$\\omega/2$",
             "$4\\omega$"
           ],
           "correct": 0,
-          "explanation": "Động năng và thế năng biến thiên tuần hoàn với chu kì $T' = \\frac{T}{2}$, tần số $f' = 2f$, tần số góc $\\omega' = 2\\omega$. Chọn A."
+          "explanation": "Năng lượng biến thiên với $\\omega' = 2\\omega, f' = 2f$. Chọn A."
         },
         {
           "id": "vatli11_b1_mcq06",
           "type": "mcq",
-          "question": "Đồ thị biểu diễn mối liên hệ giữa gia tốc $a$ và li độ $x$ trong dao động điều hòa là:",
+          "question": "Đồ thị biểu diễn mối liên hệ giữa gia tốc $a$ và li độ $x$ là:",
           "options": [
-            "Một đoạn thẳng qua gốc tọa độ",
-            "Một đường elip",
-            "Một đường tròn",
-            "Một đường parabol"
+            "Đoạn thẳng qua gốc tọa độ",
+            "Đường tròn",
+            "Đường elip",
+            "Đường parabol"
           ],
           "correct": 0,
-          "explanation": "Vì $a = -\\omega^2 x$ với $-A \\le x \\le A$ nên đồ thị biểu diễn là một đoạn thẳng đi qua gốc tọa độ có hệ số góc âm. Chọn A."
+          "explanation": "$a = -\\omega^2 x$ là đoạn thẳng qua gốc tọa độ hệ số góc âm. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_mcq07",
+          "type": "mcq",
+          "question": "Vectơ lực kéo về tác dụng lên vật dao động điều hòa luôn:",
+          "options": [
+            "Hướng về vị trí cân bằng",
+            "Cùng chiều với chuyển động",
+            "Ngược chiều với gia tốc",
+            "Có độ lớn không đổi"
+          ],
+          "correct": 0,
+          "explanation": "Lực kéo về $F = -kx$ luôn hướng về vị trí cân bằng. Chọn A."
+        },
+        {
+          "id": "vatli11_b1_sa01",
+          "type": "shortanswer",
+          "question": "Một vật dao động điều hòa với phương trình $x = 5\\cos(10\\pi t)$ (cm). Tần số dao động $f$ của vật bằng bao nhiêu Hertz (Hz)?",
+          "correctAnswer": "5",
+          "explanation": "$f = \\omega/(2\\pi) = 10\\pi/(2\\pi) = 5$ Hz. Đáp án: 5."
+        },
+        {
+          "id": "vatli11_b1_sa02",
+          "type": "shortanswer",
+          "question": "Biên độ dao động điều hòa của một vật là $A = 4$ cm. Quãng đường vật đi được trong một chu kì dao động bằng bao nhiêu cm?",
+          "correctAnswer": "16",
+          "explanation": "Trong một chu kì vật đi được quãng đường $S = 4A = 4(4) = 16$ cm. Đáp án: 16."
         }
       ],
       "questionGroups": [
         {
           "id": "vatli11_b1_tf01",
           "type": "tf-group",
-          "passage": "Một chất điểm dao động điều hòa dọc theo trục $Ox$ với phương trình li độ $x = 6\\cos(4\\pi t - \\frac{\\pi}{3})$ (cm, s). Lấy $\\pi^2 = 10$.",
+          "passage": "Một chất điểm dao động điều hòa theo phương trình $x = 6\\cos(4\\pi t - \\frac{\\pi}{3})$ (cm, s). Lấy $\\pi^2 = 10$.",
           "statements": [
             {
-              "question": "a) Biên độ dao động của chất điểm là $A = 6$ cm và chu kì dao động $T = 0{,}5$ s.",
-              "correct": true,
-              "explanation": "Đúng. $A = 6$ cm, $\\omega = 4\\pi \\Rightarrow T = \\frac{2\\pi}{4\\pi} = 0{,}5$ s."
+              "question": "a) Biên độ dao động $A = 6$ cm và chu kì $T = 0{,}5$ s.",
+              "correct": true
             },
             {
-              "question": "b) Tốc độ cực đại của chất điểm trong quá trình dao động là $v_{\\max} = 24\\pi$ cm/s.",
-              "correct": true,
-              "explanation": "Đúng. $v_{\\max} = \\omega A = 4\\pi \\times 6 = 24\\pi$ cm/s."
+              "question": "b) Pha ban đầu của dao động là $-\\pi/3$ rad.",
+              "correct": true
             },
             {
-              "question": "c) Gia tốc cực đại của chất điểm có độ lớn bằng $96$ m/s$^2$.",
-              "correct": false,
-              "explanation": "Sai. $a_{\\max} = \\omega^2 A = (4\\pi)^2 \\times 6 = 16\\pi^2 \\times 6 = 960$ cm/s$^2 = 9{,}6$ m/s$^2$."
+              "question": "c) Tốc độ cực đại của vật là $24\\pi$ cm/s.",
+              "correct": true
             },
             {
-              "question": "d) Tại thời điểm $t = 0{,}25$ s, chất điểm đang chuyển động theo chiều âm của trục tọa độ.",
-              "correct": true,
-              "explanation": "Đúng. Pha tại $t = 0{,}25$: $4\\pi(0{,}25) - \\frac{\\pi}{3} = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$. Vì $\\sin\\frac{2\\pi}{3} > 0$ nên $v = -\\omega A \\sin\\frac{2\\pi}{3} < 0$ (chuyển động theo chiều âm)."
+              "question": "d) Khi vật qua li độ $x = 3$ cm thì độ lớn gia tốc là $480$ cm/s$^2$.",
+              "correct": true
             }
-          ]
+          ],
+          "explanation": "a, b, c, d đều đúng. $|a| = \\omega^2 |x| = (4\\pi)^2 (3) = 160 \\times 3 = 480$ cm/s$^2$."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "bai": 2,
+      "name": "Bài 2: Năng lượng trong dao động điều hòa. Con lắc đơn",
+      "topic": "CHỦ ĐỀ 1: DAO ĐỘNG CƠ HỌC",
+      "questions": [
+        {
+          "id": "vatli11_b2_mcq01",
+          "type": "mcq",
+          "question": "Cơ năng của con lắc lò xo dao động điều hòa tỉ lệ thuận với:",
+          "options": [
+            "Bình phương biên độ dao động",
+            "Biên độ dao động",
+            "Căn bậc hai của biên độ",
+            "Nghịch đảo biên độ"
+          ],
+          "correct": 0,
+          "explanation": "$W = \\frac{1}{2} k A^2$. Chọn A."
+        },
+        {
+          "id": "vatli11_b2_mcq02",
+          "type": "mcq",
+          "question": "Chu kỳ dao động của con lắc đơn phụ thuộc vào:",
+          "options": [
+            "Chiều dài dây treo và gia tốc trọng trường",
+            "Khối lượng của quả cầu",
+            "Biên độ dao động lớn",
+            "Thời gian kích thích"
+          ],
+          "correct": 0,
+          "explanation": "$T = 2\\pi\\sqrt{l/g}$ không phụ thuộc khối lượng. Chọn A."
+        },
+        {
+          "id": "vatli11_b2_mcq03",
+          "type": "mcq",
+          "question": "Hiện tượng biên độ dao động cưỡng bức tăng đến giá trị cực đại khi tần số lực cưỡng bức bằng tần số riêng được gọi là:",
+          "options": [
+            "Cộng hưởng",
+            "Dao động tắt dần",
+            "Nhiễu xạ",
+            "Tự dao động"
+          ],
+          "correct": 0,
+          "explanation": "Hiện tượng cộng hưởng cơ học. Chọn A."
+        },
+        {
+          "id": "vatli11_b2_mcq04",
+          "type": "mcq",
+          "question": "Một con lắc lò xo có $k = 100$ N/m, $m = 100$ g dao động điều hòa. Tần số góc riêng của con lắc là:",
+          "options": [
+            "$\\approx 31{,}6$ rad/s",
+            "$10$ rad/s",
+            "$1$ rad/s",
+            "$100$ rad/s"
+          ],
+          "correct": 0,
+          "explanation": "$\\omega = \\sqrt{100/0{,}1} = \\sqrt{1000} \\approx 31{,}6$ rad/s. Chọn A."
+        },
+        {
+          "id": "vatli11_b2_sa01",
+          "type": "shortanswer",
+          "question": "Một con lắc đơn có chiều dài $l = 1$ m dao động tại nơi có $g = \\pi^2 = 9{,}87$ m/s$^2$. Tính chu kì dao động của con lắc theo đơn vị giây.",
+          "correctAnswer": "2",
+          "explanation": "$T = 2\\pi\\sqrt{1/\\pi^2} = 2$ s. Đáp án: 2."
+        },
+        {
+          "id": "vatli11_b2_sa02",
+          "type": "shortanswer",
+          "question": "Một con lắc lò xo có độ cứng $k = 50$ N/m dao động với biên độ $A = 0{,}04$ m. Cơ năng của con lắc bằng bao nhiêu milliJoule (mJ)?",
+          "correctAnswer": "40",
+          "explanation": "$W = 1/2 (50) (0{,}04)^2 = 0{,}04$ J = 40 mJ. Đáp án: 40."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "vatli11_b2_tf01",
+          "type": "tf-group",
+          "passage": "Một con lắc lò xo treo thẳng đứng dao động điều hòa quanh vị trí cân bằng với biên độ $A = 5$ cm và chu kì $T = 0{,}4$ s. Lấy $g = 10$ m/s$^2$ và $\\pi^2 = 10$.",
+          "statements": [
+            {
+              "question": "a) Độ dãn của lò xo ở vị trí cân bằng là $\\Delta l_0 = 4$ cm.",
+              "correct": true
+            },
+            {
+              "question": "b) Lực đàn hồi cực đại tác dụng lên điểm treo lớn hơn trọng lượng của vật.",
+              "correct": true
+            },
+            {
+              "question": "c) Trong quá trình dao động, lò xo luôn luôn bị dãn.",
+              "correct": false
+            },
+            {
+              "question": "d) Lực đàn hồi có độ lớn cực tiểu bằng 0 khi vật ở vị trí lò xo không biến dạng.",
+              "correct": true
+            }
+          ],
+          "explanation": "$\\Delta l_0 = g / \\omega^2 = 10 / (25 \\times 10) = 0{,}04$ m = 4 cm. Vì $A = 5$ cm $> \\Delta l_0$ nên có thời điểm lò xo bị nén (c sai)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "bai": 3,
+      "name": "Bài 3: Sóng cơ và sự truyền sóng. Giao thoa sóng",
+      "topic": "CHỦ ĐỀ 2: SÓNG",
+      "questions": [
+        {
+          "id": "vatli11_b3_mcq01",
+          "type": "mcq",
+          "question": "Bước sóng $\\lambda$ là quãng đường sóng truyền đi được trong thời gian:",
+          "options": [
+            "Một chu kì dao động",
+            "Nửa chu kì dao động",
+            "Một giây",
+            "Hai chu kì dao động"
+          ],
+          "correct": 0,
+          "explanation": "$\\lambda = v \\cdot T$. Chọn A."
+        },
+        {
+          "id": "vatli11_b3_mcq02",
+          "type": "mcq",
+          "question": "Một sóng có tần số $50$ Hz truyền với tốc độ $100$ m/s. Bước sóng là:",
+          "options": [
+            "$2$ m",
+            "$0{,}5$ m",
+            "$5000$ m",
+            "$200$ m"
+          ],
+          "correct": 0,
+          "explanation": "$\\lambda = 100/50 = 2$ m. Chọn A."
+        },
+        {
+          "id": "vatli11_b3_mcq03",
+          "type": "mcq",
+          "question": "Hai nguồn sóng kết hợp là hai nguồn dao động:",
+          "options": [
+            "Cùng phương, cùng tần số và hiệu số pha không đổi",
+            "Cùng biên độ và cùng pha",
+            "Cùng tốc độ truyền sóng",
+            "Ngược pha và khác tần số"
+          ],
+          "correct": 0,
+          "explanation": "Định nghĩa nguồn kết hợp: cùng phương, cùng tần số, hiệu số pha không đổi theo thời gian. Chọn A."
+        },
+        {
+          "id": "vatli11_b3_mcq04",
+          "type": "mcq",
+          "question": "Sóng âm truyền nhanh nhất trong môi trường nào?",
+          "options": [
+            "Chất rắn",
+            "Chất lỏng",
+            "Chất khí",
+            "Chân không"
+          ],
+          "correct": 0,
+          "explanation": "$v_{ran} > v_{long} > v_{khi}$. Chọn A."
+        },
+        {
+          "id": "vatli11_b3_sa01",
+          "type": "shortanswer",
+          "question": "Trong thí nghiệm giao thoa sóng nước với hai nguồn cùng pha, bước sóng $\\lambda = 3$ cm. Điểm $M$ cách hai nguồn $d_1 = 18$ cm và $d_2 = 12$ cm thuộc cực đại bậc mấy?",
+          "correctAnswer": "2",
+          "explanation": "$d_1 - d_2 = 6$ cm = $2\\lambda \\Rightarrow k = 2$. Đáp án: 2."
+        },
+        {
+          "id": "vatli11_b3_sa02",
+          "type": "shortanswer",
+          "question": "Hai điểm trên cùng một phương truyền sóng cách nhau $50$ cm. Biết bước sóng $\\lambda = 200$ cm. Độ lệch pha giữa hai điểm là bao nhiêu phần của $\\pi$ (nhập số thập phân, ví dụ: 0.5)?",
+          "correctAnswer": "0.5",
+          "explanation": "$\\Delta \\varphi = \\frac{2\\pi d}{\\lambda} = \\frac{2\\pi (50)}{200} = \\frac{\\pi}{2} = 0{,}5\\pi$. Đáp án: 0.5."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "vatli11_b3_tf01",
+          "type": "tf-group",
+          "passage": "Trên mặt nước có hai nguồn kết hợp $A, B$ dao động cùng pha với tần số $f = 20$ Hz, khoảng cách $AB = 12$ cm. Tốc độ truyền sóng $v = 60$ cm/s.",
+          "statements": [
+            {
+              "question": "a) Bước sóng $\\lambda = 3$ cm.",
+              "correct": true
+            },
+            {
+              "question": "b) Trung điểm của $AB$ là một cực đại giao thoa.",
+              "correct": true
+            },
+            {
+              "question": "c) Số vân cực đại giao thoa giữa hai nguồn là 7.",
+              "correct": true
+            },
+            {
+              "question": "d) Điểm $M$ có hiệu khoảng cách $d_1 - d_2 = 4{,}5$ cm là một cực tiểu giao thoa.",
+              "correct": true
+            }
+          ],
+          "explanation": "$\\lambda = 60/20 = 3$ cm. Cực đại: $-12 < 3k < 12 \\Rightarrow k \\in [-3; 3]$ (7 điểm). $4{,}5 = 1{,}5\\lambda$ là cực tiểu thứ 2."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "bai": 4,
+      "name": "Bài 4: Sóng dừng và Điện trường",
+      "topic": "CHỦ ĐỀ 3: SÓNG DỪNG VÀ ĐIỆN TRƯỜNG",
+      "questions": [
+        {
+          "id": "vatli11_b4_mcq01",
+          "type": "mcq",
+          "question": "Điều kiện có sóng dừng trên dây hai đầu cố định có chiều dài $L$ là:",
+          "options": [
+            "$L = k\\frac{\\lambda}{2}$ ($k \\in \\mathbb{N}^*$)",
+            "$L = (2k+1)\\frac{\\lambda}{4}$",
+            "$L = k\\lambda$",
+            "$L = k\\frac{\\lambda}{4}$"
+          ],
+          "correct": 0,
+          "explanation": "Hai đầu cố định: chiều dài bằng số nguyên lần nửa bước sóng. Chọn A."
+        },
+        {
+          "id": "vatli11_b4_mcq02",
+          "type": "mcq",
+          "question": "Đơn vị của cường độ điện trường trong hệ SI là:",
+          "options": [
+            "Vôn trên mét (V/m)",
+            "Newton (N)",
+            "Culông (C)",
+            "Jun (J)"
+          ],
+          "correct": 0,
+          "explanation": "$E = F/q$ có đơn vị V/m hoặc N/C. Chọn A."
+        },
+        {
+          "id": "vatli11_b4_mcq03",
+          "type": "mcq",
+          "question": "Khoảng cách giữa hai nút sóng liên tiếp trong sóng dừng bằng:",
+          "options": [
+            "$\\lambda/2$",
+            "$\\lambda$",
+            "$\\lambda/4$",
+            "$2\\lambda$"
+          ],
+          "correct": 0,
+          "explanation": "Hai nút hoặc hai bụng liên tiếp cách nhau $\\lambda/2$. Chọn A."
+        },
+        {
+          "id": "vatli11_b4_sa01",
+          "type": "shortanswer",
+          "question": "Một sợi dây đàn hồi dài $120$ cm có hai đầu cố định. Khi có sóng dừng trên dây với bước sóng $\\lambda = 40$ cm, số bụng sóng quan sát được là bao nhiêu?",
+          "correctAnswer": "3",
+          "explanation": "$L = k \\frac{\\lambda}{2} \\Leftrightarrow 120 = k (20) \\Rightarrow k = 3$ bụng sóng. Đáp án: 3."
+        },
+        {
+          "id": "vatli11_b4_sa02",
+          "type": "shortanswer",
+          "question": "Đặt một điện tích điểm $q = 2 \\cdot 10^{-6}$ C trong điện trường đều thì lực điện tác dụng lên nó là $F = 0{,}06$ N. Cường độ điện trường $E$ bằng bao nhiêu V/m?",
+          "correctAnswer": "30000",
+          "explanation": "$E = F/q = 0{,}06 / (2 \\cdot 10^{-6}) = 30000$ V/m. Đáp án: 30000."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "vatli11_b4_tf01",
+          "type": "tf-group",
+          "passage": "Một dây đàn hồi $AB$ dài $90$ cm có đầu $A$ gắn với nguồn dao động, đầu $B$ cố định. Khi tần số dao động là $50$ Hz, trên dây xuất hiện sóng dừng với 3 bụng sóng.",
+          "statements": [
+            {
+              "question": "a) Bước sóng của sóng truyền trên dây là $\\lambda = 60$ cm.",
+              "correct": true
+            },
+            {
+              "question": "b) Tốc độ truyền sóng trên dây là $v = 30$ m/s.",
+              "correct": true
+            },
+            {
+              "question": "c) Trên dây có tổng cộng 4 nút sóng kể cả hai đầu $A$ và $B$.",
+              "correct": true
+            },
+            {
+              "question": "d) Nếu tăng tần số lên gấp đôi thì số bụng sóng trên dây giảm đi một nửa.",
+              "correct": false
+            }
+          ],
+          "explanation": "$L = 3(\\lambda/2) = 90 \\Rightarrow \\lambda = 60$ cm. $v = \\lambda f = 0{,}6 \\times 50 = 30$ m/s. Số nút = 4. Tăng tần số thì số bụng tăng (d sai)."
         }
       ]
     }

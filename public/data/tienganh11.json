@@ -2,45 +2,97 @@
   "subject": "Tiếng Anh 11",
   "subjectKey": "tienganh",
   "grade": 11,
-  "curriculum": "GDPT 2018 — Global Success (QĐ 764/QĐ-BGDĐT)",
-  "source": "Ngân hàng đề thi chuẩn hóa THPT & Kho học liệu mở (VietJack / Thư Viện Học Liệu)",
+  "curriculum": "GDPT 2018 — QĐ 764/QĐ-BGDĐT",
+  "source": "Ngân hàng đề thi chuẩn hóa THPT & Kho học liệu mở (Global Success 11)",
   "lessons": [
     {
       "id": 1,
       "bai": 1,
       "name": "Unit 1: A Long and Healthy Life",
-      "topic": "UNIT 1: A LONG AND HEALTHY LIFE (GLOBAL SUCCESS)",
+      "topic": "THEME 1: HEALTH AND WELLBEING",
       "questions": [
         {
           "id": "tienganh11_u1_mcq01",
           "type": "mcq",
-          "question": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the other three in pronunciation:\nA. gen**e**ration\nB. r**e**ly\nC. exp**e**rience\nD. pr**e**fer",
+          "question": "Mark the word whose underlined part differs in pronunciation:\nA. balanced\nB. relaxed\nC. regular\nD. habit",
           "options": [
-            "A. generation",
-            "B. rely",
-            "C. experience",
-            "D. prefer"
+            "A. balanced",
+            "B. relaxed",
+            "C. regular",
+            "D. habit"
           ],
-          "correct": 0,
-          "explanation": "Phương án A phát âm là /e/ (generation), các phương án còn lại phát âm là /i/ hoặc /ɪ/. Chọn A."
+          "correct": 2,
+          "explanation": "'regular' /e/, others /æ/. Correct: C."
         },
         {
           "id": "tienganh11_u1_mcq02",
           "type": "mcq",
-          "question": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress:\nA. nutrient\nB. bacteria\nC. infectious\nD. examine",
+          "question": "Regular exercise and a ______ diet are essential for longevity.",
           "options": [
-            "A. nutrient",
-            "B. bacteria",
-            "C. infectious",
-            "D. examine"
+            "balanced",
+            "balance",
+            "balancing",
+            "imbalanced"
           ],
           "correct": 0,
-          "explanation": "'Nutrient' trọng âm rơi vào âm tiết thứ nhất. Các từ 'bacteria', 'infectious', 'examine' trọng âm rơi vào âm tiết thứ hai. Chọn A."
+          "explanation": "'balanced diet' is a fixed collocation. Correct: A."
         },
         {
           "id": "tienganh11_u1_mcq03",
           "type": "mcq",
-          "question": "Regular physical exercise helps boost the immune system and increase life ________.",
+          "question": "Antibiotics are only effective against infections caused by ______.",
+          "options": [
+            "bacteria",
+            "viruses",
+            "muscles",
+            "nutrients"
+          ],
+          "correct": 0,
+          "explanation": "Antibiotics treat bacteria. Correct: A."
+        },
+        {
+          "id": "tienganh11_u1_mcq04",
+          "type": "mcq",
+          "question": "I ______ to the gym three times last week.",
+          "options": [
+            "went",
+            "have gone",
+            "go",
+            "was going"
+          ],
+          "correct": 0,
+          "explanation": "Past simple with 'last week'. Correct: A."
+        },
+        {
+          "id": "tienganh11_u1_mcq05",
+          "type": "mcq",
+          "question": "She ______ a vegetarian since she read about healthy lifestyles.",
+          "options": [
+            "has been",
+            "was",
+            "is",
+            "had been"
+          ],
+          "correct": 0,
+          "explanation": "Present perfect with 'since'. Correct: A."
+        },
+        {
+          "id": "tienganh11_u1_mcq06",
+          "type": "mcq",
+          "question": "The doctor advised him to cut down ______ sugary drinks.",
+          "options": [
+            "on",
+            "with",
+            "in",
+            "of"
+          ],
+          "correct": 0,
+          "explanation": "Cut down on: reduce. Correct: A."
+        },
+        {
+          "id": "tienganh11_u1_mcq07",
+          "type": "mcq",
+          "question": "Life ______ has increased significantly due to medical advancements.",
           "options": [
             "expectancy",
             "expectation",
@@ -48,46 +100,528 @@
             "expecting"
           ],
           "correct": 0,
-          "explanation": "Cụm danh từ cố định 'life expectancy' có nghĩa là 'tuổi thọ kỳ vọng'. Chọn A."
+          "explanation": "'Life expectancy' (tuổi thọ kỳ vọng). Correct: A."
         },
         {
-          "id": "tienganh11_u1_mcq04",
+          "id": "tienganh11_u1_mcq08",
           "type": "mcq",
-          "question": "Antibiotics are used to treat infections caused by ________, not viruses.",
+          "question": "Eating plenty of fresh vegetables strengthens your immune ______.",
           "options": [
-            "bacteria",
-            "nutrients",
-            "ingredients",
-            "habits"
+            "system",
+            "routine",
+            "muscle",
+            "organ"
           ],
           "correct": 0,
-          "explanation": "'Antibiotics' (thuốc kháng sinh) chỉ có tác dụng tiêu diệt vi khuẩn ('bacteria'), không diệt được virus. Chọn A."
+          "explanation": "'Immune system' (hệ miễn dịch). Correct: A."
         },
         {
-          "id": "tienganh11_u1_mcq05",
+          "id": "tienganh11_u1_mcq09",
           "type": "mcq",
-          "question": "Eating a balanced diet with plenty of fruits and vegetables is essential for ________ health.",
+          "question": "Have you ever ______ a medical check-up this year?",
           "options": [
-            "maintaining",
-            "injuring",
-            "destroying",
-            "ignoring"
+            "had",
+            "did",
+            "made",
+            "taken"
           ],
           "correct": 0,
-          "explanation": "'Maintain health' mang nghĩa là duy trì sức khỏe tốt. Chọn A."
+          "explanation": "'Have a medical check-up'. Correct: A."
         },
         {
-          "id": "tienganh11_u1_mcq06",
+          "id": "tienganh11_u1_mcq10",
           "type": "mcq",
-          "question": "She has been working out at the gym regularly ________ she wants to stay fit and energetic.",
+          "question": "Drinking enough water helps flush out harmful ______ from the body.",
           "options": [
-            "because",
-            "although",
-            "despite",
-            "in spite of"
+            "toxins",
+            "minerals",
+            "vitamins",
+            "proteins"
           ],
           "correct": 0,
-          "explanation": "Mệnh đề chỉ nguyên nhân: 'because + S + V' (bởi vì). 'Despite' và 'in spite of' đi với danh từ hoặc V-ing. Chọn A."
+          "explanation": "Toxins (độc tố). Correct: A."
+        },
+        {
+          "id": "tienganh11_u1_mcq11",
+          "type": "mcq",
+          "question": "He ______ jogging every morning for five years.",
+          "options": [
+            "has practiced",
+            "practiced",
+            "is practicing",
+            "practices"
+          ],
+          "correct": 0,
+          "explanation": "Present perfect for action lasting up to present. Correct: A."
+        }
+      ],
+      "questionGroups": []
+    },
+    {
+      "id": 2,
+      "bai": 2,
+      "name": "Unit 2: The Generation Gap",
+      "topic": "THEME 2: SOCIETY AND RELATIONSHIPS",
+      "questions": [
+        {
+          "id": "tienganh11_u2_mcq01",
+          "type": "mcq",
+          "question": "The generation gap often results from differences in ______ and values.",
+          "options": [
+            "viewpoints",
+            "height",
+            "temperature",
+            "color"
+          ],
+          "correct": 0,
+          "explanation": "Viewpoints and values. Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq02",
+          "type": "mcq",
+          "question": "You ______ stay out past your curfew. Your parents will worry.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "should",
+            "can"
+          ],
+          "correct": 0,
+          "explanation": "Mustn't: prohibition. Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq03",
+          "type": "mcq",
+          "question": "You ______ respect your elders in the family.",
+          "options": [
+            "ought to",
+            "mustn't",
+            "can't",
+            "would"
+          ],
+          "correct": 0,
+          "explanation": "Ought to: moral duty. Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq04",
+          "type": "mcq",
+          "question": "Grandparents often hold more ______ views compared to teenagers.",
+          "options": [
+            "conservative",
+            "modern",
+            "digital",
+            "fashionable"
+          ],
+          "correct": 0,
+          "explanation": "Conservative (truyền thống, bảo thủ). Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq05",
+          "type": "mcq",
+          "question": "Teenagers prefer to be ______ and make their own career choices.",
+          "options": [
+            "independent",
+            "depend",
+            "dependent",
+            "dependence"
+          ],
+          "correct": 0,
+          "explanation": "Adjective 'independent'. Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq06",
+          "type": "mcq",
+          "question": "Open communication helps ______ the generation gap.",
+          "options": [
+            "bridge",
+            "build",
+            "widen",
+            "destroy"
+          ],
+          "correct": 0,
+          "explanation": "'Bridge the gap' (thu hẹp khoảng cách). Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq07",
+          "type": "mcq",
+          "question": "You ______ wear a uniform on weekdays; it is a school rule.",
+          "options": [
+            "have to",
+            "may",
+            "can",
+            "ought"
+          ],
+          "correct": 0,
+          "explanation": "Have to: external rule. Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq08",
+          "type": "mcq",
+          "question": "Living in an extended family can lead to daily ______ over lifestyle habits.",
+          "options": [
+            "conflicts",
+            "peace",
+            "agreements",
+            "harmonies"
+          ],
+          "correct": 0,
+          "explanation": "Conflicts (mâu thuẫn). Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq09",
+          "type": "mcq",
+          "question": "Parents ______ impose their career ambitions on their children.",
+          "options": [
+            "shouldn't",
+            "must",
+            "have to",
+            "ought"
+          ],
+          "correct": 0,
+          "explanation": "Shouldn't: advice not to. Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq10",
+          "type": "mcq",
+          "question": "My grandmother is very ______ and always listens to my opinions.",
+          "options": [
+            "open-minded",
+            "narrow-minded",
+            "strict",
+            "rude"
+          ],
+          "correct": 0,
+          "explanation": "Open-minded (cởi mở). Correct: A."
+        },
+        {
+          "id": "tienganh11_u2_mcq11",
+          "type": "mcq",
+          "question": "A nuclear family consists ______ parents and their children.",
+          "options": [
+            "of",
+            "in",
+            "with",
+            "at"
+          ],
+          "correct": 0,
+          "explanation": "Consist of. Correct: A."
+        }
+      ],
+      "questionGroups": []
+    },
+    {
+      "id": 3,
+      "bai": 3,
+      "name": "Unit 3: Cities of the Future",
+      "topic": "THEME 3: SUSTAINABILITY AND SMART CITIES",
+      "questions": [
+        {
+          "id": "tienganh11_u3_mcq01",
+          "type": "mcq",
+          "question": "Smart cities will rely on ______ energy sources like solar and wind.",
+          "options": [
+            "renewable",
+            "fossil",
+            "exhaustible",
+            "polluting"
+          ],
+          "correct": 0,
+          "explanation": "Renewable energy. Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq02",
+          "type": "mcq",
+          "question": "The rooftop garden ______ very refreshing after the rain.",
+          "options": [
+            "smells",
+            "is smelling",
+            "smell",
+            "has smelled"
+          ],
+          "correct": 0,
+          "explanation": "Linking verb 'smell' does not take continuous form here. Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq03",
+          "type": "mcq",
+          "question": "More ______ zones will be established so citizens can stroll safely.",
+          "options": [
+            "pedestrian",
+            "industrial",
+            "highway",
+            "aviation"
+          ],
+          "correct": 0,
+          "explanation": "Pedestrian zone (khu đi bộ). Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq04",
+          "type": "mcq",
+          "question": "High-rise buildings in eco-cities are designed to be energy-______.",
+          "options": [
+            "efficient",
+            "consuming",
+            "wasting",
+            "exhausting"
+          ],
+          "correct": 0,
+          "explanation": "Energy-efficient (tiết kiệm năng lượng). Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq05",
+          "type": "mcq",
+          "question": "Public transport in future cities ______ by artificial intelligence.",
+          "options": [
+            "will be operated",
+            "operated",
+            "operates",
+            "was operated"
+          ],
+          "correct": 0,
+          "explanation": "Passive voice in simple future. Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq06",
+          "type": "mcq",
+          "question": "Residents can report municipal issues via their mobile ______.",
+          "options": [
+            "applications",
+            "traffic",
+            "pollution",
+            "rubbish"
+          ],
+          "correct": 0,
+          "explanation": "Mobile applications. Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq07",
+          "type": "mcq",
+          "question": "Urban ______ is a major challenge when rural citizens flock to metropolises.",
+          "options": [
+            "overcrowding",
+            "emptiness",
+            "reduction",
+            "silence"
+          ],
+          "correct": 0,
+          "explanation": "Overcrowding (quá tải dân số). Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq08",
+          "type": "mcq",
+          "question": "Green spaces promote both physical and ______ wellbeing.",
+          "options": [
+            "mental",
+            "metallic",
+            "mineral",
+            "mechanic"
+          ],
+          "correct": 0,
+          "explanation": "Mental wellbeing (sức khỏe tinh thần). Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq09",
+          "type": "mcq",
+          "question": "The new transit system ______ impressive.",
+          "options": [
+            "looks",
+            "is looking",
+            "look",
+            "looking"
+          ],
+          "correct": 0,
+          "explanation": "Linking verb 'look'. Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq10",
+          "type": "mcq",
+          "question": "Modern smart grids help reduce electricity ______ during peak hours.",
+          "options": [
+            "waste",
+            "saving",
+            "efficiency",
+            "generation"
+          ],
+          "correct": 0,
+          "explanation": "Electricity waste. Correct: A."
+        },
+        {
+          "id": "tienganh11_u3_mcq11",
+          "type": "mcq",
+          "question": "Sensors will automatically detect and clean up ______ on the streets.",
+          "options": [
+            "litter",
+            "plants",
+            "pedestrians",
+            "clouds"
+          ],
+          "correct": 0,
+          "explanation": "Litter (rác thải). Correct: A."
+        }
+      ],
+      "questionGroups": []
+    },
+    {
+      "id": 4,
+      "bai": 4,
+      "name": "Unit 4: ASEAN and Viet Nam",
+      "topic": "THEME 4: GLOBAL INTEGRATION AND COOPERATION",
+      "questions": [
+        {
+          "id": "tienganh11_u4_mcq01",
+          "type": "mcq",
+          "question": "Viet Nam officially became a member of ASEAN in ______.",
+          "options": [
+            "1995",
+            "1997",
+            "1990",
+            "2000"
+          ],
+          "correct": 0,
+          "explanation": "Viet Nam joined ASEAN on July 28, 1995. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq02",
+          "type": "mcq",
+          "question": "ASEAN aims to promote regional peace, stability and economic ______.",
+          "options": [
+            "growth",
+            "decline",
+            "isolation",
+            "disruption"
+          ],
+          "correct": 0,
+          "explanation": "Economic growth. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq03",
+          "type": "mcq",
+          "question": "The youth exchange program helps participants understand cultural ______.",
+          "options": [
+            "diversity",
+            "similarity",
+            "division",
+            "sameness"
+          ],
+          "correct": 0,
+          "explanation": "Cultural diversity (đa dạng văn hóa). Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq04",
+          "type": "mcq",
+          "question": "Member states work together to achieve common ______ in Southeast Asia.",
+          "options": [
+            "goals",
+            "fights",
+            "arguments",
+            "barriers"
+          ],
+          "correct": 0,
+          "explanation": "Common goals. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq05",
+          "type": "mcq",
+          "question": "Viet Nam has contributed actively ______ all ASEAN activities.",
+          "options": [
+            "to",
+            "for",
+            "with",
+            "at"
+          ],
+          "correct": 0,
+          "explanation": "Contribute to something. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq06",
+          "type": "mcq",
+          "question": "Students can apply for various educational ______ in ASEAN universities.",
+          "options": [
+            "scholarships",
+            "fines",
+            "bills",
+            "taxes"
+          ],
+          "correct": 0,
+          "explanation": "Scholarships (học bổng). Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq07",
+          "type": "mcq",
+          "question": "The charter emphasizes the principle of non-______ in internal affairs.",
+          "options": [
+            "interference",
+            "cooperation",
+            "friendship",
+            "solidarity"
+          ],
+          "correct": 0,
+          "explanation": "Non-interference (không can thiệp). Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq08",
+          "type": "mcq",
+          "question": "Tourism has blossomed thanks to visa-free ______ among member states.",
+          "options": [
+            "travel",
+            "quarantine",
+            "barriers",
+            "inspection"
+          ],
+          "correct": 0,
+          "explanation": "Visa-free travel. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq09",
+          "type": "mcq",
+          "question": "They ______ for three hours before reaching an agreement.",
+          "options": [
+            "had negotiated",
+            "negotiate",
+            "negotiating",
+            "have negotiated"
+          ],
+          "correct": 0,
+          "explanation": "Past perfect before simple past. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq10",
+          "type": "mcq",
+          "question": "The ASEAN emblem features ten stalks of ______ representing friendship.",
+          "options": [
+            "padi",
+            "bamboo",
+            "lotus",
+            "wheat"
+          ],
+          "correct": 0,
+          "explanation": "Ten stalks of padi (lúa). Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq11",
+          "type": "mcq",
+          "question": "Cultural festivals allow people to ______ their traditional heritage.",
+          "options": [
+            "celebrate",
+            "forget",
+            "hide",
+            "ignore"
+          ],
+          "correct": 0,
+          "explanation": "Celebrate heritage. Correct: A."
+        },
+        {
+          "id": "tienganh11_u4_mcq12",
+          "type": "mcq",
+          "question": "The ASEAN Community was officially formed on December 31, ______.",
+          "options": [
+            "2015",
+            "2010",
+            "2020",
+            "2005"
+          ],
+          "correct": 0,
+          "explanation": "Formed on Dec 31, 2015. Correct: A."
         }
       ],
       "questionGroups": []

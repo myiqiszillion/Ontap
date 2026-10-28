@@ -174,76 +174,76 @@ router.post('/save-to-bank', (req, res) => {
       return res.status(400).json({ success: false, error: 'Danh sách câu hỏi trống' });
     }
 
-    const targetSub = subjectId || 'toan';
-    const targetGrade = grade || 12;
-    const fileName = `${targetSub}${targetGrade}.json`;
-    const filePath = path.join(__dirname, '..', '..', 'data', fileName);
-
-    let dataObj = { subjectId: targetSub, grade: targetGrade, lessons: [] };
-    if (fs.existsSync(filePath)) {
-      try {
-        dataObj = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      } catch (e) {
-        // use default
-      }
-    }
-
-    const title = lessonTitle || `Đề Tự Động Sinh (${new Date().toLocaleDateString('vi-VN')})`;
-    const newLessonId = `auto_${Date.now()}`;
-
-    // Separate MCQs and True/False question groups
-    const mcqs = questions.filter(q => q.format === 'multiple_choice' || q.format === 'mcq');
-    const tfGroups = questions.filter(q => q.format === 'true_false_group');
-    const saQuestions = questions.filter(q => q.format === 'short_answer');
-
-    const formattedQuestions = [
-      ...mcqs.map((q, idx) => ({
-        id: q.id || `${newLessonId}_q${idx + 1}`,
-        question: q.prompt,
-        options: q.mcqPayload?.options || [],
-        correct: q.mcqPayload?.correctOptionIndex ?? 0,
-        explanation: q.explanation || ''
-      })),
-      ...saQuestions.map((q, idx) => ({
-        id: q.id || `${newLessonId}_sa${idx + 1}`,
-        question: q.prompt,
-        options: [],
-        correctAnswer: q.shortAnswerPayload?.correctAnswers?.[0] || '',
-        explanation: q.explanation || ''
-      }))
-    ];
-
-    const formattedTfGroups = tfGroups.map((g, idx) => ({
-      id: g.id || `${newLessonId}_tf${idx + 1}`,
-      passage: g.tfPayload?.passage || g.prompt,
-      statements: (g.tfPayload?.statements || []).map((s, sIdx) => ({
-        id: s.id || `stmt_${String.fromCharCode(97 + sIdx)}`,
-        statement: s.statement,
-        correct: s.correct === true
-      })),
-      explanation: g.explanation || ''
-    }));
-
-    dataObj.lessons.push({
-      id: newLessonId,
-      title,
-      questions: formattedQuestions,
-      questionGroups: formattedTfGroups
+    const saveRes = AutoCrawlerService.saveQuestionsToDisk({
+      questions,
+      subjectId,
+      grade,
+      lessonTitle
     });
-
-    fs.writeFileSync(filePath, JSON.stringify(dataObj, null, 2), 'utf8');
 
     return res.status(200).json({
       success: true,
-      message: `Đã lưu thành công ${questions.length} câu hỏi vào bài học "${title}" (${fileName})`,
-      lessonId: newLessonId,
-      savedQuestionsCount: formattedQuestions.length + formattedTfGroups.length
+      message: `Đã lưu thành công ${questions.length} câu hỏi vào bài học "${lessonTitle || 'Đề mới'}" (${saveRes.fileName})`,
+      lessonId: saveRes.lessonId,
+      savedQuestionsCount: saveRes.savedQuestionsCount
     });
   } catch (err) {
     return res.status(500).json({
       success: false,
       error: 'Lỗi khi lưu vào ngân hàng câu hỏi: ' + err.message
     });
+  }
+});
+
+/**
+ * POST /api/v2/crawler/auto-sync-all
+ * Autonomous crawler endpoint: crawls all registered sources for all subjects & grades.
+ * NO ADMIN PRIVILEGES REQUIRED.
+ */
+router.post('/auto-sync-all', async (req, res) => {
+  try {
+    const { subjects, grades, sourceIds, dataDir } = req.body || {};
+    const summary = await crawlerService.crawlAllSourcesAndSave({ subjects, grades, sourceIds, dataDir });
+    return res.status(200).json({
+      success: true,
+      message: `Tự động thu thập hoàn tất: đã cập nhật ${summary.totalSavedQuestions} câu hỏi từ các nguồn học liệu`,
+      summary
+    });
+  } catch (err) {
+    return res.status(500).json({
+      success: false,
+      error: 'Lỗi khi tự động cào toàn bộ nguồn: ' + err.message
+    });
+  }
+});
+
+/**
+ * GET /api/v2/crawler/scheduler-status
+ * Check current background crawler scheduler state
+ */
+router.get('/scheduler-status', (req, res) => {
+  return res.status(200).json({
+    success: true,
+    scheduler: crawlerService.getSchedulerStatus()
+  });
+});
+
+/**
+ * POST /api/v2/crawler/scheduler-toggle
+ * Start or stop the automated background crawler
+ */
+router.post('/scheduler-toggle', (req, res) => {
+  try {
+    const { enable, intervalMs } = req.body || {};
+    if (enable === false) {
+      const status = crawlerService.stopBackgroundScheduler();
+      return res.status(200).json({ success: true, message: 'Đã tạm dừng tự động cào ngầm', status });
+    } else {
+      const status = crawlerService.startBackgroundScheduler(intervalMs || 12 * 60 * 60 * 1000, { runImmediate: false });
+      return res.status(200).json({ success: true, message: 'Đã kích hoạt tự động cào ngầm định kỳ', status });
+    }
+  } catch (err) {
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 

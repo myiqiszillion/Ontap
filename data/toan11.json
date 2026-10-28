@@ -22,7 +22,7 @@
             "$\\mathbb{R} \\setminus \\left\\{ \\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z} \\right\\}$"
           ],
           "correct": 0,
-          "explanation": "Hàm số $y = \\tan x = \\frac{\\sin x}{\\cos x}$ xác định khi $\\cos x \\neq 0 \\Leftrightarrow x \\neq \\frac{\\pi}{2} + k\\pi$ ($k \\in \\mathbb{Z}$). Chọn đáp án A."
+          "explanation": "Hàm số $y = \\tan x = \\frac{\\sin x}{\\cos x}$ xác định khi $\\cos x \\neq 0 \\Leftrightarrow x \\neq \\frac{\\pi}{2} + k\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
         },
         {
           "id": "toan11_b1_mcq02",
@@ -35,64 +35,51 @@
             "$x = \\frac{\\pi}{6} + k\\pi$ ($k \\in \\mathbb{Z}$)"
           ],
           "correct": 0,
-          "explanation": "Ta có $\\sin x = \\sin\\frac{\\pi}{6} \\Leftrightarrow x = \\frac{\\pi}{6} + k2\\pi$ hoặc $x = \\pi - \\frac{\\pi}{6} + k2\\pi = \\frac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
+          "explanation": "Ta có $\\sin x = \\sin\\frac{\\pi}{6} \\Leftrightarrow x = \\frac{\\pi}{6} + k2\\pi$ hoặc $x = \\frac{5\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
         },
         {
           "id": "toan11_b1_mcq03",
           "type": "mcq",
-          "question": "Chu kì tuần hoàn của hàm số $y = \\cos(2x)$ là:",
+          "question": "Chu kỳ tuần hoàn của hàm số $y = \\cos(2x)$ là:",
           "options": [
             "$T = \\pi$",
             "$T = 2\\pi$",
-            "$T = 4\\pi$",
-            "$T = \\frac{\\pi}{2}$"
+            "$T = \\frac{\\pi}{2}$",
+            "$T = 4\\pi$"
           ],
           "correct": 0,
-          "explanation": "Hàm số $y = \\cos(\\omega x)$ có chu kì $T = \\frac{2\\pi}{|\\omega|}$. Với $\\omega = 2$, ta có $T = \\frac{2\\pi}{2} = \\pi$. Chọn A."
+          "explanation": "Hàm số $y = \\cos(ax)$ có chu kì $T = \\frac{2\\pi}{|a|} = \\frac{2\\pi}{2} = \\pi$. Chọn A."
         },
         {
           "id": "toan11_b1_mcq04",
           "type": "mcq",
-          "question": "Giá trị lớn nhất $M$ và giá trị nhỏ nhất $m$ của hàm số $y = 3\\sin(2x - \\frac{\\pi}{4}) + 2$ lần lượt là:",
+          "question": "Giá trị lớn nhất $M$ và giá trị nhỏ nhất $m$ của hàm số $y = 3\\sin x - 2$ lần lượt là:",
           "options": [
-            "$M = 5, m = -1$",
-            "$M = 5, m = 1$",
-            "$M = 3, m = -3$",
-            "$M = 5, m = 2$"
+            "$M = 1; m = -5$",
+            "$M = 3; m = -3$",
+            "$M = 5; m = -1$",
+            "$M = 1; m = -1$"
           ],
           "correct": 0,
-          "explanation": "Vì $-1 \\le \\sin(2x - \\frac{\\pi}{4}) \\le 1$ nên $-3 + 2 \\le y \\le 3 + 2 \\Leftrightarrow -1 \\le y \\le 5$. Do đó $M = 5, m = -1$. Chọn A."
+          "explanation": "$-1 \\le \\sin x \\le 1 \\Rightarrow -5 \\le 3\\sin x - 2 \\le 1$. Do đó $M = 1, m = -5$. Chọn A."
         },
         {
           "id": "toan11_b1_mcq05",
           "type": "mcq",
-          "question": "Nghiệm của phương trình $\\cos x = -1$ là:",
+          "question": "Phương trình $\\cos x = \\cos \\alpha$ có họ nghiệm là:",
           "options": [
-            "$x = \\pi + k2\\pi$ ($k \\in \\mathbb{Z}$)",
-            "$x = k2\\pi$ ($k \\in \\mathbb{Z}$)",
-            "$x = \\frac{\\pi}{2} + k\\pi$ ($k \\in \\mathbb{Z}$)",
-            "$x = \\pi + k\\pi$ ($k \\in \\mathbb{Z}$)"
+            "$x = \\pm \\alpha + k2\\pi$ ($k \\in \\mathbb{Z}$)",
+            "$x = \\alpha + k\\pi$ ($k \\in \\mathbb{Z}$)",
+            "$x = \\alpha + k2\\pi$ hoặc $x = \\pi - \\alpha + k2\\pi$ ($k \\in \\mathbb{Z}$)",
+            "$x = \\pm \\alpha + k\\pi$ ($k \\in \\mathbb{Z}$)"
           ],
           "correct": 0,
-          "explanation": "Điểm biểu diễn $\\cos x = -1$ trên đường tròn lượng giác là điểm $(-1; 0)$, ứng với cung $x = \\pi + k2\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
+          "explanation": "Theo công thức: $\\cos x = \\cos \\alpha \\Leftrightarrow x = \\pm \\alpha + k2\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
         },
         {
           "id": "toan11_b1_mcq06",
           "type": "mcq",
-          "question": "Số nghiệm của phương trình $\\sin(2x) = 0$ thuộc khoảng $(0; 2\\pi)$ là:",
-          "options": [
-            "3 nghiệm",
-            "2 nghiệm",
-            "4 nghiệm",
-            "1 nghiệm"
-          ],
-          "correct": 0,
-          "explanation": "$\\sin 2x = 0 \\Leftrightarrow 2x = k\\pi \\Leftrightarrow x = \\frac{k\\pi}{2}$. Vì $x \\in (0; 2\\pi)$ nên $0 < \\frac{k\\pi}{2} < 2\\pi \\Leftrightarrow 0 < k < 4 \\Rightarrow k \\in \\{1; 2; 3\\}$. Vậy có 3 nghiệm. Chọn A."
-        },
-        {
-          "id": "toan11_b1_mcq07",
-          "type": "mcq",
-          "question": "Hàm số nào sau đây là hàm số chẵn trên tập xác định của nó?",
+          "question": "Hàm số nào sau đây là hàm số chẵn trên $\\mathbb{R}$?",
           "options": [
             "$y = \\cos x$",
             "$y = \\sin x$",
@@ -100,182 +87,97 @@
             "$y = \\cot x$"
           ],
           "correct": 0,
-          "explanation": "Ta có $\\cos(-x) = \\cos x$, do đó $y = \\cos x$ là hàm số chẵn. Các hàm $\\sin x, \\tan x, \\cot x$ là hàm số lẻ. Chọn A."
+          "explanation": "$\\cos(-x) = \\cos x$, do đó hàm số $y = \\cos x$ là hàm chẵn. Chọn A."
+        },
+        {
+          "id": "toan11_b1_mcq07",
+          "type": "mcq",
+          "question": "Số nghiệm của phương trình $\\sin x = 0$ trên đoạn $[0; 2\\pi]$ là:",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "correct": 0,
+          "explanation": "Nghiệm là $x \\in \\{0; \\pi; 2\\pi\\}$, có 3 nghiệm. Chọn A."
         },
         {
           "id": "toan11_b1_mcq08",
           "type": "mcq",
-          "question": "Phương trình $\\sqrt{3}\\tan x - 1 = 0$ có họ nghiệm là:",
+          "question": "Phương trình $\\tan x = \\sqrt{3}$ có nghiệm là:",
           "options": [
-            "$x = \\frac{\\pi}{6} + k\\pi$ ($k \\in \\mathbb{Z}$)",
             "$x = \\frac{\\pi}{3} + k\\pi$ ($k \\in \\mathbb{Z}$)",
-            "$x = \\frac{\\pi}{6} + k2\\pi$ ($k \\in \\mathbb{Z}$)",
-            "$x = -\\frac{\\pi}{6} + k\\pi$ ($k \\in \\mathbb{Z}$)"
+            "$x = \\frac{\\pi}{6} + k\\pi$ ($k \\in \\mathbb{Z}$)",
+            "$x = \\pm \\frac{\\pi}{3} + k\\pi$ ($k \\in \\mathbb{Z}$)",
+            "$x = \\frac{\\pi}{3} + k2\\pi$ ($k \\in \\mathbb{Z}$)"
           ],
           "correct": 0,
-          "explanation": "$\\tan x = \\frac{1}{\\sqrt{3}} = \\tan\\frac{\\pi}{6} \\Leftrightarrow x = \\frac{\\pi}{6} + k\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
+          "explanation": "$\\tan x = \\tan(\\pi/3) \\Leftrightarrow x = \\pi/3 + k\\pi$ ($k \\in \\mathbb{Z}$). Chọn A."
         },
         {
-          "id": "toan11_b1_mcq09",
-          "type": "mcq",
-          "question": "Độ cao $h$ (mét) của mực nước tại một cảng biển theo thời gian $t$ (giờ, $0 \\le t \\le 24$) được mô hình hóa bởi hàm số $h(t) = 4\\cos\\left(\\frac{\\pi t}{6}\\right) + 7$. Thời điểm nước dâng cao nhất đầu tiên trong ngày là:",
-          "options": [
-            "$t = 0$ giờ (nửa đêm)",
-            "$t = 6$ giờ",
-            "$t = 3$ giờ",
-            "$t = 12$ giờ"
-          ],
-          "correct": 0,
-          "explanation": "Nước dâng cao nhất khi $\\cos(\\frac{\\pi t}{6}) = 1 \\Leftrightarrow \\frac{\\pi t}{6} = k2\\pi \\Leftrightarrow t = 12k$. Với $t \\in [0; 24]$, thời điểm đầu tiên là $t = 0$ giờ (độ cao cực đại $h = 4(1) + 7 = 11$m). Chọn A."
+          "id": "toan11_b1_sa01",
+          "type": "shortanswer",
+          "question": "Tính số điểm phân biệt biểu diễn các nghiệm của phương trình $\\cos(2x) = 0$ trên đường tròn lượng giác.",
+          "correctAnswer": "4",
+          "explanation": "Ta có $2x = \\pi/2 + k\\pi \\Leftrightarrow x = \\pi/4 + k\\pi/2$. Trên đường tròn lượng giác có đúng 4 điểm biểu diễn. Đáp án: 4."
         },
         {
-          "id": "toan11_b1_mcq10",
-          "type": "mcq",
-          "question": "Công thức biến đổi tổng thành tích nào sau đây là ĐÚNG?",
-          "options": [
-            "$\\cos a + \\cos b = 2\\cos\\frac{a+b}{2}\\cos\\frac{a-b}{2}$",
-            "$\\cos a + \\cos b = -2\\sin\\frac{a+b}{2}\\sin\\frac{a-b}{2}$",
-            "$\\sin a + \\sin b = 2\\cos\\frac{a+b}{2}\\sin\\frac{a-b}{2}$",
-            "$\\cos a - \\cos b = 2\\sin\\frac{a+b}{2}\\sin\\frac{a-b}{2}$"
-          ],
-          "correct": 0,
-          "explanation": "Theo công thức lượng giác GDPT 2018: $\\cos a + \\cos b = 2\\cos\\frac{a+b}{2}\\cos\\frac{a-b}{2}$. Chọn A."
-        },
-        {
-          "id": "toan11_b1_mcq11",
-          "type": "mcq",
-          "question": "Tập nghiệm của phương trình $\\cos(2x - \\frac{\\pi}{3}) = 0$ là:",
-          "options": [
-            "$\\{x = \\frac{5\\pi}{12} + k\\frac{\\pi}{2}, k \\in \\mathbb{Z}\\}$",
-            "$\\{x = \\frac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}\\}$",
-            "$\\{x = \\frac{\\pi}{3} + k\\pi, k \\in \\mathbb{Z}\\}$",
-            "$\\{x = \\frac{5\\pi}{6} + k\\pi, k \\in \\mathbb{Z}\\}$"
-          ],
-          "correct": 0,
-          "explanation": "$2x - \\frac{\\pi}{3} = \\frac{\\pi}{2} + k\\pi \\Leftrightarrow 2x = \\frac{5\\pi}{6} + k\\pi \\Leftrightarrow x = \\frac{5\\pi}{12} + k\\frac{\\pi}{2}$ ($k \\in \\mathbb{Z}$). Chọn A."
-        },
-        {
-          "id": "toan11_b1_mcq12",
-          "type": "mcq",
-          "question": "Biết $\\sin \\alpha = \\frac{3}{5}$ với $\\frac{\\pi}{2} < \\alpha < \\pi$. Giá trị của $\\cos \\alpha$ là:",
-          "options": [
-            "$-\\frac{4}{5}$",
-            "$\\frac{4}{5}$",
-            "$-\\frac{3}{4}$",
-            "$\\frac{16}{25}$"
-          ],
-          "correct": 0,
-          "explanation": "Vì $\\frac{\\pi}{2} < \\alpha < \\pi$ (góc phần tư thứ II) nên $\\cos \\alpha < 0$. Ta có $\\cos \\alpha = -\\sqrt{1 - \\sin^2 \\alpha} = -\\sqrt{1 - \\frac{9}{25}} = -\\frac{4}{5}$. Chọn A."
+          "id": "toan11_b1_sa02",
+          "type": "shortanswer",
+          "question": "Cho hàm số $y = 5\\cos x - 12\\sin x + 7$. Tìm giá trị lớn nhất $M$ của hàm số.",
+          "correctAnswer": "20",
+          "explanation": "Max của $5\\cos x - 12\\sin x$ là $\\sqrt{5^2 + (-12)^2} = 13$. Suy ra $M = 13 + 7 = 20$. Đáp án: 20."
         }
       ],
       "questionGroups": [
         {
           "id": "toan11_b1_tf01",
           "type": "tf-group",
-          "passage": "Cho hàm số lượng giác $f(x) = 2\\sin\\left(2x - \\frac{\\pi}{3}\\right) + 1$ xác định trên toàn trục số thực $\\mathbb{R}$. Xét tính đúng/sai của các mệnh đề sau:",
+          "passage": "Xét hàm số $f(x) = 2\\sin(2x - \\frac{\\pi}{3}) + 1$ trên tập số thực $\\mathbb{R}$.",
           "statements": [
             {
-              "question": "a) Tập giá trị của hàm số là đoạn $[-1; 3]$.",
-              "correct": true,
-              "explanation": "Đúng. Vì $-1 \\le \\sin(...) \\le 1$ nên $2(-1) + 1 \\le f(x) \\le 2(1) + 1 \\Leftrightarrow -1 \\le f(x) \\le 3$."
+              "question": "a) Tập xác định của hàm số là $D = \\mathbb{R}$.",
+              "correct": true
             },
             {
-              "question": "b) Chu kỳ tuần hoàn cơ sở của hàm số là $T = \\pi$.",
-              "correct": true,
-              "explanation": "Đúng. Hệ số góc $\\omega = 2$ nên chu kì $T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{2} = \\pi$."
+              "question": "b) Chu kỳ tuần hoàn của hàm số $f(x)$ là $T = \\pi$.",
+              "correct": true
             },
             {
-              "question": "c) Điểm $x = \\frac{5\\pi}{12}$ là một điểm mà hàm số đạt giá trị lớn nhất.",
-              "correct": true,
-              "explanation": "Đúng. Tại $x = \\frac{5\\pi}{12}$: $2(\\frac{5\\pi}{12}) - \\frac{\\pi}{3} = \\frac{5\\pi}{6} - \\frac{2\\pi}{6} = \\frac{\\pi}{2}$. Khi đó $\\sin\\frac{\\pi}{2} = 1 \\Rightarrow f(x) = 3$ (giá trị lớn nhất)."
+              "question": "c) Giá trị lớn nhất của hàm số bằng 2.",
+              "correct": false
             },
             {
-              "question": "d) Đồ thị hàm số nhận trục tung $Oy$ làm trục đối xứng.",
-              "correct": false,
-              "explanation": "Sai. Hàm số này không phải là hàm số chẵn nên đồ thị không nhận trục tung làm trục đối xứng."
+              "question": "d) Hàm số đạt giá trị nhỏ nhất bằng $-1$ khi $x = -\\frac{\\pi}{12} + k\\pi$ ($k \\in \\mathbb{Z}$).",
+              "correct": true
             }
-          ]
+          ],
+          "explanation": "a, b đúng. Giá trị lớn nhất là $2(1) + 1 = 3$ (c sai). Đạt GTNN $-1$ tại $x = -\\pi/12 + k\\pi$ (d đúng)."
         },
         {
           "id": "toan11_b1_tf02",
           "type": "tf-group",
-          "passage": "Xét phương trình lượng giác $\\cos(2x) - \\sin x = 0$ trên đoạn $[0; 2\\pi]$.",
+          "passage": "Cho phương trình lượng giác $2\\cos^2 x + 3\\sin x - 3 = 0$.",
           "statements": [
             {
-              "question": "a) Phương trình đã cho tương đương với phương trình bậc hai $2\\sin^2 x + \\sin x - 1 = 0$.",
-              "correct": true,
-              "explanation": "Đúng. Áp dụng công thức nhân đôi $\\cos 2x = 1 - 2\\sin^2 x$, ta được $1 - 2\\sin^2 x - \\sin x = 0 \\Leftrightarrow 2\\sin^2 x + \\sin x - 1 = 0$."
+              "question": "a) Biến đổi phương trình về dạng $2\\sin^2 x - 3\\sin x + 1 = 0$.",
+              "correct": true
             },
             {
-              "question": "b) Các giá trị của $\\sin x$ thỏa mãn phương trình là $\\sin x = \\frac{1}{2}$ hoặc $\\sin x = -1$.",
-              "correct": true,
-              "explanation": "Đúng. Giải phương trình bậc hai $2t^2 + t - 1 = 0$ thu được $t_1 = \\frac{1}{2}$ và $t_2 = -1$."
+              "question": "b) Phương trình có hai nghiệm đối với $\\sin x$ là $\\sin x = 1$ và $\\sin x = \\frac{1}{2}$.",
+              "correct": true
             },
             {
-              "question": "c) Trên đoạn $[0; 2\\pi]$, phương trình có đúng 4 nghiệm phân biệt.",
-              "correct": false,
-              "explanation": "Sai. Phương trình có 3 nghiệm trên $[0; 2\\pi]$ là: $x = \\frac{\\pi}{6}, x = \\frac{5\\pi}{6}$ (từ $\\sin x = \\frac{1}{2}$) và $x = \\frac{3\\pi}{2}$ (từ $\\sin x = -1$)."
+              "question": "c) Phương trình có đúng 3 nghiệm thuộc đoạn $[0; 2\\pi]$.",
+              "correct": true
             },
             {
-              "question": "d) Tổng tất cả các nghiệm của phương trình trên đoạn $[0; 2\\pi]$ bằng $\\frac{5\\pi}{2}$.",
-              "correct": true,
-              "explanation": "Đúng. Tổng các nghiệm $= \\frac{\\pi}{6} + \\frac{5\\pi}{6} + \\frac{3\\pi}{2} = \\pi + \\frac{3\\pi}{2} = \\frac{5\\pi}{2}$."
+              "question": "d) Tổng các nghiệm của phương trình trong đoạn $[0; 2\\pi]$ bằng $2\\pi$.",
+              "correct": false
             }
-          ]
-        },
-        {
-          "id": "toan11_b1_tf03",
-          "type": "tf-group",
-          "passage": "Trong một phòng thí nghiệm vật lí, một quả lắc đơn dao động với phương trình li độ góc $\\theta(t) = 0{,}1\\cos(4\\pi t - \\frac{\\pi}{4})$ (rad), trong đó $t$ tính bằng giây.",
-          "statements": [
-            {
-              "question": "a) Biên độ góc của dao động là $\\theta_0 = 0{,}1$ rad.",
-              "correct": true,
-              "explanation": "Đúng. Biên độ cực đại là hệ số đứng trước hàm cosin, $\\theta_0 = 0{,}1$ rad."
-            },
-            {
-              "question": "b) Tần số dao động của con lắc là $f = 2$ Hz.",
-              "correct": true,
-              "explanation": "Đúng. Ta có $\\omega = 4\\pi \\Rightarrow f = \\frac{\\omega}{2\\pi} = \\frac{4\\pi}{2\\pi} = 2$ Hz."
-            },
-            {
-              "question": "c) Tại thời điểm ban đầu $t = 0$, li độ góc của quả lắc là $\\theta(0) = \\frac{\\sqrt{2}}{20}$ rad.",
-              "correct": true,
-              "explanation": "Đúng. $\\theta(0) = 0{,}1\\cos(-\\frac{\\pi}{4}) = 0{,}1\\cdot\\frac{\\sqrt{2}}{2} = \\frac{\\sqrt{2}}{20}$ rad."
-            },
-            {
-              "question": "d) Trong 10 giây đầu tiên, quả lắc đi qua vị trí cân bằng ($\\theta = 0$) đúng 20 lần.",
-              "correct": false,
-              "explanation": "Sai. Mỗi chu kỳ $T = \\frac{1}{f} = 0{,}5$s quả lắc qua vị trí cân bằng 2 lần. Trong 10s có 20 chu kỳ, do đó đi qua VTCB 40 lần."
-            }
-          ]
-        },
-        {
-          "id": "toan11_b1_tf04",
-          "type": "tf-group",
-          "passage": "Cho tam giác $ABC$ có các góc thỏa mãn hệ thức: $\\frac{\\sin A + \\sin B}{\\cos A + \\cos B} = \\sin C$.",
-          "statements": [
-            {
-              "question": "a) Biến đổi tổng thành tích vế trái cho kết quả $\\cot\\left(\\frac{A+B}{2}\\right)$.",
-              "correct": false,
-              "explanation": "Sai. Vế trái $= \\frac{2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}}{2\\cos\\frac{A+B}{2}\\cos\\frac{a-b}{2}} = \\tan\\left(\\frac{A+B}{2}\\right)$."
-            },
-            {
-              "question": "b) Trong tam giác $ABC$, ta luôn có $\\tan\\left(\\frac{A+B}{2}\\right) = \\cot\\left(\\frac{C}{2}\\right)$.",
-              "correct": true,
-              "explanation": "Đúng. Vì $\\frac{A+B}{2} = \\frac{\\pi}{2} - \\frac{C}{2}$ nên $\\tan(\\frac{A+B}{2}) = \\cot(\\frac{C}{2})$."
-            },
-            {
-              "question": "c) Hệ thức đã cho tương đương với $\\cos^2\\left(\\frac{C}{2}\\right) = \\frac{1}{2}$.",
-              "correct": true,
-              "explanation": "Đúng. $\\cot\\frac{C}{2} = 2\\sin\\frac{C}{2}\\cos\\frac{C}{2} \\Leftrightarrow \\frac{\\cos(C/2)}{\\sin(C/2)} = 2\\sin(C/2)\\cos(C/2) \\Rightarrow \\sin^2(C/2) = \\frac{1}{2}$."
-            },
-            {
-              "question": "d) Tam giác $ABC$ bắt buộc phải là tam giác vuông tại $C$.",
-              "correct": true,
-              "explanation": "Đúng. $\\sin(C/2) = \\frac{\\sqrt{2}}{2} \\Rightarrow C/2 = 45^\\circ \\Rightarrow C = 90^\\circ$ (vuông tại C)."
-            }
-          ]
+          ],
+          "explanation": "Các nghiệm là $\\pi/2, \\pi/6, 5\\pi/6$. Tổng các nghiệm là $3\\pi/2 \\neq 2\\pi$."
         }
       ]
     },
@@ -288,109 +190,281 @@
         {
           "id": "toan11_b2_mcq01",
           "type": "mcq",
-          "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_1 = 3$ và công sai $d = 4$. Số hạng thứ 10 của cấp số cộng là:",
+          "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_1 = 3$ và công sai $d = 2$. Số hạng thứ 5 là:",
           "options": [
-            "$u_{10} = 39$",
-            "$u_{10} = 43$",
-            "$u_{10} = 36$",
-            "$u_{10} = 40$"
+            "$u_5 = 11$",
+            "$u_5 = 13$",
+            "$u_5 = 10$",
+            "$u_5 = 15$"
           ],
           "correct": 0,
-          "explanation": "Công thức số hạng tổng quát: $u_n = u_1 + (n - 1)d$. Với $n = 10$: $u_{10} = 3 + 9 \\times 4 = 3 + 36 = 39$. Chọn A."
+          "explanation": "$u_5 = u_1 + 4d = 3 + 4(2) = 11$. Chọn A."
         },
         {
           "id": "toan11_b2_mcq02",
           "type": "mcq",
-          "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và công bội $q = 3$. Số hạng thứ 5 của cấp số nhân là:",
+          "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và công bội $q = 3$. Số hạng tổng quát $u_n$ là:",
           "options": [
-            "$u_5 = 162$",
-            "$u_5 = 486$",
-            "$u_5 = 81$",
-            "$u_5 = 54$"
+            "$u_n = 2 \\cdot 3^{n-1}$",
+            "$u_n = 2 \\cdot 3^n$",
+            "$u_n = 3 \\cdot 2^{n-1}$",
+            "$u_n = 6^{n-1}$"
           ],
           "correct": 0,
-          "explanation": "Áp dụng công thức $u_n = u_1 \\cdot q^{n-1}$. Với $n = 5$: $u_5 = 2 \\times 3^4 = 2 \\times 81 = 162$. Chọn A."
+          "explanation": "$u_n = u_1 \\cdot q^{n-1} = 2 \\cdot 3^{n-1}$. Chọn A."
         },
         {
           "id": "toan11_b2_mcq03",
           "type": "mcq",
-          "question": "Tổng của 20 số hạng đầu tiên của cấp số cộng $(u_n)$ có $u_1 = 5, d = 3$ là:",
+          "question": "Tổng 10 số hạng đầu của cấp số cộng có $u_1 = 1, d = 3$ là:",
           "options": [
-            "$S_{20} = 670$",
-            "$S_{20} = 640$",
-            "$S_{20} = 700$",
-            "$S_{20} = 610$"
+            "$S_{10} = 145$",
+            "$S_{10} = 150$",
+            "$S_{10} = 140$",
+            "$S_{10} = 165$"
           ],
           "correct": 0,
-          "explanation": "$S_n = \\frac{n}{2}[2u_1 + (n-1)d] \\Rightarrow S_{20} = \\frac{20}{2}[2(5) + 19(3)] = 10(10 + 57) = 670$. Chọn A."
+          "explanation": "$S_{10} = \\frac{10}{2}[2(1) + 9(3)] = 5 \\times 29 = 145$. Chọn A."
         },
         {
           "id": "toan11_b2_mcq04",
           "type": "mcq",
-          "question": "Một bác nông dân nuôi cá tra giống. Ngày đầu thả 1000 con, mỗi ngày số lượng cá đạt chuẩn tăng thêm theo tỉ lệ $5\\%$ so với ngày trước đó. Số cá đạt chuẩn sau 30 ngày xấp xỉ là:",
+          "question": "Dãy số nào sau đây là dãy số tăng?",
           "options": [
-            "4322 con",
-            "2500 con",
-            "3800 con",
-            "5120 con"
+            "$u_n = 2n + 1$",
+            "$u_n = \\frac{1}{n}$",
+            "$u_n = (-1)^n \\cdot n$",
+            "$u_n = 5 - 3n$"
           ],
           "correct": 0,
-          "explanation": "Đây là bài toán cấp số nhân: $u_{30} = u_1 \\times q^{29} = 1000 \\times (1 + 0{,}05)^{29} \\approx 4116$ con; sau 30 ngày sinh trưởng $u_{31} = 1000 \\times (1{,}05)^{30} \\approx 4322$ con. Chọn A."
+          "explanation": "$u_{n+1} - u_n = 2 > 0$ nên dãy số tăng. Chọn A."
         },
         {
           "id": "toan11_b2_mcq05",
           "type": "mcq",
-          "question": "Dãy số nào sau đây là dãy số giảm?",
+          "question": "Ba số $x; 4; 9$ lập thành cấp số nhân khi $x$ dương bằng:",
           "options": [
-            "$u_n = \\frac{1}{n}$",
-            "$u_n = 2n + 1$",
-            "$u_n = (-1)^n$",
-            "$u_n = 3^n$"
+            "$\\frac{16}{9}$",
+            "$\\frac{9}{16}$",
+            "$2$",
+            "$6$"
           ],
           "correct": 0,
-          "explanation": "Xét $u_{n+1} - u_n = \\frac{1}{n+1} - \\frac{1}{n} = \\frac{-1}{n(n+1)} < 0, \\forall n \\ge 1$. Do đó dãy số $(u_n)$ giảm. Chọn A."
+          "explanation": "$4^2 = 9x \\Leftrightarrow x = 16/9$. Chọn A."
         },
         {
-          "id": "toan11_b2_mcq06",
-          "type": "mcq",
-          "question": "Tổng vô hạn của cấp số nhân lùi vô hạn $S = 1 + \\frac{1}{2} + \\frac{1}{4} + \\dots + \\frac{1}{2^n} + \\dots$ bằng:",
-          "options": [
-            "$S = 2$",
-            "$S = 1$",
-            "$S = 3$",
-            "$S = \\frac{3}{2}$"
-          ],
-          "correct": 0,
-          "explanation": "Công thức tổng cấp số nhân lùi vô hạn: $S = \\frac{u_1}{1 - q}$. Với $u_1 = 1, q = \\frac{1}{2}$, ta có $S = \\frac{1}{1 - 1/2} = 2$. Chọn A."
+          "id": "toan11_b2_sa01",
+          "type": "shortanswer",
+          "question": "Cho cấp số cộng $(u_n)$ biết $u_3 = 8$ và $u_7 = 20$. Tìm công sai $d$.",
+          "correctAnswer": "3",
+          "explanation": "$u_7 - u_3 = 4d = 12 \\Rightarrow d = 3$. Đáp án: 3."
+        },
+        {
+          "id": "toan11_b2_sa02",
+          "type": "shortanswer",
+          "question": "Cho cấp số nhân lùi vô hạn có $u_1 = 6$ và $q = \\frac{1}{3}$. Tính tổng $S$ của cấp số nhân lùi vô hạn đó.",
+          "correctAnswer": "9",
+          "explanation": "$S = \\frac{u_1}{1 - q} = \\frac{6}{1 - 1/3} = 9$. Đáp án: 9."
         }
       ],
       "questionGroups": [
         {
           "id": "toan11_b2_tf01",
           "type": "tf-group",
-          "passage": "Anh Nam gửi tiết kiệm ngân hàng 200 triệu đồng theo hình thức lãi kép với lãi suất không đổi $6\\%$/năm, lãi hàng năm được nhập vào vốn gốc để tính lãi cho năm tiếp theo.",
+          "passage": "Cho cấp số cộng $(u_n)$ có $\\begin{cases} u_1 + u_5 = 14 \\\\ u_2 + u_6 = 18 \\end{cases}$.",
           "statements": [
             {
-              "question": "a) Số tiền cả vốn lẫn lãi sau $n$ năm là một cấp số nhân có số hạng đầu $u_0 = 200$ triệu và công bội $q = 1{,}06$.",
-              "correct": true,
-              "explanation": "Đúng. Công thức tính lãi kép: $T_n = A(1 + r)^n = 200 \\times (1{,}06)^n$."
+              "question": "a) Công sai $d = 2$.",
+              "correct": true
             },
             {
-              "question": "b) Sau 3 năm, số tiền trong tài khoản của anh Nam nhiều hơn 238 triệu đồng.",
-              "correct": true,
-              "explanation": "Đúng. Sau 3 năm: $T_3 = 200 \\times (1{,}06)^3 = 238{,}2032$ triệu đồng $> 238$ triệu."
+              "question": "b) Số hạng đầu $u_1 = 3$.",
+              "correct": true
             },
             {
-              "question": "c) Để số tiền nhận được gấp đôi số tiền ban đầu (đạt ít nhất 400 triệu đồng), anh Nam cần gửi ít nhất 10 năm.",
-              "correct": false,
-              "explanation": "Sai. $(1{,}06)^n \\ge 2 \\Leftrightarrow n \\ge \\log_{1{,}06}(2) \\approx 11{,}89$ năm $\\Rightarrow$ Cần gửi ít nhất 12 năm."
+              "question": "c) Số 2025 là một số hạng của cấp số cộng.",
+              "correct": true
             },
             {
-              "question": "d) Tiền lãi nhận được riêng ở năm thứ 5 lớn hơn tiền lãi nhận được riêng ở năm thứ 4.",
-              "correct": true,
-              "explanation": "Đúng. Tiền lãi năm $k$ bằng $T_{k} - T_{k-1} = 200(1{,}06)^{k-1}(0{,}06)$, vì dãy tăng nên lãi các năm sau luôn lớn hơn các năm trước."
+              "question": "d) Tổng 20 số hạng đầu $S_{20} = 440$.",
+              "correct": true
             }
-          ]
+          ],
+          "explanation": "Hệ cho $d = 2, u_1 = 3$. $u_n = 2n + 1$. $2n + 1 = 2025 \\Rightarrow n = 1012$. $S_{20} = 440$."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "bai": 3,
+      "name": "Bài 3: Giới hạn của dãy số và hàm số. Hàm số liên tục",
+      "topic": "CHƯƠNG III: GIỚI HẠN. HÀM SỐ LIÊN TỤC",
+      "questions": [
+        {
+          "id": "toan11_b3_mcq01",
+          "type": "mcq",
+          "question": "Giới hạn $\\lim_{n \\to +\\infty} \\frac{2n + 1}{n - 3}$ bằng:",
+          "options": [
+            "2",
+            "1",
+            "-1/3",
+            "+\\infty"
+          ],
+          "correct": 0,
+          "explanation": "Chia tử và mẫu cho $n$, giới hạn bằng 2. Chọn A."
+        },
+        {
+          "id": "toan11_b3_mcq02",
+          "type": "mcq",
+          "question": "Giá trị $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$ bằng:",
+          "options": [
+            "4",
+            "0",
+            "2",
+            "+\\infty"
+          ],
+          "correct": 0,
+          "explanation": "Khử vô định: $\\lim_{x \\to 2}(x + 2) = 4$. Chọn A."
+        },
+        {
+          "id": "toan11_b3_mcq03",
+          "type": "mcq",
+          "question": "Giới hạn nào sau đây bằng 0?",
+          "options": [
+            "$\\lim_{n \\to \\infty} (1/2)^n$",
+            "$\\lim_{n \\to \\infty} (1{,}2)^n$",
+            "$\\lim_{n \\to \\infty} \\frac{n^2+1}{n}$",
+            "$\\lim_{n \\to \\infty} \\frac{3n-1}{n+2}$"
+          ],
+          "correct": 0,
+          "explanation": "$|q| < 1 \\Rightarrow \\lim q^n = 0$. Chọn A."
+        },
+        {
+          "id": "toan11_b3_mcq04",
+          "type": "mcq",
+          "question": "Hàm số $y = \\frac{x + 1}{x - 3}$ liên tục trên khoảng nào sau đây?",
+          "options": [
+            "$(3; +\\infty)$",
+            "$(-\\infty; 4)$",
+            "$(2; 5)$",
+            "$\\mathbb{R}$"
+          ],
+          "correct": 0,
+          "explanation": "Hàm phân thức liên tục trên từng khoảng xác định. $(3; +\\infty)$ thỏa mãn. Chọn A."
+        },
+        {
+          "id": "toan11_b3_sa01",
+          "type": "shortanswer",
+          "question": "Cho hàm số $f(x) = \\begin{cases} \\frac{x^2 - 9}{x - 3} & (x \\neq 3) \\\\ m + 2 & (x = 3) \\end{cases}$. Tìm $m$ để hàm số liên tục tại $x = 3$.",
+          "correctAnswer": "4",
+          "explanation": "$\\lim_{x \\to 3} f(x) = 6 = m + 2 \\Leftrightarrow m = 4$. Đáp án: 4."
+        },
+        {
+          "id": "toan11_b3_sa02",
+          "type": "shortanswer",
+          "question": "Tính giới hạn $\\lim_{x \\to 1} \\frac{2x^2 - x - 1}{x - 1}$.",
+          "correctAnswer": "3",
+          "explanation": "$\\frac{(x - 1)(2x + 1)}{x - 1} = 2x + 1$. Tại $x = 1$ giá trị bằng 3. Đáp án: 3."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "toan11_b3_tf01",
+          "type": "tf-group",
+          "passage": "Xét các giới hạn $I = \\lim_{n \\to \\infty} \\frac{3n^2 - 2n + 5}{n^2 + 4}$ và $J = \\lim_{x \\to 1} \\frac{\\sqrt{x + 3} - 2}{x - 1}$.",
+          "statements": [
+            {
+              "question": "a) $I = 3$.",
+              "correct": true
+            },
+            {
+              "question": "b) Giới hạn $J$ có dạng vô định $0/0$.",
+              "correct": true
+            },
+            {
+              "question": "c) Giá trị $J = \\frac{1}{4}$.",
+              "correct": true
+            },
+            {
+              "question": "d) Tích $I \\cdot J = 1$.",
+              "correct": false
+            }
+          ],
+          "explanation": "I = 3, J = 1/4. Tích bằng 3/4."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "bai": 4,
+      "name": "Bài 4: Đường thẳng và mặt phẳng trong không gian. Quan hệ song song",
+      "topic": "CHƯƠNG IV: HÌNH HỌC KHÔNG GIAN. QUAN HỆ SONG SONG",
+      "questions": [
+        {
+          "id": "toan11_b4_mcq01",
+          "type": "mcq",
+          "question": "Qua ba điểm phân biệt không thẳng hàng trong không gian có bao nhiêu mặt phẳng?",
+          "options": [
+            "Duy nhất một",
+            "Hai",
+            "Vô số",
+            "Không có"
+          ],
+          "correct": 0,
+          "explanation": "Có duy nhất một mặt phẳng đi qua ba điểm không thẳng hàng. Chọn A."
+        },
+        {
+          "id": "toan11_b4_mcq02",
+          "type": "mcq",
+          "question": "Cho hình chóp $S.ABCD$ có đáy hình bình hành. Giao tuyến của $(SAB)$ và $(SCD)$ là đường thẳng qua $S$ và:",
+          "options": [
+            "Song song với $AB$ và $CD$",
+            "Song song với $AD$ và $BC$",
+            "Vuông góc với đáy",
+            "Đi qua tâm đáy"
+          ],
+          "correct": 0,
+          "explanation": "Giao tuyến song song với hai cạnh đáy $AB \\parallel CD$. Chọn A."
+        },
+        {
+          "id": "toan11_b4_sa01",
+          "type": "shortanswer",
+          "question": "Cho hình chóp tam giác $S.ABC$. Gọi $M, N$ là trung điểm $SA, SB$. Tỉ số diện tích tam giác $SMN$ trên diện tích $SAB$ bằng bao nhiêu (viết dạng số thập phân, ví dụ: 0.25)?",
+          "correctAnswer": "0.25",
+          "explanation": "$\\frac{1}{2} \\times \\frac{1}{2} = 0{,}25$. Đáp án: 0.25."
+        },
+        {
+          "id": "toan11_b4_sa02",
+          "type": "shortanswer",
+          "question": "Một hình chóp tứ giác đều có cạnh đáy bằng 4. Độ dài đoạn nối trung điểm hai cạnh đáy đối diện bằng bao nhiêu?",
+          "correctAnswer": "4",
+          "explanation": "Đoạn nối hai trung điểm cạnh đối trong hình vuông cạnh 4 có độ dài bằng cạnh hình vuông = 4. Đáp án: 4."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "toan11_b4_tf01",
+          "type": "tf-group",
+          "passage": "Cho tứ diện đều $ABCD$ cạnh bằng $a$. Gọi $M, N, P$ lần lượt là trung điểm của $AB, BC, CD$.",
+          "statements": [
+            {
+              "question": "a) $MN \\parallel (ACD)$.",
+              "correct": true
+            },
+            {
+              "question": "b) Tứ giác thiết diện qua $M, N, P$ song song với $AD$ là hình chữ nhật.",
+              "correct": true
+            },
+            {
+              "question": "c) Độ dài $MN = a/2$.",
+              "correct": true
+            },
+            {
+              "question": "d) $AB$ cắt $CD$.",
+              "correct": false
+            }
+          ],
+          "explanation": "MN là đường trung bình nên song song ACD. AB và CD chéo nhau."
         }
       ]
     }

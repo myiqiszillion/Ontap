@@ -8,115 +8,452 @@
     {
       "id": 1,
       "bai": 1,
-      "name": "Bài 1: Cân bằng hóa học và Sự điện li",
+      "name": "Bài 1: Khái niệm về cân bằng hóa học và sự chuyển dịch cân bằng",
       "topic": "CHỦ ĐỀ 1: CÂN BẰNG HÓA HỌC",
       "questions": [
         {
           "id": "hoahoc11_b1_mcq01",
           "type": "mcq",
-          "question": "Đặc điểm nào sau đây KHÔNG đúng đối với một phản ứng thuận nghịch ở trạng thái cân bằng?",
+          "question": "Tại trạng thái cân bằng hóa học, nhận xét nào sau đây luôn đúng?",
           "options": [
-            "Phản ứng dừng lại hoàn toàn, không còn sự chuyển hóa giữa các chất",
             "Tốc độ phản ứng thuận bằng tốc độ phản ứng nghịch ($v_t = v_n$)",
-            "Nồng độ của các chất trong hệ phản ứng không thay đổi theo thời gian",
-            "Trạng thái cân bằng là cân bằng động"
+            "Nồng độ chất phản ứng bằng nồng độ sản phẩm",
+            "Phản ứng dừng lại hoàn toàn",
+            "Khối lượng chất tham gia bằng 0"
           ],
           "correct": 0,
-          "explanation": "Cân bằng hóa học là cân bằng động, phản ứng vẫn diễn ra theo cả hai chiều với tốc độ bằng nhau chứ không dừng lại hoàn toàn. Chọn A."
+          "explanation": "Cân bằng hóa học là cân bằng động, $v_t = v_n$. Chọn A."
         },
         {
           "id": "hoahoc11_b1_mcq02",
           "type": "mcq",
-          "question": "Theo thuyết Brønsted - Lowry về acid - base, acid là chất có khả năng:",
+          "question": "Theo nguyên lí Le Chatelier, khi tăng nhiệt độ của hệ cân bằng, cân bằng chuyển dịch theo chiều:",
           "options": [
-            "Cho proton ($H^+$)",
-            "Nhận proton ($H^+$)",
-            "Cho electron",
-            "Nhận hydroxide ($OH^-$)"
+            "Phản ứng thu nhiệt",
+            "Phản ứng tỏa nhiệt",
+            "Làm tăng áp suất",
+            "Tạo thêm chất xúc tác"
           ],
           "correct": 0,
-          "explanation": "Theo thuyết Brønsted - Lowry: Acid là chất cho proton ($H^+$), Base là chất nhận proton ($H^+$). Chọn A."
+          "explanation": "Tăng nhiệt độ làm cân bằng dịch chuyển theo chiều thu nhiệt. Chọn A."
         },
         {
           "id": "hoahoc11_b1_mcq03",
           "type": "mcq",
-          "question": "Dung dịch có pH = 3 có nồng độ ion $[H^+]$ bằng:",
+          "question": "Cho cân bằng: $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$ có $\\Delta H < 0$. Yếu tố nào làm cân bằng chuyển dịch sang chiều thuận?",
           "options": [
-            "$10^{-3}$ M",
-            "$10^{-11}$ M",
-            "$3$ M",
-            "$0{,}3$ M"
+            "Tăng áp suất của hệ",
+            "Tăng nhiệt độ của hệ",
+            "Giảm nồng độ khí $N_2$",
+            "Thêm chất xúc tác"
           ],
           "correct": 0,
-          "explanation": "Ta có công thức: $[H^+] = 10^{-\\text{pH}} = 10^{-3}$ M. Môi trường có tính acid. Chọn A."
+          "explanation": "Tăng áp suất dịch chuyển về phía ít mol khí hơn (chiều thuận). Chọn A."
         },
         {
           "id": "hoahoc11_b1_mcq04",
           "type": "mcq",
-          "question": "Theo nguyên lí chuyển dịch cân bằng Le Chatelier, khi tăng nhiệt độ của hệ cân bằng tỏa nhiệt ($\\Delta_r H^0_{298} < 0$), cân bằng sẽ dịch chuyển theo chiều:",
+          "question": "Hằng số cân bằng $K_C$ của phản ứng chỉ phụ thuộc vào:",
           "options": [
-            "Chiều nghịch (chiều thu nhiệt)",
-            "Chiều thuận (chiều tỏa nhiệt)",
-            "Không dịch chuyển",
-            "Chiều tạo thêm nhiều sản phẩm"
+            "Bản chất của phản ứng và nhiệt độ",
+            "Áp suất của hệ",
+            "Nồng độ ban đầu của chất tham gia",
+            "Chất xúc tác"
           ],
           "correct": 0,
-          "explanation": "Khi tăng nhiệt độ, cân bằng chuyển dịch theo chiều làm giảm nhiệt độ của hệ (chiều thu nhiệt, tức chiều nghịch). Chọn A."
+          "explanation": "$K_C$ chỉ phụ thuộc vào bản chất phản ứng và nhiệt độ. Chọn A."
         },
         {
           "id": "hoahoc11_b1_mcq05",
           "type": "mcq",
-          "question": "Chất nào sau đây là chất điện li mạnh trong nước?",
+          "question": "Biểu thức hằng số cân bằng $K_C$ của phản ứng $C(s) + CO_2(g) \\rightleftharpoons 2CO(g)$ là:",
           "options": [
-            "$HCl$",
-            "$CH_3COOH$",
-            "$HF$",
-            "$H_2O$"
+            "$K_C = \\frac{[CO]^2}{[CO_2]}$",
+            "$K_C = \\frac{[CO]^2}{[C][CO_2]}$",
+            "$K_C = \\frac{[CO_2]}{[CO]^2}$",
+            "$K_C = \\frac{2[CO]}{[CO_2]}$"
           ],
           "correct": 0,
-          "explanation": "$HCl$ là acid mạnh phân li hoàn toàn trong dung dịch nước thành $H^+$ và $Cl^-$. Các chất còn lại là chất điện li yếu. Chọn A."
+          "explanation": "Nồng độ chất rắn (C) là hằng số và không xuất hiện trong biểu thức $K_C$. Chọn A."
         },
         {
-          "id": "hoahoc11_b1_mcq06",
-          "type": "mcq",
-          "question": "Trong phản ứng tổng hợp Ammonia: $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$ ($\\Delta_r H^0_{298} = -92$ kJ). Biện pháp nào sau đây giúp tăng hiệu suất tổng hợp $NH_3$?",
-          "options": [
-            "Tăng áp suất chung của hệ",
-            "Tăng nhiệt độ của hệ",
-            "Giảm nồng độ khí $N_2$",
-            "Dùng chất xúc tác sắt ($Fe$)"
-          ],
-          "correct": 0,
-          "explanation": "Phía phản ứng thuận có 4 mol khí tạo 2 mol khí (giảm số mol khí), do đó khi tăng áp suất, cân bằng dịch chuyển sang chiều thuận làm tăng hiệu suất tạo $NH_3$. Chọn A."
+          "id": "hoahoc11_b1_sa01",
+          "type": "shortanswer",
+          "question": "Dung dịch $\\text{HCl}$ có nồng độ $0{,}01$ M. Giá trị pH của dung dịch này bằng bao nhiêu?",
+          "correctAnswer": "2",
+          "explanation": "$[H^+] = 10^{-2}$ M $\\Rightarrow \\text{pH} = 2$. Đáp án: 2."
+        },
+        {
+          "id": "hoahoc11_b1_sa02",
+          "type": "shortanswer",
+          "question": "Dung dịch $\\text{NaOH}$ có nồng độ $0{,}001$ M. Giá trị pH của dung dịch ở $25^\\circ\\text{C}$ là bao nhiêu?",
+          "correctAnswer": "11",
+          "explanation": "$[OH^-] = 10^{-3} \\Rightarrow \\text{pOH} = 3 \\Rightarrow \\text{pH} = 14 - 3 = 11$. Đáp án: 11."
         }
       ],
       "questionGroups": [
         {
           "id": "hoahoc11_b1_tf01",
           "type": "tf-group",
-          "passage": "Xét cân bằng hóa học trong bình kín ở $450^\\circ$C có chất xúc tác sắt: $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$ ($\\Delta_r H^0_{298} = -92$ kJ).",
+          "passage": "Xét hệ cân bằng trong bình kín: $2SO_2(g) + O_2(g) \\rightleftharpoons 2SO_3(g)$ với $\\Delta_r H^0_{298} < 0$.",
           "statements": [
             {
-              "question": "a) Biểu thức hằng số cân bằng nồng độ của phản ứng là $K_C = \\frac{[NH_3]^2}{[N_2][H_2]^3}$.",
-              "correct": true,
-              "explanation": "Đúng. Biểu thức $K_C$ bằng tích nồng độ sản phẩm với số mũ tương ứng chia cho tích nồng độ chất phản ứng."
+              "question": "a) Biểu thức hằng số cân bằng $K_C = \\frac{[SO_3]^2}{[SO_2]^2 [O_2]}$.",
+              "correct": true
             },
             {
-              "question": "b) Khi tăng áp suất của hệ, cân bằng chuyển dịch theo chiều thuận tạo thêm $NH_3$.",
-              "correct": true,
-              "explanation": "Đúng. Chiều thuận làm giảm số mol khí từ 4 mol xuống 2 mol."
+              "question": "b) Tăng nồng độ $O_2$ làm cân bằng chuyển dịch theo chiều thuận.",
+              "correct": true
             },
             {
-              "question": "c) Thêm chất xúc tác bột sắt ($Fe$) làm tăng giá trị của hằng số cân bằng $K_C$.",
-              "correct": false,
-              "explanation": "Sai. Chất xúc tác chỉ làm tăng tốc độ đạt trạng thái cân bằng chứ không làm thay đổi giá trị của $K_C$."
+              "question": "c) Giảm nhiệt độ làm tăng hiệu suất tạo thành $SO_3$.",
+              "correct": true
             },
             {
-              "question": "d) Hạ nhiệt độ của bình phản ứng giúp cân bằng chuyển dịch theo chiều thuận.",
-              "correct": true,
-              "explanation": "Đúng. Phản ứng thuận tỏa nhiệt ($\\Delta H < 0$), nên hạ nhiệt độ thúc đẩy chiều thuận tỏa nhiệt."
+              "question": "d) Thêm chất xúc tác $V_2O_5$ làm tăng giá trị của hằng số cân bằng $K_C$.",
+              "correct": false
             }
-          ]
+          ],
+          "explanation": "a, b, c đúng. Chất xúc tác không làm thay đổi hằng số cân bằng (d sai)."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "bai": 2,
+      "name": "Bài 2: Sự điện li, thuyết Brønsted - Lowry và pH",
+      "topic": "CHỦ ĐỀ 1: CÂN BẰNG HÓA HỌC",
+      "questions": [
+        {
+          "id": "hoahoc11_b2_mcq01",
+          "type": "mcq",
+          "question": "Theo thuyết Brønsted - Lowry, base là chất:",
+          "options": [
+            "Có khả năng nhận proton ($H^+$)",
+            "Có khả năng cho proton ($H^+$)",
+            "Phân li ra $OH^-$ trong nước",
+            "Chứa nhóm -OH"
+          ],
+          "correct": 0,
+          "explanation": "Base là chất nhận proton ($H^+$). Chọn A."
+        },
+        {
+          "id": "hoahoc11_b2_mcq02",
+          "type": "mcq",
+          "question": "Chất nào sau đây là chất điện li mạnh?",
+          "options": [
+            "$\\text{NaOH}$",
+            "$\\text{CH}_3\\text{COOH}$",
+            "$\\text{H}_2\\text{O}$",
+            "$\\text{HF}$"
+          ],
+          "correct": 0,
+          "explanation": "$\\text{NaOH}$ là base mạnh điện li hoàn toàn. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b2_mcq03",
+          "type": "mcq",
+          "question": "Dung dịch có pH < 7 ở $25^\\circ\\text{C}$ có môi trường:",
+          "options": [
+            "Acid",
+            "Base",
+            "Trung tính",
+            "Lưỡng tính"
+          ],
+          "correct": 0,
+          "explanation": "pH < 7 là môi trường acid. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b2_mcq04",
+          "type": "mcq",
+          "question": "Giá trị tích số ion của nước $K_w = [H^+][OH^-]$ ở $25^\\circ\\text{C}$ bằng:",
+          "options": [
+            "$1{,}0 \\cdot 10^{-14}$",
+            "$1{,}0 \\cdot 10^{-7}$",
+            "$1{,}0 \\cdot 10^{-1}$",
+            "$1{,}0 \\cdot 10^{-12}$"
+          ],
+          "correct": 0,
+          "explanation": "Tích số ion của nước ở 25 độ C là hằng số bằng $10^{-14}$. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b2_mcq05",
+          "type": "mcq",
+          "question": "Chất nào sau đây là chất điện li yếu trong nước?",
+          "options": [
+            "$\\text{CH}_3\\text{COOH}$",
+            "$\\text{NaCl}$",
+            "$\\text{KOH}$",
+            "$\\text{HNO}_3$"
+          ],
+          "correct": 0,
+          "explanation": "$\\text{CH}_3\\text{COOH}$ là acid hữu cơ yếu, điện li một phần. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b2_sa01",
+          "type": "shortanswer",
+          "question": "Trộn 100 mL dung dịch $\\text{HCl } 0{,}1$ M với 100 mL dung dịch $\\text{NaOH } 0{,}1$ M. Giá trị pH của dung dịch sau phản ứng là bao nhiêu?",
+          "correctAnswer": "7",
+          "explanation": "Phản ứng trung hòa hoàn toàn giữa acid mạnh và base mạnh tạo môi trường trung tính pH = 7. Đáp án: 7."
+        },
+        {
+          "id": "hoahoc11_b2_sa02",
+          "type": "shortanswer",
+          "question": "Pha loãng $10$ mL dung dịch $\\text{HCl}$ có pH = 2 thành $100$ mL bằng nước cất. Giá trị pH của dung dịch sau khi pha loãng là bao nhiêu?",
+          "correctAnswer": "3",
+          "explanation": "Pha loãng 10 lần làm nồng độ $H^+$ giảm 10 lần, pH tăng 1 đơn vị từ 2 lên 3. Đáp án: 3."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "hoahoc11_b2_tf01",
+          "type": "tf-group",
+          "passage": "Cho các dung dịch có cùng nồng độ mol $0{,}1$ M: (1) $\\text{HCl}$, (2) $\\text{CH}_3\\text{COOH}$, (3) $\\text{NaCl}$, (4) $\\text{NaOH}$.",
+          "statements": [
+            {
+              "question": "a) Dung dịch (1) dẫn điện tốt hơn dung dịch (2).",
+              "correct": true
+            },
+            {
+              "question": "b) pH của dung dịch (4) bằng 13.",
+              "correct": true
+            },
+            {
+              "question": "c) Dung dịch (3) làm quỳ tím đổi sang màu đỏ.",
+              "correct": false
+            },
+            {
+              "question": "d) Thứ tự pH tăng dần là (1) < (2) < (3) < (4).",
+              "correct": true
+            }
+          ],
+          "explanation": "a, b, d đúng. $\\text{NaCl}$ trung tính không đổi màu quỳ tím (c sai)."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "bai": 3,
+      "name": "Bài 3: Đơn chất Nitrogen và các hợp chất vô cơ của Nitrogen",
+      "topic": "CHỦ ĐỀ 2: NITROGEN - SULFUR",
+      "questions": [
+        {
+          "id": "hoahoc11_b3_mcq01",
+          "type": "mcq",
+          "question": "Khí nitrogen ($N_2$) khá trơ về mặt hóa học ở nhiệt độ thường là do:",
+          "options": [
+            "Phân tử có liên kết ba bền vững",
+            "Nitrogen có độ âm điện lớn",
+            "Bán kính nguyên tử nhỏ",
+            "Nitrogen không có liên kết hóa học"
+          ],
+          "correct": 0,
+          "explanation": "Liên kết ba $N \\equiv N$ có năng lượng liên kết rất lớn ($945$ kJ/mol) nên rất bền. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b3_mcq02",
+          "type": "mcq",
+          "question": "Khí ammonia ($\\text{NH}_3$) làm quỳ tím ẩm chuyển sang màu:",
+          "options": [
+            "Xanh",
+            "Đỏ",
+            "Không đổi màu",
+            "Mất màu"
+          ],
+          "correct": 0,
+          "explanation": "Ammonia có tính base tan trong nước tạo ion $OH^-$, làm quỳ tím hóa xanh. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b3_mcq03",
+          "type": "mcq",
+          "question": "Kim loại nào sau đây thụ động trong dung dịch $\\text{HNO}_3$ đặc, nguội?",
+          "options": [
+            "Al và Fe",
+            "Cu và Ag",
+            "Zn và Mg",
+            "Na và K"
+          ],
+          "correct": 0,
+          "explanation": "Al, Fe, Cr thụ động trong $\\text{HNO}_3$ và $\\text{H}_2\\text{SO}_4$ đặc nguội. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b3_mcq04",
+          "type": "mcq",
+          "question": "Trong công nghiệp, phần lớn lượng nitrogen sản xuất ra được dùng để:",
+          "options": [
+            "Tổng hợp ammonia",
+            "Sản xuất rượu bia",
+            "Bảo quản thực phẩm tươi",
+            "Luyện kim nhôm"
+          ],
+          "correct": 0,
+          "explanation": "Phần lớn nitrogen dùng để tổng hợp ammonia cho ngành phân bón. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b3_mcq05",
+          "type": "mcq",
+          "question": "Khí nào sau đây có mùi khai và xốc đặc trưng, tan rất nhiều trong nước?",
+          "options": [
+            "$\\text{NH}_3$",
+            "$\\text{NO}_2$",
+            "$\\text{SO}_2$",
+            "$\\text{CO}_2$"
+          ],
+          "correct": 0,
+          "explanation": "Ammonia có mùi khai xốc đặc trưng. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b3_sa01",
+          "type": "shortanswer",
+          "question": "Số oxi hóa của nguyên tử Nitrogen trong phân tử $\\text{HNO}_3$ bằng bao nhiêu?",
+          "correctAnswer": "5",
+          "explanation": "Trong $\\text{HNO}_3$, H là +1, O là -2 $\\Rightarrow 1 + x + 3(-2) = 0 \\Rightarrow x = +5$. Đáp án: 5."
+        },
+        {
+          "id": "hoahoc11_b3_sa02",
+          "type": "shortanswer",
+          "question": "Nhiệt phân hoàn toàn $8$ gam $\\text{NH}_4\\text{NO}_3$ thu được bao nhiêu lít khí $\\text{N}_2\\text{O}$ ở điều kiện chuẩn ($24{,}79$ L/mol)?",
+          "correctAnswer": "2.479",
+          "explanation": "$n = 8/80 = 0{,}1$ mol. $\\text{NH}_4\\text{NO}_3 \\to \\text{N}_2\\text{O} + 2\\text{H}_2\\text{O}$. $V = 0{,}1 \\times 24{,}79 = 2{,}479$ L. Đáp án: 2.479."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "hoahoc11_b3_tf01",
+          "type": "tf-group",
+          "passage": "Ammonia ($\\text{NH}_3$) là một hợp chất quan trọng của nitrogen trong công nghiệp phân bón.",
+          "statements": [
+            {
+              "question": "a) Phân tử $\\text{NH}_3$ có dạng hình chóp tam giác.",
+              "correct": true
+            },
+            {
+              "question": "b) $\\text{NH}_3$ thể hiện tính khử khi tác dụng với khí oxygen.",
+              "correct": true
+            },
+            {
+              "question": "c) Khí $\\text{NH}_3$ nặng hơn không khí.",
+              "correct": false
+            },
+            {
+              "question": "d) $\\text{NH}_3$ phản ứng với acid tạo thành muối ammonium.",
+              "correct": true
+            }
+          ],
+          "explanation": "$M = 17 < 29$ nên ammonia nhẹ hơn không khí (c sai)."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "bai": 4,
+      "name": "Bài 4: Sulfur, Sulfuric acid và Hợp chất hữu cơ",
+      "topic": "CHỦ ĐỀ 2 & 3: SULFUR VÀ ĐẠI CƯƠNG HÓA HỮU CƠ",
+      "questions": [
+        {
+          "id": "hoahoc11_b4_mcq01",
+          "type": "mcq",
+          "question": "Để pha loãng dung dịch $\\text{H}_2\\text{SO}_4$ đặc an toàn, người ta phải:",
+          "options": [
+            "Rót từ từ acid đặc vào nước và khuấy nhẹ",
+            "Rót từ từ nước vào acid đặc",
+            "Rót nhanh nước vào acid đặc",
+            "Đổ đồng thời acid và nước vào nhau"
+          ],
+          "correct": 0,
+          "explanation": "Rót từ từ acid vào nước để tránh tỏa nhiệt làm sôi acid bắn ra ngoài gây bỏng. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b4_mcq02",
+          "type": "mcq",
+          "question": "Khí nào sau đây là nguyên nhân chính gây ra hiện tượng mưa acid?",
+          "options": [
+            "$\\text{SO}_2$ và $\\text{NO}_x$",
+            "$\\text{CH}_4$",
+            "$\\text{CO}$",
+            "$\\text{N}_2$"
+          ],
+          "correct": 0,
+          "explanation": "$\\text{SO}_2$ và các oxide của nitrogen gây mưa acid. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b4_mcq03",
+          "type": "mcq",
+          "question": "Liên kết hóa học chủ yếu trong phân tử hợp chất hữu cơ là:",
+          "options": [
+            "Liên kết cộng hóa trị",
+            "Liên kết ion",
+            "Liên kết kim loại",
+            "Liên kết hydrogen"
+          ],
+          "correct": 0,
+          "explanation": "Hợp chất hữu cơ chủ yếu chứa liên kết cộng hóa trị. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b4_mcq04",
+          "type": "mcq",
+          "question": "Chất nào sau đây là một hợp chất hữu cơ?",
+          "options": [
+            "$\\text{CH}_4$",
+            "$\\text{CO}_2$",
+            "$\\text{CaCO}_3$",
+            "$\\text{NaCN}$"
+          ],
+          "correct": 0,
+          "explanation": "$\\text{CH}_4$ (methane) là hydrocarbon hữu cơ. Các chất $CO_2, CaCO_3, NaCN$ là hợp chất vô cơ. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b4_mcq05",
+          "type": "mcq",
+          "question": "Khoáng vật thạch cao sống có công thức hóa học là:",
+          "options": [
+            "$\\text{CaSO}_4 \\cdot 2\\text{H}_2\\text{O}$",
+            "$\\text{CaSO}_4 \\cdot \\text{H}_2\\text{O}$",
+            "$\\text{MgSO}_4 \\cdot 7\\text{H}_2\\text{O}$",
+            "$\\text{BaSO}_4$"
+          ],
+          "correct": 0,
+          "explanation": "Thạch cao sống là $\\text{CaSO}_4 \\cdot 2\\text{H}_2\\text{O}$. Chọn A."
+        },
+        {
+          "id": "hoahoc11_b4_sa01",
+          "type": "shortanswer",
+          "question": "Đốt cháy hoàn toàn một hydrocarbon $X$ thu được $0{,}2$ mol $\\text{CO}_2$ và $0{,}3$ mol $\\text{H}_2\\text{O}$. Số nguyên tử carbon trong phân tử $X$ là bao nhiêu nếu $X$ có công thức dạng $\\text{C}_n\\text{H}_{2n+2}$?",
+          "correctAnswer": "2",
+          "explanation": "$n_{H_2O} - n_{CO_2} = 0{,}1$ mol = $n_X$. Số C = $0{,}2 / 0{,}1 = 2$ (phân tử $\\text{C}_2\\text{H}_6$). Đáp án: 2."
+        },
+        {
+          "id": "hoahoc11_b4_sa02",
+          "type": "shortanswer",
+          "question": "Hóa trị của nguyên tố Carbon trong các hợp chất hữu cơ luôn luôn bằng bao nhiêu?",
+          "correctAnswer": "4",
+          "explanation": "Trong hợp chất hữu cơ, Carbon luôn có hóa trị IV. Đáp án: 4."
+        }
+      ],
+      "questionGroups": [
+        {
+          "id": "hoahoc11_b4_tf01",
+          "type": "tf-group",
+          "passage": "Sulfuric acid đặc ($\\text{H}_2\\text{SO}_4$) là một trong những hóa chất công nghiệp quan trọng hàng đầu.",
+          "statements": [
+            {
+              "question": "a) $\\text{H}_2\\text{SO}_4$ đặc có tính háo nước mạnh.",
+              "correct": true
+            },
+            {
+              "question": "b) $\\text{H}_2\\text{SO}_4$ đặc nóng có thể oxi hóa được kim loại đồng (Cu).",
+              "correct": true
+            },
+            {
+              "question": "c) Dung dịch muối $\\text{BaCl}_2$ dùng để nhận biết ion sulfate $\\text{SO}_4^{2-}$.",
+              "correct": true
+            },
+            {
+              "question": "d) Khi tác dụng với đường sucrose, acid làm đường chuyển thành màu vàng óng.",
+              "correct": false
+            }
+          ],
+          "explanation": "Tính háo nước biến đường thành khối than đen carbon xốp (d sai)."
         }
       ]
     }

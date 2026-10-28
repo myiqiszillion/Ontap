@@ -26,7 +26,7 @@ const DataLoader = {
     const lessons = data.lessons.map((lesson, index) => {
       const allQs = lesson.questions || [];
       const mcqCount = allQs.filter(q => !q.type || q.type === 'mcq').length;
-      const saCount = allQs.filter(q => q.type === 'shortanswer').length;
+      const saCount = allQs.filter(q => q.type === 'shortanswer' || q.type === 'short_answer' || q.type === 'sa' || q.format === 'short_answer').length;
       const tfGroupCount = (lesson.questionGroups || []).length;
       
       return {
@@ -72,7 +72,9 @@ const DataLoader = {
             processedQ.options = q.options;
             processedQ.correctAnswer = q.correct !== undefined ? q.correct : q.correctAnswer;
             mcqQuestions.push(processedQ);
-          } else if (type === 'shortanswer') {
+          } else if (type === 'shortanswer' || type === 'short_answer' || type === 'sa') {
+            processedQ.type = 'shortanswer';
+            processedQ.explanation = q.explanation || '';
             processedQ.correctAnswer = q.correct !== undefined ? q.correct : q.correctAnswer;
             saQuestions.push(processedQ);
           }

@@ -80,6 +80,39 @@ describe('Automated Crawler, Multi-Part Parser & Auto Exam Maker Engine', () => 
       assert.ok(res.rawText.includes('PHẦN III'));
       assert.ok(res.rawText.includes('BẢNG ĐÁP ÁN'));
     });
+
+    it('crawlAllSourcesAndSave autonomously crawls across sources and saves to dataDir', async () => {
+      const fs = require('fs');
+      const os = require('os');
+      const path = require('path');
+      const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ntmk-crawler-test-'));
+
+      const crawler = new AutoCrawlerService();
+      const summary = await crawler.crawlAllSourcesAndSave({
+        subjects: ['vatli'],
+        grades: [12],
+        sourceIds: ['thuvienhoclieu'],
+        dataDir: tmpDir
+      });
+
+      assert.equal(summary.crawled.length, 1);
+      assert.ok(summary.totalSavedQuestions > 0);
+      assert.ok(fs.existsSync(path.join(tmpDir, 'vatli12.json')));
+
+      // Clean up tmpDir
+      fs.rmSync(tmpDir, { recursive: true, force: true });
+    });
+
+    it('startBackgroundScheduler and stopBackgroundScheduler manage scheduler lifecycle', () => {
+      const crawler = new AutoCrawlerService();
+      const started = crawler.startBackgroundScheduler(60000, { runImmediate: false });
+      assert.equal(started.active, true);
+      assert.equal(crawler.getSchedulerStatus().active, true);
+
+      const stopped = crawler.stopBackgroundScheduler();
+      assert.equal(stopped.active, false);
+      assert.equal(crawler.getSchedulerStatus().active, false);
+    });
   });
 
   describe('2. FullExamParser (MOET Decision 764/QĐ-BGDĐT)', () => {
@@ -363,6 +396,52 @@ describe('Automated Crawler, Multi-Part Parser & Auto Exam Maker Engine', () => 
       assert.ok(body.examPackage.variants['101']);
       assert.ok(body.examPackage.variants['104']);
       assert.equal(body.examPackage.institution.school, 'TRƯỜNG THPT NGUYỄN THỊ MINH KHAI');
+    });
+
+    it('POST /api/v2/crawler/auto-sync-all runs autonomous crawl across sources without admin', async () => {
+      const fs = require('fs');
+      const os = require('os');
+      const path = require('path');
+      const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ntmk-auto-sync-test-'));
+
+      try {
+        const res = await fetch(`${baseUrl}/api/v2/crawler/auto-sync-all`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            subjects: ['toan'],
+            grades: [12],
+            sourceIds: ['toanmath'],
+            dataDir: tmpDir
+          })
+        });
+        assert.equal(res.status, 200);
+        const body = await res.json();
+        assert.equal(body.success, true);
+        assert.ok(body.summary);
+        assert.ok(Array.isArray(body.summary.crawled));
+        assert.ok(body.summary.crawled.length >= 1);
+      } finally {
+        fs.rmSync(tmpDir, { recursive: true, force: true });
+      }
+    });
+
+    it('GET /api/v2/crawler/scheduler-status and POST toggle control autonomous scheduler', async () => {
+      const resGet = await fetch(`${baseUrl}/api/v2/crawler/scheduler-status`);
+      assert.equal(resGet.status, 200);
+      const bodyGet = await resGet.json();
+      assert.equal(bodyGet.success, true);
+      assert.ok('scheduler' in bodyGet);
+
+      const resToggle = await fetch(`${baseUrl}/api/v2/crawler/scheduler-toggle`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ enable: false })
+      });
+      assert.equal(resToggle.status, 200);
+      const bodyToggle = await resToggle.json();
+      assert.equal(bodyToggle.success, true);
+      assert.equal(bodyToggle.status.active, false);
     });
   });
 

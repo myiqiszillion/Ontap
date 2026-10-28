@@ -107,10 +107,10 @@ const Admin = {
       const data = await res.json();
       if (data.rawText && textArea) {
         textArea.value = data.rawText;
-        this.showToast(`Đã nạp đề mẫu chuẩn Bộ GD&ĐT (${sub.toUpperCase()} ${grade})`, 'success');
+        this.showToast(`Đã nạp đề thi chuẩn cấu trúc Bộ GD&ĐT (${sub.toUpperCase()} ${grade})`, 'success');
       }
     } catch (e) {
-      this.showToast('Không thể nạp đề mẫu: ' + e.message, 'error');
+      this.showToast('Không thể nạp đề thi: ' + e.message, 'error');
     }
   },
 

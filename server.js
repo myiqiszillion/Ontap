@@ -370,11 +370,22 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Autonomous Background Crawler Service
+const AutoCrawlerService = require('./engine/ingestion/auto-crawler-service.js');
+const serverCrawlerInstance = new AutoCrawlerService();
+
 // Start server
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`🚀 NTMK Server is running at http://localhost:${PORT}`);
+    if (process.env.AUTO_CRAWL_ENABLED !== 'false') {
+      const intervalMs = Number(process.env.AUTO_CRAWL_INTERVAL_MS) || 24 * 60 * 60 * 1000;
+      serverCrawlerInstance.startBackgroundScheduler(intervalMs, {
+        runImmediate: process.env.AUTO_CRAWL_ON_STARTUP === 'true'
+      });
+      console.log(`🤖 Background Auto-Crawler active (Autonomous crawl without admin intervention)`);
+    }
   });
 }
 
-module.exports = { app, loadSubjectsData };
+module.exports = { app, loadSubjectsData, serverCrawlerInstance };

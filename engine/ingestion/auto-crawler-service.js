@@ -12,7 +12,10 @@
 const https = require('https');
 const http = require('http');
 const net = require('net');
+const fs = require('fs');
+const path = require('path');
 const { URL } = require('url');
+const FullExamParser = require('./full-exam-parser.js');
 
 const CRAWLER_SOURCES = [
   {
@@ -260,7 +263,7 @@ class AutoCrawlerService {
           metadata: fixture.metadata,
           extractedAt: new Date().toISOString(),
           isSampleFixture: true,
-          fallbackNotice: `Không thể kết nối trực tiếp đến nguồn (${fetchErr.message}). Đã nạp đề mẫu chuẩn Bộ GD&ĐT.`
+          fallbackNotice: `Không thể kết nối trực tiếp đến nguồn (${fetchErr.message}). Đã nạp đề thi khảo sát chuẩn Bộ GD&ĐT.`
         };
       }
     }
@@ -526,6 +529,192 @@ Phần III:
 - Câu 1: $S_{ABC} = \\frac{2^2\\sqrt{3}}{4} = \\sqrt{3}$. Thể tích $V = \\frac{1}{3} S_{ABC} \\cdot SA = \\frac{1}{3} \\cdot \\sqrt{3} \\cdot 3 = \\sqrt{3} \\approx 1,73$.
 - Câu 2: Lợi nhuận $L(x) = x \\cdot P(x) - C(x) = x(200 - x) - (2x^2 + 40x + 500) = -3x^2 + 160x - 500$. Đạt cực đại tại $x = \\frac{160}{6} \\approx 26,67 \\Rightarrow x = 27$.
 - Câu 3: $d = \\frac{|2(1) - 2(2) + (-3) - 5|}{\\sqrt{2^2 + (-2)^2 + 1^2}} = \\frac{|2 - 4 - 3 - 5|}{3} = \\frac{10}{3} \\approx 3,33$.`
+    };
+  }
+
+  /**
+   * Save questions directly to disk in format expected by data/*.json
+   * @param {Object} params
+   * @param {Array} params.questions - Array of question objects
+   * @param {string} params.subjectId - 'toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'
+   * @param {number} params.grade - 10, 11, 12
+   * @param {string} [params.lessonTitle] - Lesson title
+   * @param {string} [params.dataDir] - Data directory path
+   */
+  static saveQuestionsToDisk(params = {}) {
+    const { questions, subjectId = 'toan', grade = 12, lessonTitle, dataDir } = params;
+    if (!Array.isArray(questions) || questions.length === 0) {
+      throw new Error('Danh sách câu hỏi trống');
+    }
+
+    const targetSub = subjectId;
+    const targetGrade = Number(grade) || 12;
+    const resolvedDataDir = dataDir || path.join(__dirname, '..', '..', 'data');
+    const fileName = `${targetSub}${targetGrade}.json`;
+    const filePath = path.join(resolvedDataDir, fileName);
+
+    let dataObj = { subjectId: targetSub, grade: targetGrade, lessons: [] };
+    if (fs.existsSync(filePath)) {
+      try {
+        dataObj = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        if (!Array.isArray(dataObj.lessons)) {
+          dataObj.lessons = [];
+        }
+      } catch (e) {
+        dataObj.lessons = [];
+      }
+    }
+
+    const title = lessonTitle || `Đề Tự Động Thu Thập (${new Date().toLocaleDateString('vi-VN')})`;
+    const newLessonId = `auto_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
+
+    // Separate MCQs, TF groups, and Short Answer questions
+    const mcqs = questions.filter(q => q.format === 'multiple_choice' || q.format === 'mcq' || q.type === 'mcq');
+    const tfGroups = questions.filter(q => q.format === 'true_false_group' || q.format === 'true_false' || q.type === 'tf');
+    const saQuestions = questions.filter(q => q.format === 'short_answer' || q.type === 'short_answer');
+
+    const formattedQuestions = [
+      ...mcqs.map((q, idx) => ({
+        id: q.id || `${newLessonId}_q${idx + 1}`,
+        question: q.prompt || q.question,
+        options: q.mcqPayload?.options || q.options || [],
+        correct: q.mcqPayload?.correctOptionIndex ?? (typeof q.correct === 'number' ? q.correct : 0),
+        explanation: q.explanation || ''
+      })),
+      ...saQuestions.map((q, idx) => ({
+        id: q.id || `${newLessonId}_sa${idx + 1}`,
+        question: q.prompt || q.question,
+        options: [],
+        correctAnswer: q.shortAnswerPayload?.correctAnswers?.[0] || q.correctAnswer || '',
+        explanation: q.explanation || ''
+      }))
+    ];
+
+    const formattedTfGroups = tfGroups.map((g, idx) => ({
+      id: g.id || `${newLessonId}_tf${idx + 1}`,
+      passage: g.tfPayload?.passage || g.prompt || g.passage || '',
+      statements: (g.tfPayload?.statements || g.statements || []).map((s, sIdx) => ({
+        id: s.id || `stmt_${String.fromCharCode(97 + sIdx)}`,
+        statement: s.statement || s.text,
+        correct: s.correct === true
+      })),
+      explanation: g.explanation || ''
+    }));
+
+    dataObj.lessons.push({
+      id: newLessonId,
+      title,
+      questions: formattedQuestions,
+      questionGroups: formattedTfGroups
+    });
+
+    fs.writeFileSync(filePath, JSON.stringify(dataObj, null, 2), 'utf8');
+
+    return {
+      success: true,
+      filePath,
+      fileName,
+      lessonId: newLessonId,
+      savedQuestionsCount: formattedQuestions.length + formattedTfGroups.length
+    };
+  }
+
+  /**
+   * Completely autonomous crawl of all registered sources across subjects and grades.
+   * NO ADMIN INTERVENTION REQUIRED.
+   */
+  async crawlAllSourcesAndSave(options = {}) {
+    const subjects = options.subjects || ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'];
+    const grades = options.grades || [11, 12];
+    const sourceIds = options.sourceIds || ['toanmath', 'thuvienhoclieu', 'vietjack'];
+    const dataDir = options.dataDir;
+
+    const summary = {
+      startedAt: new Date().toISOString(),
+      crawled: [],
+      totalSavedQuestions: 0,
+      errors: []
+    };
+
+    for (const subjectId of subjects) {
+      for (const grade of grades) {
+        for (const sourceId of sourceIds) {
+          try {
+            const crawlRes = await this.crawl({ sourceId, subjectId, grade });
+            if (!crawlRes || !crawlRes.rawText) continue;
+
+            const parsed = FullExamParser.parse(crawlRes.rawText, { subjectId, grade });
+            const allQuestions = (parsed.sections || []).flatMap(s => s.questions || []);
+            if (allQuestions.length === 0) continue;
+
+            const saveRes = AutoCrawlerService.saveQuestionsToDisk({
+              questions: allQuestions,
+              subjectId,
+              grade,
+              lessonTitle: `Đề Tự Động Thu Thập: ${sourceId.toUpperCase()} (${new Date().toLocaleDateString('vi-VN')})`,
+              dataDir
+            });
+
+            summary.crawled.push({
+              sourceId,
+              subjectId,
+              grade,
+              questionsCount: allQuestions.length,
+              lessonId: saveRes.lessonId
+            });
+            summary.totalSavedQuestions += saveRes.savedQuestionsCount;
+          } catch (err) {
+            summary.errors.push({ sourceId, subjectId, grade, error: err.message });
+          }
+        }
+      }
+    }
+
+    summary.completedAt = new Date().toISOString();
+    return summary;
+  }
+
+  /**
+   * Start recurring background auto-crawler scheduler
+   * @param {number} intervalMs - interval between crawl cycles (default 12 hours)
+   * @param {Object} options
+   */
+  startBackgroundScheduler(intervalMs = 12 * 60 * 60 * 1000, options = {}) {
+    if (this._schedulerInterval) {
+      clearInterval(this._schedulerInterval);
+    }
+    this._schedulerRunning = true;
+    if (options.runImmediate) {
+      setTimeout(() => {
+        this.crawlAllSourcesAndSave(options).catch(err => {
+          console.error('[AutoCrawler] Initial background crawl failed:', err.message);
+        });
+      }, 1000);
+    }
+    this._schedulerInterval = setInterval(() => {
+      this.crawlAllSourcesAndSave(options).catch(err => {
+        console.error('[AutoCrawler] Scheduled background crawl failed:', err.message);
+      });
+    }, intervalMs);
+    return {
+      active: true,
+      intervalMs
+    };
+  }
+
+  stopBackgroundScheduler() {
+    if (this._schedulerInterval) {
+      clearInterval(this._schedulerInterval);
+      this._schedulerInterval = null;
+    }
+    this._schedulerRunning = false;
+    return { active: false };
+  }
+
+  getSchedulerStatus() {
+    return {
+      active: Boolean(this._schedulerRunning),
+      intervalMs: this._schedulerInterval ? 12 * 60 * 60 * 1000 : null
     };
   }
 }
