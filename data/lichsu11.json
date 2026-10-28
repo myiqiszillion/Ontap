@@ -348,7 +348,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "Bài 1: Một số vấn đề chung về cách mạng tư sản"
     },
     {
       "id": 2,
@@ -697,7 +698,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "Bài 2: Sự xác lập và phát triển của chủ nghĩa tư bản"
     },
     {
       "id": 3,
@@ -1046,7 +1048,8 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "Bài 3: Sự hình thành Liên bang Cộng hòa xã hội chủ nghĩa Xô Viết"
     },
     {
       "id": 4,
@@ -1395,7 +1398,9 @@
             }
           ]
         }
-      ]
+      ],
+      "title": "Bài 4: Sự phát triển của chủ nghĩa xã hội từ sau Chiến tranh thế giới thứ hai đến nay"
     }
-  ]
+  ],
+  "grade": 11
 }
