@@ -4,6 +4,13 @@
  * Short Answer normalization, Formula KaTeX rendering, session persistence & reload recovery.
  */
 
+let formulaRendererModule = (typeof FormulaRenderer !== 'undefined') ? FormulaRenderer : null;
+if (!formulaRendererModule && typeof require !== 'undefined') {
+  try {
+    formulaRendererModule = require('./formula-renderer.js');
+  } catch (e) {}
+}
+
 const Quiz = {
   currentQuestionIndex: 0,
   questions: [],
@@ -90,15 +97,107 @@ const Quiz = {
    * Helper: Render math/formula or escape HTML safely
    */
   renderContent(text) {
-    if (typeof FormulaRenderer !== 'undefined' && FormulaRenderer.render) {
-      return FormulaRenderer.render(text);
+    const fr = (typeof FormulaRenderer !== 'undefined' ? FormulaRenderer : formulaRendererModule);
+    if (fr && fr.render) {
+      return fr.render(text);
     }
     return this.escapeHtml(text);
   },
 
+  renderQuestion() {
+    return this.render();
+  },
+
   /**
-   * Render current question
+   * Convert shorthand math notation into KaTeX-compatible LaTeX
    */
+  convertMathShorthand(val) {
+    if (typeof val !== 'string') return '';
+    let s = val.trim();
+    if (!s) return '';
+
+    // Convert sqrt(...) and sqrtN
+    s = s.replace(/sqrt\(([^)]+)\)/g, '\\sqrt{$1}');
+    s = s.replace(/sqrt([0-9a-zA-Z]+)/g, '\\sqrt{$1}');
+    s = s.replace(/√\(([^)]+)\)/g, '\\sqrt{$1}');
+    s = s.replace(/√([0-9a-zA-Z]+)/g, '\\sqrt{$1}');
+    s = s.replace(/√/g, '\\sqrt{}');
+
+    // Convert * to \times
+    s = s.replace(/\*/g, ' \\times ');
+
+    // Convert pi to \pi
+    s = s.replace(/(?<![a-zA-Z\\])pi(?![a-zA-Z])/g, '\\pi');
+
+    // Convert powers like ^2
+    s = s.replace(/^\^/g, '{}^');
+
+    // Convert decimal comma in numbers (e.g. 1,5 -> 1{,}5)
+    s = s.replace(/(\d+),(\d+)/g, '$1{,}$2');
+
+    // Convert fraction shorthand: a/b, (a)/(b), (a)/b, a/(b)
+    s = s.replace(/\(([^)]+)\)\s*\/\s*\(([^)]+)\)/g, '\\frac{$1}{$2}');
+    s = s.replace(/\(([^)]+)\)\s*\/\s*([a-zA-Z0-9_]+)/g, '\\frac{$1}{$2}');
+    s = s.replace(/([a-zA-Z0-9_]+)\s*\/\s*\(([^)]+)\)/g, '\\frac{$1}{$2}');
+    s = s.replace(/([a-zA-Z0-9_]+)\s*\/\s*([a-zA-Z0-9_]+)/g, '\\frac{$1}{$2}');
+
+    return s;
+  },
+
+  /**
+   * Update real-time KaTeX preview for Short Answer questions
+   */
+  updateMathPreview(val) {
+    const raw = (val !== undefined && val !== null) ? String(val).trim() : '';
+    const latex = this.convertMathShorthand ? this.convertMathShorthand(raw) : raw;
+    let html = '';
+
+    if (raw) {
+      if (typeof window !== 'undefined' && typeof window.renderKatex === 'function') {
+        try {
+          const res = window.renderKatex(latex);
+          if (typeof res === 'string') html = res;
+        } catch (e) {
+          html = '';
+        }
+      }
+
+      if (!html) {
+        const kx = (typeof window !== 'undefined' && window.katex) || (typeof katex !== 'undefined' && katex ? katex : null);
+        if (kx && typeof kx.renderToString === 'function') {
+          try {
+            html = kx.renderToString(latex, { displayMode: false, throwOnError: false });
+          } catch (e) {
+            html = '';
+          }
+        }
+      }
+
+      if (!html) {
+        const fr = (typeof FormulaRenderer !== 'undefined' ? FormulaRenderer : formulaRendererModule);
+        if (fr && typeof fr.renderMath === 'function') {
+          try {
+            html = fr.renderMath(latex, false);
+          } catch (e) {
+            html = '';
+          }
+        }
+      }
+
+      if (!html) {
+        html = `<span class="formula-inline fallback">${this.escapeHtml(latex)}</span>`;
+      }
+    }
+
+    if (typeof document !== 'undefined') {
+      const previewEl = document.querySelector('.sa-math-live-preview') || document.getElementById('sa-math-preview');
+      if (previewEl) {
+        previewEl.innerHTML = html || '<span class="sa-math-placeholder">Xem trước công thức (KaTeX live preview)</span>';
+      }
+    }
+
+    return html;
+  },
 
   setSidebarFilter(filter) {
     this.sidebarFilter = filter;
@@ -114,11 +213,18 @@ const Quiz = {
     if (!el) return;
     if (sym === 'BACKSPACE') {
       el.value = el.value.slice(0, -1);
+    } else if (sym === 'FRACTION') {
+      el.value += '\\frac{}{}';
+    } else if (sym === 'POW2') {
+      el.value += '^2';
+    } else if (sym === 'SQRT' || sym === '√') {
+      el.value += '\\sqrt{}';
     } else {
       el.value += sym;
     }
-    el.focus();
+    if (typeof el.focus === 'function') el.focus();
     this.inputShortAnswer(el.value);
+    this.updateMathPreview(el.value);
   },
 
   toggleFlag(idx = this.currentQuestionIndex) {
@@ -277,7 +383,9 @@ const Quiz = {
             <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('/')">/</button>
             <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol(',')">,</button>
             <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('.')">.</button>
-            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('√')">√</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('FRACTION')" title="Phân số [a/b]">a/b</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('POW2')" title="Bình phương [x²]">x²</button>
+            <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('√')" title="Căn bậc hai [√]">√</button>
             <button type="button" class="math-key-btn" onclick="Quiz.insertMathSymbol('π')">π</button>
             <button type="button" class="math-key-btn clear" onclick="Quiz.insertMathSymbol('BACKSPACE')" title="Xóa ký tự cuối">⌫ Xóa</button>
           </div>
@@ -286,13 +394,20 @@ const Quiz = {
                  class="sa-input"
                  placeholder="Nhập kết quả hoặc số cần điền..."
                  value="${this.escapeHtml(userText)}"
-                 oninput="Quiz.inputShortAnswer(this.value)">
+                 oninput="Quiz.inputShortAnswer(this.value); Quiz.updateMathPreview(this.value)">
+          <div class="sa-math-live-preview" id="sa-math-preview" aria-live="polite"></div>
           <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 8px; display: flex; align-items: center; gap: 6px;">
             <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
             <span>Hỗ trợ cả số thập phân dấu phẩy (vd: 1,5) và dấu chấm (vd: 1.5).</span>
           </div>
         </div>
       `;
+
+      if (userText) {
+        this.updateMathPreview(userText);
+      } else {
+        this.updateMathPreview('');
+      }
     } else {
       // === MCQ: single question with options ===
       const mcqImgHtml = q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : '';
@@ -410,6 +525,7 @@ const Quiz = {
     this.answers[this.currentQuestionIndex] = value;
     this.saveSession();
     this.renderDots();
+    this.updateMathPreview(value);
   },
 
   prev() {
