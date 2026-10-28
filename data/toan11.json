@@ -2,296 +2,284 @@
   "subject": "Toán học 11",
   "lessons": [
     {
-      "name": "Bài 1: Hàm số lượng giác và phương trình lượng giác",
+      "name": "Bài 1: Hàm số lượng giác và phương trình lượng giác trong đời sống",
       "questions": [
         {
           "type": "mcq",
-          "question": "Chu kỳ tuần hoàn của hàm số $y = \\sin 2x$ là:",
+          "question": "Dao động điều hòa của một con lắc lò xo được mô hình hóa bởi phương trình li độ $x = 5\\cos\\left(2\\pi t - \\frac{\\pi}{3}\\right)$ (cm), trong đó $t$ tính bằng giây. Chu kỳ dao động toàn phần $T$ của con lắc là:",
           "options": [
-            "$\\pi$",
-            "$2\\pi$",
-            "$\\frac{\\pi}{2}$",
-            "$4\\pi$"
+            "1 giây",
+            "2 giây",
+            "$\\pi$ giây",
+            "0,5 giây"
           ],
           "correct": 0,
-          "explanation": "Hàm số $y = \\sin(\\omega x)$ có chu kỳ tuần hoàn là $T = \\frac{2\\pi}{\\omega}$. Với $\\omega = 2$, ta có $T = \\frac{2\\pi}{2} = \\pi$."
+          "explanation": "Tần số góc của dao động là $\\omega = 2\\pi$ (rad/s). Chu kỳ dao động tuần hoàn là $T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{2\\pi} = 1$ giây."
         },
         {
           "type": "mcq",
-          "question": "Tất cả các nghiệm của phương trình lượng giác cơ bản $\\cos x = 0$ là:",
+          "question": "Mực nước thủy triều tại một trạm quan sát ven sông được mô tả bởi hàm số $h(t) = 3\\sin\\left(\\frac{\\pi t}{6}\\right) + 7$ (mét), với $t$ là số giờ tính từ nửa đêm ($0 \\le t \\le 24$). Mực nước cao nhất ghi nhận được trong ngày là:",
           "options": [
-            "$x = \\frac{\\pi}{2} + k\\pi \\quad (k \\in \\mathbb{Z})$",
-            "$x = k2\\pi \\quad (k \\in \\mathbb{Z})$",
-            "$x = \\pi + k2\\pi \\quad (k \\in \\mathbb{Z})$",
-            "$x = k\\pi \\quad (k \\in \\mathbb{Z})$"
+            "10 mét",
+            "7 mét",
+            "4 mét",
+            "12 mét"
           ],
           "correct": 0,
-          "explanation": "Điểm trên đường tròn lượng giác có hoành độ bằng 0 ứng với các cung $\\frac{\\pi}{2} + k\\pi$ với $k \\in \\mathbb{Z}$."
+          "explanation": "Vì $-1 \\le \\sin\\left(\\frac{\\pi t}{6}\\right) \\le 1$ nên giá trị lớn nhất của mực nước là $h_{\\max} = 3(1) + 7 = 10$ mét."
         },
         {
           "type": "mcq",
-          "question": "Tập giá trị của hàm số $y = 3\\sin x - 2$ là đoạn nào sau đây?",
+          "question": "Nghiệm của phương trình lượng giác $\\cos x = \\frac{\\sqrt{2}}{2}$ biểu diễn vị trí góc quay hợp lệ là:",
           "options": [
-            "$[-5; 1]$",
-            "$[-3; 3]$",
-            "$[-1; 5]$",
-            "$[-2; 2]$"
-          ],
-          "correct": 0,
-          "explanation": "Vì $-1 \\le \\sin x \\le 1$ với mọi $x \\in \\mathbb{R}$, nên $-3 \\le 3\\sin x \\le 3 \\implies -5 \\le 3\\sin x - 2 \\le 1$. Do đó tập giá trị là $[-5; 1]$."
-        },
-        {
-          "type": "mcq",
-          "question": "Nghiệm của phương trình lượng giác $\\tan x = 1$ là:",
-          "options": [
+            "$x = \\pm \\frac{\\pi}{4} + k2\\pi \\quad (k \\in \\mathbb{Z})$",
             "$x = \\frac{\\pi}{4} + k\\pi \\quad (k \\in \\mathbb{Z})$",
-            "$x = \\frac{\\pi}{4} + k2\\pi \\quad (k \\in \\mathbb{Z})$",
-            "$x = -\\frac{\\pi}{4} + k\\pi \\quad (k \\in \\mathbb{Z})$",
-            "$x = \\frac{\\pi}{2} + k\\pi \\quad (k \\in \\mathbb{Z})$"
+            "$x = \\pm \\frac{\\pi}{3} + k2\\pi \\quad (k \\in \\mathbb{Z})$",
+            "$x = \\frac{\\pi}{2} + k2\\pi \\quad (k \\in \\mathbb{Z})$"
           ],
           "correct": 0,
-          "explanation": "Vì $\\tan\\left(\\frac{\\pi}{4}\\right) = 1$ nên phương trình $\\tan x = 1$ có họ nghiệm $x = \\frac{\\pi}{4} + k\\pi$ với $k \\in \\mathbb{Z}$."
+          "explanation": "Ta có $\\cos x = \\cos\\left(\\frac{\\pi}{4}\\right) \\iff x = \\pm \\frac{\\pi}{4} + k2\\pi$ với $k \\in \\mathbb{Z}$."
         },
         {
           "type": "shortanswer",
-          "question": "Số nghiệm của phương trình lượng giác $\\sin x = \\frac{1}{2}$ thuộc đoạn $[0; 2\\pi]$ là bao nhiêu?",
+          "question": "Mực nước thấp nhất của một con kênh đo được (theo mét) theo mô hình hàm số $y = 2\\cos\\left(\\frac{\\pi t}{12}\\right) + 5$ là bao nhiêu mét?",
+          "correct": "3",
+          "explanation": "Giá trị nhỏ nhất đạt được khi $\\cos\\left(\\frac{\\pi t}{12}\\right) = -1$, khi đó $y_{\\min} = 2(-1) + 5 = 3$ mét."
+        },
+        {
+          "type": "shortanswer",
+          "question": "Trong khoảng thời gian từ $t = 0$ đến $t = 2\\pi$, phương trình dao động $\\sin t = \\frac{1}{2}$ có tất cả bao nhiêu thời điểm thỏa mãn?",
           "correct": "2",
-          "explanation": "Trên đoạn $[0; 2\\pi]$, phương trình $\\sin x = \\frac{1}{2}$ có đúng hai nghiệm là $x = \\frac{\\pi}{6}$ và $x = \\frac{5\\pi}{6}$."
-        },
-        {
-          "type": "shortanswer",
-          "question": "Tìm giá trị lớn nhất của hàm số $y = 4\\cos x + 5$ trên tập số thực $\\mathbb{R}$:",
-          "correct": "9",
-          "explanation": "Ta có $\\cos x \\le 1 \\implies y = 4\\cos x + 5 \\le 4(1) + 5 = 9$. Dấu bằng xảy ra khi $\\cos x = 1$ (ví dụ $x = 0$)."
+          "explanation": "Trên đoạn $[0; 2\\pi]$, phương trình $\\sin t = \\frac{1}{2}$ có đúng 2 nghiệm là $t = \\frac{\\pi}{6}$ và $t = \\frac{5\\pi}{6}$."
         }
       ],
       "questionGroups": [
         {
-          "passage": "Cho hàm số lượng giác $y = f(x) = 2\\sin\\left(2x - \\frac{\\pi}{3}\\right) + 1$. Xét tính đúng sai của các khẳng định sau:",
+          "passage": "Sự thay đổi nhiệt độ ngoài trời $T$ ($^\\circ$C) trong một ngày tại Thành phố Dĩ An, Tỉnh Bình Dương được mô phỏng theo quy luật hàm số lượng giác $T(t) = 28 + 4\\sin\\left(\\frac{\\pi(t - 9)}{12}\\right)$, với $t$ là số giờ tính từ 0 giờ sáng ($0 \\le t \\le 24$). Xét tính đúng sai của các nhận định sau:",
           "statements": [
             {
-              "question": "Tập xác định của hàm số $f(x)$ là $D = \\mathbb{R}$.",
+              "question": "Nhiệt độ thấp nhất ghi nhận được trong ngày tại trạm là 24 độ C.",
               "correct": true,
-              "explanation": "Hàm số sin xác định với mọi giá trị thực của biến số."
+              "explanation": "Giá trị nhỏ nhất của hàm số là $T_{\\min} = 28 + 4(-1) = 24^\\circ$C."
             },
             {
-              "question": "Hàm số $f(x)$ là một hàm số chẵn trên $\\mathbb{R}$.",
+              "question": "Nhiệt độ ngoài trời đạt mức cao nhất trong ngày vào thời điểm 15 giờ chiều.",
+              "correct": true,
+              "explanation": "Hàm số đạt cực đại khi $\\frac{\\pi(t - 9)}{12} = \\frac{\\pi}{2} \\iff t - 9 = 6 \\iff t = 15$ (tức 15 giờ)."
+            },
+            {
+              "question": "Vào thời điểm 9 giờ sáng, nhiệt độ ngoài trời đo được là 32 độ C.",
               "correct": false,
-              "explanation": "$f(-x) = 2\\sin(-2x - \\pi/3) + 1 \\ne f(x)$ và $\\ne -f(x)$, nên hàm số không chẵn và không lẻ."
+              "explanation": "Tại $t = 9$, ta có $T(9) = 28 + 4\\sin(0) = 28^\\circ$C chứ không phải 32."
             },
             {
-              "question": "Chu kỳ tuần hoàn của hàm số là $T = \\pi$.",
+              "question": "Trong khoảng thời gian từ 9 giờ đến 21 giờ cùng ngày, nhiệt độ luôn lớn hơn hoặc bằng 28 độ C.",
               "correct": true,
-              "explanation": "Chu kỳ của hàm số $\\sin(2x + \\varphi)$ là $T = \\frac{2\\pi}{2} = \\pi$."
-            },
-            {
-              "question": "Giá trị nhỏ nhất của hàm số trên $\\mathbb{R}$ là $-1$.",
-              "correct": true,
-              "explanation": "Giá trị nhỏ nhất đạt được khi $\\sin(2x - \\pi/3) = -1$, khi đó $y_{\\min} = 2(-1) + 1 = -1$."
+              "explanation": "Với $9 \\le t \\le 21$, ta có $0 \\le \\frac{\\pi(t - 9)}{12} \\le \\pi$, suy ra $\\sin \\ge 0$, do đó $T(t) \\ge 28^\\circ$C."
             }
           ]
         }
       ]
     },
     {
-      "name": "Bài 2: Dãy số, cấp số cộng và cấp số nhân",
+      "name": "Bài 2: Dãy số, cấp số cộng và cấp số nhân trong thực tiễn",
       "questions": [
         {
           "type": "mcq",
-          "question": "Cho cấp số cộng $(u_n)$ có số hạng đầu $u_1 = 3$ và công sai $d = 2$. Giá trị của số hạng thứ năm $u_5$ là:",
+          "question": "Một nông trại trồng cây cao su tại Bình Dương quy hoạch theo hàng. Hàng đầu tiên trồng 15 cây, mỗi hàng tiếp theo trồng nhiều hơn hàng liền trước 3 cây. Số lượng cây cao su ở hàng thứ 12 là:",
           "options": [
-            "11",
-            "13",
-            "15",
-            "9"
+            "48 cây",
+            "51 cây",
+            "45 cây",
+            "54 cây"
           ],
           "correct": 0,
-          "explanation": "Số hạng tổng quát của cấp số cộng là $u_n = u_1 + (n - 1)d$. Với $n = 5$: $u_5 = 3 + 4 \\times 2 = 11$."
+          "explanation": "Số cây ở các hàng lập thành cấp số cộng với số hạng đầu $u_1 = 15$ và công sai $d = 3$. Số cây ở hàng thứ 12 là $u_{12} = u_1 + 11d = 15 + 11 \\times 3 = 48$ cây."
         },
         {
           "type": "mcq",
-          "question": "Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và công bội $q = 3$. Giá trị của số hạng $u_3$ là:",
+          "question": "Một doanh nghiệp tại Dĩ An gửi tiết kiệm số tiền 500 triệu đồng vào ngân hàng với lãi suất kép 6,5%/năm. Số tiền cả gốc lẫn lãi người đó nhận được sau 3 năm (làm tròn đến triệu đồng) được tính theo cấp số nhân là:",
           "options": [
-            "18",
-            "12",
-            "54",
-            "6"
+            "604 triệu đồng",
+            "597 triệu đồng",
+            "615 triệu đồng",
+            "585 triệu đồng"
           ],
           "correct": 0,
-          "explanation": "Số hạng tổng quát của cấp số nhân là $u_n = u_1 \\cdot q^{n-1}$. Do đó $u_3 = 2 \\times 3^2 = 18$."
+          "explanation": "Số tiền sau 3 năm tính theo công thức lãi kép cấp số nhân: $S = 500 \\times (1 + 0,065)^3 \\approx 603,97$ triệu đồng, làm tròn là 604 triệu đồng."
         },
         {
           "type": "mcq",
-          "question": "Tổng của 10 số hạng đầu tiên của cấp số cộng $(u_n)$ có $u_1 = 1$ và công sai $d = 2$ bằng:",
+          "question": "Một quả bóng cao su được thả rơi từ độ cao 16 m xuống sàn phẳng. Sau mỗi lần chạm sàn, quả bóng nảy lên độ cao bằng một nửa độ cao của lần rơi trước đó. Tổng quãng đường quả bóng di chuyển từ lúc thả đến khi dừng hẳn là:",
           "options": [
-            "100",
-            "90",
-            "110",
-            "120"
+            "48 m",
+            "32 m",
+            "64 m",
+            "24 m"
           ],
           "correct": 0,
-          "explanation": "$S_{10} = \\frac{10}{2} [2(1) + (10 - 1) \\times 2] = 5 \\times [2 + 18] = 100$."
+          "explanation": "Quãng đường ban đầu rơi là 16 m. Sau đó mỗi lần nảy lên rồi rơi xuống cùng độ cao: $2 \\times (8 + 4 + 2 + ...) = 2 \\times \\frac{8}{1 - 0,5} = 32$ m. Tổng quãng đường di chuyển là $16 + 32 = 48$ m."
         },
         {
           "type": "shortanswer",
-          "question": "Cho cấp số cộng $(u_n)$ có $u_1 = 5$ và $u_2 = 9$. Tìm giá trị của số hạng thứ mười $u_{10}$:",
-          "correct": "41",
-          "explanation": "Công sai $d = u_2 - u_1 = 9 - 5 = 4$. Số hạng $u_{10} = u_1 + 9d = 5 + 9 \\times 4 = 41$."
+          "question": "Hội trường lớn của trường THPT Nguyễn Thị Minh Khai có 20 hàng ghế. Hàng đầu tiên có 18 ghế và mỗi hàng phía sau đều nhiều hơn hàng ngay trước nó 2 ghế. Tính tổng số chỗ ngồi trong hội trường:",
+          "correct": "740",
+          "explanation": "Tổng số chỗ ngồi là tổng 20 số hạng đầu của cấp số cộng: $S_{20} = \\frac{20}{2} [2(18) + (20 - 1) \\times 2] = 10 \\times [36 + 38] = 740$ ghế."
         },
         {
           "type": "shortanswer",
-          "question": "Cho cấp số nhân lùi vô hạn $(u_n)$ có số hạng đầu $u_1 = 6$ và công bội $q = 0,5$. Tính tổng $S$ của cấp số nhân lùi vô hạn này:",
-          "correct": "12",
-          "explanation": "Tổng của cấp số nhân lùi vô hạn là $S = \\frac{u_1}{1 - q} = \\frac{6}{1 - 0,5} = 12$."
+          "question": "Một mẻ nuôi cấy vi khuẩn sinh sôi theo cấp số nhân, cứ sau mỗi giờ số lượng vi khuẩn tăng gấp đôi. Ban đầu có 150 cá thể, hỏi sau 6 giờ nuôi cấy thì mẻ có tất cả bao nhiêu con vi khuẩn?",
+          "correct": "9600",
+          "explanation": "Số vi khuẩn sau 6 giờ là $u_7 = u_1 \\times q^6 = 150 \\times 2^6 = 150 \\times 64 = 9600$ con."
         }
       ],
       "questionGroups": [
         {
-          "passage": "Cho dãy số $(u_n)$ xác định bởi công thức số hạng tổng quát $u_n = 3n - 1$ với mọi $n \\in \\mathbb{N}^*$. Xét tính đúng sai của các mệnh đề sau:",
+          "passage": "Một học sinh lớp 11 trường THPT Nguyễn Thị Minh Khai lập kế hoạch tiết kiệm tiền mua bộ sách ôn thi tốt nghiệp. Tháng thứ nhất bạn dành được 100.000 đồng, từ tháng thứ hai trở đi mỗi tháng bạn để dành nhiều hơn tháng trước 20.000 đồng. Số tiền tiết kiệm mỗi tháng lập thành một cấp số cộng $(u_n)$. Xét tính đúng sai của các nhận định sau:",
           "statements": [
             {
-              "question": "Dãy số $(u_n)$ là một dãy số tăng trên tập các số nguyên dương $\\mathbb{N}^*$.",
+              "question": "Công sai của dãy số tiền tiết kiệm hàng tháng là d = 20.000 đồng.",
               "correct": true,
-              "explanation": "Ta có $u_{n+1} - u_n = [3(n+1) - 1] - (3n - 1) = 3 > 0$, suy ra dãy số tăng."
+              "explanation": "Mỗi tháng tăng thêm đều đặn 20.000 đồng nên công sai $d = 20.000$ đồng."
             },
             {
-              "question": "Dãy số $(u_n)$ là một cấp số cộng với công sai $d = 3$.",
-              "correct": true,
-              "explanation": "Hiệu giữa hai số hạng liên tiếp luôn bằng hằng số $d = 3$."
-            },
-            {
-              "question": "Số hạng đầu tiên của dãy số là $u_1 = 1$.",
+              "question": "Ở tháng thứ 6, số tiền bạn học sinh tiết kiệm được trong riêng tháng đó là 220.000 đồng.",
               "correct": false,
-              "explanation": "Số hạng đầu tiên là $u_1 = 3(1) - 1 = 2$ chứ không phải $1$."
+              "explanation": "Số tiền ở tháng thứ 6 là $u_6 = u_1 + 5d = 100.000 + 5 \\times 20.000 = 200.000$ đồng."
             },
             {
-              "question": "Tổng 20 số hạng đầu tiên của dãy số là $S_{20} = 610$.",
+              "question": "Tổng số tiền bạn tích lũy được sau 12 tháng đầu tiên là 2.520.000 đồng.",
               "correct": true,
-              "explanation": "$u_{20} = 3(20) - 1 = 59$. Tổng $S_{20} = \\frac{20}{2} \\times (u_1 + u_{20}) = 10 \\times (2 + 59) = 610$."
+              "explanation": "Tổng tích lũy 12 tháng: $S_{12} = \\frac{12}{2} [2(100.000) + 11 \\times 20.000] = 6 \\times [200.000 + 220.000] = 2.520.000$ đồng."
+            },
+            {
+              "question": "Để tích lũy được tổng số tiền tối thiểu 1.500.000 đồng, bạn học sinh cần tiết kiệm trong ít nhất 9 tháng liên tục.",
+              "correct": true,
+              "explanation": "Sau 8 tháng: $S_8 = 4 \\times [200.000 + 140.000] = 1.360.000$ đồng (< 1.500.000). Sau 9 tháng: $S_9 = 4,5 \\times [200.000 + 160.000] = 1.620.000 \\ge 1.500.000$ đồng."
             }
           ]
         }
       ]
     },
     {
-      "name": "Bài 3: Giới hạn và Hàm số liên tục",
+      "name": "Bài 3: Giới hạn, hàm số liên tục và tốc độ thay đổi tức thời",
       "questions": [
         {
           "type": "mcq",
-          "question": "Giới hạn của dãy số $\\lim_{n \\to \\infty} \\frac{3n + 1}{2n - 5}$ bằng:",
+          "question": "Một vật rơi tự do có quãng đường chuyển động tính theo thời gian $s(t) = 5t^2$ (m). Vận tốc tức thời của vật tại thời điểm $t_0 = 3$ giây được tính theo giới hạn $\\lim_{\\Delta t \\to 0} \\frac{s(3 + \\Delta t) - s(3)}{\\Delta t}$ bằng:",
           "options": [
-            "$\\frac{3}{2}$",
-            "$\\frac{1}{2}$",
-            "$3$",
-            "$0$"
+            "30 m/s",
+            "15 m/s",
+            "45 m/s",
+            "60 m/s"
           ],
           "correct": 0,
-          "explanation": "Chia cả tử và mẫu cho $n$, ta được $\\lim \\frac{3 + 1/n}{2 - 5/n} = \\frac{3}{2}$."
+          "explanation": "Vận tốc tức thời bằng đạo hàm/giới hạn: $v(3) = \\lim_{\\Delta t \\to 0} \\frac{5(3 + \\Delta t)^2 - 45}{\\Delta t} = \\lim (30 + 5\\Delta t) = 30$ m/s."
         },
         {
           "type": "mcq",
-          "question": "Tính giới hạn của hàm số $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$:",
+          "question": "Nồng độ một loại thuốc trong máu bệnh nhân sau $t$ giờ tiêm được mô tả bởi $C(t) = \\frac{4t}{t^2 + 1}$ (mg/L). Khi thời gian $t$ kéo dài vô hạn ($t \\to +\\infty$), nồng độ thuốc trong máu tiến về:",
           "options": [
-            "$4$",
-            "$2$",
-            "$0$",
-            "Vô cực"
+            "0 mg/L",
+            "4 mg/L",
+            "1 mg/L",
+            "2 mg/L"
           ],
           "correct": 0,
-          "explanation": "Ta phân tích nhân tử: $\\frac{x^2 - 4}{x - 2} = \\frac{(x - 2)(x + 2)}{x - 2} = x + 2$. Khi $x \\to 2$, giới hạn bằng $2 + 2 = 4$."
+          "explanation": "$\\lim_{t \\to +\\infty} \\frac{4t}{t^2 + 1} = \\lim \\frac{4/t}{1 + 1/t^2} = 0$ mg/L."
         },
         {
           "type": "shortanswer",
-          "question": "Tính giá trị của giới hạn sau: $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$:",
-          "correct": "6",
-          "explanation": "Khử dạng vô định $\\frac{0}{0}$: $\\lim_{x \\to 3} \\frac{(x-3)(x+3)}{x-3} = \\lim_{x \\to 3} (x+3) = 6$."
+          "question": "Cho hàm số $f(x)$ liên tục trên đoạn $[1; 3]$ có $f(1) = -4$ và $f(3) = 6$. Theo định lí giá trị trung gian, phương trình $f(x) = 0$ có ít nhất bao nhiêu nghiệm trong khoảng $(1; 3)$?",
+          "correct": "1",
+          "explanation": "Vì $f(1) \\times f(3) = -24 < 0$ và hàm số liên tục trên $[1; 3]$, nên phương trình $f(x) = 0$ có ít nhất 1 nghiệm thuộc khoảng $(1; 3)$."
         }
       ],
       "questionGroups": [
         {
-          "passage": "Cho hàm số $f(x) = \\begin{cases} \\frac{x^2 - 1}{x - 1} & \\text{khi } x \\ne 1 \\\\ m & \\text{khi } x = 1 \\end{cases}$ với $m$ là tham số thực. Xét tính đúng sai của các khẳng định sau:",
+          "passage": "Chi phí sản xuất $x$ chiếc xe đạp mini tại một xưởng cơ khí được cho bởi hàm số $C(x) = 12000 + 400x$ (nghìn đồng). Chi phí sản xuất trung bình cho mỗi chiếc xe đạp là $\\overline{C}(x) = \\frac{C(x)}{x} = \\frac{12000}{x} + 400$ (nghìn đồng). Xét tính đúng sai của các nhận định sau:",
           "statements": [
             {
-              "question": "Giới hạn của hàm số khi $x$ tiến tới 1 là $\\lim_{x \\to 1} f(x) = 2$.",
+              "question": "Khi quy mô sản xuất x ngày càng lớn thì chi phí trung bình trên mỗi chiếc xe có xu hướng giảm dần.",
               "correct": true,
-              "explanation": "$\\lim_{x \\to 1} \\frac{(x-1)(x+1)}{x-1} = \\lim_{x \\to 1} (x+1) = 2$."
+              "explanation": "Vì $\\frac{12000}{x}$ giảm khi $x$ tăng nên chi phí trung bình giảm dần theo quy mô sản xuất."
             },
             {
-              "question": "Tập xác định của hàm số $f(x)$ là $D = \\mathbb{R} \\setminus \\{1\\}$.",
-              "correct": false,
-              "explanation": "Hàm số đã được định nghĩa tại $x = 1$ với giá trị bằng $m$, nên tập xác định là $D = \\mathbb{R}$."
-            },
-            {
-              "question": "Hàm số liên tục tại điểm $x_0 = 1$ khi và chỉ khi $m = 2$.",
+              "question": "Chi phí trung bình để sản xuất mỗi chiếc xe khi xưởng làm 60 chiếc là 600 nghìn đồng.",
               "correct": true,
-              "explanation": "Hàm số liên tục tại $x = 1 \\iff \\lim_{x \\to 1} f(x) = f(1) \\iff 2 = m$."
+              "explanation": "$\\overline{C}(60) = \\frac{12000}{60} + 400 = 200 + 400 = 600$ nghìn đồng."
             },
             {
-              "question": "Với $m = 0$, hàm số liên tục trên toàn bộ tập số thực $\\mathbb{R}$.",
+              "question": "Giới hạn chi phí trung bình khi sản lượng sản xuất tiến tới vô hạn là 400 nghìn đồng.",
+              "correct": true,
+              "explanation": "$\\lim_{x \\to +\\infty} \\overline{C}(x) = \\lim \\left(\\frac{12000}{x} + 400\\right) = 400$ nghìn đồng."
+            },
+            {
+              "question": "Xưởng sản xuất có thể hạ chi phí trung bình xuống mức 380 nghìn đồng nếu sản xuất trên 500 chiếc.",
               "correct": false,
-              "explanation": "Với $m = 0 \\ne 2$, hàm số bị gián đoạn tại điểm $x = 1$."
+              "explanation": "Vì $\\overline{C}(x) = \\frac{12000}{x} + 400 > 400$ với mọi $x > 0$, nên chi phí trung bình không thể nhỏ hơn 400 nghìn đồng."
             }
           ]
         }
       ]
     },
     {
-      "name": "Bài 4: Quan hệ song song và vuông góc trong không gian",
+      "name": "Bài 4: Quan hệ song song và vuông góc trong không gian kiến trúc",
       "questions": [
         {
           "type": "mcq",
-          "question": "Trong không gian, hai đường thẳng phân biệt không có điểm chung thì:",
+          "question": "Trong kiến trúc xây dựng nhà ở, mái nhà dạng hình chóp $S.ABCD$ có đáy là hình bình hành $ABCD$. Đoạn cột chống thẳng đứng từ đỉnh mái $S$ xuống tâm đối xứng $O$ của trần nhà vuông góc với:",
           "options": [
-            "Song song hoặc chéo nhau",
-            "Luôn luôn song song với nhau",
-            "Luôn luôn chéo nhau",
-            "Cắt nhau tại một điểm ở vô cực"
+            "Mọi đường thẳng nằm trong mặt phẳng trần nhà (ABCD)",
+            "Chỉ các cạnh biên AB và CD",
+            "Chỉ hai đường chéo AC và BD",
+            "Đường thẳng chéo với đáy"
           ],
           "correct": 0,
-          "explanation": "Hai đường thẳng phân biệt không có điểm chung có thể cùng thuộc một mặt phẳng (song song) hoặc không cùng thuộc mặt phẳng nào (chéo nhau)."
+          "explanation": "Nếu một đường thẳng vuông góc với mặt phẳng thì nó vuông góc với mọi đường thẳng nằm trong mặt phẳng đó."
         },
         {
           "type": "mcq",
-          "question": "Nếu đường thẳng $d$ song song với mặt phẳng $(\\alpha)$ thì đường thẳng $d$ song song với:",
+          "question": "Một chiếc thang chữ A có hai chân đặt vững trên mặt sàn nhà phẳng. Thanh giằng ngang liên kết trung điểm hai chân thang có vị trí tương đối thế nào so với mặt sàn?",
           "options": [
-            "Ít nhất một đường thẳng nằm trong mặt phẳng $(\\alpha)$",
-            "Mọi đường thẳng nằm trong mặt phẳng $(\\alpha)$",
-            "Hai đường thẳng cắt nhau bất kỳ trong $(\\alpha)$",
-            "Đường thẳng vuông góc với $(\\alpha)$"
+            "Song song với mặt sàn",
+            "Vuông góc với mặt sàn",
+            "Cắt mặt sàn tại một điểm",
+            "Chéo nhau với mặt sàn"
           ],
           "correct": 0,
-          "explanation": "Theo định nghĩa và định lí, nếu $d \\parallel (\\alpha)$ thì qua $d$ có mặt phẳng cắt $(\\alpha)$ theo giao tuyến song song với $d$."
+          "explanation": "Thanh giằng là đường trung bình của tam giác thang nên song song với đoạn nối hai điểm tiếp đất trên mặt sàn, do đó song song với mặt phẳng sàn."
         },
         {
           "type": "shortanswer",
-          "question": "Cho hình lập phương $ABCD.A'B'C'D'$. Hỏi hình lập phương này có tất cả bao nhiêu đường chéo chính nối hai đỉnh đối diện?",
-          "correct": "4",
-          "explanation": "Hình lập phương có 4 đường chéo chính là $AC', BD', CA', DB'$."
+          "question": "Một phòng học tại trường THPT NTMK có dạng hình hộp chữ nhật với chiều dài 8 m, chiều rộng 6 m và chiều cao 3 m. Tính khoảng cách lớn nhất giữa hai điểm bất kỳ trong phòng học (làm tròn số nguyên theo mét):",
+          "correct": "10",
+          "explanation": "Khoảng cách lớn nhất chính là độ dài đường chéo của hình hộp chữ nhật: $d = \\sqrt{8^2 + 6^2 + 3^2} = \\sqrt{64 + 36 + 9} = \\sqrt{109} \\approx 10,44$ m, làm tròn nguyên là 10 m."
         }
       ],
       "questionGroups": [
         {
-          "passage": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình bình hành tâm $O$. Gọi $M, N$ lần lượt là trung điểm của $SA$ và $SC$. Xét tính đúng sai của các khẳng định sau:",
+          "passage": "Để dựng khung rạp sự kiện kỷ niệm ngày thành lập trường THPT Nguyễn Thị Minh Khai, tổ kỹ thuật dựng một khung hình chóp chóp tứ giác đều $S.ABCD$ có đáy hình vuông $ABCD$ tâm $O$. Các thanh cột nghiêng $SA, SB, SC, SD$ có độ dài bằng nhau. Xét tính đúng sai của các khẳng định hình học không gian sau:",
           "statements": [
             {
-              "question": "Đường thẳng $MN$ song song với mặt phẳng đáy $(ABCD)$.",
+              "question": "Cột trung tâm SO vuông góc với mặt phẳng sàn sân khấu (ABCD).",
               "correct": true,
-              "explanation": "Trong tam giác $SAC$, $MN$ là đường trung bình nên $MN \\parallel AC$. Mà $AC \\subset (ABCD)$, suy ra $MN \\parallel (ABCD)$."
+              "explanation": "Trong hình chóp đều, đoạn nối đỉnh với tâm của đáy luôn vuông góc với mặt phẳng đáy."
             },
             {
-              "question": "Đường thẳng $SO$ cắt mặt phẳng $(ABCD)$ tại trọng tâm của tam giác $SBD$.",
-              "correct": false,
-              "explanation": "Đường thẳng $SO$ cắt mặt phẳng đáy $(ABCD)$ tại chính tâm đối xứng $O$ của đáy hình bình hành."
-            },
-            {
-              "question": "Giao tuyến của hai mặt phẳng $(SAB)$ và $(SCD)$ là đường thẳng đi qua $S$ và song song với $AB$.",
+              "question": "Thanh giằng nối trung điểm hai cạnh bên SA và SC song song với mặt phẳng sàn khấu (ABCD).",
               "correct": true,
-              "explanation": "Hai mặt phẳng $(SAB)$ và $(SCD)$ có điểm chung $S$ và lần lượt chứa hai đường thẳng song song là $AB$ và $CD$, nên giao tuyến của chúng là đường thẳng qua $S$ song song với $AB$."
+              "explanation": "Đoạn nối trung điểm $SA$ và $SC$ là đường trung bình tam giác $SAC$, song song với $AC \\subset (ABCD)$ nên song song với đáy."
             },
             {
-              "question": "Mặt phẳng $(OMN)$ chứa cạnh $SB$ của hình chóp.",
+              "question": "Giao tuyến của hai mặt bạt che (SAB) và (SCD) cắt sàn khấu (ABCD) tại tâm O.",
               "correct": false,
-              "explanation": "$O, M, N$ nằm trên mặt phẳng $(SAC)$, không chứa cạnh $SB$."
+              "explanation": "Hai mặt phẳng $(SAB)$ và $(SCD)$ lần lượt chứa hai đường thẳng song song là $AB$ và $CD$, nên giao tuyến đi qua $S$ song song với $AB$, không cắt sàn tại $O$."
+            },
+            {
+              "question": "Bốn mặt bên của khung rạp là các tam giác cân bằng nhau.",
+              "correct": true,
+              "explanation": "Trong hình chóp tứ giác đều, 4 mặt bên là các tam giác cân có cạnh đáy bằng nhau và cạnh bên bằng nhau."
             }
           ]
         }
