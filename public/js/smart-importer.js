@@ -272,7 +272,7 @@ d) Tuyên ngôn Độc lập Mỹ xóa bỏ hoàn toàn quyền sở hữu tư n
  */
 const SmartImporterView = {
   currentParsed: { mcq: [], tf: [], shortAnswer: [] },
-  targetSubject: 'toan10',
+  targetSubject: 'lichsu11',
   topicTitle: 'Đề thi tự nạp của Giáo viên',
 
   init() {
@@ -324,7 +324,7 @@ const SmartImporterView = {
                 <div class="config-field">
                   <label>Gán vào môn học:</label>
                   <select id="import-target-subject" class="import-select" onchange="SmartImporterView.targetSubject = this.value">
-                    <option value="toan10" selected>Toán học 10</option>
+                    <option value="lichsu11" selected>Lịch sử 11</option>
                     <option value="vatli10">Vật lí 10</option>
                     <option value="hoahoc10">Hóa học 10</option>
                     <option value="tienganh10">Tiếng Anh 10</option>

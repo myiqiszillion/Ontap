@@ -357,7 +357,7 @@ const MistakeStore = {
     });
 
     const examConfig = {
-      subjectId: subjectId && subjectId !== 'all' ? subjectId : (mistakes[0] ? mistakes[0].subjectId : 'toan10'),
+      subjectId: subjectId && subjectId !== 'all' ? subjectId : (mistakes[0] ? mistakes[0].subjectId : 'lichsu11'),
       questions,
       boxFilter: box,
       durationMinutes: Math.max(10, Math.ceil(questions.length * 1.5)),
@@ -421,7 +421,7 @@ const MistakeStore = {
     });
 
     const sessionConfig = {
-      subjectId: subjectId && subjectId !== 'all' ? subjectId : (mistakes[0] ? mistakes[0].subjectId : 'toan10'),
+      subjectId: subjectId && subjectId !== 'all' ? subjectId : (mistakes[0] ? mistakes[0].subjectId : 'lichsu11'),
       questions,
       boxFilter: box,
       mode: 'practice'

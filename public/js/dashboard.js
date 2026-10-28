@@ -9,8 +9,8 @@ const DashboardView = {
     if (!container) return;
 
     const profile = ProfileStore.getProfile() || {
-      grade: 10,
-      targetSubjects: ['toan', 'vatli'],
+      grade: 11,
+      targetSubjects: ['lichsu'],
       goal: 'score_8_plus'
     };
 
@@ -26,11 +26,11 @@ const DashboardView = {
       lichsu: 'Lịch sử'
     };
 
-    const targetSubjectBadges = (profile.targetSubjects || ['toan'])
+    const targetSubjectBadges = (profile.targetSubjects || ['lichsu'])
       .map(k => `<span class="badge badge-primary">${subjectNamesMap[k] || k}</span>`)
       .join(' ');
 
-    const grade = profile.grade || 10;
+    const grade = profile.grade || 11;
     const mistakesCount = (typeof MistakeStore !== 'undefined') ? MistakeStore.getActiveCount() : 0;
     const dueMistakesCount = (typeof MistakeStore !== 'undefined' && MistakeStore.getDueCount) ? MistakeStore.getDueCount() : 0;
 
@@ -64,9 +64,9 @@ const DashboardView = {
             </p>
 
             <div class="hero-actions">
-              <button class="btn btn-primary hero-main-cta" onclick="app.navigateTo('subjects')">
+              <button class="btn btn-primary hero-main-cta" onclick="app.selectSubject('lichsu11')">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                <span>Tiếp tục ôn tập</span>
+                <span>Vào ôn Lịch sử 11</span>
               </button>
               <button class="btn btn-glass" onclick="app.navigateTo('custom-exam')">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -116,109 +116,110 @@ const DashboardView = {
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════
-           2. 4 CORE GDPT 2018 SUBJECTS MATRIX (Direct 1-Click Practice)
+           2. LỊCH SỬ 11 — THPT NGUYỄN THỊ MINH KHAI (Authentic GDPT 2018)
            ═══════════════════════════════════════════════════════════ -->
         <div class="dashboard-section">
           <div class="section-header">
             <div>
-              <h2 class="section-title">4 Môn học Trọng tâm GDPT 2018 — Khối ${grade}</h2>
-              <span class="section-hint">Đề thi chuẩn hóa theo Quyết định 764/QĐ-BGDĐT: Trắc nghiệm 4 lựa chọn, Đúng/Sai & Trả lời ngắn</span>
+              <h2 class="section-title">Lịch sử 11 — GDPT 2018 (THPT Nguyễn Thị Minh Khai)</h2>
+              <span class="section-hint">Bộ câu hỏi trắc nghiệm & đúng sai chuẩn hóa theo đề án GDPT 2018 • QĐ 764</span>
             </div>
-            <button class="section-header-link" onclick="app.navigateTo('subjects')">
-              <span>Xem tất cả môn</span>
+            <button class="section-header-link" onclick="app.selectSubject('lichsu11')">
+              <span>Vào học tất cả bài</span>
               <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
             </button>
           </div>
 
           <div class="dashboard-subjects-grid">
-            <!-- TOÁN HỌC -->
-            <div class="dash-subject-card dash-sub-toan" onclick="app.selectSubject('toan${grade}')">
+            <!-- BÀI 1 -->
+            <div class="dash-subject-card dash-sub-lichsu" onclick="app.selectSubject('lichsu11')">
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
-                <div class="dash-sub-icon toan">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg>
+                <div class="dash-sub-icon lichsu">
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
                 </div>
-                <span class="dash-sub-pill toan">QĐ 764</span>
+                <span class="dash-sub-pill lichsu">Bài 1</span>
               </div>
-              <h3 class="dash-sub-name">Toán học ${grade}</h3>
-              <p class="dash-sub-desc">Đại số, Giải tích, Hình học không gian & Xác suất thống kê.</p>
+              <h3 class="dash-sub-name">Một số vấn đề chung về cách mạng tư sản</h3>
+              <p class="dash-sub-desc">Chủ đề 1: Tiền đề, mục tiêu, nhiệm vụ, giai cấp lãnh đạo và động lực CMTS.</p>
               <div class="dash-sub-meta">
-                <span class="dash-sub-tag">12 CHTN</span>
+                <span class="dash-sub-tag">20 CHTN</span>
                 <span class="dash-sub-tag">4 Đúng/Sai</span>
-                <span class="dash-sub-tag">6 Trả lời ngắn</span>
+                <span class="dash-sub-tag">QĐ 764</span>
               </div>
               <div class="dash-sub-footer">
-                <span class="dash-sub-count">Ngân hàng đã kiểm duyệt</span>
-                <span class="dash-sub-cta">Luyện đề ngay →</span>
+                <span class="dash-sub-count">Ngân hàng NTMK</span>
+                <span class="dash-sub-cta">Ôn tập ngay →</span>
               </div>
             </div>
 
-            <!-- VẬT LÍ -->
-            <div class="dash-subject-card dash-sub-vatli" onclick="app.selectSubject('vatli${grade}')">
+            <!-- BÀI 2 -->
+            <div class="dash-subject-card dash-sub-lichsu" onclick="app.selectSubject('lichsu11')">
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
-                <div class="dash-sub-icon vatli">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.4-2.4 2.4-6.3 0-8.7L12 3.3 3.8 11.5c-2.4 2.4-2.4 6.3 0 8.7s6.3 2.4 8.7 0l7.7-7.7"/></svg>
+                <div class="dash-sub-icon lichsu">
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
                 </div>
-                <span class="dash-sub-pill vatli">QĐ 764</span>
+                <span class="dash-sub-pill lichsu">Bài 2</span>
               </div>
-              <h3 class="dash-sub-name">Vật lí ${grade}</h3>
-              <p class="dash-sub-desc">Cơ học, Nhiệt học, Điện từ trường & Thí nghiệm vật lí thực tế.</p>
+              <h3 class="dash-sub-name">Sự xác lập và phát triển của CNTB</h3>
+              <p class="dash-sub-desc">Chủ đề 1: CNTB tự do cạnh tranh sang độc quyền, chủ nghĩa đế quốc & mở rộng thuộc địa.</p>
               <div class="dash-sub-meta">
-                <span class="dash-sub-tag">18 CHTN</span>
+                <span class="dash-sub-tag">20 CHTN</span>
                 <span class="dash-sub-tag">4 Đúng/Sai</span>
-                <span class="dash-sub-tag">6 Trả lời ngắn</span>
+                <span class="dash-sub-tag">QĐ 764</span>
               </div>
               <div class="dash-sub-footer">
-                <span class="dash-sub-count">Ngân hàng đã kiểm duyệt</span>
-                <span class="dash-sub-cta">Luyện đề ngay →</span>
+                <span class="dash-sub-count">Ngân hàng NTMK</span>
+                <span class="dash-sub-cta">Ôn tập ngay →</span>
               </div>
             </div>
 
-            <!-- HÓA HỌC -->
-            <div class="dash-subject-card dash-sub-hoahoc" onclick="app.selectSubject('hoahoc${grade}')">
+            <!-- BÀI 3 -->
+            <div class="dash-subject-card dash-sub-lichsu" onclick="app.selectSubject('lichsu11')">
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
-                <div class="dash-sub-icon hoahoc">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><line x1="8.5" x2="15.5" y1="2" y2="2"/><line x1="7.5" x2="16.5" y1="16" y2="16"/></svg>
+                <div class="dash-sub-icon lichsu">
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
                 </div>
-                <span class="dash-sub-pill hoahoc">QĐ 764</span>
+                <span class="dash-sub-pill lichsu">Bài 3</span>
               </div>
-              <h3 class="dash-sub-name">Hóa học ${grade}</h3>
-              <p class="dash-sub-desc">Cấu tạo nguyên tử, Cân bằng hóa học & Hợp chất hữu cơ.</p>
+              <h3 class="dash-sub-name">Sự hình thành Liên bang Xô Viết</h3>
+              <p class="dash-sub-desc">Chủ đề 2: Cách mạng tháng Mười Nga 1917, sự thành lập Liên bang CHXHCN Xô Viết.</p>
               <div class="dash-sub-meta">
-                <span class="dash-sub-tag">18 CHTN</span>
+                <span class="dash-sub-tag">20 CHTN</span>
                 <span class="dash-sub-tag">4 Đúng/Sai</span>
-                <span class="dash-sub-tag">6 Trả lời ngắn</span>
+                <span class="dash-sub-tag">QĐ 764</span>
               </div>
               <div class="dash-sub-footer">
-                <span class="dash-sub-count">Ngân hàng đã kiểm duyệt</span>
-                <span class="dash-sub-cta">Luyện đề ngay →</span>
+                <span class="dash-sub-count">Ngân hàng NTMK</span>
+                <span class="dash-sub-cta">Ôn tập ngay →</span>
               </div>
             </div>
 
-            <!-- TIẾNG ANH -->
-            <div class="dash-subject-card dash-sub-tienganh" onclick="app.selectSubject('tienganh${grade}')">
+            <!-- BÀI 4 -->
+            <div class="dash-subject-card dash-sub-lichsu" onclick="app.selectSubject('lichsu11')">
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
-                <div class="dash-sub-icon tienganh">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <div class="dash-sub-icon lichsu">
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
                 </div>
-                <span class="dash-sub-pill tienganh">Form Mới</span>
+                <span class="dash-sub-pill lichsu">Bài 4</span>
               </div>
-              <h3 class="dash-sub-name">Tiếng Anh ${grade}</h3>
-              <p class="dash-sub-desc">Ngữ pháp cốt lõi, Điền từ đoạn văn & Bài đọc hiểu chuyên sâu.</p>
+              <h3 class="dash-sub-name">Sự phát triển của CNXH sau CTTG II</h3>
+              <p class="dash-sub-desc">Chủ đề 2: Hệ thống XHCN Đông Âu, châu Á, Cuba, khủng hoảng và công cuộc Đổi mới Trung Quốc.</p>
               <div class="dash-sub-meta">
-                <span class="dash-sub-tag">40 CHTN</span>
-                <span class="dash-sub-tag">Đọc hiểu</span>
-                <span class="dash-sub-tag">Collocations</span>
+                <span class="dash-sub-tag">20 CHTN</span>
+                <span class="dash-sub-tag">4 Đúng/Sai</span>
+                <span class="dash-sub-tag">QĐ 764</span>
               </div>
               <div class="dash-sub-footer">
-                <span class="dash-sub-count">Ngân hàng đã kiểm duyệt</span>
-                <span class="dash-sub-cta">Luyện đề ngay →</span>
+                <span class="dash-sub-count">Ngân hàng NTMK</span>
+                <span class="dash-sub-cta">Ôn tập ngay →</span>
               </div>
             </div>
           </div>
+        </div>
         </div>
 
         ${dueMistakesCount > 0 ? `
@@ -354,7 +355,7 @@ const DashboardView = {
                       </div>
                     </div>
                     <div class="hist-actions">
-                      <button class="btn btn-sm btn-outline-clean" onclick="app.selectSubject('${item.subjectId || 'toan' + grade}')">
+                      <button class="btn btn-sm btn-outline-clean" onclick="app.selectSubject('${item.subjectId || 'lichsu11'}')">
                         <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                         <span>Luyện lại</span>
                       </button>

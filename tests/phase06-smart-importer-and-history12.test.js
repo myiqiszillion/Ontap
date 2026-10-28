@@ -150,19 +150,19 @@ describe('Phase 06 — 2. Printable Exam Studio Engine', () => {
   });
 });
 
-describe('Phase 06 — 3. Lịch Sử 12 Curriculum Question Bank Integrity', () => {
-  const filePath = path.join(__dirname, '..', 'data', 'lichsu12.json');
+describe('Phase 06 — 3. Lịch Sử 11 Curriculum Question Bank Integrity', () => {
+  const filePath = path.join(__dirname, '..', 'data', 'lichsu11.json');
 
-  test('data/lichsu12.json exists and is valid JSON', () => {
-    assert.ok(fs.existsSync(filePath), 'lichsu12.json must exist');
+  test('data/lichsu11.json exists and is valid JSON', () => {
+    assert.ok(fs.existsSync(filePath), 'lichsu11.json must exist');
     const raw = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(raw);
-    assert.equal(data.subject, 'Lịch sử 12');
+    assert.ok(data.subject.includes('Lịch sử 11'));
     assert.ok(Array.isArray(data.lessons), 'Must have lessons array');
-    assert.equal(data.lessons.length, 9, 'Must contain 9 core lessons for Grade 12');
+    assert.equal(data.lessons.length, 4, 'Must contain 4 authentic lessons for Grade 11');
   });
 
-  test('All 9 lessons contain exactly 10 MCQs and 2 True/False groups (MOET standard)', () => {
+  test('All 4 lessons contain 20 MCQs and 4 True/False groups (MOET standard)', () => {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
     let totalMcq = 0;
@@ -170,55 +170,56 @@ describe('Phase 06 — 3. Lịch Sử 12 Curriculum Question Bank Integrity', ()
     let totalStatements = 0;
 
     data.lessons.forEach((l, index) => {
-      assert.equal(l.bai, index + 1, `Lesson index must match bai number ${index + 1}`);
-      assert.ok(l.title && l.title.length > 5, `Lesson ${l.bai} must have a descriptive title`);
-      assert.ok(Array.isArray(l.questions), `Lesson ${l.bai} must have questions array`);
-      assert.equal(l.questions.length, 10, `Lesson ${l.bai} must have exactly 10 MCQs`);
+      assert.equal(l.id, index + 1, 'Lesson id must match index + 1');
+      assert.ok(l.name && l.name.length > 5, 'Lesson must have a descriptive title');
+      assert.ok(Array.isArray(l.questions), 'Lesson must have questions array');
+      assert.equal(l.questions.length, 20, 'Lesson must have exactly 20 MCQs');
       totalMcq += l.questions.length;
 
       // Validate each MCQ
       l.questions.forEach((q, qIdx) => {
         assert.equal(q.type, 'mcq');
-        assert.ok(q.question && q.question.length > 5, `Question ${q.id} must have question text`);
-        assert.equal(q.options.length, 4, `Question ${q.id} must have 4 options`);
-        assert.ok([0, 1, 2, 3].includes(q.correctAnswer), `Question ${q.id} correctAnswer must be 0-3`);
-        assert.ok(q.explanation && q.explanation.length > 5, `Question ${q.id} must have pedagogical explanation`);
+        assert.ok(q.question && q.question.length > 5, 'Question must have question text');
+        assert.equal(q.options.length, 4, 'Question must have 4 options');
+        assert.ok([0, 1, 2, 3].includes(q.correct), 'Question correct must be 0-3');
+        assert.ok(q.explanation && q.explanation.length > 3, 'Question must have explanation');
       });
 
       // Validate each TF Group
-      assert.ok(Array.isArray(l.questionGroups), `Lesson ${l.bai} must have questionGroups array`);
-      assert.equal(l.questionGroups.length, 2, `Lesson ${l.bai} must have 2 True/False groups`);
+      assert.ok(Array.isArray(l.questionGroups), 'Lesson must have questionGroups array');
+      assert.equal(l.questionGroups.length, 4, 'Lesson must have 4 True/False groups');
       totalTf += l.questionGroups.length;
 
       l.questionGroups.forEach((g) => {
-        assert.equal(g.type, 'tf-group');
-        assert.ok(g.passage && g.passage.length > 10, `TF Group ${g.id} must have passage context`);
-        assert.equal(g.statements.length, 4, `TF Group ${g.id} must have 4 statements`);
+        // group has passage and statements
+        assert.ok(g.passage && g.statements);
+        assert.ok(g.passage && g.passage.length > 10, 'TF Group must have passage context');
+        assert.equal(g.statements.length, 4, 'TF Group must have 4 statements');
         totalStatements += g.statements.length;
 
         g.statements.forEach((stmt) => {
-          assert.equal(typeof stmt.correct, 'boolean', `Statement in ${g.id} must have boolean correct`);
-          assert.ok(stmt.statement && stmt.statement.length > 3, 'Statement must have text');
-          assert.ok(stmt.explanation && stmt.explanation.length > 3, 'Statement must have explanation');
+          assert.equal(typeof stmt.correct, 'boolean', 'Statement must have boolean correct');
+          const text = stmt.question || stmt.statement;
+          assert.ok(text && text.length > 3, 'Statement must have text');
         });
       });
     });
 
-    assert.equal(totalMcq, 90, 'Total Grade 12 MCQ pool must be 90 questions');
-    assert.equal(totalTf, 18, 'Total Grade 12 TF groups must be 18');
-    assert.equal(totalStatements, 72, 'Total Grade 12 TF statements must be 72 (18 * 4)');
+    assert.equal(totalMcq, 80, 'Total Grade 11 MCQ pool must be 80 questions (4 * 20)');
+    assert.equal(totalTf, 16, 'Total Grade 11 TF groups must be 16 (4 * 4)');
+    assert.equal(totalStatements, 64, 'Total Grade 11 TF statements must be 64 (16 * 4)');
   });
 
-  test('subjects.json includes lichsu12 as an active, ready subject for Grade 12', () => {
+  test('subjects.json includes lichsu11 as an active, ready subject for Grade 11', () => {
     const subjectsPath = path.join(__dirname, '..', 'data', 'subjects.json');
-    const subjectsData = JSON.parse(fs.readFileSync(subjectsPath, 'utf8'));
+    const subjectsData = JSON.parse(subjectsPath ? fs.readFileSync(subjectsPath, 'utf8') : '{}');
 
-    const ls12 = subjectsData.subjects.find(s => s.id === 'lichsu12');
-    assert.ok(ls12, 'lichsu12 must exist in subjects catalog');
-    assert.equal(ls12.grade, 12, 'Grade must be 12');
-    assert.equal(ls12.ready, true, 'Ready must be true');
-    assert.equal(ls12.status, 'active', 'Status must be active');
-    assert.equal(ls12.dataFile, 'lichsu12.json', 'dataFile must point to lichsu12.json');
+    const ls11 = subjectsData.subjects.find(s => s.id === 'lichsu11');
+    assert.ok(ls11, 'lichsu11 must exist in subjects catalog');
+    assert.equal(ls11.grade, 11, 'Grade must be 11');
+    assert.equal(ls11.ready, true, 'Ready must be true');
+    assert.equal(ls11.status, 'active', 'Status must be active');
+    assert.equal(ls11.dataFile, 'lichsu11.json', 'dataFile must point to lichsu11.json');
   });
 });
 

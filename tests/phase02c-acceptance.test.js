@@ -309,7 +309,7 @@ describe('NTMK PHASE 02C — ADDITIONAL ACCEPTANCE REQUIREMENTS', () => {
     });
 
     test('3.2 Legacy endpoint in exam mode (?mode=exam) strips answer keys and explanations', () => {
-      const req = { query: { subject: 'toan10', mode: 'exam' }, headers: {} };
+      const req = { query: { subject: 'lichsu11', mode: 'exam' }, headers: {} };
       let status = null, json = null;
       const res = {
         setHeader() {},

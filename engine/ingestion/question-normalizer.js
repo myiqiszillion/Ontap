@@ -34,7 +34,11 @@ class QuestionNormalizer {
     english: 'tienganh',
     tienganh10: 'tienganh',
     tienganh11: 'tienganh',
-    tienganh12: 'tienganh'
+    tienganh12: 'tienganh',
+    lichsu: 'lichsu',
+    su: 'lichsu',
+    history: 'lichsu',
+    lichsu11: 'lichsu'
   };
 
   static COGNITIVE_MAP = {

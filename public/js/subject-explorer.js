@@ -4,7 +4,7 @@
  */
 
 const SubjectExplorer = {
-  currentGrade: 10,
+  currentGrade: 11,
 
   init() {
     const profile = ProfileStore.getProfile();
@@ -22,7 +22,7 @@ const SubjectExplorer = {
     const container = document.getElementById('screen-subjects');
     if (!container) return;
 
-    const subjectsData = app.subjectsData || { subjects: [], grades: [10, 11, 12] };
+    const subjectsData = app.subjectsData || { subjects: [], grades: [11] };
     const allSubjects = subjectsData.subjects || [];
 
     // Filter by selected grade
@@ -34,11 +34,11 @@ const SubjectExplorer = {
           <div>
             <h1 class="explorer-title">Khám phá Môn Học GDPT 2018</h1>
             <p class="explorer-subtitle">
-              Hệ thống môn học bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Toán học, Vật lí, Hóa học, Tiếng Anh và Lịch sử.
+              Hệ thống ôn luyện bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Lịch sử 11.
             </p>
           </div>
           <div class="grade-pill-group" role="tablist" aria-label="Chọn khối lớp">
-            ${[10, 11, 12].map(g => `
+            ${(app.grades || [11]).map(g => `
               <button class="grade-pill ${g === this.currentGrade ? 'active' : ''}"
                       role="tab"
                       aria-selected="${g === this.currentGrade}"
@@ -138,7 +138,7 @@ Khối lớp: Lớp ${sub.grade}
 - Thời gian làm bài: ${str.durationMinutes || 50} phút
 
 Trạng thái:
-Ngân hàng câu hỏi cho ${sub.name} đang được ban chuyên môn biên soạn. Bạn có thể trải nghiệm các môn Lớp 10 đã sẵn sàng (Toán học 10, Vật lí 10, Hóa học 10, Tiếng Anh 10)!
+Ngân hàng câu hỏi cho ${sub.name} đang được ban chuyên môn biên soạn. Bạn có thể trải nghiệm môn Lịch sử 11 đã sẵn sàng!
     `.trim();
 
     alert(infoText);

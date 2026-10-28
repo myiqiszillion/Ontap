@@ -5,7 +5,7 @@
  */
 
 const CustomExam = {
-  currentSubject: 'toan10',
+  currentSubject: 'lichsu11',
   currentGradeFilter: 10,
   lessons: [],
   selectedBais: [],
@@ -38,9 +38,9 @@ const CustomExam = {
       const grade = p?.grade || 10;
       this.currentGradeFilter = grade;
       const match = this.SUBJECT_OPTIONS.find(s => s.grade === grade);
-      this.currentSubject = match ? match.id : 'toan10';
+      this.currentSubject = match ? match.id : 'lichsu11';
     } else {
-      this.currentSubject = 'toan10';
+      this.currentSubject = 'lichsu11';
     }
 
     await this.loadSubjectData(this.currentSubject);

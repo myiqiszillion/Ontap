@@ -94,7 +94,7 @@ const Admin = {
   },
 
   async loadPresetSampleToTextarea() {
-    const sub = document.getElementById('crawler-subject')?.value || 'toan';
+    const sub = document.getElementById('crawler-subject')?.value || 'lichsu';
     const grade = document.getElementById('crawler-grade')?.value || '12';
     const textArea = document.getElementById('crawler-raw-text');
 
@@ -116,7 +116,7 @@ const Admin = {
 
   async handleCrawlAndParse() {
     const crawlBtn = document.getElementById('btn-crawl-parse');
-    const sub = document.getElementById('crawler-subject')?.value || 'toan';
+    const sub = document.getElementById('crawler-subject')?.value || 'lichsu';
     const grade = document.getElementById('crawler-grade')?.value || '12';
     const url = document.getElementById('crawler-url')?.value?.trim();
     const rawText = document.getElementById('crawler-raw-text')?.value?.trim();

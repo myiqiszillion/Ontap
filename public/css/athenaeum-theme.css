@@ -4070,3 +4070,8 @@ body:not([data-theme="dark"]) .hist-score-val {
 [data-theme="dark"] .footer-link-btn:hover {
   background: rgba(129, 140, 248, 0.12);
 }
+
+.dash-sub-lichsu:hover { border-color: rgba(225, 29, 72, 0.45); }
+.dash-sub-lichsu .dash-sub-glow { background: #e11d48; }
+.dash-sub-icon.lichsu { background: rgba(225, 29, 72, 0.15); color: #fb7185; }
+.dash-sub-pill.lichsu { background: rgba(225, 29, 72, 0.12); color: #fb7185; }

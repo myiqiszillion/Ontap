@@ -6,6 +6,14 @@
 
 
 const SUBJECT_PROFILES = {
+  lichsu: {
+    name: 'Lịch sử',
+    mcqPoints: 0.3,
+    tfGroupPoints: 1.0,
+    saPoints: 0,
+    totalPoints: 10.0
+  },
+
   toan: {
     name: 'Toán học',
     mcqPoints: 0.25,     // 12 questions * 0.25 = 3.0 pts

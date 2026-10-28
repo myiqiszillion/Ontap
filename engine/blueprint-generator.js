@@ -6,6 +6,20 @@
 const QuestionSchemaV2 = require('./schema.js');
 
 const EXAM_BLUEPRINTS = {
+  lichsu: {
+    subjectId: 'lichsu',
+    subjectName: 'Lịch sử',
+    durationMinutes: 50,
+    sections: [
+      { sectionId: 'part_1', title: 'Phần I: Câu trắc nghiệm nhiều phương án lựa chọn', format: 'multiple_choice', targetCount: 20, pointsPerItem: 0.3, maxPoints: 6.0 },
+      { sectionId: 'part_2', title: 'Phần II: Câu trắc nghiệm đúng sai', format: 'true_false_group', targetCount: 4, pointsPerItem: 1.0, maxPoints: 4.0 }
+    ],
+    totalQuestions: 24,
+    totalCommands: 36,
+    totalPoints: 10.0,
+    cognitiveDistribution: { recognize: 0.4, understand: 0.3, apply: 0.2, high_apply: 0.1 }
+  },
+
   toan: {
     subjectId: 'toan',
     subjectName: 'Toán học',

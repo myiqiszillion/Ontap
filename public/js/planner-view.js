@@ -684,7 +684,7 @@ const PlannerView = {
   // 5. SETTINGS VIEW & REPLAN
   // ═════════════════════════════════════════════════════════════
   renderSettingsView() {
-    const prof = this.profile || { dailyStudyMinutes: 30, studyDaysPerWeek: [1, 2, 3, 4, 5, 6], prioritySubjects: ['toan'] };
+    const prof = this.profile || { dailyStudyMinutes: 30, studyDaysPerWeek: [1, 2, 3, 4, 5, 6], prioritySubjects: ['lichsu'] };
 
     return `
       <div class="planner-settings-card">

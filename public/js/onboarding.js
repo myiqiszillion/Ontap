@@ -7,7 +7,7 @@ const Onboarding = {
   currentStep: 1,
   data: {
     grade: 10,
-    targetSubjects: ['toan'],
+    targetSubjects: ['lichsu'],
     goal: 'score_8_plus'
   },
 
@@ -25,7 +25,7 @@ const Onboarding = {
       this.data.grade = existing.grade || 10;
       this.data.targetSubjects = Array.isArray(existing.targetSubjects) && existing.targetSubjects.length > 0
         ? existing.targetSubjects
-        : ['toan'];
+        : ['lichsu'];
       this.data.goal = existing.goal || 'score_8_plus';
     }
     this.currentStep = 1;

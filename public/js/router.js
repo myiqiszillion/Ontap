@@ -93,12 +93,12 @@ const AppRouter = {
       if (typeof PlannerView !== 'undefined') PlannerView.init();
     } else if (routeId === 'custom-exam') {
       if (typeof CustomExam !== 'undefined') {
-        const currentSub = (typeof app !== 'undefined' && app.currentSubject) ? app.currentSubject : 'toan10';
+        const currentSub = (typeof app !== 'undefined' && app.currentSubject) ? app.currentSubject : 'lichsu11';
         CustomExam.init(param || currentSub);
       }
     } else if (routeId === 'checker') {
       if (typeof Checker !== 'undefined') {
-        const currentSub = (typeof app !== 'undefined' && app.currentSubject) ? app.currentSubject : 'toan10';
+        const currentSub = (typeof app !== 'undefined' && app.currentSubject) ? app.currentSubject : 'lichsu11';
         Checker.init(param || currentSub);
       }
     } else if (routeId === 'mistakes') {

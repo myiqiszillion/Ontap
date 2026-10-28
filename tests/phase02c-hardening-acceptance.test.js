@@ -243,7 +243,7 @@ describe('NTMK PHASE 02C HARDENING — 15 ACCEPTANCE VERIFICATION AREAS', () => 
   // 10. LEGACY ANSWER-KEY EXPOSURE AUDIT
   test('10. Legacy API strips answer keys in exam mode and retains explanations in study mode', () => {
     // 10.1 Study Mode (no exam mode) -> explanations allowed for learning
-    const studyReq = { query: { subject: 'toan10' }, headers: {} };
+    const studyReq = { query: { subject: 'lichsu11' }, headers: {} };
     let studyRes = null;
     legacySubjectHandler(studyReq, {
       setHeader() {},
@@ -253,7 +253,7 @@ describe('NTMK PHASE 02C HARDENING — 15 ACCEPTANCE VERIFICATION AREAS', () => 
     assert.ok(studyRes.lessons[0].questions[0].explanation);
 
     // 10.2 Exam Mode (?mode=exam) -> all answers and explanations stripped
-    const examReq = { query: { subject: 'toan10', mode: 'exam' }, headers: {} };
+    const examReq = { query: { subject: 'lichsu11', mode: 'exam' }, headers: {} };
     let examRes = null;
     legacySubjectHandler(examReq, {
       setHeader() {},

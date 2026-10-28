@@ -19,12 +19,12 @@ const DiagnosticView = {
   timerInterval: null,
   autoSaveTimeout: null,
   latestReport: null,
-  selectedSubject: 'toan',
+  selectedSubject: 'lichsu',
   selectedGrade: 10,
   selectedType: 'grade_diagnostic',
 
   init(subView = 'welcome') {
-    this.selectedSubject = localStorage.getItem('ntmk_diag_subject') || 'toan';
+    this.selectedSubject = localStorage.getItem('ntmk_diag_subject') || 'lichsu';
     this.selectedGrade = Number(localStorage.getItem('ntmk_diag_grade') || 10);
     this.render(subView);
   },
@@ -73,7 +73,7 @@ const DiagnosticView = {
             <div class="diag-form-group">
               <label for="diag-subject-select">Môn học:</label>
               <select id="diag-subject-select" class="diag-select" onchange="DiagnosticView.onSubjectChange(this.value)">
-                <option value="toan" ${this.selectedSubject === 'toan' ? 'selected' : ''}>Toán học</option>
+                <option value="lichsu" selected>Lịch sử 11</option>
                 <option value="vatli" ${this.selectedSubject === 'vatli' ? 'selected' : ''}>Vật lí</option>
                 <option value="hoahoc" ${this.selectedSubject === 'hoahoc' ? 'selected' : ''}>Hóa học</option>
                 <option value="tienganh" ${this.selectedSubject === 'tienganh' ? 'selected' : ''}>Tiếng Anh</option>

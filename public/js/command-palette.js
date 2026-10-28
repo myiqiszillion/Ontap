@@ -108,13 +108,13 @@ const CommandPalette = {
       action: () => app.selectSubject('lichsu10')
     },
     {
-      id: 'sub_toan10',
-      category: 'Môn học (GDPT 2018)',
-      title: 'Toán học 10',
-      icon: 'ruler',
-      desc: 'Mệnh đề, Tập hợp, Bất phương trình và Hệ bất phương trình bậc nhất 2 ẩn',
-      keywords: ['toan 10', 'toan hoc', 'menh de', 'tap hop'],
-      action: () => app.selectSubject('toan10')
+      id: 'sub_lichsu11',
+      title: 'Lịch sử 11',
+      subtitle: 'Khối 11 • Ôn tập Lịch sử GDPT 2018',
+      icon: 'book-open',
+      section: 'Môn học',
+      keywords: ['lich su 11', 'su 11', 'cach mang tu san', 'chu nghia xa hoi', 'lichsu11'],
+      action: () => app.selectSubject('lichsu11')
     },
     {
       id: 'sub_vatli10',
