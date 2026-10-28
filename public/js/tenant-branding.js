@@ -16,7 +16,8 @@
     logoUrl: 'assets/logo.png',
     primaryColor: '#d97706',
     secondaryColor: '#b45309',
-    planTier: 'school_enterprise',
+    planTier: 'school_free',
+    planName: 'Miễn phí 100%',
     settings: {
       watermarkPrint: false,
       customOmrLogo: true
@@ -111,6 +112,11 @@
         if (tenant.logoUrl) {
           img.src = tenant.logoUrl;
         }
+      });
+
+      var plans = document.querySelectorAll('[data-tenant="plan"]');
+      plans.forEach(function (el) {
+        el.textContent = tenant.planName || 'Miễn phí 100%';
       });
 
       // 2. Dynamic document title

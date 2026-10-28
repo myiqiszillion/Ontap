@@ -50,6 +50,10 @@ const DashboardView = {
                 <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 KHỐI ${grade}
               </span>
+              <span class="hero-free-pill">
+                <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                100% Miễn phí
+              </span>
               <span class="hero-status-pill">${metrics.hasActivity ? '<svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Đang ôn luyện tích cực' : '<svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Khởi đầu hành trình'}</span>
             </div>
 
@@ -72,6 +76,12 @@ const DashboardView = {
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
                 <span>Đánh giá năng lực</span>
               </button>
+              ${mistakesCount > 0 ? `
+              <button class="btn btn-glass btn-hero-mistakes" onclick="app.navigateTo('mistakes')" title="Sổ tay câu sai cần khắc phục">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+                <span>Sổ câu sai (${mistakesCount})</span>
+              </button>
+              ` : ''}
               <button class="btn btn-glass" onclick="app.startOnboarding(true)" title="Thay đổi khối lớp hoặc mục tiêu">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 <span>Đổi mục tiêu</span>
@@ -448,6 +458,38 @@ const DashboardView = {
             <span>Gia nhập Discord</span>
             <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
           </a>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+           7. SAAS INSTITUTIONAL FOOTER (THPT NTMK Bình Dương)
+           ═══════════════════════════════════════════════════════════ -->
+        <div class="saas-institutional-footer">
+          <div class="footer-top-row">
+            <div class="footer-brand">
+              <img src="assets/logo.png" alt="Logo NTMK" class="footer-logo-img" width="34" height="34">
+              <div>
+                <div class="footer-brand-title">TRƯỜNG THPT NGUYỄN THỊ MINH KHAI — TỈNH BÌNH DƯƠNG</div>
+                <div class="footer-brand-sub">Nền tảng Ôn tập & Khảo thí Trực tuyến GDPT 2018 theo Quyết định 764/QĐ-BGDĐT</div>
+              </div>
+            </div>
+            <div class="footer-status-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>100% Miễn phí • Dành riêng THPT NTMK</span>
+            </div>
+          </div>
+          <div class="footer-divider"></div>
+          <div class="footer-bottom-row">
+            <p class="footer-copyright">
+              Hệ thống học tập phi lợi nhuận phục vụ riêng học sinh và giáo viên THPT Nguyễn Thị Minh Khai (TP. Dĩ An, Tỉnh Bình Dương). Không thu phí, không thương mại hóa dưới mọi hình thức.
+            </p>
+            <div class="footer-links">
+              <button class="footer-link-btn" onclick="CommandPalette.open()">Tìm kiếm (Ctrl+K)</button>
+              <button class="footer-link-btn" onclick="app.navigateTo('subjects')">4 Môn cốt lõi</button>
+              <button class="footer-link-btn" onclick="app.navigateTo('custom-exam')">Tự tạo đề</button>
+              <button class="footer-link-btn" onclick="app.navigateTo('mistakes')">Sổ câu sai</button>
+              <button class="footer-link-btn" onclick="app.navigateTo('diagnostic')">Chẩn đoán</button>
+            </div>
+          </div>
         </div>
       </div>
     `;
