@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cẩm Nang Ôn Thi 8+ 9+ — THPT NTMK</title>
+    <title>Cẩm Nang Ôn Thi Lịch Sử 11 — THPT Nguyễn Thị Minh Khai</title>
     <style>
         * {
             box-sizing: border-box;
@@ -22,13 +22,37 @@
         }
 
         .container {
-            max-width: 820px;
+            max-width: 860px;
             margin: 0 auto;
+        }
+
+        .top-nav {
+            margin-bottom: 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 14.5px;
+            font-weight: 600;
+            padding: 6px 12px;
+            background: #1e1f20;
+            border-radius: 6px;
+            border: 1px solid #2d2e30;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background: #28292a;
+            color: #7dd3fc;
         }
 
         h1 {
             color: #ffffff;
-            font-size: 1.75rem;
+            font-size: 1.85rem;
             font-weight: 700;
             margin-bottom: 8px;
             line-height: 1.35;
@@ -37,31 +61,34 @@
         .subtitle {
             color: #9aa0a6;
             font-size: 0.95rem;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
             padding-bottom: 16px;
             border-bottom: 1px solid #2d2e30;
         }
 
         h2 {
             color: #ffffff;
-            font-size: 1.35rem;
+            font-size: 1.38rem;
             font-weight: 700;
             margin-top: 36px;
             margin-bottom: 14px;
-            padding-bottom: 6px;
+            padding-bottom: 8px;
             border-bottom: 1px solid #2d2e30;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         h3 {
             color: #ffffff;
-            font-size: 1.08rem;
+            font-size: 1.15rem;
             font-weight: 600;
             margin-top: 22px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         p {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: #e3e3e3;
         }
 
@@ -81,23 +108,35 @@
             display: block;
         }
 
-        /* Khung chat trích dẫn đặc trưng của Antigravity */
-        blockquote, .chat-box {
+        .chat-box {
             background-color: #1e1f20;
             border: 1px solid #2d2e30;
-            border-radius: 8px;
-            padding: 14px 18px;
-            margin: 10px 0 18px 0;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 14px 0 22px 0;
             color: #e3e3e3;
             font-size: 15px;
             line-height: 1.68;
         }
 
-        blockquote p, .chat-box p {
-            margin-bottom: 8px;
+        .chat-box p:last-child {
+            margin-bottom: 0;
         }
 
-        blockquote p:last-child, .chat-box p:last-child {
+        blockquote {
+            background-color: #171819;
+            border-left: 3px solid #38bdf8;
+            border-radius: 0 8px 8px 0;
+            padding: 12px 16px;
+            margin: 10px 0 16px 0;
+            color: #d1d5db;
+        }
+
+        blockquote p {
+            margin-bottom: 6px;
+        }
+
+        blockquote p:last-child {
             margin-bottom: 0;
         }
 
@@ -126,11 +165,11 @@
             margin: 32px 0;
         }
 
-        /* Bảng phong cách tối */
+        /* Bảng dữ liệu */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 18px 0;
+            margin: 16px 0;
             font-size: 14.5px;
         }
 
@@ -151,14 +190,22 @@
             background-color: #171819;
         }
 
-        .badge-correct {
+        .tag-pill {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-right: 6px;
+        }
+        .tag-blue { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+        .tag-green { background: rgba(52, 211, 153, 0.15); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); }
+        .tag-purple { background: rgba(167, 139, 250, 0.15); color: #a78bfa; border: 1px solid rgba(167, 139, 250, 0.3); }
+        .tag-amber { background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+
+        .correct-opt {
             color: #34d399;
             font-weight: 700;
-        }
-
-        .badge-wrong {
-            color: #fb7185;
-            font-weight: 600;
         }
     </style>
 </head>
@@ -166,352 +213,241 @@
 
 <div class="container">
 
-    <h1>CẨM NANG ÔN THI 8+ 9+ NGỮ VĂN & TIẾNG ANH 11</h1>
-    <div class="subtitle">Trường THPT Nguyễn Thị Minh Khai (Bình Dương) — Ôn thi Giữa kì 1 GDPT 2018</div>
-
-    <!-- MỤC LỤC NHANH -->
-    <div class="chat-box" style="border-left: 3px solid #38bdf8;">
-        <p><strong>📌 NỘI DUNG TỔNG HỢP:</strong></p>
-        <p>• <strong>PHẦN I:</strong> 16 Dạng câu hỏi Đọc hiểu Văn bản Nghị luận (4.0đ)</p>
-        <p>• <strong>PHẦN II:</strong> Bộ khung Vạn năng Viết bài Nghị luận văn học 9+ (6.0đ)</p>
-        <p>• <strong>PHẦN III:</strong> Bài văn mẫu mực 9.0+ truyện "Những bông hoa" (V. Kuvinov)</p>
-        <p>• <strong>PHẦN IV:</strong> CẨM NANG CHI TIẾT TIẾNG ANH 11 (4 UNIT & BẪY ĐIỂM CAO)</p>
-        <p>• <strong>PHẦN V:</strong> Chiến lược phân bổ thời gian phòng thi</p>
+    <div class="top-nav">
+        <a href="/" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Quay lại Hệ thống Ôn tập
+        </a>
     </div>
 
-    <!-- PHẦN I: ĐỌC HIỂU -->
-    <h2>PHẦN I: 16 DẠNG CÂU HỎI ĐỌC HIỂU VĂN BẢN NGHỊ LUẬN (4,0 ĐIỂM)</h2>
-    <p><em>(Căn cứ theo tài liệu hướng dẫn của trường. Đề thi ngày mai sẽ chọn ra 4-5 câu từ 16 dạng này)</em></p>
+    <h1>CẨM NANG ÔN TẬP LỊCH SỬ 11 — THPT NTMK</h1>
+    <div class="subtitle">Trường THPT Nguyễn Thị Minh Khai (Bình Dương) — Đề cương Chuẩn Barem Điểm</div>
 
-    <h3>Dạng 1: Nêu luận đề chính / Xác định vấn đề nghị luận của văn bản?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        "Luận đề chính (vấn đề nghị luận) của văn bản là: [Ghi tên vấn đề], bàn về [ý nghĩa / vai trò / thực trạng / tác hại / giải pháp]..."
-    </blockquote>
+    <!-- MỤC LỤC TỔNG HỢP -->
+    <div class="chat-box" style="border-left: 3px solid #38bdf8;">
+        <p><strong>📌 NỘI DUNG ÔN TẬP TRỌNG TÂM:</strong></p>
+        <p>• <a href="#tu-luan-bai-1" style="color: #38bdf8; text-decoration: none;"><strong>PHẦN I:</strong> Tự Luận Bài 1 — Một số vấn đề chung về cách mạng tư sản (Học thuộc ngay)</a></p>
+        <p>• <a href="#tu-luan-bai-2" style="color: #34d399; text-decoration: none;"><strong>PHẦN II:</strong> Tự Luận Bài 2 — Sự xác lập và phát triển của CNTB (Học thuộc ngay)</a></p>
+        <p>• <a href="#tu-luan-bai-3-4" style="color: #a78bfa; text-decoration: none;"><strong>PHẦN III:</strong> Tự Luận Bài 3 & Bài 4 — Chủ nghĩa xã hội từ 1917 đến nay</a></p>
+        <p>• <a href="#trac-nghiem-dung-sai" style="color: #fbbf24; text-decoration: none;"><strong>PHẦN IV:</strong> Trắc Nghiệm Đúng / Sai Đọc Hiểu Đoạn Tư Liệu (Bài 1, 2, 3, 4)</a></p>
+        <p>• <a href="#trac-nghiem-chon-loc" style="color: #94a3b8; text-decoration: none;"><strong>PHẦN V:</strong> Trắc Nghiệm Nhiều Lựa Chọn Cốt Lõi</a></p>
+    </div>
 
-    <h3>Dạng 2: Chỉ ra luận điểm / lí lẽ, bằng chứng trong văn bản (đoạn...)?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Luận điểm:</strong> [Chép câu chủ đề ở đầu hoặc cuối đoạn văn].</p>
-        <p>• <strong>Lí lẽ:</strong> [Chép 1-2 câu tác giả giải thích, phân tích nguyên nhân vì sao].</p>
-        <p>• <strong>Bằng chứng:</strong> [Chép số liệu thực tế, tên nhân vật, sự kiện cụ thể có trong đoạn trích].</p>
-    </blockquote>
+    <!-- ==================== PHẦN I: TỰ LUẬN BÀI 1 ==================== -->
+    <h2 id="tu-luan-bai-1" style="color: #38bdf8;">
+        <span>🔥 PHẦN I: TỰ LUẬN TRỌNG TÂM BÀI 1</span>
+    </h2>
+    <p><em>Chủ đề 1: Cách mạng tư sản và sự phát triển của chủ nghĩa tư bản (Chuẩn nguyên văn đáp án đề thi)</em></p>
 
-    <h3>Dạng 3: Nêu tác dụng của luận điểm, lí lẽ và bằng chứng?</h3>
-    <span class="note-italic">* Cách trả lời (Bắt buộc viết đủ 2 vế):</span>
-    <blockquote>
-        <p>• <strong>Về nghệ thuật lập luận:</strong> Làm cho hệ thống lập luận của văn bản trở nên chặt chẽ, mạch lạc, tăng tính chân thực và nâng cao sức thuyết phục.</p>
-        <p>• <strong>Về nội dung:</strong> Làm sáng tỏ và nhấn mạnh luận điểm [nêu ý chính của đoạn], giúp người đọc nhận thức sâu sắc về [vấn đề], qua đó tác giả gửi gắm thông điệp về nhận thức và hành động.</p>
-    </blockquote>
+    <div class="chat-box" style="border-left: 3px solid #38bdf8;">
+        <p><span class="tag-pill tag-blue">Câu 1 (Thông hiểu)</span> <strong>Dựa vào kiến thức đã học, em hãy diễn giải mục tiêu và nhiệm vụ của Cuộc cách mạng tư sản Anh thế kỉ XVII.</strong></p>
+        <blockquote>
+            <p>• <strong>Mục tiêu:</strong> Xóa bỏ những rào cản kìm hãm sự phát triển của nền kinh tế tư bản chủ nghĩa, mở đường cho chủ nghĩa tư bản phát triển.</p>
+            <p>• <strong>Nhiệm vụ:</strong></p>
+            <p>&nbsp;&nbsp;+ <em>Nhiệm vụ dân tộc:</em> Xóa bỏ tình trạng phong kiến cát cứ, hình thành thị trường dân tộc thống nhất.</p>
+            <p>&nbsp;&nbsp;+ <em>Nhiệm vụ dân chủ:</em> Xóa bỏ chế độ phong kiến chuyên chế, xác lập nền dân chủ tư sản.</p>
+        </blockquote>
 
-    <h3>Dạng 4: Phân tích / Lí giải mối quan hệ giữa các luận điểm, lí lẽ, bằng chứng với luận đề?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Mối quan hệ:</strong> Giữa các luận điểm, lí lẽ, bằng chứng và luận đề có <strong>mối quan hệ gắn bó hữu cơ, chặt chẽ, lô gic và khoa học</strong>.</p>
-        <p>• <strong>Biểu hiện:</strong> Luận điểm phân tách và cụ thể hóa các khía cạnh của luận đề; Lí lẽ làm sáng tỏ luận điểm; Bằng chứng minh họa thực tế xác thực tính đúng đắn cho lí lẽ.</p>
-        <p>• <strong>Tác dụng:</strong> Làm tăng sức thuyết phục cho nghệ thuật lập luận của văn bản.</p>
-    </blockquote>
+        <p style="margin-top: 18px;"><span class="tag-pill tag-blue">Câu 2 (Thông hiểu)</span> <strong>Mục đích của các cuộc đấu tranh của giai cấp tư sản trên lĩnh vực tư tưởng là gì? Em hãy kể tên một số cuộc đấu tranh của giai cấp tư sản trên lĩnh vực tư tưởng thời cận đại mà em biết.</strong></p>
+        <blockquote>
+            <p>• <strong>Mục đích:</strong> Để tập hợp quần chúng nhân dân, giai cấp tư sản cần có hệ tư tưởng để chống lại hệ tư tưởng phong kiến bảo thủ &rarr; Các cuộc đấu tranh của giai cấp tư sản trên lĩnh vực tư tưởng.</p>
+            <p>• <strong>Một số cuộc đấu tranh thời cận đại:</strong> Phong trào văn hóa Phục hưng, trào lưu Triết học Ánh sáng, phong trào cải cách tôn giáo thế kỉ XVI,...</p>
+        </blockquote>
 
-    <h3>Dạng 5 & 6: Ý nghĩa Nhan đề & Mối quan hệ giữa Nhan đề với Nội dung?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Mối quan hệ:</strong> Nhan đề và nội dung có <strong>mối quan hệ chặt chẽ, gắn bó biện chứng và tương hỗ sâu sắc</strong>.</p>
-        <p>• <strong>Biểu hiện:</strong> Nhan đề khái quát trọn vẹn chủ đề, tư tưởng cốt lõi và định hướng chân trời tiếp nhận cho người đọc; phần nội dung triển khai, minh chứng bằng hệ thống lí lẽ và dẫn chứng thực tiễn để làm sáng tỏ ý nghĩa mà nhan đề gợi mở.</p>
-    </blockquote>
+        <p style="margin-top: 18px;"><span class="tag-pill tag-blue">Câu 3 (Vận dụng)</span> <strong>Vì sao cách mạng tư sản Pháp cuối thế kỉ XVIII được xem là cuộc cách mạng vĩ đại?</strong></p>
+        <blockquote>
+            <p>• Lật đổ và xóa bỏ mọi tàn dư của chế độ phong kiến.</p>
+            <p>• Nông dân được giải phóng, vấn đề ruộng đất được giải quyết.</p>
+            <p>• Mở đường cho chủ nghĩa tư bản phát triển.</p>
+            <p>• Thiết lập nền dân chủ tư sản.</p>
+            <p>• Thúc đẩy sự phát triển của phong trào giải phóng dân tộc nhiều nơi trên thế giới.</p>
+        </blockquote>
 
-    <h3>Dạng 7: Chỉ ra Thao tác lập luận (chính/chủ yếu) & Nêu tác dụng?</h3>
-    <span class="note-italic">* Căn cứ nhận diện 6 thao tác: Giải thích (có từ "là"), Chứng minh (có số liệu, dẫn chứng), Phân tích (chia nhỏ vấn đề), Bình luận (khen/chê, đúng/sai), So sánh (đối chiếu 2 vế), Bác bỏ (phủ nhận quan niệm sai).*</span>
-    <blockquote>
-        <p>• Đoạn trích sử dụng thao tác lập luận chính là: [Tên thao tác].</p>
-        <p>• <strong>Tác dụng:</strong> Làm cho lập luận của văn bản trở nên khúc chiết, chặt chẽ, giàu sức thuyết phục; làm nổi bật nội dung [nêu ý đoạn trích], qua đó thể hiện rõ thái độ của tác giả.</p>
-    </blockquote>
+        <p style="margin-top: 18px;"><span class="tag-pill tag-blue">Câu 4 (Vận dụng)</span> <strong>Cách mạng tư sản Anh thế kỉ XVII và cách mạng tư sản Pháp thế kỉ XVIII có những điểm tương đồng như thế nào về lãnh đạo cách mạng, động lực cách mạng và mục tiêu cách mạng?</strong></p>
+        <blockquote>
+            <p>• <strong>Lãnh đạo cách mạng:</strong> Giai cấp tư sản.</p>
+            <p>• <strong>Động lực cách mạng:</strong> Giai cấp tư sản và quần chúng nhân dân.</p>
+            <p>• <strong>Mục tiêu cách mạng:</strong> Xóa bỏ những rào cản kìm hãm sự phát triển của nền kinh tế tư bản chủ nghĩa, mở đường cho chủ nghĩa tư bản phát triển.</p>
+        </blockquote>
+    </div>
 
-    <h3>Dạng 8: Phân tích tác dụng của việc trích dẫn ý kiến / dẫn chứng Danh nhân?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Chỉ ra:</strong> Tác giả trích dẫn ý kiến của [Tên danh nhân] – nhân vật có uy tín lớn trong lĩnh vực [Lĩnh vực] &rarr; Đây là dẫn chứng chính xác, tiêu biểu.</p>
-        <p>• <strong>Tác dụng:</strong> Nhằm tạo <strong>điểm tựa chân lý khách quan</strong>, làm nổi bật tầm quan trọng của vấn đề, khiến hệ thống lập luận của tác giả trở nên đanh thép và giàu sức thuyết phục.</p>
-    </blockquote>
+    <!-- ==================== PHẦN II: TỰ LUẬN BÀI 2 ==================== -->
+    <h2 id="tu-luan-bai-2" style="color: #34d399;">
+        <span>🔥 PHẦN II: TỰ LUẬN TRỌNG TÂM BÀI 2</span>
+    </h2>
+    <p><em>Chủ đề 1: Sự xác lập và phát triển của chủ nghĩa tư bản (Chuẩn nguyên văn đáp án đề thi)</em></p>
 
-    <h3>Dạng 9 & 10: Chỉ ra Câu khẳng định / Câu phủ định & Nêu tác dụng?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Về nghệ thuật:</strong> Giúp đoạn văn giàu cảm xúc, tạo giọng điệu đanh thép, dứt khoát, tăng tính truyền cảm.</p>
-        <p>• <strong>Về nội dung:</strong> Nhấn mạnh thái độ dứt khoát, kiên quyết khẳng định (hoặc bác bỏ) của tác giả đối với [vấn đề].</p>
-    </blockquote>
+    <div class="chat-box" style="border-left: 3px solid #34d399;">
+        <p><span class="tag-pill tag-green">Câu 1 (Thông hiểu)</span> <strong>Em hãy lý giải nguyên nhân dẫn đến quá trình xâm lược thuộc địa và hệ quả của nó.</strong></p>
+        <blockquote>
+            <p>• <strong>Nguyên nhân:</strong> Sự phát triển nhanh chóng của chủ nghĩa tư bản kéo theo nhu cầu ngày càng cao về nguyên liệu và nhân công &rarr; Xâm lược thuộc địa.</p>
+            <p>• <strong>Hệ quả của quá trình xâm lược thuộc địa:</strong> Cuối thế kỉ XIX đến đầu thế kỉ XX, các nước tư bản chủ nghĩa chuyển sang giai đoạn đế quốc chủ nghĩa.</p>
+        </blockquote>
 
-    <h3>Dạng 11: Phân tích tác dụng của Biện pháp tu từ (Điệp, Ẩn dụ, So sánh...)?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Chỉ ra:</strong> Tên biện pháp tu từ + từ ngữ thể hiện.</p>
-        <p>• <strong>Về nghệ thuật:</strong> Biện pháp Điệp tạo nhịp điệu dồn dập/tha thiết, tăng tính liên kết; Ẩn dụ/So sánh làm câu văn giàu hình ảnh sinh động, gợi cảm; giúp lập luận chặt chẽ, hấp dẫn.</p>
-        <p>• <strong>Về nội dung:</strong> Nhấn mạnh nội dung [ghi rõ ý của đoạn], bộc lộ thái độ và cảm xúc của tác giả.</p>
-    </blockquote>
+        <p style="margin-top: 18px;"><span class="tag-pill tag-green">Câu 2 (Thông hiểu)</span> <strong>Em hãy cho biết những biểu hiện chứng minh cho tiềm năng phát triển to lớn của chủ nghĩa tư bản hiện đại.</strong></p>
+        <blockquote>
+            <p>• Được biểu hiện cụ thể trên các lĩnh vực như: Kinh tế, khoa học – công nghệ, kinh nghiệm quản lí, khả năng tự điều chỉnh để tồn tại và phát triển,...</p>
+            <p>• Có ưu thế trong sử dụng những thành tựu của cuộc Cách mạng công nghiệp lần thứ tư để phát triển kinh tế.</p>
+            <p>• Các nước tư bản phát triển trở thành trung tâm kinh tế, tài chính, khoa học – công nghệ của thế giới, có quy mô nền kinh tế và thu nhập bình quân đầu người thuộc hàng cao nhất thế giới.</p>
+        </blockquote>
 
-    <h3>Dạng 12: Xác định nội dung bao quát / Tư tưởng chủ đạo của văn bản?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        "Nội dung bao quát của văn bản là: [Nêu tóm tắt đề tài]. Qua đó thể hiện tư tưởng chủ đạo: [Khẳng định / Ca ngợi / Phê phán] đối với [vấn đề], đồng thời thức tỉnh ý thức trách nhiệm của mỗi cá nhân."
-    </blockquote>
+        <p style="margin-top: 18px;"><span class="tag-pill tag-green">Câu 3 (Vận dụng)</span> <strong>Em hãy kể tên một số cuộc xâm lược thuộc địa của các nước tư bản chủ nghĩa ở châu Á, châu Phi và khu vực Mỹ La-tinh.</strong></p>
+        <blockquote>
+            <p>• Anh xâm lược và cai trị Ấn Độ.</p>
+            <p>• Pháp xâm lược Việt Nam, Lào và Campuchia, lập nên Liên bang Đông Dương.</p>
+            <p>• Hà Lan xâm lược In-đô-nê-xi-a.</p>
+            <p>• Nhật Bản xâm lược Triều Tiên và Đài Loan.</p>
+        </blockquote>
 
-    <h3>Dạng 13: Thể hiện quan điểm Đồng tình / Không đồng tình (Bắt buộc đủ 3 ý)?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Khẳng định:</strong> Em hoàn toàn đồng tình với quan điểm của tác giả.</p>
-        <p>• <strong>Lí giải 3 ý:</strong></p>
-        <p>&nbsp;&nbsp;1. <em>Về nhận thức:</em> Quan điểm này hoàn toàn đúng đắn với thực tế đời sống, giúp nhận thức sâu sắc bản chất của [vấn đề].</p>
-        <p>&nbsp;&nbsp;2. <em>Về thái độ:</em> Bồi đắp lối sống tích cực, rèn luyện bản lĩnh, lòng dũng cảm và tinh thần tự chủ.</p>
-        <p>&nbsp;&nbsp;3. <em>Về hành động:</em> Nhắc nhở bản thân (và thế hệ trẻ) cần phải nỗ lực học tập, hành động cụ thể, không ỷ lại và dám chịu trách nhiệm với tương lai.</p>
-    </blockquote>
+        <p style="margin-top: 18px;"><span class="tag-pill tag-green">Câu 4 (Vận dụng)</span> <strong>Em hãy cho biết một số thách thức mà các nước tư bản chủ nghĩa hiện đại ngày nay đang phải đối mặt trong quá trình phát triển.</strong></p>
+        <blockquote>
+            <p>• Các cuộc khủng hoảng kinh tế, tài chính mang tính toàn cầu.</p>
+            <p>• Những vấn đề chính trị, xã hội nan giải: Phân biệt chủng tộc, xả súng ở trường học,...</p>
+            <p>• Mâu thuẫn xã hội, sự chênh lệch giàu nghèo làm sâu sắc thêm tình trạng bất bình đẳng trong xã hội.</p>
+        </blockquote>
+    </div>
 
-    <h3>Dạng 14: Đánh giá / Nhận xét quan điểm, thái độ, tình cảm của tác giả?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        "Quan điểm và thái độ của tác giả rất <strong>thẳng thắn, đúng đắn, tiến bộ và tích cực</strong>; tình cảm của tác giả <strong>giản dị, chân thành và sâu sắc</strong> đối với vấn đề được bàn luận."
-    </blockquote>
+    <!-- ==================== PHẦN III: TỰ LUẬN BÀI 3 & 4 ==================== -->
+    <h2 id="tu-luan-bai-3-4" style="color: #a78bfa;">
+        <span>📖 PHẦN III: TỰ LUẬN THAM KHẢO BÀI 3 & BÀI 4</span>
+    </h2>
+    <p><em>Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay</em></p>
 
-    <h3>Dạng 15: Từ nội dung văn bản, đề xuất ít nhất 3 Giải pháp?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Giải pháp 1 (Cá nhân):</strong> Tự nâng cao nhận thức, trau dồi tri thức và rèn luyện bản lĩnh dám nghĩ dám làm.</p>
-        <p>• <strong>Giải pháp 2 (Nhà trường/Gia đình):</strong> Tạo môi trường giáo dục cởi mở, định hướng đúng đắn và động viên người trẻ phát triển.</p>
-        <p>• <strong>Giải pháp 3 (Xã hội):</strong> Lan tỏa lối sống đẹp, tạo cơ hội cho những ý tưởng sáng tạo được phát huy.</p>
-    </blockquote>
-
-    <h3>Dạng 16: Yếu tố bản thân thích nhất / tâm đắc nhất & Lệnh hỏi liên hệ?</h3>
-    <span class="note-italic">* Cách trả lời:</span>
-    <blockquote>
-        <p>• <strong>Chỉ ra:</strong> Yếu tố bản thân tâm đắc nhất là: [Chép lại 1 câu văn / ý tưởng sâu sắc trong bài].</p>
-        <p>• <strong>Lí giải 3 ý:</strong> (1) Vì câu nói mang tính thực tiễn sâu sắc; (2) Giúp thức tỉnh nhận thức của bản thân; (3) Tạo động lực thôi thúc em rèn luyện và hành động tích cực trong tương lai.</p>
-    </blockquote>
-
-    <hr>
-
-    <!-- PHẦN II: KHUNG LÀM VĂN -->
-    <h2>PHẦN II: BỘ KHUNG VẠN NĂNG VIẾT BÀI NGHỊ LUẬN VĂN HỌC 9+ (6,0 ĐIỂM)</h2>
-    <p><em>(Áp dụng cho BẤT KỲ TRUYỆN NGẮN NÀO trong đề thi. Chỉ cần điền thông tin vào các dấu [...])</em></p>
-
-    <h3>1. Mở bài chuẩn 9+ (Dẫn dắt nhận định Xantưkhốp Sêđrin)</h3>
-    <blockquote>
-        "Nhà văn hiện thực lỗi lạc người Nga Xantưkhốp Sêđrin từng khẳng định một chân lý nghệ thuật bất hủ: <strong>'Nghệ thuật nằm ngoài quy luật của sự băng hoại. Chỉ mình nó không thừa nhận cái chết'</strong>. Điều gì đã làm nên sức sống bất tử của trang văn giữa dòng chảy nghiệt ngã của thời gian? Đó chính là sự thăng hoa giữa tài năng điêu luyện và tấm lòng nhân đạo cao cả của người cầm bút. Đến với truyện ngắn <strong>[Tên truyện]</strong> của nhà văn <strong>[Tên tác giả]</strong>, người đọc không chỉ xúc động trước <strong>[chủ đề: tình mẫu tử / lòng nhân ái / số phận con người]</strong> mà còn thực sự bị chinh phục bởi <strong>những nét đặc sắc, điêu luyện trong cách kể chuyện và nghệ thuật trần thuật độc đáo của tác giả</strong>."
-    </blockquote>
-
-    <h3>2. Thân bài chuẩn 9+ (6 Đoạn luận điểm nghệ thuật trần thuật)</h3>
-
-    <p><strong>Đoạn 1: Giới thiệu chung tác giả, tác phẩm</strong></p>
-    <blockquote>
-        "Đọc phần cước chú của tác phẩm, ta nhận thấy <strong>[Tên tác giả]</strong> là một cây bút tinh tế, luôn có cái nhìn sâu sắc về cuộc sống đời thường. Truyện ngắn <strong>[Tên truyện]</strong> tuy dung dị nhưng chứa đựng sức nặng tư tưởng to lớn về con người và cuộc đời."
-    </blockquote>
-
-    <p><strong>Đoạn 2: Phân tích Cốt truyện (Goethe)</strong></p>
-    <blockquote>
-        "Đại thi hào Goethe từng khẳng định: <strong>'Nghệ thuật truyện ngắn đồng nghĩa với nghệ thuật sáng tạo cốt truyện'</strong>. Trong tác phẩm, tác giả đã chứng minh tài năng điêu luyện khi xây dựng một cốt truyện cô đọng, tự nhiên: <strong>[Tóm tắt 3 dòng: Câu chuyện xoay quanh nhân vật... gặp biến cố... và kết thúc bằng sự việc...]</strong>. Cốt truyện không quá rườm rà mà được dồn nén cảm xúc chặt chẽ, tạo nên một kết thúc đầy bất ngờ và giàu dư ba trong tâm trí bạn đọc."
-    </blockquote>
-
-    <p><strong>Đoạn 3: Phân tích Tình huống truyện & Chi tiết đắt giá (Nguyễn Minh Châu)</strong></p>
-    <blockquote>
-        "Nhà văn Nguyễn Minh Châu từng chiêm nghiệm: <strong>'Tình huống là khoảnh khắc chứa đựng cả một đời người, thậm chí cả một đời nhân loại'</strong>. Tác phẩm đã tạo dựng một tình huống truyện đắt giá, đó là khi: <strong>[Kể khoảnh khắc bước ngoặt: sự thật lộ ra / nhân vật thay đổi nhận thức]</strong>. Đây là một <strong>tình huống nhận thức và tâm trạng</strong>, thúc đẩy câu chuyện lên đến đỉnh điểm và thức tỉnh lương tri con người. Đặc biệt, chi tiết nghệ thuật <strong>[Kể tên 1 chi tiết: bó hoa / giọt nước mắt / nụ cười...]</strong> đã trở thành điểm nhấn biểu tượng sâu sắc. Đúng như quy luật nghệ thuật: <em>'Một chi tiết nhỏ nhưng có thể gợi mở cả một tầng ý nghĩa sâu sắc về nhân sinh, xã hội'</em>."
-    </blockquote>
-
-    <p><strong>Đoạn 4: Đánh giá Kết cấu truyện ngắn và Cách tổ chức trần thuật (Trang 12 của cô giáo)</strong></p>
-    <span class="note-italic">* Căn cứ 6 loại kết cấu: Vòng tròn (Chí Phèo), Theo trục thời gian (Chữ người tử tù), Tâm lý (Đời thừa), Đồng hiện (Bức tranh), Trùng phức/truyện lồng truyện (Mảnh trăng cuối rừng), Kết cấu mở (Vợ nhặt).*</span>
-    <blockquote>
-        "Bên cạnh cốt truyện độc đáo, nét đặc sắc trong nghệ thuật trần thuật của tác giả còn thể hiện ở <strong>cách tổ chức kết cấu truyện vô cùng linh hoạt và sáng tạo</strong>. Tác phẩm được tổ chức theo <strong>[chọn 1 trong 6 loại: kết cấu tâm lý / kết cấu theo trục thời gian / kết cấu mở / kết cấu vòng tròn]</strong>. Mạch truyện không hề đơn điệu phẳng lặng mà có sự đan cài khéo léo giữa thời gian thực tế và thời gian tâm lý. Cách tổ chức trần thuật này đã tạo nên những khoảng lặng đầy ám ảnh, giúp tác giả nén chặt dung lượng câu chữ nhưng lại mở rộng tối đa biên độ cảm xúc, để lại trong tâm trí bạn đọc những dư ba triết lý sâu xa."
-    </blockquote>
-
-    <p><strong>Đoạn 5: Đánh giá Ngôi kể và Điểm nhìn trần thuật</strong></p>
-    <span class="note-italic">(Lựa chọn 1 trong 2 trường hợp tùy theo đề bài):</span>
-
-    <p>• <strong>Nếu truyện xưng "TÔI" (Ngôi thứ nhất):</strong></p>
-    <blockquote>
-        "Nét đặc sắc bậc thầy trong cách kể của tác giả là việc lựa chọn <strong>ngôi kể thứ nhất (nhân vật 'tôi')</strong>. Ngôi kể này tạo cảm giác câu chuyện có thật 100%, gần gũi và giàu sức truyền cảm, như một lời tự thú, tự vấn lương tâm chân thành. Điểm nhìn trần thuật chuyển dịch linh hoạt từ <strong>điểm nhìn bên ngoài</strong> (miêu tả khách quan ngoại hình, hành động) vào <strong>điểm nhìn bên trong</strong> (khám phá chiều sâu tâm tư, cảm xúc), giúp câu chuyện trở thành một cuộc đối thoại nội tâm day dứt."
-    </blockquote>
-
-    <p>• <strong>Nếu truyện gọi tên nhân vật, người kể giấu mình (Ngôi thứ ba):</strong></p>
-    <blockquote>
-        "Tác giả đã lựa chọn <strong>ngôi kể thứ ba với điểm nhìn toàn tri khách quan</strong>. Người kể chuyện giấu mình nhưng có mặt ở khắp nơi, thấu suốt mọi biến cố và ngõ ngách tâm lý của nhân vật. Điểm nhìn linh hoạt giúp bức tranh đời sống hiện lên chân thực, rộng mở và đa chiều."
-    </blockquote>
-
-    <p><strong>Đoạn 6: Ngôn ngữ và Giọng điệu trần thuật (Vôrônin)</strong></p>
-    <blockquote>
-        "Nhà văn Nga Vôrônin từng đúc kết: <strong>'Ngôn ngữ truyện ngắn phải cô đọng, vang lên theo cách của mình và tràn đầy nhạc điệu'</strong>. Ngôn ngữ trong tác phẩm vô cùng mộc mạc, hàm súc nhưng giàu sức gợi hình và biểu cảm. Tác giả kết hợp nhuần nhuyễn giữa lời văn trần thuật của người dẫn chuyện với lời đối thoại tự nhiên của nhân vật. Giọng điệu toàn bài mang âm hưởng <strong>[chọn: trầm buồn, sâu lắng / tha thiết, ấm áp / châm biếm, mỉa mai]</strong>, đọng lại trong lòng độc giả một nỗi niềm suy tư lắng đọng."
-    </blockquote>
-
-    <p><strong>Đoạn 7: Nghệ thuật xây dựng nhân vật và Đánh giá chung (Gorki & Lê-ô-nốp)</strong></p>
-    <blockquote>
-        "Đúng như M. Gorki từng căn dặn: <strong>'Các nhà văn phải xây dựng nhân vật của mình đúng như con người sống và phải tìm thấy'</strong>. Nhân vật trong truyện không hề bị lý tưởng hóa giả tạo, mà mang hơi thở đời thường sống động. Đánh giá về giá trị tác phẩm nghệ thuật, Lê-ô-nít Lê-ô-nốp từng nhận định: <strong>'Mỗi tác phẩm phải là một phát minh về hình thức và một khám phá về nội dung'</strong>. Bằng cách kể chuyện độc đáo và tài hoa, tác giả đã biến câu chuyện đời thường thành một thông điệp nhân văn sâu sắc về tình người."
-    </blockquote>
-
-    <h3>3. Kết bài chuẩn 9+ (Khẳng định cá tính sáng tạo & Bài học bồi đắp)</h3>
-    <blockquote>
-        "Bất cứ nhà văn nào muốn khẳng định sự hiện diện của mình trong dòng chảy văn học đều phải tạo cho mình một phong cách riêng với cá tính sáng tạo độc đáo. Và nhà văn <strong>[Tên tác giả]</strong> với truyện ngắn <strong>[Tên truyện]</strong> không chỉ khiến người đọc rung động trước <strong>[chủ đề: tình mẫu tử / sự bao dung / vẻ đẹp tình người]</strong> mà còn qua đó khẳng định tài năng viết truyện ngắn xuất sắc của mình. Đó cũng chính là lí do tác phẩm sống mãi trong lòng bao thế hệ độc giả yêu văn chương. Truyện bồi đắp cho chúng ta: <strong>[bài học: tình yêu thương gia đình, sự thấu cảm và niềm tin vào những giá trị tốt đẹp của con người]</strong>."
-    </blockquote>
-
-    <hr>
-
-    <!-- PHẦN III: BÀI MẪU NHỮNG BÔNG HOA -->
-    <h2>PHẦN III: BÀI VĂN MẪU HOÀN CHỈNH 9.0+ — "NHỮNG BÔNG HOA" (V. KUVINOV)</h2>
-    <span class="note-italic">* Đề bài: Phân tích nét đặc sắc trong cách kể chuyện của nhà văn V. Kuvinov qua truyện ngắn "Những bông hoa" (Đề 2 thực hành trong tài liệu)</span>
-
-    <blockquote style="margin-top: 14px;">
-        <p>Nhà văn hiện thực lỗi lạc người Nga Xantưkhốp Sêđrin từng đúc kết một quy luật nghệ thuật bất hủ: <em>'Nghệ thuật nằm ngoài quy luật của sự băng hoại. Chỉ mình nó không thừa nhận cái chết'</em>. Vậy điều gì đã làm nên sự bất tử của trang văn giữa dòng chảy nghiệt ngã của thời gian? Ở tài năng điêu luyện hay ở tấm lòng nhân đạo cao cả của người cầm bút? Văn chương muôn đời là thánh đường thiêng liêng mà người nghệ sĩ, bằng tất cả tấm chân tình tha thiết nhất, gửi gắm những tư tưởng và thông điệp quý báu qua từng trang sách đến độc giả. Ta không thể không nhắc đến truyện ngắn "Những bông hoa" của nhà văn Nga V. Kuvinov. Tác phẩm không chỉ khiến người đọc thổn thức, nghẹn ngào trước một câu chuyện cảm động về tình mẫu tử thiêng liêng, mà còn thực sự bị chinh phục bởi những nét đặc sắc, điêu luyện trong cách kể chuyện và nghệ thuật trần thuật độc đáo của tác giả.</p>
-
-        <p style="margin-top: 12px;">V. Kuvinov là cây bút truyện ngắn tinh tế của văn học Nga, luôn hướng ngòi bút về những số phận bình dị đời thường nhưng ngời sáng tình người. Đại thi hào Goethe từng khẳng định: <em>'Nghệ thuật truyện ngắn đồng nghĩa với nghệ thuật sáng tạo cốt truyện'</em>. Trong "Những bông hoa", Kuvinov đã xây dựng một cốt truyện cô đọng, tự nhiên: Cuộc gặp gỡ tình cờ giữa nhân vật "tôi" – một người lớn đang mệt mỏi sau ngày dài lao động – và một cậu bé khoảng 12 tuổi, đen nhẻm, lam lũ đến bấm chuông bán những bó hoa đã héo rũ. Từ sự khó chịu ban đầu của người lớn, mạch truyện được đẩy lên cao trào và kết thúc đầy bất ngờ khi sự thật được hé lộ: cậu bé chắt chiu những bông hoa tàn để mang ra nghĩa trang đặt lên nấm mồ của người mẹ quá cố. Cốt truyện dồn nén toàn bộ sức nặng cảm xúc vào phần kết, tạo nên một nút thắt bất ngờ lay động tâm can người đọc.</p>
-
-        <p style="margin-top: 12px;">Nhà văn Nguyễn Minh Châu từng chiêm nghiệm: <em>'Tình huống là khoảnh khắc chứa đựng cả một đời người, thậm chí cả một đời nhân loại'</em>. Tình huống trong "Những bông hoa" là một tình huống nhận thức và thức tỉnh tâm trạng sâu sắc. Tác giả đặt hai nhân vật vào hai hoàn cảnh đối lập: người lớn đủ đầy tiện nghi nhưng tâm hồn chai sạn, đối diện với em bé nghèo mồ côi mẹ nhưng ngời sáng lòng hiếu kính. Chi tiết "những bó hoa đã héo rũ" trên đôi bàn tay cháy đen là một sáng tạo nghệ thuật mang giá trị biểu tượng cao. Hoa có thể tàn về mặt vật chất nhưng lại nở hoa bất tử trong tâm hồn đứa trẻ. Tình huống hé lộ sự thật đã trở thành "cú đấm tinh thần" thức tỉnh nhân vật "tôi" khỏi sự vô cảm, ích kỷ.</p>
-
-        <p style="margin-top: 12px;">Về kết cấu truyện ngắn và cách tổ chức trần thuật, V. Kuvinov đã khéo léo sử dụng <strong>kết cấu tâm lý kết hợp với kết cấu mở</strong>. Mạch thời gian thực tế chỉ diễn ra trong vài phút ngắn ngủi bên ngưỡng cửa, nhưng thời gian tâm lý lại kéo dài vô tận qua dòng độc thoại tự vấn lương tâm của nhân vật "tôi". Kết thúc truyện không hề khép lại một cách bằng phẳng, mà mở ra một khoảng lặng đầy day dứt: cậu bé ôm hoa ra nghĩa trang đặt lên mộ mẹ, để lại người lớn đứng lặng trước bài học nhân sinh về lòng hiếu thảo và sự thức tỉnh lương tri. Kết cấu mở ấy đã biến câu chuyện thành một hồi chuông cảnh tỉnh lay động sâu xa tâm thức người đọc.</p>
-
-        <p style="margin-top: 12px;">Nét đặc sắc xuất sắc nhất trong cách kể của Kuvinov chính là việc lựa chọn ngôi kể thứ nhất (nhân vật "tôi") kết hợp với sự luân chuyển điểm nhìn từ bên ngoài vào bên trong. Người kể chuyện xưng "tôi" tạo cảm giác câu chuyện có thật 100%, gần gũi, biến thiên truyện thành một lời tự thú, tự vấn lương tâm chân thành của người lớn trước một đứa trẻ. Điểm nhìn ban đầu từ bên ngoài (quan sát ngoại hình lem luốc của cậu bé) chuyển hóa tinh tế thành điểm nhìn bên trong (diễn biến tâm lý nhân vật "tôi": từ mệt mỏi &rarr; khó chịu &rarr; ngỡ ngàng &rarr; xấu hổ và nghẹn ngào).</p>
-
-        <p style="margin-top: 12px;">Theo Vôrônin: <em>'Ngôn ngữ truyện ngắn phải cô đọng, vang lên theo cách của mình và tràn đầy nhạc điệu'</em>. Ngôn ngữ trong truyện mộc mạc, kiệm lời, kết hợp nhuần nhuyễn giữa lời văn trần thuật với những câu đối thoại ngập ngừng của cậu bé. Giọng điệu toàn bài mang âm hưởng trầm buồn, thiết tha và trang trọng. Đúng như M. Gorki từng khuyên: <em>'Các nhà văn phải xây dựng nhân vật của mình đúng như con người sống và phải tìm thấy'</em>, hình tượng cậu bé bán hoa hiện lên chân thực, lam lũ nhưng ngời sáng nhân cách. Nhận định về tác phẩm nghệ thuật, Lê-ô-nít Lê-ô-nốp cho rằng: <em>'Mỗi tác phẩm phải là một phát minh về hình thức và một khám phá về nội dung'</em>. Kuvinov đã cống hiến cho bạn đọc một bài học đắt giá về lòng trắc ẩn và sự thấu cảm giữa cuộc đời.</p>
-
-        <p style="margin-top: 12px;">Bất cứ nhà văn nào muốn khẳng định sự hiện diện, tồn tại của mình trong đời sống văn học phải tạo cho mình một phong cách riêng với cá tính sáng tạo riêng. Và nhà văn V. Kuvinov với truyện ngắn "Những bông hoa" không chỉ khiến người đọc rơi lệ trước tấm lòng hiếu thảo của một đứa trẻ nghèo mồ côi, mà còn qua đó khẳng định tài năng viết truyện ngắn độc đáo của mình. Đó cũng chính là lí do tác phẩm sống mãi trong lòng bao thế hệ người đọc yêu văn chương. Truyện bồi đắp cho chúng ta: <strong>tình yêu thương cha mẹ vô bờ, sự thấu cảm bao dung, và nhắc nhở chúng ta đừng bao giờ vội vàng đánh giá một con người qua vẻ bề ngoài nghèo khổ</strong>.</p>
-    </blockquote>
-
-    <hr>
-
-    <!-- PHẦN IV: CHI TIẾT TOÀN DIỆN TIẾNG ANH 11 -->
-    <h2>PHẦN IV: CẨM NANG CHI TIẾT TOÀN DIỆN TIẾNG ANH 11 (GLOBAL SUCCESS)</h2>
-    <p><em>(Ngân hàng đề thi chuẩn hóa THPT Nguyễn Thị Minh Khai Bình Dương — Quét sâu 4 Unit Giữa kì 1)</em></p>
-
-    <!-- UNIT 1 -->
-    <h3>1. UNIT 1: A LONG AND HEALTHY LIFE (Sức khỏe & Tuổi thọ)</h3>
-    
-    <p><strong>A. Ngữ pháp cốt lõi: Quá khứ đơn (Past Simple) vs Hiện tại hoàn thành (Present Perfect)</strong></p>
-    <blockquote>
-        <p>• <strong>Quá khứ đơn ($V_2/ed$):</strong> Dùng cho hành động ĐÃ CHẤM DỨT trong quá khứ, có thời gian xác định.</p>
-        <p>&nbsp;&nbsp;<em>Dấu hiệu:</em> <code>yesterday, last week/year, in 2020, 2 days ago, when I was young</code></p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> I <code>went</code> to the gym three times last week.</p>
-        <p>• <strong>Hiện tại hoàn thành ($have/has + V_3/ed$):</strong> Hành động bắt đầu ở quá khứ KÉO DÀI ĐẾN HIỆN TẠI hoặc vừa mới xảy ra.</p>
-        <p>&nbsp;&nbsp;<em>Dấu hiệu:</em> <code>since, for, already, yet, ever, never, recently, so far, over the past years</code></p>
-        <p>&nbsp;&nbsp;<em>Công thức bẫy kinh điển:</em> <code>S + have/has + V3/ed + SINCE + S + V2/ed</code></p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> She <code>has been</code> a vegetarian <strong>since</strong> she read about healthy lifestyles.</p>
-    </blockquote>
-
-    <p><strong>B. Collocations & Từ vựng ăn điểm Unit 1:</strong></p>
-    <blockquote>
-        <p>• <code>balanced diet</code>: Chế độ ăn uống cân bằng, khoa học.</p>
-        <p>• <code>cut down on = reduce</code>: Cắt giảm (đồ ngọt, chất béo, nước ngọt có gas).</p>
-        <p>• <code>life expectancy</code>: Tuổi thọ kỳ vọng của con người.</p>
-        <p>• <code>immune system</code>: Hệ miễn dịch.</p>
-        <p>• <code>have a medical check-up</code>: Đi khám sức khỏe định kỳ.</p>
-        <p>• <code>flush out harmful toxins</code>: Đào thải độc tố có hại ra khỏi cơ thể.</p>
-        <p>• <code>antibiotics</code>: Thuốc kháng sinh (chỉ diệt được vi khuẩn <em>bacteria</em>, không diệt được <em>virus</em>).</p>
-    </blockquote>
-
-    <!-- UNIT 2 -->
-    <h3>2. UNIT 2: THE GENERATION GAP (Khoảng cách thế hệ & Động từ khuyết thiếu)</h3>
-    
-    <p><strong>A. Ngữ pháp cốt lõi: Phân biệt 4 nhóm Động từ khuyết thiếu (Modal Verbs)</strong></p>
-    <span class="note-italic">* Đây là phần đề thi gài bẫy nhiều nhất. Phải dịch đúng tính chất câu: *</span>
-    <blockquote>
-        <p>• <strong>1. MUSTN'T: CẤM TUYỆT ĐỐI (Không được phép)</strong></p>
-        <p>&nbsp;&nbsp;Dùng khi vi phạm luật pháp, bị phạt hoặc gặp nguy hiểm.</p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> You <code>mustn't</code> stay out past your curfew. Your parents will worry. (Cấm đi chơi quá giờ giới nghiêm).</p>
+    <div class="chat-box" style="border-left: 3px solid #a78bfa;">
+        <h3 style="color: #a78bfa; margin-top: 0;">Bài 3: Sự hình thành Liên bang Cộng hòa XHCN Xô Viết</h3>
         
-        <p>• <strong>2. DON'T HAVE TO / DOESN'T HAVE TO: KHÔNG CẦN THIẾT (Không bắt buộc)</strong></p>
-        <p>&nbsp;&nbsp;Làm cũng được, không làm cũng không sao, không bị phạt.</p>
-        <p>&nbsp;&nbsp;<em>Ví dụ:</em> Tomorrow is Sunday, so you <code>don't have to</code> wake up early.</p>
+        <p><span class="tag-pill tag-purple">Câu 1 (Thông hiểu)</span> <strong>Vì sao sự ra đời của Liên Xô có ý nghĩa quan trọng đối với thế giới?</strong></p>
+        <blockquote>
+            <p>• <strong>Ý nghĩa quốc tế:</strong></p>
+            <p>- Liên Xô trở thành biểu tượng và là chỗ dựa về tinh thần, vật chất to lớn cho phong trào cách mạng thế giới.</p>
+            <p>- Cổ vũ, lôi cuốn mạnh mẽ phong trào giải phóng dân tộc tại những nước thuộc địa ở châu Á, châu Phi và khu vực Mỹ La-tinh.</p>
+            <p>- Tạo tiền đề cho sự ra đời của hệ thống xã hội chủ nghĩa.</p>
+        </blockquote>
+
+        <p style="margin-top: 16px;"><span class="tag-pill tag-purple">Câu 2 (Vận dụng)</span> <strong>Sự ra đời của Liên Xô đã có ý nghĩa to lớn như thế nào đối với Việt Nam?</strong></p>
+        <blockquote>
+            <p>• <em>Trong giai đoạn giải phóng dân tộc:</em> Cung cấp nền tảng lý luận đúng đắn (Chủ nghĩa Mác – Lê-nin); là chỗ dựa vững chắc, nâng cao niềm tin và cổ vũ phong trào giải phóng dân tộc.</p>
+            <p>• <em>Trong giai đoạn kháng chiến chống Pháp và đế quốc Mỹ:</em> Liên Xô trở thành hậu phương vững chắc, hỗ trợ vật lực, tài chính, chuyên gia.</p>
+            <p>• <em>Trong giai đoạn hòa bình và tái thiết:</em> Viện trợ không hoàn lại, đóng góp vào công cuộc giúp Việt Nam xây dựng đất nước.</p>
+        </blockquote>
+
+        <hr>
+
+        <h3 style="color: #a78bfa; margin-top: 18px;">Bài 4: Sự phát triển của CNXH từ sau CTTG II đến nay</h3>
+
+        <p><span class="tag-pill tag-purple">Câu 1 (Thông hiểu)</span> <strong>Vì sao chủ nghĩa xã hội ở các nước Đông Âu và Liên Xô bị sụp đổ?</strong></p>
+        <blockquote>
+            <p>• Đường lối lãnh đạo của Đảng mang tính chủ quan, duy ý chí; mô hình kinh tế tập trung, quan liêu, bao cấp trong nhiều năm; chậm đổi mới cơ chế và hệ thống quản lí kinh tế.</p>
+            <p>• Không áp dụng kịp thời những thành tựu của cuộc cách mạng khoa học - công nghệ hiện đại vào sản xuất, dẫn tới tình trạng trì trệ kéo dài về kinh tế và sự sa sút, khủng hoảng lòng tin trong xã hội.</p>
+            <p>• Quá trình cải cách, cải tổ phạm sai lầm nghiêm trọng. Sự xoá bỏ vai trò lãnh đạo của Đảng Cộng sản khiến cho khủng hoảng ngày càng nghiêm trọng.</p>
+            <p>• Hoạt động chống phá của các lực lượng thù địch ở trong nước và các thế lực bên ngoài.</p>
+        </blockquote>
+
+        <p style="margin-top: 16px;"><span class="tag-pill tag-purple">Câu 2 (Thông hiểu)</span> <strong>Chứng minh thắng lợi của Hồng quân Liên Xô trong CTTG II có tác động to lớn đến sự mở rộng của CNXH ở Trung Quốc và Lào?</strong></p>
+        <blockquote>
+            <p>• <strong>Nguyên nhân:</strong> Thắng lợi của Hồng quân Liên Xô trong CTTG II đã thúc đẩy phong trào giải phóng dân tộc ở châu Á phát triển mạnh mẽ.</p>
+            <p>• Năm 1949, nước Cộng hoà Nhân dân Trung Hoa được thành lập và lựa chọn con đường đi lên chủ nghĩa xã hội.</p>
+            <p>• Tháng 12/1975, nước Cộng hoà Dân chủ Nhân dân Lào chính thức thành lập và đi lên con đường xây dựng chủ nghĩa xã hội.</p>
+        </blockquote>
+
+        <p style="margin-top: 16px;"><span class="tag-pill tag-purple">Câu 3 & 4 (Vận dụng)</span> <strong>Bài học kinh nghiệm cho Việt Nam từ cải cách Trung Quốc và sự sụp đổ của Liên Xô:</strong></p>
+        <blockquote>
+            <p>• Kiên định mục tiêu độc lập dân tộc gắn liền với CNXH; giữ vững vai trò lãnh đạo tuyệt đối của Đảng Cộng sản.</p>
+            <p>• Đổi mới toàn diện, đồng bộ, phù hợp; phát triển nền kinh tế thị trường định hướng XHCN.</p>
+            <p>• Đẩy mạnh cải cách mở cửa, hội nhập quốc tế; chú trọng phát triển khoa học – công nghệ gắn với an sinh xã hội và bảo vệ môi trường.</p>
+            <p>• Xây dựng Nhà nước pháp quyền xã hội chủ nghĩa trong sạch, củng cố khối đại đoàn kết toàn dân tộc, giữ vững độc lập chủ quyền quốc gia.</p>
+        </blockquote>
+    </div>
+
+    <!-- ==================== PHẦN IV: ĐÚNG / SAI ==================== -->
+    <h2 id="trac-nghiem-dung-sai" style="color: #fbbf24;">
+        <span>⚖️ PHẦN IV: TRẮC NGHIỆM ĐÚNG / SAI THEO ĐOẠN TƯ LIỆU</span>
+    </h2>
+    <p><em>(Các dạng bài tập đọc tư liệu lịch sử trong đề thi trường NTMK)</em></p>
+
+    <!-- Bài 1 Đúng Sai -->
+    <div class="chat-box" style="border-left: 3px solid #fbbf24;">
+        <h3 style="color: #fbbf24; margin-top: 0;">BÀI 1 — TRẮC NGHIỆM ĐÚNG SAI</h3>
         
-        <p>• <strong>3. HAVE TO: BẮT BUỘC DO QUY ĐỊNH BÊN NGOÀI</strong></p>
-        <p>&nbsp;&nbsp;Bắt buộc do nội quy nhà trường, công ty, luật pháp.</p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> You <code>have to</code> wear a uniform on weekdays; it is a school rule.</p>
+        <p><strong>Câu 1: Tư liệu về Vương quyền Pháp dưới triều vua Lu-i XVI</strong></p>
+        <ul>
+            <li>a) Chính sách cai trị của nhà nước phong kiến chuyên chế gây bất mãn cho nhân dân. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+            <li>b) Sự tồn tại của nhà nước quân chủ lập hiến gây bất mãn cho tầng lớp quý tộc mới. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Pháp thời đó là quân chủ chuyên chế)</em></li>
+            <li>c) Mâu thuẫn giữa quần chúng nhân dân với nền dân chủ tư sản ngày càng sâu sắc. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Mâu thuẫn với phong kiến)</em></li>
+            <li>d) Tình hình chính trị ở Pháp dưới triều vua Lu-i XVI khủng hoảng trầm trọng. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+        </ul>
+
+        <p style="margin-top: 14px;"><strong>Câu 2: Ý nghĩa của các cuộc CMTS thời cận đại</strong></p>
+        <ul>
+            <li>a) CMTS Anh làm chế độ phong kiến lung lay khắp châu Âu. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Đây là ý nghĩa của CMTS Pháp)</em></li>
+            <li>b) CMTS Pháp có ý nghĩa to lớn nhất vì lật đổ và xóa bỏ mọi tàn dư phong kiến. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+            <li>c) Chiến tranh giành độc lập 13 thuộc địa Bắc Mỹ thúc đẩy phong trào giành độc lập ở Á - Phi - Mỹ Latinh. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Chỉ khu vực Mỹ La-tinh)</em></li>
+            <li>d) Các cuộc CMTS mở ra thời kỳ thắng lợi và củng cố của CNTB trên phạm vi toàn thế giới. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+        </ul>
+
+        <p style="margin-top: 14px;"><strong>Câu 3: Nhiệm vụ của các cuộc CMTS</strong></p>
+        <ul>
+            <li>a) Các cuộc CMTS chỉ thực hiện nhiệm vụ dân tộc. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Thực hiện cả dân tộc và dân chủ)</em></li>
+            <li>b) Xóa bỏ phong kiến cát cứ, thống nhất thị trường hoặc giành độc lập là nhiệm vụ dân tộc. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+            <li>c) Xóa bỏ phong kiến chuyên chế, xác lập nền dân chủ tư sản là nhiệm vụ dân chủ chung. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+            <li>d) Các cuộc CMTS thời cận đại chỉ thực hiện một nhiệm vụ dân chủ điển hình. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span></li>
+        </ul>
+    </div>
+
+    <!-- Bài 2 Đúng Sai -->
+    <div class="chat-box" style="border-left: 3px solid #fbbf24; margin-top: 18px;">
+        <h3 style="color: #fbbf24; margin-top: 0;">BÀI 2 — TRẮC NGHIỆM ĐÚNG SAI</h3>
         
-        <p>• <strong>4. SHOULD / OUGHT TO: LỜI KHUYÊN & BỔN PHẬN ĐẠO ĐỨC</strong></p>
-        <p>&nbsp;&nbsp;Nên làm việc gì. <em>Lưu ý: OUGHT luôn luôn có TO đi kèm!</em></p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> You <code>ought to</code> respect your elders in the family. / Parents <code>shouldn't</code> impose their career on kids.</p>
-    </blockquote>
+        <p><strong>Câu 1: Đoạn tư liệu của Lênin về mở rộng phạm vi thống trị của CNTB</strong></p>
+        <ul>
+            <li>a) Chủ nghĩa đế quốc là hệ quả trực tiếp của xâm lược thuộc địa để khẳng định sức mạnh kinh tế. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Mục đích chính là nguyên liệu & nhân công)</em></li>
+            <li>b) Hệ thống thuộc địa có vai trò quan trọng trong quá trình phát triển và mở rộng phạm vi ảnh hưởng của CNTB. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+            <li>c) Cùng với quá trình xâm lược thuộc địa, CNTB đã mở rộng phạm vi ảnh hưởng ra toàn thế giới. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+            <li>d) CNTB chuyển sang giai đoạn đế quốc chủ nghĩa mà không cần chiến tranh xâm lược. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span></li>
+        </ul>
 
-    <p><strong>B. Collocations & Từ vựng ăn điểm Unit 2:</strong></p>
-    <blockquote>
-        <p>• <code>bridge the generation gap</code>: Thu hẹp khoảng cách thế hệ.</p>
-        <p>• <code>nuclear family</code>: Gia đình hạt nhân (chỉ gồm 2 thế hệ: bố mẹ và con cái).</p>
-        <p>• <code>extended family</code>: Gia đình đa thế hệ (ông bà, cha mẹ, con cháu cùng sống chung).</p>
-        <p>• <code>conservative</code> (bảo thủ, truyền thống) &harr; <code>open-minded</code> (cởi mở, tân tiến).</p>
-        <p>• <code>impose on</code>: Áp đặt (áp đặt ước mơ lên con cái).</p>
-        <p>• <code>consist of</code>: Bao gồm (A nuclear family consists of parents and children).</p>
-    </blockquote>
+        <p style="margin-top: 14px;"><strong>Câu 2: Năm đặc trưng cơ bản của chủ nghĩa đế quốc theo Lênin</strong></p>
+        <ul>
+            <li>a) Chủ nghĩa đế quốc được hình thành sau Chiến tranh thế giới thứ hai. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Cuối thế kỉ XIX - đầu thế kỉ XX)</em></li>
+            <li>b) Chủ nghĩa tư bản hiện đại có bản chất khác so với đặc trưng của chủ nghĩa đế quốc. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Bản chất bóc lột lợi nhuận không đổi)</em></li>
+            <li>c) Tự điều chỉnh để tồn tại và phát triển là đặc trưng cơ bản của chủ nghĩa đế quốc. &rarr; <span style="color: #fb7185; font-weight: 700;">SAI</span> <em>(Là tiềm năng của CNTB hiện đại)</em></li>
+            <li>d) Nền kinh tế của các nước đế quốc chủ nghĩa phụ thuộc vào các tổ chức độc quyền. &rarr; <span class="correct-opt">ĐÚNG</span></li>
+        </ul>
+    </div>
 
-    <!-- UNIT 3 -->
-    <h3>3. UNIT 3: CITIES OF THE FUTURE (Thành phố tương lai & Động từ trạng thái)</h3>
-    
-    <p><strong>A. Ngữ pháp cốt lõi: Động từ chỉ trạng thái / giác quan (Linking & Stative Verbs)</strong></p>
-    <blockquote>
-        <p>• <strong>Nhóm từ:</strong> <code>smell</code> (ngửi thấy), <code>taste</code> (nếm có vị), <code>look</code> (trông có vẻ), <code>seem</code> (dường như), <code>sound</code> (nghe có vẻ), <code>feel</code> (cảm thấy).</p>
-        <p>• <strong>Quy tắc 1:</strong> Đi với <strong>TÍNH TỪ (ADJECTIVE)</strong>, tuyệt đối không đi với trạng từ đuôi <em>-ly</em>!</p>
-        <p>&nbsp;&nbsp;<em>Ví dụ:</em> The transit system looks <code>impressive</code> (Đúng) &mdash; looks <code>impressively</code> (SAI).</p>
-        <p>• <strong>Quy tắc 2:</strong> <strong>KHÔNG CHIA THÌ TIẾP DIỄN</strong> khi miêu tả cảm giác, tính chất của sự vật!</p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> The rooftop garden <code>smells</code> very refreshing after the rain. (KHÔNG dùng <em>is smelling</em>).</p>
-    </blockquote>
+    <!-- ==================== PHẦN V: TỪ KHÓA TRẮC NGHIỆM ==================== -->
+    <h2 id="trac-nghiem-chon-loc" style="color: #94a3b8;">
+        <span>🎯 PHẦN V: TỪ KHÓA TRẮC NGHIỆM ĂN ĐIỂM NHANH</span>
+    </h2>
 
-    <p><strong>B. Collocations & Từ vựng ăn điểm Unit 3:</strong></p>
-    <blockquote>
-        <p>• <code>renewable energy</code>: Năng lượng tái tạo (năng lượng mặt trời, gió).</p>
-        <p>• <code>pedestrian zone</code>: Phố đi bộ dành cho người đi bộ dạo chơi an toàn.</p>
-        <p>• <code>energy-efficient</code>: Tiết kiệm năng lượng (nhà thông minh, thiết bị điện).</p>
-        <p>• <code>urban overcrowding</code>: Tình trạng quá tải dân số đô thị.</p>
-        <p>• <code>smart grid</code>: Lưới điện thông minh giúp giảm thất thoát điện.</p>
-        <p>• <code>reduce electricity waste</code>: Giảm thiểu lãng phí điện năng.</p>
-    </blockquote>
+    <div class="chat-box">
+        <p><strong>1. Nhận diện các cuộc Cách mạng tư sản:</strong></p>
+        <ul>
+            <li>• Cuộc CMTS <strong>đầu tiên trên thế giới</strong>: Hà Lan (giữa thế kỉ XVI).</li>
+            <li>• Cuộc CMTS <strong>triệt để nhất thời cận đại</strong>: Cách mạng tư sản Pháp (cuối thế kỉ XVIII).</li>
+            <li>• Lãnh đạo chung của các cuộc CMTS: <strong>Giai cấp tư sản</strong> (ở Anh có Quý tộc mới, ở Mỹ có Chủ nô).</li>
+            <li>• Động lực quyết định thắng lợi: <strong>Quần chúng nhân dân</strong>.</li>
+            <li>• Nước tư bản nhờ cải cách mà đi lên ở châu Á: <strong>Nhật Bản</strong> (Cuộc Duy tân Minh Trị 1868).</li>
+        </ul>
 
-    <!-- UNIT 4 -->
-    <h3>4. UNIT 4: ASEAN AND VIET NAM (Hội nhập khu vực & Quá khứ hoàn thành)</h3>
-    
-    <p><strong>A. Ngữ pháp cốt lõi: Quá khứ hoàn thành (Past Perfect - Had + V3)</strong></p>
-    <blockquote>
-        <p>• Dùng để diễn tả một hành động xảy ra <strong>TRƯỚC</strong> một hành động hoặc mốc thời gian khác trong quá khứ.</p>
-        <p>• <em>Công thức thường gặp trong đề thi:</em></p>
-        <p>&nbsp;&nbsp;<code>S + had + V3/ed + BEFORE + S + V2/ed</code></p>
-        <p>&nbsp;&nbsp;<code>AFTER + S + had + V3/ed, S + V2/ed</code></p>
-        <p>&nbsp;&nbsp;<em>Ví dụ đề thi:</em> They <code>had negotiated</code> for three hours before reaching an agreement.</p>
-    </blockquote>
+        <p style="margin-top: 14px;"><strong>2. Chủ nghĩa tư bản và Chủ nghĩa đế quốc:</strong></p>
+        <ul>
+            <li>• "Đế quốc mà Mặt Trời không bao giờ lặn": <strong>Đế quốc Anh</strong> (thuộc địa rộng nhất thế giới).</li>
+            <li>• "Chủ nghĩa đế quốc cho vay nặng lãi": <strong>Đế quốc Pháp</strong>.</li>
+            <li>• Nguyên nhân xuất hiện tổ chức độc quyền: <strong>Tập trung sản xuất và tập trung tư bản</strong>.</li>
+            <li>• Thuật ngữ "Chủ nghĩa tư bản hiện đại": Tính từ <strong>sau Chiến tranh thế giới thứ hai đến nay</strong>.</li>
+            <li>• Mục tiêu cao nhất và cuối cùng của các nhà tư bản: <strong>Theo đuổi lợi nhuận tối đa</strong>.</li>
+        </ul>
 
-    <p><strong>B. Bộ dữ liệu lịch sử ASEAN bắt buộc phải nhớ (Chuẩn đề NTMK):</strong></p>
-    <blockquote>
-        <p>• <strong>Năm 1995 (July 28, 1995):</strong> Việt Nam chính thức gia nhập ASEAN.</p>
-        <p>• <strong>Năm 2015 (December 31, 2015):</strong> Cộng đồng ASEAN (ASEAN Community) chính thức thành lập.</p>
-        <p>• <strong>Biểu tượng ASEAN:</strong> <code>Ten stalks of padi</code> (10 nhánh lúa vàng đại diện cho 10 nước thành viên).</p>
-        <p>• <strong>Nguyên tắc cốt lõi:</strong> <code>Non-interference</code> in internal affairs (Không can thiệp vào công việc nội bộ).</p>
-        <p>• <strong>Giới từ đi kèm:</strong> <code>contribute TO</code> (đóng góp vào), <code>cultural diversity</code> (đa dạng văn hóa).</p>
-    </blockquote>
-
-    <hr>
-
-    <!-- PHẦN NGỮ ÂM & TRỌNG ÂM -->
-    <h3>5. BÍ KÍP ĂN TRỌN ĐIỂM PHÁT ÂM & TRỌNG ÂM (1.5 ĐIỂM)</h3>
-
-    <p><strong>A. Thần chú phát âm đuôi -ED:</strong></p>
-    <blockquote>
-        <p>• <strong>Nhóm 1: /id/</strong> &rarr; Tận cùng là <strong>T, D</strong> (Ví dụ: <em>wanted, decided, needed</em>).</p>
-        <p>• <strong>Nhóm 2: /t/</strong> &rarr; Tận cùng là <strong>P, K, F, S, SH, CH, GH</strong> (Mẹo nhớ: <em>"Sáng sớm chạy xe sh phải kính"</em> - Ví dụ: <em>looked, washed, stopped, laughed</em>).</p>
-        <p>• <strong>Nhóm 3: /d/</strong> &rarr; Các âm còn lại (Ví dụ: <em>played, cleaned, lived</em>).</p>
-    </blockquote>
-
-    <p><strong>B. Thần chú phát âm đuôi -S / -ES:</strong></p>
-    <blockquote>
-        <p>• <strong>Nhóm 1: /s/</strong> &rarr; Tận cùng là <strong>P, T, K, F, TH</strong> (Mẹo nhớ: <em>"Thời phong kiến phương tây"</em> - Ví dụ: <em>stops, cats, books</em>).</p>
-        <p>• <strong>Nhóm 2: /iz/</strong> &rarr; Tận cùng là <strong>S, X, Z, CH, SH, GE, CE</strong> (Ví dụ: <em>watches, boxes, classes, changes</em>).</p>
-        <p>• <strong>Nhóm 3: /z/</strong> &rarr; Các âm còn lại (Ví dụ: <em>pens, rooms, days</em>).</p>
-    </blockquote>
-
-    <p><strong>C. Quy tắc đánh trọng âm từ 2 âm tiết:</strong></p>
-    <blockquote>
-        <p>• <strong>Danh từ & Tính từ:</strong> 85% nhấn <strong>ÂM THỨ NHẤT</strong> (<code>DOC-tor</code>, <code>PA-rent</code>, <code>HEAL-thy</code>, <code>BAL-anced</code>).</p>
-        <p>• <strong>Động từ:</strong> 85% nhấn <strong>ÂM THỨ HAI</strong> (<code>re-DUCE</code>, <code>im-POSE</code>, <code>pro-TECT</code>, <code>de-CIDE</code>).</p>
-        <p>• <em>Ngoại lệ hay thi:</em> Động từ có âm 2 là âm ngắn /ə/ thì nhấn âm 1: <code>EN-ter</code>, <code>HAP-pen</code>, <code>OF-fer</code>.</p>
-    </blockquote>
-
-    <hr>
-
-    <!-- PHẦN V: CHIẾN LƯỢC PHÒNG THI -->
-    <h2>PHẦN V: PHÂN BỔ THỜI GIAN 90 PHÚT VÀNG TRONG PHÒNG THI</h2>
-    <ul>
-        <li><strong>00 – 20 phút (20p):</strong> Xử lý dứt điểm 4 câu Đọc hiểu (câu tác dụng bắt buộc viết đủ 2 vế Nghệ thuật + Nội dung).</li>
-        <li><strong>20 – 25 phút (5p):</strong> Gạch nhanh dàn ý thân bài ra nháp (nhân vật, ngôi kể, tình huống, ghi tên 6 tác giả: Sêđrin, Goethe, Nguyễn Minh Châu, Vôrônin, Gorki, Lê-ô-nốp).</li>
-        <li><strong>25 – 85 phút (60p):</strong> Viết bài văn hoàn chỉnh: Mở bài (5p) &rarr; Thân bài 6 đoạn (50p) &rarr; Kết bài (5p).</li>
-        <li><strong>85 – 90 phút (5p):</strong> Soát lại lỗi chính tả, dấu câu, kiểm tra tên tác giả và số báo danh.</li>
-    </ul>
+        <p style="margin-top: 14px;"><strong>3. Chủ nghĩa xã hội (Bài 3 & Bài 4):</strong></p>
+        <ul>
+            <li>• Đứng đầu Chính quyền Xô viết sau CM tháng 10/1917: <strong>Lê-nin</strong>.</li>
+            <li>• Khi mới thành lập (1922), Liên Xô gồm <strong>4 nước Cộng hòa</strong>: Nga, U-crai-na, Bê-lô-rút-xi-a, Ngoại Cáp-ca-dơ.</li>
+            <li>• Sự kiện CNXH vượt ra khỏi 1 quốc gia thành hệ thống thế giới: <strong>Các nước XHCN ở Đông Âu được thành lập</strong> sau CTTG II.</li>
+            <li>• Trọng tâm công cuộc cải cách mở cửa ở Trung Quốc (12/1978): <strong>Lấy phát triển kinh tế làm trọng tâm</strong>.</li>
+            <li>• Nguyên nhân chủ yếu khiến CNXH ở Liên Xô và Đông Âu sụp đổ: <strong>Đường lối chủ quan, duy ý chí, cơ chế tập trung quan liêu bao cấp</strong> và sai lầm trong cải tổ.</li>
+        </ul>
+    </div>
 
 </div>
 

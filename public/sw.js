@@ -3,7 +3,7 @@
  * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v7-authentic-curriculum';
+const CACHE_NAME = 'ntmk-cache-v8-history-update';
 
 const STATIC_SHELL = [
   '/',
