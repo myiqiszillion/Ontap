@@ -1,15 +1,15 @@
 {
   "subject": "Sinh học 11",
-  "subjectKey": "sinhhoc",
+  "subjectKey": "sinhhoc11",
   "grade": 11,
-  "curriculum": "GDPT 2018 — QĐ 764/QĐ-BGDĐT",
-  "source": "Tổng hợp tài liệu ôn tập Sinh học 11 & Ngân hàng câu hỏi chuẩn hóa",
+  "curriculum": "GDPT 2018",
+  "source": "Tài liệu ôn tập Sinh học 11 - GDPT 2018",
   "lessons": [
     {
       "id": 1,
       "bai": 1,
       "name": "Bài 1: Khái quát về trao đổi chất và chuyển hóa năng lượng ở sinh vật",
-      "topic": "CHƯƠNG I: TRAO ĐỔI CHẤT VÀ CHUYỂN HÓA NĂNG LƯỢNG Ở SINH VẬT",
+      "topic": "Trao đổi chất và chuyển hóa năng lượng",
       "questions": [
         {
           "id": "sinhhoc11_b1_mcq01",
@@ -35,12 +35,12 @@
             "4."
           ],
           "correct": 2,
-          "explanation": "Quá trình chuyển hóa năng lượng gồm 3 giai đoạn: Giai đoạn tổng hợp, giai đoạn phân giải và giai đoạn huy động năng lượng. Chọn C."
+          "explanation": "Chuyển hóa năng lượng trong sinh giới gồm 3 giai đoạn: Tổng hợp → Phân giải → Huy động năng lượng. Chọn C."
         },
         {
           "id": "sinhhoc11_b1_mcq03",
           "type": "mcq",
-          "question": "Quá trình chuyển hóa năng lượng trong sinh giới gồm các giai đoạn theo thứ tự là?",
+          "question": "Quá trình chuyển hóa năng lượng trong sinh giới gồm các giai đoạn theo thứ tự là:",
           "options": [
             "Giai đoạn tổng hợp → giai đoạn phân giải → giai đoạn huy động năng lượng.",
             "Giai đoạn phân giải → giai đoạn huy động năng lượng → giai đoạn tổng hợp.",
@@ -48,7 +48,7 @@
             "Giai đoạn huy động năng lượng → giai đoạn phân giải → giai đoạn tổng hợp."
           ],
           "correct": 0,
-          "explanation": "Thứ tự các giai đoạn chuyển hóa năng lượng là: Tổng hợp → Phân giải → Huy động năng lượng. Chọn A."
+          "explanation": "Thứ tự chuyển hóa năng lượng: Giai đoạn tổng hợp → giai đoạn phân giải → giai đoạn huy động năng lượng. Chọn A."
         },
         {
           "id": "sinhhoc11_b1_mcq04",
@@ -61,7 +61,7 @@
             "Động năng."
           ],
           "correct": 0,
-          "explanation": "Nguồn năng lượng khởi đầu trong sinh giới là quang năng từ ánh sáng mặt trời. Chọn A."
+          "explanation": "Nguồn năng lượng khởi đầu cho sự sống của toàn bộ sinh giới là quang năng từ ánh sáng mặt trời. Chọn A."
         },
         {
           "id": "sinhhoc11_b1_mcq05",
@@ -74,7 +74,7 @@
             "ATP."
           ],
           "correct": 3,
-          "explanation": "ATP là đồng tiền năng lượng của tế bào, cung cấp năng lượng cho mọi hoạt động sống. Chọn D."
+          "explanation": "ATP (Adenosine triphosphate) là đồng tiền năng lượng của tế bào, cung cấp năng lượng trực tiếp cho các hoạt động sống. Chọn D."
         },
         {
           "id": "sinhhoc11_b1_mcq06",
@@ -87,7 +87,7 @@
             "Động vật."
           ],
           "correct": 3,
-          "explanation": "Động vật có phương thức sống dị dưỡng (lấy chất hữu cơ từ sinh vật khác). Chọn D."
+          "explanation": "Động vật lấy chất hữu cơ từ sinh vật khác nên có phương thức sống dị dưỡng. Thực vật, vi khuẩn lam, tảo là sinh vật tự dưỡng. Chọn D."
         },
         {
           "id": "sinhhoc11_b1_mcq07",
@@ -100,12 +100,12 @@
             "Quang dị dưỡng và hóa tự dưỡng."
           ],
           "correct": 2,
-          "explanation": "Phương thức sống tự dưỡng gồm quang tự dưỡng và hóa tự dưỡng. Chọn C."
+          "explanation": "Tự dưỡng gồm 2 hình thức: quang tự dưỡng (sử dụng năng lượng ánh sáng) và hóa tự dưỡng (sử dụng năng lượng hóa học từ oxy hóa chất vô cơ). Chọn C."
         },
         {
           "id": "sinhhoc11_b1_mcq08",
           "type": "mcq",
-          "question": "Sinh vật sử dụng chất vô cơ, nước, CO2 và năng lượng ánh sáng để tổng hợp nên các chất hữu cơ cần thiết cho cơ thể và tích lũy năng lượng thuộc kiểu dinh dưỡng?",
+          "question": "Sinh vật sử dụng chất vô cơ, nước, CO2 và năng lượng ánh sáng để tổng hợp nên các chất hữu cơ cần thiết cho cơ thể và tích lũy năng lượng thuộc kiểu dinh dưỡng:",
           "options": [
             "Quang dị dưỡng.",
             "Hóa dị dưỡng.",
@@ -113,7 +113,7 @@
             "Quang tự dưỡng."
           ],
           "correct": 3,
-          "explanation": "Sử dụng ánh sáng và chất vô cơ để tổng hợp chất hữu cơ là quang tự dưỡng. Chọn D."
+          "explanation": "Sinh vật sử dụng CO2, H2O và năng lượng ánh sáng để tổng hợp chất hữu cơ là sinh vật quang tự dưỡng (như thực vật, vi khuẩn lam). Chọn D."
         },
         {
           "id": "sinhhoc11_b1_mcq09",
@@ -126,7 +126,7 @@
             "Tổng hợp các chất đồng thời giải phóng năng lượng."
           ],
           "correct": 1,
-          "explanation": "Đồng hóa là quá trình tổng hợp các chất phức tạp từ các chất đơn giản, đồng thời tích lũy năng lượng. Chọn B."
+          "explanation": "Đồng hóa là quá trình tổng hợp các chất hữu cơ phức tạp từ các chất đơn giản, đồng thời tích lũy năng lượng trong các liên kết hóa học. Chọn B."
         },
         {
           "id": "sinhhoc11_b1_mcq10",
@@ -139,7 +139,7 @@
             "Phân giải các chất đồng thời giải phóng năng lượng."
           ],
           "correct": 3,
-          "explanation": "Dị hóa là quá trình phân giải các chất phức tạp thành các chất đơn giản, đồng thời giải phóng năng lượng. Chọn D."
+          "explanation": "Dị hóa là quá trình phân giải các chất hữu cơ phức tạp thành các chất đơn giản, đồng thời giải phóng năng lượng. Chọn D."
         },
         {
           "id": "sinhhoc11_b1_mcq11",
@@ -152,7 +152,7 @@
             "Hệ bài tiết."
           ],
           "correct": 2,
-          "explanation": "Động vật lấy chất dinh dưỡng nhờ hệ tiêu hóa. Chọn C."
+          "explanation": "Hệ tiêu hóa đảm nhận chức năng lấy thức ăn, biến đổi thức ăn thành các chất dinh dưỡng đơn giản và hấp thụ vào máu. Chọn C."
         },
         {
           "id": "sinhhoc11_b1_mcq12",
@@ -165,7 +165,7 @@
             "Hệ bài tiết."
           ],
           "correct": 0,
-          "explanation": "Trao đổi khí O2 và CO2 thực hiện qua hệ hô hấp. Chọn A."
+          "explanation": "Hệ hô hấp thực hiện trao đổi khí: lấy O2 từ môi trường cung cấp cho tế bào và thải CO2 ra ngoài. Chọn A."
         },
         {
           "id": "sinhhoc11_b1_mcq13",
@@ -178,7 +178,7 @@
             "Hệ bài tiết."
           ],
           "correct": 1,
-          "explanation": "Hệ tuần hoàn đảm nhiệm chức năng vận chuyển chất dinh dưỡng và khí oxygen đến các tế bào. Chọn B."
+          "explanation": "Hệ tuần hoàn (tim và hệ mạch) vận chuyển máu mang chất dinh dưỡng và O2 tới nuôi các tế bào trong cơ thể. Chọn B."
         },
         {
           "id": "sinhhoc11_b1_mcq14",
@@ -191,7 +191,7 @@
             "Hệ rễ."
           ],
           "correct": 1,
-          "explanation": "Thực vật không có hệ thần kinh, việc điều hòa hoạt động sinh lý chủ yếu thông qua hormone. Chọn B."
+          "explanation": "Thực vật không có hệ thần kinh; sự điều hòa các quá trình sinh lý diễn ra chủ yếu thông qua các hormone thực vật. Chọn B."
         },
         {
           "id": "sinhhoc11_b1_mcq15",
@@ -204,7 +204,7 @@
             "Giải phóng năng lượng cho các hoạt động sống của sinh giới."
           ],
           "correct": 3,
-          "explanation": "Việc giải phóng năng lượng cho hoạt động sống diễn ra ở quá trình hô hấp của mọi sinh vật, không phải vai trò độc quyền của sinh vật tự dưỡng. Chọn D."
+          "explanation": "Sinh vật tự dưỡng có vai trò tổng hợp chất hữu cơ và tích lũy năng lượng. Việc giải phóng năng lượng cho hoạt động sống diễn ra qua quá trình hô hấp của toàn bộ sinh vật. Chọn D."
         },
         {
           "id": "sinhhoc11_b1_mcq16",
@@ -217,28 +217,40 @@
             "Quá trình phân giải protein ở vi sinh vật."
           ],
           "correct": 1,
-          "explanation": "Quang hợp là quá trình tổng hợp chất hữu cơ (đồng hóa). Chọn B."
+          "explanation": "Quang hợp là quá trình đồng hóa (tổng hợp chất hữu cơ và tích lũy năng lượng). Hô hấp và tiêu hóa là quá trình phân giải (dị hóa). Chọn B."
         },
         {
-          "id": "sinhhoc11_b1_sa01",
-          "type": "shortanswer",
-          "question": "Trong các phát biểu sau, có bao nhiêu phát biểu đúng khi nói đến vai trò của trao đổi chất và chuyển hóa năng lượng ở sinh vật? (1) Cung cấp nguyên liệu xây dựng tế bào và cơ thể; (2) Cung cấp năng lượng cho các hoạt động sống; (3) Bài tiết các chất độc hại ra khỏi cơ thể; (4) Giúp sinh vật truyền lại các đặc điểm di truyền cho thế hệ sau.",
-          "correctAnswer": "3",
-          "explanation": "Các phát biểu (1), (2), (3) đúng. Phát biểu (4) thuộc chức năng sinh sản và di truyền, không phải vai trò trực tiếp của trao đổi chất. Đáp án: 3."
+          "id": "sinhhoc11_b1_mcq17",
+          "type": "mcq",
+          "question": "Trong các phát biểu sau, có bao nhiêu phát biểu đúng khi nói đến vai trò của trao đổi chất và chuyển hóa năng lượng ở sinh vật?\n(1) Cung cấp nguyên liệu xây dựng tế bào và cơ thể.\n(2) Cung cấp năng lượng cho các hoạt động sống của sinh vật.\n(3) Bài tiết các chất độc hại ra khỏi cơ thể.\n(4) Giúp sinh vật truyền lại các đặc điểm di truyền cho thế hệ sau.",
+          "options": [
+            "1 phát biểu.",
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu."
+          ],
+          "correct": 2,
+          "explanation": "Các phát biểu (1), (2), (3) đúng về vai trò của trao đổi chất. Phát biểu (4) thuộc chức năng sinh sản và di truyền. Có 3 phát biểu đúng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b1_sa02",
-          "type": "shortanswer",
-          "question": "Có bao nhiêu phát biểu là dấu hiệu đặc trưng của quá trình trao đổi chất và chuyển hóa năng lượng ở sinh vật? (1) Giao phối và sinh sản tạo ra cá thể mới; (2) Đào thải các chất; (3) Biến đổi các chất và chuyển hóa năng lượng; (4) Điều hòa hoạt động sống; (5) Thu nhận các chất từ môi trường và vận chuyển các chất.",
-          "correctAnswer": "4",
-          "explanation": "Các phát biểu (2), (3), (4), (5) là các dấu hiệu đặc trưng. Phát biểu (1) là sinh sản. Đáp án: 4."
+          "id": "sinhhoc11_b1_mcq18",
+          "type": "mcq",
+          "question": "Có bao nhiêu phát biểu là dấu hiệu đặc trưng của quá trình trao đổi chất và chuyển hóa năng lượng ở sinh vật?\n(1) Giao phối và sinh sản tạo ra cá thể mới.\n(2) Đào thải các chất.\n(3) Biến đổi các chất và chuyển hóa năng lượng.\n(4) Điều hòa hoạt động sống.\n(5) Thu nhận các chất từ môi trường và vận chuyển các chất.",
+          "options": [
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu.",
+            "5 phát biểu."
+          ],
+          "correct": 2,
+          "explanation": "Các dấu hiệu đặc trưng gồm: (2), (3), (4), (5). Phát biểu (1) là sinh sản. Có 4 phát biểu đúng. Chọn C."
         }
       ],
       "questionGroups": [
         {
           "id": "sinhhoc11_b1_tf01",
           "type": "tf-group",
-          "passage": "Khi nói về vai trò của sinh vật tự dưỡng đối với sinh giới:",
+          "passage": "Khi nói về vai trò của sinh vật tự dưỡng đối với sinh giới, mỗi phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
               "question": "a) Phân hủy chất hữu cơ trong đất, trả lại vật chất cho môi trường.",
@@ -257,12 +269,12 @@
               "correct": true
             }
           ],
-          "explanation": "a sai vì phân hủy chất hữu cơ là vai trò của vi sinh vật dị dưỡng (vi sinh vật hoại sinh). b, c, d đúng."
+          "explanation": "a sai vì phân hủy chất hữu cơ là vai trò của sinh vật dị dưỡng hoại sinh (nấm, vi khuẩn phân hủy). b, c, d đúng theo tài liệu chuẩn."
         },
         {
           "id": "sinhhoc11_b1_tf02",
           "type": "tf-group",
-          "passage": "Dựa vào sơ đồ mối quan hệ giữa chuyển hóa vật chất và năng lượng ở cấp tế bào ([1] Tổng hợp/đồng hóa, [2] Phân giải/dị hóa, [3] Chất bài tiết):",
+          "passage": "Dưới đây là sơ đồ về mối quan hệ giữa chuyển hóa vật chất và năng lượng ở cấp tế bào ([1] Quá trình đồng hóa, [2] Quá trình dị hóa, [3] Các chất bài tiết ở tế bào). Dựa vào sơ đồ cho biết những nhận định sau đây là đúng hay sai?",
           "statements": [
             {
               "question": "a) [1] là quá trình dị hóa.",
@@ -286,7 +298,7 @@
         {
           "id": "sinhhoc11_b1_tf03",
           "type": "tf-group",
-          "passage": "Khi tìm hiểu các giai đoạn chuyển hóa năng lượng trong sinh giới ([1] Tổng hợp, [2] Phân giải, [3] Huy động năng lượng):",
+          "passage": "Tìm hiểu các giai đoạn chuyển hóa năng lượng trong sinh giới theo sơ đồ ([1] Giai đoạn tổng hợp, [2] Giai đoạn phân giải, [3] Giai đoạn huy động năng lượng), mỗi nhận định dưới đây là đúng hay sai?",
           "statements": [
             {
               "question": "a) [1] là giai đoạn huy động năng lượng.",
@@ -305,7 +317,7 @@
               "correct": true
             }
           ],
-          "explanation": "a, b, c sai vì gán sai tên các giai đoạn. d đúng vì [2] là phân giải hữu cơ qua dị hóa."
+          "explanation": "a, b, c sai vì gọi sai tên các giai đoạn ([1] là tổng hợp, [2] là phân giải, [3] là huy động năng lượng). d đúng."
         }
       ]
     },
@@ -313,7 +325,7 @@
       "id": 2,
       "bai": 2,
       "name": "Bài 2: Trao đổi nước và khoáng ở thực vật",
-      "topic": "CHƯƠNG II: TRAO ĐỔI NƯỚC VÀ KHOÁNG Ở THỰC VẬT",
+      "topic": "Trao đổi nước và khoáng ở thực vật",
       "questions": [
         {
           "id": "sinhhoc11_b2_mcq01",
@@ -323,10 +335,10 @@
             "Thành phần cấu tạo nên tế bào.",
             "Điều hoà nhiệt độ giúp cây chống nóng.",
             "Là dung môi hòa tan muối khoáng và các chất hữu cơ trong cây.",
-            "Cung cấp năng lượng trực tiếp cho các hoạt động của cây."
+            "Cung cấp năng lượng cho các hoạt động của cây."
           ],
           "correct": 3,
-          "explanation": "Nước không cung cấp năng lượng; năng lượng được cung cấp bởi ATP từ hô hấp tế bào. Chọn D."
+          "explanation": "Nước không cung cấp năng lượng; năng lượng trong cây do hô hấp tế bào giải phóng dưới dạng ATP. Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq02",
@@ -339,7 +351,7 @@
             "25."
           ],
           "correct": 2,
-          "explanation": "Có khoảng 17 nguyên tố khoáng thiết yếu ở thực vật. Chọn C."
+          "explanation": "Có khoảng 17 nguyên tố khoáng thiết yếu đối với sự sinh trưởng và phát triển của thực vật. Chọn C."
         },
         {
           "id": "sinhhoc11_b2_mcq03",
@@ -352,20 +364,20 @@
             "Mô phân sinh bị ức chế, thân rễ ngắn, lá mềm, chồi đỉnh bị chết."
           ],
           "correct": 0,
-          "explanation": "Thiếu Zn làm lá biến dạng, ngắn, nhỏ, xoăn, thân đốt ngắn. Chọn A."
+          "explanation": "Thiếu Zn khiến lá bị biến dạng, ngắn, nhỏ, xoăn, thân có các lóng/đốt ngắn lại. Chọn A."
         },
         {
           "id": "sinhhoc11_b2_mcq04",
           "type": "mcq",
           "question": "Khi thiếu Magnesium (Mg) cây có biểu hiện:",
           "options": [
-            "lá nhỏ, có màu lục đậm, sinh trưởng rễ bị tiêu giảm.",
-            "phiến lá vàng và rụng sớm do mất diệp lục.",
-            "sinh trưởng còi cọc, lá xuất hiện màu vàng nhạt.",
-            "lá màu vàng nhạt, mép lá màu đỏ, khô héo."
+            "Lá nhỏ, có màu lục đậm, sinh trưởng rễ bị tiêu giảm.",
+            "Phiến lá vàng và rụng sớm.",
+            "Sinh trưởng còi cọc, lá xuất hiện màu vàng nhạt.",
+            "Lá màu vàng nhạt, mép lá màu đỏ, khô héo."
           ],
           "correct": 1,
-          "explanation": "Mg là thành phần cấu tạo diệp lục, thiếu Mg làm phiến lá vàng và rụng sớm. Chọn B."
+          "explanation": "Mg là thành phần cấu tạo nên phân tử diệp lục (chlorophyll). Thiếu Mg khiến phiến lá bị vàng và rụng sớm. Chọn B."
         },
         {
           "id": "sinhhoc11_b2_mcq05",
@@ -373,25 +385,25 @@
           "question": "Sự khác nhau cơ bản giữa cơ chế hấp thụ nước với cơ chế hấp thụ ion khoáng ở rễ cây là:",
           "options": [
             "Nước và các ion khoáng đều được đưa vào rễ cây theo cơ chế chủ động và khuếch tán.",
-            "Nước được hấp thụ vào rễ cây theo cơ chế chủ động và thụ động còn các ion khoáng di chuyển thụ động.",
-            "Nước và ion khoáng đều được đưa vào rễ cây theo cơ chế thẩm thấu.",
+            "Nước được hấp thụ vào rễ theo cơ chế chủ động và thụ động còn các ion khoáng chỉ di chuyển thụ động.",
+            "Nước và ion khoáng đều được đưa vào rễ cây theo cơ chế khuếch tán hoặc thẩm thấu.",
             "Nước được hấp thụ vào rễ cây theo cơ chế thẩm thấu còn các ion khoáng di chuyển theo hai cơ chế thụ động và chủ động."
           ],
           "correct": 3,
-          "explanation": "Nước hấp thụ theo cơ chế thẩm thấu, còn khoáng hấp thụ theo cả thụ động và chủ động. Chọn D."
+          "explanation": "Nước luôn được hấp thụ thụ động theo cơ chế thẩm thấu (từ thế nước cao đến thế nước thấp), còn ion khoáng được hấp thụ theo cả 2 cơ chế: thụ động và chủ động. Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq06",
           "type": "mcq",
-          "question": "Có bao nhiêu phát biểu sau đây là không đúng khi nói về quá trình hấp thụ nước và khoáng ở rễ?\n(1) Nước và các chất khoáng từ đất được hấp thụ chủ yếu qua các tế bào biểu bì của rễ (lông hút).\n(2) Nước có thể xâm nhập vào cây qua lá, thân non với lượng ít khi gặp mưa.\n(3) Rễ hấp thụ nước từ đất theo cơ chế chủ động.\n(4) Các ion khoáng từ môi trường đất có nồng độ thấp di chuyển vào dịch bào có nồng độ cao hơn nhờ các chất vận chuyển và cần cung cấp năng lượng.\n(5) Các nguyên tố khoáng còn có thể được lá cây hấp thụ qua bề mặt lá.",
+          "question": "Có bao nhiêu phát biểu sau đây là không đúng khi nói về quá trình hấp thụ nước và khoáng ở rễ?\n(1) Nước và các chất khoáng từ đất được hấp thụ chủ yếu qua các tế bào biểu bì của rễ.\n(2) Nước có thể xâm nhập vào cây qua lá, thân non với lượng ít khi gặp mưa hoặc tưới nước cho cây.\n(3) Rễ hấp thụ nước từ đất theo cơ chế chủ động.\n(4) Các ion khoáng từ môi trường đất có nồng độ thấp di chuyển vào dịch bào có nồng độ cao hơn nhờ các chất vận chuyển và cần cung cấp năng lượng.\n(5) Các nguyên tố khoáng còn có thể được lá cây hấp thụ qua bề mặt lá.",
           "options": [
             "2.",
             "3.",
             "1.",
             "5."
           ],
-          "correct": 2,
-          "explanation": "Phát biểu (3) không đúng vì rễ hấp thụ nước theo cơ chế thụ động (thẩm thấu), không cần năng lượng ATP. Do đó có 1 phát biểu không đúng. Chọn C."
+          "correct": 1,
+          "explanation": "Theo đáp án chuẩn tài liệu ôn tập của giáo viên, có 3 phát biểu không đúng (B): Phát biểu (1) không đúng (hấp thụ chủ yếu qua tế bào lông hút - phần kéo dài chuyên hóa của biểu bì rễ); phát biểu (2) không đúng (cơ quan chuyên trách hấp thụ nước ở thực vật trên cạn là rễ); phát biểu (3) không đúng (nước hấp thụ theo cơ chế thụ động thẩm thấu). Chọn B."
         },
         {
           "id": "sinhhoc11_b2_mcq07",
@@ -399,12 +411,12 @@
           "question": "Vai trò của Nitrogen đối với thực vật là:",
           "options": [
             "Thành phần của nucleic acid, ATP, phospholipid, coenzyme.",
-            "Chủ yếu giữ cân bằng nước và ion trong tế bào, hoạt hóa enzyme.",
+            "Chủ yếu giữ cân bằng nước và ion trong tế bào, hoạt hóa enzyme, mở khí khổng.",
             "Thành phần của thành tế bào, màng tế bào, hoạt hóa enzyme.",
-            "Thành phần của amino acid, protein, ATP và nucleic acid."
+            "Thành phần của amino acid, ATP và nucleic acid."
           ],
           "correct": 3,
-          "explanation": "Nitrogen là thành phần cấu tạo nên amino acid, protein, nucleic acid, ATP... Chọn D."
+          "explanation": "Nitrogen là thành phần cấu tạo của amino acid, protein, ATP, nucleic acid và enzyme. Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq08",
@@ -412,12 +424,12 @@
           "question": "Các chất khoáng được hấp thụ từ đất vào tế bào lông hút theo cơ chế thụ động phụ thuộc vào:",
           "options": [
             "Hoạt động trao đổi chất.",
-            "Chênh lệch nồng độ ion (gradient nồng độ).",
-            "Cung cấp năng lượng ATP.",
+            "Chênh lệch nồng độ ion.",
+            "Cung cấp năng lượng.",
             "Hoạt động thẩm thấu."
           ],
           "correct": 1,
-          "explanation": "Cơ chế thụ động phụ thuộc vào sự chênh lệch nồng độ chất tan (cao đến thấp). Chọn B."
+          "explanation": "Hấp thụ thụ động ion khoáng diễn ra theo chiều gradient nồng độ (từ nơi có nồng độ cao sang nơi có nồng độ thấp), do đó phụ thuộc vào sự chênh lệch nồng độ ion. Chọn B."
         },
         {
           "id": "sinhhoc11_b2_mcq09",
@@ -430,7 +442,7 @@
             "Thụ động và chủ động."
           ],
           "correct": 3,
-          "explanation": "Khoáng được rễ hấp thụ theo cả 2 cơ chế: thụ động và chủ động. Chọn D."
+          "explanation": "Chất khoáng được hấp thụ vào rễ cây theo 2 cơ chế: thụ động (cùng chiều gradient nồng độ) và chủ động (ngược chiều gradient nồng độ, cần ATP và chất mang). Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq10",
@@ -443,59 +455,59 @@
             "Trong mạch rây."
           ],
           "correct": 0,
-          "explanation": "Mạch gỗ là con đường vận chuyển nước và khoáng chủ yếu ở thân. Chọn A."
+          "explanation": "Nước và ion khoáng hòa tan được vận chuyển một chiều từ rễ lên thân và lá chủ yếu qua mạch gỗ (xylem). Chọn A."
         },
         {
           "id": "sinhhoc11_b2_mcq11",
           "type": "mcq",
           "question": "Mạch gỗ vận chuyển:",
           "options": [
-            "Nước, các chất khoáng hoà tan từ lá xuống thân và rễ.",
-            "Chất hữu cơ được tổng hợp từ lá xuống thân và rễ.",
-            "Chất hữu cơ, vitamin và các ion khoáng từ rễ lên thân và lá.",
+            "Nước, các chất khoáng hoà tan từ lá xuống rễ.",
+            "Các chất hữu cơ tổng hợp từ lá xuống rễ.",
+            "Chỉ vận chuyển các chất hữu cơ.",
             "Nước, các chất khoáng hoà tan và một số chất hữu cơ tổng hợp từ rễ lên thân và lá."
           ],
           "correct": 3,
-          "explanation": "Dòng mạch gỗ vận chuyển nước, khoáng và một số chất hữu cơ do rễ tổng hợp từ dưới lên. Chọn D."
+          "explanation": "Mạch gỗ vận chuyển dòng đi lên: nước, ion khoáng hòa tan và một số chất hữu cơ do rễ tổng hợp (như amino acid, amide, alkaloid) từ rễ lên thân và lá. Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq12",
           "type": "mcq",
           "question": "Động lực đẩy dòng mạch rây đi từ lá đến rễ và các cơ quan khác là:",
           "options": [
-            "Lực đẩy (áp suất rễ).",
-            "Lực hút do thoát hơi nước ở lá.",
-            "Sự chênh lệch áp suất thẩm thấu giữa cơ quan nguồn (lá) và cơ quan chứa (rễ).",
-            "Lực liên kết giữa các phân tử nước với nhau và với thành mạch gỗ."
+            "Lực đẩy của rễ (áp suất rễ).",
+            "Lực hút của lá do thoát hơi nước.",
+            "Sự chênh lệch áp suất thẩm thấu giữa cơ quan nguồn (lá) và cơ quan chứa (rễ, củ, quả).",
+            "Lực liên kết giữa các phân tử nước với nhau và với thành mạch."
           ],
           "correct": 2,
-          "explanation": "Động lực dòng mạch rây là sự chênh lệch áp suất thẩm thấu giữa cơ quan nguồn và cơ quan chứa. Chọn C."
+          "explanation": "Dòng mạch rây di chuyển do sự chênh lệch áp suất thẩm thấu giữa cơ quan nguồn (nồng độ chất tan cao, áp suất thẩm thấu cao) và cơ quan chứa (áp suất thẩm thấu thấp). Chọn C."
         },
         {
           "id": "sinhhoc11_b2_mcq13",
           "type": "mcq",
           "question": "Điều nào sau đây không đúng về vai trò của quá trình thoát hơi nước?",
           "options": [
-            "Vận chuyển nước, ion khoáng.",
-            "Cung cấp CO2 cho quá trình quang hợp.",
-            "Hạ nhiệt độ cho lá.",
-            "Cung cấp năng lượng cho lá."
+            "Tạo lực kéo nước và các chất hòa tan đi theo một chiều từ rễ lên lá.",
+            "Làm giảm nhiệt độ bề mặt lá vào những ngày nắng nóng.",
+            "Làm khí khổng mở tạo điều kiện cho trao đổi CO2 và O2.",
+            "Cung cấp năng lượng trực tiếp cho lá cây."
           ],
           "correct": 3,
-          "explanation": "Thoát hơi nước không cung cấp năng lượng cho lá. Chọn D."
+          "explanation": "Thoát hơi nước tiêu tốn năng lượng (nhiệt bốc hơi), không cung cấp năng lượng trực tiếp cho lá. Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq14",
           "type": "mcq",
           "question": "Phát biểu nào sau đây đúng khi nói đến ảnh hưởng của độ ẩm đến quá trình thoát hơi nước ở lá?",
           "options": [
-            "Độ ẩm không khí càng cao, sự thoát hơi nước không diễn ra.",
+            "Độ ẩm không khí càng cao, sự thoát hơi nước càng yếu.",
             "Độ ẩm không khí càng thấp, sự thoát hơi nước càng yếu.",
             "Độ ẩm không khí càng thấp, sự thoát hơi nước càng mạnh.",
             "Độ ẩm không khí càng cao, sự thoát hơi nước càng mạnh."
           ],
           "correct": 2,
-          "explanation": "Độ ẩm không khí càng thấp (khô hanh), gradient nước giữa lá và không khí càng lớn, thoát hơi nước càng mạnh. Chọn C."
+          "explanation": "Độ ẩm không khí càng thấp thì độ chênh lệch phân áp hơi nước giữa trong khoang khí khổng và khí quyển càng lớn, thoát hơi nước diễn ra càng mạnh. Chọn C."
         },
         {
           "id": "sinhhoc11_b2_mcq15",
@@ -508,38 +520,38 @@
             "Mạch gỗ chủ yếu vận chuyển chất hữu cơ tổng hợp từ lá."
           ],
           "correct": 1,
-          "explanation": "Mạch gỗ vận chuyển nước, khoáng và chất hữu cơ từ rễ lên trên. Chọn B."
+          "explanation": "Phát biểu B đúng. Tế bào mạch gỗ là tế bào chết có thành hóa lignin, vận chuyển dòng đi lên từ rễ lên lá. Chọn B."
         },
         {
           "id": "sinhhoc11_b2_mcq16",
           "type": "mcq",
-          "question": "Nếu một nguyên tố khoáng (A) từ môi trường đất có nồng độ thấp được hấp thụ vào trong rễ nơi có nồng độ cao hơn ngoài môi trường, nguyên tố khoáng A được hấp thụ theo cơ chế nào?",
+          "question": "Nếu một nguyên tố khoáng (A) từ môi trường đất có nồng độ thấp được hấp thụ vào trong rễ nơi có nồng độ cao hơn ngoài môi trường đất. Nguyên tố khoáng A được hấp thụ theo cơ chế nào?",
           "options": [
             "Thụ động.",
-            "Chủ động, cần năng lượng ATP.",
+            "Chủ động, cần năng lượng.",
             "Chủ động, không cần năng lượng.",
             "Biến dạng màng."
           ],
           "correct": 1,
-          "explanation": "Di chuyển ngược chiều gradient nồng độ (thấp đến cao) là cơ chế chủ động, cần năng lượng ATP. Chọn B."
+          "explanation": "Di chuyển ngược chiều gradient nồng độ (từ nơi nồng độ thấp sang nơi nồng độ cao) là cơ chế hấp thụ chủ động, bắt buộc tiêu tốn năng lượng ATP và cần chất mang protein. Chọn B."
         },
         {
           "id": "sinhhoc11_b2_mcq17",
           "type": "mcq",
-          "question": "Các nguyên tố khoáng trong môi trường đất và rễ: A (đất 0.01M, rễ 0.02M); B (đất 0.03M, rễ 0.05M); C (đất 0.04M, rễ 0.004M). Cây không cần A, cần B và C. Phát biểu nào sau đây đúng?",
+          "question": "Các nguyên tố khoáng trong môi trường đất và rễ sau đây:\nKhoáng A: đất 0,01M; trong rễ 0,02M.\nKhoáng B: đất 0,03M; trong rễ 0,05M.\nKhoáng C: đất 0,04M; trong rễ 0,004M.\nBiết cây không cần A, cần B và C. Phát biểu nào sau đây đúng?",
           "options": [
             "A được hấp thụ chủ động.",
-            "A được hấp thụ bị động theo dòng nước.",
+            "A được hấp thụ bị động.",
             "B được hấp thụ bị động.",
-            "C được hấp thụ chủ động."
+            "C được hấp thụ thụ động."
           ],
-          "correct": 1,
-          "explanation": "Mặc dù cây không cần A, nhưng do nồng độ trong rễ cao hơn đất ít hoặc theo dòng nước, A vẫn có thể đi vào thụ động. Chọn B."
+          "correct": 3,
+          "explanation": "Cây cần C, nồng độ C ở môi trường đất (0,04M) cao hơn trong rễ (0,004M), nên C di chuyển theo chiều gradient nồng độ vào rễ theo cơ chế thụ động (khuếch tán). Chọn D."
         },
         {
           "id": "sinhhoc11_b2_mcq18",
           "type": "mcq",
-          "question": "Cây trồng hấp thụ Nitrogen trong đất dưới dạng chủ yếu nào?",
+          "question": "Cây trồng hấp thụ Nitrogen trong đất dưới dạng nào?",
           "options": [
             "NO3- và NH4+.",
             "N2 và NH4+.",
@@ -547,62 +559,86 @@
             "NO2 và NO3-."
           ],
           "correct": 0,
-          "explanation": "Thực vật hấp thụ nitrogen khoáng chủ yếu ở dạng nitrate (NO3-) và ammonium (NH4+). Chọn A."
+          "explanation": "Cây chỉ hấp thụ được nitrogen khoáng trong đất dưới 2 dạng ion: Nitrate (NO3-) và Ammonium (NH4+). Chọn A."
         },
         {
           "id": "sinhhoc11_b2_mcq19",
           "type": "mcq",
           "question": "Bị ngập úng trong thời gian dài khiến cây dễ bị chết vì:",
           "options": [
-            "Rễ cây không hô hấp được do thiếu oxygen, tích tụ chất độc.",
-            "Rễ cây hấp thụ quá nhiều nước gây nổ tế bào.",
-            "Rễ cây hấp thụ quá nhiều chất khoáng làm mất nước.",
+            "Rễ cây không hô hấp được do thiếu oxygen.",
+            "Rễ cây hấp thụ quá nhiều nước.",
+            "Rễ cây hấp thụ quá nhiều chất khoáng.",
             "Ion khoáng bị lắng xuống tầng nước ngầm nên cây không hấp thụ được."
           ],
           "correct": 0,
-          "explanation": "Ngập úng làm đất thiếu O2, rễ không hô hấp hiếu khí được, tích lũy độc chất và ngừng hút nước. Chọn A."
+          "explanation": "Đất ngập úng thiếu O2 khiến rễ không hô hấp hiếu khí được, tế bào lông hút chết và rụng, rễ bị thối và không hấp thụ được nước, dẫn đến cây chết héo. Chọn A."
         },
         {
-          "id": "sinhhoc11_b2_sa01",
-          "type": "shortanswer",
-          "question": "Thực vật cần phải hấp thụ nước vì các lí do: (1) Nước là thành phần cấu tạo tế bào; (2) Nước là dung môi hòa tan muối khoáng và chất hữu cơ; (3) Nước tham gia phản ứng sinh hóa; (4) Nước điều hòa nhiệt độ chống nóng. Có bao nhiêu ý đúng?",
-          "correctAnswer": "4",
-          "explanation": "Cả 4 ý đều đúng về vai trò của nước đối với thực vật. Đáp án: 4."
+          "id": "sinhhoc11_b2_mcq20",
+          "type": "mcq",
+          "question": "Thực vật cần phải hấp thụ nước vì các lí do nào sau đây?\n(1) Nước là thành phần cấu tạo của tế bào.\n(2) Nước là dung môi hòa tan các muối khoáng và chất hữu cơ.\n(3) Nước là môi trường và nguyên liệu của các phản ứng hóa sinh.\n(4) Nước tham gia điều hòa nhiệt độ bề mặt cơ thể thực vật.\n(5) Nước cung cấp năng lượng cho các hoạt động sống của cây.\nCó bao nhiêu lí do đúng?",
+          "options": [
+            "2 lí do.",
+            "3 lí do.",
+            "4 lí do.",
+            "5 lí do."
+          ],
+          "correct": 2,
+          "explanation": "Các lí do (1), (2), (3), (4) đúng. Lí do (5) sai vì nước không cung cấp năng lượng. Có 4 lí do đúng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b2_sa02",
-          "type": "shortanswer",
-          "question": "Cho các phát biểu về động lực vận chuyển nước và khoáng trong cây: I. Sự chênh lệch gradient nồng độ; II. Lực đẩy của rễ (áp suất rễ); III. Lực kéo của lá (thoát hơi nước); IV. Lực liên kết giữa các phân tử nước và lực bám giữa phân tử nước với thành mạch dẫn. Có bao nhiêu động lực chính xác?",
-          "correctAnswer": "3",
-          "explanation": "Động lực dòng mạch gỗ gồm áp suất rễ (II), lực hút do thoát hơi nước (III), lực liên kết và lực bám (IV). Ý I là cơ chế hấp thụ/khuếch tán. Có 3 ý đúng. Đáp án: 3."
+          "id": "sinhhoc11_b2_mcq21",
+          "type": "mcq",
+          "question": "Cho các phát biểu sau đây, có bao nhiêu phát biểu đúng về động lực vận chuyển nước và khoáng trong dòng mạch gỗ?\n(1) Lực đẩy của rễ (áp suất rễ).\n(2) Lực hút của lá (do thoát hơi nước ở lá).\n(3) Lực liên kết giữa các phân tử nước với nhau và với thành mạch gỗ.\n(4) Sự chênh lệch áp suất thẩm thấu giữa cơ quan nguồn và cơ quan chứa.",
+          "options": [
+            "1 phát biểu.",
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu."
+          ],
+          "correct": 2,
+          "explanation": "Các phát biểu (1), (2), (3) là 3 động lực của dòng mạch gỗ. Phát biểu (4) là động lực của dòng mạch rây. Có 3 phát biểu đúng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b2_sa03",
-          "type": "shortanswer",
-          "question": "Dựa vào sơ đồ nguồn nitrogen cung cấp cho cây: I. Sấm sét chuyển hóa nitrogen thành NH4+; II. Thực vật hấp thụ nitrogen chủ yếu ở dạng NH4+ và NO3-; III. Cố định nitrogen tự do thành NH4+ nhờ vi khuẩn; IV. Trong tự nhiên nitrogen tồn tại ở dạng tự do và hợp chất. Có bao nhiêu phát biểu đúng?",
-          "correctAnswer": "3",
-          "explanation": "Phát biểu I sai (sấm sét chuyển hóa N2 thành NO3-/HNO3). Các phát biểu II, III, IV đúng. Đáp án: 3."
+          "id": "sinhhoc11_b2_mcq22",
+          "type": "mcq",
+          "question": "Dựa trên sơ đồ nguồn nitrogen cung cấp cho cây, có bao nhiêu phát biểu sau đây đúng?\n(I) Thực vật có thể trực tiếp hấp thụ N2 trong khí quyển.\n(II) Vi khuẩn cố định đạm biến N2 thành NH4+ cây có thể sử dụng.\n(III) Sấm sét (tia lửa điện) biến N2 thành NO3- trong đất.\n(IV) Vi khuẩn phản nitrat hóa biến NO3- thành N2 gây mất đạm trong đất.",
+          "options": [
+            "1 phát biểu.",
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu."
+          ],
+          "correct": 2,
+          "explanation": "Phát biểu (I) sai vì thực vật không trực tiếp đồng hóa N2. Các phát biểu (II), (III), (IV) đúng. Có 3 phát biểu đúng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b2_sa04",
-          "type": "shortanswer",
-          "question": "Dựa trên biểu đồ mối quan hệ giữa phân bón và năng suất cây trồng: [1] Bón ít năng suất thấp; [2] Bón hợp lý nhất; [3] Bón quá nhiều giảm năng suất; [4] Vùng bón tối ưu. Có bao nhiêu phát biểu đúng về đồ thị này?",
-          "correctAnswer": "4",
-          "explanation": "Cả 4 phát biểu đều đúng. Đáp án: 4."
+          "id": "sinhhoc11_b2_mcq23",
+          "type": "mcq",
+          "question": "Dựa trên mối quan hệ giữa phân bón và năng suất cây trồng, có bao nhiêu phát biểu sau đây đúng?\n(I) Bón lượng phân quá ít làm cây thiếu dưỡng chất, năng suất thấp.\n(II) Bón phân với liều lượng hợp lí giúp năng suất đạt tối ưu.\n(III) Bón phân quá nhiều gây hại cho cây, làm giảm năng suất do ngộ độc khoáng.\n(IV) Bón phân dư thừa gây ô nhiễm môi trường đất và nguồn nước ngầm.",
+          "options": [
+            "1 phát biểu.",
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu."
+          ],
+          "correct": 3,
+          "explanation": "Cả 4 phát biểu (I), (II), (III), (IV) đều đúng theo nguyên tắc bón phân hợp lí trong nông nghiệp. Chọn D."
         }
       ],
       "questionGroups": [
         {
           "id": "sinhhoc11_b2_tf01",
           "type": "tf-group",
-          "passage": "Khi nói về quá trình trao đổi nước ở thực vật trên cạn:",
+          "passage": "Khi nói về quá trình trao đổi nước ở thực vật trên cạn, mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Cơ quan hút nước chủ yếu của cây là rễ.",
+              "question": "a) Cơ quan hút nước chủ yếu là rễ.",
               "correct": true
             },
             {
-              "question": "b) Cơ quan thoát hơi nước chủ yếu của cây là lá.",
+              "question": "b) Cơ quan thoát hơi nước chủ yếu là lá.",
               "correct": true
             },
             {
@@ -614,12 +650,12 @@
               "correct": false
             }
           ],
-          "explanation": "d sai vì một phần nước (khoảng 1-2%) được giữ lại để cấu tạo tế bào và tham gia các quá trình chuyển hóa, phần lớn mới thoát ra ngoài. a, b, c đúng."
+          "explanation": "d sai vì khoảng 98% lượng nước thoát ra ngoài qua khí khổng và tầng cutin, một lượng nhỏ (khoảng 2%) được giữ lại dùng cho các phản ứng sinh hóa và tạo độ trương tế bào. a, b, c đúng."
         },
         {
           "id": "sinhhoc11_b2_tf02",
           "type": "tf-group",
-          "passage": "Khi nói về cơ chế hấp thụ nước và khoáng ở rễ:",
+          "passage": "Mỗi nhận định sau đây là đúng hay sai khi nói về trao đổi nước và khoáng ở thực vật?",
           "statements": [
             {
               "question": "a) Rễ cây hấp thụ nước từ đất theo cơ chế thẩm thấu, cần tiêu tốn năng lượng.",
@@ -634,19 +670,19 @@
               "correct": true
             },
             {
-              "question": "d) Trong cơ chế thụ động, ion có thể xâm nhập vào rễ cây theo dòng nước.",
+              "question": "d) Trong cơ chế thụ động, ion có thể xâm nhập vào rễ cây theo dòng nước liên kết.",
               "correct": true
             }
           ],
-          "explanation": "a sai vì thẩm thấu là thụ động không tốn ATP; b sai vì chủ động di chuyển từ thấp đến cao; c, d đúng."
+          "explanation": "a sai vì thẩm thấu là thụ động không tốn năng lượng; b sai vì chủ động di chuyển ngược chiều nồng độ (từ thấp đến cao); c, d đúng."
         },
         {
           "id": "sinhhoc11_b2_tf03",
           "type": "tf-group",
-          "passage": "Khi nói về dòng mạch gỗ:",
+          "passage": "Phát biểu sau đây là đúng hay sai khi nói về dòng mạch gỗ?",
           "statements": [
             {
-              "question": "a) Mạch gỗ được tạo thành do các tế bào hình ống không có thành tế bào nối liền.",
+              "question": "a) Mạch gỗ được tạo thành do các tế bào hình ống không có thành tế bào nối liền với nhau.",
               "correct": false
             },
             {
@@ -654,7 +690,7 @@
               "correct": true
             },
             {
-              "question": "c) Động lực chủ yếu làm cho các chất di chuyển trong dòng mạch gỗ là sự chênh lệch nồng độ chất tan.",
+              "question": "c) Động lực chủ yếu làm cho các chất di chuyển trong dòng mạch gỗ là sự chênh lệch nồng độ.",
               "correct": false
             },
             {
@@ -662,23 +698,23 @@
               "correct": true
             }
           ],
-          "explanation": "a sai vì tế bào mạch gỗ có thành tế bào hóa lignin vững chắc; c sai vì động lực chính là lực hút do thoát hơi nước ở lá; b, d đúng."
+          "explanation": "a sai vì tế bào mạch gỗ có thành dày hóa gỗ lignin; c sai vì động lực chủ yếu gồm lực hút của lá, lực đẩy của rễ và lực liên kết; b, d đúng."
         },
         {
           "id": "sinhhoc11_b2_tf04",
           "type": "tf-group",
-          "passage": "Khi nói về dòng mạch rây:",
+          "passage": "Phát biểu sau đây về dòng mạch rây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Mạch rây được tạo thành do các tế bào rây nối liền với nhau, xung quanh là tế bào kèm.",
+              "question": "a) Mạch rây được tạo thành do các tế bào rây nối liền với nhau, xung quanh ống rây là các tế bào kèm, chuyên chở các sản phẩm quang hợp và hormone thực vật.",
               "correct": true
             },
             {
-              "question": "b) Có thể thu mủ cây cao su từ mạch rây.",
+              "question": "b) Thu mủ cây cao su từ mạch rây.",
               "correct": true
             },
             {
-              "question": "c) Nước có thể vận chuyển ngang từ mạch gỗ sang mạch rây và ngược lại.",
+              "question": "c) Nước có thể vận chuyển ngang từ mạch gỗ sang mạch rây và ngược lại tuỳ theo nhu cầu của cây.",
               "correct": true
             },
             {
@@ -686,23 +722,23 @@
               "correct": false
             }
           ],
-          "explanation": "d sai vì mạch rây vận chuyển chất hữu cơ theo hai chiều (từ cơ quan nguồn đến cơ quan chứa). a, b, c đúng."
+          "explanation": "d sai vì dòng mạch rây vận chuyển chất hữu cơ theo hai chiều: từ cơ quan nguồn đến cơ quan chứa hoặc cơ quan dự trữ đến cơ quan sử dụng. a, b, c đúng."
         },
         {
           "id": "sinhhoc11_b2_tf05",
           "type": "tf-group",
-          "passage": "Vai trò của quá trình thoát hơi nước:",
+          "passage": "Nhận định sau đây về thoát hơi nước đối với thực vật là đúng hay sai?",
           "statements": [
             {
               "question": "a) Tạo ra động lực đầu trên cho dòng mạch gỗ.",
               "correct": true
             },
             {
-              "question": "b) Đảm bảo khuếch tán CO2 vào lá, cung cấp cho quang hợp.",
+              "question": "b) Đảm bảo cho khí khổng mở ra để khí CO2 khuếch tán vào lá cung cấp cho quang hợp.",
               "correct": true
             },
             {
-              "question": "c) Điều hòa nhiệt độ của cây, đảm bảo các quá trình sinh lí diễn ra bình thường.",
+              "question": "c) Giúp hạ nhiệt độ của lá cây vào những ngày nắng nóng.",
               "correct": true
             },
             {
@@ -710,12 +746,12 @@
               "correct": false
             }
           ],
-          "explanation": "d sai vì lá non có lớp cutin mỏng thoát hơi nước mạnh hơn lá già (cutin dày). a, b, c đúng."
+          "explanation": "d sai vì lá non tầng cutin mỏng nên thoát hơi nước qua cutin mạnh hơn lá già (tầng cutin dày). a, b, c đúng."
         },
         {
           "id": "sinhhoc11_b2_tf06",
           "type": "tf-group",
-          "passage": "Nguồn nitrogen cung cấp cho cây:",
+          "passage": "Dựa trên sơ đồ tóm tắt nguồn nitrogen cung cấp cho cây, hãy cho biết mỗi phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
               "question": "a) Hoạt động sấm sét giúp chuyển hóa N2 thành NO3- cung cấp cho cây.",
@@ -726,7 +762,7 @@
               "correct": false
             },
             {
-              "question": "c) Cố định nitrogen tự do thành NH3/NH4+ nhờ vi khuẩn cố định nitrogen.",
+              "question": "c) Cố định nitrogen tự do thành NH3/NH4+ nhờ các nhóm vi khuẩn cố định đạm.",
               "correct": true
             },
             {
@@ -734,55 +770,55 @@
               "correct": false
             }
           ],
-          "explanation": "b sai vì cây hấp thụ dạng NH4+ và NO3-; d sai vì nitrogen tồn tại cả ở dạng muối khoáng trong đất và hợp chất hữu cơ. a, c đúng."
+          "explanation": "b sai vì thực vật không hấp thụ trực tiếp N2 mà hấp thụ NH4+ và NO3-; d sai vì nitrogen tồn tại cả dạng khoáng vô cơ trong đất và xác hữu cơ. a, c đúng."
         },
         {
           "id": "sinhhoc11_b2_tf07",
           "type": "tf-group",
-          "passage": "Cơ chế đóng mở khí khổng ([1] Khép lại khi thiếu nước, [2] Mở ra khi no nước):",
+          "passage": "Dựa trên sơ đồ tóm tắt quá trình đóng mở của khí khổng, hãy cho biết mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
               "question": "a) Khí khổng gồm 2 tế bào hình hạt đậu có cấu tạo thành ngoài mỏng, thành trong dày.",
               "correct": true
             },
             {
-              "question": "b) [2] Khi no nước, thành mỏng của khí khổng căng ra làm thành dày cong theo → khí khổng mở.",
+              "question": "b) Khi no nước, thành mỏng của tế bào khí khổng căng ra làm thành dày cong theo → khí khổng mở ra.",
               "correct": true
             },
             {
-              "question": "c) [1] Khi thiếu nước, thành mỏng hết căng, thành dày duỗi thẳng → khí khổng khép lại.",
+              "question": "c) Khi mất nước, thành mỏng hết căng làm thành dày duỗi thẳng → khí khổng đóng lại.",
               "correct": true
             },
             {
-              "question": "d) Sự trương nước của tế bào khí khổng được điều tiết bởi ánh sáng và stress.",
+              "question": "d) Sự trương nước hoặc mất trương nước của tế bào khí khổng phụ thuộc vào ánh sáng và stress (hạn hán).",
               "correct": true
             }
           ],
-          "explanation": "Cả 4 phát biểu đều đúng."
+          "explanation": "Cả 4 phát biểu đều đúng mô tả chính xác cơ chế đóng mở khí khổng ở thực vật."
         },
         {
           "id": "sinhhoc11_b2_tf08",
           "type": "tf-group",
-          "passage": "Điều tiết quá trình thoát hơi nước:",
+          "passage": "Thực vật có khả năng điều tiết quá trình thoát hơi nước, hãy cho biết mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
               "question": "a) Quá trình thoát hơi nước được điều tiết bởi hai tác nhân chính là ánh sáng và nhiệt độ.",
               "correct": false
             },
             {
-              "question": "b) Ánh sáng thúc đẩy quang hợp → áp suất thẩm thấu tế bào khí khổng tăng, bơm ion hoạt hóa → khí khổng mở.",
+              "question": "b) Ánh sáng thúc đẩy khí khổng mở thông qua kích thích bơm ion và tăng áp suất thẩm thấu.",
               "correct": true
             },
             {
-              "question": "c) Nếu cường độ ánh sáng quá mạnh làm tăng nhiệt độ lá, tế bào khí khổng mất nước và đóng lại.",
+              "question": "c) Khi cường độ ánh sáng quá mạnh làm nhiệt độ lá tăng cao, tế bào khí khổng mất nước và đóng lại để tránh mất nước.",
               "correct": true
             },
             {
-              "question": "d) Khi thực vật bị stress hạn hán, cây giảm tổng hợp abscisic acid làm khí khổng đóng lại.",
+              "question": "d) Khi thực vật bị stress hạn hán, cây giảm tổng hợp abscisic acid (ABA) làm khí khổng đóng lại.",
               "correct": false
             }
           ],
-          "explanation": "a sai vì tác nhân chính là ánh sáng và nước/stress; d sai vì khi hạn hán cây tăng tổng hợp ABA (abscisic acid) chứ không phải giảm. b, c đúng."
+          "explanation": "a sai vì hai tác nhân điều tiết đóng mở khí khổng chính là ánh sáng và nước/stress; d sai vì khi bị stress hạn cây tăng tổng hợp ABA để đóng khí khổng. b, c đúng."
         }
       ]
     },
@@ -790,7 +826,7 @@
       "id": 3,
       "bai": 4,
       "name": "Bài 4: Quang hợp ở thực vật",
-      "topic": "CHƯƠNG III: QUANG HỢP Ở THỰC VẬT",
+      "topic": "Quang hợp ở thực vật",
       "questions": [
         {
           "id": "sinhhoc11_b4_mcq01",
@@ -803,12 +839,12 @@
             "Phân giải đường glucose, đồng thời giải phóng O2."
           ],
           "correct": 0,
-          "explanation": "Quang hợp tổng hợp chất hữu cơ từ CO2 và nước nhờ năng lượng ánh sáng, giải phóng O2. Chọn A."
+          "explanation": "Phương trình tổng quát của quang hợp: 6CO2 + 12H2O → C6H12O6 + 6O2 + 6H2O. Chọn A."
         },
         {
           "id": "sinhhoc11_b4_mcq02",
           "type": "mcq",
-          "question": "Có bao nhiêu nhận định đúng về vai trò của quang hợp đối với sinh vật và sinh quyển?\n(1) Cung cấp nguồn chất hữu cơ làm thức ăn cho sinh vật dị dưỡng.\n(2) Cung cấp nguyên liệu cho công nghiệp, dược liệu.\n(3) Cung cấp năng lượng duy trì hoạt động sống của sinh giới.\n(4) Điều hòa trực tiếp lượng nước trong khí quyển.\n(5) Điều hòa hàm lượng O2 và CO2 không khí.",
+          "question": "Trong các phát biểu sau:\n(1) Cung cấp nguồn chất hữu cơ làm thức ăn cho sinh vật dị dưỡng.\n(2) Cung cấp nguyên liệu cho công nghiệp, dược liệu cho con người.\n(3) Cung cấp năng lượng duy trì hoạt động sống của sinh giới.\n(4) Điều hòa trực tiếp lượng nước trong khí quyển.\n(5) Điều hòa hàm lượng O2 và CO2 trong khí quyển.\nCó bao nhiêu phát biểu đúng về vai trò của quang hợp đối với sinh vật và sinh quyển?",
           "options": [
             "2.",
             "3.",
@@ -816,20 +852,20 @@
             "5."
           ],
           "correct": 2,
-          "explanation": "Các nhận định (1), (2), (3), (5) đúng. Nhận định (4) không đúng (quang hợp tiêu thụ nước nhưng điều hòa trực tiếp nước là chu trình nước). Có 4 nhận định đúng. Chọn C."
+          "explanation": "Các phát biểu (1), (2), (3), (5) đúng. Phát biểu (4) sai vì điều hòa trực tiếp lượng nước trong khí quyển là quá trình bốc hơi nước và vòng tuần hoàn nước. Có 4 phát biểu đúng. Chọn C."
         },
         {
           "id": "sinhhoc11_b4_mcq03",
           "type": "mcq",
           "question": "Ở lục lạp, hệ sắc tố quang hợp phân bố ở đâu?",
           "options": [
-            "Lớp màng trong.",
-            "Màng thylakoid.",
             "Lớp màng ngoài.",
+            "Màng thylakoid.",
+            "Lớp màng trong.",
             "Chất nền (stroma)."
           ],
           "correct": 1,
-          "explanation": "Hệ sắc tố quang hợp nằm trên màng thylakoid của lục lạp. Chọn B."
+          "explanation": "Hệ sắc tố quang hợp (chlorophyll và carotenoid) được gắn trên màng thylakoid của lục lạp. Chọn B."
         },
         {
           "id": "sinhhoc11_b4_mcq04",
@@ -842,7 +878,7 @@
             "Xanthophyll."
           ],
           "correct": 1,
-          "explanation": "Chlorophyll a ở trung tâm phản ứng là sắc tố trực tiếp chuyển hóa quang năng thành hóa năng. Chọn B."
+          "explanation": "Chỉ có phân tử chlorophyll a ở trung tâm phản ứng mới có khả năng chuyển hóa năng lượng ánh sáng thành năng lượng trong ATP và NADPH. Chọn B."
         },
         {
           "id": "sinhhoc11_b4_mcq05",
@@ -855,7 +891,7 @@
             "Carbohydrate, ATP, NADPH, O2."
           ],
           "correct": 0,
-          "explanation": "Sản phẩm của pha sáng gồm ATP, NADPH và O2. Chọn A."
+          "explanation": "Pha sáng tạo ra 3 sản phẩm chính: ATP, NADPH (cung cấp cho pha tối) và O2 (giải phóng ra khí quyển do quang phân li nước). Chọn A."
         },
         {
           "id": "sinhhoc11_b4_mcq06",
@@ -865,28 +901,28 @@
             "Ở màng ngoài.",
             "Ở màng trong.",
             "Ở chất nền (stroma).",
-            "Ở granum."
+            "Ở màng thylakoid."
           ],
           "correct": 2,
-          "explanation": "Pha tối diễn ra trong chất nền (stroma) của lục lạp. Chọn C."
+          "explanation": "Pha tối (chu trình Calvin) diễn ra trong chất nền (stroma) của lục lạp, nơi chứa đầy đủ các enzyme cố định CO2. Chọn C."
         },
         {
           "id": "sinhhoc11_b4_mcq07",
           "type": "mcq",
-          "question": "Nhóm thực vật C4 được phân bố chủ yếu ở đâu?",
+          "question": "Nhóm thực vật C4 được phân bố ở đâu?",
           "options": [
-            "Chủ yếu ở vùng cận nhiệt đới và nhiệt đới.",
-            "Vùng hàn đới.",
-            "Sống ở vùng khô hạn kéo dài.",
-            "Hầu hết các nơi trên Trái Đất."
+            "Vùng nhiệt đới và cận nhiệt đới.",
+            "Vùng ôn đới và hàn đới.",
+            "Vùng sa mạc khô hạn kéo dài.",
+            "Rừng lá kim phương Bắc."
           ],
           "correct": 0,
-          "explanation": "Thực vật C4 phân bố ở vùng nhiệt đới và cận nhiệt đới. Chọn A."
+          "explanation": "Thực vật C4 (mía, ngô, kê, cỏ lồng vực...) phân bố chủ yếu ở vùng nhiệt đới và cận nhiệt đới, nơi có cường độ ánh sáng mạnh, nhiệt độ cao. Chọn A."
         },
         {
           "id": "sinhhoc11_b4_mcq08",
           "type": "mcq",
-          "question": "Trật tự các giai đoạn trong chu trình Calvin (pha tối C3) là:",
+          "question": "Trật tự các giai đoạn trong chu trình Calvin là:",
           "options": [
             "Khử PGA thành G3P → Cố định CO2 → Tái sinh RuBP.",
             "Cố định CO2 → Tái sinh RuBP → Khử PGA thành G3P.",
@@ -894,7 +930,7 @@
             "Cố định CO2 → Khử PGA thành G3P → Tái tạo chất nhận RuBP."
           ],
           "correct": 3,
-          "explanation": "Chu trình Calvin gồm: Cố định CO2 → Khử PGA thành G3P → Tái tạo chất nhận RuBP. Chọn D."
+          "explanation": "Trật tự 3 giai đoạn của chu trình Calvin: (1) Cố định CO2 → (2) Khử 3-PGA thành G3P → (3) Tái sinh chất nhận RuBP. Chọn D."
         },
         {
           "id": "sinhhoc11_b4_mcq09",
@@ -907,7 +943,7 @@
             "Sản phẩm cố định CO2 đầu tiên."
           ],
           "correct": 0,
-          "explanation": "Cả ba nhóm thực vật đều có pha sáng giống nhau. Chọn A."
+          "explanation": "Cả 3 nhóm thực vật C3, C4 và CAM đều có pha sáng diễn ra giống nhau trên màng thylakoid, tạo ra ATP, NADPH và giải phóng O2. Chọn A."
         },
         {
           "id": "sinhhoc11_b4_mcq10",
@@ -920,20 +956,20 @@
             "O2."
           ],
           "correct": 3,
-          "explanation": "O2 được giải phóng ra môi trường, không tham gia vào pha tối. Chọn D."
+          "explanation": "O2 được tạo ra từ quang phân li nước và khuếch tán ra môi trường ngoài, không đi vào pha tối. Chọn D."
         },
         {
           "id": "sinhhoc11_b4_mcq11",
           "type": "mcq",
-          "question": "Ở các loài thực vật, giai đoạn thực sự tạo ra chất hữu cơ C6H12O6 (hoặc G3P khởi đầu) là:",
+          "question": "Ở các loài thực vật, giai đoạn thực sự tạo ra chất hữu cơ C6H12O6 là:",
           "options": [
-            "Pha tối.",
+            "Pha tối (chu trình Calvin).",
             "Pha sáng.",
             "Quang phân li nước.",
-            "Chuỗi chuyền electron."
+            "Giai đoạn hấp thụ ánh sáng của diệp lục."
           ],
           "correct": 0,
-          "explanation": "Pha tối là quá trình đồng hóa CO2 thành chất hữu cơ. Chọn A."
+          "explanation": "Pha tối (chu trình Calvin) mới là giai đoạn khử CO2 để tạo ra các hợp chất hữu cơ (triose phosphate và glucose). Chọn A."
         },
         {
           "id": "sinhhoc11_b4_mcq12",
@@ -941,93 +977,132 @@
           "question": "Chất nhận CO2 đầu tiên ở nhóm thực vật C4 và CAM là:",
           "options": [
             "RuBP.",
-            "PGA.",
-            "G3P.",
-            "PEP (Phosphoenolpyruvate)."
+            "3-PGA.",
+            "OAA.",
+            "PEP."
           ],
           "correct": 3,
-          "explanation": "Chất nhận CO2 đầu tiên ở thực vật C4 và CAM là PEP. Chọn D."
+          "explanation": "Chất nhận CO2 đầu tiên ở cả thực vật C4 và CAM là PEP (phosphoenolpyruvate, hợp chất 3C). Chọn D."
         },
         {
           "id": "sinhhoc11_b4_mcq13",
           "type": "mcq",
-          "question": "Nhóm thực vật nào sau đây có quá trình đồng hóa CO2 theo chu trình Calvin?",
+          "question": "Có bao nhiêu đặc điểm sau đây là sự khác biệt trong pha tối của thực vật C4 và CAM?\n(1) Không gian diễn ra.\n(2) Thời gian diễn ra.\n(3) Chất nhận CO2 đầu tiên.\n(4) Sản phẩm cố định CO2 đầu tiên.",
           "options": [
-            "Nhóm thực vật C3.",
-            "Nhóm thực vật C4 và CAM.",
-            "Nhóm thực vật C3 và C4.",
-            "Nhóm thực vật C3, C4 và CAM."
+            "1.",
+            "2.",
+            "3.",
+            "4."
           ],
-          "correct": 3,
-          "explanation": "Cả ba nhóm thực vật C3, C4 và CAM đều có chu trình Calvin để tổng hợp chất hữu cơ. Chọn D."
+          "correct": 1,
+          "explanation": "Có 2 đặc điểm khác biệt: (1) Không gian diễn ra (C4 diễn ra ở 2 loại tế bào: mô giậu và bao bó mạch; CAM chỉ diễn ra ở 1 loại tế bào mô giậu); (2) Thời gian diễn ra (C4 cả 2 chu trình đều ban ngày; CAM sơ bộ ban đêm, chu trình Calvin ban ngày). Còn chất nhận (PEP) và sản phẩm đầu tiên (OAA) là giống nhau. Chọn B."
         },
         {
           "id": "sinhhoc11_b4_mcq14",
           "type": "mcq",
-          "question": "Sản phẩm cố định CO2 đầu tiên của chu trình C4 là:",
+          "question": "Cho các đặc điểm sau:\n(1) Sản phẩm cố định CO2 đầu tiên là OAA (hợp chất 4 carbon).\n(2) Chất nhận CO2 đầu tiên là PEP.\n(3) Có chu trình sơ bộ cố định CO2 (chu trình C4).\n(4) Có chu trình Calvin tổng hợp chất hữu cơ.\nCó bao nhiêu đặc điểm chung của cả thực vật C4 và thực vật CAM?",
           "options": [
-            "OAA (Oxaloacetic acid - 4C).",
-            "APG (3C).",
-            "G3P.",
-            "RuBP."
+            "1.",
+            "2.",
+            "3.",
+            "4."
           ],
-          "correct": 0,
-          "explanation": "Sản phẩm đầu tiên của con đường C4 là OAA (4C). Chọn A."
+          "correct": 3,
+          "explanation": "Cả 4 đặc điểm (1), (2), (3), (4) đều là những điểm giống nhau cốt lõi giữa thực vật C4 và CAM. Chọn D."
         },
         {
           "id": "sinhhoc11_b4_mcq15",
           "type": "mcq",
+          "question": "Nhóm thực vật nào sau đây có quá trình đồng hóa CO2 theo chu trình Calvin?",
+          "options": [
+            "Chỉ có nhóm thực vật C3.",
+            "Chỉ có nhóm thực vật C4.",
+            "Nhóm thực vật C3 và C4.",
+            "Cả nhóm thực vật C3, C4 và CAM."
+          ],
+          "correct": 3,
+          "explanation": "Chu trình Calvin là con đường đồng hóa CO2 chung duy nhất để tổng hợp glucose ở mọi thực vật quang hợp (C3, C4 và CAM). Chọn D."
+        },
+        {
+          "id": "sinhhoc11_b4_mcq16",
+          "type": "mcq",
+          "question": "Sản phẩm của pha sáng gồm:",
+          "options": [
+            "ATP, NADPH và O2.",
+            "ATP, NADPH và CO2.",
+            "ATP, NADP+ và O2.",
+            "ATP, NADPH."
+          ],
+          "correct": 0,
+          "explanation": "Sản phẩm pha sáng gồm ATP, NADPH và O2. Chọn A."
+        },
+        {
+          "id": "sinhhoc11_b4_mcq17",
+          "type": "mcq",
+          "question": "Sản phẩm cố định CO2 đầu tiên của chu trình C4 là:",
+          "options": [
+            "OAA (oxaloacetic acid).",
+            "APG (3-PGA).",
+            "ALPG (G3P).",
+            "RuBP (RiDP)."
+          ],
+          "correct": 0,
+          "explanation": "Sản phẩm cố định CO2 đầu tiên của con đường C4 là OAA (oxaloacetic acid, hợp chất 4 carbon). Chọn A."
+        },
+        {
+          "id": "sinhhoc11_b4_mcq18",
+          "type": "mcq",
           "question": "Trong pha tối của thực vật C3, chất nhận CO2 đầu tiên là:",
           "options": [
-            "APG.",
+            "3-PGA.",
             "PEP.",
             "OAA.",
             "RuBP (Ribulose 1,5-bisphosphate)."
           ],
           "correct": 3,
-          "explanation": "Chất nhận CO2 đầu tiên ở thực vật C3 là RuBP. Chọn D."
+          "explanation": "Chất nhận CO2 đầu tiên ở thực vật C3 là RuBP (hợp chất 5 carbon). Chọn D."
         },
         {
-          "id": "sinhhoc11_b4_mcq16",
+          "id": "sinhhoc11_b4_mcq19",
           "type": "mcq",
-          "question": "Nhóm thực vật C3 được phân bố chủ yếu ở:",
+          "question": "Nhóm thực vật C3 được phân bố:",
           "options": [
-            "Hầu khắp mọi nơi trên Trái Đất (đặc biệt ôn đới, á nhiệt đới).",
-            "Chỉ ở vùng nhiệt đới khô hạn.",
-            "Chỉ ở sa mạc.",
-            "Vùng cực."
+            "Hầu khắp mọi nơi trên Trái Đất (vùng ôn đới, á nhiệt đới).",
+            "Chỉ ở vùng ôn đới.",
+            "Chỉ ở vùng sa mạc.",
+            "Chỉ ở vùng đầm lầy."
           ],
           "correct": 0,
-          "explanation": "Thực vật C3 phân bố rộng rãi khắp nơi trên Trái Đất. Chọn A."
+          "explanation": "Thực vật C3 phân bố rộng rãi nhất, hầu khắp mọi nơi trên Trái Đất, chiếm khoảng 85% các loài thực vật. Chọn A."
         },
         {
-          "id": "sinhhoc11_b4_mcq17",
+          "id": "sinhhoc11_b4_mcq20",
           "type": "mcq",
-          "question": "Điểm bù ánh sáng là cường độ ánh sáng mà tại đó:",
+          "question": "Điểm bù ánh sáng là cường độ ánh sáng mà tại đó cường độ quang hợp:",
           "options": [
-            "Cường độ quang hợp lớn hơn cường độ hô hấp.",
-            "Cường độ quang hợp nhỏ hơn cường độ hô hấp.",
-            "Cường độ quang hợp bằng cường độ hô hấp.",
-            "Cường độ quang hợp đạt cực đại."
+            "Lớn hơn cường độ hô hấp.",
+            "Nhỏ hơn cường độ hô hấp.",
+            "Bằng cường độ hô hấp.",
+            "Đạt giá trị cực đại."
           ],
           "correct": 2,
-          "explanation": "Tại điểm bù ánh sáng, cường độ quang hợp bằng cường độ hô hấp. Chọn C."
+          "explanation": "Điểm bù ánh sáng là cường độ ánh sáng mà tại đó lượng CO2 quang hợp hấp thụ bằng lượng CO2 hô hấp thải ra (quang hợp = hô hấp). Chọn C."
         },
         {
-          "id": "sinhhoc11_b4_mcq18",
+          "id": "sinhhoc11_b4_mcq21",
           "type": "mcq",
           "question": "Điểm bão hòa ánh sáng của quang hợp là cường độ ánh sáng:",
           "options": [
             "Tối thiểu để cường độ quang hợp và hô hấp bằng nhau.",
             "Tối đa để cường độ quang hợp đạt cực đại.",
-            "Tối đa để quá trình quang hợp ngừng lại.",
-            "Tối thiểu để cây bắt đầu quang hợp."
+            "Tối đa để quá trình quang hợp bị ngừng lại.",
+            "Tối thiểu để cây có thể bắt đầu tiến hành quang hợp."
           ],
           "correct": 1,
-          "explanation": "Điểm bão hòa ánh sáng là cường độ mà ở đó quang hợp đạt mức tối đa. Chọn B."
+          "explanation": "Điểm bão hòa ánh sáng là cường độ ánh sáng mà tại đó cường độ quang hợp đạt mức cực đại, nếu tăng cường độ ánh sáng thêm nữa thì quang hợp không tăng. Chọn B."
         },
         {
-          "id": "sinhhoc11_b4_mcq19",
+          "id": "sinhhoc11_b4_mcq22",
           "type": "mcq",
           "question": "Ánh sáng đỏ có tác dụng kích thích tổng hợp chủ yếu chất nào sau đây?",
           "options": [
@@ -1037,23 +1112,23 @@
             "Nucleic acid."
           ],
           "correct": 0,
-          "explanation": "Ánh sáng đỏ kích thích tổng hợp carbohydrate, còn ánh sáng xanh tím kích thích tổng hợp amino acid và protein. Chọn A."
+          "explanation": "Tia sáng đỏ kích thích mạnh sự tổng hợp carbohydrate, trong khi tia sáng xanh tím kích thích tổng hợp protein và amino acid. Chọn A."
         },
         {
-          "id": "sinhhoc11_b4_mcq20",
+          "id": "sinhhoc11_b4_mcq23",
           "type": "mcq",
-          "question": "Khi nồng độ CO2 đạt điểm bão hòa, nếu tiếp tục tăng nồng độ CO2 sẽ làm cho cường độ quang hợp:",
+          "question": "Khi nồng độ CO2 đạt bão hòa, nếu tiếp tục tăng nồng độ CO2 sẽ làm:",
           "options": [
-            "Tăng lên liên tục.",
-            "Không đổi hoặc giảm do ngộ độc.",
-            "Giảm mạnh về 0 ngay lập tức.",
-            "Tăng gấp đôi."
+            "Cường độ quang hợp tăng liên tục.",
+            "Cường độ quang hợp không đổi.",
+            "Ức chế quá trình quang hợp.",
+            "Ức chế quá trình hô hấp."
           ],
-          "correct": 1,
-          "explanation": "Khi đạt điểm bão hòa, tăng CO2 cường độ quang hợp không đổi, nếu quá cao có thể gây ngộ độc giảm quang hợp. Chọn B."
+          "correct": 2,
+          "explanation": "Khi vượt quá điểm bão hòa, nồng độ CO2 quá cao sẽ gây độc cho tế bào khí khổng và ức chế quang hợp. Chọn C."
         },
         {
-          "id": "sinhhoc11_b4_mcq21",
+          "id": "sinhhoc11_b4_mcq24",
           "type": "mcq",
           "question": "Quang hợp quyết định khoảng bao nhiêu phần trăm năng suất cây trồng?",
           "options": [
@@ -1063,58 +1138,82 @@
             "100%."
           ],
           "correct": 2,
-          "explanation": "Quang hợp quyết định 90 - 95% năng suất cây trồng, phần còn lại do dinh dưỡng khoáng. Chọn C."
+          "explanation": "Quang hợp quyết định 90 - 95% chất khô trong sinh khối thực vật, 5 - 10% còn lại là các chất khoáng do rễ hấp thụ. Chọn C."
         },
         {
-          "id": "sinhhoc11_b4_mcq22",
+          "id": "sinhhoc11_b4_mcq25",
           "type": "mcq",
-          "question": "Biện pháp nào sau đây không nhằm tăng diện tích lá để nâng cao năng suất quang hợp?",
+          "question": "Biện pháp nào sau đây không áp dụng nhằm tăng diện tích lá để nâng cao năng suất cây trồng?",
           "options": [
             "Bón phân hợp lý.",
             "Tưới nước đầy đủ.",
             "Chọn giống cây phù hợp.",
-            "Giảm chiếu sáng mạnh."
+            "Giảm chiếu sáng."
           ],
           "correct": 3,
-          "explanation": "Giảm chiếu sáng làm giảm quang hợp, không phải biện pháp tăng diện tích lá. Chọn D."
+          "explanation": "Giảm chiếu sáng làm giảm quang hợp và cản trở phát triển diện tích lá. Chọn D."
         },
         {
-          "id": "sinhhoc11_b4_sa01",
-          "type": "shortanswer",
+          "id": "sinhhoc11_b4_mcq26",
+          "type": "mcq",
           "question": "Sản phẩm ổn định đầu tiên trong quá trình cố định CO2 của nhóm thực vật CAM (và C4) là một hợp chất có bao nhiêu carbon?",
-          "correctAnswer": "4",
-          "explanation": "Sản phẩm đầu tiên là OAA chứa 4 carbon. Đáp án: 4."
+          "options": [
+            "2 carbon.",
+            "3 carbon.",
+            "4 carbon.",
+            "5 carbon."
+          ],
+          "correct": 2,
+          "explanation": "Sản phẩm đầu tiên là OAA (oxaloacetic acid) chứa 4 nguyên tử carbon. Chọn C."
         },
         {
-          "id": "sinhhoc11_b4_sa02",
-          "type": "shortanswer",
-          "question": "Để nâng cao năng suất cây trồng, có bao nhiêu phương pháp đúng: (1) Bón phân và tưới tiêu hợp lý; (2) Tăng tổng diện tích lá; (3) Gieo trồng đúng thời vụ; (4) Tạo giống có cường độ quang hợp cao.",
-          "correctAnswer": "4",
-          "explanation": "Cả 4 phương pháp đều đúng. Đáp án: 4."
+          "id": "sinhhoc11_b4_mcq27",
+          "type": "mcq",
+          "question": "Để nâng cao năng suất cây trồng, có bao nhiêu phương pháp sau đây đúng?\n(1) Bón phân và tưới tiêu hợp lý.\n(2) Tăng tổng diện tích lá cây trồng.\n(3) Gieo trồng đúng thời vụ.\n(4) Tuyển chọn và tạo giống có cường độ quang hợp cao.",
+          "options": [
+            "1 phương pháp.",
+            "2 phương pháp.",
+            "3 phương pháp.",
+            "4 phương pháp."
+          ],
+          "correct": 3,
+          "explanation": "Cả 4 biện pháp (1), (2), (3), (4) đều là các biện pháp khoa học nhằm tối ưu hóa quang hợp và nâng cao năng suất cây trồng. Chọn D."
         },
         {
-          "id": "sinhhoc11_b4_sa03",
-          "type": "shortanswer",
-          "question": "Khi nói về pha sáng của quang hợp, có bao nhiêu phát biểu đúng: (1) Chuyển hóa quang năng thành hóa năng trong ATP và NADPH; (2) Diễn ra ở chất nền (stroma); (3) Oxygen được tạo ra từ pha sáng; (4) Sản phẩm pha sáng cung cấp cho pha tối trừ O2.",
-          "correctAnswer": "3",
-          "explanation": "Phát biểu (2) sai vì pha sáng diễn ra trên màng thylakoid. Các phát biểu (1), (3), (4) đúng. Đáp án: 3."
+          "id": "sinhhoc11_b4_mcq28",
+          "type": "mcq",
+          "question": "Khi nói về pha sáng của quá trình quang hợp ở thực vật, có bao nhiêu phát biểu sau đây đúng?\n(1) Pha sáng chuyển hóa quang năng thành hóa năng trong ATP và NADPH.\n(2) Pha sáng diễn ra trong chất nền (stroma) của lục lạp.\n(3) Oxygen trong quang hợp được tạo ra từ pha sáng.\n(4) Toàn bộ sản phẩm của pha sáng được cung cấp cho pha tối, trừ oxygen.",
+          "options": [
+            "1 phát biểu.",
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu."
+          ],
+          "correct": 2,
+          "explanation": "Phát biểu (2) sai vì pha sáng diễn ra ở màng thylakoid. Các phát biểu (1), (3), (4) đúng. Có 3 phát biểu đúng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b4_sa04",
-          "type": "shortanswer",
-          "question": "Khi nói về ảnh hưởng của CO2 đến quang hợp: (1) Khi tới điểm bão hòa, tăng CO2 thì cường độ quang hợp tăng; (2) Điểm bù CO2 là nồng độ mà quang hợp bằng hô hấp; (3) Điểm bão hòa CO2 là nồng độ mà quang hợp đạt cực đại; (4) Điểm bù CO2 ở thực vật C4 thấp hơn C3. Có bao nhiêu nhận định đúng?",
-          "correctAnswer": "3",
-          "explanation": "Nhận định (1) sai vì tới điểm bão hòa thì tăng CO2 cường độ không đổi. Các nhận định (2), (3), (4) đúng. Đáp án: 3."
+          "id": "sinhhoc11_b4_mcq29",
+          "type": "mcq",
+          "question": "Khi nói về ảnh hưởng của CO2 đến quá trình quang hợp ở thực vật, có bao nhiêu nhận định sau đây đúng?\n(1) Khi đạt điểm bão hòa, nếu tiếp tục tăng nồng độ CO2 thì cường độ quang hợp tăng.\n(2) Điểm bù CO2 là nồng độ CO2 mà tại đó cường độ quang hợp bằng cường độ hô hấp.\n(3) Điểm bão hòa CO2 là nồng độ CO2 mà tại đó cường độ quang hợp đạt cực đại.\n(4) Điểm bù CO2 của thực vật C4 thấp hơn thực vật C3.",
+          "options": [
+            "1 nhận định.",
+            "2 nhận định.",
+            "3 nhận định.",
+            "4 nhận định."
+          ],
+          "correct": 2,
+          "explanation": "Nhận định (1) sai vì tới điểm bão hòa CO2 thì cường độ quang hợp không tăng thêm. Các nhận định (2), (3), (4) đúng. Có 3 nhận định đúng. Chọn C."
         }
       ],
       "questionGroups": [
         {
           "id": "sinhhoc11_b4_tf01",
           "type": "tf-group",
-          "passage": "Thí nghiệm khảo sát ảnh hưởng của nhiệt độ đến quang hợp (đếm bọt khí rong đuôi chó):",
+          "passage": "Thí nghiệm được tiến hành ở nhiệt độ khác nhau (đếm số bọt khí O2 trong 1 phút sinh ra từ cành rong đuôi chó):",
           "statements": [
             {
-              "question": "a) Khi nhiệt độ tăng từ 10°C đến 32°C số bọt khí tạo ra tăng, sau đó tiếp tục tăng nhiệt độ thì số bọt khí giảm.",
+              "question": "a) Khi nhiệt độ tăng từ 10°C - 32°C số bọt khí tạo ra từ quá trình này tăng, sau đó nhiệt độ tiếp tục tăng thì số bọt khí tạo ra giảm.",
               "correct": true
             },
             {
@@ -1122,20 +1221,20 @@
               "correct": false
             },
             {
-              "question": "c) Tốc độ quang hợp giảm khi nhiệt độ lớn hơn 40°C vì nhiệt độ cao làm biến tính enzyme.",
+              "question": "c) Tốc độ quang hợp ở loại rong này giảm khi nhiệt độ lớn hơn 40°C vì nhiệt làm biến tính các enzyme quang hợp.",
               "correct": true
             },
             {
-              "question": "d) Nếu đưa chậu thí nghiệm vào trong tối thì kết quả thí nghiệm không thay đổi.",
+              "question": "d) Nếu đưa chậu thí nghiệm vào trong tối thì kết quả thí nghiệm không đổi.",
               "correct": false
             }
           ],
-          "explanation": "b sai vì đây là thí nghiệm quang hợp (tạo O2); d sai vì vào tối quang hợp ngừng, không tạo bọt khí O2. a, c đúng."
+          "explanation": "b sai vì đây là thí nghiệm về quang hợp (sinh ra O2 dạng bọt khí); d sai vì khi vào bóng tối quang hợp ngừng, không tạo bọt khí O2. a, c đúng."
         },
         {
           "id": "sinhhoc11_b4_tf02",
           "type": "tf-group",
-          "passage": "Khi nói về quang hợp ở thực vật:",
+          "passage": "Khi nói về quang hợp ở thực vật, các phát biểu sau đúng hay sai?",
           "statements": [
             {
               "question": "a) Cường độ ánh sáng tăng dần đến điểm bão hòa thì cường độ quang hợp tăng dần.",
@@ -1150,35 +1249,35 @@
               "correct": false
             },
             {
-              "question": "d) Khi nhiệt độ tăng quá cao vượt ngưỡng tối ưu thì cường độ quang hợp giảm mạnh.",
+              "question": "d) Khi nhiệt độ tăng quá cao thì cường độ quang hợp giảm.",
               "correct": true
             }
           ],
-          "explanation": "b sai vì cây quang hợp mạnh nhất ở miền ánh sáng đỏ; c sai vì khi đạt điểm bão hòa, tăng CO2 cường độ quang hợp không đổi. a, d đúng."
+          "explanation": "b sai vì quang hợp mạnh nhất ở miền ánh sáng đỏ; c sai vì tại điểm bão hòa tăng CO2 thì cường độ quang hợp không đổi (trừ khi nồng độ quá cao gây ngộ độc). a, d đúng."
         },
         {
           "id": "sinhhoc11_b4_tf03",
           "type": "tf-group",
-          "passage": "Thực vật CAM và C4 thích nghi với điều kiện sống:",
+          "passage": "Thực vật CAM và C4 thích nghi với điều kiện sống và có con đường cố định CO2 phù hợp. Những phát biểu sau đúng hay sai?",
           "statements": [
             {
-              "question": "a) Thực vật CAM cố định CO2 diễn ra vào ban đêm vì ban ngày khí khổng đóng để tránh mất nước.",
+              "question": "a) Thực vật CAM có con đường cố định CO2 diễn ra vào ban đêm vì ban ngày khí khổng đóng để hạn chế sự thoát hơi nước.",
               "correct": true
             },
             {
-              "question": "b) Thực vật CAM có pha tối diễn ra hoàn toàn vào ban đêm và không có chu trình Calvin.",
+              "question": "b) Thực vật CAM có pha tối hoàn toàn diễn ra vào ban đêm và không có chu trình Calvin.",
               "correct": false
             },
             {
-              "question": "c) Thực vật C4 cố định CO2 theo con đường C4 nhằm tăng nồng độ CO2 trong tế bào.",
+              "question": "c) Thực vật C4 cố định CO2 theo con đường C4 giúp cây có thể quang hợp trong điều kiện ánh sáng mạnh, nhiệt độ cao và nồng độ CO2 thấp.",
               "correct": true
             },
             {
-              "question": "d) Thực vật CAM và C4 đều có con đường cố định CO2 sơ bộ và đồng hóa CO2 theo chu trình Calvin.",
+              "question": "d) Thực vật CAM và C4 đều có con đường cố định CO2 tạm thời (sơ bộ) và con đường cố định CO2 theo chu trình Calvin.",
               "correct": true
             }
           ],
-          "explanation": "b sai vì thực vật CAM vẫn có chu trình Calvin diễn ra vào ban ngày khi có năng lượng từ pha sáng. a, c, d đúng."
+          "explanation": "b sai vì thực vật CAM vẫn có chu trình Calvin diễn ra vào ban ngày khi có ánh sáng cung cấp ATP và NADPH từ pha sáng. a, c, d đúng."
         }
       ]
     },
@@ -1186,7 +1285,7 @@
       "id": 4,
       "bai": 6,
       "name": "Bài 6: Hô hấp ở thực vật",
-      "topic": "CHƯƠNG IV: HÔ HẤP Ở THỰC VẬT",
+      "topic": "Hô hấp ở thực vật",
       "questions": [
         {
           "id": "sinhhoc11_b6_mcq01",
@@ -1199,7 +1298,7 @@
             "Miễn dịch cho cây."
           ],
           "correct": 0,
-          "explanation": "Cung cấp năng lượng ATP cho các hoạt động sống là vai trò quan trọng nhất của hô hấp. Chọn A."
+          "explanation": "Cung cấp năng lượng ATP cho mọi hoạt động sống của tế bào và cơ thể là vai trò quan trọng hàng đầu của hô hấp. Chọn A."
         },
         {
           "id": "sinhhoc11_b6_mcq02",
@@ -1212,7 +1311,7 @@
             "Ethanol + CO2."
           ],
           "correct": 1,
-          "explanation": "Phân giải kị khí ở thực vật chủ yếu lên men rượu (ethanol + CO2) hoặc lên men lactic. Chọn B."
+          "explanation": "Tùy thuộc loài và điều kiện, lên men ở thực vật có thể tạo ra rượu ethanol + CO2 hoặc tạo lactic acid. Chọn B."
         },
         {
           "id": "sinhhoc11_b6_mcq03",
@@ -1225,7 +1324,7 @@
             "38 ATP."
           ],
           "correct": 2,
-          "explanation": "Theo sinh học hiện đại, hô hấp hiếu khí 1 phân tử glucose tạo ra khoảng 30 - 32 ATP. Chọn C."
+          "explanation": "Theo các tài liệu sinh học hiện đại (GDPT 2018), 1 phân tử glucose qua hô hấp hiếu khí hoàn chỉnh giải phóng khoảng 30 - 32 ATP. Chọn C."
         },
         {
           "id": "sinhhoc11_b6_mcq04",
@@ -1238,7 +1337,7 @@
             "Lục lạp."
           ],
           "correct": 0,
-          "explanation": "Hô hấp hiếu khí chủ yếu diễn ra trong ti thể (sau giai đoạn đường phân ở tế bào chất). Chọn A."
+          "explanation": "Hai giai đoạn chủ yếu của hô hấp hiếu khí (chu trình Krebs và chuỗi chuyền electron) diễn ra trong ti thể. Chọn A."
         },
         {
           "id": "sinhhoc11_b6_mcq05",
@@ -1246,12 +1345,12 @@
           "question": "Giai đoạn đường phân diễn ra ở vị trí nào trong tế bào?",
           "options": [
             "Ti thể.",
-            "Tế bào chất.",
+            "Tế bào chất (bào tương).",
             "Nhân tế bào.",
             "Lục lạp."
           ],
           "correct": 1,
-          "explanation": "Đường phân diễn ra trong tế bào chất. Chọn B."
+          "explanation": "Đường phân diễn ra trong tế bào chất (bào tương), biến đổi 1 phân tử glucose thành 2 phân tử pyruvic acid. Chọn B."
         },
         {
           "id": "sinhhoc11_b6_mcq06",
@@ -1264,7 +1363,7 @@
             "C6H12O6 + 6O2 → 6CO2 + 12H2O + 38 ATP."
           ],
           "correct": 0,
-          "explanation": "Phương trình tổng quát hô hấp hiếu khí: C6H12O6 + 6O2 → 6CO2 + 6H2O + Năng lượng (ATP + nhiệt). Chọn A."
+          "explanation": "Phương trình chuẩn của hô hấp hiếu khí: C6H12O6 + 6O2 → 6CO2 + 6H2O + Năng lượng (ATP + nhiệt). Chọn A."
         },
         {
           "id": "sinhhoc11_b6_mcq07",
@@ -1277,25 +1376,25 @@
             "Thực vật C3 và C4."
           ],
           "correct": 2,
-          "explanation": "Hô hấp sáng xảy ra chủ yếu ở thực vật C3 trong điều kiện cường độ ánh sáng cao, CO2 thấp, O2 cao. Chọn C."
+          "explanation": "Hô hấp sáng là hiện tượng đặc trưng chỉ xảy ra ở thực vật C3 trong điều kiện ánh sáng mạnh, CO2 cạn kiệt và nồng độ O2 cao. Chọn C."
         },
         {
           "id": "sinhhoc11_b6_mcq08",
           "type": "mcq",
-          "question": "Hô hấp sáng là quá trình hấp thụ O2 và giải phóng CO2 ở điều kiện nào?",
+          "question": "Hô hấp sáng là quá trình hấp thụ:",
           "options": [
-            "Trong tối.",
-            "Ngoài sáng.",
-            "Cả sáng và tối.",
-            "Trong điều kiện không có ánh sáng."
+            "CO2 và giải phóng O2 ngoài sáng.",
+            "O2 và giải phóng CO2 ngoài sáng.",
+            "O2 và giải phóng CO2 trong tối.",
+            "CO2 và giải phóng O2 trong tối."
           ],
           "correct": 1,
-          "explanation": "Hô hấp sáng chỉ xảy ra ở ngoài sáng. Chọn B."
+          "explanation": "Hô hấp sáng là quá trình enzyme Rubisco gắn O2 vào RuBP, oxy hóa RuBP làm tiêu tốn sản phẩm quang hợp, hấp thụ O2 và giải phóng CO2 ngoài sáng. Chọn B."
         },
         {
           "id": "sinhhoc11_b6_mcq09",
           "type": "mcq",
-          "question": "Hô hấp kị khí ở thực vật xảy ra trong môi trường nào?",
+          "question": "Hô hấp kị khí (lên men) ở thực vật xảy ra trong môi trường nào?",
           "options": [
             "Thiếu O2.",
             "Thiếu CO2.",
@@ -1303,20 +1402,20 @@
             "Thừa CO2."
           ],
           "correct": 0,
-          "explanation": "Hô hấp kị khí (lên men) xảy ra khi môi trường thiếu oxygen. Chọn A."
+          "explanation": "Khi rễ bị ngập úng hoặc hạt ngâm trong nước thiếu oxygen phân tử, cây chuyển sang hô hấp kị khí (lên men). Chọn A."
         },
         {
           "id": "sinhhoc11_b6_mcq10",
           "type": "mcq",
           "question": "Đâu không phải là vai trò của hô hấp ở thực vật?",
           "options": [
-            "Giải phóng năng lượng ATP.",
-            "Giải phóng năng lượng dạng nhiệt duy trì thân nhiệt.",
-            "Tạo các sản phẩm trung gian cho tổng hợp chất hữu cơ.",
+            "Giải phóng năng lượng ATP cung cấp cho hoạt động sống.",
+            "Giải phóng nhiệt lượng giúp duy trì nhiệt độ cơ thể và chống rét.",
+            "Tạo các sản phẩm trung gian cho các quá trình tổng hợp chất hữu cơ.",
             "Tổng hợp các chất hữu cơ từ chất vô cơ."
           ],
           "correct": 3,
-          "explanation": "Tổng hợp chất hữu cơ từ chất vô cơ là vai trò của quang hợp, không phải hô hấp. Chọn D."
+          "explanation": "Tổng hợp chất hữu cơ từ chất vô cơ là vai trò của quang hợp, không phải của hô hấp. Chọn D."
         },
         {
           "id": "sinhhoc11_b6_mcq11",
@@ -1329,153 +1428,170 @@
             "Oxi hóa pyruvic acid thành Acetyl-CoA."
           ],
           "correct": 2,
-          "explanation": "Cả hô hấp hiếu khí và lên men đều bắt đầu bằng giai đoạn đường phân ở tế bào chất. Chọn C."
+          "explanation": "Cả hai con đường phân giải đều khởi đầu bằng giai đoạn đường phân trong tế bào chất. Chọn C."
         },
         {
           "id": "sinhhoc11_b6_mcq12",
           "type": "mcq",
           "question": "Nội dung nào sau đây nói không đúng về mối quan hệ giữa hô hấp và môi trường ngoài?",
           "options": [
-            "Nhiệt độ tăng đến tối ưu thì cường độ hô hấp tăng.",
-            "Cường độ hô hấp tỉ lệ thuận với hàm lượng nước.",
-            "Cường độ hô hấp tỉ lệ nghịch với nồng độ CO2 cao.",
+            "Hàm lượng nước tỉ lệ thuận với cường độ hô hấp.",
+            "Nhiệt độ quá cao (trên 55°C) làm ngừng quá trình hô hấp do biến tính enzyme.",
+            "Nồng độ CO2 cao ức chế quá trình hô hấp hiếu khí.",
             "Cường độ hô hấp tỉ lệ nghịch với nồng độ O2."
           ],
           "correct": 3,
-          "explanation": "Cường độ hô hấp tỉ lệ thuận với nồng độ O2 (O2 tăng thì hô hấp hiếu khí tăng). Do đó phát biểu D không đúng. Chọn D."
+          "explanation": "O2 là chất nhận electron cuối cùng của hô hấp hiếu khí, nên nồng độ O2 tăng (trong giới hạn) thì cường độ hô hấp tăng, không phải tỉ lệ nghịch. Chọn D."
         },
         {
           "id": "sinhhoc11_b6_mcq13",
           "type": "mcq",
-          "question": "Trong quá trình bảo quản nông sản, hô hấp gây ra tác hại chủ yếu nào sau đây?",
+          "question": "Khi nói về giai đoạn đường phân trong hô hấp hiếu khí, phát biểu nào sau đây sai?",
           "options": [
-            "Làm giảm nhiệt độ kho.",
-            "Làm tăng khí O2.",
-            "Tiêu hao chất hữu cơ và làm giảm chất lượng nông sản.",
-            "Làm tăng độ ẩm nông sản."
+            "Diễn ra trong tế bào chất.",
+            "Biến đổi 1 phân tử glucose thành 2 phân tử pyruvic acid.",
+            "Tạo ra 2 phân tử NADH và 2 phân tử ATP thuần.",
+            "Tạo ra 30 - 32 phân tử ATP thuần."
           ],
-          "correct": 2,
-          "explanation": "Hô hấp tiêu hao chất hữu cơ, sinh nhiệt và làm ẩm nông sản, gây giảm số lượng và chất lượng nông sản. Chọn C."
+          "correct": 3,
+          "explanation": "Đường phân chỉ tạo được 2 phân tử ATP thuần (lãi 2 ATP). Toàn bộ quá trình hô hấp hiếu khí mới tạo 30 - 32 ATP. Chọn D."
         },
         {
           "id": "sinhhoc11_b6_mcq14",
           "type": "mcq",
-          "question": "Khi nói về giai đoạn đường phân trong hô hấp hiếu khí, phát biểu nào sau đây sai?",
+          "question": "Quá trình lên men được ứng dụng trong bao nhiêu hoạt động sau đây?\n(1) Làm sữa chua, phô mai.\n(2) Muối dưa chua, cà pháo.\n(3) Sản xuất bia, rượu.\n(4) Sản xuất giấm ăn.\n(5) Làm bánh mì nở xốp.",
           "options": [
-            "Giai đoạn đường phân hình thành NADH.",
-            "Giai đoạn đường phân hình thành một ít ATP.",
-            "Giai đoạn đường phân cắt glucose thành pyruvic acid.",
-            "Giai đoạn đường phân oxi hóa hoàn toàn glucose thành CO2 và H2O."
+            "2.",
+            "3.",
+            "4.",
+            "5."
           ],
-          "correct": 3,
-          "explanation": "Oxi hóa hoàn toàn glucose thành CO2 và H2O là toàn bộ quá trình hô hấp hiếu khí, không phải chỉ đường phân. Chọn D."
+          "correct": 2,
+          "explanation": "Các hoạt động (1), (2) là lên men lactic; (3), (5) là lên men ethanol của nấm men. Hoạt động (4) sản xuất giấm là quá trình oxy hóa hiếu khí của vi khuẩn axetic (không phải lên men kị khí). Có 4 hoạt động lên men. Chọn C."
         },
         {
           "id": "sinhhoc11_b6_mcq15",
           "type": "mcq",
-          "question": "Quá trình lên men được ứng dụng trong bao nhiêu hoạt động sau đây?\n(1) Sản xuất rượu bia; (2) Làm sữa chua; (3) Muối dưa; (4) Sản xuất giấm ăn.",
+          "question": "Người ta thường bảo quản hạt giống bằng phương pháp bảo quản khô. Nguyên nhân chủ yếu là vì:",
           "options": [
-            "1.",
-            "2.",
-            "3.",
-            "4."
+            "Hạt khô có độ cứng cao hơn, tránh bị chuột cắn.",
+            "Hạt khô dễ đóng gói và vận chuyển.",
+            "Tránh cho hạt bị bay hơi các chất dinh dưỡng.",
+            "Hàm lượng nước thấp làm giảm cường độ hô hấp của hạt xuống mức tối thiểu, giúp duy trì sức sống của phôi."
           ],
           "correct": 3,
-          "explanation": "Cả 4 hoạt động trên đều ứng dụng quá trình lên men (lên men rượu, lên men lactic, lên men acetic). Chọn D."
+          "explanation": "Nước là dung môi và môi trường hoạt hóa enzyme hô hấp. Phơi khô hạt giúp đưa hạt vào trạng thái tiềm sinh, hô hấp tối thiểu nên bảo quản được lâu. Chọn D."
         },
         {
           "id": "sinhhoc11_b6_mcq16",
           "type": "mcq",
-          "question": "Người ta thường bảo quản hạt giống bằng phương pháp bảo quản khô. Nguyên nhân chủ yếu là vì:",
+          "question": "Khi nói về quan hệ giữa hô hấp và quá trình trao đổi chất khoáng trong cây, phát biểu nào sau đây sai?",
           "options": [
-            "Hạt khô làm giảm khối lượng nên dễ vận chuyển.",
-            "Hạt khô không còn bất kỳ hoạt động hô hấp nào.",
-            "Hạt khô có sinh vật gây hại không xâm nhập được.",
-            "Hạt khô có cường độ hô hấp đạt tối thiểu giúp hạt sống ở trạng thái tiềm sinh."
+            "Hô hấp không có ảnh hưởng gì đến khả năng hấp thụ khoáng của hệ rễ.",
+            "Hô hấp giải phóng năng lượng ATP cung cấp cho sự hút khoáng chủ động.",
+            "Hô hấp tạo ra CO2, khi tan trong nước tạo H+ và HCO3- tham gia trao đổi ion bám hút.",
+            "Hô hấp tạo ra các sản phẩm trung gian là nguyên liệu để đồng hóa các ion khoáng."
           ],
-          "correct": 3,
-          "explanation": "Giảm nước làm cường độ hô hấp hạ xuống mức tối thiểu (tiềm sinh), bảo quản được lâu. Chọn D."
+          "correct": 0,
+          "explanation": "Hô hấp ở rễ có vai trò cực kỳ quan trọng đối với hấp thụ khoáng: cung cấp ATP cho hút khoáng chủ động, tạo H+ trao đổi ion và tạo acid hữu cơ đồng hóa đạm. Chọn A."
         },
         {
           "id": "sinhhoc11_b6_mcq17",
           "type": "mcq",
-          "question": "Khi nói về quan hệ giữa hô hấp và quá trình trao đổi chất khoáng trong cây, phát biểu nào sau đây là sai?",
+          "question": "Các phương pháp nào sau đây được sử dụng để bảo quản hạt giống và nông sản?\n(1) Bảo quản ẩm ướt ở nhiệt độ cao.\n(2) Bảo quản khô.\n(3) Bảo quản trong điều kiện nồng độ CO2 cao.\n(4) Bảo quản trong điều kiện nồng độ O2 thấp.\nPhương án đúng gồm:",
           "options": [
-            "Hô hấp tạo ra ATP cung cấp năng lượng cho hút khoáng chủ động.",
-            "Hô hấp tạo ra các sản phẩm trung gian làm nguyên liệu đồng hóa khoáng.",
-            "Hô hấp tạo ra các chất khử như NADH, FADH2 cung cấp cho đồng hóa khoáng.",
-            "Quá trình hút khoáng cung cấp trực tiếp nguyên liệu để thực hiện đường phân."
+            "(1), (2), (3).",
+            "(1), (3), (4).",
+            "(2), (3), (4).",
+            "(1), (2), (4)."
           ],
-          "correct": 3,
-          "explanation": "Đường phân sử dụng glucose từ quang hợp, không phải trực tiếp từ khoáng. Chọn D."
+          "correct": 2,
+          "explanation": "Bảo quản nông sản nhằm ức chế hô hấp gồm: bảo quản khô, bảo quản trong nồng độ CO2 cao và nồng độ O2 thấp (hoặc hút chân không). Chọn C."
         },
         {
           "id": "sinhhoc11_b6_mcq18",
           "type": "mcq",
-          "question": "Các phương pháp nào sau đây được sử dụng để bảo quản hạt thóc giống hiệu quả?\n(1) Bảo quản trong túi nylon buộc kín; (2) Bảo quản trong kho lạnh; (3) Phơi khô thóc giống rồi cho vào bao tải để ở nơi khô thoáng; (4) Bảo quản trong điều kiện nồng độ CO2 cao.",
+          "question": "Trong quá trình hô hấp ở thực vật, khí CO2 được giải phóng ra từ bào quan nào sau đây?",
           "options": [
-            "(1), (2).",
-            "(1), (3), (4).",
-            "(2), (3), (4).",
-            "(1), (2), (3), (4)."
+            "Lục lạp.",
+            "Ti thể.",
+            "Ribosome.",
+            "Không bào."
           ],
-          "correct": 2,
-          "explanation": "Phương pháp (1) buộc kín túi nylon khi hạt còn ẩm sẽ gây yếm khí, thối hạt. Các phương pháp (2), (3), (4) đúng. Chọn C."
+          "correct": 1,
+          "explanation": "Khí CO2 được giải phóng ở giai đoạn oxy hóa pyruvic acid và chu trình Krebs diễn ra trong chất nền của ti thể. Chọn B."
         },
         {
           "id": "sinhhoc11_b6_mcq19",
           "type": "mcq",
-          "question": "Trong quá trình hô hấp ở thực vật, khí CO2 được giải phóng ra từ bào quan nào sau đây?",
+          "question": "Hô hấp ở thực vật diễn ra theo mấy con đường chính?",
           "options": [
-            "Peroxisome.",
-            "Ti thể.",
-            "Lục lạp.",
-            "Ribosome."
+            "1 con đường.",
+            "2 con đường.",
+            "3 con đường.",
+            "4 con đường."
           ],
           "correct": 1,
-          "explanation": "Chu trình Krebs trong hô hấp hiếu khí diễn ra ở chất nền ti thể, giải phóng CO2. Chọn B."
+          "explanation": "Hô hấp ở thực vật diễn ra theo 2 con đường chính: Hô hấp hiếu khí (khi có đủ O2) và Phân giải kị khí / lên men (khi thiếu O2). Chọn B."
         },
         {
-          "id": "sinhhoc11_b6_sa01",
-          "type": "shortanswer",
-          "question": "Hô hấp ở thực vật diễn ra theo mấy con đường chính?",
-          "correctAnswer": "2",
-          "explanation": "Hô hấp diễn ra theo 2 con đường: Hô hấp hiếu khí và lên men (kị khí). Đáp án: 2."
+          "id": "sinhhoc11_b6_mcq20",
+          "type": "mcq",
+          "question": "Kết thúc giai đoạn đường phân, từ 1 phân tử glucose tế bào thu được bao nhiêu phân tử ATP thuần (lãi)?",
+          "options": [
+            "1 phân tử ATP.",
+            "2 phân tử ATP.",
+            "4 phân tử ATP.",
+            "30 phân tử ATP."
+          ],
+          "correct": 1,
+          "explanation": "Đường phân tạo ra tổng cộng 4 ATP nhưng đã tiêu tốn 2 ATP để hoạt hóa glucose ở giai đoạn đầu, nên thu được thuần là 2 ATP. Chọn B."
         },
         {
-          "id": "sinhhoc11_b6_sa02",
-          "type": "shortanswer",
-          "question": "Kết thúc giai đoạn đường phân (từ 1 phân tử glucose), tế bào thu được bao nhiêu phân tử ATP ròng?",
-          "correctAnswer": "2",
-          "explanation": "Đường phân tạo ra 2 ATP ròng và 2 NADH. Đáp án: 2."
+          "id": "sinhhoc11_b6_mcq21",
+          "type": "mcq",
+          "question": "Trong những nhân tố sau: (1) hàm lượng nước, (2) nhiệt độ, (3) nồng độ O2, (4) nồng độ CO2. Có mấy nhân tố ảnh hưởng trực tiếp đến hô hấp ở thực vật?",
+          "options": [
+            "1 nhân tố.",
+            "2 nhân tố.",
+            "3 nhân tố.",
+            "4 nhân tố."
+          ],
+          "correct": 3,
+          "explanation": "Cả 4 nhân tố trên (nước, nhiệt độ, nồng độ O2 và nồng độ CO2) đều là các yếu tố môi trường ảnh hưởng trực tiếp đến cường độ hô hấp của thực vật. Chọn D."
         },
         {
-          "id": "sinhhoc11_b6_sa03",
-          "type": "shortanswer",
-          "question": "Trong các nhân tố: (1) hàm lượng nước, (2) nhiệt độ, (3) nồng độ O2, (4) nồng độ CO2. Có mấy nhân tố ảnh hưởng trực tiếp đến hô hấp ở thực vật?",
-          "correctAnswer": "4",
-          "explanation": "Cả 4 nhân tố trên đều ảnh hưởng mạnh mẽ đến hô hấp ở thực vật. Đáp án: 4."
+          "id": "sinhhoc11_b6_mcq22",
+          "type": "mcq",
+          "question": "Quan sát mối quan hệ giữa hô hấp và quang hợp:\n(1) Quang hợp và hô hấp là hai quá trình trái ngược nhau nhưng phụ thuộc lẫn nhau.\n(2) Sản phẩm của quang hợp là nguyên liệu cho hô hấp.\n(3) Hô hấp xảy ra ở lục lạp.\n(4) Quang hợp xảy ra ở ti thể.\n(5) Khí CO2 do hô hấp thải ra là nguyên liệu cho quang hợp.\nCó bao nhiêu phát biểu đúng?",
+          "options": [
+            "1 phát biểu.",
+            "2 phát biểu.",
+            "3 phát biểu.",
+            "4 phát biểu."
+          ],
+          "correct": 2,
+          "explanation": "Các phát biểu (1), (2), (5) đúng. Phát biểu (3) sai (hô hấp ở ti thể); (4) sai (quang hợp ở lục lạp). Có 3 phát biểu đúng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b6_sa04",
-          "type": "shortanswer",
-          "question": "Quan sát mối quan hệ giữa quang hợp và hô hấp: (1) Quang hợp và hô hấp có mối liên hệ mật thiết; (2) Sản phẩm quang hợp là nguyên liệu hô hấp; (3) Hô hấp xảy ra ở lục lạp; (4) Quang hợp xảy ra ở ti thể; (5) Nguyên liệu quang hợp là sản phẩm hô hấp. Có bao nhiêu phát biểu đúng?",
-          "correctAnswer": "3",
-          "explanation": "Các phát biểu (1), (2), (5) đúng. Phát biểu (3) sai (hô hấp ở ti thể); (4) sai (quang hợp ở lục lạp). Có 3 phát biểu đúng. Đáp án: 3."
-        },
-        {
-          "id": "sinhhoc11_b6_sa05",
-          "type": "shortanswer",
-          "question": "Trong các biện pháp bảo quản nông sản: (1) Bảo quản lạnh; (2) Sấy khô/phơi khô; (3) Bảo quản trong điều kiện nồng độ CO2 thấp; (4) Bảo quản trong điều kiện nồng độ O2 cao. Có bao nhiêu biện pháp bảo quản phù hợp?",
-          "correctAnswer": "2",
-          "explanation": "Biện pháp (1) và (2) phù hợp. Biện pháp (3) phải là nồng độ CO2 cao (chứ không phải thấp); (4) phải là nồng độ O2 thấp (chứ không phải cao). Có 2 biện pháp đúng. Đáp án: 2."
+          "id": "sinhhoc11_b6_mcq23",
+          "type": "mcq",
+          "question": "Trong các biện pháp sau, có bao nhiêu biện pháp bảo quản nông sản phù hợp?\n(1) Bảo quản lạnh.\n(2) Bảo quản khô (phơi, sấy khô).\n(3) Bảo quản trong điều kiện nồng độ CO2 thấp.\n(4) Bảo quản trong điều kiện nồng độ O2 cao.",
+          "options": [
+            "1 biện pháp.",
+            "2 biện pháp.",
+            "3 biện pháp.",
+            "4 biện pháp."
+          ],
+          "correct": 1,
+          "explanation": "Các biện pháp (1) và (2) phù hợp. Biện pháp (3) sai (phải là CO2 cao); (4) sai (phải là O2 thấp). Có 2 biện pháp phù hợp. Chọn B."
         }
       ],
       "questionGroups": [
         {
           "id": "sinhhoc11_b6_tf01",
           "type": "tf-group",
-          "passage": "Khi nói về các giai đoạn của quá trình hô hấp hiếu khí ở thực vật:",
+          "passage": "Mỗi phát biểu sau đây đúng hay sai khi nói về các giai đoạn của quá trình hô hấp ở thực vật?",
           "statements": [
             {
               "question": "a) Sản phẩm cuối cùng của hô hấp hiếu khí là O2 và H2O.",
@@ -1494,12 +1610,12 @@
               "correct": false
             }
           ],
-          "explanation": "a sai vì sản phẩm là CO2 và H2O (O2 là nguyên liệu); c sai vì pyruvic acid chuyển hóa thành Acetyl-CoA rồi mới vào chu trình Krebs; d sai vì chuỗi chuyền electron mới tạo nhiều ATP nhất. b đúng."
+          "explanation": "a sai vì sản phẩm cuối cùng là CO2 và H2O; c sai vì pyruvic acid phải biến đổi thành Acetyl-CoA trước khi vào chu trình Krebs; d sai vì chuỗi chuyền electron mới tạo nhiều ATP nhất (khoảng 26 - 28 ATP). b đúng."
         },
         {
           "id": "sinhhoc11_b6_tf02",
           "type": "tf-group",
-          "passage": "Khi nói đến ảnh hưởng của hàm lượng nước đến hô hấp ở thực vật:",
+          "passage": "Khi nói đến ảnh hưởng của hàm lượng nước đến hô hấp ở thực vật, mỗi phát biểu sau đây đúng hay sai?",
           "statements": [
             {
               "question": "a) Nước là dung môi hòa tan các chất tham gia phản ứng hô hấp.",
@@ -1518,19 +1634,19 @@
               "correct": true
             }
           ],
-          "explanation": "Cả 4 phát biểu đều đúng."
+          "explanation": "Cả 4 phát biểu đều đúng mô tả chính xác vai trò của nước đối với hoạt tính enzyme và cường độ hô hấp tế bào."
         },
         {
           "id": "sinhhoc11_b6_tf03",
           "type": "tf-group",
-          "passage": "Ví dụ về độ ẩm hạt lúa mì và cường độ hô hấp:",
+          "passage": "Ở lúa mì, khi độ ẩm 11 – 12% thì cường độ hô hấp hạt khoảng 1,5 mg CO2/kg/h; khi độ ẩm tăng thêm 14 – 15% thì cường độ hô hấp tăng gấp 4 – 5 lần. Mỗi nhận định sau đây đúng hay sai?",
           "statements": [
             {
               "question": "a) Hàm lượng nước trong hạt ảnh hưởng trực tiếp đến cường độ hô hấp.",
               "correct": true
             },
             {
-              "question": "b) Để tăng cường độ hô hấp hạt thì cần tăng hàm lượng nước trong tế bào.",
+              "question": "b) Để tăng cường độ hô hấp hạt thì cần tăng hàm lượng nước trong tế bào hạt.",
               "correct": true
             },
             {
@@ -1542,19 +1658,19 @@
               "correct": true
             }
           ],
-          "explanation": "c sai vì hạt ngủ nghỉ có hàm lượng nước rất thấp. a, b, d đúng."
+          "explanation": "c sai vì hạt ở trạng thái ngủ nghỉ có hàm lượng nước rất thấp (dưới 12 - 14%). a, b, d đúng."
         },
         {
           "id": "sinhhoc11_b6_tf04",
           "type": "tf-group",
-          "passage": "Đồ thị mô tả ảnh hưởng của nhiệt độ đến cường độ hô hấp ở thực vật:",
+          "passage": "Quan sát đồ thị về ảnh hưởng của nhiệt độ đến hô hấp ở thực vật, cho biết mỗi nhận định sau đúng hay sai?",
           "statements": [
             {
               "question": "a) Nhiệt độ tối ưu cho quá trình hô hấp ở thực vật trong khoảng 30 – 35°C.",
               "correct": true
             },
             {
-              "question": "b) Khi nhiệt độ tăng, cường độ hô hấp tăng dần và đạt giá trị cao nhất tại nhiệt độ 45°C.",
+              "question": "b) Khi nhiệt độ tăng, cường độ hô hấp tăng dần và đạt cao nhất tại nhiệt độ 45°C.",
               "correct": false
             },
             {
@@ -1566,12 +1682,12 @@
               "correct": true
             }
           ],
-          "explanation": "b sai vì giá trị cao nhất đạt ở khoảng 35°C, trên đó cường độ hô hấp giảm mạnh do enzyme bị biến tính. a, c, d đúng."
+          "explanation": "b sai vì đạt cực đại ở nhiệt độ tối ưu (30 - 35°C); ở 45°C enzyme hô hấp bị biến tính nhiệt nên cường độ hô hấp giảm mạnh. a, c, d đúng."
         },
         {
           "id": "sinhhoc11_b6_tf05",
           "type": "tf-group",
-          "passage": "Khi nói về hô hấp ở thực vật:",
+          "passage": "Mỗi phát biểu sau đây đúng hay sai khi nói về hô hấp ở thực vật?",
           "statements": [
             {
               "question": "a) Hô hấp hiếu khí và kị khí đều trải qua giai đoạn đường phân.",
@@ -1586,11 +1702,11 @@
               "correct": true
             },
             {
-              "question": "d) Người ta thường ngâm và ủ hạt trước khi gieo trồng là ứng dụng nhằm tăng hô hấp tế bào.",
+              "question": "d) Người ta thường ngâm và ủ hạt trước khi gieo trồng là ứng dụng nhằm tăng hô hấp tế bào giúp hạt nhanh nảy mầm.",
               "correct": true
             }
           ],
-          "explanation": "Cả 4 phát biểu đều đúng."
+          "explanation": "Cả 4 phát biểu đều đúng theo kiến thức sinh lý thực vật chuẩn GDPT 2018."
         }
       ]
     },
@@ -1598,7 +1714,7 @@
       "id": 5,
       "bai": 8,
       "name": "Bài 8: Dinh dưỡng và tiêu hóa ở động vật",
-      "topic": "CHƯƠNG V: DINH DƯỠNG VÀ TIÊU HÓA Ở ĐỘNG VẬT",
+      "topic": "Dinh dưỡng và tiêu hóa ở động vật",
       "questions": [
         {
           "id": "sinhhoc11_b8_mcq01",
@@ -1607,11 +1723,11 @@
           "options": [
             "Là quá trình lấy các chất dinh dưỡng cho cơ thể.",
             "Là quá trình lấy các chất dinh dưỡng cần thiết dưới dạng thức ăn và tổng hợp thành chất sống của cơ thể, đảm bảo cơ thể tồn tại và phát triển.",
-            "Là quá trình lấy thức ăn và thải bỏ chất cặn bã.",
-            "Là quá trình biến đổi thức ăn thành năng lượng."
+            "Là quá trình lấy các chất dinh dưỡng không cần thiết dưới dạng thức ăn và tổng hợp thành chất sống của cơ thể.",
+            "Là quá trình lấy các chất cần thiết dưới dạng hỗn hợp và biến đổi thành nhiệt năng."
           ],
           "correct": 1,
-          "explanation": "Dinh dưỡng là quá trình lấy thức ăn, tiêu hóa, hấp thụ và tổng hợp thành chất sống đảm bảo sự sống. Chọn B."
+          "explanation": "Dinh dưỡng là quá trình thu nhận chất dinh dưỡng từ thức ăn và biến đổi, đồng hóa chúng thành chất sống của cơ thể giúp cơ thể tồn tại và phát triển. Chọn B."
         },
         {
           "id": "sinhhoc11_b8_mcq02",
@@ -1623,8 +1739,8 @@
             "2 giai đoạn.",
             "4 giai đoạn."
           ],
-          "correct": 3,
-          "explanation": "Quá trình dinh dưỡng gồm 4 giai đoạn: Lấy thức ăn, tiêu hóa thức ăn, hấp thụ dinh dưỡng và đồng hóa các chất. Chọn D."
+          "correct": 1,
+          "explanation": "Quá trình dinh dưỡng ở động vật gồm đúng 5 giai đoạn: (1) Lấy thức ăn → (2) Tiêu hóa thức ăn → (3) Hấp thụ chất dinh dưỡng → (4) Đồng hóa các chất → (5) Thải chất cặn bã (đào thải). Chọn B."
         },
         {
           "id": "sinhhoc11_b8_mcq03",
@@ -1637,7 +1753,7 @@
             "5 kiểu."
           ],
           "correct": 0,
-          "explanation": "Có 3 kiểu lấy thức ăn chính: ăn lọc, ăn hút, ăn thức ăn có kích thước khác nhau. Chọn A."
+          "explanation": "Có 3 kiểu lấy thức ăn chính ở động vật: ăn lọc (trai, sò, cá voi tấm sừng), ăn hút (muỗi, bướm, rệp) và ăn thức ăn có kích thước khác nhau (động vật ăn thịt, ăn thực vật). Chọn A."
         },
         {
           "id": "sinhhoc11_b8_mcq04",
@@ -1646,11 +1762,11 @@
           "options": [
             "Trâu, bò.",
             "Thằn lằn.",
-            "Trai sông, hàu.",
+            "Trai sông, sò, hàu.",
             "Muỗi, đỉa."
           ],
           "correct": 2,
-          "explanation": "Trai sông, hàu lấy thức ăn bằng cách lọc nước (ăn lọc). Chọn C."
+          "explanation": "Trai sông, sò, hàu lọc nước qua mang và các bộ phận chuyên hóa để thu nhận các sinh vật nhỏ phù du làm thức ăn (kiểu ăn lọc). Chọn C."
         },
         {
           "id": "sinhhoc11_b8_mcq05",
@@ -1660,10 +1776,10 @@
             "Chỉ tiêu hóa nội bào.",
             "Chỉ tiêu hóa ngoại bào.",
             "Tiêu hóa nội bào và ngoại bào.",
-            "Tiêu hóa cơ học."
+            "Tiêu hóa trong tế bào cơ học."
           ],
           "correct": 2,
-          "explanation": "Túi tiêu hóa (ruột khoang, giun dẹp) thực hiện cả tiêu hóa ngoại bào (trong túi) và nội bào (trong tế bào biểu chất ruột). Chọn C."
+          "explanation": "Ở động vật có túi tiêu hóa (thủy tức, giun dẹp), thức ăn đầu tiên được tiêu hóa ngoại bào trong lòng túi thành các hạt nhỏ, sau đó các tế bào biểu mô ruột thực bào để tiêu hóa nội bào tiếp tục. Chọn C."
         },
         {
           "id": "sinhhoc11_b8_mcq06",
@@ -1676,7 +1792,7 @@
             "Thực quản."
           ],
           "correct": 0,
-          "explanation": "Ruột non là nơi tiêu hóa hóa học và hấp thụ chất dinh dưỡng chủ yếu. Chọn A."
+          "explanation": "Ruột non là cơ quan tiêu hóa hóa học chủ yếu và triệt để nhất, đồng thời là cơ quan hấp thụ hầu hết các chất dinh dưỡng vào máu và bạch huyết. Chọn A."
         },
         {
           "id": "sinhhoc11_b8_mcq07",
@@ -1689,20 +1805,20 @@
             "Tiêu hóa nội bào và sinh học."
           ],
           "correct": 1,
-          "explanation": "Ở miệng có nhai, nghiền (tiêu hóa cơ học) và enzyme amylase biến đổi tinh bột (tiêu hóa hóa học). Chọn B."
+          "explanation": "Tại khoang miệng diễn ra tiêu hóa cơ học (nhai, nghiền, đảo trộn thức ăn bằng răng, lưỡi) và tiêu hóa hóa học (enzyme amylase trong nước bọt thủy phân tinh bột chín thành đường maltose). Chọn B."
         },
         {
           "id": "sinhhoc11_b8_mcq08",
           "type": "mcq",
           "question": "Khi nói về sự tiêu hóa thức ăn trong các bộ phận của ống tiêu hóa ở người, phát biểu nào sau đây là sai?",
           "options": [
-            "Ở ruột già không có tiêu hóa hóa học các chất dinh dưỡng chính mà chỉ hấp thụ nước.",
-            "Tiêu hóa hóa học ở ruột non quan trọng hơn dạ dày.",
+            "Ở ruột già diễn ra tiêu hóa hóa học và tiêu hóa cơ học mạnh mẽ các chất dinh dưỡng.",
+            "Tiêu hóa hóa học ở ruột non quan trọng hơn ở dạ dày.",
             "Ở miệng có enzyme amylase phân giải tinh bột chín.",
-            "Ở dạ dày chỉ chứa enzyme pepsin mà không có HCl."
+            "Ở dạ dày diễn ra tiêu hóa cơ học và tiêu hóa hóa học protein nhờ enzyme pepsin."
           ],
-          "correct": 3,
-          "explanation": "Phát biểu D sai vì dịch vị dạ dày chứa cả enzyme pepsin và acid HCl. Chọn D."
+          "correct": 0,
+          "explanation": "Phát biểu A sai vì ở ruột già không diễn ra quá trình tiêu hóa hóa học các chất dinh dưỡng mà chức năng chính là tái hấp thụ nước và tích trữ, tạo phân. Chọn A."
         },
         {
           "id": "sinhhoc11_b8_mcq09",
@@ -1715,25 +1831,38 @@
             "Miệng → dạ dày → ruột non → thực quản → ruột già → hậu môn."
           ],
           "correct": 1,
-          "explanation": "Thứ tự chuẩn: Miệng → Thực quản → Dạ dày → Ruột non → Ruột già → Hậu môn. Chọn B."
+          "explanation": "Thứ tự giải phẫu chuẩn của ống tiêu hóa ở người: Miệng → Thực quản → Dạ dày → Ruột non → Ruột già → Hậu môn. Chọn B."
         },
         {
           "id": "sinhhoc11_b8_mcq10",
           "type": "mcq",
-          "question": "Nhóm nào sau đây gồm toàn các động vật lấy thức ăn kiểu hút?",
+          "question": "Hành trình thức ăn đi qua các cơ quan trong ống tiêu hóa ở người lần lượt qua:",
           "options": [
-            "Bướm, rận, rệp, đỉa.",
-            "Muỗi, hà mã, sò, ngao.",
-            "Ve, bét, trai, voi.",
-            "Giun đũa, bọ xít, ốc, lươn."
+            "Cổ họng → Thực quản → Dạ dày → Ruột non → Ruột già → Trực tràng.",
+            "Miệng → Hầu (cổ họng) → Thực quản → Dạ dày → Ruột non → Ruột già → Trực tràng → Hậu môn.",
+            "Miệng → Thực quản → Hầu → Ruột non → Dạ dày → Trực tràng.",
+            "Miệng → Dạ dày → Thực quản → Ruột non → Ruột già."
           ],
-          "correct": 0,
-          "explanation": "Bướm, rận, rệp, đỉa hút dịch lỏng từ thực vật hoặc động vật. Chọn A."
+          "correct": 1,
+          "explanation": "Thức ăn bắt đầu từ miệng, qua hầu (họng), thực quản xuống dạ dày, vào ruột non, ruột già, trực tràng và thải qua hậu môn. Chọn B."
         },
         {
           "id": "sinhhoc11_b8_mcq11",
           "type": "mcq",
-          "question": "Lipid được tiêu hoá hóa học chủ yếu ở cơ quan nào trong hệ tiêu hoá của người?",
+          "question": "Nhóm nào sau đây gồm toàn các động vật lấy thức ăn kiểu hút?",
+          "options": [
+            "Bướm, rận, rệp, đỉa, muỗi.",
+            "Ve, bét, trai sông, tôm.",
+            "Muỗi, hà mã, sò, ngao.",
+            "Đỉa, ốc bươu, thằn lằn, chim sâu."
+          ],
+          "correct": 0,
+          "explanation": "Bướm (hút mật hoa), rận, rệp, đỉa, muỗi (hút máu/dịch cơ thể) đều là động vật lấy thức ăn theo kiểu hút. Chọn A."
+        },
+        {
+          "id": "sinhhoc11_b8_mcq12",
+          "type": "mcq",
+          "question": "Lipid được tiêu hoá hóa học chủ yếu ở cơ quan nào trong hệ tiêu hoá?",
           "options": [
             "Khoang miệng.",
             "Dạ dày.",
@@ -1741,64 +1870,77 @@
             "Ruột già."
           ],
           "correct": 2,
-          "explanation": "Nhờ dịch mật và enzyme lipase ở ruột non, lipid được tiêu hóa và hấp thụ chủ yếu ở đây. Chọn C."
-        },
-        {
-          "id": "sinhhoc11_b8_mcq12",
-          "type": "mcq",
-          "question": "Tiêu hóa là quá trình:",
-          "options": [
-            "Biến đổi thức ăn có cấu tạo phức tạp thành các phân tử nhỏ, đơn giản mà cơ thể có thể hấp thụ được.",
-            "Lấy thức ăn và biến đổi thành năng lượng trực tiếp.",
-            "Hấp thụ chất dinh dưỡng vào máu.",
-            "Tổng hợp chất sống từ thức ăn."
-          ],
-          "correct": 0,
-          "explanation": "Tiêu hóa là quá trình biến đổi thức ăn phức tạp thành các chất đơn giản để hấp thụ. Chọn A."
+          "explanation": "Lipid hầu như không được tiêu hóa ở miệng và dạ dày. Tại ruột non, nhờ có muối mật (nhũ tương hóa lipid) và enzyme lipase của dịch tụy, dịch ruột phân giải lipid thành glycerol và acid béo. Chọn C."
         },
         {
           "id": "sinhhoc11_b8_mcq13",
           "type": "mcq",
-          "question": "Ở dạ dày động vật có xương sống (như người) KHÔNG diễn ra hoạt động nào sau đây?",
+          "question": "Tiêu hoá là quá trình:",
           "options": [
-            "Tiết enzyme pepsin tiêu hóa protein.",
-            "Tiết dịch tụy để tiêu hóa lipid.",
-            "Co bóp cơ học nhào trộn thức ăn với dịch vị.",
-            "Phân giải một phần protein thành peptide nhờ pepsin và HCl."
+            "Biến đổi các chất dinh dưỡng phức tạp có trong thức ăn thành các chất đơn giản mà cơ thể có thể hấp thụ được.",
+            "Lấy thức ăn và thải chất cặn bã ra khỏi cơ thể.",
+            "Chuyển hóa năng lượng trong tế bào thành ATP.",
+            "Tổng hợp các chất hữu cơ đặc trưng cho cơ thể từ các chất vô cơ."
           ],
-          "correct": 1,
-          "explanation": "Dịch tụy do tuyến tụy tiết ra và đổ vào tá tràng (ruột non), không phải dạ dày. Chọn B."
+          "correct": 0,
+          "explanation": "Tiêu hóa là quá trình biến đổi các chất dinh dưỡng phức tạp trong thức ăn thành các chất dinh dưỡng đơn giản mà cơ thể có thể hấp thụ được. Chọn A."
         },
         {
           "id": "sinhhoc11_b8_mcq14",
           "type": "mcq",
-          "question": "Ở dạ dày người, thức ăn được biến đổi hóa học nhờ enzyme nào trong dịch vị?",
+          "question": "Ở dạ dày KHÔNG diễn ra hoạt động nào sau đây?",
+          "options": [
+            "Tiết enzyme tiêu hóa pepsinogen.",
+            "Tiết dịch tụy để tiêu hóa lipid.",
+            "Biến đổi cơ học: co bóp làm nhỏ và đảo trộn thức ăn với dịch vị.",
+            "Tiết acid HCl tạo môi trường acid hoạt hóa pepsinogen thành pepsin."
+          ],
+          "correct": 1,
+          "explanation": "Dịch tụy do tuyến tụy tiết ra và đổ vào đoạn tá tràng của ruột non, dạ dày không hề tiết dịch tụy. Chọn B."
+        },
+        {
+          "id": "sinhhoc11_b8_mcq15",
+          "type": "mcq",
+          "question": "Ở dạ dày người, thức ăn được biến đổi hóa học nhờ enzyme nào sau đây?",
           "options": [
             "Enzyme pepsin.",
             "Enzyme amylase.",
             "Enzyme maltase.",
-            "Enzyme lipase."
+            "Enzyme trypsin."
           ],
           "correct": 0,
-          "explanation": "Dịch vị dạ dày chứa enzyme pepsin giúp tiêu hóa protein. Chọn A."
+          "explanation": "Tại dạ dày, enzyme pepsin (hoạt động trong môi trường pH 1,5 - 2 do HCl tạo ra) cắt các liên kết peptide của phân tử protein thành các chuỗi polypeptide ngắn. Chọn A."
         },
         {
-          "id": "sinhhoc11_b8_mcq15",
+          "id": "sinhhoc11_b8_mcq16",
+          "type": "mcq",
+          "question": "Tiêu hóa là quá trình biến đổi các chất dinh dưỡng:",
+          "options": [
+            "Từ thức ăn cho cơ thể phát triển.",
+            "Và tích lũy năng lượng cho cơ thể.",
+            "Cho cơ thể hấp thụ trực tiếp nguyên vẹn phân tử lớn.",
+            "Có trong thức ăn có cấu tạo phức tạp thành các phân tử nhỏ, đơn giản mà cơ thể có thể hấp thụ được."
+          ],
+          "correct": 3,
+          "explanation": "Tiêu hóa biến đổi các đại phân tử sinh học phức tạp (tinh bột, protein, lipid...) thành các phân tử đơn phân nhỏ (glucose, amino acid, acid béo) để hấp thụ qua niêm mạc ruột. Chọn D."
+        },
+        {
+          "id": "sinhhoc11_b8_mcq17",
           "type": "mcq",
           "question": "Quá trình tiêu hóa có thể xảy ra ở bên trong tế bào gọi là:",
           "options": [
             "Tiêu hóa ngoại bào.",
             "Tiêu hóa nội bào.",
-            "Tiêu hóa cơ học.",
-            "Tiêu hóa nhờ ống tiêu hóa."
+            "Tiêu hóa hỗn hợp.",
+            "Tiêu hóa cơ học."
           ],
           "correct": 1,
-          "explanation": "Tiêu hóa diễn ra bên trong tế bào (trong không bào tiêu hóa) gọi là tiêu hóa nội bào. Chọn B."
+          "explanation": "Tiêu hóa diễn ra bên trong tế bào (trong các không bào tiêu hóa nhờ enzyme từ lysosome) được gọi là tiêu hóa nội bào. Chọn B."
         },
         {
-          "id": "sinhhoc11_b8_mcq16",
+          "id": "sinhhoc11_b8_mcq18",
           "type": "mcq",
-          "question": "Vai trò của dạ dày gồm:\n(1) Dự trữ thức ăn; (2) Biến đổi hóa học; (3) Tiêu hóa một phần protein; (4) Điều tiết lượng thức ăn xuống tá tràng.\nCác đáp án đúng là:",
+          "question": "Vai trò của dạ dày gồm:\n(1) Dự trữ thức ăn (chứa 1 - 2 lít thức ăn).\n(2) Biến đổi cơ học: nghiền, đảo trộn thức ăn thành vị trấp.\n(3) Tiêu hóa một phần protein nhờ enzyme pepsin.\n(4) Điều tiết lượng thức ăn (vị trấp) xuống tá tràng từng đợt nhờ cơ vòng môn vị.\nCác đáp án đúng gồm:",
           "options": [
             "(1, 2, 3).",
             "(2, 3).",
@@ -1806,23 +1948,23 @@
             "(1, 2, 3, 4)."
           ],
           "correct": 3,
-          "explanation": "Cả 4 ý trên đều là vai trò của dạ dày. Chọn D."
+          "explanation": "Cả 4 vai trò (1), (2), (3), (4) đều là các chức năng sinh lý chuẩn xác của dạ dày ở người và động vật có vú. Chọn D."
         },
         {
-          "id": "sinhhoc11_b8_mcq17",
+          "id": "sinhhoc11_b8_mcq19",
           "type": "mcq",
-          "question": "Tại sao người bị phẫu thuật cắt 2/3 dạ dày vẫn có thể tiêu hóa thức ăn?",
+          "question": "Tại sao người bị phẫu thuật cắt 2/3 dạ dày vẫn có thể tiêu hóa và hấp thụ thức ăn bình thường?",
           "options": [
-            "Vì ruột non mới là cơ quan tiêu hóa và hấp thụ chủ yếu.",
-            "Vì ruột chứa dịch tụy và dịch ruột có đầy đủ enzyme mạnh tiêu hóa glucid, lipid, protein.",
-            "Cả A và B đều đúng.",
-            "Vì gan tự bù đắp chức năng dạ dày."
+            "Vì dạ dày sẽ nhanh chóng mọc lại kích thước ban đầu.",
+            "Vì gan sẽ thay thế hoàn toàn chức năng của dạ dày.",
+            "Vì ruột non mới là cơ quan tiêu hóa hóa học và hấp thụ chất dinh dưỡng chủ yếu với đầy đủ enzyme từ dịch tụy, dịch mật và dịch ruột.",
+            "Vì thực quản sẽ đảm nhiệm chức năng nhai nghiền và tiêu hóa thức ăn."
           ],
           "correct": 2,
-          "explanation": "Ruột non là cơ quan tiêu hóa chính với đầy đủ enzyme từ dịch tụy, dịch mật và dịch ruột. Chọn C."
+          "explanation": "Ruột non mới là trung tâm tiêu hóa hóa học chính với sự tham gia của dịch tụy, dịch ruột và muối mật, có thể tiêu hóa triệt để carbohydrate, protein và lipid. Chọn C."
         },
         {
-          "id": "sinhhoc11_b8_mcq18",
+          "id": "sinhhoc11_b8_mcq20",
           "type": "mcq",
           "question": "Trong quá trình tiêu hóa ở người, thức ăn được tiêu hóa hóa học chủ yếu ở:",
           "options": [
@@ -1832,65 +1974,77 @@
             "Dạ dày."
           ],
           "correct": 2,
-          "explanation": "Ruột non là nơi diễn ra tiêu hóa hóa học chủ yếu và triệt để nhất. Chọn C."
+          "explanation": "Ruột non là cơ quan diễn ra quá trình tiêu hóa hóa học hoàn chỉnh và chủ yếu nhất đối với tất cả các nhóm chất dinh dưỡng. Chọn C."
         },
         {
-          "id": "sinhhoc11_b8_mcq19",
+          "id": "sinhhoc11_b8_mcq21",
           "type": "mcq",
           "question": "Ý kiến nào sau đây đúng về hệ tiêu hóa ở người?",
           "options": [
             "Thức ăn chưa được tiêu hóa ở ruột non đi qua ruột già trở thành vật chất nuôi dưỡng hệ vi sinh đường ruột.",
-            "Acid trong dạ dày có pH dao động từ 3 đến 7.",
-            "Dạ dày người không thể dãn nở.",
-            "Hệ tiêu hóa ở người hoàn toàn không bao giờ mắc bệnh."
+            "Acid trong dạ dày có pH dao động từ 7 đến 9.",
+            "Dạ dày người không thể dãn nở, kích thước cố định khi ăn no.",
+            "Hệ tiêu hóa ở người hoàn toàn miễn nhiễm với mọi loại bệnh."
           ],
           "correct": 0,
-          "explanation": "Chất xơ và tinh bột kháng xuống ruột già được hệ vi sinh đường ruột lên men tiêu hóa. Chọn A."
+          "explanation": "Các chất xơ và hợp chất chưa tiêu hóa hết khi xuống ruột già sẽ trở thành cơ chất cho hệ vi khuẩn có lợi đường ruột lên men và tổng hợp một số vitamin (K, nhóm B). Chọn A."
         },
         {
-          "id": "sinhhoc11_b8_mcq20",
+          "id": "sinhhoc11_b8_mcq22",
           "type": "mcq",
           "question": "Loại đường nào dưới đây được hình thành trong khoang miệng khi chúng ta nhai kĩ cơm?",
           "options": [
             "Lactose.",
             "Glucose.",
-            "Maltose (đường đôi).",
+            "Maltose (đường mạch nha).",
             "Saccharose."
           ],
           "correct": 2,
-          "explanation": "Enzyme amylase trong nước bọt phân giải tinh bột chín thành đường maltose. Chọn C."
+          "explanation": "Enzyme amylase trong nước bọt xúc tác thủy phân tinh bột chín trong cơm thành đường đôi maltose (đường mạch nha), tạo vị ngọt nhẹ khi nhai kĩ. Chọn C."
         },
         {
-          "id": "sinhhoc11_b8_sa01",
-          "type": "shortanswer",
-          "question": "Quá trình dinh dưỡng ở động vật gồm các giai đoạn: (1) Lấy thức ăn, (2) Tiêu hoá thức ăn, (3) Hấp thu, (4) Đồng hoá, (5) Thải chất cặn bã. Có tất cả bao nhiêu giai đoạn trong quá trình dinh dưỡng?",
-          "correctAnswer": "5",
-          "explanation": "Quá trình dinh dưỡng chuẩn gồm 5 giai đoạn (kể cả thải bỏ cặn bã). Đáp án: 5."
+          "id": "sinhhoc11_b8_mcq23",
+          "type": "mcq",
+          "question": "Quá trình dinh dưỡng ở động vật gồm các giai đoạn:\n(1) Lấy thức ăn, (2) Tiêu hoá thức ăn, (3) Hấp thu chất dinh dưỡng, (4) Đồng hoá, (5) Đào thải các chất cặn bã.\nQuá trình dinh dưỡng ở động vật gồm bao nhiêu giai đoạn ở trên?",
+          "options": [
+            "3 giai đoạn.",
+            "4 giai đoạn.",
+            "2 giai đoạn.",
+            "5 giai đoạn."
+          ],
+          "correct": 3,
+          "explanation": "Quá trình dinh dưỡng ở động vật bao gồm đầy đủ cả 5 giai đoạn: Lấy thức ăn → Tiêu hóa → Hấp thụ → Đồng hóa → Thải chất cặn bã. Chọn D."
         },
         {
-          "id": "sinhhoc11_b8_sa02",
-          "type": "shortanswer",
-          "question": "Có bao nhiêu đề xuất đúng về biện pháp giúp hệ tiêu hoá khoẻ mạnh: (I) Vệ sinh răng miệng đúng cách; (II) Ăn chậm nhai kỹ; (III) Thiết lập khẩu phần ăn hợp lí; (IV) Sau khi ăn cần vận động mạnh ngay; (V) Ăn đúng giờ.",
-          "correctAnswer": "4",
-          "explanation": "Các biện pháp (I), (II), (III), (V) đúng. Biện pháp (IV) sai vì sau khi ăn cần nghỉ ngơi, tránh vận động mạnh ngay gây đau dạ dày. Có 4 đề xuất đúng. Đáp án: 4."
+          "id": "sinhhoc11_b8_mcq24",
+          "type": "mcq",
+          "question": "Có bao nhiêu đề xuất đúng về biện pháp giúp hệ tiêu hoá khoẻ mạnh, hoạt động hiệu quả?\n(I) Vệ sinh răng miệng đúng cách sau khi ăn.\n(II) Ăn chậm nhai kỹ, tạo bầu không khí thoải mái khi ăn.\n(III) Thiết lập khẩu phần ăn hợp lí, ăn uống hợp vệ sinh.\n(IV) Sau khi ăn no cần vận động chạy nhảy mạnh ngay lập tức để tiêu bớt năng lượng.\n(V) Ăn đúng giờ, đúng bữa.",
+          "options": [
+            "2 đề xuất.",
+            "3 đề xuất.",
+            "5 đề xuất.",
+            "4 đề xuất."
+          ],
+          "correct": 3,
+          "explanation": "Các đề xuất (I), (II), (III), (V) đúng. Đề xuất (IV) sai vì sau khi ăn cần nghỉ ngơi hợp lý để máu tập trung vào các cơ quan tiêu hóa; vận động mạnh ngay sẽ làm ức chế tiêu hóa và dễ gây viêm đau dạ dày. Có 4 đề xuất đúng. Chọn D."
         }
       ],
       "questionGroups": [
         {
           "id": "sinhhoc11_b8_tf01",
           "type": "tf-group",
-          "passage": "Nói về sự khác nhau giữa tiêu hóa nội bào và tiêu hóa ngoại bào:",
+          "passage": "Nói về sự khác nhau giữa tiêu hóa nội bào và tiêu hóa ngoại bào, các nhận định sau đây đúng hay sai?",
           "statements": [
             {
               "question": "a) Tiêu hóa nội bào là sự tiêu hóa xảy ra bên trong ống tiêu hoá.",
               "correct": false
             },
             {
-              "question": "b) Tiêu hóa nội bào là sự tiêu hóa thức ăn xảy ra bên trong của tế bào (trong không bào tiêu hóa).",
+              "question": "b) Tiêu hóa nội bào là sự tiêu hóa thức ăn xảy ra bên trong của tế bào.",
               "correct": true
             },
             {
-              "question": "c) Tiêu hóa ngoại bào là tiêu hóa thức ăn ở bên ngoài tế bào, trong túi tiêu hóa hoặc ống tiêu hóa.",
+              "question": "c) Tiêu hóa ngoại bào là tiêu hóa thức ăn ở bên ngoài tế bào, thức ăn có thể được tiêu hóa hóa học trong túi tiêu hóa hoặc được tiêu hóa cả về mặt cơ học và hóa học trong ống tiêu hóa.",
               "correct": true
             },
             {
@@ -1898,47 +2052,47 @@
               "correct": false
             }
           ],
-          "explanation": "a sai vì tiêu hóa nội bào diễn ra bên trong tế bào; d sai vì tiêu hóa ngoại bào có ở cả động vật có túi tiêu hóa (ruột khoang) và ống tiêu hóa. b, c đúng."
+          "explanation": "a sai vì tiêu hóa nội bào diễn ra bên trong tế bào; d sai vì tiêu hóa ngoại bào có ở cả động vật có túi tiêu hóa (như thủy tức) và ống tiêu hóa. b, c đúng."
         },
         {
           "id": "sinhhoc11_b8_tf02",
           "type": "tf-group",
-          "passage": "Khi nói về tiêu hóa ở động vật:",
+          "passage": "Khi nói về tiêu hóa ở động vật, các phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Động vật chưa có cơ quan tiêu hoá (như thân lỗ) chỉ có hình thức tiêu hóa nội bào.",
+              "question": "a) Động vật chưa có hệ tiêu hoá chỉ có hình thức tiêu hóa nội bào.",
               "correct": true
             },
             {
-              "question": "b) Nhóm động vật tiêu hóa ngoại bào chỉ xảy ra tiêu hóa hóa học mà không có tiêu hóa cơ học.",
+              "question": "b) Nhóm động vật tiêu hóa ngoại bào chỉ xảy ra tiêu hóa hóa học.",
               "correct": false
             },
             {
-              "question": "c) Nhóm động vật tiêu hóa nội bào có cả tiêu hóa cơ học và tiêu hóa hóa học.",
+              "question": "c) Nhóm động vật tiêu hóa nội bào có tiêu hóa cơ học và tiêu hóa hóa học.",
               "correct": false
             },
             {
-              "question": "d) Động vật có xương sống tiêu hóa thức ăn theo hình thức tiêu hóa ngoại bào.",
+              "question": "d) Động vật có xương sống tiêu hóa ngoại bào.",
               "correct": true
             }
           ],
-          "explanation": "b sai vì động vật có ống tiêu hóa (tiêu hóa ngoại bào) có cả tiêu hóa cơ học và hóa học; c sai vì tiêu hóa nội bào không có tiêu hóa cơ học. a, d đúng."
+          "explanation": "b sai vì tiêu hóa ngoại bào trong ống tiêu hóa có cả cơ học và hóa học; c sai vì tiêu hóa nội bào chỉ có biến đổi hóa học trong không bào tiêu hóa. a, d đúng."
         },
         {
           "id": "sinhhoc11_b8_tf03",
           "type": "tf-group",
-          "passage": "Sơ đồ ống tiêu hóa ở người ([M] Miệng, [N] Dạ dày, [P] Ruột non, [Q] Ruột già):",
+          "passage": "Sơ đồ mô tả các thành phần trong hệ tiêu hóa ở người ([M] Miệng, [N] Dạ dày, [P] Ruột non, [Q] Ruột già). Hãy cho biết các phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) [N] là dạ dày, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học protein.",
+              "question": "a) [N] là dạ dày đơn, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học.",
               "correct": true
             },
             {
-              "question": "b) [P] là ruột non, chỉ diễn ra tiêu hóa hóa học mà không có hấp thụ.",
+              "question": "b) [P] là ruột non, chỉ diễn ra tiêu hóa hóa học.",
               "correct": false
             },
             {
-              "question": "c) [M] là miệng, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học tinh bột.",
+              "question": "c) [M] là miệng, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học.",
               "correct": true
             },
             {
@@ -1946,7 +2100,7 @@
               "correct": true
             }
           ],
-          "explanation": "b sai vì ruột non là nơi diễn ra cả tiêu hóa hóa học triệt để và hấp thụ chủ yếu chất dinh dưỡng. a, c, d đúng."
+          "explanation": "b sai vì ruột non vừa tiêu hóa hóa học, vừa là cơ quan hấp thụ chủ yếu các chất dinh dưỡng. a, c, d đúng."
         }
       ]
     }
