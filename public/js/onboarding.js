@@ -7,7 +7,7 @@ const Onboarding = {
   currentStep: 1,
   data: {
     grade: 11,
-    targetSubjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'],
+    targetSubjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'],
     goal: 'score_8_plus'
   },
 
@@ -16,7 +16,8 @@ const Onboarding = {
     { key: 'vatli', name: 'Vật lí', icon: 'zap', desc: 'Động học, Dao động & Nhiệt học' },
     { key: 'hoahoc', name: 'Hóa học', icon: 'flask-conical', desc: 'Liên kết, Hữu cơ & Vô cơ' },
     { key: 'tienganh', name: 'Tiếng Anh', icon: 'globe', desc: 'Ngữ pháp, Từ vựng & Đọc hiểu' },
-    { key: 'lichsu', name: 'Lịch sử', icon: 'scroll', desc: 'Lịch sử Việt Nam & Thế giới (GDPT 2018)' }
+    { key: 'lichsu', name: 'Lịch sử', icon: 'scroll', desc: 'Lịch sử Việt Nam & Thế giới (GDPT 2018)' },
+    { key: 'sinhhoc', name: 'Sinh học', icon: 'dna', desc: 'Trao đổi chất, Quang hợp & Sinh lý học' }
   ],
 
   init() {
@@ -25,7 +26,7 @@ const Onboarding = {
       this.data.grade = existing.grade || 11;
       this.data.targetSubjects = Array.isArray(existing.targetSubjects) && existing.targetSubjects.length > 0
         ? existing.targetSubjects
-        : ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'];
+        : ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'];
       this.data.goal = existing.goal || 'score_8_plus';
     }
     this.currentStep = 1;

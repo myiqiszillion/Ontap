@@ -75,6 +75,7 @@ const DiagnosticView = {
               <select id="diag-subject-select" class="diag-select" onchange="DiagnosticView.onSubjectChange(this.value)">
                 <option value="toan" ${this.selectedSubject === 'toan' ? 'selected' : ''}>Toán học</option>
                 <option value="lichsu" ${this.selectedSubject === 'lichsu' ? 'selected' : ''}>Lịch sử 11</option>
+                <option value="sinhhoc" ${this.selectedSubject === 'sinhhoc' ? 'selected' : ''}>Sinh học 11</option>
                 <option value="vatli" ${this.selectedSubject === 'vatli' ? 'selected' : ''}>Vật lí</option>
                 <option value="hoahoc" ${this.selectedSubject === 'hoahoc' ? 'selected' : ''}>Hóa học</option>
                 <option value="tienganh" ${this.selectedSubject === 'tienganh' ? 'selected' : ''}>Tiếng Anh</option>

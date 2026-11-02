@@ -340,6 +340,7 @@ const SmartImporterView = {
                     <option value="vatli11">Vật lí 11</option>
                     <option value="hoahoc11">Hóa học 11</option>
                     <option value="tienganh11">Tiếng Anh 11</option>
+                    <option value="sinhhoc11">Sinh học 11</option>
                     <option value="lichsu11" selected>Lịch sử 11</option>
                   </select>
                 </div>

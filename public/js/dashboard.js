@@ -10,7 +10,7 @@ const DashboardView = {
 
     const profile = ProfileStore.getProfile() || {
       grade: 11,
-      targetSubjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu'],
+      targetSubjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'],
       goal: 'score_8_plus'
     };
 
@@ -23,7 +23,8 @@ const DashboardView = {
       vatli: 'Vật lí',
       hoahoc: 'Hóa học',
       tienganh: 'Tiếng Anh',
-      lichsu: 'Lịch sử'
+      lichsu: 'Lịch sử',
+      sinhhoc: 'Sinh học'
     };
 
     const targetSubjectBadges = (profile.targetSubjects || ['lichsu'])
@@ -64,10 +65,18 @@ const DashboardView = {
             </p>
 
             <div class="hero-actions">
+              <button class="btn btn-primary hero-main-cta" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-color: #059669;" onclick="app.selectSubject('sinhhoc11')">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span>Vào ôn Sinh học 11</span>
+              </button>
               <button class="btn btn-primary hero-main-cta" onclick="app.selectSubject('lichsu11')">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 <span>Vào ôn Lịch sử 11</span>
               </button>
+              <a href="/sinh.html" class="btn btn-glass" style="color: #34d399; border-color: rgba(16, 185, 129, 0.4); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>
+                <span>Cẩm nang Sinh 11</span>
+              </a>
               <button class="btn btn-glass" onclick="app.navigateTo('custom-exam')">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                 <span>Tự tạo đề thi</span>
@@ -121,7 +130,7 @@ const DashboardView = {
         <div class="dashboard-section">
           <div class="section-header">
             <div>
-              <h2 class="section-title">5 Môn Học Trọng Tâm GDPT 2018 — Khối 11</h2>
+              <h2 class="section-title">6 Môn Học Trọng Tâm GDPT 2018 — Khối 11</h2>
               <span class="section-hint">Ngân hàng đề thi chuẩn hóa từ kho học liệu VietJack, ToánMath, Thư Viện Học Liệu theo QĐ 764</span>
             </div>
             <button class="section-header-link" onclick="app.navigateTo('subjects')">
@@ -241,6 +250,28 @@ const DashboardView = {
               </div>
             </div>
           </div>
+
+            <!-- SINH HỌC -->
+            <div class="dash-subject-card dash-sub-sinhhoc" onclick="app.selectSubject('sinhhoc11')">
+              <div class="dash-sub-glow"></div>
+              <div class="dash-sub-top">
+                <div class="dash-sub-icon sinhhoc" style="background: #10b98115; color: #10b981;">
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <span class="dash-sub-pill sinhhoc" style="background: #10b98120; color: #10b981;">QĐ 764</span>
+              </div>
+              <h3 class="dash-sub-name">Sinh học 11</h3>
+              <p class="dash-sub-desc">Trao đổi chất và chuyển hóa năng lượng, Trao đổi nước/khoáng, Quang hợp, Hô hấp và Tiêu hóa.</p>
+              <div class="dash-sub-meta">
+                <span class="dash-sub-tag">18 CHTN</span>
+                <span class="dash-sub-tag">4 Đúng/Sai</span>
+                <span class="dash-sub-tag">6 Điền khuyết</span>
+              </div>
+              <div class="dash-sub-footer">
+                <span class="dash-sub-count">Ngân hàng Đề NTMK</span>
+                <span class="dash-sub-cta">Luyện đề ngay →</span>
+              </div>
+            </div>
         </div>
 
         ${dueMistakesCount > 0 ? `

@@ -59,6 +59,18 @@
         "mcq",
         "tf_group"
       ]
+    },
+    "sinhhoc": {
+      "name": "Sinh học",
+      "shortName": "Sinh học",
+      "icon": "dna",
+      "color": "#10b981",
+      "examDuration": 50,
+      "formats": [
+        "mcq",
+        "tf_group",
+        "short_answer"
+      ]
     }
   },
   "subjects": [
@@ -149,6 +161,24 @@
         "mcq": 20,
         "tf": 4,
         "sa": 0,
+        "durationMinutes": 50
+      }
+    },
+    {
+      "id": "sinhhoc11",
+      "subjectKey": "sinhhoc",
+      "grade": 11,
+      "name": "Sinh học 11",
+      "icon": "dna",
+      "description": "Trao đổi chất và chuyển hóa năng lượng, Trao đổi nước/khoáng, Quang hợp, Hô hấp và Tiêu hóa ở động vật (GDPT 2018)",
+      "color": "#10b981",
+      "dataFile": "sinhhoc11.json",
+      "status": "active",
+      "ready": true,
+      "examStructure": {
+        "mcq": 18,
+        "tf": 4,
+        "sa": 6,
         "durationMinutes": 50
       }
     }

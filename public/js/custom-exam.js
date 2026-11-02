@@ -24,6 +24,7 @@ const CustomExam = {
     { id: 'hoahoc10', name: 'Hóa học 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#06b6d4' },
     { id: 'tienganh10', name: 'Tiếng Anh 10', grade: 10, defaultMcq: 40, defaultTf: 0, defaultDuration: 50, color: '#0d9488' },
     { id: 'lichsu10', name: 'Lịch sử 10', grade: 10, defaultMcq: 20, defaultTf: 4, defaultDuration: 50, color: '#e11d48' },
+    { id: 'sinhhoc11', name: 'Sinh học 11', grade: 11, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#10b981' },
     { id: 'lichsu11', name: 'Lịch sử 11', grade: 11, defaultMcq: 20, defaultTf: 4, defaultDuration: 50, color: '#e11d48' },
     { id: 'lichsu12', name: 'Lịch sử 12', grade: 12, defaultMcq: 24, defaultTf: 4, defaultDuration: 50, color: '#e11d48' }
   ],

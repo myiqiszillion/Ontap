@@ -56,13 +56,13 @@ describe('Express Server API Integration (GDPT 2018 - Grade 11 Core Subjects)', 
     assert.ok(res.body.includes('<!DOCTYPE html>'));
   });
 
-  test('GET /api/subjects returns 5 core target subjects for grade 11', async () => {
+  test('GET /api/subjects returns all target subjects for grade 11', async () => {
     const res = await httpGet('/api/subjects');
     assert.equal(res.statusCode, 200);
     const json = JSON.parse(res.body);
     assert.deepEqual(json.grades, [11]);
     assert.ok(Array.isArray(json.subjects));
-    assert.equal(json.subjects.length, 5);
+    assert.equal(json.subjects.length, 6);
 
     // Check that legacy subjects are NOT present
     const hasLegacy = json.subjects.some(s => ['su', 'sinh', 'tin', 'toan10', 'vatli10'].includes(s.subjectKey || s.id));
@@ -73,10 +73,11 @@ describe('Express Server API Integration (GDPT 2018 - Grade 11 Core Subjects)', 
     const res = await httpGet('/api/subjects?active_only=true');
     assert.equal(res.statusCode, 200);
     const json = JSON.parse(res.body);
-    assert.ok(json.subjects.length >= 5, 'All 5 core subjects are active and ready');
+    assert.ok(json.subjects.length >= 6, 'All core subjects are active and ready');
     assert.ok(json.subjects.every(s => s.ready === true), 'All returned subjects must be ready');
     assert.ok(json.subjects.some(s => s.id === 'toan11'), 'Must include toan11');
     assert.ok(json.subjects.some(s => s.id === 'lichsu11'), 'Must include lichsu11');
+    assert.ok(json.subjects.some(s => s.id === 'sinhhoc11'), 'Must include sinhhoc11');
   });
 
   test('GET /api/data/toan11 returns toan11.json questions', async () => {
@@ -119,6 +120,15 @@ describe('Express Server API Integration (GDPT 2018 - Grade 11 Core Subjects)', 
     assert.ok(Array.isArray(json.lessons));
     assert.equal(json.lessons.length, 4);
     assert.equal(json.subject, 'Lịch sử 11');
+  });
+
+  test('GET /api/data/sinhhoc11 returns sinhhoc11.json questions', async () => {
+    const res = await httpGet('/api/data/sinhhoc11');
+    assert.equal(res.statusCode, 200);
+    const json = JSON.parse(res.body);
+    assert.ok(Array.isArray(json.lessons));
+    assert.equal(json.lessons.length, 5);
+    assert.equal(json.subject, 'Sinh học 11');
   });
 
   test('GET /api/data/toan10 returns 404 for removed subject file', async () => {

@@ -5,7 +5,7 @@ const fs = require('fs');
 const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = (process.env.PORT && process.env.PORT !== '3321') ? process.env.PORT : 3000;
 
 // Initialize Supabase safely with fallback (No-crash architecture)
 const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;

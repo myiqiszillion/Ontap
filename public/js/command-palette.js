@@ -116,6 +116,16 @@ const CommandPalette = {
       keywords: ['tieng anh 11', 'anh 11', 'english', 'grammar', 'reading', 'tienganh11'],
       action: () => app.selectSubject('tienganh11')
     },
+    
+    {
+      id: 'sub_sinhhoc11',
+      category: 'Môn học (GDPT 2018)',
+      title: 'Sinh học 11',
+      icon: 'dna',
+      desc: 'Trao đổi chất và chuyển hóa năng lượng, Trao đổi nước/khoáng, Quang hợp, Hô hấp (QĐ 764)',
+      keywords: ['sinh hoc 11', 'sinh 11', 'quang hop', 'ho hap', 'trao doi nuoc', 'sinhhoc11'],
+      action: () => app.selectSubject('sinhhoc11')
+    },
     {
       id: 'sub_lichsu11',
       category: 'Môn học (GDPT 2018)',

@@ -14,11 +14,11 @@ const ProfileStore = require('../public/js/state.js');
 const Timer = require('../public/js/timer.js');
 
 describe('1. Repository & Data Integrity (GDPT 2018 - Grade 11 Core Subjects)', () => {
-  test('subjects.json contains grade 11 and 5 core active subjects (toan, vatli, hoahoc, tienganh, lichsu)', () => {
+  test('subjects.json contains grade 11 and active subjects (toan, vatli, hoahoc, tienganh, lichsu, sinhhoc)', () => {
     const data = loadSubjectsData(path.join(__dirname, '..'));
     assert.deepEqual(data.grades, [11], 'Should support grade 11');
     
-    const coreKeys = ['toan11', 'vatli11', 'hoahoc11', 'tienganh11', 'lichsu11'];
+    const coreKeys = ['toan11', 'vatli11', 'hoahoc11', 'tienganh11', 'lichsu11', 'sinhhoc11'];
     coreKeys.forEach(id => {
       const found = data.subjects.find(s => s.id === id && s.grade === 11);
       assert.ok(found, `Subject ${id} must exist`);

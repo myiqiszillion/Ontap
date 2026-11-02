@@ -95,6 +95,11 @@ const app = {
             this.navigateTo('dashboard');
           }
         }
+        const urlParams = new URLSearchParams(window.location.search);
+        const targetSub = urlParams.get('subject');
+        if (targetSub) {
+          setTimeout(() => this.selectSubject(targetSub), 120);
+        }
       }
     } catch (error) {
       console.error('Failed to initialize NTMK application:', error);
@@ -196,7 +201,8 @@ const app = {
       'vatli': 'vatli11', 'vatly': 'vatli11', 'vatli10': 'vatli11', 'vatli11': 'vatli11', 'vatli12': 'vatli11',
       'hoahoc': 'hoahoc11', 'hoa': 'hoahoc11', 'hoahoc10': 'hoahoc11', 'hoahoc11': 'hoahoc11', 'hoahoc12': 'hoahoc11',
       'tienganh': 'tienganh11', 'anh': 'tienganh11', 'english': 'tienganh11', 'tienganh10': 'tienganh11', 'tienganh11': 'tienganh11', 'tienganh12': 'tienganh11',
-      'lichsu': 'lichsu11', 'su': 'lichsu11', 'lichsu10': 'lichsu11', 'lichsu11': 'lichsu11', 'lichsu12': 'lichsu11'
+      'lichsu': 'lichsu11', 'su': 'lichsu11', 'lichsu10': 'lichsu11', 'lichsu11': 'lichsu11', 'lichsu12': 'lichsu11',
+      'sinhhoc': 'sinhhoc11', 'sinh': 'sinhhoc11', 'sinhhoc10': 'sinhhoc11', 'sinhhoc11': 'sinhhoc11', 'sinhhoc12': 'sinhhoc11'
     };
     const mapped = aliasMap[String(subjectId).toLowerCase()];
     if (mapped) {

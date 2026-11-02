@@ -629,6 +629,7 @@ const MistakeView = {
     tienganh12: 'Tiếng Anh 12',
     lichsu10: 'Lịch sử 10',
     lichsu11: 'Lịch sử 11',
+    sinhhoc11: 'Sinh học 11',
     lichsu12: 'Lịch sử 12'
   },
 

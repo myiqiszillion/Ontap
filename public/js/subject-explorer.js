@@ -38,7 +38,7 @@ const SubjectExplorer = {
           <div>
             <h1 class="explorer-title">Khám phá Môn Học GDPT 2018</h1>
             <p class="explorer-subtitle">
-              Hệ thống ôn luyện bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Toán, Vật lí, Hóa học, Tiếng Anh và Lịch sử 11.
+              Hệ thống ôn luyện bám sát cấu trúc đề thi Quyết định 764/QĐ-BGDĐT: Toán, Vật lí, Hóa học, Tiếng Anh, Lịch sử và Sinh học 11.
             </p>
           </div>
           <div class="grade-pill-group" role="tablist" aria-label="Chọn khối lớp">
@@ -77,7 +77,7 @@ const SubjectExplorer = {
            style="--sub-color: ${subject.color || '#3b82f6'};">
         <div class="card-top">
           <div class="sub-icon-box" style="background: ${subject.color}15; color: ${subject.color};">
-            ${(typeof Icons !== 'undefined') ? (subject.id?.includes('vatli') ? Icons.get('zap', { size: 24 }) : subject.id?.includes('hoahoc') ? Icons.get('flask-conical', { size: 24 }) : subject.id?.includes('anh') ? Icons.get('globe', { size: 24 }) : subject.id?.includes('toan') ? Icons.get('ruler', { size: 24 }) : Icons.get('book-open', { size: 24 })) : ''}
+            ${(typeof Icons !== 'undefined') ? (subject.id?.includes('vatli') ? Icons.get('zap', { size: 24 }) : subject.id?.includes('hoahoc') ? Icons.get('flask-conical', { size: 24 }) : subject.id?.includes('anh') ? Icons.get('globe', { size: 24 }) : subject.id?.includes('toan') ? Icons.get('ruler', { size: 24 }) : subject.id?.includes('sinhhoc') ? Icons.get('dna', { size: 24 }) : Icons.get('book-open', { size: 24 })) : ''}
           </div>
           <div class="card-status-badge">
             ${isReady ? `
