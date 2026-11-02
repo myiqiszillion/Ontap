@@ -7,8 +7,6 @@
     }
   },
   "rewrites": [
-    { "source": "/van", "destination": "/van.html" },
-    { "source": "/on-thi", "destination": "/on-thi.html" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/api/delete-announcement", "destination": "/api/announcements" },
     { "source": "/api/pin-announcement", "destination": "/api/announcements" },
@@ -27,18 +25,6 @@
   "headers": [
     {
       "source": "/(.*).html",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/van",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/on-thi",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]

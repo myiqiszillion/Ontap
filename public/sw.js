@@ -3,7 +3,7 @@
  * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v9-history-sync';
+const CACHE_NAME = 'ntmk-cache-v10-clean';
 
 const STATIC_SHELL = [
   '/',
@@ -103,8 +103,7 @@ self.addEventListener('fetch', (event) => {
                     url.pathname.startsWith('/data/') ||
                     url.pathname === '/' ||
                     url.pathname === '/index.html' ||
-                    url.pathname === '/van' ||
-                    url.pathname === '/on-thi';
+                    url.pathname === '/index.html';
 
   if (isAppCode) {
     event.respondWith(
