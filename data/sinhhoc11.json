@@ -253,19 +253,19 @@
           "passage": "Khi nói về vai trò của sinh vật tự dưỡng đối với sinh giới, mỗi phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Phân hủy chất hữu cơ trong đất, trả lại vật chất cho môi trường.",
+              "question": "Phân hủy chất hữu cơ trong đất, trả lại vật chất cho môi trường.",
               "correct": false
             },
             {
-              "question": "b) Cung cấp oxygen đảm bảo cho hoạt động sống của hầu hết sinh vật.",
+              "question": "Cung cấp oxygen đảm bảo cho hoạt động sống của hầu hết sinh vật.",
               "correct": true
             },
             {
-              "question": "c) Chất hữu cơ do các sinh vật tự dưỡng sản xuất là nguồn thức ăn cho sinh vật dị dưỡng.",
+              "question": "Chất hữu cơ do các sinh vật tự dưỡng sản xuất là nguồn thức ăn cho sinh vật dị dưỡng.",
               "correct": true
             },
             {
-              "question": "d) Điều hoà nhiệt độ, độ ẩm thuận lợi cho sự tồn tại và phát triển của sinh vật.",
+              "question": "Điều hoà nhiệt độ, độ ẩm thuận lợi cho sự tồn tại và phát triển của sinh vật.",
               "correct": true
             }
           ],
@@ -274,50 +274,52 @@
         {
           "id": "sinhhoc11_b1_tf02",
           "type": "tf-group",
-          "passage": "Dưới đây là sơ đồ về mối quan hệ giữa chuyển hóa vật chất và năng lượng ở cấp tế bào ([1] Quá trình đồng hóa, [2] Quá trình dị hóa, [3] Các chất bài tiết ở tế bào). Dựa vào sơ đồ cho biết những nhận định sau đây là đúng hay sai?",
+          "passage": "Dưới đây là sơ đồ về mối quan hệ giữa chuyển hóa vật chất và năng lượng ở cấp tế bào. Quan sát sơ đồ và cho biết những nhận định sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) [1] là quá trình dị hóa.",
+              "question": "[1] là quá trình dị hóa.",
               "correct": false
             },
             {
-              "question": "b) [2] là quá trình đồng hóa.",
+              "question": "[2] là quá trình đồng hóa.",
               "correct": false
             },
             {
-              "question": "c) [3] Các chất bài tiết ở tế bào.",
+              "question": "[3] Các chất bài tiết ở tế bào.",
               "correct": true
             },
             {
-              "question": "d) Trong tế bào [1] và [2] là hai quá trình có mối quan hệ chặt chẽ với nhau.",
+              "question": "Trong tế bào [1] và [2] là hai quá trình có mối quan hệ chặt chẽ với nhau.",
               "correct": true
             }
           ],
-          "explanation": "a sai ([1] là đồng hóa); b sai ([2] là dị hóa); c, d đúng."
+          "explanation": "a sai ([1] là đồng hóa); b sai ([2] là dị hóa); c, d đúng.",
+          "image": "assets/biology/image1.png"
         },
         {
           "id": "sinhhoc11_b1_tf03",
           "type": "tf-group",
-          "passage": "Tìm hiểu các giai đoạn chuyển hóa năng lượng trong sinh giới theo sơ đồ ([1] Giai đoạn tổng hợp, [2] Giai đoạn phân giải, [3] Giai đoạn huy động năng lượng), mỗi nhận định dưới đây là đúng hay sai?",
+          "passage": "Tìm hiểu các giai đoạn chuyển hóa năng lượng trong sinh giới theo sơ đồ dưới đây, mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) [1] là giai đoạn huy động năng lượng.",
+              "question": "[1] là giai đoạn huy động năng lượng.",
               "correct": false
             },
             {
-              "question": "b) [2] là giai đoạn tổng hợp.",
+              "question": "[2] là giai đoạn tổng hợp.",
               "correct": false
             },
             {
-              "question": "c) [3] là giai đoạn phân giải.",
+              "question": "[3] là giai đoạn phân giải.",
               "correct": false
             },
             {
-              "question": "d) Giai đoạn [2] là sự phân giải các hợp chất hữu cơ phức tạp thành các hợp chất đơn giản thông qua quá trình dị hóa.",
+              "question": "Giai đoạn [2] là sự phân giải các hợp chất hữu cơ phức tạp thành các hợp chất đơn giản thông qua quá trình dị hóa.",
               "correct": true
             }
           ],
-          "explanation": "a, b, c sai vì gọi sai tên các giai đoạn ([1] là tổng hợp, [2] là phân giải, [3] là huy động năng lượng). d đúng."
+          "explanation": "a, b, c sai vì gọi sai tên các giai đoạn ([1] là tổng hợp, [2] là phân giải, [3] là huy động năng lượng). d đúng.",
+          "image": "assets/biology/image2.png"
         }
       ]
     },
@@ -611,7 +613,8 @@
             "4 phát biểu."
           ],
           "correct": 2,
-          "explanation": "Phát biểu (I) sai vì thực vật không trực tiếp đồng hóa N2. Các phát biểu (II), (III), (IV) đúng. Có 3 phát biểu đúng. Chọn C."
+          "explanation": "Phát biểu (I) sai vì thực vật không trực tiếp đồng hóa N2. Các phát biểu (II), (III), (IV) đúng. Có 3 phát biểu đúng. Chọn C.",
+          "image": "assets/biology/image5.png"
         },
         {
           "id": "sinhhoc11_b2_mcq23",
@@ -624,7 +627,8 @@
             "4 phát biểu."
           ],
           "correct": 3,
-          "explanation": "Cả 4 phát biểu (I), (II), (III), (IV) đều đúng theo nguyên tắc bón phân hợp lí trong nông nghiệp. Chọn D."
+          "explanation": "Cả 4 phát biểu (I), (II), (III), (IV) đều đúng theo nguyên tắc bón phân hợp lí trong nông nghiệp. Chọn D.",
+          "image": "assets/biology/image6.png"
         }
       ],
       "questionGroups": [
@@ -634,19 +638,19 @@
           "passage": "Khi nói về quá trình trao đổi nước ở thực vật trên cạn, mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Cơ quan hút nước chủ yếu là rễ.",
+              "question": "Cơ quan hút nước chủ yếu là rễ.",
               "correct": true
             },
             {
-              "question": "b) Cơ quan thoát hơi nước chủ yếu là lá.",
+              "question": "Cơ quan thoát hơi nước chủ yếu là lá.",
               "correct": true
             },
             {
-              "question": "c) Nước được vận chuyển từ rễ lên lá bằng mạch gỗ.",
+              "question": "Nước được vận chuyển từ rễ lên lá bằng mạch gỗ.",
               "correct": true
             },
             {
-              "question": "d) Tất cả lượng nước do rễ hút được đều được thoát ra ngoài qua con đường khí khổng.",
+              "question": "Tất cả lượng nước do rễ hút được đều được thoát ra ngoài qua con đường khí khổng.",
               "correct": false
             }
           ],
@@ -658,19 +662,19 @@
           "passage": "Mỗi nhận định sau đây là đúng hay sai khi nói về trao đổi nước và khoáng ở thực vật?",
           "statements": [
             {
-              "question": "a) Rễ cây hấp thụ nước từ đất theo cơ chế thẩm thấu, cần tiêu tốn năng lượng.",
+              "question": "Rễ cây hấp thụ nước từ đất theo cơ chế thẩm thấu, cần tiêu tốn năng lượng.",
               "correct": false
             },
             {
-              "question": "b) Trong cơ chế hấp thu chủ động, các ion di chuyển từ nơi có nồng độ cao về nơi có nồng độ thấp.",
+              "question": "Trong cơ chế hấp thu chủ động, các ion di chuyển từ nơi có nồng độ cao về nơi có nồng độ thấp.",
               "correct": false
             },
             {
-              "question": "c) Trong cơ chế hấp thu thụ động, sự di chuyển không mất năng lượng ATP.",
+              "question": "Trong cơ chế hấp thu thụ động, sự di chuyển không mất năng lượng ATP.",
               "correct": true
             },
             {
-              "question": "d) Trong cơ chế thụ động, ion có thể xâm nhập vào rễ cây theo dòng nước liên kết.",
+              "question": "Trong cơ chế thụ động, ion có thể xâm nhập vào rễ cây theo dòng nước liên kết.",
               "correct": true
             }
           ],
@@ -682,19 +686,19 @@
           "passage": "Phát biểu sau đây là đúng hay sai khi nói về dòng mạch gỗ?",
           "statements": [
             {
-              "question": "a) Mạch gỗ được tạo thành do các tế bào hình ống không có thành tế bào nối liền với nhau.",
+              "question": "Mạch gỗ được tạo thành do các tế bào hình ống không có thành tế bào nối liền với nhau.",
               "correct": false
             },
             {
-              "question": "b) Mạch gỗ vận chuyển nước, các chất khoáng hoà tan và một số chất hữu cơ tổng hợp từ rễ lên thân và lá.",
+              "question": "Mạch gỗ vận chuyển nước, các chất khoáng hoà tan và một số chất hữu cơ tổng hợp từ rễ lên thân và lá.",
               "correct": true
             },
             {
-              "question": "c) Động lực chủ yếu làm cho các chất di chuyển trong dòng mạch gỗ là sự chênh lệch nồng độ.",
+              "question": "Động lực chủ yếu làm cho các chất di chuyển trong dòng mạch gỗ là sự chênh lệch nồng độ.",
               "correct": false
             },
             {
-              "question": "d) Là sự vận chuyển một chiều từ rễ lên lá.",
+              "question": "Là sự vận chuyển một chiều từ rễ lên lá.",
               "correct": true
             }
           ],
@@ -706,19 +710,19 @@
           "passage": "Phát biểu sau đây về dòng mạch rây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Mạch rây được tạo thành do các tế bào rây nối liền với nhau, xung quanh ống rây là các tế bào kèm, chuyên chở các sản phẩm quang hợp và hormone thực vật.",
+              "question": "Mạch rây được tạo thành do các tế bào rây nối liền với nhau, xung quanh ống rây là các tế bào kèm, chuyên chở các sản phẩm quang hợp và hormone thực vật.",
               "correct": true
             },
             {
-              "question": "b) Thu mủ cây cao su từ mạch rây.",
+              "question": "Thu mủ cây cao su từ mạch rây.",
               "correct": true
             },
             {
-              "question": "c) Nước có thể vận chuyển ngang từ mạch gỗ sang mạch rây và ngược lại tuỳ theo nhu cầu của cây.",
+              "question": "Nước có thể vận chuyển ngang từ mạch gỗ sang mạch rây và ngược lại tuỳ theo nhu cầu của cây.",
               "correct": true
             },
             {
-              "question": "d) Các chất vận chuyển trong mạch rây chỉ có thể theo một chiều từ trên xuống.",
+              "question": "Các chất vận chuyển trong mạch rây chỉ có thể theo một chiều từ trên xuống.",
               "correct": false
             }
           ],
@@ -730,19 +734,19 @@
           "passage": "Nhận định sau đây về thoát hơi nước đối với thực vật là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Tạo ra động lực đầu trên cho dòng mạch gỗ.",
+              "question": "Tạo ra động lực đầu trên cho dòng mạch gỗ.",
               "correct": true
             },
             {
-              "question": "b) Đảm bảo cho khí khổng mở ra để khí CO2 khuếch tán vào lá cung cấp cho quang hợp.",
+              "question": "Đảm bảo cho khí khổng mở ra để khí CO2 khuếch tán vào lá cung cấp cho quang hợp.",
               "correct": true
             },
             {
-              "question": "c) Giúp hạ nhiệt độ của lá cây vào những ngày nắng nóng.",
+              "question": "Giúp hạ nhiệt độ của lá cây vào những ngày nắng nóng.",
               "correct": true
             },
             {
-              "question": "d) Thoát hơi nước qua lớp cutin ở lá cây già xảy ra mạnh hơn ở lá cây non.",
+              "question": "Thoát hơi nước qua lớp cutin ở lá cây già xảy ra mạnh hơn ở lá cây non.",
               "correct": false
             }
           ],
@@ -751,50 +755,52 @@
         {
           "id": "sinhhoc11_b2_tf06",
           "type": "tf-group",
-          "passage": "Dựa trên sơ đồ tóm tắt nguồn nitrogen cung cấp cho cây, hãy cho biết mỗi phát biểu sau đây là đúng hay sai?",
+          "passage": "Dựa trên sơ đồ tóm tắt nguồn nitrogen cung cấp cho cây dưới đây, hãy cho biết mỗi phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Hoạt động sấm sét giúp chuyển hóa N2 thành NO3- cung cấp cho cây.",
+              "question": "Hoạt động sấm sét giúp chuyển hóa N2 thành NO3- cung cấp cho cây.",
               "correct": true
             },
             {
-              "question": "b) Thực vật hấp thụ nitrogen chủ yếu ở dạng khí N2.",
+              "question": "Thực vật hấp thụ nitrogen chủ yếu ở dạng khí N2.",
               "correct": false
             },
             {
-              "question": "c) Cố định nitrogen tự do thành NH3/NH4+ nhờ các nhóm vi khuẩn cố định đạm.",
+              "question": "Cố định nitrogen tự do thành NH3/NH4+ nhờ các nhóm vi khuẩn cố định đạm.",
               "correct": true
             },
             {
-              "question": "d) Trong tự nhiên, nitrogen chỉ tồn tại ở dạng tự do trong khí quyển.",
+              "question": "Trong tự nhiên, nitrogen chỉ tồn tại ở dạng tự do trong khí quyển.",
               "correct": false
             }
           ],
-          "explanation": "b sai vì thực vật không hấp thụ trực tiếp N2 mà hấp thụ NH4+ và NO3-; d sai vì nitrogen tồn tại cả dạng khoáng vô cơ trong đất và xác hữu cơ. a, c đúng."
+          "explanation": "b sai vì thực vật không hấp thụ trực tiếp N2 mà hấp thụ NH4+ và NO3-; d sai vì nitrogen tồn tại cả dạng khoáng vô cơ trong đất và xác hữu cơ. a, c đúng.",
+          "image": "assets/biology/image3.png"
         },
         {
           "id": "sinhhoc11_b2_tf07",
           "type": "tf-group",
-          "passage": "Dựa trên sơ đồ tóm tắt quá trình đóng mở của khí khổng, hãy cho biết mỗi nhận định sau đây là đúng hay sai?",
+          "passage": "Dựa trên sơ đồ tóm tắt cơ chế đóng mở của khí khổng dưới đây ([1] Khi no nước, [2] Khi mất nước), hãy cho biết mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Khí khổng gồm 2 tế bào hình hạt đậu có cấu tạo thành ngoài mỏng, thành trong dày.",
+              "question": "Khí khổng gồm 2 tế bào hình hạt đậu có cấu tạo thành ngoài mỏng, thành trong dày.",
               "correct": true
             },
             {
-              "question": "b) Khi no nước, thành mỏng của tế bào khí khổng căng ra làm thành dày cong theo → khí khổng mở ra.",
+              "question": "Khi no nước, thành mỏng của tế bào khí khổng căng ra làm thành dày cong theo → khí khổng mở ra.",
               "correct": true
             },
             {
-              "question": "c) Khi mất nước, thành mỏng hết căng làm thành dày duỗi thẳng → khí khổng đóng lại.",
+              "question": "Khi mất nước, thành mỏng hết căng làm thành dày duỗi thẳng → khí khổng đóng lại.",
               "correct": true
             },
             {
-              "question": "d) Sự trương nước hoặc mất trương nước của tế bào khí khổng phụ thuộc vào ánh sáng và stress (hạn hán).",
+              "question": "Sự trương nước hoặc mất trương nước của tế bào khí khổng phụ thuộc vào ánh sáng và stress (hạn hán).",
               "correct": true
             }
           ],
-          "explanation": "Cả 4 phát biểu đều đúng mô tả chính xác cơ chế đóng mở khí khổng ở thực vật."
+          "explanation": "Cả 4 phát biểu đều đúng mô tả chính xác cơ chế đóng mở khí khổng ở thực vật.",
+          "image": "assets/biology/image4.png"
         },
         {
           "id": "sinhhoc11_b2_tf08",
@@ -802,19 +808,19 @@
           "passage": "Thực vật có khả năng điều tiết quá trình thoát hơi nước, hãy cho biết mỗi nhận định sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Quá trình thoát hơi nước được điều tiết bởi hai tác nhân chính là ánh sáng và nhiệt độ.",
+              "question": "Quá trình thoát hơi nước được điều tiết bởi hai tác nhân chính là ánh sáng và nhiệt độ.",
               "correct": false
             },
             {
-              "question": "b) Ánh sáng thúc đẩy khí khổng mở thông qua kích thích bơm ion và tăng áp suất thẩm thấu.",
+              "question": "Ánh sáng thúc đẩy khí khổng mở thông qua kích thích bơm ion và tăng áp suất thẩm thấu.",
               "correct": true
             },
             {
-              "question": "c) Khi cường độ ánh sáng quá mạnh làm nhiệt độ lá tăng cao, tế bào khí khổng mất nước và đóng lại để tránh mất nước.",
+              "question": "Khi cường độ ánh sáng quá mạnh làm nhiệt độ lá tăng cao, tế bào khí khổng mất nước và đóng lại để tránh mất nước.",
               "correct": true
             },
             {
-              "question": "d) Khi thực vật bị stress hạn hán, cây giảm tổng hợp abscisic acid (ABA) làm khí khổng đóng lại.",
+              "question": "Khi thực vật bị stress hạn hán, cây giảm tổng hợp abscisic acid (ABA) làm khí khổng đóng lại.",
               "correct": false
             }
           ],
@@ -1213,19 +1219,19 @@
           "passage": "Thí nghiệm được tiến hành ở nhiệt độ khác nhau (đếm số bọt khí O2 trong 1 phút sinh ra từ cành rong đuôi chó):",
           "statements": [
             {
-              "question": "a) Khi nhiệt độ tăng từ 10°C - 32°C số bọt khí tạo ra từ quá trình này tăng, sau đó nhiệt độ tiếp tục tăng thì số bọt khí tạo ra giảm.",
+              "question": "Khi nhiệt độ tăng từ 10°C - 32°C số bọt khí tạo ra từ quá trình này tăng, sau đó nhiệt độ tiếp tục tăng thì số bọt khí tạo ra giảm.",
               "correct": true
             },
             {
-              "question": "b) Đây là thí nghiệm chứng minh ảnh hưởng của ánh sáng đến hô hấp ở thực vật.",
+              "question": "Đây là thí nghiệm chứng minh ảnh hưởng của ánh sáng đến hô hấp ở thực vật.",
               "correct": false
             },
             {
-              "question": "c) Tốc độ quang hợp ở loại rong này giảm khi nhiệt độ lớn hơn 40°C vì nhiệt làm biến tính các enzyme quang hợp.",
+              "question": "Tốc độ quang hợp ở loại rong này giảm khi nhiệt độ lớn hơn 40°C vì nhiệt làm biến tính các enzyme quang hợp.",
               "correct": true
             },
             {
-              "question": "d) Nếu đưa chậu thí nghiệm vào trong tối thì kết quả thí nghiệm không đổi.",
+              "question": "Nếu đưa chậu thí nghiệm vào trong tối thì kết quả thí nghiệm không đổi.",
               "correct": false
             }
           ],
@@ -1237,19 +1243,19 @@
           "passage": "Khi nói về quang hợp ở thực vật, các phát biểu sau đúng hay sai?",
           "statements": [
             {
-              "question": "a) Cường độ ánh sáng tăng dần đến điểm bão hòa thì cường độ quang hợp tăng dần.",
+              "question": "Cường độ ánh sáng tăng dần đến điểm bão hòa thì cường độ quang hợp tăng dần.",
               "correct": true
             },
             {
-              "question": "b) Cây quang hợp mạnh nhất ở miền ánh sáng xanh tím sau đó là miền ánh sáng đỏ.",
+              "question": "Cây quang hợp mạnh nhất ở miền ánh sáng xanh tím sau đó là miền ánh sáng đỏ.",
               "correct": false
             },
             {
-              "question": "c) Từ điểm bão hòa trở đi, nồng độ CO2 tăng thì cường độ quang hợp giảm dần.",
+              "question": "Từ điểm bão hòa trở đi, nồng độ CO2 tăng thì cường độ quang hợp giảm dần.",
               "correct": false
             },
             {
-              "question": "d) Khi nhiệt độ tăng quá cao thì cường độ quang hợp giảm.",
+              "question": "Khi nhiệt độ tăng quá cao thì cường độ quang hợp giảm.",
               "correct": true
             }
           ],
@@ -1261,19 +1267,19 @@
           "passage": "Thực vật CAM và C4 thích nghi với điều kiện sống và có con đường cố định CO2 phù hợp. Những phát biểu sau đúng hay sai?",
           "statements": [
             {
-              "question": "a) Thực vật CAM có con đường cố định CO2 diễn ra vào ban đêm vì ban ngày khí khổng đóng để hạn chế sự thoát hơi nước.",
+              "question": "Thực vật CAM có con đường cố định CO2 diễn ra vào ban đêm vì ban ngày khí khổng đóng để hạn chế sự thoát hơi nước.",
               "correct": true
             },
             {
-              "question": "b) Thực vật CAM có pha tối hoàn toàn diễn ra vào ban đêm và không có chu trình Calvin.",
+              "question": "Thực vật CAM có pha tối hoàn toàn diễn ra vào ban đêm và không có chu trình Calvin.",
               "correct": false
             },
             {
-              "question": "c) Thực vật C4 cố định CO2 theo con đường C4 giúp cây có thể quang hợp trong điều kiện ánh sáng mạnh, nhiệt độ cao và nồng độ CO2 thấp.",
+              "question": "Thực vật C4 cố định CO2 theo con đường C4 giúp cây có thể quang hợp trong điều kiện ánh sáng mạnh, nhiệt độ cao và nồng độ CO2 thấp.",
               "correct": true
             },
             {
-              "question": "d) Thực vật CAM và C4 đều có con đường cố định CO2 tạm thời (sơ bộ) và con đường cố định CO2 theo chu trình Calvin.",
+              "question": "Thực vật CAM và C4 đều có con đường cố định CO2 tạm thời (sơ bộ) và con đường cố định CO2 theo chu trình Calvin.",
               "correct": true
             }
           ],
@@ -1571,7 +1577,8 @@
             "4 phát biểu."
           ],
           "correct": 2,
-          "explanation": "Các phát biểu (1), (2), (5) đúng. Phát biểu (3) sai (hô hấp ở ti thể); (4) sai (quang hợp ở lục lạp). Có 3 phát biểu đúng. Chọn C."
+          "explanation": "Các phát biểu (1), (2), (5) đúng. Phát biểu (3) sai (hô hấp ở ti thể); (4) sai (quang hợp ở lục lạp). Có 3 phát biểu đúng. Chọn C.",
+          "image": "assets/biology/image14.png"
         },
         {
           "id": "sinhhoc11_b6_mcq23",
@@ -1594,19 +1601,19 @@
           "passage": "Mỗi phát biểu sau đây đúng hay sai khi nói về các giai đoạn của quá trình hô hấp ở thực vật?",
           "statements": [
             {
-              "question": "a) Sản phẩm cuối cùng của hô hấp hiếu khí là O2 và H2O.",
+              "question": "Sản phẩm cuối cùng của hô hấp hiếu khí là O2 và H2O.",
               "correct": false
             },
             {
-              "question": "b) Chuỗi truyền electron phân bố ở màng trong của ti thể.",
+              "question": "Chuỗi truyền electron phân bố ở màng trong của ti thể.",
               "correct": true
             },
             {
-              "question": "c) Pyruvic acid tạo ra từ đường phân được sử dụng trực tiếp trong chu trình Krebs.",
+              "question": "Pyruvic acid tạo ra từ đường phân được sử dụng trực tiếp trong chu trình Krebs.",
               "correct": false
             },
             {
-              "question": "d) Chu trình Krebs là giai đoạn tạo ra nhiều ATP nhất trong quá trình hô hấp.",
+              "question": "Chu trình Krebs là giai đoạn tạo ra nhiều ATP nhất trong quá trình hô hấp.",
               "correct": false
             }
           ],
@@ -1618,19 +1625,19 @@
           "passage": "Khi nói đến ảnh hưởng của hàm lượng nước đến hô hấp ở thực vật, mỗi phát biểu sau đây đúng hay sai?",
           "statements": [
             {
-              "question": "a) Nước là dung môi hòa tan các chất tham gia phản ứng hô hấp.",
+              "question": "Nước là dung môi hòa tan các chất tham gia phản ứng hô hấp.",
               "correct": true
             },
             {
-              "question": "b) Nước là môi trường cho các enzyme hô hấp hoạt động.",
+              "question": "Nước là môi trường cho các enzyme hô hấp hoạt động.",
               "correct": true
             },
             {
-              "question": "c) Hàm lượng nước tăng làm tăng cường độ hô hấp trong hạt.",
+              "question": "Hàm lượng nước tăng làm tăng cường độ hô hấp trong hạt.",
               "correct": true
             },
             {
-              "question": "d) Sấy khô nông phẩm làm giảm cường độ hô hấp của chúng xuống mức tối thiểu.",
+              "question": "Sấy khô nông phẩm làm giảm cường độ hô hấp của chúng xuống mức tối thiểu.",
               "correct": true
             }
           ],
@@ -1642,19 +1649,19 @@
           "passage": "Ở lúa mì, khi độ ẩm 11 – 12% thì cường độ hô hấp hạt khoảng 1,5 mg CO2/kg/h; khi độ ẩm tăng thêm 14 – 15% thì cường độ hô hấp tăng gấp 4 – 5 lần. Mỗi nhận định sau đây đúng hay sai?",
           "statements": [
             {
-              "question": "a) Hàm lượng nước trong hạt ảnh hưởng trực tiếp đến cường độ hô hấp.",
+              "question": "Hàm lượng nước trong hạt ảnh hưởng trực tiếp đến cường độ hô hấp.",
               "correct": true
             },
             {
-              "question": "b) Để tăng cường độ hô hấp hạt thì cần tăng hàm lượng nước trong tế bào hạt.",
+              "question": "Để tăng cường độ hô hấp hạt thì cần tăng hàm lượng nước trong tế bào hạt.",
               "correct": true
             },
             {
-              "question": "c) Khi hạt lúa mì đang ở trạng thái ngủ nghỉ (tiềm sinh) thì hàm lượng nước là cao nhất.",
+              "question": "Khi hạt lúa mì đang ở trạng thái ngủ nghỉ (tiềm sinh) thì hàm lượng nước là cao nhất.",
               "correct": false
             },
             {
-              "question": "d) Để bảo quản hạt lúa mì có thể dùng biện pháp phơi khô, sấy khô.",
+              "question": "Để bảo quản hạt lúa mì có thể dùng biện pháp phơi khô, sấy khô.",
               "correct": true
             }
           ],
@@ -1663,26 +1670,27 @@
         {
           "id": "sinhhoc11_b6_tf04",
           "type": "tf-group",
-          "passage": "Quan sát đồ thị về ảnh hưởng của nhiệt độ đến hô hấp ở thực vật, cho biết mỗi nhận định sau đúng hay sai?",
+          "passage": "Quan sát đồ thị về ảnh hưởng của nhiệt độ đến cường độ hô hấp ở thực vật dưới đây, cho biết mỗi nhận định sau đúng hay sai?",
           "statements": [
             {
-              "question": "a) Nhiệt độ tối ưu cho quá trình hô hấp ở thực vật trong khoảng 30 – 35°C.",
+              "question": "Nhiệt độ tối ưu cho quá trình hô hấp ở thực vật trong khoảng 30 – 35°C.",
               "correct": true
             },
             {
-              "question": "b) Khi nhiệt độ tăng, cường độ hô hấp tăng dần và đạt cao nhất tại nhiệt độ 45°C.",
+              "question": "Khi nhiệt độ tăng, cường độ hô hấp tăng dần và đạt cao nhất tại nhiệt độ 45°C.",
               "correct": false
             },
             {
-              "question": "c) Trong khoảng nhiệt độ 0 – 35°C, cứ tăng nhiệt độ thì cường độ hô hấp tăng.",
+              "question": "Trong khoảng nhiệt độ 0 – 35°C, cứ tăng nhiệt độ thì cường độ hô hấp tăng.",
               "correct": true
             },
             {
-              "question": "d) Nhiệt độ ảnh hưởng đến hoạt động của enzyme hô hấp, từ đó ảnh hưởng đến cường độ hô hấp.",
+              "question": "Nhiệt độ ảnh hưởng đến hoạt động của enzyme hô hấp, từ đó ảnh hưởng đến cường độ hô hấp.",
               "correct": true
             }
           ],
-          "explanation": "b sai vì đạt cực đại ở nhiệt độ tối ưu (30 - 35°C); ở 45°C enzyme hô hấp bị biến tính nhiệt nên cường độ hô hấp giảm mạnh. a, c, d đúng."
+          "explanation": "b sai vì đạt cực đại ở nhiệt độ tối ưu (30 - 35°C); ở 45°C enzyme hô hấp bị biến tính nhiệt nên cường độ hô hấp giảm mạnh. a, c, d đúng.",
+          "image": "assets/biology/image13.png"
         },
         {
           "id": "sinhhoc11_b6_tf05",
@@ -1690,19 +1698,19 @@
           "passage": "Mỗi phát biểu sau đây đúng hay sai khi nói về hô hấp ở thực vật?",
           "statements": [
             {
-              "question": "a) Hô hấp hiếu khí và kị khí đều trải qua giai đoạn đường phân.",
+              "question": "Hô hấp hiếu khí và kị khí đều trải qua giai đoạn đường phân.",
               "correct": true
             },
             {
-              "question": "b) Nếu không có oxygen, 1 phân tử glucose qua lên men tạo được 2 ATP.",
+              "question": "Nếu không có oxygen, 1 phân tử glucose qua lên men tạo được 2 ATP.",
               "correct": true
             },
             {
-              "question": "c) Hô hấp ở hạt đang nảy mầm diễn ra mạnh hơn rất nhiều so với hạt khô.",
+              "question": "Hô hấp ở hạt đang nảy mầm diễn ra mạnh hơn rất nhiều so với hạt khô.",
               "correct": true
             },
             {
-              "question": "d) Người ta thường ngâm và ủ hạt trước khi gieo trồng là ứng dụng nhằm tăng hô hấp tế bào giúp hạt nhanh nảy mầm.",
+              "question": "Người ta thường ngâm và ủ hạt trước khi gieo trồng là ứng dụng nhằm tăng hô hấp tế bào giúp hạt nhanh nảy mầm.",
               "correct": true
             }
           ],
@@ -2036,19 +2044,19 @@
           "passage": "Nói về sự khác nhau giữa tiêu hóa nội bào và tiêu hóa ngoại bào, các nhận định sau đây đúng hay sai?",
           "statements": [
             {
-              "question": "a) Tiêu hóa nội bào là sự tiêu hóa xảy ra bên trong ống tiêu hoá.",
+              "question": "Tiêu hóa nội bào là sự tiêu hóa xảy ra bên trong ống tiêu hoá.",
               "correct": false
             },
             {
-              "question": "b) Tiêu hóa nội bào là sự tiêu hóa thức ăn xảy ra bên trong của tế bào.",
+              "question": "Tiêu hóa nội bào là sự tiêu hóa thức ăn xảy ra bên trong của tế bào.",
               "correct": true
             },
             {
-              "question": "c) Tiêu hóa ngoại bào là tiêu hóa thức ăn ở bên ngoài tế bào, thức ăn có thể được tiêu hóa hóa học trong túi tiêu hóa hoặc được tiêu hóa cả về mặt cơ học và hóa học trong ống tiêu hóa.",
+              "question": "Tiêu hóa ngoại bào là tiêu hóa thức ăn ở bên ngoài tế bào, thức ăn có thể được tiêu hóa hóa học trong túi tiêu hóa hoặc được tiêu hóa cả về mặt cơ học và hóa học trong ống tiêu hóa.",
               "correct": true
             },
             {
-              "question": "d) Tiêu hóa ngoại bào là sự tiêu hóa xảy ra bên ngoài tế bào chỉ có ở động vật có ống tiêu hoá.",
+              "question": "Tiêu hóa ngoại bào là sự tiêu hóa xảy ra bên ngoài tế bào chỉ có ở động vật có ống tiêu hoá.",
               "correct": false
             }
           ],
@@ -2060,19 +2068,19 @@
           "passage": "Khi nói về tiêu hóa ở động vật, các phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) Động vật chưa có hệ tiêu hoá chỉ có hình thức tiêu hóa nội bào.",
+              "question": "Động vật chưa có hệ tiêu hoá chỉ có hình thức tiêu hóa nội bào.",
               "correct": true
             },
             {
-              "question": "b) Nhóm động vật tiêu hóa ngoại bào chỉ xảy ra tiêu hóa hóa học.",
+              "question": "Nhóm động vật tiêu hóa ngoại bào chỉ xảy ra tiêu hóa hóa học.",
               "correct": false
             },
             {
-              "question": "c) Nhóm động vật tiêu hóa nội bào có tiêu hóa cơ học và tiêu hóa hóa học.",
+              "question": "Nhóm động vật tiêu hóa nội bào có tiêu hóa cơ học và tiêu hóa hóa học.",
               "correct": false
             },
             {
-              "question": "d) Động vật có xương sống tiêu hóa ngoại bào.",
+              "question": "Động vật có xương sống tiêu hóa ngoại bào.",
               "correct": true
             }
           ],
@@ -2081,26 +2089,27 @@
         {
           "id": "sinhhoc11_b8_tf03",
           "type": "tf-group",
-          "passage": "Sơ đồ mô tả các thành phần trong hệ tiêu hóa ở người ([M] Miệng, [N] Dạ dày, [P] Ruột non, [Q] Ruột già). Hãy cho biết các phát biểu sau đây là đúng hay sai?",
+          "passage": "Sơ đồ dưới đây mô tả các thành phần trong hệ tiêu hóa ở người ([M] Miệng, [N] Dạ dày, [P] Ruột non, [Q] Ruột già). Hãy cho biết các phát biểu sau đây là đúng hay sai?",
           "statements": [
             {
-              "question": "a) [N] là dạ dày đơn, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học.",
+              "question": "[N] là dạ dày đơn, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học.",
               "correct": true
             },
             {
-              "question": "b) [P] là ruột non, chỉ diễn ra tiêu hóa hóa học.",
+              "question": "[P] là ruột non, chỉ diễn ra tiêu hóa hóa học.",
               "correct": false
             },
             {
-              "question": "c) [M] là miệng, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học.",
+              "question": "[M] là miệng, là nơi diễn ra tiêu hóa cơ học và tiêu hóa hóa học.",
               "correct": true
             },
             {
-              "question": "d) [Q] là ruột già, là nơi diễn ra quá trình tái hấp thụ nước, hình thành phân và thải ra ngoài.",
+              "question": "[Q] là ruột già, là nơi diễn ra quá trình tái hấp thụ nước, hình thành phân và thải ra ngoài.",
               "correct": true
             }
           ],
-          "explanation": "b sai vì ruột non vừa tiêu hóa hóa học, vừa là cơ quan hấp thụ chủ yếu các chất dinh dưỡng. a, c, d đúng."
+          "explanation": "b sai vì ruột non vừa tiêu hóa hóa học, vừa là cơ quan hấp thụ chủ yếu các chất dinh dưỡng. a, c, d đúng.",
+          "image": "assets/biology/image15.jpeg"
         }
       ]
     }

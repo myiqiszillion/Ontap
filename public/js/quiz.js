@@ -29,6 +29,9 @@ const Quiz = {
   init(data) {
     this.sessionId = crypto.randomUUID();
     this.subject = data.subject;
+    if (typeof document !== 'undefined' && document.body && this.subject) {
+      document.body.dataset.subject = this.subject;
+    }
     this.answers = {};
     this.currentQuestionIndex = 0;
     this.questions = data.questions || [];
@@ -48,6 +51,9 @@ const Quiz = {
     this.untimed = Boolean(session.untimed);
     this.sessionId = session.id || crypto.randomUUID();
     this.subject = session.subjectId || session.subject;
+    if (typeof document !== 'undefined' && document.body && this.subject) {
+      document.body.dataset.subject = this.subject;
+    }
     this.questions = session.questions;
     this.answers = session.answers || {};
     this.currentQuestionIndex = session.currentQuestionIndex || 0;
@@ -339,7 +345,7 @@ const Quiz = {
         <div class="tf-split-layout">
           <div class="tf-split-passage-pane">
             <span class="passage-badge"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> NGỮ LIỆU / ĐOẠN TƯ LIỆU ĐỌC HIỂU</span>
-            <div class="question-passage">${passageHtml}</div>
+            <div class="question-passage" data-subject="${this.subject || (q.id && q.id.split('_')[0]) || ''}">${passageHtml}</div>
             ${imgHtml}
           </div>
           <div class="tf-split-statements-pane">
@@ -350,7 +356,8 @@ const Quiz = {
               const userAnswer = groupAnswers[si];
               const isDung = userAnswer === true;
               const isSai = userAnswer === false;
-              const stmtText = stmt.statement || stmt.question || '';
+              const rawText = stmt.statement || stmt.question || '';
+              const stmtText = rawText.replace(/^[a-dA-D][\)\.\:\-]\s*/, '');
 
               return `
                 <div class="tf-statement">
@@ -723,7 +730,8 @@ const Quiz = {
 
           const userText = userVal === true ? 'Đúng' : userVal === false ? 'Sai' : 'Chưa trả lời';
           const correctText = stmt.correct ? 'Đúng' : 'Sai';
-          const stmtText = stmt.statement || stmt.question || '';
+          const rawText = stmt.statement || stmt.question || '';
+          const stmtText = rawText.replace(/^[a-dA-D][\)\.\:\-]\s*/, '');
 
           return `
             <div class="review-tf-statement ${isCorrect ? 'correct' : 'wrong'}">

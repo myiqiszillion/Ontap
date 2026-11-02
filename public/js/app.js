@@ -245,6 +245,9 @@ const app = {
     }
 
     this.currentSubject = subjectId;
+    if (typeof document !== 'undefined' && document.body) {
+      document.body.dataset.subject = subjectId || '';
+    }
     const nameBadge = document.getElementById('selected-subject-name');
     if (nameBadge) nameBadge.textContent = subject.name;
 
@@ -569,13 +572,18 @@ const app = {
 
       state.questions = state.questions.map(q => {
         if (q.type === 'tf-group' || q.passage) {
-          const updated = allLatestQs.find(newQ => newQ.passage === q.passage);
-          if (updated) q.statements = updated.statements;
+          const updated = allLatestQs.find(newQ => (newQ.passage && newQ.passage === q.passage) || (newQ.id && newQ.id === q.id));
+          if (updated) {
+            q.statements = updated.statements;
+            if (updated.image) q.image = updated.image;
+            if (updated.passage) q.passage = updated.passage;
+          }
         } else {
-          const updated = allLatestQs.find(newQ => newQ.question === q.question);
+          const updated = allLatestQs.find(newQ => (newQ.question && newQ.question === q.question) || (newQ.id && newQ.id === q.id));
           if (updated) {
             if (updated.options) q.options = updated.options;
             q.correctAnswer = updated.correctAnswer !== undefined ? updated.correctAnswer : updated.correct;
+            if (updated.image) q.image = updated.image;
           }
         }
         return q;

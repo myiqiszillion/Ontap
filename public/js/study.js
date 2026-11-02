@@ -28,7 +28,10 @@ const Study = {
    */
   init(data, mode, options = {}) {
     this.mode = mode;
-    this.subject = data.subject;
+    this.subject = data.subject || (typeof app !== 'undefined' ? app.currentSubject : '') || '';
+    if (typeof document !== 'undefined' && document.body && this.subject) {
+      document.body.dataset.subject = this.subject;
+    }
     // Reset to defaults then apply new options to prevent state leakage (e.g. resume flag)
     this.options = {
       chunkSize: 0,
@@ -198,16 +201,19 @@ const Study = {
         <div class="study-card">
           <div class="study-badge tf">Đúng/Sai</div>
           <button class="tts-btn" id="study-tts-btn" onclick="Study.playTTS('${this.escapeHtml(q.passage.replace(/'/g, "\\'"))}', 'study-tts-btn')" title="Đọc văn bản"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></button>
-          <div class="study-passage">${this.escapeHtml(q.passage)}</div>
-          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
+          <div class="study-passage" data-subject="${this.subject || (q.id && q.id.split('_')[0]) || ''}">${this.escapeHtml(q.passage)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image.startsWith('http') || q.image.startsWith('/') ? q.image : '/' + q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="study-answers">
-            ${q.statements.map((s, i) => `
+            ${q.statements.map((s, i) => {
+              const cleanText = (s.question || '').replace(/^[a-dA-D][\)\.\:\-]\s*/, '');
+              return `
               <div class="study-tf-item ${s.correct ? 'correct' : 'wrong'}">
                 <span class="study-tf-letter">${String.fromCharCode(97 + i)})</span>
-                <span class="study-tf-text">${this.escapeHtml(s.question)}</span>
+                <span class="study-tf-text">${this.escapeHtml(cleanText)}</span>
                 <span class="study-tf-label ${s.correct ? 'correct' : 'wrong'}">${s.correct ? '<span class="status-icon-check"></span>Đúng' : '<span class="status-icon-cross"></span>Sai'}</span>
               </div>
-            `).join('')}
+            `;
+            }).join('')}
           </div>
           ${this.renderStructuredSolution(q)}
         </div>
@@ -328,9 +334,12 @@ const Study = {
             <div class="fc-question">${this.escapeHtml(q.passage)}</div>
             ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
             <div class="fc-statements">
-              ${q.statements.map((s, i) => `
-                <div class="fc-stmt">${String.fromCharCode(97 + i)}) ${this.escapeHtml(s.question)}</div>
-              `).join('')}
+              ${q.statements.map((s, i) => {
+                const cleanText = (s.question || '').replace(/^[a-dA-D][\)\.\:\-]\s*/, '');
+                return `
+                <div class="fc-stmt">${String.fromCharCode(97 + i)}) ${this.escapeHtml(cleanText)}</div>
+              `;
+              }).join('')}
             </div>
             <div class="fc-hint"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8"/><path d="M9 19.8V15m0 0H4.2m4.8 0L3 21"/><path d="M15 4.2V9m0 0h4.8M15 9l6-6"/><path d="M9 4.2V9m0 0H4.2M9 9 3 3"/></svg> Nhấn để lật thẻ</div>
           </div>
@@ -430,6 +439,11 @@ const Study = {
     const q = this.questions[qIndex];
     if (!q) return;
 
+    const currentSub = this.subject || (q.id && q.id.split('_')[0]) || (typeof app !== 'undefined' ? app.currentSubject : '') || '';
+    if (typeof document !== 'undefined' && document.body && currentSub) {
+      document.body.dataset.subject = currentSub;
+    }
+
     this.currentPracticeQuestion = q;
     this.currentPracticeIndex = qIndex;
 
@@ -446,14 +460,15 @@ const Study = {
       container.innerHTML = `
         <div class="practice-card">
           <div class="study-badge tf">Đúng/Sai</div>
-          <div class="study-passage">${this.escapeHtml(q.passage)}</div>
-          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
+          <div class="study-passage" data-subject="${this.subject || (q.id && q.id.split('_')[0]) || ''}">${this.escapeHtml(q.passage)}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image.startsWith('http') || q.image.startsWith('/') ? q.image : '/' + q.image}" alt="Hình minh họa" loading="lazy"></div>` : ''}
           <div class="practice-statements">
             ${q.statements.map((s, i) => {
+              const cleanText = (s.question || '').replace(/^[a-dA-D][\)\.\:\-]\s*/, '');
               return `
                 <div class="practice-tf-stmt" id="practice-tf-stmt-${i}">
                   <span class="study-tf-letter">${String.fromCharCode(97 + i)})</span>
-                  <span class="study-tf-text">${this.escapeHtml(s.question)}</span>
+                  <span class="study-tf-text">${this.escapeHtml(cleanText)}</span>
                   <div class="practice-tf-btns" id="practice-tf-btns-${i}">
                       <button class="tf-btn" onclick="Study.practiceSelectTF(${i}, true)">Đúng</button>
                       <button class="tf-btn" onclick="Study.practiceSelectTF(${i}, false)">Sai</button>
