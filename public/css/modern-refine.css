@@ -339,34 +339,48 @@ body {
   box-shadow: 0 0 0 1px var(--refine-primary), 0 2px 8px rgba(37, 99, 235, 0.08) !important;
 }
 
-/* ── 8. Responsive Design Overrides ── */
+/* ── 9. Dashboard Layout Fixes ── */
+.dashboard-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
 
-@media (max-width: 1024px) {
+.dashboard-hero-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+}
+
+.hero-main-content {
+  flex: 1 !important;
+}
+
+.hero-illustration-slot {
+  flex-shrink: 0 !important;
+}
+
+.dashboard-subjects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+}
+
+@media (max-width: 900px) {
   .dashboard-hero-card {
-    padding: 24px !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 20px !important;
   }
-  .hero-title {
-    font-size: 1.6rem !important;
+  .hero-actions {
+    justify-content: center !important;
   }
 }
 
-@media (max-width: 768px) {
-  .dashboard-hero-card {
-    padding: 20px !important;
-  }
-  .hero-title {
-    font-size: 1.4rem !important;
-  }
-  .dashboard-subjects-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .quiz-layout {
-    grid-template-columns: 1fr !important;
-  }
-  .quiz-sidebar {
-    display: none !important; /* Hide sidebar on mobile, maybe add a drawer toggle later */
-  }
-}
 
 /* ── 7. Soft Scrollbar & Mobile Bar ── */
 ::-webkit-scrollbar {
