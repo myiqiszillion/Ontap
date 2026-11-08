@@ -81,6 +81,14 @@ body {
   padding: 36px 40px !important;
   position: relative !important;
   overflow: hidden !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 240px !important;
+  grid-template-rows: auto auto !important;
+  grid-template-areas:
+    "main art"
+    "stats stats" !important;
+  gap: 24px 36px !important;
+  align-items: center !important;
 }
 
 [data-theme="dark"] .dashboard-hero-card {
@@ -93,13 +101,34 @@ body {
   display: none !important; /* Hide old heavy watermark for clean minimal look */
 }
 
+.hero-main-content {
+  grid-area: main !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+.hero-illustration-slot {
+  grid-area: art !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
 /* Hero Badges */
 .hero-badge-row {
   display: flex !important;
+  flex-direction: row !important;
   flex-wrap: wrap !important;
   gap: 8px !important;
   align-items: center !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 14px !important;
+}
+
+.hero-school-badge,
+.hero-grade-badge,
+.hero-moet-badge {
+  white-space: nowrap !important;
 }
 
 .hero-school-badge {
@@ -182,6 +211,15 @@ body {
   50% { transform: translateY(-7px); }
 }
 
+.hero-actions {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 14px !important;
+  width: 100% !important;
+}
+
 .btn-hero-primary {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
   color: #ffffff !important;
@@ -196,6 +234,8 @@ body {
   display: inline-flex !important;
   align-items: center !important;
   gap: 10px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 
 .btn-hero-primary:hover {
@@ -216,6 +256,8 @@ body {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 
 .btn-hero-secondary:hover {
@@ -224,20 +266,45 @@ body {
   border-color: var(--refine-primary) !important;
 }
 
-/* Hero Stats */
+/* Hero Stats - Full-Width Dock Across Card Bottom */
 .hero-student-stats {
+  grid-area: stats !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  width: 100% !important;
+  margin-top: 8px !important;
+  padding: 16px 28px !important;
   background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border: 1px solid rgba(226, 232, 240, 0.9) !important;
   border-radius: 20px !important;
   box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.04) !important;
-  padding: 14px 22px !important;
 }
 
 [data-theme="dark"] .hero-student-stats {
   background: rgba(19, 27, 46, 0.8) !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.student-stat-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  flex: 1 !important;
+  justify-content: center !important;
+}
+
+.stat-divider {
+  width: 1px !important;
+  height: 36px !important;
+  background: rgba(226, 232, 240, 0.8) !important;
+}
+
+[data-theme="dark"] .stat-divider {
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 .stat-icon-wrap {
@@ -1316,22 +1383,6 @@ body {
   padding: 0 20px !important;
 }
 
-.dashboard-hero-card {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 40px !important;
-}
-
-.hero-main-content {
-  flex: 1 !important;
-}
-
-.hero-illustration-slot {
-  flex-shrink: 0 !important;
-}
-
 .dashboard-subjects-grid {
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
@@ -1339,12 +1390,42 @@ body {
 
 @media (max-width: 900px) {
   .dashboard-hero-card {
-    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "main"
+      "art"
+      "stats" !important;
     text-align: center !important;
     gap: 20px !important;
+    padding: 24px 20px !important;
   }
+
+  .hero-badge-row {
+    justify-content: center !important;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto 20px !important;
+  }
+
   .hero-actions {
     justify-content: center !important;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    white-space: normal !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .hero-student-stats {
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .stat-divider {
+    display: none !important;
   }
 }
 
