@@ -4746,3 +4746,250 @@ body:not([data-theme="dark"]) .hist-score-val {
   color: #ffffff !important;
   border-color: #2563eb !important;
 }
+
+
+/* ═════════════════════════════════════════════════════════════
+   DELIGHTFUL MICRO-INTERACTIONS & MOTION DESIGN ENGINE
+   GPU-Accelerated • Tactile • Specular Shimmer • Stagger Entrance
+   ═════════════════════════════════════════════════════════════ */
+
+/* ─── 1. Cascading Stagger Entrance ─── */
+@keyframes cardEntranceGlide {
+  0% {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(-2px) scale(1.005);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.dashboard-subjects-grid .dash-subject-card {
+  animation: cardEntranceGlide 0.55s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  animation-delay: calc(var(--card-index, 0) * 65ms) !important;
+}
+
+.smart-tools-grid .smart-tool-card {
+  animation: cardEntranceGlide 0.55s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  animation-delay: calc(180ms + var(--tool-index, 0) * 65ms) !important;
+}
+
+/* ─── 2. Specular Glass Shimmer Sweep on Subject Cards ─── */
+.dash-subject-card {
+  position: relative !important;
+  overflow: hidden !important;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.28s ease, border-color 0.2s ease !important;
+  will-change: transform, box-shadow !important;
+}
+
+.dash-subject-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -60% !important;
+  left: -60% !important;
+  width: 220% !important;
+  height: 220% !important;
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.5) 48%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.5) 52%,
+    transparent 75%
+  ) !important;
+  transform: rotate(25deg) translateY(-120%) !important;
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+}
+
+[data-theme="dark"] .dash-subject-card::before {
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 75%
+  ) !important;
+}
+
+.dash-subject-card:hover::before {
+  transform: rotate(25deg) translateY(120%) !important;
+}
+
+.dash-subject-card:hover {
+  transform: translateY(-6px) scale(1.018) !important;
+}
+
+.dash-subject-card:active {
+  transform: translateY(-2px) scale(0.985) !important;
+  transition: transform 0.08s ease !important;
+}
+
+/* ─── 3. Aurora Ambient Ethereal Glow in Hero ─── */
+@keyframes heroAuroraShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dashboard-hero-card {
+  background: linear-gradient(125deg, #ffffff 0%, #f0f7ff 35%, #e0f2fe 70%, #eff6ff 100%) !important;
+  background-size: 250% 250% !important;
+  animation: heroAuroraShift 16s ease infinite !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.dashboard-hero-card:hover {
+  box-shadow: 0 16px 36px -8px rgba(37, 99, 235, 0.14) !important;
+}
+
+/* ─── 4. Streak Flame Breathing & Pulsing Glow ─── */
+@keyframes flameBreath {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 2px rgba(234, 88, 12, 0.3));
+  }
+  50% {
+    transform: scale(1.15) rotate(-3deg);
+    filter: drop-shadow(0 0 10px rgba(234, 88, 12, 0.7));
+  }
+}
+
+.stat-icon-wrap.streak svg {
+  animation: flameBreath 2.4s ease-in-out infinite !important;
+  transform-origin: center bottom !important;
+  will-change: transform, filter !important;
+}
+
+/* ─── 5. Radar Beacon Pulse for Status Dots ─── */
+@keyframes beaconRadar {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.live-dot {
+  display: inline-block !important;
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #10b981 !important;
+  animation: beaconRadar 1.8s infinite !important;
+  margin-right: 6px !important;
+  vertical-align: middle !important;
+}
+
+/* ─── 6. Primary Button Radiant Pulse & Spring Click ─── */
+@keyframes btnGlowPulse {
+  0%, 100% {
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35);
+  }
+  50% {
+    box-shadow: 0 6px 24px rgba(37, 99, 235, 0.55), 0 0 14px rgba(59, 130, 246, 0.35);
+  }
+}
+
+.btn-hero-primary {
+  animation: btnGlowPulse 3.2s ease-in-out infinite !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.btn-hero-primary:hover {
+  animation: none !important;
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.55) !important;
+  transform: translateY(-2px) scale(1.025) !important;
+}
+
+.btn:active,
+.btn-hero-primary:active,
+.btn-hero-secondary:active,
+.start-btn:active {
+  transform: scale(0.96) !important;
+  transition: transform 0.08s ease !important;
+}
+
+/* ─── 7. Interactive Option Selection Elastic Pop & Ripple ─── */
+@keyframes optionPopSpring {
+  0% {
+    transform: scale(0.97);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.option.selected {
+  animation: optionPopSpring 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.option.selected .option-letter {
+  transform: scale(1.1) !important;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* ─── 8. Tool Cards Micro-Interactions ─── */
+.smart-tool-card {
+  transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.26s ease, border-color 0.2s ease !important;
+}
+
+.smart-tool-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: #93c5fd !important;
+  box-shadow: 0 12px 26px -4px rgba(37, 99, 235, 0.12) !important;
+}
+
+.smart-tool-card:hover .tool-icon-wrapper {
+  transform: scale(1.12) rotate(-5deg) !important;
+}
+
+.tool-icon-wrapper {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.smart-tool-card .tool-action-arrow {
+  transition: transform 0.2s ease, color 0.2s ease !important;
+}
+
+.smart-tool-card:hover .tool-action-arrow {
+  transform: translateX(5px) !important;
+  color: #2563eb !important;
+}
+
+/* ─── 9. Respect Reduced Motion Preferences ─── */
+@media (prefers-reduced-motion: reduce) {
+  .dash-subject-card,
+  .smart-tool-card,
+  .dashboard-hero-card,
+  .btn-hero-primary,
+  .stat-icon-wrap.streak svg,
+  .live-dot,
+  .option.selected {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  .dash-subject-card::before {
+    display: none !important;
+  }
+}

@@ -106,7 +106,7 @@ const DashboardView = {
 
           <div class="dashboard-subjects-grid">
             <!-- TOÁN HỌC -->
-            <div class="dash-subject-card dash-sub-toan" onclick="app.selectSubject('toan11')" role="button" tabindex="0">
+            <div class="dash-subject-card dash-sub-toan" style="--card-index: 0" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('toan11')" role="button" tabindex="0">
               <div class="dash-sub-top">
                 <div class="dash-sub-icon toan">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 7V4H6l6 8-6 8h12v-3"/></svg>
@@ -127,7 +127,7 @@ const DashboardView = {
             </div>
 
             <!-- VẬT LÍ -->
-            <div class="dash-subject-card dash-sub-vatli" onclick="app.selectSubject('vatli11')" role="button" tabindex="0">
+            <div class="dash-subject-card dash-sub-vatli" style="--card-index: 1" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('vatli11')" role="button" tabindex="0">
               <div class="dash-sub-top">
                 <div class="dash-sub-icon vatli">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="2.5" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
@@ -148,7 +148,7 @@ const DashboardView = {
             </div>
 
             <!-- HÓA HỌC -->
-            <div class="dash-subject-card dash-sub-hoahoc" onclick="app.selectSubject('hoahoc11')" role="button" tabindex="0">
+            <div class="dash-subject-card dash-sub-hoahoc" style="--card-index: 2" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('hoahoc11')" role="button" tabindex="0">
               <div class="dash-sub-top">
                 <div class="dash-sub-icon hoahoc">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v7.5a2 2 0 0 1-.2.9L4.7 20.5a1 1 0 0 0 .9 1.5h12.8a1 1 0 0 0 .9-1.5L14.2 10.4a2 2 0 0 1-.2-.9V2"/><path d="M8.5 2h7"/><circle cx="10" cy="17" r="1" fill="currentColor"/><circle cx="14" cy="15" r="1.5" fill="currentColor"/></svg>
@@ -169,7 +169,7 @@ const DashboardView = {
             </div>
 
             <!-- SINH HỌC -->
-            <div class="dash-subject-card dash-sub-sinhhoc" onclick="app.selectSubject('sinhhoc11')" role="button" tabindex="0">
+            <div class="dash-subject-card dash-sub-sinhhoc" style="--card-index: 3" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('sinhhoc11')" role="button" tabindex="0">
               <div class="dash-sub-top">
                 <div class="dash-sub-icon sinhhoc">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 15c6.6-6 13.4 0 20-6" stroke-linecap="round"/><path d="M2 9c6.6 6 13.4 0 20 6" stroke-linecap="round"/><line x1="5.5" y1="11" x2="5.5" y2="13"/><line x1="9.5" y1="8" x2="9.5" y2="16"/><line x1="14.5" y1="8" x2="14.5" y2="16"/><line x1="18.5" y1="11" x2="18.5" y2="13"/></svg>
@@ -190,7 +190,7 @@ const DashboardView = {
             </div>
 
             <!-- LỊCH SỬ -->
-            <div class="dash-subject-card dash-sub-lichsu" onclick="app.selectSubject('lichsu11')" role="button" tabindex="0">
+            <div class="dash-subject-card dash-sub-lichsu" style="--card-index: 4" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('lichsu11')" role="button" tabindex="0">
               <div class="dash-sub-top">
                 <div class="dash-sub-icon lichsu">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 18h16M4 7h16M2 7l10-4 10 4M6 18V7M10 18V7M14 18V7M18 18V7"/></svg>
@@ -211,7 +211,7 @@ const DashboardView = {
             </div>
 
             <!-- TIẾNG ANH -->
-            <div class="dash-subject-card dash-sub-tienganh" onclick="app.selectSubject('tienganh11')" role="button" tabindex="0">
+            <div class="dash-subject-card dash-sub-tienganh" style="--card-index: 5" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('tienganh11')" role="button" tabindex="0">
               <div class="dash-sub-top">
                 <div class="dash-sub-icon tienganh">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -271,7 +271,7 @@ const DashboardView = {
             </div>
           </div>
           <div class="smart-tools-grid">
-            <div class="smart-tool-card" onclick="app.navigateTo('custom-exam')" role="button" tabindex="0">
+            <div class="smart-tool-card" style="--tool-index: 0" onclick="if (window.SoundFX) SoundFX.playClick(); app.navigateTo('custom-exam')" role="button" tabindex="0">
               <div class="tool-icon-wrapper tool-primary">
                 <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
               </div>
@@ -282,7 +282,7 @@ const DashboardView = {
               <span class="tool-action-arrow">Vào tạo đề →</span>
             </div>
 
-            <div class="smart-tool-card" onclick="app.navigateTo('checker')" role="button" tabindex="0">
+            <div class="smart-tool-card" style="--tool-index: 1" onclick="if (window.SoundFX) SoundFX.playClick(); app.navigateTo('checker')" role="button" tabindex="0">
               <div class="tool-icon-wrapper tool-emerald">
                 <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               </div>
@@ -293,7 +293,7 @@ const DashboardView = {
               <span class="tool-action-arrow">Vào dò đáp án →</span>
             </div>
 
-            <div class="smart-tool-card" onclick="app.navigateTo('mistakes')" role="button" tabindex="0">
+            <div class="smart-tool-card" style="--tool-index: 2" onclick="if (window.SoundFX) SoundFX.playClick(); app.navigateTo('mistakes')" role="button" tabindex="0">
               <div class="tool-icon-wrapper tool-amber">
                 <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
               </div>
@@ -307,7 +307,7 @@ const DashboardView = {
               <span class="tool-action-arrow">Xem sổ câu sai →</span>
             </div>
 
-            <div class="smart-tool-card" onclick="app.navigateTo('diagnostic')" role="button" tabindex="0">
+            <div class="smart-tool-card" style="--tool-index: 3" onclick="if (window.SoundFX) SoundFX.playClick(); app.navigateTo('diagnostic')" role="button" tabindex="0">
               <div class="tool-icon-wrapper tool-violet">
                 <svg class="ui-icon ui-icon-md" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
               </div>
