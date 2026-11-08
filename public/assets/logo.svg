@@ -1,9 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
-  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0f172a"/>
-  <rect x="4.5" y="4.5" width="55" height="55" rx="13.5" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
-  <!-- Minimalist Academic Codex Monogram -->
+  <defs>
+    <linearGradient id="ntmk-blue-grad" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#ntmk-blue-grad)"/>
+  <rect x="4.5" y="4.5" width="55" height="55" rx="15.5" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+  <!-- Modern Academic Codex Monogram -->
   <path d="M32 44 C25.5 40.5 18 41 14 42.8 V25.5 C18 23.8 25.5 23.2 32 26.5 C38.5 23.2 46 23.8 50 25.5 V42.8 C46 41 38.5 40.5 32 44 Z" fill="#ffffff"/>
-  <path d="M32 26.5 V44" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-  <!-- Clean Architectural Keystone -->
-  <path d="M32 13 L36.5 20.5 L32 23 L27.5 20.5 Z" fill="#ffffff"/>
+  <path d="M32 26.5 V44" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <!-- Torch of Insight & Star of Intellect -->
+  <path d="M32 12.5 L36.5 20 L32 22.5 L27.5 20 Z" fill="#ffffff"/>
+  <circle cx="43" cy="17" r="1.8" fill="#93c5fd"/>
 </svg>
