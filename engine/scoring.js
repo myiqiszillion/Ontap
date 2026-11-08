@@ -34,6 +34,20 @@ const SUBJECT_PROFILES = {
     saPoints: 0,
     totalPoints: 10.0
   },
+  sinhhoc: {
+    name: 'Sinh học',
+    mcqPoints: 0.25,     // 18 questions * 0.25 = 4.5 pts
+    tfGroupPoints: 1.0,  // 4 groups * 1.0 = 4.0 pts
+    saPoints: 0.25,      // 6 questions * 0.25 = 1.5 pts
+    totalPoints: 10.0
+  },
+  lichsu: {
+    name: 'Lịch sử',
+    mcqPoints: 0.3,      // 20 questions * 0.3 = 6.0 pts
+    tfGroupPoints: 1.0,  // 4 groups * 1.0 = 4.0 pts
+    saPoints: 0,
+    totalPoints: 10.0
+  },
   default: {
     name: 'Mặc định',
     mcqPoints: 0.25,

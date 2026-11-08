@@ -182,6 +182,22 @@ class SupabasePostgresRepository {
     return { connected: false, error: 'No active connection provider', gateStatus: 'BLOCKED' };
   }
 
+  /**
+   * Generic parameterized SQL query execution (Postgres pool or Supabase RPC)
+   */
+  async query(sql, params = []) {
+    if (this.backendType === 'postgres_pool' && this.pgPool) {
+      const client = await this.pgPool.connect();
+      try {
+        const res = await client.query(sql, params);
+        return res.rows || [];
+      } finally {
+        client.release();
+      }
+    }
+    return [];
+  }
+
   // ═════════════════════════════════════════════════════════════
   // 1. QUESTION BANK PERSISTENCE
   // ═════════════════════════════════════════════════════════════

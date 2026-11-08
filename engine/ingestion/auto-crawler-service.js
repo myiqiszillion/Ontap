@@ -547,13 +547,35 @@ Phần III:
       throw new Error('Danh sách câu hỏi trống');
     }
 
-    const targetSub = subjectId;
-    const targetGrade = Number(grade) || 12;
-    const resolvedDataDir = dataDir || path.join(__dirname, '..', '..', 'data');
-    const fileName = `${targetSub}${targetGrade}.json`;
-    const filePath = path.join(resolvedDataDir, fileName);
+    const cleanSub = String(subjectId).toLowerCase().trim();
+    const ALLOWED_SUBJECTS = ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'];
+    if (!ALLOWED_SUBJECTS.includes(cleanSub)) {
+      throw new Error(`Môn học không hợp lệ: ${subjectId}`);
+    }
 
-    let dataObj = { subjectId: targetSub, grade: targetGrade, lessons: [] };
+    const targetGrade = Number(grade);
+    if (![10, 11, 12].includes(targetGrade)) {
+      throw new Error(`Khối lớp không hợp lệ: ${grade}`);
+    }
+
+    const baseDataDir = path.resolve(__dirname, '..', '..', 'data');
+    let resolvedDataDir = baseDataDir;
+    if (dataDir) {
+      const customPath = path.resolve(dataDir);
+      // Ensure custom dataDir does not escape into sensitive system directories
+      if (!customPath.startsWith(baseDataDir) && process.env.NODE_ENV !== 'test') {
+        throw new Error('Thư mục lưu trữ không hợp lệ (Path Traversal Guard)');
+      }
+      resolvedDataDir = customPath;
+    }
+
+    const fileName = `${cleanSub}${targetGrade}.json`;
+    const filePath = path.resolve(resolvedDataDir, fileName);
+    if (!filePath.startsWith(resolvedDataDir)) {
+      throw new Error('Đường dẫn tập tin không an toàn');
+    }
+
+    let dataObj = { subjectId: cleanSub, grade: targetGrade, lessons: [] };
     if (fs.existsSync(filePath)) {
       try {
         dataObj = JSON.parse(fs.readFileSync(filePath, 'utf8'));

@@ -45,7 +45,14 @@ class CloudStorageAdapter {
       ntmk_exam_sessions: new Map(),      // id -> row
       ntmk_exam_results: new Map(),       // session_id -> row
       ntmk_content_audit: new Map(),      // id -> row
-      ntmk_reviewers: new Map()           // id -> row
+      ntmk_reviewers: new Map(),          // id -> row
+      ntmk_learning_profiles: new Map(),  // id -> row
+      ntmk_learning_plans: new Map(),     // id -> row
+      ntmk_learning_tasks: new Map(),     // id -> row
+      ntmk_learning_plan_versions: new Map(), // id -> row
+      ntmk_learning_review_schedules: new Map(), // id -> row
+      ntmk_learning_task_events: new Map(), // id -> row
+      saas_tenants: new Map()             // id -> row
     };
 
     this.uniqueIndexes = {
@@ -462,6 +469,16 @@ class CloudStorageAdapter {
     }
 
     return { allowed: false, reason: `Unknown role or unauthorized action: ${role} on ${table}` };
+  }
+
+  /**
+   * Generic parameterized SQL query execution delegating to PostgreSQL / Supabase
+   */
+  async query(sql, params = []) {
+    if (this.realRepo && typeof this.realRepo.query === 'function') {
+      return await this.realRepo.query(sql, params);
+    }
+    return [];
   }
 }
 

@@ -80,13 +80,13 @@ class SyncManager {
       leaseAcquired = true;
     }
 
-    if (options.subjects && (!Array.isArray(options.subjects) || options.subjects.some(s=>!['toan','vatli','hoahoc','tienganh'].includes(s)))) throw new Error('Invalid subjects');
+    if (options.subjects && (!Array.isArray(options.subjects) || options.subjects.some(s=>!['toan','vatli','hoahoc','tienganh','lichsu','sinhhoc'].includes(s)))) throw new Error('Invalid subjects');
     if (options.grades && (!Array.isArray(options.grades) || options.grades.some(g=>![10,11,12].includes(g)))) throw new Error('Invalid grades');
     this.isSyncing = true;
     try {
     const syncId = require('crypto').randomUUID();
     const startTime = Date.now();
-    const subjects = options.subjects || ['toan', 'vatli', 'hoahoc', 'tienganh'];
+    const subjects = options.subjects || ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'];
     const grades = options.grades || [10, 11, 12];
     if (options.autoVerify || options.autoPublish) { this.isSyncing = false; throw new Error('Automatic verification/publication is forbidden'); }
 

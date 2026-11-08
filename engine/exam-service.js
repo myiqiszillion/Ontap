@@ -15,7 +15,7 @@ class ExamService {
   }
 
   start(subjectId, grade) {
-    if (!['toan', 'vatli', 'hoahoc', 'tienganh'].includes(subjectId) || ![10, 11, 12].includes(grade)) {
+    if (!['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'].includes(subjectId) || ![10, 11, 12].includes(grade)) {
       throw new Error('Invalid subject or grade');
     }
     const pool = this.bank.query({

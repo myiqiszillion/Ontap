@@ -24,61 +24,64 @@ if (supabaseUrl && supabaseKey) {
 }
 
 app.use(express.json({ limit: '256kb' }));
-const { requireAdmin } = require('./engine/admin-auth.js');
-app.use('/api', (req,res,next) => {
- if (['POST','PATCH','DELETE'].includes(req.method) && ['announcements','pin-announcement','delete-announcement'].some(p=>req.path==='/' + p) && !requireAdmin(req,res)) return;
- next();
+
+// ═════════════════════════════════════════════════════════════
+// SECURITY HEADERS & RATE LIMITING
+// ═════════════════════════════════════════════════════════════
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  next();
 });
 
-// ═════════════════════════════════════════════════════════════
-// HELPER: Load and Annotate Subjects Data
-// ═════════════════════════════════════════════════════════════
-function loadSubjectsData(baseDir = __dirname) {
-  const dataPath = path.join(baseDir, 'data', 'subjects.json');
-  if (!fs.existsSync(dataPath)) {
-    return { grades: [10, 11, 12], subjects: [] };
-  }
-  const rawData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+const rateLimitMap = new Map();
+function createRateLimiter(options = {}) {
+  const windowMs = options.windowMs || 60 * 1000;
+  const max = options.max || 60;
+  const message = options.message || 'Quá nhiều yêu cầu, vui lòng thử lại sau.';
 
-  const subjects = (rawData.subjects || []).map(subject => {
-    let hasQuestions = false;
-    let questionCount = 0;
+  return (req, res, next) => {
+    if (process.env.NODE_ENV === 'test') return next();
 
-    if (subject.dataFile) {
-      try {
-        const filePath = path.join(baseDir, 'data', subject.dataFile);
-        if (fs.existsSync(filePath)) {
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-          if (content.lessons && Array.isArray(content.lessons)) {
-            content.lessons.forEach(lesson => {
-              if (lesson.questions && Array.isArray(lesson.questions)) {
-                questionCount += lesson.questions.length;
-              }
-              if (lesson.questionGroups && Array.isArray(lesson.questionGroups)) {
-                questionCount += lesson.questionGroups.length;
-              }
-            });
-            hasQuestions = questionCount > 0;
-          }
-        }
-      } catch (err) {
-        hasQuestions = false;
-      }
+    const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || 'unknown';
+    const now = Date.now();
+    const key = `${ip}:${options.prefix || 'all'}`;
+
+    let record = rateLimitMap.get(key);
+    if (!record || now - record.startTime > windowMs) {
+      record = { count: 1, startTime: now };
+      rateLimitMap.set(key, record);
+    } else {
+      record.count += 1;
     }
 
-    return {
-      ...subject,
-      ready: hasQuestions,
-      questionCount,
-      status: hasQuestions ? 'active' : (subject.status || 'in_development')
-    };
-  });
+    if (record.count > max) {
+      const retryAfter = Math.ceil((windowMs - (now - record.startTime)) / 1000);
+      res.setHeader('Retry-After', retryAfter);
+      return res.status(429).json({ error: message, retryAfterSeconds: retryAfter });
+    }
 
-  return {
-    ...rawData,
-    subjects
+    next();
   };
 }
+
+const authLimiter = createRateLimiter({ windowMs: 60 * 1000, max: 20, prefix: 'auth', message: 'Quá nhiều yêu cầu xác thực' });
+app.use('/api/v2/auth/login', authLimiter);
+app.use('/api/v2/auth/register', authLimiter);
+
+const { requireAdmin } = require('./engine/admin-auth.js');
+const { loadSubjectsData, sanitizeLegacyLessonQuestions } = require('./engine/subject-loader.js');
+
+app.use('/api', (req, res, next) => {
+  const normalizedPath = (req.path || '').replace(/\/+$/, '');
+  if (['POST', 'PATCH', 'DELETE'].includes(req.method) &&
+      ['/announcements', '/pin-announcement', '/delete-announcement'].includes(normalizedPath) &&
+      !requireAdmin(req, res)) {
+    return;
+  }
+  next();
+});
 
 // ═════════════════════════════════════════════════════════════
 // API ROUTES
@@ -186,27 +189,6 @@ app.delete('/api/delete-announcement', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
-
-function sanitizeLegacyLessonQuestions(data) {
-  if (!data || !Array.isArray(data.lessons)) return data;
-  return {
-    ...data,
-    lessons: data.lessons.map(lesson => ({
-      ...lesson,
-      questions: Array.isArray(lesson.questions) ? lesson.questions.map(q => {
-        const { correct, correctAnswer, explanation, ...safeQ } = q;
-        return safeQ;
-      }) : [],
-      questionGroups: Array.isArray(lesson.questionGroups) ? lesson.questionGroups.map(g => ({
-        ...g,
-        statements: Array.isArray(g.statements) ? g.statements.map(s => {
-          const { correct, explanation, ...safeS } = s;
-          return safeS;
-        }) : []
-      })) : []
-    }))
-  };
-}
 
 // API: Subject question data
 app.get('/api/data/:subject', (req, res) => {

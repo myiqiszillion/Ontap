@@ -152,7 +152,15 @@ class TenantRepository {
   }
 }
 
-const defaultTenantRepository = new TenantRepository();
+let defaultAdapter = null;
+try {
+  const CloudStorageAdapter = require('./cloud-storage-adapter.js');
+  defaultAdapter = new CloudStorageAdapter();
+} catch (e) {
+  // Graceful offline fallback
+}
+
+const defaultTenantRepository = new TenantRepository({ storageAdapter: defaultAdapter });
 
 module.exports = {
   TenantRepository,

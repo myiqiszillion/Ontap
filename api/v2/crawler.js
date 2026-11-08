@@ -17,8 +17,18 @@ const path = require('path');
 const AutoCrawlerService = require('../../engine/ingestion/auto-crawler-service.js');
 const FullExamParser = require('../../engine/ingestion/full-exam-parser.js');
 const ExamMaker = require('../../engine/exam-maker.js');
+const { requireAdmin } = require('../../engine/admin-auth.js');
+const EnvironmentConfig = require('../../engine/config/environment-config.js');
 
 const crawlerService = new AutoCrawlerService();
+
+function requireCrawlerAdmin(req, res) {
+  const isProtected = process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging';
+  if (isProtected || (process.env.ADMIN_API_KEY && !EnvironmentConfig.isDemoAllowed())) {
+    return requireAdmin(req, res);
+  }
+  return true;
+}
 
 /**
  * GET /api/v2/crawler/sources
@@ -168,6 +178,7 @@ router.post('/auto-make-exam', async (req, res) => {
  * Optionally save generated questions into local data folder for direct practice
  */
 router.post('/save-to-bank', (req, res) => {
+  if (!requireCrawlerAdmin(req, res)) return;
   try {
     const { questions, subjectId, grade, lessonTitle } = req.body || {};
     if (!Array.isArray(questions) || questions.length === 0) {
@@ -201,6 +212,7 @@ router.post('/save-to-bank', (req, res) => {
  * NO ADMIN PRIVILEGES REQUIRED.
  */
 router.post('/auto-sync-all', async (req, res) => {
+  if (!requireCrawlerAdmin(req, res)) return;
   try {
     const { subjects, grades, sourceIds, dataDir } = req.body || {};
     const summary = await crawlerService.crawlAllSourcesAndSave({ subjects, grades, sourceIds, dataDir });
@@ -233,6 +245,7 @@ router.get('/scheduler-status', (req, res) => {
  * Start or stop the automated background crawler
  */
 router.post('/scheduler-toggle', (req, res) => {
+  if (!requireCrawlerAdmin(req, res)) return;
   try {
     const { enable, intervalMs } = req.body || {};
     if (enable === false) {

@@ -73,6 +73,20 @@ const EXAM_BLUEPRINTS = {
     totalCommands: 40,
     totalPoints: 10.0,
     cognitiveDistribution: { recognize: 0.4, understand: 0.3, apply: 0.2, high_apply: 0.1 }
+  },
+  sinhhoc: {
+    subjectId: 'sinhhoc',
+    subjectName: 'Sinh học',
+    durationMinutes: 50,
+    sections: [
+      { sectionId: 'part_1', title: 'Phần I: Câu trắc nghiệm nhiều phương án lựa chọn', format: 'multiple_choice', targetCount: 18, pointsPerItem: 0.25, maxPoints: 4.5 },
+      { sectionId: 'part_2', title: 'Phần II: Câu trắc nghiệm đúng sai', format: 'true_false_group', targetCount: 4, pointsPerItem: 1.0, maxPoints: 4.0 },
+      { sectionId: 'part_3', title: 'Phần III: Câu trắc nghiệm trả lời ngắn', format: 'short_answer', targetCount: 6, pointsPerItem: 0.25, maxPoints: 1.5 }
+    ],
+    totalQuestions: 28,
+    totalCommands: 40,
+    totalPoints: 10.0,
+    cognitiveDistribution: { recognize: 0.4, understand: 0.3, apply: 0.2, high_apply: 0.1 }
   }
 };
 

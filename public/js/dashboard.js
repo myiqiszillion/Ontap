@@ -32,6 +32,9 @@ const DashboardView = {
       .join(' ');
 
     const grade = profile.grade || 11;
+    const targetKey = (profile.targetSubjects && profile.targetSubjects[0]) || 'toan';
+    const primarySubjectKey = targetKey + grade;
+    const primarySubjectName = subjectNamesMap[targetKey] || 'Môn học';
     const mistakesCount = (typeof MistakeStore !== 'undefined') ? MistakeStore.getActiveCount() : 0;
     const dueMistakesCount = (typeof MistakeStore !== 'undefined' && MistakeStore.getDueCount) ? MistakeStore.getDueCount() : 0;
 
@@ -65,13 +68,9 @@ const DashboardView = {
             </p>
 
             <div class="hero-actions">
-              <button class="btn btn-primary hero-main-cta" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-color: #059669;" onclick="app.selectSubject('sinhhoc11')">
+              <button class="btn btn-primary hero-main-cta" onclick="app.selectSubject('${primarySubjectKey}')">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                <span>Vào ôn Sinh học 11</span>
-              </button>
-              <button class="btn btn-primary hero-main-cta" onclick="app.selectSubject('lichsu11')">
-                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                <span>Vào ôn Lịch sử 11</span>
+                <span>Vào ôn ${primarySubjectName} ${grade}</span>
               </button>
               <button class="btn btn-glass" onclick="app.navigateTo('custom-exam')">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -88,6 +87,10 @@ const DashboardView = {
               </button>
               ` : ''}
               <button class="btn btn-glass" onclick="app.startOnboarding(true)" title="Thay đổi khối lớp hoặc mục tiêu">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>Đổi mục tiêu</span>
+              </button>
+            </div>
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 <span>Đổi mục tiêu</span>
               </button>
@@ -245,16 +248,15 @@ const DashboardView = {
                 <span class="dash-sub-cta">Luyện đề ngay →</span>
               </div>
             </div>
-          </div>
 
             <!-- SINH HỌC -->
             <div class="dash-subject-card dash-sub-sinhhoc" onclick="app.selectSubject('sinhhoc11')">
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
-                <div class="dash-sub-icon sinhhoc" style="background: #10b98115; color: #10b981;">
+                <div class="dash-sub-icon sinhhoc">
                   <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
-                <span class="dash-sub-pill sinhhoc" style="background: #10b98120; color: #10b981;">QĐ 764</span>
+                <span class="dash-sub-pill sinhhoc">QĐ 764</span>
               </div>
               <h3 class="dash-sub-name">Sinh học 11</h3>
               <p class="dash-sub-desc">Trao đổi chất và chuyển hóa năng lượng, Trao đổi nước/khoáng, Quang hợp, Hô hấp và Tiêu hóa.</p>
@@ -268,6 +270,7 @@ const DashboardView = {
                 <span class="dash-sub-cta">Luyện đề ngay →</span>
               </div>
             </div>
+          </div>
         </div>
 
         ${dueMistakesCount > 0 ? `

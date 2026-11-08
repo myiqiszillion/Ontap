@@ -1,26 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
-function sanitizeLegacyLessonQuestions(data) {
-  if (!data || !Array.isArray(data.lessons)) return data;
-  return {
-    ...data,
-    lessons: data.lessons.map(lesson => ({
-      ...lesson,
-      questions: Array.isArray(lesson.questions) ? lesson.questions.map(q => {
-        const { correct, correctAnswer, explanation, ...safeQ } = q;
-        return safeQ;
-      }) : [],
-      questionGroups: Array.isArray(lesson.questionGroups) ? lesson.questionGroups.map(g => ({
-        ...g,
-        statements: Array.isArray(g.statements) ? g.statements.map(s => {
-          const { correct, explanation, ...safeS } = s;
-          return safeS;
-        }) : []
-      })) : []
-    }))
-  };
-}
+const { sanitizeLegacyLessonQuestions } = require('../../engine/subject-loader.js');
 
 module.exports = (req, res) => {
   try {
@@ -56,4 +36,3 @@ module.exports = (req, res) => {
     res.status(500).json({ error: 'Failed to load data' });
   }
 };
-

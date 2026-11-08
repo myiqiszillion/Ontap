@@ -21,30 +21,152 @@ class LearningStorage {
     this.defaultTenantId = options.defaultTenantId || DEFAULT_TENANT_ID;
     this.baseDir = options.baseDir || path.join(process.cwd(), '.ntmk');
 
-    this.profilesStore = new LocalState(path.join(this.baseDir, 'learning-profiles.json'));
-    this.plansStore = new LocalState(path.join(this.baseDir, 'learning-plans.json'));
-    this.tasksStore = new LocalState(path.join(this.baseDir, 'learning-tasks.json'));
-    this.versionsStore = new LocalState(path.join(this.baseDir, 'learning-plan-versions.json'));
-    this.reviewsStore = new LocalState(path.join(this.baseDir, 'learning-review-schedules.json'));
-    this.eventsStore = new LocalState(path.join(this.baseDir, 'learning-task-events.json'));
+    this.memory = {
+      profiles: new Map(),
+      plans: new Map(),
+      tasks: new Map(),
+      versions: [],
+      reviews: new Map(),
+      events: []
+    };
+
+    if (!this.storageAdapter) {
+      this.profilesStore = new LocalState(path.join(this.baseDir, 'learning-profiles.json'));
+      this.plansStore = new LocalState(path.join(this.baseDir, 'learning-plans.json'));
+      this.tasksStore = new LocalState(path.join(this.baseDir, 'learning-tasks.json'));
+      this.versionsStore = new LocalState(path.join(this.baseDir, 'learning-plan-versions.json'));
+      this.reviewsStore = new LocalState(path.join(this.baseDir, 'learning-review-schedules.json'));
+      this.eventsStore = new LocalState(path.join(this.baseDir, 'learning-task-events.json'));
+    }
+  }
+
+  // --- Internal Store Accessors ---
+  _readProfiles() {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_profiles || this.memory.profiles;
+      const obj = {};
+      for (const [k, v] of map.entries()) obj[k] = v;
+      return obj;
+    }
+    return this.profilesStore.read({});
+  }
+
+  _writeProfiles(data) {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_profiles || this.memory.profiles;
+      map.clear();
+      for (const [k, v] of Object.entries(data)) map.set(k, v);
+      return;
+    }
+    this.profilesStore.write(data);
+  }
+
+  _readPlans() {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_plans || this.memory.plans;
+      const obj = {};
+      for (const [k, v] of map.entries()) obj[k] = v;
+      return obj;
+    }
+    return this.plansStore.read({});
+  }
+
+  _writePlans(data) {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_plans || this.memory.plans;
+      map.clear();
+      for (const [k, v] of Object.entries(data)) map.set(k, v);
+      return;
+    }
+    this.plansStore.write(data);
+  }
+
+  _readTasks() {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_tasks || this.memory.tasks;
+      const obj = {};
+      for (const [k, v] of map.entries()) obj[k] = v;
+      return obj;
+    }
+    return this.tasksStore.read({});
+  }
+
+  _writeTasks(data) {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_tasks || this.memory.tasks;
+      map.clear();
+      for (const [k, v] of Object.entries(data)) map.set(k, v);
+      return;
+    }
+    this.tasksStore.write(data);
+  }
+
+  _readVersions() {
+    if (this.storageAdapter) {
+      return [...this.memory.versions];
+    }
+    return this.versionsStore.read([]);
+  }
+
+  _writeVersions(data) {
+    if (this.storageAdapter) {
+      this.memory.versions = [...data];
+      return;
+    }
+    this.versionsStore.write(data);
+  }
+
+  _readReviews() {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_review_schedules || this.memory.reviews;
+      const obj = {};
+      for (const [k, v] of map.entries()) obj[k] = v;
+      return obj;
+    }
+    return this.reviewsStore.read({});
+  }
+
+  _writeReviews(data) {
+    if (this.storageAdapter) {
+      const map = this.storageAdapter.tables?.ntmk_learning_review_schedules || this.memory.reviews;
+      map.clear();
+      for (const [k, v] of Object.entries(data)) map.set(k, v);
+      return;
+    }
+    this.reviewsStore.write(data);
+  }
+
+  _readEvents() {
+    if (this.storageAdapter) {
+      return [...this.memory.events];
+    }
+    return this.eventsStore.read([]);
+  }
+
+  _writeEvents(data) {
+    if (this.storageAdapter) {
+      this.memory.events = [...data];
+      return;
+    }
+    this.eventsStore.write(data);
   }
 
   // --- Profiles ---
   saveProfile(profile) {
     if (!profile || !profile.userId) throw new Error('Valid profile with userId required');
-    const all = this.profilesStore.read({});
+    const all = this._readProfiles();
     const key = profile.profileId || profile.userId;
     all[key] = {
       ...profile,
       tenantId: profile.tenantId || this.defaultTenantId,
       updatedAt: new Date().toISOString()
     };
-    this.profilesStore.write(all);
+    this._writeProfiles(all);
     return all[key];
   }
 
   getProfile(userId, options = {}) {
-    const all = this.profilesStore.read({});
+    const all = this._readProfiles();
     const targetTenantId = typeof options === 'string' ? options : (options && options.tenantId);
     // Search by profileId or userId
     if (all[userId]) {
@@ -65,36 +187,36 @@ class LearningStorage {
   // --- Plans ---
   savePlan(plan) {
     if (!plan || !plan.planId) throw new Error('Valid plan with planId required');
-    const all = this.plansStore.read({});
+    const all = this._readPlans();
     all[plan.planId] = {
       ...plan,
       tenantId: plan.tenantId || this.defaultTenantId,
       updatedAt: new Date().toISOString()
     };
-    this.plansStore.write(all);
+    this._writePlans(all);
 
     // Also persist tasks into tasks store
     if (Array.isArray(plan.tasks)) {
-      const allTasks = this.tasksStore.read({});
+      const allTasks = this._readTasks();
       for (const t of plan.tasks) {
         allTasks[t.taskId] = {
           ...t,
           tenantId: t.tenantId || plan.tenantId || this.defaultTenantId
         };
       }
-      this.tasksStore.write(allTasks);
+      this._writeTasks(allTasks);
     }
 
     return all[plan.planId];
   }
 
   getPlan(planId) {
-    const all = this.plansStore.read({});
+    const all = this._readPlans();
     return all[planId] || null;
   }
 
   getActivePlan(userId, options = {}) {
-    const all = this.plansStore.read({});
+    const all = this._readPlans();
     const targetTenantId = typeof options === 'string' ? options : (options && options.tenantId);
     const userPlans = Object.values(all)
       .filter(p => {
@@ -109,7 +231,7 @@ class LearningStorage {
 
   // --- Plan Versions ---
   savePlanVersion(planId, versionData) {
-    const all = this.versionsStore.read([]);
+    const all = this._readVersions();
     const record = {
       versionId: `ver-${Date.now()}`,
       planId,
@@ -117,40 +239,40 @@ class LearningStorage {
       createdAt: new Date().toISOString()
     };
     all.push(record);
-    this.versionsStore.write(all);
+    this._writeVersions(all);
     return record;
   }
 
   getPlanVersions(planId) {
-    const all = this.versionsStore.read([]);
+    const all = this._readVersions();
     return all.filter(v => v.planId === planId);
   }
 
   // --- Tasks ---
   getTask(taskId) {
-    const all = this.tasksStore.read({});
+    const all = this._readTasks();
     return all[taskId] || null;
   }
 
   updateTask(taskId, updates) {
-    const all = this.tasksStore.read({});
+    const all = this._readTasks();
     if (!all[taskId]) return null;
     all[taskId] = {
       ...all[taskId],
       ...updates,
       updatedAt: new Date().toISOString()
     };
-    this.tasksStore.write(all);
+    this._writeTasks(all);
 
     // Synchronize into plan tasks as well
     const planId = all[taskId].planId;
     if (planId) {
-      const allPlans = this.plansStore.read({});
+      const allPlans = this._readPlans();
       if (allPlans[planId] && Array.isArray(allPlans[planId].tasks)) {
         const idx = allPlans[planId].tasks.findIndex(t => t.taskId === taskId);
         if (idx !== -1) {
           allPlans[planId].tasks[idx] = all[taskId];
-          this.plansStore.write(allPlans);
+          this._writePlans(allPlans);
         }
       }
     }
@@ -159,7 +281,7 @@ class LearningStorage {
   }
 
   getTasks(planId, filter = {}) {
-    const all = this.tasksStore.read({});
+    const all = this._readTasks();
     let tasks = Object.values(all).filter(t => t.planId === planId);
     if (filter.status) {
       tasks = tasks.filter(t => t.status === filter.status);
@@ -172,30 +294,30 @@ class LearningStorage {
 
   // --- Reviews ---
   saveReviewSchedule(record) {
-    const all = this.reviewsStore.read({});
+    const all = this._readReviews();
     const key = `${record.userId || 'anon'}_${record.skillId}`;
     all[key] = {
       ...record,
       updatedAt: new Date().toISOString()
     };
-    this.reviewsStore.write(all);
+    this._writeReviews(all);
     return all[key];
   }
 
   getReviewSchedule(userId, skillId) {
-    const all = this.reviewsStore.read({});
+    const all = this._readReviews();
     const key = `${userId}_${skillId}`;
     return all[key] || null;
   }
 
   getReviewSchedules(userId) {
-    const all = this.reviewsStore.read({});
+    const all = this._readReviews();
     return Object.values(all).filter(r => (r.userId || 'anon') === userId);
   }
 
   // --- Task Events ---
   recordTaskEvent(taskId, eventType, eventData = {}) {
-    const all = this.eventsStore.read([]);
+    const all = this._readEvents();
     const event = {
       eventId: `evt-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
       taskId,
@@ -204,7 +326,7 @@ class LearningStorage {
       createdAt: new Date().toISOString()
     };
     all.push(event);
-    this.eventsStore.write(all);
+    this._writeEvents(all);
     return event;
   }
 
@@ -212,7 +334,7 @@ class LearningStorage {
   flagQuestionAffectedSessions(questionId, reason = '') {
     const flagged = [];
     // 1. Scan tasks
-    const allTasks = this.tasksStore.read({});
+    const allTasks = this._readTasks();
     let tasksUpdated = false;
     for (const [taskId, task] of Object.entries(allTasks)) {
       const usesQuestion = task.questionId === questionId || 
@@ -227,11 +349,11 @@ class LearningStorage {
       }
     }
     if (tasksUpdated) {
-      this.tasksStore.write(allTasks);
+      this._writeTasks(allTasks);
     }
 
     // 2. Scan task events
-    const allEvents = this.eventsStore.read([]);
+    const allEvents = this._readEvents();
     let eventsUpdated = false;
     for (const evt of allEvents) {
       if (evt.eventData && (evt.eventData.questionId === questionId || evt.eventData.id === questionId)) {
@@ -242,7 +364,7 @@ class LearningStorage {
       }
     }
     if (eventsUpdated) {
-      this.eventsStore.write(allEvents);
+      this._writeEvents(allEvents);
     }
 
     return flagged;

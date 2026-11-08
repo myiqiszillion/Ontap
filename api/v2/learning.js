@@ -27,6 +27,7 @@ const CloudStorageAdapter = require('../../engine/storage/cloud-storage-adapter.
 const SkillGraph = require('../../engine/diagnostic/skill-graph.js');
 const { defaultStudentAuth } = require('../../engine/auth/student-auth.js');
 
+const LearningStorage = require('../../engine/planner/learning-storage.js');
 let facadeInstance = null;
 
 function getLearningFacade() {
@@ -39,9 +40,11 @@ function getLearningFacade() {
     }
     const bank = new BankStorage({ storageAdapter: adapter });
     const skillGraph = new SkillGraph();
+    const learningStorage = new LearningStorage({ storageAdapter: adapter });
     facadeInstance = new LearningServiceFacade({
       bankStorage: bank,
-      skillGraph
+      skillGraph,
+      storage: learningStorage
     });
   }
   return facadeInstance;
