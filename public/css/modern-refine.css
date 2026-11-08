@@ -339,6 +339,35 @@ body {
   box-shadow: 0 0 0 1px var(--refine-primary), 0 2px 8px rgba(37, 99, 235, 0.08) !important;
 }
 
+/* ── 8. Responsive Design Overrides ── */
+
+@media (max-width: 1024px) {
+  .dashboard-hero-card {
+    padding: 24px !important;
+  }
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-hero-card {
+    padding: 20px !important;
+  }
+  .hero-title {
+    font-size: 1.4rem !important;
+  }
+  .dashboard-subjects-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .quiz-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .quiz-sidebar {
+    display: none !important; /* Hide sidebar on mobile, maybe add a drawer toggle later */
+  }
+}
+
 /* ── 7. Soft Scrollbar & Mobile Bar ── */
 ::-webkit-scrollbar {
   width: 8px;
