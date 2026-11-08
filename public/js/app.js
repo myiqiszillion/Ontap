@@ -853,9 +853,16 @@ const app = {
       }
     }
 
-    // Celebratory Confetti for high achievement (score >= 80%)
-    if (percentage >= 80 && typeof Confetti !== 'undefined') {
-      setTimeout(() => Confetti.fire(3500), 200);
+    // Celebratory Confetti & Victory Fanfare for high achievement (score >= 80%)
+    if (percentage >= 80) {
+      if (typeof Confetti !== 'undefined') {
+        setTimeout(() => Confetti.fire(3500), 200);
+      }
+      if (typeof SoundFX !== 'undefined' && SoundFX.playVictory) {
+        setTimeout(() => SoundFX.playVictory(), 250);
+      }
+    } else if (typeof SoundFX !== 'undefined' && SoundFX.playCorrect) {
+      setTimeout(() => SoundFX.playCorrect(), 250);
     }
 
     const circumference = 2 * Math.PI * 45;

@@ -58,13 +58,13 @@ const SubjectExplorer = {
         </div>
 
         <div class="subjects-cards-grid">
-          ${gradeSubjects.map(s => this.renderSubjectCard(s)).join('')}
+          ${gradeSubjects.map((s, idx) => this.renderSubjectCard(s, idx)).join('')}
         </div>
       </div>
     `;
   },
 
-  renderSubjectCard(subject) {
+  renderSubjectCard(subject, idx = 0) {
     const isReady = subject.ready === true;
     const structure = subject.examStructure || {};
     const formatTags = [];
@@ -72,12 +72,24 @@ const SubjectExplorer = {
     if (structure.tf) formatTags.push(`${structure.tf} Đúng/Sai`);
     if (structure.sa) formatTags.push(`${structure.sa} Trả lời ngắn`);
 
+    let iconKey = 'book-open';
+    if (subject.id?.includes('toan')) iconKey = 'sigma';
+    else if (subject.id?.includes('vatli')) iconKey = 'atom';
+    else if (subject.id?.includes('hoahoc')) iconKey = 'flask-conical';
+    else if (subject.id?.includes('sinhhoc')) iconKey = 'dna';
+    else if (subject.id?.includes('lichsu')) iconKey = 'landmark';
+    else if (subject.id?.includes('anh')) iconKey = 'languages';
+
+    const iconSvg = (typeof Icons !== 'undefined' && Icons.has(iconKey))
+      ? Icons.get(iconKey, { size: 26 })
+      : ((typeof Icons !== 'undefined' && Icons.get) ? Icons.get('book-open', { size: 26 }) : '');
+
     return `
       <div class="subject-card-item ${isReady ? 'is-ready' : 'is-pending'}"
-           style="--sub-color: ${subject.color || '#3b82f6'};">
+           style="--card-index: ${idx}; --sub-color: ${subject.color || '#2563eb'};">
         <div class="card-top">
           <div class="sub-icon-box" style="background: ${subject.color}15; color: ${subject.color};">
-            ${(typeof Icons !== 'undefined') ? (subject.id?.includes('vatli') ? Icons.get('zap', { size: 24 }) : subject.id?.includes('hoahoc') ? Icons.get('flask-conical', { size: 24 }) : subject.id?.includes('anh') ? Icons.get('globe', { size: 24 }) : subject.id?.includes('toan') ? Icons.get('ruler', { size: 24 }) : subject.id?.includes('sinhhoc') ? Icons.get('dna', { size: 24 }) : Icons.get('book-open', { size: 24 })) : ''}
+            ${iconSvg}
           </div>
           <div class="card-status-badge">
             ${isReady ? `
@@ -95,8 +107,8 @@ const SubjectExplorer = {
 
         <div class="card-meta">
           <div class="meta-row">
-            <span class="meta-label">Định dạng QĐ 764:</span>
-            <span class="meta-value">${formatTags.join(' • ') || 'Chuẩn GDPT 2018'}</span>
+            <span class="meta-label">Định dạng đề:</span>
+            <span class="meta-value">${formatTags.join(' • ') || 'Chuẩn cấu trúc 2025'}</span>
           </div>
           <div class="meta-row">
             <span class="meta-label">Thời gian làm bài:</span>
@@ -105,21 +117,21 @@ const SubjectExplorer = {
           ${isReady ? `
             <div class="meta-row">
               <span class="meta-label">Ngân hàng câu hỏi:</span>
-              <span class="meta-value font-medium" style="color: var(--brand-primary);">${subject.questionCount || 0} câu hỏi</span>
+              <span class="meta-value font-medium" style="color: var(--brand-primary, #2563eb);">${subject.questionCount || 0} câu hỏi</span>
             </div>
           ` : ''}
         </div>
 
         <div class="card-footer">
           ${isReady ? `
-            <button class="btn btn-primary btn-block" onclick="app.selectSubject('${subject.id}')">
+            <button class="btn btn-primary btn-block" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('${subject.id}')">
               <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Vào phòng ôn tập
             </button>
-            <button class="btn btn-outline btn-block" style="margin-top: 8px;" onclick="app.startProceduralExam('${subject.id}')" title="Sinh đề thi ngẫu nhiên đa dạng chuẩn Bộ GD&ĐT không giới hạn">
-              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Thi thử đề tự sinh QĐ 764
+            <button class="btn btn-outline btn-block" style="margin-top: 8px;" onclick="if (window.SoundFX) SoundFX.playClick(); app.startProceduralExam('${subject.id}')" title="Sinh đề thi ngẫu nhiên đa dạng chuẩn Bộ GD&ĐT không giới hạn">
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Thi thử đề tự sinh chuẩn Bộ
             </button>
           ` : `
-            <button class="btn btn-outline btn-block" onclick="SubjectExplorer.showPendingSubjectInfo('${subject.id}')">
+            <button class="btn btn-outline btn-block" onclick="if (window.SoundFX) SoundFX.playClick(); SubjectExplorer.showPendingSubjectInfo('${subject.id}')">
               <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> Xem lộ trình &amp; Cấu trúc đề
             </button>
           `}

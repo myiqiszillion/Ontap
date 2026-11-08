@@ -4993,3 +4993,252 @@ body:not([data-theme="dark"]) .hist-score-val {
     display: none !important;
   }
 }
+
+
+/* ═════════════════════════════════════════════════════════════
+   CROSS-SCREEN POLISH & HARMONIZATION
+   Subjects Explorer • Mode Selector • Quiz Navigator • Flashcards
+   ═════════════════════════════════════════════════════════════ */
+
+/* ─── Screen 2: Subjects Explorer Cards ─── */
+.subjects-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+  gap: 22px !important;
+  margin-top: 18px !important;
+}
+
+.subject-card-item {
+  background: #ffffff !important;
+  border: 1.5px solid #e2e8f0 !important;
+  border-radius: 18px !important;
+  padding: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.28s ease, border-color 0.2s ease !important;
+  animation: cardEntranceGlide 0.55s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  animation-delay: calc(var(--card-index, 0) * 65ms) !important;
+}
+
+[data-theme="dark"] .subject-card-item {
+  background: #1e293b !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.subject-card-item::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -60% !important;
+  left: -60% !important;
+  width: 220% !important;
+  height: 220% !important;
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.5) 48%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.5) 52%,
+    transparent 75%
+  ) !important;
+  transform: rotate(25deg) translateY(-120%) !important;
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+}
+
+[data-theme="dark"] .subject-card-item::before {
+  background: linear-gradient(
+    115deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 75%
+  ) !important;
+}
+
+.subject-card-item:hover::before {
+  transform: rotate(25deg) translateY(120%) !important;
+}
+
+.subject-card-item:hover {
+  transform: translateY(-6px) scale(1.018) !important;
+  border-color: var(--sub-color, #2563eb) !important;
+  box-shadow: 0 14px 30px -4px rgba(15, 23, 42, 0.09) !important;
+}
+
+.sub-icon-box {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.subject-card-item:hover .sub-icon-box {
+  transform: scale(1.1) !important;
+}
+
+/* ─── Screen 3: Mode Cards & Topic Checklist ─── */
+.mode-cards {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.mode-card {
+  border-radius: 16px !important;
+  padding: 16px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+}
+
+.mode-card:hover {
+  transform: translateY(-3px) scale(1.015) !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.12) !important;
+}
+
+.mode-card:active {
+  transform: scale(0.96) !important;
+}
+
+.mode-card .mode-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 10px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.mode-card:hover .mode-icon {
+  transform: scale(1.08) !important;
+}
+
+.topic-card {
+  border-radius: 14px !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s ease !important;
+  padding: 14px 18px !important;
+}
+
+.topic-card:hover {
+  border-color: #93c5fd !important;
+  background: #f8fafc !important;
+  transform: translateX(3px) !important;
+}
+
+.topic-card.selected {
+  border-color: #2563eb !important;
+  background: #eff6ff !important;
+}
+
+/* ─── Screen 4: Quiz Room Navigation Dots & Options ─── */
+.q-dot {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  font-size: 0.82rem !important;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+}
+
+.q-dot:hover {
+  transform: scale(1.1) !important;
+  border-color: #2563eb !important;
+  color: #2563eb !important;
+}
+
+.q-dot.current {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #1d4ed8 !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25) !important;
+  transform: scale(1.08) !important;
+}
+
+.q-dot.answered {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border-color: #bfdbfe !important;
+}
+
+.question-card {
+  border-radius: 18px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05) !important;
+}
+
+.option {
+  border-radius: 14px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.option:hover {
+  transform: translateX(4px) !important;
+  border-color: #93c5fd !important;
+  background: #f8fafc !important;
+}
+
+.option.selected {
+  border-color: #2563eb !important;
+  background: #eff6ff !important;
+  color: #1e3a8a !important;
+  box-shadow: 0 0 0 1.5px #2563eb, 0 4px 16px rgba(37, 99, 235, 0.12) !important;
+}
+
+/* ─── Screen 7: Flashcard 3D Perspective Flip ─── */
+.flashcard-stage {
+  perspective: 1200px !important;
+}
+
+.fc-card {
+  transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease !important;
+  transform-style: preserve-3d !important;
+  cursor: pointer !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08) !important;
+}
+
+.fc-card:hover {
+  box-shadow: 0 16px 36px -6px rgba(37, 99, 235, 0.16) !important;
+}
+
+.fc-card.flipped {
+  transform: rotateY(180deg) !important;
+}
+
+/* ─── True/False Tactile Buttons ─── */
+.tf-btn {
+  transition: all 0.18s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+}
+
+.tf-btn:active {
+  transform: scale(0.93) !important;
+}
+
+.tf-btn.selected-true {
+  background: #10b981 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.35) !important;
+}
+
+.tf-btn.selected-false {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #dc2626 !important;
+  box-shadow: 0 2px 10px rgba(239, 68, 68, 0.35) !important;
+}
