@@ -3,7 +3,7 @@
  * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v18-complete-polish-20261108';
+const CACHE_NAME = 'ntmk-cache-v19-3d-tilt-engine-20261108';
 
 const STATIC_SHELL = [
   '/',
@@ -55,6 +55,7 @@ const STATIC_SHELL = [
   '/js/command-palette.js',
   '/js/confetti.js',
   '/js/result-card.js',
+  '/js/tilt-3d.js',
   '/js/app.js',
   '/data/subjects.json'
 ];
