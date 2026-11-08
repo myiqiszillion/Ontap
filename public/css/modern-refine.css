@@ -1,0 +1,364 @@
+/* ═════════════════════════════════════════════════════════════
+   MODERN & MINIMALIST EDTECH REFINE (2026 UI/UX UPGRADE)
+   Clean, Calm, High-legibility, Micro-interactions, Notion/Coursera vibe
+   ═════════════════════════════════════════════════════════════ */
+
+:root {
+  --refine-bg: #f8fafc;
+  --refine-surface: #ffffff;
+  --refine-surface-elevated: #ffffff;
+  --refine-border: #e2e8f0;
+  --refine-border-hover: #cbd5e1;
+  --refine-primary: #2563eb;
+  --refine-primary-hover: #1d4ed8;
+  --refine-primary-soft: #eff6ff;
+  --refine-text-title: #0f172a;
+  --refine-text-body: #334155;
+  --refine-text-muted: #64748b;
+  --refine-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --refine-shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  --refine-shadow-hover: 0 12px 28px -4px rgba(37, 99, 235, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+  --refine-radius-card: 20px;
+  --refine-radius-btn: 12px;
+}
+
+[data-theme="dark"] {
+  --refine-bg: #0b0f19;
+  --refine-surface: #131b2e;
+  --refine-surface-elevated: #1a243b;
+  --refine-border: rgba(255, 255, 255, 0.08);
+  --refine-border-hover: rgba(255, 255, 255, 0.16);
+  --refine-primary: #3b82f6;
+  --refine-primary-hover: #60a5fa;
+  --refine-primary-soft: rgba(59, 130, 246, 0.12);
+  --refine-text-title: #f8fafc;
+  --refine-text-body: #cbd5e1;
+  --refine-text-muted: #94a3b8;
+  --refine-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --refine-shadow-md: 0 6px 18px rgba(0, 0, 0, 0.35);
+  --refine-shadow-hover: 0 14px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ── 1. Refined Layout & Background ── */
+body {
+  background-color: var(--refine-bg) !important;
+  color: var(--refine-text-body) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  letter-spacing: -0.011em !important;
+}
+
+/* ── 2. Header Polish ── */
+.app-shell-header {
+  border-bottom: 1px solid var(--refine-border) !important;
+  box-shadow: var(--refine-shadow-sm) !important;
+}
+
+.brand-title {
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.header-search-pill-btn {
+  border-radius: var(--refine-radius-btn) !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-bg) !important;
+  transition: all 0.2s ease !important;
+}
+
+.header-search-pill-btn:hover {
+  border-color: var(--refine-primary) !important;
+  background: var(--refine-surface) !important;
+}
+
+/* ── 3. Clean & Modern Hero Card ── */
+.dashboard-hero-card {
+  border-radius: var(--refine-radius-card) !important;
+  border: 1px solid var(--refine-border) !important;
+  box-shadow: var(--refine-shadow-md) !important;
+  padding: 36px 40px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.dashboard-hero-card::before {
+  display: none !important; /* Hide old heavy watermark for clean minimal look */
+}
+
+.hero-title {
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.25 !important;
+  color: var(--refine-text-title) !important;
+  margin-bottom: 12px !important;
+}
+
+.hero-subtitle {
+  font-size: 1.02rem !important;
+  line-height: 1.6 !important;
+  color: var(--refine-text-muted) !important;
+  max-width: 620px !important;
+  margin-bottom: 24px !important;
+}
+
+.btn-hero-primary {
+  border-radius: var(--refine-radius-btn) !important;
+  padding: 13px 26px !important;
+  font-size: 0.98rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35) !important;
+}
+
+.btn-hero-secondary {
+  border-radius: var(--refine-radius-btn) !important;
+  padding: 13px 20px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  color: var(--refine-text-body) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-hero-secondary:hover {
+  background: var(--refine-primary-soft) !important;
+  color: var(--refine-primary) !important;
+  border-color: var(--refine-primary) !important;
+}
+
+/* Hero Stats */
+.hero-student-stats {
+  background: var(--refine-surface) !important;
+  border: 1px solid var(--refine-border) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--refine-shadow-sm) !important;
+  padding: 12px 20px !important;
+}
+
+.stat-num {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 1.15rem !important;
+  color: var(--refine-text-title) !important;
+}
+
+.stat-label {
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  color: var(--refine-text-muted) !important;
+}
+
+/* ── 4. Subject Cards (Clean Card Minimalist Architecture) ── */
+.dashboard-subjects-grid {
+  gap: 20px !important;
+}
+
+.dash-subject-card {
+  border-radius: 18px !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  box-shadow: var(--refine-shadow-sm) !important;
+  padding: 24px !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.dash-subject-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: var(--refine-primary) !important;
+  box-shadow: var(--refine-shadow-hover) !important;
+}
+
+.dash-sub-name {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--refine-text-title) !important;
+  margin-top: 14px !important;
+  margin-bottom: 8px !important;
+}
+
+.dash-sub-desc {
+  font-size: 0.9rem !important;
+  line-height: 1.55 !important;
+  color: var(--refine-text-muted) !important;
+  margin-bottom: 16px !important;
+}
+
+.dash-sub-pill {
+  border-radius: 6px !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  padding: 3px 8px !important;
+  letter-spacing: 0.02em !important;
+}
+
+.dash-sub-tag {
+  border-radius: 6px !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  background: var(--refine-bg) !important;
+  color: var(--refine-text-muted) !important;
+  border: 1px solid var(--refine-border) !important;
+}
+
+.dash-sub-cta {
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  color: var(--refine-primary) !important;
+  transition: transform 0.2s ease !important;
+}
+
+.dash-subject-card:hover .dash-sub-cta {
+  transform: translateX(4px) !important;
+}
+
+/* ── 5. Mode Selection Cards (Exam/Study Modes) ── */
+.mode-card {
+  border-radius: 16px !important;
+  border: 1.5px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  box-shadow: var(--refine-shadow-sm) !important;
+  padding: 18px !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.mode-card:hover {
+  border-color: var(--refine-primary) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: var(--refine-shadow-md) !important;
+}
+
+.mode-card.selected {
+  border-color: var(--refine-primary) !important;
+  background: var(--refine-primary-soft) !important;
+  box-shadow: 0 0 0 1px var(--refine-primary), var(--refine-shadow-sm) !important;
+}
+
+.mode-name {
+  font-weight: 700 !important;
+  font-size: 0.98rem !important;
+  color: var(--refine-text-title) !important;
+  letter-spacing: -0.01em !important;
+}
+
+.mode-desc {
+  font-size: 0.82rem !important;
+  line-height: 1.45 !important;
+  color: var(--refine-text-muted) !important;
+}
+
+/* ── 6. Quiz & Exam Room (High Cognitive Ergonomics) ── */
+.quiz-header {
+  border-radius: 16px !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  box-shadow: var(--refine-shadow-sm) !important;
+  padding: 12px 20px !important;
+}
+
+.quiz-sidebar {
+  border-radius: 16px !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  box-shadow: var(--refine-shadow-sm) !important;
+}
+
+.q-dot {
+  border-radius: 10px !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-bg) !important;
+  color: var(--refine-text-muted) !important;
+  font-weight: 600 !important;
+  transition: all 0.15s ease !important;
+}
+
+.q-dot:hover {
+  border-color: var(--refine-primary) !important;
+  color: var(--refine-primary) !important;
+  background: var(--refine-surface) !important;
+}
+
+.q-dot.current {
+  background: var(--refine-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--refine-primary) !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3) !important;
+}
+
+.q-dot.answered {
+  background: var(--refine-primary-soft) !important;
+  color: var(--refine-primary) !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+.question-card {
+  border-radius: 20px !important;
+  border: 1px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  box-shadow: var(--refine-shadow-md) !important;
+  padding: 32px 36px !important;
+}
+
+.question-text {
+  font-size: 1.08rem !important;
+  line-height: 1.68 !important;
+  color: var(--refine-text-title) !important;
+  font-weight: 500 !important;
+}
+
+.option {
+  border-radius: 14px !important;
+  border: 1.5px solid var(--refine-border) !important;
+  background: var(--refine-surface) !important;
+  padding: 14px 18px !important;
+  font-size: 0.98rem !important;
+  line-height: 1.55 !important;
+  color: var(--refine-text-body) !important;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.option:hover {
+  border-color: #93c5fd !important;
+  background: var(--refine-bg) !important;
+  transform: translateX(3px) !important;
+}
+
+.option.selected {
+  border-color: var(--refine-primary) !important;
+  background: var(--refine-primary-soft) !important;
+  color: var(--refine-primary-hover) !important;
+  box-shadow: 0 0 0 1px var(--refine-primary), 0 2px 8px rgba(37, 99, 235, 0.08) !important;
+}
+
+/* ── 7. Soft Scrollbar & Mobile Bar ── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+.mobile-bottom-nav {
+  border-top: 1px solid var(--refine-border) !important;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.04) !important;
+}
