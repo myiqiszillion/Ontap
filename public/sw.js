@@ -3,7 +3,7 @@
  * Caching strategy: Network-First for app shell code (ensuring fresh UI), Cache-First for static offline fallback
  */
 
-const CACHE_NAME = 'ntmk-cache-v21-intro-splash-20261108';
+const CACHE_NAME = 'ntmk-cache-v22-bespoke-illustrations-20261108';
 
 const STATIC_SHELL = [
   '/',
@@ -11,6 +11,15 @@ const STATIC_SHELL = [
   '/manifest.json',
   '/assets/logo.svg',
   '/assets/logo.png',
+  '/assets/illustrations/hero-student-edtech.svg',
+  '/assets/illustrations/subject-toan.svg',
+  '/assets/illustrations/subject-vatli.svg',
+  '/assets/illustrations/subject-hoahoc.svg',
+  '/assets/illustrations/subject-tienganh.svg',
+  '/assets/illustrations/subject-lichsu.svg',
+  '/assets/illustrations/subject-sinhhoc.svg',
+  '/assets/illustrations/trophy-achievement.svg',
+  '/assets/illustrations/empty-mistakes.svg',
   '/css/edtech-design-system.css',
   '/css/style.css',
   '/css/quiz.css',

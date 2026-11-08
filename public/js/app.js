@@ -869,6 +869,12 @@ const app = {
       }
     }
 
+    // Toggle Achievement Trophy Illustration
+    const trophySlot = document.getElementById('result-trophy-slot');
+    if (trophySlot) {
+      trophySlot.style.display = percentage >= 80 ? 'flex' : 'none';
+    }
+
     // Celebratory Confetti & Victory Fanfare for high achievement (score >= 80%)
     if (percentage >= 80) {
       if (typeof Confetti !== 'undefined') {

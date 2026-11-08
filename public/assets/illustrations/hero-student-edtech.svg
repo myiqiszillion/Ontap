@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="heroArtGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="heroArtGradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="heroArtGradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="heroScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="heroArtGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="240" cy="120" r="100" fill="url(#heroArtGrad1)" opacity="0.16" filter="url(#heroArtGlow)"/>
+  <circle cx="100" cy="80" r="60" fill="url(#heroArtGradPurple)" opacity="0.12" filter="url(#heroArtGlow)"/>
+
+  <!-- Orbital Trajectory of Success -->
+  <path d="M 60,200 Q 180,60 300,100" stroke="#93c5fd" stroke-width="2" stroke-dasharray="4,4" opacity="0.4" fill="none"/>
+  <path d="M 120,240 Q 240,160 340,40" stroke="#c084fc" stroke-width="2" stroke-dasharray="3,3" opacity="0.35" fill="none"/>
+
+  <!-- Launchpad Rocket Soaring Upwards (Center Right) -->
+  <g transform="translate(245, 65) rotate(-35)">
+    <!-- Exhaust Plume Flames -->
+    <path d="M 12,56 Q 16,84 16,92 Q 8,80 4,68 Z" fill="#f97316" opacity="0.8"/>
+    <path d="M 14,56 Q 16,74 16,80 Q 12,70 8,62 Z" fill="#fbbf24"/>
+    
+    <!-- Rocket Body -->
+    <path d="M 16,0 C 28,18 32,46 32,56 L 0,56 C 0,46 4,18 16,0 Z" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/>
+    <!-- Nose Cone -->
+    <path d="M 16,0 C 22,10 24,18 24,24 L 8,24 C 8,18 10,10 16,0 Z" fill="#2563eb"/>
+    <!-- Porthole Window -->
+    <circle cx="16" cy="34" r="6" fill="#38bdf8" stroke="#1d4ed8" stroke-width="1.5"/>
+    <circle cx="16" cy="34" r="3.5" fill="#ffffff"/>
+    <!-- Fins -->
+    <path d="M 0,42 L -10,56 L 0,56 Z" fill="#ef4444"/>
+    <path d="M 32,42 L 42,56 L 32,56 Z" fill="#ef4444"/>
+  </g>
+
+  <!-- Digital Tablet Exam Station (Center Left) -->
+  <g transform="translate(65, 80)">
+    <!-- Tablet Shell -->
+    <rect x="0" y="0" width="168" height="114" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.5" filter="url(#heroArtGlow)"/>
+    <!-- Bezel & Screen -->
+    <rect x="6" y="6" width="156" height="102" rx="10" fill="url(#heroScreenGrad)"/>
+    
+    <!-- Screen Header Row -->
+    <circle cx="18" cy="18" r="4" fill="#ef4444"/>
+    <circle cx="28" cy="18" r="4" fill="#f59e0b"/>
+    <circle cx="38" cy="18" r="4" fill="#10b981"/>
+    <rect x="52" y="15" width="60" height="6" rx="3" fill="#334155"/>
+
+    <!-- Exam Simulation UI Inside Tablet -->
+    <!-- Question Title -->
+    <rect x="18" y="32" width="100" height="7" rx="3.5" fill="#60a5fa"/>
+    <rect x="18" y="44" width="70" height="5" rx="2.5" fill="#64748b"/>
+    
+    <!-- Option A (Selected Green) -->
+    <rect x="18" y="58" width="132" height="14" rx="5" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1"/>
+    <circle cx="26" cy="65" r="3" fill="#10b981"/>
+    <rect x="34" y="62" width="65" height="6" rx="3" fill="#a7f3d0"/>
+
+    <!-- Option B -->
+    <rect x="18" y="78" width="132" height="14" rx="5" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="26" cy="85" r="3" fill="#64748b"/>
+    <rect x="34" y="82" width="80" height="6" rx="3" fill="#475569"/>
+
+    <!-- Score 10/10 Badge floating off tablet -->
+    <g transform="translate(136, -18)" filter="url(#heroArtGlow)">
+      <rect x="0" y="0" width="56" height="30" rx="8" fill="url(#heroArtGradGold)"/>
+      <text x="28" y="20" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="14" fill="#78350f" text-anchor="middle">10/10</text>
+    </g>
+  </g>
+
+  <!-- Academic Graduation Cap (Hovering Top Center) -->
+  <g transform="translate(150, 24)">
+    <!-- Cap Diamond Top -->
+    <polygon points="40,0 80,14 40,28 0,14" fill="#1e293b" stroke="#475569" stroke-width="1.5" filter="url(#heroArtGlow)"/>
+    <polygon points="40,3 74,14 40,25 6,14" fill="#0f172a"/>
+    <!-- Cap Skull Base -->
+    <path d="M 18,21 L 18,32 C 18,40 62,40 62,32 L 62,21 Z" fill="#1e293b"/>
+    <!-- Gold Tassel -->
+    <circle cx="40" cy="14" r="3" fill="#f59e0b"/>
+    <path d="M 40,14 Q 52,24 50,38" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <polygon points="47,38 53,38 51,46 49,46" fill="#f59e0b"/>
+  </g>
+
+  <!-- Stacked Textbook Foundation (Bottom Left) -->
+  <g transform="translate(35, 182)">
+    <!-- Book 1 (Blue) -->
+    <rect x="0" y="24" width="75" height="14" rx="3" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+    <rect x="6" y="27" width="63" height="8" rx="2" fill="#93c5fd" opacity="0.6"/>
+    <!-- Book 2 (Emerald) -->
+    <rect x="8" y="10" width="70" height="14" rx="3" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+    <rect x="14" y="13" width="58" height="8" rx="2" fill="#a7f3d0" opacity="0.6"/>
+    <!-- Book 3 (Amber) -->
+    <rect x="15" y="-4" width="65" height="14" rx="3" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+  </g>
+
+  <!-- Radiant Intellect Stars -->
+  <g transform="translate(315, 160)" fill="#fbbf24" filter="url(#heroArtGlow)">
+    <polygon points="10,0 12,6 18,8 12,10 10,16 8,10 2,8 8,6"/>
+  </g>
+  <g transform="translate(45, 52)" fill="#38bdf8" filter="url(#heroArtGlow)">
+    <polygon points="8,0 10,5 15,6 10,8 8,13 6,8 1,6 6,5"/>
+  </g>
+  <circle cx="320" cy="95" r="3.5" fill="#60a5fa"/>
+  <circle cx="280" cy="185" r="3" fill="#a855f7"/>
+</svg>

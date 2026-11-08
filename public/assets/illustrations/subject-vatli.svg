@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="physGradCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="physGradOrbit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="physPrism" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="physGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#physGradCore)" opacity="0.14"/>
+  <circle cx="100" cy="100" r="40" fill="#6366f1" opacity="0.2" filter="url(#physGlow)"/>
+
+  <!-- Wave Oscillations Background -->
+  <path d="M 20,45 Q 45,25 70,45 T 120,45 T 170,45" 
+        stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4" fill="none"/>
+  <path d="M 30,160 Q 60,180 90,160 T 150,160 T 180,160" 
+        stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4" fill="none"/>
+
+  <!-- Atomic Nucleus Orbit 1 (Horizontal tilt) -->
+  <ellipse cx="100" cy="100" rx="68" ry="24" transform="rotate(-30 100 100)" 
+           stroke="url(#physGradOrbit)" stroke-width="2.2" opacity="0.85" filter="url(#physGlow)"/>
+  
+  <!-- Atomic Nucleus Orbit 2 (Opposite tilt) -->
+  <ellipse cx="100" cy="100" rx="68" ry="24" transform="rotate(30 100 100)" 
+           stroke="url(#physGradOrbit)" stroke-width="2.2" opacity="0.85" filter="url(#physGlow)"/>
+
+  <!-- Atomic Nucleus Orbit 3 (Vertical) -->
+  <ellipse cx="100" cy="100" rx="68" ry="24" transform="rotate(90 100 100)" 
+           stroke="#818cf8" stroke-width="1.8" opacity="0.65"/>
+
+  <!-- Orbiting Quantum Electrons -->
+  <g transform="translate(148, 72)">
+    <circle cx="0" cy="0" r="5.5" fill="#38bdf8" filter="url(#physGlow)"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+  <g transform="translate(52, 72)">
+    <circle cx="0" cy="0" r="5.5" fill="#c084fc" filter="url(#physGlow)"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+  </g>
+  <g transform="translate(100, 168)">
+    <circle cx="0" cy="0" r="5" fill="#818cf8" filter="url(#physGlow)"/>
+    <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Central Atomic Nucleus (Protons & Neutrons Cluster) -->
+  <g filter="url(#physGlow)">
+    <circle cx="95" cy="95" r="10" fill="#4f46e5"/>
+    <circle cx="106" cy="96" r="9" fill="#818cf8"/>
+    <circle cx="100" cy="106" r="10" fill="#6366f1"/>
+    <circle cx="98" cy="99" r="6" fill="#e0e7ff"/>
+  </g>
+
+  <!-- Triangular Dispersion Prism & Ray of Light -->
+  <g transform="translate(142, 126)">
+    <polygon points="0,0 24,-20 24,14" fill="url(#physPrism)" stroke="#a5b4fc" stroke-width="1.5"/>
+    <!-- Incident White Ray -->
+    <line x1="-16" y1="-5" x2="6" y2="-7" stroke="#ffffff" stroke-width="2"/>
+    <!-- Dispersed Spectral Rays -->
+    <line x1="24" y1="-10" x2="38" y2="-18" stroke="#ef4444" stroke-width="1.5"/>
+    <line x1="24" y1="-6" x2="38" y2="-9" stroke="#3b82f6" stroke-width="1.5"/>
+    <line x1="24" y1="-2" x2="38" y2="0" stroke="#8b5cf6" stroke-width="1.5"/>
+  </g>
+
+  <!-- Magnetic Field / Vector Arrow -->
+  <g transform="translate(38, 125)" stroke="#60a5fa" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="12" x2="22" y2="0"/>
+    <polyline points="14,0 22,0 20,8"/>
+    <text x="26" y="2" fill="#93c5fd" font-size="11" font-family="'Space Grotesk', sans-serif" font-weight="700" stroke="none">B⃗</text>
+  </g>
+
+  <!-- Radiant Quantum Sparks -->
+  <circle cx="38" cy="78" r="2" fill="#93c5fd"/>
+  <circle cx="168" cy="105" r="2" fill="#c084fc"/>
+  <circle cx="100" cy="32" r="2.5" fill="#38bdf8"/>
+</svg>

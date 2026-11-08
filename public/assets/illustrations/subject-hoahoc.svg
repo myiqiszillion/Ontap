@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="chemGradTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="chemGradLiquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="chemGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#5eead4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="chemGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#chemGradTeal)" opacity="0.12"/>
+  <circle cx="95" cy="120" r="45" fill="#14b8a6" opacity="0.2" filter="url(#chemGlow)"/>
+
+  <!-- Benzene Hexagon (Background Top-Right) -->
+  <g transform="translate(142, 48) scale(0.9)" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <polygon points="24,0 48,14 48,42 24,56 0,42 0,14"/>
+    <!-- Inner Alternating Double Bonds -->
+    <line x1="8" y1="18" x2="8" y2="38" stroke-width="2"/>
+    <line x1="24" y1="9" x2="42" y2="19" stroke-width="2"/>
+    <line x1="24" y1="47" x2="42" y2="37" stroke-width="2"/>
+    <!-- Atom Nodes -->
+    <circle cx="24" cy="0" r="3" fill="#34d399"/>
+    <circle cx="48" cy="14" r="3" fill="#34d399"/>
+    <circle cx="48" cy="42" r="3" fill="#34d399"/>
+    <circle cx="24" cy="56" r="3" fill="#34d399"/>
+    <circle cx="0" cy="42" r="3" fill="#34d399"/>
+    <circle cx="0" cy="14" r="3" fill="#34d399"/>
+  </g>
+
+  <!-- Ball and Stick Lattice (Left Side) -->
+  <g transform="translate(32, 60)" stroke="#5eead4" stroke-width="2">
+    <line x1="0" y1="30" x2="22" y2="10"/>
+    <line x1="22" y1="10" x2="38" y2="35"/>
+    <line x1="22" y1="10" x2="18" y2="-12"/>
+    
+    <circle cx="0" cy="30" r="7" fill="#0d9488" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="22" cy="10" r="9" fill="#10b981" stroke="#ffffff" stroke-width="1.5" filter="url(#chemGlow)"/>
+    <circle cx="38" cy="35" r="6" fill="#047857" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="18" cy="-12" r="6.5" fill="#14b8a6" stroke="#99f6e4" stroke-width="1.5"/>
+  </g>
+
+  <!-- Erlenmeyer Laboratory Flask -->
+  <g transform="translate(68, 55)">
+    <!-- Flask Outline & Glass Body -->
+    <!-- Neck -->
+    <rect x="22" y="0" width="20" height="40" rx="3" fill="none" stroke="url(#chemGlass)" stroke-width="3"/>
+    <!-- Rim -->
+    <rect x="18" y="0" width="28" height="5" rx="2.5" fill="#a7f3d0" stroke="#0d9488" stroke-width="1"/>
+    
+    <!-- Conical Body with Liquid -->
+    <path d="M 23,40 L 4,96 C 2,102 6,108 12,108 L 52,108 C 58,108 62,102 60,96 L 41,40 Z" 
+          fill="none" stroke="url(#chemGlass)" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Bubbling Chemical Liquid Level -->
+    <path d="M 12,72 Q 22,68 32,73 T 52,72 L 56,98 C 57,103 54,106 50,106 L 14,106 C 10,106 7,103 8,98 Z" 
+          fill="url(#chemGradLiquid)"/>
+    
+    <!-- Meniscus Surface Line -->
+    <path d="M 12,72 Q 22,68 32,73 T 52,72" 
+          fill="none" stroke="#a7f3d0" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Specular Glass Highlight -->
+    <path d="M 10,95 L 24,46" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Rising Bubbles Inside Liquid -->
+    <circle cx="24" cy="92" r="3.5" fill="#a7f3d0" opacity="0.9"/>
+    <circle cx="38" cy="85" r="4" fill="#a7f3d0" opacity="0.8"/>
+    <circle cx="20" cy="80" r="2.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="44" cy="95" r="2" fill="#a7f3d0" opacity="0.7"/>
+
+    <!-- Escaping Vapor Bubbles Above Neck -->
+    <circle cx="32" cy="-12" r="3" fill="#2dd4bf" filter="url(#chemGlow)"/>
+    <circle cx="24" cy="-24" r="4.5" fill="#34d399" filter="url(#chemGlow)"/>
+    <circle cx="38" cy="-34" r="3.5" fill="#5eead4" filter="url(#chemGlow)"/>
+  </g>
+
+  <!-- pH Indicator Color Gradient Pill (Bottom Left) -->
+  <g transform="translate(34, 150)">
+    <rect x="0" y="0" width="46" height="8" rx="4" fill="url(#chemGradTeal)" opacity="0.85"/>
+    <circle cx="16" cy="4" r="2" fill="#ffffff"/>
+  </g>
+</svg>

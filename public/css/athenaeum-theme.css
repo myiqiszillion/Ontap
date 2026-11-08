@@ -5581,3 +5581,169 @@ body:not([data-theme="dark"]) .hist-score-val {
 }
 
 
+
+/* ═══════════════════════════════════════════════════════════
+   BESPOKE VECTOR ILLUSTRATIONS & 60 FPS GRAPHICS INTEGRATION
+   Dashboard Hero, 6 Subject Cards, Empty Mistakes & Trophy
+   ═══════════════════════════════════════════════════════════ */
+
+/* 1. Dashboard Hero Illustration */
+.hero-illustration-slot {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  margin: 8px 0 !important;
+}
+
+.hero-student-art-img {
+  width: 220px !important;
+  height: 160px !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 12px 28px rgba(37, 99, 235, 0.16)) !important;
+  animation: heroArtFloat 5s ease-in-out infinite !important;
+  will-change: transform, filter !important;
+}
+
+[data-theme="dark"] .hero-student-art-img {
+  filter: drop-shadow(0 12px 32px rgba(6, 182, 212, 0.22)) !important;
+}
+
+@keyframes heroArtFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-illustration-slot {
+    order: 2 !important;
+    margin: 12px auto !important;
+  }
+  .hero-student-art-img {
+    width: 180px !important;
+    height: 130px !important;
+  }
+}
+
+/* 2. 6 Subject Cards Vector Artworks */
+.dash-sub-icon.dash-sub-art-wrap {
+  padding: 0 !important;
+  background: transparent !important;
+  overflow: hidden !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+}
+
+.dash-sub-art-img {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  object-fit: cover !important;
+  border-radius: 14px !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease !important;
+}
+
+.dash-subject-card:hover .dash-sub-art-img {
+  transform: scale(1.08) !important;
+  filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.25)) !important;
+}
+
+/* 3. Explorer Cards Vector Artworks */
+.sub-icon-box.explorer-art-box {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06) !important;
+}
+
+.explorer-card-art-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 14px !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.subject-card-item:hover .explorer-card-art-img {
+  transform: scale(1.1) !important;
+}
+
+/* 4. Sổ tay câu sai - Empty State Artwork */
+.empty-illustration-box {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 20px !important;
+}
+
+.empty-mistakes-art-img {
+  width: 160px !important;
+  height: 160px !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 10px 24px rgba(16, 185, 129, 0.22)) !important;
+  animation: emptyMasteryPulse 4s ease-in-out infinite !important;
+}
+
+@keyframes emptyMasteryPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 10px 24px rgba(16, 185, 129, 0.22));
+  }
+  50% {
+    transform: scale(1.04);
+    filter: drop-shadow(0 14px 32px rgba(16, 185, 129, 0.35));
+  }
+}
+
+/* 5. Exam Results Trophy Artwork */
+.result-trophy-slot {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto 18px auto !important;
+}
+
+.result-trophy-art-img {
+  width: 128px !important;
+  height: 128px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 12px 28px rgba(245, 158, 11, 0.38)) !important;
+  animation: trophyEntranceBounce 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both !important;
+}
+
+@keyframes trophyEntranceBounce {
+  0% {
+    transform: scale(0.3) rotate(-8deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-student-art-img,
+  .empty-mistakes-art-img,
+  .result-trophy-art-img,
+  .dash-sub-art-img,
+  .explorer-card-art-img {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}

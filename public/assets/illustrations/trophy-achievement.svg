@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="35%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="trophyCupShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#fef08a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="trophyBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="trophyGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Golden Aura -->
+  <circle cx="100" cy="90" r="70" fill="url(#trophyGold)" opacity="0.16" filter="url(#trophyGlow)"/>
+
+  <!-- Radiant Starburst Rays -->
+  <g stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4">
+    <line x1="100" y1="10" x2="100" y2="35"/>
+    <line x1="100" y1="145" x2="100" y2="170"/>
+    <line x1="20" y1="90" x2="45" y2="90"/>
+    <line x1="155" y1="90" x2="180" y2="90"/>
+    <line x1="40" y1="30" x2="60" y2="50"/>
+    <line x1="160" y1="30" x2="140" y2="50"/>
+  </g>
+
+  <!-- Laurel Wreaths (Flanking Sides) -->
+  <g stroke="#10b981" stroke-width="2" fill="#34d399" opacity="0.85">
+    <!-- Left Laurel Leaf Clusters -->
+    <path d="M 46,120 Q 30,85 45,50" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="40" cy="55" rx="5" ry="8" transform="rotate(-30 40 55)"/>
+    <ellipse cx="32" cy="72" rx="5" ry="8" transform="rotate(-50 32 72)"/>
+    <ellipse cx="32" cy="92" rx="5" ry="8" transform="rotate(-70 32 92)"/>
+    <ellipse cx="40" cy="110" rx="5" ry="8" transform="rotate(-85 40 110)"/>
+
+    <!-- Right Laurel Leaf Clusters -->
+    <path d="M 154,120 Q 170,85 155,50" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="160" cy="55" rx="5" ry="8" transform="rotate(30 160 55)"/>
+    <ellipse cx="168" cy="72" rx="5" ry="8" transform="rotate(50 168 72)"/>
+    <ellipse cx="168" cy="92" rx="5" ry="8" transform="rotate(70 168 92)"/>
+    <ellipse cx="160" cy="110" rx="5" ry="8" transform="rotate(85 160 110)"/>
+  </g>
+
+  <!-- Trophy Handles (Ears) -->
+  <g stroke="url(#trophyGold)" stroke-width="5" fill="none" filter="url(#trophyGlow)">
+    <path d="M 68,52 C 40,52 38,92 68,98"/>
+    <path d="M 132,52 C 160,52 162,92 132,98"/>
+  </g>
+
+  <!-- Trophy Cup Body -->
+  <g filter="url(#trophyGlow)">
+    <!-- Cup Bowl -->
+    <path d="M 64,40 L 136,40 L 128,95 C 124,115 76,115 72,95 Z" fill="url(#trophyGold)" stroke="#b45309" stroke-width="2"/>
+    <!-- Specular Highlight Overlay -->
+    <path d="M 66,42 L 134,42 L 126,93 C 122,111 78,111 74,93 Z" fill="url(#trophyCupShine)"/>
+
+    <!-- Rim Top Opening -->
+    <ellipse cx="100" cy="40" rx="36" ry="8" fill="url(#trophyGold)" stroke="#d97706" stroke-width="2"/>
+    <ellipse cx="100" cy="40" rx="30" ry="5.5" fill="#ca8a04"/>
+
+    <!-- Star Emblem on Cup Face -->
+    <polygon points="100,60 103,68 111,69 105,75 107,83 100,79 93,83 95,75 89,69 97,68" fill="#ffffff" stroke="#eab308" stroke-width="1"/>
+  </g>
+
+  <!-- Trophy Stem / Neck -->
+  <path d="M 94,112 L 106,112 L 108,136 L 92,136 Z" fill="url(#trophyGold)" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="100" cy="136" rx="20" ry="6" fill="url(#trophyGold)"/>
+
+  <!-- Trophy Pedestal Base -->
+  <g transform="translate(68, 142)">
+    <rect x="0" y="0" width="64" height="24" rx="4" fill="url(#trophyBase)" stroke="#334155" stroke-width="2" filter="url(#trophyGlow)"/>
+    <!-- Gold Nameplate Plaque -->
+    <rect x="8" y="5" width="48" height="14" rx="2" fill="url(#trophyGold)"/>
+    <text x="24" y="16" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="9" fill="#78350f" text-anchor="middle">TOP 1%</text>
+  </g>
+
+  <!-- Confetti Stars & Sparks -->
+  <polygon points="62,24 64,28 68,29 65,33 66,37 62,35 58,37 59,33 56,29 60,28" fill="#fbbf24" filter="url(#trophyGlow)"/>
+  <polygon points="138,24 140,28 144,29 141,33 142,37 138,35 134,37 135,33 132,29 136,28" fill="#38bdf8" filter="url(#trophyGlow)"/>
+  <circle cx="90" cy="18" r="3" fill="#34d399"/>
+  <circle cx="115" cy="18" r="2.5" fill="#f43f5e"/>
+</svg>

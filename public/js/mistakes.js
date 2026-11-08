@@ -889,8 +889,8 @@ const MistakeView = {
     if (!mistakes || mistakes.length === 0) {
       return `
         <div class="mistake-empty-state">
-          <div class="empty-icon">
-            <svg class="ui-icon" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <div class="empty-illustration-box">
+            <img src="assets/illustrations/empty-mistakes.svg" alt="Sổ tay hoàn hảo - Không còn lỗi sai" class="empty-mistakes-art-img" width="160" height="160" />
           </div>
           <h3>${this.currentStatusFilter === 'active' ? 'Tuyệt vời! Không còn câu sai nào cần phục hồi.' : 'Chưa có câu hỏi nào trong danh sách này.'}</h3>
           <p>${this.currentStatusFilter === 'active' ? 'Bạn đã làm chủ toàn bộ các câu hỏi đã gặp. Hãy tiếp tục thử sức với các bài thi mới!' : 'Làm thêm các đề thi để hệ thống tự động phát hiện lỗ hổng cho bạn.'}</p>

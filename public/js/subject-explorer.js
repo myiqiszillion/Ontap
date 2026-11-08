@@ -87,12 +87,19 @@ const SubjectExplorer = {
       ? Icons.get(iconKey, { size: 26 })
       : ((typeof Icons !== 'undefined' && Icons.get) ? Icons.get('book-open', { size: 26 }) : '');
 
+    let artFile = 'subject-toan.svg';
+    if (subject.id?.includes('vatli')) artFile = 'subject-vatli.svg';
+    else if (subject.id?.includes('hoahoc')) artFile = 'subject-hoahoc.svg';
+    else if (subject.id?.includes('sinhhoc')) artFile = 'subject-sinhhoc.svg';
+    else if (subject.id?.includes('lichsu')) artFile = 'subject-lichsu.svg';
+    else if (subject.id?.includes('anh') || subject.id?.includes('tienganh')) artFile = 'subject-tienganh.svg';
+
     return `
       <div class="subject-card-item ${isReady ? 'is-ready' : 'is-pending'}"
            style="--card-index: ${idx}; --sub-color: ${subject.color || '#2563eb'};">
         <div class="card-top">
-          <div class="sub-icon-box" style="background: ${subject.color}15; color: ${subject.color};">
-            ${iconSvg}
+          <div class="sub-icon-box explorer-art-box" style="background: ${subject.color}15; color: ${subject.color};">
+            <img src="assets/illustrations/${artFile}" alt="${subject.name}" class="explorer-card-art-img" width="48" height="48" loading="lazy" />
           </div>
           <div class="card-status-badge">
             ${isReady ? `

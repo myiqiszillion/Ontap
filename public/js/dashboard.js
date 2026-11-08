@@ -52,6 +52,10 @@ const DashboardView = {
             </div>
           </div>
 
+          <div class="hero-illustration-slot">
+            <img src="assets/illustrations/hero-student-edtech.svg" alt="Minh họa học sinh THPT Nguyễn Thị Minh Khai luyện thi GDPT 2018" class="hero-student-art-img" width="220" height="160" />
+          </div>
+
           <div class="hero-student-stats">
             <div class="student-stat-item">
               <div class="stat-icon-wrap streak">
@@ -108,8 +112,8 @@ const DashboardView = {
             <!-- TOÁN HỌC -->
             <div class="dash-subject-card dash-sub-toan" style="--card-index: 0" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('toan11')" role="button" tabindex="0">
               <div class="dash-sub-top">
-                <div class="dash-sub-icon toan">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 7V4H6l6 8-6 8h12v-3"/></svg>
+                <div class="dash-sub-icon toan dash-sub-art-wrap">
+                  <img src="assets/illustrations/subject-toan.svg" alt="Môn Toán học" class="dash-sub-art-img" width="52" height="52" loading="lazy" />
                 </div>
                 <span class="dash-sub-pill toan">Cấu trúc 2025</span>
               </div>
@@ -129,8 +133,8 @@ const DashboardView = {
             <!-- VẬT LÍ -->
             <div class="dash-subject-card dash-sub-vatli" style="--card-index: 1" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('vatli11')" role="button" tabindex="0">
               <div class="dash-sub-top">
-                <div class="dash-sub-icon vatli">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="2.5" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <div class="dash-sub-icon vatli dash-sub-art-wrap">
+                  <img src="assets/illustrations/subject-vatli.svg" alt="Môn Vật lí" class="dash-sub-art-img" width="52" height="52" loading="lazy" />
                 </div>
                 <span class="dash-sub-pill vatli">Cấu trúc 2025</span>
               </div>
@@ -150,8 +154,8 @@ const DashboardView = {
             <!-- HÓA HỌC -->
             <div class="dash-subject-card dash-sub-hoahoc" style="--card-index: 2" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('hoahoc11')" role="button" tabindex="0">
               <div class="dash-sub-top">
-                <div class="dash-sub-icon hoahoc">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v7.5a2 2 0 0 1-.2.9L4.7 20.5a1 1 0 0 0 .9 1.5h12.8a1 1 0 0 0 .9-1.5L14.2 10.4a2 2 0 0 1-.2-.9V2"/><path d="M8.5 2h7"/><circle cx="10" cy="17" r="1" fill="currentColor"/><circle cx="14" cy="15" r="1.5" fill="currentColor"/></svg>
+                <div class="dash-sub-icon hoahoc dash-sub-art-wrap">
+                  <img src="assets/illustrations/subject-hoahoc.svg" alt="Môn Hóa học" class="dash-sub-art-img" width="52" height="52" loading="lazy" />
                 </div>
                 <span class="dash-sub-pill hoahoc">Cấu trúc 2025</span>
               </div>
@@ -171,8 +175,8 @@ const DashboardView = {
             <!-- SINH HỌC -->
             <div class="dash-subject-card dash-sub-sinhhoc" style="--card-index: 3" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('sinhhoc11')" role="button" tabindex="0">
               <div class="dash-sub-top">
-                <div class="dash-sub-icon sinhhoc">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 15c6.6-6 13.4 0 20-6" stroke-linecap="round"/><path d="M2 9c6.6 6 13.4 0 20 6" stroke-linecap="round"/><line x1="5.5" y1="11" x2="5.5" y2="13"/><line x1="9.5" y1="8" x2="9.5" y2="16"/><line x1="14.5" y1="8" x2="14.5" y2="16"/><line x1="18.5" y1="11" x2="18.5" y2="13"/></svg>
+                <div class="dash-sub-icon sinhhoc dash-sub-art-wrap">
+                  <img src="assets/illustrations/subject-sinhhoc.svg" alt="Môn Sinh học" class="dash-sub-art-img" width="52" height="52" loading="lazy" />
                 </div>
                 <span class="dash-sub-pill sinhhoc">Cấu trúc 2025</span>
               </div>
@@ -192,8 +196,8 @@ const DashboardView = {
             <!-- LỊCH SỬ -->
             <div class="dash-subject-card dash-sub-lichsu" style="--card-index: 4" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('lichsu11')" role="button" tabindex="0">
               <div class="dash-sub-top">
-                <div class="dash-sub-icon lichsu">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 18h16M4 7h16M2 7l10-4 10 4M6 18V7M10 18V7M14 18V7M18 18V7"/></svg>
+                <div class="dash-sub-icon lichsu dash-sub-art-wrap">
+                  <img src="assets/illustrations/subject-lichsu.svg" alt="Môn Lịch sử" class="dash-sub-art-img" width="52" height="52" loading="lazy" />
                 </div>
                 <span class="dash-sub-pill lichsu">Đặc sắc NTMK</span>
               </div>
@@ -213,8 +217,8 @@ const DashboardView = {
             <!-- TIẾNG ANH -->
             <div class="dash-subject-card dash-sub-tienganh" style="--card-index: 5" onclick="if (window.SoundFX) SoundFX.playClick(); app.selectSubject('tienganh11')" role="button" tabindex="0">
               <div class="dash-sub-top">
-                <div class="dash-sub-icon tienganh">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <div class="dash-sub-icon tienganh dash-sub-art-wrap">
+                  <img src="assets/illustrations/subject-tienganh.svg" alt="Môn Tiếng Anh" class="dash-sub-art-img" width="52" height="52" loading="lazy" />
                 </div>
                 <span class="dash-sub-pill tienganh">Global Success</span>
               </div>

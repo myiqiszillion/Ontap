@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="histGradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="histGradBronze" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="histScroll" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <filter id="histGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="100" r="75" fill="url(#histGradGold)" opacity="0.14"/>
+  <circle cx="100" cy="90" r="45" fill="#f59e0b" opacity="0.2" filter="url(#histGlow)"/>
+
+  <!-- Traditional Dong Son Bronze Drum Motif (Background Wheel of History) -->
+  <g transform="translate(100, 88)" opacity="0.6">
+    <circle cx="0" cy="0" r="62" stroke="#b45309" stroke-width="2.2" stroke-dasharray="4,3"/>
+    <circle cx="0" cy="0" r="48" stroke="#d97706" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="30" stroke="#f59e0b" stroke-width="1.5"/>
+    
+    <!-- 12-Ray Radiant Sunburst Center -->
+    <circle cx="0" cy="0" r="10" fill="#f59e0b"/>
+    <g stroke="#d97706" stroke-width="2">
+      <line x1="0" y1="-26" x2="0" y2="-12"/>
+      <line x1="0" y1="12" x2="0" y2="26"/>
+      <line x1="-26" y1="0" x2="-12" y2="0"/>
+      <line x1="12" y1="0" x2="26" y2="0"/>
+      <line x1="-18" y1="-18" x2="-8" y2="-8"/>
+      <line x1="8" y1="8" x2="18" y2="18"/>
+      <line x1="18" y1="-18" x2="8" y2="-8"/>
+      <line x1="-8" y1="8" x2="-18" y2="18"/>
+    </g>
+    <!-- Bird flight motifs on outer ring -->
+    <path d="M 0,-54 L 6,-46 L -6,-46 Z" fill="#d97706"/>
+    <path d="M 54,0 L 46,6 L 46,-6 Z" fill="#d97706"/>
+    <path d="M 0,54 L -6,46 L 6,46 Z" fill="#d97706"/>
+    <path d="M -54,0 L -46,-6 L -46,6 Z" fill="#d97706"/>
+  </g>
+
+  <!-- Ancient Historical Parchment Scroll -->
+  <g transform="translate(42, 60)">
+    <!-- Scroll Body -->
+    <path d="M 12,0 L 98,0 C 104,0 108,4 108,10 L 108,68 C 108,74 104,78 98,78 L 12,78 C 6,78 2,74 2,68 L 2,10 C 2,4 6,0 12,0 Z" 
+          fill="url(#histScroll)" stroke="#b45309" stroke-width="2.5" filter="url(#histGlow)"/>
+    <!-- Curled Edges of Scroll -->
+    <path d="M 0,6 C 0,0 6,0 12,0 L 12,78 C 6,78 0,78 0,72 Z" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+    <path d="M 110,6 C 110,0 104,0 98,0 L 98,78 C 104,78 110,78 110,72 Z" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+
+    <!-- Historic Inscription Lines -->
+    <line x1="24" y1="18" x2="86" y2="18" stroke="#78350f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="28" x2="76" y2="28" stroke="#78350f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="38" x2="82" y2="38" stroke="#78350f" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="48" x2="68" y2="48" stroke="#78350f" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Imperial Red Wax Seal -->
+    <circle cx="86" cy="58" r="10" fill="#dc2626" stroke="#991b1b" stroke-width="1.5" filter="url(#histGlow)"/>
+    <circle cx="86" cy="58" r="6" fill="#ef4444"/>
+    <polygon points="86,54 88,57 91,57 89,59 90,62 86,60 82,62 83,59 81,57 84,57" fill="#fef2f2"/>
+  </g>
+
+  <!-- Feather Quill Pen -->
+  <g transform="translate(136, 42) rotate(32)">
+    <!-- Feather Vane -->
+    <path d="M 0,0 Q 14,24 6,70 L 0,82 L -2,70 Q -10,34 0,0 Z" 
+          fill="url(#histGradGold)" stroke="#78350f" stroke-width="1.8"/>
+    <!-- Quill Shaft -->
+    <line x1="0" y1="0" x2="0" y2="88" stroke="#78350f" stroke-width="2"/>
+    <!-- Nib & Ink Tip -->
+    <polygon points="-2,82 2,82 0,92" fill="#1e293b"/>
+  </g>
+
+  <!-- Classical Monument Pillar (Bottom Left) -->
+  <g transform="translate(24, 136)" stroke="#b45309" stroke-width="2" fill="#fffbeb">
+    <rect x="0" y="0" width="34" height="6" rx="2"/>
+    <line x1="6" y1="6" x2="6" y2="24"/>
+    <line x1="17" y1="6" x2="17" y2="24"/>
+    <line x1="28" y1="6" x2="28" y2="24"/>
+    <rect x="-3" y="24" width="40" height="6" rx="2"/>
+  </g>
+
+  <!-- Floating Golden Stars -->
+  <circle cx="34" cy="42" r="3" fill="#f59e0b" filter="url(#histGlow)"/>
+  <circle cx="168" cy="138" r="2.5" fill="#d97706"/>
+</svg>
