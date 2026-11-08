@@ -136,6 +136,35 @@ const SoundFX = {
         t += n.d;
       });
     } catch (e) {}
+  },
+
+  // Elegant academic celestial chime for site intro
+  playIntro() {
+    if (!this.enabled) return;
+    try {
+      const ctx = this.getAudioContext();
+      if (!ctx) return;
+      const notes = [
+        { f: 523.25, d: 0.35 },
+        { f: 659.25, d: 0.35 },
+        { f: 783.99, d: 0.4 },
+        { f: 1046.50, d: 0.7 }
+      ];
+      let t = ctx.currentTime;
+      notes.forEach((n, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        const startT = t + idx * 0.12;
+        osc.frequency.setValueAtTime(n.f, startT);
+        gain.gain.setValueAtTime(0.08, startT);
+        gain.gain.exponentialRampToValueAtTime(0.001, startT + n.d);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(startT);
+        osc.stop(startT + n.d);
+      });
+    } catch (e) {}
   }
 };
 

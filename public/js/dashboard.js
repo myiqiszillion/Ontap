@@ -419,6 +419,7 @@ const DashboardView = {
               <button class="footer-link-btn" onclick="app.navigateTo('subjects')">Khám phá môn học</button>
               <button class="footer-link-btn" onclick="app.navigateTo('custom-exam')">Tự tạo đề</button>
               <button class="footer-link-btn" onclick="app.navigateTo('mistakes')">Sổ câu sai</button>
+              <button class="footer-link-btn" onclick="if (window.IntroSplash) IntroSplash.replay();">Hiệu ứng mở đầu</button>
             </div>
           </div>
         </div>

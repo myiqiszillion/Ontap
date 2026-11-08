@@ -114,6 +114,9 @@ const app = {
       if (typeof Tilt3D !== 'undefined') {
         setTimeout(() => Tilt3D.init(), 60);
       }
+      if (typeof IntroSplash !== 'undefined') {
+        IntroSplash.init();
+      }
     } catch (error) {
       console.error('Failed to initialize NTMK application:', error);
       alert('Không thể kết nối đến máy chủ. Vui lòng thử lại sau giây lát.');

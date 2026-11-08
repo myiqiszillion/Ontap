@@ -247,6 +247,17 @@ const CommandPalette = {
       action: () => {
         if (window.AuthView) AuthView.showModal();
       }
+    },
+    {
+      id: 'act_intro',
+      category: 'Hành động nhanh',
+      title: 'Xem lại hoạt cảnh mở đầu (Intro Site)',
+      icon: 'sparkles',
+      desc: 'Chiếu lại hoạt cảnh chào mừng 3D và giới thiệu nền tảng NTMK',
+      keywords: ['intro', 'hieu ung', 'mo dau', 'splash', 'chao mung', 'animation'],
+      action: () => {
+        if (typeof IntroSplash !== 'undefined') IntroSplash.replay();
+      }
     }
   ],
 
