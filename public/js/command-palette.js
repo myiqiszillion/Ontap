@@ -146,6 +146,64 @@ const CommandPalette = {
     },
 
     // ═══════════════════════════════════════════════════════════
+    // 2B. LUYỆN ĐỀ TỰ ĐỘNG THUẬT TOÁN (QĐ 764 KHÔNG CẦN TẢI DATA)
+    // ═══════════════════════════════════════════════════════════
+    {
+      id: 'act_proc_toan',
+      category: 'Luyện đề tự động (QĐ 764)',
+      title: 'Thi thử Toán 11 tự sinh (22 câu • 90 phút)',
+      icon: 'ruler',
+      desc: 'Sinh đề tự động vô tận theo cấu trúc QĐ 764: 12 CHTN + 4 Đúng/Sai + 6 Điền khuyết',
+      keywords: ['thi thu toan', 'de toan tu sinh', 'procedural toan', 'toan 11 thi'],
+      action: () => app.startProceduralExam('toan11')
+    },
+    {
+      id: 'act_proc_vatli',
+      category: 'Luyện đề tự động (QĐ 764)',
+      title: 'Thi thử Vật lí 11 tự sinh (28 câu • 50 phút)',
+      icon: 'zap',
+      desc: 'Sinh đề tự động vô tận theo cấu trúc QĐ 764: 18 CHTN + 4 Đúng/Sai + 6 Điền khuyết',
+      keywords: ['thi thu vat li', 'de li tu sinh', 'procedural vatli'],
+      action: () => app.startProceduralExam('vatli11')
+    },
+    {
+      id: 'act_proc_hoahoc',
+      category: 'Luyện đề tự động (QĐ 764)',
+      title: 'Thi thử Hóa học 11 tự sinh (28 câu • 50 phút)',
+      icon: 'flask-conical',
+      desc: 'Sinh đề tự động vô tận theo cấu trúc QĐ 764: 18 CHTN + 4 Đúng/Sai + 6 Điền khuyết',
+      keywords: ['thi thu hoa', 'de hoa tu sinh', 'procedural hoahoc'],
+      action: () => app.startProceduralExam('hoahoc11')
+    },
+    {
+      id: 'act_proc_sinhhoc',
+      category: 'Luyện đề tự động (QĐ 764)',
+      title: 'Thi thử Sinh học 11 tự sinh (28 câu • 50 phút)',
+      icon: 'dna',
+      desc: 'Sinh đề tự động vô tận theo cấu trúc QĐ 764: 18 CHTN + 4 Đúng/Sai + 6 Điền khuyết',
+      keywords: ['thi thu sinh', 'de sinh tu sinh', 'procedural sinhhoc'],
+      action: () => app.startProceduralExam('sinhhoc11')
+    },
+    {
+      id: 'act_proc_lichsu',
+      category: 'Luyện đề tự động (QĐ 764)',
+      title: 'Thi thử Lịch sử 11 tự sinh (24 câu • 50 phút)',
+      icon: 'book-open',
+      desc: 'Sinh đề tự động vô tận theo cấu trúc QĐ 764: 20 CHTN + 4 Đúng/Sai',
+      keywords: ['thi thu su', 'de su tu sinh', 'procedural lichsu'],
+      action: () => app.startProceduralExam('lichsu11')
+    },
+    {
+      id: 'act_proc_tienganh',
+      category: 'Luyện đề tự động (QĐ 764)',
+      title: 'Thi thử Tiếng Anh 11 tự sinh (40 câu • 50 phút)',
+      icon: 'globe',
+      desc: 'Sinh đề tự động vô tận: 40 CHTN Trọng âm, Ngữ âm, Từ vựng, Đọc hiểu',
+      keywords: ['thi thu tieng anh', 'de anh tu sinh', 'procedural tienganh'],
+      action: () => app.startProceduralExam('tienganh11')
+    },
+
+    // ═══════════════════════════════════════════════════════════
     // 3. HÀNH ĐỘNG HỆ THỐNG & CÀI ĐẶT
     // ═══════════════════════════════════════════════════════════
     {

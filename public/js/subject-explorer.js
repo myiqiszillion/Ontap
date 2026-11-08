@@ -115,6 +115,9 @@ const SubjectExplorer = {
             <button class="btn btn-primary btn-block" onclick="app.selectSubject('${subject.id}')">
               <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Vào phòng ôn tập
             </button>
+            <button class="btn btn-outline btn-block" style="margin-top: 8px;" onclick="app.startProceduralExam('${subject.id}')" title="Sinh đề thi ngẫu nhiên đa dạng chuẩn Bộ GD&ĐT không giới hạn">
+              <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Thi thử đề tự sinh QĐ 764
+            </button>
           ` : `
             <button class="btn btn-outline btn-block" onclick="SubjectExplorer.showPendingSubjectInfo('${subject.id}')">
               <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> Xem lộ trình &amp; Cấu trúc đề

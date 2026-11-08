@@ -554,6 +554,101 @@ const app = {
     this.navigateTo('quiz');
   },
 
+  async startProceduralExam(subjectId = 'toan11') {
+    const rawSub = (subjectId || 'toan11').replace(/\d+$/, '');
+    const grade = 11;
+    const subObj = (this.subjects && this.subjects.find(s => s.id === subjectId || s.id === `${rawSub}11`)) || {
+      id: `${rawSub}11`,
+      name: rawSub.toUpperCase()
+    };
+
+    try {
+      if (typeof SoundFX !== 'undefined' && SoundFX.playClick) SoundFX.playClick();
+      const examData = await API.startProceduralExam(rawSub, grade);
+      if (!examData || !examData.questions || examData.questions.length === 0) {
+        throw new Error('Khong co cau hoi');
+      }
+
+      this.currentSubject = subObj.id;
+      this.currentQuestions = examData.questions;
+      this.examMode = 'procedural';
+      this.quizDuration = (examData.durationMinutes || 50) * 60;
+
+      const quizQuestions = examData.questions.map((q, idx) => {
+        if (q.format === 'true_false_group' || q.statements) {
+          return {
+            id: q.id || `proc_tf_${idx}`,
+            type: 'tf-group',
+            format: 'true_false_group',
+            passage: q.prompt || q.passage || '',
+            statements: (q.statements || []).map(s => ({
+              id: s.id,
+              text: s.statement || s.text || '',
+              correct: s.isCorrect !== undefined ? s.isCorrect : (s.correctAnswer === true || s.correct === true)
+            })),
+            explanation: q.explanation || ''
+          };
+        } else if (q.format === 'short_answer' || q.tolerance !== undefined) {
+          return {
+            id: q.id || `proc_sa_${idx}`,
+            type: 'shortanswer',
+            format: 'short_answer',
+            question: q.prompt || '',
+            correctAnswer: q.correctAnswer || q.answer || '',
+            tolerance: q.tolerance || 0,
+            unit: q.unit || '',
+            explanation: q.explanation || ''
+          };
+        } else {
+          return {
+            id: q.id || `proc_mcq_${idx}`,
+            type: 'multiple_choice',
+            format: 'multiple_choice',
+            question: q.prompt || '',
+            options: q.options || [],
+            correct: q.correctAnswer !== undefined ? q.correctAnswer : q.correct,
+            correctAnswer: q.correctAnswer !== undefined ? q.correctAnswer : q.correct,
+            explanation: q.explanation || ''
+          };
+        }
+      });
+
+      this.navigateTo('quiz');
+      const quizSubEl = document.getElementById('quiz-subject');
+      if (quizSubEl) quizSubEl.textContent = `${subObj.name} (De Tu Sinh QD 764)`;
+
+      Timer.stop(); Timer.clearState();
+      Quiz.untimed = false;
+      Quiz.init({
+        subject: subObj.id,
+        questions: quizQuestions,
+        examBlueprint: examData.blueprint || null
+      });
+
+      if (this.quizDuration > 0) {
+        Timer.init(this.quizDuration, (display, remaining) => {
+          const timerEl = document.getElementById('active-timer');
+          const timerDisplay = document.getElementById('active-timer-display');
+          if (timerEl) {
+            timerEl.textContent = display;
+            timerEl.classList.toggle('warning', remaining < 300);
+            timerEl.classList.toggle('danger', remaining < 60);
+          }
+          if (timerDisplay) {
+            timerDisplay.textContent = display;
+            timerDisplay.classList.toggle('warning', remaining < 300);
+            timerDisplay.classList.toggle('danger', remaining < 60);
+          }
+        }, () => {
+          Quiz.submit();
+        });
+      }
+    } catch (err) {
+      console.error('Loi khoi tao de thi tu sinh:', err);
+      alert('Khong the tao de thi tu dong luc nay. Vui long thu lai!');
+    }
+  },
+
   // ═══════════ START LEARNING / EXAM ═══════════
 
   async resumePractice() {

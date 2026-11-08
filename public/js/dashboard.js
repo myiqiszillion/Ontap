@@ -86,11 +86,11 @@ const DashboardView = {
                 <span>Sổ câu sai (${mistakesCount})</span>
               </button>
               ` : ''}
-              <button class="btn btn-glass" onclick="app.startOnboarding(true)" title="Thay đổi khối lớp hoặc mục tiêu">
-                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                <span>Đổi mục tiêu</span>
+              <button class="btn btn-glass btn-hero-procedural" onclick="app.startProceduralExam('${targetKey}11')" title="Luyện đề vô tận tự sinh theo thuật toán chuẩn Bộ GD&ĐT">
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>Thi thử đề tự sinh QĐ 764</span>
               </button>
-            </div>
+              <button class="btn btn-glass" onclick="app.startOnboarding(true)" title="Thay đổi khối lớp hoặc mục tiêu">
                 <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 <span>Đổi mục tiêu</span>
               </button>

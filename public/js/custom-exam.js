@@ -5,28 +5,26 @@
  */
 
 const CustomExam = {
-  currentSubject: 'lichsu11',
-  currentGradeFilter: 10,
+  currentSubject: 'toan11',
+  currentGradeFilter: 11,
   lessons: [],
   selectedBais: [],
   settings: {
-    mcqCount: 20,
+    mcqCount: 12,
     tfCount: 4,
-    saCount: 0,
-    durationMinutes: 50,
+    saCount: 6,
+    durationMinutes: 90,
     shuffleQuestions: true,
     shuffleOptions: true
   },
 
   SUBJECT_OPTIONS: [
-    { id: 'toan10', name: 'Toán học 10', grade: 10, defaultMcq: 12, defaultTf: 4, defaultDuration: 90, color: '#3b82f6' },
-    { id: 'vatli10', name: 'Vật lí 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#6366f1' },
-    { id: 'hoahoc10', name: 'Hóa học 10', grade: 10, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#06b6d4' },
-    { id: 'tienganh10', name: 'Tiếng Anh 10', grade: 10, defaultMcq: 40, defaultTf: 0, defaultDuration: 50, color: '#0d9488' },
-    { id: 'lichsu10', name: 'Lịch sử 10', grade: 10, defaultMcq: 20, defaultTf: 4, defaultDuration: 50, color: '#e11d48' },
-    { id: 'sinhhoc11', name: 'Sinh học 11', grade: 11, defaultMcq: 18, defaultTf: 4, defaultDuration: 50, color: '#10b981' },
-    { id: 'lichsu11', name: 'Lịch sử 11', grade: 11, defaultMcq: 20, defaultTf: 4, defaultDuration: 50, color: '#e11d48' },
-    { id: 'lichsu12', name: 'Lịch sử 12', grade: 12, defaultMcq: 24, defaultTf: 4, defaultDuration: 50, color: '#e11d48' }
+    { id: 'toan11', name: 'Toán học 11', grade: 11, defaultMcq: 12, defaultTf: 4, defaultSa: 6, defaultDuration: 90, color: '#3b82f6' },
+    { id: 'vatli11', name: 'Vật lí 11', grade: 11, defaultMcq: 18, defaultTf: 4, defaultSa: 6, defaultDuration: 50, color: '#6366f1' },
+    { id: 'hoahoc11', name: 'Hóa học 11', grade: 11, defaultMcq: 18, defaultTf: 4, defaultSa: 6, defaultDuration: 50, color: '#06b6d4' },
+    { id: 'sinhhoc11', name: 'Sinh học 11', grade: 11, defaultMcq: 18, defaultTf: 4, defaultSa: 6, defaultDuration: 50, color: '#10b981' },
+    { id: 'lichsu11', name: 'Lịch sử 11', grade: 11, defaultMcq: 20, defaultTf: 4, defaultSa: 0, defaultDuration: 50, color: '#e11d48' },
+    { id: 'tienganh11', name: 'Tiếng Anh 11', grade: 11, defaultMcq: 40, defaultTf: 0, defaultSa: 0, defaultDuration: 50, color: '#0d9488' }
   ],
 
   async init(subjectId = null) {
@@ -36,12 +34,12 @@ const CustomExam = {
       if (sub) this.currentGradeFilter = sub.grade;
     } else if (typeof ProfileStore !== 'undefined' && ProfileStore.getProfile) {
       const p = ProfileStore.getProfile();
-      const grade = p?.grade || 10;
+      const grade = p?.grade || 11;
       this.currentGradeFilter = grade;
       const match = this.SUBJECT_OPTIONS.find(s => s.grade === grade);
-      this.currentSubject = match ? match.id : 'lichsu11';
+      this.currentSubject = match ? match.id : 'toan11';
     } else {
-      this.currentSubject = 'lichsu11';
+      this.currentSubject = 'toan11';
     }
 
     await this.loadSubjectData(this.currentSubject);

@@ -57,6 +57,29 @@ const API = {
   },
 
   /**
+   * Start a procedural exam session (autonomous procedural question generation)
+   */
+  async startProceduralExam(subjectId, grade = 11) {
+    const rawSub = (subjectId || 'toan').replace(/\d+$/, '');
+    try {
+      const res = await fetch('/api/v2/questions?action=start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mode: 'procedural', subjectId: rawSub, grade: Number(grade) })
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {
+      console.warn('API procedural start failed, falling back to generate_exam endpoint:', e);
+    }
+
+    const fallbackRes = await fetch(`/api/v2/questions?action=generate_exam&subject=${rawSub}&grade=${grade}`);
+    if (!fallbackRes.ok) throw new Error('Khong the tao de thi tu dong');
+    return await fallbackRes.json();
+  },
+
+  /**
    * Clear all cached data
    */
   clearCache() {

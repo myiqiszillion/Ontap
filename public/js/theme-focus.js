@@ -7,8 +7,8 @@ const ThemeManager = {
   STORAGE_KEY: 'ntmk_theme_style_v2',
   THEMES: ['heritage', 'midnight', 'academic'],
   THEME_LABELS: {
-    heritage: { id: 'heritage', name: 'Di Sản Học Giả', iconName: 'landmark' },
-    midnight: { id: 'midnight', name: 'Đêm Huyền Bí', iconName: 'moon' },
+    heritage: { id: 'heritage', name: 'Hiện Đại (Sáng)', iconName: 'sun' },
+    midnight: { id: 'midnight', name: 'Đêm Dịu Mắt (Tối)', iconName: 'moon' },
     academic: { id: 'academic', name: 'Trang Giấy Thanh Nhã', iconName: 'book-open' }
   },
 
