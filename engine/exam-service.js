@@ -14,7 +14,10 @@ class ExamService {
     }
   }
 
-  start(subjectId, grade) {
+  start(subjectId, grade, options = {}) {
+    if (options.mode === 'procedural' || options.procedural) {
+      return this.startProcedural(subjectId, grade);
+    }
     if (!['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'].includes(subjectId) || ![10, 11, 12].includes(grade)) {
       throw new Error('Invalid subject or grade');
     }
@@ -70,6 +73,58 @@ class ExamService {
       expiresAt,
       examType: exam.hasShortage ? 'practice_quiz' : 'blueprint_format',
       shortages: exam.shortages,
+      questions: exam.questions.map(q => Schema.sanitizeForStudent(q))
+    };
+  }
+
+  startProcedural(subjectId, grade = 11) {
+    if (!['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'].includes(subjectId) || ![10, 11, 12].includes(grade)) {
+      throw new Error('Invalid subject or grade');
+    }
+    const ProceduralGenerator = require('./procedural-generator.js');
+    const exam = ProceduralGenerator.generateExam(subjectId, grade);
+
+    const id = crypto.randomUUID();
+    const token = crypto.randomBytes(32).toString('hex');
+    const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+    const startedAt = Date.now();
+    const expiresAt = startedAt + exam.durationMinutes * 60000;
+
+    const session = {
+      id,
+      tokenHash,
+      subjectId,
+      grade,
+      questions: exam.questions,
+      startedAt,
+      expiresAt,
+      result: null
+    };
+
+    if (this.storageAdapter) {
+      if (typeof this.storageAdapter.saveExamSession === 'function') {
+        const res = this.storageAdapter.saveExamSession(session);
+        if (res && typeof res.then === 'function') res.catch(console.warn);
+      }
+      return {
+        sessionId: id,
+        token,
+        expiresAt,
+        examType: 'procedural_synthetic',
+        shortages: [],
+        questions: exam.questions.map(q => Schema.sanitizeForStudent(q))
+      };
+    }
+
+    const sessions = this.store.read({});
+    sessions[id] = session;
+    this.store.write(sessions);
+    return {
+      sessionId: id,
+      token,
+      expiresAt,
+      examType: 'procedural_synthetic',
+      shortages: [],
       questions: exam.questions.map(q => Schema.sanitizeForStudent(q))
     };
   }

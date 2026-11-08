@@ -25,6 +25,10 @@ module.exports = (req, res) => {
   if (req.method === 'POST' && query.action === 'start') {
     try {
       const examService = new ExamService(getManager().bankStorage);
+      const isProc = req.body?.mode === 'procedural' || query.mode === 'procedural';
+      if (isProc) {
+        return res.status(201).json(examService.startProcedural(req.body?.subjectId, Number(req.body?.grade || 11)));
+      }
       return res.status(201).json(examService.start(req.body?.subjectId, Number(req.body?.grade)));
     } catch (err) {
       return res.status(400).json({ error: err.message });
@@ -59,6 +63,35 @@ module.exports = (req, res) => {
     const candidate = req.body;
     const result = QuestionValidator.validate(candidate);
     return res.status(result.valid ? 200 : 422).json(result);
+  }
+
+  // 4. Procedural Question Generation endpoint (GET)
+  if (urlPath.includes('/generate') || query.action === 'generate') {
+    const ProceduralGenerator = require('../../engine/procedural-generator.js');
+    const sub = query.subject || 'toan';
+    const grade = Number(query.grade || 11);
+    const count = Math.min(Number(query.count || 10), 100);
+    const format = query.format || QuestionSchemaV2.FORMATS.MULTIPLE_CHOICE;
+    const questions = ProceduralGenerator.generateBatch(sub, grade, count, format);
+    return res.status(200).json({
+      total: questions.length,
+      subjectId: sub,
+      grade,
+      format,
+      questions: questions.map(q => QuestionSchemaV2.sanitizeForStudent(q))
+    });
+  }
+
+  // 4b. Procedural Complete Exam Assembly endpoint (GET)
+  if (query.action === 'generate_exam') {
+    const ProceduralGenerator = require('../../engine/procedural-generator.js');
+    const sub = query.subject || 'toan';
+    const grade = Number(query.grade || 11);
+    const exam = ProceduralGenerator.generateExam(sub, grade);
+    return res.status(200).json({
+      ...exam,
+      questions: exam.questions.map(q => QuestionSchemaV2.sanitizeForStudent(q))
+    });
   }
 
   if (req.method !== 'GET') return res.status(405).json({error:'Method not allowed'});

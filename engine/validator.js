@@ -29,7 +29,7 @@ const QuestionValidator = {
       errors.push(`Invalid format "${q.format}". Must be one of: ${validFormats.join(', ')}`);
     }
 
-    if (!['toan','vatli','hoahoc','tienganh'].includes(q.subjectId)) {
+    if (!['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'].includes(q.subjectId)) {
       errors.push('Subject ID is missing or invalid');
     }
 
