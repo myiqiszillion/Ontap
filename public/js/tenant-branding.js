@@ -13,7 +13,7 @@
     name: 'THPT Nguyễn Thị Minh Khai',
     brandTitle: 'NTMK',
     tagline: 'THPT NTMK • BÌNH DƯƠNG',
-    logoUrl: 'assets/logo.png',
+    logoUrl: 'assets/logo.svg',
     primaryColor: '#d97706',
     secondaryColor: '#b45309',
     planTier: 'school_free',

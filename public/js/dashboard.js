@@ -144,7 +144,7 @@ const DashboardView = {
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
                 <div class="dash-sub-icon toan">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></svg>
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 7V4H6l6 8-6 8h12v-3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
                 <span class="dash-sub-pill toan">QĐ 764</span>
               </div>
@@ -166,7 +166,7 @@ const DashboardView = {
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
                 <div class="dash-sub-icon vatli">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="2.5" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)" stroke-width="1.8"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)" stroke-width="1.8"/></svg>
                 </div>
                 <span class="dash-sub-pill vatli">QĐ 764</span>
               </div>
@@ -188,7 +188,7 @@ const DashboardView = {
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
                 <div class="dash-sub-icon hoahoc">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><line x1="8.5" x2="15.5" y1="2" y2="2"/><line x1="7.5" x2="16.5" y1="16" y2="16"/></svg>
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v7.5a2 2 0 0 1-.2.9L4.7 20.5a1 1 0 0 0 .9 1.5h12.8a1 1 0 0 0 .9-1.5L14.2 10.4a2 2 0 0 1-.2-.9V2"/><path d="M8.5 2h7"/><circle cx="10" cy="17" r="1" fill="currentColor"/><circle cx="14" cy="15" r="1.5" fill="currentColor"/></svg>
                 </div>
                 <span class="dash-sub-pill hoahoc">QĐ 764</span>
               </div>
@@ -232,7 +232,7 @@ const DashboardView = {
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
                 <div class="dash-sub-icon lichsu">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M4 18h16M4 7h16M2 7l10-4 10 4M6 18V7M10 18V7M14 18V7M18 18V7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
                 <span class="dash-sub-pill lichsu">Đặc sắc NTMK</span>
               </div>
@@ -254,7 +254,7 @@ const DashboardView = {
               <div class="dash-sub-glow"></div>
               <div class="dash-sub-top">
                 <div class="dash-sub-icon sinhhoc">
-                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <svg class="ui-icon ui-icon-lg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 15c6.6-6 13.4 0 20-6" stroke-width="2" stroke-linecap="round"/><path d="M2 9c6.6 6 13.4 0 20 6" stroke-width="2" stroke-linecap="round"/><line x1="5.5" y1="11" x2="5.5" y2="13" stroke-width="2"/><line x1="9.5" y1="8" x2="9.5" y2="16" stroke-width="2"/><line x1="14.5" y1="8" x2="14.5" y2="16" stroke-width="2"/><line x1="18.5" y1="11" x2="18.5" y2="13" stroke-width="2"/></svg>
                 </div>
                 <span class="dash-sub-pill sinhhoc">QĐ 764</span>
               </div>
@@ -263,6 +263,13 @@ const DashboardView = {
               <div class="dash-sub-meta">
                 <span class="dash-sub-tag">18 CHTN</span>
                 <span class="dash-sub-tag">4 Đúng/Sai</span>
+                <span class="dash-sub-tag">6 Điền khuyết</span>
+              </div>
+              <div class="dash-sub-footer">
+                <span class="dash-sub-count">Thư Viện Học Liệu</span>
+                <span class="dash-sub-cta">Luyện đề ngay →</span>
+              </div>
+            </div>
                 <span class="dash-sub-tag">6 Điền khuyết</span>
               </div>
               <div class="dash-sub-footer">
@@ -518,7 +525,7 @@ const DashboardView = {
         <div class="saas-institutional-footer">
           <div class="footer-top-row">
             <div class="footer-brand">
-              <img src="assets/logo.png" alt="Logo NTMK" class="footer-logo-img" width="34" height="34">
+              <img src="assets/logo.svg" alt="Logo NTMK" class="footer-logo-img" width="34" height="34">
               <div>
                 <div class="footer-brand-title">TRƯỜNG THPT NGUYỄN THỊ MINH KHAI — TỈNH BÌNH DƯƠNG</div>
                 <div class="footer-brand-sub">Nền tảng Ôn tập & Khảo thí Trực tuyến GDPT 2018 theo Quyết định 764/QĐ-BGDĐT</div>

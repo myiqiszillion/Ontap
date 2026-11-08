@@ -46,7 +46,7 @@
 
 .question-passage::before,
 .study-passage::before {
-  content: '📖 THÔNG TIN TƯ LIỆU / NGUỒN KHẢO CỨU (GDPT 2018)';
+  content: 'THÔNG TIN TƯ LIỆU / NGUỒN KHẢO CỨU (GDPT 2018)';
   display: block;
   font-size: 0.72rem;
   font-weight: 800;
@@ -62,7 +62,7 @@ body[data-subject*="lichsu"] .study-passage::before,
 .study-passage[data-subject*="lichsu"]::before,
 .theme-lichsu .question-passage::before,
 .theme-lichsu .study-passage::before {
-  content: '📜 ĐOẠN TƯ LIỆU LỊCH SỬ / NGUỒN KHẢO CỨU (GDPT 2018)';
+  content: 'TƯ LIỆU LỊCH SỬ KHẢO CỨU (GDPT 2018)';
 }
 
 body[data-subject*="sinhhoc"] .question-passage::before,
@@ -71,7 +71,7 @@ body[data-subject*="sinhhoc"] .study-passage::before,
 .study-passage[data-subject*="sinhhoc"]::before,
 .theme-sinhhoc .question-passage::before,
 .theme-sinhhoc .study-passage::before {
-  content: '🧬 DỮ LIỆU KHOA HỌC / HÌNH ẢNH THÍ NGHIỆM (GDPT 2018)';
+  content: 'DỮ LIỆU KHOA HỌC / HÌNH ẢNH THÍ NGHIỆM (GDPT 2018)';
   display: block;
   font-size: 0.72rem;
   font-weight: 800;

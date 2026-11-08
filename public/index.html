@@ -7,27 +7,28 @@
   <title>NTMK — Nền Tảng Ôn Tập Thông Minh | GDPT 2018</title>
   <meta name="description"
     content="NTMK EdTech - Nền tảng học tập thông minh cho học sinh THPT: Toán, Vật lí, Hóa học, Tiếng Anh. Luyện thi GDPT 2018, thi thử, flashcard và ôn tập cá nhân hóa.">
-  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="alternate icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/style.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/quiz.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/diagnostic.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/planner.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/checker.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/heritage-theme.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/mistakes.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/custom-exam.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/theme-focus.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/smart-importer.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/printable-exam.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/command-palette.css?v=20261108-v10">
-  <link rel="stylesheet" href="css/result-view.css?v=20261108-v10">
+  <link rel="stylesheet" href="css/edtech-design-system.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/style.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/quiz.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/diagnostic.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/planner.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/checker.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/heritage-theme.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/mistakes.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/custom-exam.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/theme-focus.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/smart-importer.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/printable-exam.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/command-palette.css?v=20261108-v11">
+  <link rel="stylesheet" href="css/result-view.css?v=20261108-v11">
   <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261108-v10">
+  <link rel="stylesheet" href="css/athenaeum-theme.css?v=20261108-v11">
   <meta name="theme-color" content="#4f46e5">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -44,7 +45,7 @@
   <header class="app-shell-header">
     <div class="header-container">
       <a href="#dashboard" class="brand-logo" onclick="app.navigateTo('dashboard'); return false;" aria-label="Trang chủ NTMK">
-        <img src="assets/logo.png" alt="Logo" class="brand-logo-img" data-tenant="logo">
+        <img src="assets/logo.svg" alt="NTMK Logo" class="brand-logo-img" data-tenant="logo" width="36" height="36">
         <span class="brand-title" data-tenant="name">NTMK</span>
         <span class="brand-badge" data-tenant="badge">THPT NTMK • BÌNH DƯƠNG</span>
         <span class="brand-saas-plan" data-tenant="plan">Miễn phí 100%</span>
@@ -295,10 +296,12 @@
               </button>
               <div style="flex: 1;"></div>
               <button class="btn btn-primary" id="wizard-btn-next" onclick="Onboarding.nextStep()">
-                Tiếp tục →
+                <span>Tiếp tục</span>
+                <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
               </button>
               <button class="btn btn-teal" id="wizard-btn-finish" onclick="Onboarding.finish()" style="display: none;">
-                ✓ Bắt đầu học ngay
+                <svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Bắt đầu học ngay</span>
               </button>
             </div>
             <div style="text-align: center; margin-top: 14px;">
@@ -512,7 +515,10 @@
         <div class="exam-tools-row">
           <button class="exam-tool-btn" onclick="Quiz.changeFontSize(-1)" title="Giảm cỡ chữ">A-</button>
           <button class="exam-tool-btn" onclick="Quiz.changeFontSize(1)" title="Tăng cỡ chữ">A+</button>
-          <button class="exam-tool-btn" onclick="Quiz.toggleZenMode()" title="Chế độ tập trung toàn màn hình">⛶ Zen</button>
+          <button class="exam-tool-btn" onclick="Quiz.toggleZenMode()" title="Chế độ tập trung toàn màn hình">
+            <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
+            <span>Zen</span>
+          </button>
         </div>
         <div class="timer" id="active-timer">
           <span class="timer-icon"><svg class="ui-icon ui-icon-sm" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
@@ -589,7 +595,10 @@
           <span class="subject-badge fc-badge-header"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 12.5-8.58 3.91a2 2 0 0 1-1.66 0L2 12.5"/><path d="m22 17.5-8.58 3.91a2 2 0 0 1-1.66 0L2 17.5"/></svg> Flashcard</span>
           <span class="progress-badge" id="fc-counter">0/0</span>
         </div>
-        <div class="fc-known-counter" id="fc-known">✓ 0</div>
+        <div class="fc-known-counter" id="fc-known">
+          <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>0</span>
+        </div>
       </header>
 
       <div class="fc-progress-bar">
@@ -610,12 +619,18 @@
        ═══════════════════════════════════════════════════════════ -->
     <section id="screen-practice" class="screen" aria-label="Chế độ luyện tập">
       <header class="quiz-header">
-        <button class="back-btn" onclick="app.exitStudy()">← Thoát</button>
+        <button class="back-btn" onclick="app.exitStudy()">
+          <svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" x2="5" y1="12" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span>Thoát</span>
+        </button>
         <div class="quiz-info">
           <span class="subject-badge practice-badge-header"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Luyện tập</span>
           <span class="progress-badge" id="practice-progress">1/20</span>
         </div>
-        <div class="practice-score-display" id="practice-score">✓ 0 ✗ 0</div>
+        <div class="practice-score-display" id="practice-score">
+          <span class="score-correct"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 0</span>
+          <span class="score-wrong"><svg class="ui-icon ui-icon-xs" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg> 0</span>
+        </div>
       </header>
 
       <div class="practice-progress-bar">
@@ -780,35 +795,35 @@
 
   <!-- Modular Scripts Architecture -->
   <script defer src="js/icons.js"></script>
-  <script defer src="js/audio.js?v=20261108-v10"></script>
-  <script defer src="js/api.js?v=20261108-v10"></script>
-  <script defer src="js/state.js?v=20261108-v10"></script>
-  <script defer src="js/router.js?v=20261108-v10"></script>
-  <script defer src="js/onboarding.js?v=20261108-v10"></script>
-  <script defer src="js/dashboard.js?v=20261108-v10"></script>
-  <script defer src="js/subject-explorer.js?v=20261108-v10"></script>
-  <script defer src="js/data-loader.js?v=20261108-v10"></script>
-  <script defer src="js/formula-renderer.js?v=20261108-v10"></script>
-  <script defer src="js/timer.js?v=20261108-v10"></script>
-  <script defer src="js/study.js?v=20261108-v10"></script>
-  <script defer src="js/question-schema.js?v=20261108-v10"></script>
-  <script defer src="js/scoring-engine.js?v=20261108-v10"></script>
-  <script defer src="js/quiz.js?v=20261108-v10"></script>
-  <script defer src="js/checker.js?v=20261108-v10"></script>
-  <script defer src="js/keyboard.js?v=20261108-v10"></script>
-  <script defer src="js/mistakes.js?v=20261108-v10"></script>
-  <script defer src="js/custom-exam.js?v=20261108-v10"></script>
-  <script defer src="js/theme-focus.js?v=20261108-v10"></script>
-  <script defer src="js/diagnostic-view.js?v=20261108-v10"></script>
-  <script defer src="js/planner-view.js?v=20261108-v10"></script>
-  <script defer src="js/auth-view.js?v=20261108-v10"></script>
-  <script defer src="js/smart-importer.js?v=20261108-v10"></script>
-  <script defer src="js/printable-exam.js?v=20261108-v10"></script>
-  <script defer src="js/command-palette.js?v=20261108-v10"></script>
-  <script defer src="js/confetti.js?v=20261108-v10"></script>
-  <script defer src="js/result-card.js?v=20261108-v10"></script>
-  <script defer src="js/tenant-branding.js?v=20261108-v10"></script>
-  <script defer src="js/app.js?v=20261108-v10"></script>
+  <script defer src="js/audio.js?v=20261108-v11"></script>
+  <script defer src="js/api.js?v=20261108-v11"></script>
+  <script defer src="js/state.js?v=20261108-v11"></script>
+  <script defer src="js/router.js?v=20261108-v11"></script>
+  <script defer src="js/onboarding.js?v=20261108-v11"></script>
+  <script defer src="js/dashboard.js?v=20261108-v11"></script>
+  <script defer src="js/subject-explorer.js?v=20261108-v11"></script>
+  <script defer src="js/data-loader.js?v=20261108-v11"></script>
+  <script defer src="js/formula-renderer.js?v=20261108-v11"></script>
+  <script defer src="js/timer.js?v=20261108-v11"></script>
+  <script defer src="js/study.js?v=20261108-v11"></script>
+  <script defer src="js/question-schema.js?v=20261108-v11"></script>
+  <script defer src="js/scoring-engine.js?v=20261108-v11"></script>
+  <script defer src="js/quiz.js?v=20261108-v11"></script>
+  <script defer src="js/checker.js?v=20261108-v11"></script>
+  <script defer src="js/keyboard.js?v=20261108-v11"></script>
+  <script defer src="js/mistakes.js?v=20261108-v11"></script>
+  <script defer src="js/custom-exam.js?v=20261108-v11"></script>
+  <script defer src="js/theme-focus.js?v=20261108-v11"></script>
+  <script defer src="js/diagnostic-view.js?v=20261108-v11"></script>
+  <script defer src="js/planner-view.js?v=20261108-v11"></script>
+  <script defer src="js/auth-view.js?v=20261108-v11"></script>
+  <script defer src="js/smart-importer.js?v=20261108-v11"></script>
+  <script defer src="js/printable-exam.js?v=20261108-v11"></script>
+  <script defer src="js/command-palette.js?v=20261108-v11"></script>
+  <script defer src="js/confetti.js?v=20261108-v11"></script>
+  <script defer src="js/result-card.js?v=20261108-v11"></script>
+  <script defer src="js/tenant-branding.js?v=20261108-v11"></script>
+  <script defer src="js/app.js?v=20261108-v11"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

@@ -821,12 +821,15 @@
 }
 
 .q-dot.flagged::after {
-  content: '🚩';
+  content: '';
   position: absolute;
-  top: -7px;
-  right: -7px;
-  font-size: 0.65rem;
-  line-height: 1;
+  top: 2px;
+  right: 2px;
+  width: 6px;
+  height: 6px;
+  background-color: #f59e0b;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #f59e0b;
 }
 
 /* Split-Pane Layout for True/False questions (Phần II) */
