@@ -4821,8 +4821,8 @@ body:not([data-theme="dark"]) .hist-score-val {
   transform: rotate(25deg) translateY(120%) !important;
 }
 
-.dash-subject-card:hover {
-  transform: translateY(-6px) scale(1.018) !important;
+.dash-subject-card:not([data-tilt-active]):hover {
+  transform: translateY(-6px) scale(1.018);
 }
 
 .dash-subject-card:active {
@@ -4953,8 +4953,8 @@ body:not([data-theme="dark"]) .hist-score-val {
   transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.26s ease, border-color 0.2s ease !important;
 }
 
-.smart-tool-card:hover {
-  transform: translateY(-5px) !important;
+.smart-tool-card:not([data-tilt-active]):hover {
+  transform: translateY(-5px);
   border-color: #93c5fd !important;
   box-shadow: 0 12px 26px -4px rgba(37, 99, 235, 0.12) !important;
 }
@@ -5062,8 +5062,8 @@ body:not([data-theme="dark"]) .hist-score-val {
   transform: rotate(25deg) translateY(120%) !important;
 }
 
-.subject-card-item:hover {
-  transform: translateY(-6px) scale(1.018) !important;
+.subject-card-item:not([data-tilt-active]):hover {
+  transform: translateY(-6px) scale(1.018);
   border-color: var(--sub-color, #2563eb) !important;
   box-shadow: 0 14px 30px -4px rgba(15, 23, 42, 0.09) !important;
 }
@@ -5097,8 +5097,8 @@ body:not([data-theme="dark"]) .hist-score-val {
   cursor: pointer !important;
 }
 
-.mode-card:hover {
-  transform: translateY(-3px) scale(1.015) !important;
+.mode-card:not([data-tilt-active]):hover {
+  transform: translateY(-3px) scale(1.015);
   border-color: #2563eb !important;
   box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.12) !important;
 }
@@ -5254,7 +5254,7 @@ body:not([data-theme="dark"]) .hist-score-val {
   height: 100% !important;
   pointer-events: none !important;
   z-index: 0 !important;
-  opacity: 0.65 !important;
+  opacity: 0.9 !important;
 }
 
 .hero-main-content,
@@ -5289,9 +5289,8 @@ body:not([data-theme="dark"]) .hist-score-val {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-3d-bg-canvas,
-  .card-3d-glare {
-    display: none !important;
+  .hero-3d-bg-canvas {
+    opacity: 0.5 !important;
   }
 }
 

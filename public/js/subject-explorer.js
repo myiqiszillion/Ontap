@@ -62,6 +62,9 @@ const SubjectExplorer = {
         </div>
       </div>
     `;
+    if (typeof Tilt3D !== 'undefined') {
+      Tilt3D.bindCards();
+    }
   },
 
   renderSubjectCard(subject, idx = 0) {

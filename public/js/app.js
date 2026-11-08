@@ -42,64 +42,77 @@ const app = {
 
       // Check onboarding status
       if (!ProfileStore.hasCompletedOnboarding()) {
-        this.startOnboarding(false);
+        const initialRoute = window.location.hash.replace(/^#/, '').split('/')[0];
+        if (initialRoute === 'onboarding') {
+          this.startOnboarding(false);
+          return;
+        }
+        // Auto-provision standard Grade 11 profile so students and visitors land directly on the 6-subject dashboard
+        ProfileStore.saveProfile({
+          grade: 11,
+          targetSubjects: ['toan', 'vatli', 'hoahoc', 'tienganh', 'lichsu', 'sinhhoc'],
+          goal: 'score_8_plus'
+        });
+      }
+
+      const profile = ProfileStore.getProfile();
+      this.updateHeaderProfileBadge(profile);
+      SubjectExplorer.setGrade(profile ? profile.grade : 11);
+
+      // Check for active in-progress quiz session (F5 Reload recovery)
+      let activeExam = null;
+      try {
+        const rawSession = sessionStorage.getItem('ntmk_active_exam_session_v2') || localStorage.getItem('ntmk_active_exam_session_v2');
+        if (rawSession) activeExam = JSON.parse(rawSession);
+      } catch (e) {}
+
+      if (activeExam && activeExam.status === 'in_progress' && activeExam.questions && activeExam.questions.length > 0) {
+        this.currentSubject = activeExam.subjectId;
+        const subject = this.subjects.find(s => s.id === this.currentSubject);
+        this.navigateTo('quiz');
+        const quizSubEl = document.getElementById('quiz-subject');
+        if (quizSubEl && subject) quizSubEl.textContent = subject.name;
+        Quiz.restoreSession(activeExam);
+
+        // Restore timer callbacks & ticker
+        if (activeExam.untimed) { Timer.stop(); const display=document.getElementById('active-timer-display'); if(display)display.textContent='∞'; } else {
+        const savedTimer = Timer.loadState();
+        const remainingSecs = savedTimer ? savedTimer.remaining : Math.max(0, (activeExam.remainingSeconds || 0));
+        Timer.duration = savedTimer ? savedTimer.duration : remainingSecs;
+        Timer.remaining = remainingSecs;
+        Timer.startTime = savedTimer ? savedTimer.startTime : Date.now();
+        Timer.onTick = (display, remaining) => {
+          const timerEl = document.getElementById('active-timer');
+          const timerDisplay = document.getElementById('active-timer-display');
+          if (timerDisplay) timerDisplay.textContent = display;
+          if (timerEl) {
+            timerEl.classList.remove('warning', 'danger');
+            if (remaining <= 60) timerEl.classList.add('danger');
+            else if (remaining <= 300) timerEl.classList.add('warning');
+          }
+        };
+        Timer.onExpire = () => {
+          alert('Hết thời gian làm bài! Hệ thống tự động nộp bài thi.');
+          Quiz.submit(true);
+        };
+        Timer.start();
+        }
       } else {
-        const profile = ProfileStore.getProfile();
-        this.updateHeaderProfileBadge(profile);
-        SubjectExplorer.setGrade(profile.grade);
-
-        // Check for active in-progress quiz session (F5 Reload recovery)
-        let activeExam = null;
-        try {
-          const rawSession = sessionStorage.getItem('ntmk_active_exam_session_v2') || localStorage.getItem('ntmk_active_exam_session_v2');
-          if (rawSession) activeExam = JSON.parse(rawSession);
-        } catch (e) {}
-
-        if (activeExam && activeExam.status === 'in_progress' && activeExam.questions && activeExam.questions.length > 0) {
-          this.currentSubject = activeExam.subjectId;
-          const subject = this.subjects.find(s => s.id === this.currentSubject);
-          this.navigateTo('quiz');
-          const quizSubEl = document.getElementById('quiz-subject');
-          if (quizSubEl && subject) quizSubEl.textContent = subject.name;
-          Quiz.restoreSession(activeExam);
-
-          // Restore timer callbacks & ticker
-          if (activeExam.untimed) { Timer.stop(); const display=document.getElementById('active-timer-display'); if(display)display.textContent='∞'; } else {
-          const savedTimer = Timer.loadState();
-          const remainingSecs = savedTimer ? savedTimer.remaining : Math.max(0, (activeExam.remainingSeconds || 0));
-          Timer.duration = savedTimer ? savedTimer.duration : remainingSecs;
-          Timer.remaining = remainingSecs;
-          Timer.startTime = savedTimer ? savedTimer.startTime : Date.now();
-          Timer.onTick = (display, remaining) => {
-            const timerEl = document.getElementById('active-timer');
-            const timerDisplay = document.getElementById('active-timer-display');
-            if (timerDisplay) timerDisplay.textContent = display;
-            if (timerEl) {
-              timerEl.classList.remove('warning', 'danger');
-              if (remaining <= 60) timerEl.classList.add('danger');
-              else if (remaining <= 300) timerEl.classList.add('warning');
-            }
-          };
-          Timer.onExpire = () => {
-            alert('Hết thời gian làm bài! Hệ thống tự động nộp bài thi.');
-            Quiz.submit(true);
-          };
-          Timer.start();
-          }
+        // Respect initial hash or route to dashboard
+        const currentHash = window.location.hash.replace(/^#/, '').split('/')[0];
+        if (currentHash && AppRouter.ROUTES.includes(currentHash) && currentHash !== 'quiz') {
+          this.navigateTo(currentHash);
         } else {
-          // Respect initial hash or route to dashboard
-          const currentHash = window.location.hash.replace(/^#/, '').split('/')[0];
-          if (currentHash && AppRouter.ROUTES.includes(currentHash) && currentHash !== 'quiz') {
-            this.navigateTo(currentHash);
-          } else {
-            this.navigateTo('dashboard');
-          }
+          this.navigateTo('dashboard');
         }
-        const urlParams = new URLSearchParams(window.location.search);
-        const targetSub = urlParams.get('subject');
-        if (targetSub) {
-          setTimeout(() => this.selectSubject(targetSub), 120);
-        }
+      }
+      const urlParams = new URLSearchParams(window.location.search);
+      const targetSub = urlParams.get('subject');
+      if (targetSub) {
+        setTimeout(() => this.selectSubject(targetSub), 120);
+      }
+      if (typeof Tilt3D !== 'undefined') {
+        setTimeout(() => Tilt3D.init(), 60);
       }
     } catch (error) {
       console.error('Failed to initialize NTMK application:', error);

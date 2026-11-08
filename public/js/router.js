@@ -83,8 +83,18 @@ const AppRouter = {
     // Trigger view-specific render hooks (Full lifecycle execution for all SPA views)
     if (routeId === 'dashboard') {
       if (typeof DashboardView !== 'undefined') DashboardView.render();
+      if (typeof Tilt3D !== 'undefined') {
+        setTimeout(() => {
+          Tilt3D.bindCards();
+          Tilt3D.initHeroCanvas();
+          Tilt3D.resizeHeroCanvas();
+        }, 50);
+      }
     } else if (routeId === 'subjects') {
       if (typeof SubjectExplorer !== 'undefined') SubjectExplorer.render();
+      if (typeof Tilt3D !== 'undefined') {
+        setTimeout(() => Tilt3D.bindCards(), 50);
+      }
     } else if (routeId === 'onboarding') {
       if (typeof Onboarding !== 'undefined') Onboarding.render();
     } else if (routeId === 'diagnostic') {

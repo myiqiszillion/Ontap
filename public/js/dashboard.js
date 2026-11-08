@@ -424,6 +424,9 @@ const DashboardView = {
         </div>
       </div>
     `;
+    if (typeof Tilt3D !== 'undefined') {
+      Tilt3D.init();
+    }
   }
 };
 
