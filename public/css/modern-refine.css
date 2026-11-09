@@ -74,10 +74,13 @@ body {
 
 /* ── 3. Clean & Modern Hero Card (Ambient Mesh Lighting) ── */
 .dashboard-hero-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f4f8ff 55%, #f5f3ff 100%) !important;
+  background: radial-gradient(120% 120% at 85% 15%, rgba(99, 102, 241, 0.08) 0%, rgba(255, 255, 255, 0) 60%),
+              linear-gradient(135deg, #ffffff 0%, #f8fafc 55%, #f1f5f9 100%) !important;
   border-radius: 24px !important;
-  border: 1px solid rgba(226, 232, 240, 0.9) !important;
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.02) !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03),
+              0 12px 32px -4px rgba(15, 23, 42, 0.06),
+              inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
   padding: 36px 40px !important;
   position: relative !important;
   overflow: hidden !important;
@@ -92,9 +95,11 @@ body {
 }
 
 [data-theme="dark"] .dashboard-hero-card {
-  background: linear-gradient(135deg, #131b2e 0%, #0f172a 60%, #161c33 100%) !important;
+  background: radial-gradient(120% 120% at 85% 15%, rgba(99, 102, 241, 0.16) 0%, rgba(15, 23, 42, 0) 65%),
+              linear-gradient(135deg, #111827 0%, #0f172a 60%, #0b0f19 100%) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.6),
+              inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
 }
 
 .dashboard-hero-card::before {
@@ -135,7 +140,7 @@ body {
   background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%) !important;
   color: #1d4ed8 !important;
   font-weight: 700 !important;
-  font-size: 0.74rem !important;
+  font-size: 0.75rem !important;
   letter-spacing: 0.04em !important;
   text-transform: uppercase !important;
   padding: 5px 12px !important;
@@ -147,7 +152,7 @@ body {
   background: #fef3c7 !important;
   color: #b45309 !important;
   font-weight: 700 !important;
-  font-size: 0.74rem !important;
+  font-size: 0.75rem !important;
   letter-spacing: 0.03em !important;
   padding: 5px 12px !important;
   border-radius: 999px !important;
@@ -158,7 +163,7 @@ body {
   background: #ecfdf5 !important;
   color: #047857 !important;
   font-weight: 600 !important;
-  font-size: 0.74rem !important;
+  font-size: 0.75rem !important;
   padding: 5px 12px !important;
   border-radius: 999px !important;
   border: 1px solid rgba(16, 185, 129, 0.2) !important;
@@ -359,44 +364,58 @@ body {
   color: var(--refine-text-muted) !important;
 }
 
-/* ── 4. Subject Cards (Clean Card Minimalist Architecture) ── */
+/* ── 4. Subject Cards (Enterprise Bento-Grid Architecture) ── */
 .dashboard-subjects-grid {
-  gap: 20px !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+  gap: 22px !important;
 }
 
 .dash-subject-card {
   border-radius: 20px !important;
   border: 1px solid var(--refine-border) !important;
   background: var(--refine-surface) !important;
-  box-shadow: var(--refine-shadow-sm) !important;
-  padding: 24px !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03),
+              0 8px 24px -4px rgba(15, 23, 42, 0.04),
+              inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  padding: 26px !important;
   cursor: pointer !important;
   display: flex !important;
   flex-direction: column !important;
   position: relative !important;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s ease,
+              border-color 0.2s ease !important;
+}
+
+[data-theme="dark"] .dash-subject-card {
+  background: linear-gradient(180deg, #131b2e 0%, #0f172a 100%) !important;
+  box-shadow: 0 8px 28px -4px rgba(0, 0, 0, 0.5),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
 .dash-subject-card:hover {
   transform: translateY(-4px) !important;
-  box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03) !important;
+  box-shadow: 0 20px 40px -8px rgba(15, 23, 42, 0.1),
+              0 4px 12px -2px rgba(15, 23, 42, 0.04) !important;
 }
 
 /* Subject-Specific Theme Accents */
-.dash-sub-toan:hover { border-color: rgba(37, 99, 235, 0.5) !important; }
-.dash-sub-vatli:hover { border-color: rgba(2, 132, 199, 0.5) !important; }
-.dash-sub-hoahoc:hover { border-color: rgba(5, 150, 105, 0.5) !important; }
-.dash-sub-sinhhoc:hover { border-color: rgba(16, 185, 129, 0.5) !important; }
-.dash-sub-lichsu:hover { border-color: rgba(225, 29, 72, 0.5) !important; }
-.dash-sub-tienganh:hover { border-color: rgba(124, 58, 237, 0.5) !important; }
+.dash-sub-toan:hover { border-color: rgba(37, 99, 235, 0.6) !important; }
+.dash-sub-vatli:hover { border-color: rgba(2, 132, 199, 0.6) !important; }
+.dash-sub-hoahoc:hover { border-color: rgba(217, 119, 6, 0.6) !important; }
+.dash-sub-sinhhoc:hover { border-color: rgba(16, 185, 129, 0.6) !important; }
+.dash-sub-lichsu:hover { border-color: rgba(225, 29, 72, 0.6) !important; }
+.dash-sub-tienganh:hover { border-color: rgba(124, 58, 237, 0.6) !important; }
 
 .dash-sub-icon {
-  width: 54px !important;
-  height: 54px !important;
+  width: 56px !important;
+  height: 56px !important;
   border-radius: 16px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 }
 
@@ -423,39 +442,43 @@ body {
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
   color: var(--refine-text-title) !important;
-  margin-top: 14px !important;
+  margin-top: 16px !important;
   margin-bottom: 8px !important;
 }
 
 .dash-sub-desc {
-  font-size: 0.9rem !important;
+  font-size: 0.92rem !important;
   line-height: 1.55 !important;
   color: var(--refine-text-muted) !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 18px !important;
 }
 
 .dash-sub-pill {
-  border-radius: 6px !important;
-  font-size: 0.72rem !important;
-  font-weight: 600 !important;
-  padding: 3px 8px !important;
-  letter-spacing: 0.02em !important;
+  border-radius: 999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  padding: 4px 10px !important;
+  letter-spacing: 0.03em !important;
 }
 
 .dash-sub-tag {
-  border-radius: 6px !important;
+  border-radius: 8px !important;
   font-size: 0.75rem !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+  padding: 5px 10px !important;
   background: var(--refine-bg) !important;
   color: var(--refine-text-muted) !important;
   border: 1px solid var(--refine-border) !important;
 }
 
 .dash-sub-cta {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   font-size: 0.88rem !important;
   color: var(--refine-primary) !important;
   transition: transform 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
 }
 
 .dash-subject-card:hover .dash-sub-cta {
@@ -722,7 +745,7 @@ body {
 }
 
 .option-shortcut-hint {
-  font-size: 0.72rem !important;
+  font-size: 0.75rem !important;
   font-weight: 600 !important;
   color: var(--refine-text-muted) !important;
   background: var(--refine-bg) !important;
@@ -759,7 +782,7 @@ body {
   display: inline-flex !important;
   align-items: center !important;
   gap: 6px !important;
-  font-size: 0.72rem !important;
+  font-size: 0.75rem !important;
   font-weight: 700 !important;
   color: var(--refine-primary) !important;
   background: var(--refine-primary-soft) !important;
@@ -973,7 +996,7 @@ body {
 }
 
 .breakdown-tag {
-  font-size: 0.72rem !important;
+  font-size: 0.75rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.05em !important;
   color: var(--refine-primary) !important;
@@ -1453,3 +1476,124 @@ body {
   border-top: 1px solid var(--refine-border) !important;
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.04) !important;
 }
+
+/* ═════════════════════════════════════════════════════════════
+   8. MODERN HIGH-IMPACT MICRO-INTERACTIONS & KINETIC POLISH
+   ═════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: no-preference) {
+  /* Dynamic Spring Hover on Action Cards */
+  .dash-subject-card,
+  .subject-card-item,
+  .smart-tool-card,
+  .mode-card,
+  .planner-task-card,
+  .diagnostic-blueprint-card {
+    transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.2s ease !important;
+  }
+
+  .dash-subject-card:hover,
+  .subject-card-item:hover,
+  .smart-tool-card:hover,
+  .mode-card:hover {
+    transform: translateY(-4px) scale(1.01) !important;
+    box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.14),
+                0 4px 12px -2px rgba(15, 23, 42, 0.06),
+                0 0 0 1px rgba(37, 99, 235, 0.15) !important;
+  }
+
+  /* Tactile Press Down Feedback */
+  .dash-subject-card:active,
+  .subject-card-item:active,
+  .smart-tool-card:active,
+  .mode-card:active,
+  .btn:active {
+    transform: scale(0.98) !important;
+  }
+
+  /* Button Shimmer Kinetic Lighting */
+  .btn-hero-primary {
+    position: relative !important;
+    overflow: hidden !important;
+    transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.24s ease !important;
+  }
+
+  .btn-hero-primary::after {
+    content: '' !important;
+    position: absolute !important;
+    top: -50% !important;
+    left: -60% !important;
+    width: 40% !important;
+    height: 200% !important;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.28) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: rotate(25deg) !important;
+    animation: heroBtnSweep 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
+    pointer-events: none !important;
+  }
+
+  .btn-hero-primary:hover {
+    transform: translateY(-2px) scale(1.01) !important;
+    box-shadow: 0 12px 28px -4px rgba(37, 99, 235, 0.42),
+                0 4px 12px rgba(37, 99, 235, 0.2) !important;
+  }
+
+  /* Micro-pulse for Streak Flame Icon */
+  .stat-icon-wrap.streak svg {
+    animation: flamePulse 2.8s ease-in-out infinite !important;
+    transform-origin: center bottom !important;
+  }
+
+  /* Interactive Option Choice Hover/Active */
+  .option-item {
+    transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color 0.15s ease,
+                background-color 0.15s ease,
+                box-shadow 0.18s ease !important;
+  }
+
+  .option-item:hover:not(.disabled) {
+    transform: translateX(4px) !important;
+  }
+}
+
+@keyframes heroBtnSweep {
+  0%, 65% {
+    left: -60%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+@keyframes flamePulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.4));
+  }
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.7));
+  }
+}
+
+/* Glassmorphism Polish on Header & Dropdowns */
+.app-shell-header {
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+[data-theme="dark"] .dash-subject-card:hover,
+[data-theme="dark"] .subject-card-item:hover,
+[data-theme="dark"] .smart-tool-card:hover,
+[data-theme="dark"] .mode-card:hover {
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7),
+              0 0 0 1px rgba(59, 130, 246, 0.35),
+              0 0 20px -4px rgba(59, 130, 246, 0.25) !important;
+}
+

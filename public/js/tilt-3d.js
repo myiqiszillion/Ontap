@@ -54,6 +54,13 @@ const Tilt3D = {
   // 1. TRUE 3D PARALLAX CARD TILT & SPECULAR GLARE (60 FPS)
   // ═══════════════════════════════════════════════════════════
   bindCards() {
+    // Skip 3D tilt on touch-only devices or reduced motion to optimize performance
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      if (window.matchMedia('(hover: none)').matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+    }
+
     const selector = '.dash-subject-card, .subject-card-item, .smart-tool-card, .mode-card';
     const cards = document.querySelectorAll(selector);
 
@@ -241,6 +248,11 @@ const Tilt3D = {
 
   resizeHeroCanvas() {
     if (!this.heroCanvas) return;
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      this.stopHeroAnimation();
+      this.heroCanvas.style.display = 'none';
+      return;
+    }
     const heroCard = this.heroCanvas.closest('.dashboard-hero-card') || document.querySelector('.dashboard-hero-card');
     if (!heroCard) return;
 
@@ -259,6 +271,7 @@ const Tilt3D = {
       this.heroCtx.setTransform(1, 0, 0, 1, 0, 0);
       this.heroCtx.scale(dpr, dpr);
     }
+    this.startHeroAnimation();
   },
 
   generate3DNodes() {
@@ -287,6 +300,17 @@ const Tilt3D = {
 
   startHeroAnimation() {
     if (this.heroAnimId) return;
+
+    // Skip canvas animation loop on mobile screens (< 768px) and reduced-motion
+    if (typeof window !== 'undefined') {
+      const isMobile = window.innerWidth < 768;
+      const isReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (isMobile || isReduced) {
+        if (this.heroCanvas) this.heroCanvas.style.display = 'none';
+        return;
+      }
+      if (this.heroCanvas) this.heroCanvas.style.display = 'block';
+    }
 
     const loop = () => {
       this.render3DHero();
