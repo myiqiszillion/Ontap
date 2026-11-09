@@ -449,6 +449,16 @@ const Quiz = {
     const btnSubmit = document.getElementById('btn-submit');
     if (btnNext) btnNext.classList.toggle('hidden', isLast);
     if (btnSubmit) btnSubmit.classList.toggle('hidden', !isLast);
+
+    // Micro-kinetic entrance animation on question transition
+    const qCard = document.querySelector('.question-card');
+    if (qCard) {
+      qCard.classList.remove('question-entering');
+      if (typeof qCard.offsetWidth === 'number') {
+        void qCard.offsetWidth;
+      }
+      qCard.classList.add('question-entering');
+    }
   },
 
   /**
