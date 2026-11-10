@@ -87,14 +87,14 @@ const Tilt3D = {
   // 1. TRUE 3D MULTI-LAYER PARALLAX CARD TILT & HOLOGRAPHIC GLARE
   // ═══════════════════════════════════════════════════════════
   bindCards() {
-    const selector = '.dash-subject-card, .subject-card-item, .smart-tool-card, .mode-card, .planner-task-card, .diagnostic-blueprint-card, .dashboard-hero-card';
+    const selector = '.dash-subject-card, .subject-card-item, .smart-tool-card, .mode-card, .planner-task-card, .diagnostic-blueprint-card';
     const cards = document.querySelectorAll(selector);
 
     cards.forEach(card => {
       if (card.dataset.tiltBound) return;
       card.dataset.tiltBound = 'true';
 
-      const isHero = card.classList.contains('dashboard-hero-card');
+      const isHero = false;
 
       // Setup 3D transform container styles
       card.style.transformStyle = 'preserve-3d';
@@ -113,8 +113,8 @@ const Tilt3D = {
         card,
         glare,
         isHero,
-        maxTilt: isHero ? 4.5 : 16,
-        zLift: isHero ? 8 : 16,
+        maxTilt: 10,
+        zLift: 12,
         targetX: 0,
         targetY: 0,
         currentX: 0,
@@ -331,8 +331,8 @@ const Tilt3D = {
 
   generate3DNodes() {
     this.heroNodes = [];
-    const count = 42;
-    const radius = 210;
+    const count = 36;
+    const radius = 138;
 
     for (let i = 0; i < count; i++) {
       const phi = Math.acos(-1 + (2 * i) / count);
@@ -356,11 +356,11 @@ const Tilt3D = {
     const symbols = ['π', '∑', '∫', 'Δ', '∞', 'f(x)', 'λ', 'θ', '√x', 'Ω'];
     this.heroGlyphs = symbols.map((sym, idx) => {
       const angle = (idx / symbols.length) * Math.PI * 2;
-      const r = 175 + (idx % 3) * 45;
+      const r = 125 + (idx % 3) * 22;
       return {
         sym,
         origX: Math.cos(angle) * r,
-        origY: ((idx % 4) - 1.5) * 65,
+        origY: ((idx % 4) - 1.5) * 44,
         origZ: Math.sin(angle) * r,
         phase: idx * 0.7
       };
@@ -414,15 +414,28 @@ const Tilt3D = {
     const cosY = Math.cos(this.angleY);
     const sinY = Math.sin(this.angleY);
 
-    // Center the 3D sphere on the right half around the art slot
-    const centerX = w < 640 ? w * 0.5 : Math.max(w * 0.74, w - 230);
-    const centerY = h * 0.44;
-    const fov = 360;
+    // Accurately center the 3D sphere dead-center on the illustration slot
+    let centerX = w < 640 ? w * 0.5 : w - 165;
+    let centerY = h * 0.38;
+
+    const heroCard = this.heroCanvas.closest('.dashboard-hero-card') || document.querySelector('.dashboard-hero-card');
+    if (heroCard) {
+      const artSlot = heroCard.querySelector('.hero-illustration-slot');
+      if (artSlot) {
+        const heroRect = heroCard.getBoundingClientRect();
+        const artRect = artSlot.getBoundingClientRect();
+        if (artRect.width > 0 && heroRect.width > 0) {
+          centerX = (artRect.left - heroRect.left) + artRect.width / 2;
+          centerY = (artRect.top - heroRect.top) + artRect.height / 2;
+        }
+      }
+    }
+    const fov = 340;
 
     // 1. Draw 3D Gyroscope Orbital Rings
     const ringCount = 2;
     for (let rIdx = 0; rIdx < ringCount; rIdx++) {
-      const ringRadius = rIdx === 0 ? 225 : 165;
+      const ringRadius = rIdx === 0 ? 155 : 120;
       const tiltA = this.angleX * (rIdx === 0 ? 1.2 : -1.4);
       const tiltB = this.angleY * (rIdx === 0 ? 0.9 : 1.5);
       const pts = 48;
@@ -504,8 +517,8 @@ const Tilt3D = {
         const dz = n1.z - n2.z;
         const dist3d = Math.sqrt(dx * dx + dy * dy + dz * dz);
 
-        if (dist3d < 135) {
-          const alpha = (1 - dist3d / 135) * (isDark ? 0.55 : 0.35);
+        if (dist3d < 95) {
+          const alpha = (1 - dist3d / 95) * (isDark ? 0.55 : 0.35);
           ctx.strokeStyle = isDark
             ? `rgba(96, 165, 250, ${alpha.toFixed(3)})`
             : `rgba(37, 99, 235, ${alpha.toFixed(3)})`;
