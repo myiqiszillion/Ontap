@@ -237,16 +237,32 @@ body {
   margin-bottom: 24px !important;
 }
 
-/* Float Animation on Hero Art */
-.hero-student-art-img {
-  filter: drop-shadow(0 12px 24px rgba(37, 99, 235, 0.12));
-  animation: heroFloat 5s ease-in-out infinite;
-  transition: transform 0.3s ease;
+/* 3D Floating Animation on Hero Art */
+.hero-illustration-slot {
+  perspective: 900px !important;
+  transform-style: preserve-3d !important;
 }
 
-@keyframes heroFloat {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-7px); }
+.hero-student-art-img {
+  filter: drop-shadow(0 20px 40px rgba(37, 99, 235, 0.35)) !important;
+  animation: heroFloat3D 6.5s ease-in-out infinite !important;
+  transform-style: preserve-3d !important;
+  will-change: transform !important;
+}
+
+@keyframes heroFloat3D {
+  0%, 100% {
+    transform: translateY(0px) rotateY(0deg) rotateX(0deg);
+  }
+  25% {
+    transform: translateY(-9px) rotateY(7deg) rotateX(-3deg);
+  }
+  50% {
+    transform: translateY(-16px) rotateY(0deg) rotateX(3deg);
+  }
+  75% {
+    transform: translateY(-8px) rotateY(-7deg) rotateX(-2deg);
+  }
 }
 
 .hero-actions {
@@ -417,40 +433,29 @@ body {
   flex-direction: column !important;
   position: relative !important;
   overflow: hidden !important;
+  transform-style: preserve-3d !important;
   transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.28s ease,
               border-color 0.2s ease !important;
 }
 
-/* Signature Laser Top Indicator Line */
-.dash-subject-card::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 20px !important;
-  right: 20px !important;
-  height: 3px !important;
-  border-radius: 0 0 4px 4px !important;
-  background: var(--sub-accent, #2563eb) !important;
-  opacity: 0.75 !important;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+.dash-subject-card[data-tilt-active="true"],
+.subject-card-item[data-tilt-active="true"],
+.smart-tool-card[data-tilt-active="true"],
+.mode-card[data-tilt-active="true"],
+.dashboard-hero-card[data-tilt-active="true"] {
+  transition: none !important;
 }
 
-.dash-subject-card:hover::before {
-  left: 0 !important;
-  right: 0 !important;
-  height: 4px !important;
-  opacity: 1 !important;
-  box-shadow: 0 0 16px var(--sub-accent, #2563eb) !important;
+.dash-subject-card[data-tilt-active="true"]:hover,
+.subject-card-item[data-tilt-active="true"]:hover,
+.smart-tool-card[data-tilt-active="true"]:hover,
+.mode-card[data-tilt-active="true"]:hover,
+.dashboard-hero-card[data-tilt-active="true"]:hover {
+  transform: none;
 }
 
-[data-theme="dark"] .dash-subject-card {
-  background: linear-gradient(180deg, #131b2e 0%, #0f172a 100%) !important;
-  box-shadow: 0 8px 28px -4px rgba(0, 0, 0, 0.5),
-              inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-}
-
-.dash-subject-card:hover {
+.dash-subject-card:hover:not([data-tilt-active="true"]) {
   transform: translateY(-5px) !important;
 }
 
@@ -1862,10 +1867,10 @@ body {
                 border-color 0.2s ease !important;
   }
 
-  .dash-subject-card:hover,
-  .subject-card-item:hover,
-  .smart-tool-card:hover,
-  .mode-card:hover {
+  .dash-subject-card:hover:not([data-tilt-active="true"]),
+  .subject-card-item:hover:not([data-tilt-active="true"]),
+  .smart-tool-card:hover:not([data-tilt-active="true"]),
+  .mode-card:hover:not([data-tilt-active="true"]) {
     transform: translateY(-4px) scale(1.01) !important;
     box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.14),
                 0 4px 12px -2px rgba(15, 23, 42, 0.06),
@@ -1881,11 +1886,13 @@ body {
     transform: scale(0.98) !important;
   }
 
-  /* Button Shimmer Kinetic Lighting */
+  /* 3D Extruded Tactile Button */
   .btn-hero-primary {
     position: relative !important;
     overflow: hidden !important;
-    transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.24s ease !important;
+    transform-style: preserve-3d !important;
+    box-shadow: 0 4px 0 #1d4ed8, 0 10px 24px -2px rgba(37, 99, 235, 0.45) !important;
+    transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease !important;
   }
 
   .btn-hero-primary::after {
@@ -1907,9 +1914,13 @@ body {
   }
 
   .btn-hero-primary:hover {
-    transform: translateY(-2px) scale(1.01) !important;
-    box-shadow: 0 12px 28px -4px rgba(37, 99, 235, 0.42),
-                0 4px 12px rgba(37, 99, 235, 0.2) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 0 #1d4ed8, 0 16px 32px -2px rgba(37, 99, 235, 0.55) !important;
+  }
+
+  .btn-hero-primary:active {
+    transform: translateY(3px) !important;
+    box-shadow: 0 1px 0 #1d4ed8, 0 4px 12px rgba(37, 99, 235, 0.3) !important;
   }
 
   /* Micro-pulse for Streak Flame Icon */
@@ -1955,14 +1966,84 @@ body {
 .app-shell-header {
   backdrop-filter: blur(16px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  position: relative !important;
+  z-index: 10 !important;
 }
 
-[data-theme="dark"] .dash-subject-card:hover,
-[data-theme="dark"] .subject-card-item:hover,
-[data-theme="dark"] .smart-tool-card:hover,
-[data-theme="dark"] .mode-card:hover {
+[data-theme="dark"] .dash-subject-card:hover:not([data-tilt-active="true"]),
+[data-theme="dark"] .subject-card-item:hover:not([data-tilt-active="true"]),
+[data-theme="dark"] .smart-tool-card:hover:not([data-tilt-active="true"]),
+[data-theme="dark"] .mode-card:hover:not([data-tilt-active="true"]) {
   box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7),
               0 0 0 1px rgba(59, 130, 246, 0.35),
               0 0 20px -4px rgba(59, 130, 246, 0.25) !important;
 }
+
+/* ═════════════════════════════════════════════════════════════
+   9. GLOBAL 3D AMBIENT ENVIRONMENT & MULTI-LAYER PERSPECTIVE
+   ═════════════════════════════════════════════════════════════ */
+.ntmk-3d-ambient-bg {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  opacity: 0.85 !important;
+}
+
+#main-content {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.hero-3d-bg-canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  opacity: 1 !important;
+}
+
+.hero-main-content,
+.hero-student-stats,
+.hero-illustration-slot {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.card-3d-glare {
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  z-index: 5 !important;
+  opacity: 0;
+  transition: opacity 0.25s ease !important;
+}
+
+.dash-subject-card,
+.subject-card-item,
+.smart-tool-card,
+.mode-card,
+.dashboard-hero-card {
+  transform-style: preserve-3d !important;
+}
+
+.dash-sub-icon,
+.dash-sub-name,
+.dash-sub-desc,
+.dash-sub-meta,
+.dash-sub-footer,
+.dash-sub-pill,
+.tool-icon-wrapper,
+.tool-title,
+.tool-desc,
+.tool-action-arrow {
+  transform-style: preserve-3d !important;
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
 
