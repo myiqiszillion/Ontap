@@ -1038,6 +1038,7 @@ function removeVietnameseTones(str) {
 
 // Initialize data from localStorage or default
 function initData() {
+  updateSyncStatus('saving', 'Đang kết nối Cloud...');
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
@@ -1056,7 +1057,6 @@ function initData() {
   } catch (e) {
     students = STUDENTS_RAW.map(base => ({ ...base, points: 0 }));
   }
-  saveData(true);
   renderStats();
   renderTable();
   syncWithCloud(false);
@@ -1176,11 +1176,12 @@ async function syncWithCloud(isManual = false) {
     saveData(true); // save to localStorage only without pushing again
     renderStats();
     renderTable();
+    const sum = students.reduce((acc, s) => acc + (s.points || 0), 0);
     const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
-    updateSyncStatus('synced', `Đã đồng bộ (${now})`);
-    if (isManual) showToast('Đã tải và đồng bộ điểm mới nhất từ Cloud!');
+    updateSyncStatus('synced', `Đã đồng bộ (${sum}đ - ${now})`);
+    if (isManual) showToast(`Đã đồng bộ ${sum} điểm từ Cloud!`);
   } else {
-    updateSyncStatus('synced', 'Đã đồng bộ');
+    updateSyncStatus('synced', 'Đã đồng bộ Cloud');
   }
 }
 
