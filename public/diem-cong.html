@@ -1370,13 +1370,6 @@ function addPointsToStudent(stt, delta, reason = 'Cộng nhanh') {
   renderTable(target.stt);
   showToast(`+${delta} điểm cho ${target.fullName} (Tổng: ${target.points})`);
   updateHistoryBar();
-
-  setTimeout(() => {
-    const updatedRow = document.getElementById(`row-${target.stt}`);
-    if (updatedRow && (reason === 'Cộng nhanh' || reason === 'Gợi ý nhanh')) {
-      updatedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  }, 50);
 }
 
 // Handle Quick Input Submit
@@ -1431,7 +1424,7 @@ function showAmbiguitySelector(matches, delta) {
       box.style.display = 'none';
       const inputEl = document.getElementById('quick-input');
       inputEl.value = '';
-      inputEl.focus();
+      inputEl.focus({ preventScroll: true });
     };
     chipsContainer.appendChild(btn);
   });
@@ -1448,7 +1441,7 @@ function showAmbiguitySelector(matches, delta) {
     box.style.display = 'none';
     const inputEl = document.getElementById('quick-input');
     inputEl.value = '';
-    inputEl.focus();
+    inputEl.focus({ preventScroll: true });
   };
   chipsContainer.appendChild(allBtn);
 
