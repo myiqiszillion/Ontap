@@ -126,6 +126,25 @@ module.exports = async (req, res) => {
     let savedSource = 'local';
     let pointsMap = isReset ? {} : { ...incomingMap };
 
+    // Safeguard: Never overwrite existing cloud data with 0 points unless explicit reset
+    if (!isReset && !isTestEnv) {
+      try {
+        const curResp = await fetch(CLOUD_FALLBACK_URL, { signal: AbortSignal.timeout(2000) });
+        if (curResp.ok) {
+          const curJson = await curResp.json();
+          const existing = curJson.data?.points || {};
+          const existingTotal = Object.values(existing).reduce((a, b) => a + Number(b || 0), 0);
+          const incomingTotal = Object.values(incomingMap).reduce((a, b) => a + Number(b || 0), 0);
+
+          if (incomingTotal === 0 && existingTotal > 0) {
+            pointsMap = existing;
+          } else {
+            pointsMap = { ...existing, ...incomingMap };
+          }
+        }
+      } catch (e) {}
+    }
+
     // Durable cloud store (primary ultra-fast store, flat dictionary)
     try {
       const cloudResp = await fetch(CLOUD_FALLBACK_URL, {

@@ -652,11 +652,47 @@
         .sugg-name {
             font-weight: 700;
         }
+        .sugg-preview {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            background: var(--bg-gray);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .sugg-preview strong {
+            color: var(--text-primary);
+            margin-left: 2px;
+        }
         .sugg-delta {
             font-weight: 800;
             color: var(--primary);
             font-size: 0.82rem;
             margin-left: 2px;
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 16px;
+        }
+        .modal-box {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.25);
+            border: 1px solid var(--border);
+            padding: 20px;
+            max-width: 480px;
+            width: 100%;
         }
 
         /* Mobile First Responsiveness */
@@ -830,6 +866,15 @@
                 <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                 Đồng Bộ
             </button>
+            <button class="btn btn-secondary btn-sm" onclick="openRestoreModal()" title="Xem lịch sử bản sao lưu và khôi phục điểm nếu lỡ bấm nhầm">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Khôi Phục
+            </button>
+            <button class="btn btn-secondary btn-sm" id="toggle-sound-btn" onclick="toggleSound()" title="Bật/Tắt âm thanh phản hồi">
+                <svg id="sound-icon-on" width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                <svg id="sound-icon-off" width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15zM17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg>
+                <span id="sound-btn-text">Âm Thanh</span>
+            </button>
             <button class="btn btn-secondary btn-sm" onclick="exportToCSV()" title="Tải file bảng điểm Excel (.CSV UTF-8)">
                 <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 Xuất Excel
@@ -911,12 +956,16 @@
 
         <!-- Single Quick Input -->
         <form class="input-group" onsubmit="event.preventDefault(); handleQuickSubmit();">
-            <input type="text" id="quick-input" class="primary-input" placeholder="Gõ tên hoặc STT (VD: Doanh, Sơn -1, 7 -2, Bình +2)..." autofocus autocomplete="off" enterkeyhint="go" oninput="updateQuickSuggestions()">
+            <input type="text" id="quick-input" class="primary-input" placeholder="Gõ tên, STT, hoặc danh sách: Doanh 2, Sơn -1, 7, 11 (hỗ trợ phẩy/xuống dòng)..." autofocus autocomplete="off" enterkeyhint="go" oninput="updateQuickSuggestions()">
             <button type="submit" class="btn btn-primary" id="quick-submit-btn">
                 <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                 <span id="submit-btn-label">Cộng Điểm</span> (<span id="submit-btn-text">+1</span>)
             </button>
         </form>
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 6px; display: flex; align-items: center; gap: 6px;">
+            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Tự động nhận diện nhiều học sinh khi gõ dấu phẩy (,), chấm phẩy (;), hoặc dán danh sách nhiều dòng.
+        </div>
 
         <!-- Live Instant Suggestions -->
         <div id="quick-suggestions" class="quick-suggestions"></div>
@@ -1081,8 +1130,186 @@ function removeVietnameseTones(str) {
   return str.toLowerCase().trim();
 }
 
+// Sound System (Pure Web Audio API, Zero Lag)
+let audioCtx = null;
+let soundEnabled = localStorage.getItem('dc_sound_enabled') !== 'false';
+
+function toggleSound() {
+  soundEnabled = !soundEnabled;
+  localStorage.setItem('dc_sound_enabled', soundEnabled ? 'true' : 'false');
+  updateSoundIcon();
+  if (soundEnabled) {
+    playSound('add');
+    showToast('Đã bật âm thanh phản hồi');
+  } else {
+    showToast('Đã tắt âm thanh phản hồi');
+  }
+}
+
+function updateSoundIcon() {
+  const iconOn = document.getElementById('sound-icon-on');
+  const iconOff = document.getElementById('sound-icon-off');
+  const btn = document.getElementById('toggle-sound-btn');
+  if (iconOn && iconOff) {
+    iconOn.style.display = soundEnabled ? 'inline-block' : 'none';
+    iconOff.style.display = soundEnabled ? 'none' : 'inline-block';
+  }
+  if (btn) {
+    btn.classList.toggle('active', soundEnabled);
+  }
+}
+
+function playSound(type = 'add') {
+  if (!soundEnabled) return;
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    if (!audioCtx) audioCtx = new AudioContext();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    const now = audioCtx.currentTime;
+    if (type === 'add') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(784, now);
+      osc.frequency.exponentialRampToValueAtTime(1174.66, now + 0.08);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+      osc.start(now);
+      osc.stop(now + 0.1);
+    } else if (type === 'deduct') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(440, now);
+      osc.frequency.exponentialRampToValueAtTime(293.66, now + 0.09);
+      gain.gain.setValueAtTime(0.14, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.11);
+      osc.start(now);
+      osc.stop(now + 0.11);
+    } else if (type === 'success') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.05);
+      osc.frequency.setValueAtTime(783.99, now + 0.1);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
+      osc.start(now);
+      osc.stop(now + 0.2);
+    }
+  } catch (e) {}
+}
+
+// Emergency Snapshot & Recovery System
+function recordSnapshot(reason = 'Cập nhật') {
+  try {
+    const pointsMap = {};
+    let total = 0;
+    students.forEach(s => {
+      const p = s.points || 0;
+      if (p > 0) {
+        pointsMap[s.stt] = p;
+        total += p;
+      }
+    });
+
+    let snapshots = [];
+    try {
+      snapshots = JSON.parse(localStorage.getItem('dc_snapshots_v1') || '[]');
+    } catch (e) { snapshots = []; }
+
+    if (snapshots.length > 0) {
+      const top = snapshots[0];
+      if (top.total === total && JSON.stringify(top.points) === JSON.stringify(pointsMap)) {
+        return;
+      }
+    }
+
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    snapshots.unshift({
+      id: Date.now(),
+      time: timeStr,
+      total,
+      count: Object.keys(pointsMap).length,
+      points: pointsMap,
+      reason
+    });
+
+    if (snapshots.length > 25) snapshots = snapshots.slice(0, 25);
+    localStorage.setItem('dc_snapshots_v1', JSON.stringify(snapshots));
+  } catch (e) {}
+}
+
+function openRestoreModal() {
+  const modal = document.getElementById('restore-modal');
+  const listEl = document.getElementById('snapshot-list');
+  if (!modal || !listEl) return;
+
+  let snapshots = [];
+  try {
+    snapshots = JSON.parse(localStorage.getItem('dc_snapshots_v1') || '[]');
+  } catch (e) { snapshots = []; }
+
+  if (snapshots.length === 0) {
+    listEl.innerHTML = '<div style="padding: 24px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">Chưa có bản sao lưu nào. Hệ thống tự động ghi nhớ sau mỗi lần cộng điểm.</div>';
+  } else {
+    listEl.innerHTML = snapshots.map(s => {
+      return `
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: var(--bg-gray); border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 8px;">
+          <div>
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              ${s.total} điểm <span style="font-weight: 500; font-size: 0.85rem; color: var(--text-muted);">(${s.count} học sinh)</span>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 2px;">
+              ${s.time} • ${s.reason || 'Lưu tự động'}
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" onclick="restoreSnapshot(${s.id})" style="padding: 6px 14px; font-size: 0.82rem;">
+            Khôi Phục
+          </button>
+        </div>
+      `;
+    }).join('');
+  }
+
+  modal.style.display = 'flex';
+}
+
+function closeRestoreModal() {
+  const modal = document.getElementById('restore-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+function restoreSnapshot(snapshotId) {
+  let snapshots = [];
+  try {
+    snapshots = JSON.parse(localStorage.getItem('dc_snapshots_v1') || '[]');
+  } catch (e) { snapshots = []; }
+
+  const target = snapshots.find(s => s.id === snapshotId);
+  if (!target) return;
+
+  const pointsMap = target.points || {};
+  students = students.map(s => ({
+    ...s,
+    points: pointsMap[s.stt] || 0
+  }));
+
+  saveData();
+  renderStats();
+  renderTable();
+  playSound('success');
+  closeRestoreModal();
+  showToast(`Đã khôi phục thành công: ${target.total} điểm (${target.count} HS) lúc ${target.time}!`);
+}
+
 // Initialize data from localStorage or default
+let isInitialSyncDone = false;
 function initData() {
+  updateSoundIcon();
   updateSyncStatus('saving', 'Đang kết nối Cloud...');
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -1130,7 +1357,7 @@ function manualSaveCloud() {
   pushToCloud(true);
 }
 
-async function pushToCloud(isManual = false) {
+async function pushToCloud(isManual = false, isReset = false) {
   const points = {};
   let totalPoints = 0;
   let countWithPoints = 0;
@@ -1141,15 +1368,21 @@ async function pushToCloud(isManual = false) {
     if (p > 0) countWithPoints++;
   });
 
+  // Safeguard: Never overwrite cloud with 0 unless explicit reset
+  if (totalPoints === 0 && !isReset) {
+    return;
+  }
+
   updateSyncStatus('saving', 'Đang ghi Cloud vĩnh viễn...');
   let success = false;
+  const payload = isReset ? { action: 'reset_all', points: {} } : { points };
 
   // 1. Try internal server API first
   try {
     const res = await fetch('/api/bonus-points', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ points }),
+      body: JSON.stringify(payload),
       signal: AbortSignal.timeout(3500)
     });
     if (res.ok) {
@@ -1165,7 +1398,7 @@ async function pushToCloud(isManual = false) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: 'ntmk_bonus_points',
-          data: { updatedAt: new Date().toISOString(), points }
+          data: { updatedAt: new Date().toISOString(), points: isReset ? {} : points }
         }),
         signal: AbortSignal.timeout(3500)
       });
@@ -1179,6 +1412,7 @@ async function pushToCloud(isManual = false) {
     const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     updateSyncStatus('synced', `Đã lưu vĩnh viễn Cloud (${totalPoints}đ • ${now})`);
     if (isManual) {
+      playSound('success');
       showToast(`Xác nhận: Đã lưu vĩnh viễn ${totalPoints} điểm (${countWithPoints} HS) lên Cloud!`);
     }
   } else {
@@ -1253,21 +1487,36 @@ async function syncWithCloud(isManual = false) {
   }
 
   if (pointsMap && Object.keys(pointsMap).length > 0) {
+    const localTotal = students.reduce((acc, s) => acc + (s.points || 0), 0);
     // Merge cloud points to students safely
-    students = students.map(s => ({
-      ...s,
-      points: typeof pointsMap[s.stt] === 'number' ? pointsMap[s.stt] : (s.points || 0)
-    }));
+    students = students.map(s => {
+      const cp = typeof pointsMap[s.stt] === 'number' ? pointsMap[s.stt] : 0;
+      const lp = s.points || 0;
+      return {
+        ...s,
+        points: (localTotal === 0 || cp >= lp) ? cp : Math.max(cp, lp)
+      };
+    });
     saveData(true); // save to localStorage only without pushing again
+    recordSnapshot('Đồng bộ Cloud');
     renderStats();
     renderTable();
     const sum = students.reduce((acc, s) => acc + (s.points || 0), 0);
     const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
-    updateSyncStatus('synced', `Đã đồng bộ (${sum}đ - ${now})`);
-    if (isManual) showToast(`Đã đồng bộ ${sum} điểm từ Cloud!`);
+    updateSyncStatus('synced', `Đã đồng bộ (${sum}đ • ${now})`);
+    if (isManual) {
+      playSound('success');
+      showToast(`Đã đồng bộ ${sum} điểm từ Cloud!`);
+    }
   } else {
-    updateSyncStatus('synced', 'Đã đồng bộ Cloud');
+    const localTotal = students.reduce((acc, s) => acc + (s.points || 0), 0);
+    if (localTotal > 0) {
+      pushToCloud(false);
+    } else {
+      updateSyncStatus('synced', 'Đã đồng bộ Cloud');
+    }
   }
+  isInitialSyncDone = true;
 }
 
 function updateSyncStatus(type, text) {
@@ -1424,7 +1673,7 @@ function updateQuickSuggestions() {
   if (!inputEl || !suggestionsEl) return;
 
   const raw = inputEl.value.trim();
-  if (!raw) {
+  if (!raw || /[,;\n]/.test(raw)) {
     suggestionsEl.innerHTML = '';
     suggestionsEl.style.display = 'none';
     return;
@@ -1443,10 +1692,14 @@ function updateQuickSuggestions() {
 
   suggestionsEl.style.display = 'flex';
   suggestionsEl.innerHTML = matches.slice(0, 6).map(s => {
+    const curP = s.points || 0;
+    const nextP = Math.max(0, curP + delta);
+    const colorStyle = delta < 0 ? '#ef4444' : 'var(--primary)';
     return `<button type="button" class="sugg-chip" onclick="applySuggestion(${s.stt}, ${delta})">
       <span class="sugg-stt">${s.stt}</span>
       <span class="sugg-name">${s.fullName}</span>
-      <span class="sugg-delta" style="color: ${delta < 0 ? '#ef4444' : 'var(--primary)'};">${delta > 0 ? '+' : ''}${delta}</span>
+      <span class="sugg-preview">${curP}đ &rarr; <strong>${nextP}đ</strong></span>
+      <span class="sugg-delta" style="color: ${colorStyle};">${delta > 0 ? '+' : ''}${delta}</span>
     </button>`;
   }).join('');
 }
@@ -1477,11 +1730,18 @@ function addPointsToStudent(stt, delta, reason = 'Cộng nhanh') {
     time: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
   });
 
+  if (delta < 0) {
+    playSound('deduct');
+  } else {
+    playSound('add');
+  }
+
   if (window.navigator && typeof window.navigator.vibrate === 'function') {
     try { window.navigator.vibrate(20); } catch (e) {}
   }
 
   saveData();
+  recordSnapshot(`${target.fullName} (${delta > 0 ? '+' : ''}${delta})`);
   renderStats();
   renderTable(target.stt);
   const signStr = delta > 0 ? `+${delta}` : `${delta}`;
@@ -1489,11 +1749,17 @@ function addPointsToStudent(stt, delta, reason = 'Cộng nhanh') {
   updateHistoryBar();
 }
 
-// Handle Quick Input Submit
+// Handle Quick Input Submit (Supports Single & Inline Bulk)
 function handleQuickSubmit() {
   const inputEl = document.getElementById('quick-input');
   const raw = inputEl.value.trim();
   if (!raw) return;
+
+  // Auto-bulk detection: if commas, semicolons or newlines present
+  if (/[,;\n]/.test(raw)) {
+    handleInlineBulkSubmit(raw);
+    return;
+  }
 
   const parsed = parseToken(raw, currentQuickDelta);
   if (!parsed) return;
@@ -1507,6 +1773,7 @@ function handleQuickSubmit() {
   }
 
   if (matches.length === 0) {
+    playSound('deduct');
     showToast(`Không tìm thấy học sinh nào khớp với "${parsed.query}"`, true);
     return;
   }
@@ -1520,6 +1787,72 @@ function handleQuickSubmit() {
 
   // Multiple matches (e.g. "Anh" has 3 students)
   showAmbiguitySelector(matches, parsed.delta);
+}
+
+// Inline Bulk Submit (Smart Parser for comma/newline lists)
+function handleInlineBulkSubmit(raw) {
+  const tokens = raw.split(/[,;\n]+/).map(t => t.trim()).filter(Boolean);
+  if (tokens.length === 0) return;
+
+  let updatedCount = 0;
+  const updatedNames = [];
+  const notFoundList = [];
+
+  tokens.forEach(tok => {
+    const parsed = parseToken(tok, currentQuickDelta);
+    if (!parsed) return;
+    const matches = findStudents(parsed.query);
+    if (matches.length === 0) {
+      notFoundList.push(parsed.query);
+    } else {
+      let target = matches[0];
+      if (matches.length > 1) {
+        const exactStt = matches.find(s => String(s.stt) === parsed.query);
+        const exactTen = matches.find(s => s.ten.toLowerCase() === parsed.query.toLowerCase());
+        const exactFull = matches.find(s => s.fullName.toLowerCase() === parsed.query.toLowerCase());
+        target = exactStt || exactTen || exactFull || matches[0];
+      }
+      target.points = Math.max(0, (target.points || 0) + parsed.delta);
+      updatedCount++;
+      const sign = parsed.delta > 0 ? `+${parsed.delta}` : `${parsed.delta}`;
+      updatedNames.push(`${target.ten} (${sign})`);
+      actionHistory.push({
+        stt: target.stt,
+        fullName: target.fullName,
+        delta: parsed.delta,
+        time: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
+      });
+    }
+  });
+
+  if (updatedCount > 0) {
+    if (window.navigator && typeof window.navigator.vibrate === 'function') {
+      try { window.navigator.vibrate([20, 30, 20]); } catch (e) {}
+    }
+    playSound('success');
+    saveData();
+    recordSnapshot(`Cộng hàng loạt (${updatedCount} HS)`);
+    renderStats();
+    renderTable();
+    updateHistoryBar();
+
+    const inputEl = document.getElementById('quick-input');
+    if (inputEl) inputEl.value = '';
+    const suggEl = document.getElementById('quick-suggestions');
+    if (suggEl) {
+      suggEl.innerHTML = '';
+      suggEl.style.display = 'none';
+    }
+
+    let msg = `Đã cập nhật ${updatedCount} bạn: ${updatedNames.slice(0, 4).join(', ')}${updatedNames.length > 4 ? '...' : ''}`;
+    if (notFoundList.length > 0) {
+      msg += ` (Không tìm thấy: ${notFoundList.join(', ')})`;
+    }
+    showToast(msg);
+  } else if (notFoundList.length > 0) {
+    playSound('deduct');
+    showToast(`Không tìm thấy học sinh nào: ${notFoundList.join(', ')}`, true);
+  }
 }
 
 // Ambiguity Chip Resolver
@@ -1801,11 +2134,12 @@ function renderTable(highlightStt = null) {
   }).join('');
 }
 
-// Reset all points with confirmation
+// Reset all points with confirmation & snapshot safeguard
 function confirmResetAll() {
   const confirmed = confirm('Bạn có chắc chắn muốn XÓA TẤT CẢ điểm cộng của 45 học sinh về 0 không?');
   if (!confirmed) return;
 
+  recordSnapshot('Trước khi xóa tất cả điểm');
   students.forEach(s => s.points = 0);
   actionHistory = [];
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(students)); } catch (e) {}
@@ -1813,16 +2147,9 @@ function confirmResetAll() {
   renderTable();
   updateHistoryBar();
 
-  // Send explicit reset to cloud
-  fetch('/api/bonus-points', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ action: 'reset_all', points: {} })
-  }).then(() => {
-    updateSyncStatus('synced', 'Đã đặt lại về 0');
-  }).catch(() => {});
-
-  showToast('Đã xóa tất cả điểm cộng về 0');
+  pushToCloud(false, true);
+  playSound('deduct');
+  showToast('Đã xóa tất cả điểm về 0 (có thể bấm "Khôi Phục" để lấy lại)');
 }
 
 // Export to CSV with UTF-8 BOM
@@ -1953,6 +2280,16 @@ document.addEventListener('keydown', (e) => {
 // Start app
 initData();
 
+// Network status listeners
+window.addEventListener('online', () => {
+  showToast('Đã có mạng trở lại — Tự động đồng bộ Cloud...');
+  syncWithCloud(true);
+});
+window.addEventListener('offline', () => {
+  updateSyncStatus('local', 'Ngoại tuyến (Lưu an toàn máy)');
+  showToast('Mất kết nối mạng — dữ liệu vẫn lưu an toàn trên máy.', true);
+});
+
 // Auto background sync when tab becomes visible or every 30s
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') {
@@ -1966,6 +2303,26 @@ setInterval(() => {
   }
 }, 30000);
 </script>
+
+<!-- Emergency Restore Modal -->
+<div id="restore-modal" class="modal-overlay" style="display: none;" onclick="if(event.target===this) closeRestoreModal()">
+    <div class="modal-box">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <div style="font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Lịch Sử Bản Sao Lưu (Snapshots)
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="closeRestoreModal()" style="padding: 4px 10px;">&times;</button>
+        </div>
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 14px;">
+            Hệ thống tự động lưu các phiên điểm gần nhất. Bấm <strong>Khôi Phục</strong> để hoàn tác mọi nhầm lẫn:
+        </p>
+        <div id="snapshot-list" style="max-height: 280px; overflow-y: auto; padding-right: 4px;"></div>
+        <div style="display: flex; justify-content: flex-end; margin-top: 14px;">
+            <button type="button" class="btn btn-secondary btn-sm" onclick="closeRestoreModal()">Đóng</button>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
