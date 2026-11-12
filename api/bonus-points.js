@@ -19,25 +19,11 @@ module.exports = async (req, res) => {
 
   // 1. GET — fetch latest bonus points
   if (req.method === 'GET') {
-    const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-    if (supabaseUrl && supabaseKey) {
-      try {
-        const supabase = createClient(supabaseUrl, supabaseKey);
-        const { data, error } = await supabase.from('bonus_points').select('*').limit(100);
-        if (!error && data && data.length > 0) {
-          const pointsMap = {};
-          data.forEach(r => { pointsMap[r.stt] = r.points || 0; });
-          return res.status(200).json({ source: 'supabase', points: pointsMap, data });
-        }
-      } catch (e) {}
-    }
-
-    // Durable Cloud Store
+    // Durable Cloud Store (ultra-fast primary source ~200ms)
     try {
       const resp = await fetch(CLOUD_FALLBACK_URL, {
         headers: { 'Cache-Control': 'no-cache' },
-        signal: AbortSignal.timeout(4000)
+        signal: AbortSignal.timeout(3000)
       });
       if (resp.ok) {
         const json = await resp.json();
@@ -61,6 +47,21 @@ module.exports = async (req, res) => {
         }
       }
     } catch (e) {}
+
+    // Supabase secondary fallback
+    const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (supabaseUrl && supabaseKey) {
+      try {
+        const supabase = createClient(supabaseUrl, supabaseKey);
+        const { data, error } = await supabase.from('bonus_points').select('*').limit(100);
+        if (!error && data && data.length > 0) {
+          const pointsMap = {};
+          data.forEach(r => { pointsMap[r.stt] = r.points || 0; });
+          return res.status(200).json({ source: 'supabase', points: pointsMap, data });
+        }
+      } catch (e) {}
+    }
 
     // Local file store
     try {
@@ -97,25 +98,10 @@ module.exports = async (req, res) => {
       return res.status(400).json({ error: 'Payload must contain points or students' });
     }
 
+    const updatedAt = new Date().toISOString();
     let savedSource = 'local';
 
-    // Supabase if available
-    const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-    if (supabaseUrl && supabaseKey) {
-      try {
-        const supabase = createClient(supabaseUrl, supabaseKey);
-        const rows = Object.entries(pointsMap).map(([stt, points]) => ({
-          stt: Number(stt),
-          points: Number(points),
-          updated_at: new Date().toISOString()
-        }));
-        const { error } = await supabase.from('bonus_points').upsert(rows, { onConflict: 'stt' });
-        if (!error) savedSource = 'supabase';
-      } catch (e) {}
-    }
-
-    // Durable cloud store (flat dictionary guaranteed 200, no Jackson 500 error)
+    // Durable cloud store (primary ultra-fast store, flat dictionary)
     try {
       const cloudResp = await fetch(CLOUD_FALLBACK_URL, {
         method: 'PUT',
@@ -123,11 +109,11 @@ module.exports = async (req, res) => {
         body: JSON.stringify({
           name: 'ntmk_bonus_points',
           data: {
-            updatedAt: new Date().toISOString(),
+            updatedAt,
             points: pointsMap
           }
         }),
-        signal: AbortSignal.timeout(4000)
+        signal: AbortSignal.timeout(3000)
       });
       if (cloudResp.ok) savedSource = 'cloud_kv';
     } catch (e) {}
@@ -138,12 +124,27 @@ module.exports = async (req, res) => {
       fs.writeFileSync(localFile, JSON.stringify(pointsMap, null, 2), 'utf8');
     } catch (e) {}
 
+    // Non-blocking background sync to Supabase (does not hold HTTP response)
+    const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (supabaseUrl && supabaseKey) {
+      try {
+        const supabase = createClient(supabaseUrl, supabaseKey);
+        const rows = Object.entries(pointsMap).map(([stt, points]) => ({
+          stt: Number(stt),
+          points: Number(points),
+          updated_at: updatedAt
+        }));
+        supabase.from('bonus_points').upsert(rows, { onConflict: 'stt' }).then(() => {}).catch(() => {});
+      } catch (e) {}
+    }
+
     return res.status(200).json({
       success: true,
       savedSource,
       points: pointsMap,
       count: Object.keys(pointsMap).length,
-      updatedAt: new Date().toISOString()
+      updatedAt
     });
   }
 

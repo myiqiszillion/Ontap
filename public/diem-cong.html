@@ -1078,7 +1078,7 @@ function scheduleCloudPush() {
   clearTimeout(cloudPushTimer);
   cloudPushTimer = setTimeout(() => {
     pushToCloud();
-  }, 400);
+  }, 80);
 }
 
 async function pushToCloud() {
@@ -1093,7 +1093,7 @@ async function pushToCloud() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ points }),
-      signal: AbortSignal.timeout(6000)
+      signal: AbortSignal.timeout(3500)
     });
     if (res.ok) {
       const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
@@ -1111,7 +1111,7 @@ async function pushToCloud() {
         name: 'ntmk_bonus_points',
         data: { updatedAt: new Date().toISOString(), points }
       }),
-      signal: AbortSignal.timeout(6000)
+      signal: AbortSignal.timeout(3500)
     });
     if (directRes.ok) {
       const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
@@ -1707,27 +1707,85 @@ function confirmResetAll() {
 
 // Export to CSV with UTF-8 BOM
 function exportToCSV() {
-  const headers = ['STT', 'Mã Học Sinh', 'Họ Đệm', 'Tên', 'Họ Và Tên', 'Điểm Cộng'];
-  const rows = students.map(s => [
-    s.stt,
-    `"${s.id}"`,
-    `"${s.ho}"`,
-    `"${s.ten}"`,
-    `"${s.fullName}"`,
-    s.points || 0
-  ]);
+  exportToExcel();
+}
 
-  const csvContent = '\uFEFF' + [headers.join(','), ...rows.map(e => e.join(','))].join('\r\n');
-  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+function exportToExcel() {
+  const totalPoints = students.reduce((sum, s) => sum + (s.points || 0), 0);
+  const studentsWithPoints = students.filter(s => (s.points || 0) > 0).length;
+
+  const rowsHtml = students.map(s => `
+    <tr>
+      <td style="text-align: center; border: 1px solid #cbd5e1; padding: 6px;">${s.stt}</td>
+      <td style="mso-number-format:'\\@'; border: 1px solid #cbd5e1; padding: 6px; text-align: center;">${s.id}</td>
+      <td style="border: 1px solid #cbd5e1; padding: 6px;">${s.fullName}</td>
+      <td style="border: 1px solid #cbd5e1; padding: 6px; text-align: center;">${s.ten}</td>
+      <td style="border: 1px solid #cbd5e1; padding: 6px; text-align: center; font-weight: bold; color: ${s.points > 0 ? '#059669' : '#64748b'};">${s.points || 0}</td>
+    </tr>
+  `).join('');
+
+  const template = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--[if gte mso 9]>
+  <xml>
+    <x:ExcelWorkbook>
+      <x:ExcelWorksheets>
+        <x:ExcelWorksheet>
+          <x:Name>BangDiemCong</x:Name>
+          <x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>
+        </x:ExcelWorksheet>
+      </x:ExcelWorksheets>
+    </x:ExcelWorkbook>
+  </xml>
+  <![endif]-->
+  <style>
+    th { background-color: #10b981; color: #ffffff; font-weight: bold; border: 1px solid #059669; padding: 8px; font-size: 11pt; }
+    td { font-size: 10.5pt; font-family: 'Calibri', 'Arial', sans-serif; }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th colspan="5" style="background-color: #065f46; color: #ffffff; font-size: 14pt; padding: 12px; text-align: center;">
+        BẢNG ĐIỂM CỘNG BÀI TẬP — THPT NGUYỄN THỊ MINH KHAI
+      </th>
+    </tr>
+    <tr>
+      <td colspan="5" style="padding: 6px; color: #475569; font-style: italic;">
+        Ngày xuất: ${new Date().toLocaleDateString('vi-VN')} | Sĩ số: 45 | Số HS có điểm: ${studentsWithPoints} | Tổng điểm: ${totalPoints}
+      </td>
+    </tr>
+    <thead>
+      <tr>
+        <th style="width: 50px; text-align: center;">STT</th>
+        <th style="width: 140px; text-align: center;">Mã Học Sinh</th>
+        <th style="width: 220px;">Họ Và Tên</th>
+        <th style="width: 80px; text-align: center;">Tên</th>
+        <th style="width: 90px; text-align: center;">Điểm Cộng</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${rowsHtml}
+      <tr style="background-color: #f1f5f9; font-weight: bold;">
+        <td colspan="4" style="text-align: right; border: 1px solid #cbd5e1; padding: 8px;">TỔNG CỘNG ĐIỂM:</td>
+        <td style="text-align: center; border: 1px solid #cbd5e1; padding: 8px; color: #059669; font-size: 12pt;">${totalPoints}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>`;
+
+  const blob = new Blob([template], { type: 'application/vnd.ms-excel;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `Bang_Diem_Cong_NTMK_${new Date().toISOString().slice(0, 10)}.csv`;
+  a.download = `Bang_Diem_Cong_NTMK_${new Date().toISOString().slice(0, 10)}.xls`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
-  showToast('Đã xuất file bảng điểm Excel (.CSV)!');
+  showToast('Đã xuất file bảng điểm Excel (.XLS)!');
 }
 
 // Copy table text for Excel/Google Sheets
