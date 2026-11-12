@@ -1168,10 +1168,10 @@ async function syncWithCloud(isManual = false) {
   }
 
   if (pointsMap && Object.keys(pointsMap).length > 0) {
-    // Merge cloud points to students
-    students = STUDENTS_RAW.map(base => ({
-      ...base,
-      points: typeof pointsMap[base.stt] === 'number' ? pointsMap[base.stt] : (base.points || 0)
+    // Merge cloud points to students safely
+    students = students.map(s => ({
+      ...s,
+      points: typeof pointsMap[s.stt] === 'number' ? pointsMap[s.stt] : (s.points || 0)
     }));
     saveData(true); // save to localStorage only without pushing again
     renderStats();
@@ -1691,10 +1691,20 @@ function confirmResetAll() {
 
   students.forEach(s => s.points = 0);
   actionHistory = [];
-  saveData();
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(students)); } catch (e) {}
   renderStats();
   renderTable();
   updateHistoryBar();
+
+  // Send explicit reset to cloud
+  fetch('/api/bonus-points', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action: 'reset_all', points: {} })
+  }).then(() => {
+    updateSyncStatus('synced', 'Đã đặt lại về 0');
+  }).catch(() => {});
+
   showToast('Đã xóa tất cả điểm cộng về 0');
 }
 
