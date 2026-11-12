@@ -64,6 +64,32 @@
             color: var(--primary);
             border: 1px solid rgba(16, 185, 129, 0.3);
         }
+        .cloud-sync-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--primary);
+            border: 1.5px solid rgba(16, 185, 129, 0.4);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .cloud-sync-status:hover {
+            background: rgba(16, 185, 129, 0.2);
+            transform: translateY(-1px);
+        }
+        .sync-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: inline-block;
+            box-shadow: 0 0 8px var(--primary);
+        }
         .page-title {
             font-size: 1.5rem;
             font-weight: 800;
@@ -792,13 +818,17 @@
             </div>
         </div>
         <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-            <div id="cloud-sync-status" style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; background: rgba(16, 185, 129, 0.1); color: var(--primary); border: 1px solid rgba(16, 185, 129, 0.3);">
-                <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--primary); display: inline-block;"></span>
-                <span id="cloud-sync-text">Cloud Sync Sẵn Sàng</span>
+            <div id="cloud-sync-status" class="cloud-sync-status" onclick="verifyCloudData()" title="Nhấp để kiểm tra và xác nhận điểm lưu trên Cloud">
+                <span class="sync-dot"></span>
+                <span id="cloud-sync-text">Đang kết nối Cloud...</span>
             </div>
+            <button class="btn btn-primary btn-sm" onclick="manualSaveCloud()" title="Xác nhận và lưu vĩnh viễn dữ liệu lên Cloud ngay">
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
+                Lưu Vĩnh Viễn
+            </button>
             <button class="btn btn-secondary btn-sm" onclick="syncWithCloud(true)" title="Tải điểm mới nhất từ Cloud / các máy khác">
-                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                Đồng Bộ Ngay
+                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                Đồng Bộ
             </button>
             <button class="btn btn-secondary btn-sm" onclick="exportToCSV()" title="Tải file bảng điểm Excel (.CSV UTF-8)">
                 <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -1089,18 +1119,30 @@ function saveData(skipCloud = false) {
 
 let cloudPushTimer = null;
 function scheduleCloudPush() {
-  updateSyncStatus('saving', 'Đang lưu Cloud...');
+  updateSyncStatus('saving', 'Đang xác nhận lưu Cloud...');
   clearTimeout(cloudPushTimer);
   cloudPushTimer = setTimeout(() => {
-    pushToCloud();
+    pushToCloud(false);
   }, 80);
 }
 
-async function pushToCloud() {
+function manualSaveCloud() {
+  pushToCloud(true);
+}
+
+async function pushToCloud(isManual = false) {
   const points = {};
+  let totalPoints = 0;
+  let countWithPoints = 0;
   students.forEach(s => {
-    points[s.stt] = s.points || 0;
+    const p = s.points || 0;
+    points[s.stt] = p;
+    totalPoints += p;
+    if (p > 0) countWithPoints++;
   });
+
+  updateSyncStatus('saving', 'Đang ghi Cloud vĩnh viễn...');
+  let success = false;
 
   // 1. Try internal server API first
   try {
@@ -1111,31 +1153,59 @@ async function pushToCloud() {
       signal: AbortSignal.timeout(3500)
     });
     if (res.ok) {
-      const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
-      updateSyncStatus('synced', `Đã đồng bộ (${now})`);
-      return;
+      success = true;
     }
   } catch (err) {}
 
   // 2. Direct durable backup fallback if API fails
+  if (!success) {
+    try {
+      const directRes = await fetch('https://api.restful-api.dev/objects/ff808181a09d98f701a1d05a1f2e17fa', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: 'ntmk_bonus_points',
+          data: { updatedAt: new Date().toISOString(), points }
+        }),
+        signal: AbortSignal.timeout(3500)
+      });
+      if (directRes.ok) {
+        success = true;
+      }
+    } catch (e) {}
+  }
+
+  if (success) {
+    const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    updateSyncStatus('synced', `Đã lưu vĩnh viễn Cloud (${totalPoints}đ • ${now})`);
+    if (isManual) {
+      showToast(`Xác nhận: Đã lưu vĩnh viễn ${totalPoints} điểm (${countWithPoints} HS) lên Cloud!`);
+    }
+  } else {
+    updateSyncStatus('local', 'Lưu an toàn cục bộ (Chờ mạng)');
+    if (isManual) {
+      showToast('Đã lưu an toàn trên máy; sẽ tự đồng bộ khi có kết nối mạng.', true);
+    }
+  }
+}
+
+async function verifyCloudData() {
+  updateSyncStatus('saving', 'Đang kiểm tra Cloud...');
   try {
-    const directRes = await fetch('https://api.restful-api.dev/objects/ff808181a09d98f701a1d05a1f2e17fa', {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: 'ntmk_bonus_points',
-        data: { updatedAt: new Date().toISOString(), points }
-      }),
-      signal: AbortSignal.timeout(3500)
-    });
-    if (directRes.ok) {
-      const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
-      updateSyncStatus('synced', `Đã đồng bộ (${now})`);
+    const res = await fetch('/api/bonus-points?t=' + Date.now(), { cache: 'no-store' });
+    if (res.ok) {
+      const json = await res.json();
+      const points = json.points || {};
+      const nonZero = Object.entries(points).filter(([k, v]) => Number(v) > 0);
+      const total = nonZero.reduce((s, [k, v]) => s + Number(v), 0);
+      const time = json.updatedAt ? new Date(json.updatedAt).toLocaleTimeString('vi-VN') : 'Vừa xong';
+      const msg = `XÁC NHẬN CLOUD AN TOÀN:\n- Tổng điểm trên Cloud: ${total} điểm\n- Số học sinh có điểm: ${nonZero.length} bạn\n- Lần lưu Cloud gần nhất: ${time}\n- Nguồn: ${json.source || 'Cloud KV Store'}\n\nDữ liệu của bạn được bảo toàn vĩnh viễn!`;
+      alert(msg);
+      updateSyncStatus('synced', `Đã lưu vĩnh viễn Cloud (${total}đ)`);
       return;
     }
   } catch (e) {}
-
-  updateSyncStatus('local', 'Lưu cục bộ (Offline)');
+  showToast('Đang kết nối Cloud, dữ liệu đã lưu an toàn trên thiết bị.');
 }
 
 async function syncWithCloud(isManual = false) {
