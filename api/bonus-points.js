@@ -9,6 +9,9 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
 
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
@@ -23,19 +26,38 @@ module.exports = async (req, res) => {
         const supabase = createClient(supabaseUrl, supabaseKey);
         const { data, error } = await supabase.from('bonus_points').select('*').limit(100);
         if (!error && data && data.length > 0) {
-          return res.status(200).json({ source: 'supabase', data });
+          const pointsMap = {};
+          data.forEach(r => { pointsMap[r.stt] = r.points || 0; });
+          return res.status(200).json({ source: 'supabase', points: pointsMap, data });
         }
       } catch (e) {}
     }
 
     // Durable Cloud Store
     try {
-      const resp = await fetch(CLOUD_FALLBACK_URL, { signal: AbortSignal.timeout(4000) });
+      const resp = await fetch(CLOUD_FALLBACK_URL, {
+        headers: { 'Cache-Control': 'no-cache' },
+        signal: AbortSignal.timeout(4000)
+      });
       if (resp.ok) {
         const json = await resp.json();
-        const students = json.data?.students || [];
-        if (Array.isArray(students) && students.length > 0) {
-          return res.status(200).json({ source: 'cloud_kv', data: students, updatedAt: json.data?.updatedAt });
+        const pointsMap = json.data?.points || {};
+        const studentsArr = Array.isArray(json.data?.students) ? json.data.students : [];
+        if (Object.keys(pointsMap).length > 0 || studentsArr.length > 0) {
+          const mergedPoints = { ...pointsMap };
+          studentsArr.forEach(s => {
+            if (s.stt != null) mergedPoints[s.stt] = s.points || 0;
+          });
+          const dataList = Object.entries(mergedPoints).map(([stt, points]) => ({
+            stt: Number(stt),
+            points: Number(points)
+          }));
+          return res.status(200).json({
+            source: 'cloud_kv',
+            points: mergedPoints,
+            data: dataList,
+            updatedAt: json.data?.updatedAt
+          });
         }
       }
     } catch (e) {}
@@ -45,18 +67,34 @@ module.exports = async (req, res) => {
       const localFile = path.join(process.cwd(), 'data', 'bonus-points.json');
       if (fs.existsSync(localFile)) {
         const fileData = JSON.parse(fs.readFileSync(localFile, 'utf8'));
-        return res.status(200).json({ source: 'local_file', data: fileData });
+        const pointsMap = {};
+        if (Array.isArray(fileData)) {
+          fileData.forEach(r => { pointsMap[r.stt] = r.points || 0; });
+        }
+        return res.status(200).json({ source: 'local_file', points: pointsMap, data: fileData });
       }
     } catch (e) {}
 
-    return res.status(200).json({ source: 'empty', data: [] });
+    return res.status(200).json({ source: 'empty', points: {}, data: [] });
   }
 
   // 2. POST / PUT — save bonus points
   if (req.method === 'POST' || req.method === 'PUT') {
-    const studentsData = req.body?.students || req.body || [];
-    if (!Array.isArray(studentsData)) {
-      return res.status(400).json({ error: 'Payload must contain students array' });
+    let body = req.body;
+    if (typeof body === 'string') {
+      try { body = JSON.parse(body); } catch (e) {}
+    }
+
+    const pointsInput = body?.points || {};
+    const studentsInput = Array.isArray(body?.students) ? body.students : (Array.isArray(body) ? body : []);
+
+    const pointsMap = { ...pointsInput };
+    studentsInput.forEach(s => {
+      if (s.stt != null) pointsMap[s.stt] = s.points || 0;
+    });
+
+    if (Object.keys(pointsMap).length === 0 && studentsInput.length === 0) {
+      return res.status(400).json({ error: 'Payload must contain points or students' });
     }
 
     let savedSource = 'local';
@@ -67,11 +105,9 @@ module.exports = async (req, res) => {
     if (supabaseUrl && supabaseKey) {
       try {
         const supabase = createClient(supabaseUrl, supabaseKey);
-        const rows = studentsData.map(s => ({
-          stt: s.stt,
-          student_id: s.id,
-          full_name: s.fullName,
-          points: s.points || 0,
+        const rows = Object.entries(pointsMap).map(([stt, points]) => ({
+          stt: Number(stt),
+          points: Number(points),
           updated_at: new Date().toISOString()
         }));
         const { error } = await supabase.from('bonus_points').upsert(rows, { onConflict: 'stt' });
@@ -79,7 +115,7 @@ module.exports = async (req, res) => {
       } catch (e) {}
     }
 
-    // Always update durable cloud store
+    // Durable cloud store (flat dictionary guaranteed 200, no Jackson 500 error)
     try {
       const cloudResp = await fetch(CLOUD_FALLBACK_URL, {
         method: 'PUT',
@@ -88,7 +124,7 @@ module.exports = async (req, res) => {
           name: 'ntmk_bonus_points',
           data: {
             updatedAt: new Date().toISOString(),
-            students: studentsData
+            points: pointsMap
           }
         }),
         signal: AbortSignal.timeout(4000)
@@ -99,13 +135,14 @@ module.exports = async (req, res) => {
     // Local file write
     try {
       const localFile = path.join(process.cwd(), 'data', 'bonus-points.json');
-      fs.writeFileSync(localFile, JSON.stringify(studentsData, null, 2), 'utf8');
+      fs.writeFileSync(localFile, JSON.stringify(pointsMap, null, 2), 'utf8');
     } catch (e) {}
 
     return res.status(200).json({
       success: true,
       savedSource,
-      count: studentsData.length,
+      points: pointsMap,
+      count: Object.keys(pointsMap).length,
       updatedAt: new Date().toISOString()
     });
   }
