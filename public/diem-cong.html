@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sổ Điểm Cộng Bài Tập — THPT Nguyễn Thị Minh Khai</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-card: rgba(255, 255, 255, 0.9);
+            --glass-border: rgba(226, 232, 240, 0.8);
+            --table-hover: #f1f5f9;
+        }
+        [data-theme="dark"] {
+            --glass-bg: rgba(15, 23, 42, 0.85);
+            --glass-card: rgba(21, 26, 46, 0.85);
+            --glass-border: rgba(99, 102, 241, 0.16);
+            --table-hover: rgba(30, 41, 59, 0.7);
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-page);
+            color: var(--text-primary);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Top Header */
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 24px 0 16px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+        .header-title-group {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .header-badge-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--primary);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .page-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .stat-card-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stat-card-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1.1;
+            margin-top: 4px;
+        }
+        .stat-card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        /* Action Panels */
+        .panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+        }
+        .panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .panel-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Input Controls */
+        .input-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .primary-input {
+            flex: 1;
+            min-width: 260px;
+            padding: 14px 18px;
+            font-size: 1rem;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid var(--border);
+            background: var(--bg-page);
+            color: var(--text-primary);
+            font-family: inherit;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        .primary-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-soft);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #059669);
+            color: #ffffff;
+            box-shadow: 0 4px 12px var(--primary-glow);
+        }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px var(--primary-glow);
+        }
+        .btn-secondary {
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            border-color: var(--border);
+        }
+        .btn-secondary:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-hover);
+        }
+        .btn-danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+        .btn-danger:hover {
+            background: #ef4444;
+            color: #ffffff;
+        }
+        .btn-sm {
+            padding: 6px 12px;
+            font-size: 0.82rem;
+            border-radius: 8px;
+        }
+
+        /* Ambiguity Resolution Box */
+        .ambiguity-box {
+            display: none;
+            margin-top: 14px;
+            padding: 14px 18px;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1.5px solid rgba(245, 158, 11, 0.4);
+            border-radius: var(--radius-sm);
+        }
+        .ambiguity-title {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .ambiguity-chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .ambiguity-chip {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.86rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .ambiguity-chip:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        /* Bulk Section */
+        .bulk-container {
+            display: none;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px dashed var(--border);
+        }
+        .bulk-textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 14px;
+            font-size: 0.92rem;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid var(--border);
+            background: var(--bg-page);
+            color: var(--text-primary);
+            font-family: inherit;
+            resize: vertical;
+            outline: none;
+            margin-bottom: 12px;
+        }
+        .bulk-textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-soft);
+        }
+        .bulk-hint {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        /* Filter & Table Toolbar */
+        .toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 220px;
+            max-width: 380px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px 14px 10px 38px;
+            font-size: 0.88rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            background: var(--bg-page);
+            color: var(--text-primary);
+            font-family: inherit;
+            outline: none;
+        }
+        .search-input:focus {
+            border-color: var(--primary);
+        }
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 6px;
+            background: var(--bg-page);
+            padding: 3px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+        .filter-btn {
+            padding: 6px 14px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .filter-btn.active {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* Table Design */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .student-table th {
+            background: var(--bg-gray);
+            padding: 12px 16px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+        .student-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-primary);
+            vertical-align: middle;
+            transition: background 0.15s ease;
+        }
+        .student-table tbody tr:hover td {
+            background: var(--table-hover);
+        }
+        .student-table tbody tr.row-just-updated td {
+            background: rgba(16, 185, 129, 0.15) !important;
+            transition: background 0.8s ease;
+        }
+
+        .stt-cell {
+            font-weight: 700;
+            color: var(--text-muted);
+            width: 50px;
+            text-align: center;
+        }
+        .id-cell {
+            font-family: monospace;
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+        .name-cell {
+            font-weight: 600;
+        }
+        .name-sub {
+            color: var(--text-muted);
+            font-weight: normal;
+            font-size: 0.82rem;
+            margin-left: 4px;
+        }
+        .badge-ten {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .points-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 44px;
+            padding: 4px 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            border-radius: 999px;
+            background: var(--bg-gray);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .points-badge.has-points {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.08));
+            color: var(--primary);
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
+        }
+        .points-badge:hover {
+            transform: scale(1.08);
+        }
+
+        .actions-cell {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+        .point-action-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: all 0.15s ease;
+        }
+        .point-action-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-soft);
+            transform: translateY(-1px);
+        }
+        .point-action-btn.btn-sub:hover {
+            border-color: #ef4444;
+            color: #ef4444;
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        /* History Toast / Log Bar */
+        .history-bar {
+            margin-top: 14px;
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-gray);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.84rem;
+        }
+        .history-text {
+            color: var(--text-secondary);
+        }
+        .undo-link {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        /* Toast Popup */
+        .toast-msg {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #1e293b;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            z-index: 9999;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .toast-msg.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header class="page-header">
+        <div class="header-title-group">
+            <img src="assets/logo.png" alt="NTMK Logo" style="width: 44px; height: 44px; border-radius: 12px; object-fit: cover;">
+            <div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <h1 class="page-title">Sổ Điểm Cộng Học Sinh</h1>
+                    <span class="header-badge-tag">
+                        <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Trang Ẩn Giáo Viên
+                    </span>
+                </div>
+                <div class="page-desc">Danh sách 45 học sinh — Ghi nhận và cộng điểm bài tập tự động</div>
+            </div>
+        </div>
+        <div style="display: flex; gap: 8px;">
+            <button class="btn btn-secondary btn-sm" onclick="exportToCSV()" title="Tải file bảng điểm Excel (.CSV UTF-8)">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Xuất Excel
+            </button>
+            <button class="btn btn-secondary btn-sm" onclick="copyTableText()" title="Sao chép bảng kết quả vào clipboard để dán vào Excel/Sheets">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                Sao Chép Bảng
+            </button>
+            <button class="btn btn-danger btn-sm" onclick="confirmResetAll()" title="Đặt lại tất cả điểm về 0">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                Xóa Điểm
+            </button>
+        </div>
+    </header>
+
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div>
+                <div class="stat-card-label">Sĩ Số Học Sinh</div>
+                <div class="stat-card-value" id="stat-total-students">45</div>
+            </div>
+            <div class="stat-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div>
+                <div class="stat-card-label">HS Đã Có Điểm Cộng</div>
+                <div class="stat-card-value" id="stat-students-with-points" style="color: var(--primary);">0</div>
+            </div>
+            <div class="stat-card-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div>
+                <div class="stat-card-label">Tổng Điểm Đã Cộng</div>
+                <div class="stat-card-value" id="stat-total-points" style="color: #8b5cf6;">0</div>
+            </div>
+            <div class="stat-card-icon" style="background: rgba(139, 92, 246, 0.12); color: #8b5cf6;">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div>
+                <div class="stat-card-label">Lần Thao Tác Gần Nhất</div>
+                <div class="stat-card-value" id="stat-last-action" style="font-size: 1.15rem; font-weight: 600; color: var(--text-secondary); margin-top: 8px;">Chưa có</div>
+            </div>
+            <div class="stat-card-icon" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Add Panel -->
+    <div class="panel">
+        <div class="panel-header">
+            <div class="panel-title">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Ghi Tên Cộng Điểm Nhanh
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm" id="toggle-bulk-btn" onclick="toggleBulkMode()">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                <span id="bulk-toggle-text">Nhập Số Lượng Lớn (SLL)</span>
+            </button>
+        </div>
+
+        <!-- Single Quick Input -->
+        <div class="input-group">
+            <input type="text" id="quick-input" class="primary-input" placeholder="Gõ tên HS (VD: Doanh, Sơn +2, 7, Trương Minh Anh) rồi nhấn Enter..." autofocus autocomplete="off">
+            <button type="button" class="btn btn-primary" onclick="handleQuickSubmit()">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                Cộng Điểm (+1)
+            </button>
+        </div>
+
+        <!-- Ambiguity Resolution Box -->
+        <div id="ambiguity-box" class="ambiguity-box">
+            <div class="ambiguity-title">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <span id="ambiguity-desc">Có nhiều học sinh trùng tên, vui lòng bấm chọn đúng bạn:</span>
+            </div>
+            <div class="ambiguity-chips" id="ambiguity-chips"></div>
+        </div>
+
+        <!-- Bulk SLL Mode -->
+        <div id="bulk-container" class="bulk-container">
+            <div class="bulk-hint">
+                Nhập danh sách học sinh theo <strong>tên</strong> hoặc <strong>STT</strong>, phân cách bằng <strong>dấu phẩy</strong> hoặc <strong>xuống dòng</strong>.<br>
+                Hỗ trợ chỉ định điểm kèm theo: <code>Doanh, Sơn +2, Bình 2, 7, Trương Minh Anh</code>
+            </div>
+            <textarea id="bulk-textarea" class="bulk-textarea" placeholder="Ví dụ:&#10;An&#10;Bình +2&#10;Doanh&#10;8&#10;Sơn 2&#10;Vũ Thị Quỳnh Anh"></textarea>
+            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <label style="font-size: 0.88rem; font-weight: 600; color: var(--text-secondary);">Điểm mặc định nếu không ghi số:</label>
+                <select id="bulk-default-delta" style="padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-family: inherit;">
+                    <option value="1" selected>+1 điểm</option>
+                    <option value="2">+2 điểm</option>
+                    <option value="3">+3 điểm</option>
+                    <option value="5">+5 điểm</option>
+                </select>
+                <button type="button" class="btn btn-primary" onclick="handleBulkSubmit()">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    Xác Nhận Cộng Điểm Hàng Loạt
+                </button>
+            </div>
+            <div id="bulk-result-summary" style="margin-top: 12px; font-size: 0.88rem; display: none;"></div>
+        </div>
+
+        <!-- History / Undo Bar -->
+        <div class="history-bar" id="history-bar" style="display: none;">
+            <div class="history-text" id="history-text"></div>
+            <span class="undo-link" onclick="undoLastAction()">Hoàn tác (Ctrl + Z)</span>
+        </div>
+    </div>
+
+    <!-- Student Table Panel -->
+    <div class="panel">
+        <div class="toolbar">
+            <div class="search-box">
+                <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" id="table-search" class="search-input" placeholder="Tìm tên, mã HS, STT..." oninput="renderTable()">
+            </div>
+            <div class="filter-buttons">
+                <button type="button" class="filter-btn active" id="filter-all-btn" onclick="setFilter('all')">Tất Cả (45)</button>
+                <button type="button" class="filter-btn" id="filter-has-points-btn" onclick="setFilter('has_points')">Có Điểm (>0)</button>
+                <button type="button" class="filter-btn" id="filter-zero-btn" onclick="setFilter('zero')">Điểm 0</button>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center;">
+                <label style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">Sắp xếp:</label>
+                <select id="table-sort" onchange="renderTable()" style="padding: 6px 12px; font-size: 0.82rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); font-family: inherit;">
+                    <option value="stt_asc" selected>STT (1 → 45)</option>
+                    <option value="points_desc">Điểm cao nhất</option>
+                    <option value="name_asc">Tên (A → Z)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th class="stt-cell">STT</th>
+                        <th>Mã HS</th>
+                        <th>Họ và Tên</th>
+                        <th>Tên Gọi</th>
+                        <th style="text-align: center;">Điểm Cộng</th>
+                        <th style="text-align: center;">Thao Tác Nhanh</th>
+                    </tr>
+                </thead>
+                <tbody id="student-tbody">
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast-msg"></div>
+
+<script>
+// 45 students data transcribed verbatim from class list images
+const STUDENTS_RAW = [
+  { stt: 1, id: "2503892386", ho: "Nguyễn Ngọc Quỳnh", ten: "An", fullName: "Nguyễn Ngọc Quỳnh An" },
+  { stt: 2, id: "2503892406", ho: "Nguyễn Thị Quỳnh", ten: "Anh", fullName: "Nguyễn Thị Quỳnh Anh" },
+  { stt: 3, id: "2503892426", ho: "Trương Minh", ten: "Anh", fullName: "Trương Minh Anh" },
+  { stt: 4, id: "2503892446", ho: "Lê Minh", ten: "Ánh", fullName: "Lê Minh Ánh" },
+  { stt: 5, id: "2503892466", ho: "Nguyễn Văn Gia", ten: "Bảo", fullName: "Nguyễn Văn Gia Bảo" },
+  { stt: 6, id: "2503892486", ho: "Bùi Hải", ten: "Bình", fullName: "Bùi Hải Bình" },
+  { stt: 7, id: "2503892506", ho: "Đặng Thế", ten: "Doanh", fullName: "Đặng Thế Doanh" },
+  { stt: 8, id: "2503892526", ho: "Phạm Trung", ten: "Dũng", fullName: "Phạm Trung Dũng" },
+  { stt: 9, id: "2503892546", ho: "Doãn Viết", ten: "Đại", fullName: "Doãn Viết Đại" },
+  { stt: 10, id: "2503892566", ho: "Đỗ Quốc", ten: "Đạt", fullName: "Đỗ Quốc Đạt" },
+  { stt: 11, id: "2503892586", ho: "Nguyễn Võ Trung", ten: "Đô", fullName: "Nguyễn Võ Trung Đô" },
+  { stt: 12, id: "2503892606", ho: "Lư Thiên", ten: "Đức", fullName: "Lư Thiên Đức" },
+  { stt: 13, id: "2602184606", ho: "Nguyễn Thị Thu", ten: "Hiền", fullName: "Nguyễn Thị Thu Hiền" },
+  { stt: 14, id: "2503892626", ho: "Đoàn Trọng", ten: "Hiển", fullName: "Đoàn Trọng Hiển" },
+  { stt: 15, id: "2503892646", ho: "Nguyễn Thị Thanh", ten: "Hoài", fullName: "Nguyễn Thị Thanh Hoài" },
+  { stt: 16, id: "2503892666", ho: "Nguyễn Bá Huy", ten: "Hoàng", fullName: "Nguyễn Bá Huy Hoàng" },
+  { stt: 17, id: "2503892706", ho: "Phạm Khánh", ten: "Hưng", fullName: "Phạm Khánh Hưng" },
+  { stt: 18, id: "2503892726", ho: "Lê Thị Khánh", ten: "Linh", fullName: "Lê Thị Khánh Linh" },
+  { stt: 19, id: "2503892746", ho: "Nguyễn Thị Trà", ten: "Mi", fullName: "Nguyễn Thị Trà Mi" },
+  { stt: 20, id: "2503892766", ho: "Trần Đình Hoàng", ten: "Minh", fullName: "Trần Đình Hoàng Minh" },
+  { stt: 21, id: "2503892786", ho: "Nguyễn Ngọc Trúc", ten: "Ngân", fullName: "Nguyễn Ngọc Trúc Ngân" },
+  { stt: 22, id: "2503892806", ho: "Lê Văn", ten: "Nghĩa", fullName: "Lê Văn Nghĩa" },
+  { stt: 23, id: "2503892826", ho: "Nguyễn Đình Bảo", ten: "Ngọc", fullName: "Nguyễn Đình Bảo Ngọc" },
+  { stt: 24, id: "2503892846", ho: "Tạ Hoàng Bảo", ten: "Nguyên", fullName: "Tạ Hoàng Bảo Nguyên" },
+  { stt: 25, id: "2503892866", ho: "Nguyễn Thiện", ten: "Nhân", fullName: "Nguyễn Thiện Nhân" },
+  { stt: 26, id: "2503892886", ho: "Vũ Minh", ten: "Nhật", fullName: "Vũ Minh Nhật" },
+  { stt: 27, id: "2503892906", ho: "Vũ Thị Ngọc", ten: "Nhi", fullName: "Vũ Thị Ngọc Nhi" },
+  { stt: 28, id: "2503892926", ho: "Lê Ngô Khánh", ten: "Như", fullName: "Lê Ngô Khánh Như" },
+  { stt: 29, id: "2503892946", ho: "Lâm Gia", ten: "Phát", fullName: "Lâm Gia Phát" },
+  { stt: 30, id: "2503892966", ho: "Lê Đức", ten: "Phú", fullName: "Lê Đức Phú" },
+  { stt: 31, id: "2503892986", ho: "Trần Lê Hà", ten: "Phương", fullName: "Trần Lê Hà Phương" },
+  { stt: 32, id: "2503893006", ho: "Lê Viết Hồng", ten: "Sơn", fullName: "Lê Viết Hồng Sơn" },
+  { stt: 33, id: "2503893066", ho: "Nguyễn Quốc", ten: "Thái", fullName: "Nguyễn Quốc Thái" },
+  { stt: 34, id: "2503893086", ho: "Lê Minh", ten: "Thành", fullName: "Lê Minh Thành" },
+  { stt: 35, id: "2503893106", ho: "Võ Ngọc Minh", ten: "Thư", fullName: "Võ Ngọc Minh Thư" },
+  { stt: 36, id: "2503893126", ho: "Nguyễn Lê Yến", ten: "Trang", fullName: "Nguyễn Lê Yến Trang" },
+  { stt: 37, id: "2503893146", ho: "Phạm Ngọc Bảo", ten: "Trân", fullName: "Phạm Ngọc Bảo Trân" },
+  { stt: 38, id: "2503893166", ho: "Nguyễn Thị Thanh", ten: "Trúc", fullName: "Nguyễn Thị Thanh Trúc" },
+  { stt: 39, id: "2503893026", ho: "Lê Anh", ten: "Tuấn", fullName: "Lê Anh Tuấn" },
+  { stt: 40, id: "2503893046", ho: "Tạ Thanh", ten: "Tùng", fullName: "Tạ Thanh Tùng" },
+  { stt: 41, id: "2602184626", ho: "Phan Thị Yến", ten: "Vi", fullName: "Phan Thị Yến Vi" },
+  { stt: 42, id: "2503893186", ho: "Lê Bá Hoàng", ten: "Vũ", fullName: "Lê Bá Hoàng Vũ" },
+  { stt: 43, id: "2503893226", ho: "Lại Thị Khánh", ten: "Vy", fullName: "Lại Thị Khánh Vy" },
+  { stt: 44, id: "2503893246", ho: "Nguyễn Ngọc Như", ten: "Ý", fullName: "Nguyễn Ngọc Như Ý" },
+  { stt: 45, id: "2603481986", ho: "Vũ Thị Quỳnh", ten: "Anh", fullName: "Vũ Thị Quỳnh Anh" }
+];
+
+const STORAGE_KEY = 'ntmk_bonus_points_v1';
+let students = [];
+let currentFilter = 'all';
+let actionHistory = [];
+
+// Vietnamese Accent Stripper
+function removeVietnameseTones(str) {
+  if (!str) return '';
+  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+  str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+  str = str.replace(/đ/g, "d");
+  str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
+  str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
+  str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
+  str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
+  str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
+  str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
+  str = str.replace(/Đ/g, "D");
+  str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, "");
+  str = str.replace(/\u02C6|\u0306|\u031B/g, "");
+  return str.toLowerCase().trim();
+}
+
+// Initialize data from localStorage or default
+function initData() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      // Map stored points to base student list
+      students = STUDENTS_RAW.map(base => {
+        const found = parsed.find(p => p.stt === base.stt || p.id === base.id);
+        return {
+          ...base,
+          points: (found && typeof found.points === 'number') ? found.points : 0
+        };
+      });
+    } else {
+      students = STUDENTS_RAW.map(base => ({ ...base, points: 0 }));
+    }
+  } catch (e) {
+    students = STUDENTS_RAW.map(base => ({ ...base, points: 0 }));
+  }
+  saveData();
+  renderStats();
+  renderTable();
+}
+
+function saveData() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(students));
+  } catch (e) {}
+}
+
+// Find students matching query string
+function findStudents(query) {
+  const qRaw = query.trim();
+  if (!qRaw) return [];
+
+  // 1. Exact numeric STT
+  if (/^\d{1,2}$/.test(qRaw)) {
+    const num = parseInt(qRaw, 10);
+    const byStt = students.filter(s => s.stt === num);
+    if (byStt.length > 0) return byStt;
+  }
+
+  // 2. Student ID match
+  if (/^\d{8,12}$/.test(qRaw)) {
+    const byId = students.filter(s => s.id === qRaw);
+    if (byId.length > 0) return byId;
+  }
+
+  const qLower = qRaw.toLowerCase();
+
+  // 3. Exact full name match (accent sensitive)
+  const exactFull = students.filter(s => s.fullName.toLowerCase() === qLower);
+  if (exactFull.length > 0) return exactFull;
+
+  // 4. Exact 'tên' (first name) match (accent sensitive)
+  const exactTen = students.filter(s => s.ten.toLowerCase() === qLower);
+  if (exactTen.length > 0) return exactTen;
+
+  // 5. Ends with match (e.g. "Quỳnh Anh", "Minh Anh", "Gia Bảo")
+  const endsWith = students.filter(s => s.fullName.toLowerCase().endsWith(qLower));
+  if (endsWith.length > 0) return endsWith;
+
+  // 6. Contains in full name (accent sensitive)
+  const containsFull = students.filter(s => s.fullName.toLowerCase().includes(qLower));
+  if (containsFull.length > 0) return containsFull;
+
+  // 7. Fallback: Accentless matching
+  const qNorm = removeVietnameseTones(qRaw);
+
+  // 7a. Accentless exact ten
+  const normTen = students.filter(s => removeVietnameseTones(s.ten) === qNorm);
+  if (normTen.length > 0) return normTen;
+
+  // 7b. Accentless ends with
+  const normEndsWith = students.filter(s => removeVietnameseTones(s.fullName).endsWith(qNorm));
+  if (normEndsWith.length > 0) return normEndsWith;
+
+  // 7c. Accentless contains
+  const normContains = students.filter(s => removeVietnameseTones(s.fullName).includes(qNorm));
+  if (normContains.length > 0) return normContains;
+
+  return [];
+}
+
+// Parse single token: "Sơn +2", "Sơn 2", "7", "Bình", "Doanh: 3"
+function parseToken(rawToken, defaultDelta = 1) {
+  let item = rawToken.trim();
+  if (!item) return null;
+
+  let delta = defaultDelta;
+  let query = item;
+
+  // Format: "name +2" or "name -1" or "name: 2"
+  const signMatch = item.match(/^(.*?)(?:\s*([+:])\s*(\d+))\s*$/);
+  if (signMatch && signMatch[1].trim()) {
+    query = signMatch[1].trim();
+    delta = parseInt(signMatch[3], 10);
+    return { query, delta };
+  }
+
+  // Format: "name 2" where name is text
+  const trailingMatch = item.match(/^([^\d]+?)\s+(\d+)\s*$/);
+  if (trailingMatch) {
+    query = trailingMatch[1].trim();
+    delta = parseInt(trailingMatch[2], 10);
+    return { query, delta };
+  }
+
+  return { query, delta };
+}
+
+// Add points to student by STT
+function addPointsToStudent(stt, delta, reason = 'Cộng nhanh') {
+  const target = students.find(s => s.stt === stt);
+  if (!target) return;
+
+  target.points = Math.max(0, (target.points || 0) + delta);
+  actionHistory.push({
+    stt: target.stt,
+    fullName: target.fullName,
+    delta: delta,
+    time: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
+  });
+
+  saveData();
+  renderStats();
+  renderTable(target.stt);
+  showToast(`+${delta} điểm cho ${target.fullName} (Tổng: ${target.points})`);
+  updateHistoryBar();
+}
+
+// Handle Quick Input Submit
+function handleQuickSubmit() {
+  const inputEl = document.getElementById('quick-input');
+  const raw = inputEl.value.trim();
+  if (!raw) return;
+
+  const parsed = parseToken(raw, 1);
+  if (!parsed) return;
+
+  const matches = findStudents(parsed.query);
+  const ambiguityEl = document.getElementById('ambiguity-box');
+
+  if (matches.length === 0) {
+    showToast(`Không tìm thấy học sinh nào khớp với "${parsed.query}"`, true);
+    return;
+  }
+
+  if (matches.length === 1) {
+    ambiguityEl.style.display = 'none';
+    addPointsToStudent(matches[0].stt, parsed.delta);
+    inputEl.value = '';
+    inputEl.focus();
+    return;
+  }
+
+  // Multiple matches (e.g. "Anh" has 3 students)
+  showAmbiguitySelector(matches, parsed.delta);
+}
+
+// Ambiguity Chip Resolver
+function showAmbiguitySelector(matches, delta) {
+  const box = document.getElementById('ambiguity-box');
+  const chipsContainer = document.getElementById('ambiguity-chips');
+  const desc = document.getElementById('ambiguity-desc');
+
+  desc.textContent = `Phát hiện ${matches.length} bạn khớp tên, chọn đúng bạn cần cộng (+${delta}):`;
+  chipsContainer.innerHTML = '';
+
+  matches.forEach(student => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'ambiguity-chip';
+    btn.textContent = `STT ${student.stt} — ${student.fullName}`;
+    btn.onclick = () => {
+      addPointsToStudent(student.stt, delta);
+      box.style.display = 'none';
+      const inputEl = document.getElementById('quick-input');
+      inputEl.value = '';
+      inputEl.focus();
+    };
+    chipsContainer.appendChild(btn);
+  });
+
+  // Option to add to all matched students
+  const allBtn = document.createElement('button');
+  allBtn.type = 'button';
+  allBtn.className = 'ambiguity-chip';
+  allBtn.style.borderColor = 'var(--primary)';
+  allBtn.style.color = 'var(--primary)';
+  allBtn.textContent = `Cộng cho tất cả (${matches.length} bạn)`;
+  allBtn.onclick = () => {
+    matches.forEach(s => addPointsToStudent(s.stt, delta));
+    box.style.display = 'none';
+    const inputEl = document.getElementById('quick-input');
+    inputEl.value = '';
+    inputEl.focus();
+  };
+  chipsContainer.appendChild(allBtn);
+
+  box.style.display = 'block';
+}
+
+// Bulk Input Submit (SLL)
+function handleBulkSubmit() {
+  const text = document.getElementById('bulk-textarea').value.trim();
+  const defaultDelta = parseInt(document.getElementById('bulk-default-delta').value, 10) || 1;
+  const summaryEl = document.getElementById('bulk-result-summary');
+
+  if (!text) {
+    showToast('Vui lòng nhập hoặc dán danh sách tên học sinh!', true);
+    return;
+  }
+
+  // Split by newline, comma, semicolon
+  const tokens = text.split(/[\n,;]+/).map(t => t.trim()).filter(Boolean);
+  if (tokens.length === 0) return;
+
+  let addedCount = 0;
+  let totalPointsAdded = 0;
+  let notFound = [];
+  let ambiguousItems = [];
+
+  tokens.forEach(rawToken => {
+    const parsed = parseToken(rawToken, defaultDelta);
+    if (!parsed) return;
+
+    const matches = findStudents(parsed.query);
+    if (matches.length === 0) {
+      notFound.push(rawToken);
+    } else if (matches.length === 1) {
+      addPointsToStudent(matches[0].stt, parsed.delta, 'Cộng SLL');
+      addedCount++;
+      totalPointsAdded += parsed.delta;
+    } else {
+      ambiguousItems.push({ raw: rawToken, matches, delta: parsed.delta });
+    }
+  });
+
+  let resultHtml = `<div style="padding: 10px 14px; border-radius: 8px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--primary); font-weight: 600;">
+    Đã cộng thành công cho <strong>${addedCount}</strong> học sinh (+${totalPointsAdded} điểm)!
+  </div>`;
+
+  if (ambiguousItems.length > 0) {
+    resultHtml += `<div style="margin-top: 8px; padding: 10px 14px; border-radius: 8px; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); color: #f59e0b; font-size: 0.85rem;">
+      <strong>Trùng tên cần xác nhận (${ambiguousItems.length} mục):</strong><br>`;
+    ambiguousItems.forEach(item => {
+      resultHtml += `<div style="margin-top: 4px;">• "${item.raw}": `;
+      item.matches.forEach(m => {
+        resultHtml += `<button type="button" class="btn btn-secondary btn-sm" style="padding: 2px 8px; margin: 2px;" onclick="addPointsToStudent(${m.stt}, ${item.delta}); this.disabled=true; this.style.opacity='0.5';">+ ${m.fullName}</button> `;
+      });
+      resultHtml += `</div>`;
+    });
+    resultHtml += `</div>`;
+  }
+
+  if (notFound.length > 0) {
+    resultHtml += `<div style="margin-top: 8px; padding: 10px 14px; border-radius: 8px; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); color: #ef4444; font-size: 0.85rem;">
+      Không tìm thấy (${notFound.length}): ${notFound.join(', ')}
+    </div>`;
+  }
+
+  summaryEl.innerHTML = resultHtml;
+  summaryEl.style.display = 'block';
+  document.getElementById('bulk-textarea').value = '';
+}
+
+function toggleBulkMode() {
+  const container = document.getElementById('bulk-container');
+  const btnText = document.getElementById('bulk-toggle-text');
+  const isHidden = container.style.display === 'none' || !container.style.display;
+
+  if (isHidden) {
+    container.style.display = 'block';
+    btnText.textContent = 'Thu Gọn SLL';
+    document.getElementById('bulk-textarea').focus();
+  } else {
+    container.style.display = 'none';
+    btnText.textContent = 'Nhập Số Lượng Lớn (SLL)';
+  }
+}
+
+// Quick action on student row
+function modifyPoints(stt, delta) {
+  addPointsToStudent(stt, delta, 'Nút bấm');
+}
+
+function promptCustomPoints(stt) {
+  const target = students.find(s => s.stt === stt);
+  if (!target) return;
+  const current = target.points || 0;
+  const val = prompt(`Nhập điểm cộng mới cho ${target.fullName}:`, current);
+  if (val === null) return;
+  const num = parseInt(val, 10);
+  if (isNaN(num) || num < 0) {
+    alert('Vui lòng nhập một số nguyên hợp lệ (>= 0)');
+    return;
+  }
+  const delta = num - current;
+  target.points = num;
+  actionHistory.push({
+    stt: target.stt,
+    fullName: target.fullName,
+    delta: delta,
+    time: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
+  });
+  saveData();
+  renderStats();
+  renderTable(target.stt);
+  showToast(`Cập nhật điểm cho ${target.fullName}: ${num} điểm`);
+  updateHistoryBar();
+}
+
+// Undo feature
+function undoLastAction() {
+  if (actionHistory.length === 0) return;
+  const last = actionHistory.pop();
+  const target = students.find(s => s.stt === last.stt);
+  if (target) {
+    target.points = Math.max(0, (target.points || 0) - last.delta);
+    saveData();
+    renderStats();
+    renderTable(target.stt);
+    showToast(`Đã hoàn tác: ${last.fullName} (-${last.delta} điểm)`);
+  }
+  updateHistoryBar();
+}
+
+function updateHistoryBar() {
+  const bar = document.getElementById('history-bar');
+  const text = document.getElementById('history-text');
+  if (actionHistory.length === 0) {
+    bar.style.display = 'none';
+    return;
+  }
+  const last = actionHistory[actionHistory.length - 1];
+  text.textContent = `Vừa thao tác: ${last.delta >= 0 ? '+' : ''}${last.delta} điểm cho ${last.fullName} (${last.time})`;
+  bar.style.display = 'flex';
+}
+
+// Stats Rendering
+function renderStats() {
+  const total = students.length;
+  const withPoints = students.filter(s => s.points > 0).length;
+  const totalPoints = students.reduce((sum, s) => sum + (s.points || 0), 0);
+
+  document.getElementById('stat-total-students').textContent = total;
+  document.getElementById('stat-students-with-points').textContent = withPoints;
+  document.getElementById('stat-total-points').textContent = totalPoints;
+
+  const lastActionEl = document.getElementById('stat-last-action');
+  if (actionHistory.length > 0) {
+    const last = actionHistory[actionHistory.length - 1];
+    lastActionEl.textContent = `${last.fullName} (+${last.delta})`;
+  } else {
+    lastActionEl.textContent = 'Chưa có';
+  }
+}
+
+// Filters & Sorting
+function setFilter(filterType) {
+  currentFilter = filterType;
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  if (filterType === 'all') document.getElementById('filter-all-btn').classList.add('active');
+  if (filterType === 'has_points') document.getElementById('filter-has-points-btn').classList.add('active');
+  if (filterType === 'zero') document.getElementById('filter-zero-btn').classList.add('active');
+  renderTable();
+}
+
+// Render Table
+function renderTable(highlightStt = null) {
+  const tbody = document.getElementById('student-tbody');
+  const searchVal = document.getElementById('table-search').value.trim();
+  const sortVal = document.getElementById('table-sort').value;
+
+  let filtered = [...students];
+
+  // 1. Filter by tabs
+  if (currentFilter === 'has_points') {
+    filtered = filtered.filter(s => s.points > 0);
+  } else if (currentFilter === 'zero') {
+    filtered = filtered.filter(s => s.points === 0);
+  }
+
+  // 2. Filter by search box
+  if (searchVal) {
+    const qNorm = removeVietnameseTones(searchVal);
+    filtered = filtered.filter(s => {
+      return s.stt.toString() === searchVal ||
+        s.id.includes(searchVal) ||
+        removeVietnameseTones(s.fullName).includes(qNorm) ||
+        removeVietnameseTones(s.ten).includes(qNorm);
+    });
+  }
+
+  // 3. Sorting
+  if (sortVal === 'points_desc') {
+    filtered.sort((a, b) => (b.points || 0) - (a.points || 0) || a.stt - b.stt);
+  } else if (sortVal === 'name_asc') {
+    filtered.sort((a, b) => a.ten.localeCompare(b.ten, 'vi') || a.fullName.localeCompare(b.fullName, 'vi'));
+  } else {
+    filtered.sort((a, b) => a.stt - b.stt);
+  }
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:32px; color:var(--text-muted);">Không tìm thấy học sinh phù hợp</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = filtered.map(s => {
+    const isHighlight = s.stt === highlightStt;
+    const hasPoints = s.points > 0;
+    return `
+      <tr class="${isHighlight ? 'row-just-updated' : ''}" id="row-${s.stt}">
+        <td class="stt-cell">${s.stt}</td>
+        <td class="id-cell">${s.id}</td>
+        <td class="name-cell">
+          <span>${s.ho}</span> <strong>${s.ten}</strong>
+        </td>
+        <td>
+          <span class="badge-ten">${s.ten}</span>
+        </td>
+        <td style="text-align: center;">
+          <span class="points-badge ${hasPoints ? 'has-points' : ''}" onclick="promptCustomPoints(${s.stt})" title="Nhấp để nhập điểm trực tiếp">
+            ${s.points || 0}
+          </span>
+        </td>
+        <td style="text-align: center;">
+          <div class="actions-cell" style="justify-content: center;">
+            <button type="button" class="point-action-btn" onclick="modifyPoints(${s.stt}, 1)" title="Cộng 1 điểm">+1</button>
+            <button type="button" class="point-action-btn" onclick="modifyPoints(${s.stt}, 2)" title="Cộng 2 điểm">+2</button>
+            <button type="button" class="point-action-btn btn-sub" onclick="modifyPoints(${s.stt}, -1)" title="Trừ 1 điểm">-1</button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+// Reset all points with confirmation
+function confirmResetAll() {
+  const confirmed = confirm('Bạn có chắc chắn muốn XÓA TẤT CẢ điểm cộng của 45 học sinh về 0 không?');
+  if (!confirmed) return;
+
+  students.forEach(s => s.points = 0);
+  actionHistory = [];
+  saveData();
+  renderStats();
+  renderTable();
+  updateHistoryBar();
+  showToast('Đã xóa tất cả điểm cộng về 0');
+}
+
+// Export to CSV with UTF-8 BOM
+function exportToCSV() {
+  const headers = ['STT', 'Mã Học Sinh', 'Họ Đệm', 'Tên', 'Họ Và Tên', 'Điểm Cộng'];
+  const rows = students.map(s => [
+    s.stt,
+    `"${s.id}"`,
+    `"${s.ho}"`,
+    `"${s.ten}"`,
+    `"${s.fullName}"`,
+    s.points || 0
+  ]);
+
+  const csvContent = '\uFEFF' + [headers.join(','), ...rows.map(e => e.join(','))].join('\r\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `Bang_Diem_Cong_NTMK_${new Date().toISOString().slice(0, 10)}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('Đã xuất file bảng điểm Excel (.CSV)!');
+}
+
+// Copy table text for Excel/Google Sheets
+function copyTableText() {
+  const headers = ['STT', 'Mã HS', 'Họ và Tên', 'Điểm Cộng'];
+  const rows = students.map(s => `${s.stt}\t${s.id}\t${s.fullName}\t${s.points || 0}`);
+  const text = [headers.join('\t'), ...rows].join('\n');
+
+  navigator.clipboard.writeText(text).then(() => {
+    showToast('Đã sao chép bảng dữ liệu! Bạn có thể dán (Ctrl+V) vào Excel/Sheets.');
+  }).catch(() => {
+    showToast('Lỗi khi sao chép, vui lòng thử lại!', true);
+  });
+}
+
+// Toast message helper
+let toastTimeout;
+function showToast(msg, isError = false) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.style.background = isError ? '#ef4444' : '#10b981';
+  toast.classList.add('show');
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2400);
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  // Enter on quick-input triggers submit
+  if (e.target.id === 'quick-input' && e.key === 'Enter') {
+    e.preventDefault();
+    handleQuickSubmit();
+  }
+  // Ctrl + Z triggers undo
+  if ((e.ctrlKey || e.metaKey) && (e.key === 'z' || e.key === 'Z')) {
+    if (document.activeElement.tagName !== 'TEXTAREA' && document.activeElement.tagName !== 'INPUT') {
+      e.preventDefault();
+      undoLastAction();
+    }
+  }
+});
+
+// Start app
+initData();
+</script>
+
+</body>
+</html>

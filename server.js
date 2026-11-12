@@ -332,6 +332,11 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
+// Hidden bonus points page
+app.get('/diem-cong', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'diem-cong.html'));
+});
+
 // Static files (public and data)
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/data', (req, res, next) => {
