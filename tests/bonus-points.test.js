@@ -38,4 +38,11 @@ describe('Hidden Bonus Points Site (/diem-cong)', () => {
       server.close();
     }
   });
+
+  test('vercel.json rewrites /diem-cong to /diem-cong.html', () => {
+    const vercelConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'vercel.json'), 'utf8'));
+    const rewrite = vercelConfig.rewrites.find(r => r.source === '/diem-cong');
+    assert.ok(rewrite, 'rewrite for /diem-cong must exist');
+    assert.strictEqual(rewrite.destination, '/diem-cong.html');
+  });
 });
