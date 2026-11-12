@@ -524,6 +524,240 @@
             transform: translateY(0);
             opacity: 1;
         }
+
+        /* Quick Delta Selector */
+        .delta-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .delta-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .delta-pill {
+            padding: 6px 14px;
+            border-radius: 999px;
+            border: 1.5px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            min-height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .delta-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 2px 8px var(--primary-glow);
+        }
+
+        /* Live Instant Suggestions Chips */
+        .quick-suggestions {
+            display: none;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            padding: 10px 12px;
+            background: var(--bg-gray);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            max-height: 180px;
+            overflow-y: auto;
+        }
+        .sugg-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            min-height: 40px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .sugg-chip:active, .sugg-chip:hover {
+            background: var(--primary-soft);
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: scale(0.97);
+        }
+        .sugg-stt {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--primary-soft);
+            color: var(--primary);
+            font-size: 0.76rem;
+            font-weight: 800;
+        }
+        .sugg-name {
+            font-weight: 700;
+        }
+        .sugg-delta {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 0.82rem;
+            margin-left: 2px;
+        }
+
+        /* Mobile First Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: 90px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+            .page-header {
+                padding: 14px 0 10px;
+                margin-bottom: 12px;
+                gap: 10px;
+            }
+            .page-title {
+                font-size: 1.25rem;
+            }
+            .page-desc {
+                font-size: 0.78rem;
+            }
+            .header-title-group img {
+                width: 36px !important;
+                height: 36px !important;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                margin-bottom: 12px;
+            }
+            .stat-card {
+                padding: 10px 12px;
+            }
+            .stat-card-label {
+                font-size: 0.7rem;
+            }
+            .stat-card-value {
+                font-size: 1.3rem;
+            }
+            .stat-card-icon {
+                width: 34px;
+                height: 34px;
+            }
+            .panel {
+                padding: 14px;
+                margin-bottom: 14px;
+            }
+            .panel-quick-add {
+                position: sticky;
+                top: 8px;
+                z-index: 100;
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+                background: var(--glass-card);
+                border: 1.5px solid rgba(16, 185, 129, 0.4);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            }
+            .primary-input {
+                font-size: 16px; /* Prevents auto zoom in iOS Safari */
+                padding: 12px 14px;
+                min-width: 100%;
+            }
+            .btn {
+                min-height: 42px;
+                padding: 10px 14px;
+            }
+            .input-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .input-group button[type="submit"] {
+                width: 100%;
+            }
+            .toolbar {
+                gap: 8px;
+                margin-bottom: 10px;
+            }
+            .search-box {
+                max-width: 100%;
+                min-width: 100%;
+            }
+            .search-input {
+                font-size: 16px;
+                padding: 10px 12px 10px 36px;
+            }
+            .filter-buttons {
+                width: 100%;
+                display: flex;
+            }
+            .filter-btn {
+                flex: 1;
+                text-align: center;
+                padding: 8px 6px;
+                font-size: 0.78rem;
+            }
+            .col-id {
+                display: none !important;
+            }
+            .student-table th, .student-table td {
+                padding: 10px 6px;
+                font-size: 0.86rem;
+            }
+            .point-action-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 0.95rem;
+                font-weight: 800;
+                border-radius: 8px;
+            }
+            .point-action-btn:active {
+                transform: scale(0.92);
+            }
+            .points-badge {
+                min-width: 42px;
+                min-height: 36px;
+                font-size: 1.15rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .col-ten {
+                display: none !important;
+            }
+            .name-cell span {
+                display: block;
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-weight: normal;
+            }
+            .name-cell strong {
+                font-size: 0.96rem;
+            }
+            .actions-cell {
+                gap: 4px;
+            }
+            .point-action-btn {
+                width: 36px;
+                height: 36px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -609,7 +843,7 @@
     </div>
 
     <!-- Quick Add Panel -->
-    <div class="panel">
+    <div class="panel panel-quick-add" id="quick-add-panel">
         <div class="panel-header">
             <div class="panel-title">
                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -621,14 +855,26 @@
             </button>
         </div>
 
+        <!-- Quick Delta Amount Picker -->
+        <div class="delta-selector">
+            <span class="delta-label">Mức điểm:</span>
+            <button type="button" class="delta-pill active" data-delta="1" onclick="setQuickDelta(1)">+1</button>
+            <button type="button" class="delta-pill" data-delta="2" onclick="setQuickDelta(2)">+2</button>
+            <button type="button" class="delta-pill" data-delta="3" onclick="setQuickDelta(3)">+3</button>
+            <button type="button" class="delta-pill" data-delta="5" onclick="setQuickDelta(5)">+5</button>
+        </div>
+
         <!-- Single Quick Input -->
         <form class="input-group" onsubmit="event.preventDefault(); handleQuickSubmit();">
-            <input type="text" id="quick-input" class="primary-input" placeholder="Gõ tên HS (VD: Doanh, Sơn +2, 7, Trương Minh Anh) rồi nhấn Enter..." autofocus autocomplete="off">
-            <button type="submit" class="btn btn-primary">
+            <input type="text" id="quick-input" class="primary-input" placeholder="Gõ tên hoặc STT (VD: Doanh, Sơn +2, 7, Trương Minh Anh)..." autofocus autocomplete="off" enterkeyhint="go" oninput="updateQuickSuggestions()">
+            <button type="submit" class="btn btn-primary" id="quick-submit-btn">
                 <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-                Cộng Điểm (+1)
+                Cộng Điểm (<span id="submit-btn-text">+1</span>)
             </button>
         </form>
+
+        <!-- Live Instant Suggestions -->
+        <div id="quick-suggestions" class="quick-suggestions"></div>
 
         <!-- Ambiguity Resolution Box -->
         <div id="ambiguity-box" class="ambiguity-box">
@@ -696,9 +942,9 @@
                 <thead>
                     <tr>
                         <th class="stt-cell">STT</th>
-                        <th>Mã HS</th>
+                        <th class="col-id">Mã HS</th>
                         <th>Họ và Tên</th>
-                        <th>Tên Gọi</th>
+                        <th class="col-ten">Tên Gọi</th>
                         <th style="text-align: center;">Điểm Cộng</th>
                         <th style="text-align: center;">Thao Tác Nhanh</th>
                     </tr>
@@ -1043,6 +1289,65 @@ function parseToken(rawToken, defaultDelta = 1) {
   return { query, delta };
 }
 
+// Quick Point Delta State & Suggestions
+let currentQuickDelta = 1;
+
+function setQuickDelta(delta) {
+  currentQuickDelta = delta;
+  document.querySelectorAll('.delta-pill').forEach(btn => {
+    btn.classList.toggle('active', parseInt(btn.dataset.delta, 10) === delta);
+  });
+  const submitBtnText = document.getElementById('submit-btn-text');
+  if (submitBtnText) submitBtnText.textContent = `+${delta}`;
+  updateQuickSuggestions();
+}
+
+function updateQuickSuggestions() {
+  const inputEl = document.getElementById('quick-input');
+  const suggestionsEl = document.getElementById('quick-suggestions');
+  if (!inputEl || !suggestionsEl) return;
+
+  const raw = inputEl.value.trim();
+  if (!raw) {
+    suggestionsEl.innerHTML = '';
+    suggestionsEl.style.display = 'none';
+    return;
+  }
+
+  const parsed = parseToken(raw, currentQuickDelta);
+  const query = parsed ? parsed.query : raw;
+  const delta = parsed ? parsed.delta : currentQuickDelta;
+
+  const matches = findStudents(query);
+  if (matches.length === 0) {
+    suggestionsEl.innerHTML = '';
+    suggestionsEl.style.display = 'none';
+    return;
+  }
+
+  suggestionsEl.style.display = 'flex';
+  suggestionsEl.innerHTML = matches.slice(0, 6).map(s => {
+    return `<button type="button" class="sugg-chip" onclick="applySuggestion(${s.stt}, ${delta})">
+      <span class="sugg-stt">${s.stt}</span>
+      <span class="sugg-name">${s.fullName}</span>
+      <span class="sugg-delta">+${delta}</span>
+    </button>`;
+  }).join('');
+}
+
+function applySuggestion(stt, delta) {
+  addPointsToStudent(stt, delta, 'Gợi ý nhanh');
+  const inputEl = document.getElementById('quick-input');
+  const suggestionsEl = document.getElementById('quick-suggestions');
+  if (inputEl) {
+    inputEl.value = '';
+  }
+  if (suggestionsEl) {
+    suggestionsEl.innerHTML = '';
+    suggestionsEl.style.display = 'none';
+  }
+}
+
 // Add points to student by STT
 function addPointsToStudent(stt, delta, reason = 'Cộng nhanh') {
   const target = students.find(s => s.stt === stt);
@@ -1056,11 +1361,22 @@ function addPointsToStudent(stt, delta, reason = 'Cộng nhanh') {
     time: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
   });
 
+  if (window.navigator && typeof window.navigator.vibrate === 'function') {
+    try { window.navigator.vibrate(20); } catch (e) {}
+  }
+
   saveData();
   renderStats();
   renderTable(target.stt);
   showToast(`+${delta} điểm cho ${target.fullName} (Tổng: ${target.points})`);
   updateHistoryBar();
+
+  setTimeout(() => {
+    const updatedRow = document.getElementById(`row-${target.stt}`);
+    if (updatedRow && (reason === 'Cộng nhanh' || reason === 'Gợi ý nhanh')) {
+      updatedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, 50);
 }
 
 // Handle Quick Input Submit
@@ -1069,11 +1385,16 @@ function handleQuickSubmit() {
   const raw = inputEl.value.trim();
   if (!raw) return;
 
-  const parsed = parseToken(raw, 1);
+  const parsed = parseToken(raw, currentQuickDelta);
   if (!parsed) return;
 
   const matches = findStudents(parsed.query);
   const ambiguityEl = document.getElementById('ambiguity-box');
+  const suggestionsEl = document.getElementById('quick-suggestions');
+  if (suggestionsEl) {
+    suggestionsEl.innerHTML = '';
+    suggestionsEl.style.display = 'none';
+  }
 
   if (matches.length === 0) {
     showToast(`Không tìm thấy học sinh nào khớp với "${parsed.query}"`, true);
@@ -1084,7 +1405,6 @@ function handleQuickSubmit() {
     ambiguityEl.style.display = 'none';
     addPointsToStudent(matches[0].stt, parsed.delta);
     inputEl.value = '';
-    inputEl.focus();
     return;
   }
 
@@ -1347,11 +1667,11 @@ function renderTable(highlightStt = null) {
     return `
       <tr class="${isHighlight ? 'row-just-updated' : ''}" id="row-${s.stt}">
         <td class="stt-cell">${s.stt}</td>
-        <td class="id-cell">${s.id}</td>
+        <td class="id-cell col-id">${s.id}</td>
         <td class="name-cell">
           <span>${s.ho}</span> <strong>${s.ten}</strong>
         </td>
-        <td>
+        <td class="col-ten">
           <span class="badge-ten">${s.ten}</span>
         </td>
         <td style="text-align: center;">
