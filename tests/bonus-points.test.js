@@ -45,4 +45,32 @@ describe('Hidden Bonus Points Site (/diem-cong)', () => {
     assert.ok(rewrite, 'rewrite for /diem-cong must exist');
     assert.strictEqual(rewrite.destination, '/diem-cong.html');
   });
+
+  test('api/bonus-points GET and POST sync endpoints work correctly', async () => {
+    const server = app.listen(0);
+    const port = server.address().port;
+    try {
+      // 1. POST save
+      const postRes = await fetch(`http://127.0.0.1:${port}/api/bonus-points`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          students: [
+            { stt: 1, id: "2503892386", fullName: "Nguyễn Ngọc Quỳnh An", points: 3 }
+          ]
+        })
+      });
+      assert.strictEqual(postRes.status, 200);
+      const postJson = await postRes.json();
+      assert.strictEqual(postJson.success, true);
+
+      // 2. GET retrieve
+      const getRes = await fetch(`http://127.0.0.1:${port}/api/bonus-points`);
+      assert.strictEqual(getRes.status, 200);
+      const getJson = await getRes.json();
+      assert.ok(Array.isArray(getJson.data), 'data must be an array');
+    } finally {
+      server.close();
+    }
+  });
 });

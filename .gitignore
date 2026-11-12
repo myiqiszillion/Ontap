@@ -8,5 +8,6 @@ node_modules/
 .ntmk/
 data/question-bank-v2.json*
 data/_test_bank*
+data/bonus-points.json*
 
 scratch/

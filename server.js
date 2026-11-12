@@ -332,7 +332,9 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
-// Hidden bonus points page
+// Hidden bonus points page & API
+const bonusPointsHandler = require('./api/bonus-points.js');
+app.all('/api/bonus-points', (req, res) => bonusPointsHandler(req, res));
 app.get('/diem-cong', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'diem-cong.html'));
 });

@@ -544,7 +544,15 @@
                 <div class="page-desc">Danh sách 45 học sinh — Ghi nhận và cộng điểm bài tập tự động</div>
             </div>
         </div>
-        <div style="display: flex; gap: 8px;">
+        <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+            <div id="cloud-sync-status" style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; background: rgba(16, 185, 129, 0.1); color: var(--primary); border: 1px solid rgba(16, 185, 129, 0.3);">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--primary); display: inline-block;"></span>
+                <span id="cloud-sync-text">Cloud Sync Sẵn Sàng</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" onclick="syncWithCloud(true)" title="Tải điểm mới nhất từ Cloud / các máy khác">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                Đồng Bộ Ngay
+            </button>
             <button class="btn btn-secondary btn-sm" onclick="exportToCSV()" title="Tải file bảng điểm Excel (.CSV UTF-8)">
                 <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 Xuất Excel
@@ -802,15 +810,139 @@ function initData() {
   } catch (e) {
     students = STUDENTS_RAW.map(base => ({ ...base, points: 0 }));
   }
-  saveData();
+  saveData(true);
   renderStats();
   renderTable();
+  syncWithCloud(false);
 }
 
-function saveData() {
+function saveData(skipCloud = false) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(students));
   } catch (e) {}
+
+  if (!skipCloud) {
+    scheduleCloudPush();
+  }
+}
+
+let cloudPushTimer = null;
+function scheduleCloudPush() {
+  updateSyncStatus('saving', 'Đang lưu Cloud...');
+  clearTimeout(cloudPushTimer);
+  cloudPushTimer = setTimeout(() => {
+    pushToCloud();
+  }, 400);
+}
+
+async function pushToCloud() {
+  try {
+    const payload = { students };
+    // Try internal server API first
+    const res = await fetch('/api/bonus-points', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(6000)
+    });
+    if (res.ok) {
+      const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+      updateSyncStatus('synced', `Đã đồng bộ (${now})`);
+      return;
+    }
+  } catch (err) {}
+
+  // Direct durable backup fallback if API fails
+  try {
+    const directRes = await fetch('https://api.restful-api.dev/objects/ff808181a09d98f701a1d05a1f2e17fa', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: 'ntmk_bonus_points',
+        data: { updatedAt: new Date().toISOString(), students }
+      }),
+      signal: AbortSignal.timeout(6000)
+    });
+    if (directRes.ok) {
+      const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+      updateSyncStatus('synced', `Đã đồng bộ (${now})`);
+      return;
+    }
+  } catch (e) {}
+
+  updateSyncStatus('local', 'Lưu cục bộ (Offline)');
+}
+
+async function syncWithCloud(isManual = false) {
+  if (isManual) updateSyncStatus('saving', 'Đang kéo dữ liệu...');
+  let cloudStudents = null;
+
+  // 1. Fetch from server API
+  try {
+    const res = await fetch('/api/bonus-points', { signal: AbortSignal.timeout(5000) });
+    if (res.ok) {
+      const json = await res.json();
+      if (Array.isArray(json.data) && json.data.length > 0) {
+        cloudStudents = json.data;
+      }
+    }
+  } catch (e) {}
+
+  // 2. Fetch from direct durable cloud if server returned empty
+  if (!cloudStudents) {
+    try {
+      const res = await fetch('https://api.restful-api.dev/objects/ff808181a09d98f701a1d05a1f2e17fa', { signal: AbortSignal.timeout(5000) });
+      if (res.ok) {
+        const json = await res.json();
+        if (Array.isArray(json.data?.students) && json.data.students.length > 0) {
+          cloudStudents = json.data.students;
+        }
+      }
+    } catch (e) {}
+  }
+
+  if (cloudStudents) {
+    // Merge cloud points to students
+    students = STUDENTS_RAW.map(base => {
+      const found = cloudStudents.find(c => c.stt === base.stt || c.id === base.id || c.student_id === base.id);
+      return {
+        ...base,
+        points: (found && typeof found.points === 'number') ? found.points : 0
+      };
+    });
+    saveData(true); // save to localStorage only without pushing again
+    renderStats();
+    renderTable();
+    const now = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+    updateSyncStatus('synced', `Đã đồng bộ (${now})`);
+    if (isManual) showToast('Đã tải và đồng bộ điểm mới nhất từ Cloud!');
+  } else {
+    updateSyncStatus('synced', 'Đã đồng bộ');
+  }
+}
+
+function updateSyncStatus(type, text) {
+  const badge = document.getElementById('cloud-sync-status');
+  const label = document.getElementById('cloud-sync-text');
+  if (!badge || !label) return;
+
+  label.textContent = text;
+  if (type === 'saving') {
+    badge.style.background = 'rgba(245, 158, 11, 0.12)';
+    badge.style.borderColor = 'rgba(245, 158, 11, 0.35)';
+    badge.style.color = '#f59e0b';
+    badge.firstElementChild.style.background = '#f59e0b';
+  } else if (type === 'synced') {
+    badge.style.background = 'rgba(16, 185, 129, 0.12)';
+    badge.style.borderColor = 'rgba(16, 185, 129, 0.35)';
+    badge.style.color = 'var(--primary)';
+    badge.firstElementChild.style.background = 'var(--primary)';
+  } else {
+    badge.style.background = 'rgba(148, 163, 184, 0.15)';
+    badge.style.borderColor = 'rgba(148, 163, 184, 0.3)';
+    badge.style.color = 'var(--text-muted)';
+    badge.firstElementChild.style.background = 'var(--text-muted)';
+  }
 }
 
 // Find students matching query string
@@ -1305,6 +1437,19 @@ document.addEventListener('keydown', (e) => {
 
 // Start app
 initData();
+
+// Auto background sync when tab becomes visible or every 30s
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    syncWithCloud(false);
+  }
+});
+window.addEventListener('focus', () => syncWithCloud(false));
+setInterval(() => {
+  if (document.visibilityState === 'visible') {
+    syncWithCloud(false);
+  }
+}, 30000);
 </script>
 
 </body>
