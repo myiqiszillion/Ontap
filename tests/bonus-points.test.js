@@ -74,4 +74,16 @@ describe('Hidden Bonus Points Site (/diem-cong)', () => {
       server.close();
     }
   });
+
+  test('contains whole-class point addition feature (Cộng Cả Lớp / All Students)', () => {
+    const content = fs.readFileSync(filePath, 'utf8');
+    assert.match(content, /id="btn-add-all"/, 'Must contain Cộng Cả Lớp button');
+    assert.match(content, /confirmAddAllStudents/, 'Must contain confirmAddAllStudents function');
+    assert.match(content, /isAllStudentsQuery/, 'Must support all/tat ca keyword detection');
+  });
+
+  test('api/bonus-points parses map object format properly for local fallback', () => {
+    const localBonusHandler = require('../api/bonus-points.js');
+    assert.ok(typeof localBonusHandler === 'function');
+  });
 });

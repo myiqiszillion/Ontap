@@ -347,8 +347,12 @@ app.use('/data', (req, res, next) => {
   if (req.query.mode === 'exam' || req.headers['x-exam-mode'] === 'true') {
     const filePath = path.join(__dirname, 'data', `${match[1]}.json`);
     if (fs.existsSync(filePath)) {
-      const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      return res.json(sanitizeLegacyLessonQuestions(raw));
+      try {
+        const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        return res.json(sanitizeLegacyLessonQuestions(raw));
+      } catch (err) {
+        return res.status(500).json({ error: 'Failed to process subject data' });
+      }
     }
   }
   next();

@@ -81,11 +81,19 @@ module.exports = async (req, res) => {
       const localFile = path.join(process.cwd(), 'data', 'bonus-points.json');
       if (fs.existsSync(localFile)) {
         const fileData = JSON.parse(fs.readFileSync(localFile, 'utf8'));
-        const pointsMap = {};
+        let pointsMap = {};
+        let dataList = [];
         if (Array.isArray(fileData)) {
           fileData.forEach(r => { pointsMap[r.stt] = r.points || 0; });
+          dataList = fileData;
+        } else if (fileData && typeof fileData === 'object') {
+          pointsMap = fileData;
+          dataList = Object.entries(fileData).map(([stt, points]) => ({
+            stt: Number(stt),
+            points: Number(points)
+          }));
         }
-        return res.status(200).json({ source: 'local_file', points: pointsMap, data: fileData });
+        return res.status(200).json({ source: 'local_file', points: pointsMap, data: dataList });
       }
     } catch (e) {}
 
